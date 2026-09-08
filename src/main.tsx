@@ -11,6 +11,7 @@ import { INITIAL_VIEW } from './mapConfig';
 function App() {
   const container = useRef<HTMLDivElement | null>(null);
   const tilesRef = useRef<L.TileLayer | null>(null);
+  const [busSelected, setBusSelected] = useState(false);
   const [tileError, setTileError] = useState(false);
   const [offline, setOffline] = useState(!navigator.onLine);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
@@ -60,8 +61,8 @@ function App() {
         <div><h1 className="text-lg font-bold max-[600px]:text-sm">バス停と買い物マップ</h1>
           <p className="mt-1 text-xs font-medium text-sky-800">このアプリについて →</p></div>
       </a>
-      <BusStopLayer map={mapInstance} />
-      <ShoppingLayer map={mapInstance} />
+      <BusStopLayer map={mapInstance} onSelectionChange={setBusSelected} />
+      {busSelected && <ShoppingLayer map={mapInstance} />}
       {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
         {!offline && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={retry}>再読み込み</button>}

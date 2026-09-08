@@ -4,7 +4,7 @@ import type { BusCollection, BusFeature } from './types';
 import { INITIAL_VIEW } from './mapConfig';
 import BusStopDrawer from './BusStopDrawer';
 
-export default function BusStopLayer({ map }: { map: L.Map | null }) {
+export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | null; onSelectionChange: (selected: boolean) => void }) {
   const stopsRef = useRef<L.GeoJSON | null>(null);
   const markersRef = useRef(new Map<string, L.Layer>());
   const [stops, setStops] = useState<BusFeature[]>([]);
@@ -52,6 +52,8 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
   const closeDrawer = useCallback(() => setSelected(''), []);
   const selectedStop = stops.find(feature => String(feature.id || feature.properties?.['@id']) === selected);
 
+  useEffect(() => { onSelectionChange(Boolean(selectedStop)); }, [selectedStop, onSelectionChange]);
+
   useEffect(() => {
     const marker = markersRef.current.get(selected);
     if (!(marker instanceof L.CircleMarker)) return;
@@ -62,7 +64,7 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
   const reset = () => {
     setSelected('');
     map?.closePopup();
-    if (stopsRef.current) map?.fitBounds(stopsRef.current.getBounds(), { paddingTopLeft: [24, 230], paddingBottomRight: [24, 100] });
+    if (stopsRef.current) map?.fitBounds(stopsRef.current.getBounds(), { paddingTopLeft: [24, 100], paddingBottomRight: [24, 100] });
     else map?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
   return <>
