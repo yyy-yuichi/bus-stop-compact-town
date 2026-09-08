@@ -3,7 +3,7 @@ import path from 'node:path';
 const root='dist';
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
 for(const f of files){
- if(!/^(index\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping)\.geojson|data\/walking-onoda\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/(walking-onoda|review-routes)\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
 for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walking-onoda.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const html=fs.readFileSync('dist/index.html','utf8');
@@ -14,3 +14,13 @@ if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync('di
 const bus=JSON.parse(fs.readFileSync('dist/data/bus_stop.geojson','utf8'));
 if(bus.features.length!==1085)throw Error('Unexpected bus stop count');
 console.log(`Release verified: ${files.length} files; 1085 bus stops; source data matches dist.`);
+const official=JSON.parse(fs.readFileSync('dist/data/review-stops.geojson','utf8'));
+const routes=JSON.parse(fs.readFileSync('dist/data/review-routes.json','utf8'));
+if(official.features.length!==907||new Set(official.features.map(f=>f.id)).size!==907)throw Error('Review stop count/IDs');
+for(const [city,count] of [['hikari',172],['iwakuni',735]])if(official.features.filter(f=>f.properties.source_namespace===city).length!==count)throw Error(`Review count: ${city}`);
+const routeIds=new Set(routes.map(r=>r.id));
+if(official.features.some(f=>f.properties.stale_route_warning||f.properties.publication_status!=='ready-as-separate-source-layer'||f.properties.license!=='CC-BY-4.0'||f.properties.route_ids.some(id=>!routeIds.has(id))))throw Error('Invalid review candidate');
+for(const file of ['review-stops.geojson','review-routes.json'])if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(`dist/data/${file}`)))throw Error(`Stale review data ${file}`);
+const review=fs.readFileSync('dist/review.html','utf8');
+for(const m of review.matchAll(/(?:src|href)="(\.\/assets\/[^"#]+)"/g))if(!fs.existsSync(path.join(root,m[1])))throw Error(`Missing review asset ${m[1]}`);
+console.log('Review verified: Hikari 172 + Iwakuni 735; excluded known stale routes; route references valid.');
