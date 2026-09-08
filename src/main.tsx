@@ -61,11 +61,11 @@ function App() {
       </header>
       <BusStopLayer map={mapInstance} />
       <ShoppingLayer map={mapInstance} />
+      <a href={`${import.meta.env.BASE_URL}about.html`} className="absolute bottom-3 left-4 rounded-lg bg-white/95 px-3 py-2 text-[10px] text-sky-900 underline shadow-sm">この地図について・出典</a>
       {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
         {!offline && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={retry}>再読み込み</button>}
       </div>}
-      <div className="hint pointer-events-none absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-white bg-white/95 px-4 py-2.5 text-[11px] text-stone-600 shadow-sm max-[600px]:text-[10px] [@media(max-height:520px)]:hidden"><span className="hint-dot size-1.5 rounded-full bg-emerald-600" />ドラッグで移動 · ピンチ / ＋− で拡大縮小</div>
     </main>
   );
 }

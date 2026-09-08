@@ -19,7 +19,7 @@
 .leaflet-bottom .leaflet-control-zoom { @apply mb-8 overflow-hidden rounded-xl border border-stone-200 shadow-lg; }
 .leaflet-control-zoom a { width: 46px !important; height: 46px !important; line-height: 46px !important; color: #064e3b !important; }
 .leaflet-control-attribution { font-size: 10px !important; margin-right: 0 !important; padding-bottom: env(safe-area-inset-bottom) !important; }
-.leaflet-control-scale { margin-left: max(24px, env(safe-area-inset-left)) !important; margin-bottom: max(30px, env(safe-area-inset-bottom)) !important; }
+.leaflet-control-scale { margin-left: max(24px, env(safe-area-inset-left)) !important; margin-bottom: max(55px, env(safe-area-inset-bottom)) !important; }
 .leaflet-popup-content-wrapper { @apply rounded-xl; }
 .leaflet-popup-content { @apply text-xs leading-relaxed text-stone-700; }
 .leaflet-popup-content strong { @apply text-sm text-emerald-950; }
