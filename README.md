@@ -81,3 +81,6 @@ Tailwind CSS 4.3.3と公式Viteプラグインを導入。src/style.cssから読
 
 バス停のクリック／一覧選択で、右側のBusStopDrawer.tsxに名称・運行事業者・位置・出典を表示。閉じるボタンとEscに対応し、選択した地点を強調する。PCとスマホ幅で表示、地図上のクリックと開閉を確認済み。
 
+
+共通の右ドロワーはsrc/Drawer.tsx。title・eyebrow・description・children・onCloseを受け取り、枠・閉じるボタン・Esc・フォーカス復帰を担当する。BusStopDrawer.tsxはバス停固有の詳細内容のみを組み立てる。表示は親の条件付きレンダリングで制御する。
+
