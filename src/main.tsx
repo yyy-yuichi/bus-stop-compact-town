@@ -54,14 +54,14 @@ function App() {
   return (
     <main className="app relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950">
       <div className="map absolute inset-0 z-0 bg-stone-100" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
-      <header className="map-heading pointer-events-none absolute left-6 top-6 flex items-center gap-3 rounded-2xl border border-white bg-white/95 p-3 shadow-lg shadow-emerald-950/10 backdrop-blur-sm max-[600px]:left-3.5 max-[600px]:top-3.5 max-[600px]:gap-2">
-        <div className="brand-icon grid size-11 place-items-center rounded-xl bg-emerald-900 text-2xl font-semibold text-white max-[600px]:size-9 max-[600px]:text-xl" aria-hidden="true">町</div>
-        <div><p className="eyebrow mb-0.5 text-[9px] font-bold tracking-[0.2em] text-emerald-700">COMPACT TOWN</p><h1 className="text-lg font-bold tracking-wide max-[600px]:text-base">まちの地図</h1></div>
-        <span className="phase ml-4 border-l border-stone-200 px-4 text-xs text-stone-600 max-[600px]:hidden">山口県のバス停</span>
-      </header>
+      <a href={`${import.meta.env.BASE_URL}about.html`} aria-label="バス停と買い物マップ：このアプリについて"
+        className="map-heading absolute left-6 top-6 flex items-center gap-3 rounded-2xl border border-white bg-white/95 p-3 shadow-lg shadow-emerald-950/10 backdrop-blur-sm transition-colors hover:bg-sky-50 max-[600px]:left-3.5 max-[600px]:top-3.5 max-[600px]:gap-2">
+        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-emerald-900 text-2xl font-semibold text-white max-[600px]:size-9 max-[600px]:text-xl" aria-hidden="true">町</span>
+        <div><h1 className="text-lg font-bold max-[600px]:text-sm">バス停と買い物マップ</h1>
+          <p className="mt-1 text-xs font-medium text-sky-800">このアプリについて →</p></div>
+      </a>
       <BusStopLayer map={mapInstance} />
       <ShoppingLayer map={mapInstance} />
-      <a href={`${import.meta.env.BASE_URL}about.html`} className="absolute bottom-3 left-4 rounded-lg bg-white/95 px-3 py-2 text-[10px] text-sky-900 underline shadow-sm">この地図について・出典</a>
       {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
         {!offline && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={retry}>再読み込み</button>}

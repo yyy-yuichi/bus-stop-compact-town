@@ -3,12 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>この地図について | まちの地図</title>
+  <title>このアプリについて | バス停と買い物マップ</title>
   <style>body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.8 system-ui,sans-serif;color:#173e36;background:#f6f8f3}a{color:#174f9d}h1{font-size:26px}h2{font-size:20px;margin-top:32px}li{margin:8px 0}a:focus-visible{outline:3px solid #bd6b16}</style>
 </head>
 <body>
   <a href="./">← 地図へ戻る</a>
-  <h1>この地図について</h1>
+  <p style="font-size:13px;font-weight:700;color:#47685d">山口県の暮らしを、地図で見る</p>
+  <h1>バス停と買い物マップ</h1>
+  <p>バス停と買い物先の位置関係を見ながら、車に頼らない暮らしを考えるための試作アプリです。山口県内のバス停と商業施設を、ひとつの地図で確認できます。</p>
+  <h2>使い方</h2>
+  <ol>
+    <li>地図を移動・拡大して、気になる地域を探します。</li>
+    <li>青いバス停をクリックすると、右側に名称・運行事業者の登録情報・位置・出典を表示します。×ボタンかEscキーで閉じられます。</li>
+    <li>橙色の商業施設をクリックすると、施設名・住所・公式サイトなどを表示します。</li>
+    <li>「全体を表示」で、バス停全体が見える範囲に戻れます。</li>
+  </ol>
+  <h2>現在できること・これからのこと</h2>
+  <p>現在はバス停と商業施設の場所を見比べる機能が中心です。時刻表検索、乗換案内、徒歩経路、所要時間や徒歩到達圏の計算には対応していません。近くにバス停があっても、その施設へ実際に行けることを保証するものではありません。</p>
+  <h2>収録データ</h2>
   <p>山口県のバス停1,085地点と商業施設19件を表示する試作マップです。データ取り込み・施設情報照合日：2026年9月8日。</p>
   <h2>表示内容</h2>
   <p>青い点はバス停。橙色の実線の面は建物形状、破線の面は施設範囲、丸は施設代表点です。商業施設は県内全件を網羅していません。</p>
@@ -23,6 +35,6 @@
   <h2>通信について</h2>
   <p>地図画像をOpenStreetMapから取得するため、インターネット接続が必要です。外部サービスには通常の通信情報が送られます。このアプリ独自のアクセス解析、広告、現在地の取得はありません。公式サイトへのリンクを開くと外部サイトに移動します。</p>
   <h2>使用ライブラリ</h2>
-  <p><a href="third-party-notices.txt">React・React DOM・Leafletのライセンス表記</a></p>
+  <p><a href="third-party-notices.txt">使用ライブラリのライセンス表記</a></p>
 </body>
 </html>
