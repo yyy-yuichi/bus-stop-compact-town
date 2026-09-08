@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>この地図について | まちの地図</title>
+  <style>body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.8 system-ui,sans-serif;color:#173e36;background:#f6f8f3}a{color:#174f9d}h1{font-size:26px}h2{font-size:20px;margin-top:32px}li{margin:8px 0}a:focus-visible{outline:3px solid #bd6b16}</style>
+</head>
+<body>
+  <a href="./">← 地図へ戻る</a>
+  <h1>この地図について</h1>
+  <p>山口県のバス停1,085地点と商業施設19件を表示する試作マップです。データ取り込み・施設情報照合日：2026年9月8日。</p>
+  <h2>表示内容</h2>
+  <p>青い点はバス停。橙色の実線の面は建物形状、破線の面は施設範囲、丸は施設代表点です。商業施設は県内全件を網羅していません。</p>
+  <p>施設の名称・住所は公式サイトで照合しています。入口位置・現地精度・徒歩経路・時刻表は未確認です。表示位置を実際の入口や徒歩到達圏として利用しないでください。最新の営業情報・交通情報は各施設や交通事業者にご確認ください。</p>
+  <p>フジグラン岩国の代表点は、公式サイト・Googleマップとの位置照合で対応を推定したOSM無名建物の重心です。その他も元データの更新日時は現在の正確性を保証しません。</p>
+  <h2>出典とデータ</h2>
+  <p>地図画像・位置データ：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。データは<a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License（ODbL）1.0</a>に基づきます。施設ごとの公式サイト・OSM ID・照合日は地図の詳細とGeoJSONに記載しています。</p>
+  <ul>
+    <li><a href="data/bus_stop.geojson" download>バス停データ（GeoJSON）</a></li>
+    <li><a href="data/shopping.geojson" download>商業施設データ（GeoJSON）</a></li>
+  </ul>
+  <h2>通信について</h2>
+  <p>地図画像をOpenStreetMapから取得するため、インターネット接続が必要です。外部サービスには通常の通信情報が送られます。このアプリ独自のアクセス解析、広告、現在地の取得はありません。公式サイトへのリンクを開くと外部サイトに移動します。</p>
+  <h2>使用ライブラリ</h2>
+  <p><a href="third-party-notices.txt">React・React DOM・Leafletのライセンス表記</a></p>
+</body>
+</html>

@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './style.css';
+import ShoppingLayer from './ShoppingLayer.jsx';
 
 const INITIAL_VIEW = { center: [34.17, 131.58], zoom: 9 };
 const stopName = (feature) => feature.properties?.['name:ja'] || feature.properties?.name || '名称未登録';
@@ -20,6 +21,8 @@ function App() {
   const [loadAttempt, setLoadAttempt] = useState(0);
   const [tileError, setTileError] = useState(false);
   const [offline, setOffline] = useState(!navigator.onLine);
+  const [mapInstance, setMapInstance] = useState(null);
+  const [busVisible, setBusVisible] = useState(true);
 
   useEffect(() => {
     const map = L.map(container.current, {
@@ -30,6 +33,8 @@ function App() {
       preferCanvas: true,
     }).setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
     mapRef.current = map;
+    setMapInstance(map);
+    setBusVisible(true);
     L.control.zoom({ position: 'bottomright', zoomInTitle: '地図を拡大', zoomOutTitle: '地図を縮小' }).addTo(map);
     L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -119,11 +124,16 @@ function App() {
         <span aria-hidden="true">↺</span> 全体を表示
       </button>
       <section className="stop-panel" aria-label="バス停データ">
+        <label className="layer-switch"><input type="checkbox" checked={busVisible} disabled={dataState !== 'ready'} onChange={event => {
+          const show = event.target.checked; setBusVisible(show);
+          if (show) stopsRef.current?.addTo(mapRef.current);
+          else { stopsRef.current?.remove(); setSelected(''); }
+        }} /> 青：バス停を表示</label>
         <div role="status">{dataState === 'loading' ? 'バス停を読み込み中…' : dataState === 'error' ? 'バス停データを読み込めませんでした。' : `山口県 · ${stops.length.toLocaleString('ja-JP')}地点`}</div>
         {dataState === 'error' && <button onClick={() => setLoadAttempt(n => n + 1)}>データを再読み込み</button>}
         {dataState === 'ready' && <>
           <label htmlFor="stop-choice">バス停を選択</label>
-          <select id="stop-choice" value={selected} onChange={selectStop}>
+          <select id="stop-choice" value={selected} onChange={event => { setBusVisible(true); stopsRef.current?.addTo(mapRef.current); selectStop(event); }}>
             <option value="">地図の青い点、または一覧から選択</option>
             {stops.map(feature => { const id = String(feature.id || feature.properties?.['@id']); return <option key={id} value={id}>{stopName(feature)} · {id}</option>; })}
           </select>
@@ -133,6 +143,7 @@ function App() {
           {dataTimestamp && <span className="data-time">データ時点：{dataTimestamp}</span>}
         </p>
       </section>
+      <ShoppingLayer map={mapInstance} />
       {(offline || tileError) && <div className="notice" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
         {!offline && <button onClick={retry}>再読み込み</button>}

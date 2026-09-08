@@ -45,3 +45,14 @@ button:focus-visible, .leaflet-control a:focus-visible, .map:focus-visible { out
 .notice { top: auto; bottom: 90px; z-index: 2; }
 @media(max-width:600px) { .stop-panel { top: 88px; left: 14px; width: 290px; padding: 10px 12px; } .notice { top: auto; bottom: 185px; } }
 @media(max-height:520px) { .stop-panel { top: 90px; width: 280px; } .stop-panel p { display: none; } .hint { display: none; } }
+.layer-switch { display: flex !important; align-items: center; gap: 7px; min-height: 40px; margin: 0 !important; }
+.layer-switch input { width: 20px; height: 20px; accent-color: #174f9d; }
+.shopping-panel { position: absolute; right: 24px; top: 90px; width: 300px; max-width: calc(100% - 28px); padding: 12px; background: #fffaf2f5; border: 1px solid #b8793a; border-radius: 12px; color: #693305; font-size: 13px; }
+.shopping-panel summary { cursor: pointer; min-height: 24px; font-weight: 600; }
+.shopping-panel label { display: block; }
+.shopping-panel select, .shopping-panel button { width: 100%; min-height: 44px; margin-top: 5px; font: inherit; border: 1px solid #916f4d; border-radius: 6px; background: white; }
+.shopping-panel p, .shopping-panel a { font-size: 11px; line-height: 1.5; }
+.shopping-panel a { color: #174f9d; }
+.shopping-panel input { accent-color: #9c4600; }
+@media(max-width:600px) { .shopping-panel { left: 14px; right: auto; top: 314px; width: 290px; } .shopping-panel[open] { max-height: calc(100dvh - 420px); overflow-y: auto; } }
+@media(max-height:600px) { .stop-panel { max-height: calc(100dvh - 170px); overflow-y: auto; } .shopping-panel { top: auto; bottom: 22px; left: 14px; max-height: calc(100dvh - 110px); overflow-y: auto; } }
