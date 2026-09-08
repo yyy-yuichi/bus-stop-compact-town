@@ -71,8 +71,8 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     else map?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
   return <>
-      <button className="reset absolute right-6 top-6 flex min-h-12 items-center gap-2 rounded-xl border border-emerald-900/10 bg-emerald-900 px-4 text-xs font-semibold text-white shadow-lg shadow-emerald-950/15 transition-colors hover:bg-emerald-800 max-[600px]:right-3.5 max-[600px]:top-5 max-[600px]:px-3" onClick={reset} aria-label="山口県のバス停全体を表示">
-        <span aria-hidden="true">↺</span> 全体を表示
+      <button className="reset absolute right-6 top-6 flex h-11 w-11 items-center justify-center rounded-xl border border-stone-200 bg-white/95 text-xl text-emerald-900 shadow-sm hover:bg-emerald-50 max-[600px]:right-3.5 max-[600px]:top-5" onClick={reset} aria-label="山口県のバス停全体を表示" title="全体を表示">
+        <span aria-hidden="true">↺</span>
       </button>
       {failed && <button className="absolute left-4 top-28 rounded-xl bg-white p-3 text-sm text-red-800 shadow" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {!selectedStop && <button className="absolute left-6 top-28 z-[900] min-h-11 rounded-xl border border-stone-200 bg-white/95 px-3 text-xs font-semibold text-emerald-900 shadow-sm max-[600px]:left-3.5 max-[600px]:top-24" disabled={!walking.error && (!walking.data || !stops.length)} onClick={() => { if (walking.error) walking.retry(); else if (walking.data) setSelected(walking.data.graph.pilot_stops[0].id); }}>{walking.error ? '徒歩圏を再読み込み' : walking.data ? '徒歩圏を試す · サンパーク' : '徒歩圏を準備中…'}</button>}
