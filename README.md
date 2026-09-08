@@ -69,3 +69,6 @@ PC/スマホ幅で描画、一覧選択（紅葉橋）、詳細表示、全体�
 
 アプリはsrc/main.tsx・src/ShoppingLayer.tsx、共通データ型はsrc/types.ts、Vite設定はvite.config.ts。strictを有効にし、npm run typecheckで検査する。npm run buildとGitHub Actionsでも型検査を実行する。Node用のデータ検証スクリプトは既存の.mjsを利用する。
 
+
+バス停の読み込み・レイヤー・選択UI・全体表示はsrc/BusStopLayer.tsxへ分離。main.tsxは地図本体を初期化し、BusStopLayerとShoppingLayerへ同じmapを渡す。初期表示設定はsrc/mapConfig.tsで共有する。
+

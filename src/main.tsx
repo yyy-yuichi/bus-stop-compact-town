@@ -5,26 +5,15 @@ import 'leaflet/dist/leaflet.css';
 import './style.css';
 import ShoppingLayer from './ShoppingLayer';
 
-import type { BusCollection, BusFeature, LoadState } from './types';
-
-const INITIAL_VIEW = { center: [34.17, 131.58] as L.LatLngTuple, zoom: 9 };
-const stopName = (feature: Pick<BusFeature, 'properties'>) => feature.properties?.['name:ja'] || feature.properties?.name || '名称未登録';
+import BusStopLayer from './BusStopLayer';
+import { INITIAL_VIEW } from './mapConfig';
 
 function App() {
   const container = useRef<HTMLDivElement | null>(null);
-  const mapRef = useRef<L.Map | null>(null);
   const tilesRef = useRef<L.TileLayer | null>(null);
-  const stopsRef = useRef<L.GeoJSON | null>(null);
-  const markersRef = useRef(new Map<string, L.Layer>());
-  const [stops, setStops] = useState<BusFeature[]>([]);
-  const [dataState, setDataState] = useState<LoadState>('loading');
-  const [dataTimestamp, setDataTimestamp] = useState('');
-  const [selected, setSelected] = useState('');
-  const [loadAttempt, setLoadAttempt] = useState(0);
   const [tileError, setTileError] = useState(false);
   const [offline, setOffline] = useState(!navigator.onLine);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
-  const [busVisible, setBusVisible] = useState(true);
 
   useEffect(() => {
     if (!container.current) return;
@@ -35,9 +24,7 @@ function App() {
       worldCopyJump: true,
       preferCanvas: true,
     }).setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
-    mapRef.current = map;
     setMapInstance(map);
-    setBusVisible(true);
     L.control.zoom({ position: 'bottomright', zoomInTitle: '地図を拡大', zoomOutTitle: '地図を縮小' }).addTo(map);
     L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -47,41 +34,6 @@ function App() {
     tiles.on('tileerror', () => setTileError(true));
     tiles.addTo(map);
     tilesRef.current = tiles;
-    const abort = new AbortController();
-    setDataState('loading');
-    setStops([]);
-    setSelected('');
-    fetch(`${import.meta.env.BASE_URL}data/bus_stop.geojson`, { signal: abort.signal })
-      .then(response => { if (!response.ok) throw new Error('GeoJSON unavailable'); return response.json() as Promise<BusCollection>; })
-      .then(data => {
-        if (abort.signal.aborted) return;
-        if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length || data.features.some(f =>
-          f.geometry?.type !== 'Point' || !Array.isArray(f.geometry.coordinates) || f.geometry.coordinates.length !== 2 ||
-          !f.geometry.coordinates.every(Number.isFinite) || Math.abs(f.geometry.coordinates[0]) > 180 || Math.abs(f.geometry.coordinates[1]) > 90
-        )) throw new Error('Invalid GeoJSON');
-        const layer = L.geoJSON<BusFeature['properties']>(data, {
-          pointToLayer: (_feature, latlng) => L.circleMarker(latlng, { radius: 6, color: '#fff', weight: 2, fillColor: '#174f9d', fillOpacity: 0.9 }),
-          onEachFeature: (feature, marker) => {
-            const id = String(feature.id || feature.properties?.['@id']);
-            const content = document.createElement('div');
-            const heading = document.createElement('strong');
-            heading.textContent = stopName(feature);
-            content.append(heading);
-            for (const value of [feature.properties?.operator, `OSM ID: ${id}`, 'OSM由来の試用データ・正確性未確認']) {
-              if (!value) continue;
-              const line = document.createElement('p'); line.textContent = value; content.append(line);
-            }
-            marker.bindPopup(content);
-            marker.on('click', () => setSelected(id));
-            markersRef.current.set(id, marker);
-          },
-        }).addTo(map);
-        stopsRef.current = layer;
-        setStops(data.features);
-        setDataTimestamp(typeof data.timestamp === 'string' ? data.timestamp : '不明');
-        setDataState('ready');
-        map.fitBounds(layer.getBounds(), { paddingTopLeft: [24, 230], paddingBottomRight: [24, 100] });
-      }).catch(error => { if (error.name !== 'AbortError' && !abort.signal.aborted) setDataState('error'); });
     const resize = new ResizeObserver(() => map.invalidateSize());
     resize.observe(container.current);
     const onOffline = () => setOffline(true);
@@ -90,29 +42,13 @@ function App() {
     window.addEventListener('online', onOnline);
     return () => {
       resize.disconnect();
-      abort.abort();
-      markersRef.current.clear();
-      stopsRef.current = null;
       window.removeEventListener('offline', onOffline);
       window.removeEventListener('online', onOnline);
       map.remove();
-      mapRef.current = null;
       tilesRef.current = null;
     };
-  }, [loadAttempt]);
+  }, []);
 
-  const reset = () => {
-    setSelected('');
-    mapRef.current?.closePopup();
-    if (stopsRef.current) mapRef.current?.fitBounds(stopsRef.current.getBounds(), { paddingTopLeft: [24, 230], paddingBottomRight: [24, 100] });
-    else mapRef.current?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
-  };
-  const selectStop = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const id = event.target.value;
-    setSelected(id);
-    const marker = markersRef.current.get(id);
-    if (marker instanceof L.CircleMarker) { mapRef.current?.setView(marker.getLatLng(), 16); marker.openPopup(); }
-  };
   const retry = () => { setTileError(false); tilesRef.current?.redraw(); };
 
   return (
@@ -123,29 +59,7 @@ function App() {
         <div><p className="eyebrow">COMPACT TOWN</p><h1>まちの地図</h1></div>
         <span className="phase">山口県のバス停</span>
       </header>
-      <button className="reset" onClick={reset} aria-label="山口県のバス停全体を表示">
-        <span aria-hidden="true">↺</span> 全体を表示
-      </button>
-      <section className="stop-panel" aria-label="バス停データ">
-        <label className="layer-switch"><input type="checkbox" checked={busVisible} disabled={dataState !== 'ready'} onChange={event => {
-          const show = event.target.checked; setBusVisible(show);
-          if (show && mapRef.current) stopsRef.current?.addTo(mapRef.current);
-          else { stopsRef.current?.remove(); setSelected(''); }
-        }} /> 青：バス停を表示</label>
-        <div role="status">{dataState === 'loading' ? 'バス停を読み込み中…' : dataState === 'error' ? 'バス停データを読み込めませんでした。' : `山口県 · ${stops.length.toLocaleString('ja-JP')}地点`}</div>
-        {dataState === 'error' && <button onClick={() => setLoadAttempt(n => n + 1)}>データを再読み込み</button>}
-        {dataState === 'ready' && <>
-          <label htmlFor="stop-choice">バス停を選択</label>
-          <select id="stop-choice" value={selected} onChange={event => { setBusVisible(true); if (mapRef.current) stopsRef.current?.addTo(mapRef.current); selectStop(event); }}>
-            <option value="">地図の青い点、または一覧から選択</option>
-            {stops.map(feature => { const id = String(feature.id || feature.properties?.['@id']); return <option key={id} value={id}>{stopName(feature)} · {id}</option>; })}
-          </select>
-        </>}
-        <p>OSM由来の試用データ · 正確性未確認<br />
-          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
-          {dataTimestamp && <span className="data-time">データ時点：{dataTimestamp}</span>}
-        </p>
-      </section>
+      <BusStopLayer map={mapInstance} />
       <ShoppingLayer map={mapInstance} />
       {(offline || tileError) && <div className="notice" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
