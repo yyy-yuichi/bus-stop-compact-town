@@ -3,28 +3,31 @@ import { createRoot } from 'react-dom/client';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './style.css';
-import ShoppingLayer from './ShoppingLayer.jsx';
+import ShoppingLayer from './ShoppingLayer';
 
-const INITIAL_VIEW = { center: [34.17, 131.58], zoom: 9 };
-const stopName = (feature) => feature.properties?.['name:ja'] || feature.properties?.name || '名称未登録';
+import type { BusCollection, BusFeature, LoadState } from './types';
+
+const INITIAL_VIEW = { center: [34.17, 131.58] as L.LatLngTuple, zoom: 9 };
+const stopName = (feature: Pick<BusFeature, 'properties'>) => feature.properties?.['name:ja'] || feature.properties?.name || '名称未登録';
 
 function App() {
-  const container = useRef(null);
-  const mapRef = useRef(null);
-  const tilesRef = useRef(null);
-  const stopsRef = useRef(null);
-  const markersRef = useRef(new Map());
-  const [stops, setStops] = useState([]);
-  const [dataState, setDataState] = useState('loading');
+  const container = useRef<HTMLDivElement | null>(null);
+  const mapRef = useRef<L.Map | null>(null);
+  const tilesRef = useRef<L.TileLayer | null>(null);
+  const stopsRef = useRef<L.GeoJSON | null>(null);
+  const markersRef = useRef(new Map<string, L.Layer>());
+  const [stops, setStops] = useState<BusFeature[]>([]);
+  const [dataState, setDataState] = useState<LoadState>('loading');
   const [dataTimestamp, setDataTimestamp] = useState('');
   const [selected, setSelected] = useState('');
   const [loadAttempt, setLoadAttempt] = useState(0);
   const [tileError, setTileError] = useState(false);
   const [offline, setOffline] = useState(!navigator.onLine);
-  const [mapInstance, setMapInstance] = useState(null);
+  const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
   const [busVisible, setBusVisible] = useState(true);
 
   useEffect(() => {
+    if (!container.current) return;
     const map = L.map(container.current, {
       zoomControl: false,
       minZoom: 3,
@@ -49,14 +52,14 @@ function App() {
     setStops([]);
     setSelected('');
     fetch(`${import.meta.env.BASE_URL}data/bus_stop.geojson`, { signal: abort.signal })
-      .then(response => { if (!response.ok) throw new Error('GeoJSON unavailable'); return response.json(); })
+      .then(response => { if (!response.ok) throw new Error('GeoJSON unavailable'); return response.json() as Promise<BusCollection>; })
       .then(data => {
         if (abort.signal.aborted) return;
         if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length || data.features.some(f =>
           f.geometry?.type !== 'Point' || !Array.isArray(f.geometry.coordinates) || f.geometry.coordinates.length !== 2 ||
           !f.geometry.coordinates.every(Number.isFinite) || Math.abs(f.geometry.coordinates[0]) > 180 || Math.abs(f.geometry.coordinates[1]) > 90
         )) throw new Error('Invalid GeoJSON');
-        const layer = L.geoJSON(data, {
+        const layer = L.geoJSON<BusFeature['properties']>(data, {
           pointToLayer: (_feature, latlng) => L.circleMarker(latlng, { radius: 6, color: '#fff', weight: 2, fillColor: '#174f9d', fillOpacity: 0.9 }),
           onEachFeature: (feature, marker) => {
             const id = String(feature.id || feature.properties?.['@id']);
@@ -104,11 +107,11 @@ function App() {
     if (stopsRef.current) mapRef.current?.fitBounds(stopsRef.current.getBounds(), { paddingTopLeft: [24, 230], paddingBottomRight: [24, 100] });
     else mapRef.current?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
-  const selectStop = (event) => {
+  const selectStop = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const id = event.target.value;
     setSelected(id);
     const marker = markersRef.current.get(id);
-    if (marker) { mapRef.current.setView(marker.getLatLng(), 16); marker.openPopup(); }
+    if (marker instanceof L.CircleMarker) { mapRef.current?.setView(marker.getLatLng(), 16); marker.openPopup(); }
   };
   const retry = () => { setTileError(false); tilesRef.current?.redraw(); };
 
@@ -126,14 +129,14 @@ function App() {
       <section className="stop-panel" aria-label="バス停データ">
         <label className="layer-switch"><input type="checkbox" checked={busVisible} disabled={dataState !== 'ready'} onChange={event => {
           const show = event.target.checked; setBusVisible(show);
-          if (show) stopsRef.current?.addTo(mapRef.current);
+          if (show && mapRef.current) stopsRef.current?.addTo(mapRef.current);
           else { stopsRef.current?.remove(); setSelected(''); }
         }} /> 青：バス停を表示</label>
         <div role="status">{dataState === 'loading' ? 'バス停を読み込み中…' : dataState === 'error' ? 'バス停データを読み込めませんでした。' : `山口県 · ${stops.length.toLocaleString('ja-JP')}地点`}</div>
         {dataState === 'error' && <button onClick={() => setLoadAttempt(n => n + 1)}>データを再読み込み</button>}
         {dataState === 'ready' && <>
           <label htmlFor="stop-choice">バス停を選択</label>
-          <select id="stop-choice" value={selected} onChange={event => { setBusVisible(true); stopsRef.current?.addTo(mapRef.current); selectStop(event); }}>
+          <select id="stop-choice" value={selected} onChange={event => { setBusVisible(true); if (mapRef.current) stopsRef.current?.addTo(mapRef.current); selectStop(event); }}>
             <option value="">地図の青い点、または一覧から選択</option>
             {stops.map(feature => { const id = String(feature.id || feature.properties?.['@id']); return <option key={id} value={id}>{stopName(feature)} · {id}</option>; })}
           </select>
@@ -153,4 +156,8 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(<StrictMode><App /></StrictMode>);
+const root = document.getElementById('root');
+if (!root) throw new Error('Missing root element');
+createRoot(root).render(<StrictMode><App /></StrictMode>);
+
+

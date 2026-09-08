@@ -15,7 +15,7 @@
 ユーザー提供のsource-freshness-result-34167978019.zipと重複照合済み。添付は交通原資料7件の更新検査結果であり、今回の商業施設追加と対象・処理が異なる。詳細と未解決事項は施設状況一覧の末尾に記載。この検査の再実行やGTFSの自動採用は行っていない。
 
 19施設版と公開準備の設定をGitHubで管理。GitHub Pages公開済み：https://yyy-yuichi.github.io/bus-stop-compact-town/ 。公開用一式とソース一式は案件Driveへ保存する。
-バス停を中心としたコンパクトタウン。第一弾として、Vite + React + Leafletで全画面の地図SPAを実装。
+バス停を中心としたコンパクトタウン。第一弾として、Vite + React + TypeScript + Leafletで全画面の地図SPAを実装。
 
 ## 公開準備
 
@@ -63,4 +63,9 @@ DriveのZIPにはソース、package-lock.json、ビルド済みdistを保存。
 1,085地点すべてPointで座標形式・範囲を検証、ID重複なし。名称なし37地点は「名称未登録」で表示。同名・上下線などの別IDは統合しない。地図の青い点と一覧から選択でき、名称・運行事業者（登録がある場合）・OSM IDを表示する。属性はHTMLとして解釈せずテキストで表示。
 
 PC/スマホ幅で描画、一覧選択（紅葉橋）、詳細表示、全体表示への復帰を確認。ビルド成功、ブラウザー実行エラーなし。データ読込失敗時の再試行を実装（障害注入による動作検証は未実施）。デジタル庁デザインシステムへの準拠確認は今後の作業。
+
+
+## TypeScript
+
+アプリはsrc/main.tsx・src/ShoppingLayer.tsx、共通データ型はsrc/types.ts、Vite設定はvite.config.ts。strictを有効にし、npm run typecheckで検査する。npm run buildとGitHub Actionsでも型検査を実行する。Node用のデータ検証スクリプトは既存の.mjsを利用する。
 
