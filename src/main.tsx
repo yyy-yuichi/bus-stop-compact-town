@@ -29,7 +29,7 @@ function App() {
     L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      attribution: '&copy; <a className="text-[11px] text-sky-800 underline decoration-sky-300 underline-offset-2 hover:text-sky-950" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     });
     tiles.on('tileerror', () => setTileError(true));
     tiles.addTo(map);
@@ -52,20 +52,20 @@ function App() {
   const retry = () => { setTileError(false); tilesRef.current?.redraw(); };
 
   return (
-    <main className="app">
-      <div className="map" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
-      <header className="map-heading">
-        <div className="brand-icon" aria-hidden="true">町</div>
-        <div><p className="eyebrow">COMPACT TOWN</p><h1>まちの地図</h1></div>
-        <span className="phase">山口県のバス停</span>
+    <main className="app relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950">
+      <div className="map absolute inset-0 z-0 bg-stone-100" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
+      <header className="map-heading pointer-events-none absolute left-6 top-6 flex items-center gap-3 rounded-2xl border border-white bg-white/95 p-3 shadow-lg shadow-emerald-950/10 backdrop-blur-sm max-[600px]:left-3.5 max-[600px]:top-3.5 max-[600px]:gap-2">
+        <div className="brand-icon grid size-11 place-items-center rounded-xl bg-emerald-900 text-2xl font-semibold text-white max-[600px]:size-9 max-[600px]:text-xl" aria-hidden="true">町</div>
+        <div><p className="eyebrow mb-0.5 text-[9px] font-bold tracking-[0.2em] text-emerald-700">COMPACT TOWN</p><h1 className="text-lg font-bold tracking-wide max-[600px]:text-base">まちの地図</h1></div>
+        <span className="phase ml-4 border-l border-stone-200 px-4 text-xs text-stone-600 max-[600px]:hidden">山口県のバス停</span>
       </header>
       <BusStopLayer map={mapInstance} />
       <ShoppingLayer map={mapInstance} />
-      {(offline || tileError) && <div className="notice" role="status">
+      {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
-        {!offline && <button onClick={retry}>再読み込み</button>}
+        {!offline && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={retry}>再読み込み</button>}
       </div>}
-      <div className="hint"><span className="hint-dot" />ドラッグで移動 · ピンチ / ＋− で拡大縮小</div>
+      <div className="hint pointer-events-none absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-white bg-white/95 px-4 py-2.5 text-[11px] text-stone-600 shadow-sm max-[600px]:text-[10px] [@media(max-height:520px)]:hidden"><span className="hint-dot size-1.5 rounded-full bg-emerald-600" />ドラッグで移動 · ピンチ / ＋− で拡大縮小</div>
     </main>
   );
 }

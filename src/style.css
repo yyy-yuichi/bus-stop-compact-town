@@ -1,58 +1,33 @@
-:root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; color: #173e36; background: #e7ece4; font-synthesis: none; }
-* { box-sizing: border-box; }
-body { margin: 0; }
-html, body, #root { width: 100%; height: 100%; }
-.app { width: 100%; height: 100%; height: 100dvh; position: relative; overflow: hidden; }
-.map { position: absolute; inset: 0; z-index: 0; background: #e7ece4; }
-.map-heading { position: absolute; top: max(24px, env(safe-area-inset-top)); left: max(24px, env(safe-area-inset-left)); display: flex; gap: 13px; align-items: center; padding: 14px 18px 14px 14px; background: #fffffff2; border: 1px solid #ffffff; border-radius: 18px; box-shadow: 0 4px 24px #173e3614; pointer-events: none; }
-.brand-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; color: #fff; background: #173e36; font-size: 23px; font-weight: 600; }
-.eyebrow { margin: 0 0 4px; font-size: 9px; letter-spacing: 2px; font-weight: 700; }
-h1 { font-size: 19px; letter-spacing: 1px; margin: 0; font-weight: 650; }
-.phase { margin-left: 22px; padding-left: 22px; border-left: 1px solid #d8e1dc; font-size: 11px; color: #5a7068; }
-button { font: inherit; cursor: pointer; }
-.reset { position: absolute; top: max(26px, env(safe-area-inset-top)); right: max(24px, env(safe-area-inset-right)); height: 46px; padding: 0 16px; display: flex; align-items: center; gap: 7px; background: #fff; border: 1px solid #d6dfd8; border-radius: 12px; color: #173e36; font-size: 12px; box-shadow: 0 3px 18px #173e3612; }
-.reset span { font-size: 23px; }
-.reset:hover, .notice button:hover { background: #eff5ef; }
-button:focus-visible, .leaflet-control a:focus-visible, .map:focus-visible { outline: 3px solid #bd6b16; outline-offset: 3px; }
-.hint { position: absolute; bottom: max(30px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; white-space: nowrap; padding: 11px 15px; background: #ffffffed; border-radius: 30px; box-shadow: 0 3px 20px #173e3612; color: #486359; font-size: 11px; pointer-events: none; }
-.hint-dot { width: 6px; height: 6px; background: #43816a; border-radius: 50%; }
-.notice { position: absolute; left: 50%; top: 112px; transform: translateX(-50%); width: max-content; max-width: calc(100% - 32px); display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding: 12px 16px; background: #fff7e8; border: 1px solid #d9bd89; border-radius: 12px; color: #694215; font-size: 13px; }
-.notice button { min-height: 44px; background: #fff; border: 1px solid #a58959; border-radius: 8px; color: #694215; padding: 0 12px; }
+@import "tailwindcss";
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+}
+
+@layer base {
+  html, body, #root { @apply h-full w-full; }
+  body { @apply m-0 font-sans antialiased; }
+  button, select, summary { @apply cursor-pointer; }
+  button:disabled { @apply cursor-wait opacity-50; }
+  :where(button, select, input, summary, a, .map):focus-visible {
+    @apply outline-3 outline-offset-3 outline-amber-600;
+  }
+}
+
+/* Leaflet owns these DOM elements, so its controls are styled at this boundary. */
 .leaflet-right .leaflet-control { margin-right: max(24px, env(safe-area-inset-right)); }
-.leaflet-bottom .leaflet-control-zoom { margin-bottom: 32px; border: 1px solid #d6dfd8; border-radius: 13px; overflow: hidden; box-shadow: 0 3px 20px #173e3620; }
-.leaflet-control-zoom a { width: 46px !important; height: 46px !important; line-height: 46px !important; color: #173e36 !important; }
+.leaflet-bottom .leaflet-control-zoom { @apply mb-8 overflow-hidden rounded-xl border border-stone-200 shadow-lg; }
+.leaflet-control-zoom a { width: 46px !important; height: 46px !important; line-height: 46px !important; color: #064e3b !important; }
 .leaflet-control-attribution { font-size: 10px !important; margin-right: 0 !important; padding-bottom: env(safe-area-inset-bottom) !important; }
 .leaflet-control-scale { margin-left: max(24px, env(safe-area-inset-left)) !important; margin-bottom: max(30px, env(safe-area-inset-bottom)) !important; }
+.leaflet-popup-content-wrapper { @apply rounded-xl; }
+.leaflet-popup-content { @apply text-xs leading-relaxed text-stone-700; }
+.leaflet-popup-content strong { @apply text-sm text-emerald-950; }
+.leaflet-popup-content a { @apply underline underline-offset-2; }
+.leaflet-control a:focus-visible { @apply outline-3 -outline-offset-3 outline-amber-600; }
+
 @media (max-width: 600px) {
-  .map-heading { top: max(14px, env(safe-area-inset-top)); left: max(14px, env(safe-area-inset-left)); padding: 10px; gap: 9px; border-radius: 14px; }
-  .brand-icon { width: 36px; height: 36px; font-size: 20px; border-radius: 10px; }
-  h1 { font-size: 16px; }
-  .eyebrow { font-size: 8px; letter-spacing: 1px; }
-  .phase { display: none; }
-  .reset { top: max(20px, env(safe-area-inset-top)); right: max(14px, env(safe-area-inset-right)); padding: 0 10px; font-size: 11px; }
-  .hint { bottom: max(32px, env(safe-area-inset-bottom)); padding: 9px 12px; font-size: 10px; }
   .leaflet-control-scale { margin-bottom: max(77px, env(safe-area-inset-bottom)) !important; margin-left: 14px !important; }
   .leaflet-right .leaflet-control { margin-right: max(14px, env(safe-area-inset-right)); }
   .leaflet-bottom .leaflet-control-zoom { margin-bottom: max(83px, env(safe-area-inset-bottom)); }
-  .notice { top: 90px; }
 }
-.stop-panel { position: absolute; top: 112px; left: max(24px, env(safe-area-inset-left)); width: 330px; max-width: calc(100% - 28px); padding: 12px 14px; background: #fffffff5; border: 1px solid #d6dfd8; border-radius: 12px; font-size: 13px; box-shadow: 0 3px 20px #173e3612; }
-.stop-panel label { display: block; font-size: 12px; margin-top: 8px; }
-.stop-panel select, .stop-panel button { width: 100%; min-height: 44px; margin-top: 4px; border: 1px solid #688078; border-radius: 6px; background: white; color: #173e36; font: inherit; }
-.stop-panel p { margin: 8px 0 0; font-size: 11px; line-height: 1.5; }
-.stop-panel a { color: #174f9d; }
-.data-time { display: block; }
-.notice { top: auto; bottom: 90px; z-index: 2; }
-@media(max-width:600px) { .stop-panel { top: 88px; left: 14px; width: 290px; padding: 10px 12px; } .notice { top: auto; bottom: 185px; } }
-@media(max-height:520px) { .stop-panel { top: 90px; width: 280px; } .stop-panel p { display: none; } .hint { display: none; } }
-.layer-switch { display: flex !important; align-items: center; gap: 7px; min-height: 40px; margin: 0 !important; }
-.layer-switch input { width: 20px; height: 20px; accent-color: #174f9d; }
-.shopping-panel { position: absolute; right: 24px; top: 90px; width: 300px; max-width: calc(100% - 28px); padding: 12px; background: #fffaf2f5; border: 1px solid #b8793a; border-radius: 12px; color: #693305; font-size: 13px; }
-.shopping-panel summary { cursor: pointer; min-height: 24px; font-weight: 600; }
-.shopping-panel label { display: block; }
-.shopping-panel select, .shopping-panel button { width: 100%; min-height: 44px; margin-top: 5px; font: inherit; border: 1px solid #916f4d; border-radius: 6px; background: white; }
-.shopping-panel p, .shopping-panel a { font-size: 11px; line-height: 1.5; }
-.shopping-panel a { color: #174f9d; }
-.shopping-panel input { accent-color: #9c4600; }
-@media(max-width:600px) { .shopping-panel { left: 14px; right: auto; top: 314px; width: 290px; } .shopping-panel[open] { max-height: calc(100dvh - 420px); overflow-y: auto; } }
-@media(max-height:600px) { .stop-panel { max-height: calc(100dvh - 170px); overflow-y: auto; } .shopping-panel { top: auto; bottom: 22px; left: 14px; max-height: calc(100dvh - 110px); overflow-y: auto; } }

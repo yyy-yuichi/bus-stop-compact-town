@@ -76,27 +76,27 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
   };
 
   return <>
-      <button className="reset" onClick={reset} aria-label="山口県のバス停全体を表示">
+      <button className="reset absolute right-6 top-6 flex min-h-12 items-center gap-2 rounded-xl border border-emerald-900/10 bg-emerald-900 px-4 text-xs font-semibold text-white shadow-lg shadow-emerald-950/15 transition-colors hover:bg-emerald-800 max-[600px]:right-3.5 max-[600px]:top-5 max-[600px]:px-3" onClick={reset} aria-label="山口県のバス停全体を表示">
         <span aria-hidden="true">↺</span> 全体を表示
       </button>
-      <section className="stop-panel" aria-label="バス停データ">
-        <label className="layer-switch"><input type="checkbox" checked={busVisible} disabled={dataState !== 'ready'} onChange={event => {
+      <section className="stop-panel absolute left-6 top-28 w-[330px] max-w-[calc(100%-28px)] rounded-2xl border border-sky-200 bg-white/95 p-4 text-sm shadow-lg shadow-sky-950/10 backdrop-blur-sm max-[600px]:left-3.5 max-[600px]:top-[88px] max-[600px]:w-[290px] max-[600px]:p-3 [@media(max-height:600px)]:max-h-[calc(100dvh-170px)] [@media(max-height:600px)]:overflow-y-auto" aria-label="バス停データ">
+        <label className="layer-switch flex min-h-10 cursor-pointer items-center gap-2 text-xs font-semibold"><input className="size-5 shrink-0 accent-sky-700 disabled:cursor-wait disabled:opacity-50" type="checkbox" checked={busVisible} disabled={dataState !== 'ready'} onChange={event => {
           const show = event.target.checked; setBusVisible(show);
           if (show && map) stopsRef.current?.addTo(map);
           else { stopsRef.current?.remove(); setSelected(''); }
         }} /> 青：バス停を表示</label>
-        <div role="status">{dataState === 'loading' ? 'バス停を読み込み中…' : dataState === 'error' ? 'バス停データを読み込めませんでした。' : `山口県 · ${stops.length.toLocaleString('ja-JP')}地点`}</div>
-        {dataState === 'error' && <button onClick={() => setLoadAttempt(n => n + 1)}>データを再読み込み</button>}
+        <div className="mt-1 text-sm font-bold text-sky-900" role="status">{dataState === 'loading' ? 'バス停を読み込み中…' : dataState === 'error' ? 'バス停データを読み込めませんでした。' : `山口県 · ${stops.length.toLocaleString('ja-JP')}地点`}</div>
+        {dataState === 'error' && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={() => setLoadAttempt(n => n + 1)}>データを再読み込み</button>}
         {dataState === 'ready' && <>
-          <label htmlFor="stop-choice">バス停を選択</label>
-          <select id="stop-choice" value={selected} onChange={event => { setBusVisible(true); if (map) stopsRef.current?.addTo(map); selectStop(event); }}>
+          <label className="mt-2 block text-xs font-medium" htmlFor="stop-choice">バス停を選択</label>
+          <select className="mt-1 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-2 text-xs text-stone-800 shadow-sm transition-colors hover:border-emerald-600" id="stop-choice" value={selected} onChange={event => { setBusVisible(true); if (map) stopsRef.current?.addTo(map); selectStop(event); }}>
             <option value="">地図の青い点、または一覧から選択</option>
             {stops.map(feature => { const id = String(feature.id || feature.properties?.['@id']); return <option key={id} value={id}>{stopName(feature)} · {id}</option>; })}
           </select>
         </>}
-        <p>OSM由来の試用データ · 正確性未確認<br />
-          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
-          {dataTimestamp && <span className="data-time">データ時点：{dataTimestamp}</span>}
+        <p className="mt-2 text-[11px] leading-relaxed text-stone-600">OSM由来の試用データ · 正確性未確認<br />
+          <a className="text-[11px] text-sky-800 underline decoration-sky-300 underline-offset-2 hover:text-sky-950" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
+          {dataTimestamp && <span className="data-time mt-1 block text-[10px] text-stone-500">データ時点：{dataTimestamp}</span>}
         </p>
       </section>
   </>;

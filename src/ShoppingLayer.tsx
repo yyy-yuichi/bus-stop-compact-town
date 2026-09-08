@@ -83,19 +83,19 @@ export default function ShoppingLayer({ map }: { map: L.Map | null }) {
     item.openPopup();
   };
 
-  return <details className="shopping-panel" ref={panelRef}>
-    <summary>橙：商業施設 {status === 'ready' ? `${features.length}施設（試作）` : status === 'error' ? '読込エラー' : '読込中…'}</summary>
-    {status === 'error' && <button onClick={() => setAttempt(n => n + 1)}>商業施設を再読み込み</button>}
+  return <details className="shopping-panel absolute right-6 top-[90px] w-[300px] max-w-[calc(100%-28px)] rounded-2xl border border-amber-200 bg-amber-50/95 p-3 text-sm text-amber-950 shadow-lg shadow-amber-950/10 backdrop-blur-sm max-[600px]:left-3.5 max-[600px]:right-auto max-[600px]:top-[326px] max-[600px]:w-[290px] max-[600px]:open:max-h-[calc(100dvh-420px)] max-[600px]:open:overflow-y-auto [@media(max-height:600px)]:top-auto [@media(max-height:600px)]:bottom-[22px] [@media(max-height:600px)]:left-3.5 [@media(max-height:600px)]:max-h-[calc(100dvh-110px)] [@media(max-height:600px)]:overflow-y-auto [@media(max-height:600px)_and_(min-width:601px)]:left-auto [@media(max-height:600px)_and_(min-width:601px)]:right-3.5 [@media(max-height:600px)_and_(min-width:601px)]:top-[90px] [@media(max-height:600px)_and_(min-width:601px)]:bottom-auto" ref={panelRef}>
+    <summary className="min-h-8 cursor-pointer content-center text-xs font-bold marker:text-amber-700">橙：商業施設 {status === 'ready' ? `${features.length}施設（試作）` : status === 'error' ? '読込エラー' : '読込中…'}</summary>
+    {status === 'error' && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={() => setAttempt(n => n + 1)}>商業施設を再読み込み</button>}
     {status === 'ready' && <>
-      <label className="layer-switch"><input type="checkbox" checked={visible} onChange={e => setVisible(e.target.checked)} /> 商業施設を表示</label>
-      <label htmlFor="shopping-choice">商業施設を選択</label>
-      <select id="shopping-choice" value={selected} onChange={select}>
+      <label className="layer-switch flex min-h-10 cursor-pointer items-center gap-2 text-xs font-semibold"><input className="size-5 shrink-0 accent-amber-700 disabled:cursor-wait disabled:opacity-50" type="checkbox" checked={visible} onChange={e => setVisible(e.target.checked)} /> 商業施設を表示</label>
+      <label className="mt-2 block text-xs font-medium" htmlFor="shopping-choice">商業施設を選択</label>
+      <select className="mt-1 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-2 text-xs text-stone-800 shadow-sm transition-colors hover:border-emerald-600" id="shopping-choice" value={selected} onChange={select}>
         <option value="">施設を選ぶと拡大します</option>
         {features.map(f => <option key={f.id} value={f.id}>{f.properties.city} · {f.properties.name}</option>)}
       </select>
-      <p>県内全件ではありません。<br />実線の面：建物 ／ 破線の面：施設範囲<br />丸：施設代表点。入口位置・現地精度は未確認。<br />名称・住所を公式サイトと照合。</p>
-      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
-      <p><a href={`${import.meta.env.BASE_URL}about.html`}>この地図について・データ出典</a></p>
+      <p className="mt-2 text-[11px] leading-relaxed text-stone-600">県内全件ではありません。<br />実線の面：建物 ／ 破線の面：施設範囲<br />丸：施設代表点。入口位置・現地精度は未確認。<br />名称・住所を公式サイトと照合。</p>
+      <a className="text-[11px] text-sky-800 underline decoration-sky-300 underline-offset-2 hover:text-sky-950" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
+      <p className="mt-2 text-[11px] leading-relaxed text-stone-600"><a className="text-[11px] text-sky-800 underline decoration-sky-300 underline-offset-2 hover:text-sky-950" href={`${import.meta.env.BASE_URL}about.html`}>この地図について・データ出典</a></p>
     </>}
   </details>;
 }

@@ -72,3 +72,9 @@ PC/スマホ幅で描画、一覧選択（紅葉橋）、詳細表示、全体�
 
 バス停の読み込み・レイヤー・選択UI・全体表示はsrc/BusStopLayer.tsxへ分離。main.tsxは地図本体を初期化し、BusStopLayerとShoppingLayerへ同じmapを渡す。初期表示設定はsrc/mapConfig.tsで共有する。
 
+
+## Tailwind CSS
+
+Tailwind CSS 4.3.3と公式Viteプラグインを導入。src/style.cssから読み込み、各TSXのユーティリティクラスでパネル・ボタン・フォーム・レスポンシブ配置を指定する。Leafletが生成するコントロールとポップアップの調整はstyle.cssに集約。PC、スマホ縦横の配置を確認する。
+
+公式導入手順：https://tailwindcss.com/docs/installation/using-vite
