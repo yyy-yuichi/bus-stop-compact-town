@@ -75,12 +75,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
         <span aria-hidden="true">↺</span> 全体を表示
       </button>
       {failed && <button className="absolute left-4 top-28 rounded-xl bg-white p-3 text-sm text-red-800 shadow" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
-      {!selectedStop && <section className="walking-intro absolute bottom-24 left-6 z-[900] w-80 max-w-[calc(100%-100px)] rounded-2xl border border-white bg-white/95 p-5 shadow-xl shadow-emerald-950/15 max-[600px]:bottom-24 max-[600px]:left-3.5 max-[600px]:p-4">
-        <p className="text-[10px] font-bold tracking-widest text-emerald-700">バス停から、歩いて買い物へ</p>
-        <h2 className="mt-2 text-lg font-bold">徒歩5分・10分のまち</h2>
-        <p className="mt-2 text-xs leading-relaxed text-stone-600">バス停を選ぶと、歩ける道路と買い物候補が分かります。まずはおのだサンパーク周辺で。</p>
-        {walking.error ? <button className="mt-4 min-h-12 w-full rounded-xl border border-amber-300 bg-amber-50 text-sm" onClick={walking.retry}>徒歩圏データを再読み込み</button> : <button disabled={!walking.data || !stops.length} className="mt-4 min-h-12 w-full rounded-xl bg-emerald-900 text-sm font-bold text-white hover:bg-emerald-800" onClick={() => { if (walking.data) setSelected(walking.data.graph.pilot_stops[0].id); }}>{walking.data ? 'おのだサンパーク周辺で試す →' : '徒歩圏を準備中…'}</button>}
-      </section>}
+      {!selectedStop && <button className="absolute left-6 top-28 z-[900] min-h-11 rounded-xl border border-stone-200 bg-white/95 px-3 text-xs font-semibold text-emerald-900 shadow-sm max-[600px]:left-3.5 max-[600px]:top-24" disabled={!walking.error && (!walking.data || !stops.length)} onClick={() => { if (walking.error) walking.retry(); else if (walking.data) setSelected(walking.data.graph.pilot_stops[0].id); }}>{walking.error ? '徒歩圏を再読み込み' : walking.data ? '徒歩圏を試す · サンパーク' : '徒歩圏を準備中…'}</button>}
       {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer}>
         <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} onSelect={setSelected} />
       </BusStopDrawer>}
