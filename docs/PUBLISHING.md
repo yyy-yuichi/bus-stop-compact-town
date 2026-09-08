@@ -33,6 +33,7 @@ npm run preview
 
 地図タイルはOpenStreetMapの外部サービスです。通常表示だけで利用し、一括取得・先読み・オフライン保存は実装していません。利用が増える場合はタイル提供条件と配信基盤を改めて検討してください。
 
-実際の公開先設定、ドメイン設定、公開操作、公開URLでの確認は未実施です。
+2026-09-08にGitHub Pagesへ公開し、公開URLで表示を確認済みです。URL：https://yyy-yuichi.github.io/bus-stop-compact-town/ 。独自ドメインは設定していません。
 
 参考：[Vite公式の静的配置手順](https://vite.dev/guide/static-deploy.html)
+

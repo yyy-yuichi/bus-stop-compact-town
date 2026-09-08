@@ -20,8 +20,9 @@
 
 - 県内施設の網羅調査、入口・徒歩経路・現地精度の確認。今回調べた19施設の登録保留は0件だが、県内全件の調査完了ではない。
 - スマホ実機のタッチ操作、通信障害からの復旧、アクセシビリティ等の追加確認。
-- GitHub Pagesの公開。現時点でリポジトリは非公開で、現在のプランではこの非公開リポジトリのPages設定が拒否される。一般公開への変更は未実施。公開URLはまだない。
+- GitHub Pagesはユーザーの一般公開承認後に公開済み：https://yyy-yuichi.github.io/bus-stop-compact-town/ 。リポジトリも公開済み。公開先で19施設の読み込み・選択・詳細表示と実行エラーがないことを確認。
 
 [GitHub Pagesの設定状況](GITHUB-PAGES.md)・[静的サイト公開手順](PUBLISHING.md)を参照。通常のpushでは公開されず、Pagesのworkflowは手動実行する。
 
 正式保存先は [案件Google Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。ソース一式と公開用一式を分けて保存する。
+

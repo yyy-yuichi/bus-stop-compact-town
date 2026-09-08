@@ -6,10 +6,11 @@
 
 公開処理は `.github/workflows/pages.yml` の手動実行 `Publish project to GitHub Pages` に用意した。通常のpushでは検証・ビルドのみが実行される。
 
-2026-09-08時点ではリポジトリは非公開。GitHub Pages設定APIが「現在のプランではこのリポジトリのPagesをサポートしない」と応答し、Pagesは未作成・未公開。
+2026-09-08、ユーザーの一般公開承認を受けてリポジトリを公開へ変更し、GitHub Pagesへ配信した。
 
-進め方は、リポジトリを公開へ変更するか、非公開リポジトリでPagesを利用できるGitHubプランへ変更すること。リポジトリの公開化はWebアプリだけでなく、ソース・README・調査資料・コミット履歴も外部から閲覧可能にするため、ユーザーの明示承認後に実施する。
+公開URL：https://yyy-yuichi.github.io/bus-stop-compact-town/
 
-利用可能になったらPagesのビルド方式をGitHub Actionsに設定し、このworkflowを実行。返されたPages URLと成功状態を確認して共有する。
+公開処理：https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34175170184 （成功）。公開先で19施設の読み込み、施設選択と詳細表示を確認し、ブラウザー実行エラーなし。
 
 Sitesは利用しない。試行時に登録したSitesプロジェクトは非公開・未配信のままで、`.openai/hosting.json` はその試行の記録。現行の公開先指定はGitHub Pagesを優先する。
+
