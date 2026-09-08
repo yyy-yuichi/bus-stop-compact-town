@@ -1,13 +1,15 @@
 import { useEffect, useRef } from 'react';
+import type { ReactNode } from 'react';
 import type { BusFeature } from './types';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
   timestamp: string;
   onClose: () => void;
+  children?: ReactNode;
 }
 
-export default function BusStopDrawer({ stop, timestamp, onClose }: BusStopDrawerProps) {
+export default function BusStopDrawer({ stop, timestamp, onClose, children }: BusStopDrawerProps) {
   const drawerRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const name = stop.properties?.['name:ja'] || stop.properties?.name || '名称未登録';
@@ -40,7 +42,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose }: BusStopDrawe
       <div className="min-w-0">
         <p className="mb-2 text-[10px] font-bold tracking-[0.18em] text-sky-700">BUS STOP</p>
         <h2 id="bus-drawer-title" className="break-words text-xl font-bold leading-relaxed text-sky-950">{name}</h2>
-        <p className="mt-1 text-xs text-sky-800">バス停の詳細</p>
+        <p className="mt-1 text-xs text-sky-800">このバス停を起点に、まちを見る</p>
       </div>
       <button ref={closeRef} onClick={onClose} aria-label="バス停の詳細を閉じる"
         className="grid size-11 shrink-0 place-items-center rounded-full border border-sky-200 bg-white text-xl text-sky-950 hover:bg-sky-100">
@@ -48,6 +50,9 @@ export default function BusStopDrawer({ stop, timestamp, onClose }: BusStopDrawe
       </button>
     </header>
     <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-6 pb-[max(24px,env(safe-area-inset-bottom))]">
+      {children}
+      <details className="border-t border-stone-200 pt-4">
+      <summary className="mb-5 min-h-11 py-2 text-sm font-semibold text-stone-600">バス停の登録情報・出典</summary>
       <dl className="space-y-6 text-sm">
         <div><dt className="text-xs font-semibold text-stone-500">運行事業者（OSM登録情報）</dt>
           <dd className="mt-2 break-words font-medium text-stone-900">{stop.properties?.operator || '登録情報なし'}</dd></div>
@@ -63,6 +68,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose }: BusStopDrawe
         <p className="mt-2 break-all">データ時点：{timestamp || '不明'}</p>
         <a className="mt-3 inline-block text-sky-800 underline underline-offset-2" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors / ODbL</a>
       </div>
+      </details>
     </div>
   </aside>;
 }

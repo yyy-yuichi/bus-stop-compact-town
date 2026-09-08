@@ -53,7 +53,7 @@ function App() {
   const retry = () => { setTileError(false); tilesRef.current?.redraw(); };
 
   return (
-    <main className="app relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950">
+    <main className={`app ${busSelected ? 'app-with-selection' : ''} relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950`}>
       <div className="map absolute inset-0 z-0 bg-stone-100" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
       <a href={`${import.meta.env.BASE_URL}about.html`} aria-label="バス停と買い物マップ：このアプリについて"
         className="map-heading absolute left-6 top-6 flex items-center gap-3 rounded-2xl border border-white bg-white/95 p-3 shadow-lg shadow-emerald-950/10 backdrop-blur-sm transition-colors hover:bg-sky-50 max-[600px]:left-3.5 max-[600px]:top-3.5 max-[600px]:gap-2">
@@ -74,5 +74,4 @@ function App() {
 const root = document.getElementById('root');
 if (!root) throw new Error('Missing root element');
 createRoot(root).render(<StrictMode><App /></StrictMode>);
-
 

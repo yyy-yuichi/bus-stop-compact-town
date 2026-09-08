@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:walking": "node scripts/test-walking.mjs",
     "dev": "vite --host 127.0.0.1",
     "validate": "node scripts/validate-shopping.mjs",
     "build": "npm run typecheck && npm run validate && vite build",

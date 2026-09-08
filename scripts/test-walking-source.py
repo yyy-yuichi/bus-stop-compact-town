@@ -1,0 +1,18 @@
+import importlib.util
+from pathlib import Path
+p=Path(__file__).with_name('build-walking-pilot.py')
+spec=importlib.util.spec_from_file_location('builder',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+assert m.can_walk({'highway':'residential'})
+assert not m.can_walk({'highway':'residential','foot':'no'})
+assert not m.can_walk({'highway':'service','access':'private'})
+assert m.can_walk({'highway':'service','access':'private','foot':'yes'})
+assert not m.can_walk({'highway':'motorway'})
+assert not m.can_walk({'highway':'trunk'})
+assert m.can_walk({'highway':'trunk','foot':'yes'})
+assert not m.can_walk({'highway':'footway','foot:conditional':'yes @ (sunrise-sunset)'})
+assert not m.can_walk({'highway':'pedestrian','area':'yes'})
+assert not m.node_open({'barrier':'fence'})
+assert not m.node_open({'barrier':'gate','access':'private'})
+assert m.node_open({'barrier':'gate','foot':'yes'})
+assert m.node_open({'barrier':'bollard'})
+print('Walking source access and barrier checks passed (13 assertions).')

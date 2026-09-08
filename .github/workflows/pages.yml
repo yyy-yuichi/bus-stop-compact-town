@@ -22,6 +22,8 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: npm run test:walking
+      - run: python3 scripts/test-walking-source.py
       - run: npm run build
       - run: node scripts/verify-release.mjs
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
