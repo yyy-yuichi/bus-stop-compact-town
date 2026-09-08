@@ -78,3 +78,6 @@ PC/スマホ幅で描画、一覧選択（紅葉橋）、詳細表示、全体�
 Tailwind CSS 4.3.3と公式Viteプラグインを導入。src/style.cssから読み込み、各TSXのユーティリティクラスでパネル・ボタン・フォーム・レスポンシブ配置を指定する。Leafletが生成するコントロールとポップアップの調整はstyle.cssに集約。PC、スマホ縦横の配置を確認する。
 
 公式導入手順：https://tailwindcss.com/docs/installation/using-vite
+
+バス停のクリック／一覧選択で、右側のBusStopDrawer.tsxに名称・運行事業者・位置・出典を表示。閉じるボタンとEscに対応し、選択した地点を強調する。PCとスマホ幅で表示、地図上のクリックと開閉を確認済み。
+

@@ -1,7 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import type { BusCollection, BusFeature, LoadState } from './types';
 import { INITIAL_VIEW } from './mapConfig';
+import BusStopDrawer from './BusStopDrawer';
 
 const stopName = (feature: Pick<BusFeature, 'properties'>) => feature.properties?.['name:ja'] || feature.properties?.name || '名称未登録';
 
@@ -35,16 +36,7 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
           pointToLayer: (_feature, latlng) => L.circleMarker(latlng, { radius: 6, color: '#fff', weight: 2, fillColor: '#174f9d', fillOpacity: 0.9 }),
           onEachFeature: (feature, marker) => {
             const id = String(feature.id || feature.properties?.['@id']);
-            const content = document.createElement('div');
-            const heading = document.createElement('strong');
-            heading.textContent = stopName(feature);
-            content.append(heading);
-            for (const value of [feature.properties?.operator, `OSM ID: ${id}`, 'OSM由来の試用データ・正確性未確認']) {
-              if (!value) continue;
-              const line = document.createElement('p'); line.textContent = value; content.append(line);
-            }
-            marker.bindPopup(content);
-            marker.on('click', () => setSelected(id));
+            marker.on('click', () => { map.closePopup(); setSelected(id); });
             markersRef.current.set(id, marker);
           },
         }).addTo(map);
@@ -62,6 +54,16 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
     };
   }, [map, loadAttempt]);
 
+  const closeDrawer = useCallback(() => setSelected(''), []);
+  const selectedStop = stops.find(feature => String(feature.id || feature.properties?.['@id']) === selected);
+
+  useEffect(() => {
+    const marker = markersRef.current.get(selected);
+    if (!(marker instanceof L.CircleMarker)) return;
+    marker.setRadius(10).setStyle({ fillColor: '#0284c7', weight: 3 }).bringToFront();
+    return () => { marker.setRadius(6).setStyle({ fillColor: '#174f9d', weight: 2 }); };
+  }, [selected]);
+
   const reset = () => {
     setSelected('');
     map?.closePopup();
@@ -72,7 +74,7 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
     const id = event.target.value;
     setSelected(id);
     const marker = markersRef.current.get(id);
-    if (marker instanceof L.CircleMarker) { map?.setView(marker.getLatLng(), 16); marker.openPopup(); }
+    if (marker instanceof L.CircleMarker) { map?.setView(marker.getLatLng(), 16); map?.closePopup(); }
   };
 
   return <>
@@ -99,5 +101,6 @@ export default function BusStopLayer({ map }: { map: L.Map | null }) {
           {dataTimestamp && <span className="data-time mt-1 block text-[10px] text-stone-500">データ時点：{dataTimestamp}</span>}
         </p>
       </section>
+      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} />}
   </>;
 }
