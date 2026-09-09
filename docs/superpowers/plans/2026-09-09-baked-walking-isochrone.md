@@ -36,8 +36,9 @@
 - **総リクエスト数に上限を設ける。** 上限に達したら中断する。
   実装の誤りが取得の洪水に化けるのを防ぐ
 - **429・5xx のみ、間隔を指数的に空けて最大3回まで。** それ以外は再試行せず失敗させる
-- **User-Agent でツールを名乗る。** 既定の `Python-urllib/…` のままだと
-  拒否されることがあり、相手側でも識別できない
+- **User-Agent は既定のままでよい。** 国土地理院の標高タイルは素の `urllib` で
+  問題なく応答する（本設計中に14タイルで確認済み）。
+  通らない相手にわざわざ名乗って通しにいかない
 - **CIでは絶対に取得しない。** CIが走るたびに外部へ出ていくことになる
 - **Geofabrikのファイルは1日1回しか更新されない。** 手元にあれば再取得しない
 
@@ -656,13 +657,10 @@ import urllib.error
 import time
 
 GSI_TILES = (('dem5a', 15), ('dem', 14))   # DEM5A(5mメッシュ) を優先し、欠測は DEM10B で埋める
-# 既定の Python-urllib のままだと拒否されることがある。ツール名を名乗る。
-USER_AGENT = 'bus-stop-compact-town/0.1'
 RETRY_CODES = {429, 500, 502, 503, 504}
 
 def http_text(url, timeout=60):
-    request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-    return urllib.request.urlopen(request, timeout=timeout).read().decode()
+    return urllib.request.urlopen(url, timeout=timeout).read().decode()
 
 def tile_index(lon, lat, z):
     """経緯度から (タイルX, タイルY, タイル内の列, タイル内の行) を返す。"""
@@ -1157,17 +1155,29 @@ if __name__ == '__main__':
 
 - [ ] **Step 5: PBFを取得して実行する**
 
-**Geofabrikのファイルは1日1回しか更新されない。手元にあれば取り直さない。**
+**このダウンロードは人が行う。スクリプトからは取得しない。**
+Geofabrikのファイルは1日1回しか更新されず、224MBある。自動で取りに行く理由がない。
 
-Run:
+取得先（人が1回だけ実行する）:
+```
+https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
+```
+
 ```bash
 mkdir -p work
-test -f work/chugoku-latest.osm.pbf || curl -L --fail -o work/chugoku-latest.osm.pbf \
+curl -L --fail -o work/chugoku-latest.osm.pbf \
   https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
 ls -lh work/chugoku-latest.osm.pbf
-python3 scripts/extract-roads.py work/chugoku-latest.osm.pbf
 ```
-Expected: 224MB前後のファイルが1つ。`ways` が10万件前後、`nodes` が100万件前後。処理は数分
+
+ファイルが置かれたら抽出する。
+
+Run: `python3 scripts/extract-roads.py work/chugoku-latest.osm.pbf`
+Expected: 224MB前後のファイルを読み、`ways` が10万件前後、`nodes` が100万件前後。処理は数分
+
+`extract-roads.py` は**ダウンロードを行わない。** 引数のローカルファイルが無ければ
+そのまま失敗させること。同じファイルを2周する（1周目でwayと必要なノードIDを集め、
+2周目でノードの座標とタグを拾う）が、どちらもローカル読み込みで通信は発生しない。
 
 `extract-roads.py` は同じファイルを2周する（1周目でwayと必要なノードIDを集め、
 2周目でノードの座標とタグを拾う）。**どちらもローカルファイルの読み込みであり、
