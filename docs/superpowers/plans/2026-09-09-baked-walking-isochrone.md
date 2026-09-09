@@ -36,7 +36,8 @@
 - **総リクエスト数に上限を設ける。** 上限に達したら中断する。
   実装の誤りが取得の洪水に化けるのを防ぐ
 - **429・5xx のみ、間隔を指数的に空けて最大3回まで。** それ以外は再試行せず失敗させる
-- **User-Agent に連絡先を含める。** 匿名で大量取得しない
+- **User-Agent でツールを名乗る。** 既定の `Python-urllib/…` のままだと
+  拒否されることがあり、相手側でも識別できない
 - **CIでは絶対に取得しない。** CIが走るたびに外部へ出ていくことになる
 - **Geofabrikのファイルは1日1回しか更新されない。** 手元にあれば再取得しない
 
@@ -559,7 +560,7 @@ git commit -m "Bake per-stop catchments with band and budget invariants"
   - `tile_index(lon, lat, z) -> (x, y, px, py)` / `parse_tile(text) -> list[list[float|None]]`
 
 **取得の作法:** 逐次・1秒間隔・ディスクキャッシュ・総数上限・
-429と5xxのみ最大3回の指数バックオフ・連絡先入りUser-Agent。Global Constraintsを実装へ落とす。
+429と5xxのみ最大3回の指数バックオフ。Global Constraintsを実装へ落とす。
 
 - [ ] **Step 1: 失敗するテストを書く**
 
@@ -655,8 +656,8 @@ import urllib.error
 import time
 
 GSI_TILES = (('dem5a', 15), ('dem', 14))   # DEM5A(5mメッシュ) を優先し、欠測は DEM10B で埋める
-# 連絡先を含めること。匿名で公開サービスから大量に取得しない。
-USER_AGENT = 'bus-stop-compact-town/0.1 (UDC2026 walking catchment; https://github.com/gunsow/bus-stop-compact-town)'
+# 既定の Python-urllib のままだと拒否されることがある。ツール名を名乗る。
+USER_AGENT = 'bus-stop-compact-town/0.1'
 RETRY_CODES = {429, 500, 502, 503, 504}
 
 def http_text(url, timeout=60):
