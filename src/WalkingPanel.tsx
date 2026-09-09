@@ -1,8 +1,25 @@
 import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import type { ShoppingCollection, ShoppingFeature } from './types';
-import { catchmentFile, parseCatchment, reachableLines } from './walking';
-import type { Catchment, Coordinate } from './walking';
+import { catchmentFile, interpolate, parseCatchment, reachableLines } from './walking';
+import type { Catchment, Coordinate, Segment } from './walking';
+
+/**
+ * 選択中の徒歩時間帯（budget）の範囲だけを残して、急坂セグメントを切り出す。
+ * reachableLines と同じ按分ロジックだが、勾配・方向の情報を保つために別実装にしている。
+ */
+function steepLines(segments: Segment[], budget: number, min: number, max: number): Coordinate[][] {
+  const lines: Coordinate[][] = [];
+  for (const { a, b, d1, d2, grade } of segments) {
+    const g = Math.abs(grade);
+    if (g < min || g >= max) continue;
+    if (d1 > budget && d2 > budget) continue;
+    if (d1 <= budget && d2 <= budget) { lines.push([a, b]); continue; }
+    const t = (budget - d1) / (d2 - d1);
+    lines.push(d1 <= budget ? [a, interpolate(a, b, t)] : [interpolate(a, b, t), b]);
+  }
+  return lines;
+}
 
 export function useWalkingData() {
   const [facilities, setFacilities] = useState<ShoppingFeature[] | null>(null);
@@ -76,20 +93,28 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
 }) {
   const [minutes, setMinutes] = useState<5 | 10 | 15>(10);
   const [speed, setSpeed] = useState(4);
+  const [showSteep, setShowSteep] = useState(false);
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id);
 
   useEffect(() => {
     if (!map || !catchment) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
+    const budget = speed * 1000 / 60 * minutes;
     const bands = ([[15, '#b45309'], [10, '#c47b13'], [5, '#047857']] as const).filter(([n]) => n <= minutes);
     for (const [n, color] of bands) {
       L.polyline(reachableLines(catchment, speed * 1000 / 60 * n).map(toLatLng), { color, weight: 7, opacity: 0.9, interactive: false }).addTo(group);
     }
+    if (showSteep) {
+      // 帯の色（残り時間）の上に急坂を重ねる。5%はバリアフリー道路の縦断勾配の上限、
+      // 8%は手動車いすの自走限界の目安。選択中の時間帯（budget）の外は塗らない。
+      L.polyline(steepLines(catchment.segments, budget, 5, 8).map(toLatLng), { color: '#dc2626', weight: 4, dashArray: '1 6', lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
+      L.polyline(steepLines(catchment.segments, budget, 8, Infinity).map(toLatLng), { color: '#7f1d1d', weight: 5, opacity: 1, interactive: false }).addTo(group);
+    }
     L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
     return () => { group.remove(); };
-  }, [map, catchment, speed, minutes, origin]);
+  }, [map, catchment, speed, minutes, origin, showSteep]);
 
   useEffect(() => {
     if (!map || !catchment) return;
@@ -120,10 +145,16 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
           <option value={4}>ふつう · 時速4km</option><option value={3}>ゆっくり · 時速3km</option>
         </select>
       </label>
+      <label className="mt-2 flex min-h-11 items-center gap-2 text-xs text-stone-600">
+        <input type="checkbox" checked={showSteep} onChange={e => setShowSteep(e.target.checked)} className="h-4 w-4" />
+        急坂を表示
+      </label>
       <div className="mt-3 flex flex-wrap gap-3 text-[11px] text-stone-600">
         <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-emerald-700" />5分以内</span>
         {minutes >= 10 && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-amber-600" />5〜10分</span>}
         {minutes === 15 && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-amber-700" />10〜15分</span>}
+        {showSteep && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full" style={{ background: 'repeating-linear-gradient(90deg, #dc2626 0 3px, transparent 3px 6px)' }} />勾配5%以上（バリアフリー道路の基準超）</span>}
+        {showSteep && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-red-900" />勾配8%以上（車いす自走の限界目安超）</span>}
       </div>
       {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : (
         // ponytail: 買い物候補（reachFacility・坂/階段の警告・候補カード）は
