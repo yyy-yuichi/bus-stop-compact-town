@@ -290,3 +290,25 @@ m.apply_grades(g, FakeElevation({0.0: 0.0, round(100.0 * DEG, 9): 50.0}))
 assert g['edges'][0][m.GRADE] == 0, g['edges'][0][m.GRADE]
 
 print('subdivide and grade checks passed (14 assertions).')
+
+# 索引を使っても使わなくても、同じ最寄り区間を返さなければならない。
+g = m.load_pilot_graph(ROOT / 'public/data/walking-onoda.json')
+grid = m.GridIndex(g)
+for stop in pilot['pilot_stops']:
+    lon, lat = stop['coordinate']
+    slow = m.nearest_edge(g, lon, lat, 30.0)
+    fast = m.nearest_edge(g, lon, lat, 30.0, grid)
+    assert (slow is None) == (fast is None), stop['name']
+    if slow:
+        assert abs(slow[3] - fast[3]) < 1e-9, stop['name']
+
+# マスより長い区間でも、その中ほどから見つかる。
+long_edge = {'nodes': [[131.0, 33.0], [131.2, 33.0]],
+             'edges': [[0, 1, 18000.0, True, True, 'w', 0, False, False]]}
+mid = m.GridIndex(long_edge)
+assert mid.candidates(131.1, 33.0) == {0}
+
+# 遠すぎれば見つからない。
+assert m.nearest_edge(g, 131.0, 33.0, 30.0, grid) is None
+
+print('grid index checks passed (over 15 assertions).')

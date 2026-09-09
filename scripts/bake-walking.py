@@ -344,6 +344,33 @@ def apply_grades(graph, elevation, clamp=0.30):
         grade = max(-clamp, min(clamp, (hb - ha) / e[LEN]))
         e[GRADE] = round(grade * 100)
 
+class GridIndex:
+    """区間を約500m四方のマスへ仕分ける。検索半径が30mに固定なので3x3で必ず足りる。
+
+    北緯34度では経度1度が約92km、緯度1度が約111km。
+    """
+
+    def __init__(self, graph, cell_lon=0.0055, cell_lat=0.0045):
+        self.cell_lon = cell_lon
+        self.cell_lat = cell_lat
+        self.cells = {}
+        for i, e in enumerate(graph['edges']):
+            pa, pb = graph['nodes'][e[A]], graph['nodes'][e[B]]
+            # マスより長い区間があるため、外接矩形が触れる全マスへ登録する。
+            x0, x1 = sorted((int(pa[0] / cell_lon), int(pb[0] / cell_lon)))
+            y0, y1 = sorted((int(pa[1] / cell_lat), int(pb[1] / cell_lat)))
+            for x in range(x0, x1 + 1):
+                for y in range(y0, y1 + 1):
+                    self.cells.setdefault((x, y), []).append(i)
+
+    def candidates(self, lon, lat):
+        cx, cy = int(lon / self.cell_lon), int(lat / self.cell_lat)
+        found = set()
+        for x in range(cx - 1, cx + 2):
+            for y in range(cy - 1, cy + 2):
+                found.update(self.cells.get((x, y), ()))
+        return found
+
 if __name__ == '__main__':
     import sys
     root = Path(__file__).resolve().parents[1]
