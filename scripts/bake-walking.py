@@ -483,6 +483,30 @@ def prune_edges_near_stops(nodes, edges, stops, prune_lon=0.0130, prune_lat=0.01
         return False
     return [e for e in edges if near_a_stop(nodes[e[A]]) or near_a_stop(nodes[e[B]])]
 
+UNREACHABLE_SEARCH_LIMIT = 5000.0  # 実測でnullは2km超だった。索引のマスは必ずこの範囲を拾えるサイズにする。
+
+def unreachable_distances(graph, missing_features, search_limit=UNREACHABLE_SEARCH_LIMIT):
+    """bake_stopが届かなかった停留所について、最寄りの歩ける道路までの距離を測る。
+
+    30mスナップ用の索引はマスが数百m四方しかなく、3x3では search_limit 全域を拾いきれない。
+    ここだけ探索専用にマスを大きく取り直し、同じ nearest_edge / GridIndex で測る。
+    """
+    # cell(meters) = cell(deg) * (deg->m の換算率)。換算率を控えめに見積もり、
+    # 山口県内のどの緯度でも cell(meters) >= search_limit を満たすようにする。
+    cell_lon = search_limit / 65000.0
+    cell_lat = search_limit / 100000.0
+    far_grid = GridIndex(graph, cell_lon=cell_lon, cell_lat=cell_lat)
+    result = {}
+    for feature in missing_features:
+        lon, lat = feature['geometry']['coordinates']
+        snap = nearest_edge(graph, lon, lat, search_limit, far_grid)
+        result[feature['id']] = round(snap[3], 1) if snap else None
+    return result
+
+def write_unreachable(path, distances, snap_limit=30):
+    path.write_text(json.dumps({'version': 1, 'snap_limit': snap_limit, 'stops': distances},
+                               ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+
 def prepare_graph(root):
     """県全域の道路から、焼き込みが実際に使う刈り込み済み・50m分割済みグラフを作る。
 
@@ -523,6 +547,25 @@ if __name__ == '__main__':
                 json.dumps(fc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
             made += 1
         print(json.dumps({'baked': made, 'dir': str(out)}, ensure_ascii=False))
+    elif sys.argv[1:2] == ['--unreachable']:
+        # 本焼き（1時間超）を待たずに、既存の work/walk/ との差分だけを測る一発計算。
+        # 3946件の道路グラフを50m分割・標高付けするコストは不要（最寄り距離は
+        # 分割前の区間へ投影しても同じ）なので、subdivide/apply_grades/adjacencyは呼ばない。
+        stops = json.loads((root / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
+        baked_ids = set(json.loads((root / 'work/walk/index.json').read_text(encoding='utf-8')))
+        missing = [f for f in stops['features'] if f['id'] not in baked_ids]
+        roads = json.loads((root / 'raw_data/yamaguchi-roads.json').read_text(encoding='utf-8'))
+        nodes, edges = build_road_graph(roads)
+        margin = UNREACHABLE_SEARCH_LIMIT + 500.0
+        edges = prune_edges_near_stops(nodes, edges, {'features': missing},
+                                       prune_lon=margin / 65000.0, prune_lat=margin / 100000.0,
+                                       prune_radius=margin)
+        graph = {'nodes': nodes, 'edges': edges}
+        distances = unreachable_distances(graph, missing)
+        write_unreachable(root / 'public/data/walk-unreachable.json', distances)
+        found = sum(1 for v in distances.values() if v is not None)
+        print(json.dumps({'missing': len(missing), 'found': found, 'edges_near_missing': len(edges)},
+                         ensure_ascii=False))
     else:
         graph, stops, edges_before_prune, edges_after_prune = prepare_graph(root)
         table_path = root / 'raw_data/elevations.json'
@@ -552,6 +595,10 @@ if __name__ == '__main__':
             baked.append(sid)
         (out / 'index.json').write_text(json.dumps(baked, ensure_ascii=False,
                                                    separators=(',', ':')), encoding='utf-8')
+        baked_set = set(baked)
+        missing = [f for f in stops['features'] if f['id'] not in baked_set]
+        distances = unreachable_distances(graph, missing)
+        write_unreachable(root / 'public/data/walk-unreachable.json', distances)
         print(json.dumps({'stops': len(stops['features']), 'baked': len(baked),
                           'edges_before_prune': edges_before_prune, 'edges_after_prune': edges_after_prune,
-                          'elevation': elevation.stats()}, ensure_ascii=False))
+                          'unreachable': len(missing), 'elevation': elevation.stats()}, ensure_ascii=False))
