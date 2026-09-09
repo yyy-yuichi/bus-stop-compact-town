@@ -227,13 +227,14 @@ class Elevation:
     """
 
     def __init__(self, cache_dir, pause=1.0, max_requests=4000,
-                 backoff=(5, 15, 45), fetch=http_text):
+                 backoff=(5, 15, 45), fetch=http_text, sleep=time.sleep):
         self.dir = Path(cache_dir)
         self.dir.mkdir(parents=True, exist_ok=True)
         self.pause = pause
         self.max_requests = max_requests
         self.backoff = backoff
         self.fetch = fetch
+        self.sleep = sleep
         self.tiles = {}
         self.hits = {}
         self.requests = 0
@@ -249,18 +250,22 @@ class Elevation:
             self.requests += 1
             try:
                 text = self.fetch(url)
-                time.sleep(self.pause)      # 取得できたときも必ず間隔をあける
+                self.sleep(self.pause)      # 取得できたときも必ず間隔をあける
                 return text
             except urllib.error.HTTPError as error:
                 if error.code == 404:
-                    return ''               # そのタイルは無い。次の精度へ落ちる
+                    # そのタイルは無いだけで、呼び出し元がすぐ次の精度で
+                    # 別のリクエストを送る。実在するタイルと同じく間隔をあけないと
+                    # 404→次の精度が無間隔の2連続リクエストになってしまう。
+                    self.sleep(self.pause)
+                    return ''               # 次の精度へ落ちる
                 if error.code not in RETRY_CODES or attempt == len(self.backoff) - 1:
                     raise                   # 叩き続けない
-                time.sleep(wait)
+                self.sleep(wait)
             except urllib.error.URLError:
                 if attempt == len(self.backoff) - 1:
                     raise
-                time.sleep(wait)
+                self.sleep(wait)
         raise RuntimeError('unreachable')
 
     def _tile(self, kind, z, x, y):

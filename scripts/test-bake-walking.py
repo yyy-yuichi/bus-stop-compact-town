@@ -200,4 +200,25 @@ try:
 except urllib.error.HTTPError:
     pass
 
-print('elevation tile and fetch-manners checks passed (16 assertions).')
+class Naps:
+    """間隔をあけたかを記録する。実際には眠らない。"""
+    def __init__(self):
+        self.seconds = []
+    def __call__(self, seconds):
+        self.seconds.append(seconds)
+
+# 取得できたときも必ず間隔をあける。ここが抜けても他のテストは通ってしまう。
+naps = Naps()
+e = m.Elevation(tempfile.mkdtemp(), pause=1.0, fetch=FakeFetch(), sleep=naps)
+assert e.at(131.17, 33.98) == 5.0
+assert naps.seconds and all(s >= 1.0 for s in naps.seconds), naps.seconds
+
+# 404 で粗い方式へ落ちるときも、2本のリクエストの間に間隔をあける。
+naps = Naps()
+absent = FakeFetch([urllib.error.HTTPError('u', 404, 'none', {}, None), None])
+e = m.Elevation(tempfile.mkdtemp(), pause=1.0, backoff=(0, 0, 0), fetch=absent, sleep=naps)
+assert e.at(131.17, 33.98) == 5.0
+assert len(absent.calls) == 2, absent.calls
+assert len(naps.seconds) >= 2, f'404 のあと間隔をあけずに次を叩いている: {naps.seconds}'
+
+print('elevation tile and fetch-manners checks passed (18 assertions).')
