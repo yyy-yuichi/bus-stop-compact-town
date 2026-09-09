@@ -192,8 +192,12 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
         branches.append((-l_eff, d_b + l_eff, 0.0, 1.0))
     if snap is not None:
         t_s, gap = snap
-        branches.append((-l_eff, gap + t_s * l_eff, 0.0, t_s))   # スナップ点の左側
-        branches.append((l_eff, gap - t_s * l_eff, t_s, 1.0))    # 右側
+        # 出発点から左（始点a側）へ進むのは b→a 方向なので backward が要る。
+        if backward:
+            branches.append((-l_eff, gap + t_s * l_eff, 0.0, t_s))   # スナップ点の左側
+        # 出発点から右（終点b側）へ進むのは a→b 方向なので forward が要る。
+        if forward:
+            branches.append((l_eff, gap - t_s * l_eff, t_s, 1.0))    # 右側
     if not branches:
         return []
 
@@ -224,164 +228,24 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
             continue
         span = hi - lo
         if v_lo > budget:
-            lo = lo + span * (v_lo - budget) / (v_lo - v_hi)
-            v_lo = budget
+            if math.isinf(v_lo):
+                # 定義域の外（一方通行で逆側の分枝が無い等）は幅ゼロまで縮める。
+                # (v_lo-budget)/(v_lo-v_hi) は inf/inf で nan になるため比例配分できない。
+                lo, v_lo = hi, v_hi
+            else:
+                lo = lo + span * (v_lo - budget) / (v_lo - v_hi)
+                v_lo = budget
         elif v_hi > budget:
-            hi = lo + (hi - lo) * (budget - v_lo) / (v_hi - v_lo)
-            v_hi = budget
+            if math.isinf(v_hi):
+                hi, v_hi = lo, v_lo
+            else:
+                hi = lo + (hi - lo) * (budget - v_lo) / (v_hi - v_lo)
+                v_hi = budget
         if hi - lo < 1e-9:
             continue
         out.append((lo, hi, v_lo, v_hi))
     return out
-```
 
-- [ ] **Step 4: テストを実行して通ることを確認する**
-
-Run: `python3 scripts/test-bake-walking.py`
-Expected: PASS — `clip_edge checks passed (18 assertions).`
-
-- [ ] **Step 5: コミット**
-
-```bash
-git add scripts/bake-walking.py scripts/test-bake-walking.py
-git commit -m "Add fold-aware edge clipping for baked walking catchments"
-```
-
----
-
-### Task 2: Toblerによる等価平坦距離
-
-勾配を歩行時間に変換する。仕様4.2・4.3節。
-
-**Files:**
-- Modify: `scripts/bake-walking.py`
-- Test: `scripts/test-bake-walking.py`
-
-**Interfaces:**
-- Consumes: なし
-- Produces: `equivalent_flat(length_m, grade) -> float`（`grade` は勾配の比。8%なら `0.08`）
-
-- [ ] **Step 1: 失敗するテストを書く**
-
-`scripts/test-bake-walking.py` の `print(...)` の直前に追記する。
-
-```python
-# 平坦はちょうど等倍でなければならない。これが崩れると勾配ゼロ回帰テストが通らない。
-assert m.equivalent_flat(100.0, 0.0) == 100.0
-
-# 往復の悪いほうを採るため、上りと下りが同じ倍率になる。
-assert abs(m.equivalent_flat(100.0, 0.10) - m.equivalent_flat(100.0, -0.10)) < 1e-9
-
-# exp(3.5 * 0.08) = 1.3231...
-assert abs(m.equivalent_flat(100.0, 0.08) - 132.31) < 0.01, m.equivalent_flat(100.0, 0.08)
-
-# 勾配がきついほど遠くなる（単調）。
-vals = [m.equivalent_flat(100.0, g / 100) for g in range(0, 31, 5)]
-assert vals == sorted(vals) and vals[0] < vals[-1]
-
-print('equivalent_flat checks passed (4 assertions).')
-```
-
-`print('clip_edge checks passed (18 assertions).')` は残したまま、この追記をその後ろに置く。
-
-- [ ] **Step 2: テストを実行して失敗を確認する**
-
-Run: `python3 scripts/test-bake-walking.py`
-Expected: FAIL — `AttributeError: module 'bake' has no attribute 'equivalent_flat'`
-
-- [ ] **Step 3: 最小の実装を書く**
-
-`scripts/bake-walking.py` の `clip_edge` の上に追記する。
-
-```python
-def equivalent_flat(length_m, grade):
-    """Toblerの登山関数を平坦時で正規化し、勾配ぶんを距離に織り込む。
-
-    往復の厳しいほうを採るため max(f(i), f(-i)) = exp(3.5*|i|) となり、
-    上りと下りが同じ倍率になる。平坦ではちょうど等倍。
-    """
-    return length_m * math.exp(3.5 * abs(grade))
-```
-
-- [ ] **Step 4: テストを実行して通ることを確認する**
-
-Run: `python3 scripts/test-bake-walking.py`
-Expected: PASS — 2行の合格メッセージが出る
-
-- [ ] **Step 5: コミット**
-
-```bash
-git add scripts/bake-walking.py scripts/test-bake-walking.py
-git commit -m "Add Tobler-normalised equivalent flat distance"
-```
-
----
-
-### Task 3: 焼き込みコアと勾配ゼロ回帰テスト
-
-**この計画の要。** 焼いた距離場が、帯の単調性とバジェット上限という不変条件を満たすことを確かめる。現行の `calculateWalk` は試作なので、突き合わせは桁の確認にとどめる。
-
-**Files:**
-- Modify: `scripts/bake-walking.py`
-- Modify: `scripts/test-walking.mjs`
-- Test: `scripts/test-bake-walking.py`
-
-**Interfaces:**
-- Consumes: `clip_edge`（Task 1）、`equivalent_flat`（Task 2）
-- Produces:
-  - 内部グラフ形式。`{'nodes': [[lon, lat], ...], 'edges': [[a, b, length_m, forward, backward, way_id, grade_pct, steps, flat], ...]}`
-    添字定数 `A, B, LEN, FWD, BWD, WAY, GRADE, STEPS, FLAT = range(9)`
-    `grade_pct` は整数の百分率、`steps` と `flat` は bool
-  - `load_pilot_graph(path) -> graph`（既存 `walking-onoda.json` を内部形式へ変換）
-  - `nearest_edge(graph, lon, lat, max_gap, index=None) -> (edge_i, t, point, gap) | None`
-  - `bake_stop(graph, stop_id, name, origin, budget, index=None) -> dict | None`（GeoJSON FeatureCollection）
-  - `stop_id(lon, lat) -> str` / `stop_filename(sid) -> str`
-
-- [ ] **Step 1: 失敗するテストを書く（Python側）**
-
-`scripts/test-bake-walking.py` の末尾に追記する。
-
-```python
-import json
-ROOT = Path(__file__).resolve().parents[1]
-g = m.load_pilot_graph(ROOT / 'public/data/walking-onoda.json')
-assert len(g['nodes']) == 2818, len(g['nodes'])
-assert len(g['edges']) == 3023, len(g['edges'])
-assert all(e[m.GRADE] == 0 for e in g['edges'])
-
-pilot = json.loads((ROOT / 'public/data/walking-onoda.json').read_text(encoding='utf-8'))
-stop = pilot['pilot_stops'][0]
-fc = m.bake_stop(g, stop['id'], stop['name'], stop['coordinate'], 1000.0)
-assert fc['type'] == 'FeatureCollection' and fc['budget'] == 1000.0
-roles = [f['properties']['role'] for f in fc['features']]
-assert roles[0] == 'stop' and roles[1] == 'snap'
-segs = [f for f in fc['features'] if f['properties']['role'] == 'segment']
-assert len(segs) > 100, len(segs)
-for f in segs:
-    p = f['properties']
-    assert isinstance(p['d1'], int) and isinstance(p['d2'], int)
-    assert p['d1'] <= 1000 and p['d2'] <= 1000
-    assert p['grade'] == 0 and p['steps'] is False
-    for c in f['geometry']['coordinates']:
-        assert len(c) == 2 and round(c[0], 5) == c[0] and round(c[1], 5) == c[1]
-
-# 30mより遠い地点はスナップできない。
-assert m.bake_stop(g, 'x', 'x', [131.0, 33.0], 1000.0) is None
-assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.geojson'
-assert m.stop_id(131.1722795, 33.9854622) == '131.17228_33.98546'
-print('bake_stop checks passed (over 10 assertions).')
-```
-
-- [ ] **Step 2: テストを実行して失敗を確認する**
-
-Run: `python3 scripts/test-bake-walking.py`
-Expected: FAIL — `AttributeError: module 'bake' has no attribute 'load_pilot_graph'`
-
-- [ ] **Step 3: 最小の実装を書く**
-
-`scripts/bake-walking.py` に追記する。
-
-```python
 import json
 
 A, B, LEN, FWD, BWD, WAY, GRADE, STEPS, FLAT = range(9)
@@ -439,7 +303,14 @@ def _dijkstra(graph, snap, budget):
     heap = []
     e = graph['edges'][edge_i]
     le = _l_eff(e)
-    for node, cost in ((e[A], gap + t * le), (e[B], gap + (1 - t) * le)):
+    # 始点a側へ着くには b→a (backward) が要る。ただし出発点が端a上にあるなら
+    # そもそも歩く必要がないので常に着く。bも同様にforwardと端点の例外を見る。
+    seeds = []
+    if e[BWD] or t < 1e-10:
+        seeds.append((e[A], gap + t * le))
+    if e[FWD] or t > 1 - 1e-10:
+        seeds.append((e[B], gap + (1 - t) * le))
+    for node, cost in seeds:
         if cost < d[node]:
             d[node] = cost
             heapq.heappush(heap, (cost, node))
@@ -452,10 +323,6 @@ def _dijkstra(graph, snap, budget):
                 d[target] = cost + length
                 heapq.heappush(heap, (cost + length, target))
     return d
-
-def stop_id(lon, lat):
-    """P11は一意IDを持たないため、座標5桁から合成する。約1m四方の粒度。"""
-    return f'{round(lon, 5)}_{round(lat, 5)}'
 
 def stop_filename(sid):
     return sid + '.geojson'
@@ -522,7 +389,8 @@ if __name__ == '__main__':
             fc = bake_stop(graph, stop['id'], stop['name'], stop['coordinate'], 1000.0)
             if fc is None:
                 continue
-            (out / stop_filename(stop['id'])).write_text(
+            # 試作データの停留所IDは node/… 形式。ファイル名だけ無害化する。
+            (out / stop_filename(stop['id'].replace('/', '-'))).write_text(
                 json.dumps(fc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
             made += 1
         print(json.dumps({'baked': made, 'dir': str(out)}, ensure_ascii=False))
