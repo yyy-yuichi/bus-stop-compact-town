@@ -70,3 +70,32 @@ vals = [m.equivalent_flat(100.0, g / 100) for g in range(0, 31, 5)]
 assert vals == sorted(vals) and vals[0] < vals[-1]
 
 print('equivalent_flat checks passed (4 assertions).')
+
+import json
+ROOT = Path(__file__).resolve().parents[1]
+g = m.load_pilot_graph(ROOT / 'public/data/walking-onoda.json')
+assert len(g['nodes']) == 2818, len(g['nodes'])
+assert len(g['edges']) == 3023, len(g['edges'])
+assert all(e[m.GRADE] == 0 for e in g['edges'])
+
+pilot = json.loads((ROOT / 'public/data/walking-onoda.json').read_text(encoding='utf-8'))
+stop = pilot['pilot_stops'][0]
+fc = m.bake_stop(g, stop['id'], stop['name'], stop['coordinate'], 1000.0)
+assert fc['type'] == 'FeatureCollection' and fc['budget'] == 1000.0
+roles = [f['properties']['role'] for f in fc['features']]
+assert roles[0] == 'stop' and roles[1] == 'snap'
+segs = [f for f in fc['features'] if f['properties']['role'] == 'segment']
+assert len(segs) > 100, len(segs)
+for f in segs:
+    p = f['properties']
+    assert isinstance(p['d1'], int) and isinstance(p['d2'], int)
+    assert p['d1'] <= 1000 and p['d2'] <= 1000
+    assert p['grade'] == 0 and p['steps'] is False
+    for c in f['geometry']['coordinates']:
+        assert len(c) == 2 and round(c[0], 5) == c[0] and round(c[1], 5) == c[1]
+
+# 30mより遠い地点はスナップできない。
+assert m.bake_stop(g, 'x', 'x', [131.0, 33.0], 1000.0) is None
+assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.geojson'
+assert m.stop_id(131.1722795, 33.9854622) == '131.17228_33.98546'
+print('bake_stop checks passed (over 10 assertions).')
