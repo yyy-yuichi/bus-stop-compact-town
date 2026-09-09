@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 山口県内1,085バス停の徒歩圏（勾配込み）を事前計算してGeoJSONで配信し、クライアントから経路探索を撤去する。
+**Goal:** 山口県内3,946バス停の徒歩圏（勾配込み）を事前計算してGeoJSONで配信し、クライアントから経路探索を撤去する。
 
 **Architecture:** オフラインの焼き込みスクリプト（Python）が、OSM道路網と国土地理院の標高から「等価平坦距離の場」をバス停ごとに計算し、1停留所1GeoJSONとして出力する。クライアントは選択された停留所のファイルだけを遅延取得し、距離場をバジェットで切って描画し、任意の施設が徒歩圏に入るかをその場で判定する。
 
@@ -20,8 +20,13 @@
 - **スナップ閾値** バス停から最寄り道路まで30m以内。超えたらファイルを生成しない
 - **施設判定** 道路上の点から施設外形まで25m以内
 - **座標精度** 小数5桁（約1.1m）。距離は整数メートル
-- **出力先** `public/data/walk/<stop-id の / を - に置換>.geojson`
-- **ライセンス** 成果物はODbL 1.0。国土地理院の出典と加工事実を併記
+- **バス停の出典** 国土数値情報 P11（`raw_data/P11-22_35.geojson`、2022年度・山口県）。
+  4,418件を座標5桁で統合して**3,946件**にする
+- **停留所ID** 座標を小数5桁で表した `<経度>_<緯度>`（例 `131.17228_33.98546`）
+- **出力先** `work/walk/<stop-id>.geojson` を tar にまとめ、**Releaseアセットで配布**。
+  gitには版を指すマニフェスト `public/data/walk-release.json` だけを置く
+- **ライセンス** 成果物はODbL 1.0。国土地理院（標高）と国土数値情報（バス停）の
+  出典と加工事実を併記。どちらもPDL1.0で継承条項を持たず、ODbLと衝突しない
 - **Pythonの依存** PBF読み取りの `osmium` のみ。それ以外は標準ライブラリで書く。**CIで走るテストは osmium に依存させない**
 - **npmの依存追加は禁止**（`package.json` の dependencies は leaflet / react / react-dom のまま）
 
@@ -54,8 +59,11 @@
 | `scripts/verify-release.mjs`（変更） | `data/walk/*.geojson` を許可し、廃止するファイルの検査を外す |
 | `src/walking.ts`（変更） | 経路探索を撤去し、焼いた距離場を読む関数群に縮小 |
 | `src/WalkingPanel.tsx`（変更） | 遅延取得・3バンド・試作UIの撤去・警告表示 |
+| `scripts/build-bus-stops.py`（新規） | P11 → `public/data/bus_stop.geojson`（重複統合・ID生成） |
+| `scripts/fetch-walk-data.mjs`（新規） | Releaseから徒歩圏データを取得・検証・展開 |
 | `public/about.html`（変更） | 計算方法と出典 |
 | `requirements.txt`（新規） | `osmium==4.3.1` |
+| `.gitignore`（変更） | `public/data/walk/` を除外 |
 
 ## 作業の順序
 
@@ -289,7 +297,7 @@ git commit -m "Add Tobler-normalised equivalent flat distance"
   - `load_pilot_graph(path) -> graph`（既存 `walking-onoda.json` を内部形式へ変換）
   - `nearest_edge(graph, lon, lat, max_gap, index=None) -> (edge_i, t, point, gap) | None`
   - `bake_stop(graph, stop_id, name, origin, budget, index=None) -> dict | None`（GeoJSON FeatureCollection）
-  - `stop_filename(stop_id) -> str`
+  - `stop_id(lon, lat) -> str` / `stop_filename(sid) -> str`
 
 - [ ] **Step 1: 失敗するテストを書く（Python側）**
 
@@ -321,7 +329,8 @@ for f in segs:
 
 # 30mより遠い地点はスナップできない。
 assert m.bake_stop(g, 'x', 'x', [131.0, 33.0], 1000.0) is None
-assert m.stop_filename('node/5127585172') == 'node-5127585172.geojson'
+assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.geojson'
+assert m.stop_id(131.1722795, 33.9854622) == '131.17228_33.98546'
 print('bake_stop checks passed (over 10 assertions).')
 ```
 
@@ -406,8 +415,12 @@ def _dijkstra(graph, snap, budget):
                 heapq.heappush(heap, (cost + length, target))
     return d
 
-def stop_filename(stop_id):
-    return stop_id.replace('/', '-') + '.geojson'
+def stop_id(lon, lat):
+    """P11は一意IDを持たないため、座標5桁から合成する。約1m四方の粒度。"""
+    return f'{round(lon, 5)}_{round(lat, 5)}'
+
+def stop_filename(sid):
+    return sid + '.geojson'
 
 def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0):
     """1停留所ぶんの徒歩圏を GeoJSON FeatureCollection で返す。届かなければ None。"""
@@ -487,7 +500,7 @@ Expected: `{"baked": 7, "dir": ".../work/pilot-bake"}`
 ```js
 // 焼いた結果が満たすべき不変条件を確かめ、あわせて現行実装と桁が合うかだけ見る。
 // 事前に `python3 scripts/bake-walking.py --pilot` を実行しておく。
-// calculateWalk との突き合わせは、Task 9 でそれが消えるまでの暫定。
+// calculateWalk との突き合わせは、Task 11 でそれが消えるまでの暫定。
 const bakeDir = 'work/pilot-bake';
 if (fs.existsSync(bakeDir)) {
   const total = lines => lines.reduce((s, l) => s + distance(...l), 0);
@@ -1218,16 +1231,179 @@ git commit -m "Extract prefecture-wide walkable roads from the Geofabrik PBF"
 
 ---
 
-### Task 8: 全1,085停留所の焼き込みと配信物の検査
+### Task 8: 国土数値情報からバス停データを生成する
+
+仕様4.6節。P11の4,418件を座標5桁で統合して3,946件にし、`bus_stop.geojson` を作り直す。
+
+**Files:**
+- Create: `scripts/build-bus-stops.py`
+- Modify: `public/data/bus_stop.geojson`（OSM由来1,085件 → P11由来3,946件）
+- Test: `scripts/test-bake-walking.py`
+
+**Interfaces:**
+- Consumes: `raw_data/P11-22_35.geojson`、`stop_id`（Task 3）
+- Produces: `public/data/bus_stop.geojson`
+  ```json
+  { "type": "Feature", "id": "131.17228_33.98546",
+    "properties": { "name": "堀越", "names": ["堀越"],
+                    "operators": ["宇部市", "美祢市"], "routes": ["…"] },
+    "geometry": { "type": "Point", "coordinates": [131.17228, 33.98546] } }
+  ```
+  `name` は `names` の先頭。既存UIが `properties.name` をそのまま使えるようにする
+
+- [ ] **Step 1: 失敗するテストを書く**
+
+`scripts/test-bake-walking.py` の末尾に追記する。
+
+```python
+stops = json.loads((ROOT / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
+assert stops['type'] == 'FeatureCollection'
+feats = stops['features']
+assert len(feats) == 3946, len(feats)
+
+ids = [f['id'] for f in feats]
+assert len(set(ids)) == len(ids), 'IDが重複している'
+for f in feats[:200]:
+    lon, lat = f['geometry']['coordinates']
+    assert f['id'] == m.stop_id(lon, lat), f['id']
+    assert round(lon, 5) == lon and round(lat, 5) == lat
+    p = f['properties']
+    assert p['name'] and p['name'] == p['names'][0]
+    assert isinstance(p['names'], list) and isinstance(p['operators'], list)
+    assert p['operators'], f['id']
+
+# 表記ゆれを含む統合が起きていること。同一座標に載っていた別表記が1件にまとまる。
+merged = [f for f in feats if len(f['properties']['names']) > 1]
+assert len(merged) >= 20, len(merged)
+
+# 北部（OSMが0件だった緯度帯）が入っていること。
+north = [f for f in feats if f['geometry']['coordinates'][1] >= 34.43]
+assert len(north) >= 100, len(north)
+
+print('bus stop conversion checks passed (over 10 assertions).')
+```
+
+- [ ] **Step 2: テストを実行して失敗を確認する**
+
+Run: `python3 scripts/test-bake-walking.py`
+Expected: FAIL — `assert len(feats) == 3946` が 1085 で落ちる
+
+- [ ] **Step 3: 変換スクリプトを書く**
+
+`scripts/build-bus-stops.py` を新規作成する。
+
+```python
+"""国土数値情報 P11 からバス停データを作る。座標5桁で同一地点を統合する。
+
+    python3 scripts/build-bus-stops.py
+
+名称を統合の鍵に含めない。同一座標に載る420グループのうち名称が食い違うのは
+25件だけで、その中身は「斉木病院前 / 斎木病院前」のような表記ゆれ・誤字・
+事業者ごとの表記差だった。名称を鍵にすると、そのせいで同一地点が分かれて残る。
+"""
+import importlib.util
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE = ROOT / 'raw_data/P11-22_35.geojson'
+
+spec = importlib.util.spec_from_file_location('bake', Path(__file__).with_name('bake-walking.py'))
+bake = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(bake)
+
+
+def main():
+    raw = json.loads(SOURCE.read_text(encoding='utf-8'))['features']
+    groups = {}
+    for f in raw:
+        lon, lat = f['geometry']['coordinates']
+        groups.setdefault(bake.stop_id(lon, lat), []).append(f)
+
+    features = []
+    for sid, members in groups.items():
+        names, operators, routes = [], [], []
+        for f in members:
+            p = f['properties']
+            for value, bucket in ((p.get('P11_001'), names), (p.get('P11_002'), operators)):
+                if value and value not in bucket:
+                    bucket.append(value)
+            for i in range(1, 36):
+                route = p.get(f'P11_003_{i:02d}')
+                if route and route not in routes:
+                    routes.append(route)
+        lon, lat = (round(v, 5) for v in members[0]['geometry']['coordinates'])
+        features.append({
+            'type': 'Feature', 'id': sid,
+            'properties': {'name': names[0], 'names': names,
+                           'operators': sorted(operators), 'routes': sorted(routes)},
+            'geometry': {'type': 'Point', 'coordinates': [lon, lat]},
+        })
+
+    features.sort(key=lambda f: f['id'])
+    out = ROOT / 'public/data/bus_stop.geojson'
+    out.write_text(json.dumps({
+        'type': 'FeatureCollection',
+        'source': '国土数値情報 バス停留所データ（P11-22_35）',
+        'source_url': 'https://nlftp.mlit.go.jp/ksj/',
+        'attribution': '出典：国土交通省国土数値情報ダウンロードサイト',
+        'license': 'PDL-1.0',
+        'note': '同一座標（小数5桁）の記録を1件に統合し、名称・事業者・系統をまとめた',
+        'features': features,
+    }, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(json.dumps({'source': len(raw), 'stops': len(features),
+                      'merged': len(raw) - len(features),
+                      'bytes': out.stat().st_size}, ensure_ascii=False))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+- [ ] **Step 4: 変換を実行する**
+
+Run: `python3 scripts/build-bus-stops.py`
+Expected: `{"source": 4418, "stops": 3946, "merged": 472, ...}`
+
+- [ ] **Step 5: テストが通ることを確認する**
+
+Run: `python3 scripts/test-bake-walking.py`
+Expected: PASS — `bus stop conversion checks passed (over 10 assertions).`
+
+- [ ] **Step 6: 配信物の検査で件数を合わせる**
+
+`scripts/verify-release.mjs` のバス停件数の検査を差し替える。
+
+置換前:
+```js
+if(bus.features.length!==1085)throw Error('Unexpected bus stop count');
+```
+
+置換後:
+```js
+if(bus.features.length!==3946)throw Error('Unexpected bus stop count');
+```
+
+同ファイルの `console.log` の `1085 bus stops` も `3946 bus stops` にする。
+
+- [ ] **Step 7: コミット**
+
+```bash
+git add scripts/build-bus-stops.py scripts/test-bake-walking.py public/data/bus_stop.geojson scripts/verify-release.mjs
+git commit -m "Rebuild bus stops from the national bus stop dataset"
+```
+
+---
+
+### Task 9: 全3,946停留所の焼き込み
 
 **Files:**
 - Modify: `scripts/bake-walking.py`
-- Modify: `scripts/verify-release.mjs`
-- Modify: `package.json`
 
 **Interfaces:**
-- Consumes: Task 1-7のすべて
-- Produces: `public/data/walk/*.geojson`、`public/data/walk/index.json`（焼けた停留所IDの一覧）
+- Consumes: Task 1-8のすべて
+- Produces: `work/walk/<stop-id>.geojson` と `work/walk/index.json`（焼けたID一覧）
+  - **`public/` ではなく `work/` へ出す。** 配布はTask 10のReleaseアセットで行う
 
 - [ ] **Step 1: 焼き込みの本番コマンドを書く**
 
@@ -1269,18 +1445,18 @@ git commit -m "Extract prefecture-wide walkable roads from the Geofabrik PBF"
         apply_grades(graph, elevation)
         grid = GridIndex(graph)
         stops = json.loads((root / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
-        out = root / 'public/data/walk'
+        out = root / 'work/walk'
         out.mkdir(parents=True, exist_ok=True)
         baked = []
         for feature in stops['features']:
-            stop_id = feature['id']
+            sid = feature['id']
             name = feature['properties'].get('name', '名称未登録')
-            fc = bake_stop(graph, stop_id, name, feature['geometry']['coordinates'], 1000.0, grid)
+            fc = bake_stop(graph, sid, name, feature['geometry']['coordinates'], 1000.0, grid)
             if fc is None:
                 continue
-            (out / stop_filename(stop_id)).write_text(
+            (out / stop_filename(sid)).write_text(
                 json.dumps(fc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-            baked.append(stop_id)
+            baked.append(sid)
         (out / 'index.json').write_text(json.dumps(baked, ensure_ascii=False,
                                                    separators=(',', ':')), encoding='utf-8')
         print(json.dumps({'stops': len(stops['features']), 'baked': len(baked),
@@ -1303,21 +1479,25 @@ builder_node_open = _builder.node_open
 初回は取得だけで20分前後かかる。`work/dem-cache` に残るので、2回目以降は通信しない。
 
 Run: `python3 scripts/bake-walking.py`
-Expected: `baked` が1,000件前後（30m以内に道路がない停留所は除かれる）。
-`elevation.requests` が実際に投げた回数。**2回目の実行ではこれが0になること**を確かめる
+Expected: `stops` が3946、`baked` が3,800件前後（30m以内に道路がない停留所は除かれる）。
+`elevation.requests` が実際に投げた回数
 
 途中で止まった場合、キャッシュは残っているのでそのまま再実行してよい。
-取得済みのタイルは取り直さない。
 
-- [ ] **Step 3: 出力を検査する**
+- [ ] **Step 3: 二度目は標高を取りに行かないことを確かめる**
+
+Run: `python3 scripts/bake-walking.py`
+Expected: `elevation` の `requests` が **0** であること
+
+- [ ] **Step 4: 出力を検査する**
 
 Run:
 ```bash
 python3 -c "
 import json,glob,os
-files=glob.glob('public/data/walk/*.geojson')
+files=[f for f in glob.glob('work/walk/*.geojson')]
 total=sum(os.path.getsize(f) for f in files)
-print(f'{len(files)}ファイル / {total/1024/1024:.0f}MB / 平均{total/len(files)/1024:.0f}KB')
+print(f'{len(files)}ファイル / {total/1024/1024:.0f}MB / 中央値{sorted(os.path.getsize(f) for f in files)[len(files)//2]/1024:.0f}KB')
 d=json.load(open(files[0]))
 assert d['type']=='FeatureCollection' and d['budget']==1000.0
 segs=[f for f in d['features'] if f['properties']['role']=='segment']
@@ -1325,11 +1505,153 @@ assert segs and all(isinstance(f['properties']['d1'],int) for f in segs)
 print('先頭ファイルの構造 OK / セグメント', len(segs))
 "
 ```
-Expected: 1,000ファイル前後・150MB前後・平均160KB前後
+Expected: 3,800件前後・**合計が1024MBを大きく下回ること**（見込み400〜610MB）。
+仕様2節の見積りは市街地基準なので、実測がこれより小さければそのまま進む。
+**もし800MBを超えていたら、コンパクトな配列形式への切り替えを検討する**（仕様9節）
 
-- [ ] **Step 4: 配信物の許可リストを更新する**
+- [ ] **Step 5: コミット**
 
-`scripts/verify-release.mjs` の1つ目の正規表現に `data/walk/...` を加え、廃止する `walking-onoda.json` の検査を外す。
+```bash
+git add scripts/bake-walking.py
+git commit -m "Bake walking catchments for every bus stop in the prefecture"
+```
+
+`work/` は `.gitignore` 済みなので、焼いたデータ自体はコミットされない。
+
+---
+
+### Task 10: Releaseアセットでの配布と取得
+
+仕様3.2節。609MBをgitに置かず、Releaseアセットで配る。
+
+**Files:**
+- Create: `scripts/fetch-walk-data.mjs`
+- Create: `public/data/walk-release.json`
+- Modify: `.gitignore`
+- Modify: `package.json`
+- Modify: `scripts/verify-release.mjs`
+- Modify: `.github/workflows/build.yml`, `.github/workflows/pages.yml`
+
+**Interfaces:**
+- Consumes: `work/walk/`（Task 9）
+- Produces:
+  - `work/walk-data-<日付>.tar.gz`（Releaseアセット）
+  - `public/data/walk-release.json` = `{tag, asset, sha256, count}`（gitに置く唯一のもの）
+  - `npm run data:fetch` が `public/data/walk/` を用意する
+
+- [ ] **Step 1: 焼いたデータをまとめる**
+
+Run:
+```bash
+DATE=$(date +%Y%m%d)
+tar -czf "work/walk-data-$DATE.tar.gz" -C work walk
+ls -lh "work/walk-data-$DATE.tar.gz"
+shasum -a 256 "work/walk-data-$DATE.tar.gz"
+```
+Expected: gzipで50MB前後。**2GB（Releaseアセットの上限）を大きく下回ること**
+
+- [ ] **Step 2: Releaseへ上げる**
+
+Run:
+```bash
+DATE=$(date +%Y%m%d)
+gh release create "walk-data-$DATE" "work/walk-data-$DATE.tar.gz" \
+  --title "徒歩圏データ $DATE" \
+  --notes "OSM(ODbL 1.0)と国土地理院標高タイルから生成した、山口県内バス停の徒歩圏データ。"
+```
+Expected: Releaseが作成され、アセットのURLが表示される
+
+- [ ] **Step 3: マニフェストを書く**
+
+`public/data/walk-release.json` を作成する。値はStep 1・2の実測に置き換えること。
+
+```json
+{
+  "tag": "walk-data-20260909",
+  "asset": "walk-data-20260909.tar.gz",
+  "sha256": "（Step 1 で出た値）",
+  "count": 3800
+}
+```
+
+- [ ] **Step 4: 取得スクリプトを書く**
+
+`scripts/fetch-walk-data.mjs` を新規作成する。
+
+```js
+// Releaseアセットから徒歩圏データを取得して public/data/walk/ へ展開する。
+// 取得先はGitHub自身であり、国土地理院やGeofabrikを叩くものではない。
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+
+const REPO = process.env.WALK_DATA_REPO ?? 'gunsow/bus-stop-compact-town';
+const manifest = JSON.parse(fs.readFileSync('public/data/walk-release.json', 'utf8'));
+const dest = 'public/data/walk';
+
+if (fs.existsSync(`${dest}/index.json`)) {
+  const have = JSON.parse(fs.readFileSync(`${dest}/index.json`, 'utf8'));
+  if (have.length === manifest.count) {
+    console.log(`Walk data already present: ${have.length} catchments.`);
+    process.exit(0);
+  }
+}
+
+const url = `https://github.com/${REPO}/releases/download/${manifest.tag}/${manifest.asset}`;
+console.log(`Fetching ${url}`);
+const response = await fetch(url, { redirect: 'follow' });
+if (!response.ok) throw Error(`Download failed: ${response.status} ${url}`);
+const body = Buffer.from(await response.arrayBuffer());
+
+const digest = crypto.createHash('sha256').update(body).digest('hex');
+if (digest !== manifest.sha256) throw Error(`Checksum mismatch: ${digest} != ${manifest.sha256}`);
+
+fs.mkdirSync('work', { recursive: true });
+fs.writeFileSync(`work/${manifest.asset}`, body);
+fs.rmSync(dest, { recursive: true, force: true });
+fs.mkdirSync('public/data', { recursive: true });
+execFileSync('tar', ['-xzf', `work/${manifest.asset}`, '-C', 'public/data'], { stdio: 'inherit' });
+
+const index = JSON.parse(fs.readFileSync(`${dest}/index.json`, 'utf8'));
+if (index.length !== manifest.count) throw Error(`Expected ${manifest.count} catchments, got ${index.length}`);
+console.log(`Walk data ready: ${index.length} catchments.`);
+```
+
+- [ ] **Step 5: gitから除外し、npmスクリプトを足す**
+
+`.gitignore` に追記する。
+
+```
+public/data/walk/
+```
+
+`package.json` の `scripts` に追記する。`build` の前段で取得するようにはしない
+（ビルドのたびに落としに行かせない）。CIとローカルで明示的に呼ぶ。
+
+```json
+    "data:fetch": "node scripts/fetch-walk-data.mjs",
+```
+
+- [ ] **Step 6: 取得を試す**
+
+Run:
+```bash
+rm -rf public/data/walk
+npm run data:fetch
+ls public/data/walk | head -3
+ls public/data/walk | wc -l
+```
+Expected: マニフェストの `count` と同じ件数が展開される
+
+- [ ] **Step 7: 二度目は取得しないことを確かめる**
+
+Run: `npm run data:fetch`
+Expected: `Walk data already present: … catchments.` と出て、**ダウンロードが走らない**
+
+- [ ] **Step 8: 配信物の許可リストを更新する**
+
+`scripts/verify-release.mjs` の1つ目の正規表現に `data/walk/...` と
+`data/walk-release.json` を加え、廃止する `walking-onoda.json` の検査を外す。
 
 置換前:
 ```js
@@ -1338,10 +1660,10 @@ Expected: 1,000ファイル前後・150MB前後・平均160KB前後
 
 置換後:
 ```js
- if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/review-routes\.json|data\/walk\/(index\.json|[\w.-]+\.geojson)|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/(review-routes|walk-release)\.json|data\/walk\/(index\.json|[\w.\-]+\.geojson)|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 ```
 
-同ファイル内の `walking-onoda.json` を参照する2行を削除する。
+`walking-onoda.json` を参照する2行を差し替える。
 
 削除する行:
 ```js
@@ -1351,24 +1673,24 @@ if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync('di
 
 置き換える行:
 ```js
-for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walk/index.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
+for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walk/index.json','data/walk-release.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
+const manifest=JSON.parse(fs.readFileSync('public/data/walk-release.json','utf8'));
 const baked=JSON.parse(fs.readFileSync('dist/data/walk/index.json','utf8'));
-if(!Array.isArray(baked)||baked.length<900)throw Error(`Too few baked catchments: ${baked.length}`);
-for(const id of baked) if(!files.includes(`data/walk/${id.replaceAll('/','-')}.geojson`.replaceAll('/','\\'))&&!files.includes(`data/walk/${id.replaceAll('/','-')}.geojson`))throw Error(`Missing catchment ${id}`);
+if(baked.length!==manifest.count)throw Error(`Catchment count ${baked.length} != manifest ${manifest.count}`);
+for(const id of baked) if(!files.includes(`data/walk/${id}.geojson`)&&!files.includes(`data\\walk\\${id}.geojson`))throw Error(`Missing catchment ${id}`);
 ```
 
-- [ ] **Step 5: 試作グラフを配信物から外し、テスト用の基準として残す**
+- [ ] **Step 9: 試作グラフを配信物から外し、テスト用の基準として残す**
 
 `public/data/walking-onoda.json` はクライアントから使われなくなるが、
-**勾配ゼロ回帰テストの基準として残す価値がある**。配信物からだけ外す。
-`public/` にある限り `dist/` へコピーされるため、ディレクトリごと移す。
+**Task 3の突き合わせの基準として残す価値がある**。配信物からだけ外す。
 
 ```bash
 mkdir -p test/fixtures
 git mv public/data/walking-onoda.json test/fixtures/walking-onoda.json
 ```
 
-参照している3か所をすべて書き換える。
+参照している3か所を書き換える。
 
 `scripts/bake-walking.py` の `--pilot` 分岐（2か所）:
 ```python
@@ -1376,7 +1698,7 @@ git mv public/data/walking-onoda.json test/fixtures/walking-onoda.json
         pilot = json.loads((root / 'test/fixtures/walking-onoda.json').read_text(encoding='utf-8'))
 ```
 
-`scripts/test-bake-walking.py`（3か所。`load_pilot_graph` の呼び出しが2回、`pilot` の読み込みが1回）:
+`scripts/test-bake-walking.py`（`load_pilot_graph` 2回、`pilot` の読み込み1回）:
 ```python
 g = m.load_pilot_graph(ROOT / 'test/fixtures/walking-onoda.json')
 pilot = json.loads((ROOT / 'test/fixtures/walking-onoda.json').read_text(encoding='utf-8'))
@@ -1387,26 +1709,47 @@ pilot = json.loads((ROOT / 'test/fixtures/walking-onoda.json').read_text(encodin
 const pilot=JSON.parse(fs.readFileSync('test/fixtures/walking-onoda.json','utf8'));
 ```
 
-Run: `python3 scripts/test-bake-walking.py && python3 scripts/bake-walking.py --pilot`
-Expected: PASS — 移動後も両方が通る
+- [ ] **Step 10: CIに取得ステップを足す**
 
-- [ ] **Step 6: ビルドと検査を通す**
+`.github/workflows/build.yml` と `.github/workflows/pages.yml` の両方で、
+`- run: npm run build` の**直前**に追記する。
 
-Run: `npm run build && node scripts/verify-release.mjs`
-Expected: PASS — `Release verified: ... files; 1085 bus stops; source data matches dist.`
+```yaml
+      - run: npm run data:fetch
+```
 
-この時点ではクライアントがまだ旧データを読むためビルドは型エラーになる可能性がある。その場合はTask 9-12を終えてから本Stepへ戻る。
+あわせて、`- run: npm run test:walking` の**前**に次を足す。
 
-- [ ] **Step 7: コミット**
+```yaml
+      - run: python3 scripts/test-bake-walking.py
+      - run: python3 scripts/bake-walking.py --pilot
+```
+
+`bake-walking.py --pilot` は標準ライブラリだけで動き、リポジトリ内の
+`test/fixtures/walking-onoda.json` しか読まないため、CIで osmium も外部通信も不要である。
+`data:fetch` の取得先はGitHub自身であり、外部データ取得の作法には抵触しない。
+
+- [ ] **Step 11: ビルドと検査を通す**
+
+Run: `npm run data:fetch && npm run build && node scripts/verify-release.mjs`
+Expected: PASS
+
+この時点ではクライアントがまだ旧データを読むため型エラーになる可能性がある。
+その場合はTask 11-14を終えてから本Stepへ戻る。
+
+- [ ] **Step 12: コミット**
 
 ```bash
-git add public/data/walk test/fixtures scripts/bake-walking.py scripts/test-bake-walking.py scripts/test-walking.mjs scripts/verify-release.mjs
-git commit -m "Bake walking catchments for every bus stop in the prefecture"
+git add .gitignore package.json public/data/walk-release.json scripts/fetch-walk-data.mjs \
+  scripts/verify-release.mjs .github/workflows test/fixtures \
+  scripts/bake-walking.py scripts/test-bake-walking.py scripts/test-walking.mjs
+git commit -m "Distribute baked catchments as a release asset"
 ```
 
 ---
 
-### Task 9: クライアントの読み込みと帯の描画
+
+### Task 11: クライアントの読み込みと帯の描画
 
 仕様6.1・6.2節。`src/walking.ts` から経路探索を撤去する。
 
@@ -1415,7 +1758,7 @@ git commit -m "Bake walking catchments for every bus stop in the prefecture"
 - Modify: `scripts/test-walking.mjs`
 
 **Interfaces:**
-- Consumes: Task 8が出力するGeoJSON
+- Consumes: Task 9が出力するGeoJSON
 - Produces:
   - `interface Segment { a: Coordinate; b: Coordinate; d1: number; d2: number; grade: number; steps: boolean }`
   - `interface Catchment { stopId: string; budget: number; origin: Coordinate; snap: Coordinate; snapGap: number; segments: Segment[] }`
@@ -1555,7 +1898,7 @@ git commit -m "Read baked catchments client-side and drop the routing engine"
 
 ---
 
-### Task 10: 施設の到達判定
+### Task 12: 施設の到達判定
 
 仕様6.2節。任意の地物が徒歩圏に入るかを、焼いた距離場の上で判定する。
 
@@ -1564,11 +1907,11 @@ git commit -m "Read baked catchments client-side and drop the routing engine"
 - Modify: `scripts/test-walking.mjs`
 
 **Interfaces:**
-- Consumes: Task 9の `Catchment` / `Segment`
+- Consumes: Task 11の `Catchment` / `Segment`
 - Produces:
   - `interface FacilityReach { meters: number; point: Coordinate; gap: number; maxGrade: number; steps: boolean; path: Coordinate[] }`
   - `reachFacility(catchment: Catchment, outlines: Coordinate[][]): FacilityReach | null`
-  - `path` はTask 11で埋める。本Taskでは `[origin, snap, point]` の暫定で構わない
+  - `path` はTask 13で埋める。本Taskでは `[origin, snap, point]` の暫定で構わない
 
 - [ ] **Step 1: 失敗するテストを書く**
 
@@ -1665,7 +2008,7 @@ git commit -m "Judge facility reach against the baked distance field"
 
 ---
 
-### Task 11: 距離場を降下して経路を復元する
+### Task 13: 距離場を降下して経路を復元する
 
 仕様6.3節(a)。親ポインタが無くなるため、距離場を下ることで最短経路を復元する。
 
@@ -1674,7 +2017,7 @@ git commit -m "Judge facility reach against the baked distance field"
 - Modify: `scripts/test-walking.mjs`
 
 **Interfaces:**
-- Consumes: Task 9の `Catchment`、Task 10の `reachFacility`
+- Consumes: Task 11の `Catchment`、Task 12の `reachFacility`
 - Produces: `pathTo(catchment: Catchment, from: Coordinate, fromDistance: number): Coordinate[]`
   - `reachFacility` の `path` をこの関数の結果に差し替える
   - 端点の突き合わせは座標を小数5桁へ丸めた文字列で行う（焼き込みと同じ精度なので厳密に一致する）
@@ -1798,7 +2141,7 @@ git commit -m "Reconstruct the walking route by descending the baked field"
 
 ---
 
-### Task 12: パネルの遅延読み込みと3バンド化
+### Task 14: パネルの遅延読み込みと3バンド化
 
 仕様6.2・6.3・6.4節。
 
@@ -1807,7 +2150,7 @@ git commit -m "Reconstruct the walking route by descending the baked field"
 - Modify: `src/BusStopLayer.tsx:17,79`
 
 **Interfaces:**
-- Consumes: Task 9-11のすべて
+- Consumes: Task 11-11のすべて
 - Produces: `useWalkingData()` は `{ facilities, error, retry }` を返す。徒歩圏は `WalkingPanel` 内で `id` ごとに遅延取得する
 
 - [ ] **Step 1: 施設の取得と徒歩圏の遅延取得を分ける**
@@ -1987,7 +2330,7 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 
 ---
 
-### Task 13: 説明の更新
+### Task 15: 説明の更新
 
 仕様6.5節と10節。国土地理院の出典明示は、標高由来のデータを出荷するこの時点で入れる。
 
@@ -1995,7 +2338,7 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 - Modify: `public/about.html`
 
 **Interfaces:**
-- Consumes: Task 8が出力したデータ
+- Consumes: Task 9が出力したデータ
 - Produces: なし
 
 - [ ] **Step 1: 計算方法を書き換える**
@@ -2097,6 +2440,6 @@ git commit -m "Describe the slope model and credit GSI elevation tiles"
 
 `bake-walking.py` は標準ライブラリだけで動き、`--pilot` はリポジトリ内の `walking-onoda.json` しか読まないため、CIで osmium も外部通信も不要である。
 
-試作グラフは Task 8 Step 5 で `test/fixtures/walking-onoda.json` へ移し、
+試作グラフは Task 9 Step 5 で `test/fixtures/walking-onoda.json` へ移し、
 配信物から外したうえで回帰テストの基準として残す。`public/` の外にあるため
 `dist/` へはコピーされない。
