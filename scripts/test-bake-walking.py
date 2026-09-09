@@ -52,6 +52,21 @@ assert len(r) == 1, r
 assert abs(r[0][3] - 100.0) < 1e-6 and abs(r[0][2] - 150.0) < 1e-6, r
 
 # 長さ0の区間で例外を出さないこと。
-assert m.clip_edge(10.0, 10.0, 0.0, True, True, 100.0) == [] or True
+assert m.clip_edge(10.0, 10.0, 0.0, True, True, 100.0) == [(0.0, 1.0, 10.0, 10.0)]
 
-print('clip_edge checks passed (23 assertions).')
+print('clip_edge checks passed (18 assertions).')
+
+# 平坦はちょうど等倍でなければならない。これが崩れると勾配ゼロ回帰テストが通らない。
+assert m.equivalent_flat(100.0, 0.0) == 100.0
+
+# 往復の悪いほうを採るため、上りと下りが同じ倍率になる。
+assert abs(m.equivalent_flat(100.0, 0.10) - m.equivalent_flat(100.0, -0.10)) < 1e-9
+
+# exp(3.5 * 0.08) = 1.3231...
+assert abs(m.equivalent_flat(100.0, 0.08) - 132.31) < 0.01, m.equivalent_flat(100.0, 0.08)
+
+# 勾配がきついほど遠くなる（単調）。
+vals = [m.equivalent_flat(100.0, g / 100) for g in range(0, 31, 5)]
+assert vals == sorted(vals) and vals[0] < vals[-1]
+
+print('equivalent_flat checks passed (4 assertions).')

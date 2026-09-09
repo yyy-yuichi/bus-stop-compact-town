@@ -1,6 +1,14 @@
 """バス停ごとの徒歩圏を事前計算する。標準ライブラリのみで動く。"""
 import math
 
+def equivalent_flat(length_m, grade):
+    """Toblerの登山関数を平坦時で正規化し、勾配ぶんを距離に織り込む。
+
+    往復の厳しいほうを採るため max(f(i), f(-i)) = exp(3.5*|i|) となり、
+    上りと下りが同じ倍率になる。平坦ではちょうど等倍。
+    """
+    return length_m * math.exp(3.5 * abs(grade))
+
 def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
     """区間上の距離関数を折れ点で分割し、バジェットで切る。
     各断片の内部で距離が線形になることを保証する。"""
