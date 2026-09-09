@@ -25,6 +25,21 @@
 - **Pythonの依存** PBF読み取りの `osmium` のみ。それ以外は標準ライブラリで書く。**CIで走るテストは osmium に依存させない**
 - **npmの依存追加は禁止**（`package.json` の dependencies は leaflet / react / react-dom のまま）
 
+### 外部データ取得の作法（厳守）
+
+国土地理院とGeofabrikは無償の公開サービスである。**一度きりの焼き込みのために、
+繰り返し叩いてよい理由はない。**
+
+- **逐次取得のみ。並列化しない。** 1リクエストごとに1秒以上あける
+- **取得したものは必ずディスクへ残し、二度と取りに行かない。**
+  焼き込みをやり直しても再取得が起きないこと
+- **総リクエスト数に上限を設ける。** 上限に達したら中断する。
+  実装の誤りが取得の洪水に化けるのを防ぐ
+- **429・5xx のみ、間隔を指数的に空けて最大3回まで。** それ以外は再試行せず失敗させる
+- **User-Agent に連絡先を含める。** 匿名で大量取得しない
+- **CIでは絶対に取得しない。** CIが走るたびに外部へ出ていくことになる
+- **Geofabrikのファイルは1日1回しか更新されない。** 手元にあれば再取得しない
+
 ## ファイル構成
 
 | ファイル | 責務 |
@@ -41,7 +56,12 @@
 
 ## 作業の順序
 
-Phase A（Task 1-3）は既存の `public/data/walking-onoda.json` だけで完結し、**勾配ゼロで現行実装と一致すること**を先に証明する。ここが通るまで先へ進まない。Phase B以降はその上に積む。
+Phase A（Task 1-3）は既存の試作グラフだけで完結し、外部通信を一切せずに
+焼き込みの骨格を固める。正しさの錨は**式から導いた期待値**（Task 1の折り返し点、
+Task 2の正規化）と**焼いたデータ自身の不変条件**に置く。
+現行の `calculateWalk` は試作なので、それとの一致は厳密には求めない。
+
+Phase B（Task 4-5）で初めて外部へ通信する。**取得の作法は上のGlobal Constraintsを厳守すること。**
 
 ---
 
@@ -250,7 +270,7 @@ git commit -m "Add Tobler-normalised equivalent flat distance"
 
 ### Task 3: 焼き込みコアと勾配ゼロ回帰テスト
 
-**この計画の要。** 勾配を0にしたとき、焼いた結果が現行の `calculateWalk` + `reachableLines` と一致することを証明する。
+**この計画の要。** 焼いた距離場が、帯の単調性とバジェット上限という不変条件を満たすことを確かめる。現行の `calculateWalk` は試作なので、突き合わせは桁の確認にとどめる。
 
 **Files:**
 - Modify: `scripts/bake-walking.py`
@@ -462,8 +482,9 @@ Expected: `{"baked": 7, "dir": ".../work/pilot-bake"}`
 `scripts/test-walking.mjs` の末尾、`console.log(...)` の**直前**に追記する。
 
 ```js
-// 勾配ゼロなら、焼いた結果は現行の計算と一致しなければならない。
+// 焼いた結果が満たすべき不変条件を確かめ、あわせて現行実装と桁が合うかだけ見る。
 // 事前に `python3 scripts/bake-walking.py --pilot` を実行しておく。
+// calculateWalk との突き合わせは、Task 9 でそれが消えるまでの暫定。
 const bakeDir = 'work/pilot-bake';
 if (fs.existsSync(bakeDir)) {
   const total = lines => lines.reduce((s, l) => s + distance(...l), 0);
@@ -471,42 +492,52 @@ if (fs.existsSync(bakeDir)) {
     const file = `${bakeDir}/${stop.id.replaceAll('/', '-')}.geojson`;
     const fc = JSON.parse(fs.readFileSync(file, 'utf8'));
     const segments = fc.features.filter(f => f.properties.role === 'segment');
-    const walk = calculateWalk(pilot, stop.coordinate, 1000);
-    assert(walk, stop.name);
-    for (const budget of [250, 4000 / 12, 500, 4000 / 6, 750, 1000]) {
-      const expected = total(reachableLines(walk, budget));
-      const actual = segments.reduce((sum, f) => {
-        const { d1, d2 } = f.properties;
-        const [p, q] = f.geometry.coordinates;
-        if (d1 > budget && d2 > budget) return sum;
-        const len = distance(p, q);
-        if (d1 <= budget && d2 <= budget) return sum + len;
-        const keep = (budget - Math.min(d1, d2)) / Math.abs(d2 - d1);
-        return sum + len * Math.min(1, keep);
-      }, 0);
-      // 座標を5桁へ丸めたぶんの差だけ許容する。
-      assert(Math.abs(actual - expected) < Math.max(2, expected * 0.005),
-        `${stop.name} @${Math.round(budget)}m: baked ${actual.toFixed(1)} vs live ${expected.toFixed(1)}`);
+    const banded = budget => segments.reduce((sum, f) => {
+      const { d1, d2 } = f.properties;
+      const [p, q] = f.geometry.coordinates;
+      if (d1 > budget && d2 > budget) return sum;
+      const len = distance(p, q);
+      if (d1 <= budget && d2 <= budget) return sum + len;
+      return sum + len * Math.min(1, (budget - Math.min(d1, d2)) / Math.abs(d2 - d1));
+    }, 0);
+
+    // 帯は広げるほど伸びる。焼いたデータだけで閉じた検査で、現行実装に依存しない。
+    const bands = [250, 500, 750, 1000].map(banded);
+    for (let i = 1; i < bands.length; i++) {
+      assert(bands[i] >= bands[i - 1] - 1e-6, `${stop.name}: 帯が縮んだ ${bands}`);
     }
+    assert(bands[0] > 0 && bands[3] > bands[0], `${stop.name}: 帯が広がらない ${bands}`);
+    assert(segments.every(f => f.properties.d1 <= fc.budget && f.properties.d2 <= fc.budget),
+      `${stop.name}: バジェットを超える距離が残っている`);
+
+    // 現行の calculateWalk は試作なので、桁違いのずれだけを見る参考比較にとどめる。
+    const live = total(reachableLines(calculateWalk(pilot, stop.coordinate, 1000), 1000));
+    assert(Math.abs(bands[3] - live) < live * 0.10,
+      `${stop.name}: baked ${bands[3].toFixed(0)}m vs provisional ${live.toFixed(0)}m`);
   }
-  console.log(`Zero-slope regression passed for ${pilot.pilot_stops.length} stops at 6 budgets.`);
+  console.log(`Baked catchment invariants held for ${pilot.pilot_stops.length} stops.`);
 } else {
   throw Error('Run `python3 scripts/bake-walking.py --pilot` before the walking tests');
 }
 ```
 
-- [ ] **Step 7: 回帰テストを実行する**
+- [ ] **Step 7: 突き合わせを実行する**
 
 Run: `python3 scripts/bake-walking.py --pilot && npm run test:walking`
-Expected: PASS — `Zero-slope regression passed for 7 stops at 6 budgets.`
+Expected: PASS — `Baked catchment invariants held for 7 stops.`
 
-失敗した場合、原因は `clip_edge` の分割漏れか、スナップ区間の扱いのどちらかである。まず失敗した停留所とバジェットを絞り、`reachableLines` の出力と焼いたセグメントを突き合わせること。**このテストが通るまで次のTaskへ進まない。**
+失敗した場合は `clip_edge` の分割漏れかスナップ区間の扱いを疑う。
+失敗した停留所を絞り、`reachableLines` の出力と焼いたセグメントを突き合わせること。
+
+**ただし `calculateWalk` との突き合わせは補助にすぎない。** 正しさの根拠は、
+Task 1・2で式から導いた期待値と、上の不変条件（帯の単調性・バジェット上限）にある。
+`calculateWalk` 自体が試作であり、厳密一致を求めると仮実装の癖まで写してしまう。
 
 - [ ] **Step 8: コミット**
 
 ```bash
 git add scripts/bake-walking.py scripts/test-bake-walking.py scripts/test-walking.mjs
-git commit -m "Bake per-stop catchments and prove they match the live計算 at zero slope"
+git commit -m "Bake per-stop catchments with band and budget invariants"
 ```
 
 ---
@@ -521,8 +552,14 @@ git commit -m "Bake per-stop catchments and prove they match the live計算 at z
 
 **Interfaces:**
 - Consumes: なし
-- Produces: `class Elevation` — `Elevation(cache_dir)` / `.at(lon, lat) -> float | None` / `.stats() -> dict`
-  - `tile_index(lon, lat, z) -> (x, y, px, py)` も公開する（テスト用）
+- Produces:
+  - `http_text(url, timeout=60) -> str`（既定の取得関数。差し替え可能にしてテストする）
+  - `class Elevation` — `Elevation(cache_dir, pause=1.0, max_requests=4000, backoff=(5,15,45), fetch=http_text)`
+    / `.at(lon, lat) -> float | None` / `.stats() -> dict`
+  - `tile_index(lon, lat, z) -> (x, y, px, py)` / `parse_tile(text) -> list[list[float|None]]`
+
+**取得の作法:** 逐次・1秒間隔・ディスクキャッシュ・総数上限・
+429と5xxのみ最大3回の指数バックオフ・連絡先入りUser-Agent。Global Constraintsを実装へ落とす。
 
 - [ ] **Step 1: 失敗するテストを書く**
 
@@ -538,18 +575,69 @@ x, y, px, py = m.tile_index(lon, lat, z)
 assert (x, y) == (tx, ty), (x, y)
 assert 0 <= px < 256 and 0 <= py < 256
 
-# 合成タイルの解釈。無効値 'e' は None になる。
-import tempfile, os
-d = tempfile.mkdtemp()
-grid = [['10.00'] * 256 for _ in range(256)]
-grid[py][px] = '42.50'
-os.makedirs(f'{d}/dem5a', exist_ok=True)
-open(f'{d}/dem5a/15-0-0.txt', 'w').write('\n'.join(','.join(r) for r in grid))
-assert m.parse_tile('\n'.join(','.join(r) for r in grid))[py][px] == 42.5
+# 無効値 'e' は None になる。
 assert m.parse_tile('e,1.5\n2.5,e')[0][0] is None
 assert m.parse_tile('e,1.5\n2.5,e')[0][1] == 1.5
 
-print('elevation tile checks passed (6 assertions).')
+# --- 取得の作法を検証する。実際の通信はせず、取得関数を差し替える。
+import tempfile
+import urllib.error
+
+class FakeFetch:
+    """呼ばれたURLを記録する。scripted に例外を並べると順に投げる。"""
+    def __init__(self, scripted=()):
+        self.calls = []
+        self.scripted = list(scripted)
+    def __call__(self, url, timeout=60):
+        self.calls.append(url)
+        if self.scripted:
+            error = self.scripted.pop(0)
+            if error is not None:
+                raise error
+        return '\n'.join(','.join(['5.00'] * 256) for _ in range(256))
+
+# 一度取ったタイルは二度と取りに行かない。メモリでもディスクでも効く。
+fetch = FakeFetch()
+e = m.Elevation(tempfile.mkdtemp(), pause=0, fetch=fetch)
+assert e.at(131.17, 33.98) == 5.0
+before = len(fetch.calls)
+e.at(131.1701, 33.9801)                          # 同じタイル内
+assert len(fetch.calls) == before, fetch.calls
+e2 = m.Elevation(e.dir, pause=0, fetch=fetch)    # 別インスタンスでもディスクから読む
+assert e2.at(131.17, 33.98) == 5.0
+assert len(fetch.calls) == before, fetch.calls
+
+# 総数の上限を超えたら中断する。実装の誤りが取得の洪水になるのを防ぐ。
+capped = m.Elevation(tempfile.mkdtemp(), pause=0, max_requests=1, fetch=FakeFetch())
+capped.at(131.0, 33.9)
+try:
+    capped.at(132.0, 34.4)
+    raise AssertionError('上限を超えても中断しなかった')
+except RuntimeError as error:
+    assert '上限' in str(error), error
+
+# 503 は間隔を空けて再試行し、回復すれば続行する。
+flaky = FakeFetch([urllib.error.HTTPError('u', 503, 'busy', {}, None), None])
+recovered = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0), fetch=flaky)
+assert recovered.at(131.17, 33.98) == 5.0
+assert len(flaky.calls) == 2, flaky.calls
+
+# 404 は「そのタイルは無い」として次の精度へ落ちるだけ。再試行しない。
+absent = FakeFetch([urllib.error.HTTPError('u', 404, 'none', {}, None), None])
+fallback = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0), fetch=absent)
+assert fallback.at(131.17, 33.98) == 5.0
+assert len(absent.calls) == 2 and 'dem5a' in absent.calls[0] and '/dem/' in absent.calls[1], absent.calls
+
+# 404以外の400番台は再試行せずそのまま失敗させる。叩き続けない。
+forbidden = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0),
+                        fetch=FakeFetch([urllib.error.HTTPError('u', 403, 'no', {}, None)]))
+try:
+    forbidden.at(131.17, 33.98)
+    raise AssertionError('403で止まらなかった')
+except urllib.error.HTTPError:
+    pass
+
+print('elevation tile and fetch-manners checks passed (16 assertions).')
 ```
 
 - [ ] **Step 2: テストを実行して失敗を確認する**
@@ -567,7 +655,13 @@ import urllib.error
 import time
 
 GSI_TILES = (('dem5a', 15), ('dem', 14))   # DEM5A(5mメッシュ) を優先し、欠測は DEM10B で埋める
-USER_AGENT = 'bus-stop-compact-town/0.1 (UDC2026 walking catchment)'
+# 連絡先を含めること。匿名で公開サービスから大量に取得しない。
+USER_AGENT = 'bus-stop-compact-town/0.1 (UDC2026 walking catchment; https://github.com/gunsow/bus-stop-compact-town)'
+RETRY_CODES = {429, 500, 502, 503, 504}
+
+def http_text(url, timeout=60):
+    request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    return urllib.request.urlopen(request, timeout=timeout).read().decode()
 
 def tile_index(lon, lat, z):
     """経緯度から (タイルX, タイルY, タイル内の列, タイル内の行) を返す。"""
@@ -583,15 +677,49 @@ def parse_tile(text):
             for row in text.strip().split('\n')]
 
 class Elevation:
-    """国土地理院の標高タイルを読む。取得したタイルはディスクへ残して再取得しない。"""
+    """国土地理院の標高タイルを読む。
 
-    def __init__(self, cache_dir, pause=0.1):
+    無償の公開サービスなので、逐次・間隔をあけて取り、取ったものは残して
+    二度と取りに行かない。総数に上限を設け、実装の誤りが取得の洪水に
+    化けないようにする。
+    """
+
+    def __init__(self, cache_dir, pause=1.0, max_requests=4000,
+                 backoff=(5, 15, 45), fetch=http_text):
         self.dir = Path(cache_dir)
         self.dir.mkdir(parents=True, exist_ok=True)
         self.pause = pause
+        self.max_requests = max_requests
+        self.backoff = backoff
+        self.fetch = fetch
         self.tiles = {}
         self.hits = {}
+        self.requests = 0
         self.missing = 0
+
+    def _download(self, url):
+        """429と5xxのみ間隔を空けて再試行する。404は空、それ以外はそのまま失敗させる。"""
+        for attempt, wait in enumerate(self.backoff):
+            if self.requests >= self.max_requests:
+                raise RuntimeError(
+                    f'標高タイルの取得が上限{self.max_requests}件に達した。'
+                    '対象範囲か実装を疑うこと。上限を上げる前に原因を確かめる。')
+            self.requests += 1
+            try:
+                text = self.fetch(url)
+                time.sleep(self.pause)      # 取得できたときも必ず間隔をあける
+                return text
+            except urllib.error.HTTPError as error:
+                if error.code == 404:
+                    return ''               # そのタイルは無い。次の精度へ落ちる
+                if error.code not in RETRY_CODES or attempt == len(self.backoff) - 1:
+                    raise                   # 叩き続けない
+                time.sleep(wait)
+            except urllib.error.URLError:
+                if attempt == len(self.backoff) - 1:
+                    raise
+                time.sleep(wait)
+        raise RuntimeError('unreachable')
 
     def _tile(self, kind, z, x, y):
         key = (kind, z, x, y)
@@ -599,18 +727,10 @@ class Elevation:
             return self.tiles[key]
         path = self.dir / f'{kind}-{z}-{x}-{y}.txt'
         if path.exists():
-            text = path.read_text(encoding='utf-8')
+            text = path.read_text(encoding='utf-8')      # 取得済みなら通信しない
         else:
-            url = f'https://cyberjapandata.gsi.go.jp/xyz/{kind}/{z}/{x}/{y}.txt'
-            request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-            try:
-                text = urllib.request.urlopen(request, timeout=60).read().decode()
-            except urllib.error.HTTPError as error:
-                text = '' if error.code == 404 else None
-                if text is None:
-                    raise
+            text = self._download(f'https://cyberjapandata.gsi.go.jp/xyz/{kind}/{z}/{x}/{y}.txt')
             path.write_text(text, encoding='utf-8')
-            time.sleep(self.pause)   # 公開サービスなので間隔をあける
         grid = parse_tile(text) if text.strip() else None
         self.tiles[key] = grid
         return grid
@@ -630,7 +750,7 @@ class Elevation:
 
     def stats(self):
         return {'by_source': dict(self.hits), 'missing': self.missing,
-                'tiles': sum(1 for v in self.tiles.values() if v)}
+                'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 ```
 
 - [ ] **Step 4: テストを実行して通ることを確認する**
@@ -639,6 +759,8 @@ Run: `python3 scripts/test-bake-walking.py`
 Expected: PASS — 4行の合格メッセージ
 
 - [ ] **Step 5: 実際のタイルで1点だけ確かめる**
+
+**ここが外部への最初の通信になる。1タイルだけ取る。**
 
 Run:
 ```bash
@@ -1034,13 +1156,21 @@ if __name__ == '__main__':
 
 - [ ] **Step 5: PBFを取得して実行する**
 
+**Geofabrikのファイルは1日1回しか更新されない。手元にあれば取り直さない。**
+
 Run:
 ```bash
-mkdir -p work && curl -L -o work/chugoku-latest.osm.pbf \
+mkdir -p work
+test -f work/chugoku-latest.osm.pbf || curl -L --fail -o work/chugoku-latest.osm.pbf \
   https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
+ls -lh work/chugoku-latest.osm.pbf
 python3 scripts/extract-roads.py work/chugoku-latest.osm.pbf
 ```
-Expected: `ways` が10万件前後、`nodes` が100万件前後。処理は数分
+Expected: 224MB前後のファイルが1つ。`ways` が10万件前後、`nodes` が100万件前後。処理は数分
+
+`extract-roads.py` は同じファイルを2周する（1周目でwayと必要なノードIDを集め、
+2周目でノードの座標とタグを拾う）。**どちらもローカルファイルの読み込みであり、
+通信は発生しない。**
 
 - [ ] **Step 6: 抽出結果の妥当性を確かめる**
 
@@ -1147,8 +1277,15 @@ builder_node_open = _builder.node_open
 
 - [ ] **Step 2: 焼き込みを実行する**
 
+**ここが外部通信の最大の山になる。** 標高タイルを約1,000枚、1秒間隔で逐次取得するため、
+初回は取得だけで20分前後かかる。`work/dem-cache` に残るので、2回目以降は通信しない。
+
 Run: `python3 scripts/bake-walking.py`
-Expected: `baked` が1,000件前後（30m以内に道路がない停留所は除かれる）。標高タイルの取得を含め、初回は1時間前後かかる
+Expected: `baked` が1,000件前後（30m以内に道路がない停留所は除かれる）。
+`elevation.requests` が実際に投げた回数。**2回目の実行ではこれが0になること**を確かめる
+
+途中で止まった場合、キャッシュは残っているのでそのまま再実行してよい。
+取得済みのタイルは取り直さない。
 
 - [ ] **Step 3: 出力を検査する**
 
