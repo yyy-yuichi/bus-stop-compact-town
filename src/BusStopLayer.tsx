@@ -76,7 +76,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       </button>
       {failed && <button className="absolute left-4 top-28 rounded-xl bg-white p-3 text-sm text-red-800 shadow" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer}>
-        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} onSelect={setSelected} />
+        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} />
       </BusStopDrawer>}
   </>;
 }
