@@ -476,7 +476,9 @@ git commit -m "Bake per-stop catchments with band and budget invariants"
 - Consumes: なし
 - Produces:
   - `http_text(url, timeout=60) -> str`（既定の取得関数。差し替え可能にしてテストする）
-  - `class Elevation` — `Elevation(cache_dir, pause=1.0, max_requests=4000, backoff=(5,15,45), fetch=http_text)`
+  - `class Elevation` — `Elevation(cache_dir, pause=1.0, max_requests=4000, backoff=(5,15,45), fetch=http_text, sleep=time.sleep)`
+    **`sleep` も差し替え可能にする。** さもないと間隔をあけているかを検証できず、
+    成功パスから間隔を削っても全テストが通ってしまう
     キャッシュ先は `raw_data/dem/`。**1タイル1ファイルのgzip**で保存する
     / `.at(lon, lat) -> float | None` / `.stats() -> dict`
   - `tile_index(lon, lat, z) -> (x, y, px, py)` / `parse_tile(text) -> list[list[float|None]]`
@@ -583,98 +585,6 @@ RETRY_CODES = {429, 500, 502, 503, 504}
 
 def http_text(url, timeout=60):
     return urllib.request.urlopen(url, timeout=timeout).read().decode()
-
-def tile_index(lon, lat, z):
-    """経緯度から (タイルX, タイルY, タイル内の列, タイル内の行) を返す。"""
-    n = 2 ** z
-    xf = (lon + 180) / 360 * n
-    yf = (1 - math.asinh(math.tan(math.radians(lat))) / math.pi) / 2 * n
-    x, y = int(xf), int(yf)
-    return x, y, int((xf - x) * 256), int((yf - y) * 256)
-
-def parse_tile(text):
-    """標高タイルのテキストを 256x256 の二次元配列にする。'e' は None。"""
-    return [[None if v == 'e' else float(v) for v in row.split(',')]
-            for row in text.strip().split('\n')]
-
-class Elevation:
-    """国土地理院の標高タイルを読む。
-
-    無償の公開サービスなので、逐次・間隔をあけて取り、取ったものは残して
-    二度と取りに行かない。総数に上限を設け、実装の誤りが取得の洪水に
-    化けないようにする。
-    """
-
-    def __init__(self, cache_dir, pause=1.0, max_requests=4000,
-                 backoff=(5, 15, 45), fetch=http_text):
-        self.dir = Path(cache_dir)
-        self.dir.mkdir(parents=True, exist_ok=True)
-        self.pause = pause
-        self.max_requests = max_requests
-        self.backoff = backoff
-        self.fetch = fetch
-        self.tiles = {}
-        self.hits = {}
-        self.requests = 0
-        self.missing = 0
-
-    def _download(self, url):
-        """429と5xxのみ間隔を空けて再試行する。404は空、それ以外はそのまま失敗させる。"""
-        for attempt, wait in enumerate(self.backoff):
-            if self.requests >= self.max_requests:
-                raise RuntimeError(
-                    f'標高タイルの取得が上限{self.max_requests}件に達した。'
-                    '対象範囲か実装を疑うこと。上限を上げる前に原因を確かめる。')
-            self.requests += 1
-            try:
-                text = self.fetch(url)
-                time.sleep(self.pause)      # 取得できたときも必ず間隔をあける
-                return text
-            except urllib.error.HTTPError as error:
-                if error.code == 404:
-                    return ''               # そのタイルは無い。次の精度へ落ちる
-                if error.code not in RETRY_CODES or attempt == len(self.backoff) - 1:
-                    raise                   # 叩き続けない
-                time.sleep(wait)
-            except urllib.error.URLError:
-                if attempt == len(self.backoff) - 1:
-                    raise
-                time.sleep(wait)
-        raise RuntimeError('unreachable')
-
-    def _tile(self, kind, z, x, y):
-        key = (kind, z, x, y)
-        if key in self.tiles:
-            return self.tiles[key]
-        # gzipで持つ。git内の容量は生と変わらないが、作業ツリーが287MB→73MBになる。
-        path = self.dir / f'{kind}-{z}-{x}-{y}.txt.gz'
-        if path.exists():
-            with gzip.open(path, 'rt', encoding='utf-8') as handle:
-                text = handle.read()                     # 取得済みなら通信しない
-        else:
-            text = self._download(f'https://cyberjapandata.gsi.go.jp/xyz/{kind}/{z}/{x}/{y}.txt')
-            with gzip.open(path, 'wt', encoding='utf-8') as handle:
-                handle.write(text)
-        grid = parse_tile(text) if text.strip() else None
-        self.tiles[key] = grid
-        return grid
-
-    def at(self, lon, lat):
-        for kind, z in GSI_TILES:
-            x, y, px, py = tile_index(lon, lat, z)
-            grid = self._tile(kind, z, x, y)
-            if not grid:
-                continue
-            value = grid[py][px]
-            if value is not None:
-                self.hits[kind] = self.hits.get(kind, 0) + 1
-                return value
-        self.missing += 1
-        return None
-
-    def stats(self):
-        return {'by_source': dict(self.hits), 'missing': self.missing,
-                'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 ```
 
 - [ ] **Step 4: テストを実行して通ることを確認する**
