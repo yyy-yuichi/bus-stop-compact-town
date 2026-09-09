@@ -6,3 +6,7 @@ outputs/
 .env.*
 !.env.example
 *.log
+
+# Python
+__pycache__/
+*.pyc
