@@ -6,7 +6,7 @@ root=Path(__file__).resolve().parents[1]
 work=root/'work/walking-pilot-20260908'
 raw=work/'onoda.osm'
 tree=ET.parse(raw).getroot()
-fields={'highway','area','foot','access','foot:conditional','access:conditional','oneway:foot:conditional','barrier','oneway:foot','foot:forward','foot:backward'}
+fields={'highway','area','foot','access','foot:conditional','access:conditional','oneway:foot:conditional','barrier','oneway:foot','foot:forward','foot:backward','bridge','tunnel','layer'}
 ways=[w for w in tree.findall('way') if any(t.get('k')=='highway' for t in w.findall('tag'))]
 refs={n.get('ref') for w in ways for n in w.findall('nd')}
 out=ET.Element('osm',version='0.6',generator='bus-stop-compact-town walking data filter')
