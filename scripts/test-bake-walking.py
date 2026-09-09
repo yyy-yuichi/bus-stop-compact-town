@@ -105,4 +105,26 @@ for f in segs:
 assert m.bake_stop(g, 'x', 'x', [131.0, 33.0], 1000.0) is None
 assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.geojson'
 assert m.stop_id(131.1722795, 33.9854622) == '131.17228_33.98546'
-print('bake_stop checks passed (over 10 assertions).')
+
+# 一方通行の区間にバス停が接続したとき、_dijkstra が逆走側へ種を蒔かないこと。
+# clip_edge 側は単体で検査済みだが、種蒔きの側はここでしか通らない。
+DEG = 180 / (math.pi * 6371000)          # 緯度1メートルあたりの度数
+def oneway_graph(forward, backward):
+    return {'nodes': [[0.0, 0.0], [0.0, 100 * DEG]],
+            'edges': [[0, 1, 100.0, forward, backward, 'w1', 0, False, False]]}
+
+mid = [0.0, 50 * DEG]                     # 区間の中央に立つ
+# 出力座標は5桁に丸められるため、比較の基準も同じ丸めを通す。生の 50*DEG と
+# 1e-9 で比べると、丸め自体の誤差（約3.4e-7）で偽の失敗になる。
+mid_lat = round(mid[1], 5)
+fc = m.bake_stop(oneway_graph(True, False), 'x', 'x', mid, 1000.0)
+lats = [c[1] for f in fc['features'] if f['properties']['role'] == 'segment'
+        for c in f['geometry']['coordinates']]
+assert lats and min(lats) >= mid_lat - 1e-9, f'a→b のみ歩けるのに始点側へ伸びた: {min(lats)}'
+
+fc = m.bake_stop(oneway_graph(False, True), 'x', 'x', mid, 1000.0)
+lats = [c[1] for f in fc['features'] if f['properties']['role'] == 'segment'
+        for c in f['geometry']['coordinates']]
+assert lats and max(lats) <= mid_lat + 1e-9, f'b→a のみ歩けるのに終点側へ伸びた: {max(lats)}'
+
+print('bake_stop checks passed (over 12 assertions).')
