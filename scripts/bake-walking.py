@@ -173,24 +173,22 @@ def stop_id(lon, lat):
     return f'{round(lon, 5)}_{round(lat, 5)}'
 
 def stop_filename(sid):
-    return sid + '.geojson'
+    return sid + '.json'
 
 def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0, adjacency=None):
-    """1停留所ぶんの徒歩圏を GeoJSON FeatureCollection で返す。届かなければ None。"""
+    """1停留所ぶんの徒歩圏を配列形式で返す。届かなければ None。
+
+    セグメントごとに GeoJSON の Feature 定型文を繰り返すと、1本181バイトのうち
+    139バイトが定型文というありさまだった（座標は42バイト）。ここでは各セグメントを
+    [lon1, lat1, lon2, lat2, d1, d2, grade, steps] の1行にする。
+    """
     snap = nearest_edge(graph, origin[0], origin[1], snap_limit, index)
     if snap is None or snap[3] > budget:
         return None
     snap_i, snap_t, snap_point, snap_gap = snap
     d = _dijkstra(graph, snap, budget, adjacency)
     r5 = lambda p: [round(p[0], 5), round(p[1], 5)]
-    features = [
-        {'type': 'Feature',
-         'properties': {'role': 'stop', 'name': name, 'stop_id': stop_id},
-         'geometry': {'type': 'Point', 'coordinates': r5(origin)}},
-        {'type': 'Feature',
-         'properties': {'role': 'snap', 'gap': round(snap_gap, 1)},
-         'geometry': {'type': 'LineString', 'coordinates': [r5(origin), r5(snap_point)]}},
-    ]
+    seg = []
     for i, e in enumerate(graph['edges']):
         le = _l_eff(e)
         if le <= 0:
@@ -202,13 +200,12 @@ def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0,
         pa, pb = graph['nodes'][e[A]], graph['nodes'][e[B]]
         at = lambda t: r5([pa[0] + (pb[0] - pa[0]) * t, pa[1] + (pb[1] - pa[1]) * t])
         for lo, hi, v_lo, v_hi in pieces:
-            features.append({
-                'type': 'Feature',
-                'properties': {'role': 'segment', 'd1': round(v_lo), 'd2': round(v_hi),
-                               'grade': e[GRADE], 'steps': e[STEPS]},
-                'geometry': {'type': 'LineString', 'coordinates': [at(lo), at(hi)]}})
-    return {'type': 'FeatureCollection', 'version': 1, 'stop_id': stop_id,
-            'budget': budget, 'features': features}
+            pa5, pb5 = at(lo), at(hi)
+            seg.append([pa5[0], pa5[1], pb5[0], pb5[1], round(v_lo), round(v_hi),
+                        e[GRADE], 1 if e[STEPS] else 0])
+    return {'v': 1, 'id': stop_id, 'budget': budget,
+            'origin': r5(origin), 'snap': r5(snap_point), 'gap': round(snap_gap, 1),
+            'seg': seg}
 
 GSI_TILES = (('dem5a', 15), ('dem', 14))   # DEM5A(5mメッシュ) を優先し、欠測は DEM10B で埋める
 RETRY_CODES = {429, 500, 502, 503, 504}

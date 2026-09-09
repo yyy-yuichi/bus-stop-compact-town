@@ -88,22 +88,23 @@ assert all(e[m.GRADE] == 0 for e in g['edges'])
 pilot = json.loads((ROOT / 'public/data/walking-onoda.json').read_text(encoding='utf-8'))
 stop = pilot['pilot_stops'][0]
 fc = m.bake_stop(g, stop['id'], stop['name'], stop['coordinate'], 1000.0)
-assert fc['type'] == 'FeatureCollection' and fc['budget'] == 1000.0
-roles = [f['properties']['role'] for f in fc['features']]
-assert roles[0] == 'stop' and roles[1] == 'snap'
-segs = [f for f in fc['features'] if f['properties']['role'] == 'segment']
+assert fc['v'] == 1 and fc['id'] == stop['id'] and fc['budget'] == 1000.0
+assert len(fc['origin']) == 2 and len(fc['snap']) == 2
+assert isinstance(fc['gap'], float)
+segs = fc['seg']
 assert len(segs) > 100, len(segs)
-for f in segs:
-    p = f['properties']
-    assert isinstance(p['d1'], int) and isinstance(p['d2'], int)
-    assert p['d1'] <= 1000 and p['d2'] <= 1000
-    assert p['grade'] == 0 and p['steps'] is False
-    for c in f['geometry']['coordinates']:
-        assert len(c) == 2 and round(c[0], 5) == c[0] and round(c[1], 5) == c[1]
+for row in segs:
+    assert len(row) == 8, row
+    lon1, lat1, lon2, lat2, d1, d2, grade, steps = row
+    assert isinstance(d1, int) and isinstance(d2, int)
+    assert d1 <= 1000 and d2 <= 1000
+    assert grade == 0 and steps == 0
+    for c in (lon1, lat1, lon2, lat2):
+        assert round(c, 5) == c
 
 # 30mより遠い地点はスナップできない。
 assert m.bake_stop(g, 'x', 'x', [131.0, 33.0], 1000.0) is None
-assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.geojson'
+assert m.stop_filename('131.17228_33.98546') == '131.17228_33.98546.json'
 assert m.stop_id(131.1722795, 33.9854622) == '131.17228_33.98546'
 
 # 一方通行の区間にバス停が接続したとき、_dijkstra が逆走側へ種を蒔かないこと。
@@ -118,13 +119,11 @@ mid = [0.0, 50 * DEG]                     # 区間の中央に立つ
 # 1e-9 で比べると、丸め自体の誤差（約3.4e-7）で偽の失敗になる。
 mid_lat = round(mid[1], 5)
 fc = m.bake_stop(oneway_graph(True, False), 'x', 'x', mid, 1000.0)
-lats = [c[1] for f in fc['features'] if f['properties']['role'] == 'segment'
-        for c in f['geometry']['coordinates']]
+lats = [row[i] for row in fc['seg'] for i in (1, 3)]
 assert lats and min(lats) >= mid_lat - 1e-9, f'a→b のみ歩けるのに始点側へ伸びた: {min(lats)}'
 
 fc = m.bake_stop(oneway_graph(False, True), 'x', 'x', mid, 1000.0)
-lats = [c[1] for f in fc['features'] if f['properties']['role'] == 'segment'
-        for c in f['geometry']['coordinates']]
+lats = [row[i] for row in fc['seg'] for i in (1, 3)]
 assert lats and max(lats) <= mid_lat + 1e-9, f'b→a のみ歩けるのに終点側へ伸びた: {max(lats)}'
 
 print('bake_stop checks passed (over 12 assertions).')

@@ -3,21 +3,14 @@ import fs from 'node:fs';
 import { parseCatchment, reachableLines, catchmentFile, distance } from '../src/walking.ts';
 
 const x = 180 / (Math.PI * 6371000);
-const seg = (x1, y1, x2, y2, d1, d2, grade = 0, steps = false) => ({
-  type: 'Feature',
-  properties: { role: 'segment', d1, d2, grade, steps },
-  geometry: { type: 'LineString', coordinates: [[x1, y1], [x2, y2]] },
-});
+const seg = (x1, y1, x2, y2, d1, d2, grade = 0, steps = false) => [x1, y1, x2, y2, d1, d2, grade, steps ? 1 : 0];
 const collection = (...segments) => ({
-  type: 'FeatureCollection', version: 1, stop_id: 'node/1', budget: 1000,
-  features: [
-    { type: 'Feature', properties: { role: 'stop', name: 'テスト' }, geometry: { type: 'Point', coordinates: [0, 0] } },
-    { type: 'Feature', properties: { role: 'snap', gap: 0 }, geometry: { type: 'LineString', coordinates: [[0, 0], [0, 0]] } },
-    ...segments,
-  ],
+  v: 1, id: 'node/1', budget: 1000,
+  origin: [0, 0], snap: [0, 0], gap: 0,
+  seg: segments,
 });
 
-assert.equal(catchmentFile('131.17228_33.98546'), '131.17228_33.98546.geojson');
+assert.equal(catchmentFile('131.17228_33.98546'), '131.17228_33.98546.json');
 // URLを組み立てるので、想定外の形のIDは通さない。
 assert.throws(() => catchmentFile('../../etc/passwd'));
 assert.throws(() => catchmentFile('131.1/33.9'));
@@ -41,7 +34,7 @@ assert(Math.abs(distance(...line) - 100) < 0.01);
 
 // 壊れた入力は受け付けない。
 assert.throws(() => parseCatchment({ type: 'X' }));
-assert.throws(() => parseCatchment(collection({ ...seg(0, 0, 1, 1, 0, 1), properties: { role: 'segment', d1: 'a', d2: 1, grade: 0, steps: false } })));
+assert.throws(() => parseCatchment(collection([0, 0, 1, 1, 'a', 1, 0, 0])));
 console.log('parseCatchment and reachableLines checks passed.');
 
 // 焼いた結果が満たすべき不変条件を確かめる。
@@ -50,14 +43,11 @@ const bakeDir = 'work/pilot-bake';
 if (fs.existsSync(bakeDir)) {
   const pilot = JSON.parse(fs.readFileSync('public/data/walking-onoda.json', 'utf8'));
   for (const stop of pilot.pilot_stops) {
-    const file = `${bakeDir}/${stop.id.replaceAll('/', '-')}.geojson`;
+    const file = `${bakeDir}/${stop.id.replaceAll('/', '-')}.json`;
     const fc = JSON.parse(fs.readFileSync(file, 'utf8'));
-    const segments = fc.features.filter(f => f.properties.role === 'segment');
-    const banded = budget => segments.reduce((sum, f) => {
-      const { d1, d2 } = f.properties;
-      const [p, q] = f.geometry.coordinates;
+    const banded = budget => fc.seg.reduce((sum, [x1, y1, x2, y2, d1, d2]) => {
       if (d1 > budget && d2 > budget) return sum;
-      const len = distance(p, q);
+      const len = distance([x1, y1], [x2, y2]);
       if (d1 <= budget && d2 <= budget) return sum + len;
       return sum + len * Math.min(1, (budget - Math.min(d1, d2)) / Math.abs(d2 - d1));
     }, 0);
@@ -68,7 +58,7 @@ if (fs.existsSync(bakeDir)) {
       assert(bands[i] >= bands[i - 1] - 1e-6, `${stop.name}: 帯が縮んだ ${bands}`);
     }
     assert(bands[0] > 0 && bands[3] > bands[0], `${stop.name}: 帯が広がらない ${bands}`);
-    assert(segments.every(f => f.properties.d1 <= fc.budget && f.properties.d2 <= fc.budget),
+    assert(fc.seg.every(([, , , , d1, d2]) => d1 <= fc.budget && d2 <= fc.budget),
       `${stop.name}: バジェットを超える距離が残っている`);
   }
   console.log(`Baked catchment invariants held for ${pilot.pilot_stops.length} stops.`);

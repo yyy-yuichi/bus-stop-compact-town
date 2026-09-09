@@ -29,7 +29,7 @@ const ID = /^-?\d+(\.\d+)?_-?\d+(\.\d+)?$/;
 /** IDは座標由来。URLに使うので、想定の形以外は弾く。 */
 export function catchmentFile(stopId: string): string {
   if (!ID.test(stopId)) throw Error(`Invalid stop id: ${stopId}`);
-  return stopId + '.geojson';
+  return stopId + '.json';
 }
 
 const coordinate = (value: unknown): Coordinate => {
@@ -38,32 +38,22 @@ const coordinate = (value: unknown): Coordinate => {
   return [value[0], value[1]];
 };
 
+/** 焼き込み側の [lon1, lat1, lon2, lat2, d1, d2, grade, steps] 1行を1セグメントにする。 */
+const segmentRow = (row: unknown): Segment => {
+  if (!Array.isArray(row) || row.length !== 8 || !row.every(n => Number.isFinite(n))) throw Error('Invalid segment');
+  const [lon1, lat1, lon2, lat2, d1, d2, grade, steps] = row as number[];
+  return { a: coordinate([lon1, lat1]), b: coordinate([lon2, lat2]), d1, d2, grade, steps: steps === 1 };
+};
+
 export function parseCatchment(value: unknown): Catchment {
-  const fc = value as { type?: string; stop_id?: string; budget?: number; features?: unknown[] };
-  if (!fc || fc.type !== 'FeatureCollection' || !Array.isArray(fc.features) ||
-    typeof fc.stop_id !== 'string' || !Number.isFinite(fc.budget)) throw Error('Invalid catchment');
-  let origin: Coordinate | null = null, snap: Coordinate | null = null, snapGap = 0;
-  const segments: Segment[] = [];
-  for (const raw of fc.features) {
-    const f = raw as { properties?: Record<string, unknown>; geometry?: { type?: string; coordinates?: unknown } };
-    const role = f?.properties?.role;
-    if (role === 'stop') origin = coordinate(f.geometry?.coordinates);
-    else if (role === 'snap') {
-      const line = f.geometry?.coordinates as unknown[];
-      if (!Array.isArray(line) || line.length !== 2) throw Error('Invalid snap');
-      snap = coordinate(line[1]);
-      snapGap = Number(f.properties?.gap) || 0;
-    } else if (role === 'segment') {
-      const line = f.geometry?.coordinates as unknown[];
-      if (!Array.isArray(line) || line.length !== 2) throw Error('Invalid segment');
-      const { d1, d2, grade, steps } = f.properties as Record<string, unknown>;
-      if (!Number.isFinite(d1) || !Number.isFinite(d2) || !Number.isFinite(grade)) throw Error('Invalid segment');
-      segments.push({ a: coordinate(line[0]), b: coordinate(line[1]),
-        d1: d1 as number, d2: d2 as number, grade: grade as number, steps: steps === true });
-    }
-  }
-  if (!origin || !snap || !segments.length) throw Error('Invalid catchment');
-  return { stopId: fc.stop_id, budget: fc.budget as number, origin, snap, snapGap, segments };
+  const fc = value as { v?: number; id?: string; budget?: number; origin?: unknown; snap?: unknown; gap?: number; seg?: unknown[] };
+  if (!fc || fc.v !== 1 || typeof fc.id !== 'string' || !Number.isFinite(fc.budget) ||
+    !Number.isFinite(fc.gap) || !Array.isArray(fc.seg)) throw Error('Invalid catchment');
+  const origin = coordinate(fc.origin);
+  const snap = coordinate(fc.snap);
+  const segments = fc.seg.map(segmentRow);
+  if (!segments.length) throw Error('Invalid catchment');
+  return { stopId: fc.id, budget: fc.budget as number, origin, snap, snapGap: fc.gap as number, segments };
 }
 
 /** 各セグメントの内部は距離が線形なので、補間するだけで正確に切れる。 */
