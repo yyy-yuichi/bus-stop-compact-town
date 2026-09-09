@@ -1897,7 +1897,24 @@ assert.throws(() => parseCatchment(collection({ ...seg(0, 0, 1, 1, 0, 1), proper
 console.log('parseCatchment and reachableLines checks passed.');
 ```
 
-既存の合成グラフ検証（`calculateWalk` を使う部分）は、対応する関数が消えるためこの書き換えで取り除かれる。到達性・一方通行・交差非接続の担保は焼き込み側（Task 3の勾配ゼロ回帰テスト）へ移る。
+既存の合成グラフ検証（`calculateWalk` を使う部分）は、対応する関数が消えるためこの書き換えで取り除かれる。到達性・一方通行・交差非接続の担保は焼き込み側（Task 3）へ移る。
+
+**Task 3 が入れた不変条件ブロックは残すこと。** `work/pilot-bake` を読んで
+帯の単調性とバジェット上限を確かめる部分は、焼いたデータだけで閉じており
+`calculateWalk` に依存しない。CIの `bake-walking.py --pilot` ステップが
+検証しているのはこのブロックなので、消すとCIが何も確かめなくなる。
+
+Task 3 のブロックから**削るのは次の3行だけ**。
+
+```js
+    // 現行の calculateWalk は試作なので、桁違いのずれだけを見る参考比較にとどめる。
+    const live = total(reachableLines(calculateWalk(pilot, stop.coordinate, 1000), 1000));
+    assert(Math.abs(bands[3] - live) < live * 0.10,
+      `${stop.name}: baked ${bands[3].toFixed(0)}m vs provisional ${live.toFixed(0)}m`);
+```
+
+あわせて、使われなくなる `const total = …` の行と、`pilot` を読む行も
+不要になれば整理してよい。`bands` の検査と `work/pilot-bake` の存在検査は残す。
 
 - [ ] **Step 2: テストを実行して失敗を確認する**
 
@@ -2421,9 +2438,10 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 
 **Files:**
 - Modify: `public/about.html`
+- Modify: `src/BusStopDrawer.tsx`
 
 **Interfaces:**
-- Consumes: Task 9が出力したデータ
+- Consumes: Task 8が生成した `bus_stop.geojson`（P11由来）
 - Produces: なし
 
 - [ ] **Step 1: 計算方法を書き換える**
@@ -2480,20 +2498,70 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 徒歩圏の候補判定は収録済みの19件が対象です。
 ```
 
-- [ ] **Step 5: ビルドと配信物の検査を通す**
+- [ ] **Step 5: バス停の出典表示を直す**
+
+**バス停がP11由来になったのに、ドロワーはOSM由来だと表示し続けている。**
+出典の誤表示はライセンス上の問題でもあるため、`src/BusStopDrawer.tsx` を直す。
+
+現状の問題は4点。
+
+- `properties.operator`（単数）を読んでいるが、P11由来のデータは
+  `operators`（配列）を持つ。このままでは常に「登録情報なし」と表示される
+- 「OSM ID」というラベルだが、IDは座標由来の合成IDになった
+- 「OSM由来の試用データです」「© OpenStreetMap contributors / ODbL」が事実と違う
+- 「OpenStreetMapで確認」リンクは `/^(node|way|relation)\/\d+$/` で守られており
+  座標IDでは描画されない。**死んだ分岐なので削除する**
+
+`<dl>` の中身を差し替える。
+
+```tsx
+        <div><dt className="text-xs font-semibold text-stone-500">運行事業者</dt>
+          <dd className="mt-2 break-words font-medium text-stone-900">{stop.properties?.operators?.join('・') || '登録情報なし'}</dd></div>
+        <div><dt className="text-xs font-semibold text-stone-500">系統</dt>
+          <dd className="mt-2 break-words text-stone-800">{stop.properties?.routes?.join('・') || '登録情報なし'}</dd></div>
+        <div><dt className="text-xs font-semibold text-stone-500">停留所ID</dt>
+          <dd className="mt-2 font-mono text-stone-800">{id}</dd></div>
+        <div><dt className="text-xs font-semibold text-stone-500">位置（緯度・経度）</dt>
+          <dd className="mt-2 font-mono text-stone-800">{latitude.toFixed(6)}, {longitude.toFixed(6)}</dd></div>
+```
+
+OpenStreetMapへのリンク行（`{/^(node|way|relation)\/\d+$/.test(id) && <a href=…OpenStreetMapで確認…}`）を削除する。
+
+出典の箱を差し替える。
+
+```tsx
+      <div className="mt-7 rounded-xl bg-stone-50 p-4 text-xs leading-relaxed text-stone-600">
+        <p>国土数値情報（バス停留所データ）由来の試用データです。位置・運行情報の正確性、最新性は未確認です。</p>
+        <p className="mt-2 break-all">データ時点：{timestamp || '不明'}</p>
+        <a className="mt-3 inline-block text-sky-800 underline underline-offset-2" href="https://nlftp.mlit.go.jp/ksj/" target="_blank" rel="noreferrer">出典：国土交通省国土数値情報ダウンロードサイト</a>
+      </div>
+```
+
+`timestamp` は `BusStopLayer.tsx:44` が `bus_stop.geojson` のトップレベル
+`timestamp` から取っている。**Task 8 の変換スクリプトはこれを出力していない**ため、
+`scripts/build-bus-stops.py` の出力に次を加えること。
+
+```python
+        'timestamp': '2022年度（令和4年度）',
+```
+
+`src/types.ts` の `BusProperties` に `operators?: string[]` と `routes?: string[]`
+を加える必要がある場合は、あわせて対応する。
+
+- [ ] **Step 6: ビルドと配信物の検査を通す**
 
 Run: `npm run build && node scripts/verify-release.mjs`
 Expected: PASS
 
-- [ ] **Step 6: すべてのテストを通す**
+- [ ] **Step 7: すべてのテストを通す**
 
 Run: `python3 scripts/test-bake-walking.py && python3 scripts/test-walking-source.py && python3 scripts/bake-walking.py --pilot && npm run test:walking && npm run typecheck`
 Expected: すべてPASS
 
-- [ ] **Step 7: コミット**
+- [ ] **Step 8: コミット**
 
 ```bash
-git add public/about.html
+git add public/about.html src/BusStopDrawer.tsx src/types.ts scripts/build-bus-stops.py
 git commit -m "Describe the slope model and credit GSI elevation tiles"
 ```
 
