@@ -54,7 +54,14 @@ assert abs(r[0][3] - 100.0) < 1e-6 and abs(r[0][2] - 150.0) < 1e-6, r
 # 長さ0の区間で例外を出さないこと。
 assert m.clip_edge(10.0, 10.0, 0.0, True, True, 100.0) == [(0.0, 1.0, 10.0, 10.0)]
 
-print('clip_edge checks passed (18 assertions).')
+# 一方通行の区間では、出発点から逆走する側へ徒歩圏を伸ばさない。
+# a→b にしか歩けないなら、出発点より始点側は到達できない。
+r = m.clip_edge(INF, INF, 100.0, True, False, 1000.0, snap=(0.5, 0.0))
+assert r and all(lo >= 0.5 - 1e-9 for lo, hi, v_lo, v_hi in r), r
+r = m.clip_edge(INF, INF, 100.0, False, True, 1000.0, snap=(0.5, 0.0))
+assert r and all(hi <= 0.5 + 1e-9 for lo, hi, v_lo, v_hi in r), r
+
+print('clip_edge checks passed (20 assertions).')
 
 # 平坦はちょうど等倍でなければならない。これが崩れると勾配ゼロ回帰テストが通らない。
 assert m.equivalent_flat(100.0, 0.0) == 100.0

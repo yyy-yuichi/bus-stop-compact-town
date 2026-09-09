@@ -21,8 +21,12 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
         branches.append((-l_eff, d_b + l_eff, 0.0, 1.0))
     if snap is not None:
         t_s, gap = snap
-        branches.append((-l_eff, gap + t_s * l_eff, 0.0, t_s))   # スナップ点の左側
-        branches.append((l_eff, gap - t_s * l_eff, t_s, 1.0))    # 右側
+        # 出発点から左（始点a側）へ進むのは b→a 方向なので backward が要る。
+        if backward:
+            branches.append((-l_eff, gap + t_s * l_eff, 0.0, t_s))   # スナップ点の左側
+        # 出発点から右（終点b側）へ進むのは a→b 方向なので forward が要る。
+        if forward:
+            branches.append((l_eff, gap - t_s * l_eff, t_s, 1.0))    # 右側
     if not branches:
         return []
 
@@ -53,11 +57,19 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
             continue
         span = hi - lo
         if v_lo > budget:
-            lo = lo + span * (v_lo - budget) / (v_lo - v_hi)
-            v_lo = budget
+            if math.isinf(v_lo):
+                # 定義域の外（一方通行で逆側の分枝が無い等）は幅ゼロまで縮める。
+                # (v_lo-budget)/(v_lo-v_hi) は inf/inf で nan になるため比例配分できない。
+                lo, v_lo = hi, v_hi
+            else:
+                lo = lo + span * (v_lo - budget) / (v_lo - v_hi)
+                v_lo = budget
         elif v_hi > budget:
-            hi = lo + (hi - lo) * (budget - v_lo) / (v_hi - v_lo)
-            v_hi = budget
+            if math.isinf(v_hi):
+                hi, v_hi = lo, v_lo
+            else:
+                hi = lo + (hi - lo) * (budget - v_lo) / (v_hi - v_lo)
+                v_hi = budget
         if hi - lo < 1e-9:
             continue
         out.append((lo, hi, v_lo, v_hi))
@@ -120,7 +132,14 @@ def _dijkstra(graph, snap, budget):
     heap = []
     e = graph['edges'][edge_i]
     le = _l_eff(e)
-    for node, cost in ((e[A], gap + t * le), (e[B], gap + (1 - t) * le)):
+    # 始点a側へ着くには b→a (backward) が要る。ただし出発点が端a上にあるなら
+    # そもそも歩く必要がないので常に着く。bも同様にforwardと端点の例外を見る。
+    seeds = []
+    if e[BWD] or t < 1e-10:
+        seeds.append((e[A], gap + t * le))
+    if e[FWD] or t > 1 - 1e-10:
+        seeds.append((e[B], gap + (1 - t) * le))
+    for node, cost in seeds:
         if cost < d[node]:
             d[node] = cost
             heapq.heappush(heap, (cost, node))
