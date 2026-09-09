@@ -40,7 +40,8 @@
   問題なく応答する（本設計中に14タイルで確認済み）。
   通らない相手にわざわざ名乗って通しにいかない
 - **CIでは絶対に取得しない。** CIが走るたびに外部へ出ていくことになる
-- **Geofabrikのファイルは1日1回しか更新されない。** 手元にあれば再取得しない
+- **Geofabrikのファイルは1日1回しか更新されない。** 手元にあれば再取得しない。
+  取得途中のファイルを「取得済み」と誤認しないよう、一時名で書いてから改名する
 
 ## ファイル構成
 
@@ -1078,18 +1079,21 @@ Expected: インストール成功（Python 3.10〜3.14 のホイールあり）
 
 osmium を使うのはこのファイルだけ。以降の処理は標準ライブラリで動く。
     python3 -m pip install -r requirements.txt
-    curl -O https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
-    python3 scripts/extract-roads.py work/chugoku-latest.osm.pbf
+    python3 scripts/extract-roads.py
 """
 import hashlib
 import importlib.util
 import json
+import shutil
 import sys
+import urllib.request
 from pathlib import Path
 
 import osmium
 
 ROOT = Path(__file__).resolve().parents[1]
+PBF_URL = 'https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf'
+PBF_PATH = ROOT / 'work/chugoku-latest.osm.pbf' 
 BBOX = [130.80, 33.85, 132.40, 34.55]   # 山口県を覆う範囲。バス停の分布より余裕を持たせる
 KEEP = {'highway', 'area', 'foot', 'access', 'foot:conditional', 'access:conditional',
         'oneway:foot:conditional', 'barrier', 'oneway:foot', 'foot:forward',
@@ -1127,8 +1131,25 @@ class Roads(osmium.SimpleHandler):
                 self.nodes[key].append(tags)
 
 
-def main(pbf):
-    pbf = Path(pbf)
+def ensure_pbf(path=PBF_PATH, url=PBF_URL):
+    """無ければ1回だけ取得する。Geofabrikは1日1回しか更新されないので取り直さない。"""
+    path = Path(path)
+    if path.exists():
+        print(f'既にある: {path} ({path.stat().st_size / 1024 / 1024:.0f}MB)', file=sys.stderr)
+        return path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    partial = path.with_name(path.name + '.part')
+    print(f'取得: {url}', file=sys.stderr)
+    with urllib.request.urlopen(url, timeout=600) as response, open(partial, 'wb') as out:
+        shutil.copyfileobj(response, out)
+    # 途中で落ちたファイルを「取得済み」と誤認して使わないよう、完了後に改名する。
+    partial.rename(path)
+    print(f'保存: {path} ({path.stat().st_size / 1024 / 1024:.0f}MB)', file=sys.stderr)
+    return path
+
+
+def main(pbf=None):
+    pbf = ensure_pbf(pbf or PBF_PATH)
     handler = Roads()
     handler.apply_file(str(pbf))          # 1周目: way を拾い、必要なノードIDを集める
     handler.apply_file(str(pbf))          # 2周目: そのノードの座標とタグを拾う
@@ -1150,40 +1171,30 @@ def main(pbf):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1] if sys.argv[1:] else None)
 ```
 
 - [ ] **Step 5: PBFを取得して実行する**
 
-**このダウンロードは人が行う。スクリプトからは取得しない。**
-Geofabrikのファイルは1日1回しか更新されず、224MBある。自動で取りに行く理由がない。
+スクリプトが無ければ取得し、あれば使い回す。**224MBを二度取りに行かせない。**
 
-取得先（人が1回だけ実行する）:
-```
-https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
-```
+Run: `python3 scripts/extract-roads.py`
+Expected: 初回は224MB前後のダウンロード。`ways` が10万件前後、`nodes` が100万件前後。
+抽出そのものは数分
 
-```bash
-mkdir -p work
-curl -L --fail -o work/chugoku-latest.osm.pbf \
-  https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
-ls -lh work/chugoku-latest.osm.pbf
-```
+- [ ] **Step 6: 二度目は取得しないことを確かめる**
 
-ファイルが置かれたら抽出する。
+Run: `python3 scripts/extract-roads.py`
+Expected: `既にある: work/chugoku-latest.osm.pbf (224MB)` と出て、**ダウンロードが走らない**
 
-Run: `python3 scripts/extract-roads.py work/chugoku-latest.osm.pbf`
-Expected: 224MB前後のファイルを読み、`ways` が10万件前後、`nodes` が100万件前後。処理は数分
-
-`extract-roads.py` は**ダウンロードを行わない。** 引数のローカルファイルが無ければ
-そのまま失敗させること。同じファイルを2周する（1周目でwayと必要なノードIDを集め、
+PBFの読み取りは同じファイルを2周する（1周目でwayと必要なノードIDを集め、
 2周目でノードの座標とタグを拾う）が、どちらもローカル読み込みで通信は発生しない。
 
 `extract-roads.py` は同じファイルを2周する（1周目でwayと必要なノードIDを集め、
 2周目でノードの座標とタグを拾う）。**どちらもローカルファイルの読み込みであり、
 通信は発生しない。**
 
-- [ ] **Step 6: 抽出結果の妥当性を確かめる**
+- [ ] **Step 7: 抽出結果の妥当性を確かめる**
 
 Run:
 ```bash
@@ -1198,7 +1209,7 @@ print('階段:', sum(1 for w in d['ways'] if w['tags'].get('highway')=='steps'))
 ```
 Expected: bboxが山口県を覆い、橋と階段がどちらも0件でないこと
 
-- [ ] **Step 7: コミット**
+- [ ] **Step 8: コミット**
 
 ```bash
 git add scripts/extract-roads.py requirements.txt scripts/sanitize-walking-source.py
