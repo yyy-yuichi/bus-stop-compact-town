@@ -101,6 +101,11 @@ Phase B（Task 4-5）で初めて外部へ通信する。**取得の作法は上
 
 区間上の距離関数を折れ点で切り、各断片の内部が線形になることを保証する純関数。仕様5.3節。
 
+距離関数は最大3つの候補の `min` である（始点から歩く直線・終点から歩く直線・
+スナップ点を底とするV字）。**折れ点は、これらの分枝どうしが交わるすべての点**であり、
+山型の頂点はその特殊ケースにすぎない。個別に列挙すると取りこぼすため、
+分枝を「傾き・切片・定義域」で表して総当たりで交点を求める。
+
 **Files:**
 - Create: `scripts/bake-walking.py`
 - Test: `scripts/test-bake-walking.py`
@@ -160,7 +165,7 @@ assert abs(r[1][3] - 50.0) < 1e-6, r  # 端まで 50m
 # どこにも届かなければ空。
 assert m.clip_edge(INF, INF, 100.0, True, True, 50.0) == []
 
-print('clip_edge checks passed (14 assertions).')
+print('clip_edge checks passed (18 assertions).')
 ```
 
 - [ ] **Step 2: テストを実行して失敗を確認する**
@@ -179,23 +184,35 @@ import math
 def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
     """区間上の距離関数を折れ点で分割し、バジェットで切る。
     各断片の内部で距離が線形になることを保証する。"""
+    # 各分枝を (傾き, 切片, 定義域の下限, 上限) で表す。距離はこれらの min。
+    branches = []
+    if forward and d_a < math.inf:
+        branches.append((l_eff, d_a, 0.0, 1.0))
+    if backward and d_b < math.inf:
+        branches.append((-l_eff, d_b + l_eff, 0.0, 1.0))
+    if snap is not None:
+        t_s, gap = snap
+        branches.append((-l_eff, gap + t_s * l_eff, 0.0, t_s))   # スナップ点の左側
+        branches.append((l_eff, gap - t_s * l_eff, t_s, 1.0))    # 右側
+    if not branches:
+        return []
+
     def value(t):
-        best = math.inf
-        if forward and d_a < math.inf:
-            best = min(best, d_a + t * l_eff)
-        if backward and d_b < math.inf:
-            best = min(best, d_b + (1 - t) * l_eff)
-        if snap is not None:
-            best = min(best, snap[1] + abs(t - snap[0]) * l_eff)
-        return best
+        return min((m * t + c for m, c, lo, hi in branches if lo - 1e-12 <= t <= hi + 1e-12),
+                   default=math.inf)
 
     cuts = {0.0, 1.0}
-    # 両側から到達の波が来てぶつかる点（山型の頂点）
-    if forward and backward and d_a < math.inf and d_b < math.inf and abs(d_a - d_b) < l_eff:
-        cuts.add((d_b - d_a + l_eff) / (2 * l_eff))
-    # 出発点そのもの（谷型の底）
     if snap is not None:
         cuts.add(snap[0])
+    # 分枝どうしが交わる点はすべて折れ点になる。ひとつでも取りこぼすと
+    # その断片の内部が直線でなくなり、端点からの補間が誤差を生む。
+    for i, (m1, c1, lo1, hi1) in enumerate(branches):
+        for m2, c2, lo2, hi2 in branches[i + 1:]:
+            if m1 == m2:
+                continue
+            t = (c2 - c1) / (m1 - m2)
+            if max(lo1, lo2) < t < min(hi1, hi2):
+                cuts.add(t)
     cuts = sorted(t for t in cuts if 0.0 <= t <= 1.0)
 
     out = []
@@ -221,7 +238,7 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
 - [ ] **Step 4: テストを実行して通ることを確認する**
 
 Run: `python3 scripts/test-bake-walking.py`
-Expected: PASS — `clip_edge checks passed (14 assertions).`
+Expected: PASS — `clip_edge checks passed (18 assertions).`
 
 - [ ] **Step 5: コミット**
 
@@ -265,7 +282,7 @@ assert vals == sorted(vals) and vals[0] < vals[-1]
 print('equivalent_flat checks passed (4 assertions).')
 ```
 
-`print('clip_edge checks passed (14 assertions).')` は残したまま、この追記をその後ろに置く。
+`print('clip_edge checks passed (18 assertions).')` は残したまま、この追記をその後ろに置く。
 
 - [ ] **Step 2: テストを実行して失敗を確認する**
 
