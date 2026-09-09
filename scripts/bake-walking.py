@@ -5,6 +5,11 @@ import gzip
 import urllib.request
 import urllib.error
 import time
+import importlib.util
+_spec = importlib.util.spec_from_file_location('builder', Path(__file__).with_name('build-walking-pilot.py'))
+_builder = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_builder)
+builder_node_open = _builder.node_open
 
 def equivalent_flat(length_m, grade):
     """Toblerの登山関数を平坦時で正規化し、勾配ぶんを距離に織り込む。
@@ -122,16 +127,21 @@ def nearest_edge(graph, lon, lat, max_gap, index=None):
 def _l_eff(edge):
     return equivalent_flat(edge[LEN], edge[GRADE] / 100)
 
-def _dijkstra(graph, snap, budget):
-    import heapq
-    edge_i, t, _, gap = snap
+def build_adjacency(graph):
     adjacency = [[] for _ in graph['nodes']]
-    for i, e in enumerate(graph['edges']):
+    for e in graph['edges']:
         le = _l_eff(e)
         if e[FWD]:
             adjacency[e[A]].append((e[B], le))
         if e[BWD]:
             adjacency[e[B]].append((e[A], le))
+    return adjacency
+
+def _dijkstra(graph, snap, budget, adjacency=None):
+    import heapq
+    edge_i, t, _, gap = snap
+    if adjacency is None:
+        adjacency = build_adjacency(graph)
     d = [math.inf] * len(graph['nodes'])
     heap = []
     e = graph['edges'][edge_i]
@@ -164,13 +174,13 @@ def stop_id(lon, lat):
 def stop_filename(sid):
     return sid + '.geojson'
 
-def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0):
+def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0, adjacency=None):
     """1停留所ぶんの徒歩圏を GeoJSON FeatureCollection で返す。届かなければ None。"""
     snap = nearest_edge(graph, origin[0], origin[1], snap_limit, index)
     if snap is None or snap[3] > budget:
         return None
     snap_i, snap_t, snap_point, snap_gap = snap
-    d = _dijkstra(graph, snap, budget)
+    d = _dijkstra(graph, snap, budget, adjacency)
     r5 = lambda p: [round(p[0], 5), round(p[1], 5)]
     features = [
         {'type': 'Feature',
@@ -302,6 +312,32 @@ class Elevation:
         return {'by_source': dict(self.hits), 'missing': self.missing,
                 'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 
+class ElevationTable:
+    """Elevationの代わりに、事前に抜き出した標高の並びを順番に返すだけの読み手。
+
+    タイルは持たない。呼び出し順は apply_grades がグラフを辿る順そのものに
+    依存するため、表を作ったときと同じ prepare_graph の結果に対してしか使えない
+    （extract-elevations.py が同じ関数で表を作るのはそのため）。
+    """
+
+    def __init__(self, path):
+        self.values = json.loads(Path(path).read_text(encoding='utf-8'))
+        self.i = 0
+        self.missing = 0
+
+    def at(self, lon, lat):
+        if self.i >= len(self.values):
+            raise RuntimeError(
+                '標高表を使い切った。prepare_graphの結果が表を作ったときと変わっていないか確認すること。')
+        value = self.values[self.i]
+        self.i += 1
+        if value is None:
+            self.missing += 1
+        return value
+
+    def stats(self):
+        return {'source': 'table', 'entries': len(self.values), 'missing': self.missing}
+
 def subdivide(graph, max_len=50.0):
     """長い区間を分割する。標高を区間の平均で済ませると起伏が消えるため。"""
     nodes = [list(p) for p in graph['nodes']]
@@ -371,6 +407,72 @@ class GridIndex:
                 found.update(self.cells.get((x, y), ()))
         return found
 
+def build_road_graph(roads):
+    """OSMのway/nodeから内部形式の (nodes, edges) を組み立てる。"""
+    index_of = {}
+    nodes = []
+    def node_index(key):
+        if key not in index_of:
+            index_of[key] = len(nodes)
+            nodes.append(roads['nodes'][key][:2])
+        return index_of[key]
+    edges = []
+    for way in roads['ways']:
+        tags = way['tags']
+        forward = tags.get('oneway:foot') != '-1'
+        backward = tags.get('oneway:foot') not in {'yes', '1', 'true'}
+        if not (forward or backward):
+            continue
+        is_flat = bool(tags.get('bridge')) or bool(tags.get('tunnel')) or tags.get('layer', '0') != '0'
+        is_steps = tags.get('highway') == 'steps'
+        for a, b in zip(way['refs'], way['refs'][1:]):
+            if a not in roads['nodes'] or b not in roads['nodes']:
+                continue
+            ta = roads['nodes'][a][2] if len(roads['nodes'][a]) > 2 else {}
+            tb = roads['nodes'][b][2] if len(roads['nodes'][b]) > 2 else {}
+            if not builder_node_open(ta) or not builder_node_open(tb):
+                continue
+            ia, ib = node_index(a), node_index(b)
+            length = meters(nodes[ia], nodes[ib])
+            if length <= 0:
+                continue
+            edges.append([ia, ib, length, forward, backward, way['id'], 0, is_steps, is_flat])
+    return nodes, edges
+
+def prune_edges_near_stops(nodes, edges, stops, prune_lon=0.0130, prune_lat=0.0108, prune_radius=1200.0):
+    """徒歩圏はバジェット1000m+スナップ30mが上限。equivalent_flatは常に実距離以上
+    なので、届く区間は必ず停留所から直線1200m以内にある。標高取得と後段の
+    全走査を全県ぶんではなく、停留所の周りだけに絞る。"""
+    stop_cells = {}
+    for feature in stops['features']:
+        lon, lat = feature['geometry']['coordinates']
+        stop_cells.setdefault((int(lon / prune_lon), int(lat / prune_lat)), []).append((lon, lat))
+    def near_a_stop(p):
+        cx, cy = int(p[0] / prune_lon), int(p[1] / prune_lat)
+        for x in range(cx - 1, cx + 2):
+            for y in range(cy - 1, cy + 2):
+                for q in stop_cells.get((x, y), ()):
+                    if meters(p, q) <= prune_radius:
+                        return True
+        return False
+    return [e for e in edges if near_a_stop(nodes[e[A]]) or near_a_stop(nodes[e[B]])]
+
+def prepare_graph(root):
+    """県全域の道路から、焼き込みが実際に使う刈り込み済み・50m分割済みグラフを作る。
+
+    バス停の座標が入力に含まれるため、ここで決まるノード列・辺列・その走査順は
+    prepare_graph の呼び出し側が変わらない限り再現する。extract-elevations.py が
+    同じ関数を呼ぶことで、標高表の並び順を焼き込み本番と一致させている。
+    """
+    roads = json.loads((root / 'raw_data/yamaguchi-roads.json').read_text(encoding='utf-8'))
+    nodes, edges = build_road_graph(roads)
+    edges_before_prune = len(edges)
+    stops = json.loads((root / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
+    edges = prune_edges_near_stops(nodes, edges, stops)
+    edges_after_prune = len(edges)
+    graph = subdivide({'nodes': nodes, 'edges': edges}, 50.0)
+    return graph, stops, edges_before_prune, edges_after_prune
+
 if __name__ == '__main__':
     import sys
     root = Path(__file__).resolve().parents[1]
@@ -395,3 +497,34 @@ if __name__ == '__main__':
                 json.dumps(fc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
             made += 1
         print(json.dumps({'baked': made, 'dir': str(out)}, ensure_ascii=False))
+    else:
+        graph, stops, edges_before_prune, edges_after_prune = prepare_graph(root)
+        table_path = root / 'raw_data/elevations.json'
+        if table_path.exists():
+            # 抜き出し済みの標高表があれば、タイル無しでそれを使う。
+            elevation = ElevationTable(table_path)
+        else:
+            # 逐次0.25秒間隔=毎秒4リクエストは、地理院地図を1人が普通に操作する時の
+            # ペース（1接続あたり)より十分遅い。規約に数値上限は無いため、この比較が判断基準。
+            elevation = Elevation(root / 'raw_data/dem', pause=0.25, max_requests=8000)
+        apply_grades(graph, elevation)
+        grid = GridIndex(graph)
+        adjacency = build_adjacency(graph)
+        out = root / 'work/walk'
+        out.mkdir(parents=True, exist_ok=True)
+        baked = []
+        for feature in stops['features']:
+            sid = feature['id']
+            name = feature['properties'].get('name', '名称未登録')
+            fc = bake_stop(graph, sid, name, feature['geometry']['coordinates'], 1000.0,
+                           grid, adjacency=adjacency)
+            if fc is None:
+                continue
+            (out / stop_filename(sid)).write_text(
+                json.dumps(fc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+            baked.append(sid)
+        (out / 'index.json').write_text(json.dumps(baked, ensure_ascii=False,
+                                                   separators=(',', ':')), encoding='utf-8')
+        print(json.dumps({'stops': len(stops['features']), 'baked': len(baked),
+                          'edges_before_prune': edges_before_prune, 'edges_after_prune': edges_after_prune,
+                          'elevation': elevation.stats()}, ensure_ascii=False))
