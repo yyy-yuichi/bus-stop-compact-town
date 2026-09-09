@@ -30,13 +30,32 @@
 - **Pythonの依存** PBF読み取りの `osmium` のみ。それ以外は標準ライブラリで書く。**CIで走るテストは osmium に依存させない**
 - **npmの依存追加は禁止**（`package.json` の dependencies は leaflet / react / react-dom のまま）
 
+### 原データの保存
+
+**取得元のURLは不変ではない。** Geofabrikのファイルは毎日更新され、
+国土地理院の標高タイルは過去版を取得できない。取得したものを残さなければ
+同じ結果を再現できないため、焼き込みの入力を `raw_data/` に置いてgitで管理する。
+
+- `work/` は使い捨ての中間物（`.gitignore` 済み）
+- **`raw_data/` は保存すべき原データ（gitで管理）**
+
+| データ | 置き場所 | git内 |
+|---|---|---|
+| バス停（P11） | `raw_data/P11-22_35.geojson` | 7.5MB |
+| 標高タイル | `raw_data/dem/*.txt.gz` | 約73MB |
+| 抽出済み道路 | `raw_data/yamaguchi-roads.json` | 30〜50MB（Task 7で実測して判断） |
+| PBF原本 | Releaseアセット | — |
+| isochrone出力 | Releaseアセット | — |
+
+これにより、**リポジトリを持っていれば焼き直しに外部通信が一切不要**になる。
+
 ### 外部データ取得の作法（厳守）
 
 国土地理院とGeofabrikは無償の公開サービスである。**一度きりの焼き込みのために、
 繰り返し叩いてよい理由はない。**
 
 - **逐次取得のみ。並列化しない。** 1リクエストごとに1秒以上あける
-- **取得したものは必ずディスクへ残し、二度と取りに行かない。**
+- **取得したものは必ず `raw_data/` へ残し、二度と取りに行かない。**
   焼き込みをやり直しても再取得が起きないこと
 - **総リクエスト数に上限を設ける。** 上限に達したら中断する。
   実装の誤りが取得の洪水に化けるのを防ぐ
@@ -64,6 +83,8 @@
 | `public/about.html`（変更） | 計算方法と出典 |
 | `requirements.txt`（新規） | `osmium==4.3.1` |
 | `.gitignore`（変更） | `public/data/walk/` を除外 |
+| `raw_data/dem/`（新規） | 標高タイルのgzip保存先。gitで管理 |
+| `raw_data/yamaguchi-roads.json`（新規） | 抽出済み道路。gitで管理（50MB超ならRelease） |
 
 ## 作業の順序
 
@@ -571,6 +592,7 @@ git commit -m "Bake per-stop catchments with band and budget invariants"
 - Produces:
   - `http_text(url, timeout=60) -> str`（既定の取得関数。差し替え可能にしてテストする）
   - `class Elevation` — `Elevation(cache_dir, pause=1.0, max_requests=4000, backoff=(5,15,45), fetch=http_text)`
+    キャッシュ先は `raw_data/dem/`。**1タイル1ファイルのgzip**で保存する
     / `.at(lon, lat) -> float | None` / `.stats() -> dict`
   - `tile_index(lon, lat, z) -> (x, y, px, py)` / `parse_tile(text) -> list[list[float|None]]`
 
@@ -614,12 +636,12 @@ class FakeFetch:
 
 # 一度取ったタイルは二度と取りに行かない。メモリでもディスクでも効く。
 fetch = FakeFetch()
-e = m.Elevation(tempfile.mkdtemp(), pause=0, fetch=fetch)
+e = m.Elevation(tempfile.mkdtemp(), pause=0, fetch=fetch)   # gzipで保存される
 assert e.at(131.17, 33.98) == 5.0
 before = len(fetch.calls)
 e.at(131.1701, 33.9801)                          # 同じタイル内
 assert len(fetch.calls) == before, fetch.calls
-e2 = m.Elevation(e.dir, pause=0, fetch=fetch)    # 別インスタンスでもディスクから読む
+e2 = m.Elevation(e.dir, pause=0, fetch=fetch)    # 別インスタンスでもgzipから読む
 assert e2.at(131.17, 33.98) == 5.0
 assert len(fetch.calls) == before, fetch.calls
 
@@ -666,6 +688,7 @@ Expected: FAIL — `AttributeError: module 'bake' has no attribute 'tile_index'`
 `scripts/bake-walking.py` に追記する。
 
 ```python
+import gzip
 import urllib.request
 import urllib.error
 import time
@@ -738,12 +761,15 @@ class Elevation:
         key = (kind, z, x, y)
         if key in self.tiles:
             return self.tiles[key]
-        path = self.dir / f'{kind}-{z}-{x}-{y}.txt'
+        # gzipで持つ。git内の容量は生と変わらないが、作業ツリーが287MB→73MBになる。
+        path = self.dir / f'{kind}-{z}-{x}-{y}.txt.gz'
         if path.exists():
-            text = path.read_text(encoding='utf-8')      # 取得済みなら通信しない
+            with gzip.open(path, 'rt', encoding='utf-8') as handle:
+                text = handle.read()                     # 取得済みなら通信しない
         else:
             text = self._download(f'https://cyberjapandata.gsi.go.jp/xyz/{kind}/{z}/{x}/{y}.txt')
-            path.write_text(text, encoding='utf-8')
+            with gzip.open(path, 'wt', encoding='utf-8') as handle:
+                handle.write(text)
         grid = parse_tile(text) if text.strip() else None
         self.tiles[key] = grid
         return grid
@@ -781,7 +807,7 @@ python3 -c "
 import importlib.util,pathlib
 s=importlib.util.spec_from_file_location('b','scripts/bake-walking.py')
 m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
-e=m.Elevation('work/dem-cache')
+e=m.Elevation('raw_data/dem')
 print('サンパークおのだ 標高:', e.at(131.1722795, 33.9854622), 'm')
 print(e.stats())
 "
@@ -928,7 +954,7 @@ Expected: PASS — 5行の合格メッセージ
 ```python
         if '--slope' in sys.argv:
             graph = subdivide(graph, 50.0)
-            elevation = Elevation(root / 'work/dem-cache')
+            elevation = Elevation(root / 'raw_data/dem')
             apply_grades(graph, elevation)
             print(json.dumps({'elevation': elevation.stats(),
                               'edges': len(graph['edges'])}, ensure_ascii=False), file=sys.stderr)
@@ -1051,7 +1077,7 @@ git commit -m "Add grid bucket index for nearest-road lookup at prefecture scale
 
 **Interfaces:**
 - Consumes: `can_walk(tags)` / `node_open(tags)`（既存 `build-walking-pilot.py`。`test-walking-source.py` が検証済み）
-- Produces: `work/yamaguchi-roads.json`
+- Produces: `raw_data/yamaguchi-roads.json`（gitで管理。仕様3.3節）
   ```json
   { "source_url": "...", "source_sha256": "...", "retrieved_at": "2026-09-09",
     "bbox": [130.8, 33.85, 132.4, 34.5],
@@ -1176,7 +1202,7 @@ def main(pbf=None):
         'nodes': handler.nodes,
         'ways': [w for w in handler.ways if any(r in handler.nodes for r in w['refs'])],
     }
-    out = ROOT / 'work/yamaguchi-roads.json'
+    out = ROOT / 'raw_data/yamaguchi-roads.json'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     print(json.dumps({'ways': len(result['ways']), 'nodes': len(result['nodes']),
@@ -1213,7 +1239,7 @@ Run:
 ```bash
 python3 -c "
 import json
-d=json.load(open('work/yamaguchi-roads.json'))
+d=json.load(open('raw_data/yamaguchi-roads.json'))
 lons=[p[0] for p in d['nodes'].values()];lats=[p[1] for p in d['nodes'].values()]
 print('bbox:', min(lons), min(lats), max(lons), max(lats))
 print('橋:', sum(1 for w in d['ways'] if w['tags'].get('bridge')))
@@ -1222,10 +1248,39 @@ print('階段:', sum(1 for w in d['ways'] if w['tags'].get('highway')=='steps'))
 ```
 Expected: bboxが山口県を覆い、橋と階段がどちらも0件でないこと
 
-- [ ] **Step 8: コミット**
+- [ ] **Step 8: gitに入れてよいサイズか測る**
+
+抽出済み道路はgitで管理する方針だが、サイズを実測してから確定する（仕様3.3節）。
+
+Run:
+```bash
+python3 -c "
+import os,zlib
+f='raw_data/yamaguchi-roads.json'
+raw=os.path.getsize(f); z=len(zlib.compress(open(f,'rb').read(),6))
+print(f'生 {raw/1024/1024:.0f}MB / git内(zlib) {z/1024/1024:.0f}MB')
+print('→ gitへ' if z < 50*1024*1024 else '→ 50MB超。Releaseへ回し .gitignore に追加する')
+"
+```
+
+**git内が50MB以下ならそのままコミットする。** 超える場合は `.gitignore` に
+`raw_data/yamaguchi-roads.json` を足し、Task 10 でPBF原本と一緒に
+Releaseアセットへ回すこと。
+
+- [ ] **Step 9: PBF原本のハッシュを控える**
+
+PBFはgitに入れない（224MBがまったく縮まないうえ、大半が不要な中間生成物）。
+Task 10 でReleaseアセットとして保管する。
+
+Run: `ls -lh work/chugoku-latest.osm.pbf && shasum -a 256 work/chugoku-latest.osm.pbf`
+Expected: 224MB前後。SHA256が `raw_data/yamaguchi-roads.json` の
+`source_sha256` と一致すること
+
+- [ ] **Step 10: コミット**
 
 ```bash
-git add scripts/extract-roads.py requirements.txt scripts/sanitize-walking-source.py
+git add scripts/extract-roads.py requirements.txt scripts/sanitize-walking-source.py \
+  raw_data/yamaguchi-roads.json
 git commit -m "Extract prefecture-wide walkable roads from the Geofabrik PBF"
 ```
 
@@ -1411,7 +1466,7 @@ git commit -m "Rebuild bus stops from the national bus stop dataset"
 
 ```python
     else:
-        roads = json.loads((root / 'work/yamaguchi-roads.json').read_text(encoding='utf-8'))
+        roads = json.loads((root / 'raw_data/yamaguchi-roads.json').read_text(encoding='utf-8'))
         index_of = {}
         nodes = []
         def node_index(key):
@@ -1441,7 +1496,7 @@ git commit -m "Rebuild bus stops from the national bus stop dataset"
                     continue
                 edges.append([ia, ib, length, forward, backward, way['id'], 0, is_steps, is_flat])
         graph = subdivide({'nodes': nodes, 'edges': edges}, 50.0)
-        elevation = Elevation(root / 'work/dem-cache')
+        elevation = Elevation(root / 'raw_data/dem')
         apply_grades(graph, elevation)
         grid = GridIndex(graph)
         stops = json.loads((root / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
@@ -1476,7 +1531,8 @@ builder_node_open = _builder.node_open
 - [ ] **Step 2: 焼き込みを実行する**
 
 **ここが外部通信の最大の山になる。** 標高タイルを約1,000枚、1秒間隔で逐次取得するため、
-初回は取得だけで20分前後かかる。`work/dem-cache` に残るので、2回目以降は通信しない。
+初回は取得だけで20分前後かかる。`raw_data/dem/` にgzipで残り**gitで管理する**ので、
+2回目以降はこのリポジトリを持つ誰も国土地理院へ通信しない。
 
 Run: `python3 scripts/bake-walking.py`
 Expected: `stops` が3946、`baked` が3,800件前後（30m以内に道路がない停留所は除かれる）。
@@ -1509,7 +1565,21 @@ Expected: 3,800件前後・**合計が1024MBを大きく下回ること**（見�
 仕様2節の見積りは市街地基準なので、実測がこれより小さければそのまま進む。
 **もし800MBを超えていたら、コンパクトな配列形式への切り替えを検討する**（仕様9節）
 
-- [ ] **Step 5: コミット**
+- [ ] **Step 5: 取得した標高タイルをコミットする**
+
+`raw_data/dem/` に溜まったタイルをgitへ入れる。これで国土地理院への通信が
+このリポジトリから消える（仕様3.3節）。
+
+Run:
+```bash
+du -sh raw_data/dem && ls raw_data/dem | wc -l
+git add raw_data/dem
+git commit -m "Store the fetched GSI elevation tiles so no one refetches them"
+```
+Expected: 1,000枚前後・約73MB。**300MBを大きく超えていたらgzip保存が効いていない**ので
+Task 4 の実装を確認すること
+
+- [ ] **Step 6: コミット**
 
 ```bash
 git add scripts/bake-walking.py
@@ -1552,14 +1622,22 @@ Expected: gzipで50MB前後。**2GB（Releaseアセットの上限）を大き�
 
 - [ ] **Step 2: Releaseへ上げる**
 
+徒歩圏データと、gitに入れないPBF原本をまとめて添付する。PBFは保管目的であり、
+`npm run data:fetch` は取りに行かない。
+
 Run:
 ```bash
 DATE=$(date +%Y%m%d)
-gh release create "walk-data-$DATE" "work/walk-data-$DATE.tar.gz" \
+gh release create "walk-data-$DATE" \
+  "work/walk-data-$DATE.tar.gz" \
+  work/chugoku-latest.osm.pbf \
   --title "徒歩圏データ $DATE" \
-  --notes "OSM(ODbL 1.0)と国土地理院標高タイルから生成した、山口県内バス停の徒歩圏データ。"
+  --notes "OSM(ODbL 1.0)と国土地理院標高タイルから生成した、山口県内バス停の徒歩圏データ。chugoku-latest.osm.pbf は抽出元の原本（保管用）。"
 ```
-Expected: Releaseが作成され、アセットのURLが表示される
+Expected: Releaseが作成され、2つのアセットのURLが表示される
+
+Task 7 Step 8 で `raw_data/yamaguchi-roads.json` が50MBを超えていた場合は、
+それもここへ添付し `.gitignore` に加えること。
 
 - [ ] **Step 3: マニフェストを書く**
 
@@ -2434,6 +2512,9 @@ git commit -m "Describe the slope model and credit GSI elevation tiles"
 - [ ] gitに入っている徒歩圏関連は `public/data/walk-release.json` だけである
 - [ ] `dist` の合計が1024MBを下回っている
 - [ ] `test/fixtures/walking-onoda.json` へ移した試作グラフで `--pilot` が動く
+- [ ] `raw_data/` に P11・標高タイル・抽出済み道路があり、gitで管理されている
+- [ ] `raw_data/dem/` を消さずに `python3 scripts/bake-walking.py` を再実行すると
+      `elevation.requests` が0になる（外部通信ゼロで焼き直せる）
 - [ ] `src/walking.ts` に `calculateWalk` / `MinHeap` / `validateGraph` / `inPilot` が残っていない
 - [ ] 地図上で任意のバス停を選ぶと、3バンドの徒歩圏と坂・階段の警告が出る
 - [ ] `about.html` にODbLの継承条項、国土地理院、国土数値情報の出典・加工事実がある
