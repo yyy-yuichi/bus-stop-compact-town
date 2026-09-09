@@ -681,7 +681,29 @@ g = tiny_graph(100.0)
 m.apply_grades(g, FakeElevation({}))
 assert g['edges'][0][m.GRADE] == 0
 
-print('subdivide and grade checks passed (10 assertions).')
+# 下りの勾配は負で出る。符号を落とす実装（abs）を捕まえる。
+g = tiny_graph(100.0)
+m.apply_grades(g, FakeElevation({0.0: 15.0, round(100.0 * DEG, 9): 5.0}))
+assert g['edges'][0][m.GRADE] == -10, g['edges'][0][m.GRADE]
+
+# クランプは下り側にも同じだけ効く。
+g = tiny_graph(10.0)
+m.apply_grades(g, FakeElevation({0.0: 20.0, round(10.0 * DEG, 9): 0.0}))
+assert g['edges'][0][m.GRADE] == -30, g['edges'][0][m.GRADE]
+
+# 片端だけ標高が取れない場合も平坦扱いにする。データ範囲の境界で実際に起きる。
+for known in (0.0, round(100.0 * DEG, 9)):
+    g = tiny_graph(100.0)
+    m.apply_grades(g, FakeElevation({known: 5.0}))
+    assert g['edges'][0][m.GRADE] == 0, (known, g['edges'][0][m.GRADE])
+
+# 長さ0の区間でゼロ除算しない。
+g = tiny_graph(100.0)
+g['edges'][0][m.LEN] = 0.0
+m.apply_grades(g, FakeElevation({0.0: 0.0, round(100.0 * DEG, 9): 50.0}))
+assert g['edges'][0][m.GRADE] == 0, g['edges'][0][m.GRADE]
+
+print('subdivide and grade checks passed (14 assertions).')
 ```
 
 - [ ] **Step 2: テストを実行して失敗を確認する**
