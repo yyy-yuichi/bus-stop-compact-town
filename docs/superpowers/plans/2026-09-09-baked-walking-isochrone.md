@@ -1791,7 +1791,10 @@ const collection = (...segments) => ({
   ],
 });
 
-assert.equal(catchmentFile('node/5127585172'), 'node-5127585172.geojson');
+assert.equal(catchmentFile('131.17228_33.98546'), '131.17228_33.98546.geojson');
+// URLを組み立てるので、想定外の形のIDは通さない。
+assert.throws(() => catchmentFile('../../etc/passwd'));
+assert.throws(() => catchmentFile('131.1/33.9'));
 
 // 全体がバジェット内なら丸ごと残る。
 let c = parseCatchment(collection(seg(0, 0, 200 * x, 0, 0, 200)));
@@ -1833,8 +1836,12 @@ export interface Catchment {
   stopId: string; budget: number; origin: Coordinate; snap: Coordinate; snapGap: number; segments: Segment[];
 }
 
+const ID = /^-?\d+(\.\d+)?_-?\d+(\.\d+)?$/;
+
+/** IDは座標由来。URLに使うので、想定の形以外は弾く。 */
 export function catchmentFile(stopId: string): string {
-  return stopId.replaceAll('/', '-') + '.geojson';
+  if (!ID.test(stopId)) throw Error(`Invalid stop id: ${stopId}`);
+  return stopId + '.geojson';
 }
 
 const coordinate = (value: unknown): Coordinate => {
@@ -2360,6 +2367,7 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 
 ```html
   <p>標高データ：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院 標高タイル</a>（DEM5A・DEM10B）を使用しています。出典：国土地理院ウェブサイト。徒歩圏データは国土地理院の標高タイルをもとに勾配を算出して作成したものであり、国土地理院が作成したものではありません。</p>
+  <p>バス停の位置：<a href="https://nlftp.mlit.go.jp/ksj/">国土数値情報（バス停留所データ）</a>（国土交通省、2022年度）を加工して作成しています。出典：国土交通省国土数値情報ダウンロードサイト。同一地点に重複する記録を統合し、名称・事業者・系統をまとめました。</p>
 ```
 
 - [ ] **Step 3: 配布リンクを差し替える**
@@ -2381,7 +2389,12 @@ git commit -m "Load catchments lazily and offer 5/10/15 minute bands"
 
 22行目:
 ```html
-  <p>県内のバス停について、道路と坂に沿った徒歩5分・10分・15分の到達範囲を表示できます。買い物候補の判定は収録済みの商業施設19件が対象です。時刻表検索、乗換案内には対応していません。</p>
+  <p>県内3,946のバス停について、道路と坂に沿った徒歩5分・10分・15分の到達範囲を表示できます。買い物候補の判定は収録済みの商業施設19件が対象です。時刻表検索、乗換案内には対応していません。</p>
+```
+
+29行目（収録データ）— バス停の件数と出典を直す:
+```html
+  <p>山口県のバス停3,946地点と商業施設19件を表示する試作マップです。バス停は国土数値情報（2022年度）由来で、同一地点の重複を統合しています。施設情報照合日：2026年9月8日。</p>
 ```
 
 31行目の末尾の一文を差し替える。
@@ -2415,30 +2428,35 @@ git commit -m "Describe the slope model and credit GSI elevation tiles"
 - [ ] `python3 scripts/test-bake-walking.py` が通る
 - [ ] `python3 scripts/test-walking-source.py` が通る
 - [ ] `python3 scripts/bake-walking.py --pilot && npm run test:walking` が通る（勾配ゼロ回帰を含む）
-- [ ] `npm run build && node scripts/verify-release.mjs` が通る
-- [ ] `public/data/walk/` に1,000件前後のGeoJSONと `index.json` がある
-- [ ] `public/data/walking-onoda.json` が消えている
+- [ ] `npm run data:fetch && npm run build && node scripts/verify-release.mjs` が通る
+- [ ] `public/data/bus_stop.geojson` が3,946件で、北部（緯度34.43以上）が100件以上ある
+- [ ] `public/data/walk/` はgit管理外で、`npm run data:fetch` で用意される
+- [ ] gitに入っている徒歩圏関連は `public/data/walk-release.json` だけである
+- [ ] `dist` の合計が1024MBを下回っている
+- [ ] `test/fixtures/walking-onoda.json` へ移した試作グラフで `--pilot` が動く
 - [ ] `src/walking.ts` に `calculateWalk` / `MinHeap` / `validateGraph` / `inPilot` が残っていない
 - [ ] 地図上で任意のバス停を選ぶと、3バンドの徒歩圏と坂・階段の警告が出る
-- [ ] `about.html` にODbLの継承条項と国土地理院の出典・加工事実の両方がある
+- [ ] `about.html` にODbLの継承条項、国土地理院、国土数値情報の出典・加工事実がある
 
 ## CIについて
 
-`.github/workflows/build.yml` と `pages.yml` は次を実行する。**焼き込み自体はCIで走らせない**（PBFと標高タイルの取得が必要なため）。
+**焼き込み自体はCIで走らせない**（PBFと標高タイルの取得が必要なため）。
+CIが外部から取るのは、Releaseアセット（GitHub自身）だけである。
 
-```yaml
-      - run: npm run test:walking
-      - run: python3 scripts/test-walking-source.py
-```
-
-`npm run test:walking` は `work/pilot-bake` を要求するようになるため、両ワークフローの `npm run test:walking` の**前に**次の行を足すこと。
+Task 10 Step 10 を終えると、両ワークフローは次の形になる。
 
 ```yaml
       - run: python3 scripts/test-bake-walking.py
       - run: python3 scripts/bake-walking.py --pilot
+      - run: npm run test:walking
+      - run: python3 scripts/test-walking-source.py
+      - run: npm run data:fetch
+      - run: npm run build
+      - run: node scripts/verify-release.mjs
 ```
 
-`bake-walking.py` は標準ライブラリだけで動き、`--pilot` はリポジトリ内の `walking-onoda.json` しか読まないため、CIで osmium も外部通信も不要である。
+`bake-walking.py --pilot` は標準ライブラリだけで動き、リポジトリ内の
+`test/fixtures/walking-onoda.json` しか読まないため、CIで osmium も外部通信も不要である。
 
 試作グラフは Task 9 Step 5 で `test/fixtures/walking-onoda.json` へ移し、
 配信物から外したうえで回帰テストの基準として残す。`public/` の外にあるため
