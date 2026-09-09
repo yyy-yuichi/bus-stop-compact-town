@@ -10,11 +10,13 @@
     <div id="review-map" aria-label="バス停の比較地図" tabindex="0"></div>
     <header id="review-toolbar">
       <div class="toolbar-row"><a class="home" href="./" aria-label="通常の地図へ戻る">←</a><strong>バス停追加の確認</strong><button id="options" aria-expanded="false" aria-controls="review-options">表示設定</button></div>
-      <nav aria-label="表示する地域"><button data-area="hikari" aria-pressed="true">光市</button><button data-area="iwakuni" aria-pressed="false">岩国市</button><button data-area="all" aria-pressed="false">両地域</button></nav>
-      <div class="legend"><span><i class="osm-dot"></i>既存OSM</span><span><i class="official-dot"></i>公式・追加候補</span></div>
+      <nav aria-label="表示する地域"><button data-area="all" aria-pressed="true">県全体</button><button data-area="hikari" aria-pressed="false">光市</button><button data-area="iwakuni" aria-pressed="false">岩国市</button></nav>
+      <div class="legend"><span><i class="osm-dot"></i>OSM</span><span><i class="official-dot"></i>市データ</span><span><i class="national-dot"></i>国2022</span></div>
       <section id="review-options" hidden>
         <label><input type="checkbox" id="show-osm" checked />既存OSM 1,085点</label>
         <label><input type="checkbox" id="show-official" checked />公式候補 907件</label>
+        <label><input type="checkbox" id="show-national" checked />国土数値情報 4,418件（2022年度版）</label>
+        <p>国のデータは概ね2022年8月時点。原則として上下の乗り場を集約しています。各色を切り替えて比べられます。</p>
         <p>光172件・岩国735件。取得原本は2026年4月時点です。既存点との重複は未統合で、907か所の新設を意味しません。由宇改正関連65件は除いています。</p>
         <p>点をタップすると名称・路線・出典を表示します。徒歩圏の計算はこの確認ページには含めていません。</p>
       </section>

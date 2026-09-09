@@ -3,7 +3,7 @@ import path from 'node:path';
 const root='dist';
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
 for(const f of files){
- if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/(walking-onoda|review-routes)\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes)\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
 for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walking-onoda.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const html=fs.readFileSync('dist/index.html','utf8');
@@ -24,3 +24,7 @@ for(const file of ['review-stops.geojson','review-routes.json'])if(!fs.readFileS
 const review=fs.readFileSync('dist/review.html','utf8');
 for(const m of review.matchAll(/(?:src|href)="(\.\/assets\/[^"#]+)"/g))if(!fs.existsSync(path.join(root,m[1])))throw Error(`Missing review asset ${m[1]}`);
 console.log('Review verified: Hikari 172 + Iwakuni 735; excluded known stale routes; route references valid.');
+const national=JSON.parse(fs.readFileSync('dist/data/review-national.geojson','utf8'));
+if(national.features.length!==4418||new Set(national.features.map(f=>f.id)).size!==4418||national.features.some(f=>f.properties.source_year!==2022||f.properties.license!=='CC-BY-4.0'||f.geometry.type!=='Point'))throw Error('National data integrity');
+if(!fs.readFileSync('public/data/review-national.geojson').equals(fs.readFileSync('dist/data/review-national.geojson')))throw Error('Stale national data');
+console.log('National layer verified: 4418 original-row IDs, 2022 edition.');
