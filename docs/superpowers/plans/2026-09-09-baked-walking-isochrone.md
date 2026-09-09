@@ -2539,6 +2539,6 @@ Task 10 Step 10 を終えると、両ワークフローは次の形になる。
 `bake-walking.py --pilot` は標準ライブラリだけで動き、リポジトリ内の
 `test/fixtures/walking-onoda.json` しか読まないため、CIで osmium も外部通信も不要である。
 
-試作グラフは Task 9 Step 5 で `test/fixtures/walking-onoda.json` へ移し、
+試作グラフは Task 10 Step 9 で `test/fixtures/walking-onoda.json` へ移し、
 配信物から外したうえで回帰テストの基準として残す。`public/` の外にあるため
 `dist/` へはコピーされない。
