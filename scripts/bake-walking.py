@@ -1,6 +1,10 @@
 """バス停ごとの徒歩圏を事前計算する。標準ライブラリのみで動く。"""
 import math
 from pathlib import Path
+import gzip
+import urllib.request
+import urllib.error
+import time
 
 def equivalent_flat(length_m, grade):
     """Toblerの登山関数を平坦時で正規化し、勾配ぶんを距離に織り込む。
@@ -194,6 +198,104 @@ def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0)
                 'geometry': {'type': 'LineString', 'coordinates': [at(lo), at(hi)]}})
     return {'type': 'FeatureCollection', 'version': 1, 'stop_id': stop_id,
             'budget': budget, 'features': features}
+
+GSI_TILES = (('dem5a', 15), ('dem', 14))   # DEM5A(5mメッシュ) を優先し、欠測は DEM10B で埋める
+RETRY_CODES = {429, 500, 502, 503, 504}
+
+def http_text(url, timeout=60):
+    return urllib.request.urlopen(url, timeout=timeout).read().decode()
+
+def tile_index(lon, lat, z):
+    """経緯度から (タイルX, タイルY, タイル内の列, タイル内の行) を返す。"""
+    n = 2 ** z
+    xf = (lon + 180) / 360 * n
+    yf = (1 - math.asinh(math.tan(math.radians(lat))) / math.pi) / 2 * n
+    x, y = int(xf), int(yf)
+    return x, y, int((xf - x) * 256), int((yf - y) * 256)
+
+def parse_tile(text):
+    """標高タイルのテキストを 256x256 の二次元配列にする。'e' は None。"""
+    return [[None if v == 'e' else float(v) for v in row.split(',')]
+            for row in text.strip().split('\n')]
+
+class Elevation:
+    """国土地理院の標高タイルを読む。
+
+    無償の公開サービスなので、逐次・間隔をあけて取り、取ったものは残して
+    二度と取りに行かない。総数に上限を設け、実装の誤りが取得の洪水に
+    化けないようにする。
+    """
+
+    def __init__(self, cache_dir, pause=1.0, max_requests=4000,
+                 backoff=(5, 15, 45), fetch=http_text):
+        self.dir = Path(cache_dir)
+        self.dir.mkdir(parents=True, exist_ok=True)
+        self.pause = pause
+        self.max_requests = max_requests
+        self.backoff = backoff
+        self.fetch = fetch
+        self.tiles = {}
+        self.hits = {}
+        self.requests = 0
+        self.missing = 0
+
+    def _download(self, url):
+        """429と5xxのみ間隔を空けて再試行する。404は空、それ以外はそのまま失敗させる。"""
+        for attempt, wait in enumerate(self.backoff):
+            if self.requests >= self.max_requests:
+                raise RuntimeError(
+                    f'標高タイルの取得が上限{self.max_requests}件に達した。'
+                    '対象範囲か実装を疑うこと。上限を上げる前に原因を確かめる。')
+            self.requests += 1
+            try:
+                text = self.fetch(url)
+                time.sleep(self.pause)      # 取得できたときも必ず間隔をあける
+                return text
+            except urllib.error.HTTPError as error:
+                if error.code == 404:
+                    return ''               # そのタイルは無い。次の精度へ落ちる
+                if error.code not in RETRY_CODES or attempt == len(self.backoff) - 1:
+                    raise                   # 叩き続けない
+                time.sleep(wait)
+            except urllib.error.URLError:
+                if attempt == len(self.backoff) - 1:
+                    raise
+                time.sleep(wait)
+        raise RuntimeError('unreachable')
+
+    def _tile(self, kind, z, x, y):
+        key = (kind, z, x, y)
+        if key in self.tiles:
+            return self.tiles[key]
+        # gzipで持つ。git内の容量は生と変わらないが、作業ツリーが287MB→73MBになる。
+        path = self.dir / f'{kind}-{z}-{x}-{y}.txt.gz'
+        if path.exists():
+            with gzip.open(path, 'rt', encoding='utf-8') as handle:
+                text = handle.read()                     # 取得済みなら通信しない
+        else:
+            text = self._download(f'https://cyberjapandata.gsi.go.jp/xyz/{kind}/{z}/{x}/{y}.txt')
+            with gzip.open(path, 'wt', encoding='utf-8') as handle:
+                handle.write(text)
+        grid = parse_tile(text) if text.strip() else None
+        self.tiles[key] = grid
+        return grid
+
+    def at(self, lon, lat):
+        for kind, z in GSI_TILES:
+            x, y, px, py = tile_index(lon, lat, z)
+            grid = self._tile(kind, z, x, y)
+            if not grid:
+                continue
+            value = grid[py][px]
+            if value is not None:
+                self.hits[kind] = self.hits.get(kind, 0) + 1
+                return value
+        self.missing += 1
+        return None
+
+    def stats(self):
+        return {'by_source': dict(self.hits), 'missing': self.missing,
+                'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 
 if __name__ == '__main__':
     import sys

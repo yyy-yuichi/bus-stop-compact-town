@@ -128,3 +128,76 @@ lats = [c[1] for f in fc['features'] if f['properties']['role'] == 'segment'
 assert lats and max(lats) <= mid_lat + 1e-9, f'b→a のみ歩けるのに終点側へ伸びた: {max(lats)}'
 
 print('bake_stop checks passed (over 12 assertions).')
+
+# タイル番号の自己整合。あるタイルの中心座標は、そのタイル自身を指すはず。
+z, tx, ty = 14, 14547, 6463
+n = 2 ** z
+lon = (tx + 0.5) / n * 360 - 180
+lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * (ty + 0.5) / n))))
+x, y, px, py = m.tile_index(lon, lat, z)
+assert (x, y) == (tx, ty), (x, y)
+assert 0 <= px < 256 and 0 <= py < 256
+
+# 無効値 'e' は None になる。
+assert m.parse_tile('e,1.5\n2.5,e')[0][0] is None
+assert m.parse_tile('e,1.5\n2.5,e')[0][1] == 1.5
+
+# --- 取得の作法を検証する。実際の通信はせず、取得関数を差し替える。
+import tempfile
+import urllib.error
+
+class FakeFetch:
+    """呼ばれたURLを記録する。scripted に例外を並べると順に投げる。"""
+    def __init__(self, scripted=()):
+        self.calls = []
+        self.scripted = list(scripted)
+    def __call__(self, url, timeout=60):
+        self.calls.append(url)
+        if self.scripted:
+            error = self.scripted.pop(0)
+            if error is not None:
+                raise error
+        return '\n'.join(','.join(['5.00'] * 256) for _ in range(256))
+
+# 一度取ったタイルは二度と取りに行かない。メモリでもディスクでも効く。
+fetch = FakeFetch()
+e = m.Elevation(tempfile.mkdtemp(), pause=0, fetch=fetch)   # gzipで保存される
+assert e.at(131.17, 33.98) == 5.0
+before = len(fetch.calls)
+e.at(131.1701, 33.9801)                          # 同じタイル内
+assert len(fetch.calls) == before, fetch.calls
+e2 = m.Elevation(e.dir, pause=0, fetch=fetch)    # 別インスタンスでもgzipから読む
+assert e2.at(131.17, 33.98) == 5.0
+assert len(fetch.calls) == before, fetch.calls
+
+# 総数の上限を超えたら中断する。実装の誤りが取得の洪水になるのを防ぐ。
+capped = m.Elevation(tempfile.mkdtemp(), pause=0, max_requests=1, fetch=FakeFetch())
+capped.at(131.0, 33.9)
+try:
+    capped.at(132.0, 34.4)
+    raise AssertionError('上限を超えても中断しなかった')
+except RuntimeError as error:
+    assert '上限' in str(error), error
+
+# 503 は間隔を空けて再試行し、回復すれば続行する。
+flaky = FakeFetch([urllib.error.HTTPError('u', 503, 'busy', {}, None), None])
+recovered = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0), fetch=flaky)
+assert recovered.at(131.17, 33.98) == 5.0
+assert len(flaky.calls) == 2, flaky.calls
+
+# 404 は「そのタイルは無い」として次の精度へ落ちるだけ。再試行しない。
+absent = FakeFetch([urllib.error.HTTPError('u', 404, 'none', {}, None), None])
+fallback = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0), fetch=absent)
+assert fallback.at(131.17, 33.98) == 5.0
+assert len(absent.calls) == 2 and 'dem5a' in absent.calls[0] and '/dem/' in absent.calls[1], absent.calls
+
+# 404以外の400番台は再試行せずそのまま失敗させる。叩き続けない。
+forbidden = m.Elevation(tempfile.mkdtemp(), pause=0, backoff=(0, 0, 0),
+                        fetch=FakeFetch([urllib.error.HTTPError('u', 403, 'no', {}, None)]))
+try:
+    forbidden.at(131.17, 33.98)
+    raise AssertionError('403で止まらなかった')
+except urllib.error.HTTPError:
+    pass
+
+print('elevation tile and fetch-manners checks passed (16 assertions).')
