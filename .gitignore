@@ -10,3 +10,7 @@ outputs/
 # Python
 __pycache__/
 *.pyc
+
+# 標高タイルのキャッシュ。raw_data/elevations.json に必要な値だけ抜いてあるので、
+# タイル本体(500MB超)はリポジトリに置かない。ローカルには残ってよい。
+raw_data/dem/
