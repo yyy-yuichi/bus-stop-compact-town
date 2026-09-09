@@ -316,3 +316,29 @@ assert mid.candidates(131.1, 33.0) == {0}
 assert m.nearest_edge(g, 131.0, 33.0, 30.0, grid) is None
 
 print('grid index checks passed (23 assertions).')
+
+stops = json.loads((ROOT / 'public/data/bus_stop.geojson').read_text(encoding='utf-8'))
+assert stops['type'] == 'FeatureCollection'
+feats = stops['features']
+assert len(feats) == 3946, len(feats)
+
+ids = [f['id'] for f in feats]
+assert len(set(ids)) == len(ids), 'IDが重複している'
+for f in feats[:200]:
+    lon, lat = f['geometry']['coordinates']
+    assert f['id'] == m.stop_id(lon, lat), f['id']
+    assert round(lon, 5) == lon and round(lat, 5) == lat
+    p = f['properties']
+    assert p['name'] and p['name'] == p['names'][0]
+    assert isinstance(p['names'], list) and isinstance(p['operators'], list)
+    assert p['operators'], f['id']
+
+# 表記ゆれを含む統合が起きていること。同一座標に載っていた別表記が1件にまとまる。
+merged = [f for f in feats if len(f['properties']['names']) > 1]
+assert len(merged) >= 20, len(merged)
+
+# 北部（OSMが0件だった緯度帯）が入っていること。
+north = [f for f in feats if f['geometry']['coordinates'][1] >= 34.43]
+assert len(north) >= 100, len(north)
+
+print('bus stop conversion checks passed (over 10 assertions).')
