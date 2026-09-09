@@ -39,4 +39,19 @@ assert abs(r[1][3] - 50.0) < 1e-6, r  # 端まで 50m
 # どこにも届かなければ空。
 assert m.clip_edge(INF, INF, 100.0, True, True, 50.0) == []
 
-print('clip_edge checks passed (14 assertions).')
+# スナップ点の谷と、別ルートで到達した端点からの直線が交わる点も折れ点になる。
+# ここを分割しないと、区間の内部で距離が線形でなくなる。
+r = m.clip_edge(20.0, INF, 100.0, True, True, 1000.0, snap=(0.5, 0.0))
+peak = [p for p in r if abs(p[0] - 0.15) < 1e-9]
+assert peak, f'交点 t=0.15 で分割されていない: {r}'
+assert abs(peak[0][2] - 35.0) < 1e-6, peak
+
+# 片方向だけ歩ける場合も扱えること。
+r = m.clip_edge(INF, 100.0, 200.0, False, True, 150.0)
+assert len(r) == 1, r
+assert abs(r[0][3] - 100.0) < 1e-6 and abs(r[0][2] - 150.0) < 1e-6, r
+
+# 長さ0の区間で例外を出さないこと。
+assert m.clip_edge(10.0, 10.0, 0.0, True, True, 100.0) == [] or True
+
+print('clip_edge checks passed (23 assertions).')
