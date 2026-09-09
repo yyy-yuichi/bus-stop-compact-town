@@ -344,9 +344,9 @@ class ElevationTable:
         if stored != expected:
             raise RuntimeError(
                 'raw_data/elevations.json が今の道路グラフと一致しない '
-                f'(表: {stored}, 実際: {expected})。並び順がずれたまま使うと標高が '
-                '別のノードのものにすり替わる。scripts/extract-elevations.py を '
-                '再実行して表を作り直すこと。')
+                f'(表: {stored}, 実際: {expected})。'
+                '並び順がずれたまま使うと標高が別のノードのものにすり替わる。'
+                'scripts/extract-elevations.py を再実行して表を作り直すこと。')
         self.values = data['values']
         self.i = 0
         self.missing = 0
