@@ -302,12 +302,60 @@ class Elevation:
         return {'by_source': dict(self.hits), 'missing': self.missing,
                 'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 
+def subdivide(graph, max_len=50.0):
+    """長い区間を分割する。標高を区間の平均で済ませると起伏が消えるため。"""
+    nodes = [list(p) for p in graph['nodes']]
+    edges = []
+    for e in graph['edges']:
+        parts = max(1, math.ceil(e[LEN] / max_len))
+        if parts == 1:
+            edges.append(list(e))
+            continue
+        pa, pb = graph['nodes'][e[A]], graph['nodes'][e[B]]
+        previous = e[A]
+        for i in range(1, parts + 1):
+            if i < parts:
+                t = i / parts
+                nodes.append([pa[0] + (pb[0] - pa[0]) * t, pa[1] + (pb[1] - pa[1]) * t])
+                current = len(nodes) - 1
+            else:
+                current = e[B]
+            piece = list(e)
+            piece[A], piece[B], piece[LEN] = previous, current, e[LEN] / parts
+            edges.append(piece)
+            previous = current
+    return {'nodes': nodes, 'edges': edges}
+
+def apply_grades(graph, elevation, clamp=0.30):
+    """各区間の勾配を百分率で埋める。橋・トンネル・階段は平坦のままにする。"""
+    cache = {}
+    def height(i):
+        if i not in cache:
+            cache[i] = elevation.at(graph['nodes'][i][0], graph['nodes'][i][1])
+        return cache[i]
+    for e in graph['edges']:
+        if e[FLAT] or e[STEPS] or e[LEN] <= 0:
+            e[GRADE] = 0
+            continue
+        ha, hb = height(e[A]), height(e[B])
+        if ha is None or hb is None:
+            e[GRADE] = 0
+            continue
+        grade = max(-clamp, min(clamp, (hb - ha) / e[LEN]))
+        e[GRADE] = round(grade * 100)
+
 if __name__ == '__main__':
     import sys
     root = Path(__file__).resolve().parents[1]
     if sys.argv[1:2] == ['--pilot']:
         # 勾配ゼロ回帰テスト用。既存の試作グラフをそのまま焼く。
         graph = load_pilot_graph(root / 'public/data/walking-onoda.json')
+        if '--slope' in sys.argv:
+            graph = subdivide(graph, 50.0)
+            elevation = Elevation(root / 'raw_data/dem')
+            apply_grades(graph, elevation)
+            print(json.dumps({'elevation': elevation.stats(),
+                              'edges': len(graph['edges'])}, ensure_ascii=False), file=sys.stderr)
         pilot = json.loads((root / 'public/data/walking-onoda.json').read_text(encoding='utf-8'))
         out = root / 'work/pilot-bake'
         out.mkdir(parents=True, exist_ok=True)

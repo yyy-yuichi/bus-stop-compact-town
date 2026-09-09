@@ -222,3 +222,49 @@ assert len(absent.calls) == 2, absent.calls
 assert len(naps.seconds) >= 2, f'404 のあと間隔をあけずに次を叩いている: {naps.seconds}'
 
 print('elevation tile and fetch-manners checks passed (18 assertions).')
+
+DEG = 180 / (math.pi * 6371000)   # 1メートルあたりの度数
+
+def tiny_graph(length_m, flat=False, steps=False):
+    return {'nodes': [[0.0, 0.0], [0.0, length_m * DEG]],
+            'edges': [[0, 1, length_m, True, True, 'w1', 0, steps, flat]]}
+
+# 200mの区間は50m以下の4本に割れる。端のノードは保たれる。
+g = m.subdivide(tiny_graph(200.0), 50.0)
+assert len(g['edges']) == 4, len(g['edges'])
+assert all(e[m.LEN] <= 50.0 + 1e-6 for e in g['edges'])
+assert g['edges'][0][m.A] == 0 and g['edges'][-1][m.B] == 1
+
+# 50m以下は割らない。
+assert len(m.subdivide(tiny_graph(40.0), 50.0)['edges']) == 1
+
+class FakeElevation:
+    def __init__(self, values): self.values = values
+    def at(self, lon, lat): return self.values.get(round(lat, 9))
+
+# 100mで10m上る -> 勾配 +10%
+g = tiny_graph(100.0)
+m.apply_grades(g, FakeElevation({0.0: 5.0, round(100.0 * DEG, 9): 15.0}))
+assert g['edges'][0][m.GRADE] == 10, g['edges'][0][m.GRADE]
+
+# クランプ。10mで20m上っても±30%に収まる。
+g = tiny_graph(10.0)
+m.apply_grades(g, FakeElevation({0.0: 0.0, round(10.0 * DEG, 9): 20.0}))
+assert g['edges'][0][m.GRADE] == 30, g['edges'][0][m.GRADE]
+
+# 橋・トンネルは地表面標高を無視して平坦にする。
+g = tiny_graph(100.0, flat=True)
+m.apply_grades(g, FakeElevation({0.0: 0.0, round(100.0 * DEG, 9): 50.0}))
+assert g['edges'][0][m.GRADE] == 0, g['edges'][0][m.GRADE]
+
+# 階段もDEMから勾配を取らない。steps フラグだけ残す。
+g = tiny_graph(10.0, steps=True)
+m.apply_grades(g, FakeElevation({0.0: 0.0, round(10.0 * DEG, 9): 5.0}))
+assert g['edges'][0][m.GRADE] == 0 and g['edges'][0][m.STEPS] is True
+
+# 標高が取れない区間は平坦扱い。
+g = tiny_graph(100.0)
+m.apply_grades(g, FakeElevation({}))
+assert g['edges'][0][m.GRADE] == 0
+
+print('subdivide and grade checks passed (10 assertions).')
