@@ -301,6 +301,10 @@ for stop in pilot['pilot_stops']:
     assert (slow is None) == (fast is None), stop['name']
     if slow:
         assert abs(slow[3] - fast[3]) < 1e-9, stop['name']
+        # 垂線距離だけでは、等距離の別区間へすり替わっても気づけない。
+        # 交差点や行き止まりでは区間どうしが端点を共有し、等距離になる。
+        # 投影点まで一致すれば、同じ場所に落ちていることが言える。
+        assert abs(slow[2][0] - fast[2][0]) < 1e-12 and abs(slow[2][1] - fast[2][1]) < 1e-12, stop['name']
 
 # マスより長い区間でも、その中ほどから見つかる。
 long_edge = {'nodes': [[131.0, 33.0], [131.2, 33.0]],
@@ -311,4 +315,4 @@ assert mid.candidates(131.1, 33.0) == {0}
 # 遠すぎれば見つからない。
 assert m.nearest_edge(g, 131.0, 33.0, 30.0, grid) is None
 
-print('grid index checks passed (over 15 assertions).')
+print('grid index checks passed (23 assertions).')
