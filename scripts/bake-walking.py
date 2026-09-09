@@ -2,6 +2,7 @@
 import math
 from pathlib import Path
 import gzip
+import hashlib
 import urllib.request
 import urllib.error
 import time
@@ -312,16 +313,41 @@ class Elevation:
         return {'by_source': dict(self.hits), 'missing': self.missing,
                 'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 
+def graph_fingerprint(graph):
+    """prepare_graphが組んだグラフの並び順を指紋にする。
+
+    座標は出力と同じ5桁に丸めてから連結してSHA-256を取る（丸めないと浮動小数点の
+    演算誤差ノイズがそのまま偽の不一致になりかねない）。並び順が変わればノードの
+    どれか一つでもずれ、指紋も変わる。件数だけを見る検査（表を使い切ったかどうか）
+    では、並び順だけが変わって件数が同じケースをすり抜けてしまうため、これで補う。
+    """
+    h = hashlib.sha256()
+    for lon, lat in graph['nodes']:
+        h.update(f'{round(lon, 5)},{round(lat, 5)};'.encode())
+    return {'sha256': h.hexdigest(), 'nodes': len(graph['nodes'])}
+
 class ElevationTable:
     """Elevationの代わりに、事前に抜き出した標高の並びを順番に返すだけの読み手。
 
     タイルは持たない。呼び出し順は apply_grades がグラフを辿る順そのものに
     依存するため、表を作ったときと同じ prepare_graph の結果に対してしか使えない
-    （extract-elevations.py が同じ関数で表を作るのはそのため）。
+    （extract-elevations.py が同じ関数で表を作るのはそのため）。構築時に
+    graph_fingerprint で今のグラフと表の指紋を突き合わせ、一致しなければ使わせない
+    ——件数が変わらないままノードの並びだけがずれる回帰は、件数チェックだけでは
+    通り抜けてしまうため。
     """
 
-    def __init__(self, path):
-        self.values = json.loads(Path(path).read_text(encoding='utf-8'))
+    def __init__(self, path, graph):
+        data = json.loads(Path(path).read_text(encoding='utf-8'))
+        expected = graph_fingerprint(graph)
+        stored = data['fingerprint']
+        if stored != expected:
+            raise RuntimeError(
+                'raw_data/elevations.json が今の道路グラフと一致しない '
+                f'(表: {stored}, 実際: {expected})。並び順がずれたまま使うと標高が '
+                '別のノードのものにすり替わる。scripts/extract-elevations.py を '
+                '再実行して表を作り直すこと。')
+        self.values = data['values']
         self.i = 0
         self.missing = 0
 
@@ -502,7 +528,8 @@ if __name__ == '__main__':
         table_path = root / 'raw_data/elevations.json'
         if table_path.exists():
             # 抜き出し済みの標高表があれば、タイル無しでそれを使う。
-            elevation = ElevationTable(table_path)
+            # 指紋が合わなければ ElevationTable が例外で止める。
+            elevation = ElevationTable(table_path, graph)
         else:
             # 逐次0.25秒間隔=毎秒4リクエストは、地理院地図を1人が普通に操作する時の
             # ペース（1接続あたり)より十分遅い。規約に数値上限は無いため、この比較が判断基準。

@@ -223,6 +223,36 @@ assert len(naps.seconds) >= 2, f'404 のあと間隔をあけずに次を叩い�
 
 print('elevation tile and fetch-manners checks passed (18 assertions).')
 
+# --- ElevationTableは並び順の指紋が合わないと使わせない。
+def small_graph(coords):
+    return {'nodes': [list(c) for c in coords], 'edges': []}
+
+g1 = small_graph([[131.000, 33.000], [131.001, 33.001], [131.002, 33.002]])
+g2 = small_graph([[131.001, 33.001], [131.000, 33.000], [131.002, 33.002]])  # 先頭2件を入替、件数は同じ
+fp1 = m.graph_fingerprint(g1)
+assert fp1['nodes'] == 3, fp1
+# 並び順だけが変わっても指紋は別物になる（件数チェックだけでは検知できない回帰）。
+assert m.graph_fingerprint(g2)['sha256'] != fp1['sha256'], '並び順を変えても指紋が変わらない'
+
+table_dir = Path(tempfile.mkdtemp())
+table_path = table_dir / 'elevations.json'
+table_path.write_text(json.dumps({'fingerprint': fp1, 'values': [1.0, 2.0, 3.0]}), encoding='utf-8')
+
+# 指紋が一致すれば、書いた順どおりに返す。
+et = m.ElevationTable(table_path, g1)
+assert et.at(0, 0) == 1.0
+assert et.at(0, 0) == 2.0
+assert et.at(0, 0) == 3.0
+
+# 同じ表を、並び順だけ違うグラフ(g2)に対して使おうとすると弾かれること。
+try:
+    m.ElevationTable(table_path, g2)
+    raise AssertionError('並び順がずれた表を弾かなかった')
+except RuntimeError as error:
+    assert 'extract-elevations.py' in str(error), error
+
+print('elevation table checks passed (6 assertions).')
+
 DEG = 180 / (math.pi * 6371000)   # 1メートルあたりの度数
 
 def tiny_graph(length_m, flat=False, steps=False):

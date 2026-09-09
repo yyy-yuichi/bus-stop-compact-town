@@ -6,7 +6,10 @@
 
 並び順は prepare_graph の結果に対して apply_grades が辿る順そのものであり、
 座標そのものは持たない。同じ prepare_graph を bake-walking.py 側でも呼ぶ限り、
-何番目の呼び出しかが両者で一致する。標準ライブラリのみで動く。
+何番目の呼び出しかが両者で一致する——が、それは将来ここが変わらない前提に
+乗っているだけなので、graph_fingerprint(グラフの並び順のSHA-256)も一緒に
+書き出す。焼き込み側の ElevationTable はこれを照合し、ずれていれば例外を出す。
+標準ライブラリのみで動く。
 """
 import importlib.util
 import json
@@ -34,7 +37,10 @@ if __name__ == '__main__':
     recorder = _Recorder(elevation)
     _bake.apply_grades(graph, recorder)
 
+    fingerprint = _bake.graph_fingerprint(graph)
     out = root / 'raw_data/elevations.json'
-    out.write_text(json.dumps(recorder.values, separators=(',', ':')), encoding='utf-8')
+    out.write_text(json.dumps({'fingerprint': fingerprint, 'values': recorder.values},
+                              separators=(',', ':')), encoding='utf-8')
     print(json.dumps({'entries': len(recorder.values), 'bytes': out.stat().st_size,
-                      'elevation': elevation.stats()}, ensure_ascii=False))
+                      'fingerprint': fingerprint, 'elevation': elevation.stats()},
+                     ensure_ascii=False))
