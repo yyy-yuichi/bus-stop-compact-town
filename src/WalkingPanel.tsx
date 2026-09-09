@@ -6,6 +6,7 @@ import type { Catchment, Coordinate } from './walking';
 
 export function useWalkingData() {
   const [facilities, setFacilities] = useState<ShoppingFeature[] | null>(null);
+  const [unreachable, setUnreachable] = useState<Record<string, number | null> | null>(null);
   const [error, setError] = useState(false);
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
@@ -17,9 +18,33 @@ export function useWalkingData() {
         const usable = shopping.features.filter(f => f.geometry && ['Point', 'MultiPolygon'].includes(f.geometry.type));
         if (!abort.signal.aborted) setFacilities(usable);
       }).catch(() => { if (!abort.signal.aborted) setError(true); });
+    // Best-effort: this only sharpens the "no catchment" message, so a failure here
+    // must not trip the facilities error/retry UI. Leave `unreachable` null on any problem.
+    fetch(`${import.meta.env.BASE_URL}data/walk-unreachable.json`, { signal: abort.signal })
+      .then(r => { if (!r.ok) throw Error('unavailable'); return r.json(); })
+      .then((data: { stops?: Record<string, number | null> }) => {
+        if (!abort.signal.aborted && data && typeof data.stops === 'object') setUnreachable(data.stops);
+      }).catch(() => {});
     return () => abort.abort();
   }, [attempt]);
-  return { facilities, error, retry: () => setAttempt(n => n + 1) };
+  return { facilities, unreachable, error, retry: () => setAttempt(n => n + 1) };
+}
+
+/**
+ * Stops within this many metres of a walkable road read as "just missed the
+ * snap threshold" (position/road-data noise); beyond it, as "nothing nearby".
+ * 150m = 5x the 30m snap_limit — roughly a short block, and where the 289
+ * unreachable stops' distance distribution stops looking like noise and
+ * starts looking like a real gap (30-200m: 232 stops bunched near the
+ * threshold; 200m+: 57 stops trailing off toward "not found").
+ */
+const NEARBY_ROAD_LIMIT_M = 150;
+const GENERIC_NO_CATCHMENT_MESSAGE = 'この停留所と歩ける道路の接続を確認できませんでした。別の停留所をお試しください。';
+
+function noCatchmentMessage(distance: number | null | undefined): string {
+  if (distance === undefined) return GENERIC_NO_CATCHMENT_MESSAGE;
+  if (distance === null || distance > NEARBY_ROAD_LIMIT_M) return 'この停留所の近くに歩ける道路が見つかりませんでした。別の停留所をお試しください。';
+  return `この停留所から最も近い歩ける道路まで約${Math.round(distance)}mありました（自動判定の基準は30m）。停留所の位置や道路データのわずかなずれによるものと考えられます。別の停留所をお試しください。`;
 }
 
 /**
@@ -45,9 +70,9 @@ function useCatchment(id: string) {
   return { ...state, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, facilities, error, retry }: {
+export default function WalkingPanel({ map, id, origin, facilities, unreachable, error, retry }: {
   map: L.Map | null; id: string; origin: Coordinate;
-  facilities: ShoppingFeature[] | null; error: boolean; retry: () => void;
+  facilities: ShoppingFeature[] | null; unreachable: Record<string, number | null> | null; error: boolean; retry: () => void;
 }) {
   const [minutes, setMinutes] = useState<5 | 10 | 15>(10);
   const [speed, setSpeed] = useState(4);
@@ -100,7 +125,7 @@ export default function WalkingPanel({ map, id, origin, facilities, error, retry
         {minutes >= 10 && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-amber-600" />5〜10分</span>}
         {minutes === 15 && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-amber-700" />10〜15分</span>}
       </div>
-      {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">この停留所と歩ける道路の接続を確認できませんでした。別の停留所をお試しください。</p> : (
+      {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : (
         // ponytail: 買い物候補（reachFacility・坂/階段の警告・候補カード）は
         // facility judgement を実装する後続タスクで戻す。ここはその置き場所。
         null
