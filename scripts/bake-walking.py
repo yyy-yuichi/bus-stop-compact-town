@@ -2,6 +2,7 @@
 import math
 from pathlib import Path
 import bisect
+import statistics
 import gzip
 import hashlib
 import urllib.request
@@ -139,7 +140,20 @@ def build_adjacency(graph):
             adjacency[e[B]].append((e[A], le))
     return adjacency
 
+def build_incidence(graph):
+    """ノード -> そのノードを端点に持つ区間indexのリスト。向きは問わない
+    （clip_edge側がFWD/BWDを見るため）。bake_stopが焼く区間を、全区間の
+    走査ではなくダイクストラが実際に届いたノードの周りだけに絞るための索引。"""
+    incidence = [[] for _ in graph['nodes']]
+    for i, e in enumerate(graph['edges']):
+        incidence[e[A]].append(i)
+        incidence[e[B]].append(i)
+    return incidence
+
 def _dijkstra(graph, snap, budget, adjacency=None):
+    """距離配列dに加えて、確定させたノード(=budget以内に届いたノード)の
+    一覧も返す。呼び出し側がd全体(ノード数〜160万件)を走査して有限値を
+    探すより、ここでポップ時に集める方が1停留所あたり安い。"""
     import heapq
     edge_i, t, _, gap = snap
     if adjacency is None:
@@ -159,15 +173,17 @@ def _dijkstra(graph, snap, budget, adjacency=None):
         if cost < d[node]:
             d[node] = cost
             heapq.heappush(heap, (cost, node))
+    settled = []
     while heap:
         cost, node = heapq.heappop(heap)
         if cost != d[node] or cost > budget:
             continue
+        settled.append(node)
         for target, length in adjacency[node]:
             if cost + length < d[target] and cost + length <= budget:
                 d[target] = cost + length
                 heapq.heappush(heap, (cost + length, target))
-    return d
+    return d, settled
 
 def stop_id(lon, lat):
     """P11は一意IDを持たないため、座標5桁から合成する。約1m四方の粒度。"""
@@ -176,7 +192,8 @@ def stop_id(lon, lat):
 def stop_filename(sid):
     return sid + '.json'
 
-def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0, adjacency=None):
+def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0,
+              adjacency=None, incidence=None):
     """1停留所ぶんの徒歩圏を配列形式で返す。届かなければ None。
 
     セグメントごとに GeoJSON の Feature 定型文を繰り返すと、1本181バイトのうち
@@ -187,10 +204,22 @@ def bake_stop(graph, stop_id, name, origin, budget, index=None, snap_limit=30.0,
     if snap is None or snap[3] > budget:
         return None
     snap_i, snap_t, snap_point, snap_gap = snap
-    d = _dijkstra(graph, snap, budget, adjacency)
+    d, settled = _dijkstra(graph, snap, budget, adjacency)
     r5 = lambda p: [round(p[0], 5), round(p[1], 5)]
     seg = []
-    for i, e in enumerate(graph['edges']):
+    if incidence is None:
+        candidates = range(len(graph['edges']))
+    else:
+        # 断片を生めるのは、端点の少なくとも一方が届いた区間か、出発点自身が
+        # 内部に乗っているスナップ区間（両端が届かなくてもclip_edgeがsnapを
+        # 見て切り出す）だけ。全区間を舐める代わりに、そこだけを昇順で見る。
+        reached = set()
+        for node in settled:
+            reached.update(incidence[node])
+        reached.add(snap_i)
+        candidates = sorted(reached)
+    for i in candidates:
+        e = graph['edges'][i]
         le = _l_eff(e)
         if le <= 0:
             continue
@@ -436,26 +465,36 @@ def apply_grades(graph, elevation, clamp=0.30, window=GRADE_WINDOW_M):
                 continue
             mid = (dist[k] + dist[k + 1]) / 2.0
             lo, hi = max(0.0, mid - half), min(total, mid + half)
-            h_lo, h_hi = _chain_height(dist, heights, lo), _chain_height(dist, heights, hi)
-            span = hi - lo
-            if h_lo is None or h_hi is None or span <= 0:
-                e[GRADE] = 0
-                continue
-            grade = max(-clamp, min(clamp, (h_hi - h_lo) / span))
-            e[GRADE] = round(grade * 100)
+            samples = _window_samples(dist, heights, lo, hi)
+            grade = _robust_grade(samples)
+            e[GRADE] = 0 if grade is None else round(max(-clamp, min(clamp, grade)) * 100)
         i = j + 1
 
-def _chain_height(dist, heights, target):
-    """鎖に沿った距離targetでの標高を、両隣ノードの間で線形補間する。
-    どちらかの標高が無ければNone（欠測扱い）。"""
-    idx = max(0, min(bisect.bisect_right(dist, target) - 1, len(dist) - 2))
-    h0, h1 = heights[idx], heights[idx + 1]
-    if h0 is None or h1 is None:
+def _window_samples(dist, heights, lo, hi):
+    """窓[lo, hi]にかかる実測ノードを集める。境界ちょうどにノードがなくても
+    見落とさないよう、境界を含む区間の両端ノードまで広げる（区間の片端だけが
+    窓の外に出ているノードを捨てると、境界のすぐ外側の値ごと落としてしまう）。
+    標高が欠測(None)のノードは外す。1本の鎖の全長が窓より短ければ、
+    鎖の両端ノードだけがここに残る＝そのまま端から端までの差分になる。"""
+    i0 = max(0, bisect.bisect_right(dist, lo) - 1)
+    i1 = min(len(dist) - 1, bisect.bisect_left(dist, hi))
+    return [(dist[k], heights[k]) for k in range(i0, i1 + 1) if heights[k] is not None]
+
+def _robust_grade(samples):
+    """窓内のノードを道なり位置で前半・後半に分け、それぞれの中央値を結んで
+    勾配にする。突出した1点があっても、それを含む側が3点以上あれば中央値が
+    無視する。前半・後半どちらかが1〜2点しかなければ、中央値は平均や素通しと
+    同じになり、外れ値を防げない——窓に何点入っているかで効き方が変わる。"""
+    if len(samples) < 2:
         return None
-    d0, d1 = dist[idx], dist[idx + 1]
-    if d1 == d0:
-        return h0
-    return h0 + (h1 - h0) * (target - d0) / (d1 - d0)
+    split = len(samples) // 2
+    lower, upper = samples[:split], samples[split:]
+    lo_pos, hi_pos = statistics.median(p for p, h in lower), statistics.median(p for p, h in upper)
+    span = hi_pos - lo_pos
+    if span <= 0:
+        return None
+    lo_h, hi_h = statistics.median(h for p, h in lower), statistics.median(h for p, h in upper)
+    return (hi_h - lo_h) / span
 
 class GridIndex:
     """区間を約500m四方のマスへ仕分ける。検索半径が30mに固定なので3x3で必ず足りる。
@@ -631,6 +670,7 @@ if __name__ == '__main__':
         apply_grades(graph, elevation)
         grid = GridIndex(graph)
         adjacency = build_adjacency(graph)
+        incidence = build_incidence(graph)
         out = root / 'work/walk'
         out.mkdir(parents=True, exist_ok=True)
         baked = []
@@ -638,7 +678,7 @@ if __name__ == '__main__':
             sid = feature['id']
             name = feature['properties'].get('name', '名称未登録')
             fc = bake_stop(graph, sid, name, feature['geometry']['coordinates'], 1000.0,
-                           grid, adjacency=adjacency)
+                           grid, adjacency=adjacency, incidence=incidence)
             if fc is None:
                 continue
             (out / stop_filename(sid)).write_text(

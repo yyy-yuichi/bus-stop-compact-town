@@ -126,6 +126,18 @@ fc = m.bake_stop(oneway_graph(False, True), 'x', 'x', mid, 1000.0)
 lats = [row[i] for row in fc['seg'] for i in (1, 3)]
 assert lats and max(lats) <= mid_lat + 1e-9, f'b→a のみ歩けるのに終点側へ伸びた: {max(lats)}'
 
+# incidence索引で候補区間を絞っても、全区間を舐めたときと一字一句同じ結果に
+# なること。全走査は0.07%しか使わない区間まで舐める無駄（925,000区間×3946停留所）
+# があるため、届いたノードの周りだけを見るよう絞ったが、出力は変えてはいけない。
+incidence = m.build_incidence(g)
+adjacency = m.build_adjacency(g)
+for stop in pilot['pilot_stops']:
+    full = m.bake_stop(g, stop['id'], stop['name'], stop['coordinate'], 1000.0,
+                       adjacency=adjacency)
+    narrowed = m.bake_stop(g, stop['id'], stop['name'], stop['coordinate'], 1000.0,
+                           adjacency=adjacency, incidence=incidence)
+    assert full == narrowed, stop['name']
+
 print('bake_stop checks passed (over 12 assertions).')
 
 # タイル番号の自己整合。あるタイルの中心座標は、そのタイル自身を指すはず。
@@ -357,14 +369,29 @@ assert [e[m.GRADE] for e in g['edges']] == [5, 5, 5, 5, 5], \
 
 # 本題: 一様勾配の途中にある短い区間(2m)の両端だけをDEM誤差ぶん(合計1.1m)
 # ずらす。区間ごとの計算なら (4.5-5.6)/2m=-55% -> クランプで-30%という、
-# 符号まで逆転したノイズを返してしまう。窓を30m取れば周囲の正しい標高が
-# 支配的になり、真の上り勾配(+5%前後)に近い値へ戻るはずである。
+# 符号まで逆転したノイズを返してしまう。窓は node1(50,2.5)〜node4(152,7.6)の
+# 4点をまたぎ、前半[50,100]・後半[102,152]それぞれ2点の中央値(=平均)を結ぶ
+# ((4.05,75)→(6.05,127)) ので (6.05-4.05)/(127-75)=+3.8% -> 四捨五入+4%。
+# 前半・後半とも2点しかなく外れ値を弾けてはいないが、それでも符号は保たれ
+# -30%のようなクランプ張り付きにはならない。
 g = chain_graph([50.0, 50.0, 2.0, 50.0, 50.0])
 heights = [0.0, 2.5, 5.6, 4.5, 7.6, 10.1]   # 中の2ノードだけ±0.5m級のノイズを乗せた
 m.apply_grades(g, ByPosElevation(g, heights))
 short_edge = g['edges'][2]
-assert short_edge[m.GRADE] == 2, short_edge[m.GRADE]   # 符号は保たれ、-30ではない
+assert short_edge[m.GRADE] == 4, short_edge[m.GRADE]   # 符号は保たれ、-30ではない
 assert 0 < short_edge[m.GRADE] < 10, short_edge[m.GRADE]
+
+# 頑健推定の本領: 窓内に前半・後半とも3点以上入り、片方の3点の中に外れ値が
+# 1つだけ混じる場合。中央値はその1点を完全に無視し、窓に外れ値が無かった
+# ときと同じ真の勾配(5%)をぴったり返す——中央値フィルタが機能する最小構成。
+g = chain_graph([10.0, 10.0, 5.0, 5.0, 5.0, 10.0, 10.0])   # 節点: 0,10,20,25,30,35,45,55
+heights = [0.05 * d for d in (0.0, 10.0, 20.0, 25.0, 30.0, 35.0, 45.0, 55.0)]
+heights[3] = 100.0   # node3(位置25)だけ、真の1.25mの代わりに巨大な外れ値
+m.apply_grades(g, ByPosElevation(g, heights))
+# 辺3は node3(25)-node4(30)。窓[12.5,42.5]は node1,2,3,4,5,6 の6点をまたぎ、
+# 前半3点[10,20,25](外れ値を含む)・後半3点[30,35,45]に分かれる。
+# 前半の中央値は(0.5,1.0,100)の中央=1.0で、外れ値100は選ばれない。
+assert g['edges'][3][m.GRADE] == 5, g['edges'][3][m.GRADE]
 
 # 鎖の切れ目: 同じwayでもノードのつながりが切れていたら別の鎖として扱う
 # こと（山口県外へ出て間引かれたノードのせいで1本のwayが2本に千切れる
@@ -384,7 +411,7 @@ assert g['edges'][0][m.GRADE] == 5 and g['edges'][1][m.GRADE] == 5, g['edges'][:
 # 前の鎖の標高(0,0.5,1.0)を誤って引き継いでいれば -30 にはならない値になる。
 assert g['edges'][2][m.GRADE] == -30, g['edges'][2][m.GRADE]
 
-print('windowed grade checks passed (10 assertions).')
+print('windowed grade checks passed (11 assertions).')
 
 # 索引を使っても使わなくても、同じ最寄り区間を返さなければならない。
 g = m.load_pilot_graph(ROOT / 'public/data/walking-onoda.json')
