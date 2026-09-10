@@ -5,7 +5,9 @@ export interface BusProperties {
   name?: string;
   'name:ja'?: string;
   '@id'?: string;
-  operator?: string;
+  names?: string[];
+  operators?: string[];
+  routes?: string[];
 }
 export type BusFeature = Feature<Point, BusProperties>;
 export type BusCollection = FeatureCollection<Point, BusProperties> & { timestamp?: string };
