@@ -61,7 +61,28 @@ assert r and all(lo >= 0.5 - 1e-9 for lo, hi, v_lo, v_hi in r), r
 r = m.clip_edge(INF, INF, 100.0, False, True, 1000.0, snap=(0.5, 0.0))
 assert r and all(hi <= 0.5 + 1e-9 for lo, hi, v_lo, v_hi in r), r
 
-print('clip_edge checks passed (20 assertions).')
+# 一方通行の区間内にスナップ点があるとき、スナップ点より手前（始点a側）の
+# 断片は「右枝」（スナップ点からforward方向に回り込む経路）を使ってはいけない。
+# backward=Falseなので、その回り込みはこの区間には存在しない。真値は
+# t=0.068で 120 + 10*0.068 ≈ 120.68m（120.0ではなく、まして0.0でもない）。
+r = m.clip_edge(120.0, INF, 10.0, True, False, 150.0, snap=(0.543, 0.0))
+piece = [p for p in r if abs(p[0] - 0.0) < 1e-9 and abs(p[1] - 0.543) < 1e-9]
+assert piece, f'スナップ点手前の断片が無い: {r}'
+lo, hi, v_lo, v_hi = piece[0]
+assert abs(v_lo - 120.0) < 1e-6, piece
+assert abs(v_hi - (120.0 + 10.0 * 0.543)) < 1e-6, piece
+t = 0.068
+truth = 120.0 + 10.0 * t
+interp = v_lo + (v_hi - v_lo) * (t - lo) / (hi - lo)
+assert abs(interp - truth) < 1e-6, (truth, interp)
+
+# 同じ理由で、バジェット判定も間違った枝を見て「まだ届く」と誤判定しない。
+# 真値は budget=150 に対して t<=0.3 までしか届かない
+# （d_a=120, l_eff=100 なので 120+100*0.3=150）。
+r = m.clip_edge(120.0, INF, 100.0, True, False, 150.0, snap=(0.9, 0.0))
+assert all(hi <= 0.3 + 1e-6 for lo, hi, v_lo, v_hi in r if lo < 0.9 - 1e-9), r
+
+print('clip_edge checks passed (22 assertions).')
 
 # 平坦はちょうど等倍でなければならない。これが崩れると勾配ゼロ回帰テストが通らない。
 assert m.equivalent_flat(100.0, 0.0) == 100.0

@@ -42,10 +42,6 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
     if not branches:
         return []
 
-    def value(t):
-        return min((m * t + c for m, c, lo, hi in branches if lo - 1e-12 <= t <= hi + 1e-12),
-                   default=math.inf)
-
     cuts = {0.0, 1.0}
     if snap is not None:
         cuts.add(snap[0])
@@ -64,7 +60,19 @@ def clip_edge(d_a, d_b, l_eff, forward, backward, budget, snap=None):
     for lo, hi in zip(cuts, cuts[1:]):
         if hi - lo < 1e-9:
             continue
-        v_lo, v_hi = value(lo), value(hi)
+        # 端点そのもので分枝の定義域を判定すると、隣の断片にしか属さない
+        # 分枝まで含めてしまう（分枝の境界がちょうどこの折れ点に重なるため）。
+        # 一方通行でスナップ点の左右の枝が不連続な場合、これは別の分枝の値を
+        # 誤って端点値に採用してしまい、断片内部の線形補間が全く違う値を返す。
+        # 断片の内部（中点）で実際に有効な分枝だけを選び、その分枝の直線で
+        # 両端点を評価する。分枝の定義域の境界はすべてcutsに含まれているため、
+        # 中点で有効な分枝の集合は断片内部のどこでも変わらない。
+        mid = (lo + hi) / 2
+        active = [(m, c) for m, c, blo, bhi in branches if blo - 1e-12 <= mid <= bhi + 1e-12]
+        if not active:
+            continue
+        v_lo = min(m * lo + c for m, c in active)
+        v_hi = min(m * hi + c for m, c in active)
         if v_lo > budget and v_hi > budget:
             continue
         span = hi - lo
