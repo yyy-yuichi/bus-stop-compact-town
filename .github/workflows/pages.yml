@@ -16,11 +16,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
-      # 実運用のR2 URLは repository variable WALK_DATA_URL に設定する（docs/WALK-DATA-R2.md）。
-      # 未設定のまま実行すると、公開先はこのフォールバックURL（到達不能）を参照してしまうので、
-      # 実際に公開する前に WALK_DATA_URL を設定すること。
-      VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL || 'https://ci-placeholder.invalid/data/walk' }}
+      # 徒歩圏データの配信元。repository variable WALK_DATA_URL に設定する（docs/WALK-DATA-R2.md）。
+      # 未設定のまま公開すると徒歩圏が全停留所で404になるため、下で先に落とす。
+      VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL }}
     steps:
+      - name: Require WALK_DATA_URL
+        run: |
+          if [ -z "$VITE_WALK_DATA_URL" ]; then
+            echo "repository variable WALK_DATA_URL が未設定です。公開すると徒歩圏データが取得できません。" >&2
+            echo "docs/WALK-DATA-R2.md の手順で R2 に配置し、変数を設定してから再実行してください。" >&2
+            exit 1
+          fi
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:

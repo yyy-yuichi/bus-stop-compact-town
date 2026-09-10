@@ -72,7 +72,9 @@ VITE_WALK_DATA_URL=https://<公開URL>/data/walk node scripts/verify-release.mjs
 
 `VITE_WALK_DATA_URL`を設定せずに`npm run build`すれば、これまで通り`dist/data/walk`に全カタッチメントが入る。ローカル確認や、R2をまだ用意していない環境ではこちらでよい。
 
-`.github/workflows/pages.yml`はrepository variable `WALK_DATA_URL`をこの用途に読む（`vars.WALK_DATA_URL`）。実際に公開する前に、GitHubのSettings → Secrets and variables → Actions → Variablesで公開URLを設定すること。未設定のまま実行すると到達不能なプレースホルダーURLでビルドされ、公開後にクライアントが徒歩圏を取得できない。
+`.github/workflows/pages.yml`はrepository variable `WALK_DATA_URL`をこの用途に読む（`vars.WALK_DATA_URL`）。実際に公開する前に、GitHubのSettings → Secrets and variables → Actions → Variablesで公開URLを設定すること。未設定のまま実行した場合は、公開前の最初のステップで失敗して止まる（気付かないまま徒歩圏が全件404になる公開を防ぐため）。
+
+検証用の`build.yml`は同じ変数を読むが、未設定なら到達不能な`.invalid`URLにフォールバックする。R2配布モードのビルドが壊れていないこと（`dist/data/walk`が残っていない、ビルド成果物がURLを参照している）だけを確かめるためで、データの取得は行わない。
 
 ## 5. 再ベイク後にやること
 
