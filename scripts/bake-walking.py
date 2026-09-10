@@ -1,6 +1,7 @@
 """バス停ごとの徒歩圏を事前計算する。標準ライブラリのみで動く。"""
 import math
 from pathlib import Path
+import bisect
 import gzip
 import hashlib
 import urllib.request
@@ -385,23 +386,76 @@ def subdivide(graph, max_len=50.0):
             previous = current
     return {'nodes': nodes, 'edges': edges}
 
-def apply_grades(graph, elevation, clamp=0.30):
-    """各区間の勾配を百分率で埋める。橋・トンネル・階段は平坦のままにする。"""
+GRADE_WINDOW_M = 30.0
+# 区間ではなく、区間中心を挟む約30mの道なりで勾配を測る。DEM5Aの鉛直誤差は
+# 0.5m程度あり、区間の中央値18.6m・29%が10m未満という短さでは、その誤差が
+# そのまま±10%級の偽勾配になってノイズが地形を覆い隠す。30mまで広げれば同じ
+# 誤差は2%未満に収まり、UIが「急坂」と報じる5%のしきい値に対して十分小さくなる。
+# これより短いとノイズに支配され、長すぎると本物の短い急坂がなだらかに消える。
+
+def apply_grades(graph, elevation, clamp=0.30, window=GRADE_WINDOW_M):
+    """各区間の勾配を百分率で埋める。橋・トンネル・階段は平坦のままにする。
+
+    標高の取り出しは今までどおり「辺の順にA→Bを呼ぶ」1周だけで済ませる
+    ——ElevationTableは呼び出し順に値を返すだけの表なので、ここの呼び出し回数・
+    順序を変えると値がすり替わる。勾配そのものは、そのキャッシュだけを読む
+    2周目（区間ごとではなく道なりの窓で測る）で計算する。
+    """
+    edges = graph['edges']
     cache = {}
     def height(i):
         if i not in cache:
             cache[i] = elevation.at(graph['nodes'][i][0], graph['nodes'][i][1])
         return cache[i]
-    for e in graph['edges']:
+    for e in edges:
         if e[FLAT] or e[STEPS] or e[LEN] <= 0:
-            e[GRADE] = 0
             continue
-        ha, hb = height(e[A]), height(e[B])
-        if ha is None or hb is None:
-            e[GRADE] = 0
-            continue
-        grade = max(-clamp, min(clamp, (hb - ha) / e[LEN]))
-        e[GRADE] = round(grade * 100)
+        height(e[A])
+        height(e[B])
+
+    half = window / 2.0
+    n = len(edges)
+    i = 0
+    while i < n:
+        # 同じwayの、途切れず連続する辺だけが1本の道なり。県境外のノードが
+        # 間引かれたwayは同じway番号のまま2本に千切れて隣り合うので、
+        # A/Bのつながりが切れたところも新しい鎖の開始にする。
+        j = i
+        while (j + 1 < n and edges[j + 1][WAY] == edges[i][WAY]
+               and edges[j + 1][A] == edges[j][B]):
+            j += 1
+        chain = edges[i:j + 1]
+        dist = [0.0]
+        for e in chain:
+            dist.append(dist[-1] + e[LEN])
+        heights = [cache.get(chain[0][A])] + [cache.get(e[B]) for e in chain]
+        total = dist[-1]
+        for k, e in enumerate(chain):
+            if e[FLAT] or e[STEPS] or e[LEN] <= 0:
+                e[GRADE] = 0
+                continue
+            mid = (dist[k] + dist[k + 1]) / 2.0
+            lo, hi = max(0.0, mid - half), min(total, mid + half)
+            h_lo, h_hi = _chain_height(dist, heights, lo), _chain_height(dist, heights, hi)
+            span = hi - lo
+            if h_lo is None or h_hi is None or span <= 0:
+                e[GRADE] = 0
+                continue
+            grade = max(-clamp, min(clamp, (h_hi - h_lo) / span))
+            e[GRADE] = round(grade * 100)
+        i = j + 1
+
+def _chain_height(dist, heights, target):
+    """鎖に沿った距離targetでの標高を、両隣ノードの間で線形補間する。
+    どちらかの標高が無ければNone（欠測扱い）。"""
+    idx = max(0, min(bisect.bisect_right(dist, target) - 1, len(dist) - 2))
+    h0, h1 = heights[idx], heights[idx + 1]
+    if h0 is None or h1 is None:
+        return None
+    d0, d1 = dist[idx], dist[idx + 1]
+    if d1 == d0:
+        return h0
+    return h0 + (h1 - h0) * (target - d0) / (d1 - d0)
 
 class GridIndex:
     """区間を約500m四方のマスへ仕分ける。検索半径が30mに固定なので3x3で必ず足りる。

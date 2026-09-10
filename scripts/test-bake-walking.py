@@ -320,6 +320,72 @@ assert g['edges'][0][m.GRADE] == 0, g['edges'][0][m.GRADE]
 
 print('subdivide and grade checks passed (14 assertions).')
 
+# --- ここまでの apply_grades テストは単独の辺=1本きりの道なりで、鎖の全長が
+# 窓(30m)より短いため、窓は鎖の両端で切られて「端から端まで」に潰れる。
+# これは新しい窓方式の退化形（旧・区間ごとの計算と一致する）であって、
+# 複数区間にまたがる窓そのものはまだ検査されていない。以下で検査する。
+
+assert m.GRADE_WINDOW_M == 30.0, m.GRADE_WINDOW_M
+
+def chain_graph(seg_lengths, way='w1'):
+    """同じwayに属す、長さseg_lengthsの辺を一直線に並べたグラフを作る。"""
+    nodes = [[0.0, 0.0]]
+    d = 0.0
+    for length in seg_lengths:
+        d += length
+        nodes.append([0.0, d * DEG])
+    edges = [[i, i + 1, seg_lengths[i], True, True, way, 0, False, False]
+             for i in range(len(seg_lengths))]
+    return {'nodes': nodes, 'edges': edges}
+
+class ByPosElevation:
+    """ノードの座標(浮動小数点そのもの)をキーに標高を返す。区間長を厳密に
+    保ったまま複数ノードへ標高を割り当てたいテスト専用。"""
+    def __init__(self, graph, heights):
+        self.table = {(p[0], p[1]): v for p, v in zip(graph['nodes'], heights)}
+    def at(self, lon, lat):
+        return self.table[(lon, lat)]
+
+# 一様勾配(5%)の道なりでは、窓が鎖全体を覆っていても、途中の短い区間
+# (2m)を含めどの区間も同じ5%を返す。ノイズが無ければ窓を広げても
+# 値がぶれないことの確認。
+g = chain_graph([50.0, 50.0, 2.0, 50.0, 50.0])
+heights = [0.05 * d for d in (0.0, 50.0, 100.0, 102.0, 152.0, 202.0)]
+m.apply_grades(g, ByPosElevation(g, heights))
+assert [e[m.GRADE] for e in g['edges']] == [5, 5, 5, 5, 5], \
+    [e[m.GRADE] for e in g['edges']]
+
+# 本題: 一様勾配の途中にある短い区間(2m)の両端だけをDEM誤差ぶん(合計1.1m)
+# ずらす。区間ごとの計算なら (4.5-5.6)/2m=-55% -> クランプで-30%という、
+# 符号まで逆転したノイズを返してしまう。窓を30m取れば周囲の正しい標高が
+# 支配的になり、真の上り勾配(+5%前後)に近い値へ戻るはずである。
+g = chain_graph([50.0, 50.0, 2.0, 50.0, 50.0])
+heights = [0.0, 2.5, 5.6, 4.5, 7.6, 10.1]   # 中の2ノードだけ±0.5m級のノイズを乗せた
+m.apply_grades(g, ByPosElevation(g, heights))
+short_edge = g['edges'][2]
+assert short_edge[m.GRADE] == 2, short_edge[m.GRADE]   # 符号は保たれ、-30ではない
+assert 0 < short_edge[m.GRADE] < 10, short_edge[m.GRADE]
+
+# 鎖の切れ目: 同じwayでもノードのつながりが切れていたら別の鎖として扱う
+# こと（山口県外へ出て間引かれたノードのせいで1本のwayが2本に千切れる
+# ケース）。前の鎖の終点と後の鎖の始点が同じ配列に隣接して並んでいても、
+# 後の鎖は自分の区間だけで（前の鎖の標高を借りずに）窓を作らねばならない。
+chain1 = chain_graph([10.0, 10.0])            # nodes 0,1,2 way 'w1'
+# chain2は地理的に別の場所（経度をずらす）にある、道が千切れた側。
+# 座標を chain1 と重ねるとテスト用ByPosElevationの辞書キーが衝突してしまう。
+chain2_nodes = [[1.0, 0.0], [1.0, 10.0 * DEG]]
+g = {'nodes': chain1['nodes'] + chain2_nodes,
+     'edges': chain1['edges'] + [[3, 4, 10.0, True, True, 'w1', 0, False, False]]}
+# chain2の辺のA(=3, chain1のnode2の次のインデックス)はchain1の最後の辺のB(=2)と
+# つながっていないので、ここで鎖が切れなければならない。
+heights = [0.0, 0.5, 1.0, 10.0, 7.0]
+m.apply_grades(g, ByPosElevation(g, heights))
+assert g['edges'][0][m.GRADE] == 5 and g['edges'][1][m.GRADE] == 5, g['edges'][:2]
+# 前の鎖の標高(0,0.5,1.0)を誤って引き継いでいれば -30 にはならない値になる。
+assert g['edges'][2][m.GRADE] == -30, g['edges'][2][m.GRADE]
+
+print('windowed grade checks passed (10 assertions).')
+
 # 索引を使っても使わなくても、同じ最寄り区間を返さなければならない。
 g = m.load_pilot_graph(ROOT / 'public/data/walking-onoda.json')
 grid = m.GridIndex(g)
