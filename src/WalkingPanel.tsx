@@ -4,7 +4,7 @@ import type { ShoppingCollection, ShoppingFeature } from './types';
 import { catchmentFile, distance, interpolate, parseCatchment } from './walking';
 import type { Catchment, Coordinate, Segment } from './walking';
 
-interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
+interface SteepPiece { a: Coordinate; b: Coordinate; grade: number; mid: number }
 
 /**
  * 「谷る」と読める最小の連続長。焼き込み済みの急坂区間を接続長の分布で見ると、
@@ -32,7 +32,9 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
       const t = (budget - d1) / (d2 - d1);
       if (d1 <= budget) pb = interpolate(a, b, t); else pa = interpolate(a, b, t);
     }
-    trimmed.push({ a: pa, b: pb, grade, length: distance(pa, pb) });
+    // mid はトリム前の d1/d2 の中点。バケツ分け（rampColor用）はbucketSegmentsと
+    // 同じ基準にしておかないと、同じ地点なのに距離色の階調がずれて見える。
+    trimmed.push({ a: pa, b: pb, grade, mid: (d1 + d2) / 2, length: distance(pa, pb) });
   }
   if (!trimmed.length) return { pieces: [], totalLength: 0 };
 
@@ -62,7 +64,7 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
     seenRoots.add(r);
     totalLength += runLength.get(r) ?? 0;
   });
-  const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade }) => ({ a, b, grade }));
+  const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade, mid }) => ({ a, b, grade, mid }));
   return { pieces, totalLength };
 }
 
@@ -98,16 +100,18 @@ const RAMP_STOPS: [number, string][] = [
 ];
 
 /**
- * 急坂オーバーレイ（勾配5%以上を#dc2626の破線、8%以上を#7f1d1d の実線）は
- * どちらも色相0°（赤）で、暖色・寒色の対比で目立たせる設計だった。寒色ランプ
- * （色相250°〜178°）のときは赤との色相差が150°以上あったが、緑ランプ
- * （色相150°〜75°）では遠端との色相差が最短75°まで縮む。75°はまだ赤と
- * 黄緑を混同するほど近くはないが、寒色のときほど余裕はない。そのため色は
- * 変えず、破線（勾配5%以上）と実線＋太め（勾配8%以上、weight5 vs 本体の
- * weight3）という色相以外の手がかりを従来どおり残し、色相が万一近く見えても
- * 太さ・線種で層として区別できるようにしてある。ここも実機では未確認。
+ * 急坂オーバーレイは元々#dc2626の破線＋#7f1d1d の太い実線という、距離ランプと
+ * 無関係な赤一色だった。しかし薄い地図の上でも破線は最も見落とされやすいマーク
+ * であり、かつ赤という第三の色相はランプの色相（緑〜黄緑）・ケーシングの色相
+ * （中立グレー）に次ぐ「地図上で読み解く色」をもう1つ増やしてしまう。
+ *
+ * そこで破線をやめ、勾配は「同じ地点の距離ランプ色を沈めて濃くする」（深度）と
+ * 「太くする」（太さ）の2チャンネルだけで表現する。色相を増やさないので距離の
+ * エンコードを壊さず、彩度・明度が近い色同士になっても太さが最後の砦になる。
+ * 独自の暖色は持たせない：太さと濃さの2チャンネルが揃っていれば、地図上で
+ * 読み取るべき「意味のある色相」を1系統に絞れる方が競合が減ると判断した。
+ * 実機の地図では未確認（本タスクではブラウザ検証を行っていない）。
  */
-
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
@@ -130,6 +134,20 @@ function rampColor(t: number): string {
 }
 
 /**
+ * 「深度」表現：同じ地点のランプ色を、明度を落とし彩度を上げた方向に押し出す。
+ * HSL変換はせず、RGB平均からの偏差を拡大（=彩度寄りの操作）した後に一律縮小
+ * （=明度を落とす）するだけの近似。フルのHSL往復より雑だが、アクセント色を
+ * 少し沈めて濃くする用途には十分で、既存のhexToRgb/rgbToHexだけで書ける。
+ */
+function darkenSaturate(hex: string, darken: number, boost: number): string {
+  const rgb = hexToRgb(hex);
+  const mean = (rgb[0] + rgb[1] + rgb[2]) / 3;
+  const boosted = rgb.map(c => mean + (c - mean) * boost);
+  const darkened = boosted.map(c => Math.max(0, Math.min(255, c * (1 - darken)))) as [number, number, number];
+  return rgbToHex(darkened);
+}
+
+/**
  * 651〜3,355本ものセグメントを1本ずつ描くと重い。距離を12段のバケツに
  * まとめて、バケツごとに1本のポリライン（複数の線分をまとめた1レイヤー）
  * として描く。地図上の縮尺では連続したグラデーションに見えつつ、レイヤー数は
@@ -139,17 +157,73 @@ function rampColor(t: number): string {
  */
 const DISTANCE_BUCKETS = 12;
 
-function bucketSegments(catchment: Catchment): { color: string; lines: Coordinate[][] }[] {
-  const budget = catchment.budget;
+function bucketByMid(items: { a: Coordinate; b: Coordinate; mid: number }[], budget: number): Coordinate[][][] {
   const buckets: Coordinate[][][] = Array.from({ length: DISTANCE_BUCKETS }, () => []);
-  for (const { a, b, d1, d2 } of catchment.segments) {
-    const mid = (d1 + d2) / 2;
+  for (const { a, b, mid } of items) {
     const idx = Math.min(DISTANCE_BUCKETS - 1, Math.max(0, Math.floor((mid / budget) * DISTANCE_BUCKETS)));
     buckets[idx].push([a, b]);
   }
-  return buckets
+  return buckets;
+}
+
+function bucketSegments(catchment: Catchment): { color: string; lines: Coordinate[][] }[] {
+  const items = catchment.segments.map(({ a, b, d1, d2 }) => ({ a, b, mid: (d1 + d2) / 2 }));
+  return bucketByMid(items, catchment.budget)
     .map((lines, i) => ({ color: rampColor((i + 0.5) / DISTANCE_BUCKETS), lines }))
     .filter(bucket => bucket.lines.length > 0);
+}
+
+/**
+ * 急坂の2階層（5-8%・8%以上）。weightが太さの手がかり、darken/boostが
+ * darkenSaturate経由の濃さの手がかり。同じdistanceバケツ分け（bucketByMid）
+ * を再利用し、バケツごとに「その距離のランプ色を沈めた版」を1レイヤーにする。
+ * 実際に急坂が乗るバケツはごく一部なので、最大12バケツ×2階層でも大半は空。
+ */
+const STEEP_TIERS = [
+  { min: 5, max: 8, weight: 5, darken: 0.35, boost: 1.25 },
+  { min: 8, max: Infinity, weight: 7, darken: 0.55, boost: 1.4 },
+];
+
+function bucketSteepPieces(pieces: SteepPiece[], budget: number): { color: string; weight: number; lines: Coordinate[][] }[] {
+  const out: { color: string; weight: number; lines: Coordinate[][] }[] = [];
+  for (const tier of STEEP_TIERS) {
+    const inTier = pieces.filter(p => Math.abs(p.grade) >= tier.min && Math.abs(p.grade) < tier.max);
+    bucketByMid(inTier, budget).forEach((lines, i) => {
+      if (!lines.length) return;
+      const color = darkenSaturate(rampColor((i + 0.5) / DISTANCE_BUCKETS), tier.darken, tier.boost);
+      out.push({ color, weight: tier.weight, lines });
+    });
+  }
+  return out;
+}
+
+/**
+ * ケーシング：距離ランプ・急坂線の下に敷く、地図と分離するための中立な太い縁取り。
+ * バケツごとに1本ずつ敷くと最大24枚増える計算になるため、そうはせず「全区間を
+ * まとめた1枚」を最初に描く。ケーシングの上に乗る線のうち最太は急坂8%以上の
+ * weight7なので、CASING_WEIGHTはそれより一回り太くして縁が覗くようにする。
+ */
+const CASING_WEIGHT = 9;
+const CASING_COLOR = '#0f172a';
+
+/**
+ * 地図全体を白いスクリムで少し覆い、OSM標準タイル（道路・建物・土地利用の塗り）
+ * の主張を弱めて、上に乗る徒歩圏の線を「地図の模様」ではなく「乗った線」として
+ * 見えやすくする。tilePane（z-index 200）より上、overlayPane（同400）より下に
+ * 置きたいので、その間のz-indexを持つ専用paneを1つ作る。不透明度0.5は
+ * 「道路の形や地名は読めるが、地図全体は霧にならない」の中間点として選んだ
+ * （もっと薄いと下地の緑・道路網に線が沈み、もっと濃いと地名が読めなくなる）。
+ * 実機の地図では未確認。
+ */
+const SCRIM_PANE = 'walkScrim';
+const SCRIM_Z_INDEX = 250; // tilePane=200 < ここ < overlayPane=400
+const SCRIM_OPACITY = 0.5;
+
+function ensureScrimPane(map: L.Map): void {
+  if (map.getPane(SCRIM_PANE)) return;
+  const pane = map.createPane(SCRIM_PANE);
+  pane.style.zIndex = String(SCRIM_Z_INDEX);
+  pane.style.pointerEvents = 'none';
 }
 
 /**
@@ -172,12 +246,12 @@ function createLegendControl(budget: number): L.Control {
         ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2" style="left:${pct(m)}%">${m}分</span>`).join('')}
       </div>
       <div class="mt-2.5 flex items-center gap-1.5">
-        <i class="inline-block h-0 w-5 border-t-2 border-dashed" style="border-color:#dc2626"></i>
-        <span>勾配5%以上</span>
+        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${darkenSaturate(rampColor(0.5), STEEP_TIERS[0].darken, STEEP_TIERS[0].boost)}"></i>
+        <span>勾配5%以上（濃い色・やや太い線）</span>
       </div>
       <div class="mt-1 flex items-center gap-1.5">
-        <i class="inline-block h-[3px] w-5 rounded-full" style="background:#7f1d1d"></i>
-        <span>勾配8%以上</span>
+        <i class="inline-block h-[6px] w-5 rounded-full" style="background:${darkenSaturate(rampColor(0.5), STEEP_TIERS[1].darken, STEEP_TIERS[1].boost)}"></i>
+        <span>勾配8%以上（濃い色・太い線）</span>
       </div>
     `;
     L.DomEvent.disableClickPropagation(div);
@@ -261,19 +335,33 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
 
   useEffect(() => {
     if (!map || !catchment) return;
+    // paneは地図の生存期間ずっと存在してよい静的な入れ物（中身が無ければ何も
+    // 描画せず無害）。LeafletにremovePane相当の公開APIが無く、私的フィールドを
+    // 触ってまで消す理由がないので、消すのは中身（スクリム矩形）だけにする。
+    ensureScrimPane(map);
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
+
+    // スクリムは徒歩圏を見せている間だけ地図を覆う。groupに入れているので、
+    // このeffectの後始末（group.remove()）で他のレイヤーと同時に消える。
+    L.rectangle(L.latLngBounds([-90, -180], [90, 180]), {
+      pane: SCRIM_PANE, stroke: false, fillColor: '#ffffff', fillOpacity: SCRIM_OPACITY, interactive: false,
+    }).addTo(group);
+
+    // ケーシング：色つきの線をすべて重ねる前に、中立色の太い縁取りを1枚だけ敷く。
+    // バケツごとに敷くと最大24枚増えるところを、これなら1枚で済む。
+    const allLines = catchment.segments.map(({ a, b }) => toLatLng([a, b]));
+    L.polyline(allLines, { color: CASING_COLOR, weight: CASING_WEIGHT, opacity: 0.85, lineCap: 'round', interactive: false }).addTo(group);
+
     for (const { color, lines } of bucketSegments(catchment)) {
       L.polyline(lines.map(toLatLng), { color, weight: 3, opacity: 0.9, interactive: false }).addTo(group);
     }
     if (steepSummary) {
-      // 距離の色の上に急坂を重ねる。5%はバリアフリー道路の縦断勾配の上限、
-      // 8%は手動車いすの自走限界の目安。断片を間引いた後の run から、
-      // セグメントごとの実勾配で色を分ける。
-      const mild = steepSummary.pieces.filter(p => Math.abs(p.grade) < 8).map(p => toLatLng([p.a, p.b]));
-      const severe = steepSummary.pieces.filter(p => Math.abs(p.grade) >= 8).map(p => toLatLng([p.a, p.b]));
-      L.polyline(mild, { color: '#dc2626', weight: 4, dashArray: '1 6', lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
-      L.polyline(severe, { color: '#7f1d1d', weight: 5, opacity: 1, interactive: false }).addTo(group);
+      // 5%はバリアフリー道路の縦断勾配の上限、8%は手動車いすの自走限界の目安。
+      // 色相は増やさず、距離ランプ色を沈めた「深度」と線の「太さ」だけで示す。
+      for (const { color, weight, lines } of bucketSteepPieces(steepSummary.pieces, catchment.budget)) {
+        L.polyline(lines.map(toLatLng), { color, weight, lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
+      }
     }
     L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
