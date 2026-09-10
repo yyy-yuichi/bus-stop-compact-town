@@ -336,9 +336,9 @@ function useCatchment(id: string) {
   return { ...state, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, facilities, unreachable, error, retry }: {
+export default function WalkingPanel({ map, id, origin, unreachable }: {
   map: L.Map | null; id: string; origin: Coordinate;
-  facilities: ShoppingFeature[] | null; unreachable: Record<string, number | null> | null; error: boolean; retry: () => void;
+  unreachable: Record<string, number | null> | null;
 }) {
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id);
   const steepSummary = useMemo(() => catchment ? steepRuns(catchment.segments, catchment.budget) : null, [catchment]);
@@ -383,11 +383,6 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
     const bounds = L.latLngBounds(points).extend([origin[1], origin[0]]);
     map.fitBounds(bounds, { paddingTopLeft: [30, 112], paddingBottomRight: mobile ? [30, Math.min(window.innerHeight * 0.48, 430) + 25] : [420, 65], maxZoom: 17, animate: false });
   }, [map, id, catchment]);
-
-  if (error) return <section className="walking-panel mb-6 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
-    <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retry}>再読み込み</button>
-  </section>;
-  if (!facilities) return <p className="mb-6 text-sm" role="status">徒歩圏を準備しています…</p>;
 
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3>
