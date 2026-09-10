@@ -1,24 +1,69 @@
 import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import type { ShoppingCollection, ShoppingFeature } from './types';
-import { catchmentFile, interpolate, parseCatchment, reachableLines } from './walking';
+import { catchmentFile, distance, interpolate, parseCatchment, reachableLines } from './walking';
 import type { Catchment, Coordinate, Segment } from './walking';
 
+interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
+
 /**
- * 選択中の徒歩時間帯（budget）の範囲だけを残して、急坂セグメントを切り出す。
- * reachableLines と同じ按分ロジックだが、勾配・方向の情報を保つために別実装にしている。
+ * 「谷る」と読める最小の連続長。焼き込み済みの急坂区間を接続長の分布で見ると、
+ * 10m未満が全体長の2.0%、10-25mが10.3%、25-50mが27.7%、50-100mが31.6%、
+ * 100m以上が28.3%（連結区間ごとの合計長で集計）。25m（10-25mバケットの上限）
+ * で切ると、捨てるのは<25mの合計12.3%だけで、信号待ち程度で終わる単発の
+ * フラグメントはほぼ消える一方、実際に体感する坂はほぼ全部残る。
  */
-function steepLines(segments: Segment[], budget: number, min: number, max: number): Coordinate[][] {
-  const lines: Coordinate[][] = [];
+const MIN_STEEP_RUN_M = 25;
+
+/**
+ * 選択中の徒歩時間帯（budget）の範囲に切り詰めた上で、|grade|>=5%のセグメントを
+ * 端点の座標一致（焼き込み時に5桁精度で丸め済み）でつないで連続区間（run）を作る。
+ * run の合計長が MIN_STEEP_RUN_M 未満の断片は間引く。色分けは9%→7%→9%のような
+ * 一続きの坂をしきい値で切り刻んで見せないよう、run 単位ではなくセグメント単位の
+ * 勾配で行う（呼び出し側で処理）。
+ */
+function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[]; totalLength: number } {
+  const trimmed: (SteepPiece & { length: number })[] = [];
   for (const { a, b, d1, d2, grade } of segments) {
-    const g = Math.abs(grade);
-    if (g < min || g >= max) continue;
+    if (Math.abs(grade) < 5) continue;
     if (d1 > budget && d2 > budget) continue;
-    if (d1 <= budget && d2 <= budget) { lines.push([a, b]); continue; }
-    const t = (budget - d1) / (d2 - d1);
-    lines.push(d1 <= budget ? [a, interpolate(a, b, t)] : [interpolate(a, b, t), b]);
+    let pa = a, pb = b;
+    if (!(d1 <= budget && d2 <= budget)) {
+      const t = (budget - d1) / (d2 - d1);
+      if (d1 <= budget) pb = interpolate(a, b, t); else pa = interpolate(a, b, t);
+    }
+    trimmed.push({ a: pa, b: pb, grade, length: distance(pa, pb) });
   }
-  return lines;
+  if (!trimmed.length) return { pieces: [], totalLength: 0 };
+
+  // Union-Find: 端点のキー（丸め済み座標の文字列）が一致するセグメント同士を同じrunにまとめる。
+  const parent = trimmed.map((_, i) => i);
+  const find = (i: number): number => { while (parent[i] !== i) i = parent[i]; return i; };
+  const key = (p: Coordinate) => `${p[0].toFixed(5)},${p[1].toFixed(5)}`;
+  const byEndpoint = new Map<string, number[]>();
+  trimmed.forEach((seg, i) => {
+    for (const p of [seg.a, seg.b]) {
+      const k = key(p);
+      const at = byEndpoint.get(k);
+      if (at) { for (const j of at) { const ri = find(i), rj = find(j); if (ri !== rj) parent[ri] = rj; } at.push(i); }
+      else byEndpoint.set(k, [i]);
+    }
+  });
+  const runLength = new Map<number, number>();
+  trimmed.forEach((seg, i) => { const r = find(i); runLength.set(r, (runLength.get(r) ?? 0) + seg.length); });
+
+  const qualifies = (i: number) => (runLength.get(find(i)) ?? 0) >= MIN_STEEP_RUN_M;
+  let totalLength = 0;
+  const seenRoots = new Set<number>();
+  trimmed.forEach((_, i) => {
+    if (!qualifies(i)) return;
+    const r = find(i);
+    if (seenRoots.has(r)) return;
+    seenRoots.add(r);
+    totalLength += runLength.get(r) ?? 0;
+  });
+  const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade }) => ({ a, b, grade }));
+  return { pieces, totalLength };
 }
 
 export function useWalkingData() {
@@ -95,26 +140,30 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
   const [speed, setSpeed] = useState(4);
   const [showSteep, setShowSteep] = useState(false);
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id);
+  const budget = speed * 1000 / 60 * minutes;
+  const steepSummary = showSteep && catchment ? steepRuns(catchment.segments, budget) : null;
 
   useEffect(() => {
     if (!map || !catchment) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
-    const budget = speed * 1000 / 60 * minutes;
     const bands = ([[15, '#b45309'], [10, '#c47b13'], [5, '#047857']] as const).filter(([n]) => n <= minutes);
     for (const [n, color] of bands) {
       L.polyline(reachableLines(catchment, speed * 1000 / 60 * n).map(toLatLng), { color, weight: 7, opacity: 0.9, interactive: false }).addTo(group);
     }
-    if (showSteep) {
+    if (steepSummary) {
       // 帯の色（残り時間）の上に急坂を重ねる。5%はバリアフリー道路の縦断勾配の上限、
       // 8%は手動車いすの自走限界の目安。選択中の時間帯（budget）の外は塗らない。
-      L.polyline(steepLines(catchment.segments, budget, 5, 8).map(toLatLng), { color: '#dc2626', weight: 4, dashArray: '1 6', lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
-      L.polyline(steepLines(catchment.segments, budget, 8, Infinity).map(toLatLng), { color: '#7f1d1d', weight: 5, opacity: 1, interactive: false }).addTo(group);
+      // 断片を間引いた後の run から、セグメントごとの実勾配で色を分ける。
+      const mild = steepSummary.pieces.filter(p => Math.abs(p.grade) < 8).map(p => toLatLng([p.a, p.b]));
+      const severe = steepSummary.pieces.filter(p => Math.abs(p.grade) >= 8).map(p => toLatLng([p.a, p.b]));
+      L.polyline(mild, { color: '#dc2626', weight: 4, dashArray: '1 6', lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
+      L.polyline(severe, { color: '#7f1d1d', weight: 5, opacity: 1, interactive: false }).addTo(group);
     }
     L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
     return () => { group.remove(); };
-  }, [map, catchment, speed, minutes, origin, showSteep]);
+  }, [map, catchment, speed, minutes, origin, steepSummary]);
 
   useEffect(() => {
     if (!map || !catchment) return;
@@ -156,6 +205,7 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
         {showSteep && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full" style={{ background: 'repeating-linear-gradient(90deg, #dc2626 0 3px, transparent 3px 6px)' }} />勾配5%以上（バリアフリー道路の基準超）</span>}
         {showSteep && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-red-900" />勾配8%以上（車いす自走の限界目安超）</span>}
       </div>
+      {steepSummary && steepSummary.totalLength > 0 && <p className="mt-2 text-xs text-stone-600">この帯でまとまって続く急坂は合計約{Math.round(steepSummary.totalLength)}mです。</p>}
       {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : (
         // ponytail: 買い物候補（reachFacility・坂/階段の警告・候補カード）は
         // facility judgement を実装する後続タスクで戻す。ここはその置き場所。
