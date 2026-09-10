@@ -283,7 +283,18 @@ try:
 except RuntimeError as error:
     assert 'extract-elevations.py' in str(error), error
 
-print('elevation table checks passed (6 assertions).')
+# 指紋はノード列だけでなく、height()を呼ぶかどうかを左右するFLAT/STEPS/LEN>0
+# も見る。ノード列も辺のA/Bも一切変えずにFLATだけを立てると、apply_gradesの
+# 1周目がその辺をスキップするようになり標高表からの取り出し回数が減る
+# ——ノード列しか見ない指紋ではこの回帰を検知できない。
+g3 = small_graph([[131.000, 33.000], [131.001, 33.001], [131.002, 33.002]])
+g3['edges'] = [[0, 1, 10.0, True, True, 'w1', 0, False, False]]
+g4 = small_graph([[131.000, 33.000], [131.001, 33.001], [131.002, 33.002]])
+g4['edges'] = [[0, 1, 10.0, True, True, 'w1', 0, False, True]]  # is_flatの判定だけが変わった想定
+assert m.graph_fingerprint(g3)['sha256'] != m.graph_fingerprint(g4)['sha256'], \
+    'is_flat/is_stepsの判定が変わっても指紋が変わらない'
+
+print('elevation table checks passed (7 assertions).')
 
 DEG = 180 / (math.pi * 6371000)   # 1メートルあたりの度数
 

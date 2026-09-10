@@ -349,16 +349,30 @@ class Elevation:
                 'tiles': sum(1 for v in self.tiles.values() if v), 'requests': self.requests}
 
 def graph_fingerprint(graph):
-    """prepare_graphが組んだグラフの並び順を指紋にする。
+    """標高の参照順（apply_gradesがelevation.atを呼ぶ順序）を再現するのに
+    必要な、prepare_graphの出力のうち意味を持つ部分だけを指紋にする。
+
+    ElevationTable.atは呼ばれた座標を見ず、呼ばれた回数分だけ表を順番に消費する
+    だけの読み手なので、値が正しいノードに戻るかどうかは「何回目にどのノードが
+    どの順で呼ばれるか」だけで決まる。それを決めるのは (1) ノードの並び順
+    （座標がedgeのA/B添字の意味を決める）と (2) 各辺のA/B添字・FLAT/STEPS/
+    LEN>0（apply_gradesの1周目はこの3条件でスキップするかどうかを決め、
+    スキップしない辺だけがheight(A)・height(B)を呼ぶ）。辺の順序それ自体も
+    A/Bの並びに現れるので別途辿る必要はない。
 
     座標は出力と同じ5桁に丸めてから連結してSHA-256を取る（丸めないと浮動小数点の
-    演算誤差ノイズがそのまま偽の不一致になりかねない）。並び順が変わればノードの
-    どれか一つでもずれ、指紋も変わる。件数だけを見る検査（表を使い切ったかどうか）
-    では、並び順だけが変わって件数が同じケースをすり抜けてしまうため、これで補う。
+    演算誤差ノイズがそのまま偽の不一致になりかねない）。ノードの並び順や上記の
+    辺の情報がひとつでもずれれば指紋も変わる。件数だけを見る検査（表を使い切った
+    かどうか）では、件数が同じまま並び順や辺のフラグだけが変わるケースを
+    すり抜けてしまうため、これで補う——たとえばis_flat/is_stepsの判定基準を
+    変えるとノード列は無変更のまま呼び出し回数だけが減り、件数チェックは
+    素通りしてしまうが、この指紋なら検知する。
     """
     h = hashlib.sha256()
     for lon, lat in graph['nodes']:
         h.update(f'{round(lon, 5)},{round(lat, 5)};'.encode())
+    for e in graph['edges']:
+        h.update(f'{e[A]},{e[B]},{1 if e[FLAT] else 0},{1 if e[STEPS] else 0},{1 if e[LEN] > 0 else 0};'.encode())
     return {'sha256': h.hexdigest(), 'nodes': len(graph['nodes'])}
 
 class ElevationTable:
@@ -368,8 +382,8 @@ class ElevationTable:
     依存するため、表を作ったときと同じ prepare_graph の結果に対してしか使えない
     （extract-elevations.py が同じ関数で表を作るのはそのため）。構築時に
     graph_fingerprint で今のグラフと表の指紋を突き合わせ、一致しなければ使わせない
-    ——件数が変わらないままノードの並びだけがずれる回帰は、件数チェックだけでは
-    通り抜けてしまうため。
+    ——件数が変わらないままノードの並びや、height()を呼ぶ辺の判定（FLAT/STEPS/
+    LEN>0）だけがずれる回帰は、件数チェックだけでは通り抜けてしまうため。
     """
 
     def __init__(self, path, graph):
