@@ -217,31 +217,39 @@ function ensureScrimPane(map: L.Map): void {
 function createLegendControl(budget: number): L.Control {
   const control = new L.Control({ position: 'bottomleft' });
   control.onAdd = () => {
-    const div = L.DomUtil.create('div', 'walking-legend rounded-xl border border-stone-200 bg-white/95 px-3 py-2.5 text-[11px] leading-relaxed text-stone-600 shadow-sm');
+    const div = L.DomUtil.create('div', 'walking-legend rounded-xl border border-stone-200 bg-white/95 px-4 py-3 text-[13px] leading-relaxed text-stone-600 shadow-md');
     const gradient = RAMP_STOPS.map(([t, c]) => `${c} ${Math.round(t * 100)}%`).join(', ');
     // 時速4km換算（分→m）をbudgetに対する割合にして、バーの目盛り位置にする。
     const pct = (minutes: number) => Math.min(100, ((minutes * (4000 / 60)) / budget) * 100);
-    // スウォッチの高さ（5px/2px）はBASE_WEIGHT/STEEP_WEIGHTの比を模したもの。
+    // 15分の目盛りはpct=100%になり得る（budgetちょうどか、それを超える換算距離）。
+    // 目盛りのspanはabsolute+leftのみでwidthを指定していないため、shrink-to-fit幅は
+    // 「コンテナ幅－left」で決まる。left=100%だとその値が0になり、幅の下限は
+    // 最小単語幅まで縮む——だが日本語はどの文字の間でも折り返せるので「最小単語」＝
+    // 1文字になり、「15分」が1文字ずつ縦に積まれる。whitespace-nowrapで折り返し
+    // そのものを禁止して直す（幅の計算結果に関わらず1行を強制する）。
+    //
+    // スウォッチの高さ（10px/4px、比は5:2＝BASE_WEIGHT/STEEP_WEIGHTと同じ）は、
+    // 凡例を読みやすく拡大したときも地図上の実際の太さ比と揃えるためのもの。
     // Tailwindのクラス抽出は文字列補間を追えないため値をリテラルで書いている。
     // 両定数を変えたらここも手で合わせる。
     div.innerHTML = `
-      <p class="font-semibold text-stone-800">色は徒歩の距離</p>
-      <p class="mt-0.5 text-stone-500">坂道は平地換算・全体で${Math.round(budget)}m（時速4kmで15分）</p>
-      <div class="relative mt-2.5 h-2 w-36 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
-      <div class="relative mt-1 h-3 w-36 text-[10px] text-stone-500">
-        ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2" style="left:${pct(m)}%">${m}分</span>`).join('')}
+      <p class="font-semibold text-stone-800">徒歩の距離(時速4km)</p>
+      <div class="relative mt-3 h-3 w-40 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
+      <div class="relative mt-1.5 h-4 w-40 text-[12px] text-stone-500">
+        ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2 whitespace-nowrap" style="left:${pct(m)}%">${m}分</span>`).join('')}
       </div>
-      <div class="mt-2.5 flex items-center gap-1.5">
-        <i class="relative inline-block h-[5px] w-8 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
-          <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[0].color}"></span>
+      <p class="mt-3 font-semibold text-stone-800">急な坂道</p>
+      <div class="mt-2 flex items-center gap-2">
+        <i class="relative inline-block h-[10px] w-10 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 h-[4px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[0].color}"></span>
         </i>
-        <span>勾配5%以上は線の中央に縞として重なる</span>
+        <span>勾配5%以上</span>
       </div>
-      <div class="mt-1 flex items-center gap-1.5">
-        <i class="relative inline-block h-[5px] w-8 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
-          <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[1].color}"></span>
+      <div class="mt-1.5 flex items-center gap-2">
+        <i class="relative inline-block h-[10px] w-10 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 h-[4px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[1].color}"></span>
         </i>
-        <span>勾配8%以上はより濃い縞</span>
+        <span>勾配8%以上</span>
       </div>
     `;
     L.DomEvent.disableClickPropagation(div);
