@@ -102,11 +102,10 @@ const RAMP_STOPS: [number, string][] = [
  * 地図の上でも最も見落とされやすいマークなのでやめ、実線に統一。色相は距離
  * ランプ（緑〜黄緑）とは別系統の暖色（赤）のまま残す：色そのものが「急坂である」
  * の一次サインで、8%以上はより暗く彩度の高い赤にする「濃さ」だけで階層を
- * 区別する。太さでの区別は不要という判断（色相の変化だけで十分見分けが
- * つくため）で、2階層とも同じ太さにした。距離との対応は無い（同じ8%の坂なら、
- * 停留所の近くでも遠くでも同じ赤）——急坂がどこにあるかは色相そのもので
- * 即座にわかる方を優先した。実機の地図では未確認（本タスクではブラウザ検証を
- * 行っていない）。
+ * 区別する。距離との対応は無い（同じ8%の坂なら、停留所の近くでも遠くでも
+ * 同じ赤）——急坂がどこにあるかは色相そのもので即座にわかる方を優先した。
+ * 太さの設計についてはBASE_WEIGHT/STEEP_WEIGHTのコメントを参照。実機の地図
+ * では未確認（本タスクではブラウザ検証を行っていない）。
  */
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
@@ -138,6 +137,10 @@ function rampColor(t: number): string {
  * バケツ分け）で十分連続に見える。
  */
 const DISTANCE_BUCKETS = 12;
+/** 距離ランプの太さ。急坂の縞を乗せる「地」として、STEEP_WEIGHTのコメントの
+ *  通り太さを持たせている（単独なら3pxでも読めるが、それでは縞の置き場がない）。
+ */
+const BASE_WEIGHT = 5;
 
 function bucketByMid(items: { a: Coordinate; b: Coordinate; mid: number }[], budget: number): Coordinate[][][] {
   const buckets: Coordinate[][][] = Array.from({ length: DISTANCE_BUCKETS }, () => []);
@@ -160,8 +163,22 @@ function bucketSegments(catchment: Catchment): { color: string; lines: Coordinat
  * 太さは両階層とも同じにする（8%以上をさらに太くする必要はないというユーザー
  * 判断）。距離とは無関係な独立ハイライトなので距離バケツには分けない：階層ごとに
  * 1レイヤーで足りる（最大2枚）。
+ *
+ * 太さは当初weight5で、距離ランプ（weight3）より太かった。急坂は同じ座標に
+ * ランプの上から重ねて描く（描画順は変えていない）ため、太い方が上に乗ると
+ * 下のランプ色を完全に覆い隠してしまい、「急坂であること」はわかっても
+ * 「そこまでの距離」が読めなくなっていた——向きが逆だった。
+ *
+ * そこで関係を反転：ランプ側をBASE_WEIGHT（5）まで太くして「地」にし、急坂側は
+ * STEEP_WEIGHT（2）まで細くして「地の上に乗る縞」にする。Leafletのポリラインは
+ * 中心線に対して太さを均等に描くため、同じ座標に細い線を重ねれば自然に中央
+ * 揃えの縞になり、ランプ色は縞の両側に帯として残る——両方が同時に読める。
+ * 太さの絶対値ではなく比（5:2）が肝心：縞が「明らかに細い」と言えることを基準に
+ * 選んだ。線をこれ以上太くする理由はない（薄い線を求められた経緯があるため）ので、
+ * 両方が読み取れる最小の組み合わせとして5と2にした。実機の地図では未確認
+ * （本タスクではブラウザ検証を行っていない）。
  */
-const STEEP_WEIGHT = 5;
+const STEEP_WEIGHT = 2;
 const STEEP_TIERS = [
   { min: 5, max: 8, color: '#dc2626' },
   { min: 8, max: Infinity, color: '#7f1d1d' },
@@ -213,6 +230,9 @@ function createLegendControl(budget: number): L.Control {
     const gradient = RAMP_STOPS.map(([t, c]) => `${c} ${Math.round(t * 100)}%`).join(', ');
     // 時速4km換算（分→m）をbudgetに対する割合にして、バーの目盛り位置にする。
     const pct = (minutes: number) => Math.min(100, ((minutes * (4000 / 60)) / budget) * 100);
+    // スウォッチの高さ（5px/2px）はBASE_WEIGHT/STEEP_WEIGHTの比を模したもの。
+    // Tailwindのクラス抽出は文字列補間を追えないため値をリテラルで書いている。
+    // 両定数を変えたらここも手で合わせる。
     div.innerHTML = `
       <p class="font-semibold text-stone-800">色は徒歩の距離</p>
       <p class="mt-0.5 text-stone-500">坂道は平地換算・全体で${Math.round(budget)}m（時速4kmで15分）</p>
@@ -221,12 +241,16 @@ function createLegendControl(budget: number): L.Control {
         ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2" style="left:${pct(m)}%">${m}分</span>`).join('')}
       </div>
       <div class="mt-2.5 flex items-center gap-1.5">
-        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${STEEP_TIERS[0].color}"></i>
-        <span>勾配5%以上</span>
+        <i class="relative inline-block h-[5px] w-8 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[0].color}"></span>
+        </i>
+        <span>勾配5%以上は線の中央に縞として重なる</span>
       </div>
       <div class="mt-1 flex items-center gap-1.5">
-        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${STEEP_TIERS[1].color}"></i>
-        <span>勾配8%以上（より濃い色）</span>
+        <i class="relative inline-block h-[5px] w-8 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[1].color}"></span>
+        </i>
+        <span>勾配8%以上はより濃い縞</span>
       </div>
     `;
     L.DomEvent.disableClickPropagation(div);
@@ -324,7 +348,7 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
     }).addTo(group);
 
     for (const { color, lines } of bucketSegments(catchment)) {
-      L.polyline(lines.map(toLatLng), { color, weight: 3, opacity: 0.9, interactive: false }).addTo(group);
+      L.polyline(lines.map(toLatLng), { color, weight: BASE_WEIGHT, opacity: 0.9, interactive: false }).addTo(group);
     }
     if (steepSummary) {
       // 5%はバリアフリー道路の縦断勾配の上限、8%は手動車いすの自走限界の目安。
