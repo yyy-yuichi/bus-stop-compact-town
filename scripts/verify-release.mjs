@@ -3,14 +3,18 @@ import path from 'node:path';
 const root='dist';
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
 for(const f of files){
- if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/(walking-onoda|review-routes)\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|shopping|review-stops)\.geojson|data\/(walking-onoda|review-routes|walk-release|walk-unreachable)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
-for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walking-onoda.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
+for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walking-onoda.json','data/walk-unreachable.json','data/walk-release.json','data/walk/index.json']) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const html=fs.readFileSync('dist/index.html','utf8');
 for(const m of html.matchAll(/(?:src|href)="(\.\/assets\/[^"#]+)"/g)) if(!fs.existsSync(path.join(root,m[1])))throw Error(`Missing asset ${m[1]}`);
 if(/(?:src|href)="\/assets\//.test(html))throw Error('Absolute asset path prevents subdirectory deployment');
-for(const file of ['bus_stop.geojson','shopping.geojson']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(`dist/data/${file}`)))throw Error(`Stale data: ${file}`);
+for(const file of ['bus_stop.geojson','shopping.geojson','walk-unreachable.json']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(`dist/data/${file}`)))throw Error(`Stale data: ${file}`);
 if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync('dist/data/walking-onoda.json')))throw Error('Stale walking graph');
+const walkManifest=JSON.parse(fs.readFileSync('public/data/walk-release.json','utf8'));
+const bakedCatchments=JSON.parse(fs.readFileSync('dist/data/walk/index.json','utf8'));
+if(bakedCatchments.length!==walkManifest.count)throw Error(`Catchment count ${bakedCatchments.length} != manifest ${walkManifest.count}`);
+for(const id of bakedCatchments) if(!files.includes(`data/walk/${id}.json`)&&!files.includes(`data\\walk\\${id}.json`))throw Error(`Missing catchment ${id}`);
 const bus=JSON.parse(fs.readFileSync('dist/data/bus_stop.geojson','utf8'));
 if(bus.features.length!==3946)throw Error('Unexpected bus stop count');
 console.log(`Release verified: ${files.length} files; 3946 bus stops; source data matches dist.`);

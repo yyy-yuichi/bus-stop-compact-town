@@ -17,3 +17,5 @@ raw_data/dem/
 
 # 焼き込み成果（Releaseで配布）
 public/data/walk/
+# fetch-walk-data.mjs が展開中に使う作業ディレクトリ（失敗時に残ることがある）
+public/data/.walk-fetch-*
