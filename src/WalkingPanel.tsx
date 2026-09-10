@@ -228,15 +228,27 @@ function createLegendControl(budget: number): L.Control {
     // 1文字になり、「15分」が1文字ずつ縦に積まれる。whitespace-nowrapで折り返し
     // そのものを禁止して直す（幅の計算結果に関わらず1行を強制する）。
     //
+    // 目盛りは -translate-x-1/2 でleft位置に中央揃えする。中間の目盛りはこれで
+    // 正しく中央に来るが、両端（left:0%/100%）だとラベルの中心が目盛りぴったりに
+    // 来て、幅の半分がバーの外にはみ出す。それ自体はバー上の位置としては正しいが、
+    // 見た目上「右にずれて」見え、収まる余白がないと凡例カードの端で詰まる。
+    // 目盛り行を余白付きラッパーで包み、行自体の幅・left%の基準（w-40）は変えずに
+    // ラッパーだけ左右に広げることで、はみ出す半分を空白側に逃がす。
+    // （行そのものにpx-*を足しても効果はない——border-box固定幅では
+    // padding分だけcontent areaが狭くなるだけで、絶対配置の基準となる
+    // padding boxの幅＝要素の外形幅は変わらないため、はみ出す余白は増えない。）
+    //
     // スウォッチの高さ（10px/4px、比は5:2＝BASE_WEIGHT/STEEP_WEIGHTと同じ）は、
     // 凡例を読みやすく拡大したときも地図上の実際の太さ比と揃えるためのもの。
     // Tailwindのクラス抽出は文字列補間を追えないため値をリテラルで書いている。
     // 両定数を変えたらここも手で合わせる。
     div.innerHTML = `
       <p class="font-semibold text-stone-800">徒歩の距離(時速4km)</p>
-      <div class="relative mt-3 h-3 w-40 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
-      <div class="relative mt-1.5 h-4 w-40 text-[12px] text-stone-500">
-        ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2 whitespace-nowrap" style="left:${pct(m)}%">${m}分</span>`).join('')}
+      <div class="mt-3 px-4">
+        <div class="h-3 w-40 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
+        <div class="relative mt-1.5 h-4 w-40 text-[12px] text-stone-500">
+          ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2 whitespace-nowrap" style="left:${pct(m)}%">${m}分</span>`).join('')}
+        </div>
       </div>
       <p class="mt-3 font-semibold text-stone-800">急な坂道</p>
       <div class="mt-2 flex items-center gap-2">
