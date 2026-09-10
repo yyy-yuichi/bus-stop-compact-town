@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "test:walking": "node scripts/test-walking.mjs",
-    "data:fetch": "node scripts/fetch-walk-data.mjs",
-    "data:package": "node scripts/package-walk-data.mjs",
     "dev": "vite --host 127.0.0.1",
     "validate": "node scripts/validate-shopping.mjs",
-    "build": "npm run typecheck && npm run validate && vite build",
+    "build": "npm run typecheck && npm run validate && vite build && node scripts/drop-walk-data-from-dist.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit"
   },

@@ -15,7 +15,5 @@ __pycache__/
 # タイル本体(500MB超)はリポジトリに置かない。ローカルには残ってよい。
 raw_data/dem/
 
-# 焼き込み成果（Releaseで配布）
+# 焼き込み成果（R2で配布。docs/WALK-DATA-R2.md参照）
 public/data/walk/
-# fetch-walk-data.mjs が展開中に使う作業ディレクトリ（失敗時に残ることがある）
-public/data/.walk-fetch-*

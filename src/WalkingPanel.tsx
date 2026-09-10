@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
 import type { ShoppingCollection, ShoppingFeature } from './types';
-import { catchmentFile, distance, interpolate, parseCatchment } from './walking';
+import { catchmentFile, distance, interpolate, parseCatchment, walkDataBaseUrl } from './walking';
 import type { Catchment, Coordinate, Segment } from './walking';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
@@ -311,7 +311,7 @@ function useCatchment(id: string) {
   useEffect(() => {
     const abort = new AbortController();
     setState({ catchment: null, loading: true, error: false });
-    fetch(`${import.meta.env.BASE_URL}data/walk/${catchmentFile(id)}`, { signal: abort.signal })
+    fetch(`${walkDataBaseUrl()}${catchmentFile(id)}`, { signal: abort.signal })
       .then(r => {
         if (r.status === 404) return null;
         if (!r.ok) throw Error('Walking catchment unavailable');

@@ -32,6 +32,18 @@ export function catchmentFile(stopId: string): string {
   return stopId + '.json';
 }
 
+/**
+ * 徒歩圏（143MB）だけ配信元を切り替えられる。VITE_WALK_DATA_URLが未設定なら
+ * これまで通りBASE_URL（public/data/walk、ローカルではwork/walkへのシンボリック
+ * リンク）から返す。設定時はそのオリジンから直接fetchする（R2など。
+ * docs/WALK-DATA-R2.md参照）。末尾の`/`有無はどちらでも動くよう吸収する。
+ */
+export function walkDataBaseUrl(): string {
+  const override = import.meta.env.VITE_WALK_DATA_URL;
+  if (!override) return `${import.meta.env.BASE_URL}data/walk/`;
+  return override.endsWith('/') ? override : `${override}/`;
+}
+
 const coordinate = (value: unknown): Coordinate => {
   if (!Array.isArray(value) || value.length !== 2 || !value.every(n => Number.isFinite(n)) ||
     Math.abs(value[0]) > 180 || Math.abs(value[1]) > 90) throw Error('Invalid coordinate');
