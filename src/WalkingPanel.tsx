@@ -4,7 +4,7 @@ import type { ShoppingCollection, ShoppingFeature } from './types';
 import { catchmentFile, distance, interpolate, parseCatchment } from './walking';
 import type { Catchment, Coordinate, Segment } from './walking';
 
-interface SteepPiece { a: Coordinate; b: Coordinate; grade: number; mid: number }
+interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
 /**
  * 「谷る」と読める最小の連続長。焼き込み済みの急坂区間を接続長の分布で見ると、
@@ -32,9 +32,7 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
       const t = (budget - d1) / (d2 - d1);
       if (d1 <= budget) pb = interpolate(a, b, t); else pa = interpolate(a, b, t);
     }
-    // mid はトリム前の d1/d2 の中点。バケツ分け（rampColor用）はbucketSegmentsと
-    // 同じ基準にしておかないと、同じ地点なのに距離色の階調がずれて見える。
-    trimmed.push({ a: pa, b: pb, grade, mid: (d1 + d2) / 2, length: distance(pa, pb) });
+    trimmed.push({ a: pa, b: pb, grade, length: distance(pa, pb) });
   }
   if (!trimmed.length) return { pieces: [], totalLength: 0 };
 
@@ -64,7 +62,7 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
     seenRoots.add(r);
     totalLength += runLength.get(r) ?? 0;
   });
-  const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade, mid }) => ({ a, b, grade, mid }));
+  const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade }) => ({ a, b, grade }));
   return { pieces, totalLength };
 }
 
@@ -100,17 +98,14 @@ const RAMP_STOPS: [number, string][] = [
 ];
 
 /**
- * 急坂オーバーレイは元々#dc2626の破線＋#7f1d1d の太い実線という、距離ランプと
- * 無関係な赤一色だった。しかし薄い地図の上でも破線は最も見落とされやすいマーク
- * であり、かつ赤という第三の色相はランプの色相（緑〜黄緑）・ケーシングの色相
- * （中立グレー）に次ぐ「地図上で読み解く色」をもう1つ増やしてしまう。
- *
- * そこで破線をやめ、勾配は「同じ地点の距離ランプ色を沈めて濃くする」（深度）と
- * 「太くする」（太さ）の2チャンネルだけで表現する。色相を増やさないので距離の
- * エンコードを壊さず、彩度・明度が近い色同士になっても太さが最後の砦になる。
- * 独自の暖色は持たせない：太さと濃さの2チャンネルが揃っていれば、地図上で
- * 読み取るべき「意味のある色相」を1系統に絞れる方が競合が減ると判断した。
- * 実機の地図では未確認（本タスクではブラウザ検証を行っていない）。
+ * 急坂オーバーレイは元々#dc2626の破線＋#7f1d1d の太い実線だった。破線は薄い
+ * 地図の上でも最も見落とされやすいマークなのでやめ、実線に統一。ただし色相は
+ * 距離ランプ（緑〜黄緑）とは別系統の暖色（赤）のまま残す：色そのものが「急坂
+ * である」の一次サインで、太さ（5-8%はweight5・8%以上はweight7）と濃さ
+ * （8%以上はより暗く彩度の高い赤）はその上に重ねる補強のチャンネル。距離との
+ * 対応は無い（同じ8%の坂なら、停留所の近くでも遠くでも同じ赤）——急坂が
+ * どこにあるかは色相そのもので即座にわかる方を優先した。実機の地図では未確認
+ * （本タスクではブラウザ検証を行っていない）。
  */
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
@@ -131,20 +126,6 @@ function rampColor(t: number): string {
     }
   }
   return RAMP_STOPS[RAMP_STOPS.length - 1][1];
-}
-
-/**
- * 「深度」表現：同じ地点のランプ色を、明度を落とし彩度を上げた方向に押し出す。
- * HSL変換はせず、RGB平均からの偏差を拡大（=彩度寄りの操作）した後に一律縮小
- * （=明度を落とす）するだけの近似。フルのHSL往復より雑だが、アクセント色を
- * 少し沈めて濃くする用途には十分で、既存のhexToRgb/rgbToHexだけで書ける。
- */
-function darkenSaturate(hex: string, darken: number, boost: number): string {
-  const rgb = hexToRgb(hex);
-  const mean = (rgb[0] + rgb[1] + rgb[2]) / 3;
-  const boosted = rgb.map(c => mean + (c - mean) * boost);
-  const darkened = boosted.map(c => Math.max(0, Math.min(255, c * (1 - darken)))) as [number, number, number];
-  return rgbToHex(darkened);
 }
 
 /**
@@ -174,37 +155,24 @@ function bucketSegments(catchment: Catchment): { color: string; lines: Coordinat
 }
 
 /**
- * 急坂の2階層（5-8%・8%以上）。weightが太さの手がかり、darken/boostが
- * darkenSaturate経由の濃さの手がかり。同じdistanceバケツ分け（bucketByMid）
- * を再利用し、バケツごとに「その距離のランプ色を沈めた版」を1レイヤーにする。
- * 実際に急坂が乗るバケツはごく一部なので、最大12バケツ×2階層でも大半は空。
+ * 急坂の2階層（5-8%・8%以上）。色（暖色の赤系）が主信号、太さと濃さは補強。
+ * 距離とは無関係な独立ハイライトなので、距離バケツには分けない：階層ごとに
+ * 1レイヤーで足りる（最大2枚）。
  */
 const STEEP_TIERS = [
-  { min: 5, max: 8, weight: 5, darken: 0.35, boost: 1.25 },
-  { min: 8, max: Infinity, weight: 7, darken: 0.55, boost: 1.4 },
+  { min: 5, max: 8, weight: 5, color: '#dc2626' },
+  { min: 8, max: Infinity, weight: 7, color: '#7f1d1d' },
 ];
 
-function bucketSteepPieces(pieces: SteepPiece[], budget: number): { color: string; weight: number; lines: Coordinate[][] }[] {
-  const out: { color: string; weight: number; lines: Coordinate[][] }[] = [];
-  for (const tier of STEEP_TIERS) {
-    const inTier = pieces.filter(p => Math.abs(p.grade) >= tier.min && Math.abs(p.grade) < tier.max);
-    bucketByMid(inTier, budget).forEach((lines, i) => {
-      if (!lines.length) return;
-      const color = darkenSaturate(rampColor((i + 0.5) / DISTANCE_BUCKETS), tier.darken, tier.boost);
-      out.push({ color, weight: tier.weight, lines });
-    });
-  }
-  return out;
+function groupSteepPieces(pieces: SteepPiece[]): { color: string; weight: number; lines: Coordinate[][] }[] {
+  return STEEP_TIERS
+    .map(tier => ({
+      color: tier.color,
+      weight: tier.weight,
+      lines: pieces.filter(p => Math.abs(p.grade) >= tier.min && Math.abs(p.grade) < tier.max).map(p => [p.a, p.b] as Coordinate[]),
+    }))
+    .filter(tier => tier.lines.length > 0);
 }
-
-/**
- * ケーシング：距離ランプ・急坂線の下に敷く、地図と分離するための中立な太い縁取り。
- * バケツごとに1本ずつ敷くと最大24枚増える計算になるため、そうはせず「全区間を
- * まとめた1枚」を最初に描く。ケーシングの上に乗る線のうち最太は急坂8%以上の
- * weight7なので、CASING_WEIGHTはそれより一回り太くして縁が覗くようにする。
- */
-const CASING_WEIGHT = 9;
-const CASING_COLOR = '#0f172a';
 
 /**
  * 地図全体を白いスクリムで少し覆い、OSM標準タイル（道路・建物・土地利用の塗り）
@@ -214,6 +182,11 @@ const CASING_COLOR = '#0f172a';
  * 「道路の形や地名は読めるが、地図全体は霧にならない」の中間点として選んだ
  * （もっと薄いと下地の緑・道路網に線が沈み、もっと濃いと地名が読めなくなる）。
  * 実機の地図では未確認。
+ *
+ * 当初は線の下にさらに中立色のケーシング（縁取り）も敷いていたが、ユーザーが
+ * 実機で見た結果「スクリムだけで十分分離できている。ケーシングは効果と呼べる
+ * ほどの仕事をしていない」と判断されたため削除した。分離の役目はスクリムが
+ * 一手に引き受けている。
  */
 const SCRIM_PANE = 'walkScrim';
 const SCRIM_Z_INDEX = 250; // tilePane=200 < ここ < overlayPane=400
@@ -246,11 +219,11 @@ function createLegendControl(budget: number): L.Control {
         ${[5, 10, 15].map(m => `<span class="absolute -translate-x-1/2" style="left:${pct(m)}%">${m}分</span>`).join('')}
       </div>
       <div class="mt-2.5 flex items-center gap-1.5">
-        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${darkenSaturate(rampColor(0.5), STEEP_TIERS[0].darken, STEEP_TIERS[0].boost)}"></i>
-        <span>勾配5%以上（濃い色・やや太い線）</span>
+        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${STEEP_TIERS[0].color}"></i>
+        <span>勾配5%以上</span>
       </div>
       <div class="mt-1 flex items-center gap-1.5">
-        <i class="inline-block h-[6px] w-5 rounded-full" style="background:${darkenSaturate(rampColor(0.5), STEEP_TIERS[1].darken, STEEP_TIERS[1].boost)}"></i>
+        <i class="inline-block h-[6px] w-5 rounded-full" style="background:${STEEP_TIERS[1].color}"></i>
         <span>勾配8%以上（濃い色・太い線）</span>
       </div>
     `;
@@ -348,18 +321,13 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
       pane: SCRIM_PANE, stroke: false, fillColor: '#ffffff', fillOpacity: SCRIM_OPACITY, interactive: false,
     }).addTo(group);
 
-    // ケーシング：色つきの線をすべて重ねる前に、中立色の太い縁取りを1枚だけ敷く。
-    // バケツごとに敷くと最大24枚増えるところを、これなら1枚で済む。
-    const allLines = catchment.segments.map(({ a, b }) => toLatLng([a, b]));
-    L.polyline(allLines, { color: CASING_COLOR, weight: CASING_WEIGHT, opacity: 0.85, lineCap: 'round', interactive: false }).addTo(group);
-
     for (const { color, lines } of bucketSegments(catchment)) {
       L.polyline(lines.map(toLatLng), { color, weight: 3, opacity: 0.9, interactive: false }).addTo(group);
     }
     if (steepSummary) {
       // 5%はバリアフリー道路の縦断勾配の上限、8%は手動車いすの自走限界の目安。
-      // 色相は増やさず、距離ランプ色を沈めた「深度」と線の「太さ」だけで示す。
-      for (const { color, weight, lines } of bucketSteepPieces(steepSummary.pieces, catchment.budget)) {
+      // 色（暖色）が主信号、太さと濃さは補強。
+      for (const { color, weight, lines } of groupSteepPieces(steepSummary.pieces)) {
         L.polyline(lines.map(toLatLng), { color, weight, lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
       }
     }
