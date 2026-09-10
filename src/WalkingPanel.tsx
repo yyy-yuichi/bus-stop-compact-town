@@ -22,7 +22,7 @@ const MIN_STEEP_RUN_M = 25;
  * 一続きの坂をしきい値で切り刻んで見せないよう、run 単位ではなくセグメント単位の
  * 勾配で行う（呼び出し側で処理）。
  */
-function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[]; totalLength: number } {
+function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[] } {
   const trimmed: (SteepPiece & { length: number })[] = [];
   for (const { a, b, d1, d2, grade } of segments) {
     if (Math.abs(grade) < 5) continue;
@@ -34,7 +34,7 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
     }
     trimmed.push({ a: pa, b: pb, grade, length: distance(pa, pb) });
   }
-  if (!trimmed.length) return { pieces: [], totalLength: 0 };
+  if (!trimmed.length) return { pieces: [] };
 
   // Union-Find: 端点のキー（丸め済み座標の文字列）が一致するセグメント同士を同じrunにまとめる。
   const parent = trimmed.map((_, i) => i);
@@ -53,17 +53,8 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[];
   trimmed.forEach((seg, i) => { const r = find(i); runLength.set(r, (runLength.get(r) ?? 0) + seg.length); });
 
   const qualifies = (i: number) => (runLength.get(find(i)) ?? 0) >= MIN_STEEP_RUN_M;
-  let totalLength = 0;
-  const seenRoots = new Set<number>();
-  trimmed.forEach((_, i) => {
-    if (!qualifies(i)) return;
-    const r = find(i);
-    if (seenRoots.has(r)) return;
-    seenRoots.add(r);
-    totalLength += runLength.get(r) ?? 0;
-  });
   const pieces = trimmed.filter((_, i) => qualifies(i)).map(({ a, b, grade }) => ({ a, b, grade }));
-  return { pieces, totalLength };
+  return { pieces };
 }
 
 /**
@@ -384,7 +375,6 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
     {catchmentError ? <section className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
-      {steepSummary && steepSummary.totalLength > 0 && <p className="mt-4 text-xs text-stone-600">まとまって続く急坂は合計約{Math.round(steepSummary.totalLength)}mです。</p>}
       {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : (
         // ponytail: 買い物候補（reachFacility・坂/階段の警告・候補カード）は
         // facility judgement を実装する後続タスクで戻す。ここはその置き場所。
