@@ -99,13 +99,14 @@ const RAMP_STOPS: [number, string][] = [
 
 /**
  * 急坂オーバーレイは元々#dc2626の破線＋#7f1d1d の太い実線だった。破線は薄い
- * 地図の上でも最も見落とされやすいマークなのでやめ、実線に統一。ただし色相は
- * 距離ランプ（緑〜黄緑）とは別系統の暖色（赤）のまま残す：色そのものが「急坂
- * である」の一次サインで、太さ（5-8%はweight5・8%以上はweight7）と濃さ
- * （8%以上はより暗く彩度の高い赤）はその上に重ねる補強のチャンネル。距離との
- * 対応は無い（同じ8%の坂なら、停留所の近くでも遠くでも同じ赤）——急坂が
- * どこにあるかは色相そのもので即座にわかる方を優先した。実機の地図では未確認
- * （本タスクではブラウザ検証を行っていない）。
+ * 地図の上でも最も見落とされやすいマークなのでやめ、実線に統一。色相は距離
+ * ランプ（緑〜黄緑）とは別系統の暖色（赤）のまま残す：色そのものが「急坂である」
+ * の一次サインで、8%以上はより暗く彩度の高い赤にする「濃さ」だけで階層を
+ * 区別する。太さでの区別は不要という判断（色相の変化だけで十分見分けが
+ * つくため）で、2階層とも同じ太さにした。距離との対応は無い（同じ8%の坂なら、
+ * 停留所の近くでも遠くでも同じ赤）——急坂がどこにあるかは色相そのもので
+ * 即座にわかる方を優先した。実機の地図では未確認（本タスクではブラウザ検証を
+ * 行っていない）。
  */
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
@@ -155,20 +156,21 @@ function bucketSegments(catchment: Catchment): { color: string; lines: Coordinat
 }
 
 /**
- * 急坂の2階層（5-8%・8%以上）。色（暖色の赤系）が主信号、太さと濃さは補強。
- * 距離とは無関係な独立ハイライトなので、距離バケツには分けない：階層ごとに
+ * 急坂の2階層（5-8%・8%以上）。色相の違い（赤→より暗い赤）だけで区別できるので、
+ * 太さは両階層とも同じにする（8%以上をさらに太くする必要はないというユーザー
+ * 判断）。距離とは無関係な独立ハイライトなので距離バケツには分けない：階層ごとに
  * 1レイヤーで足りる（最大2枚）。
  */
+const STEEP_WEIGHT = 5;
 const STEEP_TIERS = [
-  { min: 5, max: 8, weight: 5, color: '#dc2626' },
-  { min: 8, max: Infinity, weight: 7, color: '#7f1d1d' },
+  { min: 5, max: 8, color: '#dc2626' },
+  { min: 8, max: Infinity, color: '#7f1d1d' },
 ];
 
-function groupSteepPieces(pieces: SteepPiece[]): { color: string; weight: number; lines: Coordinate[][] }[] {
+function groupSteepPieces(pieces: SteepPiece[]): { color: string; lines: Coordinate[][] }[] {
   return STEEP_TIERS
     .map(tier => ({
       color: tier.color,
-      weight: tier.weight,
       lines: pieces.filter(p => Math.abs(p.grade) >= tier.min && Math.abs(p.grade) < tier.max).map(p => [p.a, p.b] as Coordinate[]),
     }))
     .filter(tier => tier.lines.length > 0);
@@ -223,8 +225,8 @@ function createLegendControl(budget: number): L.Control {
         <span>勾配5%以上</span>
       </div>
       <div class="mt-1 flex items-center gap-1.5">
-        <i class="inline-block h-[6px] w-5 rounded-full" style="background:${STEEP_TIERS[1].color}"></i>
-        <span>勾配8%以上（濃い色・太い線）</span>
+        <i class="inline-block h-[4px] w-5 rounded-full" style="background:${STEEP_TIERS[1].color}"></i>
+        <span>勾配8%以上（より濃い色）</span>
       </div>
     `;
     L.DomEvent.disableClickPropagation(div);
@@ -326,9 +328,9 @@ export default function WalkingPanel({ map, id, origin, facilities, unreachable,
     }
     if (steepSummary) {
       // 5%はバリアフリー道路の縦断勾配の上限、8%は手動車いすの自走限界の目安。
-      // 色（暖色）が主信号、太さと濃さは補強。
-      for (const { color, weight, lines } of groupSteepPieces(steepSummary.pieces)) {
-        L.polyline(lines.map(toLatLng), { color, weight, lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
+      // 色相の違いだけで2階層を区別する（太さは共通）。
+      for (const { color, lines } of groupSteepPieces(steepSummary.pieces)) {
+        L.polyline(lines.map(toLatLng), { color, weight: STEEP_WEIGHT, lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
       }
     }
     L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
