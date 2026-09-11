@@ -9,7 +9,8 @@
 - `a5cfb99`から新002で35件すべてを個別点検。分類・名称の修正19件、公式閉店案内による参考表示2件、薬局分類維持1件、保留13件。通常1,130＋参考5＝1,135件。国バス停4,418件・新徒歩圏未受領は継続。重複195組は未統合。
 - 入口は[35件の個別点検報告](facility-classification-followup-20260912.md)と`data-sources/facility-classification-followup-20260912/checked-candidates.csv`。保留13件には次に必要な確認を記載。原本・全ID・全形状・既存22件・対象外1,100レコードを維持。前回のRyu接骨院の「柳井付近」という理由は光市付近へ訂正。
 - ローカル作業ブランチ`codex/facility-classification-20260912`。施設取込8テスト、全5,560場所リンク、型・施設データ検証・ビルド・公開用16ファイル整合が成功。main・Pages操作は行わず、公開版be5e421を維持。具体的な公開承認があるまで公開しない。
-- 正式保存先は[同じ案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。新しい成果ファイルID・サイズ・commitは保存確認後にこの節へ追記する。
+- 実装commitは`1c38ad4567014cafb0839c9abce3aa54d6a6439c`。正式成果は[同じ案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)へ保存し、名前・サイズ・親フォルダを読み戻して確認した。[source ZIP](https://drive.google.com/file/d/1qO15TYzDlXzA_y1reREHVBgJhVW3egyL/view)（2,172,914 bytes）、[未公開のsite ZIP](https://drive.google.com/file/d/1gctybZCN_Mpk8g6tSMTCLALLniQQe6Um/view)（546,455 bytes）、[ID一覧ZIP](https://drive.google.com/file/d/1vWHd4BnecKQXIhe9HE9FncOPFYtQwpNr/view)（212,697 bytes）。ZIP内部は全ファイルをSHA-256で読み戻し一致。source ZIPには元の35件一覧も収録し、Git履歴なしで点検規則を再適用できる。
+- [点検報告](https://drive.google.com/file/d/1rKx91GMqufRiNdDq1wmXi4GiiOEmo9DP/view)（21,164 bytes）は本文から35ID・保留13件・通常1,130件を読み戻して確認。この保存記録を追記したHANDOFFは、同フォルダの`HANDOFF-facility-classification-followup-20260912.md`を参照。
 
 ### 以下は初回点検時の記録
 
