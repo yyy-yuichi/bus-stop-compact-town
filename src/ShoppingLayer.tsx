@@ -1,35 +1,31 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import L from 'leaflet';
+import type { ShoppingFeature } from './types';
+import { categoryOf } from './shoppingData';
 
-import type { ShoppingCollection, ShoppingProperties } from './types';
-
-export default function ShoppingLayer({ map }: { map: L.Map | null }) {
-  const layerRef = useRef<L.GeoJSON | null>(null);
-  const [failed, setFailed] = useState(false);
-  const [attempt, setAttempt] = useState(0);
-
+export default function ShoppingLayer({ map, features, selected, onSelect }: {
+  map: L.Map | null; features: ShoppingFeature[]; selected: string; onSelect: (feature: ShoppingFeature) => void;
+}) {
   useEffect(() => {
     if (!map) return;
-    const abort = new AbortController();
-    setFailed(false);
-    fetch(`${import.meta.env.BASE_URL}data/shopping.geojson`, { signal: abort.signal })
-      .then(r => { if (!r.ok) throw new Error('Shopping data unavailable'); return r.json() as Promise<ShoppingCollection>; })
-      .then(data => {
-        if (abort.signal.aborted) return;
-        if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length) throw new Error('Invalid shopping data');
-        const layer = L.geoJSON<ShoppingProperties>(data, {
-          interactive: false,
-          style: feature => ({ color: '#9c4600', weight: 3, fillColor: '#f3a13b', fillOpacity: feature?.properties.geometry_kind === 'facility_area' ? 0.2 : 0.45, dashArray: feature?.properties.geometry_kind === 'facility_area' ? '6 4' : undefined }),
-          pointToLayer: (_f, latlng) => L.circleMarker(latlng, { interactive: false, radius: 10, color: '#9c4600', weight: 3, fillColor: '#f3a13b', fillOpacity: 0.9 }),
-        }).addTo(map);
-        layerRef.current = layer;
-      }).catch(error => { if (error.name !== 'AbortError' && !abort.signal.aborted) setFailed(true); });
-    return () => {
-      abort.abort();
-      layerRef.current?.remove();
-      layerRef.current = null;
-    };
-  }, [map, attempt]);
-
-  return failed ? <button className="absolute right-4 top-28 rounded-xl bg-white p-3 text-sm text-red-800 shadow" onClick={() => setAttempt(n => n + 1)}>商業施設を読み込めませんでした。再読み込み</button> : null;
+    const group = L.layerGroup().addTo(map);
+    for (const feature of features) {
+      const category = categoryOf(feature);
+      const active = String(feature.id) === selected;
+      const area = L.geoJSON(feature, {
+        style: { color: category.color, weight: active ? 3 : 2, fillColor: category.color, fillOpacity: 0.15, dashArray: feature.properties.geometry_kind === 'facility_area' ? '5 4' : undefined },
+      });
+      const center = feature.geometry.type === 'Point'
+        ? L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]) : area.getBounds().getCenter();
+      if (feature.geometry.type !== 'Point') { area.on('click', () => onSelect(feature)); group.addLayer(area); }
+      const marker = L.marker(center, {
+        icon: L.divIcon({ className: `shop-marker${active ? ' is-selected' : ''}`, html: `<span style="background:${category.color}">${category.short}</span>`, iconSize: [30, 36], iconAnchor: [15, 33] }),
+        title: `${feature.properties.name}（${category.name}）`, keyboard: true,
+        zIndexOffset: active ? 900 : 100,
+      }).on('click', () => onSelect(feature)).addTo(group);
+      marker.getElement()?.setAttribute('aria-label', `${feature.properties.name}（${category.name}）`);
+    }
+    return () => { group.remove(); };
+  }, [map, features, selected, onSelect]);
+  return null;
 }

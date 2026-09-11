@@ -3,6 +3,7 @@ import L from 'leaflet';
 import type { ShoppingCollection, ShoppingFeature } from './types';
 import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } from './walking';
 import type { Coordinate, WalkingGraph } from './walking';
+import { fitContent } from './mapLayout';
 
 export function useWalkingData() {
   const [data, setData] = useState<{ graph: WalkingGraph; facilities: ShoppingFeature[] } | null>(null);
@@ -63,9 +64,11 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
     const lines = reachableLines(result, speed * 1000 / 60 * 10);
     const points = lines.flat().map(([lon, lat]) => L.latLng(lat, lon));
     if (!points.length) return;
-    const mobile = window.matchMedia('(max-width: 600px)').matches;
     const bounds = L.latLngBounds(points).extend([origin[1], origin[0]]);
-    map.fitBounds(bounds, { paddingTopLeft: [30, 112], paddingBottomRight: mobile ? [30, Math.min(window.innerHeight * 0.48, 430) + 25] : [420, 65], maxZoom: 17, animate: false });
+    const focus = () => fitContent(map, bounds, true, 17);
+    focus();
+    map.on('resize', focus);
+    return () => { map.off('resize', focus); };
   }, [map, id, result]);
 
   if (error) return <section className="walking-panel mb-6 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
@@ -79,7 +82,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <div className="flex items-center justify-between gap-2"><h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3><span className="rounded-full bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-800">試作</span></div>
     <p className="mt-2 text-xs leading-relaxed text-stone-600">道路に沿った徒歩時間の目安です。</p>
-    {result && <button className="mt-3 flex min-h-10 w-full items-center justify-between rounded-lg bg-emerald-50 px-3 text-xs font-semibold text-emerald-900 min-[601px]:hidden" onClick={() => document.getElementById('walking-candidates')?.scrollIntoView({ block: 'start', behavior: 'smooth' })}>買い物候補 {visible.length}件 <span>結果を見る ↓</span></button>}
+    {result && <button className="mt-3 flex min-h-10 w-full items-center justify-between rounded-lg bg-emerald-50 px-3 text-xs font-semibold text-emerald-900 min-[1001px]:hidden" onClick={() => document.getElementById('walking-candidates')?.scrollIntoView({ block: 'start', behavior: 'smooth' })}>買い物候補 {visible.length}件 <span>結果を見る ↓</span></button>}
     <label className="mt-5 block text-xs font-semibold text-stone-600" htmlFor="walking-stop">出発するバス停を変える</label>
     <select id="walking-stop" className="mt-2 min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 text-sm" value={id} onChange={e => onSelect(e.target.value)}>
       {data.graph.pilot_stops.map((s, i) => <option key={s.id} value={s.id}>{s.name}{data.graph.pilot_stops.filter(p => p.name === s.name).length > 1 ? `（地点${i + 1}）` : ''}</option>)}

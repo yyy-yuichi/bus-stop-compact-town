@@ -2,10 +2,13 @@ import fs from 'node:fs';
 const data=JSON.parse(fs.readFileSync('public/data/shopping.geojson','utf8'));
 const ids=new Set(), sources=new Set();
 const counts={building:0,facility_area:0,representative_point:0};
+const categories={mall:0,supermarket:0,drugstore:0};
 for(const f of data.features) {
  const p=f.properties;
  if(!f.id||ids.has(f.id)) throw Error(`Duplicate/missing ID: ${f.id}`);
  ids.add(f.id);
+ if(!(p.category in categories)) throw Error(`Unknown shopping category: ${f.id}`);
+ categories[p.category]++;
  if(!p.name||!p.official_address||!p.city||!p.verified_at||!p.source_timestamp||!p.source_ids?.length||p.license!=='ODbL-1.0') throw Error(`Missing provenance: ${f.id}`);
  if(new URL(p.official_url).protocol!=='https:') throw Error(`Unsafe official URL: ${f.id}`);
  for(const id of p.source_ids) {if(sources.has(id)) throw Error(`Repeated source: ${id}`);sources.add(id);}
@@ -19,4 +22,4 @@ for(const f of data.features) {
   if(f.geometry.type!=='Point'&&(ring.length<4||JSON.stringify(ring[0])!==JSON.stringify(ring.at(-1)))) throw Error(`Unclosed ring: ${f.id}`);
  }
 }
-console.log(JSON.stringify({facilities:ids.size,source_elements:sources.size,geometry:counts},null,2));
+console.log(JSON.stringify({facilities:ids.size,source_elements:sources.size,geometry:counts,categories},null,2));

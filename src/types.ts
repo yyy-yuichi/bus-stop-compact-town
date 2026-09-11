@@ -28,6 +28,9 @@ export interface ShoppingProperties {
   osm_name?: string;
   location_verification?: string;
   geometry_note?: string;
+  category?: 'mall' | 'supermarket' | 'drugstore';
+  license?: string;
+  source?: string;
 }
 export type ShoppingFeature = Feature<Point | MultiPolygon, ShoppingProperties>;
 export type ShoppingCollection = FeatureCollection<Point | MultiPolygon, ShoppingProperties>;

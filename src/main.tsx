@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './style.css';
-import ShoppingLayer from './ShoppingLayer';
+import MapIcon from './MapIcon';
 
 import BusStopLayer from './BusStopLayer';
 import { INITIAL_VIEW } from './mapConfig';
@@ -54,15 +54,9 @@ function App() {
 
   return (
     <main className={`app ${busSelected ? 'app-with-selection' : ''} relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950`}>
+      <header className="app-header"><div className="brand"><span className="brand-symbol"><MapIcon name="bus" /></span><h1>バス停と買い物マップ</h1><span className="region-label">山口県</span></div><a href={`${import.meta.env.BASE_URL}about.html`}>使い方・出典 <span aria-hidden="true">↗</span></a></header>
       <div className="map absolute inset-0 z-0 bg-stone-100" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
-      <a href={`${import.meta.env.BASE_URL}about.html`} aria-label="バス停と買い物マップ：このアプリについて"
-        className="map-heading absolute left-6 top-6 flex items-center gap-3 rounded-2xl border border-white bg-white/95 p-3 shadow-lg shadow-emerald-950/10 backdrop-blur-sm transition-colors hover:bg-sky-50 max-[600px]:left-3.5 max-[600px]:top-3.5 max-[600px]:gap-2">
-        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-emerald-900 text-2xl font-semibold text-white max-[600px]:size-9 max-[600px]:text-xl" aria-hidden="true">町</span>
-        <div><h1 className="text-lg font-bold max-[600px]:text-sm">バス停と買い物マップ</h1>
-          <p className="mt-1 text-xs font-medium text-sky-800">このアプリについて →</p></div>
-      </a>
       <BusStopLayer map={mapInstance} onSelectionChange={setBusSelected} />
-      {busSelected && <ShoppingLayer map={mapInstance} />}
       {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">
         <span>{offline ? 'オフラインです。地図の表示には通信が必要です。' : '地図の一部を読み込めませんでした。'}</span>
         {!offline && <button className="mt-2 min-h-11 w-full rounded-lg border border-stone-300 bg-white px-3 text-xs font-semibold hover:bg-stone-100" onClick={retry}>再読み込み</button>}
@@ -74,4 +68,3 @@ function App() {
 const root = document.getElementById('root');
 if (!root) throw new Error('Missing root element');
 createRoot(root).render(<StrictMode><App /></StrictMode>);
-

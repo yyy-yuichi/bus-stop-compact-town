@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import type { BusFeature } from './types';
+import MapIcon from './MapIcon';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
@@ -30,27 +31,27 @@ export default function BusStopDrawer({ stop, timestamp, onClose, children }: Bu
     document.addEventListener('keydown', onKeyDown);
     return () => {
       document.removeEventListener('keydown', onKeyDown);
-      if (previousFocus instanceof HTMLElement && previousFocus.isConnected &&
-          (drawer?.contains(document.activeElement) || document.activeElement === document.body)) {
-        previousFocus.focus({ preventScroll: true });
+      if (drawer?.contains(document.activeElement) || document.activeElement === document.body) {
+        const target = previousFocus instanceof HTMLElement && previousFocus.isConnected ? previousFocus : document.getElementById('place-search');
+        target?.focus({ preventScroll: true });
       }
     };
   }, [onClose]);
 
   return <aside ref={drawerRef} role="dialog" aria-labelledby="bus-drawer-title"
-    className="bus-stop-drawer absolute inset-y-0 right-0 z-[1200] flex w-[380px] max-w-[calc(100%-32px)] translate-x-0 flex-col border-l border-sky-200 bg-white shadow-2xl transition-transform duration-200 starting:translate-x-full motion-reduce:transition-none">
-    <header className="flex items-start justify-between gap-4 border-b border-sky-100 bg-sky-50 px-6 pb-5 pt-[max(24px,env(safe-area-inset-top))]">
+    className="detail-drawer bus-stop-drawer">
+    <header className="detail-header">
       <div className="min-w-0">
-        <p className="mb-2 text-[10px] font-bold tracking-[0.18em] text-sky-700">BUS STOP</p>
-        <h2 id="bus-drawer-title" className="break-words text-xl font-bold leading-relaxed text-sky-950">{name}</h2>
-        <p className="mt-1 text-xs text-sky-800">このバス停を起点に、まちを見る</p>
+        <p className="detail-eyebrow"><span className="stop-symbol"><MapIcon name="bus" /></span>バス停</p>
+        <h2 id="bus-drawer-title">{name}</h2>
+        <p className="detail-subtitle">このバス停を起点に、まちを見る</p>
       </div>
       <button ref={closeRef} onClick={onClose} aria-label="バス停の詳細を閉じる"
-        className="grid size-11 shrink-0 place-items-center rounded-full border border-sky-200 bg-white text-xl text-sky-950 hover:bg-sky-100">
-        <span aria-hidden="true">×</span>
+        className="icon-button">
+        <MapIcon name="close" />
       </button>
     </header>
-    <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-6 pb-[max(24px,env(safe-area-inset-bottom))]">
+    <div className="detail-body">
       {children}
       {national && <div className="mb-5 rounded-xl bg-sky-50 p-4 text-xs leading-relaxed text-sky-950">
         <p>停留所の代表位置です。原則として上下の乗り場が集約されており、乗り場別の位置・方向は未確認です。</p>
