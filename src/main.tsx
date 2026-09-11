@@ -54,7 +54,7 @@ function App() {
 
   return (
     <main className={`app ${busSelected ? 'app-with-selection' : ''} relative h-dvh w-full overflow-hidden bg-stone-100 text-emerald-950`}>
-      <header className="app-header"><div className="brand"><span className="brand-symbol"><MapIcon name="bus" /></span><h1>バス停と買い物マップ</h1><span className="region-label">山口県</span></div><a href={`${import.meta.env.BASE_URL}about.html`}>使い方・出典 <span aria-hidden="true">↗</span></a></header>
+      <header className="app-header"><div className="brand"><span className="brand-symbol"><MapIcon name="bus" /></span><h1>バス停と暮らしマップ</h1><span className="region-label">山口県</span></div><a href={`${import.meta.env.BASE_URL}about.html`}>使い方・出典 <span aria-hidden="true">↗</span></a></header>
       <div className="map absolute inset-0 z-0 bg-stone-100" ref={container} role="region" aria-label="まちの地図。矢印キーで移動、プラス・マイナスキーで拡大縮小。" />
       <BusStopLayer map={mapInstance} onSelectionChange={setBusSelected} />
       {(offline || tileError) && <div className="notice absolute bottom-24 left-1/2 z-[1100] flex w-max max-w-[calc(100%-28px)] -translate-x-1/2 flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-lg max-[600px]:bottom-44" role="status">

@@ -37,11 +37,14 @@
 .section-label { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
 .section-label h3 { font-size:13px; font-weight:750; }
 .section-label>span { font-size:10px; color:var(--muted); }
-.category-filters { display:grid; gap:7px; }
-.category-filters>button { display:flex; align-items:center; gap:9px; min-height:43px; width:100%; padding:7px 10px; border:1px solid #e0e5e1; border-radius:8px; font-size:12px; text-align:left; background:#fff; color:#5e6b65; }
+.category-filters { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+.category-filters>button { position:relative; display:flex; align-items:center; gap:6px; min-height:48px; width:100%; padding:7px 8px; border:1px solid #e0e5e1; border-radius:8px; font-size:10px; text-align:left; background:#fff; color:#5e6b65; }
+.category-count { display:block; margin-top:2px; color:#62746a; font-size:9px; font-weight:400; }
+.category-symbol svg { width:18px; height:18px; }
+.facility-status { margin-bottom:18px; border-left:3px solid #b6c9bd; padding:9px 12px; color:#586b60; background:#f3f7f4; font-size:11px; line-height:1.8; }
 .category-filters>button[aria-pressed=true] { background:#f4f8f5; border-color:#b5cec0; color:var(--ink); font-weight:650; }
 .category-symbol { display:inline-grid; place-items:center; width:24px; height:24px; flex-shrink:0; border-radius:7px; color:white; font-weight:700; font-size:11px; }
-.filter-check { margin-left:auto; font-size:13px; color:var(--green); }
+.filter-check { position:absolute; right:8px; bottom:7px; font-size:12px; color:var(--green); }
 .list-toggle { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:46px; width:100%; font-size:11px; font-weight:650; color:#385f4d; }
 .list-toggle>span { display:flex; gap:12px; }
 .helper-text { font-size:10px; color:#65716a; line-height:1.7; }
@@ -143,7 +146,8 @@
   .is-expanded .panel-options { display:block; margin-top:19px; }
   .panel-mobile-hint { display:block; font-size:9px; color:#6c796e; line-height:1.5; margin-top:7px; }
   .is-expanded .panel-mobile-hint { display:none; }
-  .category-filters { grid-template-columns:1fr; }
+  .category-filters { grid-template-columns:1fr 1fr; }
+  .category-filters>button { font-size:11px; }
   .panel-source { font-size:10px; }
   .panel-about { font-size:11px; }
   .search-results { margin-top:13px; max-height:calc(100dvh - 300px); }

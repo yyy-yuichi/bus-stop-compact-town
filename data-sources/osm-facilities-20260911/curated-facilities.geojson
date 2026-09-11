@@ -1,0 +1,1932 @@
+{
+  "type": "FeatureCollection",
+  "name": "山口県商業施設サンプル",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sunpark",
+      "properties": {
+        "name": "おのだサンパーク",
+        "official_address": "山陽小野田市中川6丁目4番1号",
+        "official_url": "https://sunpark.co.jp/access/index.html",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/180897597",
+          "way/180897599"
+        ],
+        "source_timestamp": "2022-10-17T08:51:43Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM building outlines; not entrances",
+        "source_versions": [
+          {
+            "id": "way/180897597",
+            "timestamp": "2022-10-17T08:51:43Z"
+          },
+          {
+            "id": "way/180897599",
+            "timestamp": "2022-10-17T08:51:43Z"
+          }
+        ],
+        "geometry_kind": "building",
+        "city": "山陽小野田市",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.1717827,
+                33.9855124
+              ],
+              [
+                131.1718208,
+                33.9855142
+              ],
+              [
+                131.1718217,
+                33.9855006
+              ],
+              [
+                131.1723088,
+                33.9855237
+              ],
+              [
+                131.1723064,
+                33.9855589
+              ],
+              [
+                131.1726181,
+                33.9855737
+              ],
+              [
+                131.1726021,
+                33.9858059
+              ],
+              [
+                131.1726441,
+                33.9858078
+              ],
+              [
+                131.1726393,
+                33.9858777
+              ],
+              [
+                131.1725923,
+                33.9858755
+              ],
+              [
+                131.1725594,
+                33.9863519
+              ],
+              [
+                131.1723181,
+                33.9863404
+              ],
+              [
+                131.1723146,
+                33.9863912
+              ],
+              [
+                131.171724,
+                33.9863631
+              ],
+              [
+                131.1717827,
+                33.9855124
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                131.1700977,
+                33.984932
+              ],
+              [
+                131.1705182,
+                33.984711
+              ],
+              [
+                131.1704929,
+                33.9846775
+              ],
+              [
+                131.1705518,
+                33.9846147
+              ],
+              [
+                131.1706036,
+                33.984574
+              ],
+              [
+                131.1706585,
+                33.9845316
+              ],
+              [
+                131.170731,
+                33.9845328
+              ],
+              [
+                131.1709448,
+                33.9844125
+              ],
+              [
+                131.1709307,
+                33.9843926
+              ],
+              [
+                131.1709555,
+                33.9843712
+              ],
+              [
+                131.1709328,
+                33.9843441
+              ],
+              [
+                131.1710953,
+                33.9842564
+              ],
+              [
+                131.1711171,
+                33.9842834
+              ],
+              [
+                131.1714937,
+                33.9840816
+              ],
+              [
+                131.1721806,
+                33.9841171
+              ],
+              [
+                131.1721794,
+                33.9841919
+              ],
+              [
+                131.1722872,
+                33.9841933
+              ],
+              [
+                131.1722709,
+                33.9842754
+              ],
+              [
+                131.1722466,
+                33.9843684
+              ],
+              [
+                131.1722109,
+                33.9844721
+              ],
+              [
+                131.1721681,
+                33.9845786
+              ],
+              [
+                131.1721481,
+                33.9846248
+              ],
+              [
+                131.1721242,
+                33.9846684
+              ],
+              [
+                131.1721038,
+                33.984706
+              ],
+              [
+                131.1720661,
+                33.9847643
+              ],
+              [
+                131.1720443,
+                33.984802
+              ],
+              [
+                131.1721213,
+                33.9849059
+              ],
+              [
+                131.1720055,
+                33.984969
+              ],
+              [
+                131.1720316,
+                33.9850031
+              ],
+              [
+                131.1719077,
+                33.9850708
+              ],
+              [
+                131.171899,
+                33.9851282
+              ],
+              [
+                131.1717326,
+                33.9852139
+              ],
+              [
+                131.1717589,
+                33.9852483
+              ],
+              [
+                131.1714829,
+                33.9854003
+              ],
+              [
+                131.1715158,
+                33.9854406
+              ],
+              [
+                131.1713995,
+                33.9854979
+              ],
+              [
+                131.1714019,
+                33.9855364
+              ],
+              [
+                131.1713839,
+                33.9855546
+              ],
+              [
+                131.1713524,
+                33.985576
+              ],
+              [
+                131.1713229,
+                33.9855822
+              ],
+              [
+                131.1712586,
+                33.9855806
+              ],
+              [
+                131.1711635,
+                33.9856255
+              ],
+              [
+                131.1711254,
+                33.9855641
+              ],
+              [
+                131.1709374,
+                33.9856399
+              ],
+              [
+                131.1707649,
+                33.9856964
+              ],
+              [
+                131.1705922,
+                33.98574
+              ],
+              [
+                131.170575,
+                33.9860145
+              ],
+              [
+                131.1706555,
+                33.9860167
+              ],
+              [
+                131.1706504,
+                33.9860996
+              ],
+              [
+                131.1705649,
+                33.9860965
+              ],
+              [
+                131.1705646,
+                33.9861585
+              ],
+              [
+                131.1706464,
+                33.9861605
+              ],
+              [
+                131.170643,
+                33.9862348
+              ],
+              [
+                131.169609,
+                33.9861802
+              ],
+              [
+                131.1696573,
+                33.9854586
+              ],
+              [
+                131.1697381,
+                33.9854628
+              ],
+              [
+                131.169744,
+                33.985375
+              ],
+              [
+                131.1700645,
+                33.9853886
+              ],
+              [
+                131.1700977,
+                33.984932
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "seamall",
+      "properties": {
+        "name": "シーモール",
+        "official_address": "下関市竹崎町4-4-8",
+        "official_url": "https://www.seamall.jp/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/257074927"
+        ],
+        "source_timestamp": "2026-07-20T22:50:25Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM building outlines; not entrances",
+        "source_versions": [
+          {
+            "id": "way/257074927",
+            "timestamp": "2026-07-20T22:50:25Z"
+          }
+        ],
+        "geometry_kind": "building",
+        "city": "下関市",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                130.9222303,
+                33.9482985
+              ],
+              [
+                130.9222964,
+                33.9483373
+              ],
+              [
+                130.9220989,
+                33.9485777
+              ],
+              [
+                130.92273,
+                33.948921
+              ],
+              [
+                130.9228989,
+                33.9487322
+              ],
+              [
+                130.9229494,
+                33.9497197
+              ],
+              [
+                130.9232083,
+                33.9499246
+              ],
+              [
+                130.9233526,
+                33.9499202
+              ],
+              [
+                130.9233554,
+                33.9498743
+              ],
+              [
+                130.9238568,
+                33.949865
+              ],
+              [
+                130.9251088,
+                33.9498418
+              ],
+              [
+                130.9251123,
+                33.9497666
+              ],
+              [
+                130.9250228,
+                33.9496543
+              ],
+              [
+                130.9246027,
+                33.9496532
+              ],
+              [
+                130.924592,
+                33.9492593
+              ],
+              [
+                130.9246534,
+                33.949258
+              ],
+              [
+                130.9246542,
+                33.9492086
+              ],
+              [
+                130.9238356,
+                33.9485364
+              ],
+              [
+                130.9236458,
+                33.9485208
+              ],
+              [
+                130.9236471,
+                33.9484364
+              ],
+              [
+                130.9236941,
+                33.9484387
+              ],
+              [
+                130.9236981,
+                33.9483575
+              ],
+              [
+                130.923568,
+                33.9482911
+              ],
+              [
+                130.9225511,
+                33.948214
+              ],
+              [
+                130.9225432,
+                33.9482818
+              ],
+              [
+                130.9224009,
+                33.9482071
+              ],
+              [
+                130.9223128,
+                33.9482008
+              ],
+              [
+                130.9222303,
+                33.9482985
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "yamaguchi",
+      "properties": {
+        "name": "ゆめタウン山口",
+        "official_address": "山口県山口市大内千坊六丁目9-1",
+        "official_url": "https://www.izumi.jp/tenpo/yamaguchi/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/405965521"
+        ],
+        "source_timestamp": "2025-09-28T13:48:10Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM building outline; not entrance",
+        "source_versions": [
+          {
+            "id": "way/405965521",
+            "timestamp": "2025-09-28T13:48:10Z"
+          }
+        ],
+        "geometry_kind": "building",
+        "city": "山口市",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.4913205,
+                34.1610418
+              ],
+              [
+                131.4906871,
+                34.1606236
+              ],
+              [
+                131.4907796,
+                34.1604705
+              ],
+              [
+                131.4904832,
+                34.1603051
+              ],
+              [
+                131.4904765,
+                34.1601764
+              ],
+              [
+                131.4907262,
+                34.1598769
+              ],
+              [
+                131.490955,
+                34.1598679
+              ],
+              [
+                131.4911357,
+                34.1600087
+              ],
+              [
+                131.4917689,
+                34.1593338
+              ],
+              [
+                131.4922529,
+                34.1596224
+              ],
+              [
+                131.4923312,
+                34.159858
+              ],
+              [
+                131.4923882,
+                34.1601996
+              ],
+              [
+                131.4923383,
+                34.1604234
+              ],
+              [
+                131.4920536,
+                34.1607179
+              ],
+              [
+                131.4913205,
+                34.1610418
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hohu",
+      "properties": {
+        "name": "ゆめタウン防府",
+        "official_address": "山口県防府市八王子2丁目8-8",
+        "official_url": "https://www.izumi.jp/tenpo/hohu/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/3951251460"
+        ],
+        "source_timestamp": "2016-01-17T07:51:15Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM facility point; not entrance; OSM name is ゆめタウン",
+        "source_versions": [
+          {
+            "id": "node/3951251460",
+            "timestamp": "2016-01-17T07:51:15Z"
+          }
+        ],
+        "geometry_kind": "representative_point",
+        "city": "防府市",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5685447,
+          34.0583605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ube",
+      "properties": {
+        "name": "ゆめタウン宇部",
+        "city": "宇部市",
+        "official_address": "山口県宇部市黒石北3丁目4-1",
+        "official_url": "https://www.izumi.jp/tenpo/ube/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/252844282"
+        ],
+        "source_timestamp": "2024-03-19T08:32:44Z",
+        "source_versions": [
+          {
+            "id": "way/252844282",
+            "timestamp": "2024-03-19T08:32:44Z"
+          }
+        ],
+        "osm_name": "ゆめタウン宇部",
+        "geometry_kind": "facility_area",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.2049415,
+                33.9847652
+              ],
+              [
+                131.2049538,
+                33.9843923
+              ],
+              [
+                131.2057145,
+                33.9844096
+              ],
+              [
+                131.2072098,
+                33.9844435
+              ],
+              [
+                131.2071877,
+                33.9851122
+              ],
+              [
+                131.2072752,
+                33.9851142
+              ],
+              [
+                131.2072713,
+                33.985234
+              ],
+              [
+                131.2071951,
+                33.9852323
+              ],
+              [
+                131.2071945,
+                33.9852491
+              ],
+              [
+                131.2070278,
+                33.9852453
+              ],
+              [
+                131.2070287,
+                33.985216
+              ],
+              [
+                131.206666,
+                33.9852078
+              ],
+              [
+                131.2066655,
+                33.9852236
+              ],
+              [
+                131.2063523,
+                33.9852165
+              ],
+              [
+                131.2063531,
+                33.9851937
+              ],
+              [
+                131.2053706,
+                33.9851714
+              ],
+              [
+                131.2053717,
+                33.9851384
+              ],
+              [
+                131.2053324,
+                33.9851375
+              ],
+              [
+                131.2053371,
+                33.9849952
+              ],
+              [
+                131.2053789,
+                33.9849961
+              ],
+              [
+                131.2053862,
+                33.9847753
+              ],
+              [
+                131.2049415,
+                33.9847652
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chohu",
+      "properties": {
+        "name": "ゆめタウン長府",
+        "city": "下関市",
+        "official_address": "山口県下関市ゆめタウン1-1",
+        "official_url": "https://www.izumi.jp/tenpo/chohu/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/291544092"
+        ],
+        "source_timestamp": "2026-07-20T22:50:25Z",
+        "source_versions": [
+          {
+            "id": "way/291544092",
+            "timestamp": "2026-07-20T22:50:25Z"
+          }
+        ],
+        "osm_name": "ゆめタウン",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.0119204,
+                34.0302983
+              ],
+              [
+                131.0122649,
+                34.0300623
+              ],
+              [
+                131.0123089,
+                34.0300988
+              ],
+              [
+                131.0123575,
+                34.0300565
+              ],
+              [
+                131.0123923,
+                34.0300853
+              ],
+              [
+                131.0130637,
+                34.0296114
+              ],
+              [
+                131.0136563,
+                34.0301582
+              ],
+              [
+                131.012552,
+                34.0309161
+              ],
+              [
+                131.0119213,
+                34.0303546
+              ],
+              [
+                131.0119535,
+                34.0303323
+              ],
+              [
+                131.0119204,
+                34.0302983
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shinnanyo",
+      "properties": {
+        "name": "ゆめタウン新南陽",
+        "city": "周南市",
+        "official_address": "山口県周南市清水2丁目2-1",
+        "official_url": "https://www.izumi.jp/tenpo/shinnanyo/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/305642626"
+        ],
+        "source_timestamp": "2017-01-21T12:26:34Z",
+        "source_versions": [
+          {
+            "id": "way/305642626",
+            "timestamp": "2017-01-21T12:26:34Z"
+          }
+        ],
+        "osm_name": "ゆめタウン新南陽",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.7722136,
+                34.0711968
+              ],
+              [
+                131.7730488,
+                34.0709723
+              ],
+              [
+                131.7730759,
+                34.070892
+              ],
+              [
+                131.7727655,
+                34.0701903
+              ],
+              [
+                131.7719085,
+                34.0704451
+              ],
+              [
+                131.7722136,
+                34.0711968
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokuyama",
+      "properties": {
+        "name": "ゆめタウン徳山",
+        "city": "周南市",
+        "official_address": "山口県周南市青山町1番18号",
+        "official_url": "https://www.izumi.jp/tenpo/tokuyama/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/4391628789"
+        ],
+        "source_timestamp": "2016-09-27T12:53:48Z",
+        "source_versions": [
+          {
+            "id": "node/4391628789",
+            "timestamp": "2016-09-27T12:53:48Z"
+          }
+        ],
+        "osm_name": "ゆめタウン徳山",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8156035,
+          34.0426467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "yanai",
+      "properties": {
+        "name": "ゆめタウン柳井",
+        "city": "柳井市",
+        "official_address": "山口県柳井市南町4丁目5-3",
+        "official_url": "https://www.izumi.jp/tenpo/yanai/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/391860167"
+        ],
+        "source_timestamp": "2018-07-08T01:27:10Z",
+        "source_versions": [
+          {
+            "id": "way/391860167",
+            "timestamp": "2018-07-08T01:27:10Z"
+          }
+        ],
+        "osm_name": "ゆめタウン",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                132.1062541,
+                33.9608086
+              ],
+              [
+                132.1059645,
+                33.9606792
+              ],
+              [
+                132.1057114,
+                33.9610691
+              ],
+              [
+                132.1056846,
+                33.9610513
+              ],
+              [
+                132.1056283,
+                33.9611447
+              ],
+              [
+                132.1056028,
+                33.9611347
+              ],
+              [
+                132.1054257,
+                33.9614044
+              ],
+              [
+                132.105462,
+                33.9614217
+              ],
+              [
+                132.1053976,
+                33.9615257
+              ],
+              [
+                132.105407,
+                33.961529
+              ],
+              [
+                132.105348,
+                33.9616209
+              ],
+              [
+                132.1053253,
+                33.9616605
+              ],
+              [
+                132.1053336,
+                33.9616963
+              ],
+              [
+                132.1053542,
+                33.9617255
+              ],
+              [
+                132.1057095,
+                33.9618861
+              ],
+              [
+                132.1057775,
+                33.9618044
+              ],
+              [
+                132.1058435,
+                33.9618321
+              ],
+              [
+                132.1058495,
+                33.9618215
+              ],
+              [
+                132.105997,
+                33.961891
+              ],
+              [
+                132.1066117,
+                33.960966
+              ],
+              [
+                132.1063776,
+                33.9608611
+              ],
+              [
+                132.1064984,
+                33.9606757
+              ],
+              [
+                132.1063774,
+                33.9606193
+              ],
+              [
+                132.1062541,
+                33.9608086
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kudamatsu",
+      "properties": {
+        "name": "ゆめタウン下松",
+        "city": "下松市",
+        "official_address": "山口県下松市中央町21-3",
+        "official_url": "https://www.izumi.jp/tenpo/kudamatsu/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/305489780"
+        ],
+        "source_timestamp": "2019-11-16T13:54:33Z",
+        "source_versions": [
+          {
+            "id": "way/305489780",
+            "timestamp": "2019-11-16T13:54:33Z"
+          }
+        ],
+        "osm_name": "ザ・モール周南",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "name_evidence_url": "https://www.izumi.co.jp/news_release/pdf/2021/1118news.pdf",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.8639867,
+                34.0184172
+              ],
+              [
+                131.8633249,
+                34.0176789
+              ],
+              [
+                131.8621848,
+                34.0183762
+              ],
+              [
+                131.8623582,
+                34.0185658
+              ],
+              [
+                131.8619292,
+                34.0188228
+              ],
+              [
+                131.8623733,
+                34.0193321
+              ],
+              [
+                131.8628177,
+                34.0190659
+              ],
+              [
+                131.8630636,
+                34.0193479
+              ],
+              [
+                131.8634555,
+                34.0191133
+              ],
+              [
+                131.8635406,
+                34.0187238
+              ],
+              [
+                131.8639867,
+                34.0184172
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "youmecity",
+      "properties": {
+        "name": "ゆめシティ",
+        "city": "下関市",
+        "official_address": "山口県下関市伊倉新町三丁目1-1",
+        "official_url": "https://www.izumi.jp/tenpo/youmecity/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/323684106"
+        ],
+        "source_timestamp": "2025-12-06T13:07:56Z",
+        "source_versions": [
+          {
+            "id": "way/323684106",
+            "timestamp": "2025-12-06T13:07:56Z"
+          }
+        ],
+        "osm_name": "ゆめシティ",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                130.9351181,
+                34.0071793
+              ],
+              [
+                130.9352576,
+                34.0070814
+              ],
+              [
+                130.9352522,
+                34.0068769
+              ],
+              [
+                130.9353059,
+                34.0068635
+              ],
+              [
+                130.9353273,
+                34.0067479
+              ],
+              [
+                130.9353488,
+                34.0065923
+              ],
+              [
+                130.9352308,
+                34.0065834
+              ],
+              [
+                130.9352308,
+                34.00653
+              ],
+              [
+                130.9340828,
+                34.0062721
+              ],
+              [
+                130.9335571,
+                34.0062276
+              ],
+              [
+                130.9334874,
+                34.0061965
+              ],
+              [
+                130.9333479,
+                34.0061965
+              ],
+              [
+                130.933262,
+                34.0062098
+              ],
+              [
+                130.9330099,
+                34.0062098
+              ],
+              [
+                130.9329885,
+                34.0066723
+              ],
+              [
+                130.9327846,
+                34.0066767
+              ],
+              [
+                130.9327095,
+                34.0071348
+              ],
+              [
+                130.9349948,
+                34.0072282
+              ],
+              [
+                130.9351181,
+                34.0071793
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aeon-hofu",
+      "properties": {
+        "name": "イオンタウン防府",
+        "city": "防府市",
+        "official_address": "山口県防府市鐘紡町7-1",
+        "official_url": "https://www.aeontown.co.jp/hofu/access/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/4041110342"
+        ],
+        "source_timestamp": "2019-11-16T13:54:32Z",
+        "source_versions": [
+          {
+            "id": "node/4041110342",
+            "timestamp": "2019-11-16T13:54:32Z"
+          }
+        ],
+        "osm_name": "イオンタウン防府",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5904572,
+          34.0482517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aeon-ogori",
+      "properties": {
+        "name": "イオンタウン小郡",
+        "city": "山口市",
+        "official_address": "山口県山口市小郡前田町2-24",
+        "official_url": "https://www.aeontown.co.jp/ogori/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/391862840"
+        ],
+        "source_timestamp": "2023-08-16T15:57:50Z",
+        "source_versions": [
+          {
+            "id": "way/391862840",
+            "timestamp": "2023-08-16T15:57:50Z"
+          }
+        ],
+        "osm_name": "イオンタウン小郡",
+        "geometry_kind": "facility_area",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.3964315,
+                34.0868184
+              ],
+              [
+                131.3969718,
+                34.0856434
+              ],
+              [
+                131.3989287,
+                34.0867392
+              ],
+              [
+                131.3989404,
+                34.0868899
+              ],
+              [
+                131.398233,
+                34.0877205
+              ],
+              [
+                131.3979717,
+                34.0876848
+              ],
+              [
+                131.3964315,
+                34.0868184
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sunlive-kudamatsu",
+      "properties": {
+        "name": "サンリブ下松",
+        "city": "下松市",
+        "official_address": "山口県下松市南花岡6-8-1",
+        "official_url": "https://www.sunlive.co.jp/shop/サンリブ下松/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/8704546617"
+        ],
+        "source_timestamp": "2021-05-06T07:58:14Z",
+        "source_versions": [
+          {
+            "id": "node/8704546617",
+            "timestamp": "2021-05-06T07:58:14Z"
+          }
+        ],
+        "osm_name": "サンリブ下松",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8655221,
+          34.0306724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aeon-shunan",
+      "properties": {
+        "name": "イオンタウン周南",
+        "city": "周南市",
+        "official_address": "山口県周南市古市1-4-1",
+        "official_url": "https://www.aeontown.co.jp/shunan/access/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/3205773363"
+        ],
+        "source_timestamp": "2019-11-16T13:54:31Z",
+        "source_versions": [
+          {
+            "id": "node/3205773363",
+            "timestamp": "2019-11-16T13:54:31Z"
+          }
+        ],
+        "osm_name": "イオンタウン周南",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "geometry_note": "OSM geometry; not entrance; positional accuracy unverified",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.7591365,
+          34.0677953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuji-ube",
+      "properties": {
+        "name": "フジグラン宇部",
+        "city": "宇部市",
+        "official_address": "山口県宇部市明神町三丁目1番1号",
+        "official_url": "https://www.the-fuji.com/fuji/store/shop/yamaguchi/grand_ube.php",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/239167795"
+        ],
+        "source_timestamp": "2024-03-17T05:27:31Z",
+        "source_versions": [
+          {
+            "id": "way/239167795",
+            "timestamp": "2024-03-17T05:27:31Z"
+          }
+        ],
+        "osm_name": "フジグラン宇部",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_address_and_google_maps_location_crosschecked; entrance_and_survey_accuracy_unverified",
+        "verification_map_url": "https://goo.gl/maps/dCtUiQwRosJ2",
+        "location_verification": "公式サイト・Googleマップ・OSMで施設位置を照合",
+        "geometry_note": "OSMの名称付き建物。公式住所・Googleマップと位置照合。",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.2547398,
+                33.9304663
+              ],
+              [
+                131.2556127,
+                33.9308793
+              ],
+              [
+                131.2557902,
+                33.9306211
+              ],
+              [
+                131.2568985,
+                33.9311163
+              ],
+              [
+                131.2568767,
+                33.9311655
+              ],
+              [
+                131.2568707,
+                33.9312031
+              ],
+              [
+                131.2568744,
+                33.9312472
+              ],
+              [
+                131.2568917,
+                33.931294
+              ],
+              [
+                131.2569202,
+                33.9313343
+              ],
+              [
+                131.2569577,
+                33.9313672
+              ],
+              [
+                131.2570016,
+                33.9313919
+              ],
+              [
+                131.2570601,
+                33.9314101
+              ],
+              [
+                131.2571204,
+                33.9314157
+              ],
+              [
+                131.2571741,
+                33.9314102
+              ],
+              [
+                131.2572223,
+                33.9313962
+              ],
+              [
+                131.2572589,
+                33.9313785
+              ],
+              [
+                131.2572916,
+                33.9313557
+              ],
+              [
+                131.2573236,
+                33.9313131
+              ],
+              [
+                131.2575482,
+                33.9309933
+              ],
+              [
+                131.2577532,
+                33.930668
+              ],
+              [
+                131.2571575,
+                33.9303862
+              ],
+              [
+                131.2568996,
+                33.9307613
+              ],
+              [
+                131.2568654,
+                33.9307451
+              ],
+              [
+                131.2559699,
+                33.9303215
+              ],
+              [
+                131.2561184,
+                33.9301054
+              ],
+              [
+                131.2555819,
+                33.9298516
+              ],
+              [
+                131.2555568,
+                33.9298881
+              ],
+              [
+                131.2555323,
+                33.9299251
+              ],
+              [
+                131.255217,
+                33.929772
+              ],
+              [
+                131.2547398,
+                33.9304663
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuji-yamaguchi",
+      "properties": {
+        "name": "フジグラン山口",
+        "city": "山口市",
+        "official_address": "山口県山口市黒川3736番地",
+        "official_url": "https://www.the-fuji.com/fuji/store/shop/yamaguchi/grand_yamaguchi.php",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/374499083"
+        ],
+        "source_timestamp": "2026-07-20T22:50:25Z",
+        "source_versions": [
+          {
+            "id": "way/374499083",
+            "timestamp": "2026-07-20T22:50:25Z"
+          }
+        ],
+        "osm_name": "フジグラン山口",
+        "geometry_kind": "building",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_address_and_google_maps_location_crosschecked; entrance_and_survey_accuracy_unverified",
+        "verification_map_url": "https://goo.gl/maps/qQw8CgLVsdT2",
+        "location_verification": "公式サイト・Googleマップ・OSMで施設位置を照合",
+        "geometry_note": "OSMの名称付き建物。公式住所・Googleマップと位置照合。",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.4364491,
+                34.137027
+              ],
+              [
+                131.4359831,
+                34.1364572
+              ],
+              [
+                131.4361424,
+                34.1362465
+              ],
+              [
+                131.4361956,
+                34.1362728
+              ],
+              [
+                131.4363916,
+                34.1361594
+              ],
+              [
+                131.4365599,
+                34.1362265
+              ],
+              [
+                131.4365789,
+                34.1362185
+              ],
+              [
+                131.4368332,
+                34.1365312
+              ],
+              [
+                131.4368267,
+                34.1365883
+              ],
+              [
+                131.4369812,
+                34.1367789
+              ],
+              [
+                131.4366069,
+                34.1369856
+              ],
+              [
+                131.4365503,
+                34.1369691
+              ],
+              [
+                131.4364491,
+                34.137027
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuji-iwakuni",
+      "properties": {
+        "name": "フジグラン岩国",
+        "city": "岩国市",
+        "official_address": "山口県岩国市麻里布町二丁目9番8号",
+        "official_url": "https://www.the-fuji.com/fuji/store/shop/yamaguchi/grand_iwakuni.php",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/561502888"
+        ],
+        "source_timestamp": "2018-09-08T04:12:12Z",
+        "source_versions": [
+          {
+            "id": "way/561502888",
+            "timestamp": "2018-09-08T04:12:12Z"
+          }
+        ],
+        "osm_name": "名称未登録",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_address_and_google_maps_location_crosschecked; entrance_and_survey_accuracy_unverified",
+        "verification_map_url": "https://goo.gl/maps/A8uT9UtdULw",
+        "location_verification": "公式サイト・Googleマップ・OSMで施設位置を照合",
+        "geometry_note": "OSM無名建物の重心を施設代表点として採用。建物と施設の対応は位置照合による推定。Googleマップの座標を転記した点ではない。",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.22335796517854,
+          34.16872216317674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "minamiiwakuni",
+      "properties": {
+        "name": "ゆめタウン南岩国",
+        "city": "岩国市",
+        "official_address": "山口県岩国市南岩国町1丁目20-30",
+        "official_url": "https://www.izumi.jp/tenpo/minamiiwakuni/access",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/2508259668"
+        ],
+        "source_timestamp": "2013-10-25T12:12:44Z",
+        "source_versions": [
+          {
+            "id": "node/2508259668",
+            "timestamp": "2013-10-25T12:12:44Z"
+          }
+        ],
+        "osm_name": "イズミ南岩国店",
+        "geometry_kind": "representative_point",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-08",
+        "verification_status": "official_name_address_and_google_maps_location_crosschecked; entrance_and_survey_accuracy_unverified",
+        "verification_map_url": "https://www.google.co.jp/maps/search/?api=1&query=ゆめタウン南岩国",
+        "location_verification": "公式サイト・Googleマップ・OSMで施設位置を照合",
+        "geometry_note": "OSM登録名「イズミ南岩国店」。公式住所・Googleマップで現名称との対応を照合。",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "category": "mall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2026417,
+          34.134839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "maruki-nakagawa",
+      "properties": {
+        "name": "ウェスタまるき中川店",
+        "category": "supermarket",
+        "city": "山陽小野田市",
+        "official_address": "山口県山陽小野田市中川町2丁目6633-1",
+        "official_url": "https://marukijapan.co.jp/shop/",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/740120977"
+        ],
+        "source_timestamp": "2019-10-30T08:36:19Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-11",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "osm_name": "ウェスタまるき",
+        "geometry_kind": "building",
+        "geometry_note": "Original OSM geometry; no entrance or walking connection verified"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.1777725,
+                33.9861759
+              ],
+              [
+                131.1778032,
+                33.9858222
+              ],
+              [
+                131.1782641,
+                33.9858497
+              ],
+              [
+                131.1782557,
+                33.9859471
+              ],
+              [
+                131.178354,
+                33.9859529
+              ],
+              [
+                131.1783318,
+                33.9862092
+              ],
+              [
+                131.1777725,
+                33.9861759
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cosmos-onoda",
+      "properties": {
+        "name": "コスモス小野田店",
+        "category": "drugstore",
+        "city": "山陽小野田市",
+        "official_address": "山口県山陽小野田市高栄1丁目8-5",
+        "official_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93347.html",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "way/332618148"
+        ],
+        "source_timestamp": "2022-01-15T17:02:55Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-11",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "osm_name": "ディスカウントドラッグコスモス",
+        "geometry_kind": "building",
+        "geometry_note": "Original OSM geometry; no entrance or walking connection verified"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.1740545,
+                33.9851434
+              ],
+              [
+                131.1745774,
+                33.9851659
+              ],
+              [
+                131.1745978,
+                33.9848398
+              ],
+              [
+                131.1740749,
+                33.9848174
+              ],
+              [
+                131.1740545,
+                33.9851434
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cosmos-marugouchi",
+      "properties": {
+        "name": "コスモス丸河内店",
+        "category": "drugstore",
+        "city": "山陽小野田市",
+        "official_address": "山口県山陽小野田市丸河内1032-5",
+        "official_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97154.html",
+        "source": "OpenStreetMap",
+        "source_ids": [
+          "node/9472329358"
+        ],
+        "source_timestamp": "2022-02-03T18:52:49Z",
+        "retrieved_at": "2026-09-08",
+        "verified_at": "2026-09-11",
+        "verification_status": "official_name_and_address_checked; geometry_and_entrance_unverified",
+        "license": "ODbL-1.0",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "osm_name": "ディスカウントドラッグコスモス 丸河内店",
+        "geometry_kind": "representative_point",
+        "geometry_note": "Original OSM geometry; no entrance or walking connection verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1841872,
+          33.9782029
+        ]
+      }
+    }
+  ]
+}

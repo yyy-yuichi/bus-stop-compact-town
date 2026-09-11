@@ -1,10 +1,12 @@
 """Export current application IDs without inventing cross-source associations."""
 from pathlib import Path
-import csv, hashlib, json
+import csv, hashlib, json, re, sys
 from urllib.parse import urlencode
 
 root = Path(__file__).resolve().parents[1]
-out = root / 'outputs/integration-ready-20260911/id-index'
+label = sys.argv[1] if len(sys.argv) > 1 else 'integration-ready-20260911'
+if not re.fullmatch(r'[a-z0-9-]+', label): raise ValueError('Invalid release label')
+out = root / 'outputs' / label / 'id-index'
 out.mkdir(parents=True, exist_ok=True)
 public_url = 'https://yyy-yuichi.github.io/bus-stop-compact-town/'
 read = lambda name: json.loads((root / 'public/data' / name).read_text(encoding='utf-8'))
@@ -23,6 +25,10 @@ tables['facilities.csv'] = [dict(id=f['id'], name=f['properties']['name'], city=
     geometry_kind=f['properties']['geometry_kind'], source_ids=' / '.join(f['properties']['source_ids']),
     geometry_timestamp=f['properties']['source_timestamp'], name_address_checked_at=f['properties']['verified_at'],
     license=f['properties']['license'], official_url=f['properties']['official_url'],
+    verification_status=f['properties'].get('verification_status', 'see_curated_provenance'),
+    registered_address=f['properties'].get('address', ''), registered_website=f['properties'].get('website', ''),
+    point_longitude=f['geometry']['coordinates'][0] if f['geometry']['type']=='Point' else '',
+    point_latitude=f['geometry']['coordinates'][1] if f['geometry']['type']=='Point' else '',
     current_walking_pilot='included' if f['id'] in graph['facility_ids'] else 'not_calculated', map_url=link('facility', f['id'])) for f in facilities['features']]
 for name, rows in tables.items():
     with (out / name).open('w', encoding='utf-8-sig', newline='') as stream:

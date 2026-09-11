@@ -20,6 +20,7 @@ jobs:
       - run: npm run test:walking
       - run: npm run test:places
       - run: python3 scripts/test-walking-source.py
+      - run: python3 scripts/test-osm-facilities.py
       - run: npm run build
       - run: node scripts/verify-release.mjs
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7

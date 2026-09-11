@@ -9,7 +9,7 @@ import { nationalCatalog, pilotCatalog, NATIONAL_ATTRIBUTION } from './stopCatal
 import MapPanel from './MapPanel';
 import ShoppingLayer from './ShoppingLayer';
 import FacilityDrawer from './FacilityDrawer';
-import { categoryOf, useShoppingData } from './shoppingData';
+import { categoryOf, SHOPPING_CATEGORIES, useShoppingData } from './shoppingData';
 import type { ShoppingCategory } from './shoppingData';
 import { fitContent } from './mapLayout';
 import MapIcon from './MapIcon';
@@ -30,7 +30,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const pendingSelection = useRef('');
   const shopping = useShoppingData();
   const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
-  const [categories, setCategories] = useState<ShoppingCategory[]>(['supermarket', 'drugstore', 'mall']);
+  const [categories, setCategories] = useState<ShoppingCategory[]>(SHOPPING_CATEGORIES.map(c => c.id));
   const [selectedFacility, setSelectedFacility] = useState<ShoppingFeature | null>(null);
   const shownFacilities = useMemo(() => shopping.features.filter(f => categories.includes(categoryOf(f).id)), [shopping.features, categories]);
 

@@ -2,10 +2,14 @@ import { useEffect, useState } from 'react';
 import type { ShoppingCollection, ShoppingFeature, ShoppingProperties } from './types';
 
 export type ShoppingCategory = NonNullable<ShoppingProperties['category']>;
-export const SHOPPING_CATEGORIES: { id: ShoppingCategory; name: string; short: string; color: string }[] = [
-  { id: 'supermarket', name: 'スーパー', short: '食', color: '#ae5419' },
-  { id: 'drugstore', name: 'ドラッグストア', short: '薬', color: '#7959a3' },
-  { id: 'mall', name: '商業施設', short: '買', color: '#276b73' },
+export const SHOPPING_CATEGORIES: { id: ShoppingCategory; name: string; color: string }[] = [
+  { id: 'supermarket', name: 'スーパー', color: '#ae5419' },
+  { id: 'drugstore', name: 'ドラッグストア', color: '#7959a3' },
+  { id: 'convenience', name: 'コンビニ', color: '#667d2d' },
+  { id: 'mall', name: '商業施設', color: '#276b73' },
+  { id: 'hospital', name: '病院', color: '#b34a65' },
+  { id: 'clinic', name: '診療所', color: '#9b527e' },
+  { id: 'pharmacy', name: '薬局', color: '#546cb4' },
 ];
 export const categoryOf = (feature: ShoppingFeature) => SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.category || 'mall'))!;
 

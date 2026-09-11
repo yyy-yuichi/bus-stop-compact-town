@@ -1,0 +1,295 @@
+{
+  "raw_elements": 1182,
+  "total": 1135,
+  "categories": {
+    "mall": 48,
+    "supermarket": 210,
+    "drugstore": 76,
+    "pharmacy": 56,
+    "convenience": 382,
+    "clinic": 205,
+    "hospital": 158
+  },
+  "skipped": [
+    {
+      "source_id": "node/360190124",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/1423654207",
+      "reason": "inactive_or_private"
+    },
+    {
+      "source_id": "node/2508259668",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/3205773363",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/3778917876",
+      "reason": "same_name_node_inside_curated_geometry",
+      "kept_id": "fuji-yamaguchi"
+    },
+    {
+      "source_id": "node/3951251460",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/4041110342",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/4101081694",
+      "reason": "same_name_node_inside_curated_geometry",
+      "kept_id": "chohu"
+    },
+    {
+      "source_id": "node/4243804627",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4391628789",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/4409498886",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4466387506",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4466387604",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4782851321",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5314411934",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5789969854",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5791138353",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178668",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6709712404",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/8704546617",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/9472329358",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "node/9951813719",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10933609805",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/180897597",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/180897599",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/202664005",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/215905578",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/239167795",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/252844282",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/257074927",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/291544092",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/305489780",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/305642626",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/316769019",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316769746",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317518612",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323595837",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323684106",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/332618148",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/336586641",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354570342",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/364643135",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/368947434",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/374499083",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/388983632",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/391860167",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/405965521",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/407968132",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/463428935",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467604091",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/471039173",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/474111007",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/485365380",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550206178",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/555889202",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/576972227",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/667196040",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/672454064",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/740120977",
+      "reason": "existing_source_id"
+    },
+    {
+      "source_id": "way/922754843",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1034128006",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095555546",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095555548",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095555552",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095555554",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1198221359",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1315105837",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1463850520",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1492495921",
+      "reason": "no_name"
+    }
+  ],
+  "snapshot": "2026-07-28T02:16:18Z",
+  "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a"
+}
