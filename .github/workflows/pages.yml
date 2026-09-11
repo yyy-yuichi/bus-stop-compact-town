@@ -23,6 +23,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:walking
+      - run: npm run test:stops
       - run: python3 scripts/test-walking-source.py
       - run: npm run build
       - run: node scripts/verify-release.mjs

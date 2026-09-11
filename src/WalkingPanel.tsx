@@ -73,7 +73,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   </section>;
   if (!data) return <p className="mb-6 text-sm" role="status">徒歩圏を準備しています…</p>;
   if (!supported) return <section className="mb-6 rounded-2xl bg-emerald-50 p-4">
-    <h3 className="font-bold">徒歩圏を試す</h3><p className="mt-2 text-sm leading-relaxed">現在は、おのだサンパーク周辺の7停留所で試せます。このバス停は試作範囲の外です。</p>
+    <h3 className="font-bold">徒歩圏を試す</h3><p className="mt-2 text-sm leading-relaxed">この地点の徒歩圏は未対応です。おのだサンパーク周辺のOSMの7地点に切り替えて試せます。</p>
     <button className="mt-3 min-h-11 rounded-xl bg-emerald-900 px-4 text-sm font-semibold text-white" onClick={() => onSelect(data.graph.pilot_stops[0].id)}>試作地域へ移動</button>
   </section>;
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">

@@ -13,7 +13,7 @@ for(const file of ['bus_stop.geojson','shopping.geojson']) if(!fs.readFileSync(`
 if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync('dist/data/walking-onoda.json')))throw Error('Stale walking graph');
 const bus=JSON.parse(fs.readFileSync('dist/data/bus_stop.geojson','utf8'));
 if(bus.features.length!==1085)throw Error('Unexpected bus stop count');
-console.log(`Release verified: ${files.length} files; 1085 bus stops; source data matches dist.`);
+console.log(`Release verified: ${files.length} files; 1085 original OSM records for comparison/pilot; source data matches dist.`);
 const official=JSON.parse(fs.readFileSync('dist/data/review-stops.geojson','utf8'));
 const routes=JSON.parse(fs.readFileSync('dist/data/review-routes.json','utf8'));
 if(official.features.length!==907||new Set(official.features.map(f=>f.id)).size!==907)throw Error('Review stop count/IDs');
