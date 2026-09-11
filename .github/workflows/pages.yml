@@ -24,6 +24,7 @@ jobs:
       - run: npm ci
       - run: npm run test:walking
       - run: npm run test:stops
+      - run: npm run test:places
       - run: python3 scripts/test-walking-source.py
       - run: npm run build
       - run: node scripts/verify-release.mjs

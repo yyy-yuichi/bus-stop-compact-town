@@ -10,6 +10,7 @@ Node.js 24でプロジェクト直下から実行します。
 npm ci
 npm run build
 node scripts/verify-release.mjs
+npm run test:places
 npm run preview
 ```
 

@@ -13,6 +13,8 @@ import { categoryOf, useShoppingData } from './shoppingData';
 import type { ShoppingCategory } from './shoppingData';
 import { fitContent } from './mapLayout';
 import MapIcon from './MapIcon';
+import { placeLink, readPlaceLink } from './placeLink';
+import type { SharedPlace } from './placeLink';
 
 export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | null; onSelectionChange: (selected: boolean) => void }) {
   const stopsRef = useRef<L.GeoJSON | null>(null);
@@ -22,13 +24,28 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const [selected, setSelected] = useState('');
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const [mode, setMode] = useState<'national' | 'pilot'>('national');
+  const [sharedPlace, setSharedPlace] = useState<SharedPlace | null>(() => readPlaceLink(window.location.hash));
+  const [shareWarning, setShareWarning] = useState(() => Boolean(window.location.hash) && !readPlaceLink(window.location.hash));
+  const [mode, setMode] = useState<'national' | 'pilot'>(() => readPlaceLink(window.location.hash)?.kind === 'pilot' ? 'pilot' : 'national');
   const pendingSelection = useRef('');
-  const walking = useWalkingData();
   const shopping = useShoppingData();
+  const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
   const [categories, setCategories] = useState<ShoppingCategory[]>(['supermarket', 'drugstore', 'mall']);
   const [selectedFacility, setSelectedFacility] = useState<ShoppingFeature | null>(null);
   const shownFacilities = useMemo(() => shopping.features.filter(f => categories.includes(categoryOf(f).id)), [shopping.features, categories]);
+
+  useEffect(() => {
+    const read = () => {
+      const place = readPlaceLink(window.location.hash);
+      setSharedPlace(place);
+      setShareWarning(Boolean(window.location.hash) && !place);
+      setSelected(''); setSelectedFacility(null);
+      pendingSelection.current = '';
+      setMode(place?.kind === 'pilot' ? 'pilot' : 'national');
+    };
+    window.addEventListener('hashchange', read);
+    return () => window.removeEventListener('hashchange', read);
+  }, []);
 
   useEffect(() => {
     if (!map) return;
@@ -55,13 +72,13 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
           pointToLayer: (_feature, latlng) => L.circleMarker(latlng, { radius: 6, color: '#fff', weight: 2, fillColor: '#174f9d', fillOpacity: 0.9 }),
           onEachFeature: (feature, marker) => {
             const id = String(feature.id || feature.properties?.['@id']);
-            marker.on('click', () => { map.closePopup(); setSelectedFacility(null); setSelected(id); });
+            marker.on('click', () => { map.closePopup(); setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); setSelected(id); });
             markersRef.current.set(id, marker);
           },
         }).addTo(map);
         stopsRef.current = layer;
         setStops(data.features);
-        setSelected(pendingSelection.current || (mode === 'pilot' ? String(data.features[0].id || data.features[0].properties['@id']) : ''));
+        setSelected(pendingSelection.current || (mode === 'pilot' && !sharedPlace ? String(data.features[0].id || data.features[0].properties['@id']) : ''));
         pendingSelection.current = '';
         setDataTimestamp(typeof data.timestamp === 'string' ? data.timestamp : '不明');
         fitContent(map, layer.getBounds());
@@ -81,6 +98,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   }, [map, mode]);
 
   const selectStop = (id: string) => {
+    setSharedPlace(null); setShareWarning(false);
     setSelectedFacility(null);
     if (mode === 'national' && /^(node|way|relation)\//.test(id)) {
       pendingSelection.current = id;
@@ -91,11 +109,37 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const closeDrawer = useCallback(() => setSelected(''), []);
   const closeFacility = useCallback(() => setSelectedFacility(null), []);
   const selectFacility = useCallback((feature: ShoppingFeature) => {
+    setSharedPlace(null); setShareWarning(false);
     setSelected(''); setSelectedFacility(feature);
     const category = categoryOf(feature).id;
     setCategories(previous => previous.includes(category) ? previous : [...previous, category]);
   }, []);
   const selectedStop = stops.find(feature => String(feature.id || feature.properties?.['@id']) === selected);
+
+  useEffect(() => {
+    if (!sharedPlace || !stops.length) return;
+    if (stops[0].properties.source_kind !== (mode === 'pilot' ? 'osm-pilot' : 'national')) return;
+    if (sharedPlace.kind === 'facility') {
+      if (shopping.loading || shopping.error) return;
+      const facility = shopping.features.find(f => String(f.id) === sharedPlace.id);
+      if (facility) selectFacility(facility); else { setShareWarning(true); setSharedPlace(null); }
+      return;
+    }
+    if ((sharedPlace.kind === 'pilot') !== (mode === 'pilot')) return;
+    const stop = stops.find(f => String(f.id || f.properties['@id']) === sharedPlace.id);
+    if (stop) { setSelectedFacility(null); setSelected(sharedPlace.id); }
+    else setShareWarning(true);
+    setSharedPlace(null);
+  }, [sharedPlace, stops, mode, shopping.features, shopping.loading, shopping.error, selectFacility]);
+
+  useEffect(() => {
+    if (sharedPlace || shareWarning || !stops.length || stops[0].properties.source_kind !== (mode === 'pilot' ? 'osm-pilot' : 'national')) return;
+    const place: SharedPlace | null = selectedFacility ? { kind: 'facility', id: String(selectedFacility.id) }
+      : selectedStop ? { kind: mode, id: String(selectedStop.id || selectedStop.properties['@id']) } : null;
+    const url = new URL(window.location.href);
+    url.hash = place ? new URL(placeLink(url.href, place)).hash : '';
+    if (url.hash !== window.location.hash) window.history.replaceState(window.history.state, '', url);
+  }, [sharedPlace, shareWarning, stops, mode, selectedFacility, selectedStop]);
 
   useEffect(() => { onSelectionChange(Boolean(selectedStop || selectedFacility)); }, [selectedStop, selectedFacility, onSelectionChange]);
   useEffect(() => {
@@ -129,6 +173,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   }, [map, stops, selected, mode]);
 
   const reset = () => {
+    setSharedPlace(null); setShareWarning(false);
     setSelected('');
     setSelectedFacility(null);
     map?.closePopup();
@@ -136,13 +181,14 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     else map?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
   return <>
-      <MapPanel selection={selected || String(selectedFacility?.id || '')} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} retryShopping={shopping.retry} onMode={() => { setSelectedFacility(null); pendingSelection.current = ''; setMode(mode === 'national' ? 'pilot' : 'national'); }} />
+      <MapPanel selection={selected || String(selectedFacility?.id || '')} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={() => { setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); pendingSelection.current = ''; setMode(mode === 'national' ? 'pilot' : 'national'); }} />
       <ShoppingLayer map={map} features={shownFacilities} selected={String(selectedFacility?.id || '')} onSelect={selectFacility} />
       <button className="reset icon-button" onClick={reset} aria-label="山口県のバス停全体を表示" title="全体を表示"><MapIcon name="reset" /></button>
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
+      {shareWarning && <div className="link-notice" role="status"><p>リンクの場所が見つかりませんでした。名前で検索できます。</p><button className="icon-button" aria-label="リンクの案内を閉じる" onClick={() => setShareWarning(false)}><MapIcon name="close" /></button></div>}
       {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} />}
       {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer}>
-        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} onSelect={selectStop} />
+        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} />
       </BusStopDrawer>}
   </>;
 }

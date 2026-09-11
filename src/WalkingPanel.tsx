@@ -1,30 +1,29 @@
 import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
-import type { ShoppingCollection, ShoppingFeature } from './types';
+import type { LoadState, ShoppingFeature } from './types';
 import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } from './walking';
 import type { Coordinate, WalkingGraph } from './walking';
 import { fitContent } from './mapLayout';
 
-export function useWalkingData() {
-  const [data, setData] = useState<{ graph: WalkingGraph; facilities: ShoppingFeature[] } | null>(null);
+export function useWalkingData(facilities: ShoppingFeature[], facilityState: LoadState) {
+  const [graph, setGraph] = useState<WalkingGraph | null>(null);
   const [error, setError] = useState(false);
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
-    const abort = new AbortController(); setError(false); setData(null);
-    const get = async (name: string) => {
-      const r = await fetch(`${import.meta.env.BASE_URL}data/${name}`, { signal: abort.signal });
-      if (!r.ok) throw Error('Walking data unavailable'); return r.json();
-    };
-    Promise.all([get('walking-onoda.json'), get('shopping.geojson')]).then(([graph, shopping]: [unknown, ShoppingCollection]) => {
-      validateGraph(graph);
-      if (shopping.type !== 'FeatureCollection' || !Array.isArray(shopping.features)) throw Error('Invalid facilities');
-      const facilities = shopping.features.filter(f => graph.facility_ids.includes(String(f.id)));
-      if (facilities.length !== graph.facility_ids.length || facilities.some(f => !f.geometry || !['Point','MultiPolygon'].includes(f.geometry.type))) throw Error('Missing pilot facilities');
-      if (!abort.signal.aborted) setData({ graph, facilities });
-    }).catch(() => { if (!abort.signal.aborted) setError(true); });
+    const abort = new AbortController(); setError(false); setGraph(null);
+    fetch(`${import.meta.env.BASE_URL}data/walking-onoda.json`, { signal: abort.signal })
+      .then(r => { if (!r.ok) throw Error('Walking data unavailable'); return r.json(); })
+      .then(value => { validateGraph(value); if (!abort.signal.aborted) setGraph(value); })
+      .catch(() => { if (!abort.signal.aborted) setError(true); });
     return () => abort.abort();
   }, [attempt]);
-  return { data, error, retry: () => setAttempt(n => n + 1) };
+  const joined = useMemo(() => {
+    if (!graph || facilityState !== 'ready') return { data: null, error: false };
+    const selected = facilities.filter(f => graph.facility_ids.includes(String(f.id)));
+    if (selected.length !== graph.facility_ids.length || selected.some(f => !f.geometry || !['Point', 'MultiPolygon'].includes(f.geometry.type))) return { data: null, error: true };
+    return { data: { graph, facilities: selected }, error: false };
+  }, [graph, facilities, facilityState]);
+  return { data: joined.data, error: error || joined.error || facilityState === 'error', retry: () => setAttempt(n => n + 1) };
 }
 
 export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect }: {

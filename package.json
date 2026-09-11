@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:places": "node scripts/test-place-tools.mjs",
     "test:stops": "node scripts/test-stop-catalog.mjs",
     "test:walking": "node scripts/test-walking.mjs",
     "dev": "vite --host 127.0.0.1",

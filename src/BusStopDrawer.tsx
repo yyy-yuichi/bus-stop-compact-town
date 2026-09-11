@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import type { BusFeature } from './types';
 import MapIcon from './MapIcon';
+import SharePlace from './SharePlace';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
@@ -52,6 +53,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose, children }: Bu
       </button>
     </header>
     <div className="detail-body">
+      <SharePlace place={{ kind: national ? 'national' : 'pilot', id }} />
       {children}
       {national && <div className="mb-5 rounded-xl bg-sky-50 p-4 text-xs leading-relaxed text-sky-950">
         <p>停留所の代表位置です。原則として上下の乗り場が集約されており、乗り場別の位置・方向は未確認です。</p>
