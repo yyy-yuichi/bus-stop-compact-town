@@ -6,7 +6,11 @@
 
 - 2の施設35件点検は区切り、3「バス停選択→徒歩圏→施設確認→戻る」の整理へ進んだ。買い物候補から施設詳細へ移動でき、元のバス停・徒歩時間・歩く速さ・経路強調を保って戻る。検索語を残して結果へ戻るボタンも追加。
 - PC1280×900・スマホ390×844で往復、Escape、未対応地点、候補0件を確認。[実装・検証記録](ui-flow-20260912.md)を参照。国の4,418件とOSM7地点、入口未確認の区別を維持。新しい徒歩圏データは未受領。35件の再調査へ戻らない。
-- 型・検索／共有リンク5,560件・徒歩圏・バス停区分・施設検証・本番ビルド・18ファイル整合が成功。本番ビルドでもスマホ導線、検索の重なり、単独施設リンクの再読み込みを確認。使用したタブとサーバーは終了。公開は保留。正式保存の情報はこの節へ追記する。
+- 型・検索／共有リンク5,560件・徒歩圏・バス停区分・施設検証・本番ビルド・18ファイル整合が成功。本番ビルドでもスマホ導線、検索の重なり、単独施設リンクの再読み込みを確認。使用したタブとサーバーは終了。公開は保留。
+- 画面改善の実装commitは`4b91103a59e1b96187ad79b983e1248c69f6258d`。同じ作業ブランチ`codex/facility-classification-20260912`で継続。施設・バス停・徒歩道路データの変更なし。公開版be5e421を維持。
+- [案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)に、[source ZIP](https://drive.google.com/file/d/1g0Bl10Df-LTfUz-p_uGUBGXFeDAVkCr0/view)（110ファイル・2,176,530 bytes）、[未公開site ZIP](https://drive.google.com/file/d/1l5s0xQPN7kSc8hNyzBYr7l7nAPIAeaFe/view)（18ファイル・628,858 bytes）、[ID一覧ZIP](https://drive.google.com/file/d/1s9LFF_gaKqzv9UyNhTQrsub_1HrggcB7/view)（207,833 bytes）を保存。ZIP内部の全ファイルはSHA-256で読み戻し一致。Driveの名前・サイズ・親フォルダも再取得して確認。
+- [画面導線の検証報告](https://drive.google.com/file/d/1lHViOdJSreH2BNrcmh5g8jL1vu17VduJ/view)（4,829 bytes）はDriveから本文を読み戻し、commit・検証条件・施設件数・公開保留を確認。この節の正式保存記録を含む最新版は、同じ案件フォルダの`HANDOFF-ui-flow-20260912.md`を参照。ソースZIP内のHANDOFFより、この単体保存版を優先する。
+- この範囲の3は完了。次は新しい徒歩圏データの受領・形式確認、または明示的な公開承認後の反映。施設分類保留13件や交通調査を自動的に主工程へ戻さない。
 
 ## 002の施設点検結果（2026-09-12・公開反映は承認待ち）
 
