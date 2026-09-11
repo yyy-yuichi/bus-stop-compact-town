@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-09-12",
+  "baseline_commit": "a5cfb99",
+  "reviewed": 35,
+  "statuses": {
+    "corrected": 19,
+    "pending": 13,
+    "out_of_scope": 2,
+    "retained": 1
+  },
+  "categories": {
+    "mall": 47,
+    "supermarket": 205,
+    "drugstore": 92,
+    "convenience": 384,
+    "pharmacy": 42,
+    "clinic": 203,
+    "hospital": 157,
+    "reference": 5
+  },
+  "normal_records": 1130,
+  "reference_records": 5,
+  "category_changes": 19,
+  "name_changes": 2,
+  "ids_and_positions_preserved": true,
+  "merged_or_deleted_records": 0,
+  "pending_ids": [
+    "osm-node-12376670726",
+    "osm-node-12919501779",
+    "osm-node-3798156478",
+    "osm-node-3951221858",
+    "osm-node-4021864894",
+    "osm-node-4355096689",
+    "osm-node-5712889433",
+    "osm-way-1069977638",
+    "osm-way-202664935",
+    "osm-way-305489114",
+    "osm-way-579745077",
+    "osm-way-600969423",
+    "osm-way-613971823"
+  ],
+  "sha256": {
+    "baseline-candidates.json": "41f41757b68cc77bc27324a69af9c77f579f9a05bee314c985d41a395aa10fe1",
+    "research.json": "a4d4fdcb899c2e50200d3b6e4905be97070132ea7d4bdb3732fe1811f26106ee",
+    "checked-candidates.csv": "23d04fc288cd02fb7ae7b425a41e0d6956ead58161a6a21c7ecc2185e1df4b39"
+  }
+}

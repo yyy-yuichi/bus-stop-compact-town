@@ -21,7 +21,7 @@ minamiiwakuni,ゆめタウン南岩国,node/2508259668,curated_snapshot_unchange
 maruki-nakagawa,ウェスタまるき中川店,way/740120977,curated_snapshot_unchanged,supermarket,supermarket,True,True,no_rule_flag
 cosmos-onoda,コスモス小野田店,way/332618148,curated_snapshot_unchanged,drugstore,drugstore,True,True,no_rule_flag
 cosmos-marugouchi,コスモス丸河内店,node/9472329358,curated_snapshot_unchanged,drugstore,drugstore,True,True,no_rule_flag
-osm-node-10253616807,クスリ岩崎チェーン 西宇部店,node/10253616807,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-node-10253616807,クスリ岩崎チェーン 西宇部店,node/10253616807,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-node-10253619860,ファミリーマート,node/10253619860,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-10275660943,セブンイレブン宇部島2丁目店,node/10275660943,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-10275726015,セブン-イレブン,node/10275726015,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -43,11 +43,11 @@ osm-node-12376670726,おかもと内閣,node/12376670726,saved_osm_element,clini
 osm-node-12383832808,きわのもり歯科クリニック,node/12383832808,saved_osm_element,hospital,clinic,True,True,corrected
 osm-node-12487748790,セブンイレブン宇部東岐波店,node/12487748790,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-12487748791,ダイレックス東岐波店,node/12487748791,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-node-12487748792,コスモス東岐波店,node/12487748792,saved_osm_element,supermarket,supermarket,True,True,pending
+osm-node-12487748792,コスモス東岐波店,node/12487748792,saved_osm_element,supermarket,drugstore,True,True,corrected
 osm-node-12894253957,まるき嘉川店,node/12894253957,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-node-12896592002,ファミリーマート,node/12896592002,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-12919501779,ローソン,node/12919501779,saved_osm_element,supermarket,supermarket,True,True,pending
-osm-node-12919548570,ローソン,node/12919548570,saved_osm_element,supermarket,supermarket,True,True,pending
+osm-node-12919548570,ローソン,node/12919548570,saved_osm_element,supermarket,convenience,True,True,corrected
 osm-node-13019068187,ウォンツ,node/13019068187,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-node-13019068190,ローソン,node/13019068190,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-13041016003,まるき,node/13041016003,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
@@ -87,7 +87,7 @@ osm-node-1423654436,厚仁会西宇部病院,node/1423654436,saved_osm_element,h
 osm-node-1423654505,向陽会阿知須同仁病院,node/1423654505,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-node-1423654525,周南記念病院,node/1423654525,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-node-1423654555,周東総合病院,node/1423654555,saved_osm_element,hospital,hospital,True,True,no_rule_flag
-osm-node-1423654564,周防大島町立橘病院,node/1423654564,saved_osm_element,clinic,clinic,True,True,pending
+osm-node-1423654564,周防大島町立橘病院,node/1423654564,saved_osm_element,clinic,clinic,True,True,corrected
 osm-node-1423654575,和同会宇部温泉病院,node/1423654575,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-node-1423654578,和同会片倉病院,node/1423654578,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-node-1423654646,独立行政法人国立病院機構　山口宇部医療センター,node/1423654646,saved_osm_element,hospital,hospital,True,True,no_rule_flag
@@ -190,7 +190,7 @@ osm-node-1618763376,セブン-イレブン,node/1618763376,saved_osm_element,con
 osm-node-2252806318,セブン-イレブン,node/2252806318,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-2253194966,セブン-イレブン,node/2253194966,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-2253197417,セブン-イレブン,node/2253197417,saved_osm_element,convenience,convenience,True,True,no_rule_flag
-osm-node-2253200282,クスリ岩崎チェーン,node/2253200282,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-node-2253200282,クスリ岩崎チェーン,node/2253200282,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-node-2253691125,コープやまぐち,node/2253691125,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-node-2253707359,ローソン,node/2253707359,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-2301970318,芝草薬局,node/2301970318,saved_osm_element,pharmacy,pharmacy,True,True,no_rule_flag
@@ -457,7 +457,7 @@ osm-node-4453430446,セブンイレブン,node/4453430446,saved_osm_element,conv
 osm-node-4466343604,セブンイレブン,node/4466343604,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-4466374807,キオスク,node/4466374807,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-4466386290,五嶋内科クリニック,node/4466386290,saved_osm_element,clinic,clinic,True,True,no_rule_flag
-osm-node-4466387201,コスモス,node/4466387201,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-node-4466387201,コスモス,node/4466387201,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-node-4501621210,クスリ岩崎チェーン,node/4501621210,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-node-4501645537,アルク,node/4501645537,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-node-4501648808,牟礼小児科,node/4501648808,saved_osm_element,clinic,clinic,True,True,no_rule_flag
@@ -625,7 +625,7 @@ osm-node-5429467234,サンマート,node/5429467234,saved_osm_element,supermarke
 osm-node-5429488649,セブン-イレブン,node/5429488649,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-5454433650,セブンイレブン,node/5454433650,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-5456594526,セブン-イレブン,node/5456594526,saved_osm_element,convenience,convenience,True,True,no_rule_flag
-osm-node-5463868168,ディスカウントドラッグ コスモス,node/5463868168,saved_osm_element,mall,mall,True,True,pending
+osm-node-5463868168,ディスカウントドラッグ コスモス,node/5463868168,saved_osm_element,mall,drugstore,True,True,corrected
 osm-node-5482408601,ディスカウントドラッグコスモス,node/5482408601,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-node-5482411383,ディスカウントドラッグコスモス,node/5482411383,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-node-5482436498,Aコープ 長門,node/5482436498,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
@@ -645,7 +645,7 @@ osm-node-5712889433,クスリ岩崎チェーン,node/5712889433,saved_osm_elemen
 osm-node-5712889434,マックスバリュ,node/5712889434,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-node-5836321485,Yuzuya,node/5836321485,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-6011255090,クスリ岩崎チェーン,node/6011255090,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
-osm-node-6011703186,ウォンツ徳佐店,node/6011703186,saved_osm_element,supermarket,supermarket,True,True,pending
+osm-node-6011703186,ウォンツ徳佐店,node/6011703186,saved_osm_element,supermarket,drugstore,True,True,corrected
 osm-node-6014468885,セブンイレブン,node/6014468885,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-6168362552,イオン,node/6168362552,saved_osm_element,mall,mall,True,True,no_rule_flag
 osm-node-6194948420,セブン-イレブン 岩国旭町店,node/6194948420,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -667,10 +667,10 @@ osm-node-7205145562,ローソン,node/7205145562,saved_osm_element,convenience,c
 osm-node-7329014485,セブンイレブン,node/7329014485,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-7811177401,光の会重本病院,node/7811177401,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-node-7814280097,回生堂薬局,node/7814280097,saved_osm_element,pharmacy,pharmacy,True,True,no_rule_flag
-osm-node-7925514879,セブンイレブン　美祢十文字店,node/7925514879,saved_osm_element,supermarket,supermarket,True,True,pending
+osm-node-7925514879,セブンイレブン　美祢十文字店,node/7925514879,saved_osm_element,supermarket,convenience,True,True,corrected
 osm-node-827126224,セブン-イレブン,node/827126224,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-node-827148501,セブン-イレブン,node/827148501,saved_osm_element,convenience,convenience,True,True,no_rule_flag
-osm-node-8324024714,徳山病院,node/8324024714,saved_osm_element,clinic,clinic,True,True,pending
+osm-node-8324024714,徳山病院,node/8324024714,saved_osm_element,clinic,hospital,True,True,corrected
 osm-node-8370495729,ディスカウントドラッグ　コスモス,node/8370495729,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-node-8748754217,山三商店,node/8748754217,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-node-9077221317,セブン-イレブン,node/9077221317,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -696,11 +696,11 @@ osm-way-1069977638,山口銀行 丸久川西店,way/1069977638,saved_osm_element
 osm-way-1117303436,山陽小野田市民病院,way/1117303436,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-way-1120496713,セブンイレブン山陽小野田厚陽店,way/1120496713,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-1120637407,ファミリーマート,way/1120637407,saved_osm_element,convenience,convenience,True,True,no_rule_flag
-osm-way-1120637425,ドラッグストアモリ 宇部沖ノ旦店,way/1120637425,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-1120637425,ドラッグストアモリ 宇部沖ノ旦店,way/1120637425,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-1121030699,JA山口県JA​長門​大津​俵山 Yショップ俵山店,way/1121030699,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-1121040361,トライアル,way/1121040361,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-1121040362,セブン-イレブン 宇部厚南中央店,way/1121040362,saved_osm_element,convenience,convenience,True,True,no_rule_flag
-osm-way-1121040363,ウォンツ 宇部厚南店,way/1121040363,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-1121040363,ウォンツ 宇部厚南店,way/1121040363,saved_osm_element,pharmacy,reference,True,True,out_of_scope
 osm-way-1121040368,セブン-イレブン,way/1121040368,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-1125544931,市立平郡診療所,way/1125544931,saved_osm_element,clinic,clinic,True,True,no_rule_flag
 osm-way-1126822282,ファディ,way/1126822282,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
@@ -757,7 +757,7 @@ osm-way-282445642,セブンイレブン,way/282445642,saved_osm_element,convenie
 osm-way-282445782,サンマート,way/282445782,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-285902929,田村医院,way/285902929,saved_osm_element,clinic,clinic,True,True,no_rule_flag
 osm-way-291316041,田村産婦人科,way/291316041,saved_osm_element,hospital,hospital,True,True,no_rule_flag
-osm-way-297142744,イオンモール,way/297142744,saved_osm_element,mall,mall,True,True,pending
+osm-way-297142744,イオンモール,way/297142744,saved_osm_element,mall,mall,True,True,corrected
 osm-way-303463599,アルク,way/303463599,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-303472852,アルク,way/303472852,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-305489114,ABC Mart,way/305489114,saved_osm_element,mall,mall,True,True,pending
@@ -847,7 +847,7 @@ osm-way-353411367,綿田内科病院,way/353411367,saved_osm_element,hospital,ho
 osm-way-353411368,アルク,way/353411368,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-353411401,ウェスタまるき 小松原通り店,way/353411401,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-353411443,トライアル,way/353411443,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-353411446,ウォンツ 宇部新川店,way/353411446,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-353411446,ウォンツ 宇部新川店,way/353411446,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-354319153,総合病院光市立病院,way/354319153,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-way-356403173,ローソン,way/356403173,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-356928497,ディオ,way/356928497,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
@@ -926,14 +926,14 @@ osm-way-401697682,手山産婦人科,way/401697682,saved_osm_element,clinic,clin
 osm-way-404858858,セブン-イレブン,way/404858858,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405831486,ファミリマート大内矢田店,way/405831486,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405831487,アルク 大内店,way/405831487,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-405833069,コスモス,way/405833069,saved_osm_element,supermarket,supermarket,True,True,pending
+osm-way-405833069,コスモス,way/405833069,saved_osm_element,supermarket,drugstore,True,True,corrected
 osm-way-405835932,セブン-イレブン,way/405835932,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405835933,セブン-イレブン,way/405835933,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405835934,セブンイレブン山口県庁前店,way/405835934,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405934628,セブン-イレブン,way/405934628,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-405965519,すずき内科クリニック,way/405965519,saved_osm_element,clinic,clinic,True,True,no_rule_flag
 osm-way-405965520,おおうちクリニック,way/405965520,saved_osm_element,clinic,clinic,True,True,no_rule_flag
-osm-way-405983078,ウォンツ 山口熊野店,way/405983078,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-405983078,ウォンツ 山口熊野店,way/405983078,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-407846298,ファミリーマート山口泉都町店,way/407846298,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-407965644,ローソン山口平井中上店,way/407965644,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-407965645,セブンイレブン山口上平井店,way/407965645,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -949,8 +949,8 @@ osm-way-417442224,サンパークあじす,way/417442224,saved_osm_element,mall,
 osm-way-417748834,ふじみや,way/417748834,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-417786366,コープやまぐちここと 小郡店,way/417786366,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-425343737,ピクロス田布施店,way/425343737,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-425596518,クスリ岩崎チェーン　山口北店,way/425596518,saved_osm_element,pharmacy,pharmacy,True,True,pending
-osm-way-425751686,クスリ岩崎チェーン田布施店,way/425751686,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-425596518,クスリ岩崎チェーン　山口北店,way/425596518,saved_osm_element,pharmacy,drugstore,True,True,corrected
+osm-way-425751686,クスリ岩崎チェーン田布施店,way/425751686,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-426991267,セブン-イレブン,way/426991267,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-426991268,ファミリーマート,way/426991268,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-434845990,セブン-イレブン,way/434845990,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -971,12 +971,12 @@ osm-way-450577273,小野田赤十字病院,way/450577273,saved_osm_element,hospi
 osm-way-465831131,ウエスタまるき山口大内店,way/465831131,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-465851858,新鮮市場大内店,way/465851858,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-465864279,ザ・ビッグ小郡店,way/465864279,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-465881161,ウォンツ山口大内御堀店,way/465881161,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-465881161,ウォンツ山口大内御堀店,way/465881161,saved_osm_element,pharmacy,reference,True,True,out_of_scope
 osm-way-465967718,じゅげむ,way/465967718,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-465967739,Aプライス山口店,way/465967739,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-465975433,ウエスタまるき山口湯田店,way/465975433,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-466029137,マックスバリュ,way/466029137,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-466029165,ドラッグコスモス,way/466029165,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-466029165,ドラッグコスモス,way/466029165,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-467169342,ののはなクリニック,way/467169342,saved_osm_element,clinic,clinic,True,True,no_rule_flag
 osm-way-468741677,ゆめマート,way/468741677,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-474106650,アルク小郡店,way/474106650,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
@@ -997,7 +997,7 @@ osm-way-483625943,レッドキャベツ,way/483625943,saved_osm_element,supermar
 osm-way-483838362,レッドキャベツ 上田中店,way/483838362,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-483838363,セブン-イレブン,way/483838363,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-484470900,下関市立中央病院,way/484470900,saved_osm_element,hospital,hospital,True,True,no_rule_flag
-osm-way-486918961,クスリ岩崎チェーン 下関武久店,way/486918961,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-486918961,クスリ岩崎チェーン 下関武久店,way/486918961,saved_osm_element,pharmacy,drugstore,True,True,corrected
 osm-way-493966536,土屋医院,way/493966536,saved_osm_element,clinic,clinic,True,True,no_rule_flag
 osm-way-496416479,ドラッグコスモス矢原店,way/496416479,saved_osm_element,drugstore,drugstore,True,True,no_rule_flag
 osm-way-497321537,ローソン,way/497321537,saved_osm_element,convenience,convenience,True,True,no_rule_flag
@@ -1074,7 +1074,7 @@ osm-way-562664549,A-プライス,way/562664549,saved_osm_element,supermarket,sup
 osm-way-562664551,百菜屋,way/562664551,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
 osm-way-562673295,セブン-イレブン,way/562673295,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-567353498,アルク,way/567353498,saved_osm_element,supermarket,supermarket,True,True,no_rule_flag
-osm-way-571604485,サンキュードラッグ 上田中町薬局,way/571604485,saved_osm_element,pharmacy,pharmacy,True,True,pending
+osm-way-571604485,サンキュードラッグ 上田中町薬局,way/571604485,saved_osm_element,pharmacy,pharmacy,True,True,retained
 osm-way-571606122,ローソン 下関椋野町三丁目店,way/571606122,saved_osm_element,convenience,convenience,True,True,no_rule_flag
 osm-way-574378099,聖比留会厚南セントヒル病院,way/574378099,saved_osm_element,hospital,hospital,True,True,no_rule_flag
 osm-way-579745077,Ｒｙｕ接骨院,way/579745077,saved_osm_element,clinic,reference,True,True,pending

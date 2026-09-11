@@ -16,14 +16,14 @@
     "hospital": 158
   },
   "current_categories": {
-    "mall": 48,
-    "supermarket": 210,
-    "drugstore": 78,
-    "pharmacy": 54,
-    "convenience": 382,
-    "clinic": 204,
-    "hospital": 156,
-    "reference": 3
+    "mall": 47,
+    "supermarket": 205,
+    "drugstore": 92,
+    "convenience": 384,
+    "pharmacy": 42,
+    "clinic": 203,
+    "hospital": 157,
+    "reference": 5
   },
   "unchanged_ids_and_geometries": 1135,
   "source_ids_unique": true,
@@ -39,10 +39,10 @@
   "merged_or_deleted_records": 0,
   "classification_candidates": 44,
   "classification_statuses": {
-    "pending": 35,
-    "corrected": 3,
-    "out_of_scope": 2,
-    "retained": 4
+    "corrected": 22,
+    "pending": 13,
+    "out_of_scope": 4,
+    "retained": 5
   },
   "skipped": {
     "no_name": 45,
@@ -58,9 +58,9 @@
     "重複候補は変更前の1135件から抽出し、分類修正で候補が消えないよう固定した。"
   ],
   "sha256": {
-    "record-checks.csv": "b0fe8cd358982c1e99848e9b6aa70cbaef9674521758453b13bca2fa958cf450",
+    "record-checks.csv": "9f7b1ab19b0aba830b4213317ba2be2c90c1ac079df2817f89f355e329ce1807",
     "duplicate-candidates.csv": "4ab920bfda81bab8ee7a88c702eb662bb4abaea06dab9e6cd7e847160284863e",
-    "classification-review.csv": "3bc3b3f5de624b20ad6b5c42ed067d02dd12ae51b82f4aea00072ae69b688bb1",
-    "reviews.json": "fe694586b344c9ad437af6a4a57395711f80cb5ec5e7daafd5b80b3c34eddc38"
+    "classification-review.csv": "3d0b8e6a944f5e5301d3c2eb31702680658a9f11ad558389fb52d6b9c25105f2",
+    "reviews.json": "a539ba8ef2837725487326c9b38ac6b19add852ad052212ffb1e713d0cd060a6"
   }
 }

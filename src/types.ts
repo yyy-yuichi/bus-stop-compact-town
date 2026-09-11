@@ -31,7 +31,7 @@ export interface ShoppingProperties {
   category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic' | 'reference';
   classification_review?: {
     checked_at: string;
-    status: 'corrected' | 'out_of_scope' | 'pending';
+    status: 'corrected' | 'out_of_scope' | 'pending' | 'retained';
     original_category: string;
     note: string;
     evidence_url?: string;

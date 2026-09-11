@@ -1,0 +1,601 @@
+{
+  "baseline_commit": "a5cfb99",
+  "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+  "candidates": [
+    {
+      "id": "osm-node-10253616807",
+      "original_name": "クスリ岩崎チェーン 西宇部店",
+      "current_name": "クスリ岩崎チェーン 西宇部店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "node/10253616807",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"healthcare\": \"pharmacy\", \"name\": \"クスリ岩崎チェーン 西宇部店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.2196387,
+        34.0034813
+      ]
+    },
+    {
+      "id": "osm-node-12376670726",
+      "original_name": "おかもと内閣",
+      "current_name": "おかもと内閣",
+      "original_category": "clinic",
+      "current_category": "clinic",
+      "source_id": "node/12376670726",
+      "raw_tags": "{\"amenity\": \"doctors\", \"check_date\": \"2024-11-27\", \"healthcare\": \"doctor\", \"healthcare:speciality\": \"internal\", \"name\": \"おかもと内閣\"}",
+      "flags": "名称の誤記候補（移転・改称も照合が必要）",
+      "status": "pending",
+      "reason": "内科の誤記候補だが、周南市の同名医院に移転・改称情報もある。現行公式資料とこのOSM位置の対応を確定していないため、旧位置へ新名称だけを付けない。",
+      "evidence_url": "",
+      "source_point": [
+        131.8022029,
+        34.0543782
+      ]
+    },
+    {
+      "id": "osm-node-12487748792",
+      "original_name": "コスモス東岐波店",
+      "current_name": "コスモス東岐波店",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/12487748792",
+      "raw_tags": "{\"name\": \"コスモス東岐波店\", \"shop\": \"supermarket\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.343201,
+        33.9871936
+      ]
+    },
+    {
+      "id": "osm-node-12919501779",
+      "original_name": "ローソン",
+      "current_name": "ローソン",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/12919501779",
+      "raw_tags": "{\"name\": \"ローソン\", \"shop\": \"supermarket\"}",
+      "flags": "コンビニを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "コンビニのブランドを示唆する名称だが別のshopタグが付いている。名称だけでは業態を決めず、支店・公式店舗資料との照合まで原本分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        130.9246955,
+        33.9663643
+      ]
+    },
+    {
+      "id": "osm-node-12919548570",
+      "original_name": "ローソン",
+      "current_name": "ローソン",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/12919548570",
+      "raw_tags": "{\"name\": \"ローソン\", \"shop\": \"supermarket\"}",
+      "flags": "コンビニを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "コンビニのブランドを示唆する名称だが別のshopタグが付いている。名称だけでは業態を決めず、支店・公式店舗資料との照合まで原本分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        130.9217037,
+        33.9566825
+      ]
+    },
+    {
+      "id": "osm-node-1423654564",
+      "original_name": "周防大島町立橘病院",
+      "current_name": "周防大島町立橘病院",
+      "original_category": "clinic",
+      "current_category": "clinic",
+      "source_id": "node/1423654564",
+      "raw_tags": "{\"amenity\": \"doctors\", \"healthcare\": \"doctor\", \"name\": \"周防大島町立橘病院\", \"note\": \"National-Land Numerical Information (Public Facility) 2006, MLIT Japan\", \"note:ja\": \"国土数値情報（公共施設データ）平成19年　国土交通省\", \"source\": \"KSJ2\", \"source_ref\": \"http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html\"}",
+      "flags": "診療所分類と病院という名称の不一致",
+      "status": "pending",
+      "reason": "OSMのdoctors/doctor分類と病院という名称が不一致。名称だけでは施設種別を決めず、現行公式資料との個別照合まで診療所分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        132.280414,
+        33.897744
+      ]
+    },
+    {
+      "id": "osm-node-2253200282",
+      "original_name": "クスリ岩崎チェーン",
+      "current_name": "クスリ岩崎チェーン",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "node/2253200282",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"check_date\": \"2026-03-20\", \"name\": \"クスリ岩崎チェーン\", \"source\": \"Pushpin for iOS\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.460032,
+        34.1604541
+      ]
+    },
+    {
+      "id": "osm-node-3798156478",
+      "original_name": "いちやSC",
+      "current_name": "いちやSC",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/3798156478",
+      "raw_tags": "{\"name\": \"いちやSC\", \"shop\": \"supermarket\"}",
+      "flags": "スーパー分類と館・テナントの名称が混在する可能性",
+      "status": "pending",
+      "reason": "個店とショッピングセンターの名称・範囲を未照合。保存原本の分類は再現できるが、名称だけで別分類へ変更せず保留。",
+      "evidence_url": "",
+      "source_point": [
+        131.7100468,
+        34.0789212
+      ]
+    },
+    {
+      "id": "osm-node-3951221858",
+      "original_name": "イオン柳井新庄SC",
+      "current_name": "イオン柳井新庄SC",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/3951221858",
+      "raw_tags": "{\"name\": \"イオン柳井新庄SC\", \"shop\": \"supermarket\"}",
+      "flags": "スーパー分類と館・テナントの名称が混在する可能性",
+      "status": "pending",
+      "reason": "個店とショッピングセンターの名称・範囲を未照合。保存原本の分類は再現できるが、名称だけで別分類へ変更せず保留。",
+      "evidence_url": "",
+      "source_point": [
+        132.0960452,
+        33.9736498
+      ]
+    },
+    {
+      "id": "osm-node-4021864894",
+      "original_name": "イオン下松山田SC",
+      "current_name": "イオン下松山田SC",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/4021864894",
+      "raw_tags": "{\"name\": \"イオン下松山田SC\", \"shop\": \"supermarket\"}",
+      "flags": "スーパー分類と館・テナントの名称が混在する可能性",
+      "status": "pending",
+      "reason": "個店とショッピングセンターの名称・範囲を未照合。保存原本の分類は再現できるが、名称だけで別分類へ変更せず保留。",
+      "evidence_url": "",
+      "source_point": [
+        131.903361,
+        34.0322174
+      ]
+    },
+    {
+      "id": "osm-node-4355096689",
+      "original_name": "Best",
+      "current_name": "Best",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/4355096689",
+      "raw_tags": "{\"name\": \"Best\", \"shop\": \"supermarket\"}",
+      "flags": "スーパー分類と館・テナントの名称が混在する可能性",
+      "status": "pending",
+      "reason": "スーパーのタグと、館内テナント等を指す可能性のある名称が混在。対象要素の範囲・正式店舗名を未照合のため、名称だけで銀行・家電店へ変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.9347015,
+        33.9699442
+      ]
+    },
+    {
+      "id": "osm-node-4466387201",
+      "original_name": "コスモス",
+      "current_name": "コスモス",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "node/4466387201",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"name\": \"コスモス\", \"name:en\": \"Cosmos\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.9302527,
+        33.9787661
+      ]
+    },
+    {
+      "id": "osm-node-5463868168",
+      "original_name": "ディスカウントドラッグ コスモス",
+      "current_name": "ディスカウントドラッグ コスモス",
+      "original_category": "mall",
+      "current_category": "mall",
+      "source_id": "node/5463868168",
+      "raw_tags": "{\"name\": \"ディスカウントドラッグ コスモス\", \"shop\": \"mall\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.174276,
+        34.3695271
+      ]
+    },
+    {
+      "id": "osm-node-5712889433",
+      "original_name": "クスリ岩崎チェーン",
+      "current_name": "クスリ岩崎チェーン",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "node/5712889433",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"branch\": \"イオン長府店\", \"dispensing\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"クスリ岩崎チェーン\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        130.9897862,
+        33.985596
+      ]
+    },
+    {
+      "id": "osm-node-6011703186",
+      "original_name": "ウォンツ徳佐店",
+      "current_name": "ウォンツ徳佐店",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/6011703186",
+      "raw_tags": "{\"name\": \"ウォンツ徳佐店\", \"name:en\": \"WANTS Tokusa\", \"shop\": \"supermarket\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.7186185,
+        34.3943131
+      ]
+    },
+    {
+      "id": "osm-node-7925514879",
+      "original_name": "セブンイレブン　美祢十文字店",
+      "current_name": "セブンイレブン　美祢十文字店",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "node/7925514879",
+      "raw_tags": "{\"addr:block_number\": \"3162\", \"addr:city\": \"美祢市\", \"addr:postcode\": \"7540122\", \"addr:province\": \"山口県\", \"addr:quarter\": \"美東町真名\", \"name\": \"セブンイレブン　美祢十文字店\", \"shop\": \"supermarket\"}",
+      "flags": "コンビニを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "コンビニのブランドを示唆する名称だが別のshopタグが付いている。名称だけでは業態を決めず、支店・公式店舗資料との照合まで原本分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        131.3277265,
+        34.1679318
+      ]
+    },
+    {
+      "id": "osm-node-8324024714",
+      "original_name": "徳山病院",
+      "current_name": "徳山病院",
+      "original_category": "clinic",
+      "current_category": "clinic",
+      "source_id": "node/8324024714",
+      "raw_tags": "{\"addr:city\": \"周南市\", \"addr:neighbourhood\": \"5-14\", \"addr:province\": \"山口県\", \"addr:quarter\": \"南浦山町\", \"amenity\": \"clinic\", \"healthcare\": \"clinic\", \"name\": \"徳山病院\", \"operator\": \"医療法人 周友会\"}",
+      "flags": "診療所分類と病院という名称の不一致",
+      "status": "pending",
+      "reason": "OSMのdoctors/doctor分類と病院という名称が不一致。名称だけでは施設種別を決めず、現行公式資料との個別照合まで診療所分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        131.7881068,
+        34.0696628
+      ]
+    },
+    {
+      "id": "osm-way-1069977638",
+      "original_name": "山口銀行 丸久川西店",
+      "current_name": "山口銀行 丸久川西店",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "way/1069977638",
+      "raw_tags": "{\"building\": \"yes\", \"name\": \"山口銀行 丸久川西店\", \"shop\": \"supermarket\"}",
+      "flags": "スーパー分類と館・テナントの名称が混在する可能性",
+      "status": "pending",
+      "reason": "スーパーのタグと、館内テナント等を指す可能性のある名称が混在。対象要素の範囲・正式店舗名を未照合のため、名称だけで銀行・家電店へ変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        132.1766462,
+        34.1579977
+      ]
+    },
+    {
+      "id": "osm-way-1120637425",
+      "original_name": "ドラッグストアモリ 宇部沖ノ旦店",
+      "current_name": "ドラッグストアモリ 宇部沖ノ旦店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/1120637425",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"healthcare\": \"pharmacy\", \"layer\": \"1\", \"name\": \"ドラッグストアモリ 宇部沖ノ旦店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.2277601,
+        33.9951484
+      ]
+    },
+    {
+      "id": "osm-way-1121040363",
+      "original_name": "ウォンツ 宇部厚南店",
+      "current_name": "ウォンツ 宇部厚南店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/1121040363",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"ウォンツ 宇部厚南店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.2196059,
+        33.9942868
+      ]
+    },
+    {
+      "id": "osm-way-202664935",
+      "original_name": "ドラッグセガミ",
+      "current_name": "ドラッグセガミ",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/202664935",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"dispensing\": \"no\", \"name\": \"ドラッグセガミ\", \"source\": \"GSI/KIBAN 2500; NARO\", \"source_ref\": \"http://wiki.osm.org/wiki/GSI_KIBAN\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.451174,
+        34.164975
+      ]
+    },
+    {
+      "id": "osm-way-297142744",
+      "original_name": "イオンモール",
+      "current_name": "イオンモール",
+      "original_category": "mall",
+      "current_category": "mall",
+      "source_id": "way/297142744",
+      "raw_tags": "{\"addr:block_number\": \"3\", \"addr:city\": \"防府市\", \"addr:country\": \"JP\", \"addr:neighbourhood\": \"1\", \"addr:postcode\": \"747-0802\", \"addr:province\": \"山口県\", \"addr:quarter\": \"中央町\", \"branch\": \"防府\", \"branch:en\": \"Hofu\", \"brand\": \"イオン\", \"brand:en\": \"AEON\", \"building\": \"retail\", \"name\": \"イオン防府店\", \"name:en\": \"AEON Mall\", \"name:ja\": \"イオンモール\", \"phone\": \"+81 835 24 5721\", \"shop\": \"mall\", \"source\": \"GSI/KIBAN 2500;NARO\", \"source_ref\": \"http://wiki.osm.org/wiki/GSI_KIBAN\", \"website\": \"https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%98%B2%E5%BA%9C%E5%BA%97/\", \"wikidata\": \"Q11286329\", \"wikipedia\": \"ja:イオン防府店\"}",
+      "flags": "nameとname:jaが異なる（翻訳・別名か誤記かは未確定）",
+      "status": "pending",
+      "reason": "name=イオン防府店、name:ja=イオンモールが混在。館名・個店名の対象範囲を未照合。登録の日本語名を維持し、現地のモール種別を断定しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.5695829,
+        34.0523805
+      ]
+    },
+    {
+      "id": "osm-way-305489114",
+      "original_name": "ABC Mart",
+      "current_name": "ABC Mart",
+      "original_category": "mall",
+      "current_category": "mall",
+      "source_id": "way/305489114",
+      "raw_tags": "{\"branch\": \"下松店\", \"building\": \"shop\", \"name\": \"サンリブ\", \"name:ja\": \"ABC Mart\", \"name:vi\": \"Siêu thị ABC\", \"shop\": \"department_store\"}",
+      "flags": "nameとname:jaが異なる（翻訳・別名か誤記かは未確定）",
+      "status": "pending",
+      "reason": "name=サンリブ、name:ja=ABC Mart、branch=下松店が混在。既存サンリブ下松から代表点間11.6mだが、建物と靴店テナントのどちらを指すか不明。既存IDの形状を優先し、両IDを維持して保留。",
+      "evidence_url": "",
+      "source_point": [
+        131.865503,
+        34.0305697
+      ]
+    },
+    {
+      "id": "osm-way-353411446",
+      "original_name": "ウォンツ 宇部新川店",
+      "current_name": "ウォンツ 宇部新川店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/353411446",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"branch\": \"宇部新川店\", \"building\": \"shop\", \"healthcare\": \"pharmacy\", \"name\": \"ウォンツ 宇部新川店\", \"source\": \"Bing\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.2426898,
+        33.9601824
+      ]
+    },
+    {
+      "id": "osm-way-405833069",
+      "original_name": "コスモス",
+      "current_name": "コスモス",
+      "original_category": "supermarket",
+      "current_category": "supermarket",
+      "source_id": "way/405833069",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"retail\", \"name\": \"コスモス\", \"shop\": \"supermarket\"}",
+      "flags": "OSM分類タグが複数の分類を示す;ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "shop=supermarketとamenity=pharmacyが併記され、名称はコスモスのみ。支店と対象要素を特定した公式店舗照合を行っていないため、取込優先順によるスーパー分類を維持。",
+      "evidence_url": "",
+      "source_point": [
+        131.5074264,
+        34.1535742
+      ]
+    },
+    {
+      "id": "osm-way-405983078",
+      "original_name": "ウォンツ 山口熊野店",
+      "current_name": "ウォンツ 山口熊野店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/405983078",
+      "raw_tags": "{\"addr:block_number\": \"20\", \"addr:city\": \"山口市\", \"addr:neighbourhood\": \"熊野町5\", \"addr:postcode\": \"753-0077\", \"addr:province\": \"山口県\", \"amenity\": \"pharmacy\", \"building\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"ウォンツ 山口熊野店\", \"name:en\": \"Wants Yamaguchi Kumano\", \"name:ja\": \"ウォンツ 山口熊野店\", \"opening_hours\": \"Mo-Su 09:00-22:00\", \"phone\": \"+81 83 941 5761\", \"service\": \"retail\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.4591261,
+        34.1684946
+      ]
+    },
+    {
+      "id": "osm-way-425596518",
+      "original_name": "クスリ岩崎チェーン　山口北店",
+      "current_name": "クスリ岩崎チェーン　山口北店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/425596518",
+      "raw_tags": "{\"addr:city\": \"山口市\", \"addr:housenumber\": \"2310\", \"addr:neighbourhood\": \"2\", \"addr:postcode\": \"7530021\", \"addr:province\": \"山口県\", \"addr:quarter\": \"桜畠\", \"amenity\": \"pharmacy\", \"building\": \"yes\", \"name\": \"クスリ岩崎チェーン　山口北店\", \"opening_hours\": \"09:30-21:00\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.5018074,
+        34.195341
+      ]
+    },
+    {
+      "id": "osm-way-425751686",
+      "original_name": "クスリ岩崎チェーン田布施店",
+      "current_name": "クスリ岩崎チェーン田布施店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/425751686",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"name\": \"クスリ岩崎チェーン田布施店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        132.0446345,
+        33.9509386
+      ]
+    },
+    {
+      "id": "osm-way-465881161",
+      "original_name": "ウォンツ山口大内御堀店",
+      "current_name": "ウォンツ山口大内御堀店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/465881161",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"name\": \"ウォンツ山口大内御堀店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.4840626,
+        34.1657535
+      ]
+    },
+    {
+      "id": "osm-way-466029165",
+      "original_name": "ドラッグコスモス",
+      "current_name": "ドラッグコスモス",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/466029165",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"name\": \"ドラッグコスモス\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        131.4616444,
+        34.1476159
+      ]
+    },
+    {
+      "id": "osm-way-486918961",
+      "original_name": "クスリ岩崎チェーン 下関武久店",
+      "current_name": "クスリ岩崎チェーン 下関武久店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/486918961",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"クスリ岩崎チェーン 下関武久店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        130.9218654,
+        33.9776342
+      ]
+    },
+    {
+      "id": "osm-way-571604485",
+      "original_name": "サンキュードラッグ 上田中町薬局",
+      "current_name": "サンキュードラッグ 上田中町薬局",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/571604485",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"building\": \"yes\", \"dispensing\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"サンキュードラッグ 上田中町薬局\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        130.9404402,
+        33.9622205
+      ]
+    },
+    {
+      "id": "osm-way-579745077",
+      "original_name": "Ｒｙｕ接骨院",
+      "current_name": "Ｒｙｕ接骨院",
+      "original_category": "clinic",
+      "current_category": "reference",
+      "source_id": "way/579745077",
+      "raw_tags": "{\"amenity\": \"doctors\", \"building\": \"yes\", \"healthcare\": \"doctor\", \"name\": \"Ｒｙｕ接骨院\"}",
+      "flags": "人の医科・歯科の分類と施設名が不整合の可能性",
+      "status": "pending",
+      "reason": "OSMの接骨院という名称と診療所の分類が食い違うため、分類を保留しています。柳井付近のこの記録と、光市にある同名施設の公式案内との同一性は確認できていません。別の施設の情報では補わず、参考記録として残しています。",
+      "evidence_url": "",
+      "source_point": [
+        131.9275412,
+        33.9807256
+      ]
+    },
+    {
+      "id": "osm-way-600969423",
+      "original_name": "サンキュードラッグ",
+      "current_name": "サンキュードラッグ",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/600969423",
+      "raw_tags": "{\"amenity\": \"pharmacy\", \"branch\": \"新椋野薬局\", \"building\": \"yes\", \"dispensing\": \"yes\", \"healthcare\": \"pharmacy\", \"name\": \"サンキュードラッグ\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        130.9452301,
+        33.9850029
+      ]
+    },
+    {
+      "id": "osm-way-613971823",
+      "original_name": "ココカラファイン 下関生野店",
+      "current_name": "ココカラファイン 下関生野店",
+      "original_category": "pharmacy",
+      "current_category": "pharmacy",
+      "source_id": "way/613971823",
+      "raw_tags": "{\"addr:city\": \"下関市\", \"addr:housenumber\": \"29-5\", \"addr:neighbourhood\": \"2丁目\", \"addr:postcode\": \"7510832\", \"addr:province\": \"山口県\", \"addr:quarter\": \"生野町\", \"amenity\": \"pharmacy\", \"building\": \"yes\", \"dispensing\": \"no\", \"healthcare\": \"pharmacy\", \"name\": \"ココカラファイン 下関生野店\"}",
+      "flags": "ドラッグストアを示唆する名称だが店舗種別の確認が必要",
+      "status": "pending",
+      "reason": "ドラッグストアを示唆する名称だが、店舗と調剤薬局の併設関係・対象OSM要素の範囲を公式店舗資料で個別照合していない。チェーン名だけで分類を変更しない。",
+      "evidence_url": "",
+      "source_point": [
+        130.9334958,
+        33.9850856
+      ]
+    }
+  ]
+}

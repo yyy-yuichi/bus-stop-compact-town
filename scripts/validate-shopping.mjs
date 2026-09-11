@@ -12,7 +12,7 @@ for(const f of data.features) {
  if(p.category==='reference'&&!['out_of_scope','pending'].includes(p.classification_review?.status)) throw Error(`Missing reference reason: ${f.id}`);
  if(p.classification_review) {
   const r=p.classification_review;
-  if(!['corrected','out_of_scope','pending'].includes(r.status)||!r.note||!r.checked_at||!r.original_category) throw Error(`Invalid classification review: ${f.id}`);
+  if(!['corrected','out_of_scope','pending','retained'].includes(r.status)||!r.note||!r.checked_at||!r.original_category) throw Error(`Invalid classification review: ${f.id}`);
   if(r.status!=='pending'&&!r.evidence_url) throw Error(`Missing classification evidence: ${f.id}`);
   if(r.evidence_url) { const url=new URL(r.evidence_url); if(url.protocol!=='https:'||url.username||url.password) throw Error(`Unsafe evidence URL: ${f.id}`); }
  }

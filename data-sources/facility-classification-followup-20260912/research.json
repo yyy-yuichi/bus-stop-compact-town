@@ -1,0 +1,805 @@
+{
+  "baseline_commit": "a5cfb99",
+  "scope": "前回の分類・名称保留35レコードのみ。重複統合、位置移動、徒歩圏更新なし。",
+  "checked_at": "2026-09-12",
+  "checks": [
+    {
+      "id": "osm-node-10253616807",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "公式店舗案内で西宇部店の小売店舗としての営業案内を確認し、ドラッグストアへ修正しました。公式地図の代表点とも近接します。調剤窓口・入口の位置を確認した記録ではありません。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002894",
+      "official_point": [
+        131.219535,
+        34.003438
+      ],
+      "original_name": "クスリ岩崎チェーン 西宇部店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "node/10253616807",
+      "source_point": [
+        131.2196387,
+        34.0034813
+      ],
+      "representative_point_distance_m": 10.7
+    },
+    {
+      "id": "osm-node-12376670726",
+      "category": "clinic",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "公式の現在名は「おかもと腎クリニック」、所在地は周南市二番町です。原本の「おかもと内閣」は誤記候補ですが、旧位置との移転前後の対応が未確定のため、名称・位置を変更していません。",
+      "evidence_url": "https://okamoto-kidney.com/",
+      "next_check": "移転前医院の正式住所と原本位置を照合する。",
+      "original_name": "おかもと内閣",
+      "original_category": "clinic",
+      "before_category": "clinic",
+      "source_id": "node/12376670726",
+      "source_point": [
+        131.8022029,
+        34.0543782
+      ],
+      "supporting_urls": [
+        "https://ssc12.doctorqube.com/okamoto-kidney/",
+        "https://www.shinshunan.co.jp/news/local/shunan/202603/046169.html"
+      ],
+      "evidence_note": "公式HPと予約サイトは二番町を案内するが地番表記にも差がある。旧名称と原本位置への対応は未確定。"
+    },
+    {
+      "id": "osm-node-12487748792",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "コスモス東岐波店の公式案内で医薬品・化粧品・日用品・食品の取扱いを確認し、スーパーからドラッグストアへ修正しました。公式店舗の住所・代表点を照合しましたが、入口位置は未確認です。",
+      "evidence_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95020.html",
+      "official_point": [
+        131.343572,
+        33.986898
+      ],
+      "original_name": "コスモス東岐波店",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/12487748792",
+      "source_point": [
+        131.343201,
+        33.9871936
+      ],
+      "representative_point_distance_m": 47.4,
+      "supporting_urls": [
+        "https://www.cosmospc.co.jp/shop/shop_list.json"
+      ],
+      "official_store": {
+        "name": "東岐波",
+        "address": "山口県宇部市東岐波２１７１",
+        "buys": {
+          "medicine": true,
+          "cosmetics": true,
+          "daily_goods": true,
+          "food": true,
+          "alcohol": true,
+          "cigaret": true,
+          "pharmacy": false
+        }
+      }
+    },
+    {
+      "id": "osm-node-12919501779",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "下関元町店が照合候補です。県の店舗一覧には元町1-20のローソンが掲載されていますが、支店名のない原本位置と公式店舗地図の対応を確定できていません。スーパー分類を暫定維持しています。",
+      "evidence_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/225611.pdf",
+      "next_check": "ローソン公式店舗検索で原本位置に対応する支店・店舗種別を確認する。",
+      "original_name": "ローソン",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/12919501779",
+      "source_point": [
+        130.9246955,
+        33.9663643
+      ]
+    },
+    {
+      "id": "osm-node-12919548570",
+      "category": "convenience",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "ローソン公式の下関新地町店の住所・地図代表点と照合し、スーパーからコンビニへ修正しました。原本の名称・位置は維持し、入口位置は未確認です。",
+      "evidence_url": "https://crew.lawson.co.jp/jobfind-pc/job/All/146082/map",
+      "official_point": [
+        130.92169583333333,
+        33.95677111111111
+      ],
+      "original_name": "ローソン",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/12919548570",
+      "source_point": [
+        130.9217037,
+        33.9566825
+      ],
+      "representative_point_distance_m": 9.9
+    },
+    {
+      "id": "osm-node-1423654564",
+      "category": "clinic",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "町の公式再編計画で、橘病院は2020年に診療所「橘医院」となり、2024年に無床化したことを確認しました。診療所分類を維持し、名称を「周防大島町立橘医院」へ修正しました。入口位置は未確認です。",
+      "evidence_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/20072.pdf",
+      "name": "周防大島町立橘医院",
+      "original_name": "周防大島町立橘病院",
+      "original_category": "clinic",
+      "before_category": "clinic",
+      "source_id": "node/1423654564",
+      "source_point": [
+        132.280414,
+        33.897744
+      ],
+      "supporting_urls": [
+        "https://www.town.suo-oshima.lg.jp/soshiki/2/1570.html",
+        "https://www.pref.yamaguchi-nurse-net.jp/hospitals/15"
+      ],
+      "official_address": "周防大島町大字西安下庄3920-17"
+    },
+    {
+      "id": "osm-node-2253200282",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "公式の湯田温泉駅前店の所在地・地図代表点と原本位置を照合し、ドラッグストアへ修正しました。支店名のない原本名称は維持しています。入口位置・調剤窓口は未確認です。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002875",
+      "official_point": [
+        131.4599886,
+        34.1604744
+      ],
+      "original_name": "クスリ岩崎チェーン",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "node/2253200282",
+      "source_point": [
+        131.460032,
+        34.1604541
+      ],
+      "representative_point_distance_m": 4.6
+    },
+    {
+      "id": "osm-node-3798156478",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "いちやショッピングセンターの旧施設情報は見つかりましたが、現在の営業主体・業態を確認できる公式施設案内が得られていません。館全体と食品店の範囲も未確定のため、名称・分類を保留しています。",
+      "evidence_url": "https://www.city.shunan.lg.jp/uploaded/attachment/21980.pdf",
+      "next_check": "現管理者の案内・現況資料で閉店の有無と施設範囲を確認する。",
+      "original_name": "いちやSC",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/3798156478",
+      "source_point": [
+        131.7100468,
+        34.0789212
+      ],
+      "supporting_urls": [
+        "https://www.tokuyamap.com/menyanyaziten/",
+        "https://map.yahoo.co.jp/v3/place/1C4YqwMqR4w"
+      ],
+      "evidence_note": "2024年の地域記事は元ショッピングセンターと記載。現行公式施設案内は未確定。"
+    },
+    {
+      "id": "osm-node-3951221858",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "テナントの公式案内にイオン柳井新庄SC内という所在地があります。商業施設の存在は確認できますが、原本の点が館全体とマックスバリュのどちらを表すか未確定のため、分類を保留しています。",
+      "evidence_url": "https://will-sprice.com/shop/",
+      "next_check": "館の配置図と元の点の対象範囲を照合する。",
+      "original_name": "イオン柳井新庄SC",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/3951221858",
+      "source_point": [
+        132.0960452,
+        33.9736498
+      ]
+    },
+    {
+      "id": "osm-node-4021864894",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "フジの公式変更計画でイオン下松山田ショッピングセンターと山田156-1の所在地を確認しました。複数店舗を含む施設のため、原本の点が食品店か館全体かを確定せず、分類を保留しています。",
+      "evidence_url": "https://www.the-fuji.com/company/docs/20250307_release.pdf",
+      "next_check": "公式配置図と原本の点の対象範囲を照合する。",
+      "original_name": "イオン下松山田SC",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/4021864894",
+      "source_point": [
+        131.903361,
+        34.0322174
+      ]
+    },
+    {
+      "id": "osm-node-4355096689",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "光市浅江のベスト電器が名称の照合候補ですが、現行の公式店舗案内でこの原本位置・名称との対応を確認できませんでした。「Best」だけで家電店と断定せず、分類を保留しています。",
+      "evidence_url": "https://www.ekiten.jp/shop_2366931/",
+      "next_check": "旧店舗の公式所在地・改称閉店資料と原本位置を照合する。",
+      "original_name": "Best",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/4355096689",
+      "source_point": [
+        131.9347015,
+        33.9699442
+      ],
+      "evidence_kind": "補助情報のみ・未確定",
+      "searched_queries": [
+        "ベスト電器 光店 公式",
+        "\"ベスト電器光店\" site:bestdenki.ne.jp"
+      ]
+    },
+    {
+      "id": "osm-node-4466387201",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "コスモス光店の公式住所・地図代表点と照合し、ドラッグストアへ修正しました。公式店舗データの調剤取扱いはなしで、医薬品・化粧品・日用品・食品の小売店舗です。入口位置は未確認です。",
+      "evidence_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92357.html",
+      "official_point": [
+        131.930336,
+        33.978712
+      ],
+      "original_name": "コスモス",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "node/4466387201",
+      "source_point": [
+        131.9302527,
+        33.9787661
+      ],
+      "representative_point_distance_m": 9.8,
+      "supporting_urls": [
+        "https://www.cosmospc.co.jp/shop/shop_list.json"
+      ],
+      "official_store": {
+        "name": "光",
+        "address": "山口県光市木園１丁目５−３８",
+        "buys": {
+          "medicine": true,
+          "cosmetics": true,
+          "daily_goods": true,
+          "food": true,
+          "alcohol": true,
+          "cigaret": true,
+          "pharmacy": false
+        }
+      }
+    },
+    {
+      "id": "osm-node-5463868168",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "コスモス深川店の公式住所・地図代表点と照合し、商業施設からドラッグストアへ修正しました。公式店舗データの医薬品・化粧品・日用品・食品の取扱いを確認しました。入口位置は未確認です。",
+      "evidence_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93385.html",
+      "official_point": [
+        131.174187,
+        34.369476
+      ],
+      "original_name": "ディスカウントドラッグ コスモス",
+      "original_category": "mall",
+      "before_category": "mall",
+      "source_id": "node/5463868168",
+      "source_point": [
+        131.174276,
+        34.3695271
+      ],
+      "representative_point_distance_m": 10.0,
+      "supporting_urls": [
+        "https://www.cosmospc.co.jp/shop/shop_list.json"
+      ],
+      "official_store": {
+        "name": "深川",
+        "address": "山口県長門市東深川２３０６−４",
+        "buys": {
+          "medicine": true,
+          "cosmetics": true,
+          "daily_goods": true,
+          "food": true,
+          "alcohol": true,
+          "cigaret": true,
+          "pharmacy": false
+        }
+      }
+    },
+    {
+      "id": "osm-node-5712889433",
+      "category": "pharmacy",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "公式イオン長府店と支店名・地図代表点は対応します。ただし原本には調剤ありの記載があり、公式ページの調剤受付欄は空欄です。店舗と調剤窓口の対象範囲を確定せず、薬局分類を保留しています。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002862",
+      "official_point": [
+        130.989925,
+        33.985763
+      ],
+      "next_check": "調剤窓口の有無・旧営業情報と対象OSM要素の範囲を確認する。",
+      "original_name": "クスリ岩崎チェーン",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "node/5712889433",
+      "source_point": [
+        130.9897862,
+        33.985596
+      ],
+      "representative_point_distance_m": 22.6
+    },
+    {
+      "id": "osm-node-6011703186",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "ウォンツ徳佐店の公式住所・地図代表点と医薬品・食品・化粧品・日用品の取扱いを確認し、スーパーからドラッグストアへ修正しました。入口位置は未確認です。",
+      "evidence_url": "https://shop.tsuruha-g.com/3774",
+      "official_point": [
+        131.7185638079866,
+        34.39428759253622
+      ],
+      "original_name": "ウォンツ徳佐店",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/6011703186",
+      "source_point": [
+        131.7186185,
+        34.3943131
+      ],
+      "representative_point_distance_m": 5.8
+    },
+    {
+      "id": "osm-node-7925514879",
+      "category": "convenience",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "セブン-イレブン公式の美祢十文字店の住所（美東町真名3162番2）と店舗案内を原本の町名・番地と照合し、スーパーからコンビニへ修正しました。入口位置は未確認です。",
+      "evidence_url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/All/593978/",
+      "original_name": "セブンイレブン　美祢十文字店",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "node/7925514879",
+      "source_point": [
+        131.3277265,
+        34.1679318
+      ]
+    },
+    {
+      "id": "osm-node-8324024714",
+      "category": "hospital",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "徳山病院の公式案内で運営法人、南浦山町5番14号の所在地、一般病床78床を確認しました。原本の法人・住所と一致するため、診療所から病院へ修正しました。入口位置は未確認です。",
+      "evidence_url": "https://tokuyama-hp.jp/about/",
+      "original_name": "徳山病院",
+      "original_category": "clinic",
+      "before_category": "clinic",
+      "source_id": "node/8324024714",
+      "source_point": [
+        131.7881068,
+        34.0696628
+      ]
+    },
+    {
+      "id": "osm-way-1069977638",
+      "category": "supermarket",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "丸久の公式店案内と山口銀行の公式ATM案内が同じ川西2丁目7-16を示します。建物を表す原本名称にATM名が混在しており、スーパー建物かATM設備かの範囲を確定せず保留しています。",
+      "evidence_url": "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html",
+      "next_check": "建物形状または配置図でスーパー建物とATM設備の範囲を確認する。",
+      "original_name": "山口銀行 丸久川西店",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "way/1069977638",
+      "source_point": [
+        132.1766462,
+        34.1579977
+      ],
+      "supporting_urls": [
+        "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%b7%9d%e8%a5%bf%e5%ba%97/",
+        "https://www.yamaguchibank.co.jp/outline/store/map/iwakuni_11.html"
+      ],
+      "official_address": "岩国市川西2丁目7-16",
+      "evidence_note": "スーパーとATMが同住所に存在。地図iframeの表示中心は建物形状の証拠に使わない。"
+    },
+    {
+      "id": "osm-way-1120637425",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "ドラッグストアモリ宇部沖ノ旦店の公式案内で店舗名、沖ノ旦837番2の所在地、医薬品・化粧品・雑貨・食品の取扱いを確認し、ドラッグストアへ修正しました。入口位置・建物範囲は未確認です。",
+      "evidence_url": "https://www.doramori.co.jp/store/1693.html/",
+      "original_name": "ドラッグストアモリ 宇部沖ノ旦店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/1120637425",
+      "source_point": [
+        131.2277601,
+        33.9951484
+      ]
+    },
+    {
+      "id": "osm-way-1121040363",
+      "category": "reference",
+      "status": "out_of_scope",
+      "checked_at": "2026-09-12",
+      "note": "ウォンツ公式が宇部厚南店の移転による閉店を2025年4月11日付で案内しています。旧位置を現店舗として表示しないよう参考記録に変更しました。ID・名称・位置は維持し、移転先へは置き換えていません。",
+      "evidence_url": "https://www.wants.co.jp/news/close_3666/",
+      "original_name": "ウォンツ 宇部厚南店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/1121040363",
+      "source_point": [
+        131.2196059,
+        33.9942868
+      ],
+      "supporting_urls": [
+        "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/005/357/202404minkan.pdf",
+        "https://pkg.navitime.co.jp/kose-shoplist/spot/detail?code=P00C111"
+      ],
+      "evidence_note": "宇部市の2024年施設一覧とメーカーの販売店資料が同住所・電話0836-45-3922を示す。メーカー資料の代表点と原本は約6m。調剤資料にある厚南中央1-11-1とは同一視しない。閉店の根拠はウォンツ自身の移転案内。",
+      "official_historical_address": "宇部市厚南中央一丁目7番48号",
+      "supplier_point": [
+        131.219548,
+        33.994267
+      ]
+    },
+    {
+      "id": "osm-way-202664935",
+      "category": "pharmacy",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "山口湯田店の閉店情報が照合候補として見つかりましたが、支店名のない原本と公式の旧店舗・閉店資料との対応を確定できませんでした。店舗名や分類を推測で変更せず保留しています。",
+      "evidence_url": "https://kaiten-heiten.com/drug-segami-yamaguchiyuta/",
+      "next_check": "ドラッグセガミ山口湯田店の公式旧住所・閉店情報と原本位置を照合する。",
+      "original_name": "ドラッグセガミ",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/202664935",
+      "source_point": [
+        131.451174,
+        34.164975
+      ],
+      "evidence_kind": "補助情報のみ・未確定",
+      "searched_queries": [
+        "ドラッグセガミ 山口 湯田",
+        "ドラッグセガミ山口湯田店 閉店"
+      ]
+    },
+    {
+      "id": "osm-way-297142744",
+      "category": "mall",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "原本の住所・電話番号・公式URLと、イオン公式の「イオン防府店」および館内専門店案内が一致します。名称を「イオン防府店」に修正し、商業施設分類を維持しました。建物範囲・入口位置は未確認です。",
+      "evidence_url": "https://www.aeon.com/store/イオン/イオン防府店/shop_info/specialty_store/",
+      "name": "イオン防府店",
+      "original_name": "イオンモール",
+      "original_category": "mall",
+      "before_category": "mall",
+      "source_id": "way/297142744",
+      "source_point": [
+        131.5695829,
+        34.0523805
+      ]
+    },
+    {
+      "id": "osm-way-305489114",
+      "category": "mall",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "サンリブ公式で下松店と所在地を確認しましたが、原本にはサンリブとABC Martの名称が混在します。保存原本だけでは建物とテナントの範囲を特定できず、名称・分類・両IDを維持しています。",
+      "evidence_url": "https://www.sunlive.co.jp/shop/サンリブ下松/",
+      "next_check": "ABC-MARTの区画・階と元建物形状を照合する。",
+      "original_name": "ABC Mart",
+      "original_category": "mall",
+      "before_category": "mall",
+      "source_id": "way/305489114",
+      "source_point": [
+        131.865503,
+        34.0305697
+      ]
+    },
+    {
+      "id": "osm-way-353411446",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "ウォンツ宇部新川店の公式住所・地図代表点と医薬品・食品・化粧品・日用品の取扱いを確認し、ドラッグストアへ修正しました。入口位置・建物範囲は未確認です。",
+      "evidence_url": "https://shop.tsuruha-g.com/3663",
+      "official_point": [
+        131.24269889065798,
+        33.96013706271693
+      ],
+      "original_name": "ウォンツ 宇部新川店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/353411446",
+      "source_point": [
+        131.2426898,
+        33.9601824
+      ],
+      "representative_point_distance_m": 5.1
+    },
+    {
+      "id": "osm-way-405833069",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "コスモス大内店の公式住所・地図代表点と照合しました。公式店舗データで医薬品・化粧品・日用品・食品の取扱いと調剤なしを確認し、競合する原本タグのスーパー分類をドラッグストアへ修正しました。入口位置・建物範囲は未確認です。",
+      "evidence_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91404.html",
+      "official_point": [
+        131.507393,
+        34.153542
+      ],
+      "original_name": "コスモス",
+      "original_category": "supermarket",
+      "before_category": "supermarket",
+      "source_id": "way/405833069",
+      "source_point": [
+        131.5074264,
+        34.1535742
+      ],
+      "representative_point_distance_m": 4.7,
+      "supporting_urls": [
+        "https://www.cosmospc.co.jp/shop/shop_list.json"
+      ],
+      "official_store": {
+        "name": "大内",
+        "address": "山口県山口市大内矢田南４丁目８−７",
+        "buys": {
+          "medicine": true,
+          "cosmetics": true,
+          "daily_goods": true,
+          "food": true,
+          "alcohol": true,
+          "cigaret": true,
+          "pharmacy": false
+        }
+      }
+    },
+    {
+      "id": "osm-way-405983078",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "ウォンツ山口熊野店の公式住所・電話番号が原本と一致し、公式地図代表点と取扱商品も照合しました。ドラッグストアへ修正しました。入口位置・建物範囲は未確認です。",
+      "evidence_url": "https://shop.tsuruha-g.com/3938",
+      "official_point": [
+        131.4591178,
+        34.1685442
+      ],
+      "original_name": "ウォンツ 山口熊野店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/405983078",
+      "source_point": [
+        131.4591261,
+        34.1684946
+      ],
+      "representative_point_distance_m": 5.6
+    },
+    {
+      "id": "osm-way-425596518",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "クスリ岩崎チェーン山口北店の公式店舗名・所在地・地図代表点と照合し、ドラッグストアへ修正しました。入口位置・建物範囲・調剤窓口は未確認です。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002846",
+      "official_point": [
+        131.5018261,
+        34.1953354
+      ],
+      "original_name": "クスリ岩崎チェーン　山口北店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/425596518",
+      "source_point": [
+        131.5018074,
+        34.195341
+      ],
+      "representative_point_distance_m": 1.8
+    },
+    {
+      "id": "osm-way-425751686",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "クスリ岩崎チェーン田布施店の公式店舗名・所在地・地図代表点と照合し、ドラッグストアへ修正しました。入口位置・建物範囲・調剤窓口は未確認です。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002842",
+      "official_point": [
+        132.04465,
+        33.9509
+      ],
+      "original_name": "クスリ岩崎チェーン田布施店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/425751686",
+      "source_point": [
+        132.0446345,
+        33.9509386
+      ],
+      "representative_point_distance_m": 4.5
+    },
+    {
+      "id": "osm-way-465881161",
+      "category": "reference",
+      "status": "out_of_scope",
+      "checked_at": "2026-09-12",
+      "note": "ウォンツ公式が山口大内店の閉店を2025年12月31日付で案内しています。大内御堀の店舗資料と照合し、旧位置を現店舗として表示しないよう参考記録に変更しました。ID・名称・位置は維持しています。",
+      "evidence_url": "https://www.wants.co.jp/news/close_3695/",
+      "original_name": "ウォンツ山口大内御堀店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/465881161",
+      "source_point": [
+        131.4840626,
+        34.1657535
+      ],
+      "supporting_urls": [
+        "https://www.mapion.co.jp/phonebook/M02021/35203/23530184826/",
+        "https://www.re-style.env.go.jp/img/3r-campaign/2025/pdf/tsuruha_drag.pdf"
+      ],
+      "official_address": "山口市大内御堀6丁目1-2",
+      "supplemental_point": [
+        131.48402909,
+        34.16572589
+      ],
+      "evidence_note": "補助地図の原本同名店舗は公式旧店舗資料と住所・電話083-933-0811が一致し、代表点の差は約4m。公式閉店告知と対応。"
+    },
+    {
+      "id": "osm-way-466029165",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "コスモス平川店の公式住所・地図代表点と照合し、ドラッグストアへ修正しました。公式店舗データで医薬品・化粧品・日用品・食品の取扱いと調剤なしを確認しました。入口位置・建物範囲は未確認です。",
+      "evidence_url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96171.html",
+      "official_point": [
+        131.461839,
+        34.147286
+      ],
+      "original_name": "ドラッグコスモス",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/466029165",
+      "source_point": [
+        131.4616444,
+        34.1476159
+      ],
+      "representative_point_distance_m": 40.8,
+      "supporting_urls": [
+        "https://www.cosmospc.co.jp/shop/shop_list.json"
+      ],
+      "official_store": {
+        "name": "平川",
+        "address": "山口県山口市平井１２１６−１",
+        "buys": {
+          "medicine": true,
+          "cosmetics": true,
+          "daily_goods": true,
+          "food": true,
+          "alcohol": true,
+          "cigaret": true,
+          "pharmacy": false
+        }
+      }
+    },
+    {
+      "id": "osm-way-486918961",
+      "category": "drugstore",
+      "status": "corrected",
+      "checked_at": "2026-09-12",
+      "note": "クスリ岩崎チェーン下関武久店の公式店舗名・所在地・地図代表点と照合し、ドラッグストアへ修正しました。入口位置・建物範囲・調剤窓口は未確認です。",
+      "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002870",
+      "official_point": [
+        130.921838,
+        33.977633
+      ],
+      "original_name": "クスリ岩崎チェーン 下関武久店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/486918961",
+      "source_point": [
+        130.9218654,
+        33.9776342
+      ],
+      "representative_point_distance_m": 2.5
+    },
+    {
+      "id": "osm-way-571604485",
+      "category": "pharmacy",
+      "status": "retained",
+      "checked_at": "2026-09-12",
+      "note": "サンキュードラッグ公式は上田中町薬局にドラッグストアと調剤の両窓口を案内しています。原本が薬局名と薬局分類を持つため、薬局分類を維持します。併設店舗全体への変更や別レコードとの統合はしていません。",
+      "evidence_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-220.html",
+      "original_name": "サンキュードラッグ 上田中町薬局",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/571604485",
+      "source_point": [
+        130.9404402,
+        33.9622205
+      ],
+      "supporting_urls": [
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1236&kikanKbn=5&prefCd=35"
+      ],
+      "official_address": "下関市上田中町2-9-3"
+    },
+    {
+      "id": "osm-way-579745077",
+      "category": "reference",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "光市のRyu接骨院公式は浅江1723-1を案内しています。原本は光市付近ですが、同住所を示す補助地図の代表点とは約210m離れ、移転・位置誤差の対応が未確定です。参考記録を維持しています。",
+      "evidence_url": "https://www.ryusekkotsuin.com/",
+      "next_check": "公式の旧位置・現位置と元要素を照合する。前回の「柳井付近」という記述は修正。",
+      "original_name": "Ｒｙｕ接骨院",
+      "original_category": "clinic",
+      "before_category": "reference",
+      "source_id": "way/579745077",
+      "source_point": [
+        131.9275412,
+        33.9807256
+      ],
+      "supporting_urls": [
+        "https://www.mapion.co.jp/phonebook/M09024/35210/23530250523/"
+      ],
+      "supplemental_point": [
+        131.92551964,
+        33.97986718
+      ],
+      "evidence_note": "補助地図は公式と同住所だが原本代表点から約209m。公式の位置照合とは扱わない。"
+    },
+    {
+      "id": "osm-way-600969423",
+      "category": "pharmacy",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "近傍候補のサンキュードラッグ新椋野薬局は、公式案内でドラッグと調剤を併設しています。原本に支店名がなく、建物全体か調剤窓口かを確定できないため、薬局分類を保留しています。",
+      "evidence_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+      "next_check": "新椋野薬局の店舗配置と原本の建物範囲を照合する。",
+      "original_name": "サンキュードラッグ",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/600969423",
+      "source_point": [
+        130.9452301,
+        33.9850029
+      ],
+      "official_address": "下関市新椋野3-1-10",
+      "evidence_note": "地図iframeの表示中心は薬局の代表点とは断定せず、原本の店舗範囲は保留。"
+    },
+    {
+      "id": "osm-way-613971823",
+      "category": "pharmacy",
+      "status": "pending",
+      "checked_at": "2026-09-12",
+      "note": "下関生野店の過去の公的店舗一覧は確認できましたが、現行公式店舗案内との対応を確定できていません。関連する売場の閉店情報だけで本体店舗の閉店や改称を断定せず、分類を保留しています。",
+      "evidence_url": "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+      "next_check": "運営者の現行店舗案内・閉店改称資料と原本位置を照合する。",
+      "original_name": "ココカラファイン 下関生野店",
+      "original_category": "pharmacy",
+      "before_category": "pharmacy",
+      "source_id": "way/613971823",
+      "source_point": [
+        130.9334958,
+        33.9850856
+      ],
+      "official_historical_address": "下関市生野町2-29-8",
+      "evidence_kind": "過去の公的店舗一覧。現在の業態・閉店改称は未確定。"
+    }
+  ],
+  "method_note": "資料は2026-09-12に閲覧。公式地図の代表点比較は同名・支店・所在地・取扱内容との照合補助に限定し、範囲や入口を推定しない。補助資料しかない候補は保留。"
+}
