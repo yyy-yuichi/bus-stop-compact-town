@@ -2,13 +2,20 @@ import fs from 'node:fs';
 const data=JSON.parse(fs.readFileSync('public/data/shopping.geojson','utf8'));
 const ids=new Set(), sources=new Set();
 const counts={building:0,facility_area:0,representative_point:0};
-const categories={mall:0,supermarket:0,drugstore:0,convenience:0,hospital:0,clinic:0,pharmacy:0};
+const categories={mall:0,supermarket:0,drugstore:0,convenience:0,hospital:0,clinic:0,pharmacy:0,reference:0};
 for(const f of data.features) {
  const p=f.properties;
  if(!f.id||ids.has(f.id)) throw Error(`Duplicate/missing ID: ${f.id}`);
  ids.add(f.id);
  if(!(p.category in categories)) throw Error(`Unknown shopping category: ${f.id}`);
  categories[p.category]++;
+ if(p.category==='reference'&&!['out_of_scope','pending'].includes(p.classification_review?.status)) throw Error(`Missing reference reason: ${f.id}`);
+ if(p.classification_review) {
+  const r=p.classification_review;
+  if(!['corrected','out_of_scope','pending'].includes(r.status)||!r.note||!r.checked_at||!r.original_category) throw Error(`Invalid classification review: ${f.id}`);
+  if(r.status!=='pending'&&!r.evidence_url) throw Error(`Missing classification evidence: ${f.id}`);
+  if(r.evidence_url) { const url=new URL(r.evidence_url); if(url.protocol!=='https:'||url.username||url.password) throw Error(`Unsafe evidence URL: ${f.id}`); }
+ }
  if(!p.name||!p.source_timestamp||!p.source_ids?.length||p.license!=='ODbL-1.0') throw Error(`Missing provenance: ${f.id}`);
  if(p.verification_status==='osm_unverified') {
   if(p.verified_at||p.official_address||p.official_url||!p.retrieved_at) throw Error(`Unverified record presented as official: ${f.id}`);

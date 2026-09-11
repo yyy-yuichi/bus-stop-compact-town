@@ -32,10 +32,11 @@ export default function FacilityDrawer({ facility, onClose }: { facility: Shoppi
       <button ref={close} className="icon-button" onClick={onClose} aria-label="施設の詳細を閉じる"><MapIcon name="close" /></button>
     </header>
     <div className="detail-body">
-      {imported && <p className="facility-status">OpenStreetMapの登録情報です。名称・所在地・営業状況は個別に確認していません。</p>}
+      {imported && <p className="facility-status">{p.classification_review ? 'OpenStreetMapの登録情報を点検した記録です。分類の扱いは下記をご確認ください。地図上の位置・入口・現在の営業状況は未確認です。' : 'OpenStreetMapの登録情報です。名称・所在地・営業状況は個別に確認していません。'}</p>}
+      {p.classification_review && <section className="soft-note"><strong>分類の点検{p.classification_review.status === 'pending' ? '・保留' : ''}</strong><p>{p.classification_review.note}</p>{p.classification_review.evidence_url && <a href={p.classification_review.evidence_url} target="_blank" rel="noreferrer">分類の確認に用いた施設の案内 ↗</a>}<p className="helper-text">点検日：{p.classification_review.checked_at}</p></section>}
       <section className="facility-address"><h3>{imported ? '登録されている所在地' : '所在地'}</h3><p>{p.official_address || p.address || '住所の登録がありません。位置は地図で確認できます。'}</p></section>
       {(p.official_url || p.website) && <a className="primary-link" href={p.official_url || p.website} target="_blank" rel="noreferrer">{imported ? '登録されているウェブサイト' : '施設の公式サイト'} <span aria-hidden="true">↗</span></a>}
-      <p className="helper-text">{medical ? '診療内容・受付時間・処方箋の扱いは、施設へご確認ください。' : '営業時間や取扱商品は、施設へご確認ください。'}</p>
+      <p className="helper-text">{category.id === 'reference' ? '買い物・通院先の7分類には含めていない参考記録です。' : medical ? '診療内容・受付時間・処方箋の扱いは、施設へご確認ください。' : '営業時間や取扱商品は、施設へご確認ください。'}</p>
       <SharePlace place={{ kind: 'facility', id: String(facility.id) }} />
       <div className="soft-note"><strong>地図上の位置について</strong><p>{p.geometry_kind === 'representative_point' ? '施設の代表位置を表示しています。' : p.geometry_kind === 'facility_area' ? '施設の範囲を表示しています。' : '建物の形を表示しています。'}入口や、バス停から歩いて到達できることを確認した表示ではありません。</p></div>
       <details className="source-details"><summary>データの出典・確認日</summary>

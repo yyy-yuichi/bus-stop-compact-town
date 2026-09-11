@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-12",
+  "baseline_implementation_commit": "be5e421bdfea979945dbe3ddc5510ee8d07bb51a",
+  "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+  "source_timestamp": "2026-07-28T02:16:18Z",
+  "raw_elements": 1182,
+  "records": 1135,
+  "curated_preserved": 22,
+  "baseline_categories": {
+    "mall": 48,
+    "supermarket": 210,
+    "drugstore": 76,
+    "pharmacy": 56,
+    "convenience": 382,
+    "clinic": 205,
+    "hospital": 158
+  },
+  "current_categories": {
+    "mall": 48,
+    "supermarket": 210,
+    "drugstore": 78,
+    "pharmacy": 54,
+    "convenience": 382,
+    "clinic": 204,
+    "hospital": 156,
+    "reference": 3
+  },
+  "unchanged_ids_and_geometries": 1135,
+  "source_ids_unique": true,
+  "duplicate_candidates": 195,
+  "duplicate_priorities": {
+    "normal": 163,
+    "high": 32
+  },
+  "duplicate_rules": {
+    "same_category_within_75m": 46,
+    "same_name_within_1000m": 149
+  },
+  "merged_or_deleted_records": 0,
+  "classification_candidates": 44,
+  "classification_statuses": {
+    "pending": 35,
+    "corrected": 3,
+    "out_of_scope": 2,
+    "retained": 4
+  },
+  "skipped": {
+    "no_name": 45,
+    "inactive_or_private": 1,
+    "existing_source_id": 21,
+    "same_name_node_inside_curated_geometry": 2
+  },
+  "limitations": [
+    "距離は候補抽出用の代表点間距離であり、入口・歩行距離ではない。",
+    "名称はNFKC・空白除去・小文字化で比較。同名1000m以内または同分類75m以内を抽出。範囲外の重複不存在は保証しない。",
+    "分類候補はタグ矛盾と名称の手掛かりによる点検。全施設の公式確認・現在の営業確認は未実施。",
+    "既存公式照合22件は原本との完全一致を確認し、OSMタグで上書きしていない。",
+    "重複候補は変更前の1135件から抽出し、分類修正で候補が消えないよう固定した。"
+  ],
+  "sha256": {
+    "record-checks.csv": "b0fe8cd358982c1e99848e9b6aa70cbaef9674521758453b13bca2fa958cf450",
+    "duplicate-candidates.csv": "4ab920bfda81bab8ee7a88c702eb662bb4abaea06dab9e6cd7e847160284863e",
+    "classification-review.csv": "3bc3b3f5de624b20ad6b5c42ed067d02dd12ae51b82f4aea00072ae69b688bb1",
+    "reviews.json": "fe694586b344c9ad437af6a4a57395711f80cb5ec5e7daafd5b80b3c34eddc38"
+  }
+}

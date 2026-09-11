@@ -8,6 +8,7 @@ export const FACILITY_ICON_PATHS: Record<ShoppingCategory, string[]> = {
   hospital: ['M5 21V3h14v18M9 21v-5h6v5', 'M12 6v6M9 9h6'],
   clinic: ['M7 3v6a5 5 0 0 0 10 0V3M5 3h4m6 0h4', 'M12 14v2a4 4 0 0 0 8 0v-2', 'M18 11h4v3h-4Z'],
   pharmacy: ['M4 8h16v13H4V8ZM7 3h10v5H7V3Z', 'M12 11v7m-3-3.5h6'],
+  reference: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z', 'M12 11v6m0-10v1'],
 };
 
 // Only constant paths and attributes enter the Leaflet icon markup.

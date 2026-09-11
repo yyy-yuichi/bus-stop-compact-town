@@ -48,7 +48,27 @@ def inside_curated(point, feature):
     geometry = feature['geometry']
     return geometry['type'] == 'MultiPolygon' and any(in_ring(point, polygon[0]) and not any(in_ring(point, hole) for hole in polygon[1:]) for polygon in geometry['coordinates'])
 
-def build(raw, existing, retrieved_at):
+def apply_reviews(additions, reviews):
+    by_id = {f['id']: f for f in additions}
+    seen = set()
+    for review in reviews:
+        identifier = review['id']
+        if identifier in seen or identifier not in by_id:
+            raise ValueError(f'Duplicate or absent reviewed ID: {identifier}')
+        seen.add(identifier)
+        p = by_id[identifier]['properties']
+        if (p['name'], p['category']) != (review['expected_name'], review['expected_category']):
+            raise ValueError(f'Review no longer matches source: {identifier}')
+        if review.get('evidence_url') and not safe_website(review['evidence_url']):
+            raise ValueError(f'Unsafe review evidence URL: {identifier}')
+        if review['category'] not in ('mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy', 'reference'):
+            raise ValueError(f'Invalid reviewed category: {identifier}')
+        p['category'] = review['category']
+        p['name'] = review.get('name', p['name'])
+        p['classification_review'] = {k: review[k] for k in ('checked_at', 'status', 'note', 'evidence_url') if k in review}
+        p['classification_review']['original_category'] = review['expected_category']
+
+def build(raw, existing, retrieved_at, reviews=()):
     # Previously curated records retain their IDs, provenance and geometry.
     curated = [f for f in existing['features'] if f['properties'].get('verification_status') != 'osm_unverified']
     used = {source for f in curated for source in f['properties']['source_ids']}
@@ -85,7 +105,11 @@ def build(raw, existing, retrieved_at):
                               geometry={'type':'Point', 'coordinates':[center['lon'], center['lat']]}))
         used.add(sid)
     additions.sort(key=lambda f: f['id'])
+    apply_reviews(additions, reviews)
     return {'type':'FeatureCollection', 'features':curated + additions}, skipped
+
+def load_reviews():
+    return json.loads((ROOT/'data-sources/facility-audit-20260912/reviews.json').read_text(encoding='utf-8'))
 
 def main():
     parser = argparse.ArgumentParser()
@@ -112,12 +136,15 @@ def main():
     original = json.loads(dest.read_text(encoding='utf-8'))
     if not (WORK/'curated-facilities.geojson').exists():
         (WORK/'curated-facilities.geojson').write_bytes(dest.read_bytes())
-    data, skipped = build(raw, original, retrieval['retrieved_at'])
-    dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    review_data = load_reviews()
+    if review_data['source_sha256'] != retrieval['sha256']:
+        raise ValueError('Reviews refer to a different source snapshot')
+    data, skipped = build(raw, original, retrieval['retrieved_at'], review_data['reviews'])
+    dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     report = dict(raw_elements=len(raw['elements']), total=len(data['features']),
                   categories=dict(Counter(f['properties']['category'] for f in data['features'])),
                   skipped=skipped, snapshot=raw['osm3s']['timestamp_osm_base'], source_sha256=retrieval['sha256'])
-    (WORK/'import-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    (WORK/'import-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps({k:v for k,v in report.items() if k != 'skipped'}, ensure_ascii=False))
     print('Skipped:', dict(Counter(s['reason'] for s in skipped)))
 

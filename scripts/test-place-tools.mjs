@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { searchPlaces } from '../src/placeSearch.ts';
 import { placeLink, readPlaceLink } from '../src/placeLink.ts';
+import { facilityIconMarkup } from '../src/facilityIcons.ts';
 
 const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
 const stops = read('review-national.geojson').features;
@@ -12,6 +13,12 @@ assert.equal(searchPlaces('コスモス 宇部市', stops, facilities).stops[0].
 assert(searchPlaces('病院', stops, facilities).facilities.some(f => f.properties.category === 'hospital'));
 assert(searchPlaces('まるき', stops, facilities).facilities.some(f => f.id === 'maruki-nakagawa'));
 assert(searchPlaces('ゆめ', stops, facilities).facilities.length > 0);
+const reference = searchPlaces('イシダ動物病院', stops, facilities).facilities;
+assert.equal(reference.length, 1);
+assert.equal(reference[0].properties.category, 'reference', 'Animal hospital must not be listed as a human hospital');
+assert.equal(reference[0].id, 'osm-node-7037775362', 'Old reference links must remain valid');
+assert(searchPlaces('2023年12月23日OPEN', stops, facilities).facilities.some(f => f.id === 'osm-way-1228233757'), 'Retain original name as a search alias');
+assert(facilityIconMarkup('reference').startsWith('<svg'), 'Reference records need a non-medical marker');
 assert(searchPlaces('前', stops, facilities).stops.length > 12, 'Search must retain results beyond the first page');
 assert.deepEqual(searchPlaces('　 ', stops, facilities), { facilities: [], stops: [] });
 assert.deepEqual(searchPlaces('存在しない試験地点12345', stops, facilities), { facilities: [], stops: [] });

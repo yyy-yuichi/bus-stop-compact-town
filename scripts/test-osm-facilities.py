@@ -22,8 +22,9 @@ class ImportTests(unittest.TestCase):
         raw = json.loads((module.WORK/'osm-facilities.json').read_text(encoding='utf-8'))
         curated = json.loads((module.WORK/'curated-facilities.geojson').read_text(encoding='utf-8'))
         date = json.loads((module.WORK/'retrieval.json').read_text(encoding='utf-8'))['retrieved_at']
-        data, skipped = module.build(raw, curated, date)
-        rebuilt, skipped_again = module.build(raw, data, date)
+        reviews = module.load_reviews()['reviews']
+        data, skipped = module.build(raw, curated, date, reviews)
+        rebuilt, skipped_again = module.build(raw, data, date, reviews)
         self.assertEqual(data, rebuilt)
         self.assertEqual(skipped, skipped_again)
         self.assertEqual(data['features'][:22], curated['features'])
@@ -34,6 +35,39 @@ class ImportTests(unittest.TestCase):
             self.assertEqual(f['properties']['verified_at'], '')
             self.assertEqual(f['properties']['official_url'], '')
             self.assertEqual(f['properties']['verification_status'], 'osm_unverified')
+
+    def test_reviews_preserve_every_id_geometry_and_original_provenance(self):
+        raw = json.loads((module.WORK/'osm-facilities.json').read_text(encoding='utf-8'))
+        curated = json.loads((module.WORK/'curated-facilities.geojson').read_text(encoding='utf-8'))
+        date = json.loads((module.WORK/'retrieval.json').read_text(encoding='utf-8'))['retrieved_at']
+        baseline, _ = module.build(raw, curated, date)
+        reviewed, _ = module.build(raw, curated, date, module.load_reviews()['reviews'])
+        self.assertEqual([f['id'] for f in baseline['features']], [f['id'] for f in reviewed['features']])
+        for before, after in zip(baseline['features'], reviewed['features']):
+            self.assertEqual(before['geometry'], after['geometry'])
+            self.assertEqual({k:v for k,v in before['properties'].items() if k not in ('name','category','classification_review')},
+                             {k:v for k,v in after['properties'].items() if k not in ('name','category','classification_review')})
+        records = {f['id']:f['properties'] for f in reviewed['features']}
+        self.assertEqual(records['osm-node-7037775362']['category'], 'reference')
+        self.assertEqual(records['osm-way-579745077']['classification_review']['status'], 'pending')
+        self.assertEqual(records['osm-node-12383832808']['category'], 'clinic')
+        self.assertEqual(records['osm-way-1228233757']['category'], 'drugstore')
+        self.assertEqual(records['osm-way-1228233757']['name'], 'ドラッグストアモリ 防府新田店')
+        self.assertIn('2023年12月23日OPEN', records['osm-way-1228233757']['search_names'])
+
+    def test_reviews_fail_closed_on_changed_or_missing_records(self):
+        feature = {'id':'osm-node-1', 'properties':{'name':'original','category':'hospital'}}
+        review = {'id':'osm-node-1','expected_name':'other','expected_category':'hospital','category':'clinic'}
+        with self.assertRaisesRegex(ValueError, 'no longer matches'):
+            module.apply_reviews([feature], [review])
+        with self.assertRaisesRegex(ValueError, 'absent reviewed ID'):
+            module.apply_reviews([], [review])
+
+    def test_source_bytes_match_the_acquired_response(self):
+        import hashlib
+        digest = hashlib.sha256((module.WORK/'osm-facilities.json').read_bytes()).hexdigest()
+        self.assertEqual(digest, module.load_reviews()['source_sha256'])
+        self.assertEqual(digest, json.loads((module.WORK/'retrieval.json').read_text(encoding='utf-8'))['sha256'])
 
     def test_unnamed_inactive_and_private_are_excluded(self):
         raw = {'osm3s':{'timestamp_osm_base':'2026-01-01T00:00:00Z'}, 'elements':[

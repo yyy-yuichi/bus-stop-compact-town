@@ -32,7 +32,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
   const [categories, setCategories] = useState<ShoppingCategory[]>(SHOPPING_CATEGORIES.map(c => c.id));
   const [selectedFacility, setSelectedFacility] = useState<ShoppingFeature | null>(null);
-  const shownFacilities = useMemo(() => shopping.features.filter(f => categories.includes(categoryOf(f).id)), [shopping.features, categories]);
+  const shownFacilities = useMemo(() => shopping.features.filter(f => f.properties.category === 'reference' ? f.id === selectedFacility?.id : categories.includes(categoryOf(f).id)), [shopping.features, categories, selectedFacility]);
 
   useEffect(() => {
     const read = () => {
@@ -112,7 +112,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     setSharedPlace(null); setShareWarning(false);
     setSelected(''); setSelectedFacility(feature);
     const category = categoryOf(feature).id;
-    setCategories(previous => previous.includes(category) ? previous : [...previous, category]);
+    if (category !== 'reference') setCategories(previous => previous.includes(category) ? previous : [...previous, category]);
   }, []);
   const selectedStop = stops.find(feature => String(feature.id || feature.properties?.['@id']) === selected);
 

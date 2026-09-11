@@ -28,7 +28,14 @@ export interface ShoppingProperties {
   osm_name?: string;
   location_verification?: string;
   geometry_note?: string;
-  category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic';
+  category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic' | 'reference';
+  classification_review?: {
+    checked_at: string;
+    status: 'corrected' | 'out_of_scope' | 'pending';
+    original_category: string;
+    note: string;
+    evidence_url?: string;
+  };
   address?: string;
   website?: string;
   search_names?: string;

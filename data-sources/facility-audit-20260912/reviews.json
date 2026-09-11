@@ -1,0 +1,65 @@
+{
+  "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+  "reviews": [
+    {
+      "id": "osm-node-11389798235",
+      "expected_name": "ドラッグストアモリ 防府新田店",
+      "expected_category": "pharmacy",
+      "category": "drugstore",
+      "checked_at": "2026-09-12",
+      "status": "corrected",
+      "evidence_url": "https://www.doramori.co.jp/store/12209.html/",
+      "note": "同名店舗の公式案内で医薬品・化粧品・雑貨・食品の取扱いを確認し、ドラッグストアへ分類を修正しました。点と建物の重複候補は未統合です。位置・入口・現在の営業を確認した記録ではありません。"
+    },
+    {
+      "id": "osm-way-1228233757",
+      "expected_name": "ドラッグストアモリ 防府新田店 2023年12月23日OPEN",
+      "expected_category": "pharmacy",
+      "name": "ドラッグストアモリ 防府新田店",
+      "category": "drugstore",
+      "checked_at": "2026-09-12",
+      "status": "corrected",
+      "evidence_url": "https://www.doramori.co.jp/store/12209.html/",
+      "note": "同名店舗の公式案内で取扱商品と店舗名を確認し、ドラッグストアへ分類を修正、名称に混入した開店告知を除きました。点と建物の重複候補は未統合です。位置・入口・現在の営業は未確認です。"
+    },
+    {
+      "id": "osm-node-12383832808",
+      "expected_name": "きわのもり歯科クリニック",
+      "expected_category": "hospital",
+      "category": "clinic",
+      "checked_at": "2026-09-12",
+      "status": "corrected",
+      "evidence_url": "https://www.kiwanomori-dc.com/",
+      "note": "公式サイトの歯科医院という案内とOSMの歯科専門タグを照合し、診療所へ分類を修正しました。診療所には歯科を含みます。地図上の位置・入口・現在の診療状況は未確認です。"
+    },
+    {
+      "id": "osm-node-7037775362",
+      "expected_name": "イシダ動物病院",
+      "expected_category": "hospital",
+      "category": "reference",
+      "checked_at": "2026-09-12",
+      "status": "out_of_scope",
+      "evidence_url": "https://ishida-animal-hospital.com/",
+      "note": "動物病院の公式案内を確認したため、人の通院先の「病院」から外しました。参考記録として名称検索と共有リンクを残しています。位置・入口・現在の営業は未確認です。"
+    },
+    {
+      "id": "osm-node-2303175267",
+      "expected_name": "よしとみ整骨院",
+      "expected_category": "clinic",
+      "category": "reference",
+      "checked_at": "2026-09-12",
+      "status": "out_of_scope",
+      "evidence_url": "https://harechoru.com/",
+      "note": "施設自身の整骨院という案内を確認したため、医科・歯科の「診療所」から外しました。参考記録として名称検索と共有リンクを残しています。位置・入口・現在の営業は未確認です。"
+    },
+    {
+      "id": "osm-way-579745077",
+      "expected_name": "Ｒｙｕ接骨院",
+      "expected_category": "clinic",
+      "category": "reference",
+      "checked_at": "2026-09-12",
+      "status": "pending",
+      "note": "OSMの接骨院という名称と診療所の分類が食い違うため、分類を保留しています。柳井付近のこの記録と、光市にある同名施設の公式案内との同一性は確認できていません。別の施設の情報では補わず、参考記録として残しています。"
+    }
+  ]
+}

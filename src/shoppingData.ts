@@ -11,7 +11,8 @@ export const SHOPPING_CATEGORIES: { id: ShoppingCategory; name: string; color: s
   { id: 'clinic', name: '診療所', color: '#9b527e' },
   { id: 'pharmacy', name: '薬局', color: '#546cb4' },
 ];
-export const categoryOf = (feature: ShoppingFeature) => SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.category || 'mall'))!;
+const REFERENCE_CATEGORY = { id: 'reference' as const, name: '参考施設（対象外・分類保留）', color: '#68716c' };
+export const categoryOf = (feature: ShoppingFeature) => feature.properties.category === 'reference' ? REFERENCE_CATEGORY : SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.category || 'mall'))!;
 
 export function useShoppingData() {
   const [features, setFeatures] = useState<ShoppingFeature[]>([]);
