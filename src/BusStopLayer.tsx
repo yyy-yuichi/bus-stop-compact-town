@@ -110,7 +110,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const closeFacility = useCallback(() => setSelectedFacility(null), []);
   const selectFacility = useCallback((feature: ShoppingFeature) => {
     setSharedPlace(null); setShareWarning(false);
-    setSelected(''); setSelectedFacility(feature);
+    setSelectedFacility(feature);
     const category = categoryOf(feature).id;
     if (category !== 'reference') setCategories(previous => previous.includes(category) ? previous : [...previous, category]);
   }, []);
@@ -180,15 +180,21 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     if (stopsRef.current && map) fitContent(map, stopsRef.current.getBounds());
     else map?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
+  const changeMode = () => {
+    setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); setSelected('');
+    pendingSelection.current = '';
+    setMode(mode === 'national' ? 'pilot' : 'national');
+  };
+  const returnToSearch = () => { setSelected(''); setSelectedFacility(null); };
   return <>
-      <MapPanel selection={selected || String(selectedFacility?.id || '')} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={() => { setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); pendingSelection.current = ''; setMode(mode === 'national' ? 'pilot' : 'national'); }} />
+      <MapPanel selection={String(selectedFacility?.id || selected)} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={changeMode} onReturnSearch={returnToSearch} />
       <ShoppingLayer map={map} features={shownFacilities} selected={String(selectedFacility?.id || '')} onSelect={selectFacility} />
-      <button className="reset icon-button" onClick={reset} aria-label="山口県のバス停全体を表示" title="全体を表示"><MapIcon name="reset" /></button>
+      <button className="reset icon-button" onClick={reset} aria-label={mode === 'national' ? '山口県のバス停全体を表示' : '徒歩圏試作の7地点全体を表示'} title="全体を表示"><MapIcon name="reset" /></button>
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {shareWarning && <div className="link-notice" role="status"><p>リンクの場所が見つかりませんでした。名前で検索できます。</p><button className="icon-button" aria-label="リンクの案内を閉じる" onClick={() => setShareWarning(false)}><MapIcon name="close" /></button></div>}
-      {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} />}
-      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer}>
-        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} />
+      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode}>
+        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} />
       </BusStopDrawer>}
+      {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録', pilot: mode === 'pilot' } : undefined} />}
   </>;
 }

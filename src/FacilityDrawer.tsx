@@ -5,7 +5,7 @@ import MapIcon from './MapIcon';
 import SharePlace from './SharePlace';
 import FacilityIcon from './FacilityIcon';
 
-export default function FacilityDrawer({ facility, onClose }: { facility: ShoppingFeature; onClose: () => void }) {
+export default function FacilityDrawer({ facility, onClose, returnStop }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string; pilot: boolean } }) {
   const close = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLElement>(null);
   const p = facility.properties;
@@ -26,11 +26,16 @@ export default function FacilityDrawer({ facility, onClose }: { facility: Shoppi
       }
     };
   }, [onClose]);
+  useEffect(() => {
+    panel.current?.querySelector('.detail-body')?.scrollTo(0, 0);
+    close.current?.focus({ preventScroll: true });
+  }, [facility.id]);
   return <aside className="detail-drawer facility-drawer" ref={panel} role="dialog" aria-labelledby="facility-title">
     <header className="detail-header">
       <div><p className="detail-eyebrow"><span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>{category.name}</p><h2 id="facility-title">{p.name}</h2><p className="detail-subtitle">{p.city}</p></div>
       <button ref={close} className="icon-button" onClick={onClose} aria-label="施設の詳細を閉じる"><MapIcon name="close" /></button>
     </header>
+    {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}の{returnStop.pilot ? '徒歩圏' : 'バス停詳細'}に戻る</button>}
     <div className="detail-body">
       {imported && <p className="facility-status">{p.classification_review ? '公開資料を基にOpenStreetMapの登録情報を点検した記録です。確認した範囲は下記をご覧ください。現地での位置・入口・営業状況の確認はしていません。' : 'OpenStreetMapの登録情報です。名称・所在地・営業状況は個別に確認していません。'}</p>}
       {p.classification_review && <section className="soft-note"><strong>分類の点検{p.classification_review.status === 'pending' ? '・保留' : ''}</strong><p>{p.classification_review.note}</p>{p.classification_review.evidence_url && <a href={p.classification_review.evidence_url} target="_blank" rel="noreferrer">点検に用いた資料 ↗</a>}<p className="helper-text">点検日：{p.classification_review.checked_at}</p></section>}

@@ -20,10 +20,12 @@ interface Props {
   shoppingLoading: boolean;
   retryShopping: () => void;
   selection: string;
+  onReturnSearch: () => void;
 }
-export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection }: Props) {
+export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState('');
+  const [resultsOpen, setResultsOpen] = useState(true);
   const [listOpen, setListOpen] = useState(false);
   const [listLimit, setListLimit] = useState(24);
   const [limits, setLimits] = useState({ facilities: 12, stops: 12 });
@@ -38,14 +40,14 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
     pendingFocus.current = null;
   }, [limits, listLimit]);
   useEffect(() => { setListLimit(24); }, [categories]);
-  useEffect(() => { if (selection) setExpanded(false); }, [selection]);
+  useEffect(() => { if (selection) { setExpanded(false); setResultsOpen(false); } else setResultsOpen(true); }, [selection]);
   const term = query.trim();
   const matches = useMemo(() => searchPlaces(query, stops, facilities), [query, stops, facilities]);
-  const changeQuery = (value: string) => { pendingFocus.current = null; setQuery(value); setLimits({ facilities: 12, stops: 12 }); };
+  const changeQuery = (value: string) => { pendingFocus.current = null; setQuery(value); setResultsOpen(true); setLimits({ facilities: 12, stops: 12 }); };
   const clearQuery = () => { changeQuery(''); document.getElementById('place-search')?.focus(); };
   const visible = facilities.filter(f => categories.includes(categoryOf(f).id));
-  const chooseStop = (id: string) => { setExpanded(false); setQuery(''); onStop(id); };
-  const chooseFacility = (feature: ShoppingFeature) => { setExpanded(false); setQuery(''); setListOpen(false); onFacility(feature); };
+  const chooseStop = (id: string) => { setExpanded(false); setResultsOpen(false); onStop(id); };
+  const chooseFacility = (feature: ShoppingFeature) => { setExpanded(false); setResultsOpen(false); setListOpen(false); onFacility(feature); };
   const facilityRow = (feature: ShoppingFeature) => {
     const category = categoryOf(feature);
     return <button key={String(feature.id)} className="place-row" onClick={() => chooseFacility(feature)}>
@@ -53,12 +55,13 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
       <span><strong>{feature.properties.name}</strong><small>{feature.properties.city ? `${feature.properties.city} · ` : ''}{category.name}</small></span><span className="row-arrow" aria-hidden="true">›</span>
     </button>;
   };
-  return <aside className={`map-panel${expanded ? ' is-expanded' : ''}`} aria-label="地図の検索と表示設定">
+  return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${term && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">
     <div className="panel-intro"><div><p className="panel-kicker">MAP GUIDE</p><h2>バス停の先の、暮らしを探す</h2></div>
       <button className="panel-toggle icon-button" aria-label={expanded ? '表示設定を閉じる' : '表示設定を開く'} aria-expanded={expanded} aria-controls="map-options" onClick={() => setExpanded(p => !p)}><MapIcon name={expanded ? 'close' : 'layers'} /></button>
     </div>
     <div className="search-field"><MapIcon name="search" /><label className="sr-only" htmlFor="place-search">バス停・お店・病院を検索</label><input id="place-search" type="search" placeholder="バス停・お店・病院を検索" value={query} onChange={e => changeQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.stopPropagation(); clearQuery(); } }} autoComplete="off" />{query && <button className="search-clear" aria-label="検索をクリア" onClick={clearQuery}><MapIcon name="close" /></button>}</div>
-    {term ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">検索結果 {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
+    {term && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>←「{term}」の検索結果に戻る</button>}
+    {term && resultsOpen ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">検索結果 {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
       {matches.facilities.length > 0 && <section aria-labelledby="facility-results-title"><h3 className="result-group-title" id="facility-results-title">施設（参考記録を含む） <span>{matches.facilities.length}件</span></h3>
         {matches.facilities.slice(0, limits.facilities).map(facilityRow)}
         {matches.facilities.length > limits.facilities && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'facility-results-title', index: limits.facilities }; setLimits(p => ({ ...p, facilities: p.facilities + 12 })); }}>施設をさらに表示（残り{matches.facilities.length - limits.facilities}件）</button>}
@@ -81,7 +84,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
           <p className="helper-text">施設の点を選ぶか、地図を拡大するとアイコンが現れます。背景地図の文字・記号は種類の切替で消えません。</p>
           {facilities.some(f => f.properties.category === 'reference') && <p className="helper-text">対象外・分類保留の参考記録{facilities.filter(f => f.properties.category === 'reference').length}件は、名称検索または共有リンクから確認できます。診療所には歯科を含みます。</p>}
         </section>
-        <section className="walking-teaser"><div className="teaser-icon" aria-hidden="true">5<span>min</span></div><div><h3>歩ける範囲を見てみる</h3><p>おのだ周辺で、徒歩5分・10分を試せます。</p></div><button className="primary-link" onClick={() => { setExpanded(false); onMode(); }}>{mode === 'national' ? '徒歩圏の試作を開く' : '県全体のバス停に戻る'}<MapIcon name="arrow" /></button></section>
+        <section className="walking-teaser"><div className="teaser-icon" aria-hidden="true">5<span>min</span></div><div><h3>歩ける範囲を見てみる</h3><p>おのだ周辺のOSMの7地点で、徒歩5分・10分を試せます。</p></div><button className="primary-link" onClick={() => { setExpanded(false); changeQuery(''); onMode(); }}>{mode === 'national' ? '徒歩圏の試作を開く' : '県全体のバス停に戻る'}<MapIcon name="arrow" /></button></section>
         <div className="panel-source"><span className="bus-dot" aria-hidden="true" /><p>{busy ? 'バス停を読み込み中…' : mode === 'national' ? 'バス停 4,418件 · 国土数値情報 2022年度版' : '徒歩圏の試作 · OSMの7地点'}</p></div>
         <a className="panel-about" href={`${import.meta.env.BASE_URL}about.html`}>使い方・データの出典 <span aria-hidden="true">↗</span></a>
       </div>

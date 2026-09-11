@@ -88,6 +88,9 @@
 .stop-symbol svg { width:17px; height:17px; }
 /* Details share the same placement for shops and bus stops. */
 .detail-drawer { position:absolute; top:84px; right:20px; bottom:26px; z-index:1200; display:flex; flex-direction:column; width:370px; max-width:calc(100% - 40px); background:#fff; border:1px solid #e0e8e2; border-radius:16px; box-shadow:0 6px 30px #163f2f20; overflow:hidden; }
+.detail-drawer[hidden] { display:none; }
+.drawer-return { flex-shrink:0; min-height:44px; padding:10px 18px; border-bottom:1px solid var(--line); background:#f2f8f4; color:var(--green); text-align:left; font-size:11px; font-weight:650; overflow-wrap:anywhere; }
+.search-return { width:100%; min-height:44px; padding:8px 3px; text-align:left; color:var(--green); font-size:11px; font-weight:650; overflow-wrap:anywhere; }
 .detail-header { display:flex; align-items:flex-start; justify-content:space-between; gap:14px; padding:20px 20px 17px; border-bottom:1px solid var(--line); background:#fff; }
 .detail-header>div { min-width:0; }
 .detail-eyebrow { display:flex; align-items:center; gap:8px; font-size:10px; font-weight:600; color:#627669; margin-bottom:11px; }
@@ -142,7 +145,7 @@
   .search-field { margin:8px 0 5px; min-height:40px; }
   .search-field input { min-height:40px; font-size:12px; }
   .panel-options { display:none; }
-  .map-panel.is-expanded { z-index:1300; }
+  .map-panel.is-expanded, .map-panel.is-searching { z-index:1300; }
   .is-expanded .panel-options { display:block; margin-top:19px; }
   .panel-mobile-hint { display:block; font-size:9px; color:#6c796e; line-height:1.5; margin-top:7px; }
   .is-expanded .panel-mobile-hint { display:none; }

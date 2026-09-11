@@ -8,10 +8,12 @@ interface BusStopDrawerProps {
   stop: BusFeature;
   timestamp: string;
   onClose: () => void;
+  hidden: boolean;
+  onNational: () => void;
   children?: ReactNode;
 }
 
-export default function BusStopDrawer({ stop, timestamp, onClose, children }: BusStopDrawerProps) {
+export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNational, children }: BusStopDrawerProps) {
   const drawerRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const name = stop.properties?.['name:ja'] || stop.properties?.name || '名称未登録';
@@ -20,6 +22,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose, children }: Bu
   const national = stop.properties.source_kind === 'national';
 
   useEffect(() => {
+    if (hidden) return;
     const previousFocus = document.activeElement;
     const drawer = drawerRef.current;
     closeRef.current?.focus({ preventScroll: true });
@@ -37,24 +40,25 @@ export default function BusStopDrawer({ stop, timestamp, onClose, children }: Bu
         target?.focus({ preventScroll: true });
       }
     };
-  }, [onClose]);
+  }, [onClose, hidden]);
 
-  return <aside ref={drawerRef} role="dialog" aria-labelledby="bus-drawer-title"
+  return <aside ref={drawerRef} hidden={hidden} role="dialog" aria-labelledby="bus-drawer-title"
     className="detail-drawer bus-stop-drawer">
     <header className="detail-header">
       <div className="min-w-0">
-        <p className="detail-eyebrow"><span className="stop-symbol"><MapIcon name="bus" /></span>バス停</p>
+        <p className="detail-eyebrow"><span className="stop-symbol"><MapIcon name="bus" /></span>{national ? 'バス停 · 国土数値情報' : '出発するバス停 · OSMの徒歩圏試作'}</p>
         <h2 id="bus-drawer-title">{name}</h2>
-        <p className="detail-subtitle">このバス停を起点に、まちを見る</p>
+        <p className="detail-subtitle">{national ? '県全体4,418件の停留所から選択中' : 'バス停を選ぶ → 徒歩圏を見る → 施設を確認'}</p>
       </div>
       <button ref={closeRef} onClick={onClose} aria-label="バス停の詳細を閉じる"
         className="icon-button">
         <MapIcon name="close" />
       </button>
     </header>
+    {!national && <button className="drawer-return" onClick={onNational}>← 県全体のバス停に戻る</button>}
     <div className="detail-body">
-      <SharePlace place={{ kind: national ? 'national' : 'pilot', id }} />
       {children}
+      <SharePlace place={{ kind: national ? 'national' : 'pilot', id }} />
       {national && <div className="mb-5 rounded-xl bg-sky-50 p-4 text-xs leading-relaxed text-sky-950">
         <p>停留所の代表位置です。原則として上下の乗り場が集約されており、乗り場別の位置・方向は未確認です。</p>
         <p className="mt-2">2022年度版の情報です。現在の運行・乗り場は事業者の案内をご確認ください。</p>

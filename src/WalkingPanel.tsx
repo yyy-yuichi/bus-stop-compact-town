@@ -26,9 +26,10 @@ export function useWalkingData(facilities: ShoppingFeature[], facilityState: Loa
   return { data: joined.data, error: error || joined.error || facilityState === 'error', retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect }: {
+export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active }: {
   map: L.Map | null; id: string; origin: Coordinate;
   data: ReturnType<typeof useWalkingData>['data']; error: boolean; retry: () => void; onSelect: (id: string) => void;
+  onFacility: (facility: ShoppingFeature) => void; active: boolean;
 }) {
   const [minutes, setMinutes] = useState<5 | 10>(10);
   const [speed, setSpeed] = useState(4);
@@ -59,7 +60,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   }, [map, result, speed, minutes, origin, visible.map(c => c.facility.id).join(','), showPath]);
 
   useEffect(() => {
-    if (!map || !result) return;
+    if (!map || !result || !active) return;
     const lines = reachableLines(result, speed * 1000 / 60 * 10);
     const points = lines.flat().map(([lon, lat]) => L.latLng(lat, lon));
     if (!points.length) return;
@@ -68,7 +69,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, id, result]);
+  }, [map, id, result, active]);
 
   if (error) return <section className="walking-panel mb-6 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
     <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retry}>再読み込み</button>
@@ -76,12 +77,12 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   if (!data) return <p className="mb-6 text-sm" role="status">徒歩圏を準備しています…</p>;
   if (!supported) return <section className="mb-6 rounded-2xl bg-emerald-50 p-4">
     <h3 className="font-bold">徒歩圏を試す</h3><p className="mt-2 text-sm leading-relaxed">この地点の徒歩圏は未対応です。おのだサンパーク周辺のOSMの7地点に切り替えて試せます。</p>
-    <button className="mt-3 min-h-11 rounded-xl bg-emerald-900 px-4 text-sm font-semibold text-white" onClick={() => onSelect(data.graph.pilot_stops[0].id)}>試作地域へ移動</button>
+    <button className="mt-3 min-h-11 rounded-xl bg-emerald-900 px-4 text-sm font-semibold text-white" onClick={() => onSelect(data.graph.pilot_stops[0].id)}>おのだ周辺の徒歩圏試作へ</button>
   </section>;
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <div className="flex items-center justify-between gap-2"><h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3><span className="rounded-full bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-800">試作</span></div>
     <p className="mt-2 text-xs leading-relaxed text-stone-600">道路に沿った徒歩時間の目安です。</p>
-    {result && <button className="mt-3 flex min-h-10 w-full items-center justify-between rounded-lg bg-emerald-50 px-3 text-xs font-semibold text-emerald-900 min-[1001px]:hidden" onClick={() => document.getElementById('walking-candidates')?.scrollIntoView({ block: 'start', behavior: 'smooth' })}>買い物候補 {visible.length}件 <span>結果を見る ↓</span></button>}
+    {result && <button className="mt-3 flex min-h-11 w-full items-center justify-between rounded-lg bg-emerald-50 px-3 text-xs font-semibold text-emerald-900" onClick={() => { const target = document.getElementById('walking-candidates'); target?.focus({ preventScroll: true }); target?.scrollIntoView({ block: 'start', behavior: 'smooth' }); }}>{minutes}分圏の買い物候補 {visible.length}件 <span>結果を見る ↓</span></button>}
     <label className="mt-5 block text-xs font-semibold text-stone-600" htmlFor="walking-stop">出発するバス停を変える</label>
     <select id="walking-stop" className="mt-2 min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 text-sm" value={id} onChange={e => onSelect(e.target.value)}>
       {data.graph.pilot_stops.map((s, i) => <option key={s.id} value={s.id}>{s.name}{data.graph.pilot_stops.filter(p => p.name === s.name).length > 1 ? `（地点${i + 1}）` : ''}</option>)}
@@ -96,11 +97,12 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
     </label>
     <div className="mt-3 flex flex-wrap gap-3 text-[11px] text-stone-600"><span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-emerald-700" />5分以内の道路</span>{minutes === 10 && <span><i className="mr-1.5 inline-block h-1.5 w-5 rounded-full bg-amber-600" />5〜10分の道路</span>}</div>
     {!result ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">この停留所と歩ける道路の接続を確認できませんでした。別の停留所をお試しください。</p> : <>
-      <div id="walking-candidates" className="mt-6 flex scroll-mt-4 items-baseline justify-between"><h4 className="font-bold">{minutes}分圏の買い物候補</h4><span className="text-sm font-bold text-emerald-800" role="status" aria-live="polite">{visible.length}件</span></div>
+      <div id="walking-candidates" tabIndex={-1} className="mt-6 flex scroll-mt-4 items-baseline justify-between"><h4 className="font-bold">{minutes}分圏の買い物候補</h4><span className="text-sm font-bold text-emerald-800" role="status" aria-live="polite">{visible.length}件</span></div>
       {visible.length ? visible.map(({ facility, reach }) => <article key={String(facility.id)} className="mt-3 rounded-2xl border border-amber-200 bg-amber-50/60 p-4">
         <p className="text-[11px] font-semibold text-amber-800">ショッピングモール</p><h5 className="mt-1 text-base font-bold">{facility.properties.name}</h5>
         <p className="mt-3 text-sm font-semibold text-emerald-900">建物付近まで 約{Math.max(1, Math.ceil(reach!.meters / (speed * 1000 / 60)))}分 <span className="font-normal text-stone-500">/ 約{Math.round(reach!.meters / 10) * 10}m</span></p>
         <p className="mt-1 text-xs text-stone-600">出入口までの経路は未確認です。</p>
+        <button className="primary-link mt-3" onClick={() => onFacility(facility)}>施設の詳細を確認 <span aria-hidden="true">→</span></button>
         <button className="mt-3 min-h-11 w-full rounded-xl border border-indigo-200 bg-white text-sm font-semibold text-indigo-800" aria-pressed={showPath} onClick={() => setShowPath(p => !p)}>{showPath ? '経路の強調を消す' : '建物付近までの経路を見る'}</button>
         <a className="mt-2 flex min-h-11 items-center justify-center text-xs font-semibold text-amber-900 underline underline-offset-2" href={facility.properties.official_url} target="_blank" rel="noreferrer">施設の公式サイト ↗</a>
       </article>) : <p className="mt-3 rounded-xl bg-stone-50 p-4 text-sm leading-relaxed">登録済みの施設では、{minutes}分以内に到達する候補を確認できませんでした。{minutes === 5 ? '10分に広げると結果が変わることがあります。' : '周辺にお店がないことを意味するものではありません。'}</p>}
