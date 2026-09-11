@@ -10,6 +10,16 @@
 - **今回の正式保存**：[公開した16ファイルのZIP](https://drive.google.com/file/d/1pOQi4lKvN8kixCXXVgCcA2ca9KSfp28H/view)（551,550 bytes）、[公開ファイル照合記録](https://drive.google.com/file/d/1r59aAApifl0DMyRgCFvPXALC_ED87O4T/view)（3,191 bytes）、[公開結果報告](https://drive.google.com/file/d/1ueIc-9JkjqCUjxsApTCoYVgd_ux7JnLu/view)（3,431 bytes）を案件Driveへ保存し、名前・サイズ・親フォルダを読み戻して確認。報告本文も確認済み。原本・ソースは下のui-flow版を継続利用し、現在地は本書の公開完了版を優先する。
 - **担当**：実装は002、進行監視は001。現在のユーザー指示を優先し、完了作業の重複実行・公開の別経路での迂回・同じ承認質問の反復をしない。
 
+## マップ以外の再開状態（2026-09-12確認）
+
+- **原本・ソース・連携ID**：現行アプリの基準は公開済み`6608506`。[原本・ソースZIP](https://drive.google.com/file/d/1g0Bl10Df-LTfUz-p_uGUBGXFeDAVkCr0/view)と[現行ID一覧ZIP](https://drive.google.com/file/d/1s9LFF_gaKqzv9UyNhTQrsub_1HrggcB7/view)を使う。取得原本、取得条件、除外理由、分類判断、ソースコードを含む。公開後の記録は[公開記録一式](https://drive.google.com/file/d/1e0-ByS75w4YtTj6yqhEiUN7ZzYgOS9ga/view)、現在地はこのHANDOFFを優先する。3点の名前・サイズ・案件フォルダを今回再取得して確認した。
+- **未解決事項**：分類保留13件、重複候補195組（優先候補32組）は理由付きで維持しており、統合済み・確認済みと扱わない。入口位置も未確認。今回合意した2・3の完了と、これらの未解決事項を分ける。詳しくは下のデータの扱いと個別点検報告を参照し、自動的に全件調査へ戻らない。
+- **待ちと次の操作**：新しい徒歩圏データはコーディネーターから未受領。届いたら002が地域・出発点ID・座標系・5/10分・形状・出典と利用条件を照合し、受領内容に合う接続を行う。未受領の今は受領確認待ちで、国4,418件への徒歩計算接続や独自の代替計算を完了扱いにしない。外部コーディネーターへの送信は未委任。
+- **担当・監視**：実装先は現002（`01a09126-1e5d-7172-ade8-35f00991e47c`）。001の「002移行後の進行監視」（automation `002`）は目的達成により`PAUSED`で、現在も監視稼働中とは案内しない。設定本文も公開完了・Drive保存確認・公開保留解消を反映済み。旧002はアーカイブ済みで再開しない。
+- **保存・作業場所**：正式保存は下記の案件Drive。現行ローカル作業場所は`C:/Users/user/.codex/worktrees/49ea/バス停コンパクトタウン｜新規開発`。公開候補以降のローカル変更は引き継ぎ文書のみ。過去のZIP・記録は保持し、ソースZIP内の古いHANDOFFより本書を優先する。
+- **継続する指示**：Remoteには公開URLを案内し、非積算案件と積算・Gaia領域を分離する。ローカル既存ファイルの削除は別途承認が必要。秘密情報をDriveへ保存しない。PC負荷を抑え、チャットは要点だけを短く伝える。今回の公開承認を、移行時の保留や過去の拒否で再び無効扱いにしない。
+- **今回の文書訂正**：再開用ID一覧の古い参照を現行版へ修正し、[施設点検報告の公開状況訂正版](https://drive.google.com/file/d/1p95pzmF1C8NKhtBDP91uO1-Py82vyRHI/view)（21,591 bytes）を案件Driveへ保存。名前・サイズ・親フォルダと公開済み・未解決事項の本文を読み戻して確認した。本書は`HANDOFF-project-current-20260912.md`として同フォルダへ保存する。アプリ・データ変更や再公開は伴わない。
+
 ## 過去の公開保留・拒否の記録（2026-09-12・02:27の直接承認で解消）
 
 以下は公開前の経緯。保留はユーザーの希望ではなく、移行時のこちらの判断とレビュー拒否に由来した。現在の公開状態と承認は冒頭を優先する。
@@ -72,9 +82,10 @@
 - 現行施設は `public/data/shopping.geojson`。既存22件のID・形状・公式照合記録を保持。追加は `osm-node-...` / `osm-way-...` / `osm-relation-...`、`verification_status=osm_unverified`。OSM登録住所・URLを公式確認済みと呼ばない。
 - 再生成できる取得原本・条件・除外理由は `data-sources/osm-facilities-20260911/`。取得日2026-09-11、応答のデータ基準 **2026-07-28 02:16:18 UTC**。現時点の営業確認日ではない。通常表示でOverpassへ問い合わせない。
 - `scripts/import-osm-facilities.py` は保存済み原本から再生成できる。`--fetch` は既存原本の上書きを拒否。way/relationは外接矩形中心の代表点で、入口・建物外形として扱わない。同じ名前と近さだけでは統合しない。
-- 002修正版の連携ID一覧は `outputs/facility-audit-20260912/id-index/`（国4,418・試作7・施設1,135、参考3件と分類理由付き）。現在公開中の版は `outputs/osm-facilities-20260911/id-index/`。旧 `outputs/integration-ready-20260911/id-index/` の施設22件は履歴。生成は `python scripts/export-integration-index.py <今回のリリース名>`。
+- 現行公開版の連携ID一覧は `outputs/ui-flow-20260912/id-index/`（国4,418・試作7・施設1,135＝通常1,130＋参考5、分類理由付き）。正式保存は冒頭の現行ID一覧ZIP。`outputs/facility-audit-20260912/id-index/`、`outputs/osm-facilities-20260911/id-index/`、施設22件の `outputs/integration-ready-20260911/id-index/` はすべて履歴。生成は `python scripts/export-integration-index.py <今回のリリース名>`。
+- 個別判断は `data-sources/facility-classification-followup-20260912/checked-candidates.csv` と `research.json`、修正規則は `data-sources/facility-audit-20260912/reviews.json`。未統合195組は同フォルダの `duplicate-candidates.csv`。分類保留13件の次に必要な確認は [個別点検報告](facility-classification-followup-20260912.md#保留13件の次の確認) に残す。
 - 設計・検証の詳細は [OSM施設](osm-facilities-20260911.md)、[国のバス停](national-base-20260911.md)、[連携形式・接続箇所](integration-ready-20260911.md)、[公開手順](PUBLISHING.md)。連携文書の22件等の過去数値はこの冒頭に読み替える。
-- ローカル元作業場所：`C:/Users/user/Documents/ChatGPT/バス停コンパクトタウン｜新規開発`。未追跡の旧交通調査資料が残るが、通常アプリの再開に必要なコード・現行原本はGitに収録済み。旧資料を一括追加・削除・主工程へ復帰させない。
+- ローカル元作業場所：`C:/Users/user/Documents/ChatGPT/バス停コンパクトタウン｜新規開発`。現在の実装場所は冒頭の49ea作業場所。元作業場所には未追跡の旧交通調査資料が残るが、通常アプリの再開に必要なコード・現行原本はGitと現行source ZIPに収録済み。旧資料を一括追加・削除・主工程へ復帰させない。
 - Node/Pythonはアプリの `load_workspace_dependencies` で取得できる。元作業の開発サーバーは停止済み。ブラウザーは必要な1タブを再利用し、検証後に開発サーバーを停止する。
 
 ## 移行時の保存記録（現在の成果は上の完了記録を参照）
