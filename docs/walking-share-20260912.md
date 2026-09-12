@@ -10,7 +10,7 @@
 - 条件付きリンクの時間と速度はそれぞれ1つずつ必要。範囲外・空値・重複・片方だけの指定は案内を出し、誤った条件で計算しない。
 - 地図の拡大率、検索語、施設を開く前のバス停、経路強調のオン・オフは共有対象に含めない。
 
-試用例：[スポーツセンター前・地点2／徒歩5分・時速3km](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=pilot&id=node%2F5127585173&minutes=5&speed=3)。この更新を公開した後に同じ条件で開ける。
+試用例：[スポーツセンター前・地点2／徒歩5分・時速3km](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=pilot&id=node%2F5127585173&minutes=5&speed=3)。公開版で同じ条件を復元できることを確認済み。
 
 ## 検証
 
@@ -25,3 +25,11 @@
 施設1,135件（通常1,130＋参考5）、国のバス停4,418件、現行徒歩圏OSM7地点・1施設と道路計算は変更していない。新しい徒歩圏データはコーディネーターから完成連絡を受領した段階で、本体の受け入れ・接続は今回の更新に含めない。
 
 原本とIDは同一のため、既存のui-flow版ID一覧を継続利用する。ソース・公開成果物・公開後の照合結果の正式保存先は[案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。保存先と公開結果は[HANDOFF](HANDOFF.md)へ反映する。
+
+## 公開確認（2026-09-12）
+
+- 実装commit `558d87a7c6aec1fbb127fb1e69fc95c68a3f3a60` をmainへ反映し、[Pages 34681622456](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34681622456) が成功。
+- 16:49 JSTに公開16ファイルを実際のPages成果物と全バイト照合。データ・出典ページ・ライセンス表示も同commitと一致した。照合結果は `outputs/walking-share-20260912/published-verification.json`。
+- 公開URLをスマホ幅390×844で開き、5分・3kmで候補0件、4kmへ変更すると1件、再読み込み後も5分・4kmと1件が復元されることを確認。コンソール警告・エラー0件。検証用タブは終了。
+- 正式な完成物は `walking-share-20260912-published-site.zip`（551,959 bytes、16ファイルとSHA-256一覧）。ローカルdistの過去資産を含むZIPとは区別する。
+- ソースZIPには実装・テスト・取得原本・出典・判断記録を含める。保存IDと最新状態は、ソースZIP内の記録よりも同フォルダの `HANDOFF-walking-share-20260912.md` を優先する。
