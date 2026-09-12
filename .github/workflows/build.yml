@@ -10,6 +10,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      # 実運用のR2 URLは repository variable WALK_DATA_URL で上書きする（docs/WALK-DATA-R2.md）。
+      # 未設定のクリーンチェックアウトでもR2配布モードのビルド検証だけは通るよう、
+      # 到達不能な .invalid ドメインをフォールバックにする（実データは取得しない）。
+      VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL || 'https://ci-placeholder.invalid/data/walk' }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
@@ -17,7 +22,11 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: python3 scripts/test-bake-walking.py
+      - run: python3 scripts/bake-walking.py --pilot
       - run: npm run test:walking
+      - run: npm run test:baked-walking
+      - run: npm run test:stops
       - run: npm run test:places
       - run: python3 scripts/test-walking-source.py
       - run: python3 scripts/test-osm-facilities.py

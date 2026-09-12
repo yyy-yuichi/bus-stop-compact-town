@@ -125,6 +125,8 @@
 .leaflet-control-zoom a { width:44px !important; height:44px !important; line-height:44px !important; color:var(--green) !important; }
 .leaflet-control-attribution { font-size:9px !important; margin-right:0 !important; padding-bottom:env(safe-area-inset-bottom) !important; }
 .leaflet-control-scale { margin-left:340px !important; margin-bottom:32px !important; }
+.walking-legend { margin-left:340px !important; margin-bottom:10px !important; width:218px; padding:10px 12px; border:1px solid #dce5df; border-radius:10px; background:#fffffff2; color:#4a6052; font-size:11px; line-height:1.5; box-shadow:0 2px 12px #12382712; }
+.walking-legend-ramp { margin:7px 10px 0; }
 .app-with-selection .leaflet-right { right:392px; }
 .leaflet-control a:focus-visible, .leaflet-marker-icon:focus-visible { outline:3px solid #ac690d; outline-offset:3px; }
 .leaflet-control a:focus-visible { outline-offset:-3px; }
@@ -170,6 +172,7 @@
   .leaflet-bottom .leaflet-control-zoom { margin-bottom:58px; }
   .app-with-selection .leaflet-bottom .leaflet-control-zoom { margin-bottom:35px; }
   .leaflet-control-scale { margin-left:14px !important; margin-bottom:34px !important; }
+  .walking-legend { margin-left:14px !important; width:192px; padding:8px 10px; font-size:10px; }
   .data-error { left:14px; top:220px; max-width:calc(100% - 28px); }
   .link-notice { top:205px; left:12px; max-width:calc(100% - 24px); font-size:11px; }
 }
