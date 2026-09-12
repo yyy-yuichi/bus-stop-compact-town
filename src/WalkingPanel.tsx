@@ -4,6 +4,7 @@ import type { LoadState, ShoppingFeature } from './types';
 import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } from './walking';
 import type { Coordinate, WalkingGraph } from './walking';
 import { fitContent } from './mapLayout';
+import type { WalkingConditions } from './placeLink';
 
 export function useWalkingData(facilities: ShoppingFeature[], facilityState: LoadState) {
   const [graph, setGraph] = useState<WalkingGraph | null>(null);
@@ -26,13 +27,13 @@ export function useWalkingData(facilities: ShoppingFeature[], facilityState: Loa
   return { data: joined.data, error: error || joined.error || facilityState === 'error', retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active }: {
+export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active, conditions, onConditions }: {
   map: L.Map | null; id: string; origin: Coordinate;
   data: ReturnType<typeof useWalkingData>['data']; error: boolean; retry: () => void; onSelect: (id: string) => void;
   onFacility: (facility: ShoppingFeature) => void; active: boolean;
+  conditions: WalkingConditions; onConditions: (conditions: WalkingConditions) => void;
 }) {
-  const [minutes, setMinutes] = useState<5 | 10>(10);
-  const [speed, setSpeed] = useState(4);
+  const { minutes, speed } = conditions;
   const [showPath, setShowPath] = useState(false);
   const supported = !!data && inPilot(data.graph, id);
   const result = useMemo(() => supported && data ? calculateWalk(data.graph, origin, speed * 1000 / 60 * 10) : null, [data, supported, origin, speed]);
@@ -88,10 +89,10 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
       {data.graph.pilot_stops.map((s, i) => <option key={s.id} value={s.id}>{s.name}{data.graph.pilot_stops.filter(p => p.name === s.name).length > 1 ? `（地点${i + 1}）` : ''}</option>)}
     </select>
     <div className="mt-5 grid grid-cols-2 gap-2" role="group" aria-label="徒歩時間">
-      {([5, 10] as const).map(n => <button key={n} aria-pressed={minutes === n} onClick={() => setMinutes(n)} className={`min-h-12 rounded-xl border text-sm font-bold ${minutes === n ? 'border-emerald-900 bg-emerald-900 text-white' : 'border-stone-200 bg-white text-stone-700'}`}>徒歩 {n} 分</button>)}
+      {([5, 10] as const).map(n => <button key={n} aria-pressed={minutes === n} onClick={() => onConditions({ ...conditions, minutes: n })} className={`min-h-12 rounded-xl border text-sm font-bold ${minutes === n ? 'border-emerald-900 bg-emerald-900 text-white' : 'border-stone-200 bg-white text-stone-700'}`}>徒歩 {n} 分</button>)}
     </div>
     <label className="mt-4 flex items-center justify-between gap-3 text-xs text-stone-600">歩く速さ
-      <select aria-label="歩く速さ" value={speed} onChange={e => setSpeed(Number(e.target.value))} className="min-h-11 rounded-lg border border-stone-200 bg-white px-3 text-sm text-stone-900">
+      <select aria-label="歩く速さ" value={speed} onChange={e => onConditions({ ...conditions, speed: e.target.value === '3' ? 3 : 4 })} className="min-h-11 rounded-lg border border-stone-200 bg-white px-3 text-sm text-stone-900">
         <option value={4}>ふつう · 時速4km</option><option value={3}>ゆっくり · 時速3km</option>
       </select>
     </label>

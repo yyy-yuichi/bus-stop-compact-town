@@ -34,10 +34,35 @@ for (const place of allPlaces) {
   assert.equal(url.search, '');
   assert.deepEqual(readPlaceLink(url.hash), place);
 }
+let walkingLinks = 0;
+for (const stop of read('walking-onoda.json').pilot_stops) {
+  for (const minutes of [5, 10]) for (const speed of [3, 4]) {
+    const place = { kind: 'pilot', id: stop.id, walking: { minutes, speed } };
+    const url = new URL(placeLink('https://example.org/subdir/?v=old#previous', place));
+    assert.equal(url.pathname, '/subdir/');
+    assert.equal(url.search, '');
+    const params = new URLSearchParams(url.hash.slice(1));
+    assert.equal(params.get('minutes'), String(minutes));
+    assert.equal(params.get('speed'), String(speed));
+    assert.deepEqual(readPlaceLink(url.hash), place, 'The recipient must get the same stop, minutes and speed');
+    walkingLinks++;
+  }
+}
+const pilotHash = '#kind=pilot&id=node%2F5127585172';
+for (const invalidConditions of [
+  'minutes=5', 'speed=3', 'minutes=&speed=3', 'minutes=5&speed=',
+  'minutes=0&speed=3', 'minutes=15&speed=3', 'minutes=5.0&speed=3',
+  'minutes=5&speed=0', 'minutes=5&speed=5', 'minutes=5&speed=3.0',
+  'minutes=NaN&speed=3', 'minutes=5&speed=Infinity',
+  'minutes=5&minutes=10&speed=3', 'minutes=5&speed=3&speed=4',
+]) assert.equal(readPlaceLink(`${pilotHash}&${invalidConditions}`), null, invalidConditions);
+assert.deepEqual(readPlaceLink(pilotHash), { kind: 'pilot', id: 'node/5127585172' }, 'Old pilot links remain valid without conditions');
+assert.deepEqual(readPlaceLink('#kind=facility&id=sunpark&minutes=5&speed=3'), { kind: 'facility', id: 'sunpark' }, 'A facility link must not imply a walking origin');
+assert.deepEqual(readPlaceLink('#kind=national&id=mlit-p11-22-35%3A1&minutes=5&speed=3'), { kind: 'national', id: 'mlit-p11-22-35:1' }, 'National stops must not acquire pilot walking support through a link');
 for (const invalid of [
   '', '#walking', '#kind=unknown&id=sunpark', '#kind=facility&id=../secret',
   '#kind=facility&id=%3Cscript%3E', '#kind=national&id=node%2F5127585172',
   '#kind=pilot&id=mlit-p11-22-35%3A1', '#kind=facility&id=sunpark&id=other',
   '#kind=facility&kind=pilot&id=sunpark', '#kind=facility&id='+ 'x'.repeat(513),
 ]) assert.equal(readPlaceLink(invalid), null, invalid);
-console.log(`Place tools: kana/width/multiple-word search, untruncated results, ${allPlaces.length} share-link round trips and invalid links passed.`);
+console.log(`Place tools: kana/width/multiple-word search, untruncated results, ${allPlaces.length} existing links, ${walkingLinks} walking-condition links and invalid links passed.`);
