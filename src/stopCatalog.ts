@@ -16,6 +16,18 @@ export interface BoardingPoint {
 
 export const NATIONAL_ATTRIBUTION = '<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html">国土数値情報・バス停留所2022</a>を加工 / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>';
 
+/** Same P11-22_35 source coordinates as the bake; this is not an OSM proximity join.
+ * Keep every original-row ID in the map. Coincident source rows share a catchment.
+ */
+export function nationalCatchmentId(stop: BusFeature): string {
+  if (stop.properties.source_kind !== 'national' || stop.properties.source_year !== 2022 ||
+      !/^mlit-p11-22-35:\d+$/.test(String(stop.id)) || stop.geometry.type !== 'Point' ||
+      stop.geometry.coordinates.length !== 2 || !stop.geometry.coordinates.every(Number.isFinite)) throw Error('Invalid national origin');
+  const [lon, lat] = stop.geometry.coordinates;
+  if (Math.abs(lon) > 180 || Math.abs(lat) > 90) throw Error('Invalid national coordinate');
+  return `${Number(lon.toFixed(5))}_${Number(lat.toFixed(5))}`;
+}
+
 export function nationalCatalog(data: BusCollection): BusCollection {
   if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length) throw Error('Invalid national collection');
   const ids = new Set<string>();

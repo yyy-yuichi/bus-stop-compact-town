@@ -84,7 +84,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
           <p className="helper-text">施設の点を選ぶか、地図を拡大するとアイコンが現れます。背景地図の文字・記号は種類の切替で消えません。</p>
           {facilities.some(f => f.properties.category === 'reference') && <p className="helper-text">対象外・分類保留の参考記録{facilities.filter(f => f.properties.category === 'reference').length}件は、名称検索または共有リンクから確認できます。診療所には歯科を含みます。</p>}
         </section>
-        <section className="walking-teaser"><div className="teaser-icon" aria-hidden="true">5<span>min</span></div><div><h3>歩ける範囲を見てみる</h3><p>おのだ周辺のOSMの7地点で、徒歩5分・10分を試せます。</p></div><button className="primary-link" onClick={() => { setExpanded(false); changeQuery(''); onMode(); }}>{mode === 'national' ? '徒歩圏の試作を開く' : '県全体のバス停に戻る'}<MapIcon name="arrow" /></button></section>
+        <section className="walking-teaser"><div className="teaser-icon" aria-hidden="true">15<span>min</span></div><div><h3>歩ける範囲を見てみる</h3><p>国のバス停を選ぶと、坂道を考慮した最大15分相当の徒歩圏を表示します。おのだ周辺では5分・10分と買い物候補を試せます。</p></div><button className="primary-link" onClick={() => { setExpanded(false); changeQuery(''); onMode(); }}>{mode === 'national' ? 'おのだ周辺の徒歩圏試作を開く' : '県全体のバス停に戻る'}<MapIcon name="arrow" /></button></section>
         <div className="panel-source"><span className="bus-dot" aria-hidden="true" /><p>{busy ? 'バス停を読み込み中…' : mode === 'national' ? 'バス停 4,418件 · 国土数値情報 2022年度版' : '徒歩圏の試作 · OSMの7地点'}</p></div>
         <a className="panel-about" href={`${import.meta.env.BASE_URL}about.html`}>使い方・データの出典 <span aria-hidden="true">↗</span></a>
       </div>

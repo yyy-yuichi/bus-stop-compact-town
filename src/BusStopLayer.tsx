@@ -4,8 +4,9 @@ import type { BusCollection, BusFeature, ShoppingFeature } from './types';
 import { INITIAL_VIEW } from './mapConfig';
 import BusStopDrawer from './BusStopDrawer';
 import WalkingPanel, { useWalkingData } from './WalkingPanel';
+import BakedWalkingPanel, { useUnreachableStops } from './BakedWalkingPanel';
 import type { Coordinate } from './walking';
-import { nationalCatalog, pilotCatalog, NATIONAL_ATTRIBUTION } from './stopCatalog';
+import { nationalCatalog, nationalCatchmentId, pilotCatalog, NATIONAL_ATTRIBUTION } from './stopCatalog';
 import MapPanel from './MapPanel';
 import ShoppingLayer from './ShoppingLayer';
 import FacilityDrawer from './FacilityDrawer';
@@ -31,6 +32,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const pendingSelection = useRef('');
   const shopping = useShoppingData();
   const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
+  const unreachable = useUnreachableStops();
   const [categories, setCategories] = useState<ShoppingCategory[]>(SHOPPING_CATEGORIES.map(c => c.id));
   const [selectedFacility, setSelectedFacility] = useState<ShoppingFeature | null>(null);
   const shownFacilities = useMemo(() => shopping.features.filter(f => f.properties.category === 'reference' ? f.id === selectedFacility?.id : categories.includes(categoryOf(f).id)), [shopping.features, categories, selectedFacility]);
@@ -149,10 +151,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     if (!map) return;
     const focus = () => {
       if (selectedFacility) fitContent(map, L.geoJSON(selectedFacility).getBounds(), true, 17);
-      else if (selectedStop && mode === 'national') {
-        const [lon, lat] = selectedStop.geometry.coordinates;
-        fitContent(map, L.latLngBounds([[lat, lon]]), true, Math.max(15, map.getZoom()));
-      }
     };
     focus();
     map.on('resize', focus);
@@ -196,7 +194,9 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {shareWarning && <div className="link-notice" role="status"><p>リンクの場所または徒歩条件を確認できませんでした。名前で検索できます。</p><button className="icon-button" aria-label="リンクの案内を閉じる" onClick={() => setShareWarning(false)}><MapIcon name="close" /></button></div>}
       {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode} walkingConditions={walkingConditions}>
-        <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />
+        {mode === 'national'
+          ? <BakedWalkingPanel map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} active={!selectedFacility} />
+          : <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />}
       </BusStopDrawer>}
       {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録', pilot: mode === 'pilot' } : undefined} />}
   </>;
