@@ -9,6 +9,8 @@
 - **再開手順**：承認が届いたらPR #6の最新head・CI・差分を確認し、通常マージ、Pages公開、実公開24ファイルと成果物の照合、公開UIで本来のR2接続確認、公開版ZIPと照合結果の同じ案件Driveへの保存を行う。準備済みスクリプトは `outputs/map-life-20260913/verify-published.py` と `package-artifacts.py`。公開サイトは旧版のままで、現在の完成物ZIPは検証済み・未公開版として区別する。
 - **原本・制約**：追加分はOSM登録で営業状況・入口は未確認。取得2026-09-13／データ基準2026-07-28。既存の分類保留・重複候補は未解消として保持する。R2設定・道路計算・監視・別タスクは追加しない。添付写真は削除・GitHub追加しない。
 - **資料**：[実装と検証](map-life-20260913.md)、[生活施設原本](../data-sources/life-facilities-20260913/README.md)、[背景地図原本](../data-sources/basemap-20260913/README.md)。
+- **正式保存**：指定の `Codex_非積算プロジェクト` 直下の [案件フォルダ](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624) へ [原本・ソースZIP](https://drive.google.com/file/d/1cNd5b7AK9G-edzrEuZ8GkPj6wcXMriEC/view)、[検証済み未公開サイトZIP](https://drive.google.com/file/d/18cY8Rdbc8OojpbZfxj0HL5v04xFZElRr/view)、[検証JSON](https://drive.google.com/file/d/1K0JpNnJEbUx-Q1Dz8iAG69cFzLirWr60/view) を保存。ソースZIPは `35c2dae7da6def134339de617320e4e1ee1eebbd` の196ファイル。本書と報告の最終版は別ファイルとして保存し、ZIP内の保存前ステータスより優先する。最終版も公開待ちであり、公開済みとは扱わない。
+- **再検査**：引き継ぎ追記後の `35c2dae7da6def134339de617320e4e1ee1eebbd` も [CI 34754919510](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34754919510) に成功。アプリ本体の変更は `7e73490` 以降なし。
 
 ## 地域ボタン整理の完了記録（履歴）
 
