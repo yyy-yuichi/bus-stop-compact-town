@@ -26,6 +26,7 @@ jobs:
       - run: python3 scripts/bake-walking.py --pilot
       - run: npm run test:walking
       - run: npm run test:baked-walking
+      - run: npm run test:baked-facilities
       - run: npm run test:stops
       - run: npm run test:places
       - run: python3 scripts/test-walking-source.py

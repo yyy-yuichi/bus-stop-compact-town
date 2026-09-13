@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import type { BusFeature } from './types';
 import MapIcon from './MapIcon';
 import SharePlace from './SharePlace';
-import type { WalkingConditions } from './placeLink';
+import type { BakedWalkingMinutes, WalkingConditions } from './placeLink';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
@@ -12,10 +12,11 @@ interface BusStopDrawerProps {
   hidden: boolean;
   onNational: () => void;
   walkingConditions: WalkingConditions;
+  bakedMinutes: BakedWalkingMinutes;
   children?: ReactNode;
 }
 
-export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNational, walkingConditions, children }: BusStopDrawerProps) {
+export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNational, walkingConditions, bakedMinutes, children }: BusStopDrawerProps) {
   const drawerRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const name = stop.properties?.['name:ja'] || stop.properties?.name || '名称未登録';
@@ -44,6 +45,10 @@ export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNati
     };
   }, [onClose, hidden]);
 
+  useEffect(() => {
+    drawerRef.current?.querySelector('.detail-body')?.scrollTo(0, 0);
+  }, [id]);
+
   return <aside ref={drawerRef} hidden={hidden} role="dialog" aria-labelledby="bus-drawer-title"
     className="detail-drawer bus-stop-drawer">
     <header className="detail-header">
@@ -60,7 +65,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNati
     {!national && <button className="drawer-return" onClick={onNational}>← 県全体のバス停に戻る</button>}
     <div className="detail-body">
       {children}
-      <SharePlace place={national ? { kind: 'national', id } : { kind: 'pilot', id, walking: walkingConditions }} />
+      <SharePlace place={national ? { kind: 'national', id, minutes: bakedMinutes } : { kind: 'pilot', id, walking: walkingConditions }} />
       {national && <div className="mb-5 rounded-xl bg-sky-50 p-4 text-xs leading-relaxed text-sky-950">
         <p>停留所の代表位置です。原則として上下の乗り場が集約されており、乗り場別の位置・方向は未確認です。</p>
         <p className="mt-2">2022年度版の情報です。現在の運行・乗り場は事業者の案内をご確認ください。</p>

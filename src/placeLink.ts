@@ -1,7 +1,10 @@
 export type WalkingConditions = { minutes: 5 | 10; speed: 3 | 4 };
+export type BakedWalkingMinutes = 5 | 10 | 15;
+export const DEFAULT_BAKED_MINUTES: BakedWalkingMinutes = 15;
 export const DEFAULT_WALKING_CONDITIONS: WalkingConditions = { minutes: 10, speed: 4 };
 export type SharedPlace =
-  | { kind: 'facility' | 'national'; id: string }
+  | { kind: 'facility'; id: string }
+  | { kind: 'national'; id: string; minutes?: BakedWalkingMinutes }
   | { kind: 'pilot'; id: string; walking?: WalkingConditions };
 
 export function readPlaceLink(hash: string): SharedPlace | null {
@@ -10,7 +13,13 @@ export function readPlaceLink(hash: string): SharedPlace | null {
   if (params.getAll('kind').length !== 1 || params.getAll('id').length !== 1) return null;
   const kind = params.get('kind');
   const id = params.get('id') || '';
-  if (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id)) return { kind, id };
+  if (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id)) {
+    if (!params.has('minutes') && !params.has('speed')) return { kind, id };
+    if (params.has('speed') || params.getAll('minutes').length !== 1) return null;
+    const minutes = params.get('minutes');
+    if (minutes !== '5' && minutes !== '10' && minutes !== '15') return null;
+    return { kind, id, minutes: Number(minutes) as BakedWalkingMinutes };
+  }
   if (kind === 'pilot' && /^(node|way|relation)\/\d+$/.test(id)) {
     if (!params.has('minutes') && !params.has('speed')) return { kind, id };
     if (params.getAll('minutes').length !== 1 || params.getAll('speed').length !== 1) return null;
@@ -31,6 +40,7 @@ export function placeLink(pageUrl: string, place: SharedPlace): string {
     params.set('minutes', String(place.walking.minutes));
     params.set('speed', String(place.walking.speed));
   }
+  if (place.kind === 'national' && place.minutes) params.set('minutes', String(place.minutes));
   url.hash = params.toString();
   return url.href;
 }
