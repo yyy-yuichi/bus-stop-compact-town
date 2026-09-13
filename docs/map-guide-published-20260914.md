@@ -24,6 +24,12 @@
 
 ## 保存と継続
 
-[案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624) へ公開版ZIP、公開後ソースZIP、公開照合と実画面の検証、最終報告・HANDOFFを保存する。従来の未公開ZIPは履歴として保持する。
+[案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624) へ次を保存し、各ファイルの名前・容量・案件フォルダへの所属を読み戻して確認した。
+
+- [公開後の原本・ソースZIP](https://drive.google.com/file/d/1s1cQriaNWweQBHnmtFb4AMxd4BMMnW4T/view)：214ファイル、29,186,244 bytes。ソースの記録は `1dfa1850f5e46dcacc810b856b959fe1f6f514b1`、アプリ本体は公開mainと同一。
+- [実際の公開サイトZIP](https://drive.google.com/file/d/1hrrAWL0PlpDutXzioFA586mJUB14XsLo/view)：24ファイル、1,170,750 bytes。SHA-256 `d45fb710ca913ca3066696ef057a2200031ce0f0b00319114ad2ed031f50679c`。
+- [公開照合・実画面検証](https://drive.google.com/file/d/14FOgoonVPVEXpajpdimJZLQE5feoVzOC/view)：7,383 bytes。
+
+両ZIPのCRC・全ファイルのSHA-256を検証済み。最終報告とHANDOFFは同フォルダに別保存し、ZIP作成時の保存待ち表記に優先する。従来の未公開ZIPも履歴として保持している。
 
 本書と最新HANDOFFは、以前の「未公開」「公開承認待ち」という記録に優先する。今回の公開承認を再確認せず、未公開の試案へ戻らない。

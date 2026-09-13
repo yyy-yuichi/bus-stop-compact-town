@@ -5,7 +5,7 @@
 - [光駅15分から新しいマップを使う](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A3791&minutes=15)。案内図の背景、施設名とバス停名、細い徒歩圏、施設分類と地図の同期が公開版で利用可能。
 - [PR #6](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/6) は2026-09-14 06:08:39 JSTにマージ。main `c2f3095e5320d2d1cf4f018512a5057ea300d0c4`。[Pages 34782932696](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34782932696) が成功し、実公開24ファイル・データ・地図・出典を成果物と原本に照合済み。
 - 実公開元からR2取得に成功。スマホで光駅2/3/8件・暮らし2件、施設名タップと戻り、ドラッグ・拡大・背景切替、徳山駅前42/14件を確認。320px/1280pxも確認。アプリ例外・警告0。ルートfavicon.icoの404だけを別記している。
-- 詳細は [公開結果](map-guide-published-20260914.md)。ローカル `outputs/map-guide-20260914/` に公開照合・実画面記録・公開ZIPがある。公開版とソースの正式保存作業は同じ案件Driveへ進め、最終記録を追加する。未公開ZIPを削除しない。
+- 詳細は [公開結果](map-guide-published-20260914.md)。正式保存先の案件Driveへ [原本・ソースZIP](https://drive.google.com/file/d/1s1cQriaNWweQBHnmtFb4AMxd4BMMnW4T/view)（214ファイル・29,186,244 bytes）、[実際の公開サイトZIP](https://drive.google.com/file/d/1hrrAWL0PlpDutXzioFA586mJUB14XsLo/view)（24ファイル・1,170,750 bytes）、[公開照合・実画面検証](https://drive.google.com/file/d/14FOgoonVPVEXpajpdimJZLQE5feoVzOC/view)（7,383 bytes）を保存し、名前・サイズ・親を読み戻して確認した。ソースは `1dfa1850f5e46dcacc810b856b959fe1f6f514b1` でアプリ本体は公開mainと同一。最終報告・本書の別保存がZIP内の作成時点の保存待ち表記に優先する。未公開ZIPは履歴として保全。
 - 新しい施設調査、R2の設定変更・再計算、監視・別タスクを自動追加しない。ユーザーの添付写真を削除・GitHub追加しない。今回の自動承認レビュー拒否は明示承認後に解消しており、公開保留はない。
 
 ## 公開前の準備（2026-09-14・履歴）
