@@ -76,9 +76,9 @@ const cases = [
   { name: '北河内駅（国の起点）', catchment: '132.06421_34.17587', expectedCounts: [0, 0, 0], fixture: 'data-sources/regional-map-20260913/132.06421_34.17587.json' },
   { name: '光駅（国の起点）', catchment: '131.91505_33.97351', expectedCounts: [2, 3, 6], fixture: 'data-sources/regional-map-20260913/131.91505_33.97351.json' },
 ];
-const facilities = JSON.parse(fs.readFileSync('public/data/shopping.geojson', 'utf8')).features;
+const facilities = ['shopping', 'civic-facilities'].flatMap(name => JSON.parse(fs.readFileSync(`public/data/${name}.geojson`, 'utf8')).features);
 const prepared = prepareFacilities(facilities);
-assert.equal(prepared.length, 5011);
+assert.equal(prepared.length, 7710);
 for (const test of cases) {
   c = parseCatchment(JSON.parse(fs.readFileSync(test.fixture, 'utf8')));
   found = bakedFacilityCandidates(c, prepared);

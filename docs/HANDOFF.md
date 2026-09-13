@@ -1,3 +1,13 @@
+# 2026-09-14 自治体の暮らし施設追加
+
+公園・子育て・学校・福祉を自治体原本から2,699レコード追加。全体7,764、通常表示7,710、参考54。既存のOSM由来5,065レコードとバス停・道路データは内容を維持。詳細は [map-civic-places-20260914.md](map-civic-places-20260914.md)、原本と再現手順は `data-sources/civic-facilities-20260914/README.md`。
+
+原資料の時点を施設詳細に表示（市2025-01/11、県介護2024-02-01）。現在の開設・入口・利用資格・空きは個別未確認。読み込み失敗時は検索欄の下から再試行できる。
+
+現段階で公開・Drive最終保存は作業中。
+
+---
+
 # 最新の作業（2026-09-14・施設情報を拡充）
 
 公開と正式保存が完了。[新しい地図](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A2798&minutes=15)で追加情報を利用できる。指定親フォルダ直下の案件Driveに、[原本・ソースZIP](https://drive.google.com/file/d/1WaqK0pnaC8TVpd83AMRrordsruOmxtQi/view)（228ファイル・30,074,266 bytes、ソース記録 c1a4612）、[実際の公開サイトZIP](https://drive.google.com/file/d/18YqTM-pWtFuo1NQzKwUqrUorkUtgsra6/view)（24ファイル・1,496,068 bytes）、[公開照合・実画面検証](https://drive.google.com/file/d/1Lkrk4eoBuKO6LaWKn4XQHIXLndmzWXkJ/view)（18,119 bytes）を保存。ファイル名・サイズ・親フォルダを読み戻して確認した。最終の本書とHANDOFFを同じ案件フォルダへ別保存するため、ZIP内のDrive保存前の記述よりこの記録を優先する。公開後の検証ブラウザーとローカルサーバーは終了済み。
