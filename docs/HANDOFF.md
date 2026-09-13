@@ -1,5 +1,7 @@
 # 最新の作業（2026-09-14・施設情報を拡充）
 
+公開と正式保存が完了。[新しい地図](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A2798&minutes=15)で追加情報を利用できる。指定親フォルダ直下の案件Driveに、[原本・ソースZIP](https://drive.google.com/file/d/1WaqK0pnaC8TVpd83AMRrordsruOmxtQi/view)（228ファイル・30,074,266 bytes、ソース記録 c1a4612）、[実際の公開サイトZIP](https://drive.google.com/file/d/18YqTM-pWtFuo1NQzKwUqrUorkUtgsra6/view)（24ファイル・1,496,068 bytes）、[公開照合・実画面検証](https://drive.google.com/file/d/1Lkrk4eoBuKO6LaWKn4XQHIXLndmzWXkJ/view)（18,119 bytes）を保存。ファイル名・サイズ・親フォルダを読み戻して確認した。最終の本書とHANDOFFを同じ案件フォルダへ別保存するため、ZIP内のDrive保存前の記述よりこの記録を優先する。公開後の検証ブラウザーとローカルサーバーは終了済み。
+
 ユーザーの「情報がまだまだまだまだ足りない感じだね」を受けて追加調査と実装を実施。通常27分類5,011件、参考54件の計5,065施設へ拡充。電話477件・時間526件・料理とサービス等を表示し、目的別検索・徒歩候補・地図へ接続した。旧校等31件と医療名の福祉9件を参考へ。新規原本のデータ基準日時7月24日、先行原本は7月28日。日時を示し、現況確認済みとは扱わない。
 
 13検査、既存1,927施設の属性保全、バス停等7データの保全、Chromeで390/320/1280pxの表示・往復・詳細・分類同期を確認済み。光駅3/6/16件、徳山駅前31/58/88件。ローカル画面は保存R2原本を使用。公開反映済み。[PR #7](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/7)を2026-09-14 07:01 JSTに通常マージ。公開コミット `9aaa6b4622122a9e1232d21fe6c62e93814e6e06`、[Pages 34785520701](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34785520701) の成功を確認した。実公開24ファイルをPages成果物と全バイト照合し、施設・バス停・地図・出典のデータもマージ済み原本と一致。実公開元からR2へ接続し、スマホ・PCで施設・絞り込み・電話・時間・詳細の往復を再確認した。原本・公開サイト・検証のDrive保存はこの後の最終記録を参照。詳細は [今回の記録](map-information-20260914.md)。以下の「最新」はそれぞれ当時の履歴。

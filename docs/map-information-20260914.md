@@ -1,5 +1,7 @@
 # 施設情報の拡充（2026-09-14）
 
+公開と正式保存が完了。[新しい地図](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A2798&minutes=15)で追加情報を利用できる。指定親フォルダ直下の案件Driveに、[原本・ソースZIP](https://drive.google.com/file/d/1WaqK0pnaC8TVpd83AMRrordsruOmxtQi/view)（228ファイル・30,074,266 bytes、ソース記録 c1a4612）、[実際の公開サイトZIP](https://drive.google.com/file/d/18YqTM-pWtFuo1NQzKwUqrUorkUtgsra6/view)（24ファイル・1,496,068 bytes）、[公開照合・実画面検証](https://drive.google.com/file/d/1Lkrk4eoBuKO6LaWKn4XQHIXLndmzWXkJ/view)（18,119 bytes）を保存。ファイル名・サイズ・親フォルダを読み戻して確認した。最終の本書とHANDOFFを同じ案件フォルダへ別保存するため、ZIP内のDrive保存前の記述よりこの記録を優先する。公開後の検証ブラウザーとローカルサーバーは終了済み。
+
 施設を1,927から5,065レコードへ増やし、電話477件・営業時間526件を施設詳細に表示した。通常候補は27分類5,011件、参考は54件。単純に施設名を追加するだけでなく、用途・料理・福祉サービスの検索、7つの目的別の候補絞り込み、情報元の時点、元の登録注記を確認できる。
 
 ## 追加した情報
