@@ -1,5 +1,8 @@
 /** Reads pre-baked walking catchments (Task 3's bake). No client-side routing. */
 import type { ShoppingFeature } from './types';
+import { categoryOf } from './facilityCatalog.ts';
+import type { FacilityGroup } from './facilityCatalog.ts';
+export type { FacilityGroup } from './facilityCatalog.ts';
 export type Coordinate = [number, number];
 type PointLike = { readonly 0: number; readonly 1: number };
 
@@ -98,7 +101,6 @@ export function clipCatchment(catchment: Catchment, budget: number): Catchment {
 
 export const FACILITY_ROAD_GAP_M = 25;
 export const WALKING_METERS_PER_MINUTE = 4000 / 60;
-export type FacilityGroup = 'shopping' | 'medical' | 'services';
 export interface BakedFacilityCandidate {
   facility: ShoppingFeature;
   group: FacilityGroup;
@@ -128,10 +130,8 @@ function nearbyBounds(a: Bounds, b: Bounds, latitude: number): boolean {
 /** Prepare once; retain source IDs and exclude reference records. */
 export function prepareFacilities(facilities: ShoppingFeature[]): PreparedFacility[] {
   return facilities.flatMap(facility => {
-    const category = facility.properties.category ?? 'mall';
-    const services = ['post_office', 'bank', 'library', 'townhall', 'community_centre'];
-    if (!['mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy', ...services].includes(category)) return [];
-    const group: FacilityGroup = services.includes(category) ? 'services' : ['hospital', 'clinic', 'pharmacy'].includes(category) ? 'medical' : 'shopping';
+    const group = categoryOf(facility).group;
+    if (!group) return [];
     const point = facility.geometry.type === 'Point' ? facility.geometry.coordinates as Coordinate : undefined;
     const polygons = facility.geometry.type === 'MultiPolygon' ? facility.geometry.coordinates as Coordinate[][][] : [];
     const points = point ? [point] : polygons.flat(2);

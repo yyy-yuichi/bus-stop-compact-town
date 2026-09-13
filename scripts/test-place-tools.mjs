@@ -1,3 +1,5 @@
+import { openingHours, phoneHref, detailText } from '../src/facilityDetails.ts';
+import { SHOPPING_CATEGORIES } from '../src/facilityCatalog.ts';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { searchPlaces } from '../src/placeSearch.ts';
@@ -84,3 +86,20 @@ for (const invalid of [
   '#kind=facility&kind=pilot&id=sunpark', '#kind=facility&id='+ 'x'.repeat(513),
 ]) assert.equal(readPlaceLink(invalid), null, invalid);
 console.log(`Place tools: kana/width/multiple-word search, untruncated results, ${allPlaces.length} existing links, ${walkingLinks} pilot links, ${nationalWalkingLinks} national time links and invalid links passed.`);
+
+for (const category of SHOPPING_CATEGORIES) assert(facilityIconMarkup(category.id).startsWith('<svg'));
+for (const category of ['cafe','park','dentist','childcare','school','social_facility']) {
+  const name=SHOPPING_CATEGORIES.find(c=>c.id===category).name;
+  assert(searchPlaces(name,[],facilities).facilities.some(f=>f.properties.category===category));
+}
+assert.equal(phoneHref('＋８１（８３）１２３－４５６７'),'tel:+81831234567');
+assert.equal(phoneHref('083-123-4567'),'tel:0831234567');
+for(const bad of ['*21*123456789#','tel:0831234567','javascript:alert(1)','123','1234567890123456','0831234567 ext 12','0831234567;0832345678','<script>']) assert.equal(phoneHref(bad),null);
+assert.deepEqual(openingHours('24/7'),{text:'24時間・年中無休',raw:false});
+assert.deepEqual(openingHours('Mo-Fr 09:00-17:00; Sa,Su off'),{text:'月〜金 09:00〜17:00 ／ 土・日 休み',raw:false});
+assert.equal(openingHours('Mo-Su 18:00-02:00').text,'月〜日 18:00〜翌日02:00');
+assert.equal(openingHours('Mo-Su 10:00-24:00').text,'月〜日 10:00〜24:00');
+for(const value of ['Mo-Fr 09:00-17:00; PH off','Mo-Fr 09:00-17:00; unknown','Mo 25:00-26:00','sunrise-sunset','Mo 09:00-17:00 "reservation"','']) assert.deepEqual(openingHours(value),{text:value,raw:true},'Never discard unfamiliar date/holiday/exception rules');
+assert.equal(detailText('cuisine','ramen;unknown'),'ラーメン・unknown');
+assert.equal(detailText('wheelchair','limited'),'一部利用可能の登録');
+console.log('Expanded categories, registered details, safe phone actions and lossless hours display passed.');

@@ -1,8 +1,9 @@
+import { SHOPPING_CATEGORIES } from '../src/facilityCatalog.ts';
 import fs from 'node:fs';
 const data=JSON.parse(fs.readFileSync('public/data/shopping.geojson','utf8'));
 const ids=new Set(), sources=new Set();
 const counts={building:0,facility_area:0,representative_point:0};
-const categories={mall:0,supermarket:0,drugstore:0,convenience:0,hospital:0,clinic:0,pharmacy:0,post_office:0,bank:0,library:0,townhall:0,community_centre:0,reference:0};
+const categories=Object.fromEntries([...SHOPPING_CATEGORIES.map(c=>c.id),'reference'].map(id=>[id,0]));
 for(const f of data.features) {
  const p=f.properties;
  if(!f.id||ids.has(f.id)) throw Error(`Duplicate/missing ID: ${f.id}`);
@@ -19,11 +20,23 @@ for(const f of data.features) {
  if(!p.name||!p.source_timestamp||!p.source_ids?.length||p.license!=='ODbL-1.0') throw Error(`Missing provenance: ${f.id}`);
  if(p.verification_status==='osm_unverified') {
   if(p.verified_at||p.official_address||p.official_url||!p.retrieved_at) throw Error(`Unverified record presented as official: ${f.id}`);
-  if(!/^osm-(node|way|relation)-\d+$/.test(f.id)||p.geometry_kind!=='representative_point') throw Error(`Invalid imported record: ${f.id}`);
+  if(!/^osm-(node|way|relation)-\d+$/.test(f.id)||!['representative_point','facility_area'].includes(p.geometry_kind)) throw Error(`Invalid imported record: ${f.id}`);
   if(p.website) { const url=new URL(p.website); if(!['http:','https:'].includes(url.protocol)||url.username||url.password) throw Error(`Unsafe registered URL: ${f.id}`); }
  } else {
   if(!p.official_address||!p.city||!p.verified_at) throw Error(`Missing curated provenance: ${f.id}`);
   if(new URL(p.official_url).protocol!=='https:') throw Error(`Unsafe official URL: ${f.id}`);
+ }
+ if(p.registration_origin && (!Array.isArray(p.registration_origin)||p.registration_origin.some(v=>typeof v!=='string'||!v.trim()||v.length>1000))) throw Error(`Invalid source note: ${f.id}`);
+ if(p.registered_details) {
+  const details=p.registered_details;
+  if(p.category==='reference'||!Array.isArray(details.sources)||!details.sources.length) throw Error(`Invalid detail provenance: ${f.id}`);
+  for(const source of details.sources) {
+   if(!p.source_ids.includes(source.source_id)||!Number.isFinite(Date.parse(source.source_timestamp))||!Number.isFinite(Date.parse(source.retrieved_at))) throw Error(`Unattributed details: ${f.id}`);
+  }
+  for(const [field,values] of Object.entries(details)) {
+   if(field==='sources') continue;
+   if(!['phone','opening_hours','operator','brand','branch','cuisine','wheelchair','specialty','service','access'].includes(field)||!Array.isArray(values)||!values.length||values.some(v=>typeof v!=='string'||!v.trim()||v.length>1000)||new Set(values).size!==values.length) throw Error(`Invalid registered detail: ${f.id}/${field}`);
+  }
  }
  for(const id of p.source_ids) {if(sources.has(id)) throw Error(`Repeated source: ${id}`);sources.add(id);}
  if(!(p.geometry_kind in counts)) throw Error(`Unknown geometry kind: ${f.id}`);
