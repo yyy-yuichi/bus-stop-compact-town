@@ -17,10 +17,11 @@ import { fitContent } from './mapLayout';
 import MapIcon from './MapIcon';
 import { DEFAULT_BAKED_MINUTES, DEFAULT_WALKING_CONDITIONS, placeLink, readPlaceLink } from './placeLink';
 import type { BakedWalkingMinutes, SharedPlace, WalkingConditions } from './placeLink';
+import StopMarkers from './StopMarkers';
+import { mapFacilities } from './facilityVisibility';
+import type { WalkFacilities } from './facilityVisibility';
 
 export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | null; onSelectionChange: (selected: boolean) => void }) {
-  const stopsRef = useRef<L.GeoJSON | null>(null);
-  const markersRef = useRef(new Map<string, L.Layer>());
   const [stops, setStops] = useState<BusFeature[]>([]);
   const [dataTimestamp, setDataTimestamp] = useState('');
   const [selected, setSelected] = useState('');
@@ -34,12 +35,16 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const [mode, setMode] = useState<'national' | 'pilot'>(() => readPlaceLink(window.location.hash)?.kind === 'pilot' ? 'pilot' : 'national');
   const pendingSelection = useRef('');
   const pendingArea = useRef<'all' | 'iwakuni' | 'hikari'>('all');
+  const initialOverview = useRef(true);
   const shopping = useShoppingData();
   const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
   const unreachable = useUnreachableStops();
   const [categories, setCategories] = useState<ShoppingCategory[]>(SHOPPING_CATEGORIES.map(c => c.id));
   const [selectedFacility, setSelectedFacility] = useState<ShoppingFeature | null>(null);
-  const shownFacilities = useMemo(() => shopping.features.filter(f => f.properties.category === 'reference' ? f.id === selectedFacility?.id : categories.includes(categoryOf(f).id)), [shopping.features, categories, selectedFacility]);
+  const [walkFacilities, setWalkFacilities] = useState<WalkFacilities | null>(null);
+  const walkScope = selected ? `${selected}:${mode === 'national' ? bakedMinutes : `${walkingConditions.minutes}:${walkingConditions.speed}`}` : '';
+  const shownFacilities = useMemo(() => mapFacilities(shopping.features, categories, selectedFacility, walkScope, walkFacilities), [shopping.features, categories, selectedFacility, walkScope, walkFacilities]);
+  const showWalkFacilities = useCallback((scope: string, ids: string[]) => setWalkFacilities({ scope, ids }), []);
 
   useEffect(() => {
     const read = () => {
@@ -48,7 +53,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       setWalkingConditions(place?.kind === 'pilot' ? place.walking ?? DEFAULT_WALKING_CONDITIONS : DEFAULT_WALKING_CONDITIONS);
       setBakedMinutes(place?.kind === 'national' ? place.minutes ?? DEFAULT_BAKED_MINUTES : DEFAULT_BAKED_MINUTES);
       setShareWarning(Boolean(window.location.hash) && !place);
-      setSelected(''); setSelectedFacility(null);
+      setSelected(''); setSelectedFacility(null); setWalkFacilities(null);
       pendingSelection.current = '';
       setMode(place?.kind === 'pilot' ? 'pilot' : 'national');
     };
@@ -83,28 +88,20 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
           f.geometry?.type !== 'Point' || !Array.isArray(f.geometry.coordinates) || f.geometry.coordinates.length !== 2 ||
           !f.geometry.coordinates.every(Number.isFinite) || Math.abs(f.geometry.coordinates[0]) > 180 || Math.abs(f.geometry.coordinates[1]) > 90
         )) throw new Error('Invalid GeoJSON');
-        const layer = L.geoJSON<BusFeature['properties']>(data, {
-          pointToLayer: (feature, latlng) => L.circleMarker(latlng, { radius: 6, color: '#fff', weight: 2, fillColor: feature.properties.source_kind === 'municipal' ? '#b6531c' : '#174f9d', fillOpacity: 0.9 }),
-          onEachFeature: (feature, marker) => {
-            const id = String(feature.id || feature.properties?.['@id']);
-            marker.on('click', () => { map.closePopup(); setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); setSelected(id); });
-            markersRef.current.set(id, marker);
-          },
-        }).addTo(map);
-        stopsRef.current = layer;
         setStops(data.features);
         setSelected(pendingSelection.current || (mode === 'pilot' && !sharedPlace ? String(data.features[0].id || data.features[0].properties['@id']) : ''));
         pendingSelection.current = '';
         setDataTimestamp(typeof data.timestamp === 'string' ? data.timestamp : '不明');
         const areaStops = pendingArea.current === 'all' ? data.features : data.features.filter(stop => stop.properties.source_namespace === pendingArea.current);
-        fitContent(map, areaStops.length ? L.latLngBounds(areaStops.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])) : layer.getBounds());
+        fitContent(map, L.latLngBounds((areaStops.length ? areaStops : data.features).map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])));
+        if (initialOverview.current && mode === 'national' && pendingArea.current === 'all' && !sharedPlace && window.matchMedia('(max-width: 1000px)').matches) {
+          map.setView([34.22, 131.55], 9.5, { animate: false });
+        }
+        initialOverview.current = false;
         pendingArea.current = 'all';
       }).catch(error => { if (error.name !== 'AbortError' && !abort.signal.aborted) setFailed(true); });
     return () => {
       abort.abort();
-      stopsRef.current?.remove();
-      stopsRef.current = null;
-      markersRef.current.clear();
     };
   }, [map, attempt, mode]);
 
@@ -115,16 +112,16 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     return () => { map.attributionControl.removeAttribution(NATIONAL_ATTRIBUTION); map.attributionControl.removeAttribution(MUNICIPAL_ATTRIBUTION); };
   }, [map, mode]);
 
-  const selectStop = (id: string) => {
+  const selectStop = useCallback((id: string) => {
     setSharedPlace(null); setShareWarning(false);
     setSelectedFacility(null);
     if (mode === 'national' && /^(node|way|relation)\//.test(id)) {
       pendingSelection.current = id;
       setMode('pilot');
     } else setSelected(id);
-  };
+  }, [mode]);
 
-  const closeDrawer = useCallback(() => setSelected(''), []);
+  const closeDrawer = useCallback(() => { setSelected(''); setWalkFacilities(null); }, []);
   const closeFacility = useCallback(() => setSelectedFacility(null), []);
   const selectFacility = useCallback((feature: ShoppingFeature) => {
     setSharedPlace(null); setShareWarning(false);
@@ -174,43 +171,30 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     return () => { map.off('resize', focus); };
   }, [map, selectedFacility, selectedStop, mode]);
 
-  useEffect(() => {
-    if (!map) return;
-    const styleMarkers = () => {
-      const radius = mode === 'national' && map.getZoom() <= 9 ? 3 : 6;
-      const weight = radius === 3 ? 1 : 2;
-      for (const [id, marker] of markersRef.current.entries()) {
-        if (marker instanceof L.CircleMarker) marker.setRadius(radius).setStyle({ fillColor: /^(hikari|iwakuni):/.test(id) ? '#b6531c' : '#174f9d', weight });
-      }
-      const marker = markersRef.current.get(selected);
-      if (marker instanceof L.CircleMarker) marker.setRadius(10).setStyle({ fillColor: '#0284c7', weight: 3 }).bringToFront();
-    };
-    styleMarkers();
-    map.on('zoomend', styleMarkers);
-    return () => { map.off('zoomend', styleMarkers); };
-  }, [map, stops, selected, mode]);
-
   const reset = () => {
     setSharedPlace(null); setShareWarning(false);
+    setWalkFacilities(null);
     setSelected('');
     setSelectedFacility(null);
     map?.closePopup();
-    if (stopsRef.current && map) fitContent(map, stopsRef.current.getBounds());
+    if (stops.length && map) fitContent(map, L.latLngBounds(stops.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])));
     else map?.setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
   };
   const changeMode = () => {
     setSharedPlace(null); setShareWarning(false); setSelectedFacility(null); setSelected('');
+    setWalkFacilities(null);
     pendingSelection.current = '';
     setMode(mode === 'national' ? 'pilot' : 'national');
   };
-  const returnToSearch = () => { setSelected(''); setSelectedFacility(null); };
+  const returnToSearch = () => { setSelected(''); setSelectedFacility(null); setWalkFacilities(null); };
   const showArea = (area: 'all' | 'iwakuni' | 'hikari') => {
-    setSharedPlace(null); setShareWarning(false); setSelected(''); setSelectedFacility(null);
+    setSharedPlace(null); setShareWarning(false); setSelected(''); setSelectedFacility(null); setWalkFacilities(null);
     if (mode !== 'national') { setMode('national'); pendingArea.current = area; return; }
     const targets = area === 'all' ? stops : stops.filter(stop => stop.properties.source_namespace === area);
     if (map && targets.length) fitContent(map, L.latLngBounds(targets.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])), false, 14);
   };
   return <>
+      <StopMarkers map={map} stops={stops} selected={selected} onSelect={selectStop} />
       <MapPanel selection={String(selectedFacility?.id || selected)} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={changeMode} onReturnSearch={returnToSearch} onArea={showArea} municipalFailed={municipalFailed} retryMunicipal={() => setAttempt(n => n + 1)} />
       <ShoppingLayer map={map} features={shownFacilities} selected={String(selectedFacility?.id || '')} onSelect={selectFacility} />
       <button className="reset icon-button" onClick={reset} aria-label={mode === 'national' ? '山口県のバス停全体を表示' : '徒歩圏試作の7地点全体を表示'} title="全体を表示"><MapIcon name="reset" /></button>
@@ -220,8 +204,8 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
         {selectedStop.properties.source_kind === 'municipal'
           ? <MunicipalStopPanel map={map} stop={selectedStop} stops={stops} unreachable={unreachable} active={!selectedFacility} onStop={selectStop} />
           : mode === 'national'
-          ? <BakedWalkingPanel map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} active={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} onMinutes={setBakedMinutes} />
-          : <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />}
+          ? <BakedWalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} active={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} onMinutes={setBakedMinutes} />
+          : <WalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />}
       </BusStopDrawer>}
       {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録' } : undefined} />}
   </>;

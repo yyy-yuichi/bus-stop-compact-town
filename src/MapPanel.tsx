@@ -61,7 +61,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${term && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">
     <div className="search-field"><MapIcon name="search" /><label className="sr-only" htmlFor="place-search">バス停・お店・病院を検索</label><input id="place-search" type="search" placeholder="バス停・お店・病院を検索" value={query} onChange={e => changeQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.stopPropagation(); clearQuery(); } }} autoComplete="off" />{query && <button className="search-clear" aria-label="検索をクリア" onClick={clearQuery}><MapIcon name="close" /></button>}<button className="panel-toggle icon-button" aria-label={expanded ? '表示設定を閉じる' : '表示設定を開く'} aria-expanded={expanded} aria-controls="map-options" onClick={() => { setExpanded(p => !p); if (!expanded) setResultsOpen(false); }}><MapIcon name={expanded ? 'close' : 'layers'} /></button></div>
     <nav className="region-buttons" aria-label="地域へ移動">
-      {([['all', '県全体'], ['iwakuni', '岩国市'], ['hikari', '光市']] as const).map(([area, label]) => <button key={area} disabled={busy || (municipalFailed && area !== 'all')} onClick={() => { setExpanded(false); setListOpen(false); changeQuery(''); onArea(area); }}>{label}</button>)}
+      {([['all', '県全体'], ['iwakuni', '岩国市'], ['hikari', '光市']] as const).map(([area, label]) => <button key={area} disabled={busy || (municipalFailed && area !== 'all')} onClick={() => { setExpanded(false); setListOpen(false); changeQuery(''); onArea(area); }}><span>{label}<span aria-hidden="true"> ↗</span></span></button>)}
     </nav>
     {municipalFailed && <button className="text-button error-text" onClick={retryMunicipal}>岩国市・光市のデータを再読み込み</button>}
     {term && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>←「{term}」の検索結果に戻る</button>}
@@ -79,6 +79,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
     </div> : <>
       <div className="panel-options" id="map-options">
         <section className="category-section"><div className="section-label"><h3 id="facility-list-title">買い物・通院先</h3><span>表示する種類</span></div>
+          <p className="helper-text facility-map-note">バス停を選ぶと、徒歩圏にある施設が地図に表示されます。</p>
           <div className="category-filters">{SHOPPING_CATEGORIES.map(category => <button key={category.id} aria-pressed={categories.includes(category.id)} onClick={() => onCategories(categories.includes(category.id) ? categories.filter(c => c !== category.id) : [...categories, category.id])}>
             <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span><span>{category.name}<small className="category-count">{facilities.filter(f => categoryOf(f).id === category.id).length}件</small></span><span className="filter-check" aria-hidden="true">{categories.includes(category.id) ? '✓' : '+'}</span>
           </button>)}</div>

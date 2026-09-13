@@ -25,8 +25,18 @@
 
 市データ取得を検証用サーバーで503にすると、国のデータは表示を続け、市データの再試行を案内。共有先の市IDを失わず、復旧後の再試行で元の浅江中学校前へ戻った。通信失敗を不存在や0件として扱わない。
 
-ローカルからR2への直接取得は配信側CORSにより許可されていなかった。公開先オリジンはHTTP 200とCORS許可を確認。設定を変更せず、ローカルの画面操作は保存済みサンプルを配信して検証し、実際のR2取得は公開後に別途確認する。
+ローカルからR2への直接取得は配信側CORSにより許可されていなかった。公開先オリジンはHTTP 200とCORS許可を確認。設定を変更せず、ローカルの画面操作は保存済みサンプルを配信して検証した。公開後の実ブラウザーでも、市の光駅→国の光駅、北河内駅→国の北河内駅へ移り、実際のR2取得が成功することを確認した。
+
+公開版で光駅の5/10/15分候補2/3/6件、医療に絞った施設詳細との往復、リンクのコピー成功表示と10分リンクの再読み込みを確認。浅江中学校前は市の独立したIDのまま表示。北河内駅は徒歩圏を表示でき、15分の施設候補0件を案内する。通常操作のブラウザー警告・エラーはなし。確認用タブとローカルサーバーは終了した。
 
 ## 公開・正式保存
 
-公開先は [バス停と暮らしマップ](https://yyy-yuichi.github.io/bus-stop-compact-town/)。正式保存先は既存の [案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。公開コミット・処理結果・最終保存IDは、読み戻して確認後に追記する。
+公開先は [バス停と暮らしマップ](https://yyy-yuichi.github.io/bus-stop-compact-town/)。正式保存先は既存の [案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。
+
+- 実装 `1952194341e554956bfac5140ac1a3bdb600b4a9` の [PR #3](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/3) は [CI 34746899417](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34746899417) 成功後、2026-09-13 17:08:26 JSTに通常マージ。mainは `cd17687b08e2bc239b3988cec88586e8e28f1e68`。実装コミットとのファイル差分は0。
+- 同mainに対する [Pages 34746953388](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34746953388) が成功。公開処理の成果物と公開URLの18ファイルがすべてバイト単位で一致し、データ・説明ページ・権利表記もmainと一致した。
+- [原本・ソースZIP](https://drive.google.com/file/d/1xStcyAs-cpDALSxs0C_rlKkiSVQ6Eqt-/view)（156ファイル・26,711,221 bytes）、[ローカル検証ビルドZIP](https://drive.google.com/file/d/1AUuItzy_rds5fHPmHxtH6sJUEgXauPFk/view)（18ファイル・681,701 bytes）、[実際の公開サイトZIP](https://drive.google.com/file/d/1LLTqGyZNr-t4XCTE1tOINpQiD8dVOozR/view)（18ファイル・686,432 bytes）、[公開照合JSON](https://drive.google.com/file/d/1LNlYS84tgfB50RaVNNTs-kHCa8A6Is1K/view)（3,587 bytes）を保存。ZIP内部の全ファイルをSHA-256で照合し、Drive上の名前・サイズ・親フォルダも再取得して一致を確認した。
+- ソースZIPは `1952194` のアプリコードと原資料。公開確認後のこの報告と `HANDOFF-regional-map-20260913.md` を、ZIP内の作成時点の資料より優先する。報告・引き継ぎの後続変更はアプリを変更しない。
+- 最初のソースZIP保存は自動承認レビューが正式保存先との対応を確認できず拒否した。Drive metadataで案件フォルダ `1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624` の直接の親が、ユーザー指定の `Codex_非積算プロジェクト`（`14jbXEMGQSyhebV2FTkG9n4AJCZ-OAVrB`）であることを再取得し、同じ宛先への保存が通常の再審査で許可された。宛先変更や間接的な迂回は行わず解消済み。
+
+今回の2要望は表示・検索・画面整理・公開まで完了。市の各登録点を起点とする徒歩圏の新規計算、由宇の保留データ調査、施設の入口確認、既存の分類保留・重複整理は別途の作業として残す。
