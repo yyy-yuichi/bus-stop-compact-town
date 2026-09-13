@@ -1,6 +1,6 @@
 # 徒歩圏の施設候補と時間切替（2026-09-13）
 
-ユーザーが了承済みの①代表地点の判定確認、②施設候補一覧、③5分・10分・15分の絞り込みを実装した。確認の返答だけで作業を止めた点を訂正し、同じ作業承認を求めず公開と正式保存まで進める。
+ユーザーが了承済みの①代表地点の判定確認、②施設候補一覧、③5分・10分・15分の絞り込みを実装し、公開版の動作と公開ファイルを確認した。
 
 ## できるようになったこと
 
@@ -46,4 +46,12 @@
 
 ## 公開と正式保存
 
-公開先は [バス停と暮らしマップ](https://yyy-yuichi.github.io/bus-stop-compact-town/)。正式保存先は既存の [案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。本書作成時点は実装・ローカル検証を完了し、公開反映と成果物保存を仕上げている段階。実行ID、公開先照合、最終保存IDはこの節と `HANDOFF.md` に追記する。
+公開先は [バス停と暮らしマップ](https://yyy-yuichi.github.io/bus-stop-compact-town/)。正式保存先は既存の [案件Drive](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624)。
+
+- 実装コミット `584549a2cb71236da5cfb20319396bf5c4583abb` を [PR #2](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/2) として提示し、[CI 34740185935](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34740185935)が成功。2026-09-13 14:26:16 JSTに通常マージされ、mainは `98f0beedd3630bc38f836ac091b8dcafb1892f39`。検証したPRコミットとマージコミットのファイル差分は0。
+- mainへの直接pushは自動承認レビューが「直接pushへの承認証拠がない」と拒否。リポジトリ設定を読み直すとmainの保護は無効だったが、直接pushを繰り返さず、審査が示したPR手順を採用した。作業ブランチの保存、PR作成、CI成功後のコミットを固定した通常マージ、標準Pages公開処理はいずれも通常審査で許可された。管理者上書き、強制push、保護設定の変更、別ブランチからの迂回公開は行っていない。この拒否はPR手順により解消済みで、現在の公開保留として扱わない。
+- [原本・ソースZIP](https://drive.google.com/file/d/1vg5PvsZ5fDMDGk4kgrGGUYfAGAoq3132/view)（150ファイル・26,686,707 bytes）と [検証済みサイトZIP](https://drive.google.com/file/d/1q1SzF8Y7C4VpjuYKYu50pFa0i2qDuFMw/view)（18ファイル・679,997 bytes）を保存。ZIP内部は作成時に全ファイルのSHA-256を読み戻して確認し、Drive上の名前・サイズ・親フォルダも一致。後者はローカル検証ビルド。原本ZIPのアプリソースは検証済みの `584549a` で、公開されたマージコミット `98f0bee` とファイル差分は0。
+- [Pages 34740324707](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34740324707)が `98f0beedd3630bc38f836ac091b8dcafb1892f39` で成功。実際の公開処理の成果物と公開先の18ファイルがすべてバイト単位で一致し、公開データ・説明・権利表記も同コミットと一致した。
+- [実際の公開サイトZIP](https://drive.google.com/file/d/1aNN9cExuvWiNSJZTe1zjOcGth5mr3B-W/view)（18ファイル・684,728 bytes、SHA-256 `55b58b3ebea3cbd38904efa2eee9b17d7520da5c8f82398ae92d559c565056cc`）と [公開ファイル照合結果](https://drive.google.com/file/d/1o7TQW4YO1BnHyRTq6kWKUkXdFYlYjntu/view)（3,527 bytes）も保存。Driveの名前・サイズ・案件親フォルダを再取得して一致を確認した。
+- 公開版の [スポーツセンター前・10分](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A3630&minutes=10) で5件、5分で1件、15分で6件を確認。買い物3件からサンパークの詳細へ進み、15分・買い物の条件で戻り、10分へ切替後の再読み込みで10分・5件を復元できた。公開版の通常操作でブラウザーの警告・エラーはなし。検証に使ったタブとローカルサーバーは終了した。
+- この報告と同じ案件Driveの `HANDOFF-walking-facilities-20260913.md` は公開確認後の最終資料であり、原本ZIP内の作成時点の報告・HANDOFFより優先する。今回の①〜③は公開まで完了。入口調査・施設分類保留の追跡・全件再計算は別の作業として残す。

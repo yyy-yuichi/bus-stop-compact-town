@@ -6,12 +6,16 @@ export interface BusProperties {
   'name:ja'?: string;
   '@id'?: string;
   operator?: string;
-  source_kind?: 'national' | 'osm-pilot';
+  source_kind?: 'national' | 'municipal' | 'osm-pilot';
   source_year?: number;
   source_url?: string;
+  source_namespace?: 'hikari' | 'iwakuni';
+  source_stop_id?: string;
+  source_date?: string;
+  city?: string;
   routes?: string[];
   stop_area_id?: string;
-  location_kind?: 'representative' | 'unverified';
+  location_kind?: 'representative' | 'official-source' | 'unverified';
 }
 export type BusFeature = Feature<Point, BusProperties>;
 export type BusCollection = FeatureCollection<Point, BusProperties> & { timestamp?: string };

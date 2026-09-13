@@ -3,10 +3,17 @@ import fs from 'node:fs';
 import { searchPlaces } from '../src/placeSearch.ts';
 import { placeLink, readPlaceLink } from '../src/placeLink.ts';
 import { facilityIconMarkup } from '../src/facilityIcons.ts';
+import { municipalCatalog } from '../src/stopCatalog.ts';
 
 const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
 const stops = read('review-national.geojson').features;
 const facilities = read('shopping.geojson').features;
+const municipal = municipalCatalog(read('review-stops.geojson'), read('review-routes.json'));
+assert.equal(searchPlaces('岩国市', municipal, []).stops.length, 735);
+assert.equal(searchPlaces('光市', municipal, []).stops.length, 172);
+assert(searchPlaces('光市 あさえ', municipal, []).stops.length === 0, 'Kanji readings must not be invented');
+assert(searchPlaces('光市 浅江中学校前', municipal, []).stops.length > 0);
+assert(searchPlaces('岩国市 北河内駅', municipal, []).stops.length > 0);
 assert.deepEqual(searchPlaces('こすもす', stops, facilities), searchPlaces('ｺｽﾓｽ', stops, facilities));
 assert.deepEqual(searchPlaces('こすもす 高栄', stops, facilities).facilities.map(f => f.id), ['cosmos-onoda']);
 assert.equal(searchPlaces('コスモス 宇部市', stops, facilities).stops[0].properties.name, 'コスモス東岐波店');
@@ -26,6 +33,7 @@ assert.deepEqual(searchPlaces('存在しない試験地点12345', stops, facilit
 const allPlaces = [
   ...facilities.map(f => ({ kind: 'facility', id: String(f.id) })),
   ...stops.map(f => ({ kind: 'national', id: String(f.id) })),
+  ...municipal.map(f => ({ kind: 'municipal', id: String(f.id) })),
   ...read('walking-onoda.json').pilot_stops.map(s => ({ kind: 'pilot', id: s.id })),
 ];
 for (const place of allPlaces) {
@@ -49,6 +57,7 @@ for (const stop of read('walking-onoda.json').pilot_stops) {
   }
 }
 const pilotHash = '#kind=pilot&id=node%2F5127585172';
+for (const hash of ['#kind=municipal&id=hikari:1_01&minutes=15', '#kind=municipal&id=iwakuni:1_01&speed=4', '#kind=national&id=hikari:1_01', '#kind=municipal&id=mlit-p11-22-35:1', '#kind=municipal&id=hikari:../bad']) assert.equal(readPlaceLink(hash), null, hash);
 for (const invalidConditions of [
   'minutes=5', 'speed=3', 'minutes=&speed=3', 'minutes=5&speed=',
   'minutes=0&speed=3', 'minutes=15&speed=3', 'minutes=5.0&speed=3',

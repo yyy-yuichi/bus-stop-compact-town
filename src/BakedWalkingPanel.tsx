@@ -248,8 +248,8 @@ function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Co
     // Tailwindのクラス抽出は文字列補間を追えないため値をリテラルで書いている。
     // 両定数を変えたらここも手で合わせる。
     div.innerHTML = `
-      <p class="font-semibold">徒歩の距離（時速4km）</p>
-      <p class="mt-0.5 text-[10px]">表示中：${minutes}分まで</p>
+      <details><summary class="legend-summary">徒歩${minutes}分 · 色の見方</summary>
+      <p class="text-[10px]">坂道を考慮・時速4km相当</p>
       <div class="walking-legend-ramp">
         <div class="h-2 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
         <div class="relative mt-1 h-4 text-[10px]">
@@ -267,6 +267,7 @@ function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Co
         </i>
         <span>8%以上</span></span>
       </div>
+      </details>
     `;
     L.DomEvent.disableClickPropagation(div);
     return div;
@@ -397,8 +398,7 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
   }, [map, id, displayed, origin, active]);
 
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
-    <h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3>
-    <p className="mt-2 text-xs leading-relaxed text-stone-600">坂道を考慮した、時速4km・徒歩{minutes}分相当の範囲です。緑の濃淡はバス停からの距離、赤い線は急な坂道を表します。</p>
+    <h3 id="walk-title" className="text-sm font-semibold">徒歩圏</h3>
     {catchmentError ? <section className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
@@ -408,8 +408,12 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
         </div>
         <BakedFacilityList key={id} candidates={visibleCandidates} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
       </>}
-      <p className="mt-4 text-[11px] leading-relaxed text-stone-500">信号待ち、工事や現地の横断可否、車いす対応は反映していません。坂は地形データからの概算です。現地の通行状況を確認してください。</p>
-      <a className="mt-2 inline-block text-[11px] text-sky-800 underline" href={`${import.meta.env.BASE_URL}about.html#walking`}>計算方法とデータについて</a>
+      <details className="text-xs leading-relaxed text-stone-500">
+        <summary className="min-h-11 py-3 font-semibold">徒歩圏の計算について</summary>
+        <p>坂道を考慮した、時速4km・徒歩{minutes}分相当の範囲です。緑の濃淡はバス停からの距離、赤い線は急な坂道を表します。</p>
+        <p className="mt-2">信号待ち、工事や現地の横断可否、車いす対応は反映していません。坂は地形データからの概算です。現地の通行状況を確認してください。</p>
+        <a className="mt-2 inline-block text-sky-800 underline" href={`${import.meta.env.BASE_URL}about.html#walking`}>計算方法とデータについて</a>
+      </details>
     </>}
   </section>;
 }
