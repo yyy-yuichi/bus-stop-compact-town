@@ -10,6 +10,11 @@ export const SHOPPING_CATEGORIES: { id: ShoppingCategory; name: string; color: s
   { id: 'hospital', name: '病院', color: '#b34a65' },
   { id: 'clinic', name: '診療所', color: '#9b527e' },
   { id: 'pharmacy', name: '薬局', color: '#546cb4' },
+  { id: 'post_office', name: '郵便局', color: '#ac4f40' },
+  { id: 'bank', name: '銀行', color: '#4a6a84' },
+  { id: 'library', name: '図書館', color: '#95732a' },
+  { id: 'townhall', name: '役所・支所', color: '#477461' },
+  { id: 'community_centre', name: '公民館・交流施設', color: '#8b6550' },
 ];
 const REFERENCE_CATEGORY = { id: 'reference' as const, name: '参考施設（対象外・分類保留）', color: '#68716c' };
 export const categoryOf = (feature: ShoppingFeature) => feature.properties.category === 'reference' ? REFERENCE_CATEGORY : SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.category || 'mall'))!;

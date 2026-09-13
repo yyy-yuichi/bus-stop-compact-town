@@ -98,7 +98,7 @@ export function clipCatchment(catchment: Catchment, budget: number): Catchment {
 
 export const FACILITY_ROAD_GAP_M = 25;
 export const WALKING_METERS_PER_MINUTE = 4000 / 60;
-export type FacilityGroup = 'shopping' | 'medical';
+export type FacilityGroup = 'shopping' | 'medical' | 'services';
 export interface BakedFacilityCandidate {
   facility: ShoppingFeature;
   group: FacilityGroup;
@@ -125,12 +125,13 @@ function nearbyBounds(a: Bounds, b: Bounds, latitude: number): boolean {
   return a[0] <= b[2] + dx && a[2] >= b[0] - dx && a[1] <= b[3] + dy && a[3] >= b[1] - dy;
 }
 
-/** Prepare once for all 1,135 records; retain source IDs and exclude reference records. */
+/** Prepare once; retain source IDs and exclude reference records. */
 export function prepareFacilities(facilities: ShoppingFeature[]): PreparedFacility[] {
   return facilities.flatMap(facility => {
     const category = facility.properties.category ?? 'mall';
-    if (!['mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy'].includes(category)) return [];
-    const group: FacilityGroup = ['hospital', 'clinic', 'pharmacy'].includes(category) ? 'medical' : 'shopping';
+    const services = ['post_office', 'bank', 'library', 'townhall', 'community_centre'];
+    if (!['mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy', ...services].includes(category)) return [];
+    const group: FacilityGroup = services.includes(category) ? 'services' : ['hospital', 'clinic', 'pharmacy'].includes(category) ? 'medical' : 'shopping';
     const point = facility.geometry.type === 'Point' ? facility.geometry.coordinates as Coordinate : undefined;
     const polygons = facility.geometry.type === 'MultiPolygon' ? facility.geometry.coordinates as Coordinate[][][] : [];
     const points = point ? [point] : polygons.flat(2);

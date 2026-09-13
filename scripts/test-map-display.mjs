@@ -36,7 +36,7 @@ const boundary = [{stop: stops[0], x: -0.01, y: 0}, {stop: stops[1], x: 0, y: 0}
 assert.equal(clusterStops(boundary, 96)[0].stops.length, 2, 'Merge close points across a cell boundary');
 
 const facilities = read('shopping.geojson').features;
-const allCategories = ['mall', 'supermarket', 'drugstore', 'convenience', 'pharmacy', 'hospital', 'clinic'];
+const allCategories = ['mall', 'supermarket', 'drugstore', 'convenience', 'pharmacy', 'hospital', 'clinic', 'post_office', 'bank', 'library', 'townhall', 'community_centre'];
 const chosen = facilities.find(f => f.properties.category === 'supermarket');
 const reference = facilities.find(f => f.properties.category === 'reference');
 const walking = {scope: 'stop-a:15', ids: [String(chosen.id), String(reference.id)]};

@@ -203,7 +203,7 @@ function groupSteepPieces(pieces: SteepPiece[]): { color: string; lines: Coordin
  */
 const SCRIM_PANE = 'walkScrim';
 const SCRIM_Z_INDEX = 250; // tilePane=200 < ここ < overlayPane=400
-const SCRIM_OPACITY = 0.5;
+const SCRIM_OPACITY = 0.25;
 
 function ensureScrimPane(map: L.Map): void {
   if (map.getPane(SCRIM_PANE)) return;
