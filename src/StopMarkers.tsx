@@ -20,6 +20,11 @@ export default function StopMarkers({ map, stops, selected, onSelect }: {
         title: name, keyboard: true, zIndexOffset: active ? 800 : 0,
       }).on('click', () => { map.closePopup(); onSelect(id); }).addTo(group);
       marker.getElement()?.setAttribute('aria-label', `${active ? '選択中のバス停' : 'バス停'} ${name}`);
+      if (active) {
+        const label = document.createElement('span');
+        label.textContent = name;
+        marker.bindTooltip(label, { permanent: true, direction: 'left', offset: [-11, 0], className: 'guide-stop-label' });
+      }
     };
     const draw = () => {
       group.clearLayers();

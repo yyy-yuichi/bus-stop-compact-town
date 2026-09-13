@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
 import { bakedFacilityCandidates, catchmentFile, clipCatchment, distance, interpolate, parseCatchment, prepareFacilities, walkDataBaseUrl, WALKING_METERS_PER_MINUTE } from './bakedWalking';
-import type { Catchment, Coordinate, Segment } from './bakedWalking';
+import type { Catchment, Coordinate, Segment, FacilityGroup } from './bakedWalking';
 import { fitContent } from './mapLayout';
 import type { LoadState, ShoppingFeature } from './types';
 import type { BakedWalkingMinutes } from './placeLink';
@@ -9,22 +9,8 @@ import BakedFacilityList from './BakedFacilityList';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
-/**
- * 「谷る」と読める最小の連続長。焼き込み済みの急坂区間を接続長の分布で見ると、
- * 10m未満が全体長の2.0%、10-25mが10.3%、25-50mが27.7%、50-100mが31.6%、
- * 100m以上が28.3%（連結区間ごとの合計長で集計）。25m（10-25mバケットの上限）
- * で切ると、捨てるのは<25mの合計12.3%だけで、信号待ち程度で終わる単発の
- * フラグメントはほぼ消える一方、実際に体感する坂はほぼ全部残る。
- */
 const MIN_STEEP_RUN_M = 25;
 
-/**
- * 指定範囲（budget。通常は焼き込み全体、1000m）に切り詰めた上で、|grade|>=5%のセグメントを
- * 端点の座標一致（焼き込み時に5桁精度で丸め済み）でつないで連続区間（run）を作る。
- * run の合計長が MIN_STEEP_RUN_M 未満の断片は間引く。色分けは9%→7%→9%のような
- * 一続きの坂をしきい値で切り刻んで見せないよう、run 単位ではなくセグメント単位の
- * 勾配で行う（呼び出し側で処理）。
- */
 function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[] } {
   const trimmed: (SteepPiece & { length: number })[] = [];
   for (const { a, b, d1, d2, grade } of segments) {
@@ -60,47 +46,14 @@ function steepRuns(segments: Segment[], budget: number): { pieces: SteepPiece[] 
   return { pieces };
 }
 
-/**
- * 停留所からの距離（坂道込みの平地換算）を色に変える連続レンジ。緑→黄→赤は
- * 「近い＝良い／遠い＝悪い」に読めてしまうため避け、単一ハイの連続階調にした。
- *
- * 最初は寒色（インディゴ→ブルー→ティール）で検討したが、OSM標準スタイルは
- * 水域を淡い灰青で塗るため、遠端の水色〜シアンが川・池・海岸線と competing
- * してしまう（青系は読みにくいというフィードバックも受けた）。山口県は
- * 森林・河川・海岸のいずれも多いため、緑系に変更した。
- *
- * ただし緑には別の罠がある。OSM標準は公園（明度88%・#c8facc付近）も森林
- * （明度72%・#add19e付近）も緑で塗るため、山口県の大部分では地図の下地が
- * すでに緑になる。そこを生き残る条件は「明るい緑」ではなく「彩度が高く沈んだ
- * 緑」であること。そこでdeep forest green（近端）→emerald→bright
- * yellow-green（遠端）というviridisの緑側半分に近い配色にし、彩度を65%→80%
- * まで上げる一方で明度は22%→52%に抑えた。OSM側の公園・森林は明度72〜88%・
- * 彩度は場所により36〜83%とまちまちだが明るく霞んだ配色なので、明度を終始
- * 50%台以下に沈めておけば、色相が多少近づいても「地図の下地」ではなく
- * 「上に乗った線」として見えるはずだという判断。遠端をyellow-green
- * （色相75°、彩度80%、明度52%）というOSMが使わない鮮やかさで止め、
- * 純粋な黄色までは寄せずに「遠いほど色が薄れて消える」のではなく
- * 「遠いほど色相が変わって主張が強くなる」ことで連続性と遠端の存在感を
- * 両立させた。実機の地図では未確認（このタスクではブラウザ検証を行っていない）。
- * 特に遠端の黄緑が森林ポリゴンの上でどう見えるかはユーザーの目視確認が要る。
- */
+// Near to far uses the same distance budget and a muted green ramp.
 const RAMP_STOPS: [number, string][] = [
-  [0, '#145d38'],
-  [1 / 3, '#188b22'],
-  [2 / 3, '#50bb1b'],
-  [1, '#b6e723'],
+  [0, '#285f4d'],
+  [1 / 3, '#508c6b'],
+  [2 / 3, '#86ad86'],
+  [1, '#b9cba3'],
 ];
 
-/**
- * 急坂オーバーレイは元々#dc2626の破線＋#7f1d1d の太い実線だった。破線は薄い
- * 地図の上でも最も見落とされやすいマークなのでやめ、実線に統一。色相は距離
- * ランプ（緑〜黄緑）とは別系統の暖色（赤）のまま残す：色そのものが「急坂である」
- * の一次サインで、8%以上はより暗く彩度の高い赤にする「濃さ」だけで階層を
- * 区別する。距離との対応は無い（同じ8%の坂なら、停留所の近くでも遠くでも
- * 同じ赤）——急坂がどこにあるかは色相そのもので即座にわかる方を優先した。
- * 太さの設計についてはBASE_WEIGHT/STEEP_WEIGHTのコメントを参照。実機の地図
- * では未確認（本タスクではブラウザ検証を行っていない）。
- */
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
@@ -122,19 +75,9 @@ function rampColor(t: number): string {
   return RAMP_STOPS[RAMP_STOPS.length - 1][1];
 }
 
-/**
- * 651〜3,355本ものセグメントを1本ずつ描くと重い。距離を12段のバケツに
- * まとめて、バケツごとに1本のポリライン（複数の線分をまとめた1レイヤー）
- * として描く。地図上の縮尺では連続したグラデーションに見えつつ、レイヤー数は
- * 停留所あたり十数枚に収まる。セグメント長は中央値約10m・最大約49mで
- * バケツ幅（1000m/12≒83m）よりずっと短いため、セグメント単位（中点の距離で
- * バケツ分け）で十分連続に見える。
- */
 const DISTANCE_BUCKETS = 12;
-/** 距離ランプの太さ。急坂の縞を乗せる「地」として、STEEP_WEIGHTのコメントの
- *  通り太さを持たせている（単独なら3pxでも読めるが、それでは縞の置き場がない）。
- */
-const BASE_WEIGHT = 5;
+// The thin slope stripe leaves the distance color visible on either side.
+const BASE_WEIGHT = 3;
 
 function bucketByMid(items: { a: Coordinate; b: Coordinate; mid: number }[], budget: number): Coordinate[][][] {
   const buckets: Coordinate[][][] = Array.from({ length: DISTANCE_BUCKETS }, () => []);
@@ -152,27 +95,7 @@ function bucketSegments(catchment: Catchment, colorBudget: number): { color: str
     .filter(bucket => bucket.lines.length > 0);
 }
 
-/**
- * 急坂の2階層（5-8%・8%以上）。色相の違い（赤→より暗い赤）だけで区別できるので、
- * 太さは両階層とも同じにする（8%以上をさらに太くする必要はないというユーザー
- * 判断）。距離とは無関係な独立ハイライトなので距離バケツには分けない：階層ごとに
- * 1レイヤーで足りる（最大2枚）。
- *
- * 太さは当初weight5で、距離ランプ（weight3）より太かった。急坂は同じ座標に
- * ランプの上から重ねて描く（描画順は変えていない）ため、太い方が上に乗ると
- * 下のランプ色を完全に覆い隠してしまい、「急坂であること」はわかっても
- * 「そこまでの距離」が読めなくなっていた——向きが逆だった。
- *
- * そこで関係を反転：ランプ側をBASE_WEIGHT（5）まで太くして「地」にし、急坂側は
- * STEEP_WEIGHT（2）まで細くして「地の上に乗る縞」にする。Leafletのポリラインは
- * 中心線に対して太さを均等に描くため、同じ座標に細い線を重ねれば自然に中央
- * 揃えの縞になり、ランプ色は縞の両側に帯として残る——両方が同時に読める。
- * 太さの絶対値ではなく比（5:2）が肝心：縞が「明らかに細い」と言えることを基準に
- * 選んだ。線をこれ以上太くする理由はない（薄い線を求められた経緯があるため）ので、
- * 両方が読み取れる最小の組み合わせとして5と2にした。実機の地図では未確認
- * （本タスクではブラウザ検証を行っていない）。
- */
-const STEEP_WEIGHT = 2;
+const STEEP_WEIGHT = 1.3;
 const STEEP_TIERS = [
   { min: 5, max: 8, color: '#dc2626' },
   { min: 8, max: Infinity, color: '#7f1d1d' },
@@ -187,36 +110,6 @@ function groupSteepPieces(pieces: SteepPiece[]): { color: string; lines: Coordin
     .filter(tier => tier.lines.length > 0);
 }
 
-/**
- * 地図全体を白いスクリムで少し覆い、OSM標準タイル（道路・建物・土地利用の塗り）
- * の主張を弱めて、上に乗る徒歩圏の線を「地図の模様」ではなく「乗った線」として
- * 見えやすくする。tilePane（z-index 200）より上、overlayPane（同400）より下に
- * 置きたいので、その間のz-indexを持つ専用paneを1つ作る。不透明度0.5は
- * 「道路の形や地名は読めるが、地図全体は霧にならない」の中間点として選んだ
- * （もっと薄いと下地の緑・道路網に線が沈み、もっと濃いと地名が読めなくなる）。
- * 実機の地図では未確認。
- *
- * 当初は線の下にさらに中立色のケーシング（縁取り）も敷いていたが、ユーザーが
- * 実機で見た結果「スクリムだけで十分分離できている。ケーシングは効果と呼べる
- * ほどの仕事をしていない」と判断されたため削除した。分離の役目はスクリムが
- * 一手に引き受けている。
- */
-const SCRIM_PANE = 'walkScrim';
-const SCRIM_Z_INDEX = 250; // tilePane=200 < ここ < overlayPane=400
-const SCRIM_OPACITY = 0.5;
-
-function ensureScrimPane(map: L.Map): void {
-  if (map.getPane(SCRIM_PANE)) return;
-  const pane = map.createPane(SCRIM_PANE);
-  pane.style.zIndex = String(SCRIM_Z_INDEX);
-  pane.style.pointerEvents = 'none';
-}
-
-/**
- * 色の意味（距離のグラデーションと急坂の凡例）は、ドロワーに置くとスクロールで
- * 隠れてしまうため、地図に固定されるLeafletコントロールにした。停留所を切り替
- * えても内容は変わらないので、徒歩圏レイヤーと一緒に付け外しするだけでよい。
- */
 function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Control {
   const control = new L.Control({ position: 'bottomleft' });
   control.onAdd = () => {
@@ -243,10 +136,7 @@ function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Co
     // padding分だけcontent areaが狭くなるだけで、絶対配置の基準となる
     // padding boxの幅＝要素の外形幅は変わらないため、はみ出す余白は増えない。）
     //
-    // スウォッチの高さ（10px/4px、比は5:2＝BASE_WEIGHT/STEEP_WEIGHTと同じ）は、
-    // 凡例を読みやすく拡大したときも地図上の実際の太さ比と揃えるためのもの。
-    // Tailwindのクラス抽出は文字列補間を追えないため値をリテラルで書いている。
-    // 両定数を変えたらここも手で合わせる。
+    // Enlarge both strokes equally so the legend retains their actual ratio.
     div.innerHTML = `
       <details><summary class="legend-summary">徒歩${minutes}分 · 色の見方</summary>
       <p class="text-[10px]">坂道を考慮・時速4km相当</p>
@@ -258,12 +148,12 @@ function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Co
       </div>
       <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
         <span class="font-semibold">坂道</span>
-        <span class="inline-flex items-center gap-1"><i class="relative inline-block h-[10px] w-5 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
-          <span class="absolute inset-x-0 top-1/2 h-[4px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[0].color}"></span>
+        <span class="inline-flex items-center gap-1"><i class="relative inline-block w-5 shrink-0 rounded-full" style="height:${BASE_WEIGHT * 2}px;background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 -translate-y-1/2 rounded-full" style="height:${STEEP_WEIGHT * 2}px;background:${STEEP_TIERS[0].color}"></span>
         </i>
         <span>5%以上</span></span>
-        <span class="inline-flex items-center gap-1"><i class="relative inline-block h-[10px] w-5 shrink-0 rounded-full" style="background:${rampColor(0.5)}">
-          <span class="absolute inset-x-0 top-1/2 h-[4px] -translate-y-1/2 rounded-full" style="background:${STEEP_TIERS[1].color}"></span>
+        <span class="inline-flex items-center gap-1"><i class="relative inline-block w-5 shrink-0 rounded-full" style="height:${BASE_WEIGHT * 2}px;background:${rampColor(0.5)}">
+          <span class="absolute inset-x-0 top-1/2 -translate-y-1/2 rounded-full" style="height:${STEEP_WEIGHT * 2}px;background:${STEEP_TIERS[1].color}"></span>
         </i>
         <span>8%以上</span></span>
       </div>
@@ -292,14 +182,6 @@ export function useUnreachableStops() {
   return unreachable;
 }
 
-/**
- * Stops within this many metres of a walkable road read as "just missed the
- * snap threshold" (position/road-data noise); beyond it, as "nothing nearby".
- * 150m = 5x the 30m snap_limit — roughly a short block, and where the 289
- * unreachable stops' distance distribution stops looking like noise and
- * starts looking like a real gap (30-200m: 232 stops bunched near the
- * threshold; 200m+: 57 stops trailing off toward "not found").
- */
 const NEARBY_ROAD_LIMIT_M = 150;
 const GENERIC_NO_CATCHMENT_MESSAGE = 'この停留所と歩ける道路の接続を確認できませんでした。別の停留所をお試しください。';
 
@@ -309,10 +191,6 @@ function noCatchmentMessage(distance: number | null | undefined): string {
   return `この停留所から最も近い歩ける道路まで約${Math.round(distance)}mありました（自動判定の基準は30m）。停留所の位置や道路データのわずかなずれによるものと考えられます。別の停留所をお試しください。`;
 }
 
-/**
- * 選択中の徒歩圏だけを取得する。接続不可カタログにある地点は取得せず案内し、
- * それ以外の404・取得失敗は再試行可能な配信エラーとして表示する。
- */
 function useCatchment(id: string, knownUnreachable: boolean) {
   const [state, setState] = useState<{ id: string; catchment: Catchment | null; loading: boolean; error: boolean }>({ id, catchment: null, loading: true, error: false });
   const [attempt, setAttempt] = useState(0);
@@ -355,22 +233,14 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
   const preparedFacilities = useMemo(() => prepareFacilities(facilities), [facilities]);
   const candidates = useMemo(() => catchment && facilityState === 'ready' ? bakedFacilityCandidates(catchment, preparedFacilities) : [], [catchment, preparedFacilities, facilityState]);
   const visibleCandidates = useMemo(() => candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [candidates, minutes]);
-  useEffect(() => { onMapFacilities(scope, active ? visibleCandidates.map(c => String(c.facility.id)) : []); }, [scope, active, visibleCandidates, onMapFacilities]);
+  const [facilityGroup, setFacilityGroup] = useState<FacilityGroup | 'all'>('all');
+  useEffect(() => { setFacilityGroup('all'); }, [id]);
+  useEffect(() => { onMapFacilities(scope, active ? visibleCandidates.filter(c => facilityGroup === 'all' || c.group === facilityGroup).map(c => String(c.facility.id)) : []); }, [scope, active, visibleCandidates, facilityGroup, onMapFacilities]);
 
   useEffect(() => {
     if (!map || !catchment || !displayed || !active) return;
-    // paneは地図の生存期間ずっと存在してよい静的な入れ物（中身が無ければ何も
-    // 描画せず無害）。LeafletにremovePane相当の公開APIが無く、私的フィールドを
-    // 触ってまで消す理由がないので、消すのは中身（スクリム矩形）だけにする。
-    ensureScrimPane(map);
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
-
-    // スクリムは徒歩圏を見せている間だけ地図を覆う。groupに入れているので、
-    // このeffectの後始末（group.remove()）で他のレイヤーと同時に消える。
-    L.rectangle(L.latLngBounds([-90, -180], [90, 180]), {
-      pane: SCRIM_PANE, stroke: false, fillColor: '#ffffff', fillOpacity: SCRIM_OPACITY, interactive: false,
-    }).addTo(group);
 
     for (const { color, lines } of bucketSegments(displayed, catchment.budget)) {
       L.polyline(lines.map(toLatLng), { color, weight: BASE_WEIGHT, opacity: 0.9, interactive: false }).addTo(group);
@@ -408,7 +278,7 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
         <div className="mt-4 grid grid-cols-3 gap-2" role="group" aria-label="徒歩時間">
           {([5, 10, 15] as const).map(n => <button key={n} aria-pressed={minutes === n} onClick={() => onMinutes(n)} className={`min-h-12 rounded-xl border text-sm font-bold ${minutes === n ? 'border-emerald-900 bg-emerald-900 text-white' : 'border-stone-200 bg-white text-stone-700'}`}>徒歩 {n} 分</button>)}
         </div>
-        <BakedFacilityList key={id} candidates={visibleCandidates} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
+        <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
       </>}
       <details className="text-xs leading-relaxed text-stone-500">
         <summary className="min-h-11 py-3 font-semibold">徒歩圏の計算について</summary>

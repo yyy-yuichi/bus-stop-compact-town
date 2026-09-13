@@ -23,7 +23,7 @@
 .region-label { margin-left:4px; padding:4px 9px; font-size:11px; border:1px solid #d7e6dd; border-radius:5px; color:var(--green); background:#f4f9f5; }
 .app-header>a { padding:12px 0 12px 16px; font-size:12px; color:#52645d; white-space:nowrap; }
 .app .map { top:52px; }
-.app .leaflet-tile-pane { filter:saturate(.62) brightness(1.04); }
+.app .leaflet-tile { filter:saturate(.62) brightness(1.04); }
 .map-panel { position:absolute; top:68px; left:20px; z-index:1100; width:300px; max-height:calc(100dvh - 96px); overflow:auto; background:transparent; border:0; padding:3px; scrollbar-width:thin; }
 .panel-intro { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 .panel-kicker { color:var(--green); font-size:9px; font-weight:750; letter-spacing:.16em; margin-bottom:7px; }
@@ -195,3 +195,24 @@
   .link-notice { top:205px; left:12px; max-width:calc(100% - 24px); font-size:11px; }
 }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition-duration:0.01ms !important; } }
+
+.basemap-settings { padding: 0 0 16px; border-bottom: 1px solid #dfe5dd; margin-bottom: 16px; }
+.basemap-settings h3 { font-size: 13px; font-weight: 700; margin: 0 0 9px; }
+.basemap-settings > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.basemap-settings button { display:flex; align-items:center; gap:7px; min-height:48px; border:1px solid #dce2d9; border-radius:11px; background:#fff; padding:7px; font-size:12px; }
+.basemap-settings button[aria-pressed=true] { border-color:#1f6651; background:#eff6ef; font-weight:700; }
+.basemap-settings .helper-text { margin:0; font-size:10px; }
+.basemap-swatch { width:29px; height:29px; flex-shrink:0; border-radius:7px; border:1px solid #cbd7cc; background:linear-gradient(125deg,#94bec0 0 43%,#fffaf0 43% 46%,#f7f0df 46% 68%,#fffaf0 68% 73%,#cbd9ba 73%); }
+.standard-swatch { background:linear-gradient(125deg,#aad3df 0 43%,#f2efe9 43% 60%,#e9ccbb 60% 64%,#bbd6a6 64%); }
+
+/* Guide map: labels name the real points; leaders never relocate them. */
+.guide-facility-label { border:0; background:transparent; }
+.guide-facility-label > span { display:block; height:26px; border:1px solid; border-radius:5px; background:#fffdf5f2; color:#344c40; padding:4px 8px; font:650 11px/16px var(--font-sans); text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; box-shadow:0 1px 3px #3d49351a; }
+.guide-stop-label { padding:5px 10px; border:0; border-radius:5px; background:#234e40; color:#fffdf5; box-shadow:none; font:750 12px/1.5 var(--font-sans); }
+.guide-stop-label.leaflet-tooltip-left:before { border-left-color:#234e40; }
+.shop-marker>span { width:26px; height:26px; border-radius:8px; box-shadow:0 2px 3px #3b4f3930; }
+.shop-marker>span>svg { width:18px; height:18px; }
+.stop-marker:not(.is-selected)>span { width:6px; height:6px; opacity:0.5; box-shadow:none; }
+.stop-marker.is-selected>span { width:21px; height:21px; border:3px solid #fffdf5; background:#234e40; box-shadow:0 0 0 5px #fffdf5bb,0 2px 6px #224f402c; }
+.stop-cluster>span { background:#366452; border:3px solid #fffaf0; box-shadow:none; }
+.walking-legend { width:auto; max-width:210px; border:none; background:#fffdf4e8; box-shadow:none; }

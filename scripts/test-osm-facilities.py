@@ -28,13 +28,39 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(data, rebuilt)
         self.assertEqual(skipped, skipped_again)
         self.assertEqual(data['features'][:22], curated['features'])
-        self.assertEqual(data, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        complete, life_report = module.append_life_facilities(data)
+        self.assertEqual(complete, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        self.assertEqual(complete['features'][:1135], data['features'])
+        self.assertEqual(life_report['added'], 792)
+        self.assertEqual(len(complete['features']), len({f['id'] for f in complete['features']}))
+        self.assertEqual({f['properties']['category'] for f in complete['features'][1135:]}, {*module.LIFE_CATEGORIES, 'reference'})
+        self.assertEqual(life_report['categories']['reference'], 9)
+        again, report_again = module.append_life_facilities(complete)
+        self.assertEqual(again, complete, 'Reimport must not duplicate existing source IDs')
+        self.assertEqual(report_again['added'], 0)
         self.assertEqual(len(data['features']), len({f['id'] for f in data['features']}))
         self.assertEqual({s['kept_id'] for s in skipped if s['reason']=='same_name_node_inside_curated_geometry'}, {'chohu','fuji-yamaguchi'})
         for f in data['features'][22:]:
             self.assertEqual(f['properties']['verified_at'], '')
             self.assertEqual(f['properties']['official_url'], '')
             self.assertEqual(f['properties']['verification_status'], 'osm_unverified')
+
+    def test_life_reviews_preserve_provenance_and_future_notices(self):
+        raw = json.loads((module.LIFE_WORK/'osm-life-facilities.json').read_text(encoding='utf-8'))
+        retrieval = json.loads((module.LIFE_WORK/'retrieval.json').read_text(encoding='utf-8'))
+        original, _ = module.build(raw, {'features':[]}, retrieval['retrieved_at'])
+        reviewed, _ = module.append_life_facilities({'features':[]})
+        self.assertEqual([f['id'] for f in original['features']], [f['id'] for f in reviewed['features']])
+        for before, after in zip(original['features'], reviewed['features']):
+            self.assertEqual(before['geometry'], after['geometry'])
+            self.assertEqual({k:v for k,v in before['properties'].items() if k not in ('category','classification_review')},
+                             {k:v for k,v in after['properties'].items() if k not in ('category','classification_review')})
+        records = {f['id']:f['properties'] for f in reviewed['features']}
+        for identifier in ('osm-node-3167525162', 'osm-node-1423655705', 'osm-node-13062819745', 'osm-node-3987366363'):
+            self.assertEqual(records[identifier]['category'], 'reference')
+        for identifier in ('osm-node-1423658620', 'osm-node-1423656068'):
+            self.assertEqual(records[identifier]['category'], 'post_office', 'Future changes must not alter current candidates')
+            self.assertEqual(records[identifier]['classification_review']['status'], 'retained')
 
     def test_reviews_preserve_every_id_geometry_and_original_provenance(self):
         raw = json.loads((module.WORK/'osm-facilities.json').read_text(encoding='utf-8'))

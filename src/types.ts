@@ -32,7 +32,7 @@ export interface ShoppingProperties {
   osm_name?: string;
   location_verification?: string;
   geometry_note?: string;
-  category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic' | 'reference';
+  category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic' | 'post_office' | 'bank' | 'library' | 'townhall' | 'community_centre' | 'reference';
   classification_review?: {
     checked_at: string;
     status: 'corrected' | 'out_of_scope' | 'pending' | 'retained';

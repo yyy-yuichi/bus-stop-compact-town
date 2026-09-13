@@ -5,6 +5,8 @@ import argparse, datetime, hashlib, json, unicodedata, urllib.parse, urllib.requ
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / 'data-sources/osm-facilities-20260911'
+LIFE_WORK = ROOT / 'data-sources/life-facilities-20260913'
+LIFE_CATEGORIES = ('post_office', 'bank', 'library', 'townhall', 'community_centre')
 QUERY = '''[out:json][timeout:90];
 area["ISO3166-2"="JP-35"]["boundary"="administrative"]->.pref;
 (
@@ -15,6 +17,7 @@ area["ISO3166-2"="JP-35"]["boundary"="administrative"]->.pref;
 out body center;'''
 
 def category(tags):
+    if tags.get('amenity') in LIFE_CATEGORIES: return tags['amenity']
     shop = tags.get('shop')
     if shop in ('supermarket', 'convenience'): return shop
     if shop == 'chemist': return 'drugstore'
@@ -61,7 +64,7 @@ def apply_reviews(additions, reviews):
             raise ValueError(f'Review no longer matches source: {identifier}')
         if review.get('evidence_url') and not safe_website(review['evidence_url']):
             raise ValueError(f'Unsafe review evidence URL: {identifier}')
-        if review['category'] not in ('mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy', 'reference'):
+        if review['category'] not in ('mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy', 'reference', *LIFE_CATEGORIES):
             raise ValueError(f'Invalid reviewed category: {identifier}')
         p['category'] = review['category']
         p['name'] = review.get('name', p['name'])
@@ -111,6 +114,32 @@ def build(raw, existing, retrieved_at, reviews=()):
 def load_reviews():
     return json.loads((ROOT/'data-sources/facility-audit-20260912/reviews.json').read_text(encoding='utf-8'))
 
+def append_life_facilities(base):
+    raw_path = LIFE_WORK/'osm-life-facilities.json'
+    retrieval = json.loads((LIFE_WORK/'retrieval.json').read_text(encoding='utf-8'))
+    if hashlib.sha256(raw_path.read_bytes()).hexdigest() != retrieval['sha256']:
+        raise ValueError('Life facilities source hash mismatch')
+    raw = json.loads(raw_path.read_text(encoding='utf-8'))
+    extra, skipped = build(raw, {'features':[]}, retrieval['retrieved_at'])
+    if any(f['properties']['category'] not in LIFE_CATEGORIES for f in extra['features']):
+        raise ValueError('Unexpected category in life facilities extract')
+    review_data = json.loads((LIFE_WORK/'reviews.json').read_text(encoding='utf-8'))
+    if review_data['source_sha256'] != retrieval['sha256']:
+        raise ValueError('Life reviews refer to a different source snapshot')
+    apply_reviews(extra['features'], review_data['reviews'])
+    used = {sid for f in base['features'] for sid in f['properties']['source_ids']}
+    additions = []
+    for f in extra['features']:
+        if any(sid in used for sid in f['properties']['source_ids']):
+            skipped.append({'source_id':f['properties']['source_ids'][0], 'reason':'existing_source_id'})
+            continue
+        additions.append(f)
+        used.update(f['properties']['source_ids'])
+    return {**base, 'features':base['features'] + additions}, dict(
+        raw_elements=len(raw['elements']), added=len(additions),
+        categories=dict(Counter(f['properties']['category'] for f in additions)), skipped=skipped,
+        snapshot=raw['osm3s']['timestamp_osm_base'], source_sha256=retrieval['sha256'])
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--fetch', action='store_true')
@@ -140,12 +169,17 @@ def main():
     if review_data['source_sha256'] != retrieval['sha256']:
         raise ValueError('Reviews refer to a different source snapshot')
     data, skipped = build(raw, original, retrieval['retrieved_at'], review_data['reviews'])
+    baseline = data
+    data, life_report = append_life_facilities(data)
+    (LIFE_WORK/'import-report.json').write_text(json.dumps(life_report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
-    report = dict(raw_elements=len(raw['elements']), total=len(data['features']),
-                  categories=dict(Counter(f['properties']['category'] for f in data['features'])),
+    report = dict(raw_elements=len(raw['elements']), total=len(baseline['features']),
+                  categories=dict(Counter(f['properties']['category'] for f in baseline['features'])),
                   skipped=skipped, snapshot=raw['osm3s']['timestamp_osm_base'], source_sha256=retrieval['sha256'])
     (WORK/'import-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps({k:v for k,v in report.items() if k != 'skipped'}, ensure_ascii=False))
     print('Skipped:', dict(Counter(s['reason'] for s in skipped)))
+    print('Life facilities:', json.dumps({k:v for k,v in life_report.items() if k != 'skipped'}, ensure_ascii=False))
+    print('Published facility records:', len(data['features']))
 
 if __name__ == '__main__': main()

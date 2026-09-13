@@ -2,7 +2,7 @@ import fs from 'node:fs';
 const data=JSON.parse(fs.readFileSync('public/data/shopping.geojson','utf8'));
 const ids=new Set(), sources=new Set();
 const counts={building:0,facility_area:0,representative_point:0};
-const categories={mall:0,supermarket:0,drugstore:0,convenience:0,hospital:0,clinic:0,pharmacy:0,reference:0};
+const categories={mall:0,supermarket:0,drugstore:0,convenience:0,hospital:0,clinic:0,pharmacy:0,post_office:0,bank:0,library:0,townhall:0,community_centre:0,reference:0};
 for(const f of data.features) {
  const p=f.properties;
  if(!f.id||ids.has(f.id)) throw Error(`Duplicate/missing ID: ${f.id}`);

@@ -41,6 +41,7 @@ jobs:
       - run: npm run test:stops
       - run: npm run test:places
       - run: npm run test:map-display
+      - run: npm run test:basemap
       - run: python3 scripts/test-walking-source.py
       - run: python3 scripts/test-osm-facilities.py
       - run: npm run build

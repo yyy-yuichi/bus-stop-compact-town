@@ -48,6 +48,9 @@ near(found[0].meters, 90); near(found[0].gap, 10);
 // Preserve IDs, separate medical/shopping, and exclude all reference records.
 found = join(c, point('shop', 70, 0, 'drugstore'), point('medical', 80, 0, 'pharmacy'), point('reference', 10, 0, 'reference'));
 assert.deepEqual(found.map(f => [f.facility.id, f.group]), [['shop', 'shopping'], ['medical', 'medical']]);
+for (const category of ['post_office','bank','library','townhall','community_centre']) {
+  assert.equal(join(c,point(category,50,0,category))[0].group,'services');
+}
 assert.equal(join(c).length, 0);
 assert.equal(bakedFacilityCandidates({ ...c, segments: [] }, prepareFacilities([point('empty', 10)])).length, 0);
 
@@ -70,7 +73,7 @@ const cases = [
 ];
 const facilities = JSON.parse(fs.readFileSync('public/data/shopping.geojson', 'utf8')).features;
 const prepared = prepareFacilities(facilities);
-assert.equal(prepared.length, 1130);
+assert.equal(prepared.length, 1913);
 for (const test of cases) {
   c = parseCatchment(JSON.parse(fs.readFileSync(test.fixture, 'utf8')));
   found = bakedFacilityCandidates(c, prepared);
@@ -87,6 +90,7 @@ for (const test of cases) {
       return q.gap < 0.01 && Math.abs(cost - f.meters) < 0.01;
     }), `${test.name}/${f.facility.id}: cost must match a real baked road`);
   }
-  assert.deepEqual(sets.map(s => s.size), test.expectedCounts, `${test.name}: reviewed record counts changed`);
+  const old = found.filter(f=>f.group !== 'services');
+  assert.deepEqual([5,10,15].map(minutes=>old.filter(f=>f.meters<=minutes*WALKING_METERS_PER_MINUTE).length),test.expectedCounts,`${test.name}: original facility results changed`);
 }
 console.log(`Baked facility checks passed: points, 25 m cutoff, slope/detour costs, polygons/holes/crossings, groups, clipping, and ${cases.length} real locations.`);

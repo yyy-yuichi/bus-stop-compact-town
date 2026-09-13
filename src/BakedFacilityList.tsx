@@ -9,13 +9,14 @@ const GROUPS = [
   { id: 'all', name: 'すべて' },
   { id: 'shopping', name: '買い物' },
   { id: 'medical', name: '医療' },
+  { id: 'services', name: '暮らし' },
 ] as const;
 
-export default function BakedFacilityList({ candidates, minutes, state, retry, onFacility }: {
+export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility }: {
   candidates: BakedFacilityCandidate[]; minutes: BakedWalkingMinutes;
   state: LoadState; retry: () => void; onFacility: (facility: ShoppingFeature) => void;
+  group: FacilityGroup | 'all'; onGroup: (group: FacilityGroup | 'all') => void;
 }) {
-  const [group, setGroup] = useState<FacilityGroup | 'all'>('all');
   const [limit, setLimit] = useState(12);
   const nextFocus = useRef('');
   useEffect(() => { setLimit(12); }, [group, minutes]);
@@ -32,8 +33,8 @@ export default function BakedFacilityList({ candidates, minutes, state, retry, o
   const label = GROUPS.find(g => g.id === group)!.name;
   return <section className="mt-6" aria-labelledby="baked-facilities-title">
     <h4 id="baked-facilities-title" className="text-base font-bold">{minutes}分圏の施設候補</h4>
-    <div className="mt-3 grid grid-cols-3 gap-2" role="group" aria-label="施設候補の種類">
-      {GROUPS.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => setGroup(g.id)}
+    <div className="mt-3 grid grid-cols-2 gap-2" role="group" aria-label="施設候補の種類">
+      {GROUPS.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => onGroup(g.id)}
         className={`min-h-11 rounded-xl border px-1 text-xs font-semibold ${group === g.id ? 'border-emerald-800 bg-emerald-50 text-emerald-950' : 'border-stone-200 bg-white text-stone-600'}`}>
         {g.name} <span className="ml-1">{candidates.filter(c => g.id === 'all' || c.group === g.id).length}</span>
       </button>)}
@@ -43,7 +44,7 @@ export default function BakedFacilityList({ candidates, minutes, state, retry, o
       const category = categoryOf(facility);
       return <button key={String(facility.id)} id={`baked-facility-${facility.id}`} className="place-row walk-facility-row" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>
         <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-        <span><strong>{facility.properties.name}</strong><small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 分類確認中' : ''}</small><small>近くの道路まで 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
+        <span><strong>{facility.properties.name}</strong><small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 情報確認中' : ''}</small><small>近くの道路まで 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
         <span className="row-arrow" aria-hidden="true">›</span>
       </button>;
     }) : <p className="mt-4 text-sm leading-relaxed">この条件の候補はありません。{minutes < 15 ? '時間を広げて探せます。' : ''}</p>}
