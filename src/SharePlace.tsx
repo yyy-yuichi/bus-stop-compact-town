@@ -7,7 +7,7 @@ export default function SharePlace({ place }: { place: SharedPlace }) {
   const [status, setStatus] = useState<'idle' | 'copied' | 'manual'>('idle');
   const input = useRef<HTMLInputElement>(null);
   const url = placeLink(window.location.href, place);
-  const walking = place.kind === 'pilot' ? place.walking : undefined;
+  const walking = place.kind === 'pilot' ? place.walking : place.kind === 'national' && place.minutes ? { minutes: place.minutes, speed: 4 } : undefined;
   useEffect(() => { setStatus('idle'); }, [url]);
   useEffect(() => { if (status === 'manual') { input.current?.focus(); input.current?.select(); } }, [status]);
   const copy = async () => {

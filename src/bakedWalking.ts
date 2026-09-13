@@ -1,4 +1,5 @@
 /** Reads pre-baked walking catchments (Task 3's bake). No client-side routing. */
+import type { ShoppingFeature } from './types';
 export type Coordinate = [number, number];
 type PointLike = { readonly 0: number; readonly 1: number };
 
@@ -79,4 +80,137 @@ export function reachableLines(catchment: Catchment, budget: number): Coordinate
     lines.push(d1 <= budget ? [a, interpolate(a, b, t)] : [interpolate(a, b, t), b]);
   }
   return lines;
+}
+
+/** Keep the baked distance scale when changing the displayed walking time. */
+export function clipCatchment(catchment: Catchment, budget: number): Catchment {
+  if (!Number.isFinite(budget) || budget <= 0) throw Error('Invalid walking budget');
+  const limit = Math.min(budget, catchment.budget);
+  const segments: Segment[] = [];
+  for (const s of catchment.segments) {
+    if (s.d1 > limit && s.d2 > limit) continue;
+    if (s.d1 <= limit && s.d2 <= limit) { segments.push(s); continue; }
+    const point = interpolate(s.a, s.b, (limit - s.d1) / (s.d2 - s.d1));
+    segments.push(s.d1 <= limit ? { ...s, b: point, d2: limit } : { ...s, a: point, d1: limit });
+  }
+  return { ...catchment, budget: limit, segments };
+}
+
+export const FACILITY_ROAD_GAP_M = 25;
+export const WALKING_METERS_PER_MINUTE = 4000 / 60;
+export type FacilityGroup = 'shopping' | 'medical';
+export interface BakedFacilityCandidate {
+  facility: ShoppingFeature;
+  group: FacilityGroup;
+  /** Slope-adjusted distance to the nearby road, not a verified entrance. */
+  meters: number;
+  roadPoint: Coordinate;
+  facilityPoint: Coordinate;
+  gap: number;
+}
+type Bounds = [number, number, number, number];
+interface PreparedFacility {
+  facility: ShoppingFeature; group: FacilityGroup; bounds: Bounds;
+  point?: Coordinate; polygons: Coordinate[][][];
+}
+
+function boundsOf(points: Coordinate[]): Bounds {
+  const b: Bounds = [Infinity, Infinity, -Infinity, -Infinity];
+  for (const [x, y] of points) { b[0] = Math.min(b[0], x); b[1] = Math.min(b[1], y); b[2] = Math.max(b[2], x); b[3] = Math.max(b[3], y); }
+  return b;
+}
+function nearbyBounds(a: Bounds, b: Bounds, latitude: number): boolean {
+  const dy = FACILITY_ROAD_GAP_M / 110000;
+  const dx = dy / Math.max(0.01, Math.cos(latitude * Math.PI / 180));
+  return a[0] <= b[2] + dx && a[2] >= b[0] - dx && a[1] <= b[3] + dy && a[3] >= b[1] - dy;
+}
+
+/** Prepare once for all 1,135 records; retain source IDs and exclude reference records. */
+export function prepareFacilities(facilities: ShoppingFeature[]): PreparedFacility[] {
+  return facilities.flatMap(facility => {
+    const category = facility.properties.category ?? 'mall';
+    if (!['mall', 'supermarket', 'drugstore', 'convenience', 'hospital', 'clinic', 'pharmacy'].includes(category)) return [];
+    const group: FacilityGroup = ['hospital', 'clinic', 'pharmacy'].includes(category) ? 'medical' : 'shopping';
+    const point = facility.geometry.type === 'Point' ? facility.geometry.coordinates as Coordinate : undefined;
+    const polygons = facility.geometry.type === 'MultiPolygon' ? facility.geometry.coordinates as Coordinate[][][] : [];
+    const points = point ? [point] : polygons.flat(2);
+    if (!points.length || points.some(p => p.length < 2 || !Number.isFinite(p[0]) || !Number.isFinite(p[1]))) return [];
+    return [{ facility, group, bounds: boundsOf(points), point, polygons }];
+  });
+}
+
+function inRing(p: Coordinate, ring: Coordinate[]): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const a = ring[i], b = ring[j];
+    if ((a[1] > p[1]) !== (b[1] > p[1]) && p[0] < (b[0] - a[0]) * (p[1] - a[1]) / (b[1] - a[1]) + a[0]) inside = !inside;
+  }
+  return inside;
+}
+function inPolygon(p: Coordinate, polygon: Coordinate[][]): boolean {
+  return !!polygon[0] && inRing(p, polygon[0]) && !polygon.slice(1).some(hole => inRing(p, hole));
+}
+function crossing(a: Coordinate, b: Coordinate, c: Coordinate, d: Coordinate): number | null {
+  const cross = (x: number, y: number, u: number, v: number) => x * v - y * u;
+  const rx = b[0] - a[0], ry = b[1] - a[1], sx = d[0] - c[0], sy = d[1] - c[1];
+  const denominator = cross(rx, ry, sx, sy);
+  if (Math.abs(denominator) < 1e-20) return null;
+  const t = cross(c[0] - a[0], c[1] - a[1], sx, sy) / denominator;
+  const u = cross(c[0] - a[0], c[1] - a[1], rx, ry) / denominator;
+  return t >= 0 && t <= 1 && u >= 0 && u <= 1 ? t : null;
+}
+
+/** Nearest pair on this baked segment; holes and crossing/contained roads matter. */
+function nearFacility(segment: Segment, facility: PreparedFacility) {
+  const { a, b, d1, d2 } = segment;
+  let best: { meters: number; roadPoint: Coordinate; facilityPoint: Coordinate; gap: number } | null = null;
+  const consider = (t: number, facilityPoint: Coordinate) => {
+    // A rounded, zero-length segment represents both endpoint costs at one place.
+    if (a[0] === b[0] && a[1] === b[1]) t = d2 < d1 ? 1 : 0;
+    const roadPoint = interpolate(a, b, t);
+    const gap = distance(roadPoint, facilityPoint), meters = d1 + (d2 - d1) * t;
+    if (!best || gap < best.gap - 1e-6 || (Math.abs(gap - best.gap) <= 1e-6 && meters < best.meters)) best = { meters, roadPoint, facilityPoint, gap };
+  };
+  if (facility.point) {
+    consider(project(facility.point, a, b).t, facility.point);
+  } else for (const polygon of facility.polygons) {
+    if (inPolygon(a, polygon)) consider(0, a);
+    if (inPolygon(b, polygon)) consider(1, b);
+    for (const ring of polygon) for (let i = 0; i < ring.length; i++) {
+      const p = ring[i], q = ring[(i + 1) % ring.length];
+      consider(project(p, a, b).t, p);
+      consider(0, project(a, p, q).point);
+      consider(1, project(b, p, q).point);
+      const t = crossing(a, b, p, q);
+      if (t !== null) consider(t, interpolate(a, b, t));
+    }
+  }
+  return best as { meters: number; roadPoint: Coordinate; facilityPoint: Coordinate; gap: number } | null;
+}
+
+/**
+ * Join only to the baked reachable roads; never infer a route across a gap.
+ * Each segment's nearest pair must be within 25 m of the registered point/area.
+ * Keep the lowest baked cost of qualifying pairs. Filter this fixed result by
+ * minutes, so 5/10/15-minute candidate sets are nested and estimates stay stable.
+ */
+export function bakedFacilityCandidates(catchment: Catchment, facilities: PreparedFacility[]): BakedFacilityCandidate[] {
+  if (!catchment.segments.length) return [];
+  const extent = boundsOf(catchment.segments.flatMap(s => [s.a, s.b]));
+  const segments = catchment.segments.map(segment => ({ segment, bounds: boundsOf([segment.a, segment.b]) }));
+  const candidates: BakedFacilityCandidate[] = [];
+  for (const prepared of facilities) {
+    if (!nearbyBounds(extent, prepared.bounds, catchment.origin[1])) continue;
+    let best: BakedFacilityCandidate | null = null;
+    for (const { segment, bounds } of segments) {
+      if (!nearbyBounds(bounds, prepared.bounds, catchment.origin[1])) continue;
+      const reach = nearFacility(segment, prepared);
+      if (!reach || reach.gap > FACILITY_ROAD_GAP_M + 1e-6 || reach.meters > catchment.budget) continue;
+      if (!best || reach.meters < best.meters - 1e-6 || (Math.abs(reach.meters - best.meters) <= 1e-6 && reach.gap < best.gap)) {
+        best = { facility: prepared.facility, group: prepared.group, ...reach };
+      }
+    }
+    if (best) candidates.push(best);
+  }
+  return candidates.sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id)));
 }

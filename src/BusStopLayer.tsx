@@ -14,8 +14,8 @@ import { categoryOf, SHOPPING_CATEGORIES, useShoppingData } from './shoppingData
 import type { ShoppingCategory } from './shoppingData';
 import { fitContent } from './mapLayout';
 import MapIcon from './MapIcon';
-import { DEFAULT_WALKING_CONDITIONS, placeLink, readPlaceLink } from './placeLink';
-import type { SharedPlace, WalkingConditions } from './placeLink';
+import { DEFAULT_BAKED_MINUTES, DEFAULT_WALKING_CONDITIONS, placeLink, readPlaceLink } from './placeLink';
+import type { BakedWalkingMinutes, SharedPlace, WalkingConditions } from './placeLink';
 
 export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | null; onSelectionChange: (selected: boolean) => void }) {
   const stopsRef = useRef<L.GeoJSON | null>(null);
@@ -27,6 +27,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const [attempt, setAttempt] = useState(0);
   const [sharedPlace, setSharedPlace] = useState<SharedPlace | null>(() => readPlaceLink(window.location.hash));
   const [walkingConditions, setWalkingConditions] = useState<WalkingConditions>(() => sharedPlace?.kind === 'pilot' ? sharedPlace.walking ?? DEFAULT_WALKING_CONDITIONS : DEFAULT_WALKING_CONDITIONS);
+  const [bakedMinutes, setBakedMinutes] = useState<BakedWalkingMinutes>(() => sharedPlace?.kind === 'national' ? sharedPlace.minutes ?? DEFAULT_BAKED_MINUTES : DEFAULT_BAKED_MINUTES);
   const [shareWarning, setShareWarning] = useState(() => Boolean(window.location.hash) && !readPlaceLink(window.location.hash));
   const [mode, setMode] = useState<'national' | 'pilot'>(() => readPlaceLink(window.location.hash)?.kind === 'pilot' ? 'pilot' : 'national');
   const pendingSelection = useRef('');
@@ -42,6 +43,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       const place = readPlaceLink(window.location.hash);
       setSharedPlace(place);
       setWalkingConditions(place?.kind === 'pilot' ? place.walking ?? DEFAULT_WALKING_CONDITIONS : DEFAULT_WALKING_CONDITIONS);
+      setBakedMinutes(place?.kind === 'national' ? place.minutes ?? DEFAULT_BAKED_MINUTES : DEFAULT_BAKED_MINUTES);
       setShareWarning(Boolean(window.location.hash) && !place);
       setSelected(''); setSelectedFacility(null);
       pendingSelection.current = '';
@@ -140,11 +142,11 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     if (sharedPlace || shareWarning || !stops.length || stops[0].properties.source_kind !== (mode === 'pilot' ? 'osm-pilot' : 'national')) return;
     const stopId = String(selectedStop?.id || selectedStop?.properties['@id'] || '');
     const place: SharedPlace | null = selectedFacility ? { kind: 'facility', id: String(selectedFacility.id) }
-      : selectedStop ? mode === 'pilot' ? { kind: 'pilot', id: stopId, walking: walkingConditions } : { kind: 'national', id: stopId } : null;
+      : selectedStop ? mode === 'pilot' ? { kind: 'pilot', id: stopId, walking: walkingConditions } : { kind: 'national', id: stopId, minutes: bakedMinutes } : null;
     const url = new URL(window.location.href);
     url.hash = place ? new URL(placeLink(url.href, place)).hash : '';
     if (url.hash !== window.location.hash) window.history.replaceState(window.history.state, '', url);
-  }, [sharedPlace, shareWarning, stops, mode, selectedFacility, selectedStop, walkingConditions]);
+  }, [sharedPlace, shareWarning, stops, mode, selectedFacility, selectedStop, walkingConditions, bakedMinutes]);
 
   useEffect(() => { onSelectionChange(Boolean(selectedStop || selectedFacility)); }, [selectedStop, selectedFacility, onSelectionChange]);
   useEffect(() => {
@@ -193,11 +195,11 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       <button className="reset icon-button" onClick={reset} aria-label={mode === 'national' ? '山口県のバス停全体を表示' : '徒歩圏試作の7地点全体を表示'} title="全体を表示"><MapIcon name="reset" /></button>
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {shareWarning && <div className="link-notice" role="status"><p>リンクの場所または徒歩条件を確認できませんでした。名前で検索できます。</p><button className="icon-button" aria-label="リンクの案内を閉じる" onClick={() => setShareWarning(false)}><MapIcon name="close" /></button></div>}
-      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode} walkingConditions={walkingConditions}>
+      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode} walkingConditions={walkingConditions} bakedMinutes={bakedMinutes}>
         {mode === 'national'
-          ? <BakedWalkingPanel map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} active={!selectedFacility} />
+          ? <BakedWalkingPanel map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} active={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} onMinutes={setBakedMinutes} />
           : <WalkingPanel map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} active={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />}
       </BusStopDrawer>}
-      {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録', pilot: mode === 'pilot' } : undefined} />}
+      {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録' } : undefined} />}
   </>;
 }

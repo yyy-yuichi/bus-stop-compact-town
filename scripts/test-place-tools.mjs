@@ -58,11 +58,20 @@ for (const invalidConditions of [
 ]) assert.equal(readPlaceLink(`${pilotHash}&${invalidConditions}`), null, invalidConditions);
 assert.deepEqual(readPlaceLink(pilotHash), { kind: 'pilot', id: 'node/5127585172' }, 'Old pilot links remain valid without conditions');
 assert.deepEqual(readPlaceLink('#kind=facility&id=sunpark&minutes=5&speed=3'), { kind: 'facility', id: 'sunpark' }, 'A facility link must not imply a walking origin');
-assert.deepEqual(readPlaceLink('#kind=national&id=mlit-p11-22-35%3A1&minutes=5&speed=3'), { kind: 'national', id: 'mlit-p11-22-35:1' }, 'National stops must not acquire pilot walking support through a link');
+assert.equal(readPlaceLink('#kind=national&id=mlit-p11-22-35%3A1&minutes=5&speed=3'), null, 'National walks use the fixed baked speed, not the pilot speed');
+let nationalWalkingLinks = 0;
+for (const stop of stops) for (const minutes of [5, 10, 15]) {
+  const place = { kind: 'national', id: String(stop.id), minutes };
+  assert.deepEqual(readPlaceLink(new URL(placeLink('https://example.org/subdir/', place)).hash), place);
+  nationalWalkingLinks++;
+}
+for (const conditions of ['minutes=0', 'minutes=20', 'minutes=5.0', 'minutes=', 'minutes=NaN', 'minutes=5&minutes=10', 'speed=4', 'minutes=15&speed=4']) {
+  assert.equal(readPlaceLink(`#kind=national&id=mlit-p11-22-35%3A1&${conditions}`), null, conditions);
+}
 for (const invalid of [
   '', '#walking', '#kind=unknown&id=sunpark', '#kind=facility&id=../secret',
   '#kind=facility&id=%3Cscript%3E', '#kind=national&id=node%2F5127585172',
   '#kind=pilot&id=mlit-p11-22-35%3A1', '#kind=facility&id=sunpark&id=other',
   '#kind=facility&kind=pilot&id=sunpark', '#kind=facility&id='+ 'x'.repeat(513),
 ]) assert.equal(readPlaceLink(invalid), null, invalid);
-console.log(`Place tools: kana/width/multiple-word search, untruncated results, ${allPlaces.length} existing links, ${walkingLinks} walking-condition links and invalid links passed.`);
+console.log(`Place tools: kana/width/multiple-word search, untruncated results, ${allPlaces.length} existing links, ${walkingLinks} pilot links, ${nationalWalkingLinks} national time links and invalid links passed.`);

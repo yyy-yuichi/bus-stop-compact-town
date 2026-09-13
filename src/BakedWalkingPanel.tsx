@@ -1,8 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
-import { catchmentFile, distance, interpolate, parseCatchment, walkDataBaseUrl } from './bakedWalking';
+import { bakedFacilityCandidates, catchmentFile, clipCatchment, distance, interpolate, parseCatchment, prepareFacilities, walkDataBaseUrl, WALKING_METERS_PER_MINUTE } from './bakedWalking';
 import type { Catchment, Coordinate, Segment } from './bakedWalking';
 import { fitContent } from './mapLayout';
+import type { LoadState, ShoppingFeature } from './types';
+import type { BakedWalkingMinutes } from './placeLink';
+import BakedFacilityList from './BakedFacilityList';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -142,9 +145,9 @@ function bucketByMid(items: { a: Coordinate; b: Coordinate; mid: number }[], bud
   return buckets;
 }
 
-function bucketSegments(catchment: Catchment): { color: string; lines: Coordinate[][] }[] {
+function bucketSegments(catchment: Catchment, colorBudget: number): { color: string; lines: Coordinate[][] }[] {
   const items = catchment.segments.map(({ a, b, d1, d2 }) => ({ a, b, mid: (d1 + d2) / 2 }));
-  return bucketByMid(items, catchment.budget)
+  return bucketByMid(items, colorBudget)
     .map((lines, i) => ({ color: rampColor((i + 0.5) / DISTANCE_BUCKETS), lines }))
     .filter(bucket => bucket.lines.length > 0);
 }
@@ -214,7 +217,7 @@ function ensureScrimPane(map: L.Map): void {
  * 隠れてしまうため、地図に固定されるLeafletコントロールにした。停留所を切り替
  * えても内容は変わらないので、徒歩圏レイヤーと一緒に付け外しするだけでよい。
  */
-function createLegendControl(budget: number): L.Control {
+function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Control {
   const control = new L.Control({ position: 'bottomleft' });
   control.onAdd = () => {
     const div = L.DomUtil.create('div', 'walking-legend');
@@ -246,6 +249,7 @@ function createLegendControl(budget: number): L.Control {
     // 両定数を変えたらここも手で合わせる。
     div.innerHTML = `
       <p class="font-semibold">徒歩の距離（時速4km）</p>
+      <p class="mt-0.5 text-[10px]">表示中：${minutes}分まで</p>
       <div class="walking-legend-ramp">
         <div class="h-2 rounded-full" style="background:linear-gradient(to right, ${gradient})"></div>
         <div class="relative mt-1 h-4 text-[10px]">
@@ -335,16 +339,23 @@ function useCatchment(id: string, knownUnreachable: boolean) {
   return { ...current, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function BakedWalkingPanel({ map, id, origin, unreachable, active }: {
+export default function BakedWalkingPanel({ map, id, origin, unreachable, active, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes }: {
   map: L.Map | null; id: string; origin: Coordinate;
   unreachable: Record<string, number | null> | null;
   active: boolean;
+  facilities: ShoppingFeature[]; facilityState: LoadState; retryFacilities: () => void;
+  onFacility: (facility: ShoppingFeature) => void;
+  minutes: BakedWalkingMinutes; onMinutes: (minutes: BakedWalkingMinutes) => void;
 }) {
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, Object.hasOwn(unreachable ?? {}, id));
-  const steepSummary = useMemo(() => catchment ? steepRuns(catchment.segments, catchment.budget) : null, [catchment]);
+  const displayed = useMemo(() => catchment ? clipCatchment(catchment, minutes * WALKING_METERS_PER_MINUTE) : null, [catchment, minutes]);
+  const steepSummary = useMemo(() => displayed ? steepRuns(displayed.segments, displayed.budget) : null, [displayed]);
+  const preparedFacilities = useMemo(() => prepareFacilities(facilities), [facilities]);
+  const candidates = useMemo(() => catchment && facilityState === 'ready' ? bakedFacilityCandidates(catchment, preparedFacilities) : [], [catchment, preparedFacilities, facilityState]);
+  const visibleCandidates = useMemo(() => candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [candidates, minutes]);
 
   useEffect(() => {
-    if (!map || !catchment || !active) return;
+    if (!map || !catchment || !displayed || !active) return;
     // paneは地図の生存期間ずっと存在してよい静的な入れ物（中身が無ければ何も
     // 描画せず無害）。LeafletにremovePane相当の公開APIが無く、私的フィールドを
     // 触ってまで消す理由がないので、消すのは中身（スクリム矩形）だけにする。
@@ -358,7 +369,7 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
       pane: SCRIM_PANE, stroke: false, fillColor: '#ffffff', fillOpacity: SCRIM_OPACITY, interactive: false,
     }).addTo(group);
 
-    for (const { color, lines } of bucketSegments(catchment)) {
+    for (const { color, lines } of bucketSegments(displayed, catchment.budget)) {
       L.polyline(lines.map(toLatLng), { color, weight: BASE_WEIGHT, opacity: 0.9, interactive: false }).addTo(group);
     }
     if (steepSummary) {
@@ -370,28 +381,33 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
     }
     L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
-    const legend = createLegendControl(catchment.budget);
+    const legend = createLegendControl(catchment.budget, minutes);
     legend.addTo(map);
     return () => { group.remove(); legend.remove(); };
-  }, [map, catchment, origin, steepSummary, active]);
+  }, [map, catchment, displayed, origin, steepSummary, active, minutes]);
 
   useEffect(() => {
     if (!map || !active) return;
-    const points = catchment?.segments.flatMap(s => [s.a, s.b]).map(([lon, lat]) => L.latLng(lat, lon)) ?? [];
+    const points = displayed?.segments.flatMap(s => [s.a, s.b]).map(([lon, lat]) => L.latLng(lat, lon)) ?? [];
     const bounds = L.latLngBounds([...points, L.latLng(origin[1], origin[0])]);
     const focus = () => fitContent(map, bounds, true, 17);
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, id, catchment, origin, active]);
+  }, [map, id, displayed, origin, active]);
 
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3>
-    <p className="mt-2 text-xs leading-relaxed text-stone-600">坂道を考慮した、時速4km・最大15分相当の徒歩距離です。緑の濃淡はバス停からの距離、赤い線は急な坂道を表します。</p>
+    <p className="mt-2 text-xs leading-relaxed text-stone-600">坂道を考慮した、時速4km・徒歩{minutes}分相当の範囲です。緑の濃淡はバス停からの距離、赤い線は急な坂道を表します。</p>
     {catchmentError ? <section className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
-      {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <p className="mt-4 rounded-xl bg-emerald-50 p-4 text-sm leading-relaxed">周辺のお店・病院は地図や検索から確認できます。この徒歩圏に入る施設の自動抽出は未対応です。</p>}
+      {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
+        <div className="mt-4 grid grid-cols-3 gap-2" role="group" aria-label="徒歩時間">
+          {([5, 10, 15] as const).map(n => <button key={n} aria-pressed={minutes === n} onClick={() => onMinutes(n)} className={`min-h-12 rounded-xl border text-sm font-bold ${minutes === n ? 'border-emerald-900 bg-emerald-900 text-white' : 'border-stone-200 bg-white text-stone-700'}`}>徒歩 {n} 分</button>)}
+        </div>
+        <BakedFacilityList key={id} candidates={visibleCandidates} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
+      </>}
       <p className="mt-4 text-[11px] leading-relaxed text-stone-500">信号待ち、工事や現地の横断可否、車いす対応は反映していません。坂は地形データからの概算です。現地の通行状況を確認してください。</p>
       <a className="mt-2 inline-block text-[11px] text-sky-800 underline" href={`${import.meta.env.BASE_URL}about.html#walking`}>計算方法とデータについて</a>
     </>}

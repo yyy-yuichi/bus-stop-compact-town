@@ -1,0 +1,1165 @@
+{
+  "method": "Nearest point/area boundary on each reachable baked road segment, gap <= 25 m; lowest matching baked cost; not a verified entrance route.",
+  "source_records": 1135,
+  "eligible_records": 1130,
+  "results": [
+    {
+      "id": "mlit-p11-22-35:3630",
+      "name": "スポーツセンター前",
+      "catchment": "131.1726_33.9901",
+      "expectedCounts": [
+        1,
+        5,
+        6
+      ],
+      "catchment_sha256": "664e462e37a4233f3b59dac4c8c6c240ed7dfbe430ae2bce3f282dd66ae6c479",
+      "segments": 867,
+      "elapsed_ms": 14.36,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 1,
+          "shopping": 0,
+          "medical": 1
+        },
+        {
+          "minutes": 10,
+          "total": 5,
+          "shopping": 2,
+          "medical": 3
+        },
+        {
+          "minutes": 15,
+          "total": 6,
+          "shopping": 3,
+          "medical": 3
+        }
+      ],
+      "candidates": [
+        {
+          "id": "osm-way-638999568",
+          "name": "ファミリー薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 4.910752856135045,
+          "road_distance": 327.38352374233637,
+          "straight_gap": 22.844858055133436,
+          "road_point": [
+            131.17613863811397,
+            33.99030480287652
+          ],
+          "facility_point": [
+            131.1761611,
+            33.9901002
+          ]
+        },
+        {
+          "id": "sunpark",
+          "name": "おのだサンパーク",
+          "category": "mall",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 6.345,
+          "road_distance": 423,
+          "straight_gap": 18.43343569850204,
+          "road_point": [
+            131.17267,
+            33.98649
+          ],
+          "facility_point": [
+            131.1725594,
+            33.9863519
+          ]
+        },
+        {
+          "id": "osm-way-638999567",
+          "name": "長谷川眼科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 8.535,
+          "road_distance": 569,
+          "straight_gap": 12.224518913960507,
+          "road_point": [
+            131.1769,
+            33.98872
+          ],
+          "facility_point": [
+            131.1769832,
+            33.9886344
+          ]
+        },
+        {
+          "id": "osm-way-646295775",
+          "name": "みずほ薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 9.017451044539323,
+          "road_distance": 601.1634029692882,
+          "straight_gap": 5.783747619564742,
+          "road_point": [
+            131.1772377157312,
+            33.98874412255223
+          ],
+          "facility_point": [
+            131.1772431,
+            33.9886923
+          ]
+        },
+        {
+          "id": "cosmos-onoda",
+          "name": "コスモス小野田店",
+          "category": "drugstore",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 9.899999999999999,
+          "road_distance": 660,
+          "straight_gap": 3.7148205424009118,
+          "road_point": [
+            131.17402,
+            33.98505
+          ],
+          "facility_point": [
+            131.17406023633356,
+            33.98505173114012
+          ]
+        },
+        {
+          "id": "maruki-nakagawa",
+          "name": "ウェスタまるき中川店",
+          "category": "supermarket",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 13.709999999999999,
+          "road_distance": 914,
+          "straight_gap": 18.266940668076217,
+          "road_point": [
+            131.17759,
+            33.98599
+          ],
+          "facility_point": [
+            131.17778761195459,
+            33.98600179256221
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mlit-p11-22-35:3673",
+      "name": "サンパークおのだ",
+      "catchment": "131.17298_33.98541",
+      "expectedCounts": [
+        2,
+        3,
+        7
+      ],
+      "catchment_sha256": "39f5ed95ab9d79135b255e8accde4a7964e1e08d852a0aedaf87d140ba7758b2",
+      "segments": 955,
+      "elapsed_ms": 7.62,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 2,
+          "shopping": 2,
+          "medical": 0
+        },
+        {
+          "minutes": 10,
+          "total": 3,
+          "shopping": 3,
+          "medical": 0
+        },
+        {
+          "minutes": 15,
+          "total": 7,
+          "shopping": 4,
+          "medical": 3
+        }
+      ],
+      "candidates": [
+        {
+          "id": "sunpark",
+          "name": "おのだサンパーク",
+          "category": "mall",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 0.6599999999999999,
+          "road_distance": 44,
+          "straight_gap": 16.598326553515772,
+          "road_point": [
+            131.17253,
+            33.98542
+          ],
+          "facility_point": [
+            131.17251970809198,
+            33.98556902819943
+          ]
+        },
+        {
+          "id": "cosmos-onoda",
+          "name": "コスモス小野田店",
+          "category": "drugstore",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 2.085,
+          "road_distance": 139,
+          "straight_gap": 3.7148205424009118,
+          "road_point": [
+            131.17402,
+            33.98505
+          ],
+          "facility_point": [
+            131.17406023633356,
+            33.98505173114012
+          ]
+        },
+        {
+          "id": "maruki-nakagawa",
+          "name": "ウェスタまるき中川店",
+          "category": "supermarket",
+          "geometry": "MultiPolygon",
+          "group": "shopping",
+          "road_minutes": 6.878760763211731,
+          "road_distance": 458.5840508807821,
+          "straight_gap": 24.06621774411217,
+          "road_point": [
+            131.1777058405088,
+            33.98562138649706
+          ],
+          "facility_point": [
+            131.1778032,
+            33.9858222
+          ]
+        },
+        {
+          "id": "osm-way-646295775",
+          "name": "みずほ薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 11.496765431892594,
+          "road_distance": 766.4510287928397,
+          "straight_gap": 11.271133176907158,
+          "road_point": [
+            131.17736493241884,
+            33.988700675811494
+          ],
+          "facility_point": [
+            131.1772431,
+            33.9886923
+          ]
+        },
+        {
+          "id": "osm-way-638999567",
+          "name": "長谷川眼科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 11.729999999999999,
+          "road_distance": 782,
+          "straight_gap": 12.224518913960507,
+          "road_point": [
+            131.1769,
+            33.98872
+          ],
+          "facility_point": [
+            131.1769832,
+            33.9886344
+          ]
+        },
+        {
+          "id": "osm-way-638999568",
+          "name": "ファミリー薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 12.755752856135045,
+          "road_distance": 850.3835237423364,
+          "straight_gap": 22.844858055133436,
+          "road_point": [
+            131.17613863811397,
+            33.99030480287652
+          ],
+          "facility_point": [
+            131.1761611,
+            33.9901002
+          ]
+        },
+        {
+          "id": "osm-way-332618145",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 14.6071497159984,
+          "road_distance": 973.8099810665601,
+          "straight_gap": 9.435099341500754,
+          "road_point": [
+            131.1750331074858,
+            33.977705007675134
+          ],
+          "facility_point": [
+            131.1751352,
+            33.9777107
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mlit-p11-22-35:1276",
+      "name": "野田学園前",
+      "catchment": "131.47867_34.1867",
+      "expectedCounts": [
+        0,
+        0,
+        0
+      ],
+      "catchment_sha256": "3971302046feb9f8b437bf4fdb39ae0f7a86d98063e0d417f2b673d75c4fb918",
+      "segments": 1407,
+      "elapsed_ms": 0.84,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 10,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 15,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "id": "mlit-p11-22-35:508",
+      "name": "灯台公園前",
+      "catchment": "130.8452_34.3502",
+      "expectedCounts": [
+        0,
+        0,
+        0
+      ],
+      "catchment_sha256": "3f928c2fa2f7e01e533756ff2ed94325f4ac61aaf70ac9a807a9f25de3c27ba6",
+      "segments": 642,
+      "elapsed_ms": 0.12,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 10,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 15,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "id": "mlit-p11-22-35:27",
+      "name": "田平",
+      "catchment": "131.56957_34.54951",
+      "expectedCounts": [
+        0,
+        0,
+        0
+      ],
+      "catchment_sha256": "47be63144fa890aea63a2a08e22779c1c90c5afb991c78af03a4d99e0209efb9",
+      "segments": 79,
+      "elapsed_ms": 0.05,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 10,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 15,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "id": "mlit-p11-22-35:4284",
+      "name": "内入",
+      "catchment": "132.39528_33.92582",
+      "expectedCounts": [
+        0,
+        0,
+        0
+      ],
+      "catchment_sha256": "0aef5477416c6255c37ff9648137064a956aec4bd30cf5824bfcbfd0b8dabef5",
+      "segments": 131,
+      "elapsed_ms": 0.05,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 10,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        },
+        {
+          "minutes": 15,
+          "total": 0,
+          "shopping": 0,
+          "medical": 0
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "id": "mlit-p11-22-35:1418",
+      "name": "山口駅",
+      "catchment": "131.48036_34.17254",
+      "expectedCounts": [
+        1,
+        6,
+        8
+      ],
+      "catchment_sha256": "f29960e5c90a2a9e3a610797fa2c95fde0385f07199cea116c93b0f5ef0e56ba",
+      "segments": 1218,
+      "elapsed_ms": 1.23,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 1,
+          "shopping": 0,
+          "medical": 1
+        },
+        {
+          "minutes": 10,
+          "total": 6,
+          "shopping": 3,
+          "medical": 3
+        },
+        {
+          "minutes": 15,
+          "total": 8,
+          "shopping": 4,
+          "medical": 4
+        }
+      ],
+      "candidates": [
+        {
+          "id": "osm-way-366899552",
+          "name": "樹一会 山口病院",
+          "category": "hospital",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 4.748034327055576,
+          "road_distance": 316.5356218037051,
+          "straight_gap": 21.754389826499857,
+          "road_point": [
+            131.4794497625213,
+            34.17462275726859
+          ],
+          "facility_point": [
+            131.4796377,
+            34.1747415
+          ]
+        },
+        {
+          "id": "osm-node-11933833241",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 5.13,
+          "road_distance": 342,
+          "straight_gap": 18.875958228660988,
+          "road_point": [
+            131.48179,
+            34.17503
+          ],
+          "facility_point": [
+            131.4819473,
+            34.175139
+          ]
+        },
+        {
+          "id": "osm-node-3716202776",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 5.902684411188147,
+          "road_distance": 393.5122940792099,
+          "straight_gap": 21.83766888467509,
+          "road_point": [
+            131.4780120129688,
+            34.17521427181916
+          ],
+          "facility_point": [
+            131.4781999,
+            34.1753343
+          ]
+        },
+        {
+          "id": "osm-way-561705111",
+          "name": "坂本耳鼻咽喉科医院",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 7.708560857466177,
+          "road_distance": 513.9040571644118,
+          "straight_gap": 15.295560091347504,
+          "road_point": [
+            131.47724580139118,
+            34.17601806993803
+          ],
+          "facility_point": [
+            131.4771142,
+            34.175934
+          ]
+        },
+        {
+          "id": "osm-node-5416052827",
+          "name": "遠藤中央薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 8.594999999999999,
+          "road_distance": 573,
+          "straight_gap": 17.947590601775918,
+          "road_point": [
+            131.47687,
+            34.17641
+          ],
+          "facility_point": [
+            131.4766851,
+            34.1763585
+          ]
+        },
+        {
+          "id": "osm-node-11933957300",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 9.353047826090108,
+          "road_distance": 623.5365217393406,
+          "straight_gap": 14.10232171805053,
+          "road_point": [
+            131.48178,
+            34.1775359
+          ],
+          "facility_point": [
+            131.4816267,
+            34.1775359
+          ]
+        },
+        {
+          "id": "osm-way-561705079",
+          "name": "コープやまぐちここと",
+          "category": "supermarket",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 11.25,
+          "road_distance": 750,
+          "straight_gap": 22.572391214756088,
+          "road_point": [
+            131.47521,
+            34.17443
+          ],
+          "facility_point": [
+            131.4749792,
+            34.1744989
+          ]
+        },
+        {
+          "id": "osm-node-1423655950",
+          "name": "山口逓信診療所",
+          "category": "hospital",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 14.028968430809178,
+          "road_distance": 935.2645620539453,
+          "straight_gap": 20.96765492802177,
+          "road_point": [
+            131.47398067961814,
+            34.1760179854296
+          ],
+          "facility_point": [
+            131.4741643,
+            34.1761297
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mlit-p11-22-35:2798",
+      "name": "徳山駅前",
+      "catchment": "131.80306_34.05183",
+      "expectedCounts": [
+        7,
+        18,
+        28
+      ],
+      "catchment_sha256": "8ac49a0a8e4bb91b4b5daa5937a14bb4101931f9fe68464194dec3416ac945ee",
+      "segments": 1871,
+      "elapsed_ms": 3.05,
+      "bands": [
+        {
+          "minutes": 5,
+          "total": 7,
+          "shopping": 3,
+          "medical": 4
+        },
+        {
+          "minutes": 10,
+          "total": 18,
+          "shopping": 4,
+          "medical": 14
+        },
+        {
+          "minutes": 15,
+          "total": 28,
+          "shopping": 10,
+          "medical": 18
+        }
+      ],
+      "candidates": [
+        {
+          "id": "osm-way-310194396",
+          "name": "ローソン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 0.63,
+          "road_distance": 42,
+          "straight_gap": 20.14200204652882,
+          "road_point": [
+            131.80313,
+            34.05212
+          ],
+          "facility_point": [
+            131.8030928,
+            34.0522985
+          ]
+        },
+        {
+          "id": "osm-node-5456594526",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 1.335,
+          "road_distance": 89,
+          "straight_gap": 20.36863017978231,
+          "road_point": [
+            131.8033,
+            34.05129
+          ],
+          "facility_point": [
+            131.8031338,
+            34.0511692
+          ]
+        },
+        {
+          "id": "osm-node-4107556704",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 2.2571343112809403,
+          "road_distance": 150.4756207520627,
+          "straight_gap": 0.5325807353013263,
+          "road_point": [
+            131.80288871941323,
+            34.05095262189624
+          ],
+          "facility_point": [
+            131.8028855,
+            34.0509566
+          ]
+        },
+        {
+          "id": "osm-node-4107719089",
+          "name": "ハラ薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 2.34,
+          "road_distance": 156,
+          "straight_gap": 9.692544837775262,
+          "road_point": [
+            131.80376,
+            34.05103
+          ],
+          "facility_point": [
+            131.803861,
+            34.0510544
+          ]
+        },
+        {
+          "id": "osm-node-3812486961",
+          "name": "岐陽内科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 3.0149999999999997,
+          "road_distance": 201,
+          "straight_gap": 10.948735004333505,
+          "road_point": [
+            131.80362,
+            34.05313
+          ],
+          "facility_point": [
+            131.8037314,
+            34.0530957
+          ]
+        },
+        {
+          "id": "osm-node-4107785889",
+          "name": "くすりらんど栄町薬局",
+          "category": "pharmacy",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 3.03,
+          "road_distance": 202,
+          "straight_gap": 16.83342726783785,
+          "road_point": [
+            131.80391,
+            34.05281
+          ],
+          "facility_point": [
+            131.8038113,
+            34.0529374
+          ]
+        },
+        {
+          "id": "osm-node-1423654138",
+          "name": "仁徳会周南病院",
+          "category": "hospital",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 3.36,
+          "road_distance": 224,
+          "straight_gap": 21.736401000941605,
+          "road_point": [
+            131.80481,
+            34.05246
+          ],
+          "facility_point": [
+            131.805044,
+            34.052435
+          ]
+        },
+        {
+          "id": "osm-node-12376670726",
+          "name": "おかもと内閣",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 5.081569197511184,
+          "road_distance": 338.771279834079,
+          "straight_gap": 8.839240782984447,
+          "road_point": [
+            131.8021161800938,
+            34.054344184835855
+          ],
+          "facility_point": [
+            131.8022029,
+            34.0543782
+          ]
+        },
+        {
+          "id": "osm-node-3812486962",
+          "name": "清水クリニック",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 5.145,
+          "road_distance": 343,
+          "straight_gap": 11.1169474469892,
+          "road_point": [
+            131.80478,
+            34.05384
+          ],
+          "facility_point": [
+            131.8048538,
+            34.0537609
+          ]
+        },
+        {
+          "id": "osm-way-311996791",
+          "name": "広田皮膚科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 5.34,
+          "road_distance": 356,
+          "straight_gap": 20.93154448923229,
+          "road_point": [
+            131.80581,
+            34.05209
+          ],
+          "facility_point": [
+            131.8057002,
+            34.0522548
+          ]
+        },
+        {
+          "id": "osm-node-3809385357",
+          "name": "香田整形外科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 6.026912006663172,
+          "road_distance": 401.7941337775448,
+          "straight_gap": 24.976818325839716,
+          "road_point": [
+            131.802431591998,
+            34.05463569067034
+          ],
+          "facility_point": [
+            131.8026781,
+            34.0547292
+          ]
+        },
+        {
+          "id": "osm-node-3812551757",
+          "name": "広田眼科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 6.142712320243496,
+          "road_distance": 409.51415468289974,
+          "straight_gap": 17.077903002472485,
+          "road_point": [
+            131.80620357338134,
+            34.052397223741046
+          ],
+          "facility_point": [
+            131.8060767,
+            34.0525092
+          ]
+        },
+        {
+          "id": "osm-node-6014468885",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 6.3,
+          "road_distance": 420,
+          "straight_gap": 20.520797548807202,
+          "road_point": [
+            131.80383,
+            34.0545
+          ],
+          "facility_point": [
+            131.8036077,
+            34.0545117
+          ]
+        },
+        {
+          "id": "osm-node-3812568557",
+          "name": "野村眼科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 6.465,
+          "road_distance": 431,
+          "straight_gap": 21.91200810927559,
+          "road_point": [
+            131.80633,
+            34.05071
+          ],
+          "facility_point": [
+            131.8063178,
+            34.0505132
+          ]
+        },
+        {
+          "id": "osm-way-310162437",
+          "name": "梅原耳鼻咽喉科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 6.504954194267337,
+          "road_distance": 433.6636129511558,
+          "straight_gap": 17.418727728164846,
+          "road_point": [
+            131.80534831806474,
+            34.05442846952416
+          ],
+          "facility_point": [
+            131.8055132,
+            34.0543518
+          ]
+        },
+        {
+          "id": "osm-node-3812554657",
+          "name": "藤井内科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 7.072624773716423,
+          "road_distance": 471.50831824776157,
+          "straight_gap": 24.940597795413307,
+          "road_point": [
+            131.80689036014692,
+            34.051694903109016
+          ],
+          "facility_point": [
+            131.8071341,
+            34.0515973
+          ]
+        },
+        {
+          "id": "osm-node-3808382357",
+          "name": "浅海医院",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 9.297298941728988,
+          "road_distance": 619.8199294485992,
+          "straight_gap": 23.332255387388326,
+          "road_point": [
+            131.8008147202822,
+            34.056567323421476
+          ],
+          "facility_point": [
+            131.8005799,
+            34.0564887
+          ]
+        },
+        {
+          "id": "osm-node-3814755158",
+          "name": "土生クリニック",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 9.629999999999999,
+          "road_distance": 642,
+          "straight_gap": 22.684396018735463,
+          "road_point": [
+            131.8077,
+            34.048
+          ],
+          "facility_point": [
+            131.8076623,
+            34.0477984
+          ]
+        },
+        {
+          "id": "osm-node-3813311158",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 10.125,
+          "road_distance": 675,
+          "straight_gap": 20.83847916137341,
+          "road_point": [
+            131.8088,
+            34.05008
+          ],
+          "facility_point": [
+            131.8088196,
+            34.0498933
+          ]
+        },
+        {
+          "id": "osm-way-382245225",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 10.57991183809607,
+          "road_distance": 705.3274558730714,
+          "straight_gap": 24.063743891630885,
+          "road_point": [
+            131.8049640463194,
+            34.05659254687901
+          ],
+          "facility_point": [
+            131.8051974,
+            34.0564953
+          ]
+        },
+        {
+          "id": "osm-node-13019068187",
+          "name": "ウォンツ",
+          "category": "drugstore",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 10.739999999999998,
+          "road_distance": 716,
+          "straight_gap": 24.58624829015999,
+          "road_point": [
+            131.80188,
+            34.05706
+          ],
+          "facility_point": [
+            131.8016187,
+            34.057105
+          ]
+        },
+        {
+          "id": "osm-node-3858878258",
+          "name": "佐藤医院",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 11.084999999999999,
+          "road_distance": 739,
+          "straight_gap": 21.861872740165474,
+          "road_point": [
+            131.80637,
+            34.05628
+          ],
+          "facility_point": [
+            131.8062924,
+            34.0564658
+          ]
+        },
+        {
+          "id": "osm-way-314788377",
+          "name": "ザ・ビッグ",
+          "category": "supermarket",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 11.756358625305646,
+          "road_distance": 783.7572416870431,
+          "straight_gap": 18.97924629941987,
+          "road_point": [
+            131.79929876421167,
+            34.057022830943865
+          ],
+          "facility_point": [
+            131.7994978,
+            34.0570669
+          ]
+        },
+        {
+          "id": "osm-way-352906170",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 12.089947337283187,
+          "road_distance": 805.9964891522125,
+          "straight_gap": 24.07732417869626,
+          "road_point": [
+            131.80067693515136,
+            34.0511613310608
+          ],
+          "facility_point": [
+            131.8004591,
+            34.0510417
+          ]
+        },
+        {
+          "id": "osm-node-3815584060",
+          "name": "早川整形外科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 12.104999999999999,
+          "road_distance": 807,
+          "straight_gap": 23.111856206480663,
+          "road_point": [
+            131.80998,
+            34.04946
+          ],
+          "facility_point": [
+            131.8101233,
+            34.0496306
+          ]
+        },
+        {
+          "id": "osm-node-3815583957",
+          "name": "山下内科小児科",
+          "category": "clinic",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 12.329999999999998,
+          "road_distance": 822,
+          "straight_gap": 16.331860249271607,
+          "road_point": [
+            131.81004,
+            34.05031
+          ],
+          "facility_point": [
+            131.8100343,
+            34.0501632
+          ]
+        },
+        {
+          "id": "osm-way-376923076",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "geometry": "Point",
+          "group": "shopping",
+          "road_minutes": 13.469999999999999,
+          "road_distance": 898,
+          "straight_gap": 23.400728422929177,
+          "road_point": [
+            131.79832,
+            34.05447
+          ],
+          "facility_point": [
+            131.7982118,
+            34.0542796
+          ]
+        },
+        {
+          "id": "osm-node-1423659873",
+          "name": "田中病院",
+          "category": "hospital",
+          "geometry": "Point",
+          "group": "medical",
+          "road_minutes": 13.739999999999998,
+          "road_distance": 916,
+          "straight_gap": 14.388354915736086,
+          "road_point": [
+            131.81046,
+            34.05321
+          ],
+          "facility_point": [
+            131.810599,
+            34.053269
+          ]
+        }
+      ]
+    }
+  ]
+}

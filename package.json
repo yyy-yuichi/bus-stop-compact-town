@@ -8,6 +8,7 @@
     "test:stops": "node scripts/test-stop-catalog.mjs",
     "test:walking": "node scripts/test-walking.mjs",
     "test:baked-walking": "node scripts/test-baked-walking.mjs",
+    "test:baked-facilities": "node scripts/test-baked-facilities.mjs",
     "dev": "vite --host 127.0.0.1",
     "validate": "node scripts/validate-shopping.mjs",
     "build": "npm run typecheck && npm run validate && vite build && node scripts/drop-walk-data-from-dist.mjs",
