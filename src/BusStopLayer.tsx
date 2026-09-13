@@ -34,7 +34,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const [shareWarning, setShareWarning] = useState(() => Boolean(window.location.hash) && !readPlaceLink(window.location.hash));
   const [mode, setMode] = useState<'national' | 'pilot'>(() => readPlaceLink(window.location.hash)?.kind === 'pilot' ? 'pilot' : 'national');
   const pendingSelection = useRef('');
-  const pendingArea = useRef<'all' | 'iwakuni' | 'hikari'>('all');
   const initialOverview = useRef(true);
   const shopping = useShoppingData();
   const walking = useWalkingData(shopping.features, shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready');
@@ -92,13 +91,11 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
         setSelected(pendingSelection.current || (mode === 'pilot' && !sharedPlace ? String(data.features[0].id || data.features[0].properties['@id']) : ''));
         pendingSelection.current = '';
         setDataTimestamp(typeof data.timestamp === 'string' ? data.timestamp : '不明');
-        const areaStops = pendingArea.current === 'all' ? data.features : data.features.filter(stop => stop.properties.source_namespace === pendingArea.current);
-        fitContent(map, L.latLngBounds((areaStops.length ? areaStops : data.features).map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])));
-        if (initialOverview.current && mode === 'national' && pendingArea.current === 'all' && !sharedPlace && window.matchMedia('(max-width: 1000px)').matches) {
+        fitContent(map, L.latLngBounds(data.features.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])));
+        if (initialOverview.current && mode === 'national' && !sharedPlace && window.matchMedia('(max-width: 1000px)').matches) {
           map.setView([34.22, 131.55], 9.5, { animate: false });
         }
         initialOverview.current = false;
-        pendingArea.current = 'all';
       }).catch(error => { if (error.name !== 'AbortError' && !abort.signal.aborted) setFailed(true); });
     return () => {
       abort.abort();
@@ -187,15 +184,9 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
     setMode(mode === 'national' ? 'pilot' : 'national');
   };
   const returnToSearch = () => { setSelected(''); setSelectedFacility(null); setWalkFacilities(null); };
-  const showArea = (area: 'all' | 'iwakuni' | 'hikari') => {
-    setSharedPlace(null); setShareWarning(false); setSelected(''); setSelectedFacility(null); setWalkFacilities(null);
-    if (mode !== 'national') { setMode('national'); pendingArea.current = area; return; }
-    const targets = area === 'all' ? stops : stops.filter(stop => stop.properties.source_namespace === area);
-    if (map && targets.length) fitContent(map, L.latLngBounds(targets.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])), false, 14);
-  };
   return <>
       <StopMarkers map={map} stops={stops} selected={selected} onSelect={selectStop} />
-      <MapPanel selection={String(selectedFacility?.id || selected)} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={changeMode} onReturnSearch={returnToSearch} onArea={showArea} municipalFailed={municipalFailed} retryMunicipal={() => setAttempt(n => n + 1)} />
+      <MapPanel selection={String(selectedFacility?.id || selected)} stops={stops} facilities={shopping.features} categories={categories} onCategories={values => { setCategories(values); if (selectedFacility && !values.includes(categoryOf(selectedFacility).id)) setSelectedFacility(null); }} onStop={selectStop} onFacility={selectFacility} mode={mode} busy={!stops.length && !failed} shoppingError={shopping.error} shoppingLoading={shopping.loading} retryShopping={shopping.retry} onMode={changeMode} onReturnSearch={returnToSearch} municipalFailed={municipalFailed} retryMunicipal={() => setAttempt(n => n + 1)} />
       <ShoppingLayer map={map} features={shownFacilities} selected={String(selectedFacility?.id || '')} onSelect={selectFacility} />
       <button className="reset icon-button" onClick={reset} aria-label={mode === 'national' ? '山口県のバス停全体を表示' : '徒歩圏試作の7地点全体を表示'} title="全体を表示"><MapIcon name="reset" /></button>
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}

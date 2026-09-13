@@ -21,4 +21,21 @@
 
 ## 公開・正式保存
 
-この節は公開確認後に追記する。実装とローカル検証まで完了。GitHubの通常PR・CI・Pages反映、公開先の実ファイル照合と、指定の案件Google Driveへの原本・完成物の保存確認を残している。
+[PR #4](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/4) はCI成功後、2026-09-13 18:10:02 JSTに通常マージした。公開コミットは `f59ddca46763be2cbf2edfef53da35d819b9d471`。検証済み実装 `435fd89b8903e9596f13602f98c6ae910978e206` とマージ後の内容差分は0。
+
+[Pages 34749046616](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34749046616) が成功し、18:11:39 JSTに[公開サイト](https://yyy-yuichi.github.io/bus-stop-compact-town/)の18ファイルと実際のPages成果物のバイト一致を確認した。データと出典文書は公開コミットの原本とも一致する。
+
+公開版を390×844で再確認し、初期表示はまとまり19個・施設マーカー0、光駅の15/5/10分は6/2/3施設、10分リンクの再読み込みで同じ3施設、バス停詳細を閉じると0施設になることを確認した。ブラウザーの警告・エラーは0。検証用のタブとローカルサーバーを終了した。
+
+指定の `Codex_非積算プロジェクト` 直下にある [案件フォルダ](https://drive.google.com/drive/folders/1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624) に、次のファイルを保存し、名称・サイズ・直接の親フォルダを再取得して確認した。
+
+| 保存物 | Drive | サイズ |
+|---|---|---:|
+| 原本・ソース161ファイル | [source.zip](https://drive.google.com/file/d/1gxEEA6HEuF7pEv6-4354jUn8apWDSaEO/view) | 26,720,032 bytes |
+| ローカル検証済み18ファイル | [validated-site.zip](https://drive.google.com/file/d/1JKNIetT6aTkUA-JYJWfZSB3jGiNOAnN6/view) | 683,127 bytes |
+| 実際の公開18ファイル | [published-site.zip](https://drive.google.com/file/d/1vLgJRRcpID7lfPdM8nIc0w0sqhzVt-18/view) | 687,862 bytes |
+| 公開ファイル照合記録 | [published-verification.json](https://drive.google.com/file/d/1RpVBHryr8lV9GQejoh6xxHI_8eZhxVMs/view) | 3,585 bytes |
+
+公開ZIPのSHA-256は `1fdb4ed2b1cde92f9f397e19df3d3c503fa4e4bac4f4b670308cbdc781173ee3`。ZIP内のマニフェストと全ファイルのハッシュを検証した。ソースZIPは公開前の実装時点を保存しており、その中の作成時点の報告・引継ぎより、同フォルダの本報告と `HANDOFF-map-design-20260913.md` を優先する。公開後の変更は文書だけで、アプリの再公開は不要。
+
+公開ZIPの最初のDriveアップロードは、自動承認レビューが正式保存先との関係を確認できず拒否した。指定親フォルダと案件フォルダのメタデータを再取得し、同じアカウント所有で指定先の直接の子であることを確認した後、同一宛先への通常の再審査が許可し、保存できた。承認待ちや保存保留は残っていない。
