@@ -24,4 +24,4 @@ Chromeを1つだけ使用。390pxで目的7分類の件数と地図の同期、5
 
 ## 保存・公開の現在地
 
-ローカル検証完了。公開と正式Drive保存は作業中。最終の公開・保存記録を優先する。ローカル成果物は `outputs/map-information-20260914/`、検証済みビルドは `production-v3/`。
+公開反映済み。[PR #7](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/7)を2026-09-14 07:01 JSTに通常マージ。公開コミット `9aaa6b4622122a9e1232d21fe6c62e93814e6e06`、[Pages 34785520701](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34785520701) の成功を確認した。実公開24ファイルをPages成果物と全バイト照合し、施設・バス停・地図・出典のデータもマージ済み原本と一致。実公開元からR2へ接続し、スマホ・PCで施設・絞り込み・電話・時間・詳細の往復を再確認した。原本・公開サイト・検証のDrive保存はこの後の最終記録を参照。ローカル成果物は `outputs/map-information-20260914/`、検証済みビルドは `production-v3/`。
