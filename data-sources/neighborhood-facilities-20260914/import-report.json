@@ -1,0 +1,2541 @@
+{
+  "raw_elements": 3753,
+  "added": 3138,
+  "categories": {
+    "restaurant": 331,
+    "park": 482,
+    "fast_food": 116,
+    "cafe": 75,
+    "sports_centre": 46,
+    "laundry": 17,
+    "bar": 50,
+    "dentist": 87,
+    "social_facility": 571,
+    "bakery": 13,
+    "hairdresser": 47,
+    "school": 618,
+    "childcare": 519,
+    "college": 37,
+    "reference": 40,
+    "playground": 89
+  },
+  "areas": 737,
+  "skipped": [
+    {
+      "source_id": "node/1423657309",
+      "reason": "inactive_or_private"
+    },
+    {
+      "source_id": "node/2303175293",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/2303851423",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/2749420713",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/3671178111",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/3822410457",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/3910766157",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4466392789",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4466392889",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119275",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119276",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119495",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119496",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119497",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119498",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119499",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562119500",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562124809",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562124810",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4562124811",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/4954044423",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5414365597",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5501008126",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5536942225",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5549792921",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5553971721",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5558726521",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5604053922",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5604055521",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/5789976853",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6011254743",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6011254747",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6033850285",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178663",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178664",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178665",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178667",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178669",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218178671",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6218313827",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6495023092",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6631877873",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6631877874",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6831995979",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6831995980",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6832032189",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6832468105",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/6859335187",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7097802017",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7328951885",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7329014385",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7517232863",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7532750377",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/7532812836",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/8852496939",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/8852503812",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/9243537722",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/9263041145",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/9382920190",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/9604476362",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/9712648118",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10129504284",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10178228755",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10178280604",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10178322606",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10182124366",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10182124372",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10250332159",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10250354815",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10303695248",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/10880644242",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/11114253718",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12012776703",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12185386554",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12185386555",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12187385915",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12492087963",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/12914817284",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/269812046",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/270243778",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/285906632",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/285906641",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/285906643",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/304770846",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/304773553",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/304773791",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/304773971",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/304963891",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305077473",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305103250",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305104745",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305110387",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305484473",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305642845",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305683726",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305685066",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305792228",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305822359",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305921462",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/305948565",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308188399",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308189284",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308189285",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308189742",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308203052",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308204683",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308205310",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308977316",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308977537",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308978595",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308987049",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308987137",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/308987315",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309003087",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309003298",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309004345",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309005621",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309006346",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/309007207",
+      "reason": "inactive_or_private"
+    },
+    {
+      "source_id": "way/312182014",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312187987",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312328797",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312328801",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312329758",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312514624",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312516945",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312517204",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312520897",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312533602",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312533635",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312543835",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/312748705",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/314376124",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/314376769",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/314487510",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/314492937",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/314493292",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315235828",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315263106",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315263615",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315385330",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315420843",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315421401",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315563624",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315569239",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315571764",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315686184",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315704366",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315857835",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315858015",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315993230",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/315993699",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316167742",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316167743",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316761380",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316761526",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316766403",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316766603",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316766845",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/316872694",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317469782",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317469996",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317518601",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317518602",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317587933",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317588989",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317589125",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317590692",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317614320",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317739480",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317778476",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/317782824",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/321241849",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/321246661",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/321246662",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/321548009",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323430585",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323430586",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323716357",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/323790982",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324439671",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324440737",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324440992",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324591330",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324604262",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324604589",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324699419",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/324700260",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/326155219",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/329068634",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/329068748",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/329070219",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/333974749",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/337386851",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/353972576",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354318904",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354326762",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354331519",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354428817",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354428872",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354433715",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/354729388",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/356780621",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/357027876",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/367730971",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/369785339",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/369785344",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/378227427",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/380190331",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385243625",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385244004",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385245405",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385248357",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385248978",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385399249",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/385401115",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/387032573",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/387151589",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/388672584",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/388983631",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/388983651",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/389114520",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/389323923",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/395210603",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/395492473",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/396699404",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/417990193",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/423892133",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/423892171",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/425305722",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/425305761",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/425341195",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/425596516",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/436681123",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/437002906",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/437002911",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/437919626",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/438159958",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/438352634",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/439638363",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/439705729",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/440149435",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441221969",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441546786",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441546787",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441546807",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441546808",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441726898",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441726912",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/441726915",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/442146566",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/442146567",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/443116723",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/443116724",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/443116725",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/443282665",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/448269607",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/452448683",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/453157410",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/453197932",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/461268565",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/463185248",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/465797966",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/465798381",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467595111",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467603155",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467603488",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467603801",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467665496",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467674439",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/467674519",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/468323810",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/468341817",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/468341819",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/468370773",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/469055989",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/470897705",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/471026618",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/471031799",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/471032957",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/472084761",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/472101618",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/473577581",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/473578297",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/473578672",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/474604768",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/478444170",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/478451199",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/481583322",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/481955945",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/481955946",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/483838352",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/483838353",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484454566",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484455203",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484455298",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484455462",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484455554",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484455686",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484456007",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484456348",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484456481",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484458544",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484458837",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484459056",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484468787",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484469983",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484470296",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484470766",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484471428",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/484856365",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/485370844",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/485376624",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/485780623",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/488784943",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/488785423",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/489162719",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/489470529",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/489567963",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/492761915",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/493144617",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/493341641",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/493344914",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/496689870",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/496924032",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/497058388",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/497157996",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/497167053",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/501597797",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/501616829",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/501620718",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/502705561",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/504538717",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/509869013",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/511487151",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/517318697",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/520172411",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/522788380",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/525285619",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/537560136",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/547689656",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/549554515",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/549554516",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/549554517",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/549985303",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550004986",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550004988",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550005041",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550124537",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550207769",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550211376",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550400087",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/550400110",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/551194215",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/552059219",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/553182329",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/553182330",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/553630513",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/554566423",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/554568060",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/554587607",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/554587993",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/554588507",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/557012416",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/557160601",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/557370805",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/558447690",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/559666204",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/560657631",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/561502880",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/561519724",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/561963096",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/561964468",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/565483561",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/566381658",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/566389399",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/568713774",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/572650583",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/575535866",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/575539302",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/575823113",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/575982034",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/575986338",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/576972234",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/576972235",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/586439563",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/602140466",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/621683674",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/626955908",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/629887887",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/630053212",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/632692049",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/640757993",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/640757995",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/640757996",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/640757998",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643002167",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003034",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003035",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003037",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003038",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003039",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/643003040",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/648699563",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/648723747",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/648723752",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/648723762",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/648723764",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/653029229",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/653029236",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660053489",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660053497",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660053498",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660054275",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660101079",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660101080",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/660101093",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/661080898",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/661080900",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/661082237",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/661082244",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/661710554",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/668013715",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/668014106",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/669516576",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/672427820",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/672476735",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/672504815",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/676448260",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/678974702",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/680336880",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/691954469",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/691966039",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/699309038",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/713427955",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/713588929",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/713646363",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/717526821",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/722689492",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/724736953",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/724736971",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/733767011",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/733822959",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/733824302",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/733824532",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/736784350",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/736790415",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/736790416",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/744602521",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263582",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263583",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263584",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263585",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263586",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754263587",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754264516",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754264517",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/754272953",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/792009240",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/793746385",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/801826515",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803621484",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803645875",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803645876",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803645877",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803645878",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803645879",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/803650563",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/831850613",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/832288055",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/862156877",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/889444917",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/896115449",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/896138478",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/932521958",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/945024720",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/999332264",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1000533821",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1000533842",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1000533844",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1000695501",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1022414500",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1022415124",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1028582396",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1030700620",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1032741689",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1035746499",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1035746500",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1035746501",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1069131403",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095555559",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095572670",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1095572674",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1104364151",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1107006493",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112495228",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112850770",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112850771",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112851529",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112854349",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112873165",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112873166",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112873433",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112873816",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112873817",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1112876936",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1116856889",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1120637409",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1120931257",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1121153964",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1147535107",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1149928043",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1172655930",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1198221358",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1205854805",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1206033065",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1206845727",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1230489951",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1236508227",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1246422931",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1259655723",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1261367238",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1261404769",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1261413867",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1261695876",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1264393222",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1264393239",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1264597191",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309955",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309967",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309975",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309979",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309980",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1265309982",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1266582157",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1266582158",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1266582159",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1280841607",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1284288692",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1284298215",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1284305226",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1284331101",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1289863336",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1301544430",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1302685571",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1307882087",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1307882088",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1307887651",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1307943386",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1308109637",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1315060609",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1315060612",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1316061198",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1366110166",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1378107392",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1382481998",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1382482011",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1382482016",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1383481558",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1385818866",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1392721973",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1408476672",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1408476673",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1422965041",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1443491553",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1452789173",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1464308497",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1475026611",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1492479732",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "way/1511381750",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "relation/2654934",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "relation/14746327",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "relation/18788314",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "relation/20377884",
+      "reason": "no_name"
+    },
+    {
+      "source_id": "node/11175842161",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1206033821"
+    },
+    {
+      "source_id": "node/11175842171",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1206033822"
+    },
+    {
+      "source_id": "node/11175907663",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1206038591"
+    },
+    {
+      "source_id": "node/11175911598",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1206034570"
+    },
+    {
+      "source_id": "node/11175925774",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1206037865"
+    },
+    {
+      "source_id": "node/11294713352",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1116749700"
+    },
+    {
+      "source_id": "node/11378990867",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1226403232"
+    },
+    {
+      "source_id": "node/1423654718",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-315901775"
+    },
+    {
+      "source_id": "node/1423655402",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-514392357"
+    },
+    {
+      "source_id": "node/1423656897",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1434152677"
+    },
+    {
+      "source_id": "node/1423657644",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-389344197"
+    },
+    {
+      "source_id": "node/1423660096",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-323673753"
+    },
+    {
+      "source_id": "node/1423660428",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-293805213"
+    },
+    {
+      "source_id": "node/1423660779",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-906151924"
+    },
+    {
+      "source_id": "node/1423660781",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-518718588"
+    },
+    {
+      "source_id": "node/7517169228",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803614473"
+    },
+    {
+      "source_id": "node/7517174256",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803615725"
+    },
+    {
+      "source_id": "node/7517174261",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803615726"
+    },
+    {
+      "source_id": "node/7517207152",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803617575"
+    },
+    {
+      "source_id": "node/7517232852",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803621485"
+    },
+    {
+      "source_id": "node/7517232864",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803621480"
+    },
+    {
+      "source_id": "node/7517246986",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803621481"
+    },
+    {
+      "source_id": "node/7517352658",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803642536"
+    },
+    {
+      "source_id": "node/7517389402",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803641992"
+    },
+    {
+      "source_id": "node/7517389407",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803641991"
+    },
+    {
+      "source_id": "node/7517389413",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803641990"
+    },
+    {
+      "source_id": "node/7517416846",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803645874"
+    },
+    {
+      "source_id": "node/7517416852",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803645872"
+    },
+    {
+      "source_id": "node/7517491992",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650566"
+    },
+    {
+      "source_id": "node/7517491995",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650567"
+    },
+    {
+      "source_id": "node/7517491996",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650562"
+    },
+    {
+      "source_id": "node/7517492011",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650568"
+    },
+    {
+      "source_id": "node/7517492016",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650561"
+    },
+    {
+      "source_id": "node/7517492031",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650565"
+    },
+    {
+      "source_id": "node/7517492033",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-803650564"
+    },
+    {
+      "source_id": "node/7520647185",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-804058680"
+    },
+    {
+      "source_id": "node/8852496944",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-999332203"
+    },
+    {
+      "source_id": "node/8852503811",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-999333132"
+    },
+    {
+      "source_id": "node/8860961541",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1000694691"
+    },
+    {
+      "source_id": "node/9229264672",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-999900093"
+    },
+    {
+      "source_id": "node/9243532464",
+      "reason": "same_name_node_inside_area",
+      "kept_id": "osm-way-1001452298"
+    }
+  ],
+  "snapshot": "2026-07-24T11:04:51Z",
+  "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+  "registered_details": {
+    "phone": 477,
+    "opening_hours": 526,
+    "branch": 233,
+    "facilities": 1710,
+    "operator": 580,
+    "wheelchair": 54,
+    "brand": 252,
+    "specialty": 8,
+    "access": 2,
+    "service": 573,
+    "cuisine": 213
+  }
+}

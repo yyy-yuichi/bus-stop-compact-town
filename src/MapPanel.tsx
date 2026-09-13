@@ -1,3 +1,4 @@
+import { FACILITY_GROUPS } from './facilityCatalog';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { BusFeature, ShoppingFeature } from './types';
 import { SHOPPING_CATEGORIES, categoryOf } from './shoppingData';
@@ -78,9 +79,9 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
         <BasemapSettings />
         <section className="category-section"><div className="section-label"><h3 id="facility-list-title">暮らしの施設</h3><span>表示する種類</span></div>
           <p className="helper-text facility-map-note">バス停を選ぶと、徒歩圏にある施設が地図に表示されます。</p>
-          <div className="category-filters">{SHOPPING_CATEGORIES.map(category => <button key={category.id} aria-pressed={categories.includes(category.id)} onClick={() => onCategories(categories.includes(category.id) ? categories.filter(c => c !== category.id) : [...categories, category.id])}>
+          <div className="category-groups">{FACILITY_GROUPS.map(group => <details key={group.id}><summary>{group.name}<span>{SHOPPING_CATEGORIES.filter(c => c.group === group.id && categories.includes(c.id)).length}/{SHOPPING_CATEGORIES.filter(c => c.group === group.id).length}種類</span></summary><div className="category-filters">{SHOPPING_CATEGORIES.filter(c => c.group === group.id).map(category => <button key={category.id} aria-pressed={categories.includes(category.id)} onClick={() => onCategories(categories.includes(category.id) ? categories.filter(c => c !== category.id) : [...categories, category.id])}>
             <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span><span>{category.name}<small className="category-count">{facilities.filter(f => categoryOf(f).id === category.id).length}件</small></span><span className="filter-check" aria-hidden="true">{categories.includes(category.id) ? '✓' : '+'}</span>
-          </button>)}</div>
+          </button>)}</div></details>)}</div>
           {shoppingError ? <button className="text-button error-text" onClick={retryShopping}>施設を再読み込み</button> : shoppingLoading ? <p className="helper-text" role="status">施設を読み込み中…</p> : <button className="list-toggle" aria-expanded={listOpen} onClick={() => setListOpen(p => !p)}>施設一覧 <span>{visible.length}件 <span aria-hidden="true">{listOpen ? '−' : '+'}</span></span></button>}
           {listOpen && <div className="facility-list">{visible.slice(0, listLimit).map(facilityRow)}{visible.length > listLimit && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'facility-list-title', index: listLimit }; setListLimit(n => n + 24); }}>一覧をさらに表示（残り{visible.length - listLimit}件）</button>}{!visible.length && <p className="helper-text">表示する種類を選んでください。</p>}</div>}
         </section>

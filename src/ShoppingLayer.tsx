@@ -34,6 +34,7 @@ export default function ShoppingLayer({ map, features, selected, onSelect }: {
         if (rect.width && rect.height) occupied.push({ x: rect.left - canvas.left, y: rect.top - canvas.top, w: rect.width, h: rect.height });
       }
       const collides = (a: {x:number;y:number;w:number;h:number}) => occupied.some(b=>a.x < b.x+b.w+5 && a.x+a.w+5 > b.x && a.y < b.y+b.h+5 && a.y+a.h+5 > b.y);
+      let labelsShown = 0;
       for (const { feature, bounds, center } of entries) {
         const active = String(feature.id) === selected;
         if (!active && !view.intersects(bounds)) continue;
@@ -53,12 +54,13 @@ export default function ShoppingLayer({ map, features, selected, onSelect }: {
           zIndexOffset: active ? 900 : 100,
         }).on('click', () => onSelect(feature)).addTo(group);
         marker.getElement()?.setAttribute('aria-label', `${feature.properties.name}（${category.name}）`);
-        if (detailed && (visible.length <= 12 || active)) {
+        if (detailed && (labelsShown < (canvas.width <= 1000 ? 6 : 12) || active)) {
           const p = map.latLngToContainerPoint(center);
           const width = Math.min(168, Math.max(72, feature.properties.name.length * 11 + 24));
           const offsets = [[20,-18],[-width-20,-18],[-width/2,22],[-width/2,-59],[35,31],[-width-35,31],[35,-64],[-width-35,-64],[16,63],[-width-16,63]];
           const position = offsets.map(([dx,dy])=>({x:p.x+dx,y:p.y+dy,w:width,h:26})).find(r=>r.x>=14 && r.x+r.w<=maxX && r.y>=74 && r.y+r.h<=maxY && !collides(r));
           if (position) {
+            labelsShown++;
             occupied.push(position);
             const label = document.createElement('span');
             label.textContent = feature.properties.name;

@@ -30,9 +30,13 @@ export interface ShoppingProperties {
   source_ids: string[];
   verified_at: string;
   osm_name?: string;
+  registration_origin?: string[];
   location_verification?: string;
   geometry_note?: string;
-  category?: 'mall' | 'supermarket' | 'drugstore' | 'convenience' | 'pharmacy' | 'hospital' | 'clinic' | 'post_office' | 'bank' | 'library' | 'townhall' | 'community_centre' | 'reference';
+  category?: import('./facilityCatalog').ShoppingCategory;
+  registered_details?: Partial<Record<'phone' | 'opening_hours' | 'operator' | 'brand' | 'branch' | 'cuisine' | 'wheelchair' | 'specialty' | 'service' | 'access', string[]>> & {
+    sources: { source_id: string; source_timestamp: string; retrieved_at: string }[];
+  };
   classification_review?: {
     checked_at: string;
     status: 'corrected' | 'out_of_scope' | 'pending' | 'retained';

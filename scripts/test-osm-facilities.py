@@ -29,7 +29,29 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(skipped, skipped_again)
         self.assertEqual(data['features'][:22], curated['features'])
         complete, life_report = module.append_life_facilities(data)
-        self.assertEqual(complete, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        expanded, report = module.neighborhood_facilities.append_neighborhood(complete, module.build)
+        enriched, details = module.neighborhood_facilities.enrich_registered_details(expanded)
+        self.assertEqual(enriched, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        self.assertEqual(report['added'], 3138)
+        self.assertEqual(expanded['features'][:1927], complete['features'])
+        self.assertEqual(details['phone'],477)
+        self.assertEqual(details['opening_hours'],526)
+        for before, after in zip(expanded['features'],enriched['features']):
+            self.assertEqual(before, {**after,'properties':{k:v for k,v in after['properties'].items() if k!='registered_details'}})
+        expanded_again, again_report = module.neighborhood_facilities.append_neighborhood(expanded,module.build)
+        self.assertEqual(expanded_again,expanded)
+        self.assertEqual(again_report['added'],0)
+        self.assertEqual(module.neighborhood_facilities.enrich_registered_details(enriched)[0],enriched)
+        for feature in enriched['features']:
+            p=feature['properties']
+            if p['category']=='reference': self.assertNotIn('registered_details',p)
+            for source in p.get('registered_details',{}).get('sources',[]):
+                self.assertIn(source['source_id'],p['source_ids'])
+                self.assertGreaterEqual(source['source_timestamp'],p['source_timestamp'])
+        self.assertEqual(report['categories']['reference'],40)
+        self.assertEqual(sum(f['properties']['category']=='reference' for f in enriched['features']),54)
+        for f in enriched['features']:
+            if f['id']=='osm-node-1631268797': self.assertEqual(f['properties']['category'],'reference')
         self.assertEqual(complete['features'][:1135], data['features'])
         self.assertEqual(life_report['added'], 792)
         self.assertEqual(len(complete['features']), len({f['id'] for f in complete['features']}))
@@ -109,5 +131,35 @@ class ImportTests(unittest.TestCase):
         self.assertTrue(module.inside_curated([130.5,33.5], f))
         self.assertFalse(module.inside_curated([131,34], f))
         self.assertFalse(module.inside_curated([132.1,34], f))
+
+class NeighborhoodTests(unittest.TestCase):
+    def test_closed_area_validation(self):
+        helper=module.neighborhood_facilities
+        shape={'type':'way','geometry':[{'lon':x,'lat':y} for x,y in [(131,34),(131.01,34),(131,34.01),(131,34)]]}
+        self.assertEqual(helper.closed_area(shape)['type'],'MultiPolygon')
+        self.assertIsNone(helper.closed_area({**shape,'type':'relation'}))
+        self.assertIsNone(helper.closed_area({**shape,'geometry':shape['geometry'][:-1]}))
+        self.assertIsNone(helper.closed_area({'type':'way','geometry':[{'lon':131,'lat':34}]*4}))
+        self.assertIsNone(helper.closed_area({'type':'way','geometry':[{}, {}, {}, {}]}))
+
+    def test_dedup_retains_sources_and_area_and_old_records(self):
+        from unittest.mock import patch
+        import copy
+        helper=module.neighborhood_facilities
+        elements=[{'type':'node','id':1,'lon':131.005,'lat':34.005,'tags':{'name':'テスト公園','leisure':'park'}},
+                  {'type':'way','id':2,'bounds':{'minlon':131,'minlat':34,'maxlon':131.01,'maxlat':34.01},'tags':{'name':'テスト公園','leisure':'park'},'geometry':[{'lon':x,'lat':y} for x,y in [(131,34),(131.01,34),(131.01,34.01),(131,34.01),(131,34)]]},
+                  {'type':'node','id':3,'lon':131.1,'lat':34.1,'tags':{'name':'テスト公園','leisure':'park'}},
+                  {'type':'node','id':4,'lon':131.2,'lat':34.2,'tags':{'name':'旧テスト学校','amenity':'school'}}]
+        raw={'elements':elements,'osm3s':{'timestamp_osm_base':'2026-07-24T00:00:00Z'}}
+        before=copy.deepcopy(raw)
+        with patch.object(helper,'load_source',return_value=(raw,{'retrieved_at':'2026-09-14','sha256':'fixture'})):
+            result,report=helper.append_neighborhood({'type':'FeatureCollection','features':[]},module.build)
+        self.assertEqual(raw,before)
+        records={f['id']:f for f in result['features']}
+        self.assertEqual(len(records),3)
+        self.assertEqual(records['osm-way-2']['properties']['source_ids'],['way/2','node/1'])
+        self.assertEqual(records['osm-way-2']['geometry']['type'],'MultiPolygon')
+        self.assertEqual(records['osm-node-4']['properties']['category'],'reference')
+        self.assertEqual(report['skipped'][0]['kept_id'],'osm-way-2')
 
 if __name__ == '__main__': unittest.main()

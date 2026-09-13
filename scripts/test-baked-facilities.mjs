@@ -51,6 +51,11 @@ assert.deepEqual(found.map(f => [f.facility.id, f.group]), [['shop', 'shopping']
 for (const category of ['post_office','bank','library','townhall','community_centre']) {
   assert.equal(join(c,point(category,50,0,category))[0].group,'services');
 }
+for (const [category,group] of Object.entries({ restaurant:'eating',cafe:'eating',fast_food:'eating',bar:'eating',bakery:'shopping',dentist:'medical',childcare:'education',school:'education',college:'education',park:'leisure',playground:'leisure',sports_centre:'leisure',social_facility:'welfare',laundry:'services',hairdresser:'services' })) {
+  assert.equal(join(c,point(category,50,0,category))[0].group,group);
+}
+const schoolArea = structuredClone(crossingArea); schoolArea.properties.category = 'school';
+near(join(c,schoolArea)[0].meters,80);
 assert.equal(join(c).length, 0);
 assert.equal(bakedFacilityCandidates({ ...c, segments: [] }, prepareFacilities([point('empty', 10)])).length, 0);
 
@@ -73,7 +78,7 @@ const cases = [
 ];
 const facilities = JSON.parse(fs.readFileSync('public/data/shopping.geojson', 'utf8')).features;
 const prepared = prepareFacilities(facilities);
-assert.equal(prepared.length, 1913);
+assert.equal(prepared.length, 5011);
 for (const test of cases) {
   c = parseCatchment(JSON.parse(fs.readFileSync(test.fixture, 'utf8')));
   found = bakedFacilityCandidates(c, prepared);
@@ -90,7 +95,8 @@ for (const test of cases) {
       return q.gap < 0.01 && Math.abs(cost - f.meters) < 0.01;
     }), `${test.name}/${f.facility.id}: cost must match a real baked road`);
   }
-  const old = found.filter(f=>f.group !== 'services');
+  const originalIds = new Set(facilities.slice(0,1135).map(f=>f.id));
+  const old = found.filter(f=>originalIds.has(f.facility.id));
   assert.deepEqual([5,10,15].map(minutes=>old.filter(f=>f.meters<=minutes*WALKING_METERS_PER_MINUTE).length),test.expectedCounts,`${test.name}: original facility results changed`);
 }
 console.log(`Baked facility checks passed: points, 25 m cutoff, slope/detour costs, polygons/holes/crossings, groups, clipping, and ${cases.length} real locations.`);

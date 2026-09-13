@@ -2,6 +2,7 @@
 from pathlib import Path
 from collections import Counter
 import argparse, datetime, hashlib, json, unicodedata, urllib.parse, urllib.request
+import neighborhood_facilities
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / 'data-sources/osm-facilities-20260911'
@@ -71,7 +72,7 @@ def apply_reviews(additions, reviews):
         p['classification_review'] = {k: review[k] for k in ('checked_at', 'status', 'note', 'evidence_url') if k in review}
         p['classification_review']['original_category'] = review['expected_category']
 
-def build(raw, existing, retrieved_at, reviews=()):
+def build(raw, existing, retrieved_at, reviews=(), category_fn=category):
     # Previously curated records retain their IDs, provenance and geometry.
     curated = [f for f in existing['features'] if f['properties'].get('verification_status') != 'osm_unverified']
     used = {source for f in curated for source in f['properties']['source_ids']}
@@ -81,7 +82,7 @@ def build(raw, existing, retrieved_at, reviews=()):
         t = e.get('tags', {})
         if sid in used:
             skipped.append({'source_id': sid, 'reason': 'existing_source_id'}); continue
-        c = category(t)
+        c = category_fn(t)
         if not c: continue
         if any(t.get(k) in ('yes', 'true', '1') for k in ('disused', 'abandoned', 'demolished', 'construction')) or t.get('access') == 'private':
             skipped.append({'source_id': sid, 'reason': 'inactive_or_private'}); continue
@@ -162,7 +163,8 @@ def main():
     if hashlib.sha256(raw_path.read_bytes()).hexdigest() != retrieval['sha256']:
         raise ValueError('Source hash mismatch')
     dest = ROOT/'public/data/shopping.geojson'
-    original = json.loads(dest.read_text(encoding='utf-8'))
+    curated_path = WORK/'curated-facilities.geojson'
+    original = json.loads((curated_path if curated_path.exists() else dest).read_text(encoding='utf-8'))
     if not (WORK/'curated-facilities.geojson').exists():
         (WORK/'curated-facilities.geojson').write_bytes(dest.read_bytes())
     review_data = load_reviews()
@@ -171,6 +173,9 @@ def main():
     data, skipped = build(raw, original, retrieval['retrieved_at'], review_data['reviews'])
     baseline = data
     data, life_report = append_life_facilities(data)
+    data, neighborhood_report = neighborhood_facilities.append_neighborhood(data, build)
+    data, details_report = neighborhood_facilities.enrich_registered_details(data)
+    (neighborhood_facilities.WORK/'import-report.json').write_text(json.dumps({**neighborhood_report,'registered_details':details_report},ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     (LIFE_WORK/'import-report.json').write_text(json.dumps(life_report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     report = dict(raw_elements=len(raw['elements']), total=len(baseline['features']),
@@ -181,5 +186,7 @@ def main():
     print('Skipped:', dict(Counter(s['reason'] for s in skipped)))
     print('Life facilities:', json.dumps({k:v for k,v in life_report.items() if k != 'skipped'}, ensure_ascii=False))
     print('Published facility records:', len(data['features']))
+    print('Neighborhood facilities:', json.dumps({k:v for k,v in neighborhood_report.items() if k!='skipped'},ensure_ascii=False))
+    print('Registered details:', json.dumps(details_report,ensure_ascii=False))
 
 if __name__ == '__main__': main()

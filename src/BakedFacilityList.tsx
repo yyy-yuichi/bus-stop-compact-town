@@ -1,3 +1,4 @@
+import { FACILITY_GROUPS } from './facilityCatalog';
 import { useEffect, useRef, useState } from 'react';
 import type { BakedFacilityCandidate, FacilityGroup } from './bakedWalking';
 import type { BakedWalkingMinutes } from './placeLink';
@@ -5,12 +6,7 @@ import type { LoadState, ShoppingFeature } from './types';
 import { categoryOf } from './shoppingData';
 import FacilityIcon from './FacilityIcon';
 
-const GROUPS = [
-  { id: 'all', name: 'すべて' },
-  { id: 'shopping', name: '買い物' },
-  { id: 'medical', name: '医療' },
-  { id: 'services', name: '暮らし' },
-] as const;
+const GROUPS = [{ id: 'all', name: 'すべて' }, ...FACILITY_GROUPS] as const;
 
 export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility }: {
   candidates: BakedFacilityCandidate[]; minutes: BakedWalkingMinutes;
@@ -33,12 +29,11 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
   const label = GROUPS.find(g => g.id === group)!.name;
   return <section className="mt-6" aria-labelledby="baked-facilities-title">
     <h4 id="baked-facilities-title" className="text-base font-bold">{minutes}分圏の施設候補</h4>
-    <div className="mt-3 grid grid-cols-2 gap-2" role="group" aria-label="施設候補の種類">
-      {GROUPS.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => onGroup(g.id)}
-        className={`min-h-11 rounded-xl border px-1 text-xs font-semibold ${group === g.id ? 'border-emerald-800 bg-emerald-50 text-emerald-950' : 'border-stone-200 bg-white text-stone-600'}`}>
-        {g.name} <span className="ml-1">{candidates.filter(c => g.id === 'all' || c.group === g.id).length}</span>
-      </button>)}
-    </div>
+    <label className="mt-3 block text-xs text-stone-600">施設候補の種類
+      <select aria-label="施設候補の種類" className="mt-1 min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 text-sm text-stone-800" value={group} onChange={e => onGroup(e.target.value as FacilityGroup | 'all')}>
+        {GROUPS.map(g => <option key={g.id} value={g.id}>{g.name}（{candidates.filter(c => g.id === 'all' || c.group === g.id).length}件）</option>)}
+      </select>
+    </label>
     <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label} {filtered.length}件 · 道路までの時間順</p>
     {filtered.length ? filtered.slice(0, limit).map(({ facility, meters }) => {
       const category = categoryOf(facility);
