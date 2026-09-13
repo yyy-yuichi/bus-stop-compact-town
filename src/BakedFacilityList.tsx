@@ -12,11 +12,11 @@ const GROUPS = [
   { id: 'services', name: '暮らし' },
 ] as const;
 
-export default function BakedFacilityList({ candidates, minutes, state, retry, onFacility }: {
+export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility }: {
   candidates: BakedFacilityCandidate[]; minutes: BakedWalkingMinutes;
   state: LoadState; retry: () => void; onFacility: (facility: ShoppingFeature) => void;
+  group: FacilityGroup | 'all'; onGroup: (group: FacilityGroup | 'all') => void;
 }) {
-  const [group, setGroup] = useState<FacilityGroup | 'all'>('all');
   const [limit, setLimit] = useState(12);
   const nextFocus = useRef('');
   useEffect(() => { setLimit(12); }, [group, minutes]);
@@ -34,7 +34,7 @@ export default function BakedFacilityList({ candidates, minutes, state, retry, o
   return <section className="mt-6" aria-labelledby="baked-facilities-title">
     <h4 id="baked-facilities-title" className="text-base font-bold">{minutes}分圏の施設候補</h4>
     <div className="mt-3 grid grid-cols-2 gap-2" role="group" aria-label="施設候補の種類">
-      {GROUPS.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => setGroup(g.id)}
+      {GROUPS.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => onGroup(g.id)}
         className={`min-h-11 rounded-xl border px-1 text-xs font-semibold ${group === g.id ? 'border-emerald-800 bg-emerald-50 text-emerald-950' : 'border-stone-200 bg-white text-stone-600'}`}>
         {g.name} <span className="ml-1">{candidates.filter(c => g.id === 'all' || c.group === g.id).length}</span>
       </button>)}

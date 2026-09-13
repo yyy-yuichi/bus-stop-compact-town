@@ -42,6 +42,49 @@ def build(original):
         'minzoom':13,'filter':['==',['get','class'],'railway'],
         'layout':{'text-field':name,'text-font':['Noto Sans Bold'],'text-size':13,'text-padding':5},
         'paint':{'text-color':'#496773','text-halo-color':'#fffefa','text-halo-width':1.5}})
+    style['name'] = 'バス停と暮らし · 案内図'
+    style['metadata']['changes'] = 'Japanese-first guide map: parchment land, teal sea, quieter streets and labels; original geography retained.'
+    palette={
+     'background':('background-color','#f7f0df'),
+     'park':('fill-color','#c5d6ae'),
+     'water':('fill-color','#94bec0'),
+     'landuse_residential':('fill-color','#ece4d1'),
+     'landcover_wood':('fill-color','#cbd9ba'),
+     'building':('fill-color','#ddd3bb'),
+     'waterway':('line-color','#8bb7ba'),
+     'highway_minor':('line-color','#fffaf0'),
+     'highway_major_casing':('line-color','#d6cbb4'),
+     'highway_major_inner':('line-color','#fffdf5'),
+     'highway_major_subtle':('line-color','#d3c8ae'),
+     'highway_motorway_inner':('line-color','#e5dac0'),
+     'highway_motorway_subtle':('line-color','#c6b99b'),
+    }
+    for layer in style['layers']:
+     identifier=layer['id']
+     if identifier in palette:
+      prop,color=palette[identifier];layer.setdefault('paint',{})[prop]=color
+     if identifier=='building':
+      layer['minzoom']=16
+      layer['paint']['fill-opacity']=0.55
+      layer['paint']['fill-outline-color']='#c9c1aa'
+     if identifier=='highway_minor':
+      layer['paint']['line-width']=['interpolate',['linear'],['zoom'],12,0.7,15,2.1,18,6]
+     if identifier=='highway_path':layer['minzoom']=16
+     if 'shield' in identifier:layer['minzoom']=16
+     if identifier in ('highway-name-minor','highway-name-path'):layer['minzoom']=18
+     if identifier=='label_other':
+      layer['minzoom']=15.5
+      layer['layout']['text-size']=12
+      layer['paint']['text-color']='#7d816a'
+     if identifier.startswith('railway') and layer['type']=='line':
+      layer['paint']['line-color']='#708178' if 'dashline' not in identifier else '#faf5e7'
+     if identifier in ('label_city','label_city_capital','label_town'):
+      layer['layout']['text-font']=['Noto Sans Bold']
+      layer['paint']['text-color']='#395640'
+      layer['paint']['text-halo-color']='#faf5e7'
+     if identifier=='railway-station-label':
+      layer['minzoom']=16
+      layer['paint']['text-color']='#325d59'
     return style
 
 if __name__ == '__main__':

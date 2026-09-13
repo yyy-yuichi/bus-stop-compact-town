@@ -21,7 +21,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#f5f4ee"
+        "background-color": "#f7f0df"
       }
     },
     {
@@ -42,7 +42,7 @@
         false
       ],
       "paint": {
-        "fill-color": "#dfe8d9"
+        "fill-color": "#c5d6ae"
       }
     },
     {
@@ -75,7 +75,7 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#b6d7d6"
+        "fill-color": "#94bec0"
       }
     },
     {
@@ -188,7 +188,7 @@
         ]
       ],
       "paint": {
-        "fill-color": "#eaece4",
+        "fill-color": "#ece4d1",
         "fill-opacity": [
           "interpolate",
           [
@@ -235,7 +235,7 @@
         ]
       ],
       "paint": {
-        "fill-color": "#dce7d6",
+        "fill-color": "#cbd9ba",
         "fill-opacity": [
           "interpolate",
           [
@@ -269,7 +269,7 @@
         false
       ],
       "paint": {
-        "line-color": "#94c3c5"
+        "line-color": "#8bb7ba"
       }
     },
     {
@@ -277,11 +277,12 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 12,
+      "minzoom": 16,
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#e4e4d9",
-        "fill-outline-color": "#d3d6c9"
+        "fill-color": "#ddd3bb",
+        "fill-outline-color": "#c9c1aa",
+        "fill-opacity": 0.55
       }
     },
     {
@@ -738,7 +739,8 @@
           20,
           10
         ]
-      }
+      },
+      "minzoom": 16
     },
     {
       "id": "highway_minor",
@@ -780,21 +782,22 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fffefa",
+        "line-color": "#fffaf0",
         "line-opacity": 0.9,
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            1.55
+            "linear"
           ],
           [
             "zoom"
           ],
-          13,
-          1.8,
-          20,
-          20
+          12,
+          0.7,
+          15,
+          2.1,
+          18,
+          6
         ]
       }
     },
@@ -839,7 +842,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#d0cfbf",
+        "line-color": "#d6cbb4",
         "line-dasharray": [
           12,
           0
@@ -901,7 +904,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "#fffdf5",
         "line-width": [
           "interpolate",
           [
@@ -959,7 +962,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#d9d3bd",
+        "line-color": "#d3c8ae",
         "line-width": 2
       }
     },
@@ -1087,19 +1090,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5.8,
-          "hsla(0,0%,85%,0.53)",
-          6,
-          "#fff"
-        ],
+        "line-color": "#e5dac0",
         "line-width": [
           "interpolate",
           [
@@ -1152,7 +1143,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsla(0,0%,85%,0.53)",
+        "line-color": "#c6b99b",
         "line-width": [
           "interpolate",
           [
@@ -1217,7 +1208,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#9ca9a2",
+        "line-color": "#708178",
         "line-width": 3
       }
     },
@@ -1269,7 +1260,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fafafa",
+        "line-color": "#faf5e7",
         "line-dasharray": [
           3,
           3
@@ -1317,7 +1308,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#9ca9a2",
+        "line-color": "#708178",
         "line-width": 3
       }
     },
@@ -1358,7 +1349,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fafafa",
+        "line-color": "#faf5e7",
         "line-dasharray": [
           3,
           3
@@ -1409,7 +1400,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#9ca9a2",
+        "line-color": "#708178",
         "line-width": [
           "interpolate",
           [
@@ -1469,7 +1460,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fafafa",
+        "line-color": "#faf5e7",
         "line-dasharray": [
           3,
           3
@@ -1999,7 +1990,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 15.5,
+      "minzoom": 18,
       "filter": [
         "==",
         [
@@ -2059,7 +2050,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 15,
+      "minzoom": 18,
       "filter": [
         "all",
         [
@@ -2207,7 +2198,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 11,
+      "minzoom": 16,
       "filter": [
         "all",
         [
@@ -2319,7 +2310,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 11,
+      "minzoom": 16,
       "filter": [
         "all",
         [
@@ -2420,7 +2411,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 12,
+      "minzoom": 16,
       "filter": [
         "all",
         [
@@ -2576,7 +2567,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 8,
+      "minzoom": 15.5,
       "filter": [
         "match",
         [
@@ -2619,23 +2610,11 @@
         ],
         "text-letter-spacing": 0.03,
         "text-max-width": 9,
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          8,
-          10,
-          12,
-          12
-        ],
+        "text-size": 12,
         "text-transform": "uppercase"
       },
       "paint": {
-        "text-color": "#3f554e",
+        "text-color": "#7d816a",
         "text-halo-blur": 1,
         "text-halo-color": "#fff",
         "text-halo-width": 1
@@ -2763,7 +2742,7 @@
           ]
         ],
         "text-font": [
-          "Noto Sans Regular"
+          "Noto Sans Bold"
         ],
         "text-max-width": 8,
         "text-size": [
@@ -2783,9 +2762,9 @@
         "text-letter-spacing": 0.03
       },
       "paint": {
-        "text-color": "#3f554e",
+        "text-color": "#395640",
         "text-halo-blur": 1,
-        "text-halo-color": "#fff",
+        "text-halo-color": "#faf5e7",
         "text-halo-width": 1
       }
     },
@@ -2936,9 +2915,9 @@
         "text-letter-spacing": 0.03
       },
       "paint": {
-        "text-color": "#3f554e",
+        "text-color": "#395640",
         "text-halo-blur": 1,
-        "text-halo-color": "#fff",
+        "text-halo-color": "#faf5e7",
         "text-halo-width": 1
       }
     },
@@ -3027,9 +3006,9 @@
         "text-letter-spacing": 0.03
       },
       "paint": {
-        "text-color": "#3f554e",
+        "text-color": "#395640",
         "text-halo-blur": 1,
-        "text-halo-color": "#fff",
+        "text-halo-color": "#faf5e7",
         "text-halo-width": 1
       }
     },
@@ -3252,7 +3231,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 13,
+      "minzoom": 16,
       "filter": [
         "==",
         [
@@ -3288,15 +3267,15 @@
         "text-padding": 5
       },
       "paint": {
-        "text-color": "#496773",
+        "text-color": "#325d59",
         "text-halo-color": "#fffefa",
         "text-halo-width": 1.5
       }
     }
   ],
-  "name": "バス停と暮らし · Soft",
+  "name": "バス停と暮らし · 案内図",
   "metadata": {
     "source": "https://tiles.openfreemap.org/styles/positron",
-    "changes": "Japanese-first single-line labels, warm land, teal water, clearer local streets and railway, station names."
+    "changes": "Japanese-first guide map: parchment land, teal sea, quieter streets and labels; original geography retained."
   }
 }
