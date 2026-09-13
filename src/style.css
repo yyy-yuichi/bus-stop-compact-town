@@ -33,11 +33,6 @@
 .panel-toggle { display:grid; width:40px; height:44px; margin-right:-6px; border:0; background:transparent; }
 .panel-options { display:none; }
 .is-expanded .panel-options { display:block; margin-top:6px; padding:16px; border:1px solid var(--line); border-radius:16px; background:#fff; box-shadow:0 5px 20px #163f2f18; }
-.region-buttons { display:flex; gap:6px; margin:2px 0 0; }
-.region-buttons button { min-height:44px; padding:5px 0; color:var(--green); font-size:11px; font-weight:650; }
-.region-buttons button>span { display:block; padding:7px 13px; border:1px solid #d8e3dc; border-radius:20px; background:#ffffffee; box-shadow:0 2px 5px #163f2f12; }
-.region-buttons button>span>span { margin-left:5px; color:#7b9387; }
-.region-buttons button:hover>span { background:#edf6ef; }
 .search-field { display:flex; align-items:center; gap:9px; min-height:48px; margin:0; border:1px solid #d9e2dc; border-radius:16px; background:#fff; box-shadow:0 3px 14px #163f2f1c; padding:0 12px; color:#60756b; }
 .search-field:focus-within { outline:2px solid #17694e; outline-offset:2px; }
 .search-field input { min-width:0; width:100%; min-height:44px; background:transparent; color:var(--ink); font-size:12px; outline:none; }

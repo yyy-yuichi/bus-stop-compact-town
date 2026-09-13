@@ -21,11 +21,10 @@ interface Props {
   retryShopping: () => void;
   selection: string;
   onReturnSearch: () => void;
-  onArea: (area: 'all' | 'iwakuni' | 'hikari') => void;
   municipalFailed: boolean;
   retryMunicipal: () => void;
 }
-export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch, onArea, municipalFailed, retryMunicipal }: Props) {
+export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch, municipalFailed, retryMunicipal }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState('');
   const [resultsOpen, setResultsOpen] = useState(true);
@@ -60,9 +59,6 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   };
   return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${term && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">
     <div className="search-field"><MapIcon name="search" /><label className="sr-only" htmlFor="place-search">バス停・お店・病院を検索</label><input id="place-search" type="search" placeholder="バス停・お店・病院を検索" value={query} onChange={e => changeQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.stopPropagation(); clearQuery(); } }} autoComplete="off" />{query && <button className="search-clear" aria-label="検索をクリア" onClick={clearQuery}><MapIcon name="close" /></button>}<button className="panel-toggle icon-button" aria-label={expanded ? '表示設定を閉じる' : '表示設定を開く'} aria-expanded={expanded} aria-controls="map-options" onClick={() => { setExpanded(p => !p); if (!expanded) setResultsOpen(false); }}><MapIcon name={expanded ? 'close' : 'layers'} /></button></div>
-    <nav className="region-buttons" aria-label="地域へ移動">
-      {([['all', '県全体'], ['iwakuni', '岩国市'], ['hikari', '光市']] as const).map(([area, label]) => <button key={area} disabled={busy || (municipalFailed && area !== 'all')} onClick={() => { setExpanded(false); setListOpen(false); changeQuery(''); onArea(area); }}><span>{label}<span aria-hidden="true"> ↗</span></span></button>)}
-    </nav>
     {municipalFailed && <button className="text-button error-text" onClick={retryMunicipal}>岩国市・光市のデータを再読み込み</button>}
     {term && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>←「{term}」の検索結果に戻る</button>}
     {term && resultsOpen ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">検索結果 {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
