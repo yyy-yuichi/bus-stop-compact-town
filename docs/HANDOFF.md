@@ -6,6 +6,17 @@
 
 公開反映済み。[PR #8](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/8)を通常マージ。公開コミット `ac089cdede73cb596f58b6d2b7e7cf3c4402cd89`、[Pages 34786519896](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34786519896) の成功を確認した。実公開25ファイルをPages成果物と全バイト照合し、施設・バス停・地図・出典のデータもマージ済み原本と一致。実公開元からR2へ接続し、スマホ・PCで追加4分類の検索・詳細・出典、徒歩時間と分類の切替、ラベル表示を再確認した。原本・公開サイト・検証のDrive保存はこの後の最終記録を参照。
 
+
+正式Drive保存：`Codex_非積算プロジェクト / bus-stop-compact-town`。接続アカウントと親フォルダを確認し、以下の3ファイルの保存先・名前・サイズをDriveから再取得して照合済み。
+
+- [map-civic-places-20260914-published-source.zip](https://drive.google.com/file/d/1o1tixn1ILyKIqs2Er2KeaDbTYUMUmUNE/view?usp=drivesdk) — 31238046 bytes
+- [map-civic-places-20260914-published-site.zip](https://drive.google.com/file/d/1G1-d3NKFItB-0k39BtaM3UGmfxMF-lXG/view?usp=drivesdk) — 1741193 bytes
+- [map-civic-places-20260914-release-verification.json](https://drive.google.com/file/d/1QMOxdsQ5jmmz8jxYCjrn5vqVw5_NSRh8/view?usp=drivesdk) — 19399 bytes
+
+ソースZIPは262ファイル、SHA-256 `da7f5dce771b65b0636685a0a0d81ab81d8c676620aeb5e1e25f3b05ee556643`。公開サイトZIPは25ファイル、SHA-256 `6389b748a4c15bd922036d51f413ac290b819ff5977f7a0c88907af151242e77`。ZIPを再読込して全収録ファイルのSHA-256と整合性を検査済み。
+
+最終の実装記録 `map-civic-places-20260914.md` と引継ぎ `HANDOFF-map-civic-places-20260914.md` は同じ案件フォルダに別ファイルとして保存する。この最終記録はZIP内の保存作業中という記述より優先する。今回の作業で既存のローカル原本・Driveファイルを削除していない。検証ブラウザーと一時サーバーは終了済み。
+
 ---
 
 # 最新の作業（2026-09-14・施設情報を拡充）
