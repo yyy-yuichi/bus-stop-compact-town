@@ -340,13 +340,14 @@ function useCatchment(id: string, knownUnreachable: boolean) {
   return { ...current, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function BakedWalkingPanel({ map, id, origin, unreachable, active, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes }: {
+export default function BakedWalkingPanel({ map, id, origin, unreachable, active, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes, scope, onMapFacilities }: {
   map: L.Map | null; id: string; origin: Coordinate;
   unreachable: Record<string, number | null> | null;
   active: boolean;
   facilities: ShoppingFeature[]; facilityState: LoadState; retryFacilities: () => void;
   onFacility: (facility: ShoppingFeature) => void;
   minutes: BakedWalkingMinutes; onMinutes: (minutes: BakedWalkingMinutes) => void;
+  scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
 }) {
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, Object.hasOwn(unreachable ?? {}, id));
   const displayed = useMemo(() => catchment ? clipCatchment(catchment, minutes * WALKING_METERS_PER_MINUTE) : null, [catchment, minutes]);
@@ -354,6 +355,7 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
   const preparedFacilities = useMemo(() => prepareFacilities(facilities), [facilities]);
   const candidates = useMemo(() => catchment && facilityState === 'ready' ? bakedFacilityCandidates(catchment, preparedFacilities) : [], [catchment, preparedFacilities, facilityState]);
   const visibleCandidates = useMemo(() => candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [candidates, minutes]);
+  useEffect(() => { onMapFacilities(scope, active ? visibleCandidates.map(c => String(c.facility.id)) : []); }, [scope, active, visibleCandidates, onMapFacilities]);
 
   useEffect(() => {
     if (!map || !catchment || !displayed || !active) return;

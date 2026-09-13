@@ -20,6 +20,7 @@ function App() {
     if (!container.current) return;
     const map = L.map(container.current, {
       zoomControl: false,
+      zoomSnap: 0.25,
       minZoom: 3,
       maxZoom: 19,
       worldCopyJump: true,

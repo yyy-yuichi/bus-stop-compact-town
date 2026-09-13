@@ -27,11 +27,12 @@ export function useWalkingData(facilities: ShoppingFeature[], facilityState: Loa
   return { data: joined.data, error: error || joined.error || facilityState === 'error', retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active, conditions, onConditions }: {
+export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active, conditions, onConditions, scope, onMapFacilities }: {
   map: L.Map | null; id: string; origin: Coordinate;
   data: ReturnType<typeof useWalkingData>['data']; error: boolean; retry: () => void; onSelect: (id: string) => void;
   onFacility: (facility: ShoppingFeature) => void; active: boolean;
   conditions: WalkingConditions; onConditions: (conditions: WalkingConditions) => void;
+  scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
 }) {
   const { minutes, speed } = conditions;
   const [showPath, setShowPath] = useState(false);
@@ -41,11 +42,12 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
     const rings: Coordinate[][] = f.geometry.type === 'Point' ? [[f.geometry.coordinates as Coordinate]] : f.geometry.coordinates.map(polygon => polygon[0] as Coordinate[]);
     return { facility: f, reach: reachFacility(result, rings) };
   }) : [], [result, data]);
-  const visible = candidates.filter(c => c.reach && c.reach.meters <= speed * 1000 / 60 * minutes);
+  const visible = useMemo(() => candidates.filter(c => c.reach && c.reach.meters <= speed * 1000 / 60 * minutes), [candidates, speed, minutes]);
+  useEffect(() => { onMapFacilities(scope, active && !error ? visible.map(c => String(c.facility.id)) : []); }, [scope, active, error, visible, onMapFacilities]);
   useEffect(() => { setShowPath(false); }, [id, speed, minutes]);
 
   useEffect(() => {
-    if (!map || !result) return;
+    if (!map || !result || !active || error) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
     const outer = reachableLines(result, speed * 1000 / 60 * minutes);
@@ -58,7 +60,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
       if (showPath) L.polyline(toLatLng(c.reach.path), { color: '#4f46e5', weight: 4, opacity: 1, dashArray: '8 5', interactive: false }).addTo(group);
     }
     return () => { group.remove(); };
-  }, [map, result, speed, minutes, origin, visible.map(c => c.facility.id).join(','), showPath]);
+  }, [map, result, speed, minutes, origin, visible, showPath, active, error]);
 
   useEffect(() => {
     if (!map || !result || !active) return;
