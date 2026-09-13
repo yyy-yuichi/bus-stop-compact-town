@@ -24,7 +24,7 @@ export const SHOPPING_CATEGORIES = [
   { id: 'clinic', name: '診療所', color: '#9b527e', group: 'medical' },
   { id: 'pharmacy', name: '薬局', color: '#546cb4', group: 'medical' },
   { id: 'dentist', name: '歯科', color: '#427f90', group: 'medical' },
-  { id: 'childcare', name: '保育・幼稚園', color: '#9d6b4a', group: 'education' },
+  { id: 'childcare', name: '保育・子育て', color: '#9d6b4a', group: 'education' },
   { id: 'school', name: '学校', color: '#5d7997', group: 'education' },
   { id: 'college', name: '大学・高等教育', color: '#58618d', group: 'education' },
   { id: 'park', name: '公園', color: '#558153', group: 'leisure' },

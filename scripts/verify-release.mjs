@@ -4,9 +4,9 @@ const root=process.argv[2] || 'dist';
 const walkDataUrl=process.env.VITE_WALK_DATA_URL;
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
 for(const f of files){
- if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|maps\/(soft\.json|(?:openfreemap|positron)-LICENSE\.md)|data\/(bus_stop|baked-bus-stops|shopping|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|about\.html|third-party-notices\.txt|maps\/(soft\.json|(?:openfreemap|positron)-LICENSE\.md)|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
-for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/walking-onoda.json','data/baked-bus-stops.geojson','data/walk-unreachable.json',...(walkDataUrl?[]:['data/walk/index.json'])]) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
+for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/civic-facilities.geojson','data/walking-onoda.json','data/baked-bus-stops.geojson','data/walk-unreachable.json',...(walkDataUrl?[]:['data/walk/index.json'])]) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const file of ['maps/soft.json','maps/openfreemap-LICENSE.md','maps/positron-LICENSE.md']) {
   if (!fs.existsSync(path.join(root,file)) || !fs.readFileSync(`public/${file}`).equals(fs.readFileSync(path.join(root,file)))) throw Error(`Missing or stale basemap source/license: ${file}`);
@@ -16,7 +16,7 @@ if(workers.length!==1)throw Error('Expected one self-contained basemap worker');
 if(/(?:from|import)\s*['"]\.\.?\//.test(fs.readFileSync(path.join(root,workers[0]),'utf8')))throw Error('Basemap worker has an unbundled relative import');
 for(const m of html.matchAll(/(?:src|href)="(\.\/assets\/[^"#]+)"/g)) if(!fs.existsSync(path.join(root,m[1])))throw Error(`Missing asset ${m[1]}`);
 if(/(?:src|href)="\/assets\//.test(html))throw Error('Absolute asset path prevents subdirectory deployment');
-for(const file of ['bus_stop.geojson','shopping.geojson','baked-bus-stops.geojson','walk-unreachable.json']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(path.join(root,'data',file))))throw Error(`Stale data: ${file}`);
+for(const file of ['bus_stop.geojson','shopping.geojson','civic-facilities.geojson','baked-bus-stops.geojson','walk-unreachable.json']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(path.join(root,'data',file))))throw Error(`Stale data: ${file}`);
 if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync(path.join(root,'data/walking-onoda.json'))))throw Error('Stale walking graph');
 const bus=JSON.parse(fs.readFileSync(path.join(root,'data/bus_stop.geojson'),'utf8'));
 if(bus.features.length!==1085)throw Error('Unexpected bus stop count');

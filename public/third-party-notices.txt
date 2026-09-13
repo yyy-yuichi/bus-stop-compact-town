@@ -238,3 +238,21 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+Additional civic facilities (public/data/civic-facilities.geojson)
+This app modifies and uses the following works:
+Kudamatsu City: urban parks, preschool/childcare facilities, educational institutions,
+and care service providers (2025-01 / 2025-11 editions).
+Yamaguchi Prefecture: care service providers (2024-02-01).
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Sources:
+https://yamaguchi-opendata.jp/ckan/dataset/352071_park
+https://yamaguchi-opendata.jp/ckan/dataset/352071_preschool
+https://yamaguchi-opendata.jp/ckan/dataset/352071_educational_institution
+https://yamaguchi-opendata.jp/ckan/dataset/352071_care_service
+https://yamaguchi-opendata.jp/ckan/dataset/care_service
+Terms: https://www.city.kudamatsu.lg.jp/jyouhou/opendata.html
+https://yamaguchi-opendata.jp/www/terms.html
+Modified by Bus Stop Compact Town: classification, exact provider/address/coordinate
+aggregation, name/location duplicate filtering, and GeoJSON conversion.

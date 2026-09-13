@@ -11,11 +11,15 @@ export function useShoppingData() {
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
     const abort = new AbortController(); setLoading(true); setError(false);
-    fetch(`${import.meta.env.BASE_URL}data/shopping.geojson`, { signal: abort.signal })
-      .then(r => { if (!r.ok) throw Error('Shopping data unavailable'); return r.json() as Promise<ShoppingCollection>; })
-      .then(data => {
-        if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length) throw Error('Invalid shopping data');
-        if (!abort.signal.aborted) { setFeatures(data.features); setLoading(false); }
+    Promise.all(['shopping', 'civic-facilities'].map(name =>
+      fetch(`${import.meta.env.BASE_URL}data/${name}.geojson`, { signal: abort.signal })
+        .then(r => { if (!r.ok) throw Error('Facility data unavailable'); return r.json() as Promise<ShoppingCollection>; })
+        .then(data => {
+          if (data.type !== 'FeatureCollection' || !Array.isArray(data.features) || !data.features.length) throw Error('Invalid facility data');
+          return data.features;
+        })
+    )).then(collections => {
+        if (!abort.signal.aborted) { setFeatures(collections.flat()); setLoading(false); }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
     return () => abort.abort();
   }, [attempt]);

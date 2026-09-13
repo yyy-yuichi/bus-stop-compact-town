@@ -1,5 +1,7 @@
 # 施設情報の拡充（2026-09-14）
 
+公開と正式保存が完了。[新しい地図](https://yyy-yuichi.github.io/bus-stop-compact-town/#kind=national&id=mlit-p11-22-35%3A2798&minutes=15)で追加情報を利用できる。指定親フォルダ直下の案件Driveに、[原本・ソースZIP](https://drive.google.com/file/d/1WaqK0pnaC8TVpd83AMRrordsruOmxtQi/view)（228ファイル・30,074,266 bytes、ソース記録 c1a4612）、[実際の公開サイトZIP](https://drive.google.com/file/d/18YqTM-pWtFuo1NQzKwUqrUorkUtgsra6/view)（24ファイル・1,496,068 bytes）、[公開照合・実画面検証](https://drive.google.com/file/d/1Lkrk4eoBuKO6LaWKn4XQHIXLndmzWXkJ/view)（18,119 bytes）を保存。ファイル名・サイズ・親フォルダを読み戻して確認した。最終の本書とHANDOFFを同じ案件フォルダへ別保存するため、ZIP内のDrive保存前の記述よりこの記録を優先する。公開後の検証ブラウザーとローカルサーバーは終了済み。
+
 施設を1,927から5,065レコードへ増やし、電話477件・営業時間526件を施設詳細に表示した。通常候補は27分類5,011件、参考は54件。単純に施設名を追加するだけでなく、用途・料理・福祉サービスの検索、7つの目的別の候補絞り込み、情報元の時点、元の登録注記を確認できる。
 
 ## 追加した情報
@@ -24,4 +26,4 @@ Chromeを1つだけ使用。390pxで目的7分類の件数と地図の同期、5
 
 ## 保存・公開の現在地
 
-ローカル検証完了。公開と正式Drive保存は作業中。最終の公開・保存記録を優先する。ローカル成果物は `outputs/map-information-20260914/`、検証済みビルドは `production-v3/`。
+公開反映済み。[PR #7](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/7)を2026-09-14 07:01 JSTに通常マージ。公開コミット `9aaa6b4622122a9e1232d21fe6c62e93814e6e06`、[Pages 34785520701](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34785520701) の成功を確認した。実公開24ファイルをPages成果物と全バイト照合し、施設・バス停・地図・出典のデータもマージ済み原本と一致。実公開元からR2へ接続し、スマホ・PCで施設・絞り込み・電話・時間・詳細の往復を再確認した。原本・公開サイト・検証のDrive保存はこの後の最終記録を参照。ローカル成果物は `outputs/map-information-20260914/`、検証済みビルドは `production-v3/`。

@@ -51,6 +51,8 @@ export interface ShoppingProperties {
   retrieved_at?: string;
   license?: string;
   source?: string;
+  civic_sources?: { publisher: string; title: string; url: string; date: string }[];
+  civic_details?: { label: string; value: string; source_id: string }[];
 }
 export type ShoppingFeature = Feature<Point | MultiPolygon, ShoppingProperties>;
 export type ShoppingCollection = FeatureCollection<Point | MultiPolygon, ShoppingProperties>;

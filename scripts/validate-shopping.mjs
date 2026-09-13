@@ -1,6 +1,6 @@
 import { SHOPPING_CATEGORIES } from '../src/facilityCatalog.ts';
 import fs from 'node:fs';
-const data=JSON.parse(fs.readFileSync('public/data/shopping.geojson','utf8'));
+const data={features: ['shopping','civic-facilities'].flatMap(name=>JSON.parse(fs.readFileSync(`public/data/${name}.geojson`,'utf8')).features)};
 const ids=new Set(), sources=new Set();
 const counts={building:0,facility_area:0,representative_point:0};
 const categories=Object.fromEntries([...SHOPPING_CATEGORIES.map(c=>c.id),'reference'].map(id=>[id,0]));
@@ -17,8 +17,17 @@ for(const f of data.features) {
   if(r.status!=='pending'&&!r.evidence_url) throw Error(`Missing classification evidence: ${f.id}`);
   if(r.evidence_url) { const url=new URL(r.evidence_url); if(url.protocol!=='https:'||url.username||url.password) throw Error(`Unsafe evidence URL: ${f.id}`); }
  }
- if(!p.name||!p.source_timestamp||!p.source_ids?.length||p.license!=='ODbL-1.0') throw Error(`Missing provenance: ${f.id}`);
- if(p.verification_status==='osm_unverified') {
+ const civic=p.verification_status==='civic_unverified';
+ if(!p.name||!p.source_timestamp||!p.source_ids?.length||p.license!==(civic?'CC-BY-4.0':'ODbL-1.0')) throw Error(`Missing provenance: ${f.id}`);
+ if(civic) {
+  if(!/^civic-[\w-]+$/.test(f.id)||p.geometry_kind!=='representative_point'||p.verified_at||p.official_address||p.official_url||!p.retrieved_at||!p.civic_sources?.length||!p.address||!p.city) throw Error(`Invalid civic provenance: ${f.id}`);
+  for(const source of p.civic_sources) {
+   if(!source.title||!source.publisher||!/^\d{4}-\d{2}(?:-\d{2})?$/.test(source.date)||!source.url.startsWith('https://yamaguchi-opendata.jp/ckan/dataset/')) throw Error(`Invalid civic source: ${f.id}`);
+  }
+  if(p.source_ids.some(id=>!/^civic:[a-f\d-]+:row:\d+$/.test(id))) throw Error(`Invalid civic row: ${f.id}`);
+  if(p.civic_details?.some(d=>!d.label||!d.value||!p.source_ids.includes(d.source_id))) throw Error(`Unattributed civic detail: ${f.id}`);
+  if(p.website) { const url=new URL(p.website); if(!['http:','https:'].includes(url.protocol)||url.username||url.password) throw Error(`Unsafe civic URL: ${f.id}`); }
+ } else if(p.verification_status==='osm_unverified') {
   if(p.verified_at||p.official_address||p.official_url||!p.retrieved_at) throw Error(`Unverified record presented as official: ${f.id}`);
   if(!/^osm-(node|way|relation)-\d+$/.test(f.id)||!['representative_point','facility_area'].includes(p.geometry_kind)) throw Error(`Invalid imported record: ${f.id}`);
   if(p.website) { const url=new URL(p.website); if(!['http:','https:'].includes(url.protocol)||url.username||url.password) throw Error(`Unsafe registered URL: ${f.id}`); }
