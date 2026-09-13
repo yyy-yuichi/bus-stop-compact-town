@@ -5,6 +5,7 @@ export const DEFAULT_WALKING_CONDITIONS: WalkingConditions = { minutes: 10, spee
 export type SharedPlace =
   | { kind: 'facility'; id: string }
   | { kind: 'national'; id: string; minutes?: BakedWalkingMinutes }
+  | { kind: 'municipal'; id: string }
   | { kind: 'pilot'; id: string; walking?: WalkingConditions };
 
 export function readPlaceLink(hash: string): SharedPlace | null {
@@ -13,6 +14,10 @@ export function readPlaceLink(hash: string): SharedPlace | null {
   if (params.getAll('kind').length !== 1 || params.getAll('id').length !== 1) return null;
   const kind = params.get('kind');
   const id = params.get('id') || '';
+  if (kind === 'municipal' && /^(hikari|iwakuni):[a-zA-Z0-9_.-]{1,100}$/.test(id)) {
+    if (params.has('minutes') || params.has('speed')) return null;
+    return { kind, id };
+  }
   if (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id)) {
     if (!params.has('minutes') && !params.has('speed')) return { kind, id };
     if (params.has('speed') || params.getAll('minutes').length !== 1) return null;

@@ -23,14 +23,19 @@
 .region-label { margin-left:4px; padding:4px 9px; font-size:11px; border:1px solid #d7e6dd; border-radius:5px; color:var(--green); background:#f4f9f5; }
 .app-header>a { padding:12px 0 12px 16px; font-size:12px; color:#52645d; white-space:nowrap; }
 .app .map { top:64px; }
-.map-panel { position:absolute; top:84px; left:20px; z-index:1100; width:300px; max-height:calc(100dvh - 112px); overflow:auto; background:#fff; border:1px solid #e2e9e4; border-radius:16px; box-shadow:0 6px 30px #163f2f15; padding:22px 20px 16px; scrollbar-width:thin; }
+.map-panel { position:absolute; top:84px; left:20px; z-index:1100; width:300px; max-height:calc(100dvh - 112px); overflow:auto; background:#fff; border:1px solid #e2e9e4; border-radius:16px; box-shadow:0 6px 30px #163f2f15; padding:14px 16px 12px; scrollbar-width:thin; }
 .panel-intro { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 .panel-kicker { color:var(--green); font-size:9px; font-weight:750; letter-spacing:.16em; margin-bottom:7px; }
 .panel-intro h2 { font-size:15px; font-weight:750; line-height:1.6; letter-spacing:.005em; }
 .icon-button { display:grid; place-items:center; width:44px; height:44px; flex-shrink:0; border-radius:12px; border:1px solid #dce5df; color:var(--ink); background:#fff; transition:background .15s; }
 .icon-button:hover { background:#edf6ef; }
-.panel-toggle { display:none; }
-.search-field { display:flex; align-items:center; gap:9px; min-height:46px; margin:19px 0 23px; border:1px solid #d9e2dc; border-radius:9px; background:#f8faf8; padding:0 12px; color:#60756b; }
+.panel-toggle { display:grid; width:36px; height:36px; margin-right:-6px; border:0; background:transparent; }
+.panel-options { display:none; }
+.is-expanded .panel-options { display:block; margin-top:16px; }
+.region-buttons { display:flex; gap:6px; margin:8px 0 0; }
+.region-buttons button { flex:1; min-height:44px; padding:6px 3px; border:1px solid var(--line); border-radius:8px; color:var(--green); font-size:12px; font-weight:600; }
+.region-buttons button:hover { background:#f1f7f2; }
+.search-field { display:flex; align-items:center; gap:9px; min-height:46px; margin:8px 0; border:1px solid #d9e2dc; border-radius:9px; background:#f8faf8; padding:0 12px; color:#60756b; }
 .search-field:focus-within { outline:2px solid #17694e; outline-offset:2px; }
 .search-field input { min-width:0; width:100%; min-height:44px; background:transparent; color:var(--ink); font-size:12px; outline:none; }
 .search-field input::placeholder { color:#64716e; opacity:1; }
@@ -57,7 +62,12 @@
 .primary-link:hover { background:#0c5038; }
 .walking-teaser .primary-link { grid-column:1/-1; margin-top:2px; }
 .panel-source { display:flex; align-items:center; gap:7px; margin-top:20px; padding-top:15px; border-top:1px solid var(--line); font-size:9px; line-height:1.6; color:#68756e; }
-.bus-dot { width:7px; height:7px; border-radius:50%; background:#174f9d; flex-shrink:0; }
+.bus-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#174f9d; flex-shrink:0; }
+.municipal-dot { background:#b6531c; }
+.stop-symbol.municipal-symbol { color:#a54815; background:#fff2e8; }
+.municipal-walking .place-row>span:first-child { flex:1; }
+.walk-facility-row { padding:12px 3px; }
+.legend-summary { min-height:32px; padding:6px 0; font-weight:650; }
 .panel-about { display:flex; align-items:center; justify-content:space-between; color:#596c60; min-height:35px; margin-top:4px; font-size:10px; }
 .panel-mobile-hint { display:none; }
 .reset { position:absolute; top:84px; right:22px; z-index:1050; box-shadow:0 2px 12px #12382712; }
@@ -66,7 +76,7 @@
 .error-text { color:#973d0f; }
 .text-button { min-height:44px; font-size:12px; text-decoration:underline; }
 .search-results, .facility-list { overflow:auto; max-height:350px; scrollbar-width:thin; }
-.search-results { margin-top:-8px; }
+.search-results { margin-top:12px; }
 .search-field input::-webkit-search-cancel-button { display:none; }
 .search-clear { display:grid; place-items:center; flex-shrink:0; width:32px; height:36px; margin-right:-7px; border-radius:6px; color:#4a6257; }
 .search-clear:hover { background:#e9f0eb; }
@@ -87,7 +97,7 @@
 .stop-symbol { display:inline-grid; place-items:center; width:25px; height:25px; flex-shrink:0; border-radius:7px; color:#174f9d; background:#edf3fb; }
 .stop-symbol svg { width:17px; height:17px; }
 /* Details share the same placement for shops and bus stops. */
-.detail-drawer { position:absolute; top:84px; right:20px; bottom:26px; z-index:1200; display:flex; flex-direction:column; width:370px; max-width:calc(100% - 40px); background:#fff; border:1px solid #e0e8e2; border-radius:16px; box-shadow:0 6px 30px #163f2f20; overflow:hidden; }
+.detail-drawer { position:absolute; top:84px; right:20px; max-height:calc(100dvh - 110px); z-index:1200; display:flex; flex-direction:column; width:370px; max-width:calc(100% - 40px); background:#fff; border:1px solid #e0e8e2; border-radius:16px; box-shadow:0 6px 30px #163f2f20; overflow:hidden; }
 .detail-drawer[hidden] { display:none; }
 .drawer-return { flex-shrink:0; min-height:44px; padding:10px 18px; border-bottom:1px solid var(--line); background:#f2f8f4; color:var(--green); text-align:left; font-size:11px; font-weight:650; overflow-wrap:anywhere; }
 .search-return { width:100%; min-height:44px; padding:8px 3px; text-align:left; color:var(--green); font-size:11px; font-weight:650; overflow-wrap:anywhere; }

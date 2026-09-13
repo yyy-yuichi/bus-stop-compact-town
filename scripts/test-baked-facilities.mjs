@@ -63,12 +63,16 @@ assert.equal(c.segments[0].d2, 200, 'Never modify received data');
 
 // Real records and R2 samples, checked independently against the serialized distance field.
 const fixtureRoot = 'data-sources/walking-facilities-20260913';
-const cases = JSON.parse(fs.readFileSync(`${fixtureRoot}/cases.json`, 'utf8'));
+const cases = [
+  ...JSON.parse(fs.readFileSync(`${fixtureRoot}/cases.json`, 'utf8')).map(test => ({ ...test, fixture: `${fixtureRoot}/catchments/${test.catchment}.json` })),
+  { name: '北河内駅（国の起点）', catchment: '132.06421_34.17587', expectedCounts: [0, 0, 0], fixture: 'data-sources/regional-map-20260913/132.06421_34.17587.json' },
+  { name: '光駅（国の起点）', catchment: '131.91505_33.97351', expectedCounts: [2, 3, 6], fixture: 'data-sources/regional-map-20260913/131.91505_33.97351.json' },
+];
 const facilities = JSON.parse(fs.readFileSync('public/data/shopping.geojson', 'utf8')).features;
 const prepared = prepareFacilities(facilities);
 assert.equal(prepared.length, 1130);
 for (const test of cases) {
-  c = parseCatchment(JSON.parse(fs.readFileSync(`${fixtureRoot}/catchments/${test.catchment}.json`, 'utf8')));
+  c = parseCatchment(JSON.parse(fs.readFileSync(test.fixture, 'utf8')));
   found = bakedFacilityCandidates(c, prepared);
   assert.equal(c.stopId, test.catchment);
   const sets = [5, 10, 15].map(minutes => new Set(found.filter(f => f.meters <= minutes * WALKING_METERS_PER_MINUTE).map(f => f.facility.id)));

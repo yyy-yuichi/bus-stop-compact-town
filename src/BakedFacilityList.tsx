@@ -38,24 +38,21 @@ export default function BakedFacilityList({ candidates, minutes, state, retry, o
         {g.name} <span className="ml-1">{candidates.filter(c => g.id === 'all' || c.group === g.id).length}</span>
       </button>)}
     </div>
-    <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label}の候補 {filtered.length}件 · 近くの道路までの時間順</p>
-    <p className="mt-2 text-xs leading-relaxed text-stone-600">入口まで歩けることを確認した一覧ではありません。道路から施設への通行可否は現地でご確認ください。</p>
-    {filtered.length ? filtered.slice(0, limit).map(({ facility, meters, gap }) => {
+    <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label} {filtered.length}件 · 道路までの時間順</p>
+    {filtered.length ? filtered.slice(0, limit).map(({ facility, meters }) => {
       const category = categoryOf(facility);
-      return <article key={String(facility.id)} className="mt-3 rounded-2xl border border-stone-200 bg-white p-4">
-        <p className="flex items-center gap-2 text-xs font-semibold" style={{ color: category.color }}><span className="h-4 w-4"><FacilityIcon category={category.id} /></span>{category.name}</p>
-        <h5 className="mt-2 text-base font-bold">{facility.properties.name}</h5>
-        {facility.properties.classification_review?.status === 'pending' && <p className="mt-1 text-xs text-amber-800">分類を確認中の登録です</p>}
-        <p className="mt-3 text-sm font-semibold text-emerald-900">近くの道路まで 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</p>
-        <p className="mt-1 text-xs text-stone-500">そこから{facility.geometry.type === 'Point' ? '登録位置' : '建物・敷地'}まで直線で約{Math.round(gap)}m · 入口未確認</p>
-        <button id={`baked-facility-${facility.id}`} className="primary-link mt-3" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>施設の詳細を見る <span aria-hidden="true">→</span></button>
-      </article>;
-    }) : <p className="mt-4 rounded-xl bg-stone-50 p-4 text-sm leading-relaxed">{minutes}分圏では{group === 'all' ? '施設' : label}の候補が見つかりませんでした。{minutes < 15 ? '時間を広げると候補が見つかる場合があります。' : '周辺に施設がないことを意味するものではありません。'}</p>}
+      return <button key={String(facility.id)} id={`baked-facility-${facility.id}`} className="place-row walk-facility-row" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>
+        <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
+        <span><strong>{facility.properties.name}</strong><small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 分類確認中' : ''}</small><small>近くの道路まで 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
+        <span className="row-arrow" aria-hidden="true">›</span>
+      </button>;
+    }) : <p className="mt-4 text-sm leading-relaxed">この条件の候補はありません。{minutes < 15 ? '時間を広げて探せます。' : ''}</p>}
     {filtered.length > limit && <button className="mt-3 min-h-11 w-full rounded-xl border border-stone-300 bg-white text-sm font-semibold" onClick={() => { nextFocus.current = `baked-facility-${filtered[limit].facility.id}`; setLimit(n => n + 12); }}>さらに{Math.min(12, filtered.length - limit)}件を表示</button>}
     <details className="mt-4 text-xs leading-relaxed text-stone-600">
       <summary className="min-h-11 cursor-pointer py-3 font-semibold">候補の判定について</summary>
       <p>徒歩圏の道路と施設の登録位置・範囲が25m以内にあるものを候補にしています。表示時間は坂道を考慮した道路上の地点までの目安です。入口への経路や、その間を横断・通行できるかは未確認です。</p>
       <p className="mt-2">参考施設は除いています。同じ施設の登録が重複している場合があります。施設名・営業状況・診療内容などは詳細からご確認ください。</p>
+      <p className="mt-2">候補0件は、周辺に施設がないという意味ではありません。</p>
     </details>
   </section>;
 }

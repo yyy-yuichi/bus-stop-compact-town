@@ -12,6 +12,6 @@ export function searchPlaces(query: string, stops: BusFeature[], facilities: Sho
   };
   return {
     facilities: facilities.filter(f => matches([f.properties.name, f.properties.city, f.properties.official_address, f.properties.address, f.properties.search_names])),
-    stops: stops.filter(f => matches([f.properties['name:ja'], f.properties.name, f.properties.operator])),
+    stops: stops.filter(f => matches([f.properties['name:ja'], f.properties.name, f.properties.operator, f.properties.city])),
   };
 }
