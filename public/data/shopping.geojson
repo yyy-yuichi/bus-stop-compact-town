@@ -16766,14 +16766,14 @@
       "type": "Feature",
       "id": "osm-node-4354872989",
       "properties": {
-        "name": "イオン",
-        "city": "",
+        "name": "イオン光店",
+        "city": "光市",
         "category": "mall",
-        "official_address": "",
-        "official_url": "",
+        "official_address": "山口県光市浅江木園1756-1",
+        "official_url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/hours/",
         "address": "",
         "website": "",
-        "search_names": "イオン      ",
+        "search_names": "イオン光店 イオン 光市",
         "geometry_kind": "representative_point",
         "source": "OpenStreetMap",
         "source_ids": [
@@ -16787,6 +16787,47 @@
         "geometry_note": "Original OSM node",
         "osm_tags": {
           "shop": "department_store"
+        },
+        "osm_name": "イオン",
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "corrected",
+          "original_category": "mall",
+          "note": "名称・住所と食料品売場の利用時間を公式案内で確認。農産・水産・畜産・日配・惣菜を扱う。位置は既存のOSM登録点を保持し、入口とは扱わない。",
+          "evidence_url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/hours/"
+        },
+        "purpose_review": {
+          "checked_at": "2026-09-14",
+          "source_url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/hours/",
+          "source_title": "イオン光店・売場基本営業時間",
+          "facts": [
+            {
+              "label": "買い物の用途",
+              "value": "野菜・魚・肉・日配食品・惣菜を買える食品売場"
+            },
+            {
+              "label": "食品売場の基本時間",
+              "value": "7:00〜24:00。専門店・薬局などは別の営業時間"
+            },
+            {
+              "label": "食品売場と出入口",
+              "value": "食品売場は1階。公式フロア図に「正面北側出入口」「東側出入口」の記載がある"
+            },
+            {
+              "label": "店舗電話",
+              "value": "0833-71-2922"
+            }
+          ],
+          "gaps": [
+            "停留所から出入口までの経路・横断・段差・所要時間は未確認",
+            "フロア図の出入口を地図の座標へ対応付けていない。出入口ごとの利用時間も未確認"
+          ],
+          "additional_sources": [
+            {
+              "title": "公式フロアガイド（食品売場は1階）",
+              "url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/floor_guide/"
+            }
+          ]
         }
       },
       "geometry": {
@@ -33714,14 +33755,14 @@
       "type": "Feature",
       "id": "osm-way-354319153",
       "properties": {
-        "name": "総合病院光市立病院",
-        "city": "",
-        "category": "hospital",
+        "name": "光市立光総合病院（旧所在地の参考記録）",
+        "city": "光市",
+        "category": "reference",
         "official_address": "",
-        "official_url": "",
+        "official_url": "https://hikari-hosp.jp/about/history.html",
         "address": "",
         "website": "",
-        "search_names": "総合病院光市立病院      ",
+        "search_names": "光市立光総合病院（旧所在地の参考記録） 総合病院光市立病院 光市",
         "geometry_kind": "representative_point",
         "source": "OpenStreetMap",
         "source_ids": [
@@ -33735,6 +33776,28 @@
         "geometry_note": "Center of the OSM element bounding box; not an entrance",
         "osm_tags": {
           "amenity": "hospital"
+        },
+        "osm_name": "総合病院光市立病院",
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "out_of_scope",
+          "original_category": "hospital",
+          "note": "公式沿革に2019年5月の移転新築、公式アクセスに光ケ丘6番1号を確認。この記録は虹ケ浜側の旧位置のため、現在通える病院の候補から除外。元のID・座標は保持。",
+          "evidence_url": "https://hikari-hosp.jp/about/history.html"
+        },
+        "purpose_review": {
+          "checked_at": "2026-09-14",
+          "source_url": "https://hikari-hosp.jp/about/history.html",
+          "source_title": "光市立光総合病院・沿革／現在の交通アクセス",
+          "facts": [
+            {
+              "label": "現在の病院所在地",
+              "value": "光市光ケ丘6番1号。地図上のこの参考点とは異なる"
+            }
+          ],
+          "gaps": [
+            "この記録の座標を新病院やその入口へ移す補正は行っていない"
+          ]
         }
       },
       "geometry": {
@@ -103888,14 +103951,14 @@
       "type": "Feature",
       "id": "osm-node-1423657276",
       "properties": {
-        "name": "市立浅江中学校",
-        "city": "",
-        "category": "school",
+        "name": "浅江中学校（旧所在地の参考記録）",
+        "city": "光市",
+        "category": "reference",
         "official_address": "",
-        "official_url": "",
+        "official_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
         "address": "",
         "website": "",
-        "search_names": "市立浅江中学校      ",
+        "search_names": "浅江中学校（旧所在地の参考記録） 市立浅江中学校 光市",
         "geometry_kind": "representative_point",
         "source": "OpenStreetMap",
         "source_ids": [
@@ -103914,7 +103977,24 @@
           "KSJ2",
           "国土数値情報（公共施設データ）平成19年　国土交通省",
           "National-Land Numerical Information (Public Facility) 2006, MLIT Japan"
-        ]
+        ],
+        "osm_name": "市立浅江中学校",
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "out_of_scope",
+          "original_category": "school",
+          "note": "浅江中学校は光ケ丘の旧光丘高校跡地へ移転。この旧所在地の登録点は、現在の学校の候補から除外。元のID・座標は保持。",
+          "evidence_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html"
+        },
+        "purpose_review": {
+          "checked_at": "2026-09-14",
+          "source_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
+          "source_title": "光市・浅江中学校移転改修事業",
+          "facts": [],
+          "gaps": [
+            "旧敷地の現在の利用状況は未確認"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -200926,14 +201006,14 @@
       "type": "Feature",
       "id": "osm-way-353969790",
       "properties": {
-        "name": "山口県立光丘高等学校",
-        "city": "山口県光市浅江光丘1660",
+        "name": "光市立浅江中学校",
+        "city": "光市",
         "category": "school",
-        "official_address": "",
-        "official_url": "",
+        "official_address": "光市光ケ丘1番1号",
+        "official_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
         "address": "山口県光市浅江光丘1660",
         "website": "",
-        "search_names": "山口県立光丘高等学校      ",
+        "search_names": "光市立浅江中学校 山口県立光丘高等学校 光市",
         "geometry_kind": "facility_area",
         "source": "OpenStreetMap",
         "source_ids": [
@@ -200951,7 +201031,33 @@
         "registration_origin": [
           "国土数値情報（公共施設データ）平成19年　国土交通省",
           "National-Land Numerical Information (Public Facility) 2006, MLIT Japan"
-        ]
+        ],
+        "osm_name": "山口県立光丘高等学校",
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "corrected",
+          "original_category": "school",
+          "note": "光丘高校は2022年3月閉校。光市の公式案内で、同跡地への浅江中学校の移転と2026年3月の改修完了を確認。旧高校の敷地図形を保持して名称を更新。現在の敷地境界・通用門は未照合。",
+          "evidence_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html"
+        },
+        "purpose_review": {
+          "checked_at": "2026-09-14",
+          "source_url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
+          "source_title": "光市・浅江中学校移転改修事業",
+          "facts": [
+            {
+              "label": "施設の用途",
+              "value": "市立中学校。学校への通学と一般の施設利用を区別する"
+            },
+            {
+              "label": "所在地",
+              "value": "光市光ケ丘1番1号（旧光丘高校跡地）"
+            }
+          ],
+          "gaps": [
+            "現在の敷地境界・生徒用通用門・一般利用できる区域や日時は未確認"
+          ]
+        }
       },
       "geometry": {
         "type": "MultiPolygon",

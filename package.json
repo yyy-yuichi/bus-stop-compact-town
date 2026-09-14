@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:route-living": "node scripts/test-route-living.mjs",
     "test:basemap": "node scripts/test-basemap.mjs",
     "test:map-display": "node scripts/test-map-display.mjs",
     "test:places": "node scripts/test-place-tools.mjs",

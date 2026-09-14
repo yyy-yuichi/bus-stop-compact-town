@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-14",
+  "scope": "地図の2022年度原本にある17事業者名と、光市の現在の運行事業者を確認対象とした資料の棚卸し。県内全路線の現況照合ではない。件数は原本レコード数で、現存する停留所や乗り場の数ではない。",
+  "catalogCheck": "山口県オープンデータのGTFS検索は4件。実際にZIPを取得できたのは光市・岩国市。美祢市は非公開と明記、平生町は町営バス事業なしと明記。他サイトでの配布有無は未確認。",
+  "rows": [
+    {"key":"石見交通（株）","name":"石見交通","url":"https://iwamigroup.jp/publics/index/6/","review":"公式検索結果から路線時刻表の入口を確認。ページ本文の取得に失敗。県内区間の現行便・改正日は未照合。","status":"資料入口のみ","gtfs":"この調査では未取得"},
+    {"key":"防長交通（株）","name":"防長交通","url":"https://www.bochobus.co.jp/pages/17/","review":"公式の路線別時刻表・路線図・経路検索を確認。防府・徳地区には2026-04-01改定表がある。地区ごとの改正日・全便は未照合。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"岩国市","name":"岩国市生活交通・由宇地区バス","url":"https://www.city.iwakuni.lg.jp/soshiki/12/116738.html","review":"2026-04-01時点として公開されたGTFSを取得。feed期間2026-03-27〜2027-03-26、46路線ID・267便ID。曜日別の例外指定が多い。地区別PDFとの全便照合は未実施。","status":"GTFS原本取得","gtfs":"取得済み・全便照合前","dataset":"352080-gtfsjp"},
+    {"key":"山口市","name":"山口市","url":"https://www.city.yamaguchi.lg.jp/soshiki/73/187804.html","review":"総合時刻表の2026-04-01改訂版への公式案内を確認。生活バス等の細部・個別停留所と現行便は未照合。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"萩市","name":"萩市","url":"https://www.city.hagi.lg.jp/soshiki/49/1658.html","review":"まぁーるバスの公式時刻表・路線図を確認。案内更新2025-05-19。東西回りとその他の市内交通を分けた照合が必要。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"サンデン交通（株）","name":"サンデン交通","url":"https://www.sandenkotsu.co.jp/bus/","review":"路線時刻表・2026年9〜10月の登校日運行予定への案内を確認。登校日の便は平日だけでは判定できない。全便未照合。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"ブルーライン交通（株）","name":"ブルーライン交通","url":"https://www.sandenkotsu.co.jp/group/blk/","review":"2026-03-14現在の時刻表と、2026-10-01改正予定表が併載。10月からの休日ダイヤを9月の例へ使わない。名称変更の案内あり。","status":"改正予定あり","gtfs":"この調査では未取得"},
+    {"key":"中国ジェイアールバス（株）","name":"JRバス中国","url":"https://www.chugoku-jrbus.co.jp/news/detail/1205","review":"防長線・秋吉線の2026-03-14改正案内を確認。原本の事業者名とは表記が異なる。県内全便と現行の乗り場は未照合。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"美祢市","name":"美祢市","url":"https://www2.city.mine.lg.jp/material/files/group/7/minecity_jikokuhyou.pdf","review":"市の総合時刻表PDFを確認。資料には2025-04-01改正の表が含まれる。CKANはGTFSを公開していないと明記しており、題名だけで公開済みと扱えない。","status":"PDF・現行便未照合","gtfs":"県カタログでは非公開と明記","dataset":"352136_gtfs-jp"},
+    {"key":"大竹市","name":"大竹市・岩国市共同運行の坂上線","url":"https://www.city.otake.hiroshima.jp/soshiki/shiminseikatsu/shimin/gyomu/1/1/7359.html","review":"県境を越えるため対象に含む。2026-07-01更新の案内に2025-07-01改正表を掲載。ページ更新日とダイヤ改正日を分ける。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"周南市","name":"周南市","url":"https://www.city.shunan.lg.jp/life/5/24/107/","review":"地区コミュニティ交通と広域生活交通の公式案内を確認。長穂ほたる号等を一括した運行日では扱えない。地区ごとの照合が必要。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"いわくにバス（株）","name":"いわくにバス","url":"https://www.iwakuni-bus.com/","review":"公式の市内時刻表・予約乗合バス・運行情報への入口を確認。市が公開する生活交通GTFSとは別。予約条件を通常路線と混ぜない。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"船木鉄道（株）","name":"船木鉄道（船鉄バス）","url":"https://www.sentetsu.jp/scheduled-bus/","review":"公式検索結果から路線時刻表・運賃案内を確認。ページ本文取得は失敗。2025-10月のPDFが検索に出るが全路線の現行版とは断定しない。","status":"資料入口のみ","gtfs":"この調査では未取得"},
+    {"key":"宇部市","name":"宇部市交通局・宇部市の地域交通","url":"https://ubebus.jp/pages/8/","review":"交通局に2026-04-01からの平日・休日・停留所別時刻表と乗り場案内あり。市の原本名に含まれる地域交通は別途確認が必要。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"山陽小野田市","name":"山陽小野田市","url":"https://www.city.sanyo-onoda.lg.jp/soshiki/23/basujikokuhyou2025.html","review":"2025-12-11更新の市内路線バス案内を確認。各事業者へのリンクと市運行分の区別が必要。全便未照合。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":"光市","name":"光市","url":"https://www.city.hikari.lg.jp/soshiki/11/kokyokotsu/1/1/1936.html","review":"2026-04-01改正GTFSと公式PDFを取得。feed期間2026-04-01〜2027-03-31。7路線IDのうち、ひかりぐるりんバスを今回の詳細検証対象に選定。","status":"1路線を詳細検証","gtfs":"取得済み・ぐるりん6便を照合","dataset":"352101_kotsu001"},
+    {"key":"周防大島町","name":"周防大島町","url":"https://www.town.suo-oshima.lg.jp/soshiki/38/11883.html","review":"2026-08-28更新の総合時刻表案内を確認。一般混乗スクールバスは登校日・休校日・季節で異なる。町の交通案内には船舶も含むためバスと分離する。","status":"公式案内あり","gtfs":"この調査では未取得"},
+    {"key":null,"name":"周南近鉄タクシー（ぐるりん・広域生活交通）","url":"https://www.city.hikari.lg.jp/soshiki/11/kokyokotsu/1/1/1936.html","review":"市の現行案内で運行事業者を確認。GTFSのagency_nameは光市。データ公開者と実際の運行事業者を別々に記録する。","status":"運行者を確認","gtfs":"光市の公開GTFSに収録"}
+  ]
+}

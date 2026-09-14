@@ -28,12 +28,18 @@ for(const f of data.features) {
   if(p.civic_details?.some(d=>!d.label||!d.value||!p.source_ids.includes(d.source_id))) throw Error(`Unattributed civic detail: ${f.id}`);
   if(p.website) { const url=new URL(p.website); if(!['http:','https:'].includes(url.protocol)||url.username||url.password) throw Error(`Unsafe civic URL: ${f.id}`); }
  } else if(p.verification_status==='osm_unverified') {
-  if(p.verified_at||p.official_address||p.official_url||!p.retrieved_at) throw Error(`Unverified record presented as official: ${f.id}`);
+  if(p.verified_at||(!p.purpose_review&&(p.official_address||p.official_url))||!p.retrieved_at) throw Error(`Unverified record presented as official: ${f.id}`);
   if(!/^osm-(node|way|relation)-\d+$/.test(f.id)||!['representative_point','facility_area'].includes(p.geometry_kind)) throw Error(`Invalid imported record: ${f.id}`);
   if(p.website) { const url=new URL(p.website); if(!['http:','https:'].includes(url.protocol)||url.username||url.password) throw Error(`Unsafe registered URL: ${f.id}`); }
  } else {
   if(!p.official_address||!p.city||!p.verified_at) throw Error(`Missing curated provenance: ${f.id}`);
   if(new URL(p.official_url).protocol!=='https:') throw Error(`Unsafe official URL: ${f.id}`);
+ }
+ if(p.purpose_review) {
+  const r=p.purpose_review;
+  if(r.additional_sources?.some(s=>!s.title||new URL(s.url).protocol!=='https:'))throw Error(`Unsafe additional source: ${f.id}`);
+  if(!p.classification_review||r.checked_at!==p.classification_review.checked_at||r.source_url!==p.classification_review.evidence_url||!r.source_title||!Array.isArray(r.facts)||r.facts.some(x=>!x.label||!x.value)||!r.gaps?.length||r.gaps.some(x=>!x)) throw Error(`Invalid official detail review: ${f.id}`);
+  if(p.official_url!==r.source_url||new URL(r.source_url).protocol!=='https:') throw Error(`Unattributed official URL: ${f.id}`);
  }
  if(p.registration_origin && (!Array.isArray(p.registration_origin)||p.registration_origin.some(v=>typeof v!=='string'||!v.trim()||v.length>1000))) throw Error(`Invalid source note: ${f.id}`);
  if(p.registered_details) {

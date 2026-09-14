@@ -175,6 +175,8 @@ def main():
     data, life_report = append_life_facilities(data)
     data, neighborhood_report = neighborhood_facilities.append_neighborhood(data, build)
     data, details_report = neighborhood_facilities.enrich_registered_details(data)
+    from route_facility_review import apply_reviewed_facilities
+    data = apply_reviewed_facilities(data)
     (neighborhood_facilities.WORK/'import-report.json').write_text(json.dumps({**neighborhood_report,'registered_details':details_report},ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     (LIFE_WORK/'import-report.json').write_text(json.dumps(life_report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')

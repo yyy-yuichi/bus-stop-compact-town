@@ -87,6 +87,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
         </section>
         <div className="panel-source">{busy ? <p role="status">バス停を読み込み中…</p> : mode === 'national' ? <p><span className="bus-dot" aria-hidden="true" /> 国の代表点 4,418件<br /><span className="bus-dot municipal-dot" aria-hidden="true" /> {municipalFailed ? '市の登録点は読み込み待ち' : `市の登録点 ${stops.filter(s => s.properties.source_kind === 'municipal').length}件`}</p> : <p>徒歩圏の試作 · OSMの7地点</p>}</div>
         <button className="panel-about" onClick={() => { setExpanded(false); changeQuery(''); onMode(); }}>{mode === 'national' ? 'おのだ周辺の徒歩圏試作' : '県全体のバス停に戻る'}<MapIcon name="arrow" /></button>
+        <a className="panel-about" href={`${import.meta.env.BASE_URL}route-living.html`}>光市のバスで午前の買い物を試す <span aria-hidden="true">↗</span></a>
         <a className="panel-about" href={`${import.meta.env.BASE_URL}about.html`}>使い方・データの出典 <span aria-hidden="true">↗</span></a>
       </div>
     </>}

@@ -78,7 +78,7 @@ const cases = [
 ];
 const facilities = ['shopping', 'civic-facilities'].flatMap(name => JSON.parse(fs.readFileSync(`public/data/${name}.geojson`, 'utf8')).features);
 const prepared = prepareFacilities(facilities);
-assert.equal(prepared.length, 7710);
+assert.equal(prepared.length, 7708);
 for (const test of cases) {
   c = parseCatchment(JSON.parse(fs.readFileSync(test.fixture, 'utf8')));
   found = bakedFacilityCandidates(c, prepared);

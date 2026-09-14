@@ -31,7 +31,11 @@ class ImportTests(unittest.TestCase):
         complete, life_report = module.append_life_facilities(data)
         expanded, report = module.neighborhood_facilities.append_neighborhood(complete, module.build)
         enriched, details = module.neighborhood_facilities.enrich_registered_details(expanded)
-        self.assertEqual(enriched, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        from route_facility_review import apply_reviewed_facilities
+        reviewed=apply_reviewed_facilities(enriched)
+        self.assertEqual(reviewed, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        self.assertEqual(apply_reviewed_facilities(reviewed),reviewed)
+        self.assertEqual([(f['id'],f['geometry']) for f in enriched['features']],[(f['id'],f['geometry']) for f in reviewed['features']])
         self.assertEqual(report['added'], 3138)
         self.assertEqual(expanded['features'][:1927], complete['features'])
         self.assertEqual(details['phone'],477)
