@@ -1,8 +1,19 @@
 # 現在の作業：1路線で生活の移動を検証（2026-09-14）
 
-ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。買い物の往復と4種類の背景地図を試す画面は実装済みで検証中。今回分は未公開・Drive最終保存前。
+ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。[公開ページ](https://yyy-yuichi.github.io/bus-stop-compact-town/route-living.html)へ反映済み。[PR #11](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/11)をマージし、公開コミットは `fd08790152ad58a4683e280e3aa7103f349e3c6f`。[Pages 34793427205](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34793427205)は成功。実配信32ファイルをPages成果物と全バイト照合し、配信データとマージ済みソースも一致した。公開URLで往復条件・背景4種類・幅1280/390/320を確認し、既存マップの検索・徒歩圏・施設詳細も実際のR2応答で検証した。検証ブラウザーと一時サーバーは終了済み。正式Drive保存は最終記録を参照。
 
 project-continuityは適用前監査の結果、補助CLI・新規JSON管理方式を導入しない。goal-to-doneと既存Markdownを継続。グローバル設定は未変更。監査報告のDrive保存は完了。旧病院・旧中学校の2件を参考記録へ移し、現在は全7,764件、通常7,708件、参考56件。原本ID・形状は保持。
+
+正式保存先は指定のGoogle Drive `Codex_非積算プロジェクト / bus-stop-compact-town`。接続アカウントと案件フォルダの親を確認し、原本・ソースと実公開サイトのファイル名・サイズ・保存先をDriveから読み戻して照合した。
+
+- [原本・継続用ソース・比較画像 ZIP](https://drive.google.com/file/d/16FcMohqyBeSAgmSWFPgo7OUBr8POPWXU/view) — 40,218,791 bytes、334ファイル＋SHA-256一覧。
+- [実公開サイト ZIP](https://drive.google.com/file/d/1iGG9cfUQbF62KbBQl0IuIj9WBhy5VBQf/view) — 1,767,437 bytes、配信32ファイル＋SHA-256一覧。
+
+ソースZIPのSHA-256は `e95b2255e9f283431ab7c98b84a0990cc6edab7d3e3f65236cfafc49e7bfcb9e`、公開サイトZIPは `81301563c7629183334fe4ca20315ec3f825b0cd4d0c729e5bb4ca64d854aad1`。ZIPを開き直し、全収録ファイルのハッシュと整合性を検査した。Drive読み戻しで照合した項目は名前・サイズ・親フォルダで、DriveからZIP全体を再ダウンロードした検証ではない。
+
+この最終報告、HANDOFF、現地確認票、公開・保存の検証JSONも同じ案件フォルダに別ファイルとして保存する。ZIP内の保存作業中という記述より、この最終報告と検証JSONを優先する。アプリの公開コミットは `fd08790152ad58a4683e280e3aa7103f349e3c6f`、ソースZIPの作成時点は `4e135b0fdafddf71f54501699bbd4f0d7a5fbd10`。後続の文書更新は公開アプリを変更しない。
+
+残る現地作業は、右回り・左回りの標柱と道路の側、バス停から店舗・病院の入口までの歩道・横断・段差・所要時間、地域の利用者による操作確認。これらを確認済みと扱わず、現地確認票から実測・記録・更新へ進む。自動監視や外部への協力依頼は実施していない。今回、既存のローカル原本・Driveファイルを削除していない。
 
 ---
 

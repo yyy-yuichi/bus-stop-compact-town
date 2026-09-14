@@ -1,6 +1,6 @@
 """Check stored acquisition receipts and preservation of the pre-study catalog."""
 from pathlib import Path
-import subprocess,json,hashlib,datetime
+import subprocess,json,hashlib,datetime,csv,io,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'data-sources/route-living-pilot-20260914'
 BASE='726cc8be4be6b00b6cb0e8e84536bc4c7bfb8519'
@@ -27,6 +27,13 @@ assert set(changed)==set(expected)
 unchanged=['public/data/civic-facilities.geojson','public/data/bus_stop.geojson','public/data/review-national.geojson','public/data/review-stops.geojson','public/data/review-routes.json','public/data/baked-bus-stops.geojson','public/data/walk-unreachable.json','public/data/walking-onoda.json','public/maps/soft.json']
 for f in unchanged:assert original(f).replace(b'\r\n',b'\n')==(ROOT/f).read_bytes().replace(b'\r\n',b'\n'),f
 report={'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'base':BASE,'receipts':receipts,'allShoppingIdsAndGeometriesPreserved':len(old),'reviewedPropertiesOnly':changed,'unchangedFiles':unchanged,'comparisonNote':'Git checkout LF/CRLF conversion is normalized; all other bytes are compared.'}
+with zipfile.ZipFile(SRC/'352080-gtfsjp.zip') as z:
+ iwakuni=list(csv.DictReader(io.StringIO(z.read('stops.txt').decode('utf-8-sig'))))
+assert len(iwakuni)==800 and all(s['location_type']=='0' and not s['parent_station'] for s in iwakuni)
+adopted={f['properties']['source_stop_id'] for f in json.loads((ROOT/'public/data/review-stops.geojson').read_bytes())['features'] if f['properties']['source_namespace']=='iwakuni'}
+excluded=[s['stop_id'] for s in iwakuni if s['stop_id'] not in adopted]
+assert len(adopted)==735 and len(excluded)==65
+report['iwakuniStopKinds']={'all':800,'boardingRecords':800,'parentStations':0,'adoptedInExistingMap':735,'heldForYuuRevisionReview':65,'heldIds':excluded}
 out=ROOT/'outputs/route-living-pilot-20260914';out.mkdir(exist_ok=True,parents=True)
 (out/'source-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps({'receipts':len(receipts),'retainedIdsAndGeometries':len(old),'changedProperties':len(changed),'unchangedFilesApartFromCheckoutLineEndings':len(unchanged)},ensure_ascii=False))
