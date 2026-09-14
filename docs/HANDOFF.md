@@ -1,6 +1,6 @@
 # 現在の作業：1路線で生活の移動を検証（2026-09-14）
 
-ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。買い物の往復と4種類の背景地図を試す画面は実装済みで検証中。今回分は未公開・Drive最終保存前。
+ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。[公開ページ](https://yyy-yuichi.github.io/bus-stop-compact-town/route-living.html)へ反映済み。[PR #11](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/11)をマージし、公開コミットは `fd08790152ad58a4683e280e3aa7103f349e3c6f`。[Pages 34793427205](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34793427205)は成功。実配信32ファイルをPages成果物と全バイト照合し、配信データとマージ済みソースも一致した。公開URLで往復条件・背景4種類・幅1280/390/320を確認し、既存マップの検索・徒歩圏・施設詳細も実際のR2応答で検証した。検証ブラウザーと一時サーバーは終了済み。正式Drive保存は最終記録を参照。
 
 project-continuityは適用前監査の結果、補助CLI・新規JSON管理方式を導入しない。goal-to-doneと既存Markdownを継続。グローバル設定は未変更。監査報告のDrive保存は完了。旧病院・旧中学校の2件を参考記録へ移し、現在は全7,764件、通常7,708件、参考56件。原本ID・形状は保持。
 
