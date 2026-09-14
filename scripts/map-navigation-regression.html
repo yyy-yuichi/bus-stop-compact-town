@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全体表示の連続操作テスト</title>
+<style>body{font:16px sans-serif;margin:12px}button{padding:12px;margin:4px}#map{height:420px;width:100%}pre{white-space:pre-wrap}</style>
+<h1>全体表示の連続操作テスト</h1>
+<p>npm run dev の後、このページを開く。実際のLeafletと通常マップの設定・fitContentを使用。外部タイルや実機の確認は含まない。</p>
+<button id="current">現在の設定を検証</button><button id="previous">修正前の設定で再現</button>
+<pre id="result" role="status">未実行</pre>
+<div id="map"></div>
+<script type="module" src="./map-navigation-regression.ts"></script>
+</html>

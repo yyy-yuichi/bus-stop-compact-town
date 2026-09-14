@@ -6,7 +6,7 @@ import './style.css';
 import MapIcon from './MapIcon';
 
 import BusStopLayer from './BusStopLayer';
-import { INITIAL_VIEW } from './mapConfig';
+import { INITIAL_VIEW, MAP_OPTIONS } from './mapConfig';
 import { BasemapPreferences, type BasemapMode } from './basemapPreferences';
 import useBasemap from './useBasemap';
 
@@ -22,16 +22,7 @@ function App() {
 
   useEffect(() => {
     if (!container.current) return;
-    const map = L.map(container.current, {
-      zoomControl: false,
-      zoomSnap: 0.25,
-      minZoom: 3,
-      maxZoom: 19,
-      worldCopyJump: true,
-      preferCanvas: true,
-      maxBounds: [[-85,-Infinity],[85,Infinity]],
-      maxBoundsViscosity: 1,
-    }).setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
+    const map = L.map(container.current, MAP_OPTIONS).setView(INITIAL_VIEW.center, INITIAL_VIEW.zoom);
     setMapInstance(map);
     L.control.zoom({ position: 'bottomright', zoomInTitle: '地図を拡大', zoomOutTitle: '地図を縮小' }).addTo(map);
     L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
