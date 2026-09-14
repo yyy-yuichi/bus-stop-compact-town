@@ -6,7 +6,7 @@ import BusStopDrawer from './BusStopDrawer';
 import WalkingPanel, { useWalkingData } from './WalkingPanel';
 import BakedWalkingPanel, { useUnreachableStops } from './BakedWalkingPanel';
 import type { Coordinate } from './walking';
-import { nationalCatalog, nationalCatchmentId, municipalCatalog, pilotCatalog, NATIONAL_ATTRIBUTION, MUNICIPAL_ATTRIBUTION } from './stopCatalog';
+import { nationalCatalog, nationalCatchmentId, municipalCatalog, pilotCatalog } from './stopCatalog';
 import MunicipalStopPanel from './MunicipalStopPanel';
 import MapPanel from './MapPanel';
 import ShoppingLayer from './ShoppingLayer';
@@ -101,13 +101,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       abort.abort();
     };
   }, [map, attempt, mode]);
-
-  useEffect(() => {
-    if (!map || mode !== 'national') return;
-    map.attributionControl.addAttribution(NATIONAL_ATTRIBUTION);
-    map.attributionControl.addAttribution(MUNICIPAL_ATTRIBUTION);
-    return () => { map.attributionControl.removeAttribution(NATIONAL_ATTRIBUTION); map.attributionControl.removeAttribution(MUNICIPAL_ATTRIBUTION); };
-  }, [map, mode]);
 
   const selectStop = useCallback((id: string) => {
     setSharedPlace(null); setShareWarning(false);

@@ -15,8 +15,8 @@ type Official = FeatureCollection<Point,OfficialProperties>;
 const el = <T extends HTMLElement>(id:string) => document.getElementById(id) as T;
 const map=L.map('review-map',{zoomControl:false,preferCanvas:true,zoomSnap:0.25,minZoom:6,maxZoom:19}).setView([33.99,131.95],12);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
-map.attributionControl.addAttribution('公式点：<a href="https://www.city.hikari.lg.jp/soshiki/1/johosuishin/site/2281.html">光市</a>・<a href="https://www.city.iwakuni.lg.jp/soshiki/8/36369.html">岩国市</a>を加工 / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>');
-map.attributionControl.addAttribution('<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html">国土数値情報・バス停留所2022</a>を加工 / CC BY 4.0');
+// Licenses (CC BY 4.0 / ODbL) allow crediting via a link; the full list lives in about.html.
+map.attributionControl.setPrefix(`<a href="${import.meta.env.BASE_URL}about.html#sources">出典</a>`);
 L.control.zoom({position:'bottomright',zoomInTitle:'地図を拡大',zoomOutTitle:'地図を縮小'}).addTo(map);
 L.control.scale({imperial:false}).addTo(map);
 const status=el('review-status');
