@@ -157,6 +157,11 @@
 .walking-legend { margin-left:22px !important; margin-bottom:10px !important; width:218px; padding:10px 12px; border:1px solid #dce5df; border-radius:10px; background:#fffffff2; color:#4a6052; font-size:11px; line-height:1.5; box-shadow:0 2px 12px #12382712; }
 .walking-legend-ramp { margin:7px 10px 0; }
 .app-with-selection .leaflet-bottom .leaflet-control-zoom { margin-right:414px; }
+@media (min-width:1001px) {
+  /* Keep the scale and legend visible beside an open search/settings panel. */
+  .app:has(.map-panel.is-expanded, .map-panel.is-searching) .leaflet-control-scale,
+  .app:has(.map-panel.is-expanded, .map-panel.is-searching) .walking-legend { margin-left:340px !important; }
+}
 .leaflet-control a:focus-visible, .leaflet-marker-icon:focus-visible { outline:3px solid #ac690d; outline-offset:3px; }
 .leaflet-control a:focus-visible { outline-offset:-3px; }
 @media (max-width:1000px) {
