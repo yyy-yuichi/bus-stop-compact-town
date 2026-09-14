@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-09-14",
+  "reviews": [
+    {
+      "id": "osm-node-4354872989",
+      "originalName": "イオン",
+      "name": "イオン光店",
+      "city": "光市",
+      "category": "mall",
+      "address": "山口県光市浅江木園1756-1",
+      "url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/hours/",
+      "title": "イオン光店・売場基本営業時間",
+      "status": "corrected",
+      "note": "名称・住所と食料品売場の利用時間を公式案内で確認。農産・水産・畜産・日配・惣菜を扱う。位置は既存のOSM登録点を保持し、入口とは扱わない。",
+      "facts": [
+        {
+          "label": "買い物の用途",
+          "value": "野菜・魚・肉・日配食品・惣菜を買える食品売場"
+        },
+        {
+          "label": "食品売場の基本時間",
+          "value": "7:00〜24:00。専門店・薬局などは別の営業時間"
+        },
+        {
+          "label": "食品売場と出入口",
+          "value": "食品売場は1階。公式フロア図に「正面北側出入口」「東側出入口」の記載がある"
+        },
+        {
+          "label": "店舗電話",
+          "value": "0833-71-2922"
+        }
+      ],
+      "gaps": [
+        "停留所から出入口までの経路・横断・段差・所要時間は未確認",
+        "フロア図の出入口を地図の座標へ対応付けていない。出入口ごとの利用時間も未確認"
+      ],
+      "additionalSources": [
+        {
+          "title": "公式フロアガイド（食品売場は1階）",
+          "url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%85%89%E5%BA%97/shop_info/floor_guide/"
+        }
+      ]
+    },
+    {
+      "id": "osm-way-354319153",
+      "originalName": "総合病院光市立病院",
+      "name": "光市立光総合病院（旧所在地の参考記録）",
+      "city": "光市",
+      "category": "reference",
+      "address": "",
+      "url": "https://hikari-hosp.jp/about/history.html",
+      "title": "光市立光総合病院・沿革／現在の交通アクセス",
+      "status": "out_of_scope",
+      "note": "公式沿革に2019年5月の移転新築、公式アクセスに光ケ丘6番1号を確認。この記録は虹ケ浜側の旧位置のため、現在通える病院の候補から除外。元のID・座標は保持。",
+      "facts": [
+        {
+          "label": "現在の病院所在地",
+          "value": "光市光ケ丘6番1号。地図上のこの参考点とは異なる"
+        }
+      ],
+      "gaps": [
+        "この記録の座標を新病院やその入口へ移す補正は行っていない"
+      ]
+    },
+    {
+      "id": "osm-way-353969790",
+      "originalName": "山口県立光丘高等学校",
+      "name": "光市立浅江中学校",
+      "city": "光市",
+      "category": "school",
+      "address": "光市光ケ丘1番1号",
+      "url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
+      "title": "光市・浅江中学校移転改修事業",
+      "status": "corrected",
+      "note": "光丘高校は2022年3月閉校。光市の公式案内で、同跡地への浅江中学校の移転と2026年3月の改修完了を確認。旧高校の敷地図形を保持して名称を更新。現在の敷地境界・通用門は未照合。",
+      "facts": [
+        {
+          "label": "施設の用途",
+          "value": "市立中学校。学校への通学と一般の施設利用を区別する"
+        },
+        {
+          "label": "所在地",
+          "value": "光市光ケ丘1番1号（旧光丘高校跡地）"
+        }
+      ],
+      "gaps": [
+        "現在の敷地境界・生徒用通用門・一般利用できる区域や日時は未確認"
+      ]
+    },
+    {
+      "id": "osm-node-1423657276",
+      "originalName": "市立浅江中学校",
+      "name": "浅江中学校（旧所在地の参考記録）",
+      "city": "光市",
+      "category": "reference",
+      "address": "",
+      "url": "https://www.city.hikari.lg.jp/soshiki/9/hikarigakuen/4/15025.html",
+      "title": "光市・浅江中学校移転改修事業",
+      "status": "out_of_scope",
+      "note": "浅江中学校は光ケ丘の旧光丘高校跡地へ移転。この旧所在地の登録点は、現在の学校の候補から除外。元のID・座標は保持。",
+      "facts": [],
+      "gaps": [
+        "旧敷地の現在の利用状況は未確認"
+      ]
+    }
+  ],
+  "hospitalProfile": {
+    "name": "光市立光総合病院",
+    "stopId": "8_01",
+    "address": "光市光ケ丘6番1号",
+    "sourceUrl": "https://hikari-hosp.jp/",
+    "accessUrl": "https://hikari-hosp.jp/about/access.html",
+    "mapUrl": "https://hikari-hosp.jp/about/map.html",
+    "facts": [
+      {
+        "label": "外来受付",
+        "value": "月〜金 8:15〜11:00。予約患者は11:30まで。土日祝は休診"
+      },
+      {
+        "label": "受付へ向かう入口",
+        "value": "公式1階図に正面エントランスと、その先の中央受付・総合案内を確認。時間外・救急・透析の入口は別表示"
+      },
+      {
+        "label": "受診前の確認",
+        "value": "診療科ごとの外来予定・休診・予約条件を公式案内で確認する"
+      },
+      {
+        "label": "電話",
+        "value": "0833-72-1000"
+      }
+    ],
+    "gaps": [
+      "診療・検査・会計の終了時間は分からないため、買い物と同じ滞在時間で帰れるとは判定しない",
+      "地図では光総合病院バス停を示す。病院入口の座標・停留所からの徒歩経路は未確認"
+    ]
+  }
+}

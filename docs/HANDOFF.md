@@ -1,10 +1,29 @@
+# 現在の作業：1路線で生活の移動を検証（2026-09-14）
+
+ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。買い物の往復と4種類の背景地図を試す画面は実装済みで検証中。今回分は未公開・Drive最終保存前。
+
+project-continuityは適用前監査の結果、補助CLI・新規JSON管理方式を導入しない。goal-to-doneと既存Markdownを継続。グローバル設定は未変更。監査報告のDrive保存は完了。旧病院・旧中学校の2件を参考記録へ移し、現在は全7,764件、通常7,708件、参考56件。原本ID・形状は保持。
+
+---
+
 # 2026-09-14 自治体の暮らし施設追加
 
 公園・子育て・学校・福祉を自治体原本から2,699レコード追加。全体7,764、通常表示7,710、参考54。既存のOSM由来5,065レコードとバス停・道路データは内容を維持。詳細は [map-civic-places-20260914.md](map-civic-places-20260914.md)、原本と再現手順は `data-sources/civic-facilities-20260914/README.md`。
 
 原資料の時点を施設詳細に表示（市2025-01/11、県介護2024-02-01）。現在の開設・入口・利用資格・空きは個別未確認。読み込み失敗時は検索欄の下から再試行できる。
 
-現段階で公開・Drive最終保存は作業中。
+公開反映済み。[PR #8](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/8)を通常マージ。公開コミット `ac089cdede73cb596f58b6d2b7e7cf3c4402cd89`、[Pages 34786519896](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34786519896) の成功を確認した。実公開25ファイルをPages成果物と全バイト照合し、施設・バス停・地図・出典のデータもマージ済み原本と一致。実公開元からR2へ接続し、スマホ・PCで追加4分類の検索・詳細・出典、徒歩時間と分類の切替、ラベル表示を再確認した。原本・公開サイト・検証のDrive保存はこの後の最終記録を参照。
+
+
+正式Drive保存：`Codex_非積算プロジェクト / bus-stop-compact-town`。接続アカウントと親フォルダを確認し、以下の3ファイルの保存先・名前・サイズをDriveから再取得して照合済み。
+
+- [map-civic-places-20260914-published-source.zip](https://drive.google.com/file/d/1o1tixn1ILyKIqs2Er2KeaDbTYUMUmUNE/view?usp=drivesdk) — 31238046 bytes
+- [map-civic-places-20260914-published-site.zip](https://drive.google.com/file/d/1G1-d3NKFItB-0k39BtaM3UGmfxMF-lXG/view?usp=drivesdk) — 1741193 bytes
+- [map-civic-places-20260914-release-verification.json](https://drive.google.com/file/d/1QMOxdsQ5jmmz8jxYCjrn5vqVw5_NSRh8/view?usp=drivesdk) — 19399 bytes
+
+ソースZIPは262ファイル、SHA-256 `da7f5dce771b65b0636685a0a0d81ab81d8c676620aeb5e1e25f3b05ee556643`。公開サイトZIPは25ファイル、SHA-256 `6389b748a4c15bd922036d51f413ac290b819ff5977f7a0c88907af151242e77`。ZIPを再読込して全収録ファイルのSHA-256と整合性を検査済み。
+
+最終の実装記録 `map-civic-places-20260914.md` と引継ぎ `HANDOFF-map-civic-places-20260914.md` は同じ案件フォルダに別ファイルとして保存する。この最終記録はZIP内の保存作業中という記述より優先する。今回の作業で既存のローカル原本・Driveファイルを削除していない。検証ブラウザーと一時サーバーは終了済み。
 
 ---
 

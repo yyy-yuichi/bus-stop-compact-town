@@ -44,6 +44,14 @@ export interface ShoppingProperties {
     note: string;
     evidence_url?: string;
   };
+  purpose_review?: {
+    checked_at: string;
+    source_url: string;
+    source_title: string;
+    additional_sources?: { title: string; url: string }[];
+    facts: { label: string; value: string }[];
+    gaps: string[];
+  };
   address?: string;
   website?: string;
   search_names?: string;

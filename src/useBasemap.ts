@@ -4,6 +4,7 @@ import type { BasemapMode } from './basemapPreferences';
 
 const OSM = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 const VECTOR = '<a href="https://openfreemap.org/">OpenFreeMap</a> · <a href="https://openmaptiles.org/">OpenMapTiles</a>';
+const GSI = '<a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a>';
 
 export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt: number) {
   const [error,setError] = useState(false);
@@ -16,7 +17,7 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
     let timer: ReturnType<typeof setTimeout> | undefined;
     const styleCredit = `<a href="${import.meta.env.BASE_URL}about.html#basemap">地図デザイン</a>`;
     setError(false); setFallback(false);
-    map.attributionControl.addAttribution(OSM);
+    map.attributionControl.addAttribution(mode.startsWith('gsi-') ? GSI : OSM);
     const showRaster = () => {
       if (disposed || raster) return;
       raster = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
@@ -36,7 +37,13 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
         showRaster(); setFallback(true);
       });
     };
-    if (mode === 'standard') showRaster();
+    if (mode.startsWith('gsi-')) {
+      const photo = mode === 'gsi-photo';
+      raster = L.tileLayer(`https://cyberjapandata.gsi.go.jp/xyz/${photo ? 'seamlessphoto' : 'pale'}/{z}/{x}/{y}.${photo ? 'jpg' : 'png'}`,{minZoom:photo ? 14 : 2,maxZoom:18});
+      raster.on('tileerror',()=>{if(!disposed)setError(true);});
+      raster.addTo(map);
+    }
+    else if (mode === 'standard') showRaster();
     else {
       timer = setTimeout(fail,20000);
       import('./vectorBasemap').then(({vectorBasemap})=>{
@@ -58,6 +65,7 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
       disposed = true; clearTimeout(timer);
       vector?.remove(); raster?.remove();
       map.attributionControl.removeAttribution(OSM);
+      map.attributionControl.removeAttribution(GSI);
       map.attributionControl.removeAttribution(VECTOR);
       map.attributionControl.removeAttribution(styleCredit);
     };
