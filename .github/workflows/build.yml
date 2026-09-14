@@ -31,6 +31,8 @@ jobs:
       - run: npm run test:places
       - run: npm run test:map-display
       - run: npm run test:basemap
+      - run: python3 scripts/build-route-living-pilot.py
+      - run: npm run test:route-living
       - run: python3 scripts/test-walking-source.py
       - run: python3 scripts/test-osm-facilities.py
       - run: python3 scripts/test-civic-facilities.py
