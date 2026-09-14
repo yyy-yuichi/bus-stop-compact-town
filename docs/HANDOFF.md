@@ -1,10 +1,22 @@
+# 訂正版の保存案内（2026-09-14）
+
+訂正版の正式保存：[原本・ソース・比較画像 ZIP](https://drive.google.com/file/d/1K74IpMwuYpurlziBAq-ZfyW1ncRPDIga/view)（40,223,238 bytes、336ファイル＋SHA-256一覧）。Driveから名前・サイズ・保存先を読み戻して照合済み。SHA-256は `8809804936598f73802b1ed088f8716596e3d888762d0765d8e05ab9ede25781`。コード基準は `ff3739626904f7bc764729d2958834360fa07bfb`、ソースZIPには最終照合を追記した文書2件の作業差分も収録し、実体はZIP内のハッシュ一覧で確認する。最終報告・HANDOFFの訂正版は別ファイルとして保存する。
+
+初回ソースZIPのREADMEの岩国市停留所種別を訂正した。800件はすべて乗り場、親停留所は0件。採用735件との差65件は由宇の改正未照合による保留。原本・光市の時刻計算・公開サイトに変更はなく、公開サイトZIP（1,767,437 bytes）は初回保存版が有効。訂正版のソース・報告・HANDOFF・検証JSONを優先し、初回保存物は履歴として残す。説明訂正はPR #12でmainへ反映済み。
+
+---
+
+# 最終照合の訂正：岩国市の800件はすべて乗り場登録
+
+当初のREADMEの親停留所65件という記述を訂正。800件すべてlocation_type=0・parent_station空欄。採用735件との差65件は由宇の改正未照合による保留。原本と公開の光市計算は変更していない。訂正版ソースと最終報告を正式保存し、初回ソースZIPより優先する。
+
 # 現在の作業：1路線で生活の移動を検証（2026-09-14）
 
 ユーザー承認済みの路線・施設・歩行・背景地図の見直しを進行中。現在の計画と証拠は [route-living-pilot-20260914.md](route-living-pilot-20260914.md)。光市のひかりぐるりんバス10停留所を選び、公式時刻60か所と休日・年末年始を照合。[公開ページ](https://yyy-yuichi.github.io/bus-stop-compact-town/route-living.html)へ反映済み。[PR #11](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/11)をマージし、公開コミットは `fd08790152ad58a4683e280e3aa7103f349e3c6f`。[Pages 34793427205](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/34793427205)は成功。実配信32ファイルをPages成果物と全バイト照合し、配信データとマージ済みソースも一致した。公開URLで往復条件・背景4種類・幅1280/390/320を確認し、既存マップの検索・徒歩圏・施設詳細も実際のR2応答で検証した。検証ブラウザーと一時サーバーは終了済み。正式Drive保存は最終記録を参照。
 
 project-continuityは適用前監査の結果、補助CLI・新規JSON管理方式を導入しない。goal-to-doneと既存Markdownを継続。グローバル設定は未変更。監査報告のDrive保存は完了。旧病院・旧中学校の2件を参考記録へ移し、現在は全7,764件、通常7,708件、参考56件。原本ID・形状は保持。
 
-正式保存先は指定のGoogle Drive `Codex_非積算プロジェクト / bus-stop-compact-town`。接続アカウントと案件フォルダの親を確認し、原本・ソースと実公開サイトのファイル名・サイズ・保存先をDriveから読み戻して照合した。
+初回保存記録（ソースは訂正版を優先）：正式保存先は指定のGoogle Drive `Codex_非積算プロジェクト / bus-stop-compact-town`。接続アカウントと案件フォルダの親を確認し、原本・ソースと実公開サイトのファイル名・サイズ・保存先をDriveから読み戻して照合した。
 
 - [原本・継続用ソース・比較画像 ZIP](https://drive.google.com/file/d/16FcMohqyBeSAgmSWFPgo7OUBr8POPWXU/view) — 40,218,791 bytes、334ファイル＋SHA-256一覧。
 - [実公開サイト ZIP](https://drive.google.com/file/d/1iGG9cfUQbF62KbBQl0IuIj9WBhy5VBQf/view) — 1,767,437 bytes、配信32ファイル＋SHA-256一覧。
