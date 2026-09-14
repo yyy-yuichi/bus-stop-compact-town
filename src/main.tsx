@@ -35,6 +35,8 @@ function App() {
     setMapInstance(map);
     L.control.zoom({ position: 'bottomright', zoomInTitle: '地図を拡大', zoomOutTitle: '地図を縮小' }).addTo(map);
     L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
+    // Licenses (CC BY 4.0 / ODbL) allow crediting via a link; the full list lives in about.html.
+    map.attributionControl.setPrefix(`<a href="${import.meta.env.BASE_URL}about.html#sources">出典</a>`);
     const resize = new ResizeObserver(() => map.invalidateSize());
     resize.observe(container.current);
     const onOffline = () => setOffline(true);

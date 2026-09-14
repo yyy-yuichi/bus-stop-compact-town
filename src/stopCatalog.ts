@@ -15,8 +15,6 @@ export interface BoardingPoint {
   verified_at: string;
 }
 
-export const NATIONAL_ATTRIBUTION = '<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html">国土数値情報・バス停留所2022</a>を加工 / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>';
-export const MUNICIPAL_ATTRIBUTION = '<a href="https://www.city.iwakuni.lg.jp/soshiki/8/36369.html">岩国市</a>・<a href="https://www.city.hikari.lg.jp/soshiki/1/johosuishin/site/2281.html">光市</a>の停留所データを加工 / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>';
 
 interface MunicipalProperties {
   name: string; source_namespace: 'hikari' | 'iwakuni'; source_stop_id: string;

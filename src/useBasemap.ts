@@ -15,7 +15,6 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
     let vector: L.MaplibreGL | undefined;
     let raster: L.TileLayer | undefined;
     let timer: ReturnType<typeof setTimeout> | undefined;
-    const styleCredit = `<a href="${import.meta.env.BASE_URL}about.html#basemap">地図デザイン</a>`;
     setError(false); setFallback(false);
     map.attributionControl.addAttribution(mode.startsWith('gsi-') ? GSI : OSM);
     const showRaster = () => {
@@ -33,7 +32,6 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
         if (disposed) return;
         vector?.remove(); vector = undefined;
         map.attributionControl.removeAttribution(VECTOR);
-        map.attributionControl.removeAttribution(styleCredit);
         showRaster(); setFallback(true);
       });
     };
@@ -55,7 +53,6 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
         gl.on('webglcontextlost',fail);
         gl.once('load',()=>{clearTimeout(timer);});
         map.attributionControl.addAttribution(VECTOR);
-        map.attributionControl.addAttribution(styleCredit);
         // Leaflet owns keyboard/pointer interaction and the accessible region.
         vector.getContainer().setAttribute('aria-hidden','true');
         vector.getCanvas().setAttribute('tabindex','-1');
@@ -67,7 +64,6 @@ export default function useBasemap(map: L.Map | null, mode: BasemapMode, attempt
       map.attributionControl.removeAttribution(OSM);
       map.attributionControl.removeAttribution(GSI);
       map.attributionControl.removeAttribution(VECTOR);
-      map.attributionControl.removeAttribution(styleCredit);
     };
   },[map,mode,attempt]);
   return {error,fallback};
