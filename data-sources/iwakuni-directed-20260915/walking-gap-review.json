@@ -1,0 +1,67 @@
+[
+  {
+    "id": "iwakuni:i-625_02",
+    "origin": [
+      132.206168281048,
+      34.1358735047
+    ],
+    "existing_gap_m": 31.5,
+    "nearest_current_eligible_edge": {
+      "way_id": 119017628,
+      "node_ids": [
+        1337996722,
+        10675470165
+      ],
+      "gap_m": 31.547207662497144,
+      "tags": {
+        "highway": "tertiary",
+        "source": "YahooJapan/ALPSMAP"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  },
+  {
+    "id": "iwakuni:i-629_01",
+    "origin": [
+      132.211527016,
+      34.1422304959
+    ],
+    "existing_gap_m": 51.2,
+    "nearest_current_eligible_edge": {
+      "way_id": 1149928054,
+      "node_ids": [
+        10697451890,
+        1337995739
+      ],
+      "gap_m": 51.32964658449524,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  },
+  {
+    "id": "iwakuni:i-629_02",
+    "origin": [
+      132.211915092,
+      34.1424115752
+    ],
+    "existing_gap_m": 66.6,
+    "nearest_current_eligible_edge": {
+      "way_id": 119018329,
+      "node_ids": [
+        1337993465,
+        1337993059
+      ],
+      "gap_m": 66.71963470051003,
+      "tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  }
+]

@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { nearbyFacilityCandidates, prepareFacilities } from '../src/bakedWalking.ts';
+import { municipalCatalog } from '../src/stopCatalog.ts';
+import { mapFacilities } from '../src/facilityVisibility.ts';
+
+const origin = [131, 34];
+const point = (id, coordinates, category = 'supermarket') => ({ type: 'Feature', id, geometry: { type: 'Point', coordinates }, properties: { name: '同名施設', category } });
+const near = point('near', [131.004, 34]);
+const far = point('far', [131.02, 34]);
+const another = point('another', near.geometry.coordinates);
+const reference = point('reference', origin, 'reference');
+const ring = (west, south, east, north) => [[west,south],[east,south],[east,north],[west,north],[west,south]];
+const area = (id, rings) => ({ ...point(id, origin), geometry: { type: 'MultiPolygon', coordinates: [rings] } });
+const enclosing = area('enclosing', [ring(130.99,33.99,131.01,34.01)]);
+const hole = area('hole', [ring(130.99,33.99,131.01,34.01),ring(130.999,33.999,131.001,34.001)]);
+const edge = area('edge', [ring(131.01,33.999,131.03,34.001)]);
+const original = JSON.stringify([origin, near, far, another, reference, enclosing, hole, edge]);
+const candidates = nearbyFacilityCandidates(origin, prepareFacilities([near,far,another,reference,enclosing,hole,edge]));
+assert(candidates.some(c => c.facility.id === 'edge'), 'Use the nearest area boundary, not a far centroid');
+assert.equal(candidates.find(c => c.facility.id === 'enclosing').meters, 0);
+assert(candidates.find(c => c.facility.id === 'hole').meters > 50, 'A hole must not count as being inside the facility');
+assert(!candidates.some(c => ['far','reference'].includes(c.facility.id)));
+assert.equal(candidates.filter(c => ['near','another'].includes(c.facility.id)).length,2, 'Do not merge equal names or coordinates');
+assert.equal(nearbyFacilityCandidates(origin,prepareFacilities([hole]),40).length,0);
+assert.equal(JSON.stringify([origin, near, far, another, reference, enclosing, hole, edge]),original);
+assert(candidates.every((c,i) => i === 0 || candidates[i-1].meters <= c.meters));
+
+const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
+const facilities = [...read('shopping.geojson').features, ...read('civic-facilities.geojson').features];
+const prepared = prepareFacilities(facilities);
+const stops = municipalCatalog(read('review-stops.geojson'),read('review-routes.json'));
+const selected = stops.filter(s => ['hikari:4_01','hikari:4_02'].includes(s.id));
+const counts = selected.map(stop => {
+  const result = nearbyFacilityCandidates(stop.geometry.coordinates,prepared);
+  assert(result.length > 0, 'Both Nishigawara platforms must have facility candidates');
+  const scope = `${stop.id}:15`;
+  assert(mapFacilities(facilities, ['supermarket','bank','park'], null, scope, {scope,ids:result.map(c=>String(c.facility.id))}).length > 0);
+  assert.deepEqual(mapFacilities(facilities,['supermarket'],null,'other-stop:15',{scope,ids:result.map(c=>String(c.facility.id))}),[], 'Do not show stale candidates after a stop switch');
+  return {id:stop.id,facilities:result.length,nearest:result[0].facility.properties.name};
+});
+assert.equal(selected.length,2);
+console.log(JSON.stringify({nishigawara:counts,geometry_and_scope_checks:'passed'}));

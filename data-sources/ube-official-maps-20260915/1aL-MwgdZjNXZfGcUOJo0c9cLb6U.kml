@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>宇部市営バス 乗り場案内 常盤駅入口バス停</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>無題のレイヤ</name>
+      <Placemark>
+        <name>常盤駅入口バス停</name>
+        <description>新山口駅方面（普通）、阿知須、村松、中央病院、片倉 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.289083,33.942403,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>常盤駅入口バス停</name>
+        <description>・宇部新川駅 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.289572,33.942194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>常盤駅入口バス停</name>
+        <description>・山口宇部空港 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.290087,33.941473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>常盤駅入口バス停</name>
+        <description>・新山口駅 方面（特急）</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.291583,33.943574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>常盤駅入口バス停</name>
+        <description>・宇部興産中央病院 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.2897614,33.9414051,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,779 @@
+{
+  "summary": {
+    "原点計算一致・徒歩接続の対応保留": 15,
+    "乗り場机上整合・道路未接続": 8,
+    "原点・接続位置照合済み（既存徒歩手法）": 5,
+    "乗り場保留・既存計算を参考保持": 30,
+    "乗り場保留・徒歩圏未計算": 2
+  },
+  "points": [
+    {
+      "id": "iwakuni:i-624_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.202978769,
+        34.1330913566
+      ],
+      "file": "iwakuni-i-624_01.json",
+      "origin_matches": true,
+      "sha256": "e839c21083319b5a18c1c0e194512467d89f670a1e8055019d054839512a029c",
+      "gap_m": 19.7,
+      "snap": [
+        132.20277,
+        34.13304
+      ],
+      "max_snap_to_boarding_road_projection_m": 23.358,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-624_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.20325931,
+        34.1332083012
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 48.2
+    },
+    {
+      "id": "iwakuni:582_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.023952578857,
+        34.1893044427
+      ],
+      "file": "iwakuni-582_01.json",
+      "origin_matches": true,
+      "sha256": "2e2bf3701c5e1712fa33cd9909b0115c22a17ebe46cb694bea77ad0da947d8f2",
+      "gap_m": 3.1,
+      "snap": [
+        132.02392,
+        34.18929
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.502,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:582_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.023975436,
+        34.1893294427
+      ],
+      "file": "iwakuni-582_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:581_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.026994515286,
+        34.1889496468
+      ],
+      "file": "iwakuni-581_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:581_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.026977372429,
+        34.1889396468
+      ],
+      "file": "iwakuni-581_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-555_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208170705096,
+        34.0732342899
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 64.1
+    },
+    {
+      "id": "iwakuni:i-555_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208266911667,
+        34.0727422293
+      ],
+      "file": "iwakuni-i-555_02.json",
+      "origin_matches": true,
+      "sha256": "648aef2c14c42735e9fdf6a0e2dbacc44d473724e37caa23861b94203dbbb153",
+      "gap_m": 24.1,
+      "snap": [
+        132.20819,
+        34.07254
+      ],
+      "max_snap_to_boarding_road_projection_m": 22.986,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-614_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.198963911,
+        34.1164018222
+      ],
+      "file": "iwakuni-i-614_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-614_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199099179,
+        34.1163560752
+      ],
+      "file": "iwakuni-i-614_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-592_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.208604558,
+        34.0876999671
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "iwakuni:i-592_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208819165,
+        34.0869140517
+      ],
+      "file": "iwakuni-i-592_02.json",
+      "origin_matches": true,
+      "sha256": "39d4ece20335df6684db5092ad38ace6367e75f962bf15c1cada33bbbbf6b68d",
+      "gap_m": 7.7,
+      "snap": [
+        132.20889,
+        34.08695
+      ],
+      "max_snap_to_boarding_road_projection_m": 12.638,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-583_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208406465,
+        34.0821772294
+      ],
+      "file": "iwakuni-i-583_01.json",
+      "origin_matches": true,
+      "sha256": "7f6d384ce1129c0bba9aed26882bf37d9966ebb1aca83df7c7ae7f198cb041e3",
+      "gap_m": 13.9,
+      "snap": [
+        132.20832,
+        34.08207
+      ],
+      "max_snap_to_boarding_road_projection_m": 15.32,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-583_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208212919,
+        34.081028825
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 33.6
+    },
+    {
+      "id": "iwakuni:i-595_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.207135063048,
+        34.0901053537
+      ],
+      "file": "iwakuni-i-595_01.json",
+      "origin_matches": true,
+      "sha256": "ba69222de2e06cf701952811f6110cb37e589284e0ce685c1cd570ee68e6c87b",
+      "gap_m": 23.3,
+      "snap": [
+        132.20721,
+        34.0899
+      ],
+      "max_snap_to_boarding_road_projection_m": 26.652,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-595_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.20755190719,
+        34.0897289462333
+      ],
+      "file": "iwakuni-i-595_02.json",
+      "origin_matches": true,
+      "sha256": "7214af53c0e76a67dfb52adebfb9e01d85c16b84760e3321f87b97ca3f1bcb5c",
+      "gap_m": 30.0,
+      "snap": [
+        132.20735,
+        34.08994
+      ],
+      "max_snap_to_boarding_road_projection_m": 29.54,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:273_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.018162661143,
+        34.3915981275
+      ],
+      "file": "iwakuni-273_01.json",
+      "origin_matches": true,
+      "sha256": "346c67479a0056a6af892a7b5571dcb88949233c405a89bc7603e75a7601b2ad",
+      "gap_m": 6.1,
+      "snap": [
+        132.01811,
+        34.39163
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.468,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:273_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.019186377,
+        34.3930488286
+      ],
+      "file": "iwakuni-273_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-633_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.216215804619,
+        34.156423764
+      ],
+      "file": "iwakuni-i-633_01.json",
+      "origin_matches": true,
+      "sha256": "a8d4997cd13cd47111fe0d056ea6e6e83ead91d8cb0256c27bc35d639d9e8539",
+      "gap_m": 6.6,
+      "snap": [
+        132.21628,
+        34.15641
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.562,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:i-633_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.216189321952,
+        34.1559160462
+      ],
+      "file": "iwakuni-i-633_02.json",
+      "origin_matches": true,
+      "sha256": "a81945fb19274fe6d481e59a7c1c62d8703b39adcf587f8e71e41dc3eb2dc591",
+      "gap_m": 5.4,
+      "snap": [
+        132.21613,
+        34.15593
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.35,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:15_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.05966888381,
+        34.1017761504333
+      ],
+      "file": "iwakuni-15_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:15_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.05965936,
+        34.1017094837667
+      ],
+      "file": "iwakuni-15_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:614_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.961762054143,
+        34.2260958393
+      ],
+      "file": "iwakuni-614_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:614_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.961819197,
+        34.2260958393
+      ],
+      "file": "iwakuni-614_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-622_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199112687,
+        34.1267478637
+      ],
+      "file": "iwakuni-i-622_01.json",
+      "origin_matches": true,
+      "sha256": "2f8140632889412011206cb5fe33798a04ab545fd3f66e616442182ec3b62992",
+      "gap_m": 7.1,
+      "snap": [
+        132.19905,
+        34.12671
+      ],
+      "max_snap_to_boarding_road_projection_m": 16.668,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-622_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199272985,
+        34.1266225886
+      ],
+      "file": "iwakuni-i-622_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:482_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.974576550238,
+        34.1068905749
+      ],
+      "file": "iwakuni-482_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:482_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.974538455,
+        34.1068905749
+      ],
+      "file": "iwakuni-482_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-581_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208506163857,
+        34.0790315820667
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 41.8
+    },
+    {
+      "id": "iwakuni:i-581_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208621449714,
+        34.0786954562334
+      ],
+      "file": "iwakuni-i-581_02.json",
+      "origin_matches": true,
+      "sha256": "7d2b0012724e56732f8c0f1eab3deabd1433ddfa499a2f8fd1d8edae43ea9e92",
+      "gap_m": 16.5,
+      "snap": [
+        132.20861,
+        34.07855
+      ],
+      "max_snap_to_boarding_road_projection_m": 17.662,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:275_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.014685577,
+        34.386969492
+      ],
+      "file": "iwakuni-275_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:275_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.014391669,
+        34.3847245041
+      ],
+      "file": "iwakuni-275_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:277_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.004190875143,
+        34.3932500607667
+      ],
+      "file": "iwakuni-277_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:277_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.004248018,
+        34.3932333941
+      ],
+      "file": "iwakuni-277_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:527_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.114911809286,
+        34.2442497774333
+      ],
+      "file": "iwakuni-527_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:527_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.114949904524,
+        34.2442164441
+      ],
+      "file": "iwakuni-527_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-616_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199931831381,
+        34.1206337484667
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 69.9
+    },
+    {
+      "id": "iwakuni:i-616_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.200357541143,
+        34.1209977224667
+      ],
+      "file": "iwakuni-i-616_02.json",
+      "origin_matches": true,
+      "sha256": "3d42ac1c15543befb9a3658a032d7157fc330b0e277c85084aff7366f9cd50fe",
+      "gap_m": 17.0,
+      "snap": [
+        132.2004,
+        34.12115
+      ],
+      "max_snap_to_boarding_road_projection_m": 16.827,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-514_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.174252601,
+        34.0893331604
+      ],
+      "file": "iwakuni-i-514_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-514_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.174252601,
+        34.0893831604
+      ],
+      "file": "iwakuni-i-514_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:17_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.057774127571,
+        34.0968038482333
+      ],
+      "file": "iwakuni-17_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:17_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.057755079952,
+        34.0968205149
+      ],
+      "file": "iwakuni-17_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-600_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.20461671,
+        34.094969035
+      ],
+      "file": "iwakuni-i-600_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-600_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.205176998,
+        34.0942337801
+      ],
+      "file": "iwakuni-i-600_02.json",
+      "origin_matches": true,
+      "sha256": "d9e5ae569c3b30648cf1bb0493b21b95642a0600c710c96d1fe153e065ac6679",
+      "gap_m": 25.6,
+      "snap": [
+        132.20498,
+        34.09439
+      ],
+      "max_snap_to_boarding_road_projection_m": 24.63,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-610_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199662778,
+        34.1088671052
+      ],
+      "file": "iwakuni-i-610_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-610_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199854843,
+        34.1088509147
+      ],
+      "file": "iwakuni-i-610_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-612_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199672369048,
+        34.1125296885667
+      ],
+      "file": "iwakuni-i-612_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-612_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199845559333,
+        34.1122281626334
+      ],
+      "file": "iwakuni-i-612_02.json",
+      "origin_matches": true,
+      "sha256": "2290667a0d15900dfc5f6da187fb9836cfcfcbb85d642a856d4cc61f9c5ed63c",
+      "gap_m": 14.0,
+      "snap": [
+        132.19984,
+        34.1121
+      ],
+      "max_snap_to_boarding_road_projection_m": 16.219,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:584_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.035828538,
+        34.2025169839
+      ],
+      "file": "iwakuni-584_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:584_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.03583806181,
+        34.2024753172333
+      ],
+      "file": "iwakuni-584_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-554_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.207320916,
+        34.0714829653
+      ],
+      "file": "iwakuni-i-554_01.json",
+      "origin_matches": true,
+      "sha256": "9c2c98796d6317b8cfa24b8428af4cbd6bd7874464b3298207a801dc27fefcc5",
+      "gap_m": 14.6,
+      "snap": [
+        132.20742,
+        34.07158
+      ],
+      "max_snap_to_boarding_road_projection_m": 15.816,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-554_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.207234125,
+        34.0712402803
+      ],
+      "file": "iwakuni-i-554_02.json",
+      "origin_matches": true,
+      "sha256": "0c6bab6a9fc9fc9f8f07ee1bfeda412b4ff786b85e56b0632b35bfa1d52645d1",
+      "gap_m": 29.5,
+      "snap": [
+        132.20702,
+        34.07105
+      ],
+      "max_snap_to_boarding_road_projection_m": 29.008,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-619_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.199796554,
+        34.1236521174
+      ],
+      "file": "iwakuni-i-619_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-619_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199685684,
+        34.1242978755
+      ],
+      "file": "iwakuni-i-619_02.json",
+      "origin_matches": true,
+      "sha256": "0a39efba5f52f9427c4e5d5f638f0eb466ae7d815d706429e71cb270f3087aba",
+      "gap_m": 20.8,
+      "snap": [
+        132.1997,
+        34.12411
+      ],
+      "max_snap_to_boarding_road_projection_m": 20.34,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-631_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.213163107476,
+        34.1492928946
+      ],
+      "file": "iwakuni-i-631_01.json",
+      "origin_matches": true,
+      "sha256": "909766e93cf7aa571dced1e302dec94d373d2d3226ca90ba275526dbf7fa8d4c",
+      "gap_m": 0.2,
+      "snap": [
+        132.21316,
+        34.14929
+      ],
+      "max_snap_to_boarding_road_projection_m": 4.238,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-631_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.213170646286,
+        34.1491552991
+      ],
+      "file": "iwakuni-i-631_02.json",
+      "origin_matches": true,
+      "sha256": "d1afa996374eec4ca03ba706093e8a9def1e7e1b31b655cd9892b04175867f97",
+      "gap_m": 6.7,
+      "snap": [
+        132.21312,
+        34.1492
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.505,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:i-606_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.203321122571,
+        34.0993994052
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "iwakuni:i-606_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.203840106667,
+        34.0988090814666
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 43.2
+    },
+    {
+      "id": "iwakuni:i-626_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.208068845524,
+        34.1385330109
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 30.1
+    },
+    {
+      "id": "iwakuni:i-626_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.207956897333,
+        34.1381076122
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 30.7
+    }
+  ]
+}

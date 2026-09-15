@@ -3,6 +3,9 @@ import L from 'leaflet';
 import type { BusFeature } from './types';
 import { clusterStops, stopCellSize } from './stopClusters';
 import { fitContent } from './mapLayout';
+import { boardingTitle, hasOverlappingChoice } from './boardingGuide';
+
+const busIcon = '<span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="16" rx="3"/><path d="M5 11h14M8 19v2m8-2v2M8 15h1m6 0h1M9 6h6"/></svg></span>';
 
 export default function StopMarkers({ map, stops, selected, onSelect }: {
   map: L.Map | null; stops: BusFeature[]; selected: string; onSelect: (id: string) => void;
@@ -13,17 +16,27 @@ export default function StopMarkers({ map, stops, selected, onSelect }: {
     const drawStop = (stop: BusFeature) => {
       const id = String(stop.id || stop.properties['@id']);
       const active = id === selected;
-      const name = stop.properties['name:ja'] || stop.properties.name || '名称未登録';
+      const name = boardingTitle(stop);
+      const guide = stop.properties.boarding_guide;
+      const overlap = !!guide && hasOverlappingChoice(stop, stops, s => map.project([s.geometry.coordinates[1], s.geometry.coordinates[0]], map.getZoom()));
+      const accessibleName = `${overlap ? '乗り場を選ぶ' : active ? '選択中のバス停' : 'バス停'} ${name}${guide ? ` ${guide.summary}` : ''}`;
+      const iconContent = document.createElement('div');
+      iconContent.innerHTML = busIcon;
+      if (guide?.number) {
+        const badge = document.createElement('b');
+        badge.className = 'stop-number'; badge.textContent = guide.number;
+        iconContent.firstElementChild?.append(badge);
+      }
       const marker = L.marker([stop.geometry.coordinates[1], stop.geometry.coordinates[0]], {
-        icon: L.divIcon({ className: `stop-marker${active ? ' is-selected' : ''}${stop.properties.source_kind === 'municipal' ? ' is-municipal' : ''}`,
-          html: '<span aria-hidden="true"></span>', iconSize: [28, 28], iconAnchor: [14, 14] }),
-        title: name, keyboard: true, zIndexOffset: active ? 800 : 0,
+        icon: L.divIcon({ className: `stop-marker${active ? ' is-selected' : ''}${stop.properties.source_kind === 'municipal' ? ' is-municipal' : ''}${guide?.review || guide?.assignment_hold ? ' is-location-review' : ''}`,
+          html: iconContent.firstElementChild as HTMLElement, iconSize: [36, 36], iconAnchor: [18, 18] }),
+        title: accessibleName, keyboard: true, zIndexOffset: active ? 800 : guide ? 200 : 0,
       }).on('click', () => { map.closePopup(); onSelect(id); }).addTo(group);
-      marker.getElement()?.setAttribute('aria-label', `${active ? '選択中のバス停' : 'バス停'} ${name}`);
+      marker.getElement()?.setAttribute('aria-label', accessibleName);
       if (active) {
         const label = document.createElement('span');
         label.textContent = name;
-        marker.bindTooltip(label, { permanent: true, direction: 'left', offset: [-11, 0], className: 'guide-stop-label' });
+        marker.bindTooltip(label, { permanent: true, direction: 'left', offset: [-17, 0], className: 'guide-stop-label' });
       }
     };
     const draw = () => {

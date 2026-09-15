@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "points": [
+    {
+      "type": "Feature",
+      "id": "review:ube-chuo-7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.244193,
+          33.955131
+        ]
+      },
+      "properties": {
+        "name": "宇部中央",
+        "source_kind": "boarding-study",
+        "city": "宇部市",
+        "source_date": "2026-09-14",
+        "source_url": "https://ubebus.jp/pages/55/",
+        "location_kind": "unverified",
+        "boarding_guide": {
+          "stop_name": "宇部中央",
+          "group_id": "hub:ube-chuo",
+          "number": "7",
+          "role": "boarding",
+          "summary": "大学病院・小羽山経由 宇部駅・交通局方面／市街地循環線",
+          "directions": [],
+          "source_url": "https://ubebus.jp/pages/55/",
+          "guide_url": "https://ubebus.jp/pages/55/",
+          "evidence": "official-diagram-derived",
+          "source_coordinates": [
+            131.244193,
+            33.955131
+          ],
+          "location_description": "7・8は公式図の記念会館前方向の枝道、9は4のりばより市役所前側。旧OSM無番号点との対応は未確定。",
+          "review": {
+            "method": "一律の図の位置合わせは枝道で道路から外れるため採用せず、図の道路側・交差点の並びを基に既存の無番号標柱を確認候補とした。番号の対応は未確定。",
+            "search_radius_m": 40,
+            "questions": [
+              "現在の標柱は候補ピンの位置ですか。違う場合は地図に正しい位置を記入してください。",
+              "道路のどちら側ですか。公式図の番号と現地表示が一致しますか。",
+              "公式バスナビの一覧7・8・9は同じ座標になっています。案内図の7・8・9番それぞれの標柱位置を確認してください。"
+            ],
+            "controls": {
+              "image": "ube-chuo.png",
+              "diagram_display_width": 1944,
+              "pixel": [
+                1288,
+                957
+              ],
+              "anchor_osm_ids": [
+                "3640500395",
+                "3640500393",
+                "3640475992",
+                "3640475991",
+                "3500214597",
+                "3640500394"
+              ],
+              "candidate_osm_id": "3640500397",
+              "rejected_affine_coordinate": [
+                131.24449764075743,
+                33.95460039399293
+              ],
+              "official_navigation": "https://ube.bus-navigation.jp/wgsys/wgp/search.htm?from=%E5%AE%87%E9%83%A8%E4%B8%AD%E5%A4%AE&fromType=1&tabName=signpoleTab&locale=ja"
+            },
+            "precision_notice": "確認する範囲の目安です。円は位置精度や徒歩圏を表しません。"
+          },
+          "data_notice": "位置候補：番号・方面は公式案内、ピンは図から整理した仮の位置です。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "review:ube-chuo-8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.244182,
+          33.954869
+        ]
+      },
+      "properties": {
+        "name": "宇部中央",
+        "source_kind": "boarding-study",
+        "city": "宇部市",
+        "source_date": "2026-09-14",
+        "source_url": "https://ubebus.jp/pages/55/",
+        "location_kind": "unverified",
+        "boarding_guide": {
+          "stop_name": "宇部中央",
+          "group_id": "hub:ube-chuo",
+          "number": "8",
+          "role": "boarding",
+          "summary": "八王子・宇部新川駅／山口宇部空港（急行）方面",
+          "directions": [],
+          "source_url": "https://ubebus.jp/pages/55/",
+          "guide_url": "https://ubebus.jp/pages/55/",
+          "evidence": "official-diagram-derived",
+          "source_coordinates": [
+            131.244182,
+            33.954869
+          ],
+          "location_description": "7・8は公式図の記念会館前方向の枝道、9は4のりばより市役所前側。旧OSM無番号点との対応は未確定。",
+          "review": {
+            "method": "一律の図の位置合わせは枝道で道路から外れるため採用せず、図の道路側・交差点の並びを基に既存の無番号標柱を確認候補とした。番号の対応は未確定。",
+            "search_radius_m": 40,
+            "questions": [
+              "現在の標柱は候補ピンの位置ですか。違う場合は地図に正しい位置を記入してください。",
+              "道路のどちら側ですか。公式図の番号と現地表示が一致しますか。",
+              "公式バスナビの一覧7・8・9は同じ座標になっています。案内図の7・8・9番それぞれの標柱位置を確認してください。"
+            ],
+            "controls": {
+              "image": "ube-chuo.png",
+              "diagram_display_width": 1944,
+              "pixel": [
+                1148,
+                901
+              ],
+              "anchor_osm_ids": [
+                "3640500395",
+                "3640500393",
+                "3640475992",
+                "3640475991",
+                "3500214597",
+                "3640500394"
+              ],
+              "candidate_osm_id": "3640500396",
+              "rejected_affine_coordinate": [
+                131.24443876853115,
+                33.954435903244175
+              ],
+              "official_navigation": "https://ube.bus-navigation.jp/wgsys/wgp/search.htm?from=%E5%AE%87%E9%83%A8%E4%B8%AD%E5%A4%AE&fromType=1&tabName=signpoleTab&locale=ja"
+            },
+            "precision_notice": "確認する範囲の目安です。円は位置精度や徒歩圏を表しません。"
+          },
+          "data_notice": "位置候補：番号・方面は公式案内、ピンは図から整理した仮の位置です。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "review:ube-chuo-9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.244045,
+          33.953508
+        ]
+      },
+      "properties": {
+        "name": "宇部中央",
+        "source_kind": "boarding-study",
+        "city": "宇部市",
+        "source_date": "2026-09-14",
+        "source_url": "https://ubebus.jp/pages/55/",
+        "location_kind": "unverified",
+        "boarding_guide": {
+          "stop_name": "宇部中央",
+          "group_id": "hub:ube-chuo",
+          "number": "9",
+          "role": "boarding",
+          "summary": "宇部新川駅止",
+          "directions": [],
+          "source_url": "https://ubebus.jp/pages/55/",
+          "guide_url": "https://ubebus.jp/pages/55/",
+          "evidence": "official-diagram-derived",
+          "source_coordinates": [
+            131.244045,
+            33.953508
+          ],
+          "location_description": "7・8は公式図の記念会館前方向の枝道、9は4のりばより市役所前側。旧OSM無番号点との対応は未確定。",
+          "review": {
+            "method": "一律の図の位置合わせは枝道で道路から外れるため採用せず、図の道路側・交差点の並びを基に既存の無番号標柱を確認候補とした。番号の対応は未確定。",
+            "search_radius_m": 40,
+            "questions": [
+              "現在の標柱は候補ピンの位置ですか。違う場合は地図に正しい位置を記入してください。",
+              "道路のどちら側ですか。公式図の番号と現地表示が一致しますか。",
+              "公式バスナビの一覧7・8・9は同じ座標になっています。案内図の7・8・9番それぞれの標柱位置を確認してください。"
+            ],
+            "controls": {
+              "image": "ube-chuo.png",
+              "diagram_display_width": 1944,
+              "pixel": [
+                434,
+                543
+              ],
+              "anchor_osm_ids": [
+                "3640500395",
+                "3640500393",
+                "3640475992",
+                "3640475991",
+                "3500214597",
+                "3640500394"
+              ],
+              "candidate_osm_id": "3640475990",
+              "rejected_affine_coordinate": [
+                131.24397821136563,
+                33.95359110588571
+              ],
+              "official_navigation": "https://ube.bus-navigation.jp/wgsys/wgp/search.htm?from=%E5%AE%87%E9%83%A8%E4%B8%AD%E5%A4%AE&fromType=1&tabName=signpoleTab&locale=ja"
+            },
+            "precision_notice": "確認する範囲の目安です。円は位置精度や徒歩圏を表しません。"
+          },
+          "data_notice": "位置候補：番号・方面は公式案内、ピンは図から整理した仮の位置です。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "review:ube-shinkawa-6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.242104,
+          33.958003
+        ]
+      },
+      "properties": {
+        "name": "宇部新川駅",
+        "source_kind": "boarding-study",
+        "city": "宇部市",
+        "source_date": "2026-09-14",
+        "source_url": "https://ubebus.jp/pages/54/",
+        "location_kind": "unverified",
+        "boarding_guide": {
+          "stop_name": "宇部新川駅",
+          "group_id": "hub:ube-shinkawa",
+          "number": "6",
+          "role": "boarding",
+          "summary": "厚狭・小野田方面",
+          "directions": [],
+          "source_url": "https://ubebus.jp/pages/54/",
+          "guide_url": "https://ubebus.jp/pages/54/",
+          "evidence": "official-diagram-derived",
+          "source_coordinates": [
+            131.242104,
+            33.958003
+          ],
+          "location_description": "候補の近くに、船鉄の公式「せんナビ」の宇部新川駅前の座標があります。ただし公開データは6番と明記せず、旧降車点も近いため番号・道路側の確認待ちです。",
+          "review": {
+            "method": "公式図の並び・バス券売場・駅前道路形状を照合し、既知1〜5の列を延長して仮置き。番号間の実測距離は未取得。",
+            "search_radius_m": 25,
+            "questions": [
+              "6・7番の標柱位置と、5番・降車場との並びを確認してください。",
+              "旧データの降車点と近接します。現在の降車場も図に記入してください。",
+              "せんナビの宇部新川駅前（停留所15・枝番1、緯度33.9579867173786・経度131.242096424103）は6番の標柱ですか。"
+            ],
+            "controls": {
+              "anchor_osm_ids": [
+                "3640500398",
+                "3640500399",
+                "3640500400",
+                "3640500401",
+                "3640500402"
+              ],
+              "old_alighting_osm_id": "3640500403",
+              "official_operator_map_coordinate": [
+                131.242096424103,
+                33.9579867173786
+              ],
+              "official_operator_stop_id": {
+                "stop": "15",
+                "pole": "1"
+              },
+              "official_operator_source": "https://sentetsu.bustei.net/buslocation/Ichigo_stops.csv"
+            },
+            "precision_notice": "確認する範囲の目安です。円は位置精度や徒歩圏を表しません。"
+          },
+          "data_notice": "位置候補：番号・方面は公式案内、ピンは図から整理した仮の位置です。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "review:ube-shinkawa-7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.242036,
+          33.958083
+        ]
+      },
+      "properties": {
+        "name": "宇部新川駅",
+        "source_kind": "boarding-study",
+        "city": "宇部市",
+        "source_date": "2026-09-14",
+        "source_url": "https://ubebus.jp/pages/54/",
+        "location_kind": "unverified",
+        "boarding_guide": {
+          "stop_name": "宇部新川駅",
+          "group_id": "hub:ube-shinkawa",
+          "number": "7",
+          "role": "boarding",
+          "summary": "高速バス 福岡・山口ライナー",
+          "directions": [],
+          "source_url": "https://ubebus.jp/pages/54/",
+          "guide_url": "https://ubebus.jp/pages/54/",
+          "evidence": "official-diagram-derived",
+          "source_coordinates": [
+            131.242036,
+            33.958083
+          ],
+          "location_description": "JRバス中国の7番案内から開く地図は「宇部新川駅前」の地点を示します。7番専用の点か判別できず、旧降車点にも近いため確認待ちです。",
+          "review": {
+            "method": "公式図の並び・バス券売場・駅前道路形状を照合し、既知1〜5の列を延長して仮置き。番号間の実測距離は未取得。",
+            "search_radius_m": 25,
+            "questions": [
+              "6・7番の標柱位置と、5番・降車場との並びを確認してください。",
+              "旧データの降車点と近接します。現在の降車場も図に記入してください。",
+              "JRバス中国の案内地図の地点（緯度33.9579957・経度131.2420495）は7番標柱ですか、停留所の代表点ですか。"
+            ],
+            "controls": {
+              "anchor_osm_ids": [
+                "3640500398",
+                "3640500399",
+                "3640500400",
+                "3640500401",
+                "3640500402"
+              ],
+              "old_alighting_osm_id": "3640500403",
+              "jr_operator_map_coordinate": [
+                131.2420495,
+                33.9579957
+              ],
+              "jr_operator_source": "https://www.chugoku-jrbus.co.jp/express/detail/0030/",
+              "jr_operator_map": "https://goo.gl/maps/g2ywpruzNcPH3DVe8"
+            },
+            "precision_notice": "確認する範囲の目安です。円は位置精度や徒歩圏を表しません。"
+          },
+          "data_notice": "位置候補：番号・方面は公式案内、ピンは図から整理した仮の位置です。"
+        }
+      }
+    }
+  ]
+}

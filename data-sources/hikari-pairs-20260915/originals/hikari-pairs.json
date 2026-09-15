@@ -1,0 +1,1266 @@
+[
+  {
+    "stop_name": "土井",
+    "stop_ids": [
+      "11_01",
+      "11_02"
+    ],
+    "distance_m": 5.8,
+    "next_names_by_stop": {
+      "11_01": [
+        "光市民ホール前",
+        "木ノ下橋上"
+      ],
+      "11_02": [
+        "イオン光店",
+        "浅江中学校前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "光市民ホール前",
+    "stop_ids": [
+      "12_01",
+      "12_02"
+    ],
+    "distance_m": 26.0,
+    "next_names_by_stop": {
+      "12_01": [
+        "金山"
+      ],
+      "12_02": [
+        "土井"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "金山",
+    "stop_ids": [
+      "13_01",
+      "13_02"
+    ],
+    "distance_m": 11.6,
+    "next_names_by_stop": {
+      "13_01": [
+        "光市役所前"
+      ],
+      "13_02": [
+        "光市民ホール前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "光製鉄前",
+    "stop_ids": [
+      "15_01",
+      "15_02"
+    ],
+    "distance_m": 60.3,
+    "next_names_by_stop": {
+      "15_01": [
+        "アリヴィオ",
+        "新町"
+      ],
+      "15_02": [
+        "光市役所前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "アリヴィオ",
+    "stop_ids": [
+      "16_01",
+      "16_02"
+    ],
+    "distance_m": 7.1,
+    "next_names_by_stop": {
+      "16_01": [
+        "浅江神社下"
+      ],
+      "16_02": [
+        "光製鉄前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "浅江神社下",
+    "stop_ids": [
+      "17_01",
+      "17_02"
+    ],
+    "distance_m": 17.2,
+    "next_names_by_stop": {
+      "17_01": [
+        "浅江ショッピングセンター前"
+      ],
+      "17_02": [
+        "アリヴィオ"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "浅江ショッピングセンター前",
+    "stop_ids": [
+      "18_01",
+      "18_02"
+    ],
+    "distance_m": 38.4,
+    "next_names_by_stop": {
+      "18_01": [
+        "虹ヶ浜二丁目"
+      ],
+      "18_02": [
+        "浅江神社下"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "光税務署前",
+    "stop_ids": [
+      "2_01",
+      "2_02"
+    ],
+    "distance_m": 13.3,
+    "next_names_by_stop": {
+      "2_01": [
+        "虹ヶ浜二丁目"
+      ],
+      "2_02": [
+        "光駅"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "海田",
+    "stop_ids": [
+      "22_01",
+      "22_02"
+    ],
+    "distance_m": 6.8,
+    "next_names_by_stop": {
+      "22_01": [
+        "周地"
+      ],
+      "22_02": [
+        "大和病院前",
+        "岩田駅前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "周地",
+    "stop_ids": [
+      "23_01",
+      "23_02"
+    ],
+    "distance_m": 15.1,
+    "next_names_by_stop": {
+      "23_01": [
+        "源城"
+      ],
+      "23_02": [
+        "海田"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "須賀社",
+    "stop_ids": [
+      "25_01",
+      "25_02"
+    ],
+    "distance_m": 19.6,
+    "next_names_by_stop": {
+      "25_01": [
+        "小倉"
+      ],
+      "25_02": [
+        "源城"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "小倉",
+    "stop_ids": [
+      "26_01",
+      "26_02"
+    ],
+    "distance_m": 7.0,
+    "next_names_by_stop": {
+      "26_01": [
+        "十王"
+      ],
+      "26_02": [
+        "須賀社"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "十王",
+    "stop_ids": [
+      "27_01",
+      "27_02"
+    ],
+    "distance_m": 7.0,
+    "next_names_by_stop": {
+      "27_01": [
+        "佐田下"
+      ],
+      "27_02": [
+        "小倉"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "佐田下",
+    "stop_ids": [
+      "28_01",
+      "28_02"
+    ],
+    "distance_m": 6.4,
+    "next_names_by_stop": {
+      "28_01": [
+        "佐田中"
+      ],
+      "28_02": [
+        "十王"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "佐田中",
+    "stop_ids": [
+      "29_01",
+      "29_02"
+    ],
+    "distance_m": 6.7,
+    "next_names_by_stop": {
+      "29_01": [
+        "佐田上"
+      ],
+      "29_02": [
+        "佐田下"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "虹ヶ浜二丁目",
+    "stop_ids": [
+      "3_01",
+      "3_02"
+    ],
+    "distance_m": 7.1,
+    "next_names_by_stop": {
+      "3_01": [
+        "浅江ショッピングセンター前",
+        "西河原"
+      ],
+      "3_02": [
+        "光税務署前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "佐田上",
+    "stop_ids": [
+      "30_01",
+      "30_02"
+    ],
+    "distance_m": 22.3,
+    "next_names_by_stop": {
+      "30_01": [
+        "生野"
+      ],
+      "30_02": [
+        "佐田中"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "末常",
+    "stop_ids": [
+      "32_01",
+      "32_02"
+    ],
+    "distance_m": 6.9,
+    "next_names_by_stop": {
+      "32_01": [
+        "慶見"
+      ],
+      "32_02": [
+        "岩田駅前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "西河原",
+    "stop_ids": [
+      "4_01",
+      "4_02"
+    ],
+    "distance_m": 142.2,
+    "next_names_by_stop": {
+      "4_01": [
+        "筒井"
+      ],
+      "4_02": [
+        "虹ヶ浜二丁目"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "旧三輪小前",
+    "stop_ids": [
+      "41_01",
+      "41_02"
+    ],
+    "distance_m": 7.6,
+    "next_names_by_stop": {
+      "41_01": [
+        "宇立"
+      ],
+      "41_02": [
+        "岩田駅前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "宇立",
+    "stop_ids": [
+      "42_01",
+      "42_02"
+    ],
+    "distance_m": 5.9,
+    "next_names_by_stop": {
+      "42_01": [
+        "西八幡"
+      ],
+      "42_02": [
+        "旧三輪小前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "西八幡",
+    "stop_ids": [
+      "43_01",
+      "43_02"
+    ],
+    "distance_m": 7.2,
+    "next_names_by_stop": {
+      "43_01": [
+        "上岩田口",
+        "中岩田"
+      ],
+      "43_02": [
+        "宇立"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "上岩田口",
+    "stop_ids": [
+      "44_01",
+      "44_02"
+    ],
+    "distance_m": 7.6,
+    "next_names_by_stop": {
+      "44_01": [
+        "石田（市役所線）"
+      ],
+      "44_02": [
+        "西八幡"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "石田（市役所線）",
+    "stop_ids": [
+      "45_01",
+      "45_02"
+    ],
+    "distance_m": 6.4,
+    "next_names_by_stop": {
+      "45_01": [
+        "鮎帰"
+      ],
+      "45_02": [
+        "上岩田口"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "鮎帰",
+    "stop_ids": [
+      "46_01",
+      "46_02"
+    ],
+    "distance_m": 9.5,
+    "next_names_by_stop": {
+      "46_01": [
+        "光スポーツ公園前"
+      ],
+      "46_02": [
+        "石田（市役所線）"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "光スポーツ公園前",
+    "stop_ids": [
+      "47_01",
+      "47_02"
+    ],
+    "distance_m": 7.6,
+    "next_names_by_stop": {
+      "47_01": [
+        "光高前"
+      ],
+      "47_02": [
+        "鮎帰"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "筒井",
+    "stop_ids": [
+      "5_01",
+      "5_02"
+    ],
+    "distance_m": 49.6,
+    "next_names_by_stop": {
+      "5_01": [
+        "木園"
+      ],
+      "5_02": [
+        "西河原"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "新町",
+    "stop_ids": [
+      "55_01",
+      "55_02"
+    ],
+    "distance_m": 44.5,
+    "next_names_by_stop": {
+      "55_01": [
+        "光市民ホール西",
+        "領家"
+      ],
+      "55_02": [
+        "光製鉄前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "領家",
+    "stop_ids": [
+      "56_01",
+      "56_02"
+    ],
+    "distance_m": 66.3,
+    "next_names_by_stop": {
+      "56_01": [
+        "下大田"
+      ],
+      "56_02": [
+        "新町"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "下大田",
+    "stop_ids": [
+      "57_01",
+      "57_02"
+    ],
+    "distance_m": 9.0,
+    "next_names_by_stop": {
+      "57_01": [
+        "林"
+      ],
+      "57_02": [
+        "領家"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "林",
+    "stop_ids": [
+      "58_01",
+      "58_02"
+    ],
+    "distance_m": 60.0,
+    "next_names_by_stop": {
+      "58_01": [
+        "島田中前"
+      ],
+      "58_02": [
+        "下大田"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "島田中前",
+    "stop_ids": [
+      "59_01",
+      "59_02"
+    ],
+    "distance_m": 43.3,
+    "next_names_by_stop": {
+      "59_01": [
+        "石田（広域生活交通）"
+      ],
+      "59_02": [
+        "林"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "木園",
+    "stop_ids": [
+      "6_01",
+      "6_02"
+    ],
+    "distance_m": 8.5,
+    "next_names_by_stop": {
+      "6_01": [
+        "光駅北口"
+      ],
+      "6_02": [
+        "筒井",
+        "花園"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "石田（広域生活交通）",
+    "stop_ids": [
+      "60_01",
+      "60_02"
+    ],
+    "distance_m": 115.5,
+    "next_names_by_stop": {
+      "60_01": [
+        "島田駅前"
+      ],
+      "60_02": [
+        "島田中前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "光市民ホール西",
+    "stop_ids": [
+      "61_01",
+      "61_02"
+    ],
+    "distance_m": 22.7,
+    "next_names_by_stop": {
+      "61_01": [
+        "花園"
+      ],
+      "61_02": [
+        "新町"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "花園",
+    "stop_ids": [
+      "62_01",
+      "62_02"
+    ],
+    "distance_m": 6.7,
+    "next_names_by_stop": {
+      "62_01": [
+        "木園"
+      ],
+      "62_02": [
+        "光市民ホール西"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "木ノ下橋上",
+    "stop_ids": [
+      "63_01",
+      "63_02"
+    ],
+    "distance_m": 64.9,
+    "next_names_by_stop": {
+      "63_01": [
+        "三井小学校前"
+      ],
+      "63_02": [
+        "土井"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "三井小学校前",
+    "stop_ids": [
+      "64_01",
+      "64_02"
+    ],
+    "distance_m": 16.1,
+    "next_names_by_stop": {
+      "64_01": [
+        "三井五丁目"
+      ],
+      "64_02": [
+        "木ノ下橋上"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "三井五丁目",
+    "stop_ids": [
+      "65_01",
+      "65_02"
+    ],
+    "distance_m": 6.3,
+    "next_names_by_stop": {
+      "65_01": [
+        "岩狩一丁目"
+      ],
+      "65_02": [
+        "三井小学校前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "岩狩一丁目",
+    "stop_ids": [
+      "66_01",
+      "66_02"
+    ],
+    "distance_m": 7.3,
+    "next_names_by_stop": {
+      "66_01": [
+        "岩狩二丁目"
+      ],
+      "66_02": [
+        "三井五丁目"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "岩狩二丁目",
+    "stop_ids": [
+      "67_01",
+      "67_02"
+    ],
+    "distance_m": 7.1,
+    "next_names_by_stop": {
+      "67_01": [
+        "三井七丁目"
+      ],
+      "67_02": [
+        "岩狩一丁目"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "三井七丁目",
+    "stop_ids": [
+      "68_01",
+      "68_02"
+    ],
+    "distance_m": 7.5,
+    "next_names_by_stop": {
+      "68_01": [
+        "三島コミュニティセンター前"
+      ],
+      "68_02": [
+        "岩狩二丁目"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "三島コミュニティセンター前",
+    "stop_ids": [
+      "69_01",
+      "69_02"
+    ],
+    "distance_m": 7.7,
+    "next_names_by_stop": {
+      "69_01": [
+        "島田駅前"
+      ],
+      "69_02": [
+        "三井七丁目"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "島田駅前",
+    "stop_ids": [
+      "70_01",
+      "70_02"
+    ],
+    "distance_m": 7.5,
+    "next_names_by_stop": {
+      "70_01": [
+        "島田駅"
+      ],
+      "70_02": [
+        "三島コミュニティセンター前",
+        "石田（広域生活交通）"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "慶周寺",
+    "stop_ids": [
+      "72_01",
+      "72_02"
+    ],
+    "distance_m": 6.1,
+    "next_names_by_stop": {
+      "72_01": [
+        "立野"
+      ],
+      "72_02": [
+        "島田駅"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "下小周防",
+    "stop_ids": [
+      "74_01",
+      "74_02"
+    ],
+    "distance_m": 7.0,
+    "next_names_by_stop": {
+      "74_01": [
+        "支所前"
+      ],
+      "74_02": [
+        "立野"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "支所前",
+    "stop_ids": [
+      "75_01",
+      "75_02"
+    ],
+    "distance_m": 7.5,
+    "next_names_by_stop": {
+      "75_01": [
+        "小周防"
+      ],
+      "75_02": [
+        "下小周防"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "小周防",
+    "stop_ids": [
+      "76_01",
+      "76_02"
+    ],
+    "distance_m": 13.6,
+    "next_names_by_stop": {
+      "76_01": [
+        "小周防Ｂ"
+      ],
+      "76_02": [
+        "支所前"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "小周防Ｂ",
+    "stop_ids": [
+      "77_01",
+      "77_02"
+    ],
+    "distance_m": 194.1,
+    "next_names_by_stop": {
+      "77_01": [
+        "下和田"
+      ],
+      "77_02": [
+        "八幡所"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "下和田",
+    "stop_ids": [
+      "78_01",
+      "78_02"
+    ],
+    "distance_m": 5.7,
+    "next_names_by_stop": {
+      "78_01": [
+        "和田"
+      ],
+      "78_02": [
+        "小周防"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "和田",
+    "stop_ids": [
+      "79_01",
+      "79_02"
+    ],
+    "distance_m": 31.9,
+    "next_names_by_stop": {
+      "79_01": [
+        "三丘温泉"
+      ],
+      "79_02": [
+        "下和田"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "三丘温泉",
+    "stop_ids": [
+      "80_01",
+      "80_02"
+    ],
+    "distance_m": 71.8,
+    "next_names_by_stop": {
+      "80_01": [
+        "十楽"
+      ],
+      "80_02": [
+        "和田"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "十楽",
+    "stop_ids": [
+      "81_01",
+      "81_02"
+    ],
+    "distance_m": 5.9,
+    "next_names_by_stop": {
+      "81_01": [
+        "小深"
+      ],
+      "81_02": [
+        "三丘温泉"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "小深",
+    "stop_ids": [
+      "82_01",
+      "82_02"
+    ],
+    "distance_m": 6.6,
+    "next_names_by_stop": {
+      "82_01": [
+        "兼清"
+      ],
+      "82_02": [
+        "十楽"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "兼清",
+    "stop_ids": [
+      "83_01",
+      "83_02"
+    ],
+    "distance_m": 7.9,
+    "next_names_by_stop": {
+      "83_01": [
+        "荒瀬"
+      ],
+      "83_02": [
+        "小深"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "荒瀬",
+    "stop_ids": [
+      "84_01",
+      "84_02"
+    ],
+    "distance_m": 7.5,
+    "next_names_by_stop": {
+      "84_01": [
+        "筏場"
+      ],
+      "84_02": [
+        "兼清"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "筏場",
+    "stop_ids": [
+      "85_01",
+      "85_02"
+    ],
+    "distance_m": 6.6,
+    "next_names_by_stop": {
+      "85_01": [
+        "集会所前"
+      ],
+      "85_02": [
+        "荒瀬"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "八幡所",
+    "stop_ids": [
+      "87_01",
+      "87_02"
+    ],
+    "distance_m": 86.7,
+    "next_names_by_stop": {
+      "87_01": [
+        "植松"
+      ],
+      "87_02": [
+        "小周防"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "植松",
+    "stop_ids": [
+      "88_01",
+      "88_02"
+    ],
+    "distance_m": 62.9,
+    "next_names_by_stop": {
+      "88_01": [
+        "迫"
+      ],
+      "88_02": [
+        "八幡所"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "迫",
+    "stop_ids": [
+      "89_01",
+      "89_02"
+    ],
+    "distance_m": 4.6,
+    "next_names_by_stop": {
+      "89_01": [
+        "安田"
+      ],
+      "89_02": [
+        "植松"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "浅江中学校前",
+    "stop_ids": [
+      "9_01",
+      "9_02"
+    ],
+    "distance_m": 9.1,
+    "next_names_by_stop": {
+      "9_01": [
+        "イオン光店",
+        "土井"
+      ],
+      "9_02": [
+        "光総合病院"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": false,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "安田",
+    "stop_ids": [
+      "90_01",
+      "90_02"
+    ],
+    "distance_m": 8.6,
+    "next_names_by_stop": {
+      "90_01": [
+        "宮河内"
+      ],
+      "90_02": [
+        "迫"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "宮河内",
+    "stop_ids": [
+      "91_01",
+      "91_02"
+    ],
+    "distance_m": 176.4,
+    "next_names_by_stop": {
+      "91_01": [
+        "中村"
+      ],
+      "91_02": [
+        "安田"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "中村",
+    "stop_ids": [
+      "92_01",
+      "92_02"
+    ],
+    "distance_m": 6.9,
+    "next_names_by_stop": {
+      "92_01": [
+        "熊毛中前"
+      ],
+      "92_02": [
+        "宮河内"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "熊毛中前",
+    "stop_ids": [
+      "93_01",
+      "93_02"
+    ],
+    "distance_m": 117.9,
+    "next_names_by_stop": {
+      "93_01": [
+        "ゆめプラザ熊毛"
+      ],
+      "93_02": [
+        "中村"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  },
+  {
+    "stop_name": "鶴見台団地下",
+    "stop_ids": [
+      "95_01",
+      "95_02"
+    ],
+    "distance_m": 49.0,
+    "next_names_by_stop": {
+      "95_01": [
+        "高水駅"
+      ],
+      "95_02": [
+        "ゆめプラザ熊毛"
+      ]
+    },
+    "shared_next_stop_names": [],
+    "single_next_name_each": true,
+    "all_have_next_name": true
+  }
+]

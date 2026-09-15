@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-09-15T04:28:41.653312+00:00",
+  "sources": [
+    {
+      "operator": "船木鉄道",
+      "url": "https://ckan.odpt.org/dataset/odpt_sentetsu_bus_all_lines/resource/eccb7d07-d0af-4aa8-96f4-3e2c55ba87ed",
+      "result": "ユーザー追加提示先を直接確認。リアルタイム情報、形式Protocol Buffers、公共交通オープンデータ基本ライセンス。ページ単体に原乗り場座標・方面対応は掲載されない。バイナリ原本は未取得。車両位置を乗り場原座標として扱わない。",
+      "used_for": "配布情報の確認。今回の位置・方面照合の直接原本は事業者リンク先せんナビ。"
+    },
+    {
+      "operator": "船木鉄道",
+      "url": "https://api.gtfs-data.jp/v2/organizations/sentetsu/feeds/Sentetsubus/files/feed.zip?uid=3089d77c-c4ce-47cc-88aa-72f6324873fa",
+      "result": "旧配布先HTTP404。認証情報の必要なODPTの制限を迂回せず、公式サイトが紹介する公開せんナビを使用。"
+    },
+    {
+      "operator": "いわくにバス",
+      "url": "https://iwakunibus.notion.site/7fbdcf18a0624c44b3bd858b1ac94bb9",
+      "result": "現行公式時刻表ページにたどり着いた。各バス停時刻表・位置ExcelはMicrosoftログインへ遷移し未取得。認証回避は行わない。"
+    },
+    {
+      "operator": "いわくにバス",
+      "url": "https://gtfs-st.busit.jp/api/IwakuniBus",
+      "result": "公式時刻表ページが直接リンクするZIP取得成功。stops238行に和木を含む停留所名は0、shapes.txtなし。今回取得版では和木駅の位置・方面対応を解消できない。calendarの期限のみから現行全路線収録と推定しない。",
+      "file": "iwakunibus-official-download.zip",
+      "bytes": 120586,
+      "sha256": "fa0877f33959ddf1d6533d702aa194d873d8ca88a197ad478fce8690b4b2ee64",
+      "stops": 238,
+      "waki_stops": 0,
+      "files": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "routes.txt",
+        "stops.txt",
+        "translations.txt",
+        "trips.txt",
+        "stop_times.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt"
+      ]
+    },
+    {
+      "operator": "防長交通",
+      "url": "https://transfer-cloud.navitime.biz/bochobus/courses?busstop=00450020",
+      "result": "検索サービスで本社前の方面表示は読めたが、実取得HTTP403。地図の原座標は未取得。方面だけを既存代表点へ割り当てない。"
+    },
+    {
+      "operator": "岩国市",
+      "url": "https://www.city.iwakuni.lg.jp/uploaded/life/116468_725900_misc.pdf",
+      "result": "2026年公共交通マップ和木周辺を画像で確認。概略路線図で、方向別標柱の原座標との対応までは分からない。"
+    },
+    {
+      "operator": "岩国市",
+      "url": "https://www.city.iwakuni.lg.jp/uploaded/life/116468_725901_misc.pdf",
+      "result": "主要駅乗り場案内を画像で確認。和木駅の個別乗り場は対象外。"
+    }
+  ]
+}

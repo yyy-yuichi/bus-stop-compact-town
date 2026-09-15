@@ -1,0 +1,6916 @@
+{
+  "source_url": "https://ajt-mobusta-gtfs.mcapps.jp/static/15/current_data.zip",
+  "distribution_page": "https://www.bus-kyo.or.jp/gtfs-open-data/gtfs-jp-ダウンロード",
+  "retrieved_at": "2026-09-15T02:28:13.338403+00:00",
+  "sha256": "7cbd08bf00c9fd99df1c072dc56c3c37ea09e12c1453ec30b08bee7e13d24fec",
+  "feed_info": [
+    {
+      "feed_publisher_name": "ＪＲバス中国",
+      "feed_publisher_url": "http://www.chugoku-jrbus.co.jp/",
+      "feed_lang": "ja",
+      "feed_start_date": "20260815",
+      "feed_end_date": "20270215",
+      "feed_version": "20260815"
+    }
+  ],
+  "cities": {
+    "防府市": 20,
+    "山口市": 127,
+    "萩市": 75,
+    "美祢市": 43
+  },
+  "points": [
+    {
+      "id": "jr-chugoku:60001 1",
+      "source_stop_id": "60001 1",
+      "name": "防府駅",
+      "original_coordinates": [
+        131.5690436,
+        34.0536011
+      ],
+      "city": "防府市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60001 1",
+        "stop_code": "",
+        "stop_name": "防府駅",
+        "stop_desc": "",
+        "stop_lat": "34.0536011",
+        "stop_lon": "131.5690436",
+        "zone_id": "60001 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60001 2",
+      "source_stop_id": "60001 2",
+      "name": "防府駅",
+      "original_coordinates": [
+        131.5690476,
+        34.0536011
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60001 2",
+        "stop_code": "",
+        "stop_name": "防府駅",
+        "stop_desc": "",
+        "stop_lat": "34.0536011",
+        "stop_lon": "131.5690476",
+        "zone_id": "60001 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": "1"
+      }
+    },
+    {
+      "id": "jr-chugoku:60002 1",
+      "source_stop_id": "60002 1",
+      "name": "八王子",
+      "original_coordinates": [
+        131.5667436,
+        34.0572707
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60002 1",
+        "stop_code": "",
+        "stop_name": "八王子",
+        "stop_desc": "",
+        "stop_lat": "34.0572707",
+        "stop_lon": "131.5667436",
+        "zone_id": "60002 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60002 2",
+      "source_stop_id": "60002 2",
+      "name": "八王子",
+      "original_coordinates": [
+        131.5672264,
+        34.0570951
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60002 2",
+        "stop_code": "",
+        "stop_name": "八王子",
+        "stop_desc": "",
+        "stop_lat": "34.0570951",
+        "stop_lon": "131.5672264",
+        "zone_id": "60002 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60003 1",
+      "source_stop_id": "60003 1",
+      "name": "千日町",
+      "original_coordinates": [
+        131.5610235,
+        34.0600453
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60003 1",
+        "stop_code": "",
+        "stop_name": "千日町",
+        "stop_desc": "",
+        "stop_lat": "34.0600453",
+        "stop_lon": "131.5610235",
+        "zone_id": "60003 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60003 2",
+      "source_stop_id": "60003 2",
+      "name": "千日町",
+      "original_coordinates": [
+        131.5609417,
+        34.0598814
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60003 2",
+        "stop_code": "",
+        "stop_name": "千日町",
+        "stop_desc": "",
+        "stop_lat": "34.0598814",
+        "stop_lon": "131.5609417",
+        "zone_id": "60003 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60004 1",
+      "source_stop_id": "60004 1",
+      "name": "新橋",
+      "original_coordinates": [
+        131.5590804,
+        34.0621928
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60004 1",
+        "stop_code": "",
+        "stop_name": "新橋",
+        "stop_desc": "",
+        "stop_lat": "34.0621928",
+        "stop_lon": "131.5590804",
+        "zone_id": "60004 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60004 2",
+      "source_stop_id": "60004 2",
+      "name": "新橋",
+      "original_coordinates": [
+        131.5582826,
+        34.0628272
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60004 2",
+        "stop_code": "",
+        "stop_name": "新橋",
+        "stop_desc": "",
+        "stop_lat": "34.0628272",
+        "stop_lon": "131.5582826",
+        "zone_id": "60004 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60005 1",
+      "source_stop_id": "60005 1",
+      "name": "右田",
+      "original_coordinates": [
+        131.5550034,
+        34.0703913
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60005 1",
+        "stop_code": "",
+        "stop_name": "右田",
+        "stop_desc": "",
+        "stop_lat": "34.0703913",
+        "stop_lon": "131.5550034",
+        "zone_id": "60005 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60005 2",
+      "source_stop_id": "60005 2",
+      "name": "右田",
+      "original_coordinates": [
+        131.5545138,
+        34.0710568
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60005 2",
+        "stop_code": "",
+        "stop_name": "右田",
+        "stop_desc": "",
+        "stop_lat": "34.0710568",
+        "stop_lon": "131.5545138",
+        "zone_id": "60005 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60006 1",
+      "source_stop_id": "60006 1",
+      "name": "勝坂",
+      "original_coordinates": [
+        131.5508811,
+        34.0805191
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60006 1",
+        "stop_code": "",
+        "stop_name": "勝坂",
+        "stop_desc": "",
+        "stop_lat": "34.0805191",
+        "stop_lon": "131.5508811",
+        "zone_id": "60006 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60006 2",
+      "source_stop_id": "60006 2",
+      "name": "勝坂",
+      "original_coordinates": [
+        131.5500003,
+        34.0815811
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60006 2",
+        "stop_code": "",
+        "stop_name": "勝坂",
+        "stop_desc": "",
+        "stop_lat": "34.0815811",
+        "stop_lon": "131.5500003",
+        "zone_id": "60006 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60007 1",
+      "source_stop_id": "60007 1",
+      "name": "上勝坂",
+      "original_coordinates": [
+        131.54779,
+        34.0866861
+      ],
+      "city": "防府市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60007 1",
+        "stop_code": "",
+        "stop_name": "上勝坂",
+        "stop_desc": "",
+        "stop_lat": "34.0866861",
+        "stop_lon": "131.54779",
+        "zone_id": "60007 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60007 2",
+      "source_stop_id": "60007 2",
+      "name": "上勝坂",
+      "original_coordinates": [
+        131.5475504,
+        34.0866439
+      ],
+      "city": "防府市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60007 2",
+        "stop_code": "",
+        "stop_name": "上勝坂",
+        "stop_desc": "",
+        "stop_lat": "34.0866439",
+        "stop_lon": "131.5475504",
+        "zone_id": "60007 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60008 1",
+      "source_stop_id": "60008 1",
+      "name": "洞道北口",
+      "original_coordinates": [
+        131.539877,
+        34.1022377
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60008 1",
+        "stop_code": "",
+        "stop_name": "洞道北口",
+        "stop_desc": "",
+        "stop_lat": "34.1022377",
+        "stop_lon": "131.539877",
+        "zone_id": "60008 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60008 2",
+      "source_stop_id": "60008 2",
+      "name": "洞道北口",
+      "original_coordinates": [
+        131.5398752,
+        34.1019633
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60008 2",
+        "stop_code": "",
+        "stop_name": "洞道北口",
+        "stop_desc": "",
+        "stop_lat": "34.1019633",
+        "stop_lon": "131.5398752",
+        "zone_id": "60008 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60009 1",
+      "source_stop_id": "60009 1",
+      "name": "上鯖山",
+      "original_coordinates": [
+        131.5361164,
+        34.1092135
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60009 1",
+        "stop_code": "",
+        "stop_name": "上鯖山",
+        "stop_desc": "",
+        "stop_lat": "34.1092135",
+        "stop_lon": "131.5361164",
+        "zone_id": "60009 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60009 2",
+      "source_stop_id": "60009 2",
+      "name": "上鯖山",
+      "original_coordinates": [
+        131.5357494,
+        34.1094657
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60009 2",
+        "stop_code": "",
+        "stop_name": "上鯖山",
+        "stop_desc": "",
+        "stop_lat": "34.1094657",
+        "stop_lon": "131.5357494",
+        "zone_id": "60009 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60010 1",
+      "source_stop_id": "60010 1",
+      "name": "禅昌寺前",
+      "original_coordinates": [
+        131.5327426,
+        34.1161937
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60010 1",
+        "stop_code": "",
+        "stop_name": "禅昌寺前",
+        "stop_desc": "",
+        "stop_lat": "34.1161937",
+        "stop_lon": "131.5327426",
+        "zone_id": "60010 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60010 2",
+      "source_stop_id": "60010 2",
+      "name": "禅昌寺前",
+      "original_coordinates": [
+        131.5320865,
+        34.1170181
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60010 2",
+        "stop_code": "",
+        "stop_name": "禅昌寺前",
+        "stop_desc": "",
+        "stop_lat": "34.1170181",
+        "stop_lon": "131.5320865",
+        "zone_id": "60010 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60011 1",
+      "source_stop_id": "60011 1",
+      "name": "下鯖山",
+      "original_coordinates": [
+        131.5308926,
+        34.119879
+      ],
+      "city": "山口市",
+      "official_direction": "防府方面",
+      "original": {
+        "stop_id": "60011 1",
+        "stop_code": "",
+        "stop_name": "下鯖山",
+        "stop_desc": "",
+        "stop_lat": "34.119879",
+        "stop_lon": "131.5308926",
+        "zone_id": "60011 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60011 2",
+      "source_stop_id": "60011 2",
+      "name": "下鯖山",
+      "original_coordinates": [
+        131.5308051,
+        34.1195545
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60011 2",
+        "stop_code": "",
+        "stop_name": "下鯖山",
+        "stop_desc": "",
+        "stop_lat": "34.1195545",
+        "stop_lon": "131.5308051",
+        "zone_id": "60011 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60012 1",
+      "source_stop_id": "60012 1",
+      "name": "八反田",
+      "original_coordinates": [
+        131.5277686,
+        34.1270284
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60012 1",
+        "stop_code": "",
+        "stop_name": "八反田",
+        "stop_desc": "",
+        "stop_lat": "34.1270284",
+        "stop_lon": "131.5277686",
+        "zone_id": "60012 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60012 2",
+      "source_stop_id": "60012 2",
+      "name": "八反田",
+      "original_coordinates": [
+        131.5268839,
+        34.1288256
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60012 2",
+        "stop_code": "",
+        "stop_name": "八反田",
+        "stop_desc": "",
+        "stop_lat": "34.1288256",
+        "stop_lon": "131.5268839",
+        "zone_id": "60012 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60013 1",
+      "source_stop_id": "60013 1",
+      "name": "鳴滝",
+      "original_coordinates": [
+        131.5260297,
+        34.1319197
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60013 1",
+        "stop_code": "",
+        "stop_name": "鳴滝",
+        "stop_desc": "",
+        "stop_lat": "34.1319197",
+        "stop_lon": "131.5260297",
+        "zone_id": "60013 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60013 2",
+      "source_stop_id": "60013 2",
+      "name": "鳴滝",
+      "original_coordinates": [
+        131.525793,
+        34.1319469
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60013 2",
+        "stop_code": "",
+        "stop_name": "鳴滝",
+        "stop_desc": "",
+        "stop_lat": "34.1319469",
+        "stop_lon": "131.525793",
+        "zone_id": "60013 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60014 1",
+      "source_stop_id": "60014 1",
+      "name": "鯖地",
+      "original_coordinates": [
+        131.5230128,
+        34.14016438
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60014 1",
+        "stop_code": "",
+        "stop_name": "鯖地",
+        "stop_desc": "",
+        "stop_lat": "34.14016438",
+        "stop_lon": "131.5230128",
+        "zone_id": "60014 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60014 2",
+      "source_stop_id": "60014 2",
+      "name": "鯖地",
+      "original_coordinates": [
+        131.5227875,
+        34.1401465
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60014 2",
+        "stop_code": "",
+        "stop_name": "鯖地",
+        "stop_desc": "",
+        "stop_lat": "34.1401465",
+        "stop_lon": "131.5227875",
+        "zone_id": "60014 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60015 1",
+      "source_stop_id": "60015 1",
+      "name": "柊",
+      "original_coordinates": [
+        131.5205169,
+        34.1477118
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60015 1",
+        "stop_code": "",
+        "stop_name": "柊",
+        "stop_desc": "",
+        "stop_lat": "34.1477118",
+        "stop_lon": "131.5205169",
+        "zone_id": "60015 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60015 2",
+      "source_stop_id": "60015 2",
+      "name": "柊",
+      "original_coordinates": [
+        131.5199886,
+        34.1479479
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60015 2",
+        "stop_code": "",
+        "stop_name": "柊",
+        "stop_desc": "",
+        "stop_lat": "34.1479479",
+        "stop_lon": "131.5199886",
+        "zone_id": "60015 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60016 1",
+      "source_stop_id": "60016 1",
+      "name": "大内中学校前",
+      "original_coordinates": [
+        131.5160948,
+        34.1524852
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60016 1",
+        "stop_code": "",
+        "stop_name": "大内中学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1524852",
+        "stop_lon": "131.5160948",
+        "zone_id": "60016 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60016 2",
+      "source_stop_id": "60016 2",
+      "name": "大内中学校前",
+      "original_coordinates": [
+        131.5162151,
+        34.1523535
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60016 2",
+        "stop_code": "",
+        "stop_name": "大内中学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1523535",
+        "stop_lon": "131.5162151",
+        "zone_id": "60016 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60017 1",
+      "source_stop_id": "60017 1",
+      "name": "矢田",
+      "original_coordinates": [
+        131.5094731,
+        34.1538472
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60017 1",
+        "stop_code": "",
+        "stop_name": "矢田",
+        "stop_desc": "",
+        "stop_lat": "34.1538472",
+        "stop_lon": "131.5094731",
+        "zone_id": "60017 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60017 2",
+      "source_stop_id": "60017 2",
+      "name": "矢田",
+      "original_coordinates": [
+        131.5091717,
+        34.1538082
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60017 2",
+        "stop_code": "",
+        "stop_name": "矢田",
+        "stop_desc": "",
+        "stop_lat": "34.1538082",
+        "stop_lon": "131.5091717",
+        "zone_id": "60017 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60018 1",
+      "source_stop_id": "60018 1",
+      "name": "光円寺前",
+      "original_coordinates": [
+        131.5016572,
+        34.1557235
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60018 1",
+        "stop_code": "",
+        "stop_name": "光円寺前",
+        "stop_desc": "",
+        "stop_lat": "34.1557235",
+        "stop_lon": "131.5016572",
+        "zone_id": "60018 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60018 2",
+      "source_stop_id": "60018 2",
+      "name": "光円寺前",
+      "original_coordinates": [
+        131.5016105,
+        34.1555974
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60018 2",
+        "stop_code": "",
+        "stop_name": "光円寺前",
+        "stop_desc": "",
+        "stop_lat": "34.1555974",
+        "stop_lon": "131.5016105",
+        "zone_id": "60018 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60019 1",
+      "source_stop_id": "60019 1",
+      "name": "大内小学校前",
+      "original_coordinates": [
+        131.4993315,
+        34.1563011
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60019 1",
+        "stop_code": "",
+        "stop_name": "大内小学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1563011",
+        "stop_lon": "131.4993315",
+        "zone_id": "60019 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60019 2",
+      "source_stop_id": "60019 2",
+      "name": "大内小学校前",
+      "original_coordinates": [
+        131.4981445,
+        34.1564228
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60019 2",
+        "stop_code": "",
+        "stop_name": "大内小学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1564228",
+        "stop_lon": "131.4981445",
+        "zone_id": "60019 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60020 1",
+      "source_stop_id": "60020 1",
+      "name": "御堀橋",
+      "original_coordinates": [
+        131.485769,
+        34.1654122
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60020 1",
+        "stop_code": "",
+        "stop_name": "御堀橋",
+        "stop_desc": "",
+        "stop_lat": "34.1654122",
+        "stop_lon": "131.485769",
+        "zone_id": "60020 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60020 2",
+      "source_stop_id": "60020 2",
+      "name": "御堀橋",
+      "original_coordinates": [
+        131.4860471,
+        34.1648761
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60020 2",
+        "stop_code": "",
+        "stop_name": "御堀橋",
+        "stop_desc": "",
+        "stop_lat": "34.1648761",
+        "stop_lon": "131.4860471",
+        "zone_id": "60020 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60021 1",
+      "source_stop_id": "60021 1",
+      "name": "宮島町",
+      "original_coordinates": [
+        131.4797575,
+        34.1671164
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60021 1",
+        "stop_code": "",
+        "stop_name": "宮島町",
+        "stop_desc": "",
+        "stop_lat": "34.1671164",
+        "stop_lon": "131.4797575",
+        "zone_id": "60021 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60021 2",
+      "source_stop_id": "60021 2",
+      "name": "宮島町",
+      "original_coordinates": [
+        131.4784376,
+        34.1673273
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60021 2",
+        "stop_code": "",
+        "stop_name": "宮島町",
+        "stop_desc": "",
+        "stop_lat": "34.1673273",
+        "stop_lon": "131.4784376",
+        "zone_id": "60021 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60023 1",
+      "source_stop_id": "60023 1",
+      "name": "白石",
+      "original_coordinates": [
+        131.4716149,
+        34.1790023
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60023 1",
+        "stop_code": "",
+        "stop_name": "白石",
+        "stop_desc": "",
+        "stop_lat": "34.1790023",
+        "stop_lon": "131.4716149",
+        "zone_id": "60023 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60023 2",
+      "source_stop_id": "60023 2",
+      "name": "白石",
+      "original_coordinates": [
+        131.471172,
+        34.1798844
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞方面",
+      "original": {
+        "stop_id": "60023 2",
+        "stop_code": "",
+        "stop_name": "白石",
+        "stop_desc": "",
+        "stop_lat": "34.1798844",
+        "stop_lon": "131.471172",
+        "zone_id": "60023 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60024 1",
+      "source_stop_id": "60024 1",
+      "name": "山口県庁前",
+      "original_coordinates": [
+        131.4717932,
+        34.18362
+      ],
+      "city": "山口市",
+      "official_direction": "防府・山口駅方面",
+      "original": {
+        "stop_id": "60024 1",
+        "stop_code": "",
+        "stop_name": "山口県庁前",
+        "stop_desc": "",
+        "stop_lat": "34.18362",
+        "stop_lon": "131.4717932",
+        "zone_id": "60024 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60024 2",
+      "source_stop_id": "60024 2",
+      "name": "山口県庁前",
+      "original_coordinates": [
+        131.4716041,
+        34.1836321
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉方面",
+      "original": {
+        "stop_id": "60024 2",
+        "stop_code": "",
+        "stop_name": "山口県庁前",
+        "stop_desc": "",
+        "stop_lat": "34.1836321",
+        "stop_lon": "131.4716041",
+        "zone_id": "60024 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60024 4",
+      "source_stop_id": "60024 4",
+      "name": "山口県庁前",
+      "original_coordinates": [
+        131.471695,
+        34.1837385
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60024 4",
+        "stop_code": "",
+        "stop_name": "山口県庁前",
+        "stop_desc": "",
+        "stop_lat": "34.1837385",
+        "stop_lon": "131.471695",
+        "zone_id": "60024 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60025 1",
+      "source_stop_id": "60025 1",
+      "name": "美術館前",
+      "original_coordinates": [
+        131.4753204,
+        34.1797827
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60025 1",
+        "stop_code": "",
+        "stop_name": "美術館前",
+        "stop_desc": "",
+        "stop_lat": "34.1797827",
+        "stop_lon": "131.4753204",
+        "zone_id": "60025 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60025 2",
+      "source_stop_id": "60025 2",
+      "name": "美術館前",
+      "original_coordinates": [
+        131.4745383,
+        34.1813063
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・東萩方面",
+      "original": {
+        "stop_id": "60025 2",
+        "stop_code": "",
+        "stop_name": "美術館前",
+        "stop_desc": "",
+        "stop_lat": "34.1813063",
+        "stop_lon": "131.4745383",
+        "zone_id": "60025 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60025 3",
+      "source_stop_id": "60025 3",
+      "name": "美術館前",
+      "original_coordinates": [
+        131.4753205,
+        34.1797797
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60025 3",
+        "stop_code": "",
+        "stop_name": "美術館前",
+        "stop_desc": "",
+        "stop_lat": "34.1797797",
+        "stop_lon": "131.4753205",
+        "zone_id": "60025 3",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60025 4",
+      "source_stop_id": "60025 4",
+      "name": "美術館前",
+      "original_coordinates": [
+        131.4745338,
+        34.1813064
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・東萩方面",
+      "original": {
+        "stop_id": "60025 4",
+        "stop_code": "",
+        "stop_name": "美術館前",
+        "stop_desc": "",
+        "stop_lat": "34.1813064",
+        "stop_lon": "131.4745338",
+        "zone_id": "60025 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60026 1",
+      "source_stop_id": "60026 1",
+      "name": "米屋町",
+      "original_coordinates": [
+        131.4763103,
+        34.176825
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60026 1",
+        "stop_code": "",
+        "stop_name": "米屋町",
+        "stop_desc": "",
+        "stop_lat": "34.176825",
+        "stop_lon": "131.4763103",
+        "zone_id": "60026 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60026 2",
+      "source_stop_id": "60026 2",
+      "name": "米屋町",
+      "original_coordinates": [
+        131.4765693,
+        34.1765469
+      ],
+      "city": "山口市",
+      "official_direction": "新山口駅・山口大学・中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60026 2",
+        "stop_code": "",
+        "stop_name": "米屋町",
+        "stop_desc": "",
+        "stop_lat": "34.1765469",
+        "stop_lon": "131.4765693",
+        "zone_id": "60026 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60026 3",
+      "source_stop_id": "60026 3",
+      "name": "米屋町",
+      "original_coordinates": [
+        131.4763102,
+        34.1768256
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60026 3",
+        "stop_code": "",
+        "stop_name": "米屋町",
+        "stop_desc": "",
+        "stop_lat": "34.1768256",
+        "stop_lon": "131.4763102",
+        "zone_id": "60026 3",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60026 4",
+      "source_stop_id": "60026 4",
+      "name": "米屋町",
+      "original_coordinates": [
+        131.4765683,
+        34.176548
+      ],
+      "city": "山口市",
+      "official_direction": "新山口駅・山口大学・中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60026 4",
+        "stop_code": "",
+        "stop_name": "米屋町",
+        "stop_desc": "",
+        "stop_lat": "34.176548",
+        "stop_lon": "131.4765683",
+        "zone_id": "60026 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60027 1",
+      "source_stop_id": "60027 1",
+      "name": "今市通",
+      "original_coordinates": [
+        131.4787821,
+        34.1744938
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60027 1",
+        "stop_code": "",
+        "stop_name": "今市通",
+        "stop_desc": "",
+        "stop_lat": "34.1744938",
+        "stop_lon": "131.4787821",
+        "zone_id": "60027 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60027 2",
+      "source_stop_id": "60027 2",
+      "name": "今市通",
+      "original_coordinates": [
+        131.478983,
+        34.1741619
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・東萩方面",
+      "original": {
+        "stop_id": "60027 2",
+        "stop_code": "",
+        "stop_name": "今市通",
+        "stop_desc": "",
+        "stop_lat": "34.1741619",
+        "stop_lon": "131.478983",
+        "zone_id": "60027 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60027 3",
+      "source_stop_id": "60027 3",
+      "name": "今市通",
+      "original_coordinates": [
+        131.4787811,
+        34.1744949
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60027 3",
+        "stop_code": "",
+        "stop_name": "今市通",
+        "stop_desc": "",
+        "stop_lat": "34.1744949",
+        "stop_lon": "131.4787811",
+        "zone_id": "60027 3",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60027 4",
+      "source_stop_id": "60027 4",
+      "name": "今市通",
+      "original_coordinates": [
+        131.4789836,
+        34.1741621
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・東萩方面",
+      "original": {
+        "stop_id": "60027 4",
+        "stop_code": "",
+        "stop_name": "今市通",
+        "stop_desc": "",
+        "stop_lat": "34.1741621",
+        "stop_lon": "131.4789836",
+        "zone_id": "60027 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60028 1",
+      "source_stop_id": "60028 1",
+      "name": "山口駅",
+      "original_coordinates": [
+        131.480456,
+        34.1726269
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・東萩方面",
+      "original": {
+        "stop_id": "60028 1",
+        "stop_code": "",
+        "stop_name": "山口駅",
+        "stop_desc": "",
+        "stop_lat": "34.1726269",
+        "stop_lon": "131.480456",
+        "zone_id": "60028 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": "1"
+      }
+    },
+    {
+      "id": "jr-chugoku:60028 2",
+      "source_stop_id": "60028 2",
+      "name": "山口駅",
+      "original_coordinates": [
+        131.4803905,
+        34.1725446
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60028 2",
+        "stop_code": "",
+        "stop_name": "山口駅",
+        "stop_desc": "",
+        "stop_lat": "34.1725446",
+        "stop_lon": "131.4803905",
+        "zone_id": "60028 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": "2"
+      }
+    },
+    {
+      "id": "jr-chugoku:60028 4",
+      "source_stop_id": "60028 4",
+      "name": "山口駅",
+      "original_coordinates": [
+        131.480458,
+        34.1726259
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・東萩方面",
+      "original": {
+        "stop_id": "60028 4",
+        "stop_code": "",
+        "stop_name": "山口駅",
+        "stop_desc": "",
+        "stop_lat": "34.1726259",
+        "stop_lon": "131.480458",
+        "zone_id": "60028 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": "1"
+      }
+    },
+    {
+      "id": "jr-chugoku:60029 1",
+      "source_stop_id": "60029 1",
+      "name": "ゆめタウン山口",
+      "original_coordinates": [
+        131.4918512,
+        34.1593757
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60029 1",
+        "stop_code": "",
+        "stop_name": "ゆめタウン山口",
+        "stop_desc": "",
+        "stop_lat": "34.1593757",
+        "stop_lon": "131.4918512",
+        "zone_id": "60029 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60029 2",
+      "source_stop_id": "60029 2",
+      "name": "ゆめタウン山口",
+      "original_coordinates": [
+        131.491853,
+        34.1593762
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60029 2",
+        "stop_code": "",
+        "stop_name": "ゆめタウン山口",
+        "stop_desc": "",
+        "stop_lat": "34.1593762",
+        "stop_lon": "131.491853",
+        "zone_id": "60029 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60030 1",
+      "source_stop_id": "60030 1",
+      "name": "昭和町",
+      "original_coordinates": [
+        131.4774211,
+        34.170363
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60030 1",
+        "stop_code": "",
+        "stop_name": "昭和町",
+        "stop_desc": "",
+        "stop_lat": "34.170363",
+        "stop_lon": "131.4774211",
+        "zone_id": "60030 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60030 2",
+      "source_stop_id": "60030 2",
+      "name": "昭和町",
+      "original_coordinates": [
+        131.4773413,
+        34.1704125
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60030 2",
+        "stop_code": "",
+        "stop_name": "昭和町",
+        "stop_desc": "",
+        "stop_lat": "34.1704125",
+        "stop_lon": "131.4773413",
+        "zone_id": "60030 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60031 1",
+      "source_stop_id": "60031 1",
+      "name": "中国電力・ｙａｂ前",
+      "original_coordinates": [
+        131.4733587,
+        34.176233
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60031 1",
+        "stop_code": "",
+        "stop_name": "中国電力・ｙａｂ前",
+        "stop_desc": "",
+        "stop_lat": "34.176233",
+        "stop_lon": "131.4733587",
+        "zone_id": "60031 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60031 2",
+      "source_stop_id": "60031 2",
+      "name": "中国電力・ｙａｂ前",
+      "original_coordinates": [
+        131.4726748,
+        34.1754308
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉・新山口方面",
+      "original": {
+        "stop_id": "60031 2",
+        "stop_code": "",
+        "stop_name": "中国電力・ｙａｂ前",
+        "stop_desc": "",
+        "stop_lat": "34.1754308",
+        "stop_lon": "131.4726748",
+        "zone_id": "60031 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60032 1",
+      "source_stop_id": "60032 1",
+      "name": "商工会館前",
+      "original_coordinates": [
+        131.4691892,
+        34.1721978
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60032 1",
+        "stop_code": "",
+        "stop_name": "商工会館前",
+        "stop_desc": "",
+        "stop_lat": "34.1721978",
+        "stop_lon": "131.4691892",
+        "zone_id": "60032 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60032 2",
+      "source_stop_id": "60032 2",
+      "name": "商工会館前",
+      "original_coordinates": [
+        131.4688921,
+        34.1718225
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉・新山口方面",
+      "original": {
+        "stop_id": "60032 2",
+        "stop_code": "",
+        "stop_name": "商工会館前",
+        "stop_desc": "",
+        "stop_lat": "34.1718225",
+        "stop_lon": "131.4688921",
+        "zone_id": "60032 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60033 1",
+      "source_stop_id": "60033 1",
+      "name": "情報芸術センター前",
+      "original_coordinates": [
+        131.4662013,
+        34.1703356
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60033 1",
+        "stop_code": "",
+        "stop_name": "情報芸術センター前",
+        "stop_desc": "",
+        "stop_lat": "34.1703356",
+        "stop_lon": "131.4662013",
+        "zone_id": "60033 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60033 2",
+      "source_stop_id": "60033 2",
+      "name": "情報芸術センター前",
+      "original_coordinates": [
+        131.4655618,
+        34.1697757
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉・新山口方面",
+      "original": {
+        "stop_id": "60033 2",
+        "stop_code": "",
+        "stop_name": "情報芸術センター前",
+        "stop_desc": "",
+        "stop_lat": "34.1697757",
+        "stop_lon": "131.4655618",
+        "zone_id": "60033 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60034 1",
+      "source_stop_id": "60034 1",
+      "name": "ＮＴＴ山口前",
+      "original_coordinates": [
+        131.4622094,
+        34.1678965
+      ],
+      "city": "山口市",
+      "official_direction": "防府・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60034 1",
+        "stop_code": "",
+        "stop_name": "ＮＴＴ山口前",
+        "stop_desc": "",
+        "stop_lat": "34.1678965",
+        "stop_lon": "131.4622094",
+        "zone_id": "60034 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60034 2",
+      "source_stop_id": "60034 2",
+      "name": "ＮＴＴ山口前",
+      "original_coordinates": [
+        131.4615699,
+        34.1673227
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉・新山口方面",
+      "original": {
+        "stop_id": "60034 2",
+        "stop_code": "",
+        "stop_name": "ＮＴＴ山口前",
+        "stop_desc": "",
+        "stop_lat": "34.1673227",
+        "stop_lon": "131.4615699",
+        "zone_id": "60034 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60035 0",
+      "source_stop_id": "60035 0",
+      "name": "湯田温泉通",
+      "original_coordinates": [
+        131.45755043241,
+        34.1649105938567
+      ],
+      "city": "山口市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60035 0",
+        "stop_code": "",
+        "stop_name": "湯田温泉通",
+        "stop_desc": "",
+        "stop_lat": "34.164910593856699996435",
+        "stop_lon": "131.4575504324099999984654",
+        "zone_id": "60035 0",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60035 1",
+      "source_stop_id": "60035 1",
+      "name": "湯田温泉通",
+      "original_coordinates": [
+        131.4579029,
+        34.1652478
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60035 1",
+        "stop_code": "",
+        "stop_name": "湯田温泉通",
+        "stop_desc": "",
+        "stop_lat": "34.1652478",
+        "stop_lon": "131.4579029",
+        "zone_id": "60035 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60035 2",
+      "source_stop_id": "60035 2",
+      "name": "湯田温泉通",
+      "original_coordinates": [
+        131.4578645,
+        34.1650728
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・中尾口・秋芳洞・湯田温泉・新山口方面",
+      "original": {
+        "stop_id": "60035 2",
+        "stop_code": "",
+        "stop_name": "湯田温泉通",
+        "stop_desc": "",
+        "stop_lat": "34.1650728",
+        "stop_lon": "131.4578645",
+        "zone_id": "60035 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60036 1",
+      "source_stop_id": "60036 1",
+      "name": "下湯田",
+      "original_coordinates": [
+        131.4554689,
+        34.1637684
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60036 1",
+        "stop_code": "",
+        "stop_name": "下湯田",
+        "stop_desc": "",
+        "stop_lat": "34.1637684",
+        "stop_lon": "131.4554689",
+        "zone_id": "60036 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60036 2",
+      "source_stop_id": "60036 2",
+      "name": "下湯田",
+      "original_coordinates": [
+        131.4537871,
+        34.1634907
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60036 2",
+        "stop_code": "",
+        "stop_name": "下湯田",
+        "stop_desc": "",
+        "stop_lat": "34.1634907",
+        "stop_lon": "131.4537871",
+        "zone_id": "60036 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60036 4",
+      "source_stop_id": "60036 4",
+      "name": "下湯田",
+      "original_coordinates": [
+        131.4553833,
+        34.1622115
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・湯田温泉方面",
+      "original": {
+        "stop_id": "60036 4",
+        "stop_code": "",
+        "stop_name": "下湯田",
+        "stop_desc": "",
+        "stop_lat": "34.1622115",
+        "stop_lon": "131.4553833",
+        "zone_id": "60036 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60037 1",
+      "source_stop_id": "60037 1",
+      "name": "湯田温泉駅入口",
+      "original_coordinates": [
+        131.4593135,
+        34.1580959
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60037 1",
+        "stop_code": "",
+        "stop_name": "湯田温泉駅入口",
+        "stop_desc": "",
+        "stop_lat": "34.1580959",
+        "stop_lon": "131.4593135",
+        "zone_id": "60037 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60037 2",
+      "source_stop_id": "60037 2",
+      "name": "湯田温泉駅入口",
+      "original_coordinates": [
+        131.4598802,
+        34.1576825
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学方面",
+      "original": {
+        "stop_id": "60037 2",
+        "stop_code": "",
+        "stop_name": "湯田温泉駅入口",
+        "stop_desc": "",
+        "stop_lat": "34.1576825",
+        "stop_lon": "131.4598802",
+        "zone_id": "60037 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60038 1",
+      "source_stop_id": "60038 1",
+      "name": "あいわたせ",
+      "original_coordinates": [
+        131.4614638,
+        34.155935
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60038 1",
+        "stop_code": "",
+        "stop_name": "あいわたせ",
+        "stop_desc": "",
+        "stop_lat": "34.155935",
+        "stop_lon": "131.4614638",
+        "zone_id": "60038 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60038 2",
+      "source_stop_id": "60038 2",
+      "name": "あいわたせ",
+      "original_coordinates": [
+        131.4613522,
+        34.156182
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学方面",
+      "original": {
+        "stop_id": "60038 2",
+        "stop_code": "",
+        "stop_name": "あいわたせ",
+        "stop_desc": "",
+        "stop_lat": "34.156182",
+        "stop_lon": "131.4613522",
+        "zone_id": "60038 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60039 1",
+      "source_stop_id": "60039 1",
+      "name": "台",
+      "original_coordinates": [
+        131.46457,
+        34.1525747
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60039 1",
+        "stop_code": "",
+        "stop_name": "台",
+        "stop_desc": "",
+        "stop_lat": "34.1525747",
+        "stop_lon": "131.46457",
+        "zone_id": "60039 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60039 2",
+      "source_stop_id": "60039 2",
+      "name": "台",
+      "original_coordinates": [
+        131.4654701,
+        34.1516232
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学方面",
+      "original": {
+        "stop_id": "60039 2",
+        "stop_code": "",
+        "stop_name": "台",
+        "stop_desc": "",
+        "stop_lat": "34.1516232",
+        "stop_lon": "131.4654701",
+        "zone_id": "60039 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60040 1",
+      "source_stop_id": "60040 1",
+      "name": "山口大学",
+      "original_coordinates": [
+        131.466483757389,
+        34.14897912043555
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60040 1",
+        "stop_code": "",
+        "stop_name": "山口大学",
+        "stop_desc": "",
+        "stop_lat": "34.148979120435550725614",
+        "stop_lon": "131.4664837573890113204626",
+        "zone_id": "60040 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60040 2",
+      "source_stop_id": "60040 2",
+      "name": "山口大学",
+      "original_coordinates": [
+        131.466483757389,
+        34.14897912043555
+      ],
+      "city": "山口市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60040 2",
+        "stop_code": "",
+        "stop_name": "山口大学",
+        "stop_desc": "",
+        "stop_lat": "34.148979120435550725614",
+        "stop_lon": "131.4664837573890113204626",
+        "zone_id": "60040 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60041 1",
+      "source_stop_id": "60041 1",
+      "name": "山口大学前",
+      "original_coordinates": [
+        131.4664835,
+        34.1489866
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅方面",
+      "original": {
+        "stop_id": "60041 1",
+        "stop_code": "",
+        "stop_name": "山口大学前",
+        "stop_desc": "",
+        "stop_lat": "34.1489866",
+        "stop_lon": "131.4664835",
+        "zone_id": "60041 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60042 1",
+      "source_stop_id": "60042 1",
+      "name": "山口市民会館前",
+      "original_coordinates": [
+        131.474327,
+        34.1767958
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅・東萩方面",
+      "original": {
+        "stop_id": "60042 1",
+        "stop_code": "",
+        "stop_name": "山口市民会館前",
+        "stop_desc": "",
+        "stop_lat": "34.1767958",
+        "stop_lon": "131.474327",
+        "zone_id": "60042 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60043 10",
+      "source_stop_id": "60043 10",
+      "name": "新山口駅",
+      "original_coordinates": [
+        131.3962014,
+        34.0942142
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60043 10",
+        "stop_code": "",
+        "stop_name": "新山口駅",
+        "stop_desc": "",
+        "stop_lat": "34.0942142",
+        "stop_lon": "131.3962014",
+        "zone_id": "60043 10",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": "2"
+      }
+    },
+    {
+      "id": "jr-chugoku:60043 11",
+      "source_stop_id": "60043 11",
+      "name": "新山口駅",
+      "original_coordinates": [
+        131.3965218,
+        34.0944183
+      ],
+      "city": "山口市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60043 11",
+        "stop_code": "",
+        "stop_name": "新山口駅",
+        "stop_desc": "",
+        "stop_lat": "34.0944183",
+        "stop_lon": "131.3965218",
+        "zone_id": "60043 11",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60044 1",
+      "source_stop_id": "60044 1",
+      "name": "スポーツの森前",
+      "original_coordinates": [
+        131.5093809,
+        34.2033606
+      ],
+      "city": "山口市",
+      "official_direction": "湯田温泉駅方面",
+      "original": {
+        "stop_id": "60044 1",
+        "stop_code": "",
+        "stop_name": "スポーツの森前",
+        "stop_desc": "",
+        "stop_lat": "34.2033606",
+        "stop_lon": "131.5093809",
+        "zone_id": "60044 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60044 2",
+      "source_stop_id": "60044 2",
+      "name": "スポーツの森前",
+      "original_coordinates": [
+        131.5090483,
+        34.2033607
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60044 2",
+        "stop_code": "",
+        "stop_name": "スポーツの森前",
+        "stop_desc": "",
+        "stop_lat": "34.2033607",
+        "stop_lon": "131.5090483",
+        "zone_id": "60044 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60045 1",
+      "source_stop_id": "60045 1",
+      "name": "宮野新橋",
+      "original_coordinates": [
+        131.512336,
+        34.2055994
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60045 1",
+        "stop_code": "",
+        "stop_name": "宮野新橋",
+        "stop_desc": "",
+        "stop_lat": "34.2055994",
+        "stop_lon": "131.512336",
+        "zone_id": "60045 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60045 2",
+      "source_stop_id": "60045 2",
+      "name": "宮野新橋",
+      "original_coordinates": [
+        131.5121445,
+        34.2057128
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60045 2",
+        "stop_code": "",
+        "stop_name": "宮野新橋",
+        "stop_desc": "",
+        "stop_lat": "34.2057128",
+        "stop_lon": "131.5121445",
+        "zone_id": "60045 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60046 1",
+      "source_stop_id": "60046 1",
+      "name": "佐々並",
+      "original_coordinates": [
+        131.4613358,
+        34.2855156
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60046 1",
+        "stop_code": "",
+        "stop_name": "佐々並",
+        "stop_desc": "",
+        "stop_lat": "34.2855156",
+        "stop_lon": "131.4613358",
+        "zone_id": "60046 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60046 2",
+      "source_stop_id": "60046 2",
+      "name": "佐々並",
+      "original_coordinates": [
+        131.4611585,
+        34.285479
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60046 2",
+        "stop_code": "",
+        "stop_name": "佐々並",
+        "stop_desc": "",
+        "stop_lat": "34.285479",
+        "stop_lon": "131.4611585",
+        "zone_id": "60046 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60047 1",
+      "source_stop_id": "60047 1",
+      "name": "明木",
+      "original_coordinates": [
+        131.4144698,
+        34.3445029
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60047 1",
+        "stop_code": "",
+        "stop_name": "明木",
+        "stop_desc": "",
+        "stop_lat": "34.3445029",
+        "stop_lon": "131.4144698",
+        "zone_id": "60047 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60047 2",
+      "source_stop_id": "60047 2",
+      "name": "明木",
+      "original_coordinates": [
+        131.4143852,
+        34.3445303
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60047 2",
+        "stop_code": "",
+        "stop_name": "明木",
+        "stop_desc": "",
+        "stop_lat": "34.3445303",
+        "stop_lon": "131.4143852",
+        "zone_id": "60047 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60048 1",
+      "source_stop_id": "60048 1",
+      "name": "萩バスセンター",
+      "original_coordinates": [
+        131.4027244,
+        34.4106351
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・東萩方面",
+      "original": {
+        "stop_id": "60048 1",
+        "stop_code": "",
+        "stop_name": "萩バスセンター",
+        "stop_desc": "",
+        "stop_lat": "34.4106351",
+        "stop_lon": "131.4027244",
+        "zone_id": "60048 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60048 10",
+      "source_stop_id": "60048 10",
+      "name": "萩バスセンター",
+      "original_coordinates": [
+        131.4028162,
+        34.4106525
+      ],
+      "city": "萩市",
+      "official_direction": "新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60048 10",
+        "stop_code": "",
+        "stop_name": "萩バスセンター",
+        "stop_desc": "",
+        "stop_lat": "34.4106525",
+        "stop_lon": "131.4028162",
+        "zone_id": "60048 10",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60048 11",
+      "source_stop_id": "60048 11",
+      "name": "萩バスセンター",
+      "original_coordinates": [
+        131.402721,
+        34.4106317
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・東萩方面",
+      "original": {
+        "stop_id": "60048 11",
+        "stop_code": "",
+        "stop_name": "萩バスセンター",
+        "stop_desc": "",
+        "stop_lat": "34.4106317",
+        "stop_lon": "131.402721",
+        "zone_id": "60048 11",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60048 2",
+      "source_stop_id": "60048 2",
+      "name": "萩バスセンター",
+      "original_coordinates": [
+        131.4028161,
+        34.4106546
+      ],
+      "city": "萩市",
+      "official_direction": "新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60048 2",
+        "stop_code": "",
+        "stop_name": "萩バスセンター",
+        "stop_desc": "",
+        "stop_lat": "34.4106546",
+        "stop_lon": "131.4028161",
+        "zone_id": "60048 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60049 1",
+      "source_stop_id": "60049 1",
+      "name": "東萩",
+      "original_coordinates": [
+        131.4102279,
+        34.4170209
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60049 1",
+        "stop_code": "",
+        "stop_name": "東萩",
+        "stop_desc": "",
+        "stop_lat": "34.4170209",
+        "stop_lon": "131.4102279",
+        "zone_id": "60049 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60049 10",
+      "source_stop_id": "60049 10",
+      "name": "東萩",
+      "original_coordinates": [
+        131.4102284,
+        34.4170179
+      ],
+      "city": "萩市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60049 10",
+        "stop_code": "",
+        "stop_name": "東萩",
+        "stop_desc": "",
+        "stop_lat": "34.4170179",
+        "stop_lon": "131.4102284",
+        "zone_id": "60049 10",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60049 11",
+      "source_stop_id": "60049 11",
+      "name": "東萩",
+      "original_coordinates": [
+        131.410228,
+        34.4170155
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60049 11",
+        "stop_code": "",
+        "stop_name": "東萩",
+        "stop_desc": "",
+        "stop_lat": "34.4170155",
+        "stop_lon": "131.410228",
+        "zone_id": "60049 11",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60049 2",
+      "source_stop_id": "60049 2",
+      "name": "東萩",
+      "original_coordinates": [
+        131.4102299,
+        34.4170203
+      ],
+      "city": "萩市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60049 2",
+        "stop_code": "",
+        "stop_name": "東萩",
+        "stop_desc": "",
+        "stop_lat": "34.4170203",
+        "stop_lon": "131.4102299",
+        "zone_id": "60049 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60050 1",
+      "source_stop_id": "60050 1",
+      "name": "野田学園前",
+      "original_coordinates": [
+        131.4788867,
+        34.1867465
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60050 1",
+        "stop_code": "",
+        "stop_name": "野田学園前",
+        "stop_desc": "",
+        "stop_lat": "34.1867465",
+        "stop_lon": "131.4788867",
+        "zone_id": "60050 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60050 2",
+      "source_stop_id": "60050 2",
+      "name": "野田学園前",
+      "original_coordinates": [
+        131.4789954,
+        34.1869052
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60050 2",
+        "stop_code": "",
+        "stop_name": "野田学園前",
+        "stop_desc": "",
+        "stop_lat": "34.1869052",
+        "stop_lon": "131.4789954",
+        "zone_id": "60050 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60051 1",
+      "source_stop_id": "60051 1",
+      "name": "山口自衛隊前",
+      "original_coordinates": [
+        131.482465,
+        34.1861013
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60051 1",
+        "stop_code": "",
+        "stop_name": "山口自衛隊前",
+        "stop_desc": "",
+        "stop_lat": "34.1861013",
+        "stop_lon": "131.482465",
+        "zone_id": "60051 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60051 2",
+      "source_stop_id": "60051 2",
+      "name": "山口自衛隊前",
+      "original_coordinates": [
+        131.4824154,
+        34.1863166
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60051 2",
+        "stop_code": "",
+        "stop_name": "山口自衛隊前",
+        "stop_desc": "",
+        "stop_lat": "34.1863166",
+        "stop_lon": "131.4824154",
+        "zone_id": "60051 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60052 1",
+      "source_stop_id": "60052 1",
+      "name": "日赤前",
+      "original_coordinates": [
+        131.4837209,
+        34.184799
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60052 1",
+        "stop_code": "",
+        "stop_name": "日赤前",
+        "stop_desc": "",
+        "stop_lat": "34.184799",
+        "stop_lon": "131.4837209",
+        "zone_id": "60052 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60052 2",
+      "source_stop_id": "60052 2",
+      "name": "日赤前",
+      "original_coordinates": [
+        131.4838775,
+        34.184771
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60052 2",
+        "stop_code": "",
+        "stop_name": "日赤前",
+        "stop_desc": "",
+        "stop_lat": "34.184771",
+        "stop_lon": "131.4838775",
+        "zone_id": "60052 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60053 1",
+      "source_stop_id": "60053 1",
+      "name": "三の宮",
+      "original_coordinates": [
+        131.4909057,
+        34.1868421
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60053 1",
+        "stop_code": "",
+        "stop_name": "三の宮",
+        "stop_desc": "",
+        "stop_lat": "34.1868421",
+        "stop_lon": "131.4909057",
+        "zone_id": "60053 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60053 2",
+      "source_stop_id": "60053 2",
+      "name": "三の宮",
+      "original_coordinates": [
+        131.4925281,
+        34.1878254
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60053 2",
+        "stop_code": "",
+        "stop_name": "三の宮",
+        "stop_desc": "",
+        "stop_lat": "34.1878254",
+        "stop_lon": "131.4925281",
+        "zone_id": "60053 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60054 1",
+      "source_stop_id": "60054 1",
+      "name": "折本",
+      "original_coordinates": [
+        131.4948337,
+        34.1889881
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60054 1",
+        "stop_code": "",
+        "stop_name": "折本",
+        "stop_desc": "",
+        "stop_lat": "34.1889881",
+        "stop_lon": "131.4948337",
+        "zone_id": "60054 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60054 2",
+      "source_stop_id": "60054 2",
+      "name": "折本",
+      "original_coordinates": [
+        131.4955373,
+        34.1895626
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60054 2",
+        "stop_code": "",
+        "stop_name": "折本",
+        "stop_desc": "",
+        "stop_lat": "34.1895626",
+        "stop_lon": "131.4955373",
+        "zone_id": "60054 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60055 1",
+      "source_stop_id": "60055 1",
+      "name": "宮野駅前",
+      "original_coordinates": [
+        131.4971969,
+        34.1917186
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60055 1",
+        "stop_code": "",
+        "stop_name": "宮野駅前",
+        "stop_desc": "",
+        "stop_lat": "34.1917186",
+        "stop_lon": "131.4971969",
+        "zone_id": "60055 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60055 2",
+      "source_stop_id": "60055 2",
+      "name": "宮野駅前",
+      "original_coordinates": [
+        131.4978913,
+        34.1922318
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60055 2",
+        "stop_code": "",
+        "stop_name": "宮野駅前",
+        "stop_desc": "",
+        "stop_lat": "34.1922318",
+        "stop_lon": "131.4978913",
+        "zone_id": "60055 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60056 1",
+      "source_stop_id": "60056 1",
+      "name": "県宮野庁舎前",
+      "original_coordinates": [
+        131.4998141,
+        34.1933348
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・湯田温泉方面",
+      "original": {
+        "stop_id": "60056 1",
+        "stop_code": "",
+        "stop_name": "県宮野庁舎前",
+        "stop_desc": "",
+        "stop_lat": "34.1933348",
+        "stop_lon": "131.4998141",
+        "zone_id": "60056 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60056 2",
+      "source_stop_id": "60056 2",
+      "name": "県宮野庁舎前",
+      "original_coordinates": [
+        131.499478,
+        34.1932251
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60056 2",
+        "stop_code": "",
+        "stop_name": "県宮野庁舎前",
+        "stop_desc": "",
+        "stop_lat": "34.1932251",
+        "stop_lon": "131.499478",
+        "zone_id": "60056 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60057 1",
+      "source_stop_id": "60057 1",
+      "name": "宮野中学校前",
+      "original_coordinates": [
+        131.5019538,
+        34.1959068
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60057 1",
+        "stop_code": "",
+        "stop_name": "宮野中学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1959068",
+        "stop_lon": "131.5019538",
+        "zone_id": "60057 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60057 2",
+      "source_stop_id": "60057 2",
+      "name": "宮野中学校前",
+      "original_coordinates": [
+        131.501763,
+        34.1963435
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60057 2",
+        "stop_code": "",
+        "stop_name": "宮野中学校前",
+        "stop_desc": "",
+        "stop_lat": "34.1963435",
+        "stop_lon": "131.501763",
+        "zone_id": "60057 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60058 1",
+      "source_stop_id": "60058 1",
+      "name": "本宮野",
+      "original_coordinates": [
+        131.5063271,
+        34.2010131
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60058 1",
+        "stop_code": "",
+        "stop_name": "本宮野",
+        "stop_desc": "",
+        "stop_lat": "34.2010131",
+        "stop_lon": "131.5063271",
+        "zone_id": "60058 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60058 2",
+      "source_stop_id": "60058 2",
+      "name": "本宮野",
+      "original_coordinates": [
+        131.5068126,
+        34.201621
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60058 2",
+        "stop_code": "",
+        "stop_name": "本宮野",
+        "stop_desc": "",
+        "stop_lat": "34.201621",
+        "stop_lon": "131.5068126",
+        "zone_id": "60058 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60059 1",
+      "source_stop_id": "60059 1",
+      "name": "七房",
+      "original_coordinates": [
+        131.5167969,
+        34.2122965
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60059 1",
+        "stop_code": "",
+        "stop_name": "七房",
+        "stop_desc": "",
+        "stop_lat": "34.2122965",
+        "stop_lon": "131.5167969",
+        "zone_id": "60059 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60059 2",
+      "source_stop_id": "60059 2",
+      "name": "七房",
+      "original_coordinates": [
+        131.5175901,
+        34.2131209
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60059 2",
+        "stop_code": "",
+        "stop_name": "七房",
+        "stop_desc": "",
+        "stop_lat": "34.2131209",
+        "stop_lon": "131.5175901",
+        "zone_id": "60059 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60060 1",
+      "source_stop_id": "60060 1",
+      "name": "奥湯田温泉口",
+      "original_coordinates": [
+        131.5152104,
+        34.222396
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60060 1",
+        "stop_code": "",
+        "stop_name": "奥湯田温泉口",
+        "stop_desc": "",
+        "stop_lat": "34.222396",
+        "stop_lon": "131.5152104",
+        "zone_id": "60060 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60060 2",
+      "source_stop_id": "60060 2",
+      "name": "奥湯田温泉口",
+      "original_coordinates": [
+        131.5151541,
+        34.2223351
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60060 2",
+        "stop_code": "",
+        "stop_name": "奥湯田温泉口",
+        "stop_desc": "",
+        "stop_lat": "34.2223351",
+        "stop_lon": "131.5151541",
+        "zone_id": "60060 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60061 1",
+      "source_stop_id": "60061 1",
+      "name": "向田橋",
+      "original_coordinates": [
+        131.5205659,
+        34.2413589
+      ],
+      "city": "山口市",
+      "official_direction": "山口大学・湯田温泉方面",
+      "original": {
+        "stop_id": "60061 1",
+        "stop_code": "",
+        "stop_name": "向田橋",
+        "stop_desc": "",
+        "stop_lat": "34.2413589",
+        "stop_lon": "131.5205659",
+        "zone_id": "60061 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60061 2",
+      "source_stop_id": "60061 2",
+      "name": "向田橋",
+      "original_coordinates": [
+        131.5204278,
+        34.24139
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60061 2",
+        "stop_code": "",
+        "stop_name": "向田橋",
+        "stop_desc": "",
+        "stop_lat": "34.24139",
+        "stop_lon": "131.5204278",
+        "zone_id": "60061 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60062 1",
+      "source_stop_id": "60062 1",
+      "name": "宮野大峠",
+      "original_coordinates": [
+        131.5226025,
+        34.2508259
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60062 1",
+        "stop_code": "",
+        "stop_name": "宮野大峠",
+        "stop_desc": "",
+        "stop_lat": "34.2508259",
+        "stop_lon": "131.5226025",
+        "zone_id": "60062 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60062 2",
+      "source_stop_id": "60062 2",
+      "name": "宮野大峠",
+      "original_coordinates": [
+        131.5226019,
+        34.2508253
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60062 2",
+        "stop_code": "",
+        "stop_name": "宮野大峠",
+        "stop_desc": "",
+        "stop_lat": "34.2508253",
+        "stop_lon": "131.5226019",
+        "zone_id": "60062 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60063 1",
+      "source_stop_id": "60063 1",
+      "name": "上小木原",
+      "original_coordinates": [
+        131.4910651,
+        34.2461794
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60063 1",
+        "stop_code": "",
+        "stop_name": "上小木原",
+        "stop_desc": "",
+        "stop_lat": "34.2461794",
+        "stop_lon": "131.4910651",
+        "zone_id": "60063 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60063 2",
+      "source_stop_id": "60063 2",
+      "name": "上小木原",
+      "original_coordinates": [
+        131.490888,
+        34.2461195
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60063 2",
+        "stop_code": "",
+        "stop_name": "上小木原",
+        "stop_desc": "",
+        "stop_lat": "34.2461195",
+        "stop_lon": "131.490888",
+        "zone_id": "60063 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60064 1",
+      "source_stop_id": "60064 1",
+      "name": "下小木原",
+      "original_coordinates": [
+        131.4880267,
+        34.2512333
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60064 1",
+        "stop_code": "",
+        "stop_name": "下小木原",
+        "stop_desc": "",
+        "stop_lat": "34.2512333",
+        "stop_lon": "131.4880267",
+        "zone_id": "60064 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60064 2",
+      "source_stop_id": "60064 2",
+      "name": "下小木原",
+      "original_coordinates": [
+        131.4875744,
+        34.2516945
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60064 2",
+        "stop_code": "",
+        "stop_name": "下小木原",
+        "stop_desc": "",
+        "stop_lat": "34.2516945",
+        "stop_lon": "131.4875744",
+        "zone_id": "60064 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60065 1",
+      "source_stop_id": "60065 1",
+      "name": "日南瀬",
+      "original_coordinates": [
+        131.478183,
+        34.2620417
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60065 1",
+        "stop_code": "",
+        "stop_name": "日南瀬",
+        "stop_desc": "",
+        "stop_lat": "34.2620417",
+        "stop_lon": "131.478183",
+        "zone_id": "60065 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60065 2",
+      "source_stop_id": "60065 2",
+      "name": "日南瀬",
+      "original_coordinates": [
+        131.478,
+        34.2619674
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60065 2",
+        "stop_code": "",
+        "stop_name": "日南瀬",
+        "stop_desc": "",
+        "stop_lat": "34.2619674",
+        "stop_lon": "131.478",
+        "zone_id": "60065 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60066 1",
+      "source_stop_id": "60066 1",
+      "name": "中作",
+      "original_coordinates": [
+        131.4733775,
+        34.2650311
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60066 1",
+        "stop_code": "",
+        "stop_name": "中作",
+        "stop_desc": "",
+        "stop_lat": "34.2650311",
+        "stop_lon": "131.4733775",
+        "zone_id": "60066 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60066 2",
+      "source_stop_id": "60066 2",
+      "name": "中作",
+      "original_coordinates": [
+        131.4733862,
+        34.2649248
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60066 2",
+        "stop_code": "",
+        "stop_name": "中作",
+        "stop_desc": "",
+        "stop_lat": "34.2649248",
+        "stop_lon": "131.4733862",
+        "zone_id": "60066 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60067 1",
+      "source_stop_id": "60067 1",
+      "name": "大迫口",
+      "original_coordinates": [
+        131.4738768,
+        34.272234
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60067 1",
+        "stop_code": "",
+        "stop_name": "大迫口",
+        "stop_desc": "",
+        "stop_lat": "34.272234",
+        "stop_lon": "131.4738768",
+        "zone_id": "60067 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60067 2",
+      "source_stop_id": "60067 2",
+      "name": "大迫口",
+      "original_coordinates": [
+        131.4737381,
+        34.2722712
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60067 2",
+        "stop_code": "",
+        "stop_name": "大迫口",
+        "stop_desc": "",
+        "stop_lat": "34.2722712",
+        "stop_lon": "131.4737381",
+        "zone_id": "60067 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60068 1",
+      "source_stop_id": "60068 1",
+      "name": "板橋口",
+      "original_coordinates": [
+        131.4695461,
+        34.2810095
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60068 1",
+        "stop_code": "",
+        "stop_name": "板橋口",
+        "stop_desc": "",
+        "stop_lat": "34.2810095",
+        "stop_lon": "131.4695461",
+        "zone_id": "60068 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60068 2",
+      "source_stop_id": "60068 2",
+      "name": "板橋口",
+      "original_coordinates": [
+        131.4694998,
+        34.2809446
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60068 2",
+        "stop_code": "",
+        "stop_name": "板橋口",
+        "stop_desc": "",
+        "stop_lat": "34.2809446",
+        "stop_lon": "131.4694998",
+        "zone_id": "60068 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60069 1",
+      "source_stop_id": "60069 1",
+      "name": "小松ヶ谷",
+      "original_coordinates": [
+        131.4581024,
+        34.2882262
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60069 1",
+        "stop_code": "",
+        "stop_name": "小松ヶ谷",
+        "stop_desc": "",
+        "stop_lat": "34.2882262",
+        "stop_lon": "131.4581024",
+        "zone_id": "60069 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60069 2",
+      "source_stop_id": "60069 2",
+      "name": "小松ヶ谷",
+      "original_coordinates": [
+        131.4580771,
+        34.2882387
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60069 2",
+        "stop_code": "",
+        "stop_name": "小松ヶ谷",
+        "stop_desc": "",
+        "stop_lat": "34.2882387",
+        "stop_lon": "131.4580771",
+        "zone_id": "60069 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60070 1",
+      "source_stop_id": "60070 1",
+      "name": "与三原",
+      "original_coordinates": [
+        131.4583089,
+        34.2977406
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60070 1",
+        "stop_code": "",
+        "stop_name": "与三原",
+        "stop_desc": "",
+        "stop_lat": "34.2977406",
+        "stop_lon": "131.4583089",
+        "zone_id": "60070 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60070 2",
+      "source_stop_id": "60070 2",
+      "name": "与三原",
+      "original_coordinates": [
+        131.4575915,
+        34.2973464
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60070 2",
+        "stop_code": "",
+        "stop_name": "与三原",
+        "stop_desc": "",
+        "stop_lat": "34.2973464",
+        "stop_lon": "131.4575915",
+        "zone_id": "60070 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60071 1",
+      "source_stop_id": "60071 1",
+      "name": "根引",
+      "original_coordinates": [
+        131.4601806,
+        34.3036272
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60071 1",
+        "stop_code": "",
+        "stop_name": "根引",
+        "stop_desc": "",
+        "stop_lat": "34.3036272",
+        "stop_lon": "131.4601806",
+        "zone_id": "60071 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60071 2",
+      "source_stop_id": "60071 2",
+      "name": "根引",
+      "original_coordinates": [
+        131.4600673,
+        34.3035935
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60071 2",
+        "stop_code": "",
+        "stop_name": "根引",
+        "stop_desc": "",
+        "stop_lat": "34.3035935",
+        "stop_lon": "131.4600673",
+        "zone_id": "60071 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60072 1",
+      "source_stop_id": "60072 1",
+      "name": "新茶屋",
+      "original_coordinates": [
+        131.4527562,
+        34.3094693
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60072 1",
+        "stop_code": "",
+        "stop_name": "新茶屋",
+        "stop_desc": "",
+        "stop_lat": "34.3094693",
+        "stop_lon": "131.4527562",
+        "zone_id": "60072 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60072 2",
+      "source_stop_id": "60072 2",
+      "name": "新茶屋",
+      "original_coordinates": [
+        131.4526308,
+        34.3094262
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60072 2",
+        "stop_code": "",
+        "stop_name": "新茶屋",
+        "stop_desc": "",
+        "stop_lat": "34.3094262",
+        "stop_lon": "131.4526308",
+        "zone_id": "60072 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60073 1",
+      "source_stop_id": "60073 1",
+      "name": "中の峠",
+      "original_coordinates": [
+        131.4449353,
+        34.3161276
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60073 1",
+        "stop_code": "",
+        "stop_name": "中の峠",
+        "stop_desc": "",
+        "stop_lat": "34.3161276",
+        "stop_lon": "131.4449353",
+        "zone_id": "60073 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60073 2",
+      "source_stop_id": "60073 2",
+      "name": "中の峠",
+      "original_coordinates": [
+        131.4440985,
+        34.3162734
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60073 2",
+        "stop_code": "",
+        "stop_name": "中の峠",
+        "stop_desc": "",
+        "stop_lat": "34.3162734",
+        "stop_lon": "131.4440985",
+        "zone_id": "60073 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60074 1",
+      "source_stop_id": "60074 1",
+      "name": "釿切",
+      "original_coordinates": [
+        131.4381232,
+        34.3190664
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60074 1",
+        "stop_code": "",
+        "stop_name": "釿切",
+        "stop_desc": "",
+        "stop_lat": "34.3190664",
+        "stop_lon": "131.4381232",
+        "zone_id": "60074 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60074 2",
+      "source_stop_id": "60074 2",
+      "name": "釿切",
+      "original_coordinates": [
+        131.4378427,
+        34.3183938
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60074 2",
+        "stop_code": "",
+        "stop_name": "釿切",
+        "stop_desc": "",
+        "stop_lat": "34.3183938",
+        "stop_lon": "131.4378427",
+        "zone_id": "60074 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60075 1",
+      "source_stop_id": "60075 1",
+      "name": "古戦場",
+      "original_coordinates": [
+        131.4231891,
+        34.3132401
+      ],
+      "city": "萩市",
+      "official_direction": "山口大学・湯田温泉方面",
+      "original": {
+        "stop_id": "60075 1",
+        "stop_code": "",
+        "stop_name": "古戦場",
+        "stop_desc": "",
+        "stop_lat": "34.3132401",
+        "stop_lon": "131.4231891",
+        "zone_id": "60075 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60075 2",
+      "source_stop_id": "60075 2",
+      "name": "古戦場",
+      "original_coordinates": [
+        131.4225744,
+        34.312517
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60075 2",
+        "stop_code": "",
+        "stop_name": "古戦場",
+        "stop_desc": "",
+        "stop_lat": "34.312517",
+        "stop_lon": "131.4225744",
+        "zone_id": "60075 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60076 1",
+      "source_stop_id": "60076 1",
+      "name": "同前",
+      "original_coordinates": [
+        131.4162985,
+        34.3126305
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60076 1",
+        "stop_code": "",
+        "stop_name": "同前",
+        "stop_desc": "",
+        "stop_lat": "34.3126305",
+        "stop_lon": "131.4162985",
+        "zone_id": "60076 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60076 2",
+      "source_stop_id": "60076 2",
+      "name": "同前",
+      "original_coordinates": [
+        131.4153182,
+        34.3129414
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60076 2",
+        "stop_code": "",
+        "stop_name": "同前",
+        "stop_desc": "",
+        "stop_lat": "34.3129414",
+        "stop_lon": "131.4153182",
+        "zone_id": "60076 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60077 1",
+      "source_stop_id": "60077 1",
+      "name": "小野山",
+      "original_coordinates": [
+        131.4034129,
+        34.3191857
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60077 1",
+        "stop_code": "",
+        "stop_name": "小野山",
+        "stop_desc": "",
+        "stop_lat": "34.3191857",
+        "stop_lon": "131.4034129",
+        "zone_id": "60077 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60077 2",
+      "source_stop_id": "60077 2",
+      "name": "小野山",
+      "original_coordinates": [
+        131.4027538,
+        34.3198608
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60077 2",
+        "stop_code": "",
+        "stop_name": "小野山",
+        "stop_desc": "",
+        "stop_lat": "34.3198608",
+        "stop_lon": "131.4027538",
+        "zone_id": "60077 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60078 1",
+      "source_stop_id": "60078 1",
+      "name": "角力場",
+      "original_coordinates": [
+        131.4019395,
+        34.3263997
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60078 1",
+        "stop_code": "",
+        "stop_name": "角力場",
+        "stop_desc": "",
+        "stop_lat": "34.3263997",
+        "stop_lon": "131.4019395",
+        "zone_id": "60078 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60078 2",
+      "source_stop_id": "60078 2",
+      "name": "角力場",
+      "original_coordinates": [
+        131.4019723,
+        34.3265969
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60078 2",
+        "stop_code": "",
+        "stop_name": "角力場",
+        "stop_desc": "",
+        "stop_lat": "34.3265969",
+        "stop_lon": "131.4019723",
+        "zone_id": "60078 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60079 1",
+      "source_stop_id": "60079 1",
+      "name": "菅蓋",
+      "original_coordinates": [
+        131.4081519,
+        34.3311448
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60079 1",
+        "stop_code": "",
+        "stop_name": "菅蓋",
+        "stop_desc": "",
+        "stop_lat": "34.3311448",
+        "stop_lon": "131.4081519",
+        "zone_id": "60079 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60079 2",
+      "source_stop_id": "60079 2",
+      "name": "菅蓋",
+      "original_coordinates": [
+        131.4080621,
+        34.3311895
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60079 2",
+        "stop_code": "",
+        "stop_name": "菅蓋",
+        "stop_desc": "",
+        "stop_lat": "34.3311895",
+        "stop_lon": "131.4080621",
+        "zone_id": "60079 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60080 1",
+      "source_stop_id": "60080 1",
+      "name": "下菅蓋",
+      "original_coordinates": [
+        131.4101408,
+        34.3350165
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60080 1",
+        "stop_code": "",
+        "stop_name": "下菅蓋",
+        "stop_desc": "",
+        "stop_lat": "34.3350165",
+        "stop_lon": "131.4101408",
+        "zone_id": "60080 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60080 2",
+      "source_stop_id": "60080 2",
+      "name": "下菅蓋",
+      "original_coordinates": [
+        131.4100535,
+        34.3351202
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60080 2",
+        "stop_code": "",
+        "stop_name": "下菅蓋",
+        "stop_desc": "",
+        "stop_lat": "34.3351202",
+        "stop_lon": "131.4100535",
+        "zone_id": "60080 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60081 1",
+      "source_stop_id": "60081 1",
+      "name": "牛地",
+      "original_coordinates": [
+        131.4125907,
+        34.3422695
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60081 1",
+        "stop_code": "",
+        "stop_name": "牛地",
+        "stop_desc": "",
+        "stop_lat": "34.3422695",
+        "stop_lon": "131.4125907",
+        "zone_id": "60081 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60081 2",
+      "source_stop_id": "60081 2",
+      "name": "牛地",
+      "original_coordinates": [
+        131.4123378,
+        34.3420223
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60081 2",
+        "stop_code": "",
+        "stop_name": "牛地",
+        "stop_desc": "",
+        "stop_lat": "34.3420223",
+        "stop_lon": "131.4123378",
+        "zone_id": "60081 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60082 1",
+      "source_stop_id": "60082 1",
+      "name": "蔵屋",
+      "original_coordinates": [
+        131.4198366,
+        34.3478969
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60082 1",
+        "stop_code": "",
+        "stop_name": "蔵屋",
+        "stop_desc": "",
+        "stop_lat": "34.3478969",
+        "stop_lon": "131.4198366",
+        "zone_id": "60082 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60082 2",
+      "source_stop_id": "60082 2",
+      "name": "蔵屋",
+      "original_coordinates": [
+        131.4196331,
+        34.3478833
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60082 2",
+        "stop_code": "",
+        "stop_name": "蔵屋",
+        "stop_desc": "",
+        "stop_lat": "34.3478833",
+        "stop_lon": "131.4196331",
+        "zone_id": "60082 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60083 1",
+      "source_stop_id": "60083 1",
+      "name": "瓜作",
+      "original_coordinates": [
+        131.4202558,
+        34.3578948
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60083 1",
+        "stop_code": "",
+        "stop_name": "瓜作",
+        "stop_desc": "",
+        "stop_lat": "34.3578948",
+        "stop_lon": "131.4202558",
+        "zone_id": "60083 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60083 2",
+      "source_stop_id": "60083 2",
+      "name": "瓜作",
+      "original_coordinates": [
+        131.4201722,
+        34.3579498
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60083 2",
+        "stop_code": "",
+        "stop_name": "瓜作",
+        "stop_desc": "",
+        "stop_lat": "34.3579498",
+        "stop_lon": "131.4201722",
+        "zone_id": "60083 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60084 1",
+      "source_stop_id": "60084 1",
+      "name": "佐古",
+      "original_coordinates": [
+        131.4312201,
+        34.3632919
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60084 1",
+        "stop_code": "",
+        "stop_name": "佐古",
+        "stop_desc": "",
+        "stop_lat": "34.3632919",
+        "stop_lon": "131.4312201",
+        "zone_id": "60084 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60084 2",
+      "source_stop_id": "60084 2",
+      "name": "佐古",
+      "original_coordinates": [
+        131.431202,
+        34.3633777
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60084 2",
+        "stop_code": "",
+        "stop_name": "佐古",
+        "stop_desc": "",
+        "stop_lat": "34.3633777",
+        "stop_lon": "131.431202",
+        "zone_id": "60084 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60085 1",
+      "source_stop_id": "60085 1",
+      "name": "長門峡北口",
+      "original_coordinates": [
+        131.4403778,
+        34.3623659
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60085 1",
+        "stop_code": "",
+        "stop_name": "長門峡北口",
+        "stop_desc": "",
+        "stop_lat": "34.3623659",
+        "stop_lon": "131.4403778",
+        "zone_id": "60085 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60085 2",
+      "source_stop_id": "60085 2",
+      "name": "長門峡北口",
+      "original_coordinates": [
+        131.4405674,
+        34.3629451
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60085 2",
+        "stop_code": "",
+        "stop_name": "長門峡北口",
+        "stop_desc": "",
+        "stop_lat": "34.3629451",
+        "stop_lon": "131.4405674",
+        "zone_id": "60085 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60086 1",
+      "source_stop_id": "60086 1",
+      "name": "立野渡",
+      "original_coordinates": [
+        131.4380261,
+        34.3736902
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60086 1",
+        "stop_code": "",
+        "stop_name": "立野渡",
+        "stop_desc": "",
+        "stop_lat": "34.3736902",
+        "stop_lon": "131.4380261",
+        "zone_id": "60086 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60086 2",
+      "source_stop_id": "60086 2",
+      "name": "立野渡",
+      "original_coordinates": [
+        131.4378833,
+        34.3736983
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60086 2",
+        "stop_code": "",
+        "stop_name": "立野渡",
+        "stop_desc": "",
+        "stop_lat": "34.3736983",
+        "stop_lon": "131.4378833",
+        "zone_id": "60086 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60087 1",
+      "source_stop_id": "60087 1",
+      "name": "霧口",
+      "original_coordinates": [
+        131.4241725,
+        34.3877593
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60087 1",
+        "stop_code": "",
+        "stop_name": "霧口",
+        "stop_desc": "",
+        "stop_lat": "34.3877593",
+        "stop_lon": "131.4241725",
+        "zone_id": "60087 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60087 2",
+      "source_stop_id": "60087 2",
+      "name": "霧口",
+      "original_coordinates": [
+        131.4240692,
+        34.3877221
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60087 2",
+        "stop_code": "",
+        "stop_name": "霧口",
+        "stop_desc": "",
+        "stop_lat": "34.3877221",
+        "stop_lon": "131.4240692",
+        "zone_id": "60087 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60088 1",
+      "source_stop_id": "60088 1",
+      "name": "沖原",
+      "original_coordinates": [
+        131.4125964,
+        34.3923666
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60088 1",
+        "stop_code": "",
+        "stop_name": "沖原",
+        "stop_desc": "",
+        "stop_lat": "34.3923666",
+        "stop_lon": "131.4125964",
+        "zone_id": "60088 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60088 2",
+      "source_stop_id": "60088 2",
+      "name": "沖原",
+      "original_coordinates": [
+        131.412257,
+        34.3924035
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60088 2",
+        "stop_code": "",
+        "stop_name": "沖原",
+        "stop_desc": "",
+        "stop_lat": "34.3924035",
+        "stop_lon": "131.412257",
+        "zone_id": "60088 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60089 1",
+      "source_stop_id": "60089 1",
+      "name": "萩駅",
+      "original_coordinates": [
+        131.4011171,
+        34.3939865
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60089 1",
+        "stop_code": "",
+        "stop_name": "萩駅",
+        "stop_desc": "",
+        "stop_lat": "34.3939865",
+        "stop_lon": "131.4011171",
+        "zone_id": "60089 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60089 2",
+      "source_stop_id": "60089 2",
+      "name": "萩駅",
+      "original_coordinates": [
+        131.4011131,
+        34.3939892
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60089 2",
+        "stop_code": "",
+        "stop_name": "萩駅",
+        "stop_desc": "",
+        "stop_lat": "34.3939892",
+        "stop_lon": "131.4011131",
+        "zone_id": "60089 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60090 1",
+      "source_stop_id": "60090 1",
+      "name": "橋本町",
+      "original_coordinates": [
+        131.4022097,
+        34.4037019
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60090 1",
+        "stop_code": "",
+        "stop_name": "橋本町",
+        "stop_desc": "",
+        "stop_lat": "34.4037019",
+        "stop_lon": "131.4022097",
+        "zone_id": "60090 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60090 2",
+      "source_stop_id": "60090 2",
+      "name": "橋本町",
+      "original_coordinates": [
+        131.4021404,
+        34.404085
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60090 2",
+        "stop_code": "",
+        "stop_name": "橋本町",
+        "stop_desc": "",
+        "stop_lat": "34.404085",
+        "stop_lon": "131.4021404",
+        "zone_id": "60090 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60094 1",
+      "source_stop_id": "60094 1",
+      "name": "松ヶ鼻",
+      "original_coordinates": [
+        131.446434,
+        34.1647632
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60094 1",
+        "stop_code": "",
+        "stop_name": "松ヶ鼻",
+        "stop_desc": "",
+        "stop_lat": "34.1647632",
+        "stop_lon": "131.446434",
+        "zone_id": "60094 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60094 2",
+      "source_stop_id": "60094 2",
+      "name": "松ヶ鼻",
+      "original_coordinates": [
+        131.4464981,
+        34.1646894
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60094 2",
+        "stop_code": "",
+        "stop_name": "松ヶ鼻",
+        "stop_desc": "",
+        "stop_lat": "34.1646894",
+        "stop_lon": "131.4464981",
+        "zone_id": "60094 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60095 1",
+      "source_stop_id": "60095 1",
+      "name": "吉敷郵便局前",
+      "original_coordinates": [
+        131.4403702,
+        34.1646284
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60095 1",
+        "stop_code": "",
+        "stop_name": "吉敷郵便局前",
+        "stop_desc": "",
+        "stop_lat": "34.1646284",
+        "stop_lon": "131.4403702",
+        "zone_id": "60095 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60095 2",
+      "source_stop_id": "60095 2",
+      "name": "吉敷郵便局前",
+      "original_coordinates": [
+        131.4407523,
+        34.1644545
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60095 2",
+        "stop_code": "",
+        "stop_name": "吉敷郵便局前",
+        "stop_desc": "",
+        "stop_lat": "34.1644545",
+        "stop_lon": "131.4407523",
+        "zone_id": "60095 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60096 1",
+      "source_stop_id": "60096 1",
+      "name": "吉敷",
+      "original_coordinates": [
+        131.4336762,
+        34.167496
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60096 1",
+        "stop_code": "",
+        "stop_name": "吉敷",
+        "stop_desc": "",
+        "stop_lat": "34.167496",
+        "stop_lon": "131.4336762",
+        "zone_id": "60096 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60096 2",
+      "source_stop_id": "60096 2",
+      "name": "吉敷",
+      "original_coordinates": [
+        131.4333144,
+        34.1676309
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60096 2",
+        "stop_code": "",
+        "stop_name": "吉敷",
+        "stop_desc": "",
+        "stop_lat": "34.1676309",
+        "stop_lon": "131.4333144",
+        "zone_id": "60096 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60097 1",
+      "source_stop_id": "60097 1",
+      "name": "赤田",
+      "original_coordinates": [
+        131.4311654,
+        34.1720605
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60097 1",
+        "stop_code": "",
+        "stop_name": "赤田",
+        "stop_desc": "",
+        "stop_lat": "34.1720605",
+        "stop_lon": "131.4311654",
+        "zone_id": "60097 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60097 2",
+      "source_stop_id": "60097 2",
+      "name": "赤田",
+      "original_coordinates": [
+        131.4310791,
+        34.1720421
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60097 2",
+        "stop_code": "",
+        "stop_name": "赤田",
+        "stop_desc": "",
+        "stop_lat": "34.1720421",
+        "stop_lon": "131.4310791",
+        "zone_id": "60097 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60098 1",
+      "source_stop_id": "60098 1",
+      "name": "赤田公民館前",
+      "original_coordinates": [
+        131.4293118,
+        34.1767483
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60098 1",
+        "stop_code": "",
+        "stop_name": "赤田公民館前",
+        "stop_desc": "",
+        "stop_lat": "34.1767483",
+        "stop_lon": "131.4293118",
+        "zone_id": "60098 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60098 2",
+      "source_stop_id": "60098 2",
+      "name": "赤田公民館前",
+      "original_coordinates": [
+        131.4292173,
+        34.1767455
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60098 2",
+        "stop_code": "",
+        "stop_name": "赤田公民館前",
+        "stop_desc": "",
+        "stop_lat": "34.1767455",
+        "stop_lon": "131.4292173",
+        "zone_id": "60098 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60099 1",
+      "source_stop_id": "60099 1",
+      "name": "四ノ宮前",
+      "original_coordinates": [
+        131.4305819,
+        34.1802129
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60099 1",
+        "stop_code": "",
+        "stop_name": "四ノ宮前",
+        "stop_desc": "",
+        "stop_lat": "34.1802129",
+        "stop_lon": "131.4305819",
+        "zone_id": "60099 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60099 2",
+      "source_stop_id": "60099 2",
+      "name": "四ノ宮前",
+      "original_coordinates": [
+        131.4304545,
+        34.1802507
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60099 2",
+        "stop_code": "",
+        "stop_name": "四ノ宮前",
+        "stop_desc": "",
+        "stop_lat": "34.1802507",
+        "stop_lon": "131.4304545",
+        "zone_id": "60099 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60100 1",
+      "source_stop_id": "60100 1",
+      "name": "中尾口",
+      "original_coordinates": [
+        131.4303627,
+        34.1856457
+      ],
+      "city": "山口市",
+      "official_direction": "防府駅・山口駅方面",
+      "original": {
+        "stop_id": "60100 1",
+        "stop_code": "",
+        "stop_name": "中尾口",
+        "stop_desc": "",
+        "stop_lat": "34.1856457",
+        "stop_lon": "131.4303627",
+        "zone_id": "60100 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60100 2",
+      "source_stop_id": "60100 2",
+      "name": "中尾口",
+      "original_coordinates": [
+        131.4302234,
+        34.1856902
+      ],
+      "city": "山口市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60100 2",
+        "stop_code": "",
+        "stop_name": "中尾口",
+        "stop_desc": "",
+        "stop_lat": "34.1856902",
+        "stop_lon": "131.4302234",
+        "zone_id": "60100 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60101 1",
+      "source_stop_id": "60101 1",
+      "name": "秋吉",
+      "original_coordinates": [
+        131.2983114,
+        34.2184916
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60101 1",
+        "stop_code": "",
+        "stop_name": "秋吉",
+        "stop_desc": "",
+        "stop_lat": "34.2184916",
+        "stop_lon": "131.2983114",
+        "zone_id": "60101 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60101 2",
+      "source_stop_id": "60101 2",
+      "name": "秋吉",
+      "original_coordinates": [
+        131.2983919,
+        34.2185581
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60101 2",
+        "stop_code": "",
+        "stop_name": "秋吉",
+        "stop_desc": "",
+        "stop_lat": "34.2185581",
+        "stop_lon": "131.2983919",
+        "zone_id": "60101 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60102 1",
+      "source_stop_id": "60102 1",
+      "name": "随徳",
+      "original_coordinates": [
+        131.2987355,
+        34.2194246
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60102 1",
+        "stop_code": "",
+        "stop_name": "随徳",
+        "stop_desc": "",
+        "stop_lat": "34.2194246",
+        "stop_lon": "131.2987355",
+        "zone_id": "60102 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60102 2",
+      "source_stop_id": "60102 2",
+      "name": "随徳",
+      "original_coordinates": [
+        131.2988287,
+        34.219384
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60102 2",
+        "stop_code": "",
+        "stop_name": "随徳",
+        "stop_desc": "",
+        "stop_lat": "34.219384",
+        "stop_lon": "131.2988287",
+        "zone_id": "60102 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60103 1",
+      "source_stop_id": "60103 1",
+      "name": "秋芳洞",
+      "original_coordinates": [
+        131.3068248,
+        34.2232116
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60103 1",
+        "stop_code": "",
+        "stop_name": "秋芳洞",
+        "stop_desc": "",
+        "stop_lat": "34.2232116",
+        "stop_lon": "131.3068248",
+        "zone_id": "60103 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60103 2",
+      "source_stop_id": "60103 2",
+      "name": "秋芳洞",
+      "original_coordinates": [
+        131.3068296,
+        34.2232083
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60103 2",
+        "stop_code": "",
+        "stop_name": "秋芳洞",
+        "stop_desc": "",
+        "stop_lat": "34.2232083",
+        "stop_lon": "131.3068296",
+        "zone_id": "60103 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60103 4",
+      "source_stop_id": "60103 4",
+      "name": "秋芳洞",
+      "original_coordinates": [
+        131.306576,
+        34.2230893
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面（循環線）",
+      "original": {
+        "stop_id": "60103 4",
+        "stop_code": "",
+        "stop_name": "秋芳洞",
+        "stop_desc": "",
+        "stop_lat": "34.2230893",
+        "stop_lon": "131.306576",
+        "zone_id": "60103 4",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60103 99",
+      "source_stop_id": "60103 99",
+      "name": "秋芳洞",
+      "original_coordinates": [
+        131.30644362924735,
+        34.223235049338534
+      ],
+      "city": "美祢市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60103 99",
+        "stop_code": "",
+        "stop_name": "秋芳洞",
+        "stop_desc": "",
+        "stop_lat": "34.223235049338531109584",
+        "stop_lon": "131.306443629247360574142",
+        "zone_id": "60103 99",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60104 1",
+      "source_stop_id": "60104 1",
+      "name": "秋吉小学校前",
+      "original_coordinates": [
+        131.307171,
+        34.2132873
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60104 1",
+        "stop_code": "",
+        "stop_name": "秋吉小学校前",
+        "stop_desc": "",
+        "stop_lat": "34.2132873",
+        "stop_lon": "131.307171",
+        "zone_id": "60104 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60104 2",
+      "source_stop_id": "60104 2",
+      "name": "秋吉小学校前",
+      "original_coordinates": [
+        131.3071559,
+        34.2131784
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60104 2",
+        "stop_code": "",
+        "stop_name": "秋吉小学校前",
+        "stop_desc": "",
+        "stop_lat": "34.2131784",
+        "stop_lon": "131.3071559",
+        "zone_id": "60104 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60105 1",
+      "source_stop_id": "60105 1",
+      "name": "下八重",
+      "original_coordinates": [
+        131.3103663,
+        34.2133085
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60105 1",
+        "stop_code": "",
+        "stop_name": "下八重",
+        "stop_desc": "",
+        "stop_lat": "34.2133085",
+        "stop_lon": "131.3103663",
+        "zone_id": "60105 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60105 2",
+      "source_stop_id": "60105 2",
+      "name": "下八重",
+      "original_coordinates": [
+        131.3098314,
+        34.2131465
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60105 2",
+        "stop_code": "",
+        "stop_name": "下八重",
+        "stop_desc": "",
+        "stop_lat": "34.2131465",
+        "stop_lon": "131.3098314",
+        "zone_id": "60105 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60106 1",
+      "source_stop_id": "60106 1",
+      "name": "上八重",
+      "original_coordinates": [
+        131.3146738,
+        34.2149816
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60106 1",
+        "stop_code": "",
+        "stop_name": "上八重",
+        "stop_desc": "",
+        "stop_lat": "34.2149816",
+        "stop_lon": "131.3146738",
+        "zone_id": "60106 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60106 2",
+      "source_stop_id": "60106 2",
+      "name": "上八重",
+      "original_coordinates": [
+        131.3137772,
+        34.2146513
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60106 2",
+        "stop_code": "",
+        "stop_name": "上八重",
+        "stop_desc": "",
+        "stop_lat": "34.2146513",
+        "stop_lon": "131.3137772",
+        "zone_id": "60106 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60107 1",
+      "source_stop_id": "60107 1",
+      "name": "八重ヶ原",
+      "original_coordinates": [
+        131.3232873,
+        34.213813
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60107 1",
+        "stop_code": "",
+        "stop_name": "八重ヶ原",
+        "stop_desc": "",
+        "stop_lat": "34.213813",
+        "stop_lon": "131.3232873",
+        "zone_id": "60107 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60107 2",
+      "source_stop_id": "60107 2",
+      "name": "八重ヶ原",
+      "original_coordinates": [
+        131.3227805,
+        34.213833
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60107 2",
+        "stop_code": "",
+        "stop_name": "八重ヶ原",
+        "stop_desc": "",
+        "stop_lat": "34.213833",
+        "stop_lon": "131.3227805",
+        "zone_id": "60107 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60108 1",
+      "source_stop_id": "60108 1",
+      "name": "平ヶ谷",
+      "original_coordinates": [
+        131.3308451,
+        34.2177056
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60108 1",
+        "stop_code": "",
+        "stop_name": "平ヶ谷",
+        "stop_desc": "",
+        "stop_lat": "34.2177056",
+        "stop_lon": "131.3308451",
+        "zone_id": "60108 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60108 2",
+      "source_stop_id": "60108 2",
+      "name": "平ヶ谷",
+      "original_coordinates": [
+        131.330759,
+        34.2174006
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60108 2",
+        "stop_code": "",
+        "stop_name": "平ヶ谷",
+        "stop_desc": "",
+        "stop_lat": "34.2174006",
+        "stop_lon": "131.330759",
+        "zone_id": "60108 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60109 1",
+      "source_stop_id": "60109 1",
+      "name": "紅葉橋",
+      "original_coordinates": [
+        131.3406548,
+        34.2203081
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60109 1",
+        "stop_code": "",
+        "stop_name": "紅葉橋",
+        "stop_desc": "",
+        "stop_lat": "34.2203081",
+        "stop_lon": "131.3406548",
+        "zone_id": "60109 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60109 2",
+      "source_stop_id": "60109 2",
+      "name": "紅葉橋",
+      "original_coordinates": [
+        131.3405165,
+        34.220126
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60109 2",
+        "stop_code": "",
+        "stop_name": "紅葉橋",
+        "stop_desc": "",
+        "stop_lat": "34.220126",
+        "stop_lon": "131.3405165",
+        "zone_id": "60109 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60110 1",
+      "source_stop_id": "60110 1",
+      "name": "大田中央",
+      "original_coordinates": [
+        131.3419178,
+        34.2214969
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60110 1",
+        "stop_code": "",
+        "stop_name": "大田中央",
+        "stop_desc": "",
+        "stop_lat": "34.2214969",
+        "stop_lon": "131.3419178",
+        "zone_id": "60110 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60110 2",
+      "source_stop_id": "60110 2",
+      "name": "大田中央",
+      "original_coordinates": [
+        131.3419226,
+        34.2214957
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60110 2",
+        "stop_code": "",
+        "stop_name": "大田中央",
+        "stop_desc": "",
+        "stop_lat": "34.2214957",
+        "stop_lon": "131.3419226",
+        "zone_id": "60110 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60111 1",
+      "source_stop_id": "60111 1",
+      "name": "温湯",
+      "original_coordinates": [
+        131.3489677,
+        34.2151577
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60111 1",
+        "stop_code": "",
+        "stop_name": "温湯",
+        "stop_desc": "",
+        "stop_lat": "34.2151577",
+        "stop_lon": "131.3489677",
+        "zone_id": "60111 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60111 2",
+      "source_stop_id": "60111 2",
+      "name": "温湯",
+      "original_coordinates": [
+        131.3478145,
+        34.2158024
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60111 2",
+        "stop_code": "",
+        "stop_name": "温湯",
+        "stop_desc": "",
+        "stop_lat": "34.2158024",
+        "stop_lon": "131.3478145",
+        "zone_id": "60111 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60112 1",
+      "source_stop_id": "60112 1",
+      "name": "長門高山",
+      "original_coordinates": [
+        131.3517331,
+        34.2016784
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60112 1",
+        "stop_code": "",
+        "stop_name": "長門高山",
+        "stop_desc": "",
+        "stop_lat": "34.2016784",
+        "stop_lon": "131.3517331",
+        "zone_id": "60112 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60112 2",
+      "source_stop_id": "60112 2",
+      "name": "長門高山",
+      "original_coordinates": [
+        131.3516387,
+        34.2017259
+      ],
+      "city": "美祢市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60112 2",
+        "stop_code": "",
+        "stop_name": "長門高山",
+        "stop_desc": "",
+        "stop_lat": "34.2017259",
+        "stop_lon": "131.3516387",
+        "zone_id": "60112 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60113 1",
+      "source_stop_id": "60113 1",
+      "name": "綾木",
+      "original_coordinates": [
+        131.3489131,
+        34.1980029
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60113 1",
+        "stop_code": "",
+        "stop_name": "綾木",
+        "stop_desc": "",
+        "stop_lat": "34.1980029",
+        "stop_lon": "131.3489131",
+        "zone_id": "60113 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60113 2",
+      "source_stop_id": "60113 2",
+      "name": "綾木",
+      "original_coordinates": [
+        131.3491156,
+        34.1984784
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60113 2",
+        "stop_code": "",
+        "stop_name": "綾木",
+        "stop_desc": "",
+        "stop_lat": "34.1984784",
+        "stop_lon": "131.3491156",
+        "zone_id": "60113 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60114 1",
+      "source_stop_id": "60114 1",
+      "name": "四ノ瀬",
+      "original_coordinates": [
+        131.3643296,
+        34.2022517
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60114 1",
+        "stop_code": "",
+        "stop_name": "四ノ瀬",
+        "stop_desc": "",
+        "stop_lat": "34.2022517",
+        "stop_lon": "131.3643296",
+        "zone_id": "60114 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60114 2",
+      "source_stop_id": "60114 2",
+      "name": "四ノ瀬",
+      "original_coordinates": [
+        131.3646634,
+        34.2029549
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60114 2",
+        "stop_code": "",
+        "stop_name": "四ノ瀬",
+        "stop_desc": "",
+        "stop_lat": "34.2029549",
+        "stop_lon": "131.3646634",
+        "zone_id": "60114 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60115 1",
+      "source_stop_id": "60115 1",
+      "name": "薬王寺",
+      "original_coordinates": [
+        131.3745408,
+        34.2124194
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60115 1",
+        "stop_code": "",
+        "stop_name": "薬王寺",
+        "stop_desc": "",
+        "stop_lat": "34.2124194",
+        "stop_lon": "131.3745408",
+        "zone_id": "60115 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60115 2",
+      "source_stop_id": "60115 2",
+      "name": "薬王寺",
+      "original_coordinates": [
+        131.3744956,
+        34.21228
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60115 2",
+        "stop_code": "",
+        "stop_name": "薬王寺",
+        "stop_desc": "",
+        "stop_lat": "34.21228",
+        "stop_lon": "131.3744956",
+        "zone_id": "60115 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60116 1",
+      "source_stop_id": "60116 1",
+      "name": "景平",
+      "original_coordinates": [
+        131.3791595,
+        34.2075084
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60116 1",
+        "stop_code": "",
+        "stop_name": "景平",
+        "stop_desc": "",
+        "stop_lat": "34.2075084",
+        "stop_lon": "131.3791595",
+        "zone_id": "60116 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60116 2",
+      "source_stop_id": "60116 2",
+      "name": "景平",
+      "original_coordinates": [
+        131.3790442,
+        34.2074397
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60116 2",
+        "stop_code": "",
+        "stop_name": "景平",
+        "stop_desc": "",
+        "stop_lat": "34.2074397",
+        "stop_lon": "131.3790442",
+        "zone_id": "60116 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60117 1",
+      "source_stop_id": "60117 1",
+      "name": "下大石",
+      "original_coordinates": [
+        131.3848768,
+        34.2032283
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60117 1",
+        "stop_code": "",
+        "stop_name": "下大石",
+        "stop_desc": "",
+        "stop_lat": "34.2032283",
+        "stop_lon": "131.3848768",
+        "zone_id": "60117 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60117 2",
+      "source_stop_id": "60117 2",
+      "name": "下大石",
+      "original_coordinates": [
+        131.3848735,
+        34.2028832
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60117 2",
+        "stop_code": "",
+        "stop_name": "下大石",
+        "stop_desc": "",
+        "stop_lat": "34.2028832",
+        "stop_lon": "131.3848735",
+        "zone_id": "60117 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60118 1",
+      "source_stop_id": "60118 1",
+      "name": "長門大石",
+      "original_coordinates": [
+        131.3895044,
+        34.199523
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60118 1",
+        "stop_code": "",
+        "stop_name": "長門大石",
+        "stop_desc": "",
+        "stop_lat": "34.199523",
+        "stop_lon": "131.3895044",
+        "zone_id": "60118 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60118 2",
+      "source_stop_id": "60118 2",
+      "name": "長門大石",
+      "original_coordinates": [
+        131.3879339,
+        34.2001655
+      ],
+      "city": "美祢市",
+      "official_direction": "中尾口・秋吉方面",
+      "original": {
+        "stop_id": "60118 2",
+        "stop_code": "",
+        "stop_name": "長門大石",
+        "stop_desc": "",
+        "stop_lat": "34.2001655",
+        "stop_lon": "131.3879339",
+        "zone_id": "60118 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60119 1",
+      "source_stop_id": "60119 1",
+      "name": "吉敷畑",
+      "original_coordinates": [
+        131.4140042,
+        34.1985362
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60119 1",
+        "stop_code": "",
+        "stop_name": "吉敷畑",
+        "stop_desc": "",
+        "stop_lat": "34.1985362",
+        "stop_lon": "131.4140042",
+        "zone_id": "60119 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60119 2",
+      "source_stop_id": "60119 2",
+      "name": "吉敷畑",
+      "original_coordinates": [
+        131.4155177,
+        34.1983807
+      ],
+      "city": "山口市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60119 2",
+        "stop_code": "",
+        "stop_name": "吉敷畑",
+        "stop_desc": "",
+        "stop_lat": "34.1983807",
+        "stop_lon": "131.4155177",
+        "zone_id": "60119 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60137 2",
+      "source_stop_id": "60137 2",
+      "name": "黒谷口",
+      "original_coordinates": [
+        131.2993448,
+        34.2332783
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞循環",
+      "original": {
+        "stop_id": "60137 2",
+        "stop_code": "",
+        "stop_name": "黒谷口",
+        "stop_desc": "",
+        "stop_lat": "34.2332783",
+        "stop_lon": "131.2993448",
+        "zone_id": "60137 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60138 2",
+      "source_stop_id": "60138 2",
+      "name": "秋吉台",
+      "original_coordinates": [
+        131.3060505,
+        34.234162
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60138 2",
+        "stop_code": "",
+        "stop_name": "秋吉台",
+        "stop_desc": "",
+        "stop_lat": "34.234162",
+        "stop_lon": "131.3060505",
+        "zone_id": "60138 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60138 99",
+      "source_stop_id": "60138 99",
+      "name": "秋吉台",
+      "original_coordinates": [
+        131.30560987941595,
+        34.23378390633551
+      ],
+      "city": "美祢市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60138 99",
+        "stop_code": "",
+        "stop_name": "秋吉台",
+        "stop_desc": "",
+        "stop_lat": "34.233783906335511386112",
+        "stop_lon": "131.3056098794159664024946",
+        "zone_id": "60138 99",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60139 2",
+      "source_stop_id": "60139 2",
+      "name": "千坊",
+      "original_coordinates": [
+        131.4913206,
+        34.1586085
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・山口大学・中尾口方面",
+      "original": {
+        "stop_id": "60139 2",
+        "stop_code": "",
+        "stop_name": "千坊",
+        "stop_desc": "",
+        "stop_lat": "34.1586085",
+        "stop_lon": "131.4913206",
+        "zone_id": "60139 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60154 1",
+      "source_stop_id": "60154 1",
+      "name": "萩・明倫センター",
+      "original_coordinates": [
+        131.3987081,
+        34.4093826
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60154 1",
+        "stop_code": "",
+        "stop_name": "萩・明倫センター",
+        "stop_desc": "",
+        "stop_lat": "34.4093826",
+        "stop_lon": "131.3987081",
+        "zone_id": "60154 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60154 10",
+      "source_stop_id": "60154 10",
+      "name": "萩・明倫センター",
+      "original_coordinates": [
+        131.3987081,
+        34.4093843
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60154 10",
+        "stop_code": "",
+        "stop_name": "萩・明倫センター",
+        "stop_desc": "",
+        "stop_lat": "34.4093843",
+        "stop_lon": "131.3987081",
+        "zone_id": "60154 10",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60154 11",
+      "source_stop_id": "60154 11",
+      "name": "萩・明倫センター",
+      "original_coordinates": [
+        131.3987071,
+        34.4093829
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・新山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60154 11",
+        "stop_code": "",
+        "stop_name": "萩・明倫センター",
+        "stop_desc": "",
+        "stop_lat": "34.4093829",
+        "stop_lon": "131.3987071",
+        "zone_id": "60154 11",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60154 2",
+      "source_stop_id": "60154 2",
+      "name": "萩・明倫センター",
+      "original_coordinates": [
+        131.3987075,
+        34.4093851
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60154 2",
+        "stop_code": "",
+        "stop_name": "萩・明倫センター",
+        "stop_desc": "",
+        "stop_lat": "34.4093851",
+        "stop_lon": "131.3987075",
+        "zone_id": "60154 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60154 99",
+      "source_stop_id": "60154 99",
+      "name": "萩・明倫センター",
+      "original_coordinates": [
+        131.39864407036492,
+        34.409316756161125
+      ],
+      "city": "萩市",
+      "official_direction": "",
+      "original": {
+        "stop_id": "60154 99",
+        "stop_code": "",
+        "stop_name": "萩・明倫センター",
+        "stop_desc": "",
+        "stop_lat": "34.409316756161126219401",
+        "stop_lon": "131.3986440703649163578714",
+        "zone_id": "60154 99",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60155 1",
+      "source_stop_id": "60155 1",
+      "name": "高井",
+      "original_coordinates": [
+        131.5518324,
+        34.07137
+      ],
+      "city": "防府市",
+      "official_direction": "総合医療センター方面",
+      "original": {
+        "stop_id": "60155 1",
+        "stop_code": "",
+        "stop_name": "高井",
+        "stop_desc": "",
+        "stop_lat": "34.07137",
+        "stop_lon": "131.5518324",
+        "zone_id": "60155 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60155 2",
+      "source_stop_id": "60155 2",
+      "name": "高井",
+      "original_coordinates": [
+        131.551761,
+        34.0714289
+      ],
+      "city": "防府市",
+      "official_direction": "防府→総医・ゆめ・県庁→中尾口",
+      "original": {
+        "stop_id": "60155 2",
+        "stop_code": "",
+        "stop_name": "高井",
+        "stop_desc": "",
+        "stop_lat": "34.0714289",
+        "stop_lon": "131.551761",
+        "zone_id": "60155 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60156 1",
+      "source_stop_id": "60156 1",
+      "name": "高井県営住宅前",
+      "original_coordinates": [
+        131.548989,
+        34.0688613
+      ],
+      "city": "防府市",
+      "official_direction": "総合医療センター方面",
+      "original": {
+        "stop_id": "60156 1",
+        "stop_code": "",
+        "stop_name": "高井県営住宅前",
+        "stop_desc": "",
+        "stop_lat": "34.0688613",
+        "stop_lon": "131.548989",
+        "zone_id": "60156 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60156 2",
+      "source_stop_id": "60156 2",
+      "name": "高井県営住宅前",
+      "original_coordinates": [
+        131.5481776,
+        34.0683714
+      ],
+      "city": "防府市",
+      "official_direction": "防府→総医・ゆめ・県庁→中尾口",
+      "original": {
+        "stop_id": "60156 2",
+        "stop_code": "",
+        "stop_name": "高井県営住宅前",
+        "stop_desc": "",
+        "stop_lat": "34.0683714",
+        "stop_lon": "131.5481776",
+        "zone_id": "60156 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60157 1",
+      "source_stop_id": "60157 1",
+      "name": "総合医療センター",
+      "original_coordinates": [
+        131.5415986,
+        34.0655227
+      ],
+      "city": "防府市",
+      "official_direction": "防府方面",
+      "original": {
+        "stop_id": "60157 1",
+        "stop_code": "",
+        "stop_name": "総合医療センター",
+        "stop_desc": "",
+        "stop_lat": "34.0655227",
+        "stop_lon": "131.5415986",
+        "zone_id": "60157 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60157 2",
+      "source_stop_id": "60157 2",
+      "name": "総合医療センター",
+      "original_coordinates": [
+        131.541763,
+        34.0654283
+      ],
+      "city": "防府市",
+      "official_direction": "中尾口・山口大学方面",
+      "original": {
+        "stop_id": "60157 2",
+        "stop_code": "",
+        "stop_name": "総合医療センター",
+        "stop_desc": "",
+        "stop_lat": "34.0654283",
+        "stop_lon": "131.541763",
+        "zone_id": "60157 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60158 1",
+      "source_stop_id": "60158 1",
+      "name": "美東病院",
+      "original_coordinates": [
+        131.3402837,
+        34.2204981
+      ],
+      "city": "美祢市",
+      "official_direction": "山口駅方面",
+      "original": {
+        "stop_id": "60158 1",
+        "stop_code": "",
+        "stop_name": "美東病院",
+        "stop_desc": "",
+        "stop_lat": "34.2204981",
+        "stop_lon": "131.3402837",
+        "zone_id": "60158 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60158 2",
+      "source_stop_id": "60158 2",
+      "name": "美東病院",
+      "original_coordinates": [
+        131.3402745,
+        34.2204959
+      ],
+      "city": "美祢市",
+      "official_direction": "秋芳洞・秋吉方面",
+      "original": {
+        "stop_id": "60158 2",
+        "stop_code": "",
+        "stop_name": "美東病院",
+        "stop_desc": "",
+        "stop_lat": "34.2204959",
+        "stop_lon": "131.3402745",
+        "zone_id": "60158 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60159 1",
+      "source_stop_id": "60159 1",
+      "name": "道の駅あさひ",
+      "original_coordinates": [
+        131.4594682,
+        34.2864888
+      ],
+      "city": "萩市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60159 1",
+        "stop_code": "",
+        "stop_name": "道の駅あさひ",
+        "stop_desc": "",
+        "stop_lat": "34.2864888",
+        "stop_lon": "131.4594682",
+        "zone_id": "60159 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60159 2",
+      "source_stop_id": "60159 2",
+      "name": "道の駅あさひ",
+      "original_coordinates": [
+        131.4594742,
+        34.2864911
+      ],
+      "city": "萩市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60159 2",
+        "stop_code": "",
+        "stop_name": "道の駅あさひ",
+        "stop_desc": "",
+        "stop_lat": "34.2864911",
+        "stop_lon": "131.4594742",
+        "zone_id": "60159 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60160 1",
+      "source_stop_id": "60160 1",
+      "name": "下田",
+      "original_coordinates": [
+        131.51379385450076,
+        34.20632381320192
+      ],
+      "city": "山口市",
+      "official_direction": "山口駅・湯田温泉方面",
+      "original": {
+        "stop_id": "60160 1",
+        "stop_code": "",
+        "stop_name": "下田",
+        "stop_desc": "",
+        "stop_lat": "34.206323813201916997920",
+        "stop_lon": "131.5137938545007573169728",
+        "zone_id": "60160 1",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    },
+    {
+      "id": "jr-chugoku:60160 2",
+      "source_stop_id": "60160 2",
+      "name": "下田",
+      "original_coordinates": [
+        131.51391050022823,
+        34.20655712366007
+      ],
+      "city": "山口市",
+      "official_direction": "東萩駅方面",
+      "original": {
+        "stop_id": "60160 2",
+        "stop_code": "",
+        "stop_name": "下田",
+        "stop_desc": "",
+        "stop_lat": "34.206557123660070250117",
+        "stop_lon": "131.5139105002282476077022",
+        "zone_id": "60160 2",
+        "stop_url": "",
+        "location_type": "0",
+        "parent_station": "",
+        "stop_timezone": "",
+        "wheelchair_boarding": "",
+        "platform_code": ""
+      }
+    }
+  ],
+  "license": "CC0",
+  "license_url": "https://www.bus-kyo.or.jp/gtfs-open-data/ライセンスについて"
+}

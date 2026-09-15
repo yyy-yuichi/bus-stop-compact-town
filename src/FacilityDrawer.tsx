@@ -38,7 +38,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
       <div><p className="detail-eyebrow"><span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>{category.name}</p><h2 id="facility-title">{p.name}</h2><p className="detail-subtitle">{p.city}</p></div>
       <button ref={close} className="icon-button" onClick={onClose} aria-label="施設の詳細を閉じる"><MapIcon name="close" /></button>
     </header>
-    {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}の徒歩圏に戻る</button>}
+    {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
       {p.classification_review?.status === 'pending' && <p className="mb-3 text-xs text-amber-800">情報確認中</p>}
       <section className="facility-address"><h3>所在地</h3><p>{p.official_address || p.address || '住所の登録なし'}</p></section>

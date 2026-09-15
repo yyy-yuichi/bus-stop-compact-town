@@ -1,0 +1,146 @@
+{
+  "summary": {
+    "pairs": 5,
+    "confirmed_pairs": 4,
+    "held_pairs": 1,
+    "confirmed_points": 9,
+    "occurrence_states": {
+      "整合": 9,
+      "判定不能": 1
+    }
+  },
+  "occurrences_checked": 10,
+  "unchanged_catchment_files": 949,
+  "unrelated_guides_unchanged": true,
+  "original_coordinates_and_numbers_unchanged": true,
+  "loop_occurrence_regression": "covered by Hikari same-script test",
+  "walking_results": [
+    {
+      "id": "iwakuni:i-625_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "iwakuni:i-625_02",
+      "status": "not-computed",
+      "gap": 31.5
+    },
+    {
+      "id": "iwakuni:i-634_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        5,
+        15,
+        25
+      ]
+    },
+    {
+      "id": "iwakuni:i-629_01",
+      "status": "not-computed",
+      "gap": 51.2
+    },
+    {
+      "id": "iwakuni:i-629_02",
+      "status": "not-computed",
+      "gap": 66.6
+    },
+    {
+      "id": "iwakuni:i-630_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "iwakuni:i-630_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "iwakuni:i-623_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "id": "iwakuni:i-623_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        7,
+        7
+      ]
+    }
+  ],
+  "representative_application_operations": [
+    {
+      "name": "南岩国駅",
+      "id": "iwakuni:i-625_01",
+      "choices": [
+        "iwakuni:i-625_01",
+        "iwakuni:i-625_02"
+      ],
+      "summary": "高水学園方面（岩国駅（岩国医療センター・市役所 経由））",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "南岩国駅",
+      "id": "iwakuni:i-625_02",
+      "choices": [
+        "iwakuni:i-625_01",
+        "iwakuni:i-625_02"
+      ],
+      "summary": "ゆめタウン南岩国方面（六呂師口（ゆめタウン南岩国・通津公民館・大藤・欽明路 経由））",
+      "position_status": "机上確認済み",
+      "status": "not-computed",
+      "gap": 31.5
+    },
+    {
+      "name": "寿橋",
+      "id": "iwakuni:i-634_01",
+      "choices": [
+        "iwakuni:i-634_01",
+        "iwakuni:i-634_02"
+      ],
+      "summary": "今津方面（岩国駅（市役所 経由））",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        5,
+        15,
+        25
+      ]
+    },
+    {
+      "name": "寿橋",
+      "id": "iwakuni:i-634_02",
+      "choices": [
+        "iwakuni:i-634_01",
+        "iwakuni:i-634_02"
+      ],
+      "summary": "大薮方面（六呂師口（岩国医療センター・ゆめタウン南岩国・通津公民館・大藤・欽明路 経由））",
+      "position_status": "保留"
+    }
+  ],
+  "browser_ui_checked": false,
+  "browser_blocker": "Cloud Chrome managed preview navigation failed: net::ERR_BLOCKED_BY_CLIENT. No live-site browser verification performed."
+}

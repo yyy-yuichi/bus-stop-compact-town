@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>宇部市営バス 乗り場案内 松山二丁目バス停</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>無題のレイヤ</name>
+      <Placemark>
+        <name>松山二丁目バス停</name>
+        <description><![CDATA[・新山口駅 方面（特急・快速・準快速）<br>・阿知須、丸尾港、中央病院、萩原、片倉 方面]]></description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.255513,33.941856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>松山二丁目バス停</name>
+        <description>・宇部新川駅 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.255186,33.941776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>松山二丁目バス停</name>
+        <description>・埠頭線（宇部新川駅方面）</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.25532,33.940921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

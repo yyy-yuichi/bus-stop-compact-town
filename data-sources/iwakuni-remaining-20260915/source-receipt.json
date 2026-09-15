@@ -1,0 +1,13 @@
+{
+  "target_points": 665,
+  "source_path": "raw_data/yamaguchi-roads.json",
+  "sha256": "58cea71d0b2c5ab678cd300aa76c3af5e947d2c9cd4d73ef546a04a71ce6ed5c",
+  "reused_full_road_supplements": [
+    "data-sources/hikari-directed-20260915/carriageways-pilot.json",
+    "data-sources/hikari-directed-20260915/carriageways-remaining.json",
+    "data-sources/iwakuni-directed-20260915/carriageways-first.json",
+    "data-sources/iwakuni-batch02-20260915/carriageways-first.json"
+  ],
+  "limitations": "Original road extraction excludes some trunk roads and vehicle one-way tags. A missing candidate is not proof of absent road; no restriction is inferred from absent tags. New candidates require targeted full-road follow-up.",
+  "excluded_previously_reviewed": true
+}

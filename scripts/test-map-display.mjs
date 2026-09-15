@@ -47,4 +47,11 @@ assert.deepEqual(mapFacilities(facilities, allCategories, null, 'stop-a:15', nul
 assert.deepEqual(mapFacilities(facilities, allCategories, null, 'stop-a:15', walking), [chosen]);
 assert.deepEqual(mapFacilities(facilities, ['hospital'], null, 'stop-a:15', walking), []);
 assert.deepEqual(mapFacilities(facilities, [], reference, '', null), [reference], 'Search and old facility links must still open their selected record');
+const neighbor = facilities.find(f => f.id !== chosen.id && allCategories.includes(f.properties.category));
+const twoCandidates = { scope: 'stop-a:15', ids: [String(chosen.id), String(neighbor.id)] };
+const expectedNeighbors = facilities.filter(f => twoCandidates.ids.includes(String(f.id)));
+assert.deepEqual(mapFacilities(facilities, allCategories, chosen, 'stop-a:15', twoCandidates), expectedNeighbors, 'Opening facility details must retain nearby walking candidates without duplicating the chosen facility');
+assert.deepEqual(mapFacilities(facilities, [], chosen, 'stop-a:15', twoCandidates), [chosen], 'Category filtering must still apply to the other candidates');
+assert.deepEqual(mapFacilities(facilities, allCategories, chosen, 'stop-b:15', twoCandidates), [chosen], 'A selected facility must not revive a previous stop catchment');
+assert.deepEqual(mapFacilities(facilities, allCategories, chosen, 'stop-a:5', twoCandidates), [chosen], 'A selected facility must not revive a previous time budget');
 console.log(JSON.stringify({registrations: stops.length, clustersByZoom: counts, facilityScopeChecks: 'passed'}));

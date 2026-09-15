@@ -1,0 +1,3470 @@
+{
+  "summary": {
+    "乗り場保留・徒歩圏未計算": 148,
+    "原点計算一致・徒歩接続の対応保留": 15,
+    "原点・接続位置照合済み（既存徒歩手法）": 84,
+    "乗り場机上整合・道路未接続": 18
+  },
+  "points": [
+    {
+      "id": "jr-chugoku:60001 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5690436,
+        34.0536011
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60001 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5690476,
+        34.0536011
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60002 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5667436,
+        34.0572707
+      ],
+      "file": "jr-chugoku-60002 1.json",
+      "origin_matches": true,
+      "sha256": "230c94d0f22a51160ddd2b1f47070df6a72f01b09b8b3e3a722fa643588c59fa",
+      "gap_m": 6.6,
+      "snap": [
+        131.56677,
+        34.05733
+      ],
+      "max_snap_to_boarding_road_projection_m": 13.594,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60002 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5672264,
+        34.0570951
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60003 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5610235,
+        34.0600453
+      ],
+      "file": "jr-chugoku-60003 1.json",
+      "origin_matches": true,
+      "sha256": "5977d6c35345960a5cb66f8f9d12cdf261619a53fa73f2d294f50fe19193b60a",
+      "gap_m": 8.0,
+      "snap": [
+        131.56095,
+        34.06
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.436,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60003 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5609417,
+        34.0598814
+      ],
+      "file": "jr-chugoku-60003 2.json",
+      "origin_matches": true,
+      "sha256": "95aed086b4e00755d1ee7518fbc7118fe7ca256d4266dcfc911044ac410e51c2",
+      "gap_m": 9.0,
+      "snap": [
+        131.56102,
+        34.05993
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.048,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60004 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5590804,
+        34.0621928
+      ],
+      "file": "jr-chugoku-60004 1.json",
+      "origin_matches": true,
+      "sha256": "34269b6e0e37f82d942a92f8264bb213ea4d2f5fbbeba139af7e514a305f5676",
+      "gap_m": 8.5,
+      "snap": [
+        131.55901,
+        34.06215
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.435,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60004 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5582826,
+        34.0628272
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60005 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5550034,
+        34.0703913
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60005 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5545138,
+        34.0710568
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60006 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5508811,
+        34.0805191
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60006 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5500003,
+        34.0815811
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60007 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.54779,
+        34.0866861
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60007 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5475504,
+        34.0866439
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60008 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.539877,
+        34.1022377
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60008 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5398752,
+        34.1019633
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60009 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5361164,
+        34.1092135
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60009 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5357494,
+        34.1094657
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60010 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5327426,
+        34.1161937
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60010 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5320865,
+        34.1170181
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60011 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5308926,
+        34.119879
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60011 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5308051,
+        34.1195545
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60012 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5277686,
+        34.1270284
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60012 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5268839,
+        34.1288256
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60013 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5260297,
+        34.1319197
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60013 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.525793,
+        34.1319469
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60014 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5230128,
+        34.14016438
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60014 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5227875,
+        34.1401465
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60015 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5205169,
+        34.1477118
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60015 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5199886,
+        34.1479479
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60016 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5160948,
+        34.1524852
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60016 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5162151,
+        34.1523535
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60017 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5094731,
+        34.1538472
+      ],
+      "file": "jr-chugoku-60017 1.json",
+      "origin_matches": true,
+      "sha256": "58b26e8d59ad0f11452fcae013d5e0cdbae03076f03fabf237be2017f8a21e05",
+      "gap_m": 5.4,
+      "snap": [
+        131.50946,
+        34.1538
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.291,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60017 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5091717,
+        34.1538082
+      ],
+      "file": "jr-chugoku-60017 2.json",
+      "origin_matches": true,
+      "sha256": "8f5cc2dd58c4c649be41c380a61e2322d2f954336f66b8415a689cfce9d55282",
+      "gap_m": 6.4,
+      "snap": [
+        131.50919,
+        34.15386
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.407,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60018 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5016572,
+        34.1557235
+      ],
+      "file": "jr-chugoku-60018 1.json",
+      "origin_matches": true,
+      "sha256": "c723a467d97d6f8b938c4cef01a94049669bff1acfe92c80d87b644ed041dbf1",
+      "gap_m": 7.3,
+      "snap": [
+        131.50164,
+        34.15566
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.41,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60018 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5016105,
+        34.1555974
+      ],
+      "file": "jr-chugoku-60018 2.json",
+      "origin_matches": true,
+      "sha256": "f36e85ef3f1b46118a9281b56594281fde557740c882cd7af971fed89f5457dc",
+      "gap_m": 7.3,
+      "snap": [
+        131.50163,
+        34.15566
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.204,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60019 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4993315,
+        34.1563011
+      ],
+      "file": "jr-chugoku-60019 1.json",
+      "origin_matches": true,
+      "sha256": "5063f3977b3ec779184148e26f9d5e5885075d2fbfd3660c1886d28577ef7ff0",
+      "gap_m": 9.0,
+      "snap": [
+        131.4993,
+        34.15622
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.496,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60019 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4981445,
+        34.1564228
+      ],
+      "file": "jr-chugoku-60019 2.json",
+      "origin_matches": true,
+      "sha256": "7ce978acb81209fdca63b142ed60248b32780596b52341f96512be10e20ae0fe",
+      "gap_m": 9.0,
+      "snap": [
+        131.49817,
+        34.1565
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.069,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60020 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.485769,
+        34.1654122
+      ],
+      "file": "jr-chugoku-60020 1.json",
+      "origin_matches": true,
+      "sha256": "a61bccc90f6e6d21065618e22015cfb3f35f4fb787726993dd9f6939a349f240",
+      "gap_m": 7.4,
+      "snap": [
+        131.48571,
+        34.16537
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.238,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60020 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4860471,
+        34.1648761
+      ],
+      "file": "jr-chugoku-60020 2.json",
+      "origin_matches": true,
+      "sha256": "c2b7aed2204e02d988355951a28ffeac226d25f4f8b3ea45f7b7d805059e829a",
+      "gap_m": 7.4,
+      "snap": [
+        131.48611,
+        34.16491
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.557,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60021 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4797575,
+        34.1671164
+      ],
+      "file": "jr-chugoku-60021 1.json",
+      "origin_matches": true,
+      "sha256": "9eca74f2866a3517510f13652d3f56d7c6905a7a0e2c76b15ae163e984da2b43",
+      "gap_m": 8.6,
+      "snap": [
+        131.47974,
+        34.16704
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.187,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60021 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4784376,
+        34.1673273
+      ],
+      "file": "jr-chugoku-60021 2.json",
+      "origin_matches": true,
+      "sha256": "7509ee8ee80093586f5adbbd69b2af7e2b9a252850a80085764ca9e6b77a94ee",
+      "gap_m": 6.1,
+      "snap": [
+        131.47847,
+        34.16737
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.531,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60023 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4716149,
+        34.1790023
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60023 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.471172,
+        34.1798844
+      ],
+      "file": "jr-chugoku-60023 2.json",
+      "origin_matches": true,
+      "sha256": "e67b7ca8cee6dfe68b1095d72069f8f25460413e1ed0495362c69608b36fc2ab",
+      "gap_m": 3.7,
+      "snap": [
+        131.47113,
+        34.17987
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.473,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60024 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4717932,
+        34.18362
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60024 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4716041,
+        34.1836321
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60024 4",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.471695,
+        34.1837385
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60025 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4753204,
+        34.1797827
+      ],
+      "file": "jr-chugoku-60025 1.json",
+      "origin_matches": true,
+      "sha256": "9ba04dffae1b03b66e03fa36e768457fe458ed4d8f21bb32819ef1435db36897",
+      "gap_m": 8.1,
+      "snap": [
+        131.47523,
+        34.17977
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.365,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60025 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4745383,
+        34.1813063
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60025 3",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4753205,
+        34.1797797
+      ],
+      "file": "jr-chugoku-60025 3.json",
+      "origin_matches": true,
+      "sha256": "49190ee9d7114a96a1f3ec538551041ccb64702582e3c274ff0912f196f302e7",
+      "gap_m": 8.1,
+      "snap": [
+        131.47523,
+        34.17977
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.365,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60025 4",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4745338,
+        34.1813064
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60026 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4763103,
+        34.176825
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60026 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4765693,
+        34.1765469
+      ],
+      "file": "jr-chugoku-60026 2.json",
+      "origin_matches": true,
+      "sha256": "84d539beb34b79bc00d565a9c531e89930ee19e1e0593b2f94713782ff0ddd2a",
+      "gap_m": 6.2,
+      "snap": [
+        131.47661,
+        34.17659
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.226,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60026 3",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4763102,
+        34.1768256
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60026 4",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4765683,
+        34.176548
+      ],
+      "file": "jr-chugoku-60026 4.json",
+      "origin_matches": true,
+      "sha256": "ef6a3ffeea227e5d59f8873b9432ad82c114f81b3bb4f23a45ebde5875274319",
+      "gap_m": 6.2,
+      "snap": [
+        131.47661,
+        34.17659
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.126,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60027 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4787821,
+        34.1744938
+      ],
+      "file": "jr-chugoku-60027 1.json",
+      "origin_matches": true,
+      "sha256": "7d87ee4a14fbe641dd0b090fa54259e8b0b6262de78ce09a608451d55abc476f",
+      "gap_m": 0.7,
+      "snap": [
+        131.47879,
+        34.1745
+      ],
+      "max_snap_to_boarding_road_projection_m": 5.407,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60027 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.478983,
+        34.1741619
+      ],
+      "file": "jr-chugoku-60027 2.json",
+      "origin_matches": true,
+      "sha256": "8a15b22548e2c1a8beae8cb1f8946f48977c5db3ba8c03d89585b8d6dff4f3e6",
+      "gap_m": 3.9,
+      "snap": [
+        131.47902,
+        34.17418
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.531,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60027 3",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4787811,
+        34.1744949
+      ],
+      "file": "jr-chugoku-60027 3.json",
+      "origin_matches": true,
+      "sha256": "00a2dc844f8c05b19e5371112facfb17e3424c6486fce7bdf1a9bb51ba0ea216",
+      "gap_m": 0.7,
+      "snap": [
+        131.47879,
+        34.1745
+      ],
+      "max_snap_to_boarding_road_projection_m": 5.408,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60027 4",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4789836,
+        34.1741621
+      ],
+      "file": "jr-chugoku-60027 4.json",
+      "origin_matches": true,
+      "sha256": "72137af321023d57fafa71447c84da3f74cf387025dc2f2010ed257be97e9dfd",
+      "gap_m": 3.8,
+      "snap": [
+        131.47902,
+        34.17418
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.515,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60028 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.480456,
+        34.1726269
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60028 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4803905,
+        34.1725446
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60028 4",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.480458,
+        34.1726259
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60029 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4918512,
+        34.1593757
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60029 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.491853,
+        34.1593762
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60030 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4774211,
+        34.170363
+      ],
+      "file": "jr-chugoku-60030 1.json",
+      "origin_matches": true,
+      "sha256": "bffee710fb4b82ee4cdd7c3c137c9f971d9f777c60e594db32cab7a419afdebf",
+      "gap_m": 4.5,
+      "snap": [
+        131.47739,
+        34.17039
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.436,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60030 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4773413,
+        34.1704125
+      ],
+      "file": "jr-chugoku-60030 2.json",
+      "origin_matches": true,
+      "sha256": "85a023e54b2b019e215fdc1c3cf57c9089800d3b86c6ea5594aeecab787c2e58",
+      "gap_m": 4.4,
+      "snap": [
+        131.47737,
+        34.17038
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.363,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60031 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4733587,
+        34.176233
+      ],
+      "file": "jr-chugoku-60031 1.json",
+      "origin_matches": true,
+      "sha256": "514c0d693812236bbbd39dd3601d46950e99f2afb84af3ef13fbdb861e3ad6b4",
+      "gap_m": 10.2,
+      "snap": [
+        131.47342,
+        34.17616
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.35,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60031 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4726748,
+        34.1754308
+      ],
+      "file": "jr-chugoku-60031 2.json",
+      "origin_matches": true,
+      "sha256": "b0b09cbc673eb5139233067216256beb94c1322b7db8a59b424a7a09315e71a5",
+      "gap_m": 4.9,
+      "snap": [
+        131.47263,
+        34.17546
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.34,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60032 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4691892,
+        34.1721978
+      ],
+      "file": "jr-chugoku-60032 1.json",
+      "origin_matches": true,
+      "sha256": "4564b83c655464cc2b62a95bf1d5ee8bc2acd8a190f8535f048acd81da556b15",
+      "gap_m": 7.6,
+      "snap": [
+        131.46924,
+        34.17215
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.753,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60032 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4688921,
+        34.1718225
+      ],
+      "file": "jr-chugoku-60032 2.json",
+      "origin_matches": true,
+      "sha256": "e216ff226837a42e385f12f2f0da1afdde5964664e7bc31d05233238bd22d136",
+      "gap_m": 5.9,
+      "snap": [
+        131.46885,
+        34.17186
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.317,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60033 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4662013,
+        34.1703356
+      ],
+      "file": "jr-chugoku-60033 1.json",
+      "origin_matches": true,
+      "sha256": "2cd4951f36e9a79381562db1fb95a29eaba542e1c8a10a5cbdf1fe83a90d4b60",
+      "gap_m": 6.6,
+      "snap": [
+        131.46624,
+        34.17029
+      ],
+      "max_snap_to_boarding_road_projection_m": 7.064,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60033 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4655618,
+        34.1697757
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60034 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4622094,
+        34.1678965
+      ],
+      "file": "jr-chugoku-60034 1.json",
+      "origin_matches": true,
+      "sha256": "9d06208bfd9e81551f27be38c5ff15b7960ed56af81cd7267dfce697fd6c45fe",
+      "gap_m": 9.2,
+      "snap": [
+        131.46227,
+        34.16783
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.141,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60034 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4615699,
+        34.1673227
+      ],
+      "file": "jr-chugoku-60034 2.json",
+      "origin_matches": true,
+      "sha256": "30b5b239878dd721880d117b392901b312aeb0d6ab7f834b20cf5998b6bcdc6a",
+      "gap_m": 7.2,
+      "snap": [
+        131.46152,
+        34.16737
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.642,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60035 0",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.45755043241,
+        34.1649105938567
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60035 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4579029,
+        34.1652478
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60035 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4578645,
+        34.1650728
+      ],
+      "file": "jr-chugoku-60035 2.json",
+      "origin_matches": true,
+      "sha256": "7cdd30a5c0c87f7ea76de260b09454bdd8091ac0efd9036a27a2a9dfede83897",
+      "gap_m": 4.3,
+      "snap": [
+        131.45784,
+        34.1651
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.535,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60036 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4554689,
+        34.1637684
+      ],
+      "file": "jr-chugoku-60036 1.json",
+      "origin_matches": true,
+      "sha256": "1218745d47aea922fe342e282167c205ce20c29bafdc61652dd8a8f416a6a01c",
+      "gap_m": 6.8,
+      "snap": [
+        131.45551,
+        34.16372
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.241,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60036 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4537871,
+        34.1634907
+      ],
+      "file": "jr-chugoku-60036 2.json",
+      "origin_matches": true,
+      "sha256": "1b1fe40adc6a399c321a7804de7f66593ab0868c33f8a11388aed64e6927528d",
+      "gap_m": 4.7,
+      "snap": [
+        131.45382,
+        34.16352
+      ],
+      "max_snap_to_boarding_road_projection_m": 1.826,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60036 4",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4553833,
+        34.1622115
+      ],
+      "file": "jr-chugoku-60036 4.json",
+      "origin_matches": true,
+      "sha256": "9396060bb7d09e6700a4b79da2789c1602f77cf37a681af08a1d967d1b9fec38",
+      "gap_m": 3.5,
+      "snap": [
+        131.45536,
+        34.16219
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.407,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60037 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4593135,
+        34.1580959
+      ],
+      "file": "jr-chugoku-60037 1.json",
+      "origin_matches": true,
+      "sha256": "dc8cdf785156bdba09b8fae6fa503fb1a39c0465ef57e3665afb6654d8f19a30",
+      "gap_m": 6.3,
+      "snap": [
+        131.45937,
+        34.15813
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.365,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60037 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4598802,
+        34.1576825
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60038 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4614638,
+        34.155935
+      ],
+      "file": "jr-chugoku-60038 1.json",
+      "origin_matches": true,
+      "sha256": "db0259cd6fe2a03d2ff6221e5243e69c7cd0548521b2bcccb43eb8d9b6a1bf56",
+      "gap_m": 4.6,
+      "snap": [
+        131.4615,
+        34.15596
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.255,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60038 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4613522,
+        34.156182
+      ],
+      "file": "jr-chugoku-60038 2.json",
+      "origin_matches": true,
+      "sha256": "ecf303d0e2f3a7c5b030724746721296b682d63fc5a1297961b781138326603c",
+      "gap_m": 5.0,
+      "snap": [
+        131.46131,
+        34.15615
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.342,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60039 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.46457,
+        34.1525747
+      ],
+      "file": "jr-chugoku-60039 1.json",
+      "origin_matches": true,
+      "sha256": "6f17a40a0a5e845683d8545092550c4f3ccd6e93fdce5651526883ee0daacc3c",
+      "gap_m": 5.4,
+      "snap": [
+        131.46462,
+        34.1526
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.176,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60039 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4654701,
+        34.1516232
+      ],
+      "file": "jr-chugoku-60039 2.json",
+      "origin_matches": true,
+      "sha256": "b1cfa55fa925cbe4e40b2f035121cf813fe864ac1e8e45393479f87ac08146da",
+      "gap_m": 6.7,
+      "snap": [
+        131.46541,
+        34.15159
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.16,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60040 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.466483757389,
+        34.14897912043555
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60040 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.466483757389,
+        34.14897912043555
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60041 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4664835,
+        34.1489866
+      ],
+      "file": "jr-chugoku-60041 1.json",
+      "origin_matches": true,
+      "sha256": "eb4aa778582bfc49f7617a92aa7b2d2a8586b7eb39c1e1da4a87baeeaa231998",
+      "gap_m": 3.6,
+      "snap": [
+        131.46645,
+        34.14898
+      ],
+      "max_snap_to_boarding_road_projection_m": 13.032,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60042 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.474327,
+        34.1767958
+      ],
+      "file": "jr-chugoku-60042 1.json",
+      "origin_matches": true,
+      "sha256": "3b7f47741f0a0d75b4d009a33e189d48004cb11f99265a0a4f9d798cbe8a0493",
+      "gap_m": 6.4,
+      "snap": [
+        131.47437,
+        34.17675
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.025,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60043 10",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3962014,
+        34.0942142
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60043 11",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3965218,
+        34.0944183
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60044 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5093809,
+        34.2033606
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60044 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5090483,
+        34.2033607
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60045 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.512336,
+        34.2055994
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60045 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5121445,
+        34.2057128
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60046 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4613358,
+        34.2855156
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 36.9
+    },
+    {
+      "id": "jr-chugoku:60046 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4611585,
+        34.285479
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 33.3
+    },
+    {
+      "id": "jr-chugoku:60047 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4144698,
+        34.3445029
+      ],
+      "file": "jr-chugoku-60047 1.json",
+      "origin_matches": true,
+      "sha256": "b31fe97723bcbae2524a006ef61161987af6c382c93f484a8d4b9d5b386b8154",
+      "gap_m": 4.2,
+      "snap": [
+        131.41444,
+        34.34453
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.142,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60047 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4143852,
+        34.3445303
+      ],
+      "file": "jr-chugoku-60047 2.json",
+      "origin_matches": true,
+      "sha256": "a14e2cc72b8a1d44ddb5dda47ebae3a4a35ed6674f1ae27d897344495e963844",
+      "gap_m": 3.3,
+      "snap": [
+        131.41441,
+        34.34451
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.129,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60048 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4027244,
+        34.4106351
+      ],
+      "file": "jr-chugoku-60048 1.json",
+      "origin_matches": true,
+      "sha256": "797d183f0c0221fa6d4a3c8dcfaa17001b61240d6dbb974a1174578e814c46b3",
+      "gap_m": 13.9,
+      "snap": [
+        131.40257,
+        34.41065
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.428,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60048 10",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4028162,
+        34.4106525
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60048 11",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.402721,
+        34.4106317
+      ],
+      "file": "jr-chugoku-60048 11.json",
+      "origin_matches": true,
+      "sha256": "9ba00924159b62f35ca06a628eb7f8f5f2aac365469e11436ca09fe8c98b8538",
+      "gap_m": 13.7,
+      "snap": [
+        131.40257,
+        34.41064
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.463,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60048 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4028161,
+        34.4106546
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60049 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4102279,
+        34.4170209
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60049 10",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4102284,
+        34.4170179
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60049 11",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.410228,
+        34.4170155
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60049 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4102299,
+        34.4170203
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60050 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4788867,
+        34.1867465
+      ],
+      "file": "jr-chugoku-60050 1.json",
+      "origin_matches": true,
+      "sha256": "17d13c01f064a23129c804dd8f3bf156f4f72b0d9960cd26ac3583cd9db14ee3",
+      "gap_m": 4.2,
+      "snap": [
+        131.47887,
+        34.18678
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.282,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60050 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4789954,
+        34.1869052
+      ],
+      "file": "jr-chugoku-60050 2.json",
+      "origin_matches": true,
+      "sha256": "ac9e435f42b34bdda6f9641c31954ce3dff3b0aa55ac9d2695c1f4a611995cd3",
+      "gap_m": 7.5,
+      "snap": [
+        131.47903,
+        34.18684
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.455,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60051 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.482465,
+        34.1861013
+      ],
+      "file": "jr-chugoku-60051 1.json",
+      "origin_matches": true,
+      "sha256": "ea0158061191e66afb3f553f106addcdf5ee0111d3f6c1bc6dacf606fab65ea3",
+      "gap_m": 6.5,
+      "snap": [
+        131.48252,
+        34.18614
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.196,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60051 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4824154,
+        34.1863166
+      ],
+      "file": "jr-chugoku-60051 2.json",
+      "origin_matches": true,
+      "sha256": "d56f964bca45f00492c0c8aedbb948b98c68839c5256be07b224d2201d94981e",
+      "gap_m": 5.3,
+      "snap": [
+        131.48237,
+        34.18629
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.435,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60052 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4837209,
+        34.184799
+      ],
+      "file": "jr-chugoku-60052 1.json",
+      "origin_matches": true,
+      "sha256": "5967b4ce3239e2b0fd04465f8167c95b1ad09a3494e6410e21d0e22b1dfe1ade",
+      "gap_m": 4.6,
+      "snap": [
+        131.48376,
+        34.18482
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.507,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60052 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4838775,
+        34.184771
+      ],
+      "file": "jr-chugoku-60052 2.json",
+      "origin_matches": true,
+      "sha256": "34b753f6b82f1401571909991b6b36d0c62db935b7348e39bef6a9f4d6ae77ae",
+      "gap_m": 4.8,
+      "snap": [
+        131.48384,
+        34.18474
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.583,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60053 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4909057,
+        34.1868421
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60053 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4925281,
+        34.1878254
+      ],
+      "file": "jr-chugoku-60053 2.json",
+      "origin_matches": true,
+      "sha256": "9db06e40332fd070dc561b547dc2597946b4c2a9b9a0ac2e39ca60e1333a1f9d",
+      "gap_m": 8.1,
+      "snap": [
+        131.49258,
+        34.18776
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.587,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60054 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4948337,
+        34.1889881
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60054 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4955373,
+        34.1895626
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60055 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4971969,
+        34.1917186
+      ],
+      "file": "jr-chugoku-60055 1.json",
+      "origin_matches": true,
+      "sha256": "9e7debb59ff6609e52942e3d5142e0bf1559de6ae391b35a83c565e6bd4be87b",
+      "gap_m": 6.1,
+      "snap": [
+        131.49716,
+        34.19176
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.408,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60055 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4978913,
+        34.1922318
+      ],
+      "file": "jr-chugoku-60055 2.json",
+      "origin_matches": true,
+      "sha256": "cc36cb4a43aefd41850d6e8f9464a52cb39993a8b84af2096970fbd3e9226119",
+      "gap_m": 6.0,
+      "snap": [
+        131.49793,
+        34.19219
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.343,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60056 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4998141,
+        34.1933348
+      ],
+      "file": "jr-chugoku-60056 1.json",
+      "origin_matches": true,
+      "sha256": "b6b9853d0a8c1107e72531f5934f83b3f7d88494af1e9fb540f39ccff8049a1b",
+      "gap_m": 4.3,
+      "snap": [
+        131.49978,
+        34.19336
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.483,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60056 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.499478,
+        34.1932251
+      ],
+      "file": "jr-chugoku-60056 2.json",
+      "origin_matches": true,
+      "sha256": "39a8912e9343cc1d07337df6cbfe083d03118c5818329d7e1c57099c72bcd041",
+      "gap_m": 7.3,
+      "snap": [
+        131.49953,
+        34.19318
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.441,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60057 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5019538,
+        34.1959068
+      ],
+      "file": "jr-chugoku-60057 1.json",
+      "origin_matches": true,
+      "sha256": "cbb0012b31cbf210bddbe4f8e7eb93ffc8cd0942564d5e85c5bbcfe95e7318ef",
+      "gap_m": 6.0,
+      "snap": [
+        131.5019,
+        34.19594
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.54,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60057 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.501763,
+        34.1963435
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60058 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5063271,
+        34.2010131
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60058 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5068126,
+        34.201621
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60059 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5167969,
+        34.2122965
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60059 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5175901,
+        34.2131209
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60060 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5152104,
+        34.222396
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60060 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5151541,
+        34.2223351
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60061 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5205659,
+        34.2413589
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60061 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5204278,
+        34.24139
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60062 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5226025,
+        34.2508259
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60062 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5226019,
+        34.2508253
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60063 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4910651,
+        34.2461794
+      ],
+      "file": "jr-chugoku-60063 1.json",
+      "origin_matches": true,
+      "sha256": "d06f774d79d6e773bb07b4a556b6f1a98c83498a32aaebb98f46b78e5b97516b",
+      "gap_m": 26.2,
+      "snap": [
+        131.49123,
+        34.24599
+      ],
+      "max_snap_to_boarding_road_projection_m": 28.805,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60063 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.490888,
+        34.2461195
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 30.7
+    },
+    {
+      "id": "jr-chugoku:60064 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4880267,
+        34.2512333
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 35.2
+    },
+    {
+      "id": "jr-chugoku:60064 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4875744,
+        34.2516945
+      ],
+      "file": "jr-chugoku-60064 2.json",
+      "origin_matches": true,
+      "sha256": "815123ba382650bf043ae45093acbb4c645160632a472c0fdb41990dafce6284",
+      "gap_m": 28.3,
+      "snap": [
+        131.48769,
+        34.25146
+      ],
+      "max_snap_to_boarding_road_projection_m": 29.679,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60065 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.478183,
+        34.2620417
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 47.2
+    },
+    {
+      "id": "jr-chugoku:60065 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.478,
+        34.2619674
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 44.5
+    },
+    {
+      "id": "jr-chugoku:60066 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4733775,
+        34.2650311
+      ],
+      "file": "jr-chugoku-60066 1.json",
+      "origin_matches": true,
+      "sha256": "78e9ab4d272852cb38a570e224c19c6977db6fd3db5d159954bb925ecf71559e",
+      "gap_m": 10.1,
+      "snap": [
+        131.4733,
+        34.26497
+      ],
+      "max_snap_to_boarding_road_projection_m": 7.83,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60066 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4733862,
+        34.2649248
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60067 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4738768,
+        34.272234
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 69.2
+    },
+    {
+      "id": "jr-chugoku:60067 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4737381,
+        34.2722712
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 69.6
+    },
+    {
+      "id": "jr-chugoku:60068 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4695461,
+        34.2810095
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 256.8
+    },
+    {
+      "id": "jr-chugoku:60068 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4694998,
+        34.2809446
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 258.9
+    },
+    {
+      "id": "jr-chugoku:60069 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4581024,
+        34.2882262
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60069 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4580771,
+        34.2882387
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60070 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4583089,
+        34.2977406
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60070 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4575915,
+        34.2973464
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60071 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4601806,
+        34.3036272
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60071 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4600673,
+        34.3035935
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60072 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4527562,
+        34.3094693
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60072 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4526308,
+        34.3094262
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60073 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4449353,
+        34.3161276
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60073 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4440985,
+        34.3162734
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60074 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4381232,
+        34.3190664
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60074 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4378427,
+        34.3183938
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60075 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4231891,
+        34.3132401
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60075 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4225744,
+        34.312517
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60076 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4162985,
+        34.3126305
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60076 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4153182,
+        34.3129414
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60077 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4034129,
+        34.3191857
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60077 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4027538,
+        34.3198608
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60078 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4019395,
+        34.3263997
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60078 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4019723,
+        34.3265969
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60079 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4081519,
+        34.3311448
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60079 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4080621,
+        34.3311895
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60080 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4101408,
+        34.3350165
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60080 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4100535,
+        34.3351202
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60081 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4125907,
+        34.3422695
+      ],
+      "file": "jr-chugoku-60081 1.json",
+      "origin_matches": true,
+      "sha256": "dc84c166f3a5c52641ef3e82df82b7c51c584c90b5d628f9c540e661dfe82a3d",
+      "gap_m": 5.2,
+      "snap": [
+        131.41254,
+        34.34229
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.129,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60081 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4123378,
+        34.3420223
+      ],
+      "file": "jr-chugoku-60081 2.json",
+      "origin_matches": true,
+      "sha256": "4f4998b11309e20bc9ee5eee37d04ea06ccb0eafd89a05b11eb7ecb71dcd5d86",
+      "gap_m": 3.5,
+      "snap": [
+        131.41237,
+        34.34201
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.242,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60082 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4198366,
+        34.3478969
+      ],
+      "file": "jr-chugoku-60082 1.json",
+      "origin_matches": true,
+      "sha256": "a8accfa616194fab565864353af7592044d7907377c93774913e5c4176ec9e1d",
+      "gap_m": 4.3,
+      "snap": [
+        131.41981,
+        34.34793
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.117,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60082 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4196331,
+        34.3478833
+      ],
+      "file": "jr-chugoku-60082 2.json",
+      "origin_matches": true,
+      "sha256": "e61faabc3a175f4cce6d0efc263d0bb0a36d2ad81b34387a35394f06dc6838f6",
+      "gap_m": 4.7,
+      "snap": [
+        131.41966,
+        34.34785
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.263,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60083 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4202558,
+        34.3578948
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60083 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4201722,
+        34.3579498
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60084 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4312201,
+        34.3632919
+      ],
+      "file": "jr-chugoku-60084 1.json",
+      "origin_matches": true,
+      "sha256": "30020c19f8a1cf87c0e58f0b1e6d61f1a62ff0ee52384f546234eebd6374c09a",
+      "gap_m": 5.5,
+      "snap": [
+        131.43121,
+        34.36334
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.17,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60084 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.431202,
+        34.3633777
+      ],
+      "file": "jr-chugoku-60084 2.json",
+      "origin_matches": true,
+      "sha256": "a7480d31b24e2a8bdb76802c74b2ab3f1f0adec4c2330b2efb2f6d64bfd05fd8",
+      "gap_m": 4.1,
+      "snap": [
+        131.43121,
+        34.36334
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.149,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60085 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4403778,
+        34.3623659
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60085 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4405674,
+        34.3629451
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60086 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4380261,
+        34.3736902
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60086 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4378833,
+        34.3736983
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60087 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4241725,
+        34.3877593
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60087 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4240692,
+        34.3877221
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60088 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4125964,
+        34.3923666
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60088 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.412257,
+        34.3924035
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60089 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4011171,
+        34.3939865
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60089 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4011131,
+        34.3939892
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60090 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4022097,
+        34.4037019
+      ],
+      "file": "jr-chugoku-60090 1.json",
+      "origin_matches": true,
+      "sha256": "d1894a4b950af79a4e72ab90aa861719b5c8be34ec85d1c213e6ba3a6ebfb14d",
+      "gap_m": 5.6,
+      "snap": [
+        131.40215,
+        34.40371
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.44,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60090 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4021404,
+        34.404085
+      ],
+      "file": "jr-chugoku-60090 2.json",
+      "origin_matches": true,
+      "sha256": "916207e4a600044e5d8ea47f374337aad2e542347d8c0e8cfff8bd7250024f49",
+      "gap_m": 4.6,
+      "snap": [
+        131.40219,
+        34.40408
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.081,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60094 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.446434,
+        34.1647632
+      ],
+      "file": "jr-chugoku-60094 1.json",
+      "origin_matches": true,
+      "sha256": "84de62913a42bfd00ae44783edf41b9012cd001dc6f4a379053b589d7fa67242",
+      "gap_m": 4.3,
+      "snap": [
+        131.44643,
+        34.16472
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.576,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60094 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4464981,
+        34.1646894
+      ],
+      "file": "jr-chugoku-60094 2.json",
+      "origin_matches": true,
+      "sha256": "39756f4f152442d2e0abeaa66d3e13a35c07e0078d58766d6e1b046ae47086eb",
+      "gap_m": 3.0,
+      "snap": [
+        131.4465,
+        34.16472
+      ],
+      "max_snap_to_boarding_road_projection_m": 1.072,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60095 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4403702,
+        34.1646284
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60095 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4407523,
+        34.1644545
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60096 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4336762,
+        34.167496
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 34.0
+    },
+    {
+      "id": "jr-chugoku:60096 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4333144,
+        34.1676309
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 41.3
+    },
+    {
+      "id": "jr-chugoku:60097 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4311654,
+        34.1720605
+      ],
+      "file": "jr-chugoku-60097 1.json",
+      "origin_matches": true,
+      "sha256": "f50ea11277ea5683c87c7b0074a5bb39419af360fbda3492106ca59647149d9c",
+      "gap_m": 4.2,
+      "snap": [
+        131.43121,
+        34.17207
+      ],
+      "max_snap_to_boarding_road_projection_m": 8.119,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60097 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4310791,
+        34.1720421
+      ],
+      "file": "jr-chugoku-60097 2.json",
+      "origin_matches": true,
+      "sha256": "e0cf09b454d002ecec9183535fe241c150bf16ed9255d24f0cde861f742b0b6e",
+      "gap_m": 10.6,
+      "snap": [
+        131.43108,
+        34.17195
+      ],
+      "max_snap_to_boarding_road_projection_m": 12.532,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60098 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4293118,
+        34.1767483
+      ],
+      "file": "jr-chugoku-60098 1.json",
+      "origin_matches": true,
+      "sha256": "6a22192bae676d17b1a287f2384ce2f61ce0f13ddbc3eed54dcffcf1865a2fc9",
+      "gap_m": 28.2,
+      "snap": [
+        131.42927,
+        34.1765
+      ],
+      "max_snap_to_boarding_road_projection_m": 27.983,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60098 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4292173,
+        34.1767455
+      ],
+      "file": "jr-chugoku-60098 2.json",
+      "origin_matches": true,
+      "sha256": "6ced7f142554e9540022f9bfd4c8b891d56b0ad5fff4c0488b29cfda61441a0f",
+      "gap_m": 28.0,
+      "snap": [
+        131.42926,
+        34.1765
+      ],
+      "max_snap_to_boarding_road_projection_m": 26.971,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60099 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4305819,
+        34.1802129
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60099 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4304545,
+        34.1802507
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60100 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4303627,
+        34.1856457
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60100 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4302234,
+        34.1856902
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60101 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.2983114,
+        34.2184916
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60101 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.2983919,
+        34.2185581
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60102 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.2987355,
+        34.2194246
+      ],
+      "file": "jr-chugoku-60102 1.json",
+      "origin_matches": true,
+      "sha256": "52d543bad66760a362281b684e57806aceca7faabeeb63d7267ad26e351922c9",
+      "gap_m": 4.3,
+      "snap": [
+        131.29877,
+        34.2194
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.136,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60102 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.2988287,
+        34.219384
+      ],
+      "file": "jr-chugoku-60102 2.json",
+      "origin_matches": true,
+      "sha256": "8b3b3aef1678b3284ddb2a3c2e3c518e95ceaffd91a0fb3e9c64d4ea5f6009f3",
+      "gap_m": 5.2,
+      "snap": [
+        131.29879,
+        34.21942
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.501,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60103 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3068248,
+        34.2232116
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60103 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3068296,
+        34.2232083
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60103 4",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.306576,
+        34.2230893
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60103 99",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.30644362924735,
+        34.223235049338534
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60104 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.307171,
+        34.2132873
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 81.7
+    },
+    {
+      "id": "jr-chugoku:60104 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3071559,
+        34.2131784
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 83.5
+    },
+    {
+      "id": "jr-chugoku:60105 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3103663,
+        34.2133085
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 70.4
+    },
+    {
+      "id": "jr-chugoku:60105 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3098314,
+        34.2131465
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 105.8
+    },
+    {
+      "id": "jr-chugoku:60106 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3146738,
+        34.2149816
+      ],
+      "file": "jr-chugoku-60106 1.json",
+      "origin_matches": true,
+      "sha256": "11123815b7f59b32d677cc6812e0ea31850bd879ff8eed84c807c8bbe29aed3b",
+      "gap_m": 5.4,
+      "snap": [
+        131.31469,
+        34.21493
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.572,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60106 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3137772,
+        34.2146513
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60107 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3232873,
+        34.213813
+      ],
+      "file": "jr-chugoku-60107 1.json",
+      "origin_matches": true,
+      "sha256": "100c5be8c11d7c4f3cae919f518e289d6d2071b3c58dcc66742a39e1e8b49c09",
+      "gap_m": 6.1,
+      "snap": [
+        131.32328,
+        34.21376
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.727,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60107 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3227805,
+        34.213833
+      ],
+      "file": "jr-chugoku-60107 2.json",
+      "origin_matches": true,
+      "sha256": "28e21fe152061e420b59cfe4e4d45f1315a988f45e9b0d2efe071054deada498",
+      "gap_m": 6.3,
+      "snap": [
+        131.32281,
+        34.21388
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.426,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60108 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3308451,
+        34.2177056
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60108 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.330759,
+        34.2174006
+      ],
+      "file": "jr-chugoku-60108 2.json",
+      "origin_matches": true,
+      "sha256": "08226ed9831e4f010298b72f774502391ad0ce1610de59c2ca8d8033b3a86ff4",
+      "gap_m": 8.7,
+      "snap": [
+        131.33068,
+        34.21744
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.24,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60109 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3406548,
+        34.2203081
+      ],
+      "file": "jr-chugoku-60109 1.json",
+      "origin_matches": true,
+      "sha256": "87d746599dcab6a64deb946eb6613caf6be5632c440ea5b124fe73778a23f1eb",
+      "gap_m": 5.0,
+      "snap": [
+        131.34068,
+        34.22027
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.492,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60109 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3405165,
+        34.220126
+      ],
+      "file": "jr-chugoku-60109 2.json",
+      "origin_matches": true,
+      "sha256": "fc1b53cdd086abb1973e1a66333c14651a3d31e675e59ef48ce4de3606d28184",
+      "gap_m": 8.4,
+      "snap": [
+        131.34048,
+        34.2202
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.542,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60110 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3419178,
+        34.2214969
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60110 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3419226,
+        34.2214957
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60111 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3489677,
+        34.2151577
+      ],
+      "file": "jr-chugoku-60111 1.json",
+      "origin_matches": true,
+      "sha256": "860fdbccae8885de7f4b2633a71316368db7d14ae7c30678f63d8f21a1a884e1",
+      "gap_m": 4.5,
+      "snap": [
+        131.34894,
+        34.21513
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.512,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60111 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3478145,
+        34.2158024
+      ],
+      "file": "jr-chugoku-60111 2.json",
+      "origin_matches": true,
+      "sha256": "d5ec5507b64712a70d9272ab29affc06077d0073d003409cbe98aec5c7966e16",
+      "gap_m": 7.3,
+      "snap": [
+        131.34787,
+        34.21585
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.139,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60112 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3517331,
+        34.2016784
+      ],
+      "file": "jr-chugoku-60112 1.json",
+      "origin_matches": true,
+      "sha256": "272d137ef56984c650ecde6f4ccb99296404907a21c807b59043f53b0f010697",
+      "gap_m": 5.7,
+      "snap": [
+        131.35178,
+        34.20172
+      ],
+      "max_snap_to_boarding_road_projection_m": 10.681,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60112 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3516387,
+        34.2017259
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60113 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3489131,
+        34.1980029
+      ],
+      "file": "jr-chugoku-60113 1.json",
+      "origin_matches": true,
+      "sha256": "4e7a207aca566aabd1f989f1ca9f0793ce0fa34f5942e2e08c1df881ed1827a4",
+      "gap_m": 9.1,
+      "snap": [
+        131.34883,
+        34.19804
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.425,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60113 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3491156,
+        34.1984784
+      ],
+      "file": "jr-chugoku-60113 2.json",
+      "origin_matches": true,
+      "sha256": "3528d177f7f20148517c854b58438b020ead3e07b1625f98bd34ad63bd2990a4",
+      "gap_m": 3.3,
+      "snap": [
+        131.34914,
+        34.19846
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.435,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60114 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3643296,
+        34.2022517
+      ],
+      "file": "jr-chugoku-60114 1.json",
+      "origin_matches": true,
+      "sha256": "128ba602eccc88eeffbf7ac0f7e9752e3751f4e7c82bd1e4545e6266b06363d9",
+      "gap_m": 16.6,
+      "snap": [
+        131.3645,
+        34.20222
+      ],
+      "max_snap_to_boarding_road_projection_m": 9.084,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60114 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3646634,
+        34.2029549
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 36.5
+    },
+    {
+      "id": "jr-chugoku:60115 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3745408,
+        34.2124194
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60115 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3744956,
+        34.21228
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60116 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3791595,
+        34.2075084
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60116 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3790442,
+        34.2074397
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60117 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3848768,
+        34.2032283
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60117 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3848735,
+        34.2028832
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60118 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3895044,
+        34.199523
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60118 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3879339,
+        34.2001655
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60119 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4140042,
+        34.1985362
+      ],
+      "file": "jr-chugoku-60119 1.json",
+      "origin_matches": true,
+      "sha256": "e35b6d0b1762ba21abe1a81aef692d376aefe80fc4544b964c4b1ba37608447c",
+      "gap_m": 14.9,
+      "snap": [
+        131.41411,
+        34.19864
+      ],
+      "max_snap_to_boarding_road_projection_m": 18.957,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "jr-chugoku:60119 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4155177,
+        34.1983807
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 99.4
+    },
+    {
+      "id": "jr-chugoku:60137 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.2993448,
+        34.2332783
+      ],
+      "file": "jr-chugoku-60137 2.json",
+      "origin_matches": true,
+      "sha256": "3bb17eb70b3088c5e69c0de5c47fcb9cca0e0edf80351af97013547d78d23d75",
+      "gap_m": 7.3,
+      "snap": [
+        131.29927,
+        34.23328
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.489,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60138 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3060505,
+        34.234162
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60138 99",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.30560987941595,
+        34.23378390633551
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60139 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.4913206,
+        34.1586085
+      ],
+      "file": "jr-chugoku-60139 2.json",
+      "origin_matches": true,
+      "sha256": "1be7036420557c7502f4747778f20e4409a3994a27e66cbcc9318aa2a70b1808",
+      "gap_m": 8.1,
+      "snap": [
+        131.49138,
+        34.15866
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.329,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60154 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3987081,
+        34.4093826
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60154 10",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3987081,
+        34.4093843
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60154 11",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3987071,
+        34.4093829
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60154 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.3987075,
+        34.4093851
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60154 99",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.39864407036492,
+        34.409316756161125
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60155 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5518324,
+        34.07137
+      ],
+      "file": "jr-chugoku-60155 1.json",
+      "origin_matches": true,
+      "sha256": "a0dae8bd3850d2f4b4e07d10cc2526a8a4f628e74aa6267af26dd5321273d514",
+      "gap_m": 5.3,
+      "snap": [
+        131.55179,
+        34.0714
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.652,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60155 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.551761,
+        34.0714289
+      ],
+      "file": "jr-chugoku-60155 2.json",
+      "origin_matches": true,
+      "sha256": "c7947f5868b17914e62939ac1e89cf39fc5cd991f7dc369b01f23ddebf67fb22",
+      "gap_m": 4.0,
+      "snap": [
+        131.55179,
+        34.0714
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.25,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60156 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.548989,
+        34.0688613
+      ],
+      "file": "jr-chugoku-60156 1.json",
+      "origin_matches": true,
+      "sha256": "7bc77cd682a1a91c320e912d510f05a69c7d92840ec7026857f45f974dd496c2",
+      "gap_m": 8.3,
+      "snap": [
+        131.54892,
+        34.06891
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.283,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60156 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.5481776,
+        34.0683714
+      ],
+      "file": "jr-chugoku-60156 2.json",
+      "origin_matches": true,
+      "sha256": "204625f576af1cc0c636725f5f3e3c0f1c07b1b2836b285c3615321645eb6181",
+      "gap_m": 4.5,
+      "snap": [
+        131.54821,
+        34.06834
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.129,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60157 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.5415986,
+        34.0655227
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60157 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.541763,
+        34.0654283
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60158 1",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3402837,
+        34.2204981
+      ],
+      "file": "jr-chugoku-60158 1.json",
+      "origin_matches": true,
+      "sha256": "4cd8a698d00ce2364af627c6dad8241f349fb3578a9c2b568cae57b07d1767fe",
+      "gap_m": 6.7,
+      "snap": [
+        131.34026,
+        34.22055
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.489,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60158 2",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.3402745,
+        34.2204959
+      ],
+      "file": "jr-chugoku-60158 2.json",
+      "origin_matches": true,
+      "sha256": "bf5a2c68ce214ca11583f6832f38a08fc065d662c6e80ad78c92b11ddcc14af1",
+      "gap_m": 6.6,
+      "snap": [
+        131.34025,
+        34.22055
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.17,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "jr-chugoku:60159 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4594682,
+        34.2864888
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60159 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.4594742,
+        34.2864911
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60160 1",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.51379385450076,
+        34.20632381320192
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "jr-chugoku:60160 2",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.51391050022823,
+        34.20655712366007
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    }
+  ]
+}

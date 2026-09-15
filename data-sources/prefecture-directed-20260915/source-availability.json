@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-09-15T02:56:00.364660+00:00",
+  "P11": {
+    "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html",
+    "finding": "2022年度版の作成方法で同一道路・同一事業者・同名停留所を原則統合と明記。方面別の乗車位置をこの原点へ割当しない。"
+  },
+  "additional_sources": [
+    {
+      "operator": "JRバス中国",
+      "url": "https://www.bus-kyo.or.jp/gtfs-open-data/gtfs-jp-ダウンロード",
+      "result": "現行GTFSと原ID別stops_direction.txtを取得。県内265原点。CC0。原本と照合結果を別台帳に保存。"
+    },
+    {
+      "operator": "宇部市交通局",
+      "url": "https://ubebus.jp/pages/8/",
+      "result": "公式乗り場ページ10件を取得。4ページの埋込地図15原点を採用。沼・高専グランド前は実際の画像を読み、周辺OSM取得も行ったが対応原点不足。既存v15の宇部中央・新川の保留は保持。"
+    },
+    {
+      "operator": "船木鉄道",
+      "url": "https://ckan.odpt.org/dataset/sentetsu_bus_all_lines",
+      "result": "GTFS配布案内はあるが開発者登録・認証が必要。現在の環境に取得資格情報なし。公開されていないとは断定しない。"
+    },
+    {
+      "operator": "山陽小野田市",
+      "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/72870.pdf",
+      "result": "公式40ページ時刻表で船木〜本山、厚狭駅〜小野田駅〜宇部中央等の停車順・行先を確認。各原座標と道路側の対応はこの時刻表だけでは特定できない。"
+    },
+    {
+      "operator": "防長交通",
+      "url": "https://www.bochobus.co.jp/pages/17/",
+      "result": "公式案内ページ取得。既存の番号・座標付き公式資料は再利用。新しい全停留所検索の入口は環境から403で取得できず、未知の番号やAPI IDを作らない。"
+    },
+    {
+      "operator": "いわくにバス／和木町",
+      "url": "https://busit.jp/stop/iwk00229-1",
+      "result": "公式サイトがリンクするBUSitで和木駅の原ID iwk00229-1、座標[132.2275,34.204167]を確認。ただし方面欄は空で、時刻表リンクは会社トップのみ。公式市内路線リンク先は404。あいあいバスの資料をW1の根拠に取り替えず保留。"
+    }
+  ],
+  "limitations": "取得したGTFS・公式図・位置データとの初回照合の範囲。全県の全路線が公式資料で確定したという意味ではない。資料取得の不足と原点の不整合を別々に記録する。"
+}

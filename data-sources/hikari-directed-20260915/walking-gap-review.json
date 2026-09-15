@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hikari:15_02",
+    "origin": [
+      131.93466,
+      33.969008
+    ],
+    "existing_gap_m": 33.7,
+    "nearest_current_eligible_edge": {
+      "way_id": 113099058,
+      "node_ids": [
+        10075645868,
+        1283550311
+      ],
+      "gap_m": 33.71942062338724,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  }
+]

@@ -2,10 +2,11 @@ import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
 import { bakedFacilityCandidates, catchmentFile, clipCatchment, distance, interpolate, parseCatchment, prepareFacilities, walkDataBaseUrl, WALKING_METERS_PER_MINUTE } from './bakedWalking';
 import type { Catchment, Coordinate, Segment, FacilityGroup } from './bakedWalking';
-import { fitContent } from './mapLayout';
+import { focusContent } from './mapLayout';
 import type { LoadState, ShoppingFeature } from './types';
 import type { BakedWalkingMinutes } from './placeLink';
 import BakedFacilityList from './BakedFacilityList';
+import NearbyFacilitiesPanel from './NearbyFacilitiesPanel';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -182,16 +183,14 @@ export function useUnreachableStops() {
   return unreachable;
 }
 
-const NEARBY_ROAD_LIMIT_M = 150;
-const GENERIC_NO_CATCHMENT_MESSAGE = 'この停留所と歩ける道路の接続を確認できませんでした。別の停留所をお試しください。';
+const GENERIC_NO_CATCHMENT_MESSAGE = '使用中の道路データへ接続できず、徒歩圏を表示できません。停留所の位置や道路の収録状況の確認が必要です。';
 
 function noCatchmentMessage(distance: number | null | undefined): string {
-  if (distance === undefined) return GENERIC_NO_CATCHMENT_MESSAGE;
-  if (distance === null || distance > NEARBY_ROAD_LIMIT_M) return 'この停留所の近くに歩ける道路が見つかりませんでした。別の停留所をお試しください。';
-  return `この停留所から最も近い歩ける道路まで約${Math.round(distance)}mありました（自動判定の基準は30m）。停留所の位置や道路データのわずかなずれによるものと考えられます。別の停留所をお試しください。`;
+  if (distance == null) return GENERIC_NO_CATCHMENT_MESSAGE;
+  return `使用中の道路データまで約${distance.toLocaleString('ja-JP', { maximumFractionDigits: 1 })}mあり、30m以内の接続基準を満たさないため、徒歩圏を表示できません。停留所の位置や道路の収録状況の確認が必要です。`;
 }
 
-function useCatchment(id: string, knownUnreachable: boolean) {
+function useCatchment(id: string, origin: Coordinate, knownUnreachable: boolean, dataUrl?: string) {
   const [state, setState] = useState<{ id: string; catchment: Catchment | null; loading: boolean; error: boolean }>({ id, catchment: null, loading: true, error: false });
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
@@ -201,7 +200,7 @@ function useCatchment(id: string, knownUnreachable: boolean) {
       return () => abort.abort();
     }
     setState({ id, catchment: null, loading: true, error: false });
-    fetch(`${walkDataBaseUrl()}${catchmentFile(id)}`, { signal: abort.signal })
+    fetch(dataUrl ?? `${walkDataBaseUrl()}${catchmentFile(id)}`, { signal: abort.signal })
       .then(r => {
         if (!r.ok) throw Error('Walking catchment unavailable');
         return r.json();
@@ -209,25 +208,27 @@ function useCatchment(id: string, knownUnreachable: boolean) {
       .then(raw => {
         const catchment = parseCatchment(raw);
         if (catchment.stopId !== id) throw Error('Walking catchment origin mismatch');
+        if (distance(catchment.origin, origin) > 2) throw Error('Walking catchment coordinate mismatch');
         if (!abort.signal.aborted) setState({ id, catchment, loading: false, error: false });
       })
       .catch(() => { if (!abort.signal.aborted) setState({ id, catchment: null, loading: false, error: true }); });
     return () => abort.abort();
-  }, [id, attempt, knownUnreachable]);
+  }, [id, origin, attempt, knownUnreachable, dataUrl]);
   const current = state.id === id ? state : { id, catchment: null, loading: true, error: false };
   return { ...current, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function BakedWalkingPanel({ map, id, origin, unreachable, active, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes, scope, onMapFacilities }: {
+export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachable, focused, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes, scope, onMapFacilities }: {
   map: L.Map | null; id: string; origin: Coordinate;
+  dataUrl?: string;
   unreachable: Record<string, number | null> | null;
-  active: boolean;
+  focused: boolean;
   facilities: ShoppingFeature[]; facilityState: LoadState; retryFacilities: () => void;
   onFacility: (facility: ShoppingFeature) => void;
   minutes: BakedWalkingMinutes; onMinutes: (minutes: BakedWalkingMinutes) => void;
   scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
 }) {
-  const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, Object.hasOwn(unreachable ?? {}, id));
+  const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, origin, Object.hasOwn(unreachable ?? {}, id), dataUrl);
   const displayed = useMemo(() => catchment ? clipCatchment(catchment, minutes * WALKING_METERS_PER_MINUTE) : null, [catchment, minutes]);
   const steepSummary = useMemo(() => displayed ? steepRuns(displayed.segments, displayed.budget) : null, [displayed]);
   const preparedFacilities = useMemo(() => prepareFacilities(facilities), [facilities]);
@@ -235,10 +236,11 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
   const visibleCandidates = useMemo(() => candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [candidates, minutes]);
   const [facilityGroup, setFacilityGroup] = useState<FacilityGroup | 'all'>('all');
   useEffect(() => { setFacilityGroup('all'); }, [id]);
-  useEffect(() => { onMapFacilities(scope, active ? visibleCandidates.filter(c => facilityGroup === 'all' || c.group === facilityGroup).map(c => String(c.facility.id)) : []); }, [scope, active, visibleCandidates, facilityGroup, onMapFacilities]);
+  const nearbyFallback = !loading && !catchment;
+  useEffect(() => { if (!nearbyFallback) onMapFacilities(scope, visibleCandidates.filter(c => facilityGroup === 'all' || c.group === facilityGroup).map(c => String(c.facility.id))); }, [scope, visibleCandidates, facilityGroup, onMapFacilities, nearbyFallback]);
 
   useEffect(() => {
-    if (!map || !catchment || !displayed || !active) return;
+    if (!map || !catchment || !displayed) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
 
@@ -257,17 +259,17 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
     const legend = createLegendControl(catchment.budget, minutes);
     legend.addTo(map);
     return () => { group.remove(); legend.remove(); };
-  }, [map, catchment, displayed, origin, steepSummary, active, minutes]);
+  }, [map, catchment, displayed, origin, steepSummary, minutes]);
 
   useEffect(() => {
-    if (!map || !active) return;
+    if (!map || !focused || loading) return;
     const points = displayed?.segments.flatMap(s => [s.a, s.b]).map(([lon, lat]) => L.latLng(lat, lon)) ?? [];
     const bounds = L.latLngBounds([...points, L.latLng(origin[1], origin[0])]);
-    const focus = () => fitContent(map, bounds, true, 17);
+    const focus = () => focusContent(map, bounds, 17);
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, id, displayed, origin, active]);
+  }, [map, id, displayed, origin, focused, loading]);
 
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <h3 id="walk-title" className="text-sm font-semibold">徒歩圏</h3>
@@ -287,5 +289,6 @@ export default function BakedWalkingPanel({ map, id, origin, unreachable, active
         <a className="mt-2 inline-block text-sky-800 underline" href={`${import.meta.env.BASE_URL}about.html#walking`}>計算方法とデータについて</a>
       </details>
     </>}
+    {nearbyFallback && <NearbyFacilitiesPanel key={id} origin={origin} facilities={facilities} state={facilityState} retry={retryFacilities} onFacility={onFacility} scope={scope} onMapFacilities={onMapFacilities} />}
   </section>;
 }

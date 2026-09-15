@@ -1,0 +1,3531 @@
+{
+  "recorded_at": "2026-09-15T04:09:11.553226+00:00",
+  "points": [
+    {
+      "id": "hikari:15_02",
+      "name": "hikari:光製鉄前",
+      "origin": [
+        131.93466,
+        33.969008
+      ],
+      "direction": "光市役所前方面（光市役所前／左回り 光市役所前方面）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 33.7,
+      "walkable_gap_m": 33.691,
+      "walking_way": "113099058",
+      "status": "保留",
+      "nearest_recorded_road": "113098117",
+      "nearest_recorded_road_gap_m": 7.574,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "survey;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:9_01",
+      "name": "iwakuni:あいあいセンター",
+      "origin": [
+        132.076974669,
+        34.0968889064
+      ],
+      "direction": "阿山上・阿山地下道入口南・鞍掛方面（玖珂千束／玖珂駅（総合センター奏(玖珂支所) 経由）／玖珂駅（阿山地下道入口南 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 51.4,
+      "walkable_gap_m": 51.405,
+      "walking_way": "118897350",
+      "status": "保留",
+      "nearest_recorded_road": "118897226",
+      "nearest_recorded_road_gap_m": 740.568,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない"
+    },
+    {
+      "id": "iwakuni:50_01",
+      "name": "iwakuni:くが本町駐車場",
+      "origin": [
+        132.080822822,
+        34.0946210485
+      ],
+      "direction": "本町上・浄光寺前・玖珂駅・谷津下２区南方面（上谷東（総合センター奏（玖珂支所）・リフレまえだ病院前 経由）／天兼（玖珂駅・岡丈集会所前 経由）／末東（玖珂駅 経由）／玖珂千束（総合センター奏（玖珂支所） 経由）／玖珂千束（阿山地下道入口南 経由）／玖珂駅／玖珂駅（総合センター奏（玖珂支所） 経由）／玖珂駅（総合センター日向（周東総合支所）・周防高森駅・総合センター奏（玖珂支所） 経由）／臼田回転場／谷津上回転場）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 42.7,
+      "walkable_gap_m": 42.665,
+      "walking_way": "118896603",
+      "status": "保留",
+      "nearest_recorded_road": "118898096",
+      "nearest_recorded_road_gap_m": 326.713,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "柳井玖珂線",
+        "name:en": "Yanai Kuga Line",
+        "name:ja": "柳井玖珂線",
+        "name:ja-Hira": "やないくがせん",
+        "name:ja_rm": "Yanai Kuga-sen",
+        "ref": "70",
+        "source": "image;survey;Bing,2012-05;YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11467366",
+        "wikipedia": "ja:山口県道70号柳井玖珂線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "iwakuni:53_01",
+      "name": "iwakuni:総合センター奏（玖珂支所）",
+      "origin": [
+        132.083505114571,
+        34.0906826595667
+      ],
+      "direction": "アルク玖珂店・本町上方面（くが本町駐車場（玖珂駅 経由）／くが本町駐車場（総合センター日向（周東総合支所）・玖珂駅 経由）／玖珂駅／玖珂駅（周防高森駅・総合センター日向（周東総合支所）・上市中 経由）／玖珂駅（総合センター日向（周東総合支所） 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 61.1,
+      "walkable_gap_m": 61.089,
+      "walking_way": "118896826",
+      "status": "保留",
+      "nearest_recorded_road": "118896826",
+      "nearest_recorded_road_gap_m": 61.089,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "3.0m〜5.5m",
+        "yh:WIDTH_RANK": "3"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない / 指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:53_02",
+      "name": "iwakuni:総合センター奏（玖珂支所）",
+      "origin": [
+        132.083644162191,
+        34.0907276595666
+      ],
+      "direction": "アルク玖珂店・台の橋住宅前・本町上・玖珂クリニック前方面（上谷東（リフレまえだ病院前 経由）／天兼（岡丈集会所前 経由）／末東／玖珂千束／玖珂駅／臼田回転場（くが本町駐車場 経由）／谷津上回転場（くが本町駐車場 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 47.4,
+      "walkable_gap_m": 47.392,
+      "walking_way": "118896826",
+      "status": "保留",
+      "nearest_recorded_road": "118896826",
+      "nearest_recorded_road_gap_m": 47.392,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "3.0m〜5.5m",
+        "yh:WIDTH_RANK": "3"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定 / 前後区間内で進行方向を安定して読めない / 原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:66_01",
+      "name": "iwakuni:野口",
+      "origin": [
+        132.089340251,
+        34.0971355163
+      ],
+      "direction": "アルク玖珂店・柳井田下方面（くが本町駐車場（総合センター日向（周東総合支所）・玖珂駅 経由）／末東／玖珂駅（周防高森駅・総合センター日向（周東総合支所）・上市中 経由）／玖珂駅（総合センター奏（玖珂支所） 経由）／玖珂駅（総合センター日向（周東総合支所） 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 45.6,
+      "walkable_gap_m": 45.583,
+      "walking_way": "1056751844",
+      "status": "保留",
+      "nearest_recorded_road": "118897609",
+      "nearest_recorded_road_gap_m": 136.143,
+      "nearest_recorded_road_tags": {
+        "highway": "residential",
+        "source": "Bing,2012-05;YahooJapan/ALPSMAP"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:96_01",
+      "name": "iwakuni:明神上",
+      "origin": [
+        132.001968258,
+        34.1125426287
+      ],
+      "direction": "北畑・梅ノ木・総合センター日向（周東総合支所）方面（周防高森駅／周防高森駅（総合センター日向（周東総合支所） 経由）／松井医院前（総合センター日向（周東総合支所）・周防高森駅 経由）／檜余地／檜余地下）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 79.4,
+      "walkable_gap_m": 79.433,
+      "walking_way": "118673002",
+      "status": "保留",
+      "nearest_recorded_road": "118673256",
+      "nearest_recorded_road_gap_m": 2260.378,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:670_02",
+      "name": "iwakuni:裁判所",
+      "origin": [
+        132.190990637,
+        34.1656176235
+      ],
+      "direction": "錦帯橋・錦見方面（下阿品（錦帯橋・下多田 経由）／北河内駅（錦帯橋・新岩国駅・伊房・二鹿体育館 経由）／鮎谷（錦帯橋 経由）／鮎谷（錦帯橋・美和病院 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 36.6,
+      "walkable_gap_m": 36.581,
+      "walking_way": "660101084",
+      "status": "保留",
+      "nearest_recorded_road": "23900334",
+      "nearest_recorded_road_gap_m": 189.186,
+      "nearest_recorded_road_tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "30",
+        "maxspeed:type": "sign",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:185_02",
+      "name": "iwakuni:本郷口",
+      "origin": [
+        131.987410606476,
+        34.2402883365667
+      ],
+      "direction": "下宮ノ串・平石・美川支所方面（合ノ本橋／周防尾崎／茅原（ほんごう保育園前 経由）／錦中央病院前（美川支所・サンマート広瀬店・錦総合支所 経由）／錦中央病院前（美川支所・サンマート広瀬店前・錦総合支所 経由）／錦町駅／錦町駅（サンマート広瀬店前・錦中学校前 経由）／錦町駅（錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 30.6,
+      "walkable_gap_m": 30.649,
+      "walking_way": "118671804",
+      "status": "保留",
+      "nearest_recorded_road": "118671685",
+      "nearest_recorded_road_gap_m": 2806.212,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "3.0m〜5.5m",
+        "yh:WIDTH_RANK": "3"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定 / 原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 局所shapeに同程度で適合する別車道線候補あり"
+    },
+    {
+      "id": "iwakuni:197_01",
+      "name": "iwakuni:柳場",
+      "origin": [
+        131.999213744,
+        34.2143591133
+      ],
+      "direction": "渡里橋・高野橋方面（南桑本町／周防尾崎／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋（南桑本町 経由）／遠掛／錦町駅（根笠駅前・美川ムーバレー・根笠駅前・河山駅・サンマート広瀬店前・錦中学校前 経由）／錦町駅（河山駅 経由）／錦町駅（河山駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 52.8,
+      "walkable_gap_m": 52.769,
+      "walking_way": "118671797",
+      "status": "保留",
+      "nearest_recorded_road": "118673435",
+      "nearest_recorded_road_gap_m": 2923.369,
+      "nearest_recorded_road_tags": {
+        "highway": "path",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "1.5m未満",
+        "yh:WIDTH_RANK": "5"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:201_01",
+      "name": "iwakuni:上舟津",
+      "origin": [
+        131.994492494,
+        34.2082237561
+      ],
+      "direction": "根笠駅前・渡里橋・長走方面（南桑本町（根笠駅前 経由）／周防尾崎／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋（根笠駅前・南桑本町 経由）／小郷橋（根笠駅前・美川ムーバレー・根笠駅前・南桑本町 経由）／錦町駅（河山駅 経由）／錦町駅（河山駅・サンマート広瀬店前・錦中学校前 経由）／錦町駅（河山駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 130.4,
+      "walkable_gap_m": 130.41,
+      "walking_way": "118673750",
+      "status": "保留",
+      "nearest_recorded_road": "118673435",
+      "nearest_recorded_road_gap_m": 2788.444,
+      "nearest_recorded_road_tags": {
+        "highway": "path",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "1.5m未満",
+        "yh:WIDTH_RANK": "5"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:205_01",
+      "name": "iwakuni:東専寺前",
+      "origin": [
+        132.028027325,
+        34.2103210545
+      ],
+      "direction": "上見錆・南桑本町方面（わかば台／伊田川／周防尾崎／坂上駐在所跡（小郷橋・東谷老人憩いの家前・美和病院 経由）／坂上駐在所跡（小郷橋・足谷口・坂上分校前・美和病院 経由）／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋／美和病院（小郷橋・坂上分校前 経由）／遠掛／錦町駅（南桑本町・根笠駅前・美川ムーバレー・根笠駅前・河山駅・サンマート広瀬店前 経由）／錦町駅（南桑本町・河山駅 経由）／鮎谷（小郷橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 40.6,
+      "walkable_gap_m": 40.649,
+      "walking_way": "729514235",
+      "status": "保留",
+      "nearest_recorded_road": "709141392",
+      "nearest_recorded_road_gap_m": 345.332,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道187号",
+        "name:en": "National Highway Route 187",
+        "name:ja": "国道187号",
+        "ref": "187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超 / 指定した進行区間に整合する車道線候補なし / 道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+    },
+    {
+      "id": "iwakuni:206_01",
+      "name": "iwakuni:上見錆",
+      "origin": [
+        132.034283866,
+        34.2081435947
+      ],
+      "direction": "東専寺前・見錆・見錆奥方面（わかば台／伊田川／周防尾崎／坂上駐在所跡（小郷橋・東谷老人憩いの家前・美和病院 経由）／坂上駐在所跡（小郷橋・足谷口・坂上分校前・美和病院 経由）／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋／美和病院（小郷橋・坂上分校前 経由）／遠掛／錦町駅（南桑本町・根笠駅前・美川ムーバレー・根笠駅前・河山駅・サンマート広瀬店前 経由）／錦町駅（南桑本町・河山駅 経由）／鮎谷（小郷橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 44.4,
+      "walkable_gap_m": 44.393,
+      "walking_way": "729516085",
+      "status": "保留",
+      "nearest_recorded_road": "709141392",
+      "nearest_recorded_road_gap_m": 0.816,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道187号",
+        "name:en": "National Highway Route 187",
+        "name:ja": "国道187号",
+        "ref": "187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+    },
+    {
+      "id": "iwakuni:207_01",
+      "name": "iwakuni:見錆",
+      "origin": [
+        132.034907198,
+        34.2028441768
+      ],
+      "direction": "上椋野・上見錆・見錆口方面（わかば台／伊田川／周防尾崎／坂上駐在所跡（小郷橋・東谷老人憩いの家前・美和病院 経由）／坂上駐在所跡（小郷橋・足谷口・坂上分校前・美和病院 経由）／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋／美和病院（小郷橋・坂上分校前 経由）／遠掛／錦町駅（南桑本町・根笠駅前・美川ムーバレー・根笠駅前・河山駅・サンマート広瀬店前 経由）／錦町駅（南桑本町・河山駅 経由）／鮎谷（小郷橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 56.3,
+      "walkable_gap_m": 56.254,
+      "walking_way": "118888784",
+      "status": "保留",
+      "nearest_recorded_road": "709141392",
+      "nearest_recorded_road_gap_m": 4.108,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道187号",
+        "name:en": "National Highway Route 187",
+        "name:ja": "国道187号",
+        "ref": "187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 指定した進行区間に整合する車道線候補なし / 進行方向に対し原点が車道線の右側。対向乗降側の整合を確認できない（原点誤りの断定ではない）"
+    },
+    {
+      "id": "iwakuni:263_01",
+      "name": "iwakuni:常国",
+      "origin": [
+        132.066348849952,
+        34.4368638373
+      ],
+      "direction": "的場方面（尾川（深谷峡温泉・高根・道の駅・錦町駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 42.2,
+      "walkable_gap_m": 42.211,
+      "walking_way": "118121512",
+      "status": "保留",
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:264_01",
+      "name": "iwakuni:的場",
+      "origin": [
+        132.063482789143,
+        34.433954085
+      ],
+      "direction": "三和方面（尾川（深谷峡温泉・高根・道の駅・錦町駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 93.1,
+      "walkable_gap_m": 93.06,
+      "walking_way": "118121629",
+      "status": "保留",
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:265_01",
+      "name": "iwakuni:三和",
+      "origin": [
+        132.061439139,
+        34.4302550455
+      ],
+      "direction": "寂地峡入口方面（尾川（深谷峡温泉・高根・道の駅・錦町駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 121.7,
+      "walkable_gap_m": 121.736,
+      "walking_way": "118121655",
+      "status": "保留",
+      "nearest_recorded_road": "562692160",
+      "nearest_recorded_road_gap_m": 4696.204,
+      "nearest_recorded_road_tags": {
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "motorway",
+        "lanes": "2",
+        "motorcar": "designated",
+        "motorcycle": "designated",
+        "name": "中国自動車道",
+        "name:en": "Chugoku Expressway",
+        "name:es": "Autopista Chugoku",
+        "name:ja": "中国自動車道",
+        "name:ko": "주코쿠자동차도",
+        "name:ru": "Автомагистраль Тюгоку",
+        "oneway": "yes",
+        "ref": "E2A",
+        "smoothness": "excellent",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "paved",
+        "toll": "yes"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:270_01",
+      "name": "iwakuni:健康村",
+      "origin": [
+        132.03239038,
+        34.4062464858
+      ],
+      "direction": "地蔵前方面（尾川（深谷峡温泉・高根・道の駅・錦町駅・錦中学校前 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 153.0,
+      "walkable_gap_m": 153.006,
+      "walking_way": "118121358",
+      "status": "保留",
+      "nearest_recorded_road": "562692160",
+      "nearest_recorded_road_gap_m": 938.423,
+      "nearest_recorded_road_tags": {
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "motorway",
+        "lanes": "2",
+        "motorcar": "designated",
+        "motorcycle": "designated",
+        "name": "中国自動車道",
+        "name:en": "Chugoku Expressway",
+        "name:es": "Autopista Chugoku",
+        "name:ja": "中国自動車道",
+        "name:ko": "주코쿠자동차도",
+        "name:ru": "Автомагистраль Тюгоку",
+        "oneway": "yes",
+        "ref": "E2A",
+        "smoothness": "excellent",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "paved",
+        "toll": "yes"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:675_01",
+      "name": "iwakuni:下多田",
+      "origin": [
+        132.165370859858,
+        34.1815462849667
+      ],
+      "direction": "関戸方面（岩国駅（錦帯橋・裁判所・市役所 経由）／岩国駅（錦帯橋・西岩国 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 37.8,
+      "walkable_gap_m": 37.822,
+      "walking_way": "87332796",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 8.792,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:283_01",
+      "name": "iwakuni:高根",
+      "origin": [
+        132.022290294,
+        34.3757599958
+      ],
+      "direction": "宇佐川小学校前方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／錦中学校前（道の駅・錦町駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 52.2,
+      "walkable_gap_m": 52.233,
+      "walking_way": "118121553",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 352.459,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "iwakuni:283_02",
+      "name": "iwakuni:高根",
+      "origin": [
+        132.022064146,
+        34.3752420501
+      ],
+      "direction": "深谷峡温泉方面（地蔵前／深谷峡温泉）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 31.6,
+      "walkable_gap_m": 31.574,
+      "walking_way": "118121219",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 402.926,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:286_02",
+      "name": "iwakuni:宇佐郷",
+      "origin": [
+        132.01942965,
+        34.3718739065
+      ],
+      "direction": "宇佐川小学校前方面（地蔵前（高根 経由）／深谷峡温泉（高根 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 53.1,
+      "walkable_gap_m": 53.135,
+      "walking_way": "118121561",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 780.792,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:287_01",
+      "name": "iwakuni:浅原",
+      "origin": [
+        132.016625957,
+        34.3682691068
+      ],
+      "direction": "宇佐郷・小山田方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／地蔵前（高根 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／深谷峡温泉（高根 経由）／錦中学校前（道の駅・錦町駅 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 41.2,
+      "walkable_gap_m": 41.196,
+      "walking_way": "118121447",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 1234.832,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:288_01",
+      "name": "iwakuni:小山田",
+      "origin": [
+        132.011445032715,
+        34.3608260611001
+      ],
+      "direction": "上須川方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／錦中学校前（道の駅・錦町駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 81.8,
+      "walkable_gap_m": 81.81,
+      "walking_way": "118121279",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 2178.533,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:288_02",
+      "name": "iwakuni:小山田",
+      "origin": [
+        132.011330747,
+        34.3611260611
+      ],
+      "direction": "浅原方面（地蔵前（高根 経由）／深谷峡温泉（高根 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 50.9,
+      "walkable_gap_m": 50.861,
+      "walking_way": "118121529",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 2152.204,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:680_01",
+      "name": "iwakuni:池ヶ迫",
+      "origin": [
+        132.183229308,
+        34.1732481358
+      ],
+      "direction": "大内迫・錦帯橋方面（大藤（錦帯橋・下多田・新岩国駅・六呂師口 経由）／岩国駅（下多田・錦帯橋・裁判所・市役所・岩国駅 経由）／岩国駅（錦帯橋 経由）／岩国駅（錦帯橋・裁判所・市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 46.9,
+      "walkable_gap_m": 46.932,
+      "walking_way": "1153783689",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 6.197,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+    },
+    {
+      "id": "iwakuni:680_02",
+      "name": "iwakuni:池ヶ迫",
+      "origin": [
+        132.183298393,
+        34.1748398037
+      ],
+      "direction": "大内迫方面（下阿品（下多田 経由）／北河内駅（新岩国駅・伊房・二鹿体育館 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 79.6,
+      "walkable_gap_m": 79.551,
+      "walking_way": "1153783689",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 7.47,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:292_01",
+      "name": "iwakuni:上須川",
+      "origin": [
+        132.002422218,
+        34.3478208135
+      ],
+      "direction": "古江方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／錦中学校前（道の駅・錦町駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 31.9,
+      "walkable_gap_m": 31.855,
+      "walking_way": "118121349",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 3839.151,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:292_02",
+      "name": "iwakuni:上須川",
+      "origin": [
+        132.002969821,
+        34.3486704641
+      ],
+      "direction": "小山田方面（地蔵前（高根 経由）／深谷峡温泉（高根 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 111.0,
+      "walkable_gap_m": 110.952,
+      "walking_way": "118121349",
+      "status": "保留",
+      "nearest_recorded_road": "118121348",
+      "nearest_recorded_road_gap_m": 3732.189,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "1",
+        "name": "六日市錦線",
+        "name:en": "Muikaichi Nishiki Line",
+        "name:ja": "六日市錦線",
+        "name:ja-Hira": "むいかいちにしきせん",
+        "name:ja_rm": "Muikaichi Nishiki-sen",
+        "ref": "16",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11476745",
+        "wikipedia": "ja:島根県道・山口県道16号六日市錦線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:295_01",
+      "name": "iwakuni:大将陣茶屋",
+      "origin": [
+        131.993956307,
+        34.331609665
+      ],
+      "direction": "下須川・沼田口方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／地蔵前（高根 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／深谷峡温泉（高根 経由）／錦中学校前（道の駅・錦町駅 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 65.2,
+      "walkable_gap_m": 65.216,
+      "walking_way": "118127639",
+      "status": "保留",
+      "nearest_recorded_road": "936759407",
+      "nearest_recorded_road_gap_m": 2205.612,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:296_01",
+      "name": "iwakuni:下須川",
+      "origin": [
+        131.992467169,
+        34.3294713728
+      ],
+      "direction": "大将陣茶屋・深須郵便局前方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／地蔵前（高根 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／深谷峡温泉（高根 経由）／錦中学校前（道の駅・錦町駅 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 62.6,
+      "walkable_gap_m": 62.569,
+      "walking_way": "118127639",
+      "status": "保留",
+      "nearest_recorded_road": "936759407",
+      "nearest_recorded_road_gap_m": 1937.494,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:297_01",
+      "name": "iwakuni:深須郵便局前",
+      "origin": [
+        131.991180283,
+        34.3176006971
+      ],
+      "direction": "下須川・深須方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／地蔵前（高根 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／深谷峡温泉（高根 経由）／錦中学校前（道の駅・錦町駅 経由）／高根）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 67.7,
+      "walkable_gap_m": 67.655,
+      "walking_way": "308807273",
+      "status": "保留",
+      "nearest_recorded_road": "936759407",
+      "nearest_recorded_road_gap_m": 695.096,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:307_01",
+      "name": "iwakuni:稗原",
+      "origin": [
+        131.953462349,
+        34.2883730195
+      ],
+      "direction": "下出市・下大野方面（六日市駅／道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 58.9,
+      "walkable_gap_m": 58.927,
+      "walking_way": "118122164",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 3702.343,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:308_01",
+      "name": "iwakuni:上大野",
+      "origin": [
+        131.93922623,
+        34.3221922359
+      ],
+      "direction": "大野橋・宮の前方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 61.3,
+      "walkable_gap_m": 61.259,
+      "walking_way": "118122030",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4143.049,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:308_02",
+      "name": "iwakuni:上大野",
+      "origin": [
+        131.939323367,
+        34.3209871053
+      ],
+      "direction": "傍示方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 54.6,
+      "walkable_gap_m": 54.578,
+      "walking_way": "118122047",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4098.047,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:682_01",
+      "name": "iwakuni:大内迫",
+      "origin": [
+        132.180717972333,
+        34.1797928550667
+      ],
+      "direction": "池ヶ迫・関戸方面（大藤（錦帯橋・下多田・新岩国駅・六呂師口 経由）／岩国駅（下多田・錦帯橋・裁判所・市役所・岩国駅 経由）／岩国駅（錦帯橋 経由）／岩国駅（錦帯橋・裁判所・市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 59.3,
+      "walkable_gap_m": 59.273,
+      "walking_way": "1153783689",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 14.869,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:310_01",
+      "name": "iwakuni:宮の前",
+      "origin": [
+        131.940804016,
+        34.318879716
+      ],
+      "direction": "大野橋方面（道の駅／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 67.7,
+      "walkable_gap_m": 67.665,
+      "walking_way": "1081244512",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 3911.124,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:311_01",
+      "name": "iwakuni:落合（六日市線）",
+      "origin": [
+        131.941247696,
+        34.3117600943
+      ],
+      "direction": "下大野・大野橋方面（六日市駅／道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 79.0,
+      "walkable_gap_m": 79.006,
+      "walking_way": "118122077",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 3783.858,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:683_01",
+      "name": "iwakuni:関戸",
+      "origin": [
+        132.176345268,
+        34.1853059027
+      ],
+      "direction": "下多田・大内迫・錦帯橋方面（大藤（錦帯橋・下多田・新岩国駅・六呂師口 経由）／岩国駅（下多田・錦帯橋・裁判所・市役所・岩国駅 経由）／岩国駅（錦帯橋 経由）／岩国駅（錦帯橋・裁判所・市役所 経由）／岩国駅（錦帯橋・西岩国 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 45.5,
+      "walkable_gap_m": 45.488,
+      "walking_way": "83895432",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 10.732,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定 / 原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:683_02",
+      "name": "iwakuni:関戸",
+      "origin": [
+        132.176380257,
+        34.1848441936
+      ],
+      "direction": "下多田方面（下阿品（下多田 経由）／北河内駅（新岩国駅・伊房・二鹿体育館 経由）／鮎谷／鮎谷（美和病院 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 86.8,
+      "walkable_gap_m": 86.813,
+      "walking_way": "83895432",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 6.809,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:313_01",
+      "name": "iwakuni:錦パレスホテル前",
+      "origin": [
+        131.987412270476,
+        34.3125518075
+      ],
+      "direction": "掛方面（あさぎりの郷（道の駅・錦町駅・錦中学校前 経由）／尾川（道の駅・錦町駅・錦中学校前 経由）／錦中学校前（道の駅・錦町駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 42.7,
+      "walkable_gap_m": 42.69,
+      "walking_way": "517318701",
+      "status": "保留",
+      "nearest_recorded_road": "936759407",
+      "nearest_recorded_road_gap_m": 102.88,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:321_01",
+      "name": "iwakuni:下大野",
+      "origin": [
+        131.940524657,
+        34.308989309
+      ],
+      "direction": "稗原・落合（六日市線）方面（六日市駅／道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 100.1,
+      "walkable_gap_m": 100.067,
+      "walking_way": "1081244487",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 3860.428,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:326_01",
+      "name": "iwakuni:あさぎりの郷",
+      "origin": [
+        131.952986975,
+        34.2554207365
+      ],
+      "direction": "錦中学校前方面（深谷峡温泉（錦中学校前・錦町駅・道の駅・高根 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 81.5,
+      "walkable_gap_m": 81.468,
+      "walking_way": "118671820",
+      "status": "保留",
+      "nearest_recorded_road": "118671685",
+      "nearest_recorded_road_gap_m": 3219.348,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "3.0m〜5.5m",
+        "yh:WIDTH_RANK": "3"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "iwakuni:425_01",
+      "name": "iwakuni:鮎谷",
+      "origin": [
+        132.07789369,
+        34.2209565364
+      ],
+      "direction": "下長野・旧美和病院前・美和総合支所・美和総合支所前方面（ほんごう保育園前（岡口 経由）／わかば台（小郷橋 経由）／わかば台（足谷口・小郷橋 経由）／上滝山上／二ツ野口（名坪・美和病院・周防坂上 経由）／伊田川（椋野駅前 経由）／周防尾崎（椋野駅前 経由）／坂上駐在所跡（坂上分校前・美和病院 経由）／坂上駐在所跡（美和病院 経由）／大峠下（美和病院・周防坂上・二ツ野口 経由）／大谷（渋谷上・渋谷下・秋掛 経由）／岩国駅（美和病院・錦帯橋・西岩国 経由）／岩国駅（錦帯橋・西岩国 経由）／根木ノ骨（二ツ野口・立岩口 経由）／生見川上（志谷・牛ケ多和東・北中山・立岩口 経由）／畑（美和病院・周防坂上・中垣内・日宛西 経由）／秋中釜ヶ原（秋中 経由）／秋中釜ヶ原（美和総合支所前・立岩口・下大田原 経由）／秋中釜ヶ原（賀美畑・大田原分 経由）／秋中釜ヶ原（賀見畑・大田原分 経由）／美和小学校前（美和総合支所前 経由）／美和病院（坂上分校前 経由）／美和病院（旧美和病院前 経由）／美和総合支所／美和総合支所前／茅原（岡口・ほんごう保育園前 経由）／遠掛（椋野駅前 経由）／釜ヶ原（名坪・美和病院・瀬戸ノ内下・瀬戸ノ内上・瀬戸ノ内下 経由）／釜ヶ原（名坪・美和病院・黒沢 経由）／釜ヶ原（美和病院・佐坂・下長谷 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 30.1,
+      "walkable_gap_m": 30.11,
+      "walking_way": "118888174",
+      "status": "保留",
+      "nearest_recorded_road": "118888338",
+      "nearest_recorded_road_gap_m": 3442.117,
+      "nearest_recorded_road_tags": {
+        "highway": "path",
+        "source": "YahooJapan/ALPSMAP",
+        "yh:STRUCTURE": "地上",
+        "yh:TOTYUMONO": "供用中",
+        "yh:TYPE": "その他一般道",
+        "yh:WIDTH": "1.5m未満",
+        "yh:WIDTH_RANK": "5"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない / 原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 局所shapeに同程度で適合する別車道線候補あり / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "iwakuni:429_01",
+      "name": "iwakuni:上椋野",
+      "origin": [
+        132.031940943,
+        34.1976371517
+      ],
+      "direction": "下椋野・椋野駅前・見錆方面（わかば台／伊田川／周防尾崎／坂上駐在所跡（小郷橋・東谷老人憩いの家前・美和病院 経由）／坂上駐在所跡（小郷橋・足谷口・坂上分校前・美和病院 経由）／坂上駐在所跡（椋野駅前・坂上分校前・美和病院 経由）／小郷橋／美和病院（小郷橋・坂上分校前 経由）／遠掛／錦町駅（南桑本町・根笠駅前・美川ムーバレー・根笠駅前・河山駅・サンマート広瀬店前 経由）／錦町駅（南桑本町・河山駅 経由）／鮎谷（小郷橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 377.4,
+      "walkable_gap_m": 377.441,
+      "walking_way": "931715892",
+      "status": "保留",
+      "nearest_recorded_road": "709141392",
+      "nearest_recorded_road_gap_m": 0.705,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道187号",
+        "name:en": "National Highway Route 187",
+        "name:ja": "国道187号",
+        "ref": "187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+    },
+    {
+      "id": "iwakuni:i-453_01",
+      "name": "iwakuni:岩国インターバスターミナル",
+      "origin": [
+        132.162448301,
+        34.1756421964
+      ],
+      "direction": "下多田・御庄大橋方面（大藤（新岩国駅・六呂師口 経由）／岩国駅（下多田・錦帯橋・裁判所・市役所・岩国駅 経由）／岩国駅（錦帯橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 58.6,
+      "walkable_gap_m": 58.623,
+      "walking_way": "119009778",
+      "status": "保留",
+      "nearest_recorded_road": "87332797",
+      "nearest_recorded_road_gap_m": 7.318,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：進行方向に対し原点が車道線の右側。対向乗降側の整合を確認できない（原点誤りの断定ではない）"
+    },
+    {
+      "id": "iwakuni:i-454_01",
+      "name": "iwakuni:下多田",
+      "origin": [
+        132.165349511279,
+        34.1815880143755
+      ],
+      "direction": "岩国インターバスターミナル・関戸方面（大藤（新岩国駅・六呂師口 経由）／岩国駅（下多田・錦帯橋・裁判所・市役所・岩国駅 経由）／岩国駅（錦帯橋 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 39.3,
+      "walkable_gap_m": 39.32,
+      "walking_way": "1077713959",
+      "status": "保留",
+      "nearest_recorded_road": "709102781",
+      "nearest_recorded_road_gap_m": 13.317,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+    },
+    {
+      "id": "iwakuni:i-454_02",
+      "name": "iwakuni:下多田",
+      "origin": [
+        132.164736762609,
+        34.1807636687097
+      ],
+      "direction": "岩国インターバスターミナル方面（北河内駅（新岩国駅・伊房・二鹿体育館 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 57.5,
+      "walkable_gap_m": 57.468,
+      "walking_way": "119009728",
+      "status": "保留",
+      "nearest_recorded_road": "87332797",
+      "nearest_recorded_road_gap_m": 2.832,
+      "nearest_recorded_road_tags": {
+        "alt_name": "山陽道",
+        "alt_name:en": "Sanyou Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道2号",
+        "name:en": "National Highway Route 2",
+        "name:ja": "国道2号",
+        "ref": "2;187",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+    },
+    {
+      "id": "iwakuni:i-459_02",
+      "name": "iwakuni:東錦見",
+      "origin": [
+        132.196233104898,
+        34.1644270340368
+      ],
+      "direction": "裁判所方面（下阿品（裁判所・錦帯橋・下多田 経由）／北河内駅（錦帯橋・新岩国駅・伊房・二鹿体育館 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 55.8,
+      "walkable_gap_m": 55.79,
+      "walking_way": "118926265",
+      "status": "保留",
+      "nearest_recorded_road": "119025122",
+      "nearest_recorded_road_gap_m": 150.067,
+      "nearest_recorded_road_tags": {
+        "highway": "residential",
+        "source": "YahooJapan/ALPSMAP"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:i-555_01",
+      "name": "iwakuni:両全橋",
+      "origin": [
+        132.208170705096,
+        34.0732342899
+      ],
+      "direction": "浪の浦方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 64.1,
+      "walkable_gap_m": 64.12,
+      "walking_way": "1080315029",
+      "status": "保留",
+      "nearest_recorded_road": "278208593",
+      "nearest_recorded_road_gap_m": 7.062,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "survey;Bing,2005-06;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-581_01",
+      "name": "iwakuni:浪の浦",
+      "origin": [
+        132.208506163857,
+        34.0790315820667
+      ],
+      "direction": "保津南方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 41.8,
+      "walkable_gap_m": 41.803,
+      "walking_way": "1080073733",
+      "status": "保留",
+      "nearest_recorded_road": "278021417",
+      "nearest_recorded_road_gap_m": 7.696,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "survey;Bing,2005-06;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-583_02",
+      "name": "iwakuni:保津南",
+      "origin": [
+        132.208212919,
+        34.081028825
+      ],
+      "direction": "浪の浦方面（六呂師口（通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 33.6,
+      "walkable_gap_m": 33.607,
+      "walking_way": "278021418",
+      "status": "保留",
+      "nearest_recorded_road": "118901893",
+      "nearest_recorded_road_gap_m": 8.678,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "Bing;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-592_01",
+      "name": "iwakuni:保津",
+      "origin": [
+        132.208604558,
+        34.0876999671
+      ],
+      "direction": "保津団地方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 55.7,
+      "walkable_gap_m": 55.75,
+      "walking_way": "623977511",
+      "status": "保留",
+      "nearest_recorded_road": "197733578",
+      "nearest_recorded_road_gap_m": 5.914,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：局所shapeに同程度で適合する別車道線候補あり"
+    },
+    {
+      "id": "iwakuni:647_01",
+      "name": "iwakuni:傍示",
+      "origin": [
+        131.94199356325,
+        34.32756746113
+      ],
+      "direction": "上大野方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 233.7,
+      "walkable_gap_m": 233.69,
+      "walking_way": "114652510",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4117.296,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:647_02",
+      "name": "iwakuni:傍示",
+      "origin": [
+        131.94215051941,
+        34.32801008142
+      ],
+      "direction": "畑（六日市線）方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 194.6,
+      "walkable_gap_m": 194.569,
+      "walking_way": "114652510",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4124.83,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:i-606_01",
+      "name": "iwakuni:青木",
+      "origin": [
+        132.203321122571,
+        34.0993994052
+      ],
+      "direction": "黒磯方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 38.7,
+      "walkable_gap_m": 38.665,
+      "walking_way": "119010502",
+      "status": "保留",
+      "nearest_recorded_road": "204869236",
+      "nearest_recorded_road_gap_m": 13.471,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:i-606_02",
+      "name": "iwakuni:青木",
+      "origin": [
+        132.203840106667,
+        34.0988090814666
+      ],
+      "direction": "萩原口方面（六呂師口（通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 43.2,
+      "walkable_gap_m": 43.239,
+      "walking_way": "119010425",
+      "status": "保留",
+      "nearest_recorded_road": "204869236",
+      "nearest_recorded_road_gap_m": 8.088,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:649_01",
+      "name": "iwakuni:畑（六日市線）",
+      "origin": [
+        131.945216240857,
+        34.3335207974578
+      ],
+      "direction": "傍示方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 34.4,
+      "walkable_gap_m": 34.388,
+      "walking_way": "114653049",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4183.862,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:649_02",
+      "name": "iwakuni:畑（六日市線）",
+      "origin": [
+        131.945168564613,
+        34.3338013452016
+      ],
+      "direction": "幸地方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 42.7,
+      "walkable_gap_m": 42.739,
+      "walking_way": "114653049",
+      "status": "保留",
+      "nearest_recorded_road": "118667811",
+      "nearest_recorded_road_gap_m": 4205.089,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道434号",
+        "name:en": "National Route 434",
+        "name:ja": "国道434号",
+        "ref": "434",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:i-608_01",
+      "name": "iwakuni:黒磯",
+      "origin": [
+        132.201994437,
+        34.1034726002
+      ],
+      "direction": "藤生港方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 39.5,
+      "walkable_gap_m": 39.51,
+      "walking_way": "119010656",
+      "status": "保留",
+      "nearest_recorded_road": "119010590",
+      "nearest_recorded_road_gap_m": 153.954,
+      "nearest_recorded_road_tags": {
+        "highway": "unclassified",
+        "source": "YahooJapan/ALPSMAP"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:i-608_02",
+      "name": "iwakuni:黒磯",
+      "origin": [
+        132.202267592,
+        34.1030118907
+      ],
+      "direction": "青木方面（六呂師口（通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 42.5,
+      "walkable_gap_m": 42.54,
+      "walking_way": "119010656",
+      "status": "保留",
+      "nearest_recorded_road": "204869236",
+      "nearest_recorded_road_gap_m": 100.418,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "iwakuni:651_01",
+      "name": "iwakuni:幸地",
+      "origin": [
+        131.945441231391,
+        34.3357261141818
+      ],
+      "direction": "畑（六日市線）方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 101.7,
+      "walkable_gap_m": 101.749,
+      "walking_way": "114653049",
+      "status": "保留",
+      "nearest_recorded_road": "936759402",
+      "nearest_recorded_road_gap_m": 4307.939,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:651_02",
+      "name": "iwakuni:幸地",
+      "origin": [
+        131.945246020239,
+        34.335753190397
+      ],
+      "direction": "亀原方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 107.5,
+      "walkable_gap_m": 107.544,
+      "walking_way": "114653049",
+      "status": "保留",
+      "nearest_recorded_road": "936759402",
+      "nearest_recorded_road_gap_m": 4324.201,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:653_01",
+      "name": "iwakuni:亀原",
+      "origin": [
+        131.94360424539,
+        34.34045683801
+      ],
+      "direction": "幸地方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 111.3,
+      "walkable_gap_m": 111.326,
+      "walking_way": "114653436",
+      "status": "保留",
+      "nearest_recorded_road": "936759402",
+      "nearest_recorded_road_gap_m": 4765.371,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:655_01",
+      "name": "iwakuni:立河内上",
+      "origin": [
+        131.94667709631,
+        34.34390922843
+      ],
+      "direction": "亀原方面（道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 100.5,
+      "walkable_gap_m": 100.496,
+      "walking_way": "114652715",
+      "status": "保留",
+      "nearest_recorded_road": "936759403",
+      "nearest_recorded_road_gap_m": 4818.391,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:655_02",
+      "name": "iwakuni:立河内上",
+      "origin": [
+        131.94664029784,
+        34.34397679864
+      ],
+      "direction": "立河内方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 107.7,
+      "walkable_gap_m": 107.685,
+      "walking_way": "114652715",
+      "status": "保留",
+      "nearest_recorded_road": "936759403",
+      "nearest_recorded_road_gap_m": 4826.103,
+      "nearest_recorded_road_tags": {
+        "highway": "residential"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:657_02",
+      "name": "iwakuni:立河内",
+      "origin": [
+        131.947398228,
+        34.34831423768
+      ],
+      "direction": "上尾真田方面（六日市駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 43.6,
+      "walkable_gap_m": 43.583,
+      "walking_way": "114652574",
+      "status": "保留",
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:i-616_01",
+      "name": "iwakuni:灘小学校",
+      "origin": [
+        132.199931831381,
+        34.1206337484667
+      ],
+      "direction": "郷ケ崎方面（岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 69.9,
+      "walkable_gap_m": 69.944,
+      "walking_way": "1144838902",
+      "status": "保留",
+      "nearest_recorded_road": "197733586",
+      "nearest_recorded_road_gap_m": 11.266,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:659_01",
+      "name": "iwakuni:上尾真田",
+      "origin": [
+        131.94196668434,
+        34.35140783334
+      ],
+      "direction": "立河内・蔵木口方面（六日市駅／道の駅／錦中学校前（道の駅・錦町駅 経由）／錦町駅（道の駅 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 129.8,
+      "walkable_gap_m": 129.815,
+      "walking_way": "698029976",
+      "status": "保留",
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：指定した進行区間に整合する車道線候補なし"
+    },
+    {
+      "id": "iwakuni:i-624_02",
+      "name": "iwakuni:ゆめタウン南岩国",
+      "origin": [
+        132.20325931,
+        34.1332083012
+      ],
+      "direction": "東洋紡方面（六呂師口（通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 48.2,
+      "walkable_gap_m": 48.188,
+      "walking_way": "119017976",
+      "status": "保留",
+      "nearest_recorded_road": "1423483372",
+      "nearest_recorded_road_gap_m": 5.285,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-625_02",
+      "name": "iwakuni:南岩国駅",
+      "origin": [
+        132.206168281048,
+        34.1358735047
+      ],
+      "direction": "ゆめタウン南岩国方面（六呂師口（ゆめタウン南岩国・通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 31.5,
+      "walkable_gap_m": 31.512,
+      "walking_way": "119017628",
+      "status": "保留",
+      "nearest_recorded_road": "183569582",
+      "nearest_recorded_road_gap_m": 4.819,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-626_01",
+      "name": "iwakuni:高水学園",
+      "origin": [
+        132.208068845524,
+        34.1385330109
+      ],
+      "direction": "愛宕１丁目方面（岩国駅（岩国医療センター・市役所 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 30.1,
+      "walkable_gap_m": 30.057,
+      "walking_way": "119018750",
+      "status": "保留",
+      "nearest_recorded_road": "183569582",
+      "nearest_recorded_road_gap_m": 12.722,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-626_02",
+      "name": "iwakuni:高水学園",
+      "origin": [
+        132.207956897333,
+        34.1381076122
+      ],
+      "direction": "南岩国駅方面（六呂師口（ゆめタウン南岩国・通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 30.7,
+      "walkable_gap_m": 30.719,
+      "walking_way": "119018750",
+      "status": "保留",
+      "nearest_recorded_road": "183569582",
+      "nearest_recorded_road_gap_m": 6.864,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-628_01",
+      "name": "iwakuni:岩国医療センター",
+      "origin": [
+        132.20341453,
+        34.1436301316
+      ],
+      "direction": "愛宕１丁目方面（六呂師口（ゆめタウン南岩国・通津公民館・大藤・欽明路 経由）／岩国駅（市役所 経由））",
+      "boarding_confirmed": false,
+      "v18_gap_m": 104.5,
+      "walkable_gap_m": 104.503,
+      "walking_way": "284184348",
+      "status": "保留",
+      "nearest_recorded_road": "243412389",
+      "nearest_recorded_road_gap_m": 170.03,
+      "nearest_recorded_road_tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "南岩国尾津線",
+        "name:en": "Minamiiwakuni Ozu Line",
+        "name:ja": "南岩国尾津線",
+        "name:ja-Hira": "みなみいわくにおづせん",
+        "name:ja_rm": "Minamiiwakuni Odzu-sen",
+        "ref": "118",
+        "source": "image;survey",
+        "surface": "asphalt",
+        "wikidata": "Q11467133",
+        "wikipedia": "ja:山口県道118号南岩国尾津線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：前後区間内で進行方向を安定して読めない"
+    },
+    {
+      "id": "iwakuni:i-629_01",
+      "name": "iwakuni:尾津",
+      "origin": [
+        132.211527016,
+        34.1422304959
+      ],
+      "direction": "愛宕供用会館方面（岩国駅（市役所 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 51.2,
+      "walkable_gap_m": 51.215,
+      "walking_way": "1149928054",
+      "status": "保留",
+      "nearest_recorded_road": "183569582",
+      "nearest_recorded_road_gap_m": 6.271,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "iwakuni:i-629_02",
+      "name": "iwakuni:尾津",
+      "origin": [
+        132.211915092,
+        34.1424115752
+      ],
+      "direction": "愛宕１丁目方面（六呂師口（岩国医療センター・ゆめタウン南岩国・通津公民館・大藤・欽明路 経由））",
+      "boarding_confirmed": true,
+      "v18_gap_m": 66.6,
+      "walkable_gap_m": 66.588,
+      "walking_way": "119018329",
+      "status": "保留",
+      "nearest_recorded_road": "183569582",
+      "nearest_recorded_road_gap_m": 7.529,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "hikari:14_03",
+      "name": "hikari:光市役所前",
+      "origin": [
+        131.94201,
+        33.961261
+      ],
+      "direction": "光製鉄前方面（兼清／右回り 光駅／岩狩経由兼清／集会所前／高水駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 47.2,
+      "walkable_gap_m": 47.182,
+      "walking_way": "113100560",
+      "status": "保留",
+      "nearest_recorded_road": "113098117",
+      "nearest_recorded_road_gap_m": 6.157,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "国道188号",
+        "name:en": "National Highway Route 188",
+        "name:ja": "国道188号",
+        "ref": "188",
+        "source": "survey;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "hikari:20_01",
+      "name": "hikari:大和コミュニティセンター前",
+      "origin": [
+        131.998339,
+        33.981579
+      ],
+      "direction": "岩田駅前・海田方面（佐田上／光市役所前方面／大和コミュニティセンター前／岩田駅前／市／束荷方面／生野）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 39.2,
+      "walkable_gap_m": 39.234,
+      "walking_way": "113099470",
+      "status": "保留",
+      "nearest_recorded_road": "1420133824",
+      "nearest_recorded_road_gap_m": 313.306,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "光上関線",
+        "name:en": "Hikari Kaminoseki Line",
+        "name:ja": "光上関線",
+        "name:ja-Hira": "ひかりかみのせきせん",
+        "name:ja_rm": "Hikari Kaminoseki-sen",
+        "ref": "23",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11467223",
+        "wikipedia": "ja:山口県道23号光上関線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超 / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "hikari:21_01",
+      "name": "hikari:大和病院前",
+      "origin": [
+        131.999414,
+        33.982867
+      ],
+      "direction": "大和コミュニティセンター前・岩田駅前・海田方面（佐田上／光市役所前方面／大和コミュニティセンター前／大和病院前／岩田駅前／市／束荷方面／生野）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 32.4,
+      "walkable_gap_m": 32.423,
+      "walking_way": "113098633",
+      "status": "保留",
+      "nearest_recorded_road": "1420133824",
+      "nearest_recorded_road_gap_m": 482.337,
+      "nearest_recorded_road_tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "光上関線",
+        "name:en": "Hikari Kaminoseki Line",
+        "name:ja": "光上関線",
+        "name:ja-Hira": "ひかりかみのせきせん",
+        "name:ja_rm": "Hikari Kaminoseki-sen",
+        "ref": "23",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11467223",
+        "wikipedia": "ja:山口県道23号光上関線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定 / 原点と車道線が30m超 / 局所shapeと道路線の適合残差が12m超 / 起終点のため前後両側で区間を限定できない"
+    },
+    {
+      "id": "hikari:94_01",
+      "name": "hikari:ゆめプラザ熊毛",
+      "origin": [
+        131.969131,
+        34.049818
+      ],
+      "direction": "熊毛中前・鶴見台団地下方面（光市役所前／高水駅）",
+      "boarding_confirmed": false,
+      "v18_gap_m": 36.6,
+      "walkable_gap_m": 36.634,
+      "walking_way": "119273408",
+      "status": "保留",
+      "nearest_recorded_road": "113003060",
+      "nearest_recorded_road_gap_m": 3341.609,
+      "nearest_recorded_road_tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "光玖珂線",
+        "name:en": "Hikari Kuga Line",
+        "name:ja": "光玖珂線",
+        "name:ja-Hira": "ひかりくがせん",
+        "name:ja_rm": "Hikari Kuga-sen",
+        "ref": "144",
+        "source": "YahooJapan/ALPSMAP",
+        "surface": "asphalt",
+        "wikidata": "Q11467148",
+        "wikipedia": "ja:山口県道144号光玖珂線"
+      },
+      "nearest_recorded_road_walkable": true,
+      "reason": "場所・方面の既存判定が保留。徒歩接続の近さで解除しない。前後停留所に対応する経路区間と、進行方向に対する原点の道路側を照合。保留理由：原点と車道線が30m超 / 原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定 / 局所shapeと道路線の適合残差が12m超"
+    },
+    {
+      "id": "bocho:00451359-000000002935",
+      "name": "大井馬場",
+      "origin": [
+        131.447998,
+        34.474362
+      ],
+      "direction": "奈古駅方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 37.4,
+      "walkable_gap_m": 37.401,
+      "walking_way": "113956052",
+      "status": "保留",
+      "nearest_recorded_road": "113331671",
+      "nearest_recorded_road_gap_m": 5.086,
+      "nearest_recorded_road_tags": {
+        "alt_name": "北浦街道",
+        "alt_name:en": "Kitaura Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道191号",
+        "name:en": "National Highway Route 191",
+        "name:ja": "国道191号",
+        "ref": "191",
+        "source": "GSImaps/std;YahooJapan/ALPSMAP",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00451359-000000002934",
+      "name": "大井馬場",
+      "origin": [
+        131.447562,
+        34.473377
+      ],
+      "direction": "萩BC・萩商工高校方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 40.7,
+      "walkable_gap_m": 40.741,
+      "walking_way": "113956021",
+      "status": "保留",
+      "nearest_recorded_road": "113331671",
+      "nearest_recorded_road_gap_m": 1.768,
+      "nearest_recorded_road_tags": {
+        "alt_name": "北浦街道",
+        "alt_name:en": "Kitaura Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道191号",
+        "name:en": "National Highway Route 191",
+        "name:ja": "国道191号",
+        "ref": "191",
+        "source": "GSImaps/std;YahooJapan/ALPSMAP",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00451512-000000003258",
+      "name": "長門高前",
+      "origin": [
+        131.185088,
+        34.370802
+      ],
+      "direction": "青海大橋方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 32.2,
+      "walkable_gap_m": 32.169,
+      "walking_way": "112856697",
+      "status": "保留",
+      "nearest_recorded_road": "1261404722",
+      "nearest_recorded_road_gap_m": 7.196,
+      "nearest_recorded_road_tags": {
+        "alt_name": "北浦街道",
+        "alt_name:en": "Kitaura Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道191号",
+        "name:en": "National Highway Route 191",
+        "name:ja": "国道191号",
+        "oneway": "yes",
+        "ref": "191",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450510-000000001153",
+      "name": "イオンタウン平生",
+      "origin": [
+        132.070159,
+        33.941625
+      ],
+      "direction": "上関方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 70.5,
+      "walkable_gap_m": 70.486,
+      "walking_way": "112975005",
+      "status": "保留",
+      "reason": "取得済み道路原本の歩行用道路は30m外。原座標から接続できる歩道・通路の追加位置資料が不足。"
+    },
+    {
+      "id": "bocho:00450510-000000001152",
+      "name": "イオンタウン平生",
+      "origin": [
+        132.070173,
+        33.941639
+      ],
+      "direction": "柳井駅方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 68.6,
+      "walkable_gap_m": 68.554,
+      "walking_way": "112975005",
+      "status": "保留",
+      "reason": "取得済み道路原本の歩行用道路は30m外。原座標から接続できる歩道・通路の追加位置資料が不足。"
+    },
+    {
+      "id": "bocho:00451363-000000002951",
+      "name": "奈古駅前",
+      "origin": [
+        131.473038,
+        34.50348
+      ],
+      "direction": "斎藤医院方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 49.0,
+      "walkable_gap_m": 48.972,
+      "walking_way": "520140147",
+      "status": "保留",
+      "nearest_recorded_road": "806255960",
+      "nearest_recorded_road_gap_m": 5.635,
+      "nearest_recorded_road_tags": {
+        "alt_name": "北浦街道",
+        "alt_name:en": "Kitaura Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道191号",
+        "name:en": "National Highway Route 191",
+        "name:ja": "国道191号",
+        "ref": "191",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00451363-000000002949",
+      "name": "奈古駅前",
+      "origin": [
+        131.47299,
+        34.503436
+      ],
+      "direction": "萩商工高校方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 42.5,
+      "walkable_gap_m": 42.456,
+      "walking_way": "520140147",
+      "status": "保留",
+      "nearest_recorded_road": "806255960",
+      "nearest_recorded_road_gap_m": 7.349,
+      "nearest_recorded_road_tags": {
+        "alt_name": "北浦街道",
+        "alt_name:en": "Kitaura Highway",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道191号",
+        "name:en": "National Highway Route 191",
+        "name:ja": "国道191号",
+        "ref": "191",
+        "source": "GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450662-000000001472",
+      "name": "三蒲",
+      "origin": [
+        132.20935,
+        33.947469
+      ],
+      "direction": "大畠駅方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 35.6,
+      "walkable_gap_m": 35.6,
+      "walking_way": "113349408",
+      "status": "保留",
+      "nearest_recorded_road": "25841351",
+      "nearest_recorded_road_gap_m": 6.465,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道437号",
+        "name:en": "National Highway Route 437",
+        "name:ja": "国道437号",
+        "ref": "437",
+        "source": "survey;Bing,2012-05;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450671-000000001491",
+      "name": "総合庁舎前(周防大島)",
+      "origin": [
+        132.260269,
+        33.949523
+      ],
+      "direction": "久賀方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 70.8,
+      "walkable_gap_m": 70.816,
+      "walking_way": "113339304",
+      "status": "保留",
+      "nearest_recorded_road": "708006168",
+      "nearest_recorded_road_gap_m": 5.886,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道437号",
+        "name:en": "National Highway Route 437",
+        "name:ja": "国道437号",
+        "ref": "437",
+        "source": "survey;Bing,2012-05;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450671-000000001490",
+      "name": "総合庁舎前(周防大島)",
+      "origin": [
+        132.260336,
+        33.949337
+      ],
+      "direction": "大畠駅方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 53.4,
+      "walkable_gap_m": 53.359,
+      "walking_way": "113339304",
+      "status": "保留",
+      "nearest_recorded_road": "708006168",
+      "nearest_recorded_road_gap_m": 11.394,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道437号",
+        "name:en": "National Highway Route 437",
+        "name:ja": "国道437号",
+        "ref": "437",
+        "source": "survey;Bing,2012-05;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450669-000000001487",
+      "name": "宗光",
+      "origin": [
+        132.251475,
+        33.952564
+      ],
+      "direction": "久賀方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 54.9,
+      "walkable_gap_m": 54.851,
+      "walking_way": "113339165",
+      "status": "保留",
+      "nearest_recorded_road": "708006168",
+      "nearest_recorded_road_gap_m": 5.204,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道437号",
+        "name:en": "National Highway Route 437",
+        "name:ja": "国道437号",
+        "ref": "437",
+        "source": "survey;Bing,2012-05;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "bocho:00450669-000000001486",
+      "name": "宗光",
+      "origin": [
+        132.251375,
+        33.952503
+      ],
+      "direction": "大畠駅方面",
+      "boarding_confirmed": true,
+      "v18_gap_m": 43.9,
+      "walkable_gap_m": 43.924,
+      "walking_way": "113339165",
+      "status": "保留",
+      "nearest_recorded_road": "708006168",
+      "nearest_recorded_road_gap_m": 5.127,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道437号",
+        "name:en": "National Highway Route 437",
+        "name:ja": "国道437号",
+        "ref": "437",
+        "source": "survey;Bing,2012-05;YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60046 1",
+      "name": "佐々並",
+      "origin": [
+        131.4613358,
+        34.2855156
+      ],
+      "direction": "板橋口方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 36.9,
+      "walkable_gap_m": 36.92,
+      "walking_way": "114041697",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.711,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60046 2",
+      "name": "佐々並",
+      "origin": [
+        131.4611585,
+        34.285479
+      ],
+      "direction": "道の駅あさひ方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 33.3,
+      "walkable_gap_m": 33.335,
+      "walking_way": "114041697",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 7.888,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60063 2",
+      "name": "上小木原",
+      "origin": [
+        131.490888,
+        34.2461195
+      ],
+      "direction": "下小木原方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 30.7,
+      "walkable_gap_m": 30.705,
+      "walking_way": "114040314",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 8.376,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60064 1",
+      "name": "下小木原",
+      "origin": [
+        131.4880267,
+        34.2512333
+      ],
+      "direction": "上小木原方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 35.2,
+      "walkable_gap_m": 35.166,
+      "walking_way": "703626758",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 7.869,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60065 1",
+      "name": "日南瀬",
+      "origin": [
+        131.478183,
+        34.2620417
+      ],
+      "direction": "下小木原方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 47.2,
+      "walkable_gap_m": 47.168,
+      "walking_way": "425367923",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 6.354,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60065 2",
+      "name": "日南瀬",
+      "origin": [
+        131.478,
+        34.2619674
+      ],
+      "direction": "中作方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 44.5,
+      "walkable_gap_m": 44.476,
+      "walking_way": "425367923",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 11.861,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60067 1",
+      "name": "大迫口",
+      "origin": [
+        131.4738768,
+        34.272234
+      ],
+      "direction": "中作方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 69.2,
+      "walkable_gap_m": 69.238,
+      "walking_way": "114041364",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 6.328,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60067 2",
+      "name": "大迫口",
+      "origin": [
+        131.4737381,
+        34.2722712
+      ],
+      "direction": "板橋口方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 69.6,
+      "walkable_gap_m": 69.583,
+      "walking_way": "114041364",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 7.063,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60068 1",
+      "name": "板橋口",
+      "origin": [
+        131.4695461,
+        34.2810095
+      ],
+      "direction": "大迫口方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 256.8,
+      "walkable_gap_m": 256.787,
+      "walking_way": "114041010",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 3.826,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60068 2",
+      "name": "板橋口",
+      "origin": [
+        131.4694998,
+        34.2809446
+      ],
+      "direction": "佐々並方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 258.9,
+      "walkable_gap_m": 258.941,
+      "walking_way": "114041010",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.547,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60096 1",
+      "name": "吉敷",
+      "origin": [
+        131.4336762,
+        34.167496
+      ],
+      "direction": "吉敷郵便局前方面（山口駅／防府駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 34.0,
+      "walkable_gap_m": 34.013,
+      "walking_way": "119885351",
+      "status": "保留",
+      "nearest_recorded_road": "119875257",
+      "nearest_recorded_road_gap_m": 4.126,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60096 2",
+      "name": "吉敷",
+      "origin": [
+        131.4333144,
+        34.1676309
+      ],
+      "direction": "赤田方面（中尾口／秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 41.3,
+      "walkable_gap_m": 41.278,
+      "walking_way": "119885640",
+      "status": "保留",
+      "nearest_recorded_road": "119875257",
+      "nearest_recorded_road_gap_m": 13.567,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60104 1",
+      "name": "秋吉小学校前",
+      "origin": [
+        131.307171,
+        34.2132873
+      ],
+      "direction": "下八重方面（山口駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 81.7,
+      "walkable_gap_m": 81.709,
+      "walking_way": "120483110",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 5.275,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60104 2",
+      "name": "秋吉小学校前",
+      "origin": [
+        131.3071559,
+        34.2131784
+      ],
+      "direction": "秋芳洞方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 83.5,
+      "walkable_gap_m": 83.548,
+      "walking_way": "120483166",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 6.636,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60105 1",
+      "name": "下八重",
+      "origin": [
+        131.3103663,
+        34.2133085
+      ],
+      "direction": "上八重方面（山口駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 70.4,
+      "walkable_gap_m": 70.425,
+      "walking_way": "936885392",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 3.34,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60105 2",
+      "name": "下八重",
+      "origin": [
+        131.3098314,
+        34.2131465
+      ],
+      "direction": "秋吉小学校前方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 105.8,
+      "walkable_gap_m": 105.833,
+      "walking_way": "120388207",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 6.535,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60114 2",
+      "name": "四ノ瀬",
+      "origin": [
+        131.3646634,
+        34.2029549
+      ],
+      "direction": "綾木方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 36.5,
+      "walkable_gap_m": 36.519,
+      "walking_way": "120388432",
+      "status": "保留",
+      "nearest_recorded_road": "120387054",
+      "nearest_recorded_road_gap_m": 5.539,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "jr-chugoku:60119 2",
+      "name": "吉敷畑",
+      "origin": [
+        131.4155177,
+        34.1983807
+      ],
+      "direction": "長門大石方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 99.4,
+      "walkable_gap_m": 99.443,
+      "walking_way": "1004792382",
+      "status": "保留",
+      "nearest_recorded_road": "119875281",
+      "nearest_recorded_road_gap_m": 5.5,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086349",
+      "name": "吉敷畑",
+      "origin": [
+        131.415519,
+        34.1983896
+      ],
+      "direction": "長門大石方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 100.2,
+      "walkable_gap_m": 100.202,
+      "walking_way": "1004792382",
+      "status": "保留",
+      "nearest_recorded_road": "119875281",
+      "nearest_recorded_road_gap_m": 4.519,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086359",
+      "name": "四ノ瀬",
+      "origin": [
+        131.3646971,
+        34.2029454
+      ],
+      "direction": "綾木方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 34.5,
+      "walkable_gap_m": 34.516,
+      "walking_way": "120388432",
+      "status": "保留",
+      "nearest_recorded_road": "120387054",
+      "nearest_recorded_road_gap_m": 8.802,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086376",
+      "name": "下八重",
+      "origin": [
+        131.3098271,
+        34.2131529
+      ],
+      "direction": "秋吉小学校前方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 105.5,
+      "walkable_gap_m": 105.502,
+      "walking_way": "120388207",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 5.769,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086377",
+      "name": "下八重",
+      "origin": [
+        131.3103604,
+        34.2133195
+      ],
+      "direction": "上八重方面（山口駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 70.6,
+      "walkable_gap_m": 70.601,
+      "walking_way": "936885392",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 4.631,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086392",
+      "name": "吉敷",
+      "origin": [
+        131.433319,
+        34.1676266
+      ],
+      "direction": "赤田方面（中尾口／秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 41.4,
+      "walkable_gap_m": 41.368,
+      "walking_way": "119885640",
+      "status": "保留",
+      "nearest_recorded_road": "119875257",
+      "nearest_recorded_road_gap_m": 13.515,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086393",
+      "name": "吉敷",
+      "origin": [
+        131.433712,
+        34.1675331
+      ],
+      "direction": "吉敷郵便局前方面（山口駅／防府駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 36.3,
+      "walkable_gap_m": 36.288,
+      "walking_way": "119885351",
+      "status": "保留",
+      "nearest_recorded_road": "119875257",
+      "nearest_recorded_road_gap_m": 9.234,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086448",
+      "name": "日南瀬",
+      "origin": [
+        131.4781776,
+        34.2620506
+      ],
+      "direction": "下小木原方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 48.3,
+      "walkable_gap_m": 48.267,
+      "walking_way": "425367923",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 6.519,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086450",
+      "name": "下小木原",
+      "origin": [
+        131.4880273,
+        34.2512352
+      ],
+      "direction": "上小木原方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 35.0,
+      "walkable_gap_m": 34.994,
+      "walking_way": "703626758",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 8.009,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086483",
+      "name": "佐々並",
+      "origin": [
+        131.4611612,
+        34.2854811
+      ],
+      "direction": "道の駅あさひ方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 33.2,
+      "walkable_gap_m": 33.237,
+      "walking_way": "114041697",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 7.553,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086484",
+      "name": "佐々並",
+      "origin": [
+        131.4613279,
+        34.2855144
+      ],
+      "direction": "板橋口方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 36.7,
+      "walkable_gap_m": 36.738,
+      "walking_way": "114041697",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.231,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086378",
+      "name": "秋吉小学校前",
+      "origin": [
+        131.3071532,
+        34.2131662
+      ],
+      "direction": "秋芳洞方面（秋吉）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 83.7,
+      "walkable_gap_m": 83.665,
+      "walking_way": "120483166",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 8.0,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086379",
+      "name": "秋吉小学校前",
+      "origin": [
+        131.3072031,
+        34.2133041
+      ],
+      "direction": "下八重方面（山口駅）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 84.1,
+      "walkable_gap_m": 84.111,
+      "walking_way": "120483110",
+      "status": "保留",
+      "nearest_recorded_road": "120389045",
+      "nearest_recorded_road_gap_m": 7.994,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道435号",
+        "name:en": "National Highway Route 435",
+        "name:ja": "国道435号",
+        "ref": "435",
+        "source": "YahooJapan/ALPSMAP;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086441",
+      "name": "板橋口",
+      "origin": [
+        131.4694941,
+        34.2809484
+      ],
+      "direction": "佐々並方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 258.3,
+      "walkable_gap_m": 258.274,
+      "walking_way": "114041010",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.428,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086442",
+      "name": "板橋口",
+      "origin": [
+        131.4695441,
+        34.2810151
+      ],
+      "direction": "大迫口方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 256.2,
+      "walkable_gap_m": 256.22,
+      "walking_way": "114041010",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.284,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086443",
+      "name": "大迫口",
+      "origin": [
+        131.4737275,
+        34.2722661
+      ],
+      "direction": "板橋口方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 70.5,
+      "walkable_gap_m": 70.512,
+      "walking_way": "114041364",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 7.785,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086444",
+      "name": "大迫口",
+      "origin": [
+        131.4738775,
+        34.2722327
+      ],
+      "direction": "中作方面（山口駅／湯田温泉通）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 69.4,
+      "walkable_gap_m": 69.363,
+      "walking_way": "114041364",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 6.438,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086447",
+      "name": "日南瀬",
+      "origin": [
+        131.4780642,
+        34.2620049
+      ],
+      "direction": "中作方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 46.7,
+      "walkable_gap_m": 46.716,
+      "walking_way": "425367923",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.676,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    },
+    {
+      "id": "node/9412086451",
+      "name": "上小木原",
+      "origin": [
+        131.4909165,
+        34.2461405
+      ],
+      "direction": "下小木原方面（東萩）",
+      "boarding_confirmed": true,
+      "v18_gap_m": 30.8,
+      "walkable_gap_m": 30.813,
+      "walking_way": "114040314",
+      "status": "保留",
+      "nearest_recorded_road": "114040847",
+      "nearest_recorded_road_gap_m": 4.975,
+      "nearest_recorded_road_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "国道262号",
+        "name:en": "National Highway Route 262",
+        "name:ja": "国道262号",
+        "ref": "262",
+        "source": "GSI/orth;GSImaps/std",
+        "surface": "asphalt"
+      },
+      "nearest_recorded_road_walkable": false,
+      "reason": "30m内に道路は収録済みだが歩行対象の条件を満たさない。道路タグを根拠なく書き換えず、別の歩行路または歩行可否の追加根拠が必要。"
+    }
+  ],
+  "summary": {
+    "保留": 128
+  }
+}

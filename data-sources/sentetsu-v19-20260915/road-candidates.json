@@ -1,0 +1,5815 @@
+{
+  "pairs": [
+    {
+      "name": "本山駅",
+      "points": [
+        {
+          "id": "sentetsu:S24_01",
+          "source_stop_id": "S24_01",
+          "original_coordinates": [
+            131.173346,
+            33.942568
+          ],
+          "name": "本山駅",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬",
+              "stop_sequence": 33,
+              "previous_stop_id": "S23_01",
+              "next_stop_id": "S25_01",
+              "previous_stop_name": "焼野",
+              "next_stop_name": "本山口",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S23_01",
+                  "sections": [
+                    {
+                      "section": 27,
+                      "distance_m": 0.045,
+                      "position_m": 280.829,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 29,
+                      "distance_m": 0.045,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 30,
+                      "distance_m": 0.045,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 31,
+                      "distance_m": 13.476,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 32,
+                      "distance_m": 13.008,
+                      "position_m": 3.524,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S24_01",
+                  "sections": [
+                    {
+                      "section": 29,
+                      "distance_m": 0.023,
+                      "position_m": 395.908,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S25_01",
+                  "sections": [
+                    {
+                      "section": 29,
+                      "distance_m": 0.04,
+                      "position_m": 635.837,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 29,
+              "source_polyline_indices": [
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 395.9078095632289,
+                "next_s_m": 635.8365824987427
+              },
+              "shape_id": "official-map-section:29",
+              "stop_headsign": "本山岬",
+              "trip_headsigns": [
+                "本山岬"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "局所shapeに同程度で適合する別車道線候補あり",
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定",
+                "分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定",
+                "道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+              ],
+              "way_id": "99268415",
+              "node_ids": [
+                "1351958637",
+                "1351958638"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "妻崎開作小野田線",
+                "name:en": "Tsumazakigaisaku Onoda Line",
+                "name:ja": "妻崎開作小野田線",
+                "name:ja-Hira": "つまざきがいさくおのだせん",
+                "name:ja_rm": "Tsumazakigaisaku Onoda-sen",
+                "ref": "354",
+                "source": "Bing;YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467323",
+                "wikipedia": "ja:山口県道354号妻崎開作小野田線"
+              },
+              "road_segment": [
+                [
+                  131.1732973,
+                  33.9425478
+                ],
+                [
+                  131.1730958,
+                  33.9425562
+                ]
+              ],
+              "road_projection": [
+                131.1732973,
+                33.9425478
+              ],
+              "travel_from": [
+                131.17312961724082,
+                33.942569109602005
+              ],
+              "travel_to": [
+                131.17346692310093,
+                33.94243131130348
+              ],
+              "heading_deg": 116.2,
+              "signed_left_m": 2.472,
+              "point_road_distance_m": 5.026,
+              "local_shape_road_fit_m": 7.354,
+              "alignment": 0.918,
+              "local_turn_deg": 53.283,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "5": false
+              },
+              "competing_roads": [
+                {
+                  "way_id": "99268415",
+                  "fit_m": 8.06,
+                  "projection": [
+                    131.17334661768143,
+                    33.94254889594848
+                  ]
+                }
+              ],
+              "nearby_junctions": [
+                {
+                  "node_id": "1351958637",
+                  "distance_m": 0.0,
+                  "degree": 3
+                }
+              ]
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "西の浜",
+      "points": [
+        {
+          "id": "sentetsu:S16_02",
+          "source_stop_id": "S16_02",
+          "original_coordinates": [
+            131.17613,
+            33.963237
+          ],
+          "name": "西の浜",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時57分_系統100b",
+              "trip_ids": [
+                "平日_06時57分_系統100b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 13,
+              "previous_stop_id": "S17_02",
+              "next_stop_id": "S15_02",
+              "previous_stop_name": "赤崎神社",
+              "next_stop_name": "竜王町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S17_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 20.116,
+                      "position_m": 1542.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 25,
+                      "distance_m": 20.116,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 26,
+                      "distance_m": 7.235,
+                      "position_m": 17.762,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 34,
+                      "distance_m": 0.028,
+                      "position_m": 2064.694,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 36,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 470.9168988185959,
+                "next_s_m": 870.1047891529511
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120614301",
+              "node_ids": [
+                "1351960418",
+                "1351960513"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763499,
+                  33.9629199
+                ],
+                [
+                  131.1758524,
+                  33.9638837
+                ]
+              ],
+              "road_projection": [
+                131.17617751584032,
+                33.96325385749363
+              ],
+              "travel_from": [
+                131.17624891621463,
+                33.963084204232636
+              ],
+              "travel_to": [
+                131.1761476026929,
+                33.96342062819917
+              ],
+              "heading_deg": 336.8,
+              "signed_left_m": 4.77,
+              "point_road_distance_m": 4.77,
+              "local_shape_road_fit_m": 1.965,
+              "alignment": 0.987,
+              "local_turn_deg": 20.285,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  0.6016792001011155,
+                  1.0116441301544736,
+                  1.2108324577341625
+                ],
+                "signed_left_m": 4.769821821093999,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 346.0
+              }
+            },
+            {
+              "trip_id": "平日_17時15分_系統101b",
+              "trip_ids": [
+                "平日_17時15分_系統101b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "stop_sequence": 13,
+              "previous_stop_id": "S17_02",
+              "next_stop_id": "S15_02",
+              "previous_stop_name": "赤崎神社",
+              "next_stop_name": "竜王町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S17_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 20.116,
+                      "position_m": 1542.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 25,
+                      "distance_m": 20.116,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 26,
+                      "distance_m": 7.235,
+                      "position_m": 17.762,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 34,
+                      "distance_m": 0.028,
+                      "position_m": 2064.694,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 36,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 470.9168988185959,
+                "next_s_m": 870.1047891529511
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　スポセン前　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120614301",
+              "node_ids": [
+                "1351960418",
+                "1351960513"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763499,
+                  33.9629199
+                ],
+                [
+                  131.1758524,
+                  33.9638837
+                ]
+              ],
+              "road_projection": [
+                131.17617751584032,
+                33.96325385749363
+              ],
+              "travel_from": [
+                131.17624891621463,
+                33.963084204232636
+              ],
+              "travel_to": [
+                131.1761476026929,
+                33.96342062819917
+              ],
+              "heading_deg": 336.8,
+              "signed_left_m": 4.77,
+              "point_road_distance_m": 4.77,
+              "local_shape_road_fit_m": 1.965,
+              "alignment": 0.987,
+              "local_turn_deg": 20.285,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  0.6016792001011155,
+                  1.0116441301544736,
+                  1.2108324577341625
+                ],
+                "signed_left_m": 4.769821821093999,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 346.0
+              }
+            },
+            {
+              "trip_id": "平日_09時00分_系統102b",
+              "trip_ids": [
+                "平日_09時00分_系統102b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 13,
+              "previous_stop_id": "S17_02",
+              "next_stop_id": "S15_02",
+              "previous_stop_name": "赤崎神社",
+              "next_stop_name": "竜王町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S17_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 20.116,
+                      "position_m": 1542.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 25,
+                      "distance_m": 20.116,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 26,
+                      "distance_m": 7.235,
+                      "position_m": 17.762,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 34,
+                      "distance_m": 0.028,
+                      "position_m": 2064.694,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 36,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 470.9168988185959,
+                "next_s_m": 870.1047891529511
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（労災病院　中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120614301",
+              "node_ids": [
+                "1351960418",
+                "1351960513"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763499,
+                  33.9629199
+                ],
+                [
+                  131.1758524,
+                  33.9638837
+                ]
+              ],
+              "road_projection": [
+                131.17617751584032,
+                33.96325385749363
+              ],
+              "travel_from": [
+                131.17624891621463,
+                33.963084204232636
+              ],
+              "travel_to": [
+                131.1761476026929,
+                33.96342062819917
+              ],
+              "heading_deg": 336.8,
+              "signed_left_m": 4.77,
+              "point_road_distance_m": 4.77,
+              "local_shape_road_fit_m": 1.965,
+              "alignment": 0.987,
+              "local_turn_deg": 20.285,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  0.6016792001011155,
+                  1.0116441301544736,
+                  1.2108324577341625
+                ],
+                "signed_left_m": 4.769821821093999,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 346.0
+              }
+            },
+            {
+              "trip_id": "平日_12時10分_系統103b",
+              "trip_ids": [
+                "平日_12時10分_系統103b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "stop_sequence": 13,
+              "previous_stop_id": "S17_02",
+              "next_stop_id": "S15_02",
+              "previous_stop_name": "赤崎神社",
+              "next_stop_name": "竜王町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S17_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 20.116,
+                      "position_m": 1542.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 25,
+                      "distance_m": 20.116,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 26,
+                      "distance_m": 7.235,
+                      "position_m": 17.762,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 34,
+                      "distance_m": 0.028,
+                      "position_m": 2064.694,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 36,
+                      "distance_m": 0.028,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 470.9168988185959,
+                "next_s_m": 870.1047891529511
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　労災病院　中川通　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120614301",
+              "node_ids": [
+                "1351960418",
+                "1351960513"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763499,
+                  33.9629199
+                ],
+                [
+                  131.1758524,
+                  33.9638837
+                ]
+              ],
+              "road_projection": [
+                131.17617751584032,
+                33.96325385749363
+              ],
+              "travel_from": [
+                131.17624891621463,
+                33.963084204232636
+              ],
+              "travel_to": [
+                131.1761476026929,
+                33.96342062819917
+              ],
+              "heading_deg": 336.8,
+              "signed_left_m": 4.77,
+              "point_road_distance_m": 4.77,
+              "local_shape_road_fit_m": 1.965,
+              "alignment": 0.987,
+              "local_turn_deg": 20.285,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  0.6016792001011155,
+                  1.0116441301544736,
+                  1.2108324577341625
+                ],
+                "signed_left_m": 4.769821821093999,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 346.0
+              }
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "西の浜",
+      "points": [
+        {
+          "id": "sentetsu:S16_01",
+          "source_stop_id": "S16_01",
+          "original_coordinates": [
+            131.176152,
+            33.963419
+          ],
+          "name": "西の浜",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（焼野 経由）",
+              "stop_sequence": 25,
+              "previous_stop_id": "S15_01",
+              "next_stop_id": "S17_01",
+              "previous_stop_name": "竜王町",
+              "next_stop_name": "赤崎神社",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S15_01",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 0.012,
+                      "position_m": 700.482,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 3.213,
+                      "position_m": 365.787,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 28.429,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 2.886,
+                      "position_m": 28.274,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S16_01",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 0.038,
+                      "position_m": 1051.52,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 20.364,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 3.536,
+                      "position_m": 19.625,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 20.364,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S17_01",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 0.056,
+                      "position_m": 1542.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 25,
+                      "distance_m": 0.056,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 26,
+                      "distance_m": 0.029,
+                      "position_m": 0.047,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 34,
+                      "distance_m": 20.065,
+                      "position_m": 2064.694,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 3.285,
+                      "position_m": 19.12,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 36,
+                      "distance_m": 2.953,
+                      "position_m": 19.168,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 700.4819272791524,
+                "current_s_m": 1051.5198406789973,
+                "next_s_m": 1542.0007327303474
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "本山岬（焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120614301",
+              "node_ids": [
+                "1351960418",
+                "1351960513"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763499,
+                  33.9629199
+                ],
+                [
+                  131.1758524,
+                  33.9638837
+                ]
+              ],
+              "road_projection": [
+                131.17610151664547,
+                33.96340108970268
+              ],
+              "travel_from": [
+                131.17602440809836,
+                33.96354276098007
+              ],
+              "travel_to": [
+                131.17616284671865,
+                33.963244812389014
+              ],
+              "heading_deg": 156.8,
+              "signed_left_m": 5.068,
+              "point_road_distance_m": 5.068,
+              "local_shape_road_fit_m": 2.487,
+              "alignment": 0.999,
+              "local_turn_deg": 37.371,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  1.9345416897273755,
+                  1.8832865825584046,
+                  1.8583872743266145
+                ],
+                "signed_left_m": 5.067712249331746,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 158.9
+              }
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "竜王町",
+      "points": [
+        {
+          "id": "sentetsu:S15_02",
+          "source_stop_id": "S15_02",
+          "original_coordinates": [
+            131.176093,
+            33.966689
+          ],
+          "name": "竜王町",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時57分_系統100b",
+              "trip_ids": [
+                "平日_06時57分_系統100b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 14,
+              "previous_stop_id": "S16_02",
+              "next_stop_id": "S14_02",
+              "previous_stop_name": "西の浜",
+              "next_stop_name": "小野田港",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 470.9168988185959,
+                "current_s_m": 870.1047891529511,
+                "next_s_m": 1531.617906939943
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120615169",
+              "node_ids": [
+                "1351960764",
+                "1351960665"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763676,
+                  33.9682457
+                ],
+                [
+                  131.1760977,
+                  33.9664097
+                ]
+              ],
+              "road_projection": [
+                131.1761380886239,
+                33.966684444399675
+              ],
+              "travel_from": [
+                131.17610034653936,
+                33.966509106129834
+              ],
+              "travel_to": [
+                131.17614433477823,
+                33.96686470536933
+              ],
+              "heading_deg": 5.9,
+              "signed_left_m": 4.192,
+              "point_road_distance_m": 4.192,
+              "local_shape_road_fit_m": 1.951,
+              "alignment": 1.0,
+              "local_turn_deg": 2.75,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_17時15分_系統101b",
+              "trip_ids": [
+                "平日_17時15分_系統101b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "stop_sequence": 14,
+              "previous_stop_id": "S16_02",
+              "next_stop_id": "S14_02",
+              "previous_stop_name": "西の浜",
+              "next_stop_name": "小野田港",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 470.9168988185959,
+                "current_s_m": 870.1047891529511,
+                "next_s_m": 1531.617906939943
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　スポセン前　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120615169",
+              "node_ids": [
+                "1351960764",
+                "1351960665"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763676,
+                  33.9682457
+                ],
+                [
+                  131.1760977,
+                  33.9664097
+                ]
+              ],
+              "road_projection": [
+                131.1761380886239,
+                33.966684444399675
+              ],
+              "travel_from": [
+                131.17610034653936,
+                33.966509106129834
+              ],
+              "travel_to": [
+                131.17614433477823,
+                33.96686470536933
+              ],
+              "heading_deg": 5.9,
+              "signed_left_m": 4.192,
+              "point_road_distance_m": 4.192,
+              "local_shape_road_fit_m": 1.951,
+              "alignment": 1.0,
+              "local_turn_deg": 2.75,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_09時00分_系統102b",
+              "trip_ids": [
+                "平日_09時00分_系統102b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 14,
+              "previous_stop_id": "S16_02",
+              "next_stop_id": "S14_02",
+              "previous_stop_name": "西の浜",
+              "next_stop_name": "小野田港",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 470.9168988185959,
+                "current_s_m": 870.1047891529511,
+                "next_s_m": 1531.617906939943
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（労災病院　中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120615169",
+              "node_ids": [
+                "1351960764",
+                "1351960665"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763676,
+                  33.9682457
+                ],
+                [
+                  131.1760977,
+                  33.9664097
+                ]
+              ],
+              "road_projection": [
+                131.1761380886239,
+                33.966684444399675
+              ],
+              "travel_from": [
+                131.17610034653936,
+                33.966509106129834
+              ],
+              "travel_to": [
+                131.17614433477823,
+                33.96686470536933
+              ],
+              "heading_deg": 5.9,
+              "signed_left_m": 4.192,
+              "point_road_distance_m": 4.192,
+              "local_shape_road_fit_m": 1.951,
+              "alignment": 1.0,
+              "local_turn_deg": 2.75,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_12時10分_系統103b",
+              "trip_ids": [
+                "平日_12時10分_系統103b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "stop_sequence": 14,
+              "previous_stop_id": "S16_02",
+              "next_stop_id": "S14_02",
+              "previous_stop_name": "西の浜",
+              "next_stop_name": "小野田港",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S16_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 3.123,
+                      "position_m": 1071.084,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 0.017,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.017,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 0.017,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S15_02",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 2.24,
+                      "position_m": 671.896,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 0.033,
+                      "position_m": 393.576,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.065,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 0.022,
+                      "position_m": 0.062,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 470.9168988185959,
+                "current_s_m": 870.1047891529511,
+                "next_s_m": 1531.617906939943
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　労災病院　中川通　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120615169",
+              "node_ids": [
+                "1351960764",
+                "1351960665"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763676,
+                  33.9682457
+                ],
+                [
+                  131.1760977,
+                  33.9664097
+                ]
+              ],
+              "road_projection": [
+                131.1761380886239,
+                33.966684444399675
+              ],
+              "travel_from": [
+                131.17610034653936,
+                33.966509106129834
+              ],
+              "travel_to": [
+                131.17614433477823,
+                33.96686470536933
+              ],
+              "heading_deg": 5.9,
+              "signed_left_m": 4.192,
+              "point_road_distance_m": 4.192,
+              "local_shape_road_fit_m": 1.951,
+              "alignment": 1.0,
+              "local_turn_deg": 2.75,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "竜王町",
+      "points": [
+        {
+          "id": "sentetsu:S15_01",
+          "source_stop_id": "S15_01",
+          "original_coordinates": [
+            131.17613,
+            33.966436
+          ],
+          "name": "竜王町",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（焼野 経由）",
+              "stop_sequence": 24,
+              "previous_stop_id": "S14_01",
+              "next_stop_id": "S16_01",
+              "previous_stop_name": "小野田港",
+              "next_stop_name": "西の浜",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S14_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.004,
+                      "position_m": 1229.637,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 0.046,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.046,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 15.902,
+                      "position_m": 665.983,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 12.489,
+                      "position_m": 10.05,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S15_01",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 0.012,
+                      "position_m": 700.482,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 3.213,
+                      "position_m": 365.787,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 28.429,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 40,
+                      "distance_m": 2.886,
+                      "position_m": 28.274,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S16_01",
+                  "sections": [
+                    {
+                      "section": 23,
+                      "distance_m": 0.038,
+                      "position_m": 1051.52,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 35,
+                      "distance_m": 20.364,
+                      "position_m": 491.61,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 37,
+                      "distance_m": 3.536,
+                      "position_m": 19.625,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 38,
+                      "distance_m": 20.364,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 23,
+              "source_polyline_indices": [
+                22,
+                23,
+                24
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 700.4819272791524,
+                "next_s_m": 1051.5198406789973
+              },
+              "shape_id": "official-map-section:23",
+              "stop_headsign": "本山岬（焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定",
+                "分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定",
+                "道路線の左右余裕が判定用の3m未満。座標精度不明のため保留（3mは公式の精度保証ではない）"
+              ],
+              "way_id": "120615169",
+              "node_ids": [
+                "1351960764",
+                "1351960665"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:STRUCTURE": "地上",
+                "yh:TOTYUMONO": "供用中",
+                "yh:TYPE": "その他一般道",
+                "yh:WIDTH": "5.5m〜13.0m",
+                "yh:WIDTH_RANK": "2"
+              },
+              "road_segment": [
+                [
+                  131.1763676,
+                  33.9682457
+                ],
+                [
+                  131.1760977,
+                  33.9664097
+                ]
+              ],
+              "road_projection": [
+                131.17610198235556,
+                33.96643883080696
+              ],
+              "travel_from": [
+                131.17610538581758,
+                33.96660995253228
+              ],
+              "travel_to": [
+                131.1760390432518,
+                33.966285334394904
+              ],
+              "heading_deg": 189.6,
+              "signed_left_m": 2.605,
+              "point_road_distance_m": 2.605,
+              "local_shape_road_fit_m": 4.914,
+              "alignment": 0.999,
+              "local_turn_deg": 33.338,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [
+                {
+                  "node_id": "1351960662",
+                  "distance_m": 14.13,
+                  "degree": 3
+                },
+                {
+                  "node_id": "1351960665",
+                  "distance_m": 3.27,
+                  "degree": 3
+                }
+              ]
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "公園通",
+      "points": [
+        {
+          "id": "sentetsu:S13_02",
+          "source_stop_id": "S13_02",
+          "original_coordinates": [
+            131.177434,
+            33.979164
+          ],
+          "name": "公園通",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時57分_系統100b",
+              "trip_ids": [
+                "平日_06時57分_系統100b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S14_02",
+              "next_stop_id": "S12_02",
+              "previous_stop_name": "小野田港",
+              "next_stop_name": "本町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S13_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 7.024,
+                      "position_m": 496.318,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.041,
+                      "position_m": 732.709,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.013,
+                      "position_m": 0.038,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 0.041,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S12_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 4.002,
+                      "position_m": 254.011,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.011,
+                      "position_m": 246.249,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 1.1111120532834775,
+                "current_s_m": 733.3647351197785,
+                "next_s_m": 975.6719211595178
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "船木（中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "5526569115",
+                "1351961532"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1774774,
+                  33.9787336
+                ],
+                [
+                  131.1775537,
+                  33.9798096
+                ]
+              ],
+              "road_projection": [
+                131.17750766541278,
+                33.97916040975306
+              ],
+              "travel_from": [
+                131.17753731532773,
+                33.9790220048933
+              ],
+              "travel_to": [
+                131.17750509718087,
+                33.979364933151366
+              ],
+              "heading_deg": 355.5,
+              "signed_left_m": 6.81,
+              "point_road_distance_m": 6.81,
+              "local_shape_road_fit_m": 2.496,
+              "alignment": 0.991,
+              "local_turn_deg": 9.507,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_17時15分_系統101b",
+              "trip_ids": [
+                "平日_17時15分_系統101b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S14_02",
+              "next_stop_id": "S12_02",
+              "previous_stop_name": "小野田港",
+              "next_stop_name": "本町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S13_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 7.024,
+                      "position_m": 496.318,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.041,
+                      "position_m": 732.709,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.013,
+                      "position_m": 0.038,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 0.041,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S12_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 4.002,
+                      "position_m": 254.011,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.011,
+                      "position_m": 246.249,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 1.1111120532834775,
+                "current_s_m": 733.3647351197785,
+                "next_s_m": 975.6719211595178
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "船木（サンパーク　スポセン前　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　スポセン前　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "5526569115",
+                "1351961532"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1774774,
+                  33.9787336
+                ],
+                [
+                  131.1775537,
+                  33.9798096
+                ]
+              ],
+              "road_projection": [
+                131.17750766541278,
+                33.97916040975306
+              ],
+              "travel_from": [
+                131.17753731532773,
+                33.9790220048933
+              ],
+              "travel_to": [
+                131.17750509718087,
+                33.979364933151366
+              ],
+              "heading_deg": 355.5,
+              "signed_left_m": 6.81,
+              "point_road_distance_m": 6.81,
+              "local_shape_road_fit_m": 2.496,
+              "alignment": 0.991,
+              "local_turn_deg": 9.507,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_09時00分_系統102b",
+              "trip_ids": [
+                "平日_09時00分_系統102b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S14_02",
+              "next_stop_id": "S12_02",
+              "previous_stop_name": "小野田港",
+              "next_stop_name": "本町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S13_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 7.024,
+                      "position_m": 496.318,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.041,
+                      "position_m": 732.709,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.013,
+                      "position_m": 0.038,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 0.041,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S12_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 4.002,
+                      "position_m": 254.011,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.011,
+                      "position_m": 246.249,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 1.1111120532834775,
+                "current_s_m": 733.3647351197785,
+                "next_s_m": 975.6719211595178
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "船木（労災病院　中川通　市民病院　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（労災病院　中川通　市民病院　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "5526569115",
+                "1351961532"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1774774,
+                  33.9787336
+                ],
+                [
+                  131.1775537,
+                  33.9798096
+                ]
+              ],
+              "road_projection": [
+                131.17750766541278,
+                33.97916040975306
+              ],
+              "travel_from": [
+                131.17753731532773,
+                33.9790220048933
+              ],
+              "travel_to": [
+                131.17750509718087,
+                33.979364933151366
+              ],
+              "heading_deg": 355.5,
+              "signed_left_m": 6.81,
+              "point_road_distance_m": 6.81,
+              "local_shape_road_fit_m": 2.496,
+              "alignment": 0.991,
+              "local_turn_deg": 9.507,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_12時10分_系統103b",
+              "trip_ids": [
+                "平日_12時10分_系統103b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S14_02",
+              "next_stop_id": "S12_02",
+              "previous_stop_name": "小野田港",
+              "next_stop_name": "本町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S14_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 16.019,
+                      "position_m": 1228.572,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 12.25,
+                      "position_m": 10.383,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.029,
+                      "position_m": 2747.444,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 0.029,
+                      "position_m": 668.006,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.029,
+                      "position_m": 0.004,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S13_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 7.024,
+                      "position_m": 496.318,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 0.041,
+                      "position_m": 732.709,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.013,
+                      "position_m": 0.038,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 0.041,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S12_02",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 4.002,
+                      "position_m": 254.011,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 0.011,
+                      "position_m": 246.249,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 1.1111120532834775,
+                "current_s_m": 733.3647351197785,
+                "next_s_m": 975.6719211595178
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "船木（サンパーク　労災病院　中川通　小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（サンパーク　労災病院　中川通　小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "5526569115",
+                "1351961532"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1774774,
+                  33.9787336
+                ],
+                [
+                  131.1775537,
+                  33.9798096
+                ]
+              ],
+              "road_projection": [
+                131.17750766541278,
+                33.97916040975306
+              ],
+              "travel_from": [
+                131.17753731532773,
+                33.9790220048933
+              ],
+              "travel_to": [
+                131.17750509718087,
+                33.979364933151366
+              ],
+              "heading_deg": 355.5,
+              "signed_left_m": 6.81,
+              "point_road_distance_m": 6.81,
+              "local_shape_road_fit_m": 2.496,
+              "alignment": 0.991,
+              "local_turn_deg": 9.507,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "公園通",
+      "points": [
+        {
+          "id": "sentetsu:S13_01",
+          "source_stop_id": "S13_01",
+          "original_coordinates": [
+            131.177562,
+            33.97907
+          ],
+          "name": "公園通",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（焼野 経由）",
+              "stop_sequence": 22,
+              "previous_stop_id": "S12_01",
+              "next_stop_id": "S14_01",
+              "previous_stop_name": "本町",
+              "next_stop_name": "小野田港",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S12_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.039,
+                      "position_m": 371.432,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 3.799,
+                      "position_m": 128.184,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S13_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.027,
+                      "position_m": 510.51,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 8.739,
+                      "position_m": 719.571,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 15.779,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 6.26,
+                      "position_m": 11.557,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S14_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.004,
+                      "position_m": 1229.637,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 23,
+                      "distance_m": 0.046,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 24,
+                      "distance_m": 0.046,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 39,
+                      "distance_m": 15.902,
+                      "position_m": 665.983,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 12.489,
+                      "position_m": 10.05,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 371.4319353367819,
+                "current_s_m": 510.50985492122567,
+                "next_s_m": 1229.6366199095198
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "本山岬（焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "原経路線の個別図示確認：公式経路区間は同じ車道に沿って進む。停留所付近の経路図の折れは保持し、40/60/80m区間の向きと車道側が整合。現地標柱は未確認。"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "5526569115",
+                "1351961532"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1774774,
+                  33.9787336
+                ],
+                [
+                  131.1775537,
+                  33.9798096
+                ]
+              ],
+              "road_projection": [
+                131.17750146360004,
+                33.97907295037544
+              ],
+              "travel_from": [
+                131.17749324206395,
+                33.97923782567883
+              ],
+              "travel_to": [
+                131.17747633888803,
+                33.97890496889287
+              ],
+              "heading_deg": 183.4,
+              "signed_left_m": 5.596,
+              "point_road_distance_m": 5.596,
+              "local_shape_road_fit_m": 2.314,
+              "alignment": 1.0,
+              "local_turn_deg": 42.18,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": [],
+              "individual_section_review": {
+                "viewed_figure": "local-route-originals-review.png",
+                "original_20m_status": "判定不能",
+                "original_20m_reasons": [
+                  "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+                ],
+                "section_spans_m": [
+                  40,
+                  60,
+                  80
+                ],
+                "road_direction_angles_deg": [
+                  1.4723840732851308,
+                  1.3269644470233382,
+                  1.255759371162972
+                ],
+                "signed_left_m": 5.5964569480094815,
+                "finding": "公式経路図の停留所付近の折れと車道方向が異なる。前後原点を同じ分岐のない区間で特定したうえで、40/60/80m前後の進行と同じ車道の向きを個別照合。原座標・経路線・30m基準は変更しない。",
+                "original_20m_heading_deg": 182.4
+              }
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "本町",
+      "points": [
+        {
+          "id": "sentetsu:S12_01",
+          "source_stop_id": "S12_01",
+          "original_coordinates": [
+            131.177638,
+            33.980298
+          ],
+          "name": "本町",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（焼野 経由）",
+              "stop_sequence": 21,
+              "previous_stop_id": "S11_01",
+              "next_stop_id": "S13_01",
+              "previous_stop_name": "千代町",
+              "next_stop_name": "公園通",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S11_01",
+                  "sections": [
+                    {
+                      "section": 15,
+                      "distance_m": 0.044,
+                      "position_m": 725.773,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 16,
+                      "distance_m": 7.697,
+                      "position_m": 724.589,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 20,
+                      "distance_m": 0.044,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 21,
+                      "distance_m": 0.044,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 22,
+                      "distance_m": 0.044,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 44,
+                      "distance_m": 6.561,
+                      "position_m": 63.812,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 45,
+                      "distance_m": 6.448,
+                      "position_m": 63.357,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S12_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.039,
+                      "position_m": 371.432,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 3.799,
+                      "position_m": 128.184,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S13_01",
+                  "sections": [
+                    {
+                      "section": 21,
+                      "distance_m": 0.027,
+                      "position_m": 510.51,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 41,
+                      "distance_m": 8.739,
+                      "position_m": 719.571,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 42,
+                      "distance_m": 15.779,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 43,
+                      "distance_m": 6.26,
+                      "position_m": 11.557,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 21,
+              "source_polyline_indices": [
+                19,
+                20,
+                21
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 371.4319353367819,
+                "next_s_m": 510.50985492122567
+              },
+              "shape_id": "official-map-section:21",
+              "stop_headsign": "本山岬（焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "120611658",
+              "node_ids": [
+                "1351961532",
+                "1351961577"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1775537,
+                  33.9798096
+                ],
+                [
+                  131.1776211,
+                  33.9806043
+                ]
+              ],
+              "road_projection": [
+                131.17759533305883,
+                33.98030048711931
+              ],
+              "travel_from": [
+                131.17761141637436,
+                33.98047639352149
+              ],
+              "travel_to": [
+                131.17758233618406,
+                33.980124317849096
+              ],
+              "heading_deg": 183.9,
+              "signed_left_m": 3.947,
+              "point_road_distance_m": 3.947,
+              "local_shape_road_fit_m": 2.026,
+              "alignment": 1.0,
+              "local_turn_deg": 21.701,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "目出",
+      "points": [
+        {
+          "id": "sentetsu:S5_01",
+          "source_stop_id": "S5_01",
+          "original_coordinates": [
+            131.180191,
+            33.994865
+          ],
+          "name": "目出",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_15時05分_系統101a",
+              "trip_ids": [
+                "平日_15時05分_系統101a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（スポセン前　サンパーク　焼野 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S3_01",
+              "next_stop_id": "S6_01",
+              "previous_stop_name": "市民病院入口",
+              "next_stop_name": "硫酸町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S6_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.03,
+                      "position_m": 1559.758,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 11,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 12,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 5.18,
+                      "position_m": 1083.853,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 46,
+                      "distance_m": 6.239,
+                      "position_m": 293.874,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 632.7304189997112,
+                "current_s_m": 1052.7782311254143,
+                "next_s_m": 1559.757920892747
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "本山岬（スポセン前　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（スポセン前　サンパーク　焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "343115052",
+              "node_ids": [
+                "1351962799",
+                "1351962830"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1801118,
+                  33.9948397
+                ],
+                [
+                  131.180542,
+                  33.995235
+                ]
+              ],
+              "road_projection": [
+                131.18016251834004,
+                33.99488630381176
+              ],
+              "travel_from": [
+                131.18026577380374,
+                33.99502685870178
+              ],
+              "travel_to": [
+                131.18001713109024,
+                33.99479184102644
+              ],
+              "heading_deg": 221.3,
+              "signed_left_m": 3.54,
+              "point_road_distance_m": 3.54,
+              "local_shape_road_fit_m": 4.382,
+              "alignment": 1.0,
+              "local_turn_deg": 42.09,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_10時15分_系統103a",
+              "trip_ids": [
+                "平日_10時15分_系統103a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（中川通　労災病院　サンパーク　焼野 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S3_01",
+              "next_stop_id": "S6_01",
+              "previous_stop_name": "市民病院入口",
+              "next_stop_name": "硫酸町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S6_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.03,
+                      "position_m": 1559.758,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 11,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 12,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 5.18,
+                      "position_m": 1083.853,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 46,
+                      "distance_m": 6.239,
+                      "position_m": 293.874,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 632.7304189997112,
+                "current_s_m": 1052.7782311254143,
+                "next_s_m": 1559.757920892747
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "本山岬（中川通　労災病院　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（中川通　労災病院　サンパーク　焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "343115052",
+              "node_ids": [
+                "1351962799",
+                "1351962830"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1801118,
+                  33.9948397
+                ],
+                [
+                  131.180542,
+                  33.995235
+                ]
+              ],
+              "road_projection": [
+                131.18016251834004,
+                33.99488630381176
+              ],
+              "travel_from": [
+                131.18026577380374,
+                33.99502685870178
+              ],
+              "travel_to": [
+                131.18001713109024,
+                33.99479184102644
+              ],
+              "heading_deg": 221.3,
+              "signed_left_m": 3.54,
+              "point_road_distance_m": 3.54,
+              "local_shape_road_fit_m": 4.382,
+              "alignment": 1.0,
+              "local_turn_deg": 42.09,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（中川通　焼野 経由）",
+              "stop_sequence": 17,
+              "previous_stop_id": "S3_01",
+              "next_stop_id": "S6_01",
+              "previous_stop_name": "市民病院入口",
+              "next_stop_name": "硫酸町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S6_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.03,
+                      "position_m": 1559.758,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 11,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 12,
+                      "distance_m": 0.03,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 5.18,
+                      "position_m": 1083.853,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 46,
+                      "distance_m": 6.239,
+                      "position_m": 293.874,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 632.7304189997112,
+                "current_s_m": 1052.7782311254143,
+                "next_s_m": 1559.757920892747
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "本山岬（中川通　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（中川通　焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "343115052",
+              "node_ids": [
+                "1351962799",
+                "1351962830"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1801118,
+                  33.9948397
+                ],
+                [
+                  131.180542,
+                  33.995235
+                ]
+              ],
+              "road_projection": [
+                131.18016251834004,
+                33.99488630381176
+              ],
+              "travel_from": [
+                131.18026577380374,
+                33.99502685870178
+              ],
+              "travel_to": [
+                131.18001713109024,
+                33.99479184102644
+              ],
+              "heading_deg": 221.3,
+              "signed_left_m": 3.54,
+              "point_road_distance_m": 3.54,
+              "local_shape_road_fit_m": 4.382,
+              "alignment": 1.0,
+              "local_turn_deg": 42.09,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "市民病院入口",
+      "points": [
+        {
+          "id": "sentetsu:S3_02",
+          "source_stop_id": "S3_02",
+          "original_coordinates": [
+            131.180942,
+            33.999628
+          ],
+          "name": "市民病院入口",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時57分_系統100b",
+              "trip_ids": [
+                "平日_06時57分_系統100b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（小野田駅 経由）",
+              "stop_sequence": 23,
+              "previous_stop_id": "S4_01",
+              "next_stop_id": "S2_02",
+              "previous_stop_name": "山陽小野田市民病院",
+              "next_stop_name": "市役所前",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S4_01",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 0.059,
+                      "position_m": 998.496,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 0.04,
+                      "position_m": 971.813,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 51,
+                      "distance_m": 0.038,
+                      "position_m": 0.045,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 52,
+                      "distance_m": 0.036,
+                      "position_m": 0.046,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 53,
+                      "distance_m": 0.059,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 54,
+                      "distance_m": 0.059,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S3_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 2.63,
+                      "position_m": 477.781,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 5.507,
+                      "position_m": 477.602,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 0.011,
+                      "position_m": 615.122,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 53,
+                      "distance_m": 0.0,
+                      "position_m": 518.14,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.035,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 56,
+                      "distance_m": 0.008,
+                      "position_m": 0.034,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S2_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 6.852,
+                      "position_m": 73.678,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 7.043,
+                      "position_m": 73.235,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.005,
+                      "position_m": 404.629,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 9,
+              "source_polyline_indices": [
+                173
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 520.7147137248384,
+                "next_s_m": 924.8180771241807
+              },
+              "shape_id": "official-map-section:9",
+              "stop_headsign": "船木（小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611651",
+              "node_ids": [
+                "1351963534",
+                "7605524957"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1809061,
+                  33.9993827
+                ],
+                [
+                  131.1812534,
+                  34.0001275
+                ]
+              ],
+              "road_projection": [
+                131.18101027936538,
+                33.999606117193586
+              ],
+              "travel_from": [
+                131.18088900343582,
+                33.99945219820225
+              ],
+              "travel_to": [
+                131.18104801605986,
+                33.99978646695766
+              ],
+              "heading_deg": 21.5,
+              "signed_left_m": 6.756,
+              "point_road_distance_m": 6.756,
+              "local_shape_road_fit_m": 4.126,
+              "alignment": 1.0,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_17時15分_系統101b",
+              "trip_ids": [
+                "平日_17時15分_系統101b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（小野田駅 経由）",
+              "stop_sequence": 23,
+              "previous_stop_id": "S5_02",
+              "next_stop_id": "S2_02",
+              "previous_stop_name": "目出",
+              "next_stop_name": "市役所前",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S5_02",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 5.984,
+                      "position_m": 1098.753,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 48,
+                      "distance_m": 0.052,
+                      "position_m": 425.066,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 0.063,
+                      "position_m": 0.028,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 0.066,
+                      "position_m": 0.018,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S3_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 2.63,
+                      "position_m": 477.781,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 5.507,
+                      "position_m": 477.602,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 0.011,
+                      "position_m": 615.122,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 53,
+                      "distance_m": 0.0,
+                      "position_m": 518.14,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.035,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 56,
+                      "distance_m": 0.008,
+                      "position_m": 0.034,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S2_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 6.852,
+                      "position_m": 73.678,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 7.043,
+                      "position_m": 73.235,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.005,
+                      "position_m": 404.629,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 461.0051081223014,
+                "current_s_m": 1082.1562583803852,
+                "next_s_m": 1486.5233115101917
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "船木（小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（小野田駅 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611651",
+              "node_ids": [
+                "1351963534",
+                "7605524957"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1809061,
+                  33.9993827
+                ],
+                [
+                  131.1812534,
+                  34.0001275
+                ]
+              ],
+              "road_projection": [
+                131.18101027936538,
+                33.999606117193586
+              ],
+              "travel_from": [
+                131.1809196409465,
+                33.999442575848434
+              ],
+              "travel_to": [
+                131.18107569628063,
+                33.99977780113662
+              ],
+              "heading_deg": 21.1,
+              "signed_left_m": 6.756,
+              "point_road_distance_m": 6.756,
+              "local_shape_road_fit_m": 1.249,
+              "alignment": 1.0,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "市民病院入口",
+      "points": [
+        {
+          "id": "sentetsu:S3_01",
+          "source_stop_id": "S3_01",
+          "original_coordinates": [
+            131.180475,
+            33.998307
+          ],
+          "name": "市民病院入口",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_15時05分_系統101a",
+              "trip_ids": [
+                "平日_15時05分_系統101a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（スポセン前　サンパーク　焼野 経由）",
+              "stop_sequence": 15,
+              "previous_stop_id": "S2_01",
+              "next_stop_id": "S5_01",
+              "previous_stop_name": "市役所前",
+              "next_stop_name": "目出",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S2_01",
+                  "sections": [
+                    {
+                      "section": 5,
+                      "distance_m": 0.044,
+                      "position_m": 4793.163,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 0.044,
+                      "position_m": 608.881,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 9,
+                      "distance_m": 0.017,
+                      "position_m": 0.041,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 0.012,
+                      "position_m": 0.043,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 9.015,
+                      "position_m": 476.922,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 0.04264521524288026,
+                "current_s_m": 632.7304189997112,
+                "next_s_m": 1052.7782311254143
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "本山岬（スポセン前　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（スポセン前　サンパーク　焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "120611647",
+              "node_ids": [
+                "1351963292",
+                "1351963375"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1803587,
+                  33.9982422
+                ],
+                [
+                  131.1804507,
+                  33.9984231
+                ]
+              ],
+              "road_projection": [
+                131.1804042348167,
+                33.99833173530806
+              ],
+              "travel_from": [
+                131.18047047953252,
+                33.99847772408416
+              ],
+              "travel_to": [
+                131.18031010465177,
+                33.998194152200256
+              ],
+              "heading_deg": 205.1,
+              "signed_left_m": 7.088,
+              "point_road_distance_m": 7.088,
+              "local_shape_road_fit_m": 3.572,
+              "alignment": 0.999,
+              "local_turn_deg": 51.626,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_10時15分_系統103a",
+              "trip_ids": [
+                "平日_10時15分_系統103a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（中川通　労災病院　サンパーク　焼野 経由）",
+              "stop_sequence": 15,
+              "previous_stop_id": "S2_01",
+              "next_stop_id": "S5_01",
+              "previous_stop_name": "市役所前",
+              "next_stop_name": "目出",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S2_01",
+                  "sections": [
+                    {
+                      "section": 5,
+                      "distance_m": 0.044,
+                      "position_m": 4793.163,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 0.044,
+                      "position_m": 608.881,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 9,
+                      "distance_m": 0.017,
+                      "position_m": 0.041,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 0.012,
+                      "position_m": 0.043,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 9.015,
+                      "position_m": 476.922,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 10,
+              "source_polyline_indices": [
+                13,
+                14,
+                15
+              ],
+              "interval": {
+                "previous_s_m": 0.04264521524288026,
+                "current_s_m": 632.7304189997112,
+                "next_s_m": 1052.7782311254143
+              },
+              "shape_id": "official-map-section:10",
+              "stop_headsign": "本山岬（中川通　労災病院　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（中川通　労災病院　サンパーク　焼野 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "120611647",
+              "node_ids": [
+                "1351963292",
+                "1351963375"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1803587,
+                  33.9982422
+                ],
+                [
+                  131.1804507,
+                  33.9984231
+                ]
+              ],
+              "road_projection": [
+                131.1804042348167,
+                33.99833173530806
+              ],
+              "travel_from": [
+                131.18047047953252,
+                33.99847772408416
+              ],
+              "travel_to": [
+                131.18031010465177,
+                33.998194152200256
+              ],
+              "heading_deg": 205.1,
+              "signed_left_m": 7.088,
+              "point_road_distance_m": 7.088,
+              "local_shape_road_fit_m": 3.572,
+              "alignment": 0.999,
+              "local_turn_deg": 51.626,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（中川通　焼野 経由）",
+              "stop_sequence": 16,
+              "previous_stop_id": "S4_01",
+              "next_stop_id": "S5_01",
+              "previous_stop_name": "山陽小野田市民病院",
+              "next_stop_name": "目出",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S4_01",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 0.059,
+                      "position_m": 998.496,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 0.04,
+                      "position_m": 971.813,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 51,
+                      "distance_m": 0.038,
+                      "position_m": 0.045,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 52,
+                      "distance_m": 0.036,
+                      "position_m": 0.046,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 53,
+                      "distance_m": 0.059,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 54,
+                      "distance_m": 0.059,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S3_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.02,
+                      "position_m": 632.73,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 8.797,
+                      "position_m": 459.917,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 8.46,
+                      "position_m": 459.367,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S5_01",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 0.01,
+                      "position_m": 1052.778,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 2.794,
+                      "position_m": 45.261,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 50,
+                      "distance_m": 4.564,
+                      "position_m": 44.276,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 50,
+              "source_polyline_indices": [
+                56
+              ],
+              "interval": {
+                "previous_s_m": 0.04258768356191922,
+                "current_s_m": 512.4878147923034,
+                "next_s_m": 927.5791724811395
+              },
+              "shape_id": "official-map-section:50",
+              "stop_headsign": "本山岬（中川通　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（中川通　焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611647",
+              "node_ids": [
+                "1351963292",
+                "1351963375"
+              ],
+              "road_tags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "小野田港線",
+                "name:en": "Onoda Port Line",
+                "name:ja": "小野田港線",
+                "name:ja-Hira": "おのだこうせん",
+                "name:ja_rm": "Onodakō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "223",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467209",
+                "wikipedia": "ja:山口県道223号小野田港線"
+              },
+              "road_segment": [
+                [
+                  131.1803587,
+                  33.9982422
+                ],
+                [
+                  131.1804507,
+                  33.9984231
+                ]
+              ],
+              "road_projection": [
+                131.1804042348167,
+                33.99833173530806
+              ],
+              "travel_from": [
+                131.18045754342856,
+                33.99850153757462
+              ],
+              "travel_to": [
+                131.18031876687655,
+                33.99816112995469
+              ],
+              "heading_deg": 198.7,
+              "signed_left_m": 7.088,
+              "point_road_distance_m": 7.088,
+              "local_shape_road_fit_m": 3.41,
+              "alignment": 0.997,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "市役所前",
+      "points": [
+        {
+          "id": "sentetsu:S2_02",
+          "source_stop_id": "S2_02",
+          "original_coordinates": [
+            131.182471,
+            34.003026
+          ],
+          "name": "市役所前",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時57分_系統100b",
+              "trip_ids": [
+                "平日_06時57分_系統100b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（小野田駅 経由）",
+              "stop_sequence": 24,
+              "previous_stop_id": "S3_02",
+              "next_stop_id": "S1_01",
+              "previous_stop_name": "市民病院入口",
+              "next_stop_name": "小野田駅",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S3_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 2.63,
+                      "position_m": 477.781,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 5.507,
+                      "position_m": 477.602,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 49,
+                      "distance_m": 0.011,
+                      "position_m": 615.122,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 53,
+                      "distance_m": 0.0,
+                      "position_m": 518.14,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.035,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 56,
+                      "distance_m": 0.008,
+                      "position_m": 0.034,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S2_02",
+                  "sections": [
+                    {
+                      "section": 9,
+                      "distance_m": 6.852,
+                      "position_m": 73.678,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 10,
+                      "distance_m": 7.043,
+                      "position_m": 73.235,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.005,
+                      "position_m": 404.629,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S1_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 25.731,
+                      "position_m": 2791.245,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 5,
+                      "distance_m": 0.474,
+                      "position_m": 4197.534,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 4.016,
+                      "position_m": 26.86,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 7,
+                      "distance_m": 25.731,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 8,
+                      "distance_m": 25.731,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 55,
+                      "distance_m": 0.038,
+                      "position_m": 927.09,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 57,
+                      "distance_m": 0.02,
+                      "position_m": 0.032,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 0.018,
+                      "position_m": 0.033,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 55,
+              "source_polyline_indices": [
+                58,
+                59
+              ],
+              "interval": {
+                "previous_s_m": 0.0,
+                "current_s_m": 404.6294932375828,
+                "next_s_m": 927.0898240210443
+              },
+              "shape_id": "official-map-section:55",
+              "stop_headsign": "船木（小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（小野田駅 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "120611683",
+              "node_ids": [
+                "11691351281",
+                "11691351250"
+              ],
+              "road_tags": {
+                "highway": "primary",
+                "lanes": "2",
+                "name": "小野田美東線",
+                "name:en": "Onoda Mito Line",
+                "name:ja": "小野田美東線",
+                "name:ja-Hira": "おのだみとうせん",
+                "name:ja_rm": "Onoda Mitō-sen",
+                "old_name": "国道190号",
+                "old_name:en": "National Highway Route 190",
+                "old_name:ja": "国道190号",
+                "old_ref": "190",
+                "ref": "30",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467283",
+                "wikipedia": "ja:山口県道30号小野田美東線"
+              },
+              "road_segment": [
+                [
+                  131.1821832,
+                  34.0021044
+                ],
+                [
+                  131.1826921,
+                  34.0032658
+                ]
+              ],
+              "road_projection": [
+                131.18257349891442,
+                34.002995131301276
+              ],
+              "travel_from": [
+                131.182440130555,
+                34.00284878382265
+              ],
+              "travel_to": [
+                131.18260183112642,
+                34.003165661991076
+              ],
+              "heading_deg": 22.9,
+              "signed_left_m": 10.064,
+              "point_road_distance_m": 10.064,
+              "local_shape_road_fit_m": 6.94,
+              "alignment": 0.999,
+              "local_turn_deg": 29.645,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "楴山",
+      "points": [
+        {
+          "id": "sentetsu:S39_01",
+          "source_stop_id": "S39_01",
+          "original_coordinates": [
+            131.189656,
+            34.009834
+          ],
+          "name": "楴山",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_06時00分_系統100a",
+              "trip_ids": [
+                "平日_06時00分_系統100a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（小野田駅　市民病院　中川通　焼野 経由）",
+              "stop_sequence": 12,
+              "previous_stop_id": "S40_01",
+              "next_stop_id": "S1_02",
+              "previous_stop_name": "石井手",
+              "next_stop_name": "小野田駅",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S40_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.042,
+                      "position_m": 1346.11,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 2.773,
+                      "position_m": 1578.55,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S39_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.041,
+                      "position_m": 1785.406,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 8.309,
+                      "position_m": 1142.958,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S1_02",
+                  "sections": [
+                    {
+                      "section": 5,
+                      "distance_m": 1.325,
+                      "position_m": 4294.68,
+                      "alternatives": [
+                        {
+                          "s": 4002.867949376887,
+                          "d": 4.462948327273805
+                        }
+                      ]
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 2.87,
+                      "position_m": 108.791,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 57,
+                      "distance_m": 2.96,
+                      "position_m": 85.715,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 4.548,
+                      "position_m": 78.767,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 58,
+              "source_polyline_indices": [
+                60,
+                61,
+                62,
+                63,
+                64
+              ],
+              "interval": {
+                "previous_s_m": 1345.4437578408929,
+                "current_s_m": 1781.035805362566,
+                "next_s_m": 2845.226305993675
+              },
+              "shape_id": "official-map-section:58",
+              "stop_headsign": "本山岬（小野田駅　市民病院　中川通　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（小野田駅　市民病院　中川通　焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611678",
+              "node_ids": [
+                "1351965799",
+                "2002009315"
+              ],
+              "road_tags": {
+                "highway": "primary",
+                "lanes": "2",
+                "name": "小野田美東線",
+                "name:en": "Onoda Mito Line",
+                "name:ja": "小野田美東線",
+                "name:ja-Hira": "おのだみとうせん",
+                "name:ja_rm": "Onoda Mitō-sen",
+                "ref": "30",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467283",
+                "wikipedia": "ja:山口県道30号小野田美東線"
+              },
+              "road_segment": [
+                [
+                  131.1895257,
+                  34.0098342
+                ],
+                [
+                  131.1896119,
+                  34.0099039
+                ]
+              ],
+              "road_projection": [
+                131.18959235652818,
+                34.009888097447956
+              ],
+              "travel_from": [
+                131.18975287861912,
+                34.01001119923907
+              ],
+              "travel_to": [
+                131.18943618245032,
+                34.00976588314736
+              ],
+              "heading_deg": 226.9,
+              "signed_left_m": 8.412,
+              "point_road_distance_m": 8.412,
+              "local_shape_road_fit_m": 6.332,
+              "alignment": 1.0,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_15時05分_系統101a",
+              "trip_ids": [
+                "平日_15時05分_系統101a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（小野田駅　スポセン前　サンパーク　焼野 経由）",
+              "stop_sequence": 12,
+              "previous_stop_id": "S40_01",
+              "next_stop_id": "S1_02",
+              "previous_stop_name": "石井手",
+              "next_stop_name": "小野田駅",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S40_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.042,
+                      "position_m": 1346.11,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 2.773,
+                      "position_m": 1578.55,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S39_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.041,
+                      "position_m": 1785.406,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 8.309,
+                      "position_m": 1142.958,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S1_02",
+                  "sections": [
+                    {
+                      "section": 5,
+                      "distance_m": 1.325,
+                      "position_m": 4294.68,
+                      "alternatives": [
+                        {
+                          "s": 4002.867949376887,
+                          "d": 4.462948327273805
+                        }
+                      ]
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 2.87,
+                      "position_m": 108.791,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 57,
+                      "distance_m": 2.96,
+                      "position_m": 85.715,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 4.548,
+                      "position_m": 78.767,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 58,
+              "source_polyline_indices": [
+                60,
+                61,
+                62,
+                63,
+                64
+              ],
+              "interval": {
+                "previous_s_m": 1345.4437578408929,
+                "current_s_m": 1781.035805362566,
+                "next_s_m": 2845.226305993675
+              },
+              "shape_id": "official-map-section:58",
+              "stop_headsign": "本山岬（小野田駅　スポセン前　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（小野田駅　スポセン前　サンパーク　焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611678",
+              "node_ids": [
+                "1351965799",
+                "2002009315"
+              ],
+              "road_tags": {
+                "highway": "primary",
+                "lanes": "2",
+                "name": "小野田美東線",
+                "name:en": "Onoda Mito Line",
+                "name:ja": "小野田美東線",
+                "name:ja-Hira": "おのだみとうせん",
+                "name:ja_rm": "Onoda Mitō-sen",
+                "ref": "30",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467283",
+                "wikipedia": "ja:山口県道30号小野田美東線"
+              },
+              "road_segment": [
+                [
+                  131.1895257,
+                  34.0098342
+                ],
+                [
+                  131.1896119,
+                  34.0099039
+                ]
+              ],
+              "road_projection": [
+                131.18959235652818,
+                34.009888097447956
+              ],
+              "travel_from": [
+                131.18975287861912,
+                34.01001119923907
+              ],
+              "travel_to": [
+                131.18943618245032,
+                34.00976588314736
+              ],
+              "heading_deg": 226.9,
+              "signed_left_m": 8.412,
+              "point_road_distance_m": 8.412,
+              "local_shape_road_fit_m": 6.332,
+              "alignment": 1.0,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            },
+            {
+              "trip_id": "平日_10時15分_系統103a",
+              "trip_ids": [
+                "平日_10時15分_系統103a"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "本山岬（小野田駅　中川通　労災病院　サンパーク　焼野 経由）",
+              "stop_sequence": 12,
+              "previous_stop_id": "S40_01",
+              "next_stop_id": "S1_02",
+              "previous_stop_name": "石井手",
+              "next_stop_name": "小野田駅",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S40_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.042,
+                      "position_m": 1346.11,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 2.773,
+                      "position_m": 1578.55,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S39_01",
+                  "sections": [
+                    {
+                      "section": 3,
+                      "distance_m": 0.041,
+                      "position_m": 1785.406,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 8.309,
+                      "position_m": 1142.958,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S1_02",
+                  "sections": [
+                    {
+                      "section": 5,
+                      "distance_m": 1.325,
+                      "position_m": 4294.68,
+                      "alternatives": [
+                        {
+                          "s": 4002.867949376887,
+                          "d": 4.462948327273805
+                        }
+                      ]
+                    },
+                    {
+                      "section": 6,
+                      "distance_m": 2.87,
+                      "position_m": 108.791,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 57,
+                      "distance_m": 2.96,
+                      "position_m": 85.715,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 58,
+                      "distance_m": 4.548,
+                      "position_m": 78.767,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 58,
+              "source_polyline_indices": [
+                60,
+                61,
+                62,
+                63,
+                64
+              ],
+              "interval": {
+                "previous_s_m": 1345.4437578408929,
+                "current_s_m": 1781.035805362566,
+                "next_s_m": 2845.226305993675
+              },
+              "shape_id": "official-map-section:58",
+              "stop_headsign": "本山岬（小野田駅　中川通　労災病院　サンパーク　焼野 経由）",
+              "trip_headsigns": [
+                "本山岬（小野田駅　中川通　労災病院　サンパーク　焼野 経由）"
+              ],
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "120611678",
+              "node_ids": [
+                "1351965799",
+                "2002009315"
+              ],
+              "road_tags": {
+                "highway": "primary",
+                "lanes": "2",
+                "name": "小野田美東線",
+                "name:en": "Onoda Mito Line",
+                "name:ja": "小野田美東線",
+                "name:ja-Hira": "おのだみとうせん",
+                "name:ja_rm": "Onoda Mitō-sen",
+                "ref": "30",
+                "source": "YahooJapan/ALPSMAP",
+                "surface": "asphalt",
+                "wikidata": "Q11467283",
+                "wikipedia": "ja:山口県道30号小野田美東線"
+              },
+              "road_segment": [
+                [
+                  131.1895257,
+                  34.0098342
+                ],
+                [
+                  131.1896119,
+                  34.0099039
+                ]
+              ],
+              "road_projection": [
+                131.18959235652818,
+                34.009888097447956
+              ],
+              "travel_from": [
+                131.18975287861912,
+                34.01001119923907
+              ],
+              "travel_to": [
+                131.18943618245032,
+                34.00976588314736
+              ],
+              "heading_deg": 226.9,
+              "signed_left_m": 8.412,
+              "point_road_distance_m": 8.412,
+              "local_shape_road_fit_m": 6.332,
+              "alignment": 1.0,
+              "local_turn_deg": 0.0,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "スポーツセンター前",
+      "points": [
+        {
+          "id": "sentetsu:S8_02",
+          "source_stop_id": "S8_02",
+          "original_coordinates": [
+            131.173126,
+            33.990195
+          ],
+          "name": "スポーツセンター前",
+          "status": "道路照合対象",
+          "occurrences": [
+            {
+              "trip_id": "平日_17時15分_系統101b",
+              "trip_ids": [
+                "平日_17時15分_系統101b"
+              ],
+              "route_id": "小野田線_A",
+              "route_name": "小野田線",
+              "headsign": "船木（小野田駅 経由）",
+              "stop_sequence": 20,
+              "previous_stop_id": "S9_01",
+              "next_stop_id": "S6_02",
+              "previous_stop_name": "サンパークおのだ",
+              "next_stop_name": "硫酸町",
+              "section_matches": {
+                "previous": {
+                  "stop_id": "S9_01",
+                  "sections": [
+                    {
+                      "section": 12,
+                      "distance_m": 0.029,
+                      "position_m": 1096.034,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 0.029,
+                      "position_m": 0.005,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 14,
+                      "distance_m": 0.029,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 15,
+                      "distance_m": 0.029,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 16,
+                      "distance_m": 0.029,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 17,
+                      "distance_m": 0.029,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 18,
+                      "distance_m": 0.029,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 19,
+                      "distance_m": 0.029,
+                      "position_m": 0.001,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "current": {
+                  "stop_id": "S8_02",
+                  "sections": [
+                    {
+                      "section": 12,
+                      "distance_m": 6.187,
+                      "position_m": 465.858,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 0.003,
+                      "position_m": 624.223,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                "next": {
+                  "stop_id": "S6_02",
+                  "sections": [
+                    {
+                      "section": 10,
+                      "distance_m": 4.274,
+                      "position_m": 1522.857,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 13,
+                      "distance_m": 0.055,
+                      "position_m": 1118.825,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 46,
+                      "distance_m": 0.055,
+                      "position_m": 328.885,
+                      "alternatives": []
+                    },
+                    {
+                      "section": 48,
+                      "distance_m": 0.055,
+                      "position_m": 0.0,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              },
+              "official_map_section": 13,
+              "source_polyline_indices": [
+                73,
+                74
+              ],
+              "interval": {
+                "previous_s_m": 0.005003622926307423,
+                "current_s_m": 624.222706012556,
+                "next_s_m": 1118.8247854716453
+              },
+              "shape_id": "official-map-section:13",
+              "stop_headsign": "船木（小野田駅 経由）",
+              "trip_headsigns": [
+                "船木（小野田駅 経由）"
+              ],
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定"
+              ],
+              "way_id": "120613967",
+              "node_ids": [
+                "1351962294",
+                "1351962324"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP",
+                "yh:WIDTH": "5.5m〜13.0m"
+              },
+              "road_segment": [
+                [
+                  131.172603,
+                  33.9901062
+                ],
+                [
+                  131.1749368,
+                  33.9902374
+                ]
+              ],
+              "road_projection": [
+                131.17313083619325,
+                33.99013587354039
+              ],
+              "travel_from": [
+                131.17292941472672,
+                33.99012227376163
+              ],
+              "travel_to": [
+                131.17333723184737,
+                33.990154870632196
+              ],
+              "heading_deg": 84.5,
+              "signed_left_m": 6.597,
+              "point_road_distance_m": 6.597,
+              "local_shape_road_fit_m": 3.213,
+              "alignment": 1.0,
+              "local_turn_deg": 36.942,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ],
+          "field_checked": false,
+          "observed_service_date": "2026-09-15"
+        }
+      ]
+    }
+  ],
+  "note": "道路取得の候補リストであり最終確認済みではない"
+}

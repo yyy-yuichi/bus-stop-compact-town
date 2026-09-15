@@ -4,6 +4,11 @@ const root=process.argv[2] || 'dist';
 const walkDataUrl=process.env.VITE_WALK_DATA_URL;
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
 for(const f of files){
+ const normalized=f.split(path.sep).join('/');
+ if(/^assets\/[^/]+\.json$/.test(normalized)){
+  JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
+  continue;
+ }
  if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|maps\/(soft\.json|(?:openfreemap|positron)-LICENSE\.md)|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
 for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/civic-facilities.geojson','data/walking-onoda.json','data/baked-bus-stops.geojson','data/walk-unreachable.json',...(walkDataUrl?[]:['data/walk/index.json'])]) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);

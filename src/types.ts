@@ -6,7 +6,9 @@ export interface BusProperties {
   'name:ja'?: string;
   '@id'?: string;
   operator?: string;
-  source_kind?: 'national' | 'municipal' | 'osm-pilot';
+  source_kind?: 'national' | 'municipal' | 'osm-pilot' | 'boarding-study';
+  boarding_guide?: import('./boardingGuide').BoardingGuide;
+  boarding_walk?: import('./boardingWalking').BoardingWalkSource;
   source_year?: number;
   source_url?: string;
   source_namespace?: 'hikari' | 'iwakuni';

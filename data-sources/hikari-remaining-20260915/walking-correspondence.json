@@ -1,0 +1,537 @@
+{
+  "summary": {
+    "乗り場保留・既存計算を参考保持": 20,
+    "原点・接続位置照合済み（既存徒歩手法）": 16,
+    "乗り場保留・徒歩圏未計算": 4
+  },
+  "points": [
+    {
+      "id": "hikari:1_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.914662,
+        33.973598
+      ],
+      "file": "hikari-1_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:10_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.927275,
+        33.979075
+      ],
+      "file": "hikari-10_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:14_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.943298,
+        33.961885
+      ],
+      "file": "hikari-14_01.json",
+      "origin_matches": true,
+      "sha256": "210cea98b79d28644768f203268b27e302a75afe0dc2fe4dc91c33ae692ca0b9",
+      "gap_m": 4.0,
+      "snap": [
+        131.94326,
+        33.96191
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.504,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:14_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.94323,
+        33.961928
+      ],
+      "file": "hikari-14_02.json",
+      "origin_matches": true,
+      "sha256": "156b7caad0597a5bb70ea169d6ea8e89f4bb770bd539939e6842d84f5ca75e5e",
+      "gap_m": 3.9,
+      "snap": [
+        131.94326,
+        33.96191
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.5,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:14_03",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.94201,
+        33.961261
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "hikari:14_04",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.942189,
+        33.960641
+      ],
+      "file": "hikari-14_04.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:19_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.995403,
+        33.981871
+      ],
+      "file": "hikari-19_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:20_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.998339,
+        33.981579
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "hikari:21_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.999414,
+        33.982867
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "hikari:24_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.016165,
+        33.991721
+      ],
+      "file": "hikari-24_01.json",
+      "origin_matches": true,
+      "sha256": "6816f505df0a27116bc815babde325cb54adc0338aa82ffb9cfe32fe094ba066",
+      "gap_m": 4.4,
+      "snap": [
+        132.01616,
+        33.99168
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.309,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:24_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.016025,
+        33.991664
+      ],
+      "file": "hikari-24_02.json",
+      "origin_matches": true,
+      "sha256": "09654a8de66fac3cb5e40e3dbd230a7ef0bda60dcc41189e1f7fc8b88f072cd7",
+      "gap_m": 4.4,
+      "snap": [
+        132.01604,
+        33.9917
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.198,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:24_03",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.014971,
+        33.992376
+      ],
+      "file": "hikari-24_03.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:31_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.057554,
+        33.992991
+      ],
+      "file": "hikari-31_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:33_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.986175,
+        33.99731
+      ],
+      "file": "hikari-33_01.json",
+      "origin_matches": true,
+      "sha256": "471ffbacf3af36ee522b5256cdbb42bb5c83264db25573fe68e302e7d9010f51",
+      "gap_m": 4.4,
+      "snap": [
+        131.98622,
+        33.99731
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.531,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:34_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.988633,
+        34.001451
+      ],
+      "file": "hikari-34_01.json",
+      "origin_matches": true,
+      "sha256": "3e91f2166fc7e45b54699452cd77bcd580a27ca75d91bc80f7b507c6630f3ce5",
+      "gap_m": 5.4,
+      "snap": [
+        131.98869,
+        34.00146
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.163,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:35_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.996317,
+        34.008942
+      ],
+      "file": "hikari-35_01.json",
+      "origin_matches": true,
+      "sha256": "427b7db0d7bfd4cb2b19918b748367fcf1c4446cc425efabf46a61dac9bcb58b",
+      "gap_m": 5.6,
+      "snap": [
+        131.99636,
+        34.00891
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.486,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:36_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.000615,
+        34.017179
+      ],
+      "file": "hikari-36_01.json",
+      "origin_matches": true,
+      "sha256": "ae12feac20be2b06122a40f503615161987b2afce886697ac35fe081daa48c7d",
+      "gap_m": 4.1,
+      "snap": [
+        132.00066,
+        34.01718
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.47,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:37_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.006927,
+        34.012893
+      ],
+      "file": "hikari-37_01.json",
+      "origin_matches": true,
+      "sha256": "735ed93117eb317434025daa6714578d35887d18206ba436a1b7371efafd36a9",
+      "gap_m": 5.8,
+      "snap": [
+        132.00688,
+        34.01286
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.462,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:38_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.006168,
+        34.008016
+      ],
+      "file": "hikari-38_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:39_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.007705,
+        34.006719
+      ],
+      "file": "hikari-39_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:40_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.012543,
+        33.995234
+      ],
+      "file": "hikari-40_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:48_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.953242,
+        33.961885
+      ],
+      "file": "hikari-48_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:49_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.951617,
+        33.949881
+      ],
+      "file": "hikari-49_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:50_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.953667,
+        33.953412
+      ],
+      "file": "hikari-50_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:51_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.956136,
+        33.954481
+      ],
+      "file": "hikari-51_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:52_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.986497,
+        33.984541
+      ],
+      "file": "hikari-52_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:53_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.009663,
+        33.973971
+      ],
+      "file": "hikari-53_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:54_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.00429,
+        33.977307
+      ],
+      "file": "hikari-54_01.json",
+      "origin_matches": true,
+      "sha256": "369130ada03dc10996d31808033b851b823f44ee7be35a3a44a1a401c3029c69",
+      "gap_m": 3.8,
+      "snap": [
+        132.0043,
+        33.97734
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.013,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:7_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.915228,
+        33.974612
+      ],
+      "file": "hikari-7_01.json",
+      "origin_matches": true,
+      "sha256": "02e4129be62d80fc0bb396e0f50e893e6e716dbf6c29c9b196cfc11c252c1c88",
+      "gap_m": 6.8,
+      "snap": [
+        131.91522,
+        33.97467
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.365,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:7_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.915201,
+        33.974742
+      ],
+      "file": "hikari-7_02.json",
+      "origin_matches": true,
+      "sha256": "76a48f114781f961183defaa9ff505d362c8ecd82597f86ba27587c178522022",
+      "gap_m": 7.8,
+      "snap": [
+        131.91521,
+        33.97467
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.263,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:7_03",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.91678,
+        33.974709
+      ],
+      "file": "hikari-7_03.json",
+      "origin_matches": true,
+      "sha256": "5b54f51b1d60d800f99d40682d0b9ae36cb15729468afc9b0717c562be7f0be9",
+      "gap_m": 8.8,
+      "snap": [
+        131.91677,
+        33.97479
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.281,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:7_04",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.916436,
+        33.974841
+      ],
+      "file": "hikari-7_04.json",
+      "origin_matches": true,
+      "sha256": "a2ec6260b9186775cc541fe6995930eed14af94d59a3566a9952291db71cd05e",
+      "gap_m": 8.4,
+      "snap": [
+        131.91644,
+        33.97477
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.553,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:71_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.960988,
+        33.990263
+      ],
+      "file": "hikari-71_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:73_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.971921,
+        34.004878
+      ],
+      "file": "hikari-73_01.json",
+      "origin_matches": true,
+      "sha256": "b1c797f7b252ec20c5a8f43a04f559a8081cf219df34c284124656943cd9ffb7",
+      "gap_m": 3.3,
+      "snap": [
+        131.97196,
+        34.00487
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.372,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:73_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.971935,
+        34.004624
+      ],
+      "file": "hikari-73_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:73_03",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.971126,
+        34.00299
+      ],
+      "file": "hikari-73_03.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:8_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        131.91915,
+        33.982668
+      ],
+      "file": "hikari-8_01.json",
+      "origin_matches": true,
+      "sha256": "689a78453a6c44169a5c43976b4dba38c03efd68b6019cf83366ff329f204086",
+      "gap_m": 3.2,
+      "snap": [
+        131.91916,
+        33.98264
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.466,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "hikari:86_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.010726,
+        34.0604
+      ],
+      "file": "hikari-86_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "hikari:94_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.969131,
+        34.049818
+      ],
+      "file": null,
+      "status": "乗り場保留・徒歩圏未計算"
+    },
+    {
+      "id": "hikari:96_01",
+      "boarding_position_status": "保留",
+      "origin": [
+        131.973272,
+        34.055297
+      ],
+      "file": "hikari-96_01.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    }
+  ]
+}

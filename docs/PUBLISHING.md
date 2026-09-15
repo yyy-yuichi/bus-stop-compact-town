@@ -2,6 +2,10 @@
 
 通常マップは国のバス停4,418レコード、市の登録点907件、27分類の生活施設と参考記録を扱います。施設は全7,764件、通常7,708件、参考56件。光市1路線の往復検証ページは route-living.html です。原本や作業用ソースを公開サイトへ混ぜず、verify-release.mjsで配信対象を確認します。
 
+乗り場表示・同名別原点の徒歩圏を含む現在版は、ビルド時に `VITE_BOARDING_STUDY=1` を設定する。GitHubの検証workflowとPages workflowは設定済み。設定を外したビルドでは乗り場試作データを読み込まない。
+
+位置確認用PDFは問い合わせ準備資料であり、GitHubのソース・配信物へ含めない。本人限定の確認環境で必要な場合だけ、別の `VITE_CONFIRMATION_DOCUMENT=1` を設定してリンクとPDFを含める。
+
 2026-09-12の徒歩圏統合では、国の4,418件を3,946計算起点に対応付け、3,657地点の事前計算結果をCloudflare R2から取得します。289地点は接続不可として案内します。公開前にGitHubのrepository variable `WALK_DATA_URL` が実際の配信URLに設定されている必要があり、未設定ではPages workflowが停止します。ローカルで本番用にビルドする場合も、同じ値を環境変数 `VITE_WALK_DATA_URL` に設定します。[R2設定](WALK-DATA-R2.md)を参照してください。設定済みURLの読み取り・CORS確認と、公開後の実ブラウザー確認を行います。
 
 ## 再作成
@@ -13,6 +17,9 @@ npm ci
 npm run build
 node scripts/verify-release.mjs
 npm run test:places
+npm run test:boarding
+npm run test:nearby
+npm run test:boarding-walking
 python scripts/test-osm-facilities.py
 npm run preview
 ```

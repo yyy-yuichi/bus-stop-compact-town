@@ -3,7 +3,7 @@ import L from 'leaflet';
 import type { LoadState, ShoppingFeature } from './types';
 import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } from './walking';
 import type { Coordinate, WalkingGraph } from './walking';
-import { fitContent } from './mapLayout';
+import { focusContent } from './mapLayout';
 import type { WalkingConditions } from './placeLink';
 
 export function useWalkingData(facilities: ShoppingFeature[], facilityState: LoadState) {
@@ -27,10 +27,10 @@ export function useWalkingData(facilities: ShoppingFeature[], facilityState: Loa
   return { data: joined.data, error: error || joined.error || facilityState === 'error', retry: () => setAttempt(n => n + 1) };
 }
 
-export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, active, conditions, onConditions, scope, onMapFacilities }: {
+export default function WalkingPanel({ map, id, origin, data, error, retry, onSelect, onFacility, focused, conditions, onConditions, scope, onMapFacilities }: {
   map: L.Map | null; id: string; origin: Coordinate;
   data: ReturnType<typeof useWalkingData>['data']; error: boolean; retry: () => void; onSelect: (id: string) => void;
-  onFacility: (facility: ShoppingFeature) => void; active: boolean;
+  onFacility: (facility: ShoppingFeature) => void; focused: boolean;
   conditions: WalkingConditions; onConditions: (conditions: WalkingConditions) => void;
   scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
 }) {
@@ -43,11 +43,11 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
     return { facility: f, reach: reachFacility(result, rings) };
   }) : [], [result, data]);
   const visible = useMemo(() => candidates.filter(c => c.reach && c.reach.meters <= speed * 1000 / 60 * minutes), [candidates, speed, minutes]);
-  useEffect(() => { onMapFacilities(scope, active && !error ? visible.map(c => String(c.facility.id)) : []); }, [scope, active, error, visible, onMapFacilities]);
+  useEffect(() => { onMapFacilities(scope, !error ? visible.map(c => String(c.facility.id)) : []); }, [scope, error, visible, onMapFacilities]);
   useEffect(() => { setShowPath(false); }, [id, speed, minutes]);
 
   useEffect(() => {
-    if (!map || !result || !active || error) return;
+    if (!map || !result || error) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
     const outer = reachableLines(result, speed * 1000 / 60 * minutes);
@@ -60,19 +60,19 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
       if (showPath) L.polyline(toLatLng(c.reach.path), { color: '#4f46e5', weight: 4, opacity: 1, dashArray: '8 5', interactive: false }).addTo(group);
     }
     return () => { group.remove(); };
-  }, [map, result, speed, minutes, origin, visible, showPath, active, error]);
+  }, [map, result, speed, minutes, origin, visible, showPath, error]);
 
   useEffect(() => {
-    if (!map || !result || !active) return;
+    if (!map || !result || !focused) return;
     const lines = reachableLines(result, speed * 1000 / 60 * 10);
     const points = lines.flat().map(([lon, lat]) => L.latLng(lat, lon));
     if (!points.length) return;
     const bounds = L.latLngBounds(points).extend([origin[1], origin[0]]);
-    const focus = () => fitContent(map, bounds, true, 17);
+    const focus = () => focusContent(map, bounds, 17);
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, id, result, active]);
+  }, [map, id, result, focused]);
 
   if (error) return <section className="walking-panel mb-6 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
     <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retry}>再読み込み</button>

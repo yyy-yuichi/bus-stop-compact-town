@@ -1,0 +1,20 @@
+[
+  {
+    "page_url": "https://ubebus.jp/pages/415/",
+    "image_url": "https://ubebus.jp/files/libs/4087/202512091433527361.png?1765258438",
+    "file": "numa-official.png",
+    "direct_image_read": true,
+    "reading": "沼1は図の南側・道路西側、2はJA側、3/4は西の道路の両側。工学部通1/2は東の道路の両側。番号別方面表がある。",
+    "remaining": "既存資料の沼・工学部通はP11の集約点。取得した周辺OSM mapにもbus_stop/platform/stop_position原点がない。図の位置を推測座標へ変換して原点を動かさず保留。",
+    "sha256": "b658a4393ab65cf96e5d80280086e2c1f317bf88fe543ca483a0f7040ab06f99"
+  },
+  {
+    "page_url": "https://ubebus.jp/pages/417/",
+    "image_url": "https://ubebus.jp/files/libs/4088/202512091438598977.png?1765258745",
+    "file": "kosen-official.png",
+    "direct_image_read": true,
+    "reading": "1は郵便局前、2は常盤中学校の北西側道路、3は東山住宅入口へ向かう道路、4はときわミュージアムへ向かう道路。番号別方面表がある。",
+    "remaining": "P11高専グランド前は集約点1件。取得した周辺OSM mapに乗り場原点なし。4つの番号に対応する原座標をこの資料から確定できない。",
+    "sha256": "0fe10c5b1cb6ee28887420c63d79ae0a94b289821488b3161d98ebf2598084d0"
+  }
+]

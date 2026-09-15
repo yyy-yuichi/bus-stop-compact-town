@@ -19,6 +19,7 @@ jobs:
       # 徒歩圏データの配信元。repository variable WALK_DATA_URL に設定する（docs/WALK-DATA-R2.md）。
       # 未設定のまま公開すると徒歩圏が全停留所で404になるため、下で先に落とす。
       VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL }}
+      VITE_BOARDING_STUDY: '1'
     steps:
       - name: Require WALK_DATA_URL
         run: |
@@ -41,6 +42,12 @@ jobs:
       - run: npm run test:stops
       - run: npm run test:places
       - run: npm run test:map-display
+      - run: npm run test:boarding
+      - run: npm run test:nearby
+      - run: npm run test:boarding-walking
+      - run: npm run test:bocho-regions
+      - run: npm run test:bocho-districts
+      - run: npm run test:boarding-connections
       - run: npm run test:basemap
       - run: python3 scripts/build-route-living-pilot.py
       - run: npm run test:route-living

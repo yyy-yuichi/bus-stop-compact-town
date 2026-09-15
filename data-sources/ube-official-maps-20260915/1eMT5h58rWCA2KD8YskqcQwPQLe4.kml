@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>宇部市営バス 乗り場案内 東割バス停</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>無題のレイヤ</name>
+      <Placemark>
+        <name>東割バス停</name>
+        <description>・宇部駅 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.216556,33.978185,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東割バス停</name>
+        <description>・宇部新川駅 方面</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.217399,33.977135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東割バス停</name>
+        <description><![CDATA[・宇部駅（ゆめタウン宇部経由） 方面<br>・小野田公園通 方面]]></description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            131.216004,33.976704,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

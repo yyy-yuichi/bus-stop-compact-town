@@ -1,0 +1,254 @@
+[
+  {
+    "id": "node/4495510084",
+    "stop_name": "新下関駅",
+    "group_id": "hub:sanden-shinshimonoseki",
+    "number": "1",
+    "summary": "東駅・唐戸・市民病院経由 下関駅／川中豊町・新熊野・大学町方面",
+    "source_coordinates": [
+      130.9493929,
+      34.0071573
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_shinshimonoseki/",
+    "location_description": "駅東口ロータリー。公式図の駅寄りから1→2→3→4の並びと、原資料の同番号・西から東への並びが一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/4495510084",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "1",
+      "name": "新下関駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform",
+      "ref": "1"
+    }
+  },
+  {
+    "id": "node/4495510080",
+    "stop_name": "新下関駅",
+    "group_id": "hub:sanden-shinshimonoseki",
+    "number": "2",
+    "summary": "蒲生野・済生会病院・安岡／ゆめシティ・綾羅木・松風町方面",
+    "source_coordinates": [
+      130.9495901,
+      34.0070734
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_shinshimonoseki/",
+    "location_description": "1と3の間。原番号2と公式図の配置が一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/4495510080",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "2",
+      "name": "新下関駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform",
+      "ref": "2"
+    }
+  },
+  {
+    "id": "node/4495510081",
+    "stop_name": "新下関駅",
+    "group_id": "hub:sanden-shinshimonoseki",
+    "number": "3",
+    "summary": "御殿町・城下町長府方面／下関市実証運行バス 内日線・員光線",
+    "source_coordinates": [
+      130.9497684,
+      34.0070678
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_shinshimonoseki/",
+    "location_description": "2と4の間。原番号3と公式図の配置が一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/4495510081",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "3",
+      "name": "新下関駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform",
+      "ref": "3"
+    }
+  },
+  {
+    "id": "node/4495510083",
+    "stop_name": "新下関駅",
+    "group_id": "hub:sanden-shinshimonoseki",
+    "number": "4",
+    "summary": "石原車庫方面（43Bは公団住宅経由）",
+    "source_coordinates": [
+      130.9499388,
+      34.007065
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_shinshimonoseki/",
+    "location_description": "乗り場列の東端。原番号4と公式図の配置が一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/4495510083",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "4",
+      "name": "新下関駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform",
+      "ref": "4"
+    }
+  },
+  {
+    "id": "node/2582068065",
+    "stop_name": "小月駅",
+    "group_id": "hub:sanden-odukieki",
+    "number": "1",
+    "summary": "菊川・豊田町西市・俵山温泉・長門・青海島／埴生・小野田／吉田・湯谷・美祢方面",
+    "source_coordinates": [
+      131.032735,
+      34.0685331
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_odukieki/",
+    "location_description": "公式図では1と2は同じ側で、1は2の駐車場寄り。原資料の番号1を保持。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/2582068065",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "1",
+      "name": "小月駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "id": "node/2582068069",
+    "stop_name": "小月駅",
+    "group_id": "hub:sanden-odukieki",
+    "number": "2",
+    "summary": "小月営業所行き",
+    "source_coordinates": [
+      131.0326845,
+      34.0685532
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_odukieki/",
+    "location_description": "公式図では1と2は同じ側で、2は1の国道491号寄り。原資料の番号2を保持。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/2582068069",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "2",
+      "name": "小月駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "id": "node/1353503115",
+    "stop_name": "小月駅",
+    "group_id": "hub:sanden-odukieki",
+    "number": "3",
+    "summary": "城下町長府・唐戸・下関駅・市民病院方面",
+    "source_coordinates": [
+      131.0323893,
+      34.0685845
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_odukieki/",
+    "location_description": "公式図では3は1・2の向かい側。原資料の番号3を保持。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/1353503115",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "3",
+      "name": "小月駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "id": "node/6924153238",
+    "stop_name": "長府駅",
+    "group_id": "hub:sanden-tyofueki",
+    "number": null,
+    "summary": "公式Aのりばとの対応は未確認",
+    "source_coordinates": [
+      131.0000029,
+      34.0194122
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_tyofueki/",
+    "location_description": "公式図には降車場の表示がなく、原2点 node/6924153238・node/6924153239 のどちらがAか識別できる根拠を確認できていません。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/6924153238",
+      "bus": "yes",
+      "covered": "yes",
+      "highway": "bus_stop",
+      "name": "長府駅",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    },
+    "assignment_hold": {
+      "number": "A",
+      "reason": "公式図には降車場の表示がなく、原2点 node/6924153238・node/6924153239 のどちらがAか識別できる根拠を確認できていません。"
+    }
+  },
+  {
+    "id": "node/3500214608",
+    "stop_name": "長府駅前",
+    "group_id": "hub:sanden-tyofueki",
+    "number": "B",
+    "summary": "ゆめタウン長府・小月・埴生・小野田・美祢・長門／山口宇部空港方面",
+    "source_coordinates": [
+      131.0018156,
+      34.0196378
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_tyofueki/",
+    "location_description": "国道2号の駅側（北西側）。公式図のBと駅側の歩道配置が一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/3500214608",
+      "bus": "yes",
+      "covered": "yes",
+      "highway": "bus_stop",
+      "name": "長府駅前",
+      "network": "サンデン交通",
+      "network:en": "Sanden Kotsu",
+      "network:ja": "サンデン交通",
+      "network:wikidata": "Q11305725",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "id": "node/3500214607",
+    "stop_name": "長府駅前",
+    "group_id": "hub:sanden-tyofueki",
+    "number": "C",
+    "summary": "城下町長府・唐戸・下関駅・市民病院方面",
+    "source_coordinates": [
+      131.0020474,
+      34.0194457
+    ],
+    "guide_url": "https://www.sandenkotsu.co.jp/bus/route_bus/bus_stop/bg_tyofueki/",
+    "location_description": "国道2号の駅と反対側（南東側）。公式図のCと道路の反対側の配置が一致。",
+    "field_checked": false,
+    "coordinate_source_file": "public/data/bus_stop.geojson",
+    "original_properties": {
+      "@id": "node/3500214607",
+      "bus": "yes",
+      "covered": "yes",
+      "highway": "bus_stop",
+      "name": "長府駅前",
+      "operator": "サンデン交通",
+      "public_transport": "platform"
+    }
+  }
+]

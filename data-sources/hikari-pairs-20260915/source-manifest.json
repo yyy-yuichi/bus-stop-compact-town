@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "path": "hikari-pairs.json",
+      "sha256": "2b73aff67f917f9f08b14e034e89b562d16f59343c6283efb95d34088f6fe08c"
+    },
+    {
+      "path": "sources/hikari-gtfs.zip",
+      "sha256": "f3403ebaf481805fff0e2316be3a986732f443a06a64eab5b579ea17191adde7"
+    },
+    {
+      "path": "sources/gururin_ryakuzu_r80401.pdf",
+      "sha256": "bf93108c34e99ab2e97e0a3580f8bcc6d52b05fc99e021bc4647a2ab17975fae"
+    },
+    {
+      "path": "sources/kouiki_ryakuzu_ryoyukin_r80401.pdf",
+      "sha256": "1370a27aeda1d1f3d4084f383009333601aa40da93498cdb3a12698b9fa08fab"
+    },
+    {
+      "path": "sources/shieibus_rosenzu_r70401.pdf",
+      "sha256": "2208271ff97e6bc9595b19a7270c712f3a11b7adddc9aa3b6b8121b6dc68f8cd"
+    }
+  ],
+  "urls": {
+    "karato.jpg": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_karato_20230601.jpg",
+    "higashieki.jpg": "https://www.sandenkotsu.co.jp/wp-content/uploads/2025/05/BG_higasieki04.jpg",
+    "shimonosekieki.jpg": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_shimonosekieki.jpg",
+    "hikari-gtfs.zip": "https://yamaguchi-opendata.jp/ckan/dataset/db885818-b1bd-4848-986f-45119e8acb31/resource/c804039c-7d37-4e45-9288-f09fc1bbd249/download/hikari_gtfs_20260401_.zip",
+    "shieibus_rosenzu_r70401.pdf": "https://www.city.hikari.lg.jp/material/files/group/155/shieibus_rosenzu_r70401.pdf",
+    "gururin_ryakuzu_r80401.pdf": "https://www.city.hikari.lg.jp/material/files/group/155/gururin_ryakuzu_r80401.pdf",
+    "kouiki_ryakuzu_ryoyukin_r80401.pdf": "https://www.city.hikari.lg.jp/material/files/group/155/kouiki_ryakuzu_ryoyukin_r80401.pdf"
+  },
+  "roads": {
+    "source_url": "https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf",
+    "source_sha256": "6143d3a6b28144ec1d0fce8bbe7dfa6e75f3b74e418cb3e19f5718c011fa0f73",
+    "retrieved_at": "2026-09-09",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "roads_file_sha256": "58cea71d0b2c5ab678cd300aa76c3af5e947d2c9cd4d73ef546a04a71ce6ed5c"
+}

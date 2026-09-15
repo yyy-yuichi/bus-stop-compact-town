@@ -1,0 +1,54 @@
+{
+  "official_chofu_image": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_tyofueki.jpg",
+  "official_oduki_image": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_odukieki.jpg",
+  "chofu_finding": "公式図には降車場の表示がなく、原2点 node/6924153238・node/6924153239 のどちらがAか識別できる根拠を確認できていません。",
+  "other_official_evidence_found": false,
+  "oduki_corrections": {
+    "node/2582068065": "公式図では1と2は同じ側で、1は2の駐車場寄り。原資料の番号1を保持。",
+    "node/2582068069": "公式図では1と2は同じ側で、2は1の国道491号寄り。原資料の番号2を保持。",
+    "node/1353503115": "公式図では3は1・2の向かい側。原資料の番号3を保持。"
+  },
+  "prior_claim_retracted": "公式図のAは降車場の南側で、南北にある原2点の南側に対応",
+  "preserved_original_points": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6924153238",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "長府駅",
+        "operator": "サンデン交通",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.0000029,
+          34.0194122
+        ]
+      },
+      "id": "node/6924153238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6924153239",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "長府駅",
+        "operator": "サンデン交通",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.99996,
+          34.0196523
+        ]
+      },
+      "id": "node/6924153239"
+    }
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "summary": {
+    "pairs": 66,
+    "confirmed_pairs": 29,
+    "held_pairs": 37,
+    "confirmed_points": 89,
+    "occurrence_states": {
+      "判定不能": 102,
+      "整合": 201
+    }
+  },
+  "occurrences_checked": 303,
+  "unchanged_catchment_files": 949,
+  "unrelated_guides_unchanged": true,
+  "original_coordinates_and_numbers_unchanged": true,
+  "loop_occurrence_regression": "passed",
+  "walking_results": [
+    {
+      "id": "hikari:11_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        4,
+        9
+      ]
+    },
+    {
+      "id": "hikari:12_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        7,
+        22,
+        29
+      ]
+    },
+    {
+      "id": "hikari:12_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        7,
+        22,
+        29
+      ]
+    },
+    {
+      "id": "hikari:13_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:13_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:15_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        13,
+        18
+      ]
+    },
+    {
+      "id": "hikari:15_02",
+      "status": "not-computed",
+      "gap": 33.7
+    },
+    {
+      "id": "hikari:16_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        9,
+        19,
+        30
+      ]
+    },
+    {
+      "id": "hikari:17_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        25,
+        49
+      ]
+    },
+    {
+      "id": "hikari:17_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        25,
+        49
+      ]
+    },
+    {
+      "id": "hikari:18_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        6,
+        16,
+        34
+      ]
+    },
+    {
+      "id": "hikari:2_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        10,
+        20
+      ]
+    },
+    {
+      "id": "hikari:2_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        10,
+        20
+      ]
+    },
+    {
+      "id": "hikari:22_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "hikari:23_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "hikari:23_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "hikari:25_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:27_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hikari:27_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hikari:29_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:3_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        5,
+        16,
+        31
+      ]
+    },
+    {
+      "id": "hikari:3_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        5,
+        16,
+        31
+      ]
+    },
+    {
+      "id": "hikari:32_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        9,
+        12
+      ]
+    },
+    {
+      "id": "hikari:4_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        11,
+        23,
+        43
+      ]
+    },
+    {
+      "id": "hikari:4_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        13,
+        31
+      ]
+    },
+    {
+      "id": "hikari:41_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "hikari:42_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "id": "hikari:43_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:43_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:44_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:45_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:47_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "hikari:47_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "hikari:5_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        12,
+        28,
+        45
+      ]
+    },
+    {
+      "id": "hikari:5_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        11,
+        27,
+        45
+      ]
+    },
+    {
+      "id": "hikari:55_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        8,
+        21,
+        27
+      ]
+    },
+    {
+      "id": "hikari:55_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        8,
+        20,
+        26
+      ]
+    },
+    {
+      "id": "hikari:56_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        3,
+        10,
+        26
+      ]
+    },
+    {
+      "id": "hikari:56_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        6,
+        26
+      ]
+    },
+    {
+      "id": "hikari:57_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "hikari:58_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "hikari:59_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:6_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        23,
+        42
+      ]
+    },
+    {
+      "id": "hikari:6_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        23,
+        42
+      ]
+    },
+    {
+      "id": "hikari:60_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "id": "hikari:60_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "hikari:61_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        6,
+        22,
+        33
+      ]
+    },
+    {
+      "id": "hikari:62_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        6,
+        15,
+        43
+      ]
+    },
+    {
+      "id": "hikari:63_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "hikari:63_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "hikari:64_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        7,
+        7,
+        9
+      ]
+    },
+    {
+      "id": "hikari:64_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        7,
+        7,
+        9
+      ]
+    },
+    {
+      "id": "hikari:65_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        6,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "hikari:66_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "hikari:67_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "hikari:67_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "hikari:68_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "hikari:68_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "hikari:69_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "hikari:70_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "hikari:72_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:74_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "hikari:74_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "hikari:75_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "hikari:75_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "hikari:76_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "hikari:76_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "hikari:77_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "hikari:77_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "hikari:78_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:79_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "hikari:79_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "hikari:80_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hikari:81_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "hikari:82_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hikari:83_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:84_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:85_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "hikari:87_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "hikari:87_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "hikari:88_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "hikari:88_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "hikari:9_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        7,
+        32
+      ]
+    },
+    {
+      "id": "hikari:91_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "hikari:92_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        0,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "hikari:93_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "hikari:93_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        3,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "hikari:95_01",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "hikari:95_02",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        5,
+        8
+      ]
+    }
+  ],
+  "representative_application_operations": [
+    {
+      "name": "木園",
+      "id": "hikari:6_01",
+      "choices": [
+        "hikari:6_01",
+        "hikari:6_02"
+      ],
+      "summary": "光駅北口方面（兼清／右回り 光総合病院方面）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        23,
+        42
+      ]
+    },
+    {
+      "name": "木園",
+      "id": "hikari:6_02",
+      "choices": [
+        "hikari:6_01",
+        "hikari:6_02"
+      ],
+      "summary": "筒井・花園方面（光市役所前／左回り 光駅）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        4,
+        23,
+        42
+      ]
+    },
+    {
+      "name": "土井",
+      "id": "hikari:11_01",
+      "choices": [
+        "hikari:11_01",
+        "hikari:11_02"
+      ],
+      "summary": "光市民ホール前・木ノ下橋上方面（兼清／右回り 光市役所前方面）",
+      "position_status": "保留"
+    },
+    {
+      "name": "土井",
+      "id": "hikari:11_02",
+      "choices": [
+        "hikari:11_01",
+        "hikari:11_02"
+      ],
+      "summary": "イオン光店・浅江中学校前方面（光市役所前／左回り 光総合病院方面）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        4,
+        9
+      ]
+    },
+    {
+      "name": "小周防Ｂ",
+      "id": "hikari:77_01",
+      "choices": [
+        "hikari:77_01",
+        "hikari:77_02"
+      ],
+      "summary": "下和田方面（兼清／集会所前）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "小周防Ｂ",
+      "id": "hikari:77_02",
+      "choices": [
+        "hikari:77_01",
+        "hikari:77_02"
+      ],
+      "summary": "八幡所方面（高水駅）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "西河原",
+      "id": "hikari:4_01",
+      "choices": [
+        "hikari:4_01",
+        "hikari:4_02"
+      ],
+      "summary": "筒井方面（右回り 光総合病院方面）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        11,
+        23,
+        43
+      ]
+    },
+    {
+      "name": "西河原",
+      "id": "hikari:4_02",
+      "choices": [
+        "hikari:4_01",
+        "hikari:4_02"
+      ],
+      "summary": "虹ヶ浜二丁目方面（左回り 光駅）",
+      "position_status": "机上確認済み",
+      "status": "existing-original-point-calculation",
+      "counts_5_10_15": [
+        1,
+        13,
+        31
+      ]
+    }
+  ],
+  "browser_ui_checked": false,
+  "browser_blocker": "Cloud Chrome managed preview navigation failed: net::ERR_BLOCKED_BY_CLIENT. No live-site browser verification performed."
+}

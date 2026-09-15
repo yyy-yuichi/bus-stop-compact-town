@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "原点計算一致・徒歩接続の対応保留": 3,
+    "乗り場机上整合・道路未接続": 3,
+    "原点・接続位置照合済み（既存徒歩手法）": 3,
+    "乗り場保留・既存計算を参考保持": 1
+  },
+  "points": [
+    {
+      "id": "iwakuni:i-625_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.20653625381,
+        34.1364042067
+      ],
+      "file": "iwakuni-i-625_01.json",
+      "origin_matches": true,
+      "sha256": "27af07f6aac505a2f8732901b25c2ba4fcd9bc4fe6fec06fc26b8b3fe64d0a91",
+      "gap_m": 20.8,
+      "snap": [
+        132.20642,
+        34.13624
+      ],
+      "max_snap_to_boarding_road_projection_m": 21.338,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-625_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.206168281048,
+        34.1358735047
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 31.5
+    },
+    {
+      "id": "iwakuni:i-634_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.21687214,
+        34.1589893355
+      ],
+      "file": "iwakuni-i-634_01.json",
+      "origin_matches": true,
+      "sha256": "159df60779f8c17fa040ccdba25f856886482ff2b1d4c7c805f2429c4b3e84cc",
+      "gap_m": 4.7,
+      "snap": [
+        132.21692,
+        34.15899
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.411,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:i-634_02",
+      "boarding_position_status": "保留",
+      "origin": [
+        132.217077716,
+        34.1596246073
+      ],
+      "file": "iwakuni-i-634_02.json",
+      "status": "乗り場保留・既存計算を参考保持"
+    },
+    {
+      "id": "iwakuni:i-629_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.211527016,
+        34.1422304959
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 51.2
+    },
+    {
+      "id": "iwakuni:i-629_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.211915092,
+        34.1424115752
+      ],
+      "file": null,
+      "status": "乗り場机上整合・道路未接続",
+      "gap_m": 66.6
+    },
+    {
+      "id": "iwakuni:i-630_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.212427733381,
+        34.1464839091
+      ],
+      "file": "iwakuni-i-630_01.json",
+      "origin_matches": true,
+      "sha256": "e66440eb51e09b02ba339ef096db62e7c9492eb2dac2d65760081f42f8bff3c1",
+      "gap_m": 11.8,
+      "snap": [
+        132.21256,
+        34.14648
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.542,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:i-630_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.212681117809,
+        34.1467470725666
+      ],
+      "file": "iwakuni-i-630_02.json",
+      "origin_matches": true,
+      "sha256": "81be6b6ae2934f5906fe88497ac049c7fb0046aac9bca383f4b1034f2fe70f80",
+      "gap_m": 11.3,
+      "snap": [
+        132.21256,
+        34.14675
+      ],
+      "max_snap_to_boarding_road_projection_m": 0.297,
+      "status": "原点・接続位置照合済み（既存徒歩手法）"
+    },
+    {
+      "id": "iwakuni:i-623_01",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199622686238,
+        34.1292707699
+      ],
+      "file": "iwakuni-i-623_01.json",
+      "origin_matches": true,
+      "sha256": "a9205577544e74601e04277a44eb20db09d3d36c73999a793a7907a9ba607b94",
+      "gap_m": 8.4,
+      "snap": [
+        132.19963,
+        34.12935
+      ],
+      "max_snap_to_boarding_road_projection_m": 9.793,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    },
+    {
+      "id": "iwakuni:i-623_02",
+      "boarding_position_status": "机上確認済み",
+      "origin": [
+        132.199808807,
+        34.1295969227
+      ],
+      "file": "iwakuni-i-623_02.json",
+      "origin_matches": true,
+      "sha256": "3b427a0c1751c5c7ea014fe38a826eb923caa1bf8a284d97602a059d6fe5e56a",
+      "gap_m": 17.4,
+      "snap": [
+        132.1997,
+        34.12947
+      ],
+      "max_snap_to_boarding_road_projection_m": 15.402,
+      "status": "原点計算一致・徒歩接続の対応保留"
+    }
+  ]
+}

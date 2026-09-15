@@ -1,0 +1,44 @@
+[
+  {
+    "id": "iwakuni:680_02",
+    "origin": [
+      132.183298393,
+      34.1748398037
+    ],
+    "existing_gap_m": 79.6,
+    "nearest_current_eligible_edge": {
+      "way_id": 1153783689,
+      "node_ids": [
+        10730338235,
+        10730338234
+      ],
+      "gap_m": 79.79298717843018,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  },
+  {
+    "id": "iwakuni:683_02",
+    "origin": [
+      132.176380257,
+      34.1848441936
+    ],
+    "existing_gap_m": 86.8,
+    "nearest_current_eligible_edge": {
+      "way_id": 83895432,
+      "node_ids": [
+        976519793,
+        1015538255
+      ],
+      "gap_m": 86.97822895607729,
+      "tags": {
+        "highway": "primary"
+      }
+    },
+    "within_30m": false,
+    "note": "候補辺までの距離確認のみ。徒歩接続・全域グラフの再計算ではない。"
+  }
+]

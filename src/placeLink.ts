@@ -5,7 +5,8 @@ export const DEFAULT_WALKING_CONDITIONS: WalkingConditions = { minutes: 10, spee
 export type SharedPlace =
   | { kind: 'facility'; id: string }
   | { kind: 'national'; id: string; minutes?: BakedWalkingMinutes }
-  | { kind: 'municipal'; id: string }
+  | { kind: 'municipal'; id: string; minutes?: BakedWalkingMinutes }
+  | { kind: 'boarding'; id: string; minutes?: BakedWalkingMinutes }
   | { kind: 'pilot'; id: string; walking?: WalkingConditions };
 
 export function readPlaceLink(hash: string): SharedPlace | null {
@@ -14,11 +15,12 @@ export function readPlaceLink(hash: string): SharedPlace | null {
   if (params.getAll('kind').length !== 1 || params.getAll('id').length !== 1) return null;
   const kind = params.get('kind');
   const id = params.get('id') || '';
-  if (kind === 'municipal' && /^(hikari|iwakuni):[a-zA-Z0-9_.-]{1,100}$/.test(id)) {
-    if (params.has('minutes') || params.has('speed')) return null;
-    return { kind, id };
+  if (kind === 'boarding' && /^review:(ube-chuo|ube-shinkawa|tokuyama)-\d+$/.test(id)) {
+    return params.has('minutes') || params.has('speed') ? null : { kind, id };
   }
-  if (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id)) {
+  if ((kind === 'boarding' && /^(node\/\d+|sentetsu:[A-Za-z0-9_-]{1,100}|bocho:\d{8}-\d{12}|jr-chugoku:\d+ \d+|ube-official-map:[A-Za-z0-9_-]+:\d+)$/.test(id)) ||
+      (kind === 'municipal' && /^(hikari|iwakuni):[a-zA-Z0-9_.-]{1,100}$/.test(id)) ||
+      (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id))) {
     if (!params.has('minutes') && !params.has('speed')) return { kind, id };
     if (params.has('speed') || params.getAll('minutes').length !== 1) return null;
     const minutes = params.get('minutes');
@@ -45,7 +47,7 @@ export function placeLink(pageUrl: string, place: SharedPlace): string {
     params.set('minutes', String(place.walking.minutes));
     params.set('speed', String(place.walking.speed));
   }
-  if (place.kind === 'national' && place.minutes) params.set('minutes', String(place.minutes));
+  if ((place.kind === 'national' || place.kind === 'municipal' || place.kind === 'boarding') && place.minutes) params.set('minutes', String(place.minutes));
   url.hash = params.toString();
   return url.href;
 }

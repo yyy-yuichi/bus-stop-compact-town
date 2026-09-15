@@ -1,0 +1,1946 @@
+[
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S17",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "929a88964f3750a25ee7.json",
+    "bytes": 2897,
+    "sha256": "8b8ffd2f55e83646c89a9e76af1794ae6062999561a84767e6338a2cb8b0334a",
+    "recorded_at": "2026-09-15T04:54:32.915863+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S17",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "0b5b18c82154a47e8b85.json",
+    "bytes": 3342,
+    "sha256": "00818ea8be3238722e2a655dc4a031d6b995cb1e16342be8b64a18602ab23974",
+    "recorded_at": "2026-09-15T04:54:32.916175+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_06時57分_系統100b",
+      "target_date": "2026-09-15"
+    },
+    "file": "d643ff750ff5d73b5122.json",
+    "bytes": 4858,
+    "sha256": "781e46e7f5ec12e30b7fb20e539b84e5d787ceb7960bfa563c339764b0b0d0e3",
+    "recorded_at": "2026-09-15T04:54:32.916643+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_17時15分_系統101b",
+      "target_date": "2026-09-15"
+    },
+    "file": "9af66b7b65e77d822df9.json",
+    "bytes": 4873,
+    "sha256": "da32cc199d86cf83680ac8fcc6b1b70361b684c3a0f9cbb8734563faf4eb8836",
+    "recorded_at": "2026-09-15T04:54:32.918280+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_18時45分_系統101b",
+      "target_date": "2026-09-15"
+    },
+    "file": "ab3057043c4d2044342b.json",
+    "bytes": 4873,
+    "sha256": "cca31d68385c3851d6cd0e2f3a08bd88f7a9d84d2913991b5fde18934af732ac",
+    "recorded_at": "2026-09-15T04:54:32.918592+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_20時00分_系統101b",
+      "target_date": "2026-09-15"
+    },
+    "file": "e7d044741b7d5abdcc73.json",
+    "bytes": 4873,
+    "sha256": "9f05cef91e2ac6ea4bfdab9cb9fb357f5634f93c4693ec8aa0fd4f8ea4c0c3a8",
+    "recorded_at": "2026-09-15T04:54:32.918867+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_09時00分_系統102b",
+      "target_date": "2026-09-15"
+    },
+    "file": "f1b48a9bb54695eefa4a.json",
+    "bytes": 4992,
+    "sha256": "f4d72eca7c9c5433fd4b935c44f0e91e264951f0da67c4b1047f8b808a6d2f0f",
+    "recorded_at": "2026-09-15T04:54:32.919357+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_12時10分_系統103b",
+      "target_date": "2026-09-15"
+    },
+    "file": "625f6596bcdf50407abb.json",
+    "bytes": 4989,
+    "sha256": "d53ee9afe1adfb9013d4b54ab039f1aabe1ab4a36f7826b08d539b5548e1bd3a",
+    "recorded_at": "2026-09-15T04:54:32.919628+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_13時35分_系統103b",
+      "target_date": "2026-09-15"
+    },
+    "file": "2927ba815efbb2d5fe9d.json",
+    "bytes": 4989,
+    "sha256": "368ae3cf2e4ba69a3760d6df33187e24ef422855fd14d12b83dfeb6eeb3bd07f",
+    "recorded_at": "2026-09-15T04:54:32.919905+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_06時00分_系統100a",
+      "target_date": "2026-09-15"
+    },
+    "file": "6d572ccfaea487e6f4f2.json",
+    "bytes": 4858,
+    "sha256": "84eef81578f540ba24a50b6402e53774c82de786ff4c8dea86fbf6736ff9b47b",
+    "recorded_at": "2026-09-15T04:54:32.920217+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_07時10分_系統100a",
+      "target_date": "2026-09-15"
+    },
+    "file": "55578adae0777c0f5732.json",
+    "bytes": 4858,
+    "sha256": "2d6039184057b117d251be5b55307ef3100053242c195470751074c6b440f9c4",
+    "recorded_at": "2026-09-15T04:54:32.920665+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_15時05分_系統101a",
+      "target_date": "2026-09-15"
+    },
+    "file": "b5234427bd618b4b712c.json",
+    "bytes": 4873,
+    "sha256": "7257e18881a4afa3b1dc09fee00c21db0d2461ef5477c47719b10a6ff8dfb02c",
+    "recorded_at": "2026-09-15T04:54:32.921099+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_16時45分_系統101a",
+      "target_date": "2026-09-15"
+    },
+    "file": "bbfd93a047474d29500f.json",
+    "bytes": 4873,
+    "sha256": "5c8977aec8dc97d8e57d927e6ddd992be8a1a794cde2ca1df7d63dc3ec05fb06",
+    "recorded_at": "2026-09-15T04:54:32.921413+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_17時50分_系統101a",
+      "target_date": "2026-09-15"
+    },
+    "file": "05b646b54d0401e220dd.json",
+    "bytes": 4873,
+    "sha256": "1eb1a888151dacb032ca22eba99d1b42ed2fc19e9ded320c01b43013f6ed284b",
+    "recorded_at": "2026-09-15T04:54:32.921802+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_18時50分_系統101a",
+      "target_date": "2026-09-15"
+    },
+    "file": "d38e6c00fe76e1f4a130.json",
+    "bytes": 4873,
+    "sha256": "545b6412be8c9c1d78de71b876afccf4eee846a8a99e59845e4477cccc642ace",
+    "recorded_at": "2026-09-15T04:54:32.923418+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_10時15分_系統103a",
+      "target_date": "2026-09-15"
+    },
+    "file": "ab1a9601fae2a4d58355.json",
+    "bytes": 4989,
+    "sha256": "dde1477676618b7e529b32b6d030ae39eff74d4f393a6c7787f7ad89f6146893",
+    "recorded_at": "2026-09-15T04:54:32.923800+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_12時35分_系統103a",
+      "target_date": "2026-09-15"
+    },
+    "file": "13cfb4d3ce68931f0c6f.json",
+    "bytes": 4989,
+    "sha256": "0e2ff980fb94f4e1e252a657656b49f13ed0310eb085391b7e6397bedec4e8d3",
+    "recorded_at": "2026-09-15T04:54:32.924200+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/tripdetail.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "trip_id": "平日_14時05分_系統103a",
+      "target_date": "2026-09-15"
+    },
+    "file": "839c57abce14c6d5ea4b.json",
+    "bytes": 4989,
+    "sha256": "b9fad9ab5a5a81fd45fd3d9776b4248f801624bfe0fc79b7d0e3422b06d63193",
+    "recorded_at": "2026-09-15T04:54:32.924547+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S28"
+    },
+    "file": "36a04a300603895a0341.json",
+    "bytes": 247,
+    "sha256": "e6862cf5818ad7ac9e6d903987e7efb4f772a00089f5f7c1c09802b069c54b27",
+    "recorded_at": "2026-09-15T04:54:32.924825+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S28",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "438db546589e92cea84e.json",
+    "bytes": 5951,
+    "sha256": "f9dcb03fadbff583101eb6595decbb20803eedbb0fd281f6310eaf9b17aa5123",
+    "recorded_at": "2026-09-15T04:54:32.925181+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S28",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "fd66408c83529db43cb4.json",
+    "bytes": 6362,
+    "sha256": "a99da144056d64ad79794b183bae3c8119dcdd4c0712a754c8538e750e9c09f3",
+    "recorded_at": "2026-09-15T04:54:32.925618+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S27"
+    },
+    "file": "acb46f0d73d3ac8f4365.json",
+    "bytes": 366,
+    "sha256": "ec76d5747c0459a81c250341a5efeb818faad3709ea4a3c20d1d3f0eb36fbb86",
+    "recorded_at": "2026-09-15T04:54:32.925971+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S27",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "1b0862f48acacaf02b7d.json",
+    "bytes": 5993,
+    "sha256": "6f888117c51cb2513b78c2fd5227e9668e53bed5c17920cf9abbd03026614831",
+    "recorded_at": "2026-09-15T04:54:32.928251+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S26"
+    },
+    "file": "01ac46d86a2698b6ad44.json",
+    "bytes": 401,
+    "sha256": "eca41a32fb0fe92009875f3ca56aae1d641bba2c14ff3a94aea9d7fc16ac652e",
+    "recorded_at": "2026-09-15T04:54:32.928591+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S26",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "23d1dfcd99ed03278aae.json",
+    "bytes": 5993,
+    "sha256": "a75575f2e4e4ab26160c49c1e7a5373159e9e54841dcfffa5b94936d2cff7f05",
+    "recorded_at": "2026-09-15T04:54:32.929200+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S26",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "bfe64c50ea19d9288f51.json",
+    "bytes": 4533,
+    "sha256": "b7b93659feb36469e65258d1653d9878ce0b3c5c7f3859127403be9de58d3eff",
+    "recorded_at": "2026-09-15T04:54:32.929637+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S25"
+    },
+    "file": "77c32b2b79bf2218d47d.json",
+    "bytes": 393,
+    "sha256": "74d96d79144afb192e6f55fc5f4d2b462d68d4d0b77c2c6e050c82e44ba182b5",
+    "recorded_at": "2026-09-15T04:54:32.930039+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S25",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "63dd64866267a17011b6.json",
+    "bytes": 5993,
+    "sha256": "6d58ea86a962ea77752179eb5dc690fbd46f07703e77ceae9e4756f96cb6085d",
+    "recorded_at": "2026-09-15T04:54:32.930522+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S25",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "abd444f76d5a050197d0.json",
+    "bytes": 4533,
+    "sha256": "fb8be56e0e23a5c1f4776061844c0ae01aa53aeeda1e6f9a2145bc44071f443f",
+    "recorded_at": "2026-09-15T04:54:32.931212+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S24"
+    },
+    "file": "669cb4e158872648d84f.json",
+    "bytes": 395,
+    "sha256": "826cdcb7c7e83df99e7ee180bf453befb72f660bb6878667bd7d59b7288bcf50",
+    "recorded_at": "2026-09-15T04:54:32.931558+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S24",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "1c24404277972809f893.json",
+    "bytes": 5993,
+    "sha256": "ddbebb17c9dc6697ac7709ea0e4e8fbc098324e312a030012bd2a1cf3e3c6211",
+    "recorded_at": "2026-09-15T04:54:32.931973+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S24",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "13925b836e15de9ebb18.json",
+    "bytes": 4533,
+    "sha256": "3fc59b9e3eafd10149ce6091a73b555c90e2767479e2e50785a51d84040fc8d4",
+    "recorded_at": "2026-09-15T04:54:32.932422+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S23"
+    },
+    "file": "1fcadb78c813d9c370d9.json",
+    "bytes": 359,
+    "sha256": "1a0a8965912ebec35b9464de1cb36c506cba562019a2f9f5a4b0ebe14455f166",
+    "recorded_at": "2026-09-15T04:54:32.932830+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S23",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "2f0d61026c7ab0452073.json",
+    "bytes": 5869,
+    "sha256": "fc6060b37ccf01a607926f345d63c0865dbd80b8104f1748d4354121cf99ebb4",
+    "recorded_at": "2026-09-15T04:54:32.933450+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S23",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "f6c653d068af70ce7fa6.json",
+    "bytes": 4533,
+    "sha256": "24015605e1a4dcfe9edd4068fef63348d09db41cd66c4535aa4704f168374712",
+    "recorded_at": "2026-09-15T04:54:32.933891+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S22"
+    },
+    "file": "6bb0ab3c35a59419f7d6.json",
+    "bytes": 403,
+    "sha256": "a40d2e2cb3850a5af7a1d7bfe597d67d9b7f83d4c4493c960c43596d98ed4b15",
+    "recorded_at": "2026-09-15T04:54:32.934369+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S22",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "d3186a39050bd0ad4cb9.json",
+    "bytes": 2890,
+    "sha256": "155b7f49c238cf3cb7a1d574a05b306b3a5b67694da8e5efc361a38fa9d6b3bd",
+    "recorded_at": "2026-09-15T04:54:32.934799+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S22",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "663e4a72b84e7b96c3f6.json",
+    "bytes": 3332,
+    "sha256": "8a1ae86e84b64d5ca18a299bda89762d7de6ab9d7e9123cd73b8adfcbbdd3b0c",
+    "recorded_at": "2026-09-15T04:54:32.935626+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S21"
+    },
+    "file": "6803570c8d42ed552d23.json",
+    "bytes": 485,
+    "sha256": "7aa657da44a5f08d2e4ec323caf82e83ec09f9cbee1aa1c854208f97bc46d9a7",
+    "recorded_at": "2026-09-15T04:54:32.936103+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S21",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "d486e5a495b12948e47d.json",
+    "bytes": 2890,
+    "sha256": "8b3b6e3e045cf0817c3f1516d9da6b022cab623945dce65db2dba1a797a0d493",
+    "recorded_at": "2026-09-15T04:54:32.936555+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S21",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "99301ba6288dc7ca31d0.json",
+    "bytes": 3332,
+    "sha256": "58ed6ed43ec7730ce79017dba4480fc8dd1387b33183974d29a85143a2f2a54a",
+    "recorded_at": "2026-09-15T04:54:32.937132+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S20"
+    },
+    "file": "3d5d95722df1c772b9a0.json",
+    "bytes": 421,
+    "sha256": "bea4116e0b8155ee0ee21014c1599f0fdf1e3a83c998f9d686d55b70e14d6285",
+    "recorded_at": "2026-09-15T04:54:32.937660+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S20",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "5fe9802b142c5ed74eb4.json",
+    "bytes": 2890,
+    "sha256": "9ce1c0f01136f118ec478f5d983e174b1b44eca2e1904e95f26f250e586db5d6",
+    "recorded_at": "2026-09-15T04:54:32.938279+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S20",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "30035fe06764b12c86f6.json",
+    "bytes": 3332,
+    "sha256": "184689cfa3c0a2405039d8348d307e529dc39c7d3fa7ac8d2c030a7c16623d26",
+    "recorded_at": "2026-09-15T04:54:32.938772+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S19"
+    },
+    "file": "89a2cd66026a5b86ad74.json",
+    "bytes": 384,
+    "sha256": "ddaaf599c71473db52a368f7736f1c3b5803be3c8f597e035fe0272c80c2da55",
+    "recorded_at": "2026-09-15T04:54:32.939291+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S19",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "b7adcc7ef14b1eed80d4.json",
+    "bytes": 2897,
+    "sha256": "40b6ea97409fa2e35fce96eaed03342ba1764a05f672a9de4c3c1160c720d65b",
+    "recorded_at": "2026-09-15T04:54:32.939784+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S19",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "515259e4abf457f4192b.json",
+    "bytes": 3332,
+    "sha256": "4f194b8249cdfb08584907671e646a10291cb81ab08faa901289cebb3dbb11d5",
+    "recorded_at": "2026-09-15T04:54:32.940335+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S18"
+    },
+    "file": "d86113231f15735ad4b8.json",
+    "bytes": 395,
+    "sha256": "30eccbc8830c33df941107325778a2e9c3e135f5404b2311ba47ec4bc6d23c5b",
+    "recorded_at": "2026-09-15T04:54:32.940823+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S18",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "2e36708cdf9a46166042.json",
+    "bytes": 2897,
+    "sha256": "a15ce7920b57739e29fe42bedb926ee34364e6d6aac00cab6836a6db57da3baa",
+    "recorded_at": "2026-09-15T04:54:32.941419+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S18",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "b5ed89b2f156c5ea6b13.json",
+    "bytes": 3332,
+    "sha256": "6cf72535d08b5e3da69ba70f58478d9b300f60cb6f297509cd3392f9bcf02eb6",
+    "recorded_at": "2026-09-15T04:54:32.941977+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S17"
+    },
+    "file": "80d66ef02a09ae730232.json",
+    "bytes": 420,
+    "sha256": "e12edc79b4a71a8ee1259d7a45c4af21fff2560da54af5199854c1a3efccea94",
+    "recorded_at": "2026-09-15T04:54:32.942548+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S17",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "929a88964f3750a25ee7.json",
+    "bytes": 2897,
+    "sha256": "8b8ffd2f55e83646c89a9e76af1794ae6062999561a84767e6338a2cb8b0334a",
+    "recorded_at": "2026-09-15T04:54:32.943149+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S17",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "0b5b18c82154a47e8b85.json",
+    "bytes": 3342,
+    "sha256": "00818ea8be3238722e2a655dc4a031d6b995cb1e16342be8b64a18602ab23974",
+    "recorded_at": "2026-09-15T04:54:32.943678+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S16"
+    },
+    "file": "21cc33425eae07a2aa9b.json",
+    "bytes": 685,
+    "sha256": "1d537aeb904e6b44435821fcfa4886a5c62f1afff07ed6810d0be2e730f00708",
+    "recorded_at": "2026-09-15T04:54:32.944244+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S16",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "0cf08b0bc8971587751c.json",
+    "bytes": 6053,
+    "sha256": "c03f3d47e59e4f551c7841e3097b6feff73301bdfe2ffa8aade32eaf5ad283e9",
+    "recorded_at": "2026-09-15T04:54:32.945291+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S16",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "cb49b55cb9da1bd82f56.json",
+    "bytes": 4912,
+    "sha256": "36e4d87d221de883d5572e09a902bfa630cef776461038b4648bd71f87b5e5bf",
+    "recorded_at": "2026-09-15T04:54:32.946081+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S15"
+    },
+    "file": "7ad14bdf1917eac5e0d6.json",
+    "bytes": 412,
+    "sha256": "838db3e6a81a57e9abffaa93b2b0c36c02ed6b02a4ed6e868269ea8f736def80",
+    "recorded_at": "2026-09-15T04:54:32.946640+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S15",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "a670e63bf07442a7cb34.json",
+    "bytes": 6053,
+    "sha256": "aa24f9cbe9cfd03681600aa681b9cf4a4c41bc0c09f5fb53c5de29e4bace9d7c",
+    "recorded_at": "2026-09-15T04:54:32.947263+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S15",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "e0937da5d556366866a1.json",
+    "bytes": 4912,
+    "sha256": "2f5010e923c233bdf45ecf1bb1912e6ee074f4292e38e590c183aaba9610a293",
+    "recorded_at": "2026-09-15T04:54:32.948113+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S14"
+    },
+    "file": "c85685f84cbbca9f63a3.json",
+    "bytes": 394,
+    "sha256": "7640b35fff56bc6a1fdb729da819019d1f57ccb0d5bc4994626ebe685b7d82b0",
+    "recorded_at": "2026-09-15T04:54:32.948838+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S14",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "6c118ce6af7c52719079.json",
+    "bytes": 6053,
+    "sha256": "8b76d8f09f9bd7ef38e9d4eaf7100e31cb6ad13003c50cb0a7a678679daccd02",
+    "recorded_at": "2026-09-15T04:54:32.949505+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S14",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "aeb33073012e8395929a.json",
+    "bytes": 4912,
+    "sha256": "a67eed04f4f950278b0164f12247970f7af2214eb983409ef31997f2e2f21636",
+    "recorded_at": "2026-09-15T04:54:32.950152+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S13"
+    },
+    "file": "6aba25d50fc59aaec63a.json",
+    "bytes": 558,
+    "sha256": "0e5d705fb3360a40558ef94268fe28d198f0d4483c0a98cd9e9e7d533c965cb9",
+    "recorded_at": "2026-09-15T04:54:32.950711+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S13",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "a6652f85fe61b4370ea7.json",
+    "bytes": 6054,
+    "sha256": "f222181d622b618289822039e2b3404dcea033c0f305815fd09e60d04ba97eaa",
+    "recorded_at": "2026-09-15T04:54:32.951309+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S13",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "de1dfc0b895f2566f782.json",
+    "bytes": 4912,
+    "sha256": "67428c0adf8b44daa07402e7ab69f19a71fbbe450184602afc531a9c42bb4b31",
+    "recorded_at": "2026-09-15T04:54:32.951894+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S12"
+    },
+    "file": "24ec60c5c6cb824ea302.json",
+    "bytes": 368,
+    "sha256": "53fe502acb80e1c6a44ed626e3344b024a58c9ed301c40126674d74b9ae821e2",
+    "recorded_at": "2026-09-15T04:54:32.952551+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S12",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "5652537e23947a662013.json",
+    "bytes": 6054,
+    "sha256": "c6e1fcc173e4c5da6bea6da607a97727aae8887c6bc645f3c963b97092a1d4ee",
+    "recorded_at": "2026-09-15T04:54:32.953266+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S12",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "39c31bfc2442a4e527c8.json",
+    "bytes": 4912,
+    "sha256": "d8f2ad78e05bed7726caa997aac2c557dfce2be1e16d76662826cf7912bd3cf8",
+    "recorded_at": "2026-09-15T04:54:32.953879+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S11"
+    },
+    "file": "20ae4ff1bea4bb4dedb7.json",
+    "bytes": 376,
+    "sha256": "3919a4349a1b354bd3a1c9b6b6430f3ea485ded884a8ca6c7ee55ccf039799af",
+    "recorded_at": "2026-09-15T04:54:32.954621+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S11",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "4b08604591216f07915d.json",
+    "bytes": 6054,
+    "sha256": "2cac508c1d52966ded926ca2318fea37e5d98d133570942d5bee68a29da0ff59",
+    "recorded_at": "2026-09-15T04:54:32.955284+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S11",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "517e6700df6f3989a5b5.json",
+    "bytes": 4912,
+    "sha256": "33955da49b68acf960af526a338b7ed7609e52a548c3224e5b9fdb62605b45c4",
+    "recorded_at": "2026-09-15T04:54:32.956164+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S7"
+    },
+    "file": "5b23f109038537678820.json",
+    "bytes": 399,
+    "sha256": "05603cdb55b95ec6f05156613157d0570eca0935cacbc40cc459ec8099839e1d",
+    "recorded_at": "2026-09-15T04:54:32.956836+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S7",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "4c96be68cc96ac7c1a3c.json",
+    "bytes": 2289,
+    "sha256": "bafe69ce281c8427dc6049c456cc53a4f2d1d6dbaed8946323b53d5860a09419",
+    "recorded_at": "2026-09-15T04:54:32.957517+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S7",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "60c2acfc29a544614bad.json",
+    "bytes": 1984,
+    "sha256": "e89aea2bccd1843e3e9b32f4a1c0646e8001d9b39e32bdc74368f796d657da35",
+    "recorded_at": "2026-09-15T04:54:32.958576+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S6"
+    },
+    "file": "f133bdc048f5cf665798.json",
+    "bytes": 399,
+    "sha256": "b04397cb2960aacb6334f6f8a9570c63ee71a1fce5d9a11942cbaf554e1669ea",
+    "recorded_at": "2026-09-15T04:54:32.959231+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S6",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "f4472d04e26cc04b09a9.json",
+    "bytes": 5578,
+    "sha256": "d89f775177eb5e0b0aee1d296e7f2bb11745ca182eb805286dede06a091695f7",
+    "recorded_at": "2026-09-15T04:54:32.959903+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S6",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "86b95a7c8e1af7ffddcd.json",
+    "bytes": 5342,
+    "sha256": "89f61737bbd7a126ddec49d1ee5b29c1c7b24dbedd284080c031dd78faa5d602",
+    "recorded_at": "2026-09-15T04:54:32.960688+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S5"
+    },
+    "file": "fb5527218015640bd65e.json",
+    "bytes": 344,
+    "sha256": "17816b197fd964cb2dd2412e7cf9d8c10a6447b241af34a5be74091534f177df",
+    "recorded_at": "2026-09-15T04:54:32.961434+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S5",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "e1230d181b1d844c03ce.json",
+    "bytes": 5578,
+    "sha256": "2b12f2a9682510db9792566293dafb571c1a00a006335129a03367a3a3fc51fb",
+    "recorded_at": "2026-09-15T04:54:32.962245+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S5",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "b664f0e32cb7c0171def.json",
+    "bytes": 5342,
+    "sha256": "aee5c1b7ae17cad0eadf3e1a3f5823374d9bb3df04c63cfedb7b7a40e2e3990c",
+    "recorded_at": "2026-09-15T04:54:32.963527+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S4"
+    },
+    "file": "75126f88e4a5b27aee25.json",
+    "bytes": 329,
+    "sha256": "7d6328a8bed94bfb304f7818d843d25e9a50c910e0b5b5223c44590c9ca53628",
+    "recorded_at": "2026-09-15T04:54:32.964261+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S4",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "06fdb4565e90baa5d6ff.json",
+    "bytes": 1167,
+    "sha256": "14b5ef17d3d358f67f0f00a4fd36741da29784c7b3ff6d27c449220133ceaf21",
+    "recorded_at": "2026-09-15T04:54:32.964976+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S4",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "5b2e4b8548a9d28723d1.json",
+    "bytes": 1245,
+    "sha256": "29262b09ed3d63a3571ac720a430669a99925d33771a78c8ef78d9af82b97318",
+    "recorded_at": "2026-09-15T04:54:32.965676+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S3"
+    },
+    "file": "161adb5fc00501140d6d.json",
+    "bytes": 649,
+    "sha256": "6deb47522036356acbb40ad854ca1363d935b902436ef0ab27923b1d251d7a86",
+    "recorded_at": "2026-09-15T04:54:32.966466+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S3",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "f62806099a06a61aeb56.json",
+    "bytes": 5535,
+    "sha256": "554f4d20ad2a81b97eca5c55c7e862aec3b37116b2dfc03c11437bf901e46b65",
+    "recorded_at": "2026-09-15T04:54:32.967241+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S3",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "4ec4b3a40e205d925c10.json",
+    "bytes": 5342,
+    "sha256": "209740ef2ff73e7cb933f080be7af9f0c120be938d8eaba37c2a743d7e3e522f",
+    "recorded_at": "2026-09-15T04:54:32.968140+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S2"
+    },
+    "file": "087c0040f956c3a8ccb7.json",
+    "bytes": 408,
+    "sha256": "a05e6981eb5485a6a35385341aaff09e1c6544c5eab3d14be779eb292007f868",
+    "recorded_at": "2026-09-15T04:54:32.968835+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S2",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "f50f827ef98397e63cc7.json",
+    "bytes": 5535,
+    "sha256": "9990439daf8d05299ac619921b124ea8c7bad0bf605e639b44293d7618bc6363",
+    "recorded_at": "2026-09-15T04:54:32.971400+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S2",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "91412fb67da71638e006.json",
+    "bytes": 5385,
+    "sha256": "40cc5cf1eb62dfa8bd2efb421fa7984c081492472f96f17dfe0cf72cbf343161",
+    "recorded_at": "2026-09-15T04:54:32.972210+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S1"
+    },
+    "file": "b89905b8d849ed03028a.json",
+    "bytes": 539,
+    "sha256": "6f7df2afb38fb2f4e94ab89fc66ce9f497bef22ed226398d39d81538f54bcd40",
+    "recorded_at": "2026-09-15T04:54:32.973009+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S1",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "f1cbbd0d4dad15984290.json",
+    "bytes": 6330,
+    "sha256": "74ebc2df2ab1392c829c6de010397f476afb6937a566da4bf9790a05f2d38ec5",
+    "recorded_at": "2026-09-15T04:54:32.973874+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S1",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "ba20b8bc656fc24057df.json",
+    "bytes": 6399,
+    "sha256": "ffcb68d9cf22c129708e7ad485e117ef20c2201a9c85ef10a54d7e8e2160a7d7",
+    "recorded_at": "2026-09-15T04:54:32.974749+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S39"
+    },
+    "file": "6719438a33f8ef287450.json",
+    "bytes": 368,
+    "sha256": "536b8f42f8cbbb5554258bc449f99944dc592bf652d8ebd9eae6f9722bae8c15",
+    "recorded_at": "2026-09-15T04:54:32.975551+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S39",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "dee5cc18eac75e75a5b2.json",
+    "bytes": 5175,
+    "sha256": "c9649fbef46dabae5ce7959691f5fcff49c7793ea17730c971429a2846a7a933",
+    "recorded_at": "2026-09-15T04:54:32.976371+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S39",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "747437ac81754f4711f1.json",
+    "bytes": 5591,
+    "sha256": "b1dee61f87d4e3d9e55dacc3b7220145f602cab468bc010618556d21cc5f8266",
+    "recorded_at": "2026-09-15T04:54:32.977325+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S40"
+    },
+    "file": "c247735b36bca07249a7.json",
+    "bytes": 376,
+    "sha256": "30e122db88801a2586121b8a1fba1aae06ebcbfaa3a20ba98d54f319761343f1",
+    "recorded_at": "2026-09-15T04:54:32.978175+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S40",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "e0d445338258a0dfa02b.json",
+    "bytes": 5175,
+    "sha256": "5479ffd81ef577522f22278ce71960d58e807ce89c0c804c2406035bb7c405ba",
+    "recorded_at": "2026-09-15T04:54:32.979019+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S40",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "511f3a8215ab79f706da.json",
+    "bytes": 5591,
+    "sha256": "27eec093ee3a7f21b0ee93c6a8527a613c878dc0695562af2583e9d00935fa0d",
+    "recorded_at": "2026-09-15T04:54:32.979840+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S41"
+    },
+    "file": "df934a244ab40122c7c2.json",
+    "bytes": 394,
+    "sha256": "af0f0bd41957482461b4c7658c51e4453989a9f14881be2a01d6eb25ba078de8",
+    "recorded_at": "2026-09-15T04:54:32.980694+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S41",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "835c708bf6682309159c.json",
+    "bytes": 5175,
+    "sha256": "fe04b6db34272dd32b8411640aaa2a436c78d5af668de6a21ec2b22861428583",
+    "recorded_at": "2026-09-15T04:54:32.981801+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S41",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "3aa6105d4a43faf70467.json",
+    "bytes": 5591,
+    "sha256": "6a0afef4459af493027c7ebe22bfd20fc1574d3d237660824ffc38cebfc64e3d",
+    "recorded_at": "2026-09-15T04:54:32.983270+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S42"
+    },
+    "file": "2cab8c61acb130e7622b.json",
+    "bytes": 421,
+    "sha256": "46c438c39ad453c747e61afc983b802cd4e91196a1b05f74e9100aa5cb9a1017",
+    "recorded_at": "2026-09-15T04:54:32.984131+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S42",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "0ce37ef726f5187a5659.json",
+    "bytes": 5175,
+    "sha256": "93b75858cb8dfc06eb73fbc0590a37d0d0eeb5251d4503ee3ac38a757578b301",
+    "recorded_at": "2026-09-15T04:54:32.985214+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S42",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "2e6c5f8e9ae0b634c6f7.json",
+    "bytes": 5578,
+    "sha256": "db496a5dfd1fd30dc8f424ffa8e5530f98a9b5a311b12f324d39a6cc7eff08f6",
+    "recorded_at": "2026-09-15T04:54:32.986219+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S45"
+    },
+    "file": "42c432eaddef06962a97.json",
+    "bytes": 359,
+    "sha256": "4da06c4ad6f6d23b4a133350af1126e76ea2a00fb099f93bddc0d843ddc3a4be",
+    "recorded_at": "2026-09-15T04:54:32.987042+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S45",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "0a31acdff7de42b1f4bc.json",
+    "bytes": 9821,
+    "sha256": "915c7461aff3a304790fe816d5e947da46f0cee53da67393ed27ff0587e1c9d7",
+    "recorded_at": "2026-09-15T04:54:32.987976+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S45",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "6ef50091d1f39f79e914.json",
+    "bytes": 5578,
+    "sha256": "b73f743f18ef39519f82e0bb1218637d69cd2bc84ea8119a859b99c9ba53dc3f",
+    "recorded_at": "2026-09-15T04:54:32.988819+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S44"
+    },
+    "file": "6d26a14f50df7ef44d31.json",
+    "bytes": 359,
+    "sha256": "033462c4ab2b8f384f58ffc648e412f42138fe7568d066c014791069f4d516d4",
+    "recorded_at": "2026-09-15T04:54:32.989966+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S44",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "8dccf6751492ea742f82.json",
+    "bytes": 9821,
+    "sha256": "840114085f947f18f8b7be645e5e88c76c5453b98553700859693eba87f80c49",
+    "recorded_at": "2026-09-15T04:54:32.990949+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S44",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "bb13bb5b207dee7de849.json",
+    "bytes": 5578,
+    "sha256": "949e2acf5860ceac95198c1785bd00779324c581f5ddf9f78b96bf7a43f62c41",
+    "recorded_at": "2026-09-15T04:54:32.991900+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S43"
+    },
+    "file": "27cdc728c93228546f3e.json",
+    "bytes": 368,
+    "sha256": "fcc69c700e6cc74a4160c77a6b4edb89831694560e618ab7e4a9a91fcb2449e3",
+    "recorded_at": "2026-09-15T04:54:32.992796+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S43",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "634ae8b0239085481e07.json",
+    "bytes": 9821,
+    "sha256": "ed224382e2972be692ee2501037ea6ad044f2d2fbcd29f882e8b27af7a87e7b5",
+    "recorded_at": "2026-09-15T04:54:32.993844+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S43",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "77937928602ab9a0b144.json",
+    "bytes": 5578,
+    "sha256": "c10065a1e2b0f9207f65cee4beb713f32299a3d6de4014f887b8cb7f7a00ff28",
+    "recorded_at": "2026-09-15T04:54:32.994774+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "U5"
+    },
+    "file": "f1b9bbde1ce2cacd156f.json",
+    "bytes": 381,
+    "sha256": "b8e7f38a3ea1ed147f60f8a518cc14f04eaa655824856c01675bc69d9a20ee51",
+    "recorded_at": "2026-09-15T04:54:32.995824+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U5",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "85416da3aa8c0bae8758.json",
+    "bytes": 9792,
+    "sha256": "dcb510215b66023c98c1ec86c8d2d416afa27e447c0ffa7033ba21291bc54104",
+    "recorded_at": "2026-09-15T04:54:32.997350+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U5",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "efe474e4c2f2216a86c0.json",
+    "bytes": 5565,
+    "sha256": "7e78cf0540c3632867cf60cfd845703938f20d661b30a5e87b875f03bd425b48",
+    "recorded_at": "2026-09-15T04:54:32.998413+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "U4"
+    },
+    "file": "d4dbaf21a796e7302bab.json",
+    "bytes": 354,
+    "sha256": "8a969cd59da9ebd335425f2c1b7b80c5f6667c9a8b3a693ac6830d7d48848950",
+    "recorded_at": "2026-09-15T04:54:32.999576+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U4",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "74161a8cc26cbbfcd004.json",
+    "bytes": 9792,
+    "sha256": "ba5bca7b665aa7f89664233f17b2904286da531cd8e46cb0fc778e46bd9f7659",
+    "recorded_at": "2026-09-15T04:54:33.000612+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U4",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "55353cb16626f9a334c5.json",
+    "bytes": 5565,
+    "sha256": "cf261398bd40cb3f426987187268cb5467c844a32746c41bdb4947b322f7ac7f",
+    "recorded_at": "2026-09-15T04:54:33.001557+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "U3"
+    },
+    "file": "9296b3f71edada122305.json",
+    "bytes": 354,
+    "sha256": "149c5b6713c4d2488f123135d346d3791e8e61244e85bea6869508fcfb4cfcf5",
+    "recorded_at": "2026-09-15T04:54:33.002612+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U3",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "bc5da61f85d86a150f3f.json",
+    "bytes": 13102,
+    "sha256": "bea6a596ce6c27b79ee85d06cc31abc72ae839c8c4f2c28c6e034a61e7ecf738",
+    "recorded_at": "2026-09-15T04:54:33.003683+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U3",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "71358554a633a1c36207.json",
+    "bytes": 5565,
+    "sha256": "5ec7c74e6f6afa07307198576747f883032f88b62068b281db8e73587ecee9fb",
+    "recorded_at": "2026-09-15T04:54:33.004648+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "U2"
+    },
+    "file": "7baddd2bd63147329bdf.json",
+    "bytes": 408,
+    "sha256": "4da7e6c3b449de234411094cc85ef7de0bd4f6a072d4aa16fa99bf7462ce27ec",
+    "recorded_at": "2026-09-15T04:54:33.005603+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U2",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "8dfdfdd7524f7a362a79.json",
+    "bytes": 13112,
+    "sha256": "d2003aadb204e5ebb0ab8a22c371d65d7e4a5d7621010d29ca71774aee61aeb8",
+    "recorded_at": "2026-09-15T04:54:33.006798+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U2",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "0bf7a31193a83d9ca5fb.json",
+    "bytes": 5565,
+    "sha256": "2c0820e0f7acc1518cb9a0e5f1cd6548e1658f2b36ce389b499a798018dfda31",
+    "recorded_at": "2026-09-15T04:54:33.007780+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "U1"
+    },
+    "file": "0d91cbeeccf7cf123455.json",
+    "bytes": 354,
+    "sha256": "e38a176a91835f6bcf52d12c2ba89eb83b76ab66ecdbb8405d8fa7e7df4b3bd4",
+    "recorded_at": "2026-09-15T04:54:33.008735+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "U1",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "fb5f7d670ffb7d15077a.json",
+    "bytes": 5526,
+    "sha256": "3888e6bfcb3e8da2dfab450ee008ca280ccafb68a0aa0e121ec1091dca90f053",
+    "recorded_at": "2026-09-15T04:54:33.009960+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S9"
+    },
+    "file": "2034f73c795087edd146.json",
+    "bytes": 281,
+    "sha256": "28cd1681d1600549bf2f15c3b5a0dce20cdf048a04bcd339ac368e7dc1f6e502",
+    "recorded_at": "2026-09-15T04:54:33.010962+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S9",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "b0791fd59059e190b195.json",
+    "bytes": 4296,
+    "sha256": "b85172ad98c875c4a588b7a2c14e6a175b19ed8a6b33d33b23501987e174ff17",
+    "recorded_at": "2026-09-15T04:54:33.013286+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S9",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "b353d353eb4aef898b93.json",
+    "bytes": 4175,
+    "sha256": "3423f1d4f81bfbd4cb0c94b4a8b3638e90af37f4119ac1df3310b5cca2f003ff",
+    "recorded_at": "2026-09-15T04:54:33.014464+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S8"
+    },
+    "file": "c86dd3e54da75faf731e.json",
+    "bytes": 480,
+    "sha256": "72707d64ea0a8435ecf20798987e9a65f9a835ae99a154c4978c4aa985706342",
+    "recorded_at": "2026-09-15T04:54:33.015484+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S8",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "3e5029a87d4c5e768e4f.json",
+    "bytes": 3364,
+    "sha256": "3da3676da5233a8c14c1ab300d87b7b0db8010ea1256cf15e5284555e3f1a3fb",
+    "recorded_at": "2026-09-15T04:54:33.016581+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S8",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "849f36a1e96a17772985.json",
+    "bytes": 3231,
+    "sha256": "52e94c485cf4f961f104da3cef669f6fc0f3a959acfe358b45865c0b363cd690",
+    "recorded_at": "2026-09-15T04:54:33.017696+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/busstop.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "id": "S10"
+    },
+    "file": "362f97e5061ce573fb26.json",
+    "bytes": 266,
+    "sha256": "fea4faa597e990845243e4a62fe9fee9870befe186df6488f4cb48ba6dc30b3c",
+    "recorded_at": "2026-09-15T04:54:33.019003+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S10",
+      "dropoff": "U1",
+      "date": "2026-09-15"
+    },
+    "file": "ce92e06609b674dcad5a.json",
+    "bytes": 1221,
+    "sha256": "1b0bcb5b0ececc405023d509df1f1b46791e98c322ab95c2d69e3e863819d1a4",
+    "recorded_at": "2026-09-15T04:54:33.020118+00:00",
+    "reused_cache": true
+  },
+  {
+    "endpoint": "https://sentetsu.busplus.jp/api/gettrips.cgi",
+    "method": "POST",
+    "purpose": "read-only public passenger information",
+    "parameters": {
+      "pickup": "S10",
+      "dropoff": "S27",
+      "date": "2026-09-15"
+    },
+    "file": "0b4835ca4b5be3e1c688.json",
+    "bytes": 1218,
+    "sha256": "20d3e0039bed35828a0220d2e7e217f0a0a55dc0b1335bc9878fa758f77716f4",
+    "recorded_at": "2026-09-15T04:54:33.021306+00:00",
+    "reused_cache": true
+  }
+]

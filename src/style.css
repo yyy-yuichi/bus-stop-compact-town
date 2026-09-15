@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+.stop-marker.is-location-review > span { color: #92400e; background: #fff7ed; border: 2px dashed #b45309; }
+.stop-marker.is-location-review .stop-number { background: #92400e; color: white; }
+.location-review { margin: 1rem 0; padding: 1rem; border: 1px dashed #b45309; border-radius: 12px; background: #fffbeb; color: #78350f; font-size: .875rem; line-height: 1.7; }
+.location-review p { margin: .65rem 0; }
+.location-review summary { padding: .5rem 0; cursor: pointer; }
+.location-review ol { list-style: decimal; padding-left: 1.25rem; }
+
 @theme {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
 }
@@ -142,10 +149,31 @@
 .stop-cluster.is-large>span { min-width:42px; height:42px; background:#194c3f; }
 .stop-cluster:hover>span { background:#0b7956; }
 .stop-marker { display:grid; place-items:center; background:transparent; border:0; }
-.stop-marker>span { width:9px; height:9px; border:1px solid #fff; border-radius:50%; background:#2a6085; box-shadow:0 1px 3px #173b3433; }
-.stop-marker.is-municipal>span { background:#aa6535; }
-.stop-marker:hover>span { width:13px; height:13px; }
-.stop-marker.is-selected>span { width:18px; height:18px; border:3px solid #fff; background:#17694e; box-shadow:0 0 0 5px #17694e35,0 2px 5px #173b3433; }
+.stop-marker>span { display:grid; place-items:center; width:28px; height:28px; border:2px solid #fffdf5; border-radius:8px; color:#fff; background:#20587f; box-shadow:0 2px 5px #173b3440; }
+.stop-marker>span>svg { width:20px; height:20px; }
+.stop-marker.is-municipal>span { background:#975322; }
+.stop-marker:hover>span { outline:2px solid #20587f; outline-offset:2px; }
+.stop-marker.is-selected>span { width:32px; height:32px; border:3px solid #fffdf5; background:#234e40; box-shadow:0 0 0 3px #edb943,0 2px 6px #224f4040; }
+.stop-marker>span { position:relative; }
+.stop-number { position:absolute; right:-12px; top:-8px; min-width:19px; padding:2px 4px; background:#fffdf5; color:#173b34; border:1px solid #557063; border-radius:5px; font:750 11px/1.2 var(--font-sans); }
+.boarding-guide { margin-bottom:20px; }
+.boarding-direction { font-size:17px; font-weight:750; line-height:1.65; overflow-wrap:anywhere; }
+.boarding-routes { margin:12px 0; font-size:12px; line-height:1.7; }
+.boarding-routes>div { margin:8px 0; }
+.boarding-routes dt { color:var(--muted); }
+.boarding-routes dd { font-weight:650; }
+.boarding-official { display:inline-flex; align-items:center; min-height:44px; color:var(--green); font-size:13px; text-decoration:underline; text-underline-offset:3px; }
+.boarding-choices { margin-top:12px; }
+.boarding-choices summary { min-height:44px; padding:12px 0; font-size:12px; font-weight:700; cursor:pointer; }
+.boarding-choice { display:flex; justify-content:space-between; align-items:center; gap:10px; width:100%; min-height:52px; padding:10px; margin:6px 0; border:1px solid var(--line); border-radius:10px; background:#fff; text-align:left; }
+.boarding-choice>span:first-child { min-width:0; }
+.boarding-choice strong { font-size:13px; overflow-wrap:anywhere; }
+.boarding-choice small { display:block; font-size:11px; line-height:1.6; margin-top:4px; color:var(--muted); overflow-wrap:anywhere; }
+.boarding-choice[aria-pressed=true] { border-color:#28775a; background:#edf7ef; }
+.boarding-choice-status { flex-shrink:0; font-size:10px; color:var(--green); }
+.boarding-evidence { margin-top:14px; font-size:11px; line-height:1.7; color:var(--muted); }
+.boarding-evidence summary { min-height:44px; display:flex; align-items:center; text-decoration:underline; text-underline-offset:3px; }
+.boarding-evidence a { display:inline-flex; min-height:44px; align-items:center; color:var(--green); text-decoration:underline; }
 .shop-marker { background:transparent; border:none; }
 .shop-marker>span { display:grid; place-items:center; width:29px; height:29px; border:2px solid white; border-radius:10px 10px 10px 2px; box-shadow:0 2px 5px #183d3733; color:#fff; font-size:12px; font-weight:750; }
 .shop-marker.is-selected>span { outline:3px solid #edb943; outline-offset:2px; }
@@ -226,7 +254,9 @@
 .guide-stop-label.leaflet-tooltip-left:before { border-left-color:#234e40; }
 .shop-marker>span { width:26px; height:26px; border-radius:8px; box-shadow:0 2px 3px #3b4f3930; }
 .shop-marker>span>svg { width:18px; height:18px; }
-.stop-marker:not(.is-selected)>span { width:6px; height:6px; opacity:0.5; box-shadow:none; }
-.stop-marker.is-selected>span { width:21px; height:21px; border:3px solid #fffdf5; background:#234e40; box-shadow:0 0 0 5px #fffdf5bb,0 2px 6px #224f402c; }
 .stop-cluster>span { background:#366452; border:3px solid #fffaf0; box-shadow:none; }
 .walking-legend { width:auto; max-width:210px; border:none; background:#fffdf4e8; box-shadow:none; }
+
+.nearby-facilities { margin:20px 0; }
+.nearby-filter { display:block; margin:12px 0; font-size:12px; color:#536358; }
+.nearby-filter select { display:block; width:100%; min-height:44px; margin-top:5px; padding:8px; border:1px solid #dce2d9; border-radius:10px; background:#fff; color:#263d32; }

@@ -7,6 +7,7 @@ import MapIcon from './MapIcon';
 import FacilityIcon from './FacilityIcon';
 import { searchPlaces } from './placeSearch';
 import BasemapSettings from './basemapPreferences';
+import { boardingTitle } from './boardingGuide';
 
 interface Props {
   stops: BusFeature[];
@@ -70,7 +71,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
         {matches.facilities.length > limits.facilities && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'facility-results-title', index: limits.facilities }; setLimits(p => ({ ...p, facilities: p.facilities + 12 })); }}>施設をさらに表示（残り{matches.facilities.length - limits.facilities}件）</button>}
       </section>}
       {matches.stops.length > 0 && <section aria-labelledby="stop-results-title"><h3 className="result-group-title" id="stop-results-title">バス停 <span>{matches.stops.length}件</span></h3>
-        {matches.stops.slice(0, limits.stops).map(stop => <button className="place-row" key={String(stop.id)} onClick={() => chooseStop(String(stop.id || stop.properties['@id']))}><span className={`stop-symbol${stop.properties.source_kind === 'municipal' ? ' municipal-symbol' : ''}`}><MapIcon name="bus" /></span><span><strong>{stop.properties['name:ja'] || stop.properties.name}</strong><small>{stop.properties.source_kind === 'municipal' ? `${stop.properties.city}の停留所データ` : stop.properties.operator || 'バス停'}</small></span><span className="row-arrow" aria-hidden="true">›</span></button>)}
+        {matches.stops.slice(0, limits.stops).map(stop => <button className="place-row" key={String(stop.id)} onClick={() => chooseStop(String(stop.id || stop.properties['@id']))}><span className={`stop-symbol${stop.properties.source_kind === 'municipal' ? ' municipal-symbol' : ''}`}><MapIcon name="bus" /></span><span><strong>{boardingTitle(stop)}</strong><small>{stop.properties.boarding_guide?.summary || (stop.properties.source_kind === 'municipal' ? `${stop.properties.city}の停留所データ` : stop.properties.operator || 'バス停')}</small></span><span className="row-arrow" aria-hidden="true">›</span></button>)}
         {matches.stops.length > limits.stops && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'stop-results-title', index: limits.stops }; setLimits(p => ({ ...p, stops: p.stops + 12 })); }}>バス停をさらに表示（残り{matches.stops.length - limits.stops}件）</button>}
       </section>}
       {!busy && !shoppingLoading && !shoppingError && !matches.stops.length && !matches.facilities.length && <p className="helper-text">該当する登録データがありません。短い名前でもお試しください。</p>}
@@ -78,7 +79,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
       <div className="panel-options" id="map-options">
         <BasemapSettings />
         <section className="category-section"><div className="section-label"><h3 id="facility-list-title">暮らしの施設</h3><span>表示する種類</span></div>
-          <p className="helper-text facility-map-note">バス停を選ぶと、徒歩圏にある施設が地図に表示されます。</p>
+          <p className="helper-text facility-map-note">バス停を選ぶと、周辺の施設が地図に表示されます。</p>
           <div className="category-groups">{FACILITY_GROUPS.map(group => <details key={group.id}><summary>{group.name}<span>{SHOPPING_CATEGORIES.filter(c => c.group === group.id && categories.includes(c.id)).length}/{SHOPPING_CATEGORIES.filter(c => c.group === group.id).length}種類</span></summary><div className="category-filters">{SHOPPING_CATEGORIES.filter(c => c.group === group.id).map(category => <button key={category.id} aria-pressed={categories.includes(category.id)} onClick={() => onCategories(categories.includes(category.id) ? categories.filter(c => c !== category.id) : [...categories, category.id])}>
             <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span><span>{category.name}<small className="category-count">{facilities.filter(f => categoryOf(f).id === category.id).length}件</small></span><span className="filter-check" aria-hidden="true">{categories.includes(category.id) ? '✓' : '+'}</span>
           </button>)}</div></details>)}</div>

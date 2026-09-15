@@ -1,0 +1,1915 @@
+{
+  "summary": {
+    "pairs": 5,
+    "confirmed_pairs": 4,
+    "held_pairs": 1,
+    "confirmed_points": 9,
+    "occurrence_states": {
+      "整合": 9,
+      "判定不能": 1
+    }
+  },
+  "pairs": [
+    {
+      "name": "南岩国駅",
+      "status": "確認済み",
+      "pair_distance_m": 68.1,
+      "points": [
+        {
+          "id": "iwakuni:i-625_01",
+          "source_stop_id": "i-625_01",
+          "original_coordinates": [
+            132.20653625381,
+            34.1364042067
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "611",
+              "trip_ids": [
+                "月・木曜日運行_08時17分_系統611"
+              ],
+              "stop_sequence": 35,
+              "previous_stop_id": "i-624_01",
+              "next_stop_id": "i-626_01",
+              "previous_stop_name": "ゆめタウン南岩国",
+              "next_stop_name": "高水学園",
+              "stop_headsign": "岩国駅（岩国医療センター・市役所 経由）",
+              "trip_headsigns": [
+                "岩国駅（欽明路 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "i-474_01",
+                "55_01",
+                "56_02",
+                "57_01",
+                "58_01",
+                "59_01",
+                "5_02",
+                "i-476_01",
+                "i-478_01",
+                "i-480_01",
+                "i-481_01",
+                "i-514_01",
+                "i-515_01",
+                "i-516_01",
+                "i-517_01",
+                "i-518_01",
+                "i-519_01",
+                "i-554_01",
+                "i-555_01",
+                "i-581_01",
+                "i-583_01",
+                "i-592_01",
+                "i-595_01",
+                "i-600_01",
+                "i-606_01",
+                "i-608_01",
+                "i-610_01",
+                "i-612_01",
+                "i-614_01",
+                "i-616_01",
+                "i-619_01",
+                "i-622_01",
+                "i-623_01",
+                "i-624_01",
+                "i-625_01",
+                "i-626_01",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-629_01",
+                "i-630_01",
+                "i-631_01",
+                "i-632_01",
+                "i-633_01",
+                "i-634_01",
+                "665_01",
+                "666_01",
+                "677_01",
+                "672_01",
+                "684_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 34967.805,
+                "current_s_m": 35461.885,
+                "next_s_m": 35738.454,
+                "shape_segment_index": 722,
+                "shape_pt_sequence_start": 723,
+                "shape_pt_sequence_end": 724,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.202978769,
+                    34.1330913566
+                  ],
+                  [
+                    132.206360129765,
+                    34.136183001823
+                  ],
+                  [
+                    132.20653625381,
+                    34.1364042067
+                  ],
+                  [
+                    132.207008348029,
+                    34.1369209937499
+                  ],
+                  [
+                    132.208068845524,
+                    34.1385330109
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "183569582",
+              "node_ids": [
+                "366527742",
+                "10699204900"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.2066816,
+                  34.1364536
+                ],
+                [
+                  132.2064595,
+                  34.1362243
+                ]
+              ],
+              "road_projection": [
+                132.20659553320166,
+                34.13636474310285
+              ],
+              "travel_from": [
+                132.20641686941306,
+                34.13625426459053
+              ],
+              "travel_to": [
+                132.20666709109747,
+                34.13654743026237
+              ],
+              "heading_deg": 35.3,
+              "signed_left_m": 7.016,
+              "point_road_distance_m": 7.016,
+              "local_shape_road_fit_m": 6.81,
+              "alignment": 0.998,
+              "local_turn_deg": 3.71,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        },
+        {
+          "id": "iwakuni:i-625_02",
+          "source_stop_id": "i-625_02",
+          "original_coordinates": [
+            132.206168281048,
+            34.1358735047
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "612",
+              "trip_ids": [
+                "月・木曜日運行_15時05分_系統612"
+              ],
+              "stop_sequence": 16,
+              "previous_stop_id": "i-626_02",
+              "next_stop_id": "i-624_02",
+              "previous_stop_name": "高水学園",
+              "next_stop_name": "ゆめタウン南岩国",
+              "stop_headsign": "六呂師口（ゆめタウン南岩国・通津公民館・大藤・欽明路 経由）",
+              "trip_headsigns": [
+                "六呂師口（市役所 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "684_02",
+                "672_02",
+                "677_02",
+                "666_02",
+                "665_02",
+                "i-634_02",
+                "i-633_02",
+                "i-632_02",
+                "i-631_02",
+                "i-630_02",
+                "i-629_02",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-626_02",
+                "i-625_02",
+                "i-624_02",
+                "i-623_02",
+                "i-622_02",
+                "i-619_02",
+                "i-616_02",
+                "i-614_02",
+                "i-612_02",
+                "i-610_02",
+                "i-608_02",
+                "i-606_02",
+                "i-600_02",
+                "i-595_02",
+                "i-592_02",
+                "i-583_02",
+                "i-581_02",
+                "i-555_02",
+                "i-554_02",
+                "i-519_01",
+                "i-518_01",
+                "i-517_01",
+                "i-516_01",
+                "i-515_01",
+                "i-514_02",
+                "i-481_01",
+                "i-480_01",
+                "i-478_01",
+                "i-476_01",
+                "5_01",
+                "59_01",
+                "58_01",
+                "57_01",
+                "56_01",
+                "55_01",
+                "i-474_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 6928.08,
+                "current_s_m": 7226.575,
+                "next_s_m": 7626.698,
+                "shape_segment_index": 55,
+                "shape_pt_sequence_start": 56,
+                "shape_pt_sequence_end": 57,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.207956897333,
+                    34.1381076122
+                  ],
+                  [
+                    132.206168281048,
+                    34.1358735047
+                  ],
+                  [
+                    132.20325931,
+                    34.1332083012
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "183569582",
+              "node_ids": [
+                "1337994598",
+                "366527452"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.2063717,
+                  34.1361337
+                ],
+                [
+                  132.2057302,
+                  34.1355217
+                ]
+              ],
+              "road_projection": [
+                132.20612878695815,
+                34.13590195755009
+              ],
+              "travel_from": [
+                132.20628812300325,
+                34.13602319572835
+              ],
+              "travel_to": [
+                132.20602287719797,
+                34.135740285481376
+              ],
+              "heading_deg": 217.9,
+              "signed_left_m": 4.829,
+              "point_road_distance_m": 4.829,
+              "local_shape_road_fit_m": 4.083,
+              "alignment": 0.999,
+              "local_turn_deg": 8.568,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        }
+      ],
+      "pairing_claim": "同名原2点の個別対応を確認する単位。単純な上下の対とは限らない。"
+    },
+    {
+      "name": "寿橋",
+      "status": "保留",
+      "pair_distance_m": 73.2,
+      "points": [
+        {
+          "id": "iwakuni:i-634_01",
+          "source_stop_id": "i-634_01",
+          "original_coordinates": [
+            132.21687214,
+            34.1589893355
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "611",
+              "trip_ids": [
+                "月・木曜日運行_08時17分_系統611"
+              ],
+              "stop_sequence": 45,
+              "previous_stop_id": "i-633_01",
+              "next_stop_id": "665_01",
+              "previous_stop_name": "大薮",
+              "next_stop_name": "今津",
+              "stop_headsign": "岩国駅（市役所 経由）",
+              "trip_headsigns": [
+                "岩国駅（欽明路 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "i-474_01",
+                "55_01",
+                "56_02",
+                "57_01",
+                "58_01",
+                "59_01",
+                "5_02",
+                "i-476_01",
+                "i-478_01",
+                "i-480_01",
+                "i-481_01",
+                "i-514_01",
+                "i-515_01",
+                "i-516_01",
+                "i-517_01",
+                "i-518_01",
+                "i-519_01",
+                "i-554_01",
+                "i-555_01",
+                "i-581_01",
+                "i-583_01",
+                "i-592_01",
+                "i-595_01",
+                "i-600_01",
+                "i-606_01",
+                "i-608_01",
+                "i-610_01",
+                "i-612_01",
+                "i-614_01",
+                "i-616_01",
+                "i-619_01",
+                "i-622_01",
+                "i-623_01",
+                "i-624_01",
+                "i-625_01",
+                "i-626_01",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-629_01",
+                "i-630_01",
+                "i-631_01",
+                "i-632_01",
+                "i-633_01",
+                "i-634_01",
+                "665_01",
+                "666_01",
+                "677_01",
+                "672_01",
+                "684_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 40197.361,
+                "current_s_m": 40491.936,
+                "next_s_m": 41123.615,
+                "shape_segment_index": 757,
+                "shape_pt_sequence_start": 758,
+                "shape_pt_sequence_end": 759,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.216215804619,
+                    34.156423764
+                  ],
+                  [
+                    132.216821908951,
+                    34.1580677357526
+                  ],
+                  [
+                    132.216882492283,
+                    34.1582943697138
+                  ],
+                  [
+                    132.21687214,
+                    34.1589893355
+                  ],
+                  [
+                    132.216972112656,
+                    34.1595299014146
+                  ],
+                  [
+                    132.216971763447,
+                    34.1599927571777
+                  ],
+                  [
+                    132.216553629848,
+                    34.1609856419145
+                  ],
+                  [
+                    132.216124476406,
+                    34.1618888238676
+                  ],
+                  [
+                    132.215230542537,
+                    34.1632043277495
+                  ],
+                  [
+                    132.215081153652,
+                    34.163613871999
+                  ],
+                  [
+                    132.21502039919,
+                    34.1643166266999
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "119025383",
+              "node_ids": [
+                "1338103998",
+                "1338103945"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP"
+              },
+              "road_segment": [
+                [
+                  132.2168886,
+                  34.1584432
+                ],
+                [
+                  132.2169275,
+                  34.1590614
+                ]
+              ],
+              "road_projection": [
+                132.21692282742885,
+                34.15898714335494
+              ],
+              "travel_from": [
+                132.21687481606338,
+                34.158809686963444
+              ],
+              "travel_to": [
+                132.2169049830721,
+                34.159166922512576
+              ],
+              "heading_deg": 4.0,
+              "signed_left_m": 4.684,
+              "point_road_distance_m": 4.684,
+              "local_shape_road_fit_m": 5.258,
+              "alignment": 1.0,
+              "local_turn_deg": 9.424,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        },
+        {
+          "id": "iwakuni:i-634_02",
+          "source_stop_id": "i-634_02",
+          "original_coordinates": [
+            132.217077716,
+            34.1596246073
+          ],
+          "status": "保留",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "612",
+              "trip_ids": [
+                "月・木曜日運行_15時05分_系統612"
+              ],
+              "stop_sequence": 6,
+              "previous_stop_id": "665_02",
+              "next_stop_id": "i-633_02",
+              "previous_stop_name": "今津",
+              "next_stop_name": "大薮",
+              "stop_headsign": "六呂師口（岩国医療センター・ゆめタウン南岩国・通津公民館・大藤・欽明路 経由）",
+              "trip_headsigns": [
+                "六呂師口（市役所 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "684_02",
+                "672_02",
+                "677_02",
+                "666_02",
+                "665_02",
+                "i-634_02",
+                "i-633_02",
+                "i-632_02",
+                "i-631_02",
+                "i-630_02",
+                "i-629_02",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-626_02",
+                "i-625_02",
+                "i-624_02",
+                "i-623_02",
+                "i-622_02",
+                "i-619_02",
+                "i-616_02",
+                "i-614_02",
+                "i-612_02",
+                "i-610_02",
+                "i-608_02",
+                "i-606_02",
+                "i-600_02",
+                "i-595_02",
+                "i-592_02",
+                "i-583_02",
+                "i-581_02",
+                "i-555_02",
+                "i-554_02",
+                "i-519_01",
+                "i-518_01",
+                "i-517_01",
+                "i-516_01",
+                "i-515_01",
+                "i-514_02",
+                "i-481_01",
+                "i-480_01",
+                "i-478_01",
+                "i-476_01",
+                "5_01",
+                "59_01",
+                "58_01",
+                "57_01",
+                "56_01",
+                "55_01",
+                "i-474_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 1670.395,
+                "current_s_m": 2082.173,
+                "next_s_m": 2503.663,
+                "shape_segment_index": 18,
+                "shape_pt_sequence_start": 19,
+                "shape_pt_sequence_end": 20,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.215448940238,
+                    34.1630549616333
+                  ],
+                  [
+                    132.216138180106,
+                    34.161895390638
+                  ],
+                  [
+                    132.216860743604,
+                    34.160387477704
+                  ],
+                  [
+                    132.217077716,
+                    34.1596246073
+                  ],
+                  [
+                    132.216982841492,
+                    34.1590774841379
+                  ],
+                  [
+                    132.216886281967,
+                    34.1583770489388
+                  ],
+                  [
+                    132.216839809745,
+                    34.1581403936105
+                  ],
+                  [
+                    132.216189321952,
+                    34.1559160462
+                  ]
+                ]
+              },
+              "status": "判定不能",
+              "reasons": [
+                "原点前後20mの進行方向変化が20度超で単一直線の道路側判定が不安定",
+                "分岐8m以内または分岐付近の20度超の曲折で乗降する枝の局所方向が不安定"
+              ],
+              "way_id": "119025383",
+              "node_ids": [
+                "1338104702",
+                "10702278616"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "source": "YahooJapan/ALPSMAP"
+              },
+              "road_segment": [
+                [
+                  132.2169678,
+                  34.1594238
+                ],
+                [
+                  132.2170351,
+                  34.1596869
+                ]
+              ],
+              "road_projection": [
+                132.21702168553065,
+                34.159634457995715
+              ],
+              "travel_from": [
+                132.2170279810914,
+                34.159799474197854
+              ],
+              "travel_to": [
+                132.21704687849743,
+                34.15944677331411
+              ],
+              "heading_deg": 177.5,
+              "signed_left_m": 5.286,
+              "point_road_distance_m": 5.286,
+              "local_shape_road_fit_m": 6.415,
+              "alignment": 0.968,
+              "local_turn_deg": 21.448,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": [
+                {
+                  "node_id": "1338103835",
+                  "distance_m": 10.46,
+                  "degree": 4
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pairing_claim": "同名原2点の個別対応を確認する単位。単純な上下の対とは限らない。"
+    },
+    {
+      "name": "尾津",
+      "status": "確認済み",
+      "pair_distance_m": 41.1,
+      "points": [
+        {
+          "id": "iwakuni:i-629_01",
+          "source_stop_id": "i-629_01",
+          "original_coordinates": [
+            132.211527016,
+            34.1422304959
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "611",
+              "trip_ids": [
+                "月・木曜日運行_08時17分_系統611"
+              ],
+              "stop_sequence": 40,
+              "previous_stop_id": "i-627_02",
+              "next_stop_id": "i-630_01",
+              "previous_stop_name": "愛宕１丁目",
+              "next_stop_name": "愛宕供用会館",
+              "stop_headsign": "岩国駅（市役所 経由）",
+              "trip_headsigns": [
+                "岩国駅（欽明路 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "i-474_01",
+                "55_01",
+                "56_02",
+                "57_01",
+                "58_01",
+                "59_01",
+                "5_02",
+                "i-476_01",
+                "i-478_01",
+                "i-480_01",
+                "i-481_01",
+                "i-514_01",
+                "i-515_01",
+                "i-516_01",
+                "i-517_01",
+                "i-518_01",
+                "i-519_01",
+                "i-554_01",
+                "i-555_01",
+                "i-581_01",
+                "i-583_01",
+                "i-592_01",
+                "i-595_01",
+                "i-600_01",
+                "i-606_01",
+                "i-608_01",
+                "i-610_01",
+                "i-612_01",
+                "i-614_01",
+                "i-616_01",
+                "i-619_01",
+                "i-622_01",
+                "i-623_01",
+                "i-624_01",
+                "i-625_01",
+                "i-626_01",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-629_01",
+                "i-630_01",
+                "i-631_01",
+                "i-632_01",
+                "i-633_01",
+                "i-634_01",
+                "665_01",
+                "666_01",
+                "677_01",
+                "672_01",
+                "684_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 37933.218,
+                "current_s_m": 38487.878,
+                "next_s_m": 38983.846,
+                "shape_segment_index": 740,
+                "shape_pt_sequence_start": 741,
+                "shape_pt_sequence_end": 742,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.207667042,
+                    34.1403923099
+                  ],
+                  [
+                    132.209068342754,
+                    34.1394228923268
+                  ],
+                  [
+                    132.211527016,
+                    34.1422304959
+                  ],
+                  [
+                    132.212218598066,
+                    34.1429632441405
+                  ],
+                  [
+                    132.212427733381,
+                    34.1464839091
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "183569582",
+              "node_ids": [
+                "1337993059",
+                "366527731"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.2123327,
+                  34.1429137
+                ],
+                [
+                  132.2114224,
+                  34.1420445
+                ]
+              ],
+              "road_projection": [
+                132.21157843162987,
+                34.14219348680948
+              ],
+              "travel_from": [
+                132.21139969776885,
+                34.14208510890266
+              ],
+              "travel_to": [
+                132.21166056173305,
+                34.142371990894944
+              ],
+              "heading_deg": 37.0,
+              "signed_left_m": 6.284,
+              "point_road_distance_m": 6.284,
+              "local_shape_road_fit_m": 6.105,
+              "alignment": 0.998,
+              "local_turn_deg": 2.062,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        },
+        {
+          "id": "iwakuni:i-629_02",
+          "source_stop_id": "i-629_02",
+          "original_coordinates": [
+            132.211915092,
+            34.1424115752
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "612",
+              "trip_ids": [
+                "月・木曜日運行_15時05分_系統612"
+              ],
+              "stop_sequence": 11,
+              "previous_stop_id": "i-630_02",
+              "next_stop_id": "i-627_01",
+              "previous_stop_name": "愛宕供用会館",
+              "next_stop_name": "愛宕１丁目",
+              "stop_headsign": "六呂師口（岩国医療センター・ゆめタウン南岩国・通津公民館・大藤・欽明路 経由）",
+              "trip_headsigns": [
+                "六呂師口（市役所 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "684_02",
+                "672_02",
+                "677_02",
+                "666_02",
+                "665_02",
+                "i-634_02",
+                "i-633_02",
+                "i-632_02",
+                "i-631_02",
+                "i-630_02",
+                "i-629_02",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-626_02",
+                "i-625_02",
+                "i-624_02",
+                "i-623_02",
+                "i-622_02",
+                "i-619_02",
+                "i-616_02",
+                "i-614_02",
+                "i-612_02",
+                "i-610_02",
+                "i-608_02",
+                "i-606_02",
+                "i-600_02",
+                "i-595_02",
+                "i-592_02",
+                "i-583_02",
+                "i-581_02",
+                "i-555_02",
+                "i-554_02",
+                "i-519_01",
+                "i-518_01",
+                "i-517_01",
+                "i-516_01",
+                "i-515_01",
+                "i-514_02",
+                "i-481_01",
+                "i-480_01",
+                "i-478_01",
+                "i-476_01",
+                "5_01",
+                "59_01",
+                "58_01",
+                "57_01",
+                "56_01",
+                "55_01",
+                "i-474_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 3627.44,
+                "current_s_m": 4121.021,
+                "next_s_m": 4627.118,
+                "shape_segment_index": 34,
+                "shape_pt_sequence_start": 35,
+                "shape_pt_sequence_end": 36,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.212681117809,
+                    34.1467470725666
+                  ],
+                  [
+                    132.212228936695,
+                    34.1427908246384
+                  ],
+                  [
+                    132.211915092,
+                    34.1424115752
+                  ],
+                  [
+                    132.20905111658,
+                    34.1393735502853
+                  ],
+                  [
+                    132.208354514,
+                    34.1397521222
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "183569582",
+              "node_ids": [
+                "1337993059",
+                "366527731"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.2123327,
+                  34.1429137
+                ],
+                [
+                  132.2114224,
+                  34.1420445
+                ]
+              ],
+              "road_projection": [
+                132.21185336469384,
+                34.14245600665921
+              ],
+              "travel_from": [
+                132.21203769106856,
+                34.14255972372263
+              ],
+              "travel_to": [
+                132.21178164373364,
+                34.14227001701653
+              ],
+              "heading_deg": 216.2,
+              "signed_left_m": 7.544,
+              "point_road_distance_m": 7.544,
+              "local_shape_road_fit_m": 7.235,
+              "alignment": 0.997,
+              "local_turn_deg": 3.557,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        }
+      ],
+      "pairing_claim": "同名原2点の個別対応を確認する単位。単純な上下の対とは限らない。"
+    },
+    {
+      "name": "愛宕供用会館",
+      "status": "確認済み",
+      "pair_distance_m": 37.5,
+      "points": [
+        {
+          "id": "iwakuni:i-630_01",
+          "source_stop_id": "i-630_01",
+          "original_coordinates": [
+            132.212427733381,
+            34.1464839091
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "611",
+              "trip_ids": [
+                "月・木曜日運行_08時17分_系統611"
+              ],
+              "stop_sequence": 41,
+              "previous_stop_id": "i-629_01",
+              "next_stop_id": "i-631_01",
+              "previous_stop_name": "尾津",
+              "next_stop_name": "門前",
+              "stop_headsign": "岩国駅（市役所 経由）",
+              "trip_headsigns": [
+                "岩国駅（欽明路 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "i-474_01",
+                "55_01",
+                "56_02",
+                "57_01",
+                "58_01",
+                "59_01",
+                "5_02",
+                "i-476_01",
+                "i-478_01",
+                "i-480_01",
+                "i-481_01",
+                "i-514_01",
+                "i-515_01",
+                "i-516_01",
+                "i-517_01",
+                "i-518_01",
+                "i-519_01",
+                "i-554_01",
+                "i-555_01",
+                "i-581_01",
+                "i-583_01",
+                "i-592_01",
+                "i-595_01",
+                "i-600_01",
+                "i-606_01",
+                "i-608_01",
+                "i-610_01",
+                "i-612_01",
+                "i-614_01",
+                "i-616_01",
+                "i-619_01",
+                "i-622_01",
+                "i-623_01",
+                "i-624_01",
+                "i-625_01",
+                "i-626_01",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-629_01",
+                "i-630_01",
+                "i-631_01",
+                "i-632_01",
+                "i-633_01",
+                "i-634_01",
+                "665_01",
+                "666_01",
+                "677_01",
+                "672_01",
+                "684_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 38487.878,
+                "current_s_m": 38983.846,
+                "next_s_m": 39313.239,
+                "shape_segment_index": 742,
+                "shape_pt_sequence_start": 743,
+                "shape_pt_sequence_end": 744,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.211527016,
+                    34.1422304959
+                  ],
+                  [
+                    132.212218598066,
+                    34.1429632441405
+                  ],
+                  [
+                    132.212427733381,
+                    34.1464839091
+                  ],
+                  [
+                    132.212548333522,
+                    34.1483917855441
+                  ],
+                  [
+                    132.212652065005,
+                    34.1486854854583
+                  ],
+                  [
+                    132.212780636433,
+                    34.1488805132741
+                  ],
+                  [
+                    132.213163107476,
+                    34.1492928946
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "119018171",
+              "node_ids": [
+                "1337996806",
+                "10699789530"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "lanes": "2",
+                "maxspeed": "50",
+                "source": "YahooJapan/ALPSMAP"
+              },
+              "road_segment": [
+                [
+                  132.2125519,
+                  34.1461237
+                ],
+                [
+                  132.2125593,
+                  34.1468797
+                ]
+              ],
+              "road_projection": [
+                132.21255541744804,
+                34.14648305009625
+              ],
+              "travel_from": [
+                132.2124170739633,
+                34.146304464331074
+              ],
+              "travel_to": [
+                132.21243907457657,
+                34.146663325141276
+              ],
+              "heading_deg": 2.9,
+              "signed_left_m": 11.784,
+              "point_road_distance_m": 11.784,
+              "local_shape_road_fit_m": 11.768,
+              "alignment": 0.999,
+              "local_turn_deg": 0.18,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": []
+            }
+          ]
+        },
+        {
+          "id": "iwakuni:i-630_02",
+          "source_stop_id": "i-630_02",
+          "original_coordinates": [
+            132.212681117809,
+            34.1467470725666
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "612",
+              "trip_ids": [
+                "月・木曜日運行_15時05分_系統612"
+              ],
+              "stop_sequence": 10,
+              "previous_stop_id": "i-631_02",
+              "next_stop_id": "i-629_02",
+              "previous_stop_name": "門前",
+              "next_stop_name": "尾津",
+              "stop_headsign": "六呂師口（岩国医療センター・ゆめタウン南岩国・通津公民館・大藤・欽明路 経由）",
+              "trip_headsigns": [
+                "六呂師口（市役所 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "684_02",
+                "672_02",
+                "677_02",
+                "666_02",
+                "665_02",
+                "i-634_02",
+                "i-633_02",
+                "i-632_02",
+                "i-631_02",
+                "i-630_02",
+                "i-629_02",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-626_02",
+                "i-625_02",
+                "i-624_02",
+                "i-623_02",
+                "i-622_02",
+                "i-619_02",
+                "i-616_02",
+                "i-614_02",
+                "i-612_02",
+                "i-610_02",
+                "i-608_02",
+                "i-606_02",
+                "i-600_02",
+                "i-595_02",
+                "i-592_02",
+                "i-583_02",
+                "i-581_02",
+                "i-555_02",
+                "i-554_02",
+                "i-519_01",
+                "i-518_01",
+                "i-517_01",
+                "i-516_01",
+                "i-515_01",
+                "i-514_02",
+                "i-481_01",
+                "i-480_01",
+                "i-478_01",
+                "i-476_01",
+                "5_01",
+                "59_01",
+                "58_01",
+                "57_01",
+                "56_01",
+                "55_01",
+                "i-474_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 3343.462,
+                "current_s_m": 3627.44,
+                "next_s_m": 4121.021,
+                "shape_segment_index": 32,
+                "shape_pt_sequence_start": 33,
+                "shape_pt_sequence_end": 34,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.213170646286,
+                    34.1491552991
+                  ],
+                  [
+                    132.212734222412,
+                    34.1487376609674
+                  ],
+                  [
+                    132.212668079558,
+                    34.1485494644948
+                  ],
+                  [
+                    132.212681117809,
+                    34.1467470725666
+                  ],
+                  [
+                    132.212228936695,
+                    34.1427908246384
+                  ],
+                  [
+                    132.211915092,
+                    34.1424115752
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "119018171",
+              "node_ids": [
+                "1337996806",
+                "10699789530"
+              ],
+              "road_tags": {
+                "highway": "tertiary",
+                "lanes": "2",
+                "maxspeed": "50",
+                "source": "YahooJapan/ALPSMAP"
+              },
+              "road_segment": [
+                [
+                  132.2125519,
+                  34.1461237
+                ],
+                [
+                  132.2125593,
+                  34.1468797
+                ]
+              ],
+              "road_projection": [
+                132.21255800990187,
+                34.1467479007839
+              ],
+              "travel_from": [
+                132.2126798181809,
+                34.146926731570844
+              ],
+              "travel_to": [
+                132.2126606748033,
+                34.14656821149395
+              ],
+              "heading_deg": 182.5,
+              "signed_left_m": 11.362,
+              "point_road_distance_m": 11.362,
+              "local_shape_road_fit_m": 10.862,
+              "alignment": 0.999,
+              "local_turn_deg": 5.757,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": [
+                {
+                  "node_id": "10699789530",
+                  "distance_m": 14.67,
+                  "degree": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pairing_claim": "同名原2点の個別対応を確認する単位。単純な上下の対とは限らない。"
+    },
+    {
+      "name": "東洋紡",
+      "status": "確認済み",
+      "pair_distance_m": 40.2,
+      "points": [
+        {
+          "id": "iwakuni:i-623_01",
+          "source_stop_id": "i-623_01",
+          "original_coordinates": [
+            132.199622686238,
+            34.1292707699
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "611",
+              "trip_ids": [
+                "月・木曜日運行_08時17分_系統611"
+              ],
+              "stop_sequence": 33,
+              "previous_stop_id": "i-622_01",
+              "next_stop_id": "i-624_01",
+              "previous_stop_name": "恵美須",
+              "next_stop_name": "ゆめタウン南岩国",
+              "stop_headsign": "岩国駅（ゆめタウン南岩国・岩国医療センター・市役所 経由）",
+              "trip_headsigns": [
+                "岩国駅（欽明路 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "i-474_01",
+                "55_01",
+                "56_02",
+                "57_01",
+                "58_01",
+                "59_01",
+                "5_02",
+                "i-476_01",
+                "i-478_01",
+                "i-480_01",
+                "i-481_01",
+                "i-514_01",
+                "i-515_01",
+                "i-516_01",
+                "i-517_01",
+                "i-518_01",
+                "i-519_01",
+                "i-554_01",
+                "i-555_01",
+                "i-581_01",
+                "i-583_01",
+                "i-592_01",
+                "i-595_01",
+                "i-600_01",
+                "i-606_01",
+                "i-608_01",
+                "i-610_01",
+                "i-612_01",
+                "i-614_01",
+                "i-616_01",
+                "i-619_01",
+                "i-622_01",
+                "i-623_01",
+                "i-624_01",
+                "i-625_01",
+                "i-626_01",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-629_01",
+                "i-630_01",
+                "i-631_01",
+                "i-632_01",
+                "i-633_01",
+                "i-634_01",
+                "665_01",
+                "666_01",
+                "677_01",
+                "672_01",
+                "684_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 34145.155,
+                "current_s_m": 34429.922,
+                "next_s_m": 34967.805,
+                "shape_segment_index": 716,
+                "shape_pt_sequence_start": 717,
+                "shape_pt_sequence_end": 718,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.199112687,
+                    34.1267478637
+                  ],
+                  [
+                    132.199622686238,
+                    34.1292707699
+                  ],
+                  [
+                    132.199795420728,
+                    34.1300776246134
+                  ],
+                  [
+                    132.199977636337,
+                    34.1303322182779
+                  ],
+                  [
+                    132.200081426021,
+                    34.1304046239668
+                  ],
+                  [
+                    132.202978769,
+                    34.1330913566
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "709045685",
+              "node_ids": [
+                "1337994159",
+                "10665108569"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.1996753,
+                  34.1293428
+                ],
+                [
+                  132.1995839,
+                  34.1288433
+                ]
+              ],
+              "road_projection": [
+                132.19966123265567,
+                34.129265922117206
+              ],
+              "travel_from": [
+                132.1995868674768,
+                34.12909357870443
+              ],
+              "travel_to": [
+                132.1996605571551,
+                34.12944766756512
+              ],
+              "heading_deg": 9.8,
+              "signed_left_m": 3.598,
+              "point_road_distance_m": 3.598,
+              "local_shape_road_fit_m": 4.847,
+              "alignment": 1.0,
+              "local_turn_deg": 0.551,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": false
+              },
+              "competing_roads": [],
+              "nearby_junctions": [
+                {
+                  "node_id": "1337994159",
+                  "distance_m": 8.66,
+                  "degree": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iwakuni:i-623_02",
+          "source_stop_id": "i-623_02",
+          "original_coordinates": [
+            132.199808807,
+            34.1295969227
+          ],
+          "status": "机上確認済み",
+          "field_checked": false,
+          "occurrences": [
+            {
+              "route_id": "叶木線_A",
+              "route_name": "叶木線",
+              "shape_id": "612",
+              "trip_ids": [
+                "月・木曜日運行_15時05分_系統612"
+              ],
+              "stop_sequence": 18,
+              "previous_stop_id": "i-624_02",
+              "next_stop_id": "i-622_02",
+              "previous_stop_name": "ゆめタウン南岩国",
+              "next_stop_name": "恵美須",
+              "stop_headsign": "六呂師口（通津公民館・大藤・欽明路 経由）",
+              "trip_headsigns": [
+                "六呂師口（市役所 経由）"
+              ],
+              "whole_sequence_stop_ids": [
+                "684_02",
+                "672_02",
+                "677_02",
+                "666_02",
+                "665_02",
+                "i-634_02",
+                "i-633_02",
+                "i-632_02",
+                "i-631_02",
+                "i-630_02",
+                "i-629_02",
+                "i-627_01",
+                "i-628_01",
+                "i-627_02",
+                "i-626_02",
+                "i-625_02",
+                "i-624_02",
+                "i-623_02",
+                "i-622_02",
+                "i-619_02",
+                "i-616_02",
+                "i-614_02",
+                "i-612_02",
+                "i-610_02",
+                "i-608_02",
+                "i-606_02",
+                "i-600_02",
+                "i-595_02",
+                "i-592_02",
+                "i-583_02",
+                "i-581_02",
+                "i-555_02",
+                "i-554_02",
+                "i-519_01",
+                "i-518_01",
+                "i-517_01",
+                "i-516_01",
+                "i-515_01",
+                "i-514_02",
+                "i-481_01",
+                "i-480_01",
+                "i-478_01",
+                "i-476_01",
+                "5_01",
+                "59_01",
+                "58_01",
+                "57_01",
+                "56_01",
+                "55_01",
+                "i-474_01"
+              ],
+              "matching": {
+                "rms_m": 0.0,
+                "max_stop_distance_m": 0.0,
+                "stop_count": 50,
+                "method": "monotonic-DP-all-stop-occurrences",
+                "shape_distance_field_present": false
+              },
+              "interval": {
+                "previous_s_m": 7626.698,
+                "current_s_m": 8148.382,
+                "next_s_m": 8483.157,
+                "shape_segment_index": 59,
+                "shape_pt_sequence_start": 60,
+                "shape_pt_sequence_end": 61,
+                "stop_shape_distance_m": 0.0,
+                "alternative_traversals": [],
+                "shape_coordinates": [
+                  [
+                    132.20325931,
+                    34.1332083012
+                  ],
+                  [
+                    132.200055090041,
+                    34.1303445011959
+                  ],
+                  [
+                    132.199887235551,
+                    34.1300060868514
+                  ],
+                  [
+                    132.199808807,
+                    34.1295969227
+                  ],
+                  [
+                    132.199272985,
+                    34.1266225886
+                  ]
+                ]
+              },
+              "status": "整合",
+              "reasons": [
+                "前後停車順で選定した局所進行方向と道路線が一致し、原点はその左側。机上整合であり標柱実見ではない"
+              ],
+              "way_id": "432578109",
+              "node_ids": [
+                "366527460",
+                "10665112215"
+              ],
+              "road_tags": {
+                "highway": "trunk",
+                "lanes": "2",
+                "maxspeed": "50",
+                "name": "国道188号",
+                "name:en": "National Highway Route 188",
+                "name:ja": "国道188号",
+                "ref": "188",
+                "source": "GSImaps/std",
+                "surface": "asphalt"
+              },
+              "road_segment": [
+                [
+                  132.199737,
+                  34.1296973
+                ],
+                [
+                  132.199698,
+                  34.1294697
+                ]
+              ],
+              "road_projection": [
+                132.19972156070207,
+                34.129607197840855
+              ],
+              "travel_from": [
+                132.19984281789246,
+                34.129774358567055
+              ],
+              "travel_to": [
+                132.19977679614595,
+                34.12941923127482
+              ],
+              "heading_deg": 188.8,
+              "signed_left_m": 8.133,
+              "point_road_distance_m": 8.133,
+              "local_shape_road_fit_m": 8.616,
+              "alignment": 1.0,
+              "local_turn_deg": 0.535,
+              "oneway_evidence": "tag absent; restriction not inferred",
+              "side_margin_sensitivity_m": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "5": true
+              },
+              "competing_roads": [],
+              "nearby_junctions": [
+                {
+                  "node_id": "10665112215",
+                  "distance_m": 15.46,
+                  "degree": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pairing_claim": "同名原2点の個別対応を確認する単位。単純な上下の対とは限らない。"
+    }
+  ],
+  "patterns": [
+    {
+      "route_id": "叶木線_A",
+      "shape_id": "611",
+      "trips": [
+        "月・木曜日運行_08時17分_系統611"
+      ],
+      "rms_m": 0.0,
+      "max_stop_distance_m": 0.0,
+      "stop_count": 50,
+      "method": "monotonic-DP-all-stop-occurrences",
+      "shape_distance_field_present": false
+    },
+    {
+      "route_id": "叶木線_A",
+      "shape_id": "612",
+      "trips": [
+        "月・木曜日運行_15時05分_系統612"
+      ],
+      "rms_m": 0.0,
+      "max_stop_distance_m": 0.0,
+      "stop_count": 50,
+      "method": "monotonic-DP-all-stop-occurrences",
+      "shape_distance_field_present": false
+    }
+  ],
+  "road_sources": [
+    "carriageways-first.json"
+  ],
+  "criteria": {
+    "interpretation": "原ID別の方面と道路側の机上整合。現地標柱・歩行接続の確認ではない。",
+    "direction_window_m": 20,
+    "max_turn_deg": 20,
+    "min_left_margin_m": 3,
+    "margin_is_official_accuracy": false,
+    "max_stop_shape_distance_m": 30,
+    "max_point_road_distance_m": 30,
+    "max_local_shape_road_fit_m": 12,
+    "min_alignment_cosine": 0.85,
+    "junction_uncertainty_radius_m": 8,
+    "competing_road_fit_delta_m": 3,
+    "alternative_traversal_separation_m": 40,
+    "alternative_total_match_rms_delta_m": 1,
+    "stop_sequence_matching": "全停車順の単調DP。前停留所と次停留所の区間内のみ。",
+    "oneway": "収録タグのみ。欠落は規制なしと断定しない。"
+  }
+}

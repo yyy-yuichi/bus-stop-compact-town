@@ -59,7 +59,7 @@ for (const stop of read('walking-onoda.json').pilot_stops) {
   }
 }
 const pilotHash = '#kind=pilot&id=node%2F5127585172';
-for (const hash of ['#kind=municipal&id=hikari:1_01&minutes=15', '#kind=municipal&id=iwakuni:1_01&speed=4', '#kind=national&id=hikari:1_01', '#kind=municipal&id=mlit-p11-22-35:1', '#kind=municipal&id=hikari:../bad']) assert.equal(readPlaceLink(hash), null, hash);
+for (const hash of ['#kind=municipal&id=hikari:1_01&minutes=20', '#kind=municipal&id=iwakuni:1_01&speed=4', '#kind=national&id=hikari:1_01', '#kind=municipal&id=mlit-p11-22-35:1', '#kind=municipal&id=hikari:../bad']) assert.equal(readPlaceLink(hash), null, hash);
 for (const invalidConditions of [
   'minutes=5', 'speed=3', 'minutes=&speed=3', 'minutes=5&speed=',
   'minutes=0&speed=3', 'minutes=15&speed=3', 'minutes=5.0&speed=3',
@@ -78,6 +78,14 @@ for (const stop of stops) for (const minutes of [5, 10, 15]) {
 }
 for (const conditions of ['minutes=0', 'minutes=20', 'minutes=5.0', 'minutes=', 'minutes=NaN', 'minutes=5&minutes=10', 'speed=4', 'minutes=15&speed=4']) {
   assert.equal(readPlaceLink(`#kind=national&id=mlit-p11-22-35%3A1&${conditions}`), null, conditions);
+  assert.equal(readPlaceLink(`#kind=municipal&id=hikari%3A4_02&${conditions}`), null, conditions);
+  assert.equal(readPlaceLink(`#kind=boarding&id=node%2F123&${conditions}`), null, conditions);
+}
+for (const point of [{ kind: 'municipal', id: 'hikari:4_02' }, { kind: 'boarding', id: 'node/123' }]) {
+  for (const minutes of [5, 10, 15]) {
+    const place = { ...point, minutes };
+    assert.deepEqual(readPlaceLink(new URL(placeLink('https://example.org/', place)).hash), place);
+  }
 }
 for (const invalid of [
   '', '#walking', '#kind=unknown&id=sunpark', '#kind=facility&id=../secret',

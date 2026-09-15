@@ -1,7 +1,7 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { INITIAL_VIEW, MAP_OPTIONS } from '../src/mapConfig';
-import { fitContent } from '../src/mapLayout';
+import { fitContent, focusContent } from '../src/mapLayout';
 
 const result = document.querySelector<HTMLPreElement>('#result')!;
 const current = document.querySelector<HTMLButtonElement>('#current')!;
@@ -33,6 +33,42 @@ async function run(reproduce: boolean) {
         checks.push({ gap, sequence, passed: map.getZoom() === expected.zoom && errorMeters < 1,
           zoom: map.getZoom(), expectedZoom: expected.zoom, errorMeters: Math.round(errorMeters) });
       }
+    }
+    if (!reproduce) {
+      const target = L.latLngBounds([[33.965, 130.940], [33.970, 130.946]]);
+      for (const gap of [0, 20, 80, 160]) {
+        fitContent(map, bounds);
+        focusContent(map, target, 17);
+        if (gap) await delay(gap);
+        fitContent(map, bounds);
+        await delay(750);
+        const errorMeters = map.getCenter().distanceTo(expected.center);
+        checks.push({ gap, sequence: 'fly-reset', passed: map.getZoom() === expected.zoom && errorMeters < 1,
+          zoom: map.getZoom(), expectedZoom: expected.zoom, errorMeters: Math.round(errorMeters) });
+      }
+      fitContent(map, target, true, 17);
+      const selected = { center: map.getCenter(), zoom: map.getZoom() };
+      fitContent(map, bounds);
+      const start = map.getCenter();
+      focusContent(map, target, 17);
+      await delay(100);
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches || !L.Browser.any3d;
+      const movedPartway = map.getCenter().distanceTo(start) > 1 && map.getCenter().distanceTo(selected.center) > 1;
+      checks.push({ gap: 100, sequence: reduced ? 'reduced-motion-focus' : 'fly-intermediate-frame',
+        passed: reduced ? map.getCenter().distanceTo(selected.center) < 1 : movedPartway,
+        zoom: map.getZoom(), expectedZoom: selected.zoom, errorMeters: Math.round(map.getCenter().distanceTo(selected.center)) });
+      await delay(650);
+      checks.push({ gap: 750, sequence: 'fly-finish',
+        passed: map.getZoom() === selected.zoom && map.getCenter().distanceTo(selected.center) < 1,
+        zoom: map.getZoom(), expectedZoom: selected.zoom, errorMeters: Math.round(map.getCenter().distanceTo(selected.center)) });
+      fitContent(map, bounds);
+      focusContent(map, L.latLngBounds([[34.4, 132.0]]), 16);
+      await delay(80);
+      focusContent(map, target, 17);
+      await delay(750);
+      checks.push({ gap: 80, sequence: 'fly-latest-selection-wins',
+        passed: map.getZoom() === selected.zoom && map.getCenter().distanceTo(selected.center) < 1,
+        zoom: map.getZoom(), expectedZoom: selected.zoom, errorMeters: Math.round(map.getCenter().distanceTo(selected.center)) });
     }
     const failed = checks.filter(c => !c.passed).length;
     result.textContent = JSON.stringify({ mode: reproduce ? 'before' : 'current',

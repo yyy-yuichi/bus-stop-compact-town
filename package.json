@@ -16,7 +16,13 @@
     "validate": "node scripts/validate-shopping.mjs",
     "build": "npm run typecheck && npm run validate && vite build && node scripts/drop-walk-data-from-dist.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:boarding": "node scripts/test-boarding-guide.mjs",
+    "test:nearby": "node scripts/test-nearby-facilities.mjs",
+    "test:boarding-walking": "node scripts/test-boarding-walking.mjs",
+    "test:bocho-regions": "node scripts/test-bocho-regions.mjs",
+    "test:bocho-districts": "node scripts/test-bocho-districts.mjs",
+    "test:boarding-connections": "node scripts/test-boarding-connections.mjs"
   },
   "dependencies": {
     "@maplibre/maplibre-gl-leaflet": "0.1.4",

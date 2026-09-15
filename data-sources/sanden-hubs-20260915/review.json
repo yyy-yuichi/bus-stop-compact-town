@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-09-14T23:28:10.402599+00:00",
+  "source_file_sha256": "f4f0e4ee86834d54791a28763c01375825aa7dc90c9db16587f712ebc079c3ec",
+  "official_diagrams": [
+    {
+      "url": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_shinshimonoseki.jpg",
+      "web_reference": "turn1view2"
+    },
+    {
+      "url": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_tyofueki.jpg",
+      "web_reference": "turn2view0"
+    },
+    {
+      "url": "https://www.sandenkotsu.co.jp/wp-content/uploads/2024/06/BG_odukieki.jpg",
+      "web_reference": "turn2view1"
+    }
+  ],
+  "method": "新下関は原番号と公式図の並び、小月は原番号と同じ側・向かい側を照合。長府B/Cは従来対応を保持。長府Aの原点対応は根拠不足のため保留。",
+  "unassigned_original_ids": [
+    "node/6924153238",
+    "node/6924153239"
+  ],
+  "unassigned_reason": "公式図には降車場の表示がなく、原2点 node/6924153238・node/6924153239 のどちらがAか識別できる根拠を確認できていません。",
+  "source_limit": "公式ページと図はWeb閲覧で確認。クラウド実行環境から原HTML・JPEGを直接保存する通信はタイムアウトしたため、原画像の保存済みとは扱わない。"
+}
