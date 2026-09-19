@@ -49,6 +49,18 @@ export function choiceText(stop: BusFeature) {
   };
 }
 
+/** Keep map hover text short; the selected-stop panel carries directions and source details. */
+export function choiceHoverLabel(stop: BusFeature): string {
+  const text = choiceText(stop);
+  return `${text.name}${text.number ? ` ${text.number}のりば` : ''}`;
+}
+
+/** Screen readers retain the full context that is intentionally omitted from the visual tooltip. */
+export function choiceAccessibleLabel(stop: BusFeature): string {
+  const text = choiceText(stop);
+  return `${choiceHoverLabel(stop)} ${text.direction} ${text.notes.join(' ')} ${text.source} ${text.id}`;
+}
+
 /** Selecting one record keeps the other choices available until the chooser is closed. */
 export function choiceReducer(state: StopChoiceSession | null, action: StopChoiceAction): StopChoiceSession | null {
   if (action.type === 'close') return null;

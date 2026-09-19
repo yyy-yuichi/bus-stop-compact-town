@@ -21,6 +21,7 @@
 - 木園：国の代表点と光市の2登録点が重なる3件を展開し、`hikari:6_01` を選ぶと詳細・徒歩圏が開く。
 - 西河原緑地：施設詳細を開いても徒歩圏の凡例と線が残る。
 - 390×844pxと320×700px：乗り場一覧が横にはみ出さず、本文にも横スクロールが出ない。
+- バス停のホバー表示：名称と確認済みの乗り場番号だけを1行で表示し、方面・確認状態・出典・原IDは詳細画面に残す。タッチ端末ではホバー専用表示を出さない。
 - 型検査、production build、release検査、`test:stop-selection`、地図・検索・乗り場・徒歩圏・施設・背景の対象テストが成功。
 
 国の徒歩圏R2はGitHub PagesのオリジンだけをCORS許可しているため、本人限定Sites v20からの直接取得は失敗していた。R2の公開範囲とCORSは変えず、本人限定Sitesでは固定した公開R2の徒歩圏JSONだけを同一サイト経由で取得する構成へ戻した。
@@ -32,5 +33,7 @@ commit `270b054b026856d51b5e2323f7110078765aafd3` をGitHub mainへ反映済み�
 [本人限定マップ](https://yamaguchi-bus-stop-compact-town.yyy-yuichi.chatgpt.site/) v21へ配信済み。アクセス設定は所有者1名のみ、外部利用者0名、許可グループ0件を維持。実配信では、城下町長府 `mlit-p11-22-35:3533` の15分徒歩圏と施設候補10件を読み込み、施設詳細を開いても徒歩15分の凡例と範囲が残ることを確認した。v20で確認した西河原・木園の乗り場選択機能も同じソースを引き継ぐ。
 
 [v21配信物](https://drive.google.com/file/d/1mQC4lx-awaaU6ckiZCRobjXop0VljXqf/view?usp=drivesdk) は案件Driveへ保存し、13,000,929 bytesを読み戻した。ソースはGitHub mainのcommit `d74c636af696904d57319b36a40bdae14f442101`、CI [run 35443329237](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35443329237) 成功。
+
+本人限定マップv22では、縦長になっていたバス停ホバー表示を短縮した。実配信の城下町長府で表示内容が名称だけ、幅74px・高さ32px・1行省略設定であることを確認した。読み上げ用ラベルには方面・確認状態・出典・原IDを維持している。Sitesソースは `820bbaf14b0a8296b9684f620a43e558af0ef171`、deploymentは `appgdep_6aae83ad1ad081918f3c20dde436b00a`。[v22配信物](https://drive.google.com/file/d/1SLhZ7z84gbJwMaW2ipudbJz4oKIUGvW2/view?usp=drivesdk) は案件Driveへ保存し、12,996,180 bytesを読み戻した。元のGitHubへのpushと一般公開マップの更新は行っていない。
 
 一般公開は別工程。GitHub Pagesはcommit `4a2275dee19f083559d517c67fb4b952e7117586` のまま。iPhone・Safari・現地利用者の操作確認は未実施。

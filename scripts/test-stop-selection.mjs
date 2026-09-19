@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { attachBoardingGuides } from '../src/boardingGuide.ts';
 import { nationalCatalog, municipalCatalog } from '../src/stopCatalog.ts';
-import { choiceReducer, choiceText, relatedStops } from '../src/stopChoiceModel.ts';
+import { choiceAccessibleLabel, choiceHoverLabel, choiceReducer, choiceText, relatedStops } from '../src/stopChoiceModel.ts';
 import { CHOICE_HEIGHT, CHOICE_WIDTH, contains, overlapGroups, pointRect, spiderLayout, touches } from '../src/stopSpiderLayout.ts';
 
 const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
@@ -17,12 +17,15 @@ assert(hikari);
 assert.deepEqual(relatedStops(hikari, stops).map(stop => stop.id), ['hikari:4_01', 'hikari:4_02']);
 assert.equal(choiceText(hikari).direction, hikari.properties.boarding_guide.summary, 'Chooser keeps the source wording');
 assert.equal(choiceText(hikari).number, null, 'A missing source number is not invented');
+assert.equal(choiceHoverLabel(hikari), choiceText(hikari).name, 'Hover shows only the name when no number is confirmed');
+assert(choiceAccessibleLabel(hikari).includes(choiceText(hikari).direction), 'The screen-reader label keeps direction details');
 const held = stops.find(stop => stop.properties.boarding_guide?.assignment_hold);
 assert(held);
 assert.equal(choiceText(held).number, null, 'A held number is not presented as confirmed');
 assert(choiceText(held).notes.includes('番号対応未確認'));
 const national = stops.find(stop => stop.properties.source_kind === 'national' && !stop.properties.boarding_guide);
 assert(national);
+assert(!choiceHoverLabel(national).includes(String(national.id)), 'Hover never exposes a source record ID');
 assert.deepEqual(relatedStops(national, stops), [], 'Nearby unreviewed records are never treated as one stop');
 
 let state = choiceReducer(null, { type: 'open', ids: ['a', 'b', 'a'], kind: 'overlap' });
@@ -55,5 +58,13 @@ assert.match(layerSource, /StopSelectionProvider/, 'The marker chooser owns one 
 const drawerSource = fs.readFileSync('src/BusStopDrawer.tsx', 'utf8');
 assert.equal((drawerSource.match(/<StopChoiceButton/g) || []).length, 1, 'The drawer has one related-stop entry point');
 assert(!fs.readFileSync('src/BoardingGuidePanel.tsx', 'utf8').includes('boarding-choices'), 'The old duplicate chooser is removed');
+const markerSource = fs.readFileSync('src/StopMarkers.tsx', 'utf8');
+assert.match(markerSource, /node\.removeAttribute\('title'\)/, 'A second native browser tooltip is not left on stop markers');
+assert.match(markerSource, /tooltip\.textContent = hoverLabel/, 'The visible tooltip uses the concise label');
+const selectionCss = fs.readFileSync('src/stopSelection.css', 'utf8');
+assert.match(selectionCss, /\.stop-choice-tooltip[^}]*white-space:nowrap[^}]*text-overflow:ellipsis/s,
+  'Long stop names stay on one bounded line');
+assert.match(selectionCss, /@media \(hover:none\), \(pointer:coarse\)[^{]*\{[^}]*\.leaflet-tooltip\.stop-choice-tooltip[^}]*display:none/s,
+  'Touch devices do not show a hover-only tooltip');
 
 console.log(JSON.stringify({ relatedChoices: 2, overlapGroups: groups.length, spiderCards: layout.length, searchTapContract: 'passed' }));

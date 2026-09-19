@@ -3,7 +3,7 @@ import L from 'leaflet';
 import type { BusFeature } from './types';
 import { clusterStops, stopCellSize } from './stopClusters';
 import { fitContent } from './mapLayout';
-import { choiceText, stopId } from './stopChoiceModel';
+import { choiceAccessibleLabel, choiceHoverLabel, choiceText, stopId } from './stopChoiceModel';
 import { CHOICE_HEIGHT, CHOICE_WIDTH, STOP_TARGET, contains, overlapGroups, pointRect, spiderLayout, touches } from './stopSpiderLayout';
 import type { DisplayPoint, DisplayRect } from './stopSpiderLayout';
 import { useStopSelection } from './StopSelection';
@@ -61,7 +61,8 @@ export default function StopMarkers({ map, stops, selected }: {
       const text = choiceText(stop), active = text.id === selected;
       const icon = document.createElement('span');
       icon.className = card ? 'stop-spider-card-content' : 'stop-icon-face';
-      const label = `${text.name} ${text.number ? `${text.number}のりば ` : ''}${text.direction} ${text.notes.join(' ')} ${text.source} ${text.id}`;
+      const accessibleLabel = choiceAccessibleLabel(stop);
+      const hoverLabel = choiceHoverLabel(stop);
       if (card) {
         const direction = document.createElement('strong'); direction.textContent = text.headline;
         const name = document.createElement('span'); name.textContent = `${text.name}${text.number ? ` ${text.number}のりば` : ''}`;
@@ -76,15 +77,16 @@ export default function StopMarkers({ map, stops, selected }: {
       }
       const marker = addMarker(position, icon,
         `${card ? 'stop-spider-card' : 'stop-marker stop-choice-marker'}${active ? ' is-selected' : ''}${relatedIds.has(text.id) ? ' is-related' : ''}${stop.properties.source_kind === 'municipal' ? ' is-municipal' : ''}${text.notes.some(note => /未確認|保留|候補/.test(note)) ? ' is-location-review' : ''}`,
-        label, () => select(text.id), card ? CHOICE_WIDTH : STOP_TARGET, card ? CHOICE_HEIGHT : STOP_TARGET,
+        accessibleLabel, () => select(text.id), card ? CHOICE_WIDTH : STOP_TARGET, card ? CHOICE_HEIGHT : STOP_TARGET,
         card ? 1600 : active ? 800 : relatedIds.has(text.id) ? 400 : 0);
       const node = marker.getElement();
       if (node) {
+        node.removeAttribute('title');
         node.dataset.stopId = text.id;
         node.dataset.displayKind = card ? 'spider' : 'origin';
         node.setAttribute('aria-pressed', String(active));
       }
-      const tooltip = document.createElement('span'); tooltip.textContent = label;
+      const tooltip = document.createElement('span'); tooltip.textContent = hoverLabel;
       marker.bindTooltip(tooltip, { direction: 'top', className: 'stop-choice-tooltip' });
       return marker;
     };
