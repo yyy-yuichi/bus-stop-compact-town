@@ -51824,6 +51824,2028 @@
         "reason": "公式の原座標と乗車する便の方面・停車順は取得。道路側との対応は保留：前後3原点が別の分岐間区間に分かれる。便別の経路線がないため通る分岐を特定できない。各原IDの区間候補はsection_matches。",
         "walking_notice": "乗る方面と原位置の道路側の対応に保留があります。この原点の徒歩圏・施設は未計算です。"
       }
+    },
+    "iwakuni:435_01": {
+      "group_id": "iwakuni:寺山",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "横吹",
+            "長田公会堂前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.161466752,
+        34.0328428066
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:436_01": {
+      "group_id": "iwakuni:長田公会堂前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "みどり病院前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.159964646,
+        34.0293281412
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:436_02": {
+      "group_id": "iwakuni:長田公会堂前",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "寺山"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.15861852981,
+        34.0287231397
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:438_01": {
+      "group_id": "iwakuni:みどり病院前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "大原"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.155890399048,
+        34.0266592405
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:438_02": {
+      "group_id": "iwakuni:みどり病院前",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "長田公会堂前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.15584278,
+        34.0266592405
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:439_01": {
+      "group_id": "iwakuni:長田",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "岩倉",
+            "老人福祉センター前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.162154909,
+        34.0278531952
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:440_01": {
+      "group_id": "iwakuni:岩倉",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "長田"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.16178746581,
+        34.0243080972667
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:440_02": {
+      "group_id": "iwakuni:岩倉",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "大原"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.161777942,
+        34.0242914306
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:441_01": {
+      "group_id": "iwakuni:老人福祉センター前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "由宇温泉"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.16628267219,
+        34.0293559909333
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:441_02": {
+      "group_id": "iwakuni:老人福祉センター前",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "長田"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.166292196,
+        34.0293976576
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:442_01": {
+      "group_id": "iwakuni:横吹",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "寺山"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.156206066,
+        34.0338694128
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:442_02": {
+      "group_id": "iwakuni:横吹",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "笠塚カープ練習場前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.156225113619,
+        34.0338860794667
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:443_01": {
+      "group_id": "iwakuni:笠塚カープ練習場前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "横吹"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.147547595,
+        34.0354830761
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:444_01": {
+      "group_id": "iwakuni:千鳥橋",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "千歳橋"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）方面",
+          "next_stops": [
+            "千歳橋"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.212621952,
+        34.0469068336
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:444_02": {
+      "group_id": "iwakuni:千鳥橋",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "由宇駅前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.212760394,
+        34.0469399612
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:445_01": {
+      "group_id": "iwakuni:由宇駅前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "千鳥橋"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥橋"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.213079716,
+        34.0431884026
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:445_02": {
+      "group_id": "iwakuni:由宇駅前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／相地（老人福祉センター前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘病院前"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘病院前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.213243715,
+        34.0430255991
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:446_01": {
+      "group_id": "iwakuni:にこにこちどり園前",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "ゆうたん前",
+            "由宇崎"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.215228485,
+        34.0436289131
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、対象便では進行方向に対する乗降側の整合を確認できません。原点誤りとは断定せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、対象便では進行方向に対する乗降側の整合を確認できません。原点誤りとは断定せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:447_01": {
+      "group_id": "iwakuni:ゆうたん前",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "にこにこちどり園前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.21501300519,
+        34.0406770030667
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:447_02": {
+      "group_id": "iwakuni:ゆうたん前",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘病院前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.215022529,
+        34.0406603364
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:448_01": {
+      "group_id": "iwakuni:由宇崎",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "にこにこちどり園前",
+            "潮風公園"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.216593963,
+        34.0366485105
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、対象便では進行方向に対する乗降側の整合を確認できません。原点誤りとは断定せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、対象便では進行方向に対する乗降側の整合を確認できません。原点誤りとは断定せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:449_01": {
+      "group_id": "iwakuni:千鳥ヶ丘病院前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "ゆうたん前",
+            "千鳥ヶ丘東",
+            "清華保育園前",
+            "由宇駅前"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "清華保育園前",
+            "由宇駅前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.213417188,
+        34.0368389184
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:450_01": {
+      "group_id": "iwakuni:千鳥ヶ丘東",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘中"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.213431437,
+        34.0351757921
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:450_02": {
+      "group_id": "iwakuni:千鳥ヶ丘東",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘病院前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.213250484619,
+        34.0350591254333
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:451_01": {
+      "group_id": "iwakuni:千鳥ヶ丘中",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘東",
+            "清華保育園前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.214034266,
+        34.0327144192
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:452_01": {
+      "group_id": "iwakuni:清華保育園前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘中",
+            "千鳥ヶ丘病院前"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "千鳥ヶ丘病院前",
+            "西有家"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.211981396,
+        34.0332788835
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:453_01": {
+      "group_id": "iwakuni:有家",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "潮風公園",
+            "由宇駅前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.217444488,
+        34.0296303405
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:453_02": {
+      "group_id": "iwakuni:有家",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "水尻"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.217482057,
+        34.0297979356
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:454_01": {
+      "group_id": "iwakuni:西有家",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "大畑",
+            "清華保育園前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.210364771,
+        34.0261315394
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:455_01": {
+      "group_id": "iwakuni:大畑",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "西有家",
+            "銭壺山登山口"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.207188288,
+        34.0190794496
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:458_01": {
+      "group_id": "iwakuni:銭壺山登山口",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "大畑",
+            "岡田"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.209398363,
+        34.0160804585
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:460_01": {
+      "group_id": "iwakuni:岡田",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "平床",
+            "銭壺山登山口"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.207433847,
+        34.0068141882
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:461_01": {
+      "group_id": "iwakuni:平床",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "岡田",
+            "平原"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.20400751,
+        34.0029925848
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:462_01": {
+      "group_id": "iwakuni:平原",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "平床",
+            "舟木公会堂前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.200351762,
+        34.0005268048
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:463_01": {
+      "group_id": "iwakuni:千歳橋",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇中学校正門（清華保育園前 経由）／由宇中学校正門（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇中学校正門（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "千鳥橋",
+            "由宇中学校前"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）方面",
+          "next_stops": [
+            "由宇中学校前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.207228027,
+        34.0461618341
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:464_01": {
+      "group_id": "iwakuni:由宇中学校前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇中学校正門（清華保育園前 経由）／由宇中学校正門（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇中学校正門（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "千歳橋",
+            "慈雲院前",
+            "由宇中学校正門"
+          ]
+        },
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）方面",
+          "next_stops": [
+            "由宇中学校正門"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.201772824,
+        34.0452515296
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:465_01": {
+      "group_id": "iwakuni:慈雲院前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "三軒屋",
+            "由宇中学校前",
+            "由宇中学校正門"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.198172471,
+        34.0453060609
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:466_01": {
+      "group_id": "iwakuni:三軒屋",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "慈雲院前",
+            "生屋"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.192161834,
+        34.0438224946
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:467_01": {
+      "group_id": "iwakuni:生屋",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "三軒屋",
+            "寺迫"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.187827942,
+        34.0446957195
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:468_01": {
+      "group_id": "iwakuni:寺迫",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "横道",
+            "生屋"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.183974418,
+        34.042838184
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:469_01": {
+      "group_id": "iwakuni:横道",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "寺迫"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.17799277619,
+        34.0387321884667
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:469_02": {
+      "group_id": "iwakuni:横道",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "由西小前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.1780023,
+        34.0387155218
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:470_01": {
+      "group_id": "iwakuni:由西小前",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "横道",
+            "貞清"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.176578064,
+        34.0364018279
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:471_01": {
+      "group_id": "iwakuni:貞清",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "由宇温泉",
+            "由西小前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.170550526,
+        34.03176921
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの同じ原点を対向方向の便が使用し、進行方向に対する道路側判定が反転します。方向別の別原点は公式資料にないため、位置を推測せず保留します。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:472_01": {
+      "group_id": "iwakuni:由宇温泉",
+      "number": null,
+      "role": "boarding",
+      "summary": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "清華保育園前（由宇駅前 経由）／由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "老人福祉センター前",
+            "貞清"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.167926427,
+        34.0301061424
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:476_01": {
+      "group_id": "iwakuni:舟木公会堂前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）／舟木（清華保育園前 経由）方面",
+          "next_stops": [
+            "平原",
+            "舟木"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.198689206,
+        33.9971048737
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:477_01": {
+      "group_id": "iwakuni:舟木",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（舟木～由宇駅前）",
+          "text": "由宇中学校正門（清華保育園前 経由）／由宇駅前（清華保育園前 経由）方面",
+          "next_stops": [
+            "舟木公会堂前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.19722032,
+        33.9933633353
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:620_01": {
+      "group_id": "iwakuni:由宇中学校正門",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "由宇中学校前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.200922943,
+        34.0464204422
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:625_01": {
+      "group_id": "iwakuni:水尻",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "有家"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.218046052857,
+        34.0197803671
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:625_02": {
+      "group_id": "iwakuni:水尻",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "田高多"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.218080263,
+        34.0197492482
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:626_01": {
+      "group_id": "iwakuni:田高多",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "水尻"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.216593574,
+        34.0150894836
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:626_02": {
+      "group_id": "iwakuni:田高多",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "城ヶ崎"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.216697021,
+        34.0149832308
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:627_01": {
+      "group_id": "iwakuni:城ヶ崎",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "田高多"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.214600453,
+        34.0088627902
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:627_02": {
+      "group_id": "iwakuni:城ヶ崎",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "神代駅前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.214742522,
+        34.008523906
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:628_01": {
+      "group_id": "iwakuni:神代駅前",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "城ヶ崎"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.209297219,
+        33.9982825993
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:628_02": {
+      "group_id": "iwakuni:神代駅前",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "原（由宇地区バス）"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.209279919,
+        33.9981062481
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:629_01": {
+      "group_id": "iwakuni:公門所",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "原（由宇地区バス）"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.202415116,
+        33.990764361
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:629_02": {
+      "group_id": "iwakuni:公門所",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "相地"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は原座標から道路接続を確認して計算しています。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.202594919,
+        33.9907946933
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "原座標から30m以内の歩行可能道路へ接続して徒歩圏を計算しています。現地の通行状態は未確認です。"
+      }
+    },
+    "iwakuni:630_01": {
+      "group_id": "iwakuni:相地",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "公門所"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.200001418,
+        33.9846431074
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:630_02": {
+      "group_id": "iwakuni:相地",
+      "number": null,
+      "role": "alighting",
+      "summary": "この資料では降車専用として登録",
+      "directions": [],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.200068885,
+        33.9847388415
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:644_01": {
+      "group_id": "iwakuni:潮風公園",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "有家",
+            "由宇崎"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.217571263905,
+        34.0334997442333
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式停車順・shapeと道路線を照合しましたが、曲折・分岐・起終点などにより進行方向に対する道路側を確定できません。",
+        "walking_notice": "方向別の道路側を確認できないため、この原点の徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:664_01": {
+      "group_id": "iwakuni:大原",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇駅前（老人福祉センター前 経由）／相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "岩倉"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.155166631851,
+        34.0209737567933
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:664_02": {
+      "group_id": "iwakuni:大原",
+      "number": null,
+      "role": "boarding",
+      "summary": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "笠塚カープ練習場前（清華保育園前 経由）／笠塚カープ練習場前（由宇駅前 経由）方面",
+          "next_stops": [
+            "みどり病院前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.155147584232,
+        34.0210070901267
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
+    },
+    "iwakuni:i-295_01": {
+      "group_id": "iwakuni:原（由宇地区バス）",
+      "number": null,
+      "role": "boarding",
+      "summary": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "由宇中学校正門（由宇駅前 経由）／笠塚カープ練習場前（清華保育園前 経由）方面",
+          "next_stops": [
+            "神代駅前"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面と道路側は机上確認済みです。歩行可能道路が30m以内にないため徒歩圏は未計算です。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.204957,
+        33.993205
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "confirmed",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSの停車順・shapeと取得時点の道路線を照合し、進行方向に対する原点の道路側を机上確認。現地標柱は未確認。",
+        "walking_notice": "道路側は机上確認済みですが、原座標から30m以内に歩行可能道路がないため徒歩圏は未計算です。"
+      }
+    },
+    "iwakuni:i-295_02": {
+      "group_id": "iwakuni:原（由宇地区バス）",
+      "number": null,
+      "role": "boarding",
+      "summary": "相地（老人福祉センター前 経由）方面",
+      "directions": [
+        {
+          "route": "由宇地区バス（笠塚カープ練習場前～相地）",
+          "text": "相地（老人福祉センター前 経由）方面",
+          "next_stops": [
+            "公門所"
+          ]
+        }
+      ],
+      "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp",
+      "guide_url": "https://www.city.iwakuni.lg.jp/soshiki/61/115174.html",
+      "data_notice": "方面は2026年3月27日改正の岩国市公式GTFSによります。徒歩圏は道路接続の確認後に追加します。",
+      "evidence": "stop-sequence",
+      "source_coordinates": [
+        132.20495,
+        33.993079
+      ],
+      "location_description": "岩国市公式GTFSの原ID・原座標を表示しています。道路側・標柱位置は現地未確認です。",
+      "roadside_review": {
+        "status": "hold",
+        "direction_status": "source-sequence-checked",
+        "reason": "公式GTFSで原点と方面を確認。道路側と標柱位置は未確認。",
+        "walking_notice": "この原点の道路接続を確認するまで徒歩圏を表示しません。"
+      }
     }
   },
   "hub_points": [

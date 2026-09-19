@@ -7,6 +7,7 @@ import { nationalCatalog, municipalCatalog } from '../src/stopCatalog.ts';
 const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
 const stops = [...nationalCatalog(read('review-national.geojson')).features, ...municipalCatalog(read('review-stops.geojson'), read('review-routes.json'))];
 const original = JSON.stringify(stops);
+assert.equal(stops.length, 5390, '4,418 national and 972 municipal registrations remain available');
 const projected = zoom => stops.map(stop => {
   const [lon, lat] = stop.geometry.coordinates;
   const scale = 256 * 2 ** zoom;
@@ -18,8 +19,8 @@ for (const zoom of [8, 9, 9.25, 10, 11, 12, 13, 14, 17]) {
   const groups = clusterStops(projected(zoom), stopCellSize(zoom));
   counts[zoom] = groups.length;
   const ids = groups.flatMap(g => g.stops.map(s => s.id));
-  assert.equal(ids.length, 5325);
-  assert.equal(new Set(ids).size, 5325, 'No source registration may disappear or be duplicated');
+  assert.equal(ids.length, stops.length);
+  assert.equal(new Set(ids).size, stops.length, 'No source registration may disappear or be duplicated');
   for (const g of groups) assert(Number.isFinite(g.x) && Number.isFinite(g.y));
   if (zoom < 14) for (let i = 0; i < groups.length; i++) for (let j = i + 1; j < groups.length; j++) {
     assert(Math.hypot(groups[i].x - groups[j].x, groups[i].y - groups[j].y) >= stopCellSize(zoom) * 0.72, 'Badges must not overlap');

@@ -1,12 +1,10 @@
 import { useEffect } from 'react';
 import L from 'leaflet';
 import type { BusFeature } from './types';
-import { boardingChoices } from './boardingGuide';
 import { focusContent } from './mapLayout';
-import { distance } from './bakedWalking';
 
-export default function BoardingGuidePanel({ stop, stops, map, active, onStop }: {
-  stop: BusFeature; stops: BusFeature[]; map: L.Map | null; active: boolean; onStop: (id: string) => void;
+export default function BoardingGuidePanel({ stop, map, active }: {
+  stop: BusFeature; map: L.Map | null; active: boolean;
 }) {
   const guide = stop.properties.boarding_guide;
   // The walking panel owns framing when a boarding catchment exists. This
@@ -18,8 +16,6 @@ export default function BoardingGuidePanel({ stop, stops, map, active, onStop }:
     return () => { map.off('resize', focus); };
   }, [map, active, stop]);
   if (!guide) return null;
-  const choices = boardingChoices(stop, stops);
-  const sourceVariants = choices.some(choice => choice.properties.boarding_guide?.cross_source_reference);
   return <section className="boarding-guide" aria-label="乗り場の方面">
     <p className="boarding-direction">{guide.summary}</p>
     {guide.roadside_review && <div className="helper-text" aria-label="道路側の確認状況">
@@ -28,21 +24,6 @@ export default function BoardingGuidePanel({ stop, stops, map, active, onStop }:
     </div>}
     {guide.data_notice && <p className="helper-text">{guide.data_notice}</p>}
     {guide.role === 'alighting' && <p className="helper-text">{guide.location_description}</p>}
-    {choices.length > 1 && <details key={String(stop.id)} className="boarding-choices">
-      <summary>{guide.roadside_review ? '同じ名前の登録地点' : stop.properties.source_kind === 'municipal' ? '同じ名前の乗り場' : 'この停留所の乗り場'}（{choices.length}地点）</summary>
-      {choices.map(choice => {
-        const from = stop.geometry.coordinates, to = choice.geometry.coordinates;
-        const separation = distance([from[0], from[1]], [to[0], to[1]]);
-        return <button type="button" key={String(choice.id)} className="boarding-choice" aria-pressed={choice.id === stop.id} onClick={() => onStop(String(choice.id))}>
-        <span><strong>{choice.properties.boarding_guide?.number ? `${choice.properties.boarding_guide.number}のりば` : choice.properties.boarding_guide?.role === 'alighting' ? '降車専用' : choice.properties.boarding_guide?.summary}{choice.properties.boarding_guide?.review ? '（位置候補）' : ''}</strong>
-          {choice.properties.boarding_guide?.number && <small>{choice.properties.boarding_guide.summary}</small>}
-          {sourceVariants && <small>{choice.properties.boarding_guide?.cross_source_reference ? 'OSMの原点' : '公式データの原点'}</small>}
-          {choice.properties.boarding_guide?.roadside_review && <small>{choice.properties.boarding_guide.roadside_review.status === 'confirmed' ? '乗り場位置：机上照合済み' : '乗り場位置：一部保留'}</small>}
-          {choice.properties.boarding_guide?.role === 'alighting' && <small>{choice.properties.boarding_guide.location_description}</small>}
-          {separation > 500 && <small>約{(separation/1000).toFixed(1)}km離れた同名地点</small>}
-        </span><span className="boarding-choice-status">{choice.id === stop.id ? '選択中' : '地図で見る'}</span>
-      </button>; })}
-    </details>}
     <details className="boarding-evidence"><summary>方面・位置の根拠</summary>
       {guide.evidence === 'stop-sequence' && <p>次の停留所を目印にした方面です。</p>}
       {(guide.directions.length > 1 || guide.roadside_review) && <dl className="boarding-routes">{guide.directions.map(row => <div key={row.route}><dt>{row.route}</dt><dd>{row.text}</dd></div>)}</dl>}

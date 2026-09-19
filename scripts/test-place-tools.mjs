@@ -11,7 +11,7 @@ const read = name => JSON.parse(fs.readFileSync(`public/data/${name}`, 'utf8'));
 const stops = read('review-national.geojson').features;
 const facilities = read('shopping.geojson').features;
 const municipal = municipalCatalog(read('review-stops.geojson'), read('review-routes.json'));
-assert.equal(searchPlaces('岩国市', municipal, []).stops.length, 735);
+assert.equal(searchPlaces('岩国市', municipal, []).stops.length, 800);
 assert.equal(searchPlaces('光市', municipal, []).stops.length, 172);
 assert(searchPlaces('光市 あさえ', municipal, []).stops.length === 0, 'Kanji readings must not be invented');
 assert(searchPlaces('光市 浅江中学校前', municipal, []).stops.length > 0);

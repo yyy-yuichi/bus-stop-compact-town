@@ -5,6 +5,7 @@ import MapIcon from './MapIcon';
 import SharePlace from './SharePlace';
 import type { BakedWalkingMinutes, WalkingConditions } from './placeLink';
 import { boardingTitle } from './boardingGuide';
+import { StopChoiceButton } from './StopSelection';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
@@ -67,6 +68,7 @@ export default function BusStopDrawer({ stop, timestamp, onClose, hidden, onNati
     </header>
     {!national && !municipal && !boarding && <button className="drawer-return" onClick={onNational}>← 県全体のバス停に戻る</button>}
     <div className="detail-body">
+      <StopChoiceButton stop={stop} />
       {children}
       <SharePlace place={municipal ? { kind: 'municipal', id, ...(stop.properties.boarding_walk ? { minutes: bakedMinutes } : {}) } : boarding ? { kind: 'boarding', id, ...(stop.properties.boarding_walk ? { minutes: bakedMinutes } : {}) } : national ? { kind: 'national', id, minutes: bakedMinutes } : { kind: 'pilot', id, walking: walkingConditions }} />
       <details className="source-details">

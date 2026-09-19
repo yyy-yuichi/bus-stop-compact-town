@@ -28,7 +28,7 @@ function link(box:HTMLElement,url:string,label:string){const a=document.createEl
 async function get(name:string){const r=await fetch(`${import.meta.env.BASE_URL}data/${name}`);if(!r.ok)throw Error(name);return r.json();}
 async function start(){
   const [osm,official,routes,national]:[BusCollection,Official,Route[],FeatureCollection<Point,NationalProperties>]=await Promise.all([get('bus_stop.geojson'),get('review-stops.geojson'),get('review-routes.json'),get('review-national.geojson')]);
-  if(osm.features.length!==1085||official.features.length!==907||national.features.length!==4418||!Array.isArray(routes))throw Error('Unexpected data');
+  if(osm.features.length!==1085||official.features.length!==972||national.features.length!==4418||!Array.isArray(routes))throw Error('Unexpected data');
   const routeNames=new Map(routes.map(r=>[r.id,r.name]));
   if(official.features.some(f=>f.geometry.type!=='Point'||f.properties.publication_status!=='ready-as-separate-source-layer'||f.properties.stale_route_warning||f.properties.route_ids.some(id=>!routeNames.has(id))))throw Error('Unreviewed data');
   const existing=L.geoJSON(osm,{pointToLayer:(_,ll)=>L.circleMarker(ll,{radius:6,color:'#fff',weight:1.5,fillColor:'#174f9d',fillOpacity:.8}),onEachFeature:(f,layer)=>{
@@ -61,4 +61,3 @@ async function start(){
   status.hidden=true;fit('all');
 }
 start().catch(()=>{status.hidden=false;status.textContent='データを読み込めませんでした。';const retry=document.createElement('button');retry.textContent='ページを再読み込み';retry.onclick=()=>location.reload();status.append(retry);});
-

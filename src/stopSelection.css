@@ -1,0 +1,47 @@
+/* Selection UI only; the existing detail layout and source data stay unchanged. */
+.stop-choice-marker { width:48px; height:48px; }
+.stop-choice-marker > .stop-icon-face, .stop-overlap > span { position:relative; }
+.stop-choice-marker .stop-number { right:-6px; top:-6px; max-width:36px; white-space:nowrap; }
+.stop-choice-marker.is-related > span { outline:2px solid #24775a; outline-offset:2px; }
+.stop-cluster.is-selected > span { outline:3px solid #edb943; outline-offset:2px; }
+.stop-overlap-count { position:absolute; top:-7px; right:-6px; min-width:28px; max-width:44px; padding:3px 4px; border:1px solid #fff; border-radius:6px; background:#173b34; color:#fff; font:700 10px/1.2 var(--font-sans); }
+.stop-spider-leg { pointer-events:none; }
+.stop-spider-card { background:transparent; border:0; }
+.stop-spider-card-content { display:flex; flex-direction:column; justify-content:center; gap:3px; width:100%; height:100%; box-sizing:border-box; padding:7px 9px; border:2px solid #b5cbc0; border-radius:10px; background:#fffdf5; color:#173b34; box-shadow:0 2px 6px #173b3426; overflow:hidden; }
+.stop-spider-card-content strong { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; font:700 12px/1.3 var(--font-sans); }
+.stop-spider-card-content > span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:600 10px/1.3 var(--font-sans); }
+.stop-spider-card-content small { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:400 9px/1.2 var(--font-sans); }
+.stop-spider-card.is-selected .stop-spider-card-content { border:3px solid #b67e19; background:#fff8e6; }
+.stop-spider-card.is-location-review .stop-spider-card-content { border-style:dashed; }
+.stop-direction-label { pointer-events:none; }
+.stop-direction-label > span { display:flex; flex-direction:column; justify-content:center; width:100%; height:100%; box-sizing:border-box; padding:5px 8px; border:1px solid #b5cbc0; border-radius:7px; background:#fffdf5f2; color:#173b34; overflow:hidden; }
+.stop-direction-label strong { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; font:700 11px/1.3 var(--font-sans); }
+.stop-direction-label small { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:400 10px/1.3 var(--font-sans); }
+.stop-choice-tooltip { max-width:280px; white-space:normal; overflow-wrap:anywhere; }
+.other-stop-button { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:48px; margin:0 0 16px; padding:10px 12px; border:1px solid #c5d7cc; border-radius:9px; background:#f3f8f4; color:#17694e; font:650 13px/1.5 var(--font-sans); }
+.other-stop-button span { white-space:nowrap; font-size:11px; }
+.stop-choice-toolbar { position:absolute; left:20px; bottom:56px; z-index:1250; display:flex; align-items:center; flex-wrap:wrap; gap:6px; max-width:min(480px,calc(100% - 80px)); padding:8px 10px; border:1px solid #bdd0c5; border-radius:12px; background:#fffffff5; box-shadow:0 2px 12px #173b3426; color:#173b34; }
+.stop-choice-toolbar > span { width:100%; font-size:11px; line-height:1.5; }
+.stop-choice-toolbar button { min-height:44px; padding:7px 12px; border:1px solid #c5d7cc; border-radius:7px; background:#fff; font-size:12px; }
+.stop-choice-toolbar .stop-choice-toggle { background:#17694e; color:#fff; border-color:#17694e; font-weight:700; }
+.stop-choice-dialog { position:fixed; inset:0; margin:auto; width:min(480px,calc(100% - 24px)); max-height:calc(100dvh - 32px); padding:0; border:1px solid #c5d7cc; border-radius:16px; background:#fff; color:#173b34; overflow:hidden; }
+.stop-choice-dialog::backdrop { background:#15382a70; }
+.stop-choice-dialog-inner { display:flex; flex-direction:column; max-height:calc(100dvh - 36px); }
+.stop-choice-dialog header { display:flex; align-items:center; justify-content:space-between; flex-shrink:0; gap:10px; padding:12px 16px; border-bottom:1px solid #e0e7e3; }
+.stop-choice-dialog h2 { margin:0; font-size:16px; line-height:1.5; font-weight:700; }
+.stop-choice-dialog header button { flex-shrink:0; width:44px; height:44px; border:1px solid #c5d7cc; border-radius:50%; background:#f3f8f4; font-size:20px; }
+.stop-choice-dialog p { flex-shrink:0; padding:10px 16px; margin:0; font-size:12px; line-height:1.6; }
+.stop-choice-list { overflow:auto; min-height:0; padding:0 12px 16px; scrollbar-width:thin; }
+.stop-choice-list > button { display:flex; flex-direction:column; gap:4px; min-height:88px; width:100%; text-align:left; border:1px solid #d1ded6; border-radius:10px; padding:12px; margin:6px 0; background:#fff; color:#173b34; overflow-wrap:anywhere; font-size:12px; line-height:1.5; }
+.stop-choice-list > button[aria-pressed=true] { border:2px solid #24775a; background:#edf7ef; }
+.choice-direction { font-size:15px; font-weight:750; }
+.choice-notice { color:#85500d; }
+.choice-confirmed { color:#526f60; }
+.stop-choice-list small { font-size:11px; }
+.choice-id { color:#617266; }
+.stop-choice-dialog button:focus-visible, .stop-choice-toolbar button:focus-visible, .other-stop-button:focus-visible { outline:3px solid #ac690d; outline-offset:-3px; }
+@media (min-width:1001px) { .app-with-selection .stop-choice-toolbar { max-width:min(480px,calc(100% - 470px)); } }
+@media (max-width:1000px) {
+  .stop-choice-toolbar { left:10px; bottom:55px; max-width:calc(100% - 80px); }
+  .app-with-selection .stop-choice-toolbar { bottom:calc(min(48dvh,430px) + 10px); }
+}

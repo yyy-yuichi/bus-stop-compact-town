@@ -1,0 +1,296 @@
+{
+  "scope": "由宇地区の追加65地点のうち、名称に対して公式原点が1点だけの27地点",
+  "method": "公式GTFSの全停車順・shapeと取得時点のOpenStreetMap道路線による机上照合",
+  "summary": {
+    "points": 27,
+    "classifications": {
+      "曲折・分岐・起終点等で判定不能": 17,
+      "不整合のみで乗降側を確認できない": 2,
+      "同一公式点で道路側判定が方向により反転": 8
+    },
+    "walking_areas_added": 0,
+    "walking_areas_held": 27
+  },
+  "records": [
+    {
+      "name": "寺山",
+      "id": "iwakuni:435_01",
+      "occurrences": 4,
+      "states": {
+        "判定不能": 4
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "長田",
+      "id": "iwakuni:439_01",
+      "occurrences": 4,
+      "states": {
+        "判定不能": 4
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "笠塚カープ練習場前",
+      "id": "iwakuni:443_01",
+      "occurrences": 2,
+      "states": {
+        "判定不能": 2
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "にこにこちどり園前",
+      "id": "iwakuni:446_01",
+      "occurrences": 2,
+      "states": {
+        "不整合": 1,
+        "判定不能": 1
+      },
+      "classification": "不整合のみで乗降側を確認できない",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "由宇崎",
+      "id": "iwakuni:448_01",
+      "occurrences": 2,
+      "states": {
+        "不整合": 2
+      },
+      "classification": "不整合のみで乗降側を確認できない",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "千鳥ヶ丘病院前",
+      "id": "iwakuni:449_01",
+      "occurrences": 9,
+      "states": {
+        "判定不能": 9
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "千鳥ヶ丘中",
+      "id": "iwakuni:451_01",
+      "occurrences": 2,
+      "states": {
+        "判定不能": 2
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "清華保育園前",
+      "id": "iwakuni:452_01",
+      "occurrences": 6,
+      "states": {
+        "整合": 3,
+        "不整合": 2,
+        "判定不能": 1
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "西有家",
+      "id": "iwakuni:454_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "大畑",
+      "id": "iwakuni:455_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "銭壺山登山口",
+      "id": "iwakuni:458_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "岡田",
+      "id": "iwakuni:460_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "平床",
+      "id": "iwakuni:461_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "平原",
+      "id": "iwakuni:462_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "千歳橋",
+      "id": "iwakuni:463_01",
+      "occurrences": 7,
+      "states": {
+        "不整合": 4,
+        "整合": 3
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "由宇中学校前",
+      "id": "iwakuni:464_01",
+      "occurrences": 7,
+      "states": {
+        "不整合": 4,
+        "整合": 3
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "慈雲院前",
+      "id": "iwakuni:465_01",
+      "occurrences": 5,
+      "states": {
+        "整合": 3,
+        "不整合": 2
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "三軒屋",
+      "id": "iwakuni:466_01",
+      "occurrences": 5,
+      "states": {
+        "不整合": 3,
+        "整合": 2
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "生屋",
+      "id": "iwakuni:467_01",
+      "occurrences": 5,
+      "states": {
+        "整合": 3,
+        "不整合": 2
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "寺迫",
+      "id": "iwakuni:468_01",
+      "occurrences": 5,
+      "states": {
+        "判定不能": 5
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "由西小前",
+      "id": "iwakuni:470_01",
+      "occurrences": 5,
+      "states": {
+        "整合": 3,
+        "不整合": 2
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "貞清",
+      "id": "iwakuni:471_01",
+      "occurrences": 5,
+      "states": {
+        "整合": 3,
+        "不整合": 2
+      },
+      "classification": "同一公式点で道路側判定が方向により反転",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "由宇温泉",
+      "id": "iwakuni:472_01",
+      "occurrences": 5,
+      "states": {
+        "判定不能": 5
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "舟木公会堂前",
+      "id": "iwakuni:476_01",
+      "occurrences": 3,
+      "states": {
+        "判定不能": 3
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "舟木",
+      "id": "iwakuni:477_01",
+      "occurrences": 2,
+      "states": {
+        "判定不能": 2
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "由宇中学校正門",
+      "id": "iwakuni:620_01",
+      "occurrences": 1,
+      "states": {
+        "判定不能": 1
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    },
+    {
+      "name": "潮風公園",
+      "id": "iwakuni:644_01",
+      "occurrences": 2,
+      "states": {
+        "判定不能": 2
+      },
+      "classification": "曲折・分岐・起終点等で判定不能",
+      "decision": "徒歩圏未計算。公式に別原点がないため方向別位置を推測しない。"
+    }
+  ]
+}

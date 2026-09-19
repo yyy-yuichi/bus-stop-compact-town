@@ -22,7 +22,8 @@
     "test:boarding-walking": "node scripts/test-boarding-walking.mjs",
     "test:bocho-regions": "node scripts/test-bocho-regions.mjs",
     "test:bocho-districts": "node scripts/test-bocho-districts.mjs",
-    "test:boarding-connections": "node scripts/test-boarding-connections.mjs"
+    "test:boarding-connections": "node scripts/test-boarding-connections.mjs",
+    "test:stop-selection": "node scripts/test-stop-selection.mjs"
   },
   "dependencies": {
     "@maplibre/maplibre-gl-leaflet": "0.1.4",

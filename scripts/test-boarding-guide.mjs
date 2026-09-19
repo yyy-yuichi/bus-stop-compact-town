@@ -15,9 +15,9 @@ assert.equal(stops.length, original.length + study.hub_points.length);
 assert.equal(JSON.stringify(original), before);
 for (const stop of original) assert.deepEqual(byId.get(String(stop.id)).geometry, stop.geometry);
 assert.equal(stops.filter(s => s.properties.boarding_guide).length, Object.keys(study.guides).length);
-assert.equal(stops.filter(s => s.properties.source_kind === 'municipal' && s.properties.boarding_guide).length, 907);
+assert.equal(stops.filter(s => s.properties.source_kind === 'municipal' && s.properties.boarding_guide).length, 972);
 assert.equal(stops.filter(s => s.properties.boarding_guide?.number).length, 78);
-assert.equal(stops.filter(s => s.properties.boarding_guide?.role === 'alighting').length, 12);
+assert.equal(stops.filter(s => s.properties.boarding_guide?.role === 'alighting').length, 13);
 for (const stop of stops.filter(s => s.properties.source_kind === 'boarding-study')) assert.throws(() => nationalCatchmentId(stop));
 assert(byId.get('hikari:4_01').properties.boarding_guide.summary.startsWith('筒井方面'));
 assert(byId.get('hikari:4_02').properties.boarding_guide.summary.startsWith('虹ヶ浜二丁目方面'));
@@ -31,6 +31,12 @@ for (const id of ['iwakuni:684_01', 'iwakuni:684_02']) {
 }
 assert.notDeepEqual(byId.get('iwakuni:684_01').geometry, byId.get('iwakuni:684_02').geometry);
 assert.notEqual(byId.get('iwakuni:684_01').properties.boarding_guide.summary, byId.get('iwakuni:684_02').properties.boarding_guide.summary);
+assert.deepEqual(boardingChoices(byId.get('iwakuni:438_01'), stops).map(s => s.id), ['iwakuni:438_01', 'iwakuni:438_02']);
+assert.notEqual(byId.get('iwakuni:438_01').properties.boarding_guide.summary, byId.get('iwakuni:438_02').properties.boarding_guide.summary);
+assert.match(byId.get('iwakuni:438_01').properties.boarding_guide.summary, /相地/);
+assert.match(byId.get('iwakuni:438_02').properties.boarding_guide.summary, /笠塚カープ練習場前/);
+assert.equal(byId.get('iwakuni:630_02').properties.boarding_guide.role, 'alighting');
+assert.deepEqual(byId.get('iwakuni:630_02').properties.boarding_guide.directions, []);
 assert.deepEqual(byId.get('iwakuni:271_02').properties.boarding_guide.directions, []);
 assert.equal(byId.get('iwakuni:271_02').properties.boarding_guide.summary, 'この資料の路線では終点として登録');
 assert.equal(boardingChoices(byId.get('iwakuni:366_01'), stops).length, 3);
@@ -65,4 +71,4 @@ assert.equal(searchPlaces('新山口駅 1のりば', stops, []).stops[0].id, 'no
 assert.equal(byId.get('node/3640500395').properties.boarding_guide.number, '1');
 assert.equal(byId.get('node/3640500394').properties.boarding_guide.summary, '厚狭・小野田方面');
 for (const id of ['node/3640500397','node/3640500396','node/3640475990','node/3204054161']) assert(!byId.has(id), 'Unresolved points are not assigned an official number');
-console.log(`Boarding guide passed: 907 city points, ${study.hub_points.length} independent hub sources; reviewed names, directions, source coordinates, exclusions and sharing.`);
+console.log(`Boarding guide passed: 972 city points, ${study.hub_points.length} independent hub sources; reviewed names, directions, source coordinates, exclusions and sharing.`);

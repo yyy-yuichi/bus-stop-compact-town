@@ -53,8 +53,8 @@ const cityBefore = JSON.stringify(citySource);
 const routes = read('review-routes.json');
 const cityStops = municipalCatalog(citySource, routes);
 assert.equal(JSON.stringify(citySource), cityBefore, 'The saved city source must remain untouched');
-assert.equal(cityStops.length, 907);
-assert.equal(cityStops.filter(f => f.properties.city === '岩国市').length, 735);
+assert.equal(cityStops.length, 972);
+assert.equal(cityStops.filter(f => f.properties.city === '岩国市').length, 800);
 assert.equal(cityStops.filter(f => f.properties.city === '光市').length, 172);
 for (const [i, stop] of cityStops.entries()) {
   assert.equal(stop.id, citySource.features[i].id);
@@ -64,7 +64,7 @@ for (const [i, stop] of cityStops.entries()) {
   assert.equal(stop.properties.stop_area_id, undefined, 'City points must not be silently merged with national points');
   assert.throws(() => nationalCatchmentId(stop), 'Never use a national walking field for a city origin');
 }
-assert.equal(new Set([...catalog.features, ...cityStops].map(f => f.id)).size, 5325);
+assert.equal(new Set([...catalog.features, ...cityStops].map(f => f.id)).size, 5390);
 assert.throws(() => municipalCatalog({ ...citySource, features: [citySource.features[0], citySource.features[0]] }, routes));
 assert.throws(() => municipalCatalog(citySource, []), 'Unresolved route references must not be presented');
 assert.throws(() => municipalCatalog({ ...citySource, features: [{ ...citySource.features[0], properties: { ...citySource.features[0].properties, stale_route_warning: true } }] }, routes));
@@ -76,4 +76,4 @@ assert.equal(nearbyNationalStops(municipalOrigin, [chosen, samePosition, farAway
 assert.equal(nearbyNationalStops(municipalOrigin, [chosen], {})[0].meters, 0);
 assert.deepEqual(nearbyNationalStops(municipalOrigin, [chosen], { [nationalCatchmentId(chosen)]: null }), [], 'Known unconnected origins are not offered');
 assert.deepEqual(nearbyNationalStops(municipalOrigin, [farAway], {}), []);
-console.log('Municipal stops: 735 Iwakuni + 172 Hikari IDs, positions and routes preserved; independent origins; nearby navigation excludes unconnected or distant points.');
+console.log('Municipal stops: 800 Iwakuni + 172 Hikari IDs, positions and routes preserved; independent origins; nearby navigation excludes unconnected or distant points.');
