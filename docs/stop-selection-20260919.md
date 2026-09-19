@@ -34,6 +34,6 @@ commit `270b054b026856d51b5e2323f7110078765aafd3` をGitHub mainへ反映済み�
 
 [v21配信物](https://drive.google.com/file/d/1mQC4lx-awaaU6ckiZCRobjXop0VljXqf/view?usp=drivesdk) は案件Driveへ保存し、13,000,929 bytesを読み戻した。ソースはGitHub mainのcommit `d74c636af696904d57319b36a40bdae14f442101`、CI [run 35443329237](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35443329237) 成功。
 
-本人限定マップv22では、縦長になっていたバス停ホバー表示を短縮した。実配信の城下町長府で表示内容が名称だけ、幅74px・高さ32px・1行省略設定であることを確認した。読み上げ用ラベルには方面・確認状態・出典・原IDを維持している。Sitesソースは `820bbaf14b0a8296b9684f620a43e558af0ef171`、deploymentは `appgdep_6aae83ad1ad081918f3c20dde436b00a`。[v22配信物](https://drive.google.com/file/d/1SLhZ7z84gbJwMaW2ipudbJz4oKIUGvW2/view?usp=drivesdk) は案件Driveへ保存し、12,996,180 bytesを読み戻した。元のGitHubへのpushと一般公開マップの更新は行っていない。
+本人限定マップv22では、縦長になっていたバス停ホバー表示を短縮した。実配信の城下町長府で表示内容が名称だけ、幅74px・高さ32px・1行省略設定であることを確認した。読み上げ用ラベルには方面・確認状態・出典・原IDを維持している。Sitesソースは `820bbaf14b0a8296b9684f620a43e558af0ef171`、deploymentは `appgdep_6aae83ad1ad081918f3c20dde436b00a`。[v22配信物](https://drive.google.com/file/d/1SLhZ7z84gbJwMaW2ipudbJz4oKIUGvW2/view?usp=drivesdk) は案件Driveへ保存し、12,996,180 bytesを読み戻した。修正コミット `4e1f114a7c26769dce1d4b17791f984fe4796a89` はGitHub mainへpushし、Actions [run 35444659494](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35444659494) が成功した。
 
-一般公開は別工程。GitHub Pagesはcommit `4a2275dee19f083559d517c67fb4b952e7117586` のまま。iPhone・Safari・現地利用者の操作確認は未実施。
+一般公開は別工程。Pages公開ワークフローは手動実行のみで、今回実行していない。iPhone・Safari・現地利用者の操作確認は未実施。
