@@ -15,6 +15,7 @@
     "dev": "vite --host 127.0.0.1",
     "validate": "node scripts/validate-shopping.mjs",
     "build": "npm run typecheck && npm run validate && vite build && node scripts/drop-walk-data-from-dist.mjs",
+    "build:sites-private": "node scripts/build-sites-private.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test:boarding": "node scripts/test-boarding-guide.mjs",

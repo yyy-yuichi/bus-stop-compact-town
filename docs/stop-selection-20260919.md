@@ -23,12 +23,12 @@
 - 390×844pxと320×700px：乗り場一覧が横にはみ出さず、本文にも横スクロールが出ない。
 - 型検査、production build、release検査、`test:stop-selection`、地図・検索・乗り場・徒歩圏・施設・背景の対象テストが成功。
 
-国の徒歩圏R2はローカルオリジンへのCORS応答がないため、ローカル画面では直接取得できない。対象ファイルがHTTP 200で存在することと、現在の公開元から同じ西河原の徒歩圏を取得できることは確認した。新しい画面を一般公開した後に、公開オリジンから改めて確認する。
+国の徒歩圏R2はGitHub PagesのオリジンだけをCORS許可しているため、本人限定Sites v20からの直接取得は失敗していた。R2の公開範囲とCORSは変えず、本人限定Sitesでは固定した公開R2の徒歩圏JSONだけを同一サイト経由で取得する構成へ戻した。
 
 ## 現在の状態
 
 commit `270b054b026856d51b5e2323f7110078765aafd3` をGitHub mainへ反映済み。GitHub Actions [run 35439821881](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35439821881) は成功した。[実施報告](https://drive.google.com/file/d/1tOPJqLXt2kLup8v6HkeTSCZvQJarhdrd/view?usp=drivesdk) と [ソース・配信候補ZIP](https://drive.google.com/file/d/12U3tlyUkq4k6oZ3rpbFzryr5JlibaZ-a/view?usp=drivesdk) は案件Driveへ保存し、保存先と内容を読み戻した。ZIPは13,898,845 bytes、SHA-256は `815257dc8cc1e415ac647738f541c04f6cf7da9afa5ce4743646494bf6265650`。
 
-[本人限定マップ](https://yamaguchi-bus-stop-compact-town.yyy-yuichi.chatgpt.site/) v20へ配信済み。アクセス設定は所有者1名のみ、外部利用者0名、許可グループ0件と読み戻した。実配信では、西河原の検索結果を選んでも詳細を開かず、地図上の `hikari:4_01` 選択後に徒歩15分43件を読み込むこと、西河原緑地の詳細中も徒歩圏の凡例が残ること、木園の重なる3登録を原ID・方面別に展開できることを確認した。
+[本人限定マップ](https://yamaguchi-bus-stop-compact-town.yyy-yuichi.chatgpt.site/) v21へ配信済み。アクセス設定は所有者1名のみ、外部利用者0名、許可グループ0件を維持。実配信では、城下町長府 `mlit-p11-22-35:3533` の15分徒歩圏と施設候補10件を読み込み、施設詳細を開いても徒歩15分の凡例と範囲が残ることを確認した。v20で確認した西河原・木園の乗り場選択機能も同じソースを引き継ぐ。
 
 一般公開は別工程。GitHub Pagesはcommit `4a2275dee19f083559d517c67fb4b952e7117586` のまま。iPhone・Safari・現地利用者の操作確認は未実施。
