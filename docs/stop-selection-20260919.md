@@ -27,4 +27,6 @@
 
 ## 現在の状態
 
-ソースと配信候補の検証まで完了。一般公開は別工程。iPhone・Safari・現地利用者の操作確認は未実施。
+commit `270b054b026856d51b5e2323f7110078765aafd3` をGitHub mainへ反映済み。GitHub Actions [run 35439821881](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35439821881) は成功した。[実施報告](https://drive.google.com/file/d/1tOPJqLXt2kLup8v6HkeTSCZvQJarhdrd/view?usp=drivesdk) と [ソース・配信候補ZIP](https://drive.google.com/file/d/12U3tlyUkq4k6oZ3rpbFzryr5JlibaZ-a/view?usp=drivesdk) は案件Driveへ保存し、保存先と内容を読み戻した。ZIPは13,898,845 bytes、SHA-256は `815257dc8cc1e415ac647738f541c04f6cf7da9afa5ce4743646494bf6265650`。
+
+一般公開は別工程。公開サイトはcommit `4a2275dee19f083559d517c67fb4b952e7117586` のままで、新画面を公開元から確認する工程が残る。iPhone・Safari・現地利用者の操作確認は未実施。
