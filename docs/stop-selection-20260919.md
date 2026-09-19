@@ -31,4 +31,6 @@ commit `270b054b026856d51b5e2323f7110078765aafd3` をGitHub mainへ反映済み�
 
 [本人限定マップ](https://yamaguchi-bus-stop-compact-town.yyy-yuichi.chatgpt.site/) v21へ配信済み。アクセス設定は所有者1名のみ、外部利用者0名、許可グループ0件を維持。実配信では、城下町長府 `mlit-p11-22-35:3533` の15分徒歩圏と施設候補10件を読み込み、施設詳細を開いても徒歩15分の凡例と範囲が残ることを確認した。v20で確認した西河原・木園の乗り場選択機能も同じソースを引き継ぐ。
 
+[v21配信物](https://drive.google.com/file/d/1mQC4lx-awaaU6ckiZCRobjXop0VljXqf/view?usp=drivesdk) は案件Driveへ保存し、13,000,929 bytesを読み戻した。ソースはGitHub mainのcommit `d74c636af696904d57319b36a40bdae14f442101`、CI [run 35443329237](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/35443329237) 成功。
+
 一般公開は別工程。GitHub Pagesはcommit `4a2275dee19f083559d517c67fb4b952e7117586` のまま。iPhone・Safari・現地利用者の操作確認は未実施。
