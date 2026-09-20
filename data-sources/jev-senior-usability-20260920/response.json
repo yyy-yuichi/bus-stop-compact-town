@@ -1,0 +1,49 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "senior_usability": {
+      "type": "score",
+      "score": 2.71,
+      "legend": {
+        "0": "操作の開始や進行が分からず、一人での利用は難しい。",
+        "1": "複数箇所で支援が必要になる。",
+        "2": "時間をかけたり試行錯誤すれば中核操作を完了できる。",
+        "3": "多少迷う可能性はあるが、概ね一人で完了できる。",
+        "4": "中核操作の流れが明確で、ほぼ迷わず一人で完了できる。"
+      },
+      "confidence": 0.65,
+      "probabilities": { "0": 0, "1": 0.05, "2": 0.25, "3": 0.64, "4": 0.06 },
+      "stats": {}
+    },
+    "selected_stop_identity": { "type": "noul", "noul": 0.9, "stats": {} },
+    "walking_time_controls": { "type": "noul", "noul": 0.79, "stats": {} },
+    "facility_categories_without_color": { "type": "noul", "noul": 0.9, "stats": {} },
+    "return_to_stop": { "type": "noul", "noul": 0.9, "stats": {} },
+    "text_readability": {
+      "type": "choice",
+      "choice": "mixed",
+      "confidence": 0.82,
+      "probabilities": { "mixed": 0.88, "comfortable": 0.12, "difficult": 0 },
+      "stats": {}
+    },
+    "map_cognitive_load": {
+      "type": "choice",
+      "choice": "moderate",
+      "confidence": 0.97,
+      "probabilities": { "moderate": 0.98, "high": 0.01, "low": 0.01 },
+      "stats": {}
+    },
+    "data_freshness_clarity": { "type": "noul", "noul": 0.82, "stats": {} },
+    "core_flow_support": { "type": "noul", "noul": 0.9, "stats": {} },
+    "first_improvement_priority": {
+      "type": "choice",
+      "choice": "navigation",
+      "confidence": 0.67,
+      "probabilities": { "text_size": 0.15, "map_density": 0.07, "tap_targets": 0.03, "facility_distinction": 0.01, "navigation": 0.74 },
+      "stats": {}
+    }
+  },
+  "usage": { "input_tokens": 3059, "output_tokens": 275 },
+  "request_id": "playground_19c6ae7d86577f640b7ab814350ebac2bff",
+  "evaluation_time_ms": 161.48203700140584
+}

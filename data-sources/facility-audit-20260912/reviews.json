@@ -94,11 +94,12 @@
     },
     {
       "id": "osm-node-12919501779",
-      "category": "supermarket",
-      "checked_at": "2026-09-12",
-      "status": "pending",
-      "note": "下関元町店が照合候補です。県の店舗一覧には元町1-20のローソンが掲載されていますが、支店名のない原本位置と公式店舗地図の対応を確定できていません。スーパー分類を暫定維持しています。",
-      "evidence_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/225611.pdf",
+      "category": "convenience",
+      "name": "ローソン 下関元町",
+      "checked_at": "2026-09-20",
+      "status": "corrected",
+      "note": "ローソン公式求人で店舗名・住所・コンビニエンスストアであることを確認し、同ページの公式地図座標は原OSM点から10.3mだった。原ID・原座標を保持して名称と分類を訂正。",
+      "evidence_url": "https://crew.lawson.co.jp/jobfind-pc/job/All/146085/map",
       "expected_name": "ローソン",
       "expected_category": "supermarket"
     },

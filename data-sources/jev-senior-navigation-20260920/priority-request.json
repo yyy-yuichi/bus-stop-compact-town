@@ -1,0 +1,82 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "purpose": "高齢者向けUIについて、具体的な修正を決める前に次に検証する領域と方法を選ぶ。",
+    "constraints": {
+      "new_features": "追加しない",
+      "compact_ui": "地図を主役にし、説明文や縦方向の情報量を安易に増やさない",
+      "human_test": "高齢者本人による説明なしの操作試験は未実施",
+      "causal_evidence": "下記のJev応答は確率評価であり、原因や具体的な修正案の文章は返していない",
+      "rejected_trial": "長い見出しと案内枠を加えた比較案は、画面が重くなるため不採用として元へ戻した"
+    },
+    "raw_evaluation_1": {
+      "senior_usability_score_0_to_4": 2.71,
+      "senior_usability_confidence": 0.65,
+      "text_readability": { "choice": "mixed", "probability": 0.88, "confidence": 0.82 },
+      "map_cognitive_load": { "choice": "moderate", "probability": 0.98, "confidence": 0.97 },
+      "first_improvement_priority": { "choice": "navigation", "probability": 0.74, "confidence": 0.67 },
+      "selected_stop_identity_true": 0.9,
+      "walking_time_controls_true": 0.79,
+      "facility_categories_without_color_true": 0.9,
+      "return_to_stop_true": 0.9,
+      "data_freshness_clarity_true": 0.82,
+      "core_flow_support_true": 0.9
+    },
+    "raw_navigation_breakdown": {
+      "entry_point_clear_true": 0.65,
+      "search_purpose_clear_true": 0.92,
+      "map_stop_discoverable_true": 0.7,
+      "tap_confirmation_clear_true": 0.92,
+      "drawer_next_step_clear_true": 0.78,
+      "walking_time_change_effect_clear_true": 0.61,
+      "map_list_relationship_clear_true": 0.63,
+      "facility_open_affordance_clear_true": 0.81,
+      "facility_return_clear_true": 0.84,
+      "navigation_bottleneck": {
+        "choice": "map_list_relation",
+        "confidence": 0.38,
+        "probabilities": {
+          "map_list_relation": 0.48,
+          "facility_open_or_return": 0.28,
+          "interpreting_walk_controls": 0.14,
+          "discovering_stop_marker": 0.09,
+          "entry_or_search": 0.01,
+          "recognizing_selection": 0
+        }
+      }
+    }
+  },
+  "questions": {
+    "first_area_to_validate": {
+      "type": "choice",
+      "instructions": "提供された評価値と未確認事項だけを根拠に、UIを変更する前に最初に検証すべき領域を一つ選ぶ。具体的な修正案ではなく、追加観察で不確実性を減らす対象を選ぶ。",
+      "criteria": {
+        "map_list_relationship": "徒歩圏の地図表示と施設候補一覧の関係を利用者が理解できるか。",
+        "walking_time_effect": "5・10・15分の選択状態と、変更により結果が変わることを理解できるか。",
+        "entry_point": "検索または地図から操作を始められるか。",
+        "stop_marker_discovery": "地図上のバス停を見つけ、タップ対象だと理解できるか。",
+        "text_readability": "主要文字の大きさと読みやすさに問題があるか。",
+        "map_density": "地図のアイコン・ラベル・徒歩道路線の量で混乱するか。",
+        "facility_open_return": "施設詳細を開き、元のバス停へ戻れるか。"
+      }
+    },
+    "first_validation_method": {
+      "type": "choice",
+      "instructions": "次の一手として最初に行う検証方法を一つ選ぶ。UI変更の実装そのものではなく、判断に必要な証拠を得る方法を選ぶ。",
+      "criteria": {
+        "older_user_unassisted_observation": "高齢者本人に説明せず中核操作をしてもらい、停止箇所・誤操作・助言の必要箇所を記録する。",
+        "targeted_screen_review": "390px画面で対象領域の表示位置・密度・選択状態を追加観察する。",
+        "additional_jev_questions": "同じ画面情報をさらに細かい設問へ分けてJevで評価する。",
+        "direct_ui_change_trial": "具体的な原因を観察する前にUI変更案を作って比較する。"
+      }
+    },
+    "ready_for_direct_ui_change": {
+      "type": "noul",
+      "instructions": "現在の証拠だけで、具体的なUI変更の原因と手段を特定し、直接実装へ進める状態である。",
+      "criteria": {
+        "true": "評価値から具体的な原因と有効な修正手段まで十分に特定できている。",
+        "false": "弱い可能性がある領域は分かるが、原因または修正手段を確定する追加観察が必要である。"
+      }
+    }
+  }
+}

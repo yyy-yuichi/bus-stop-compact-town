@@ -1,0 +1,494 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "purpose": "古い可能性がある既存生活施設13件について、アプリ変更前の分類候補を作る。",
+    "evidence_boundary": "GPT Chatが列挙した公式資料ベースの確認事項と未解決事項のみを入力する。JevはURLの内容を再取得・検証した証拠とは扱わない。",
+    "decision_boundary": "Jevの出力は分類候補であり、人による公式URL確認前にアプリへ反映しない。",
+    "records": [
+      {
+        "id": "osm-node-12919501779",
+        "original": {
+          "name": "ローソン",
+          "category": "supermarket",
+          "source_id": "node/12919501779",
+          "source_point": [
+            130.9246955,
+            33.9663643
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "ローソン 下関元町",
+          "business_status": "営業確認",
+          "official_address": "山口県下関市元町1-20",
+          "business_type": "コンビニエンスストア",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "提示座標130.9246955,33.9663643と公式住所の同一地点性は、公式資料に緯度経度がないため確認不能。"
+          ],
+          "review_note": "現行公式求人の情報更新日は2026-09-19。元座標との一致は未確定。",
+          "source_stage": "GPT Chat第1バッチ後の再監査結果"
+        }
+      },
+      {
+        "id": "osm-node-3798156478",
+        "original": {
+          "name": "いちやSC",
+          "category": "supermarket",
+          "source_id": "node/3798156478",
+          "source_point": [
+            131.7100468,
+            34.0789212
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "株式会社いちや家具店",
+          "business_status": "確認不能",
+          "official_address": "山口県周南市大字夜市2936-1",
+          "business_type": "大規模小売店舗",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "提示座標131.7100468,34.0789212と法定届出所在地の厳密な対応は確認不能。",
+            "「いちやSC」という既存名称と法定届出上の施設名称の対応範囲は、今回の公式資料だけでは確定できない。",
+            "建物自体の現存・撤去状況は確認していない。"
+          ],
+          "review_note": "店舗面積0平方メートルの届出だけでは、建物・事業者・現地事業全体の閉店を断定できない。元座標と既存名称いちやSCとの対応も未確定。",
+          "source_stage": "GPT Chat第1バッチ後の再監査結果"
+        }
+      },
+      {
+        "id": "osm-node-3951221858",
+        "original": {
+          "name": "イオン柳井新庄SC",
+          "category": "supermarket",
+          "source_id": "node/3951221858",
+          "source_point": [
+            132.0960452,
+            33.9736498
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "イオン柳井新庄SC",
+          "business_status": "営業確認",
+          "official_address": "山口県柳井市柳井4923-2",
+          "business_type": null,
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "提示座標132.0960452,33.9736498がショッピングセンター全体、マックスバリュ店舗、または別の施設要素のどれを示すかは公式資料だけでは確認不能。",
+            "ショッピングセンター全体について、最新の法定届出上の名称・施設範囲・管理主体までは確認できていない。"
+          ],
+          "review_note": "ウイル柳井店がイオン柳井新庄SC内で営業していることは確認。マックスバリュとのテナント関係、施設全体の業態、元座標との対応は未確定。",
+          "source_stage": "GPT Chat第1バッチ後の再監査結果"
+        }
+      },
+      {
+        "id": "osm-node-4021864894",
+        "original": {
+          "name": "イオン下松山田SC",
+          "category": "supermarket",
+          "source_id": "node/4021864894",
+          "source_point": [
+            131.903361,
+            34.0322174
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "イオン下松山田ショッピングセンター",
+          "business_status": "確認不能",
+          "official_address": "山口県下松市大字山田156-1",
+          "business_type": "大規模小売店舗",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "提示座標131.9033610,34.0322174がショッピングセンター全体またはマックスバリュ山田店のどの施設要素を示すかは、公式資料だけでは確認不能。"
+          ],
+          "review_note": "県公告は施設名称・所在地・2025年の変更を示すが、施設全体の現営業、マックスバリュとのテナント関係、元座標との対応は未確定。",
+          "source_stage": "GPT Chat第1バッチ後の再監査結果"
+        }
+      },
+      {
+        "id": "osm-node-4355096689",
+        "original": {
+          "name": "Best",
+          "category": "supermarket",
+          "source_id": "node/4355096689",
+          "source_point": [
+            131.9347015,
+            33.9699442
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "光ショッピングセンターベスト",
+          "business_status": "営業確認",
+          "official_address": "山口県光市島田1丁目12番10号",
+          "business_type": "大規模小売店舗",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "提示座標131.9347015,33.9699442と光市島田1丁目12番10号の厳密な対応は、公式資料に緯度経度がないため確認不能。",
+            "元の名称「Best」が「光ショッピングセンターベスト」を指すことは有力な対応候補だが、公式資料だけでOSMノードとの同一性までは確定できない。",
+            "既存候補の浅江にあったベスト電器について、閉店・移転と当該OSMノードとの関係を直接示す運営会社公式資料は確認できていない。"
+          ],
+          "review_note": "2026年県公告で施設名・所在地・小売業者を確認。元OSMノードと浅江の旧ベスト電器との関係は未確定。",
+          "source_stage": "GPT Chat第1バッチ後の再監査結果"
+        }
+      },
+      {
+        "id": "osm-node-12376670726",
+        "original": {
+          "name": "おかもと内閣",
+          "category": "clinic",
+          "source_id": "node/12376670726",
+          "source_point": [
+            131.8022029,
+            34.0543782
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "おかもと腎クリニック",
+          "business_status": "営業確認",
+          "official_address": "山口県周南市大字徳山4110-2",
+          "business_type": "腎臓内科・人工透析内科",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "今回確認した公式資料には「おかもと内科」から「おかもと腎クリニック」へ移転・改称したことを一つの資料で直接明記したものがなく、「移転確認」とはしていない。",
+            "提示座標131.8022029,34.0543782が旧「おかもと内科」の本町2丁目6番の位置と一致することは、確認した公式資料に緯度経度がないため確定できない。",
+            "元名称「おかもと内閣」が「おかもと内科」を指すことは公式資料から確定できない。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第2バッチ結果"
+        }
+      },
+      {
+        "id": "osm-node-5712889433",
+        "original": {
+          "name": "クスリ岩崎チェーン",
+          "category": "pharmacy",
+          "source_id": "node/5712889433",
+          "source_point": [
+            130.9897862,
+            33.985596
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "クスリ岩崎チェーン イオン長府店",
+          "business_status": "営業確認",
+          "official_address": "山口県下関市長府外浦町2-5",
+          "business_type": "ドラッグストア",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "調剤受付時間がすべて「―」であることは確認できるが、物理的な調剤窓口・設備そのものが存在しないことまでは公式ページから断定できない。",
+            "元レコードの対象がドラッグストア店舗全体なのか、薬局・調剤機能のみを意図した要素なのかは確認不能。",
+            "提示座標130.9897862,33.985596と店舗の同一性は、公式ページに緯度経度または店舗内配置が明記されていないため確定できない。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第2バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-1069977638",
+        "original": {
+          "name": "山口銀行 丸久川西店",
+          "category": "supermarket",
+          "source_id": "way/1069977638",
+          "source_point": [
+            132.1766462,
+            34.1579977
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "マルキュウ川西店",
+          "business_status": "営業確認",
+          "official_address": "山口県岩国市川西二丁目7番16号",
+          "business_type": "スーパーマーケット",
+          "original_record_match": "対応未確定",
+          "unresolved": [
+            "osm-way-1069977638のポリゴンがスーパーマーケット建物全体を表すのか、銀行ATM設備を表すのかは、確認した公式資料にOSM形状と対応する施設図がないため確定できない。",
+            "山口銀行ATMの店舗内または建物内での正確な設置位置・占有範囲は確認不能。",
+            "提示座標132.1766462,34.1579977とスーパー建物またはATM設備の位置関係は公式資料から確定できない。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第2バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-202664935",
+        "original": {
+          "name": "ドラッグセガミ",
+          "category": "pharmacy",
+          "source_id": "way/202664935",
+          "source_point": [
+            131.451174,
+            34.164975
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": null,
+          "business_status": "確認不能",
+          "official_address": null,
+          "business_type": null,
+          "original_record_match": "対応未確定",
+          "unresolved": [
+            "運営会社・自治体・公的機関の確認できた原ページから、旧「ドラッグセガミ 山口湯田店」の正式住所を直接確認できなかった。",
+            "旧「ドラッグセガミ 山口湯田店」の閉店日を直接示す公式資料を確認できなかった。",
+            "旧「ドラッグセガミ 山口湯田店」が「クスリ岩崎チェーン 湯田西店」または「クスリ岩崎チェーン 山口湯田店」へ改称・承継されたことを直接示す公式資料を確認できなかった。",
+            "第三者情報では旧店舗と現在の湯田西店に関係する可能性が示されるが、調査ルールにより確定根拠には使用していない。",
+            "提示座標131.451174,34.164975と旧店舗または現在の2店舗との対応は、公式資料に緯度経度・施設範囲がないため確定できない。",
+            "既存候補「山口湯田店」を元レコードの後継または同一施設として採用できる公式根拠は確認できなかった。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第2バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-305489114",
+        "original": {
+          "name": "ABC Mart",
+          "category": "mall",
+          "source_id": "way/305489114",
+          "source_point": [
+            131.865503,
+            34.0305697
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "ABC-MARTサンリブ下松店",
+          "business_status": "営業確認",
+          "official_address": "山口県下松市南花岡6-8-1-2F",
+          "business_type": "靴",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "osm-way-305489114がABC-MARTのテナント区画のみを表すのか、サンリブ下松の建物全体を表すのかは確認不能。",
+            "提示座標131.865503,34.0305697とABC-MART区画の対応は、確認した公式資料に緯度経度や区画境界がないため確定できない。",
+            "元分類「mall」がABC-MART区画ではなく商業施設建物全体を意図したものかは確認不能。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第3バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-579745077",
+        "original": {
+          "name": "Ｒｙｕ接骨院",
+          "category": "clinic",
+          "source_id": "way/579745077",
+          "source_point": [
+            131.9275412,
+            33.9807256
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "Ryu接骨院",
+          "business_status": "営業確認",
+          "official_address": "山口県光市大字浅江1723-1",
+          "business_type": "接骨院",
+          "original_record_match": "対応未確定",
+          "unresolved": [
+            "旧所在地として検索上確認された光市浅江1888-5について、運営者・自治体・公的機関の原資料から直接確認できなかったため、旧住所として確定していない。",
+            "浅江1888-5から浅江1723-1への移転を直接記載した公式資料は確認できなかったため、「移転確認」とはしていない。",
+            "提示座標131.9275412,33.9807256が旧所在地または現所在地のどちらに対応するかは公式資料から確認不能。",
+            "osm-way-579745077の施設範囲と現在のRyu接骨院敷地・建物範囲の一致は確認不能。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第3バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-600969423",
+        "original": {
+          "name": "サンキュードラッグ",
+          "category": "pharmacy",
+          "source_id": "way/600969423",
+          "source_point": [
+            130.9452301,
+            33.9850029
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": "サンキュードラッグ 新椋野薬局",
+          "business_status": "営業確認",
+          "official_address": "山口県下関市新椋野三丁目1番10号",
+          "business_type": "薬局（店舗販売業併設）",
+          "original_record_match": "対応候補",
+          "unresolved": [
+            "osm-way-600969423が建物・ドラッグストア全体を表すのか、133.6平方メートルとされる薬局部分のみを表すのかは確認不能。",
+            "提示座標130.9452301,33.9850029が調剤薬局部分、ドラッグストア部分、または建物全体のどこに位置するかは公式資料から確定できない。",
+            "公式資料から調剤区画とドラッグストア売場の具体的な境界は確認できない。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第3バッチ結果"
+        }
+      },
+      {
+        "id": "osm-way-613971823",
+        "original": {
+          "name": "ココカラファイン 下関生野店",
+          "category": "pharmacy",
+          "source_id": "way/613971823",
+          "source_point": [
+            130.9334958,
+            33.9850856
+          ],
+          "previous_status": "pending"
+        },
+        "gpt_chat_official_source_findings": {
+          "official_name": null,
+          "business_status": "確認不能",
+          "official_address": null,
+          "business_type": null,
+          "original_record_match": "対応未確定",
+          "unresolved": [
+            "運営会社・自治体・公的機関の確認できた原資料から、旧「ココカラファイン 下関生野店」の正式名称・正式住所を直接確認できなかった。",
+            "旧「ココカラファイン 下関生野店」の閉店および閉店日を直接示す公式資料は確認できなかった。",
+            "旧店舗が改称したこと、またはTRIDRUG GO 下関生野店が公式な後継店舗であることを示す資料は確認できなかった。",
+            "現在のTRIDRUG GO 下関生野店とosm-way-613971823が同一建物・同一区画であることは公式資料から確定できない。",
+            "提示座標130.9334958,33.9850856と旧ココカラファイン店舗または現在のTRIDRUG GO店舗との対応は、公式資料に緯度経度・区画境界がないため確認不能。"
+          ],
+          "review_note": null,
+          "source_stage": "GPT Chat第3バッチ結果"
+        }
+      }
+    ]
+  },
+  "questions": {
+    "classification__osm_node_12919501779": {
+      "type": "choice",
+      "instructions": "ID osm-node-12919501779 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_3798156478": {
+      "type": "choice",
+      "instructions": "ID osm-node-3798156478 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_3951221858": {
+      "type": "choice",
+      "instructions": "ID osm-node-3951221858 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_4021864894": {
+      "type": "choice",
+      "instructions": "ID osm-node-4021864894 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_4355096689": {
+      "type": "choice",
+      "instructions": "ID osm-node-4355096689 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_12376670726": {
+      "type": "choice",
+      "instructions": "ID osm-node-12376670726 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_node_5712889433": {
+      "type": "choice",
+      "instructions": "ID osm-node-5712889433 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_1069977638": {
+      "type": "choice",
+      "instructions": "ID osm-way-1069977638 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_202664935": {
+      "type": "choice",
+      "instructions": "ID osm-way-202664935 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_305489114": {
+      "type": "choice",
+      "instructions": "ID osm-way-305489114 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_579745077": {
+      "type": "choice",
+      "instructions": "ID osm-way-579745077 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_600969423": {
+      "type": "choice",
+      "instructions": "ID osm-way-600969423 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    },
+    "classification__osm_way_613971823": {
+      "type": "choice",
+      "instructions": "ID osm-way-613971823 を入力記録だけで分類する。推測で同一性・閉店・移転・範囲を補わない。",
+      "criteria": {
+        "change_none": "同一性と現状が公式根拠で確認でき、今回の変更は不要。",
+        "closure_candidate": "元施設の閉店・廃止を公式根拠が直接示す。",
+        "move_candidate": "元施設と現施設の同一性・移転を公式根拠が直接結ぶ。",
+        "unconfirmable": "上記を公式根拠だけで確定できない、または4分類外の変更候補。"
+      }
+    }
+  }
+}

@@ -3200,9 +3200,9 @@
       "type": "Feature",
       "id": "osm-node-12919501779",
       "properties": {
-        "name": "ローソン",
+        "name": "ローソン 下関元町",
         "city": "",
-        "category": "supermarket",
+        "category": "convenience",
         "official_address": "",
         "official_url": "",
         "address": "",
@@ -3223,10 +3223,10 @@
           "shop": "supermarket"
         },
         "classification_review": {
-          "checked_at": "2026-09-12",
-          "status": "pending",
-          "note": "下関元町店が照合候補です。県の店舗一覧には元町1-20のローソンが掲載されていますが、支店名のない原本位置と公式店舗地図の対応を確定できていません。スーパー分類を暫定維持しています。",
-          "evidence_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/225611.pdf",
+          "checked_at": "2026-09-20",
+          "status": "corrected",
+          "note": "ローソン公式求人で店舗名・住所・コンビニエンスストアであることを確認し、同ページの公式地図座標は原OSM点から10.3mだった。原ID・原座標を保持して名称と分類を訂正。",
+          "evidence_url": "https://crew.lawson.co.jp/jobfind-pc/job/All/146085/map",
           "original_category": "supermarket"
         }
       },
@@ -102348,7 +102348,7 @@
       "type": "Feature",
       "id": "osm-node-1423657090",
       "properties": {
-        "name": "旧；市立明倫小学校",
+        "name": "萩・明倫学舎",
         "city": "",
         "category": "reference",
         "official_address": "",
@@ -102376,11 +102376,11 @@
           "National-Land Numerical Information (Public Facility) 2006, MLIT Japan"
         ],
         "classification_review": {
-          "checked_at": "2026-09-14",
-          "status": "pending",
+          "checked_at": "2026-09-20",
+          "status": "out_of_scope",
           "original_category": "school",
-          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
-          "evidence_url": "https://www.openstreetmap.org/node/1423657090"
+          "note": "萩市公式は旧明倫小学校の木造校舎を現在の施設「萩・明倫学舎」として命名・案内している。名称のみ現行公式名へ更新し、生活施設の通常候補には含めないためreferenceと元座標を維持する。",
+          "evidence_url": "https://www.city.hagi.lg.jp/site/meiringakusha/"
         }
       },
       "geometry": {

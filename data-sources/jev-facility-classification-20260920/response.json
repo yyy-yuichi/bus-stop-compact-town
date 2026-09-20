@@ -1,0 +1,167 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "classification__osm_node_12919501779": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.97,
+      "probabilities": {
+        "unconfirmable": 0.98,
+        "change_none": 0.02,
+        "closure_candidate": 0,
+        "move_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_node_3798156478": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 1,
+      "probabilities": {
+        "unconfirmable": 1,
+        "change_none": 0,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_node_3951221858": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.95,
+      "probabilities": {
+        "unconfirmable": 0.96,
+        "change_none": 0.04,
+        "closure_candidate": 0,
+        "move_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_node_4021864894": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.99,
+      "probabilities": {
+        "unconfirmable": 1,
+        "change_none": 0,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_node_4355096689": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.98,
+      "probabilities": {
+        "unconfirmable": 0.99,
+        "change_none": 0.01,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_node_12376670726": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.98,
+      "probabilities": {
+        "unconfirmable": 0.99,
+        "change_none": 0,
+        "closure_candidate": 0,
+        "move_candidate": 0.01
+      },
+      "stats": {}
+    },
+    "classification__osm_node_5712889433": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.98,
+      "probabilities": {
+        "unconfirmable": 0.98,
+        "change_none": 0.02,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_1069977638": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.99,
+      "probabilities": {
+        "move_candidate": 0,
+        "change_none": 0,
+        "unconfirmable": 1,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_202664935": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 1,
+      "probabilities": {
+        "unconfirmable": 1,
+        "change_none": 0,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_305489114": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.97,
+      "probabilities": {
+        "move_candidate": 0.01,
+        "change_none": 0.01,
+        "unconfirmable": 0.98,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_579745077": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.98,
+      "probabilities": {
+        "unconfirmable": 0.99,
+        "change_none": 0.01,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_600969423": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 0.95,
+      "probabilities": {
+        "unconfirmable": 0.97,
+        "change_none": 0.03,
+        "closure_candidate": 0,
+        "move_candidate": 0
+      },
+      "stats": {}
+    },
+    "classification__osm_way_613971823": {
+      "type": "choice",
+      "choice": "unconfirmable",
+      "confidence": 1,
+      "probabilities": {
+        "unconfirmable": 1,
+        "change_none": 0,
+        "move_candidate": 0,
+        "closure_candidate": 0
+      },
+      "stats": {}
+    }
+  },
+  "usage": {
+    "input_tokens": 9173,
+    "output_tokens": 845
+  },
+  "request_id": "playground_19c5aefaf70214c450b8532a53b1301d8c8",
+  "evaluation_time_ms": 190.5084749996604
+}

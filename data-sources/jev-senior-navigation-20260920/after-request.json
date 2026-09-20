@@ -1,0 +1,19 @@
+{
+  "model": "jev-latest",
+  "base_state_source": {
+    "path": "../jev-senior-usability-20260920/request.json",
+    "json_pointer": "/state",
+    "sha256": "11426fa1d676f58f8bb2ffb5f2aa83f57638ce41e24b095dcc70154ac8e26e3a"
+  },
+  "state_overrides": {
+    "selected_stop_screen.walking_heading": "このバス停から歩ける範囲。16px、太字。",
+    "selected_stop_screen.linked_result_status": "時間ボタンの直後に『地図と下の施設候補を、徒歩15分で表示中』を14pxの淡い緑の枠内に表示。role=status、aria-live=polite。",
+    "selected_stop_screen.facility_list": "見出しは『徒歩15分で行ける施設候補』。施設名、種類、近くの道路までの徒歩分数、右向き矢印を表示。各行は幅344px、高さ約78px、施設名文字16px。例では10件。",
+    "selected_stop_screen.interaction_check": "390x844pxのローカル本番ビルドで、徒歩15分から10分へ変更すると、aria-pressed、案内文、施設見出し、候補件数が同時に10分へ更新。横方向のはみ出しなし。",
+    "accessibility_facts.small_text": "ヘッダーと検索は13px、時間ボタン14px、地図出典9px。施設名16px。徒歩範囲の見出し16px、時間と結果の案内14px。"
+  },
+  "questions_source": {
+    "path": "request.json",
+    "json_pointer": "/questions"
+  }
+}

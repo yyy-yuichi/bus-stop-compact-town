@@ -1,0 +1,31 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "entry_point_clear": { "type": "noul", "noul": 0.65, "stats": {} },
+    "search_purpose_clear": { "type": "noul", "noul": 0.92, "stats": {} },
+    "map_stop_discoverable": { "type": "noul", "noul": 0.7, "stats": {} },
+    "tap_confirmation_clear": { "type": "noul", "noul": 0.92, "stats": {} },
+    "drawer_next_step_clear": { "type": "noul", "noul": 0.78, "stats": {} },
+    "walking_time_change_effect_clear": { "type": "noul", "noul": 0.61, "stats": {} },
+    "map_list_relationship_clear": { "type": "noul", "noul": 0.63, "stats": {} },
+    "facility_open_affordance_clear": { "type": "noul", "noul": 0.81, "stats": {} },
+    "facility_return_clear": { "type": "noul", "noul": 0.84, "stats": {} },
+    "navigation_bottleneck": {
+      "type": "choice",
+      "choice": "map_list_relation",
+      "confidence": 0.38,
+      "probabilities": {
+        "interpreting_walk_controls": 0.14,
+        "entry_or_search": 0.01,
+        "map_list_relation": 0.48,
+        "discovering_stop_marker": 0.09,
+        "facility_open_or_return": 0.28,
+        "recognizing_selection": 0
+      },
+      "stats": {}
+    }
+  },
+  "usage": { "input_tokens": 2956, "output_tokens": 258 },
+  "request_id": "playground_19c683998c4a0824d4aba986dfe84417354",
+  "evaluation_time_ms": 243.46485099522397
+}

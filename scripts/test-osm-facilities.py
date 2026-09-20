@@ -33,9 +33,15 @@ class ImportTests(unittest.TestCase):
         enriched, details = module.neighborhood_facilities.enrich_registered_details(expanded)
         from route_facility_review import apply_reviewed_facilities
         reviewed=apply_reviewed_facilities(enriched)
-        self.assertEqual(reviewed, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        decided=module.apply_facility_decision_manifest(reviewed)
+        self.assertEqual(decided, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
         self.assertEqual(apply_reviewed_facilities(reviewed),reviewed)
-        self.assertEqual([(f['id'],f['geometry']) for f in enriched['features']],[(f['id'],f['geometry']) for f in reviewed['features']])
+        self.assertEqual(module.apply_facility_decision_manifest(decided),decided)
+        self.assertEqual([(f['id'],f['geometry']) for f in enriched['features']],[(f['id'],f['geometry']) for f in decided['features']])
+        records={f['id']:f for f in decided['features']}
+        self.assertEqual(records['osm-node-1423657090']['properties']['name'],'萩・明倫学舎')
+        self.assertEqual(records['osm-node-1423657090']['properties']['category'],'reference')
+        self.assertEqual(records['osm-node-1423657090']['properties']['classification_review']['status'],'out_of_scope')
         self.assertEqual(report['added'], 3138)
         self.assertEqual(expanded['features'][:1927], complete['features'])
         self.assertEqual(details['phone'],477)
@@ -101,6 +107,9 @@ class ImportTests(unittest.TestCase):
                              {k:v for k,v in after['properties'].items() if k not in ('name','category','classification_review')})
         records = {f['id']:f['properties'] for f in reviewed['features']}
         self.assertEqual(records['osm-node-7037775362']['category'], 'reference')
+        self.assertEqual(records['osm-node-12919501779']['name'], 'ローソン 下関元町')
+        self.assertEqual(records['osm-node-12919501779']['category'], 'convenience')
+        self.assertEqual(records['osm-node-12919501779']['classification_review']['status'], 'corrected')
         self.assertEqual(records['osm-way-579745077']['classification_review']['status'], 'pending')
         self.assertEqual(records['osm-node-12383832808']['category'], 'clinic')
         self.assertEqual(records['osm-way-1228233757']['category'], 'drugstore')

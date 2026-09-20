@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "GPT Chat調査13件のうち、既存の2026-09-12監査から判断を進められる公式地図座標があるかを確認する。",
+  "decision_rule": "公式施設ページ自身が示す地図座標と原OSM代表点を比較する。座標が近くても、建物全体とテナント区画の範囲が不明なwayは推測で確定しない。",
+  "records": [
+    {
+      "id": "osm-node-12919501779",
+      "original_name": "ローソン",
+      "source_point": [130.9246955, 33.9663643],
+      "official_name": "ローソン 下関元町",
+      "official_point": [130.92460944444444, 33.96630472222222],
+      "distance_m": 10.3,
+      "official_url": "https://crew.lawson.co.jp/jobfind-pc/job/All/146085/map",
+      "official_facts": [
+        "ローソン公式求人の事業内容はコンビニエンスストアの運営。",
+        "同ページの公式地図スクリプトは住所を山口県下関市元町1-20、緯度33.9663047222222222、経度130.9246094444444444としている。"
+      ],
+      "decision": "corrected",
+      "change": "原ID・原座標を保持し、名称をローソン 下関元町、分類をconvenienceへ訂正する。"
+    },
+    {
+      "id": "osm-way-305489114",
+      "original_name": "ABC Mart",
+      "source_point": [131.865503, 34.0305697],
+      "official_name": "ABC-MARTサンリブ下松店",
+      "official_point": [131.8654976, 34.0306367],
+      "distance_m": 7.5,
+      "official_url": "https://www.abc-mart.net/shop/store/storedetail.aspx?store=1745",
+      "official_map_url": "https://maps.apple.com/?q=34.0306367%2C131.8654976",
+      "official_facts": [
+        "ABC-MART公式店舗ページは店舗名、南花岡6-8-1-2F、公式地図座標を示している。"
+      ],
+      "decision": "pending",
+      "hold_reason": "原OSM wayはname=サンリブ、name:ja=ABC Mart、shop=department_storeが混在し、wayが建物全体か2階テナント区画かは公式地図座標だけでは確定できない。"
+    },
+    {
+      "id": "osm-way-579745077",
+      "original_name": "Ｒｙｕ接骨院",
+      "source_point": [131.9275412, 33.9807256],
+      "official_name": "Ryu接骨院",
+      "official_point": [131.925788, 33.979676],
+      "distance_m": 199.4,
+      "official_url": "https://www.ryusekkotsuin.com/",
+      "official_facts": [
+        "公式サイトは現住所を光市大字浅江1723-1とし、埋め込み公式地図を表示している。"
+      ],
+      "decision": "pending",
+      "hold_reason": "公式現位置と原OSM代表点が約199m離れる。公式資料から旧位置と移転を直接確認できず、元wayを現位置へ移したり現施設と同一と確定したりしない。"
+    },
+    {
+      "id": "osm-way-600969423",
+      "original_name": "サンキュードラッグ",
+      "source_point": [130.9452301, 33.9850029],
+      "official_name": "サンキュードラッグ 新椋野薬局",
+      "official_point": [130.94302531540896, 33.98513598062427],
+      "distance_m": 203.8,
+      "official_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+      "official_facts": [
+        "公式ページは新椋野三丁目1番10号、ドラッグと調剤の併設、Google地図埋め込みを示している。"
+      ],
+      "decision": "pending",
+      "hold_reason": "公式地図の表示中心と原OSM way代表点が約204m離れ、元wayが建物全体・調剤区画・別施設のどれかを確定できない。"
+    }
+  ]
+}

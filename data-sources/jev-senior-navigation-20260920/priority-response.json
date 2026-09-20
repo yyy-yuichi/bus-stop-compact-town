@@ -1,0 +1,40 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "first_area_to_validate": {
+      "type": "choice",
+      "choice": "map_list_relationship",
+      "confidence": 0.88,
+      "probabilities": {
+        "text_readability": 0.01,
+        "map_list_relationship": 0.89,
+        "entry_point": 0.01,
+        "stop_marker_discovery": 0.01,
+        "facility_open_return": 0,
+        "walking_time_effect": 0.08,
+        "map_density": 0
+      },
+      "stats": {}
+    },
+    "first_validation_method": {
+      "type": "choice",
+      "choice": "older_user_unassisted_observation",
+      "confidence": 0.92,
+      "probabilities": {
+        "older_user_unassisted_observation": 0.94,
+        "direct_ui_change_trial": 0,
+        "targeted_screen_review": 0.04,
+        "additional_jev_questions": 0.02
+      },
+      "stats": {}
+    },
+    "ready_for_direct_ui_change": {
+      "type": "noul",
+      "noul": 0.06,
+      "stats": {}
+    }
+  },
+  "usage": { "input_tokens": 1722, "output_tokens": 176 },
+  "request_id": "playground_19cbcd63d80825448faa1750d5a870a2b88",
+  "evaluation_time_ms": 204.85349500086159
+}

@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-20",
+  "input_sha256": "200d7c270cdfe06ffd1b19c9985f5f79176a8e7002ccb363b78198c745f70703",
+  "manifest_sha256": "c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866",
+  "manifest_result": {
+    "input_records": 53,
+    "unique_decision_ids": 53,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "decisions": {
+      "update": 1,
+      "no_change": 23,
+      "hold": 29
+    },
+    "coordinate_changes": 0
+  },
+  "tests": [
+    {
+      "command": "python -B scripts/facility_decision_manifest.py",
+      "result": "passed"
+    },
+    {
+      "command": "python -B scripts/test-osm-facilities.py -v",
+      "result": "11 tests passed"
+    },
+    {
+      "command": "npm run validate",
+      "result": "passed; 7764 facilities"
+    },
+    {
+      "command": "npm run test:baked-facilities",
+      "result": "passed"
+    },
+    {
+      "command": "npm run test:places",
+      "result": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ]
+}

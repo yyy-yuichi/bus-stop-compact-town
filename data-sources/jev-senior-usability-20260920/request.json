@@ -1,0 +1,126 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "evaluation_goal": "高齢者が、機能説明を受けずにバス停を選び、徒歩圏と施設を確認し、元のバス停へ戻れるかを評価する。新機能の提案ではなく、現在の中核操作の理解しやすさを判定する。",
+    "constraints": {
+      "viewport": "390x844 CSS px",
+      "device_context": "スマートフォン相当",
+      "human_test": "高齢者本人による操作試験はまだ実施していない",
+      "visual_input_note": "以下は実画面のDOM、寸法、表示文字、スクリーンショットから抽出した観察事実"
+    },
+    "initial_screen": {
+      "header": "バス停と暮らしマップ",
+      "header_font_px": 13,
+      "search": { "label": "バス停・暮らしの施設を検索", "font_px": 13, "height_px": 46 },
+      "visible_controls": ["表示設定を開く", "山口県のバス停全体を表示", "地図を拡大", "地図を縮小"],
+      "control_sizes_px": { "display_settings": "40x44", "overview": "42x42" },
+      "map": "画面上部に地図。バス停はバスの絵柄を持つアイコン。広域では件数クラスタ。施設は種類別の絵柄と色を持つアイコン。"
+    },
+    "selected_stop_screen": {
+      "selected_stop": "城下町長府",
+      "selection_feedback": "選択アイコンに黄色の外枠。下部パネル見出しに『バス停』『城下町長府』。閉じるボタン44x44px。",
+      "map_state": "徒歩圏の道路線と施設アイコンを表示。近接する施設名ラベルの一部は省略記号で短縮される。",
+      "walking_controls": [
+        { "label": "徒歩 5 分", "size_px": "109x48", "font_px": 14 },
+        { "label": "徒歩 10 分", "size_px": "109x48", "font_px": 14 },
+        { "label": "徒歩 15 分", "size_px": "109x48", "font_px": 14, "selected": true }
+      ],
+      "facility_filter": "『施設候補の種類』というラベル付き選択欄。高さ44px。すべて、買い物、食事・カフェ、医療、子育て・教育、公園・運動、暮らし・公共施設、福祉を件数付きで選べる。",
+      "facility_list": "施設名、種類、近くの道路までの徒歩分数、右向き矢印を表示。各行は幅344px、高さ約78px、施設名文字16px。例では10件。",
+      "additional_controls": ["候補の判定について", "徒歩圏の計算について", "この徒歩条件のリンクをコピー", "登録情報・出典"]
+    },
+    "facility_detail_screen": {
+      "facility": "アイユウ長府ホームヘルプサービス事業部",
+      "heading_wrap": "390px幅では施設名が2行になる",
+      "visible_return": "見出し直下に『← 城下町長府のバス停に戻る』を表示",
+      "close_button": "施設の詳細を閉じる",
+      "map_preserved": true,
+      "details": [
+        "所在地 下関市長府南之町1－1",
+        "山口県・2024-02-01時点のデータ",
+        "営業状況・受付時間は施設へご確認ください",
+        "電話番号",
+        "サービス 訪問介護",
+        "運営 医療法人 松永会"
+      ]
+    },
+    "accessibility_facts": {
+      "native_controls": "検索はsearch input、時間切替と施設行と戻る操作はbutton、施設分類はselect",
+      "minimum_comfort_target": "主要な時間ボタン、施設行、閉じるボタンは44px以上。表示設定40px幅、全体表示42x42px。",
+      "color_dependency": "施設一覧には種類名が文字で併記される。地図上の施設には絵柄・色・一部名称ラベルがある。徒歩道路線の色は『徒歩15分・色の見方』から説明を開く。",
+      "small_text": "ヘッダーと検索は13px、時間ボタン14px、地図出典9px。施設名16px。"
+    },
+    "core_task_steps": [
+      "検索または地図でバス停を見つける",
+      "バス停アイコンをタップして詳細を開く",
+      "徒歩5・10・15分を選ぶ",
+      "分類を選んで施設一覧を見る",
+      "施設を開く",
+      "明示された戻るボタンでバス停へ戻る"
+    ]
+  },
+  "questions": {
+    "senior_usability": {
+      "type": "score",
+      "instructions": "説明を受けていない高齢者が、現在の中核操作を一人で進められる可能性を評価する。",
+      "criteria": [
+        "操作の開始や進行が分からず、一人での利用は難しい。",
+        "複数箇所で支援が必要になる。",
+        "時間をかけたり試行錯誤すれば中核操作を完了できる。",
+        "多少迷う可能性はあるが、概ね一人で完了できる。",
+        "中核操作の流れが明確で、ほぼ迷わず一人で完了できる。"
+      ]
+    },
+    "selected_stop_identity": {
+      "type": "noul",
+      "instructions": "バス停を選択した後、どのバス停を見ているかが明確である。",
+      "criteria": { "true": "地図と詳細パネルの両方で選択対象を特定できる。", "false": "選択対象が分からない、または別の地点と混同しやすい。" }
+    },
+    "walking_time_controls": {
+      "type": "noul",
+      "instructions": "徒歩5・10・15分の切替は、意味と選択状態が理解しやすく、押しやすい。",
+      "criteria": { "true": "ラベル、選択状態、操作領域から機能を理解して操作できる。", "false": "意味または現在の選択が分かりにくい、あるいは押しにくい。" }
+    },
+    "facility_categories_without_color": {
+      "type": "noul",
+      "instructions": "施設の種類は、色の違いを認識できなくても区別できる。",
+      "criteria": { "true": "文字、絵柄、選択欄など色以外の手掛かりで区別できる。", "false": "色を認識できないと施設の種類を区別できない。" }
+    },
+    "return_to_stop": {
+      "type": "noul",
+      "instructions": "施設詳細を開いた後、元のバス停へ戻る操作が明確である。",
+      "criteria": { "true": "元のバス停名を含む目立つ単一操作で戻れる。", "false": "戻り方が見つけにくい、または戻り先が不明。" }
+    },
+    "text_readability": {
+      "type": "choice",
+      "instructions": "390x844px画面における主要情報の読みやすさを選ぶ。",
+      "criteria": { "comfortable": "主要文字が十分大きく、読む負担が小さい。", "mixed": "主要内容は読めるが、小さい文字や密集した箇所が一部ある。", "difficult": "主要操作や内容を読むのが難しい。" }
+    },
+    "map_cognitive_load": {
+      "type": "choice",
+      "instructions": "バス停選択後の地図について、表示密度による混乱の可能性を選ぶ。",
+      "criteria": { "low": "選択地点、徒歩圏、施設の関係を容易に把握できる。", "moderate": "目的は把握できるが、重なりや短縮表示により少し確認が必要。", "high": "アイコンやラベルが多く、選択地点や次の操作を見失いやすい。" }
+    },
+    "data_freshness_clarity": {
+      "type": "noul",
+      "instructions": "施設情報の時点と、現状を別途確認すべきことが利用者に明確である。",
+      "criteria": { "true": "データ時点と確認上の注意が具体的に表示されている。", "false": "現在の営業状況だと誤認しやすい。" }
+    },
+    "core_flow_support": {
+      "type": "noul",
+      "instructions": "現在の機能だけで、バス停を選び、徒歩圏と施設を確認する中核目的を達成できる。",
+      "criteria": { "true": "主要な一連の操作が揃い、機能追加なしで目的を達成できる。", "false": "目的達成に欠けている必須機能がある。" }
+    },
+    "first_improvement_priority": {
+      "type": "choice",
+      "instructions": "高齢者の使いやすさを改善する場合、観察事実から最初に検証すべき領域を一つ選ぶ。",
+      "criteria": {
+        "text_size": "ヘッダー、検索、補助説明などの文字サイズと読みやすさ。",
+        "map_density": "地図上の施設アイコン、短縮ラベル、徒歩道路線の表示密度。",
+        "tap_targets": "44px未満を含む操作対象の押しやすさ。",
+        "facility_distinction": "施設分類の色・絵柄・文字による区別。",
+        "navigation": "バス停選択、施設詳細、元のバス停へ戻る流れ。"
+      }
+    }
+  }
+}

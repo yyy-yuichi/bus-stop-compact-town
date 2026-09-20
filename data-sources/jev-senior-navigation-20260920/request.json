@@ -1,0 +1,67 @@
+{
+  "model": "jev-latest",
+  "state_source": {
+    "path": "../jev-senior-usability-20260920/request.json",
+    "json_pointer": "/state",
+    "sha256": "11426fa1d676f58f8bb2ffb5f2aa83f57638ce41e24b095dcc70154ac8e26e3a"
+  },
+  "questions": {
+    "entry_point_clear": {
+      "type": "noul",
+      "instructions": "初めて使う高齢者が、検索欄または地図から操作を始められると理解できる。",
+      "criteria": { "true": "検索欄と地図が開始点として認識できる。", "false": "最初にどこを操作すればよいか判断しにくい。" }
+    },
+    "search_purpose_clear": {
+      "type": "noul",
+      "instructions": "検索欄が、バス停と暮らしの施設の両方を探す欄だと分かる。",
+      "criteria": { "true": "表示文から検索対象を理解できる。", "false": "何を検索できるか誤解または判断しにくい。" }
+    },
+    "map_stop_discoverable": {
+      "type": "noul",
+      "instructions": "説明なしでも、地図上のバス停アイコンを施設アイコンと区別して見つけ、タップ対象だと理解できる。",
+      "criteria": { "true": "バスの絵柄と表示からバス停を発見し操作できる。", "false": "施設やクラスタと混同する、またはタップ対象だと分かりにくい。" }
+    },
+    "tap_confirmation_clear": {
+      "type": "noul",
+      "instructions": "バス停をタップした直後、選択した場所と表示中のバス停名を確認できる。",
+      "criteria": { "true": "黄色の外枠と下部パネルの名称で選択結果を確認できる。", "false": "選択結果や対象地点が分かりにくい。" }
+    },
+    "drawer_next_step_clear": {
+      "type": "noul",
+      "instructions": "バス停の下部パネルが開いた後、徒歩時間または施設分類を選んで次へ進むことが分かる。",
+      "criteria": { "true": "次に使う操作が見つかり、意味を推測できる。", "false": "表示後に何をすればよいか判断しにくい。" }
+    },
+    "walking_time_change_effect_clear": {
+      "type": "noul",
+      "instructions": "徒歩5・10・15分の選択状態と、選択により徒歩圏・施設候補が変わることを理解できる。",
+      "criteria": { "true": "現在値と変更結果の関係を理解できる。", "false": "現在値または何が変わるか分かりにくい。" }
+    },
+    "map_list_relationship_clear": {
+      "type": "noul",
+      "instructions": "地図上の徒歩圏・施設表示と、下部の施設候補一覧が同じ条件の結果だと理解できる。",
+      "criteria": { "true": "地図と一覧の対応関係が明確である。", "false": "地図と一覧が別の情報に見える、または関係が分かりにくい。" }
+    },
+    "facility_open_affordance_clear": {
+      "type": "noul",
+      "instructions": "施設候補の各行を押すと詳細が開くことが、行の表示と右向き矢印から分かる。",
+      "criteria": { "true": "施設行が明確な操作対象に見える。", "false": "単なる情報表示に見え、押せると分かりにくい。" }
+    },
+    "facility_return_clear": {
+      "type": "noul",
+      "instructions": "施設詳細から、表示中だった同じバス停へ戻る操作を迷わず見つけられる。",
+      "criteria": { "true": "バス停名を含む戻る操作と戻り先が明確である。", "false": "戻る操作または戻り先が分かりにくい。" }
+    },
+    "navigation_bottleneck": {
+      "type": "choice",
+      "instructions": "この画面情報だけを根拠に、高齢者が中核操作で最も迷いやすい箇所を一つ選ぶ。新機能の不足ではなく、既存操作の理解しにくさを判定する。",
+      "criteria": {
+        "entry_or_search": "検索と地図のどちらから始めるかを判断する段階。",
+        "discovering_stop_marker": "地図上でバス停アイコンを見つけ、押せると理解する段階。",
+        "recognizing_selection": "タップ後に選択したバス停と表示結果を確認する段階。",
+        "interpreting_walk_controls": "徒歩時間の現在値と、変更により何が変わるかを理解する段階。",
+        "map_list_relation": "徒歩圏の地図表示と施設候補一覧の対応を理解する段階。",
+        "facility_open_or_return": "施設詳細を開き、同じバス停へ戻る段階。"
+      }
+    }
+  }
+}

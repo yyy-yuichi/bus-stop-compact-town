@@ -1,0 +1,1903 @@
+{
+  "schema_version": 1,
+  "repository": "yyy-yuichi/bus-stop-compact-town",
+  "base_commit": "2a78ecaea7c54b3c106353b4740943b07bc7606a",
+  "input_sha256": "200d7c270cdfe06ffd1b19c9985f5f79176a8e7002ccb363b78198c745f70703",
+  "summary": {
+    "candidate_count": 53,
+    "decision_counts": {
+      "update": 1,
+      "no_change": 23,
+      "hold": 29
+    },
+    "id_validation": {
+      "input_count": 53,
+      "decision_count": 53,
+      "unique_decision_ids": 53,
+      "duplicate_decision_ids": [],
+      "missing_input_ids": []
+    },
+    "coordinate_changes": 0,
+    "prior_completed_reused_count": 12,
+    "duplicate_precheck": {
+      "performed": true,
+      "basis": "base_commit public/data/shopping.geojson を read-only で照合",
+      "result": "reference分類の病院名レコードの近傍に別hospitalレコードが複数確認されたため、公式資料で元要素の施設範囲を確定できないものはholdとした。"
+    },
+    "official_evidence_unique_url_count": 47,
+    "measured_elapsed_seconds": 808.0
+  },
+  "decisions": [
+    {
+      "id": "osm-node-12376670726",
+      "decision": "hold",
+      "current_record": {
+        "name": "おかもと内閣",
+        "category": "clinic",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8022029,
+            34.0543782
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "公式の現在名は「おかもと腎クリニック」、所在地は周南市二番町です。原本の「おかもと内閣」は誤記候補ですが、旧位置との移転前後の対応が未確定のため、名称・位置を変更していません。",
+          "evidence_url": "https://okamoto-kidney.com/",
+          "original_category": "clinic"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://okamoto-kidney.com/"
+      ],
+      "confirmed_facts": [
+        "公式サイトで現在の施設名「おかもと腎クリニック」を確認済み。入力済み過去監査では現施設が周南市大字徳山4110-2で営業していることまで確認されている。"
+      ],
+      "unresolved": [
+        "元名称「おかもと内閣」が旧「おかもと内科」の誤記であることを直接示す公式資料が必要。",
+        "元座標131.8022029,34.0543782が旧所在地と一致すること、旧施設から現施設への移転・改称関係を直接示す公式資料が必要。"
+      ],
+      "reason": "現在施設は確認できるが、元ID・元座標・旧名称との同一性を公式資料だけで確定できないため保留。"
+    },
+    {
+      "id": "osm-node-3798156478",
+      "decision": "hold",
+      "current_record": {
+        "name": "いちやSC",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7100468,
+            34.0789212
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "いちやショッピングセンターの旧施設情報は見つかりましたが、現在の営業主体・業態を確認できる公式施設案内が得られていません。館全体と食品店の範囲も未確定のため、名称・分類を保留しています。",
+          "evidence_url": "https://www.city.shunan.lg.jp/uploaded/attachment/21980.pdf",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/204344.pdf",
+        "https://www.pref.yamaguchi.lg.jp/soshiki/85/288989.html"
+      ],
+      "confirmed_facts": [
+        "山口県の大規模小売店舗立地法関係資料で「株式会社いちや家具店」、周南市大字夜市2936-1、店舗面積を9,301㎡から0㎡とする届出を確認済み。"
+      ],
+      "unresolved": [
+        "店舗面積0㎡の届出だけでは建物・事業者・現地事業全体の閉店を断定できないため、閉店・廃業・転用を直接示す公式資料が必要。",
+        "元名称「いちやSC」及び元座標と法定届出施設の同一性・施設範囲を示す公式配置図等が必要。"
+      ],
+      "reason": "法定届出は確認できるが、営業状態と元レコードの施設範囲を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-3951221858",
+      "decision": "hold",
+      "current_record": {
+        "name": "イオン柳井新庄SC",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.0960452,
+            33.9736498
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "テナントの公式案内にイオン柳井新庄SC内という所在地があります。商業施設の存在は確認できますが、原本の点が館全体とマックスバリュのどちらを表すか未確定のため、分類を保留しています。",
+          "evidence_url": "https://will-sprice.com/shop/",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://will-sprice.com/shop/",
+        "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_yanaishinjo.php",
+        "https://www.city-yanai.jp/site/gomi-risaikuru/shigen-tento.html"
+      ],
+      "confirmed_facts": [
+        "テナント運営会社の公式案内で「イオン柳井新庄SC内」の表記を確認済み。",
+        "株式会社フジ及び柳井市の公式資料で同住所のマックスバリュ柳井新庄店を確認済み。"
+      ],
+      "unresolved": [
+        "元座標がショッピングセンター全体、マックスバリュ、別テナントのどれを表すかを示す公式配置図が必要。",
+        "商業施設全体の最新の管理主体・施設範囲を直接示す公式資料が必要。"
+      ],
+      "reason": "商業施設名の現用は確認できるが、元点の対象範囲とsupermarket分類の対象を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-4021864894",
+      "decision": "hold",
+      "current_record": {
+        "name": "イオン下松山田SC",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.903361,
+            34.0322174
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "フジの公式変更計画でイオン下松山田ショッピングセンターと山田156-1の所在地を確認しました。複数店舗を含む施設のため、原本の点が食品店か館全体かを確定せず、分類を保留しています。",
+          "evidence_url": "https://www.the-fuji.com/company/docs/20250307_release.pdf",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/205125.pdf",
+        "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_yamada.php"
+      ],
+      "confirmed_facts": [
+        "山口県公告で「イオン下松山田ショッピングセンター」、所在地下松市大字山田156-1を確認済み。",
+        "株式会社フジ公式で別住所157-1のマックスバリュ山田店を確認済み。"
+      ],
+      "unresolved": [
+        "2026-09-20現在のショッピングセンター全体の営業状況を直接示す公式資料が必要。",
+        "元座標がSC全体・マックスバリュ・その他施設要素のどれを表すか確認できる公式配置図が必要。"
+      ],
+      "reason": "施設名称・所在地は確認できるが、現営業と元点の施設範囲を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-4355096689",
+      "decision": "hold",
+      "current_record": {
+        "name": "Best",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9347015,
+            33.9699442
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "光市浅江のベスト電器が名称の照合候補ですが、現行の公式店舗案内でこの原本位置・名称との対応を確認できませんでした。「Best」だけで家電店と断定せず、分類を保留しています。",
+          "evidence_url": "https://www.ekiten.jp/shop_2366931/",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/242387.pdf",
+        "https://www.pref.yamaguchi.lg.jp/soshiki/85/331520.html"
+      ],
+      "confirmed_facts": [
+        "山口県の2026年公告で「光ショッピングセンターベスト」、光市島田1丁目12番10号を大規模小売店舗として確認済み。"
+      ],
+      "unresolved": [
+        "元名称「Best」と「光ショッピングセンターベスト」が同一レコードを指すことを直接示す公式資料が必要。",
+        "既存候補の浅江のベスト電器との関係及び元座標との同一性を確認できる公式資料が必要。"
+      ],
+      "reason": "現存する同名系施設は確認できるが、元OSMノードとの同一性を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-5712889433",
+      "decision": "hold",
+      "current_record": {
+        "name": "クスリ岩崎チェーン",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9897862,
+            33.985596
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "公式イオン長府店と支店名・地図代表点は対応します。ただし原本には調剤ありの記載があり、公式ページの調剤受付欄は空欄です。店舗と調剤窓口の対象範囲を確定せず、薬局分類を保留しています。",
+          "evidence_url": "https://www.matsukiyococokara-online.com/map/?kid=20002862",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.matsukiyococokara-online.com/map/?kid=20002862"
+      ],
+      "confirmed_facts": [
+        "運営会社公式で「クスリ岩崎チェーン イオン長府店」、下関市長府外浦町2-5、ドラッグストアとして営業を確認済み。",
+        "公式ページの調剤受付時間欄は全曜日「―」であることを確認済み。"
+      ],
+      "unresolved": [
+        "調剤窓口・薬局設備の物理的な有無を直接示す公式資料又は薬局許可資料が必要。",
+        "元要素がドラッグストア全体か調剤機能を表すかを確認できる施設配置資料が必要。"
+      ],
+      "reason": "店舗は確認できるが、元pharmacy要素の対象範囲を確定できないため保留。"
+    },
+    {
+      "id": "osm-way-1069977638",
+      "decision": "hold",
+      "current_record": {
+        "name": "山口銀行 丸久川西店",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1766462,
+            34.1579977
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "丸久の公式店案内と山口銀行の公式ATM案内が同じ川西2丁目7-16を示します。建物を表す原本名称にATM名が混在しており、スーパー建物かATM設備かの範囲を確定せず保留しています。",
+          "evidence_url": "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.mrk09.co.jp/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97%E3%81%8C%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%84%E3%81%9F%E3%81%97/",
+        "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html"
+      ],
+      "confirmed_facts": [
+        "丸久公式でマルキュウ川西店をスーパーマーケット、所在地岩国市川西二丁目7番16号として確認済み。",
+        "同資料で銀行ATMをテナントとして店舗本体と区別している。",
+        "山口銀行公式で「丸久岩国川西店」を無人店舗（ATM）として確認済み。"
+      ],
+      "unresolved": [
+        "元wayの範囲がスーパー建物全体かATM設備かを直接判別できる公式平面図・配置図が必要。",
+        "ATMの具体的設置位置と元way形状を対応できる資料が必要。"
+      ],
+      "reason": "スーパーとATMは公式資料上別要素だが、元wayがどちらを表すか確定できないため保留。"
+    },
+    {
+      "id": "osm-way-202664935",
+      "decision": "hold",
+      "current_record": {
+        "name": "ドラッグセガミ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.451174,
+            34.164975
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "山口湯田店の閉店情報が照合候補として見つかりましたが、支店名のない原本と公式の旧店舗・閉店資料との対応を確定できませんでした。店舗名や分類を推測で変更せず保留しています。",
+          "evidence_url": "https://kaiten-heiten.com/drug-segami-yamaguchiyuta/",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.matsukiyococokara-online.com/map/?kid=20002839",
+        "https://www.matsukiyococokara-online.com/map/?kid=20002887"
+      ],
+      "confirmed_facts": [
+        "現行公式店舗として山口市湯田地区に複数のクスリ岩崎チェーン店舗が存在することを過去監査で確認済み。"
+      ],
+      "unresolved": [
+        "旧「ドラッグセガミ 山口湯田店」の正式住所・閉店・改称を直接示す運営会社又は公的機関の原資料が必要。",
+        "旧店舗と現行店舗、元way座標・施設範囲との対応を示す公式資料が必要。"
+      ],
+      "reason": "第三者閉店情報だけでは旧店舗の閉店・後継・元wayとの同一性を確定できないため保留。"
+    },
+    {
+      "id": "osm-way-305489114",
+      "decision": "hold",
+      "current_record": {
+        "name": "ABC Mart",
+        "category": "mall",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.865503,
+            34.0305697
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "サンリブ公式で下松店と所在地を確認しましたが、原本にはサンリブとABC Martの名称が混在します。保存原本だけでは建物とテナントの範囲を特定できず、名称・分類・両IDを維持しています。",
+          "evidence_url": "https://www.sunlive.co.jp/shop/サンリブ下松/",
+          "original_category": "mall"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.abc-mart.net/shop/store/storedetail.aspx?store=1745",
+        "https://www.sunlive.co.jp/shop/%E3%82%B5%E3%83%B3%E3%83%AA%E3%83%96%E4%B8%8B%E6%9D%BE/"
+      ],
+      "confirmed_facts": [
+        "ABC-MART公式で「ABC-MARTサンリブ下松店」、南花岡6-8-1-2Fを確認済み。",
+        "サンリブ公式でABC-MARTをサンリブ下松2Fの専門店「靴」として確認済み。",
+        "入力済み公式地図照合では公式代表点と元way代表点の距離は約7.5m。"
+      ],
+      "unresolved": [
+        "元wayがサンリブ下松の建物全体かABC-MARTの2Fテナント区画かを示す公式フロア図・区画境界資料が必要。"
+      ],
+      "reason": "名称と近接は確認できるが、建物全体とテナント区画のどちらを表すwayか確定できないため保留。"
+    },
+    {
+      "id": "osm-way-579745077",
+      "decision": "hold",
+      "current_record": {
+        "name": "Ｒｙｕ接骨院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9275412,
+            33.9807256
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "光市のRyu接骨院公式は浅江1723-1を案内しています。原本は光市付近ですが、同住所を示す補助地図の代表点とは約210m離れ、移転・位置誤差の対応が未確定です。参考記録を維持しています。",
+          "evidence_url": "https://www.ryusekkotsuin.com/",
+          "original_category": "clinic"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.ryusekkotsuin.com/",
+        "https://www.ryusekkotsuin.com/%E5%BD%93%E9%99%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+      ],
+      "confirmed_facts": [
+        "公式サイトで現在のRyu接骨院を光市大字浅江1723-1、営業中の接骨院として確認済み。",
+        "入力済み公式地図照合では現公式位置と元way代表点は約199m離れている。"
+      ],
+      "unresolved": [
+        "旧所在地とされる浅江1888-5を直接確認できる公式・公的資料が必要。",
+        "旧所在地から現所在地への移転を直接示す公式資料と、元wayが旧施設を表すことを確認できる資料が必要。"
+      ],
+      "reason": "現施設は確認できるが、元wayと現施設の同一性・移転関係を確定できないため保留。"
+    },
+    {
+      "id": "osm-way-600969423",
+      "decision": "hold",
+      "current_record": {
+        "name": "サンキュードラッグ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9452301,
+            33.9850029
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "近傍候補のサンキュードラッグ新椋野薬局は、公式案内でドラッグと調剤を併設しています。原本に支店名がなく、建物全体か調剤窓口かを確定できないため、薬局分類を保留しています。",
+          "evidence_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1043&kikanKbn=5&prefCd=35"
+      ],
+      "confirmed_facts": [
+        "公式店舗ページで同一住所にドラッグ部門と調剤部門を併設する「サンキュードラッグ 新椋野薬局」を確認済み。",
+        "厚生労働省医療情報ネットで薬局面積133.6㎡、店舗販売業併設「有り」を確認済み。",
+        "入力済み公式地図照合では公式表示中心と元way代表点は約204m離れている。"
+      ],
+      "unresolved": [
+        "元wayがドラッグストア建物全体、調剤薬局区画、又は別施設のどれを表すかを判別できる公式配置図が必要。"
+      ],
+      "reason": "併設形態は確認できるが、元wayとの位置・区画対応を確定できないため保留。"
+    },
+    {
+      "id": "osm-way-613971823",
+      "decision": "hold",
+      "current_record": {
+        "name": "ココカラファイン 下関生野店",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9334958,
+            33.9850856
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "下関生野店の過去の公的店舗一覧は確認できましたが、現行公式店舗案内との対応を確定できていません。関連する売場の閉店情報だけで本体店舗の閉店や改称を断定せず、分類を保留しています。",
+          "evidence_url": "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+        "https://www.trial-net.co.jp/shops/677/"
+      ],
+      "confirmed_facts": [
+        "過去の公的店舗一覧にココカラファイン下関生野店が掲載されていたことを入力済み監査で確認済み。",
+        "現在、トライアル公式で同地区の「TRIDRUG GO 下関生野店」、生野町2丁目29-8を確認済み。"
+      ],
+      "unresolved": [
+        "ココカラファイン運営会社又は公的機関による旧店舗の正式住所・閉店日を直接示す資料が必要。",
+        "旧店舗とTRIDRUG GOの後継・同一建物関係、及び元wayとの対応を直接示す公式資料が必要。"
+      ],
+      "reason": "現行店舗は確認できるが、旧ココカラファインの閉店・後継・元way同一性を公式根拠で確定できないため保留。"
+    },
+    {
+      "id": "osm-node-3987366363",
+      "decision": "no_change",
+      "current_record": {
+        "name": "(仮)周南市役所",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.804762,
+            34.0503278
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-13",
+          "status": "pending",
+          "note": "原本は仮庁舎の登録です。周南市の公式案内では2018年6月に岐山通の新庁舎で業務を開始しています。この旧登録を現在の窓口として案内できるか未確認のため、通常の利用候補から外して参考記録としました。元のID・座標を保持し、新庁舎へ自動移動していません。",
+          "evidence_url": "https://www.city.shunan.lg.jp/soshiki/3/24682.html",
+          "original_category": "townhall"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.shunan.lg.jp/soshiki/3/24682.html"
+      ],
+      "confirmed_facts": [
+        "周南市公式で現在の本庁舎が岐山通1丁目1番地にあり、2018年6月に新庁舎で業務を開始したことを確認。",
+        "元レコードは「(仮)周南市役所」をreferenceとして保持し、現庁舎へ自動移動しない現状が安全側の扱い。"
+      ],
+      "unresolved": [],
+      "reason": "旧仮庁舎記録を現行の市役所候補として表示しないreference扱いは妥当で、名称・座標を推測更新しないため変更なし。"
+    },
+    {
+      "id": "osm-node-1423654957",
+      "decision": "hold",
+      "current_record": {
+        "name": "室津幼稚園(休園中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1178,
+            33.832745
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "childcare",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423654957"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "「室津幼稚園(休園中)」の現在の休園・廃止・転用状態を直接示す上関町等の公式資料が必要。",
+        "元座標が当該旧園施設を指すことを確認できる公的施設台帳等が必要。"
+      ],
+      "reason": "現在状態を直接確認できる一次資料を確保できなかったため保留。"
+    },
+    {
+      "id": "osm-node-1423656442",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立乙瀬小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.187923,
+            34.226841
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656442"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/soshiki/51/2100.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式「廃校施設の活用について」で旧乙瀬小学校を廃校施設として確認。"
+      ],
+      "unresolved": [],
+      "reason": "学校としての現役候補ではなくreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423656461",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立仁保津小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.775571,
+            34.202281
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656461"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "市立仁保津小学校の休校・廃校時期又は現在用途を直接示す自治体・教育委員会の公式資料が必要。",
+        "元座標が旧校施設を表すことを確認できる公的施設台帳・配置資料が必要。"
+      ],
+      "reason": "名称上は旧・休校候補だが、現在状態と元位置を直接支える一次資料を確保できなかったため保留。"
+    },
+    {
+      "id": "osm-node-1423656539",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立六呂師中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.161596,
+            34.102687
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656539"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "市立六呂師中学校の休校・廃校時期又は現在用途を直接示す自治体・教育委員会の公式資料が必要。",
+        "元座標が旧校施設を表すことを確認できる公的施設台帳・配置資料が必要。"
+      ],
+      "reason": "名称上は旧・休校候補だが、現在状態と元位置を直接支える一次資料を確保できなかったため保留。"
+    },
+    {
+      "id": "osm-node-1423656540",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立六呂師小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.161596,
+            34.102687
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656540"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "市立六呂師小学校の休校・廃校時期又は現在用途を直接示す自治体・教育委員会の公式資料が必要。",
+        "元座標が旧校施設を表すことを確認できる公的施設台帳・配置資料が必要。"
+      ],
+      "reason": "名称上は旧・休校候補だが、現在状態と元位置を直接支える一次資料を確保できなかったため保留。"
+    },
+    {
+      "id": "osm-node-1423656646",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立向峠小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.017145,
+            34.391125
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656646"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "市立向峠小学校の休校・廃校時期又は現在用途を直接示す自治体・教育委員会の公式資料が必要。",
+        "元座標が旧校施設を表すことを確認できる公的施設台帳・配置資料が必要。"
+      ],
+      "reason": "名称上は旧・休校候補だが、現在状態と元位置を直接支える一次資料を確保できなかったため保留。"
+    },
+    {
+      "id": "osm-node-1423656741",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立大原小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.041461,
+            34.367865
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656741"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/soshiki/51/2100.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式「廃校施設の活用について」で旧大原小学校を廃校施設として確認。"
+      ],
+      "unresolved": [],
+      "reason": "学校としての現役候補ではなくreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423656779",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立大潮小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.78854,
+            34.283688
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656779"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.shunan.lg.jp/site/kanko/84853.html"
+      ],
+      "confirmed_facts": [
+        "周南市公式観光案内で「旧大潮小学校」として現存施設を参照していることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423656807",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立宇佐小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.021003,
+            34.3742
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656807"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/soshiki/9/3659.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式の避難場所案内で「宇佐小学校（廃校）」と明記されていることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "廃校施設であり通常の学校候補から外すreference扱いが妥当なため変更なし。"
+    },
+    {
+      "id": "osm-node-1423656872",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立小畑小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7561014,
+            34.0897874
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423656872"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立小学校一覧で周南市立小畑小学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657076",
+      "decision": "no_change",
+      "current_record": {
+        "name": "旧於福中学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.205353,
+            34.239912
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657076"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www2.city.mine.lg.jp/soshiki/somubu/somuka/anshin/saigai/saigai/1516.html"
+      ],
+      "confirmed_facts": [
+        "美祢市公式の指定緊急避難場所一覧で「於福体育館（旧於福中学校）」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657090",
+      "decision": "update",
+      "current_record": {
+        "name": "旧；市立明倫小学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3990628,
+            34.40937
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657090"
+        }
+      },
+      "proposed_record": {
+        "name": "萩・明倫学舎",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3990628,
+            34.40937
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-20",
+          "status": "out_of_scope",
+          "original_category": "school",
+          "note": "萩市公式は旧明倫小学校の木造校舎を現在の施設「萩・明倫学舎」として命名・案内している。名称のみ現行公式名へ更新し、生活施設の通常候補には含めないためreferenceと元座標を維持する。",
+          "evidence_url": "https://www.city.hagi.lg.jp/site/meiringakusha/"
+        }
+      },
+      "official_evidence_urls": [
+        "https://www.city.hagi.lg.jp/site/meiringakusha/"
+      ],
+      "confirmed_facts": [
+        "萩市公式は、近年まで授業が行われていた旧明倫小学校の木造校舎4棟を「萩・明倫学舎」と命名し、観光インフォメーション等を備える現施設として案内している。"
+      ],
+      "unresolved": [],
+      "reason": "旧校舎と現施設の関係が萩市公式で直接確認できるため名称を現行公式名へ更新する。categoryとgeometryは変更しない。"
+    },
+    {
+      "id": "osm-node-1423657184",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立柱島中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.4179491,
+            34.0215204
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657184"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で岩国市立柱島中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657191",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立柱野中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.147069,
+            34.131378
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657191"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/site/myiwakuni/64832.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式記事で旧柱野中学校の校舎が現存せず、現在は岩国中学校へ通う状況を確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校記録をreferenceに留める現状が妥当で、現役学校へ戻す根拠はないため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657283",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立深須小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.991905,
+            34.32885
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657283"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/soshiki/9/3709.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式の避難場所案内で深須小学校を「廃校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "廃校施設でありreference扱いが公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657286",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立渋川小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.84748,
+            34.248582
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657286"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.shunan.lg.jp/soshiki/84/67636.html"
+      ],
+      "confirmed_facts": [
+        "周南市公式の選挙関連施設案内で「旧渋川小学校講堂」として現在の用途が示されていることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657357",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立端島中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.385553,
+            34.034118
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657357"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で岩国市立端島中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657369",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立美川中学校(休校)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.0252505,
+            34.2092707
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657369"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で岩国市立美川中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657404",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立藤河中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.161038,
+            34.185567
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657404"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "旧「藤河中学校」の休校・廃校・統合時期及び現在用途を直接示す岩国市・教育委員会等の公式資料が必要。",
+        "元座標と旧校施設の対応を確認できる公的施設資料が必要。"
+      ],
+      "reason": "現行公式資料で藤河小学校は確認できたが、元レコードの藤河中学校について直接の現在状態を確認できないため保留。"
+    },
+    {
+      "id": "osm-node-1423657452",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立豊東小学校轡井分校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.049558,
+            34.115138
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657452"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.shimonoseki.lg.jp/uploaded/life/87244_151176_misc.pdf"
+      ],
+      "confirmed_facts": [
+        "下関市地域公共交通会議の公式資料（2023年）で轡井地区の地点を「旧轡井分校」と明記していることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧分校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657474",
+      "decision": "hold",
+      "current_record": {
+        "name": "市立通津小学校通西分校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.193927,
+            34.05275
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657474"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.city.iwakuni.lg.jp/map/12594.html"
+      ],
+      "confirmed_facts": [
+        "岩国市公式の投票所案内で「通津小学校西分校」という施設名と所在地を確認。"
+      ],
+      "unresolved": [
+        "当該施設が現在「休校」なのか、学校機能を廃止して投票施設としてのみ使用しているのかを直接示す教育委員会等の公式資料が必要。",
+        "元名称の「通西分校」と公式表記「西分校」の関係を確定できる公式沿革資料が必要。"
+      ],
+      "reason": "施設の存在は確認できるが、休校状態と名称対応を直接確定できないため保留。"
+    },
+    {
+      "id": "osm-node-1423657480",
+      "decision": "hold",
+      "current_record": {
+        "name": "旧重安小学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.208383,
+            34.200854
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657480"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "「重安小学校」が旧校となった時期、統合先、現在用途を直接示す美祢市・教育委員会の公式資料が必要。",
+        "元座標と旧校施設の同一性を確認できる公的施設台帳が必要。"
+      ],
+      "reason": "現行学校一覧からの不掲載だけでは廃校を断定しないため保留。"
+    },
+    {
+      "id": "osm-node-1423657536",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立黒島中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.334779,
+            33.996204
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657536"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で岩国市立黒島中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423657537",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立黒島小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.334779,
+            33.996204
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423657537"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の公立小学校一覧で岩国市の島しょ部休校校を含む現行学校状態を確認し、黒島小学校は休校扱いであることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423659908",
+      "decision": "no_change",
+      "current_record": {
+        "name": "旧下郷小学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.296779,
+            34.18605
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423659908"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www2.city.mine.lg.jp/soshiki/somubu/somuka/anshin/saigai/saigai/1516.html"
+      ],
+      "confirmed_facts": [
+        "美祢市公式の指定緊急避難場所一覧で「下郷体育館（旧下郷小学校）」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423659940",
+      "decision": "no_change",
+      "current_record": {
+        "name": "旧嘉万小学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.26228,
+            34.268069
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423659940"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www2.city.mine.lg.jp/machi_jiman/kominkankatsudo/shuho_area/kama/5841.html"
+      ],
+      "confirmed_facts": [
+        "美祢市公式の嘉万公民館案内で「旧嘉万小学校 思い出ルーム」として旧校名を確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423660021",
+      "decision": "no_change",
+      "current_record": {
+        "name": "町立祝島中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.989201,
+            33.784193
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423660021"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で上関町立祝島中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1423660048",
+      "decision": "no_change",
+      "current_record": {
+        "name": "旧赤郷小学校",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.345049,
+            34.280458
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1423660048"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www2.city.mine.lg.jp/machi_jiman/katsudo/mito_area/akago/4575.html"
+      ],
+      "confirmed_facts": [
+        "美祢市公式で赤郷小学校が平成30年度末（2018年度末）に閉校し、統合先が大田小学校であることを確認。"
+      ],
+      "unresolved": [],
+      "reason": "閉校済みでありreference扱いが公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-node-1631267770",
+      "decision": "hold",
+      "current_record": {
+        "name": "下関市立中央病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.931508,
+            33.960593
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631267770"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://shimonosekicity-hosp.jp/index68.html",
+        "https://www.city.shimonoseki.lg.jp/soshiki/48/3590.html"
+      ],
+      "confirmed_facts": [
+        "下関市及び病院公式で、下関市立中央病院が2012年4月に地方独立行政法人下関市立市民病院へ移行・改称したことを確認。",
+        "基準commitの施設データには別IDのhospital分類「下関市立中央病院」が存在し、元reference点とは約600m以上離れているため重複・別地点の事前確認対象とした。"
+      ],
+      "unresolved": [
+        "元reference点130.931508,33.960593が旧中央病院そのもの、関連福祉施設、又は誤登録のどれかを直接示す公式施設台帳・座標資料が必要。",
+        "別hospitalレコードとの同一性を公式資料で確認する必要がある。"
+      ],
+      "reason": "改称履歴は確認できるが、元social_facility由来レコードの地点・施設範囲が病院と一致しないため名称だけを更新しない。"
+    },
+    {
+      "id": "osm-node-1631268756",
+      "decision": "hold",
+      "current_record": {
+        "name": "医療法人岩国病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.184064,
+            34.163236
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631268756"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.iwakuni-byoin.com/"
+      ],
+      "confirmed_facts": [
+        "医療法人岩国病院公式で現在の病院名称、岩国市岩国3丁目2-7、診療中であることを確認。",
+        "基準commitでは約20mの位置に別IDのhospital分類「岩国病院」が存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が病院そのものか、病院内・周辺の別福祉サービスかを直接示す公式配置・施設資料が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "現病院は確認できるが、元reference要素の施設範囲と既存hospitalレコードの関係をOSM近接だけで確定しないため保留。"
+    },
+    {
+      "id": "osm-node-1631268797",
+      "decision": "hold",
+      "current_record": {
+        "name": "医療法人至誠会梅田病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.916175,
+            33.972668
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。 梅田病院の公式案内は産婦人科・小児科であり、登録の生活支援付き住居としては採用していない。",
+          "evidence_url": "https://umeda-hospital.or.jp/"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://umeda-hospital.or.jp/"
+      ],
+      "confirmed_facts": [
+        "梅田病院公式で山口県光市の産婦人科・小児科病院として現在営業していることを確認。",
+        "基準commitでは約30mの位置に別IDのhospital分類「至誠会梅田病院」が存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が病院本体か独立した福祉サービスかを直接示す公式施設資料が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "病院の現況は確認できるが、元reference要素の施設範囲をOSM近接だけで同一と判断しないため保留。"
+    },
+    {
+      "id": "osm-node-1631273232",
+      "decision": "hold",
+      "current_record": {
+        "name": "山口県済生会豊浦町立病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.925909,
+            34.167774
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631273232"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.toyoura-saiseikai.jp/hospital/overview/"
+      ],
+      "confirmed_facts": [
+        "山口県済生会豊浦病院公式で、2000年「山口県済生会豊浦町立病院」開設、2005年「下関市立豊浦病院」へ改称、2016年「山口県済生会豊浦病院」へ移行した沿革を確認。",
+        "基準commitでは約17mに同じ旧病院名のhospitalレコードがあり、元reference点と同一点には「豊浦町地域ケアセンター」のsocial_facilityレコードが存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元reference点が旧病院本体か、地域ケアセンター等の別施設かを直接示す公式配置図・施設沿革が必要。",
+        "既存hospitalレコードとの重複関係を公式資料で確定する必要がある。"
+      ],
+      "reason": "病院の改称は確認できるが、元social_facility由来点が病院本体とは断定できないため保留。"
+    },
+    {
+      "id": "osm-node-1631273545",
+      "decision": "hold",
+      "current_record": {
+        "name": "掖済会宇部港町クリニック",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.24951,
+            33.943823
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631273545"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [],
+      "confirmed_facts": [],
+      "unresolved": [
+        "「掖済会宇部港町クリニック」の現在の営業・閉院・改称・後継を直接示す日本海員掖済会、医療情報ネット、自治体等の原資料が必要。",
+        "元social_facility由来点が医療施設又は別福祉施設のどちらを表すか確認できる公式資料が必要。"
+      ],
+      "reason": "第三者情報以外の現行一次資料を確保できず、現在状態・施設種別を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-1631275453",
+      "decision": "hold",
+      "current_record": {
+        "name": "済生会山口総合病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4672727,
+            34.1712466
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631275453"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.yamaguchi-saiseikai.jp/"
+      ],
+      "confirmed_facts": [
+        "山口県済生会山口総合病院公式で現在の病院名称、山口市緑町2-11、診療中であることを確認。",
+        "基準commitでは同地点付近に別IDのhospital分類レコードが複数存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が病院本体か独立した福祉サービスかを示す公式配置・施設資料が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "病院の現況は確認できるが、元reference要素の施設範囲をOSM重複だけで確定しないため保留。"
+    },
+    {
+      "id": "osm-node-1631275456",
+      "decision": "hold",
+      "current_record": {
+        "name": "済生会湯田温泉病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.452876,
+            34.17597
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631275456"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://saiseikai-care-y.jp/facility/yuda_hospital"
+      ],
+      "confirmed_facts": [
+        "済生会山口地域ケアセンター公式で「済生会湯田温泉病院」、山口市朝倉町4番55号、病院として運営中であることを確認。",
+        "同公式ページは同一拠点に在宅サービス施設・高齢者入所施設・障害者支援施設等があることも明記している。",
+        "基準commitでは約26mに別IDのhospital分類レコード、約24mに地域ケアセンターのsocial_facilityレコードが存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が湯田温泉病院本体かケアセンター内の別福祉施設かを判別できる公式配置図が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "同一拠点に医療・福祉施設が併存するため、OSM近接だけで元要素の対象を病院と確定できず保留。"
+    },
+    {
+      "id": "osm-node-1631275895",
+      "decision": "hold",
+      "current_record": {
+        "name": "大和総合病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.999917,
+            33.982976
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631275895"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://h-yamato-hosp.jp/about/overview"
+      ],
+      "confirmed_facts": [
+        "光市立大和総合病院公式で現在の正式名称「光市立大和総合病院」、光市大字岩田974番地を確認。",
+        "公式沿革で2004年の合併により「光市立大和総合病院」へ改称したことを確認。",
+        "基準commitでは約25mに別IDのhospital分類「大和総合病院」が存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が病院本体か病院周辺の別福祉サービスかを示す公式施設資料が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "現行正式名は確認できるが、元reference要素が病院本体とはOSM近接だけで確定できないため保留。"
+    },
+    {
+      "id": "osm-node-1631278529",
+      "decision": "hold",
+      "current_record": {
+        "name": "総合病院社会保険徳山中央病院",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8338064,
+            34.0475972
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "social_facility",
+          "note": "医療機関名で福祉施設として登録されているため分類保留。独立した福祉サービスの名称・現況と既存病院記録との関係が未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/1631278529"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://tokuyama.jcho.go.jp/introduction/basic/%e6%b2%bf%e9%9d%a9/"
+      ],
+      "confirmed_facts": [
+        "JCHO徳山中央病院公式で前身が社会保険病院で、病院名を1960年に「徳山中央病院」へ改称、2014年にJCHO運営へ移行した沿革を確認。",
+        "基準commitでは約34mに別IDのhospital分類「綜合病院社会保険徳山中央病院」が存在することを事前確認。"
+      ],
+      "unresolved": [
+        "元social_facility由来点が病院本体か独立した社会福祉施設かを示す公式配置・施設資料が必要。",
+        "既存hospitalレコードとの重複関係を公式根拠で確定する必要がある。"
+      ],
+      "reason": "沿革は確認できるが、元reference要素の対象範囲をOSM近接だけで病院本体と確定できないため保留。"
+    },
+    {
+      "id": "osm-node-3225673886",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立須金中学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9220441,
+            34.2007564
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/node/3225673886"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立中学校一覧で周南市立須金中学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-way-1511032737",
+      "decision": "no_change",
+      "current_record": {
+        "name": "市立平郡西小学校(休校中)",
+        "category": "reference",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  132.2585519,
+                  33.7802465
+                ],
+                [
+                  132.258629,
+                  33.7801863
+                ],
+                [
+                  132.2585023,
+                  33.7800818
+                ],
+                [
+                  132.2584493,
+                  33.7800365
+                ],
+                [
+                  132.2583758,
+                  33.780096
+                ],
+                [
+                  132.2585519,
+                  33.7802465
+                ]
+              ]
+            ]
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/way/1511032737"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html"
+      ],
+      "confirmed_facts": [
+        "山口県公式の2026年度公立小学校一覧で柳井市立平郡西小学校を「休校」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "休校中の学校施設をreferenceに留める現状が公式資料と整合するため変更なし。"
+    },
+    {
+      "id": "osm-way-467590715",
+      "decision": "no_change",
+      "current_record": {
+        "name": "旧豊田前中学校",
+        "category": "reference",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.1211631,
+                  34.1943656
+                ],
+                [
+                  131.1212296,
+                  34.194394
+                ],
+                [
+                  131.1212993,
+                  34.1944679
+                ],
+                [
+                  131.1215616,
+                  34.1958357
+                ],
+                [
+                  131.1215078,
+                  34.1960517
+                ],
+                [
+                  131.1214298,
+                  34.1961171
+                ],
+                [
+                  131.1205005,
+                  34.195814
+                ],
+                [
+                  131.1203829,
+                  34.1958071
+                ],
+                [
+                  131.120369,
+                  34.1959396
+                ],
+                [
+                  131.1203612,
+                  34.1960555
+                ],
+                [
+                  131.1202691,
+                  34.1960578
+                ],
+                [
+                  131.1201825,
+                  34.1960972
+                ],
+                [
+                  131.12,
+                  34.1959181
+                ],
+                [
+                  131.1194448,
+                  34.1955179
+                ],
+                [
+                  131.1193577,
+                  34.1952929
+                ],
+                [
+                  131.1191999,
+                  34.194869
+                ],
+                [
+                  131.1191747,
+                  34.1947241
+                ],
+                [
+                  131.1192227,
+                  34.1945804
+                ],
+                [
+                  131.1193439,
+                  34.1944193
+                ],
+                [
+                  131.1194859,
+                  34.1943495
+                ],
+                [
+                  131.1197435,
+                  34.1943505
+                ],
+                [
+                  131.1203791,
+                  34.1944039
+                ],
+                [
+                  131.1205776,
+                  34.1943262
+                ],
+                [
+                  131.1211631,
+                  34.1943656
+                ]
+              ]
+            ]
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-14",
+          "status": "pending",
+          "original_category": "school",
+          "note": "元の名称に旧校・休校等の記載があるため通常候補から除外。現在の使用状況は未確認。",
+          "evidence_url": "https://www.openstreetmap.org/way/467590715"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www2.city.mine.lg.jp/soshiki/somubu/somuka/anshin/saigai/saigai/1516.html"
+      ],
+      "confirmed_facts": [
+        "美祢市公式の指定緊急避難場所一覧で「豊田前体育館（旧豊田前中学校）」と確認。"
+      ],
+      "unresolved": [],
+      "reason": "旧校施設としてreferenceに留める現状が公式資料と整合するため変更なし。"
+    }
+  ]
+}
