@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "task": "walking-impact facility freshness follow-up",
+  "instructions": [
+    "対象はrecordsにある既存施設だけとし、機能追加や新規施設探索へ広げない。",
+    "過去のconfirmed_factsと公式URLを再利用し、既に確定した事項を一から調べ直さない。",
+    "Exa等は公式ページ候補の発見に使ってよいが、採否の根拠は運営会社・自治体・公的機関の一次情報に限る。Google Maps表示だけでは確定しない。",
+    "元IDと元座標・形状は変更しない。施設名、分類、営業状態、元レコードとの同一性を公式資料で直接確認できる場合だけupdate又はno_changeとする。",
+    "直接確認できない場合はholdとし、追加で必要な公式資料をunresolvedへ具体的に残す。",
+    "各IDをちょうど1回返し、decisionはupdate/no_change/holdのいずれかにする。",
+    "updateの場合だけproposed_recordを返し、name、category、geometry、classification_reviewを含める。geometryはcurrent_recordと完全一致させる。",
+    "公式根拠URL、確認事実、未解決事項、理由を分け、推測を確認事実として書かない。"
+  ],
+  "priority_basis": "既存の徒歩15分圏に実際に表示される回数が多い順。件数は施設の正しさを示さず、調査順だけに使う。",
+  "records": [
+    {
+      "id": "osm-way-202664935",
+      "current_record": {
+        "name": "ドラッグセガミ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.451174,
+            34.164975
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "山口湯田店の閉店情報が照合候補として見つかりましたが、支店名のない原本と公式の旧店舗・閉店資料との対応を確定できませんでした。店舗名や分類を推測で変更せず保留しています。",
+          "evidence_url": "https://kaiten-heiten.com/drug-segami-yamaguchiyuta/",
+          "original_category": "pharmacy"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 14,
+        "nearest_road_minutes": 4.3,
+        "origins": [
+          {
+            "stop_id": "131.45042_34.16674",
+            "stop_name": "泉町",
+            "road_minutes": 4.3,
+            "road_distance_m": 287,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45202_34.1672",
+            "stop_name": "元町",
+            "road_minutes": 5.5,
+            "road_distance_m": 369,
+            "straight_gap_m": 20.1
+          },
+          {
+            "stop_id": "131.45437_34.16306",
+            "stop_name": "下湯田",
+            "road_minutes": 6.4,
+            "road_distance_m": 426,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.44917_34.16786",
+            "stop_name": "稲葉団地入口",
+            "road_minutes": 6.9,
+            "road_distance_m": 460,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45458_34.16586",
+            "stop_name": "湯田温泉6丁目",
+            "road_minutes": 7.1,
+            "road_distance_m": 474,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45722_34.16476",
+            "stop_name": "湯田温泉通",
+            "road_minutes": 10.6,
+            "road_distance_m": 704,
+            "straight_gap_m": 20.1
+          },
+          {
+            "stop_id": "131.4466_34.16471",
+            "stop_name": "松ヶ鼻",
+            "road_minutes": 10.7,
+            "road_distance_m": 713,
+            "straight_gap_m": 20.1
+          },
+          {
+            "stop_id": "131.45701_34.16199",
+            "stop_name": "今井町",
+            "road_minutes": 11.7,
+            "road_distance_m": 782,
+            "straight_gap_m": 20.1
+          },
+          {
+            "stop_id": "131.45831_34.16542",
+            "stop_name": "湯田温泉",
+            "road_minutes": 12.4,
+            "road_distance_m": 826,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45504_34.1603",
+            "stop_name": "周布町資源物ステーション前",
+            "road_minutes": 12.7,
+            "road_distance_m": 844,
+            "straight_gap_m": 20.1
+          },
+          {
+            "stop_id": "131.44881_34.16073",
+            "stop_name": "葵",
+            "road_minutes": 13.8,
+            "road_distance_m": 921,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45063_34.17164",
+            "stop_name": "土井",
+            "road_minutes": 14.7,
+            "road_distance_m": 982,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.44545_34.16248",
+            "stop_name": "大橋団地入口",
+            "road_minutes": 14.8,
+            "road_distance_m": 988,
+            "straight_gap_m": 20.7
+          },
+          {
+            "stop_id": "131.45968_34.16391",
+            "stop_name": "下市町",
+            "road_minutes": 15,
+            "road_distance_m": 1000,
+            "straight_gap_m": 21.1
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://www.matsukiyococokara-online.com/map/?kid=20002839",
+        "https://www.matsukiyococokara-online.com/map/?kid=20002887"
+      ],
+      "confirmed_facts": [
+        "現行公式店舗として山口市湯田地区に複数のクスリ岩崎チェーン店舗が存在することを過去監査で確認済み。"
+      ],
+      "unresolved": [
+        "旧「ドラッグセガミ 山口湯田店」の正式住所・閉店・改称を直接示す運営会社又は公的機関の原資料が必要。",
+        "旧店舗と現行店舗、元way座標・施設範囲との対応を示す公式資料が必要。"
+      ],
+      "prior_reason": "第三者閉店情報だけでは旧店舗の閉店・後継・元wayとの同一性を確定できないため保留。"
+    },
+    {
+      "id": "osm-node-12376670726",
+      "current_record": {
+        "name": "おかもと内閣",
+        "category": "clinic",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8022029,
+            34.0543782
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "公式の現在名は「おかもと腎クリニック」、所在地は周南市二番町です。原本の「おかもと内閣」は誤記候補ですが、旧位置との移転前後の対応が未確定のため、名称・位置を変更していません。",
+          "evidence_url": "https://okamoto-kidney.com/",
+          "original_category": "clinic"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 10,
+        "nearest_road_minutes": 5.1,
+        "origins": [
+          {
+            "stop_id": "131.80306_34.05183",
+            "stop_name": "徳山駅前",
+            "road_minutes": 5.1,
+            "road_distance_m": 338.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80307_34.05181",
+            "stop_name": "徳山駅",
+            "road_minutes": 5.1,
+            "road_distance_m": 339.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80167_34.05747",
+            "stop_name": "新宿一丁目",
+            "road_minutes": 6.7,
+            "road_distance_m": 445,
+            "straight_gap_m": 16.8
+          },
+          {
+            "stop_id": "131.80641_34.05418",
+            "stop_name": "周南市役所前",
+            "road_minutes": 7.6,
+            "road_distance_m": 505.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80518_34.05034",
+            "stop_name": "銀座",
+            "road_minutes": 8.5,
+            "road_distance_m": 564.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80856_34.05207",
+            "stop_name": "西京銀行本店前",
+            "road_minutes": 12,
+            "road_distance_m": 802.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80797_34.05691",
+            "stop_name": "図書館前",
+            "road_minutes": 12.7,
+            "road_distance_m": 848.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.80772_34.04797",
+            "stop_name": "糀町",
+            "road_minutes": 13.7,
+            "road_distance_m": 915.8,
+            "straight_gap_m": 8.8
+          },
+          {
+            "stop_id": "131.79979_34.06149",
+            "stop_name": "新宿三丁目",
+            "road_minutes": 14,
+            "road_distance_m": 930,
+            "straight_gap_m": 16.8
+          },
+          {
+            "stop_id": "131.81086_34.05243",
+            "stop_name": "桜馬場",
+            "road_minutes": 14.7,
+            "road_distance_m": 978.8,
+            "straight_gap_m": 8.8
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://okamoto-kidney.com/"
+      ],
+      "confirmed_facts": [
+        "公式サイトで現在の施設名「おかもと腎クリニック」を確認済み。入力済み過去監査では現施設が周南市大字徳山4110-2で営業していることまで確認されている。"
+      ],
+      "unresolved": [
+        "元名称「おかもと内閣」が旧「おかもと内科」の誤記であることを直接示す公式資料が必要。",
+        "元座標131.8022029,34.0543782が旧所在地と一致すること、旧施設から現施設への移転・改称関係を直接示す公式資料が必要。"
+      ],
+      "prior_reason": "現在施設は確認できるが、元ID・元座標・旧名称との同一性を公式資料だけで確定できないため保留。"
+    },
+    {
+      "id": "osm-way-613971823",
+      "current_record": {
+        "name": "ココカラファイン 下関生野店",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9334958,
+            33.9850856
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "下関生野店の過去の公的店舗一覧は確認できましたが、現行公式店舗案内との対応を確定できていません。関連する売場の閉店情報だけで本体店舗の閉店や改称を断定せず、分類を保留しています。",
+          "evidence_url": "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+          "original_category": "pharmacy"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 6,
+        "nearest_road_minutes": 5.1,
+        "origins": [
+          {
+            "stop_id": "130.93356_33.9827",
+            "stop_name": "宮の下",
+            "road_minutes": 5.1,
+            "road_distance_m": 343.2,
+            "straight_gap_m": 21.2
+          },
+          {
+            "stop_id": "130.9324_33.98765",
+            "stop_name": "大学町二丁目",
+            "road_minutes": 7.5,
+            "road_distance_m": 501.2,
+            "straight_gap_m": 21.2
+          },
+          {
+            "stop_id": "130.92972_33.98828",
+            "stop_name": "山の田",
+            "road_minutes": 9.4,
+            "road_distance_m": 627.2,
+            "straight_gap_m": 21.2
+          },
+          {
+            "stop_id": "130.93367_33.97981",
+            "stop_name": "円光寺",
+            "road_minutes": 12.8,
+            "road_distance_m": 850.2,
+            "straight_gap_m": 21.2
+          },
+          {
+            "stop_id": "130.93458_33.99054",
+            "stop_name": "大学町三丁目",
+            "road_minutes": 13.9,
+            "road_distance_m": 926.2,
+            "straight_gap_m": 21.2
+          },
+          {
+            "stop_id": "130.92762_33.98571",
+            "stop_name": "山の田団地前",
+            "road_minutes": 13.9,
+            "road_distance_m": 927.1,
+            "straight_gap_m": 21.2
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+        "https://www.trial-net.co.jp/shops/677/"
+      ],
+      "confirmed_facts": [
+        "過去の公的店舗一覧にココカラファイン下関生野店が掲載されていたことを入力済み監査で確認済み。",
+        "現在、トライアル公式で同地区の「TRIDRUG GO 下関生野店」、生野町2丁目29-8を確認済み。"
+      ],
+      "unresolved": [
+        "ココカラファイン運営会社又は公的機関による旧店舗の正式住所・閉店日を直接示す資料が必要。",
+        "旧店舗とTRIDRUG GOの後継・同一建物関係、及び元wayとの対応を直接示す公式資料が必要。"
+      ],
+      "prior_reason": "現行店舗は確認できるが、旧ココカラファインの閉店・後継・元way同一性を公式根拠で確定できないため保留。"
+    },
+    {
+      "id": "osm-way-1069977638",
+      "current_record": {
+        "name": "山口銀行 丸久川西店",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1766462,
+            34.1579977
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "丸久の公式店案内と山口銀行の公式ATM案内が同じ川西2丁目7-16を示します。建物を表す原本名称にATM名が混在しており、スーパー建物かATM設備かの範囲を確定せず保留しています。",
+          "evidence_url": "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html",
+          "original_category": "supermarket"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 3,
+        "nearest_road_minutes": 4,
+        "origins": [
+          {
+            "stop_id": "132.17665_34.15988",
+            "stop_name": "川西",
+            "road_minutes": 4,
+            "road_distance_m": 266.9,
+            "straight_gap_m": 16.8
+          },
+          {
+            "stop_id": "132.17722_34.15616",
+            "stop_name": "岩国高校",
+            "road_minutes": 5.5,
+            "road_distance_m": 365.7,
+            "straight_gap_m": 16.8
+          },
+          {
+            "stop_id": "132.18018_34.16412",
+            "stop_name": "臥竜橋",
+            "road_minutes": 14.4,
+            "road_distance_m": 956.7,
+            "straight_gap_m": 16.8
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://www.mrk09.co.jp/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97%E3%81%8C%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%84%E3%81%9F%E3%81%97/",
+        "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html"
+      ],
+      "confirmed_facts": [
+        "丸久公式でマルキュウ川西店をスーパーマーケット、所在地岩国市川西二丁目7番16号として確認済み。",
+        "同資料で銀行ATMをテナントとして店舗本体と区別している。",
+        "山口銀行公式で「丸久岩国川西店」を無人店舗（ATM）として確認済み。"
+      ],
+      "unresolved": [
+        "元wayの範囲がスーパー建物全体かATM設備かを直接判別できる公式平面図・配置図が必要。",
+        "ATMの具体的設置位置と元way形状を対応できる資料が必要。"
+      ],
+      "prior_reason": "スーパーとATMは公式資料上別要素だが、元wayがどちらを表すか確定できないため保留。"
+    },
+    {
+      "id": "osm-node-4355096689",
+      "current_record": {
+        "name": "Best",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9347015,
+            33.9699442
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "光市浅江のベスト電器が名称の照合候補ですが、現行の公式店舗案内でこの原本位置・名称との対応を確認できませんでした。「Best」だけで家電店と断定せず、分類を保留しています。",
+          "evidence_url": "https://www.ekiten.jp/shop_2366931/",
+          "original_category": "supermarket"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 2,
+        "nearest_road_minutes": 2.5,
+        "origins": [
+          {
+            "stop_id": "131.93499_33.9688",
+            "stop_name": "光製鉄前",
+            "road_minutes": 2.5,
+            "road_distance_m": 169,
+            "straight_gap_m": 14.4
+          },
+          {
+            "stop_id": "131.9338_33.96916",
+            "stop_name": "島田市",
+            "road_minutes": 2.6,
+            "road_distance_m": 174,
+            "straight_gap_m": 14.4
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/242387.pdf",
+        "https://www.pref.yamaguchi.lg.jp/soshiki/85/331520.html"
+      ],
+      "confirmed_facts": [
+        "山口県の2026年公告で「光ショッピングセンターベスト」、光市島田1丁目12番10号を大規模小売店舗として確認済み。"
+      ],
+      "unresolved": [
+        "元名称「Best」と「光ショッピングセンターベスト」が同一レコードを指すことを直接示す公式資料が必要。",
+        "既存候補の浅江のベスト電器との関係及び元座標との同一性を確認できる公式資料が必要。"
+      ],
+      "prior_reason": "現存する同名系施設は確認できるが、元OSMノードとの同一性を確定できないため保留。"
+    },
+    {
+      "id": "osm-way-600969423",
+      "current_record": {
+        "name": "サンキュードラッグ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9452301,
+            33.9850029
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "近傍候補のサンキュードラッグ新椋野薬局は、公式案内でドラッグと調剤を併設しています。原本に支店名がなく、建物全体か調剤窓口かを確定できないため、薬局分類を保留しています。",
+          "evidence_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+          "original_category": "pharmacy"
+        }
+      },
+      "walking_impact": {
+        "origin_count": 2,
+        "nearest_road_minutes": 2.8,
+        "origins": [
+          {
+            "stop_id": "130.94583_33.984",
+            "stop_name": "新椋野",
+            "road_minutes": 2.8,
+            "road_distance_m": 185.4,
+            "straight_gap_m": 18.6
+          },
+          {
+            "stop_id": "130.94829_33.98034",
+            "stop_name": "椋野3丁目",
+            "road_minutes": 13.4,
+            "road_distance_m": 893.4,
+            "straight_gap_m": 18.6
+          }
+        ]
+      },
+      "prior_official_evidence_urls": [
+        "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1043&kikanKbn=5&prefCd=35"
+      ],
+      "confirmed_facts": [
+        "公式店舗ページで同一住所にドラッグ部門と調剤部門を併設する「サンキュードラッグ 新椋野薬局」を確認済み。",
+        "厚生労働省医療情報ネットで薬局面積133.6㎡、店舗販売業併設「有り」を確認済み。",
+        "入力済み公式地図照合では公式表示中心と元way代表点は約204m離れている。"
+      ],
+      "unresolved": [
+        "元wayがドラッグストア建物全体、調剤薬局区画、又は別施設のどれを表すかを判別できる公式配置図が必要。"
+      ],
+      "prior_reason": "併設形態は確認できるが、元wayとの位置・区画対応を確定できないため保留。"
+    }
+  ]
+}

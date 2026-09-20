@@ -1,0 +1,487 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "GPT-6 Pro通常Chatのfollow-up結果を、既存監査・徒歩圏優先順位・変更禁止条件と機械照合する。",
+  "files": {
+    "source_manifest": {
+      "path": "data-sources/facility-backlog-review-20260920/facility-decision-manifest.json",
+      "sha256": "c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866"
+    },
+    "walking_impact_audit": {
+      "path": "data-sources/facility-freshness-priority-20260920/walking-impact-audit.json",
+      "sha256": "4323920fb18ed0448164057b4b14107006a9833561d55dd9fcb794d59eada8c1"
+    },
+    "gpt_chat_request": {
+      "path": "data-sources/facility-freshness-priority-20260920/gpt-chat-request.json",
+      "sha256": "e70736d13c011077682b15e7d59c4082b6a006a64f66a8a842dbbe0cccafa84b"
+    },
+    "gpt_followup_manifest": {
+      "path": "data-sources/facility-freshness-priority-20260920/facility-freshness-followup-manifest.json",
+      "sha256": "39f2f9bae1acb0f22012900acf8ebc07ce2ee4b64400b30207ba7ccadcf8c998"
+    }
+  },
+  "result": {
+    "passed": true,
+    "check_count": 72,
+    "failed_check_count": 0,
+    "selected_record_count": 6,
+    "walking_origin_appearance_count": 37,
+    "decision_counts": {
+      "update": 0,
+      "no_change": 0,
+      "hold": 6
+    },
+    "app_data_changes": 0
+  },
+  "checks": [
+    {
+      "name": "follow-up file hash matches downloaded GPT artifact",
+      "passed": true,
+      "detail": "39f2f9bae1acb0f22012900acf8ebc07ce2ee4b64400b30207ba7ccadcf8c998"
+    },
+    {
+      "name": "source manifest hash is unchanged",
+      "passed": true,
+      "detail": "c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866"
+    },
+    {
+      "name": "follow-up source hash matches source manifest",
+      "passed": true,
+      "detail": "c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866"
+    },
+    {
+      "name": "repository matches source manifest",
+      "passed": true,
+      "detail": "yyy-yuichi/bus-stop-compact-town"
+    },
+    {
+      "name": "base commit matches source manifest",
+      "passed": true,
+      "detail": "2a78ecaea7c54b3c106353b4740943b07bc7606a"
+    },
+    {
+      "name": "request contains six unique IDs",
+      "passed": true,
+      "detail": [
+        "osm-way-202664935",
+        "osm-node-12376670726",
+        "osm-way-613971823",
+        "osm-way-1069977638",
+        "osm-node-4355096689",
+        "osm-way-600969423"
+      ]
+    },
+    {
+      "name": "decision IDs exactly match request IDs",
+      "passed": true,
+      "detail": {
+        "missing_ids": [],
+        "extra_ids": [],
+        "duplicate_ids": []
+      }
+    },
+    {
+      "name": "osm-way-202664935: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-202664935: current record matches request",
+      "passed": true,
+      "detail": "ドラッグセガミ"
+    },
+    {
+      "name": "osm-way-202664935: current record matches source manifest",
+      "passed": true,
+      "detail": "ドラッグセガミ"
+    },
+    {
+      "name": "osm-way-202664935: walking impact matches audit",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "osm-way-202664935: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-202664935: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-202664935: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-way-202664935: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-way-202664935: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-way-202664935: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.matsukiyococokara-online.com/map/?kid=20002887",
+        "https://www.matsukiyococokara-online.com/map/?kid=20002839"
+      ]
+    },
+    {
+      "name": "osm-node-12376670726: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-12376670726: current record matches request",
+      "passed": true,
+      "detail": "おかもと内閣"
+    },
+    {
+      "name": "osm-node-12376670726: current record matches source manifest",
+      "passed": true,
+      "detail": "おかもと内閣"
+    },
+    {
+      "name": "osm-node-12376670726: walking impact matches audit",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "osm-node-12376670726: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-12376670726: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-12376670726: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-node-12376670726: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-node-12376670726: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-node-12376670726: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=2355521300&kikanKbn=2&prefCd=35",
+        "https://okamoto-kidney.com/"
+      ]
+    },
+    {
+      "name": "osm-way-613971823: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-613971823: current record matches request",
+      "passed": true,
+      "detail": "ココカラファイン 下関生野店"
+    },
+    {
+      "name": "osm-way-613971823: current record matches source manifest",
+      "passed": true,
+      "detail": "ココカラファイン 下関生野店"
+    },
+    {
+      "name": "osm-way-613971823: walking impact matches audit",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "osm-way-613971823: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-613971823: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-613971823: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-way-613971823: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-way-613971823: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-way-613971823: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.re-style.env.go.jp/img/3r-campaign/2020/pdf/cocokara.pdf",
+        "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+        "https://www.trial-net.co.jp/shops/677/",
+        "https://space.trial-net.co.jp/buildings/677"
+      ]
+    },
+    {
+      "name": "osm-way-1069977638: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-1069977638: current record matches request",
+      "passed": true,
+      "detail": "山口銀行 丸久川西店"
+    },
+    {
+      "name": "osm-way-1069977638: current record matches source manifest",
+      "passed": true,
+      "detail": "山口銀行 丸久川西店"
+    },
+    {
+      "name": "osm-way-1069977638: walking impact matches audit",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-way-1069977638: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-1069977638: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-1069977638: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-way-1069977638: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-way-1069977638: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-way-1069977638: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.mrk09.co.jp/area_info/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97/",
+        "https://www.mrk09.co.jp/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97%E3%81%8C%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%84%E3%81%9F%E3%81%97/",
+        "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html"
+      ]
+    },
+    {
+      "name": "osm-node-4355096689: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-4355096689: current record matches request",
+      "passed": true,
+      "detail": "Best"
+    },
+    {
+      "name": "osm-node-4355096689: current record matches source manifest",
+      "passed": true,
+      "detail": "Best"
+    },
+    {
+      "name": "osm-node-4355096689: walking impact matches audit",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-node-4355096689: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-4355096689: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-4355096689: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-node-4355096689: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-node-4355096689: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-node-4355096689: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://best-hikari.sakura.ne.jp/",
+        "https://www.pref.yamaguchi.lg.jp/soshiki/85/331520.html",
+        "https://www.city.hikari.lg.jp/soshiki/7/syoukou/keizai/hikari_matsuri/16664.html"
+      ]
+    },
+    {
+      "name": "osm-way-600969423: exists in source manifest",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-600969423: current record matches request",
+      "passed": true,
+      "detail": "サンキュードラッグ"
+    },
+    {
+      "name": "osm-way-600969423: current record matches source manifest",
+      "passed": true,
+      "detail": "サンキュードラッグ"
+    },
+    {
+      "name": "osm-way-600969423: walking impact matches audit",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-way-600969423: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-600969423: remains on hold",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-way-600969423: has no proposed mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "osm-way-600969423: geometry remains unchanged",
+      "passed": true,
+      "detail": {
+        "geometry_action": "keep",
+        "coordinate_change": false
+      }
+    },
+    {
+      "name": "osm-way-600969423: unresolved evidence is recorded",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-way-600969423: official evidence URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1043&kikanKbn=5&prefCd=35"
+      ]
+    },
+    {
+      "name": "summary decision counts match decisions",
+      "passed": true,
+      "detail": {
+        "update": 0,
+        "no_change": 0,
+        "hold": 6
+      }
+    },
+    {
+      "name": "all coordinate changes remain zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "walking impact audit preserves the 29-to-11-to-6 funnel",
+      "passed": true,
+      "detail": {
+        "method": {
+          "pending_hold_records": 29,
+          "display_candidate_records": 11,
+          "reference_records_deferred": 18,
+          "candidate_stop_rule": "施設の点又は範囲のbboxから1,025m以内の計算起点だけを取得し、既存bakedFacilityCandidatesと同じ道路接続25m・予算1,000mで再計算。",
+          "relevant_stop_origins": 112,
+          "unavailable_catchments": 1
+        },
+        "summary": {
+          "impacted_records": 6,
+          "no_current_walking_impact_records": 5
+        }
+      }
+    },
+    {
+      "name": "six selected records appear across 37 walking origins",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "GPT manifest self-validation passed",
+      "passed": true,
+      "detail": {
+        "expected_ids": [
+          "osm-way-202664935",
+          "osm-node-12376670726",
+          "osm-way-613971823",
+          "osm-way-1069977638",
+          "osm-node-4355096689",
+          "osm-way-600969423"
+        ],
+        "decision_count": 6,
+        "unique_id_count": 6,
+        "missing_ids": [],
+        "extra_ids": [],
+        "duplicate_ids": [],
+        "coordinate_changes": 0,
+        "geometry_changes": 0,
+        "decision_counts": {
+          "update": 0,
+          "no_change": 0,
+          "hold": 6
+        },
+        "passed": true
+      }
+    }
+  ]
+}

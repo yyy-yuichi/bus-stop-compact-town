@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-20",
+  "repository": "yyy-yuichi/bus-stop-compact-town",
+  "base_commit": "2a78ecaea7c54b3c106353b4740943b07bc7606a",
+  "source_manifest": "facility-decision-manifest.json",
+  "source_manifest_sha256": "c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866",
+  "scope": {
+    "candidate_count": 6,
+    "purpose": "既存徒歩15分圏に表示される追加根拠待ち6施設のfreshness follow-up",
+    "constraints": [
+      "既存53件調査を再利用",
+      "追加一次資料のみ調査",
+      "元ID・元座標・元形状は変更しない",
+      "Google Maps・OSM・第三者情報のみでは確定しない"
+    ]
+  },
+  "summary": {
+    "update": 0,
+    "no_change": 0,
+    "hold": 6,
+    "coordinate_changes": 0
+  },
+  "decisions": [
+    {
+      "id": "osm-way-202664935",
+      "decision": "hold",
+      "current_record": {
+        "name": "ドラッグセガミ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.451174,
+            34.164975
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "山口湯田店の閉店情報が照合候補として見つかりましたが、支店名のない原本と公式の旧店舗・閉店資料との対応を確定できませんでした。店舗名や分類を推測で変更せず保留しています。",
+          "evidence_url": "https://kaiten-heiten.com/drug-segami-yamaguchiyuta/",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.matsukiyococokara-online.com/map/?kid=20002887",
+        "https://www.matsukiyococokara-online.com/map/?kid=20002839"
+      ],
+      "newly_confirmed_facts": [
+        "運営会社の現行公式店舗ページで「クスリ岩崎チェーン 湯田西店」を確認し、所在地は山口県山口市湯田温泉6-8-64、店舗電話は083-932-4100、営業時間は9:00～22:00、調剤受付時間は全曜日「―」である。",
+        "運営会社の現行公式資料で、別店舗「クスリ岩崎チェーン 山口湯田店」が山口市湯田温泉6-2-22に存在することを再確認した。"
+      ],
+      "reused_facts": [
+        "既存監査では、元レコード「ドラッグセガミ」の候補として旧「ドラッグセガミ 山口湯田店」を追跡していた。",
+        "第三者情報では旧店舗の閉店候補が得られていたが、一次情報ではなかったため確定根拠にしていない。"
+      ],
+      "unresolved": [
+        "旧「ドラッグセガミ 山口湯田店」の正式住所・閉店日・改称又は承継を直接記載した、運営会社・自治体・公的機関の一次資料が確認できない。",
+        "現「クスリ岩崎チェーン 湯田西店」が旧「ドラッグセガミ 山口湯田店」を改称・承継した店舗であることを直接示す一次資料が必要。",
+        "元wayの形状・代表位置が旧店舗又は現「湯田西店」の施設範囲と一致することを直接示す公式配置図・公式座標資料が必要。"
+      ],
+      "reason": "現「湯田西店」が旧店舗候補と同じ住所候補にあることは公式に確認できたが、旧セガミ店舗からの閉店・改称・承継及び元wayとの直接対応は一次資料で確定できないためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    },
+    {
+      "id": "osm-node-12376670726",
+      "decision": "hold",
+      "current_record": {
+        "name": "おかもと内閣",
+        "category": "clinic",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8022029,
+            34.0543782
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "公式の現在名は「おかもと腎クリニック」、所在地は周南市二番町です。原本の「おかもと内閣」は誤記候補ですが、旧位置との移転前後の対応が未確定のため、名称・位置を変更していません。",
+          "evidence_url": "https://okamoto-kidney.com/",
+          "original_category": "clinic"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=2355521300&kikanKbn=2&prefCd=35",
+        "https://okamoto-kidney.com/"
+      ],
+      "newly_confirmed_facts": [
+        "厚生労働省「医療情報ネット」の現行掲載で、正式名称「おかもと内科」、所在地「山口県周南市本町2丁目6番」、電話0834-32-3322を直接確認した。",
+        "同公的掲載では「おかもと内科」の開設者を「医療法人 おかもと内科 理事長 岡本 冨士昭」とし、血液透析を同時に30人実施可能としている。"
+      ],
+      "reused_facts": [
+        "既存監査では現在の「おかもと腎クリニック」を公式サイトで確認済みで、現施設は周南市大字徳山4110-2の施設として扱っている。",
+        "元レコード名は「おかもと内閣」であり、元座標は131.8022029,34.0543782である。"
+      ],
+      "unresolved": [
+        "「おかもと内閣」が旧「おかもと内科」の誤記であることを直接記載した一次資料は確認できない。",
+        "元座標131.8022029,34.0543782と公的に確認できた旧所在地「周南市本町2丁目6番」の一致を、Google Maps等に依存せず直接示す公式座標・公式地図資料が必要。",
+        "旧「おかもと内科」から現「おかもと腎クリニック」への移転・改称・事業承継を直接記載した運営者又は公的機関の一次資料が必要。"
+      ],
+      "reason": "旧施設の正式名称と旧住所は公的資料で確定したが、元名称の誤記、元座標との一致、現クリニックへの移転・改称の3点が直接立証できないためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    },
+    {
+      "id": "osm-way-613971823",
+      "decision": "hold",
+      "current_record": {
+        "name": "ココカラファイン 下関生野店",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9334958,
+            33.9850856
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "下関生野店の過去の公的店舗一覧は確認できましたが、現行公式店舗案内との対応を確定できていません。関連する売場の閉店情報だけで本体店舗の閉店や改称を断定せず、分類を保留しています。",
+          "evidence_url": "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.re-style.env.go.jp/img/3r-campaign/2020/pdf/cocokara.pdf",
+        "https://www.re-style.env.go.jp/img/3r-campaign/2021/pdf/cocokara.pdf",
+        "https://www.trial-net.co.jp/shops/677/",
+        "https://space.trial-net.co.jp/buildings/677"
+      ],
+      "newly_confirmed_facts": [
+        "環境省Re-Styleの2020年公的店舗一覧で「ココカラファイン下関生野店」、郵便番号751-0832、住所「山口県下関市生野町2-29-8」、電話083-253-7802を直接確認した。",
+        "トライアル公式の現行店舗ページで「TRIDRUG GO 下関生野店」、所在地「山口県下関市生野町2丁目29-8」、24時間営業、ドラッグコーナー10～20時を確認した。",
+        "トライアル公式テナント募集ページも「TRIAL GO下関生野店」を同じ「山口県下関市生野町2丁目29-8」として案内している。"
+      ],
+      "reused_facts": [
+        "既存監査で、環境省Re-Styleの2021年公的店舗一覧に「ココカラファイン下関生野店」が掲載されていたことを確認済み。",
+        "既存監査で、現在同地区にTRIDRUG GO 下関生野店が存在することを確認済み。"
+      ],
+      "unresolved": [
+        "旧「ココカラファイン下関生野店」の閉店日を直接記載した運営会社又は公的機関の一次資料が確認できない。",
+        "旧ココカラファイン店舗からTRIDRUG GO/TRIAL GOへの承継、跡地利用又は同一建物利用を直接記載した一次資料が必要。",
+        "元wayの形状・代表位置が住所「生野町2丁目29-8」の旧店舗区画又は現店舗区画と一致することを直接示す公式配置図・公式座標資料が必要。"
+      ],
+      "reason": "旧店舗の正式住所と現TRIAL店舗の住所が同一であることまでは一次資料で確認できたが、閉店・承継・跡地関係及び元wayとの直接対応は確定できないためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    },
+    {
+      "id": "osm-way-1069977638",
+      "decision": "hold",
+      "current_record": {
+        "name": "山口銀行 丸久川西店",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1766462,
+            34.1579977
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "丸久の公式店案内と山口銀行の公式ATM案内が同じ川西2丁目7-16を示します。建物を表す原本名称にATM名が混在しており、スーパー建物かATM設備かの範囲を確定せず保留しています。",
+          "evidence_url": "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.mrk09.co.jp/area_info/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97/",
+        "https://www.mrk09.co.jp/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%82%A6%E5%B7%9D%E8%A5%BF%E5%BA%97%E3%81%8C%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%84%E3%81%9F%E3%81%97/",
+        "https://www.yamaguchibank.co.jp/outline/store/iwakuni.html"
+      ],
+      "newly_confirmed_facts": [
+        "株式会社丸久の現行公式店舗ページで「マルキュウ川西店」、所在地「山口県岩国市川西二丁目7番16号」、営業時間9:00～22:00を再確認した。",
+        "丸久の公式改装案内は延べ床面積1127.2㎡、売場面積786.1㎡を示し、銀行ATMをクリーニング店・花屋・精米機と並ぶテナントとして記載しているが、ATMの具体的配置位置は示していない。"
+      ],
+      "reused_facts": [
+        "山口銀行公式では「丸久岩国川西店」を無人店舗（ATM）として掲載している。",
+        "既存監査で、スーパー本体と銀行ATMが公式資料上で別要素であることを確認済み。"
+      ],
+      "unresolved": [
+        "元wayがマルキュウ川西店の建物全体か山口銀行ATM設備かを判別できる公式平面図・配置図は確認できない。",
+        "ATMの具体的設置位置と元way形状を直接対応できる丸久・山口銀行・自治体等の一次資料が必要。"
+      ],
+      "reason": "スーパー本体とATMが別要素であることは補強できたが、元wayがどちらを表すか決める配置資料が得られないためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    },
+    {
+      "id": "osm-node-4355096689",
+      "decision": "hold",
+      "current_record": {
+        "name": "Best",
+        "category": "supermarket",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9347015,
+            33.9699442
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "光市浅江のベスト電器が名称の照合候補ですが、現行の公式店舗案内でこの原本位置・名称との対応を確認できませんでした。「Best」だけで家電店と断定せず、分類を保留しています。",
+          "evidence_url": "https://www.ekiten.jp/shop_2366931/",
+          "original_category": "supermarket"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://best-hikari.sakura.ne.jp/",
+        "https://www.pref.yamaguchi.lg.jp/soshiki/85/331520.html",
+        "https://www.city.hikari.lg.jp/soshiki/7/syoukou/keizai/hikari_matsuri/16664.html"
+      ],
+      "newly_confirmed_facts": [
+        "協同組合ベストの公式サイトは、現在の「ビーストリート」をアルク光店をキーテナントとするショッピングモールとして案内している。",
+        "同公式サイトの組合沿革で、1967年に「ベスト」開店、1981年に「BEST365（ベストエブリ）」へリニューアル、2001年に「Be.st（ビーストリート）」へリニューアルした名称系譜を直接確認した。",
+        "同公式サイトは運営主体を「協同組合ベスト」とし、光市島田1丁目12番20号を案内している。",
+        "山口県の現行大規模小売店舗公告一覧には「光ショッピングセンターベスト」が掲載され、光市の2026光まつり公式ページでも「Be st.駐車場（アルク光店他駐車場）」と「協同組合ベスト」が現行名称として使われている。"
+      ],
+      "reused_facts": [
+        "既存監査で、山口県公告から法令上の施設名称「光ショッピングセンターベスト」と所在地「光市島田1丁目12番10号」を確認済み。",
+        "元レコード名は「Best」、元座標は131.9347015,33.9699442であり、既存候補として浅江のベスト電器との関係確認が残っている。"
+      ],
+      "unresolved": [
+        "元OSMノード「Best」の座標131.9347015,33.9699442が、協同組合ベスト／Be.st／光ショッピングセンターベストの施設範囲に一致することを直接示す公式座標又は配置図が必要。",
+        "元OSMノードの「Best」という英字名称が、協同組合ベストの旧「ベスト」又は現「Be.st」を指して付されたことを直接示す原資料は確認できない。",
+        "浅江のベスト電器と協同組合ベスト／光ショッピングセンターベストとの関係又は無関係を直接示す運営会社・自治体等の一次資料が必要。"
+      ],
+      "reason": "協同組合ベストの公式沿革で「ベスト」から現Be.stまでの名称系譜は確認できたが、元ノード座標との直接対応とベスト電器との関係が未確定のためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    },
+    {
+      "id": "osm-way-600969423",
+      "decision": "hold",
+      "current_record": {
+        "name": "サンキュードラッグ",
+        "category": "pharmacy",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9452301,
+            33.9850029
+          ]
+        },
+        "classification_review": {
+          "checked_at": "2026-09-12",
+          "status": "pending",
+          "note": "近傍候補のサンキュードラッグ新椋野薬局は、公式案内でドラッグと調剤を併設しています。原本に支店名がなく、建物全体か調剤窓口かを確定できないため、薬局分類を保留しています。",
+          "evidence_url": "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+          "original_category": "pharmacy"
+        }
+      },
+      "proposed_record": null,
+      "official_evidence_urls": [
+        "https://www.drug39.co.jp/store_info/shimonosekishi/entry-216.html",
+        "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1043&kikanKbn=5&prefCd=35"
+      ],
+      "newly_confirmed_facts": [
+        "サンキュードラッグ公式店舗ページで「サンキュードラッグ 新椋野薬局」、所在地「山口県下関市新椋野三丁目1番10号」を再確認した。",
+        "同一公式ページは同じ住所について「ドラッグ」と「調剤」を明確に分け、ドラッグは9:00～22:00・電話083-229-5539、調剤は曜日別営業時間・電話083-228-6239としている。",
+        "今回の追加検索でも、ドラッグ売場・調剤薬局区画・建物全体の境界を示す運営会社又は公的機関の公式平面図・配置図は確認できなかった。"
+      ],
+      "reused_facts": [
+        "既存監査で、厚生労働省医療情報ネットから薬局面積133.6㎡、店舗販売業併設「有り」を確認済み。",
+        "元レコードは支店名のない「サンキュードラッグ」で、元代表位置は130.9452301,33.9850029である。"
+      ],
+      "unresolved": [
+        "元wayがドラッグストア建物全体、133.6㎡とされる調剤薬局区画、又は別施設のいずれを表すかを判別できる公式平面図・薬局開設許可付属図面・建築配置図が必要。",
+        "元way形状をドラッグ売場又は調剤区画と直接対応できる公式座標・配置資料が必要。"
+      ],
+      "reason": "同一住所でドラッグと調剤が併設されることは一次資料で再確認できたが、元wayの施設範囲を決める図面が得られないためhold。",
+      "geometry_action": "keep",
+      "coordinate_change": false
+    }
+  ],
+  "validation": {
+    "expected_ids": [
+      "osm-way-202664935",
+      "osm-node-12376670726",
+      "osm-way-613971823",
+      "osm-way-1069977638",
+      "osm-node-4355096689",
+      "osm-way-600969423"
+    ],
+    "decision_count": 6,
+    "unique_id_count": 6,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "coordinate_changes": 0,
+    "geometry_changes": 0,
+    "decision_counts": {
+      "update": 0,
+      "no_change": 0,
+      "hold": 6
+    },
+    "passed": true
+  }
+}
