@@ -9,7 +9,7 @@ for(const f of files){
   JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
   continue;
  }
- if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|maps\/(soft\.json|(?:openfreemap|positron)-LICENSE\.md)|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|route-living\.html|ui-feedback-comparison-20260920\.html|about\.html|third-party-notices\.txt|maps\/(soft\.json|(?:openfreemap|positron)-LICENSE\.md)|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
 for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/civic-facilities.geojson','data/walking-onoda.json','data/baked-bus-stops.geojson','data/walk-unreachable.json',...(walkDataUrl?[]:['data/walk/index.json'])]) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
