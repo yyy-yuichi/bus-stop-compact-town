@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>バス停と暮らしマップ UI比較</title>
+  <style>
+    :root{font-family:"Noto Sans JP","Yu Gothic UI",sans-serif;color:#183b32;background:#f3f1eb;line-height:1.5}
+    *{box-sizing:border-box} body{margin:0} button{font:inherit}
+    header{padding:18px 22px 12px;background:#fff;border-bottom:1px solid #d8d4c9}
+    h1{font-size:20px;margin:0 0 4px} header p{margin:0;color:#596a64;font-size:14px}
+    .tabs{display:flex;gap:8px;padding:12px 16px;background:#fff;border-bottom:1px solid #ddd;overflow:auto}
+    .tabs button{border:1px solid #b9c7c2;background:#fff;color:#315c50;border-radius:999px;padding:8px 14px;white-space:nowrap;font-weight:700}
+    .tabs button[aria-selected="true"]{background:#1d6655;color:#fff;border-color:#1d6655}
+    .stage{min-height:620px;position:relative;overflow:hidden;background:#dae4d6}
+    .map{position:absolute;inset:0;background:linear-gradient(25deg,transparent 49%,#f9f7ef 50%,#f9f7ef 53%,transparent 54%) 15px 20px/210px 150px,linear-gradient(155deg,transparent 47%,#fff 48%,#fff 51%,transparent 52%) 0 0/260px 180px,radial-gradient(circle at 70% 20%,#b9d7dd 0 13%,transparent 13.4%),#dce7d8}
+    .river{position:absolute;width:140%;height:70px;background:#a9d4dc;transform:rotate(-12deg);left:-20%;top:385px;box-shadow:0 0 0 5px #c8e4e7}
+    .road{position:absolute;height:14px;background:#f6f0d8;border:1px solid #ded2af;border-radius:8px;transform-origin:left center}.r1{width:75%;left:5%;top:180px;transform:rotate(8deg)}.r2{width:60%;left:17%;top:320px;transform:rotate(-28deg)}.r3{width:55%;left:34%;top:75px;transform:rotate(72deg)}
+    .walk{position:absolute;border:8px solid rgba(23,117,92,.38);border-radius:48% 52% 43% 57%;width:370px;height:300px;left:calc(50% - 250px);top:150px;background:rgba(104,189,161,.12)}
+    .marker{position:absolute;display:grid;place-items:center;width:46px;height:46px;border:3px solid #fff;border-radius:50%;background:#16745f;color:#fff;box-shadow:0 2px 8px #24483d55;font-weight:800;z-index:4}.marker.bus::before{content:"BUS";font-size:10px}.marker.selected{outline:5px solid #f4b74a}.marker.related{background:#44776d}.marker.muted{background:#72847e}.marker.count::before{content:attr(data-count);font-size:12px}.marker.count::after{content:"件";font-size:9px;margin-left:-5px;margin-top:15px}
+    .m1{left:calc(50% - 165px);top:250px}.m2{left:calc(50% - 105px);top:235px}.m3{left:18%;top:125px}.m4{left:31%;top:420px}.m5{left:55%;top:100px}.m6{left:63%;top:355px}.m7{left:76%;top:190px}
+    .facility{position:absolute;width:38px;height:38px;border-radius:12px;background:#fff;border:2px solid #3c7b6d;display:grid;place-items:center;z-index:3;box-shadow:0 2px 7px #24483d33}.facility::after{font-size:20px}.shop::after{content:"店"}.med::after{content:"医"}.civic::after{content:"公"}.f1{left:39%;top:175px}.f2{left:49%;top:365px}.f3{left:25%;top:335px}
+    .panel{position:absolute;right:16px;top:16px;bottom:16px;width:min(390px,42vw);background:#fff;border-radius:18px;box-shadow:0 8px 28px #213a3344;padding:20px;z-index:10;overflow:auto}.eyebrow{font-size:12px;color:#55736a;font-weight:700}.panel h2{font-size:23px;margin:4px 0}.direction{background:#e7f2ee;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:700}.time{display:flex;gap:7px;margin:13px 0}.time button{flex:1;border:1px solid #adc7be;background:#fff;border-radius:10px;padding:9px;font-weight:700}.time .active{background:#1d6655;color:#fff}.facilities{display:grid;gap:8px}.row{border:1px solid #dde4e0;border-radius:11px;padding:10px 12px}.row strong,.row small{display:block}.row small{color:#5d6e68}.technical{margin-top:13px;padding-top:10px;border-top:1px solid #ddd}.technical h3{font-size:14px;margin:9px 0 3px}.technical p{font-size:12px;color:#596861;margin:0}.notice{font-size:13px;background:#fff6d9;border-left:4px solid #d9a52e;padding:8px 10px;margin:12px 0}.source{font-size:13px;color:#1c6655;text-decoration:underline}.reselect{width:100%;border:1px solid #1d6655;background:#fff;color:#1d6655;border-radius:10px;padding:9px;font-weight:700;margin-top:12px}
+    .legend{position:absolute;left:16px;bottom:18px;background:#fffe;padding:9px 12px;border-radius:10px;font-size:12px;z-index:9;box-shadow:0 2px 8px #3332}.comparison-note{padding:14px 18px;background:#173f35;color:#fff}.comparison-note strong{display:block;font-size:16px}.comparison-note span{font-size:13px;color:#d6e7e1}[hidden]{display:none!important}
+    @media(max-width:720px){.stage{min-height:760px}.panel{left:10px;right:10px;top:auto;bottom:10px;width:auto;height:360px}.walk{left:45px;top:80px;width:290px;height:230px}.m1{left:120px;top:170px}.m2{left:180px;top:155px}.m3{left:30px;top:70px}.m4{left:265px;top:260px}.m5,.m6,.m7{display:none}.f1{left:230px;top:90px}.f2{left:270px;top:210px}.f3{left:55px;top:240px}.legend{top:10px;bottom:auto}.tabs{padding-left:10px}}
+  </style>
+</head>
+<body>
+  <header><h1>UI改善案を画面で比べる</h1><p>実データを変更しない確認用モックです。バス停を1件選んだ後の状態を比較します。</p></header>
+  <nav class="tabs" aria-label="比較案"><button data-mode="current" aria-selected="true">現在の考え方</button><button data-mode="coordinator" aria-selected="false">コーディネーター案</button><button data-mode="balanced" aria-selected="false">データを保つ簡素化案</button></nav>
+  <main><div class="comparison-note"><strong id="mode-title">現在の考え方</strong><span id="mode-description">他のバス停も残り、徒歩時間を切り替えられ、技術情報も詳細内に表示します。</span></div>
+    <section class="stage"><div class="map"></div><div class="river"></div><div class="road r1"></div><div class="road r2"></div><div class="road r3"></div><div class="walk"></div>
+      <div class="marker bus selected m1" title="選択中"></div><div class="marker bus related m2" title="関連する反対側"></div><div class="marker bus muted unrelated m3"></div><div class="marker bus muted unrelated m4"></div><div class="marker bus muted unrelated m5"></div><div class="marker bus muted unrelated m6"></div><div class="marker count unrelated m7" data-count="4"></div>
+      <div class="facility shop f1"></div><div class="facility med f2"></div><div class="facility civic f3"></div>
+      <aside class="panel"><div class="eyebrow">選択中のバス停</div><h2>西河原</h2><div class="direction">光駅北口方面</div><div class="time"><button>5分</button><button>10分</button><button class="active">15分</button></div><div class="notice conditional-notice" hidden>位置は公式資料で確認済み。現地の入口は未確認です。</div><div class="facilities"><div class="row"><strong>スーパーマーケット</strong><small>徒歩6分</small></div><div class="row"><strong>診療所</strong><small>徒歩11分</small></div><div class="row"><strong>公民館</strong><small>徒歩14分</small></div></div><div class="technical"><h3>候補の判定について</h3><p>原ID、座標、関連候補の判定内容を表示します。</p><h3>徒歩圏の計算について</h3><p>道路接続と計算条件の説明を表示します。</p><h3>登録情報・出典</h3><p>データ作成日、出典URL、確認状態を表示します。</p></div><a class="source" hidden>使い方・出典を見る</a><button class="reselect" hidden>別のバス停を選ぶ</button></aside><div class="legend">緑：選択中　灰色：その他のバス停</div>
+    </section>
+  </main>
+  <script>
+    const modes={current:{title:'現在の考え方',description:'他のバス停も残り、徒歩時間を切り替えられ、技術情報も詳細内に表示します。'},coordinator:{title:'コーディネーター案',description:'選択後は他のバス停を消し、15分圏に固定。詳細は利用に必要な情報だけにします。'},balanced:{title:'データを保つ簡素化案',description:'無関係なバス停を消し、関連する別乗り場と徒歩時間の選択だけを残します。技術説明は別ページへ移します。'}};
+    function show(mode){document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.mode===mode)));document.querySelector('#mode-title').textContent=modes[mode].title;document.querySelector('#mode-description').textContent=modes[mode].description;document.querySelectorAll('.unrelated').forEach(n=>n.hidden=mode!=='current');document.querySelector('.related').hidden=mode==='coordinator';document.querySelector('.technical').hidden=mode!=='current';document.querySelector('.source').hidden=mode==='current';document.querySelector('.reselect').hidden=mode==='current';document.querySelector('.conditional-notice').hidden=mode!=='balanced';document.querySelector('.time').hidden=mode==='coordinator';document.querySelector('.legend').textContent=mode==='current'?'緑：選択中　灰色：その他のバス停':mode==='coordinator'?'選択したバス停だけを表示':'選択中と、確認済みの関連乗り場だけを表示'}
+    document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.mode)));
+  </script>
+</body>
+</html>
