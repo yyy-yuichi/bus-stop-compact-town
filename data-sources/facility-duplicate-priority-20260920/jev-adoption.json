@@ -1,0 +1,319 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "Jevの生回答と、GPT通常Chatへ渡す対象についての採用判断を分離して記録する。Jevは公式資料を検証していない。",
+  "policy": {
+    "machine_direct": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす組はJevを使わず選ぶ。",
+    "jev_adoption": "機械条件だけで順序を決めにくい8組のうち、Jevがgpt_nowを選び、その確率が0.70以上の組だけを採用する。",
+    "walking_gate": "採用後、既存徒歩15分圏への実表示が0件の組はGPTへ送らない。"
+  },
+  "records": [
+    {
+      "pair_id": "osm-node-10275726015__osm-way-560984476",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 29,
+        "shared_origin_count": 29,
+        "left_origin_count": 29,
+        "right_origin_count": 29
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-10275660943__osm-way-560979794",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 0,
+        "shared_origin_count": 0,
+        "left_origin_count": 0,
+        "right_origin_count": 0
+      },
+      "sent_to_gpt": false,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-2253691125__osm-way-202793094",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 1,
+        "shared_origin_count": 0,
+        "left_origin_count": 1,
+        "right_origin_count": 0
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-4098795892__osm-way-407846298",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 19,
+        "shared_origin_count": 19,
+        "left_origin_count": 19,
+        "right_origin_count": 19
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-2253197417__osm-way-215910952",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 14,
+        "shared_origin_count": 14,
+        "left_origin_count": 14,
+        "right_origin_count": 14
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-13154614555__osm-node-2252806318",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.58,
+        "probabilities": {
+          "gpt_now": 0.68,
+          "ready_without_gpt": 0.03,
+          "defer_low_impact": 0.25,
+          "defer_hard_evidence": 0.04
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-13154614555__osm-node-13154614556",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.51,
+        "probabilities": {
+          "gpt_now": 0.62,
+          "ready_without_gpt": 0.03,
+          "defer_low_impact": 0.3,
+          "defer_hard_evidence": 0.05
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-13154614554__osm-node-13154614555",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.49,
+        "probabilities": {
+          "gpt_now": 0.61,
+          "ready_without_gpt": 0.03,
+          "defer_low_impact": 0.3,
+          "defer_hard_evidence": 0.06
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-9472329366__osm-way-477971690",
+      "mechanical_action": "direct_gpt",
+      "jev_answer": null,
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 5,
+        "shared_origin_count": 0,
+        "left_origin_count": 5,
+        "right_origin_count": 0
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "機械条件で直接選定。"
+    },
+    {
+      "pair_id": "osm-node-13154614554__osm-node-13154614556",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.55,
+        "probabilities": {
+          "gpt_now": 0.66,
+          "ready_without_gpt": 0.02,
+          "defer_low_impact": 0.27,
+          "defer_hard_evidence": 0.05
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-4107556704__osm-node-5456594526",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.6,
+        "probabilities": {
+          "gpt_now": 0.71,
+          "ready_without_gpt": 0.02,
+          "defer_low_impact": 0.24,
+          "defer_hard_evidence": 0.03
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 10,
+        "shared_origin_count": 10,
+        "left_origin_count": 10,
+        "right_origin_count": 10
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "Jevのgpt_now確率が0.70以上のため採用。"
+    },
+    {
+      "pair_id": "osm-node-5050356350__osm-way-672454065",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.57,
+        "probabilities": {
+          "gpt_now": 0.67,
+          "defer_low_impact": 0.26,
+          "ready_without_gpt": 0.02,
+          "defer_hard_evidence": 0.04
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-6194948464__osm-way-661710574",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "defer_low_impact",
+        "confidence": 0.77,
+        "probabilities": {
+          "gpt_now": 0.11,
+          "ready_without_gpt": 0.02,
+          "defer_low_impact": 0.83,
+          "defer_hard_evidence": 0.04
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-13651735831__osm-way-1489391560",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": {
+        "type": "choice",
+        "choice": "gpt_now",
+        "confidence": 0.59,
+        "probabilities": {
+          "gpt_now": 0.7,
+          "ready_without_gpt": 0.01,
+          "defer_low_impact": 0.24,
+          "defer_hard_evidence": 0.05
+        },
+        "stats": {}
+      },
+      "selected_before_walking_gate": true,
+      "walking_impact": {
+        "union_origin_count": 9,
+        "shared_origin_count": 9,
+        "left_origin_count": 9,
+        "right_origin_count": 9
+      },
+      "sent_to_gpt": true,
+      "adoption_reason": "Jevのgpt_now確率が0.70以上のため採用。"
+    },
+    {
+      "pair_id": "osm-node-9472242519__osm-way-1027461546",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-13651969772__osm-way-1489413022",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-3799039405__osm-way-327749958",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "osm-node-4315692495__osm-way-315713904",
+      "mechanical_action": "jev_gray_zone",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "Jevの生回答は保存したが、gpt_now確率が0.70未満のため不採用。"
+    },
+    {
+      "pair_id": "fuji-yamaguchi__osm-node-4098812296",
+      "mechanical_action": "defer_low_impact",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "影響度近似が低いためJevへ送らず見送り。"
+    },
+    {
+      "pair_id": "osm-node-13651893749__osm-way-1489414443",
+      "mechanical_action": "defer_low_impact",
+      "jev_answer": null,
+      "selected_before_walking_gate": false,
+      "walking_impact": null,
+      "sent_to_gpt": false,
+      "adoption_reason": "影響度近似が低いためJevへ送らず見送り。"
+    }
+  ]
+}

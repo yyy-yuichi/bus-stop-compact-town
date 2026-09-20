@@ -1,6 +1,6 @@
 # 既存生活施設53件の判断記録
 
-通常のGPT Chat「[公式施設データ調査](https://chatgpt.com/c/6aaf3269-000c-83e8-9576-3c2f7a2714aa)」をGPT-6 Pro・極高で実行し、既存の監査記録と公式資料を基に、`classification_review.status=pending` の53件を一巡した記録です。Workは使用していません。
+通常のGPT Chat「[公式施設データ調査](https://chatgpt.com/c/6aaf3269-000c-83e8-9576-3c2f7a2714aa)」で、既存の監査記録と公式資料を基に `classification_review.status=pending` の53件を一巡した記録です。回答JSON自身の `model_review` は `GPT-5.6 Sol` であり、Chat上の回答メニューでもSol使用を確認しました。以前の「GPT-6 Proで実行」という記録は誤りです。Workは使用していません。
 
 - 入力: `facility-backlog-input.json`（53件、SHA-256 `200d7c270cdfe06ffd1b19c9985f5f79176a8e7002ccb363b78198c745f70703`）
 - 判断: `facility-decision-manifest.json`（SHA-256 `c3ce08c2dd5ec3af26062b37280481314d15b0b3599c14b6ef7c350ca69b1866`）

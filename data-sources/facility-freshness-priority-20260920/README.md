@@ -16,9 +16,9 @@
 
 公開R2の徒歩圏112起点を、アプリと同じ道路接続25m・徒歩距離1,000mの処理で再計算した。1起点は公開JSONが404で取得できなかった。この欠落だけから施設の対応済み・未対応や営業状態を判断していない。
 
-## GPT-6 Pro通常Chatの追加調査
+## GPT-5.6 Sol通常Chatの追加調査
 
-対象6件だけを通常のChatへ渡し、前回の確認事実と公式URLを再利用して追加の一次資料を調査した。Workは使用していない。
+対象6件だけを通常のChatへ渡し、前回の確認事実と公式URLを再利用して追加の一次資料を調査した。回答後のChat上のモデル表示はGPT-5.6 Solであり、以前の「GPT-6 Proで実行」という記録は誤りだった。Workは使用していない。
 
 結果は6件すべて `hold`。公式資料から新しい事実は確認できたが、元ID・元座標・元形状と現施設の直接対応、改称・承継、店舗区画などを確定する根拠が不足した。推測更新を避けるため、アプリの施設データ変更は0件とした。
 
@@ -28,7 +28,7 @@
 
 - `walking-impact-audit.json`: 29件から11件、6件へ絞った機械監査
 - `gpt-chat-request.json`: 通常Chatへ渡した6件と既存根拠
-- `facility-freshness-followup-manifest.json`: GPT-6 Pro通常Chatの生の判断結果
+- `facility-freshness-followup-manifest.json`: GPT-5.6 Sol通常Chatの生の判断結果
 - `verification.json`: 既存監査、対象ID、座標・形状不変、件数、ハッシュの機械検査
 
 follow-up manifest SHA-256: `39f2f9bae1acb0f22012900acf8ebc07ce2ee4b64400b30207ba7ccadcf8c998`

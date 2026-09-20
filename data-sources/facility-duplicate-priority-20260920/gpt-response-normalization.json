@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "GPT通常Chatの生回答を変更せず保存した上で、先頭JSONと末尾の出典定義を分離し、Markdownリンクを機械検査可能なURL文字列へ変換する。判断本文は変更しない。",
+  "source": "data-sources/facility-duplicate-priority-20260920/gpt-response.raw.md",
+  "output": "data-sources/facility-duplicate-priority-20260920/gpt-response.json",
+  "extraction": {
+    "json_start": 0,
+    "json_end": 6010,
+    "trailing_source_definition_bytes": 1782
+  },
+  "changes": [
+    {
+      "pair_id": "osm-node-10275726015__osm-way-560984476",
+      "type": "markdown_link_to_url",
+      "from": "[https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/84016/](https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/84016/)",
+      "to": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/84016/"
+    },
+    {
+      "pair_id": "osm-node-4098795892__osm-way-407846298",
+      "type": "markdown_link_to_url",
+      "from": "[https://store.family.co.jp/points/35987](https://store.family.co.jp/points/35987)",
+      "to": "https://store.family.co.jp/points/35987"
+    },
+    {
+      "pair_id": "osm-node-2253197417__osm-way-215910952",
+      "type": "markdown_link_to_url",
+      "from": "[https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/83910/](https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/83910/)",
+      "to": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/83910/"
+    },
+    {
+      "pair_id": "osm-node-4107556704__osm-node-5456594526",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.sn-hiroshima.co.jp/pages/60/](https://www.sn-hiroshima.co.jp/pages/60/)",
+      "to": "https://www.sn-hiroshima.co.jp/pages/60/"
+    },
+    {
+      "pair_id": "osm-node-13651735831__osm-way-1489391560",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.ja-ymg.or.jp/atm/acorp_agenosho/](https://www.ja-ymg.or.jp/atm/acorp_agenosho/)",
+      "to": "https://www.ja-ymg.or.jp/atm/acorp_agenosho/"
+    },
+    {
+      "pair_id": "osm-node-9472329366__osm-way-477971690",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002031/1002044/1002045/1002068.html](https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002031/1002044/1002045/1002068.html)",
+      "to": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002031/1002044/1002045/1002068.html"
+    },
+    {
+      "pair_id": "osm-node-2253691125__osm-way-202793094",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.yamaguti-coop.or.jp/cocoto/izumi/](https://www.yamaguti-coop.or.jp/cocoto/izumi/)",
+      "to": "https://www.yamaguti-coop.or.jp/cocoto/izumi/"
+    },
+    {
+      "pair_id": "osm-node-2253691125__osm-way-202793094",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.yamaguti-coop.or.jp/2024%E5%B9%B4%E3%80%80%E6%96%B0%E5%B9%B4%E3%81%AE%E3%81%94%E6%8C%A8%E6%8B%B6/](https://www.yamaguti-coop.or.jp/2024%E5%B9%B4%E3%80%80%E6%96%B0%E5%B9%B4%E3%81%AE%E3%81%94%E6%8C%A8%E6%8B%B6/)",
+      "to": "https://www.yamaguti-coop.or.jp/2024%E5%B9%B4%E3%80%80%E6%96%B0%E5%B9%B4%E3%81%AE%E3%81%94%E6%8C%A8%E6%8B%B6/"
+    },
+    {
+      "pair_id": "osm-node-2253691125__osm-way-202793094",
+      "type": "markdown_link_to_url",
+      "from": "[https://www.yamaguti-coop.or.jp/%E3%82%B3%E3%83%BC%E3%83%97%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97-%E8%A4%87%E5%90%88%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%B3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8D%E3%81%AE%E3%83%86%E3%83%8A/](https://www.yamaguti-coop.or.jp/%E3%82%B3%E3%83%BC%E3%83%97%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97-%E8%A4%87%E5%90%88%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%B3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8D%E3%81%AE%E3%83%86%E3%83%8A/)",
+      "to": "https://www.yamaguti-coop.or.jp/%E3%82%B3%E3%83%BC%E3%83%97%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97-%E8%A4%87%E5%90%88%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%B3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8D%E3%81%AE%E3%83%86%E3%83%8A/"
+    }
+  ]
+}

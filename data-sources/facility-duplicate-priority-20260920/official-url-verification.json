@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "GPT-6 Proが示した公式URLをCodexが別経路で読み直し、GPT出力と独立した取得結果と採否を記録する。",
+  "summary": {
+    "official_url_count": 9,
+    "direct_read": 7,
+    "official_domain_search_fallback": 2,
+    "unreadable": 0,
+    "fact_mismatch": 1,
+    "decision_changed": 0
+  },
+  "records": [
+    {
+      "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/84016/",
+      "status": "official_domain_search_fallback",
+      "verified": ["セブン-イレブン 宇部下条２丁目店", "山口県宇部市下条２丁目２番６"],
+      "note": "URL直接取得はキャッシュミス。同じ公式ドメインの検索結果で原ページ本文を読んだ。"
+    },
+    {
+      "url": "https://store.family.co.jp/points/35987",
+      "status": "direct_read",
+      "verified": ["山口泉都町店", "山口県山口市泉都町９番２号", "083-921-6333", "24時間"]
+    },
+    {
+      "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/83910/",
+      "status": "official_domain_search_fallback",
+      "verified": ["セブン-イレブン 山口今井町店", "山口県山口市今井町６－３８"],
+      "mismatch": "GPT生回答の情報更新日2026-06-11に対し、独立取得時の公式ページ表示は2026-08-18だった。",
+      "note": "URL直接取得はキャッシュミス。同じ公式ドメインの検索結果で原ページ本文を読んだ。日付の不一致は保留判断を変えない。"
+    },
+    {
+      "url": "https://www.sn-hiroshima.co.jp/pages/60/",
+      "status": "direct_read",
+      "verified": ["徳山駅に別項目のセブン-イレブン3店", "新幹線改札内 6:30〜21:00", "在来改札口 6:30〜21:30", "新幹線口 7:00〜20:00"]
+    },
+    {
+      "url": "https://www.ja-ymg.or.jp/atm/acorp_agenosho/",
+      "status": "direct_read",
+      "verified": ["Ａコープ安下庄", "大島郡周防大島町大字西安下庄3920-4", "Aコープ・コンビニ等"]
+    },
+    {
+      "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002031/1002044/1002045/1002068.html",
+      "status": "direct_read",
+      "verified": ["株式会社丸喜 ウェスタまるき西割店", "宇部市大字妻崎開作971番地1", "更新日 2021年2月10日"]
+    },
+    {
+      "url": "https://www.yamaguti-coop.or.jp/cocoto/izumi/",
+      "status": "direct_read",
+      "verified": ["コープ ここと いずみ店", "山口市泉町9-1", "9:00〜21:00", "083-923-2371"]
+    },
+    {
+      "url": "https://www.yamaguti-coop.or.jp/2024%E5%B9%B4%E3%80%80%E6%96%B0%E5%B9%B4%E3%81%AE%E3%81%94%E6%8C%A8%E6%8B%B6/",
+      "status": "direct_read",
+      "verified": ["2024-01-01の記事", "前年6月に新「ここといずみ店」を移転開設"]
+    },
+    {
+      "url": "https://www.yamaguti-coop.or.jp/%E3%82%B3%E3%83%BC%E3%83%97%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97-%E8%A4%87%E5%90%88%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%B3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8D%E3%81%AE%E3%83%86%E3%83%8A/",
+      "status": "direct_read",
+      "verified": ["2024-05-01の記事", "総面積約14,000平方メートルの敷地に物販店舗など4棟", "2023年6月に1階スーパーマーケット・2階セリアを先行開業"]
+    }
+  ],
+  "adoption": "読み取りで確認できたのは現行店舗名、住所、移転履歴、複数店舗の存在等である。元OSM点・way形状と営業区画の直接対応は9URLのいずれでも確認できず、7組すべてのholdを採用する。"
+}

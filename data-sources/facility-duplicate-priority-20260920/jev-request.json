@@ -1,0 +1,513 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "purpose": "重複表示の可能性がある施設組から、公式店舗案内の追加調査で前進しやすい高影響組だけをGPT-6 Pro通常Chatへ渡す。",
+    "evidence_boundary": "JevはURLを確認せず、距離、名称、形状種別、近隣バス停数の近似だけで調査優先度を分類する。統合・削除・更新の根拠にはしない。",
+    "already_selected_by_machine": [
+      {
+        "pair_id": "osm-node-10275726015__osm-way-560984476",
+        "category": "convenience",
+        "distance_m": 10.4,
+        "left": {
+          "id": "osm-node-10275726015",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.2428114,
+            33.9639019
+          ],
+          "nearby_stop_proxy": 38
+        },
+        "right": {
+          "id": "osm-way-560984476",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.242901,
+            33.9639582
+          ],
+          "nearby_stop_proxy": 37
+        },
+        "combined_nearby_stop_proxy": 38,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      {
+        "pair_id": "osm-node-10275660943__osm-way-560979794",
+        "category": "convenience",
+        "distance_m": 4.4,
+        "left": {
+          "id": "osm-node-10275660943",
+          "name": "セブンイレブン宇部島2丁目店",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.2445828,
+            33.962403
+          ],
+          "nearby_stop_proxy": 37
+        },
+        "right": {
+          "id": "osm-way-560979794",
+          "name": "セブンイレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.244626,
+            33.9623869
+          ],
+          "nearby_stop_proxy": 37
+        },
+        "combined_nearby_stop_proxy": 37,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      {
+        "pair_id": "osm-node-2253691125__osm-way-202793094",
+        "category": "supermarket",
+        "distance_m": 6.8,
+        "left": {
+          "id": "osm-node-2253691125",
+          "name": "コープやまぐち",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.4494935,
+            34.1672201
+          ],
+          "nearby_stop_proxy": 29
+        },
+        "right": {
+          "id": "osm-way-202793094",
+          "name": "コープやまぐち",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.449434,
+            34.1671833
+          ],
+          "nearby_stop_proxy": 29
+        },
+        "combined_nearby_stop_proxy": 29,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      {
+        "pair_id": "osm-node-4098795892__osm-way-407846298",
+        "category": "convenience",
+        "distance_m": 16.2,
+        "left": {
+          "id": "osm-node-4098795892",
+          "name": "ファミリーマート",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.4617802,
+            34.1673303
+          ],
+          "nearby_stop_proxy": 25
+        },
+        "right": {
+          "id": "osm-way-407846298",
+          "name": "ファミリーマート山口泉都町店",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.4619072,
+            34.16723
+          ],
+          "nearby_stop_proxy": 25
+        },
+        "combined_nearby_stop_proxy": 25,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      {
+        "pair_id": "osm-node-2253197417__osm-way-215910952",
+        "category": "convenience",
+        "distance_m": 1.3,
+        "left": {
+          "id": "osm-node-2253197417",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.4579455,
+            34.1601593
+          ],
+          "nearby_stop_proxy": 20
+        },
+        "right": {
+          "id": "osm-way-215910952",
+          "name": "セブンイレブン山口今井町店",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.4579323,
+            34.1601547
+          ],
+          "nearby_stop_proxy": 20
+        },
+        "combined_nearby_stop_proxy": 20,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      {
+        "pair_id": "osm-node-9472329366__osm-way-477971690",
+        "category": "supermarket",
+        "distance_m": 9.6,
+        "left": {
+          "id": "osm-node-9472329366",
+          "name": "ウェスタまるき 西割店",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.208735,
+            33.9745215
+          ],
+          "nearby_stop_proxy": 17
+        },
+        "right": {
+          "id": "osm-way-477971690",
+          "name": "まるき",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.2086334,
+            33.9745418
+          ],
+          "nearby_stop_proxy": 17
+        },
+        "combined_nearby_stop_proxy": 17,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "mechanical_action": "direct_gpt",
+        "mechanical_reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      }
+    ],
+    "candidates": [
+      {
+        "pair_id": "osm-node-13154614555__osm-node-2252806318",
+        "category": "convenience",
+        "distance_m": 88.2,
+        "left": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3963054,
+            34.0939695
+          ],
+          "nearby_stop_proxy": 20
+        },
+        "right": {
+          "id": "osm-node-2252806318",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3957447,
+            34.094613
+          ],
+          "nearby_stop_proxy": 19
+        },
+        "combined_nearby_stop_proxy": 20,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-13154614555__osm-node-13154614556",
+        "category": "convenience",
+        "distance_m": 123.4,
+        "left": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3963054,
+            34.0939695
+          ],
+          "nearby_stop_proxy": 20
+        },
+        "right": {
+          "id": "osm-node-13154614556",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3975581,
+            34.0935754
+          ],
+          "nearby_stop_proxy": 15
+        },
+        "combined_nearby_stop_proxy": 20,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-13154614554__osm-node-13154614555",
+        "category": "convenience",
+        "distance_m": 126.3,
+        "left": {
+          "id": "osm-node-13154614554",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.39717,
+            34.0930876
+          ],
+          "nearby_stop_proxy": 14
+        },
+        "right": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3963054,
+            34.0939695
+          ],
+          "nearby_stop_proxy": 20
+        },
+        "combined_nearby_stop_proxy": 20,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-13154614554__osm-node-13154614556",
+        "category": "convenience",
+        "distance_m": 65,
+        "left": {
+          "id": "osm-node-13154614554",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.39717,
+            34.0930876
+          ],
+          "nearby_stop_proxy": 14
+        },
+        "right": {
+          "id": "osm-node-13154614556",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.3975581,
+            34.0935754
+          ],
+          "nearby_stop_proxy": 15
+        },
+        "combined_nearby_stop_proxy": 15,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-4107556704__osm-node-5456594526",
+        "category": "convenience",
+        "distance_m": 32.9,
+        "left": {
+          "id": "osm-node-4107556704",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.8028855,
+            34.0509566
+          ],
+          "nearby_stop_proxy": 12
+        },
+        "right": {
+          "id": "osm-node-5456594526",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.8031338,
+            34.0511692
+          ],
+          "nearby_stop_proxy": 12
+        },
+        "combined_nearby_stop_proxy": 12,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-5050356350__osm-way-672454065",
+        "category": "convenience",
+        "distance_m": 33.8,
+        "left": {
+          "id": "osm-node-5050356350",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.1761884,
+            34.3695416
+          ],
+          "nearby_stop_proxy": 11
+        },
+        "right": {
+          "id": "osm-way-672454065",
+          "name": "セブン-イレブン",
+          "geometry_type": "Point",
+          "coordinate": [
+            131.1765567,
+            34.3695504
+          ],
+          "nearby_stop_proxy": 12
+        },
+        "combined_nearby_stop_proxy": 12,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-6194948464__osm-way-661710574",
+        "category": "convenience",
+        "distance_m": 118.6,
+        "left": {
+          "id": "osm-node-6194948464",
+          "name": "セブン-イレブン 岩国旭町店",
+          "geometry_type": "Point",
+          "coordinate": [
+            132.2268239,
+            34.1605659
+          ],
+          "nearby_stop_proxy": 9
+        },
+        "right": {
+          "id": "osm-way-661710574",
+          "name": "セブン-イレブン 岩国旭町店",
+          "geometry_type": "Point",
+          "coordinate": [
+            132.2256932,
+            34.1600541
+          ],
+          "nearby_stop_proxy": 10
+        },
+        "combined_nearby_stop_proxy": 10,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      },
+      {
+        "pair_id": "osm-node-13651735831__osm-way-1489391560",
+        "category": "supermarket",
+        "distance_m": 2.2,
+        "left": {
+          "id": "osm-node-13651735831",
+          "name": "Aコープ安下庄店",
+          "geometry_type": "Point",
+          "coordinate": [
+            132.2787573,
+            33.8994368
+          ],
+          "nearby_stop_proxy": 9
+        },
+        "right": {
+          "id": "osm-way-1489391560",
+          "name": "Aコープ安下庄店",
+          "geometry_type": "Point",
+          "coordinate": [
+            132.2787411,
+            33.8994515
+          ],
+          "nearby_stop_proxy": 9
+        },
+        "combined_nearby_stop_proxy": 9,
+        "official_locator_name_hint": true,
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "mechanical_action": "jev_gray_zone",
+        "mechanical_reason": "距離、影響度、公式店舗検索の見込みが混在し、機械条件だけでは今回対象に含めるか決めにくい。"
+      }
+    ]
+  },
+  "questions": {
+    "duplicate_action__osm_node_13154614555__osm_node_2252806318": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_13154614555__osm_node_13154614556": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_13154614554__osm_node_13154614555": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_13154614554__osm_node_13154614556": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_4107556704__osm_node_5456594526": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_5050356350__osm_way_672454065": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンを次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_6194948464__osm_way_661710574": {
+      "type": "choice",
+      "instructions": "セブン-イレブン 岩国旭町店 / セブン-イレブン 岩国旭町店を次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    },
+    "duplicate_action__osm_node_13651735831__osm_way_1489391560": {
+      "type": "choice",
+      "instructions": "Aコープ安下庄店 / Aコープ安下庄店を次のGPT-6 Pro通常Chat調査へ回すか分類する。正誤・統合・閉店を推測しない。",
+      "criteria": {
+        "gpt_now": "利用影響の近似が高く、2点が近く、名称から公式店舗・店舗検索資料で同一店舗か確認できる可能性が高い。",
+        "defer_hard_evidence": "地域店舗・薬局等で公式店舗一覧や位置根拠が見つかりにくく、Web調査をしても同一性を確定しにくい。",
+        "defer_low_impact": "他候補より現在の利用影響が低く、今回の小バッチでは後順位にできる。",
+        "ready_without_gpt": "入力済み情報だけで反映可能。距離や名称だけでの確定は禁止するため、通常は選ばない。"
+      }
+    }
+  }
+}

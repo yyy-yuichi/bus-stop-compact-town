@@ -1,0 +1,479 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "機械選別とJev選別を通過した近接施設組が、既存徒歩15分圏へ実際に表示されるか確認する。重複の確定ではない。",
+  "method": {
+    "selected_pairs": 8,
+    "selected_unique_records": 16,
+    "relevant_stop_origins": 126,
+    "unavailable_catchments": 0,
+    "walking_rule": "既存bakedFacilityCandidatesと同じ道路接続25m・道路距離1,000m。"
+  },
+  "summary": {
+    "impacted_pairs": 7,
+    "no_current_walking_impact_pairs": 1
+  },
+  "groups": [
+    {
+      "pair_id": "osm-node-10275726015__osm-way-560984476",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 10.4,
+      "category": "convenience",
+      "walking_impact": {
+        "union_origin_count": 29,
+        "shared_origin_count": 29,
+        "left_origin_count": 29,
+        "right_origin_count": 29
+      },
+      "records": [
+        {
+          "id": "osm-node-10275726015",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.2428114,
+              33.9639019
+            ]
+          },
+          "source_ids": [
+            "node/10275726015"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-560984476",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.242901,
+              33.9639582
+            ]
+          },
+          "source_ids": [
+            "way/560984476"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-4098795892__osm-way-407846298",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 16.2,
+      "category": "convenience",
+      "walking_impact": {
+        "union_origin_count": 19,
+        "shared_origin_count": 19,
+        "left_origin_count": 19,
+        "right_origin_count": 19
+      },
+      "records": [
+        {
+          "id": "osm-node-4098795892",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4617802,
+              34.1673303
+            ]
+          },
+          "source_ids": [
+            "node/4098795892"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-407846298",
+          "name": "ファミリーマート山口泉都町店",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4619072,
+              34.16723
+            ]
+          },
+          "source_ids": [
+            "way/407846298"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-2253197417__osm-way-215910952",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 1.3,
+      "category": "convenience",
+      "walking_impact": {
+        "union_origin_count": 14,
+        "shared_origin_count": 14,
+        "left_origin_count": 14,
+        "right_origin_count": 14
+      },
+      "records": [
+        {
+          "id": "osm-node-2253197417",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4579455,
+              34.1601593
+            ]
+          },
+          "source_ids": [
+            "node/2253197417"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-215910952",
+          "name": "セブンイレブン山口今井町店",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4579323,
+              34.1601547
+            ]
+          },
+          "source_ids": [
+            "way/215910952"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-4107556704__osm-node-5456594526",
+      "selection": {
+        "source": "jev",
+        "answer": {
+          "type": "choice",
+          "choice": "gpt_now",
+          "confidence": 0.6,
+          "probabilities": {
+            "gpt_now": 0.71,
+            "ready_without_gpt": 0.02,
+            "defer_low_impact": 0.24,
+            "defer_hard_evidence": 0.03
+          },
+          "stats": {}
+        }
+      },
+      "distance_m": 32.9,
+      "category": "convenience",
+      "walking_impact": {
+        "union_origin_count": 10,
+        "shared_origin_count": 10,
+        "left_origin_count": 10,
+        "right_origin_count": 10
+      },
+      "records": [
+        {
+          "id": "osm-node-4107556704",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.8028855,
+              34.0509566
+            ]
+          },
+          "source_ids": [
+            "node/4107556704"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-node-5456594526",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.8031338,
+              34.0511692
+            ]
+          },
+          "source_ids": [
+            "node/5456594526"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-13651735831__osm-way-1489391560",
+      "selection": {
+        "source": "jev",
+        "answer": {
+          "type": "choice",
+          "choice": "gpt_now",
+          "confidence": 0.59,
+          "probabilities": {
+            "gpt_now": 0.7,
+            "ready_without_gpt": 0.01,
+            "defer_low_impact": 0.24,
+            "defer_hard_evidence": 0.05
+          },
+          "stats": {}
+        }
+      },
+      "distance_m": 2.2,
+      "category": "supermarket",
+      "walking_impact": {
+        "union_origin_count": 9,
+        "shared_origin_count": 9,
+        "left_origin_count": 9,
+        "right_origin_count": 9
+      },
+      "records": [
+        {
+          "id": "osm-node-13651735831",
+          "name": "Aコープ安下庄店",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.2787573,
+              33.8994368
+            ]
+          },
+          "source_ids": [
+            "node/13651735831"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-1489391560",
+          "name": "Aコープ安下庄店",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.2787411,
+              33.8994515
+            ]
+          },
+          "source_ids": [
+            "way/1489391560"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-9472329366__osm-way-477971690",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 9.6,
+      "category": "supermarket",
+      "walking_impact": {
+        "union_origin_count": 5,
+        "shared_origin_count": 0,
+        "left_origin_count": 5,
+        "right_origin_count": 0
+      },
+      "records": [
+        {
+          "id": "osm-node-9472329366",
+          "name": "ウェスタまるき 西割店",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.208735,
+              33.9745215
+            ]
+          },
+          "source_ids": [
+            "node/9472329366"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-477971690",
+          "name": "まるき",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.2086334,
+              33.9745418
+            ]
+          },
+          "source_ids": [
+            "way/477971690"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-2253691125__osm-way-202793094",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 6.8,
+      "category": "supermarket",
+      "walking_impact": {
+        "union_origin_count": 1,
+        "shared_origin_count": 0,
+        "left_origin_count": 1,
+        "right_origin_count": 0
+      },
+      "records": [
+        {
+          "id": "osm-node-2253691125",
+          "name": "コープやまぐち",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4494935,
+              34.1672201
+            ]
+          },
+          "source_ids": [
+            "node/2253691125"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-202793094",
+          "name": "コープやまぐち",
+          "category": "supermarket",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.449434,
+              34.1671833
+            ]
+          },
+          "source_ids": [
+            "way/202793094"
+          ],
+          "osm_tags": {
+            "shop": "supermarket"
+          },
+          "classification_review": null
+        }
+      ]
+    },
+    {
+      "pair_id": "osm-node-10275660943__osm-way-560979794",
+      "selection": {
+        "source": "machine",
+        "reason": "公式店舗検索で確認しやすい名称、20m以内、高影響の3条件を満たす。"
+      },
+      "distance_m": 4.4,
+      "category": "convenience",
+      "walking_impact": {
+        "union_origin_count": 0,
+        "shared_origin_count": 0,
+        "left_origin_count": 0,
+        "right_origin_count": 0
+      },
+      "records": [
+        {
+          "id": "osm-node-10275660943",
+          "name": "セブンイレブン宇部島2丁目店",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.2445828,
+              33.962403
+            ]
+          },
+          "source_ids": [
+            "node/10275660943"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        },
+        {
+          "id": "osm-way-560979794",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.244626,
+              33.9623869
+            ]
+          },
+          "source_ids": [
+            "way/560979794"
+          ],
+          "osm_tags": {
+            "shop": "convenience"
+          },
+          "classification_review": null
+        }
+      ]
+    }
+  ]
+}

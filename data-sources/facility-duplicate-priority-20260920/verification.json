@@ -1,0 +1,1073 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "近接重複候補について、GPT通常Chatの公式資料照合結果を対象ID・現行座標・形式と機械照合する。",
+  "files": {
+    "gpt_chat_request": {
+      "path": "data-sources/facility-duplicate-priority-20260920/gpt-chat-request.json",
+      "sha256": "4c7d20833393bb50f2c3587098f0bc90de568103861eda4d4a1f5e6dc2e80f39"
+    },
+    "walking_impact_audit": {
+      "path": "data-sources/facility-duplicate-priority-20260920/walking-impact-audit.json",
+      "sha256": "cf8e37eb448ae360ebf976a72b8c9fa38a6f4cfb9102467a04bb28bb51cc11dc"
+    },
+    "candidate_audit": {
+      "path": "data-sources/facility-duplicate-priority-20260920/candidate-audit.json",
+      "sha256": "0b9c5946399bddbe1e60dee04d11513a71deb0d2847f62b3afeacc6044443d64"
+    },
+    "jev_response": {
+      "path": "data-sources/facility-duplicate-priority-20260920/jev-response.json",
+      "sha256": "05ba358db4fefad88224df974da09b2a7f6e3f4ad7d287225fac9efd4a3430bc"
+    },
+    "jev_adoption": {
+      "path": "data-sources/facility-duplicate-priority-20260920/jev-adoption.json",
+      "sha256": "14455504eff49eaeeb18948a529a747704c6ca6334ec122fa1798fcb65258456"
+    },
+    "gpt_response": {
+      "path": "data-sources/facility-duplicate-priority-20260920/gpt-response.json",
+      "sha256": "beb972eecb7b2a2d73dae3b62ef941321b5ddcaffc12387a7ef7fe7f5d43e452"
+    },
+    "gpt_response_normalization": {
+      "path": "data-sources/facility-duplicate-priority-20260920/gpt-response-normalization.json",
+      "sha256": "2886729788dc5601cc6bdcb9b9074968dd131f674311999b7acf031956a60b94"
+    },
+    "gpt_model_verification": {
+      "path": "data-sources/facility-duplicate-priority-20260920/gpt-model-verification.json",
+      "sha256": "dcccd1ee6d56aff0ddec4749cc4d15fee0cc2b5357be6ed3b117451020d0530a"
+    },
+    "official_url_verification": {
+      "path": "data-sources/facility-duplicate-priority-20260920/official-url-verification.json",
+      "sha256": "09f1705e25c289782d55c4ecca2a259ac25d06e7796ba50511c5ab870aa98cb1"
+    },
+    "decision_adoption": {
+      "path": "data-sources/facility-duplicate-priority-20260920/decision-adoption.json",
+      "sha256": "334b756f02a6f65727ec247710cf661d49fb53d7c11a76edb990b928dd7a9e63"
+    },
+    "facilities": {
+      "path": "public/data/shopping.geojson",
+      "sha256": "e79e4d1b69a6f1d098edc4a0344d9da250c2d891318c4a61a0671c868e2794d1"
+    }
+  },
+  "result": {
+    "passed": true,
+    "check_count": 110,
+    "failed_check_count": 0,
+    "requested_pair_count": 7,
+    "decision_counts": {
+      "same_current_facility": 0,
+      "distinct_current_facilities": 0,
+      "hold": 7
+    }
+  },
+  "checks": [
+    {
+      "name": "request contains seven unique pairs",
+      "passed": true,
+      "detail": [
+        "osm-node-10275726015__osm-way-560984476",
+        "osm-node-4098795892__osm-way-407846298",
+        "osm-node-2253197417__osm-way-215910952",
+        "osm-node-4107556704__osm-node-5456594526",
+        "osm-node-13651735831__osm-way-1489391560",
+        "osm-node-9472329366__osm-way-477971690",
+        "osm-node-2253691125__osm-way-202793094"
+      ]
+    },
+    {
+      "name": "machine filter reduces 195 source rows to 20 priority pairs",
+      "passed": true,
+      "detail": {
+        "source_duplicate_rows": 195,
+        "candidate_count": 20
+      }
+    },
+    {
+      "name": "machine filter splits 20 pairs into 6 direct, 8 Jev, and 6 deferred",
+      "passed": true,
+      "detail": {
+        "direct_gpt": 6,
+        "jev_gray_zone": 8,
+        "deferred_without_jev": 6
+      }
+    },
+    {
+      "name": "Jev response contains eight gray-zone answers",
+      "passed": true,
+      "detail": [
+        "duplicate_action__osm_node_13154614555__osm_node_2252806318",
+        "duplicate_action__osm_node_13154614555__osm_node_13154614556",
+        "duplicate_action__osm_node_13154614554__osm_node_13154614555",
+        "duplicate_action__osm_node_13154614554__osm_node_13154614556",
+        "duplicate_action__osm_node_4107556704__osm_node_5456594526",
+        "duplicate_action__osm_node_5050356350__osm_way_672454065",
+        "duplicate_action__osm_node_6194948464__osm_way_661710574",
+        "duplicate_action__osm_node_13651735831__osm_way_1489391560"
+      ]
+    },
+    {
+      "name": "adoption keeps five machine pairs and two Jev pairs after walking gate",
+      "passed": true,
+      "detail": [
+        "osm-node-10275726015__osm-way-560984476",
+        "osm-node-2253691125__osm-way-202793094",
+        "osm-node-4098795892__osm-way-407846298",
+        "osm-node-2253197417__osm-way-215910952",
+        "osm-node-9472329366__osm-way-477971690",
+        "osm-node-4107556704__osm-node-5456594526",
+        "osm-node-13651735831__osm-way-1489391560"
+      ]
+    },
+    {
+      "name": "GPT returned each requested pair exactly once",
+      "passed": true,
+      "detail": {
+        "missing_ids": [],
+        "extra_ids": [],
+        "duplicate_ids": []
+      }
+    },
+    {
+      "name": "walking audit has no unavailable catchments",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "one selected pair was excluded for zero current walking impact",
+      "passed": true,
+      "detail": {
+        "method": {
+          "selected_pairs": 8,
+          "selected_unique_records": 16,
+          "relevant_stop_origins": 126,
+          "unavailable_catchments": 0,
+          "walking_rule": "既存bakedFacilityCandidatesと同じ道路接続25m・道路距離1,000m。"
+        },
+        "summary": {
+          "impacted_pairs": 7,
+          "no_current_walking_impact_pairs": 1
+        }
+      }
+    },
+    {
+      "name": "GPT execution is verified as normal Chat GPT-6 Pro without Work",
+      "passed": true,
+      "detail": {
+        "checked_at": "2026-09-20",
+        "chat_title": "公式施設データ調査",
+        "chat_url": "https://chatgpt.com/c/6aaf3269-000c-83e8-9576-3c2f7a2714aa",
+        "surface": "ChatGPT通常Chat",
+        "work_used": false,
+        "observed_model_menu_text": "GPT-6 Pro を使用しました",
+        "observed_thinking_time": "8m 41s",
+        "result": {
+          "requested_pair_count": 7,
+          "same_current_facility": 0,
+          "distinct_current_facilities": 0,
+          "hold": 7
+        },
+        "note": "同じプロンプトの最初の回答はGPT-5.6 Solだったため採用せず、回答メニューからProモードを明示して再実行した。"
+      }
+    },
+    {
+      "name": "raw response normalization preserves trailing source definitions separately",
+      "passed": true,
+      "detail": {
+        "json_start": 0,
+        "json_end": 6010,
+        "trailing_source_definition_bytes": 1782
+      }
+    },
+    {
+      "name": "nine official URLs were independently checked",
+      "passed": true,
+      "detail": {
+        "official_url_count": 9,
+        "direct_read": 7,
+        "official_domain_search_fallback": 2,
+        "unreadable": 0,
+        "fact_mismatch": 1,
+        "decision_changed": 0
+      }
+    },
+    {
+      "name": "adoption keeps all seven pairs on hold with no application mutation",
+      "passed": true,
+      "detail": {
+        "checked_at": "2026-09-20",
+        "source": "gpt-response.json",
+        "official_url_verification": "official-url-verification.json",
+        "adopted": {
+          "hold": 7,
+          "same_current_facility": 0,
+          "distinct_current_facilities": 0
+        },
+        "application_changes": 0,
+        "coordinates_changed": 0,
+        "geometries_changed": 0,
+        "reason": "現行店舗名や住所を公式ページで確認できても、元の2レコードと営業区画・建物・入口の直接対応、および通常表示に残すIDの優先根拠がない。推測による統合を避ける。"
+      }
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-10275726015",
+        "osm-way-560984476"
+      ]
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 29,
+        "shared_origin_count": 29,
+        "left_origin_count": 29,
+        "right_origin_count": 29
+      }
+    },
+    {
+      "name": "osm-node-10275726015: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-10275726015"
+    },
+    {
+      "name": "osm-node-10275726015: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.2428114,
+            33.9639019
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.2428114,
+            33.9639019
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-10275726015: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-way-560984476: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-560984476"
+    },
+    {
+      "name": "osm-way-560984476: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.242901,
+            33.9639582
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.242901,
+            33.9639582
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-560984476: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-4098795892",
+        "osm-way-407846298"
+      ]
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 19,
+        "shared_origin_count": 19,
+        "left_origin_count": 19,
+        "right_origin_count": 19
+      }
+    },
+    {
+      "name": "osm-node-4098795892: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-4098795892"
+    },
+    {
+      "name": "osm-node-4098795892: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.4617802,
+            34.1673303
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.4617802,
+            34.1673303
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-4098795892: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-way-407846298: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-407846298"
+    },
+    {
+      "name": "osm-way-407846298: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.4619072,
+            34.16723
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.4619072,
+            34.16723
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-407846298: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-2253197417",
+        "osm-way-215910952"
+      ]
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 14,
+        "shared_origin_count": 14,
+        "left_origin_count": 14,
+        "right_origin_count": 14
+      }
+    },
+    {
+      "name": "osm-node-2253197417: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-2253197417"
+    },
+    {
+      "name": "osm-node-2253197417: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.4579455,
+            34.1601593
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.4579455,
+            34.1601593
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-2253197417: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-way-215910952: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-215910952"
+    },
+    {
+      "name": "osm-way-215910952: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.4579323,
+            34.1601547
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.4579323,
+            34.1601547
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-215910952: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-4107556704",
+        "osm-node-5456594526"
+      ]
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 10,
+        "shared_origin_count": 10,
+        "left_origin_count": 10,
+        "right_origin_count": 10
+      }
+    },
+    {
+      "name": "osm-node-4107556704: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-4107556704"
+    },
+    {
+      "name": "osm-node-4107556704: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.8028855,
+            34.0509566
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.8028855,
+            34.0509566
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-4107556704: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-node-5456594526: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-5456594526"
+    },
+    {
+      "name": "osm-node-5456594526: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.8031338,
+            34.0511692
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.8031338,
+            34.0511692
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-5456594526: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "convenience",
+        "current": "convenience"
+      }
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-13651735831",
+        "osm-way-1489391560"
+      ]
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 9,
+        "shared_origin_count": 9,
+        "left_origin_count": 9,
+        "right_origin_count": 9
+      }
+    },
+    {
+      "name": "osm-node-13651735831: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-13651735831"
+    },
+    {
+      "name": "osm-node-13651735831: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            132.2787573,
+            33.8994368
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            132.2787573,
+            33.8994368
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-13651735831: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-way-1489391560: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-1489391560"
+    },
+    {
+      "name": "osm-way-1489391560: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            132.2787411,
+            33.8994515
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            132.2787411,
+            33.8994515
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-1489391560: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-9472329366",
+        "osm-way-477971690"
+      ]
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 5,
+        "shared_origin_count": 0,
+        "left_origin_count": 5,
+        "right_origin_count": 0
+      }
+    },
+    {
+      "name": "osm-node-9472329366: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-9472329366"
+    },
+    {
+      "name": "osm-node-9472329366: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.208735,
+            33.9745215
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.208735,
+            33.9745215
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-9472329366: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-way-477971690: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-477971690"
+    },
+    {
+      "name": "osm-way-477971690: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.2086334,
+            33.9745418
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.2086334,
+            33.9745418
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-477971690: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: contains exactly two records",
+      "passed": true,
+      "detail": [
+        "osm-node-2253691125",
+        "osm-way-202793094"
+      ]
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: has current walking impact",
+      "passed": true,
+      "detail": {
+        "union_origin_count": 1,
+        "shared_origin_count": 0,
+        "left_origin_count": 1,
+        "right_origin_count": 0
+      }
+    },
+    {
+      "name": "osm-node-2253691125: still exists in facility data",
+      "passed": true,
+      "detail": "osm-node-2253691125"
+    },
+    {
+      "name": "osm-node-2253691125: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.4494935,
+            34.1672201
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.4494935,
+            34.1672201
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-node-2253691125: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-way-202793094: still exists in facility data",
+      "passed": true,
+      "detail": "osm-way-202793094"
+    },
+    {
+      "name": "osm-way-202793094: coordinates are unchanged",
+      "passed": true,
+      "detail": {
+        "request": {
+          "type": "Point",
+          "coordinates": [
+            131.449434,
+            34.1671833
+          ]
+        },
+        "current": {
+          "type": "Point",
+          "coordinates": [
+            131.449434,
+            34.1671833
+          ]
+        }
+      }
+    },
+    {
+      "name": "osm-way-202793094: category is unchanged",
+      "passed": true,
+      "detail": {
+        "request": "supermarket",
+        "current": "supermarket"
+      }
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/84016/"
+      ]
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: confirmed facts are recorded",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "提示された両レコードには支店名・住所がなく、それぞれを宇部下条２丁目店に対応付ける公式の店舗位置・区画資料は確認できていない。",
+        "nodeの位置と元wayの境界が、同じ店舗の営業区画・建物・入口にどう対応するかは確認不能。提示されたwayの代表座標だけでは建物範囲を照合できない。",
+        "同一施設と確認できた場合でも、nodeとwayのどちらを通常表示に残すべきかを選べる公式根拠が不足している。店舗の位置・営業区画・入口を示す公式配置図と各元要素との対応確認が必要。"
+      ]
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: reason is recorded",
+      "passed": true,
+      "detail": "候補店舗の公式名称と所在地は確認できたが、両レコードとの対応および通常表示に残すIDの選定根拠が不足している。"
+    },
+    {
+      "name": "osm-node-10275726015__osm-way-560984476: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://store.family.co.jp/points/35987"
+      ]
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: confirmed facts are recorded",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "支店名のないosm-node-4098795892を、公式の山口泉都町店と直接対応付ける資料が不足している。",
+        "osm-way-407846298の対象範囲が店舗営業区画そのものなのか、店舗を含む建物等なのかは、確認した公式ページから確定できない。両元要素と店舗区画を対応付ける公式配置図が必要。",
+        "公式店舗ページの住所・営業時間からは、nodeとwayのどちらを通常表示に残すか選定できない。"
+      ]
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: reason is recorded",
+      "passed": true,
+      "detail": "山口泉都町店の現行公式案内は確認できたが、2レコードの同一店舗・同一対象範囲への対応と、通常表示IDの選定根拠は確認できない。"
+    },
+    {
+      "name": "osm-node-4098795892__osm-way-407846298: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/83910/"
+      ]
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: confirmed facts are recorded",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "支店名のないosm-node-2253197417と、支店名を含むosm-way-215910952が同じ営業区画を表すことを直接裏付ける公式資料は確認できていない。",
+        "公式住所と両レコードの位置・元way境界を照合できる店舗配置図が必要。代表座標の近接だけでは対象範囲の一致を確定できない。",
+        "nodeを店舗代表点、wayを建物参照とするなどの役割分担を、今回の公式資料だけでは選定できない。"
+      ]
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: reason is recorded",
+      "passed": true,
+      "detail": "山口今井町店の名称・所在地は確認できたが、二要素の同一性と通常表示に残すIDを公式根拠だけで確定できない。"
+    },
+    {
+      "name": "osm-node-2253197417__osm-way-215910952: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.sn-hiroshima.co.jp/pages/60/"
+      ]
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: confirmed facts are recorded",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "両nodeの名称には支店名がなく、各nodeが公式案内のどの店舗を表すかは確認不能。",
+        "2点が同じ店舗の重複なのか、階や改札内外の異なる別店舗なのかを判定するには、各店舗名・営業区画・階・改札との位置関係を示す公式構内図と、各nodeとの対応確認が必要。",
+        "公式に複数店舗が掲載されている事実だけでは、この2レコードをそれぞれ別店舗へ割り当てられない。同一店舗と確認できた場合の通常表示IDも選定できない。"
+      ]
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: reason is recorded",
+      "passed": true,
+      "detail": "徳山駅には公式に区別された複数店舗があるため近接重複とは断定できず、各nodeへの店舗割り当ても未確認のため別施設とも確定しない。"
+    },
+    {
+      "name": "osm-node-4107556704__osm-node-5456594526: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.ja-ymg.or.jp/atm/acorp_agenosho/"
+      ]
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: confirmed facts are recorded",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "公式施設案内のＡコープ安下庄と、各レコードの座標・元way境界を対応付ける公式配置図は確認できていない。",
+        "両レコードが店舗営業区画そのものを二重登録しているのか、店舗の点情報と店舗を含む建物等をそれぞれ表しているのかは確認不能。",
+        "公式案内の名称・住所だけでは通常表示に残すIDを選定できない。店舗区画・入口・建物範囲と両元要素の関係を示す追加根拠が必要。"
+      ]
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: reason is recorded",
+      "passed": true,
+      "detail": "公式にＡコープ安下庄の施設案内は確認できたが、同名の二要素が表す範囲と通常表示IDの優先関係を確定できない。"
+    },
+    {
+      "name": "osm-node-13651735831__osm-way-1489391560: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002031/1002044/1002045/1002068.html"
+      ]
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: confirmed facts are recorded",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "運営会社の現行店舗案内は原ページ本文の取得に失敗したため、検索結果に表示された営業時間等は確定根拠に採用していない。確認日現在の営業状況は、運営会社の原ページまたは最新の公的資料で追加確認が必要。",
+        "支店名のないosm-way-477971690の「まるき」が西割店を表すこと、および両レコードが同じ現行店舗の範囲を表すことは、確認した市の資料だけでは確定できない。",
+        "店舗位置・営業区画・入口と元way境界の対応を示す公式配置図が不足しており、通常表示に残すIDも選定できない。"
+      ]
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: reason is recorded",
+      "passed": true,
+      "detail": "旧時点の公的な店舗名・所在地は確認できたが、現行営業の追加裏付け、二要素の対象範囲の一致、通常表示IDの選定根拠が不足している。"
+    },
+    {
+      "name": "osm-node-9472329366__osm-way-477971690: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: decision value is valid",
+      "passed": true,
+      "detail": "hold"
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: official URLs are credential-free HTTPS URLs",
+      "passed": true,
+      "detail": [
+        "https://www.yamaguti-coop.or.jp/cocoto/izumi/",
+        "https://www.yamaguti-coop.or.jp/2024%E5%B9%B4%E3%80%80%E6%96%B0%E5%B9%B4%E3%81%AE%E3%81%94%E6%8C%A8%E6%8B%B6/",
+        "https://www.yamaguti-coop.or.jp/%E3%82%B3%E3%83%BC%E3%83%97%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97-%E8%A4%87%E5%90%88%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%B3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8D%E3%81%AE%E3%83%86%E3%83%8A/"
+      ]
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: confirmed facts are recorded",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: unresolved items use an array",
+      "passed": true,
+      "detail": [
+        "両レコードの名称「コープやまぐち」だけでは、旧店舗、移転後のいずみ店、店舗を含む建物、複合施設全体のどれを対象とするか確定できない。",
+        "2023年6月の移転前後の店舗位置・建物配置を示す公式資料と、両座標・元way境界との照合が必要。移転の公式告知だけでは、提示位置に現在のスーパーがあると判断できない。",
+        "現在の食品売場・建物・複合施設全体の範囲を区別したうえで両元要素を対応付ける根拠が不足しており、通常表示に残すIDは選定できない。"
+      ]
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: reason is recorded",
+      "passed": true,
+      "detail": "候補店舗の現行営業と移転履歴は公式に確認できたが、両レコードが移転後の同じ施設を表すか未確認であり、単純な近接重複として扱えない。"
+    },
+    {
+      "name": "osm-node-2253691125__osm-way-202793094: non-merge decision has no record mutation proposal",
+      "passed": true,
+      "detail": {
+        "keep_normal_record_id": null,
+        "reference_record_id": null
+      }
+    }
+  ]
+}

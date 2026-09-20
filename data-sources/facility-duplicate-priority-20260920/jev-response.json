@@ -1,0 +1,107 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "duplicate_action__osm_node_13154614555__osm_node_2252806318": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.58,
+      "probabilities": {
+        "gpt_now": 0.68,
+        "ready_without_gpt": 0.03,
+        "defer_low_impact": 0.25,
+        "defer_hard_evidence": 0.04
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_13154614555__osm_node_13154614556": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.51,
+      "probabilities": {
+        "gpt_now": 0.62,
+        "ready_without_gpt": 0.03,
+        "defer_low_impact": 0.3,
+        "defer_hard_evidence": 0.05
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_13154614554__osm_node_13154614555": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.49,
+      "probabilities": {
+        "gpt_now": 0.61,
+        "ready_without_gpt": 0.03,
+        "defer_low_impact": 0.3,
+        "defer_hard_evidence": 0.06
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_13154614554__osm_node_13154614556": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.55,
+      "probabilities": {
+        "gpt_now": 0.66,
+        "ready_without_gpt": 0.02,
+        "defer_low_impact": 0.27,
+        "defer_hard_evidence": 0.05
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_4107556704__osm_node_5456594526": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.6,
+      "probabilities": {
+        "gpt_now": 0.71,
+        "ready_without_gpt": 0.02,
+        "defer_low_impact": 0.24,
+        "defer_hard_evidence": 0.03
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_5050356350__osm_way_672454065": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.57,
+      "probabilities": {
+        "gpt_now": 0.67,
+        "defer_low_impact": 0.26,
+        "ready_without_gpt": 0.02,
+        "defer_hard_evidence": 0.04
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_6194948464__osm_way_661710574": {
+      "type": "choice",
+      "choice": "defer_low_impact",
+      "confidence": 0.77,
+      "probabilities": {
+        "gpt_now": 0.11,
+        "ready_without_gpt": 0.02,
+        "defer_low_impact": 0.83,
+        "defer_hard_evidence": 0.04
+      },
+      "stats": {}
+    },
+    "duplicate_action__osm_node_13651735831__osm_way_1489391560": {
+      "type": "choice",
+      "choice": "gpt_now",
+      "confidence": 0.59,
+      "probabilities": {
+        "gpt_now": 0.7,
+        "ready_without_gpt": 0.01,
+        "defer_low_impact": 0.24,
+        "defer_hard_evidence": 0.05
+      },
+      "stats": {}
+    }
+  },
+  "usage": {
+    "input_tokens": 8152,
+    "output_tokens": 715
+  },
+  "request_id": "playground_19cad9489b5a0954097a6bcaf9856ef0ecd",
+  "evaluation_time_ms": 121.06455499997537
+}
