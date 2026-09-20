@@ -135,6 +135,7 @@
 .source-details dt { margin-top:15px; font-size:10px; }
 .source-details dd { margin:5px 0 12px; line-height:1.8; color:#34513e; overflow-wrap:anywhere; }
 .source-details a { display:block; padding:9px 0; text-decoration:underline; text-underline-offset:3px; }
+.detail-about-link { display:flex; min-height:44px; align-items:center; justify-content:center; margin-top:16px; border-top:1px solid var(--line); padding-top:16px; color:#174f9d; font-size:12px; font-weight:650; text-decoration:underline; text-underline-offset:3px; }
 .share-place { margin:12px 0 18px; }
 .share-button { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; min-height:44px; padding:8px 10px; border:1px solid #d3dfd7; border-radius:8px; color:#276044; background:#fff; font-size:11px; font-weight:600; }
 .share-button:hover { background:#f1f7f2; }

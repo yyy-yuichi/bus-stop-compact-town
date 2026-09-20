@@ -3,8 +3,8 @@ import L from 'leaflet';
 import type { BusFeature } from './types';
 import { clusterStops, stopCellSize } from './stopClusters';
 import { fitContent } from './mapLayout';
-import { choiceAccessibleLabel, choiceHoverLabel, choiceText, stopId } from './stopChoiceModel';
-import { CHOICE_HEIGHT, CHOICE_WIDTH, STOP_TARGET, contains, overlapGroups, pointRect, spiderLayout, touches } from './stopSpiderLayout';
+import { choiceAccessibleLabel, choiceHoverLabel, choiceText, groupStopsByExactCoordinate, stopId } from './stopChoiceModel';
+import { CHOICE_HEIGHT, CHOICE_WIDTH, STOP_TARGET, contains, pointRect, spiderLayout, touches } from './stopSpiderLayout';
 import type { DisplayPoint, DisplayRect } from './stopSpiderLayout';
 import { useStopSelection } from './StopSelection';
 
@@ -115,7 +115,17 @@ export default function StopMarkers({ map, stops, selected }: {
         const point = map.latLngToContainerPoint(coordinate(stop));
         return { id: stopId(stop), x: point.x, y: point.y };
       });
-      if (zoom < 14) {
+      const exactGroups = (items: DisplayPoint[]) => {
+        const pointById = new Map(items.map(point => [point.id, point]));
+        const visibleStops = items.map(point => byId.get(point.id)).filter((value): value is BusFeature => !!value);
+        return groupStopsByExactCoordinate(visibleStops)
+          .map(group => group.map(stop => pointById.get(stopId(stop))).filter((value): value is DisplayPoint => !!value));
+      };
+      if (selected) {
+        const chosen = byId.get(selected);
+        if (chosen && viewport.contains(coordinate(chosen))) drawStop(chosen);
+        if (session?.kind === 'overlap') layout(false);
+      } else if (zoom < 14) {
         const projected = stops.map(stop => {
           const point = map.project(coordinate(stop), zoom);
           return { stop, x: point.x, y: point.y };
@@ -139,11 +149,11 @@ export default function StopMarkers({ map, stops, selected }: {
             const point = map.latLngToContainerPoint(coordinate(stop));
             return { id: stopId(stop), x: point.x, y: point.y };
           }) : [];
-        const otherGroups = overlapGroups(points.filter(point => !ids.has(point.id)));
+        const otherGroups = exactGroups(points.filter(point => !ids.has(point.id)));
         const otherBoxes = otherGroups.map(items => pointRect(center(items)));
         const expanded = origins.length > 1 ? spiderLayout(origins, view, [...blockers, ...otherBoxes]) : null;
         if (session?.kind === 'overlap') layout(!!expanded);
-        const groups = expanded ? otherGroups : overlapGroups(points);
+        const groups = expanded ? otherGroups : exactGroups(points);
         const labelBlocks = [...blockers, ...groups.map(items => pointRect(center(items)))];
         for (const items of groups) {
           if (items.length > 1) drawOverlap(items);

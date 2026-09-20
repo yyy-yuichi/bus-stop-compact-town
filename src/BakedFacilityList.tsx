@@ -44,11 +44,5 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
       </button>;
     }) : <p className="mt-4 text-sm leading-relaxed">この条件の候補はありません。{minutes < 15 ? '時間を広げて探せます。' : ''}</p>}
     {filtered.length > limit && <button className="mt-3 min-h-11 w-full rounded-xl border border-stone-300 bg-white text-sm font-semibold" onClick={() => { nextFocus.current = `baked-facility-${filtered[limit].facility.id}`; setLimit(n => n + 12); }}>さらに{Math.min(12, filtered.length - limit)}件を表示</button>}
-    <details className="mt-4 text-xs leading-relaxed text-stone-600">
-      <summary className="min-h-11 cursor-pointer py-3 font-semibold">候補の判定について</summary>
-      <p>徒歩圏の道路と施設の登録位置・範囲が25m以内にあるものを候補にしています。表示時間は坂道を考慮した道路上の地点までの目安です。入口への経路や、その間を横断・通行できるかは未確認です。</p>
-      <p className="mt-2">参考施設は除いています。同じ施設の登録が重複している場合があります。施設名・営業状況・診療内容などは詳細からご確認ください。</p>
-      <p className="mt-2">候補0件は、周辺に施設がないという意味ではありません。</p>
-    </details>
   </section>;
 }

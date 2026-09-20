@@ -26,6 +26,25 @@ export function relatedStops(stop: BusFeature, stops: BusFeature[]): BusFeature[
   return group ? stops.filter(other => other.properties.boarding_guide?.group_id === group) : [];
 }
 
+/** Screen overlap is not evidence that two records share one physical origin. */
+export function coincidentStops(stop: BusFeature, stops: BusFeature[]): BusFeature[] {
+  const [longitude, latitude] = stop.geometry.coordinates;
+  return stops.filter(other => other.geometry.coordinates[0] === longitude
+    && other.geometry.coordinates[1] === latitude);
+}
+
+/** Group only records whose source coordinates are exactly equal. */
+export function groupStopsByExactCoordinate(stops: BusFeature[]): BusFeature[][] {
+  const groups = new Map<string, BusFeature[]>();
+  for (const stop of stops) {
+    const key = `${stop.geometry.coordinates[0]}:${stop.geometry.coordinates[1]}`;
+    const group = groups.get(key);
+    if (group) group.push(stop);
+    else groups.set(key, [stop]);
+  }
+  return [...groups.values()];
+}
+
 export function choiceText(stop: BusFeature) {
   const guide = stop.properties.boarding_guide;
   const source = stop.properties.source_kind === 'national' ? '国の代表点'
@@ -61,7 +80,7 @@ export function choiceAccessibleLabel(stop: BusFeature): string {
   return `${choiceHoverLabel(stop)} ${text.direction} ${text.notes.join(' ')} ${text.source} ${text.id}`;
 }
 
-/** Selecting one record keeps the other choices available until the chooser is closed. */
+/** A completed choice closes the temporary map chooser; the drawer can reopen it. */
 export function choiceReducer(state: StopChoiceSession | null, action: StopChoiceAction): StopChoiceSession | null {
   if (action.type === 'close') return null;
   if (action.type === 'open') {
@@ -72,7 +91,7 @@ export function choiceReducer(state: StopChoiceSession | null, action: StopChoic
     };
   }
   if (!state) return state;
-  if (action.type === 'selection') return state.ids.includes(action.id) ? state : null;
+  if (action.type === 'selection') return null;
   if (action.type === 'list') return state.listOpen === action.open ? state : { ...state, listOpen: action.open };
   if (state.available === action.available) return state;
   return {

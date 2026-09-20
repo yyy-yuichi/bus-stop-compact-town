@@ -2,9 +2,8 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useReducer,
 import type { ReactNode } from 'react';
 import type L from 'leaflet';
 import type { BusFeature } from './types';
-import { choiceReducer, choiceText, relatedStops, stopId } from './stopChoiceModel';
+import { choiceReducer, choiceText, coincidentStops, relatedStops, stopId } from './stopChoiceModel';
 import type { StopChoiceKind, StopChoiceSession } from './stopChoiceModel';
-import { overlapGroups } from './stopSpiderLayout';
 import './stopSelection.css';
 
 interface StopSelectionValue {
@@ -55,14 +54,7 @@ export function StopSelectionProvider({ map, stops, selected, onSelect, active =
     if (session?.ids.includes(stopId(stop))) return {
       stops: session.ids.map(id => byId.get(id)).filter((value): value is BusFeature => !!value), kind: session.kind,
     };
-    if (!map) return { stops: [], kind: 'overlap' as const };
-    const zoom = Math.max(14, map.getZoom());
-    const points = stops.map(item => {
-      const p = map.project([item.geometry.coordinates[1], item.geometry.coordinates[0]], zoom);
-      return { id: stopId(item), x: p.x, y: p.y };
-    });
-    const group = overlapGroups(points).find(items => items.some(p => p.id === stopId(stop))) || [];
-    return { stops: group.map(p => byId.get(p.id)).filter((value): value is BusFeature => !!value), kind: 'overlap' as const };
+    return { stops: coincidentStops(stop, stops), kind: 'overlap' as const };
   }, [map, stops, byId, session]);
 
   useEffect(() => {

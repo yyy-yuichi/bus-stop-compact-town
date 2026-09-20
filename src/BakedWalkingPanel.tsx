@@ -218,14 +218,14 @@ function useCatchment(id: string, origin: Coordinate, knownUnreachable: boolean,
   return { ...current, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachable, focused, facilities, facilityState, retryFacilities, onFacility, minutes, onMinutes, scope, onMapFacilities }: {
+export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachable, focused, facilities, facilityState, retryFacilities, onFacility, minutes, scope, onMapFacilities }: {
   map: L.Map | null; id: string; origin: Coordinate;
   dataUrl?: string;
   unreachable: Record<string, number | null> | null;
   focused: boolean;
   facilities: ShoppingFeature[]; facilityState: LoadState; retryFacilities: () => void;
   onFacility: (facility: ShoppingFeature) => void;
-  minutes: BakedWalkingMinutes; onMinutes: (minutes: BakedWalkingMinutes) => void;
+  minutes: BakedWalkingMinutes;
   scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
 }) {
   const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, origin, Object.hasOwn(unreachable ?? {}, id), dataUrl);
@@ -277,17 +277,8 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
       {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
-        <div className="mt-4 grid grid-cols-3 gap-2" role="group" aria-label="徒歩時間">
-          {([5, 10, 15] as const).map(n => <button key={n} aria-pressed={minutes === n} onClick={() => onMinutes(n)} className={`min-h-12 rounded-xl border text-sm font-bold ${minutes === n ? 'border-emerald-900 bg-emerald-900 text-white' : 'border-stone-200 bg-white text-stone-700'}`}>徒歩 {n} 分</button>)}
-        </div>
         <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
       </>}
-      <details className="text-xs leading-relaxed text-stone-500">
-        <summary className="min-h-11 py-3 font-semibold">徒歩圏の計算について</summary>
-        <p>坂道を考慮した、時速4km・徒歩{minutes}分相当の範囲です。緑の濃淡はバス停からの距離、赤い線は急な坂道を表します。</p>
-        <p className="mt-2">信号待ち、工事や現地の横断可否、車いす対応は反映していません。坂は地形データからの概算です。現地の通行状況を確認してください。</p>
-        <a className="mt-2 inline-block text-sky-800 underline" href={`${import.meta.env.BASE_URL}about.html#walking`}>計算方法とデータについて</a>
-      </details>
     </>}
     {nearbyFallback && <NearbyFacilitiesPanel key={id} origin={origin} facilities={facilities} state={facilityState} retry={retryFacilities} onFacility={onFacility} scope={scope} onMapFacilities={onMapFacilities} />}
   </section>;

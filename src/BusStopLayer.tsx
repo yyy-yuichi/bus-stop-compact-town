@@ -31,7 +31,6 @@ const boardingStudy = import.meta.env.VITE_BOARDING_STUDY === '1';
 
 export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | null; onSelectionChange: (selected: boolean) => void }) {
   const [stops, setStops] = useState<BusFeature[]>([]);
-  const [dataTimestamp, setDataTimestamp] = useState('');
   const [selected, setSelected] = useState('');
   const [located, setLocated] = useState('');
   const [locateVersion, setLocateVersion] = useState(0);
@@ -41,7 +40,7 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
   const [attempt, setAttempt] = useState(0);
   const [sharedPlace, setSharedPlace] = useState<SharedPlace | null>(() => readPlaceLink(window.location.hash));
   const [walkingConditions, setWalkingConditions] = useState<WalkingConditions>(() => sharedPlace?.kind === 'pilot' ? sharedPlace.walking ?? DEFAULT_WALKING_CONDITIONS : DEFAULT_WALKING_CONDITIONS);
-  const [bakedMinutes, setBakedMinutes] = useState<BakedWalkingMinutes>(() => sharedPlace && 'minutes' in sharedPlace ? sharedPlace.minutes ?? DEFAULT_BAKED_MINUTES : DEFAULT_BAKED_MINUTES);
+  const bakedMinutes: BakedWalkingMinutes = DEFAULT_BAKED_MINUTES;
   const [shareWarning, setShareWarning] = useState(() => Boolean(window.location.hash) && !readPlaceLink(window.location.hash));
   const [mode, setMode] = useState<'national' | 'pilot'>(() => readPlaceLink(window.location.hash)?.kind === 'pilot' ? 'pilot' : 'national');
   const pendingSelection = useRef('');
@@ -62,7 +61,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       const place = readPlaceLink(window.location.hash);
       setSharedPlace(place);
       setWalkingConditions(place?.kind === 'pilot' ? place.walking ?? DEFAULT_WALKING_CONDITIONS : DEFAULT_WALKING_CONDITIONS);
-      setBakedMinutes(place && 'minutes' in place ? place.minutes ?? DEFAULT_BAKED_MINUTES : DEFAULT_BAKED_MINUTES);
       setShareWarning(Boolean(window.location.hash) && !place);
       setLocated(''); setLocateVersion(value => value + 1);
       setSelected(''); setSelectedFacility(null); setWalkFacilities(null);
@@ -75,7 +73,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
 
   useEffect(() => {
     if (!map) return;
-    setDataTimestamp('');
     const abort = new AbortController();
     setFailed(false);
     setMunicipalFailed(false);
@@ -117,7 +114,6 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
         setSelected(pendingDetail.current ? pendingId : '');
         pendingDetail.current = false;
         pendingSelection.current = '';
-        setDataTimestamp(typeof data.timestamp === 'string' ? data.timestamp : '不明');
         fitContent(map, L.latLngBounds(data.features.map(stop => [stop.geometry.coordinates[1], stop.geometry.coordinates[0]])));
         if (initialOverview.current && mode === 'national' && !sharedPlace && window.matchMedia('(max-width: 1000px)').matches) {
           map.setView([34.22, 131.55], 9.5, { animate: false });
@@ -245,19 +241,19 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
       {failed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>バス停を読み込めませんでした。再読み込み</button>}
       {boardingFailed && <button className="data-error" onClick={() => setAttempt(n => n + 1)}>乗り場の方面を読み込めませんでした。再読み込み</button>}
       {shareWarning && <div className="link-notice" role="status"><p>リンクの場所または徒歩条件を確認できませんでした。名前で検索できます。</p><button className="icon-button" aria-label="リンクの案内を閉じる" onClick={() => setShareWarning(false)}><MapIcon name="close" /></button></div>}
-      {selectedStop && <BusStopDrawer stop={selectedStop} timestamp={dataTimestamp} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode} walkingConditions={walkingConditions} bakedMinutes={bakedMinutes}>
+      {selectedStop && <BusStopDrawer stop={selectedStop} onClose={closeDrawer} hidden={!!selectedFacility} onNational={changeMode} walkingConditions={walkingConditions} bakedMinutes={bakedMinutes}>
         <BoardingGuidePanel stop={selectedStop} map={map} active={!selectedFacility && !selectedStop.properties.boarding_walk} />
         {selectedStop.properties.boarding_guide?.review || selectedStop.properties.boarding_guide?.assignment_hold
           ? <LocationReviewPanel stop={selectedStop} map={map} scope={walkScope} onMapFacilities={showWalkFacilities} />
           : selectedStop.properties.boarding_walk
-          ? <BakedWalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={selectedStop.properties.boarding_walk.id} dataUrl={selectedStop.properties.boarding_walk.url} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={selectedStop.properties.boarding_walk.url ? null : { [selected]: selectedStop.properties.boarding_walk.gap ?? null }} focused={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} onMinutes={setBakedMinutes} />
+          ? <BakedWalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={selectedStop.properties.boarding_walk.id} dataUrl={selectedStop.properties.boarding_walk.url} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={selectedStop.properties.boarding_walk.url ? null : { [selected]: selectedStop.properties.boarding_walk.gap ?? null }} focused={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} />
           : selectedStop.properties.source_kind === 'municipal' || selectedStop.properties.source_kind === 'boarding-study'
           ? <>
             <NearbyFacilitiesPanel key={selected} scope={walkScope} origin={selectedStop.geometry.coordinates as Coordinate} facilities={shopping.features} state={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retry={shopping.retry} onFacility={selectFacility} onMapFacilities={showWalkFacilities} />
             {selectedStop.properties.source_kind === 'municipal' && <MunicipalStopPanel map={map} stop={selectedStop} stops={stops} unreachable={unreachable} active={!selectedFacility} onStop={selectStop} />}
           </>
           : mode === 'national'
-          ? <BakedWalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} focused={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} onMinutes={setBakedMinutes} />
+          ? <BakedWalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={nationalCatchmentId(selectedStop)} origin={selectedStop.geometry.coordinates as Coordinate} unreachable={unreachable} focused={!selectedFacility} facilities={shopping.features} facilityState={shopping.loading ? 'loading' : shopping.error ? 'error' : 'ready'} retryFacilities={shopping.retry} onFacility={selectFacility} minutes={bakedMinutes} />
           : <WalkingPanel scope={walkScope} onMapFacilities={showWalkFacilities} map={map} id={selected} origin={selectedStop.geometry.coordinates as Coordinate} {...walking} retry={() => { walking.retry(); shopping.retry(); }} onSelect={selectStop} onFacility={selectFacility} focused={!selectedFacility} conditions={walkingConditions} onConditions={setWalkingConditions} />}
       </BusStopDrawer>}
       {selectedFacility && <FacilityDrawer facility={selectedFacility} onClose={closeFacility} returnStop={selectedStop ? { name: selectedStop.properties.boarding_guide?.stop_name || selectedStop.properties['name:ja'] || selectedStop.properties.name || '名称未登録' } : undefined} />}
