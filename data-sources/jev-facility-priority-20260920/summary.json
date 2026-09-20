@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-09-20",
+  "purpose": "Jevを公式事実の確定に使わず、GPT-6 Pro通常Chatへ渡す対象の事前選別に使えるかを確認する。",
+  "model": "jev-1.13.0",
+  "request_id": "playground_19c7970c4fa614e47a8a5dcf104913f7dc3",
+  "usage": {
+    "input_tokens": 5916,
+    "output_tokens": 864
+  },
+  "evaluation_time_ms": 133.4880360009265,
+  "record_count": 11,
+  "decision_counts": {
+    "gpt_now": 0,
+    "defer_low_current_impact": 5,
+    "defer_hard_evidence": 6,
+    "ready_without_gpt": 0
+  },
+  "gpt_now_count": 0,
+  "validation": {
+    "exact_ids": true,
+    "unexpected_decision_count": 0,
+    "passed": true
+  },
+  "interpretation": {
+    "jev_output": "追加GPT調査済み6件はdefer_hard_evidence、徒歩圏影響0の未調査5件はdefer_low_current_impact。",
+    "agent_adoption": "現在の11件はGPTへ追加投入しない。次は別の高影響候補を機械抽出し、機械条件だけで決まらない候補にJevを使う。",
+    "limitation": "今回の入力は既調査と徒歩圏影響0が明示されており、Jevの分類は機械規則でも再現できる。公式URL確認や施設更新判断の証拠にはしない。"
+  },
+  "decisions": [
+    {
+      "id": "osm-way-202664935",
+      "name": "ドラッグセガミ",
+      "walking_origin_count": 14,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.98,
+      "probabilities": {
+        "defer_low_current_impact": 0,
+        "defer_hard_evidence": 0.98,
+        "ready_without_gpt": 0.01,
+        "gpt_now": 0.01
+      }
+    },
+    {
+      "id": "osm-node-12376670726",
+      "name": "おかもと内閣",
+      "walking_origin_count": 10,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.95,
+      "probabilities": {
+        "defer_low_current_impact": 0,
+        "defer_hard_evidence": 0.97,
+        "ready_without_gpt": 0.02,
+        "gpt_now": 0.01
+      }
+    },
+    {
+      "id": "osm-way-613971823",
+      "name": "ココカラファイン 下関生野店",
+      "walking_origin_count": 6,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.95,
+      "probabilities": {
+        "defer_low_current_impact": 0,
+        "defer_hard_evidence": 0.97,
+        "ready_without_gpt": 0.02,
+        "gpt_now": 0.01
+      }
+    },
+    {
+      "id": "osm-way-1069977638",
+      "name": "山口銀行 丸久川西店",
+      "walking_origin_count": 3,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.87,
+      "probabilities": {
+        "defer_low_current_impact": 0.02,
+        "defer_hard_evidence": 0.9,
+        "ready_without_gpt": 0.07,
+        "gpt_now": 0.01
+      }
+    },
+    {
+      "id": "osm-node-4355096689",
+      "name": "Best",
+      "walking_origin_count": 2,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.87,
+      "probabilities": {
+        "defer_low_current_impact": 0.02,
+        "defer_hard_evidence": 0.91,
+        "ready_without_gpt": 0.04,
+        "gpt_now": 0.03
+      }
+    },
+    {
+      "id": "osm-way-600969423",
+      "name": "サンキュードラッグ",
+      "walking_origin_count": 2,
+      "gpt_followup_completed": true,
+      "choice": "defer_hard_evidence",
+      "confidence": 0.91,
+      "probabilities": {
+        "defer_low_current_impact": 0.02,
+        "defer_hard_evidence": 0.93,
+        "ready_without_gpt": 0.04,
+        "gpt_now": 0.01
+      }
+    },
+    {
+      "id": "osm-node-3798156478",
+      "name": "いちやSC",
+      "walking_origin_count": 0,
+      "gpt_followup_completed": false,
+      "choice": "defer_low_current_impact",
+      "confidence": 0.93,
+      "probabilities": {
+        "defer_low_current_impact": 0.94,
+        "defer_hard_evidence": 0.03,
+        "ready_without_gpt": 0.01,
+        "gpt_now": 0.02
+      }
+    },
+    {
+      "id": "osm-node-3951221858",
+      "name": "イオン柳井新庄SC",
+      "walking_origin_count": 0,
+      "gpt_followup_completed": false,
+      "choice": "defer_low_current_impact",
+      "confidence": 0.92,
+      "probabilities": {
+        "defer_low_current_impact": 0.94,
+        "defer_hard_evidence": 0.03,
+        "ready_without_gpt": 0.01,
+        "gpt_now": 0.02
+      }
+    },
+    {
+      "id": "osm-node-4021864894",
+      "name": "イオン下松山田SC",
+      "walking_origin_count": 0,
+      "gpt_followup_completed": false,
+      "choice": "defer_low_current_impact",
+      "confidence": 0.81,
+      "probabilities": {
+        "defer_low_current_impact": 0.85,
+        "defer_hard_evidence": 0.1,
+        "ready_without_gpt": 0.02,
+        "gpt_now": 0.03
+      }
+    },
+    {
+      "id": "osm-node-5712889433",
+      "name": "クスリ岩崎チェーン",
+      "walking_origin_count": 0,
+      "gpt_followup_completed": false,
+      "choice": "defer_low_current_impact",
+      "confidence": 0.86,
+      "probabilities": {
+        "defer_low_current_impact": 0.9,
+        "defer_hard_evidence": 0.03,
+        "ready_without_gpt": 0.01,
+        "gpt_now": 0.06
+      }
+    },
+    {
+      "id": "osm-way-305489114",
+      "name": "ABC Mart",
+      "walking_origin_count": 0,
+      "gpt_followup_completed": false,
+      "choice": "defer_low_current_impact",
+      "confidence": 0.89,
+      "probabilities": {
+        "defer_low_current_impact": 0.92,
+        "defer_hard_evidence": 0.03,
+        "ready_without_gpt": 0.01,
+        "gpt_now": 0.04
+      }
+    }
+  ]
+}

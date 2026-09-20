@@ -1,0 +1,305 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "purpose": "施設鮮度調査で、GPT-6 Pro通常Chatへ渡す件数を減らし、同じ追加調査の繰り返しを避ける。",
+    "evidence_boundary": "JevはURLへアクセスせず、入力済みの機械集計と未解決タグだけを分類する。公式事実の確定やアプリ更新判断には使わない。",
+    "selection_rule": "徒歩圏の表示件数は利用影響の優先順位だけに使う。既調査、低影響、公開Web資料で解けない課題をGPT対象から外す。",
+    "records": [
+      {
+        "id": "osm-way-202664935",
+        "name": "ドラッグセガミ",
+        "category": "pharmacy",
+        "walking_origin_count": 14,
+        "nearest_road_minutes": 4.3,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "closure_or_current_status",
+          "rename_or_succession",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 3,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-node-12376670726",
+        "name": "おかもと内閣",
+        "category": "clinic",
+        "walking_origin_count": 10,
+        "nearest_road_minutes": 5.1,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_coordinates_or_point_match",
+          "rename_or_succession",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 3,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-way-613971823",
+        "name": "ココカラファイン 下関生野店",
+        "category": "pharmacy",
+        "walking_origin_count": 6,
+        "nearest_road_minutes": 5.1,
+        "official_evidence_url_count": 4,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "closure_or_current_status",
+          "rename_or_succession",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 3,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-way-1069977638",
+        "name": "山口銀行 丸久川西店",
+        "category": "supermarket",
+        "walking_origin_count": 3,
+        "nearest_road_minutes": 4,
+        "official_evidence_url_count": 3,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-node-4355096689",
+        "name": "Best",
+        "category": "supermarket",
+        "walking_origin_count": 2,
+        "nearest_road_minutes": 2.5,
+        "official_evidence_url_count": 3,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 3,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-way-600969423",
+        "name": "サンキュードラッグ",
+        "category": "pharmacy",
+        "walking_origin_count": 2,
+        "nearest_road_minutes": 2.8,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "historical_identity",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": true,
+        "gpt_followup_decision": "hold"
+      },
+      {
+        "id": "osm-node-3798156478",
+        "name": "いちやSC",
+        "category": "supermarket",
+        "walking_origin_count": 0,
+        "nearest_road_minutes": null,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "closure_or_current_status",
+          "historical_identity"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": false,
+        "gpt_followup_decision": null
+      },
+      {
+        "id": "osm-node-3951221858",
+        "name": "イオン柳井新庄SC",
+        "category": "supermarket",
+        "walking_origin_count": 0,
+        "nearest_road_minutes": null,
+        "official_evidence_url_count": 3,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": false,
+        "gpt_followup_decision": null
+      },
+      {
+        "id": "osm-node-4021864894",
+        "name": "イオン下松山田SC",
+        "category": "supermarket",
+        "walking_origin_count": 0,
+        "nearest_road_minutes": null,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "official_coordinates_or_point_match"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": false,
+        "gpt_followup_decision": null
+      },
+      {
+        "id": "osm-node-5712889433",
+        "name": "クスリ岩崎チェーン",
+        "category": "pharmacy",
+        "walking_origin_count": 0,
+        "nearest_road_minutes": null,
+        "official_evidence_url_count": 1,
+        "unresolved_tags": [
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 2,
+        "gpt_followup_completed": false,
+        "gpt_followup_decision": null
+      },
+      {
+        "id": "osm-way-305489114",
+        "name": "ABC Mart",
+        "category": "mall",
+        "walking_origin_count": 0,
+        "nearest_road_minutes": null,
+        "official_evidence_url_count": 2,
+        "unresolved_tags": [
+          "official_layout_or_boundary",
+          "operator_or_facility_scope"
+        ],
+        "unresolved_count": 1,
+        "gpt_followup_completed": false,
+        "gpt_followup_decision": null
+      }
+    ]
+  },
+  "questions": {
+    "research_action__osm_way_202664935": {
+      "type": "choice",
+      "instructions": "osm-way-202664935をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_12376670726": {
+      "type": "choice",
+      "instructions": "osm-node-12376670726をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_way_613971823": {
+      "type": "choice",
+      "instructions": "osm-way-613971823をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_way_1069977638": {
+      "type": "choice",
+      "instructions": "osm-way-1069977638をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_4355096689": {
+      "type": "choice",
+      "instructions": "osm-node-4355096689をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_way_600969423": {
+      "type": "choice",
+      "instructions": "osm-way-600969423をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_3798156478": {
+      "type": "choice",
+      "instructions": "osm-node-3798156478をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_3951221858": {
+      "type": "choice",
+      "instructions": "osm-node-3951221858をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_4021864894": {
+      "type": "choice",
+      "instructions": "osm-node-4021864894をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_node_5712889433": {
+      "type": "choice",
+      "instructions": "osm-node-5712889433をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    },
+    "research_action__osm_way_305489114": {
+      "type": "choice",
+      "instructions": "osm-way-305489114をGPT-6 Pro通常Chatへ回すべきか、影響度・既調査・未解決タグだけで分類する。正誤や閉店は推測しない。",
+      "criteria": {
+        "gpt_now": "現在の徒歩圏に表示され、通常Chatでの追加公式調査がまだなく、運営者・自治体・公的機関の公開資料を探すことで確定へ進む可能性がある。",
+        "defer_low_current_impact": "現在の既存徒歩15分圏に表示されないため、鮮度調査の優先度を下げる。正しいという意味ではない。",
+        "defer_hard_evidence": "既に追加公式調査済み、または必要根拠が配置図・公式座標・承継資料・現地確認等で、同じWeb調査を繰り返しても進みにくい。",
+        "ready_without_gpt": "入力済みの公式根拠だけで機械反映でき、追加のGPT調査を必要としない。"
+      }
+    }
+  }
+}
