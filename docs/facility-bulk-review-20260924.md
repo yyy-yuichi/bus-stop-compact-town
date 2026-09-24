@@ -32,7 +32,7 @@
 - `npm run validate` 成功。全施設7,764件、形状・カテゴリ集計を再検証。
 - `npm run test:places` 成功。名称検索を含む施設検索テスト通過。
 - `npm run test:map-display` 成功。施設表示のスコープ検査通過。
-- コミット、GitHub push、一般公開は未実施。
+- 結果・再現可能な更新処理をGitHub PR [#14](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/14)へpush済み。Actionsのbuildは成功。PRは未マージのため、一般公開マップはまだ更新していない。
 - 報告・JSON記録・再現スクリプト・更新後GeoJSON ZIP・Jevの依頼／応答／採用判断とGPT Chat入力を[案件Driveの専用フォルダ](https://drive.google.com/drive/folders/1yBfyofQqGBohtXbqVN5h0PwOFKZq7AfN)へ保存した。今回MEXT原CSV2点・学校候補JSON・照合スクリプトも追加し、計23ファイルについて名前・容量・案件フォルダ所属を読み戻し確認した。
 - 7.3MBのGeoJSONを単体アップロードできなかったためZIP化して保存。ZIP内の `shopping.geojson` は7,313,127 bytesで、元ファイルとのSHA-256一致を確認した。ハッシュは `416b41ec01da8bc8510d42e1d758c685cac1710a242d46515aa6d215e26296ff`。
 
