@@ -62,7 +62,10 @@ def validate_manifest(data, manifest=None):
         raise ValueError("Unexpected manifest identity")
     if manifest["base_commit"] != source_input["base_commit"]:
         raise ValueError("Manifest base commit does not match its input")
-    input_hash = hashlib.sha256(INPUT.read_bytes()).hexdigest()
+    # Git may check out JSON with CRLF on Windows; hash the canonical LF text
+    # so the committed input fingerprint is portable across platforms.
+    canonical_input = INPUT.read_bytes().replace(b'\r\n', b'\n')
+    input_hash = hashlib.sha256(canonical_input).hexdigest()
     if manifest["input_sha256"] != input_hash:
         raise ValueError("Manifest input hash mismatch")
 
