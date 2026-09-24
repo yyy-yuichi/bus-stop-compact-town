@@ -1,0 +1,2848 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "purpose": "山口県の生活施設重複候補195組を一括処理し、地図で二重表示される可能性がある近接組だけを追加確認へ送る。",
+    "evidence_boundary": "150m以上離れた129組は、同名チェーンの別店舗を誤統合しないため機械的に通常表示を維持する。Jevは150m未満の66組について入力済み名称・距離・OSM要素種別・登録属性だけを分類し、事実確定やアプリ更新の根拠にはしない。",
+    "adoption_boundary": "Jevの判定は追加確認の振り分けにだけ使う。元ID・座標・形状は削除・統合しない。高確率の同一表示候補だけを公式資料またはGoogleマップの現況確認へ送る。",
+    "candidates": [
+      {
+        "pair_id": "seamall__osm-node-2426673962",
+        "priority": "normal",
+        "distance_m": 42,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "seamall",
+          "name": "シーモール",
+          "category": "mall",
+          "source": "way/257074927",
+          "geometry_kind": "building",
+          "brand": [],
+          "branch": [
+            "下関"
+          ],
+          "address": "下関市竹崎町4-4-8",
+          "source_timestamp": "2026-07-20T22:50:25Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-2426673962",
+          "name": "下関大丸",
+          "category": "mall",
+          "source": "node/2426673962",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "sunlive-kudamatsu__osm-way-305489114",
+        "priority": "high",
+        "distance_m": 11.6,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "sunlive-kudamatsu",
+          "name": "サンリブ下松",
+          "category": "mall",
+          "source": "node/8704546617",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "山口県下松市南花岡6-8-1",
+          "source_timestamp": "2021-05-06T07:58:14Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-305489114",
+          "name": "ABC Mart",
+          "category": "mall",
+          "source": "way/305489114",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [
+            "下松店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "fuji-yamaguchi__osm-node-4098812296",
+        "priority": "high",
+        "distance_m": 105.2,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "fuji-yamaguchi",
+          "name": "フジグラン山口",
+          "category": "mall",
+          "source": "way/374499083",
+          "geometry_kind": "building",
+          "brand": [],
+          "branch": [],
+          "address": "山口県山口市黒川3736番地",
+          "source_timestamp": "2026-07-20T22:50:25Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4098812296",
+          "name": "フジグラン山口",
+          "category": "mall",
+          "source": "node/4098812296",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-10275660943__osm-way-560979794",
+        "priority": "high",
+        "distance_m": 4.4,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-10275660943",
+          "name": "セブンイレブン宇部島2丁目店",
+          "category": "convenience",
+          "source": "node/10275660943",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "山口県宇部市島23",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-560979794",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "source": "way/560979794",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [
+            "宇部島2丁目店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-10275726015__osm-way-560984476",
+        "priority": "high",
+        "distance_m": 10.4,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-10275726015",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/10275726015",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "セブン-イレブン"
+          ],
+          "branch": [],
+          "address": "山口県宇部市下条26",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-560984476",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "way/560984476",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "セブン-イレブン"
+          ],
+          "branch": [
+            "宇部下条2丁目店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-11389798235__osm-way-1228233757",
+        "priority": "high",
+        "distance_m": 2.5,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-11389798235",
+          "name": "ドラッグストアモリ 防府新田店",
+          "category": "drugstore",
+          "source": "node/11389798235",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "right": {
+          "id": "osm-way-1228233757",
+          "name": "ドラッグストアモリ 防府新田店",
+          "category": "drugstore",
+          "source": "way/1228233757",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-12376670726__osm-node-3809385357",
+        "priority": "normal",
+        "distance_m": 58.6,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-12376670726",
+          "name": "おかもと内閣",
+          "category": "clinic",
+          "source": "node/12376670726",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "right": {
+          "id": "osm-node-3809385357",
+          "name": "香田整形外科",
+          "category": "clinic",
+          "source": "node/3809385357",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13154614554__osm-node-13154614555",
+        "priority": "high",
+        "distance_m": 126.3,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-13154614554",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614554",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [
+            "ハートイン　JR新山口駅新幹線口店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614555",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13154614554__osm-node-13154614556",
+        "priority": "high",
+        "distance_m": 65,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-13154614554",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614554",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [
+            "ハートイン　JR新山口駅新幹線口店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-13154614556",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614556",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [
+            "ハートイン新山口新幹線構内店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13154614555__osm-node-13154614556",
+        "priority": "high",
+        "distance_m": 123.4,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614555",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-13154614556",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614556",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [
+            "ハートイン新山口新幹線構内店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13154614555__osm-node-2252806318",
+        "priority": "high",
+        "distance_m": 88.2,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-13154614555",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/13154614555",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-2252806318",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/2252806318",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7 ELEVEN"
+          ],
+          "branch": [
+            "新山口駅前店"
+          ],
+          "address": "山口県山口市(Yamaguchi)小郡下郷新山口停車場線1",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13651735831__osm-way-1489391560",
+        "priority": "high",
+        "distance_m": 2.2,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-13651735831",
+          "name": "Aコープ安下庄店",
+          "category": "supermarket",
+          "source": "node/13651735831",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1489391560",
+          "name": "Aコープ安下庄店",
+          "category": "supermarket",
+          "source": "way/1489391560",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13651893749__osm-way-1489414443",
+        "priority": "high",
+        "distance_m": 1.3,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-13651893749",
+          "name": "セブンイレブン山口大島橘店",
+          "category": "convenience",
+          "source": "node/13651893749",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1489414443",
+          "name": "セブンイレブン山口大島橘店",
+          "category": "convenience",
+          "source": "way/1489414443",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-13651969772__osm-way-1489413022",
+        "priority": "high",
+        "distance_m": 0.5,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-13651969772",
+          "name": "中本ストアー",
+          "category": "convenience",
+          "source": "node/13651969772",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1489413022",
+          "name": "中本ストアー",
+          "category": "convenience",
+          "source": "way/1489413022",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-1423654264__osm-way-722384492",
+        "priority": "high",
+        "distance_m": 62.7,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-1423654264",
+          "name": "光輝会光輝病院",
+          "category": "hospital",
+          "source": "node/1423654264",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-722384492",
+          "name": "光輝会 光輝病院",
+          "category": "hospital",
+          "source": "way/722384492",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "山口県平生町大字佐賀字鳩ヶ峯77",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-1423654575__osm-node-1423654578",
+        "priority": "high",
+        "distance_m": 0,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-1423654575",
+          "name": "和同会宇部温泉病院",
+          "category": "hospital",
+          "source": "node/1423654575",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-1423654578",
+          "name": "和同会片倉病院",
+          "category": "hospital",
+          "source": "node/1423654578",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-1423655821__osm-way-475283657",
+        "priority": "high",
+        "distance_m": 12.1,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-1423655821",
+          "name": "山口県立中央病院",
+          "category": "hospital",
+          "source": "node/1423655821",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-475283657",
+          "name": "山口県立総合医療センター",
+          "category": "hospital",
+          "source": "way/475283657",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-1423659775__osm-way-474111005",
+        "priority": "high",
+        "distance_m": 13.8,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-1423659775",
+          "name": "済生会山口総合病院",
+          "category": "hospital",
+          "source": "node/1423659775",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-474111005",
+          "name": "済生会山口総合病院",
+          "category": "hospital",
+          "source": "way/474111005",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-2253197417__osm-way-215910952",
+        "priority": "high",
+        "distance_m": 1.3,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-2253197417",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/2253197417",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "セブン-イレブン"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-215910952",
+          "name": "セブンイレブン山口今井町店",
+          "category": "convenience",
+          "source": "way/215910952",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-2253691125__osm-way-202793094",
+        "priority": "high",
+        "distance_m": 6.8,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-2253691125",
+          "name": "コープやまぐち",
+          "category": "supermarket",
+          "source": "node/2253691125",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-202793094",
+          "name": "コープやまぐち",
+          "category": "supermarket",
+          "source": "way/202793094",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-2527628179__osm-way-1069977638",
+        "priority": "high",
+        "distance_m": 1.4,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-2527628179",
+          "name": "マルキュウ",
+          "category": "supermarket",
+          "source": "node/2527628179",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [
+            "川西店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1069977638",
+          "name": "山口銀行 丸久川西店",
+          "category": "supermarket",
+          "source": "way/1069977638",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3799039405__osm-way-327749958",
+        "priority": "high",
+        "distance_m": 5.6,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-3799039405",
+          "name": "アルク",
+          "category": "supermarket",
+          "source": "node/3799039405",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-327749958",
+          "name": "Aruk",
+          "category": "supermarket",
+          "source": "way/327749958",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3812551757__osm-way-311996791",
+        "priority": "normal",
+        "distance_m": 44.8,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-3812551757",
+          "name": "広田眼科",
+          "category": "clinic",
+          "source": "node/3812551757",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-311996791",
+          "name": "広田皮膚科",
+          "category": "clinic",
+          "source": "way/311996791",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3815583957__osm-node-3815584060",
+        "priority": "normal",
+        "distance_m": 59.8,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-3815583957",
+          "name": "山下内科小児科",
+          "category": "clinic",
+          "source": "node/3815583957",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-3815584060",
+          "name": "早川整形外科",
+          "category": "clinic",
+          "source": "node/3815584060",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3890041761__osm-node-3890044459",
+        "priority": "normal",
+        "distance_m": 65.1,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-3890041761",
+          "name": "ハートデンタル",
+          "category": "clinic",
+          "source": "node/3890041761",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-3890044459",
+          "name": "宮里クリニック",
+          "category": "clinic",
+          "source": "node/3890044459",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3951221857__osm-node-3951221858",
+        "priority": "normal",
+        "distance_m": 65.2,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-3951221857",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "source": "node/3951221857",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-3951221858",
+          "name": "イオン柳井新庄SC",
+          "category": "supermarket",
+          "source": "node/3951221858",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3951273760__osm-way-391864150",
+        "priority": "normal",
+        "distance_m": 68.7,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-3951273760",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "source": "node/3951273760",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-391864150",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "source": "way/391864150",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3987165058__osm-node-3987166157",
+        "priority": "normal",
+        "distance_m": 71.3,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-3987165058",
+          "name": "岡藤内科",
+          "category": "clinic",
+          "source": "node/3987165058",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-3987166157",
+          "name": "小林耳鼻咽喉科",
+          "category": "clinic",
+          "source": "node/3987166157",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-3987888378__osm-node-3987921290",
+        "priority": "normal",
+        "distance_m": 72.6,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-3987888378",
+          "name": "梶原眼科",
+          "category": "clinic",
+          "source": "node/3987888378",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-3987921290",
+          "name": "しげおか医院",
+          "category": "clinic",
+          "source": "node/3987921290",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4021833491__osm-node-4021864894",
+        "priority": "normal",
+        "distance_m": 63.8,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4021833491",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "source": "node/4021833491",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "マックスバリュ"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4021864894",
+          "name": "イオン下松山田SC",
+          "category": "supermarket",
+          "source": "node/4021864894",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4041096304__osm-way-401697682",
+        "priority": "normal",
+        "distance_m": 42.8,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-4041096304",
+          "name": "しみず医院",
+          "category": "clinic",
+          "source": "node/4041096304",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-401697682",
+          "name": "手山産婦人科",
+          "category": "clinic",
+          "source": "way/401697682",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4098795892__osm-way-407846298",
+        "priority": "high",
+        "distance_m": 16.2,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-4098795892",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "source": "node/4098795892",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "ファミリーマート"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-407846298",
+          "name": "ファミリーマート山口泉都町店",
+          "category": "convenience",
+          "source": "way/407846298",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4107556704__osm-node-5456594526",
+        "priority": "high",
+        "distance_m": 32.9,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4107556704",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/4107556704",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7-ELEVEN"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-5456594526",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/5456594526",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "セブン-イレブン"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4315692495__osm-way-315713904",
+        "priority": "high",
+        "distance_m": 54.3,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-4315692495",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "source": "node/4315692495",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-315713904",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "source": "way/315713904",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4326392992__osm-node-4326408491",
+        "priority": "normal",
+        "distance_m": 74.4,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4326392992",
+          "name": "しみず医院",
+          "category": "clinic",
+          "source": "node/4326392992",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4326408491",
+          "name": "高橋眼科",
+          "category": "clinic",
+          "source": "node/4326408491",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4354767908__osm-node-4466387201",
+        "priority": "high",
+        "distance_m": 16.1,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4354767908",
+          "name": "コスモス",
+          "category": "drugstore",
+          "source": "node/4354767908",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4466387201",
+          "name": "コスモス",
+          "category": "drugstore",
+          "source": "node/4466387201",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4354827193__osm-node-4354929289",
+        "priority": "normal",
+        "distance_m": 62.7,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4354827193",
+          "name": "田中眼科",
+          "category": "clinic",
+          "source": "node/4354827193",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4354929289",
+          "name": "ひかり皮フ科",
+          "category": "clinic",
+          "source": "node/4354929289",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4354827193__osm-node-4466386290",
+        "priority": "normal",
+        "distance_m": 73.3,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4354827193",
+          "name": "田中眼科",
+          "category": "clinic",
+          "source": "node/4354827193",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4466386290",
+          "name": "五嶋内科クリニック",
+          "category": "clinic",
+          "source": "node/4466386290",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4355083195__osm-node-4355096689",
+        "priority": "normal",
+        "distance_m": 51,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4355083195",
+          "name": "アルク",
+          "category": "supermarket",
+          "source": "node/4355083195",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4355096689",
+          "name": "Best",
+          "category": "supermarket",
+          "source": "node/4355096689",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4622724795__osm-way-1121030699",
+        "priority": "normal",
+        "distance_m": 43.9,
+        "name_relation": "different",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-4622724795",
+          "name": "ヤマザキショップ",
+          "category": "convenience",
+          "source": "node/4622724795",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1121030699",
+          "name": "JA山口県JA​長門​大津​俵山 Yショップ俵山店",
+          "category": "convenience",
+          "source": "way/1121030699",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4623459001__osm-node-4623459002",
+        "priority": "high",
+        "distance_m": 18.8,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4623459001",
+          "name": "青葉こどもクリニック",
+          "category": "clinic",
+          "source": "node/4623459001",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4623459002",
+          "name": "新下関耳鼻クリニック",
+          "category": "clinic",
+          "source": "node/4623459002",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4623459001__osm-node-4623459003",
+        "priority": "normal",
+        "distance_m": 55.8,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4623459001",
+          "name": "青葉こどもクリニック",
+          "category": "clinic",
+          "source": "node/4623459001",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4623459003",
+          "name": "井町婦人科",
+          "category": "clinic",
+          "source": "node/4623459003",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4623459002__osm-node-4623459003",
+        "priority": "normal",
+        "distance_m": 74.5,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4623459002",
+          "name": "新下関耳鼻クリニック",
+          "category": "clinic",
+          "source": "node/4623459002",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4623459003",
+          "name": "井町婦人科",
+          "category": "clinic",
+          "source": "node/4623459003",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4634596659__osm-node-4634596661",
+        "priority": "normal",
+        "distance_m": 26.8,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4634596659",
+          "name": "筒井整形外科",
+          "category": "clinic",
+          "source": "node/4634596659",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4634596661",
+          "name": "いけだ内科",
+          "category": "clinic",
+          "source": "node/4634596661",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4814879241__osm-node-4814879243",
+        "priority": "normal",
+        "distance_m": 33.4,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4814879241",
+          "name": "たなべ内科",
+          "category": "clinic",
+          "source": "node/4814879241",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4814879243",
+          "name": "長井整形外科",
+          "category": "clinic",
+          "source": "node/4814879243",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4864137486__osm-node-4864138322",
+        "priority": "normal",
+        "distance_m": 35.3,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4864137486",
+          "name": "原医院",
+          "category": "clinic",
+          "source": "node/4864137486",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4864138322",
+          "name": "古屋敷医院",
+          "category": "clinic",
+          "source": "node/4864138322",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-4864205029__osm-node-4864205030",
+        "priority": "normal",
+        "distance_m": 35.1,
+        "name_relation": "different",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-4864205029",
+          "name": "ながみつクリニック",
+          "category": "clinic",
+          "source": "node/4864205029",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-node-4864205030",
+          "name": "澤内科消化器科",
+          "category": "clinic",
+          "source": "node/4864205030",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-5050356350__osm-way-672454065",
+        "priority": "high",
+        "distance_m": 33.8,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-5050356350",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "node/5050356350",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "7 ELEVEN"
+          ],
+          "branch": [
+            "長門東深川下郷店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-672454065",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "source": "way/672454065",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "セブン-イレブン"
+          ],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-5344701143__osm-way-378114877",
+        "priority": "normal",
+        "distance_m": 27,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-5344701143",
+          "name": "フジ",
+          "category": "supermarket",
+          "source": "node/5344701143",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [
+            "西宇部店"
+          ],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-378114877",
+          "name": "フジ 西宇部店",
+          "category": "supermarket",
+          "source": "way/378114877",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-5463868168__osm-node-5482411383",
+        "priority": "high",
+        "distance_m": 15.6,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_node",
+        "left": {
+          "id": "osm-node-5463868168",
+          "name": "ディスカウントドラッグ コスモス",
+          "category": "drugstore",
+          "source": "node/5463868168",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "right": {
+          "id": "osm-node-5482411383",
+          "name": "ディスカウントドラッグコスモス",
+          "category": "drugstore",
+          "source": "node/5482411383",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-6168362552__osm-way-297142744",
+        "priority": "normal",
+        "distance_m": 33.3,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-6168362552",
+          "name": "イオン",
+          "category": "mall",
+          "source": "node/6168362552",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [
+            "防府"
+          ],
+          "address": "山口県防府市中央町1",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-297142744",
+          "name": "イオン防府店",
+          "category": "mall",
+          "source": "way/297142744",
+          "geometry_kind": "representative_point",
+          "brand": [
+            "イオン"
+          ],
+          "branch": [
+            "防府"
+          ],
+          "address": "山口県防府市中央町1",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": true
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-6194948464__osm-way-661710574",
+        "priority": "high",
+        "distance_m": 118.6,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-6194948464",
+          "name": "セブン-イレブン 岩国旭町店",
+          "category": "convenience",
+          "source": "node/6194948464",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-661710574",
+          "name": "セブン-イレブン 岩国旭町店",
+          "category": "convenience",
+          "source": "way/661710574",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-9472242519__osm-way-1027461546",
+        "priority": "high",
+        "distance_m": 3.8,
+        "name_relation": "normalized_equal",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-9472242519",
+          "name": "ウォンツ 宇部亀浦店",
+          "category": "drugstore",
+          "source": "node/9472242519",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "山口県宇部市西岐波",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-1027461546",
+          "name": "ウォンツ 宇部亀浦店",
+          "category": "drugstore",
+          "source": "way/1027461546",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "山口県宇部市西岐波",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-node-9472329366__osm-way-477971690",
+        "priority": "high",
+        "distance_m": 9.6,
+        "name_relation": "one_name_contains_other",
+        "source_relation": "node_way",
+        "left": {
+          "id": "osm-node-9472329366",
+          "name": "ウェスタまるき 西割店",
+          "category": "supermarket",
+          "source": "node/9472329366",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-477971690",
+          "name": "まるき",
+          "category": "supermarket",
+          "source": "way/477971690",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-328496342__osm-way-328497286",
+        "priority": "normal",
+        "distance_m": 28,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-328496342",
+          "name": "千治松内科",
+          "category": "clinic",
+          "source": "way/328496342",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-328497286",
+          "name": "明石整形外科",
+          "category": "clinic",
+          "source": "way/328497286",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-336582998__osm-way-375085357",
+        "priority": "normal",
+        "distance_m": 67.7,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-336582998",
+          "name": "新南陽整形外科",
+          "category": "clinic",
+          "source": "way/336582998",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-375085357",
+          "name": "上田内科小児科",
+          "category": "clinic",
+          "source": "way/375085357",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-378467855__osm-way-549537614",
+        "priority": "normal",
+        "distance_m": 42.1,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-378467855",
+          "name": "まつばら薬局",
+          "category": "pharmacy",
+          "source": "way/378467855",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-549537614",
+          "name": "佐村薬局",
+          "category": "pharmacy",
+          "source": "way/549537614",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-378567939__osm-way-549103339",
+        "priority": "normal",
+        "distance_m": 69.7,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-378567939",
+          "name": "荒川耳鼻咽喉科",
+          "category": "clinic",
+          "source": "way/378567939",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-549103339",
+          "name": "岡本医院",
+          "category": "clinic",
+          "source": "way/549103339",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-444114318__osm-way-444114321",
+        "priority": "normal",
+        "distance_m": 29.7,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-444114318",
+          "name": "木村医院",
+          "category": "clinic",
+          "source": "way/444114318",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-444114321",
+          "name": "岡本医院",
+          "category": "clinic",
+          "source": "way/444114321",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-450577272__osm-way-450577273",
+        "priority": "high",
+        "distance_m": 107.9,
+        "name_relation": "normalized_equal",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-450577272",
+          "name": "小野田赤十字病院",
+          "category": "hospital",
+          "source": "way/450577272",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-450577273",
+          "name": "小野田赤十字病院",
+          "category": "hospital",
+          "source": "way/450577273",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称と代表位置の近さだけでは同一施設と確定できない。敷地と建物の別登録、同名支店を確認する必要がある。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-549154606__osm-way-549154607",
+        "priority": "normal",
+        "distance_m": 20.8,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-549154606",
+          "name": "江本内科",
+          "category": "clinic",
+          "source": "way/549154606",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-549154607",
+          "name": "江本智子ウィメンズクリニック",
+          "category": "clinic",
+          "source": "way/549154607",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-549554510__osm-way-549554511",
+        "priority": "normal",
+        "distance_m": 20.9,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-549554510",
+          "name": "いそべ整形外科",
+          "category": "clinic",
+          "source": "way/549554510",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-549554511",
+          "name": "今村皮膚科形成外科医院",
+          "category": "clinic",
+          "source": "way/549554511",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-551528863__osm-way-551528864",
+        "priority": "normal",
+        "distance_m": 28.1,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-551528863",
+          "name": "ニコニコ耳鼻科",
+          "category": "clinic",
+          "source": "way/551528863",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-551528864",
+          "name": "野瀬内科小児科",
+          "category": "clinic",
+          "source": "way/551528864",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-553055014__osm-way-553055015",
+        "priority": "normal",
+        "distance_m": 51,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-553055014",
+          "name": "永田消化器内科クリニック",
+          "category": "clinic",
+          "source": "way/553055014",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-553055015",
+          "name": "田中小児科医院",
+          "category": "clinic",
+          "source": "way/553055015",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-555622794__osm-way-555622803",
+        "priority": "normal",
+        "distance_m": 69.1,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-555622794",
+          "name": "徳久内科医院",
+          "category": "clinic",
+          "source": "way/555622794",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-555622803",
+          "name": "寺西眼科",
+          "category": "clinic",
+          "source": "way/555622803",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      },
+      {
+        "pair_id": "osm-way-922754902__osm-way-922754903",
+        "priority": "high",
+        "distance_m": 19,
+        "name_relation": "different",
+        "source_relation": "way_way",
+        "left": {
+          "id": "osm-way-922754902",
+          "name": "のむら大腸肛門クリニック",
+          "category": "clinic",
+          "source": "way/922754902",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "right": {
+          "id": "osm-way-922754903",
+          "name": "おぎの歯科",
+          "category": "clinic",
+          "source": "way/922754903",
+          "geometry_kind": "representative_point",
+          "brand": [],
+          "branch": [],
+          "address": "",
+          "source_timestamp": "2026-07-28T02:16:18Z",
+          "has_review": false
+        },
+        "audit_reason": "名称が異なる近接記録。別施設・館内テナント・旧名の可能性があり、距離だけでは統合できない。",
+        "bulk_route": "jev_triage"
+      }
+    ]
+  },
+  "questions": {
+    "display_relation__seamall__osm_node_2426673962": {
+      "type": "choice",
+      "instructions": "シーモール / 下関大丸の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__sunlive_kudamatsu__osm_way_305489114": {
+      "type": "choice",
+      "instructions": "サンリブ下松 / ABC Martの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__fuji_yamaguchi__osm_node_4098812296": {
+      "type": "choice",
+      "instructions": "フジグラン山口 / フジグラン山口の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_10275660943__osm_way_560979794": {
+      "type": "choice",
+      "instructions": "セブンイレブン宇部島2丁目店 / セブンイレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_10275726015__osm_way_560984476": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_11389798235__osm_way_1228233757": {
+      "type": "choice",
+      "instructions": "ドラッグストアモリ 防府新田店 / ドラッグストアモリ 防府新田店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_12376670726__osm_node_3809385357": {
+      "type": "choice",
+      "instructions": "おかもと内閣 / 香田整形外科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13154614554__osm_node_13154614555": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13154614554__osm_node_13154614556": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13154614555__osm_node_13154614556": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13154614555__osm_node_2252806318": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13651735831__osm_way_1489391560": {
+      "type": "choice",
+      "instructions": "Aコープ安下庄店 / Aコープ安下庄店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13651893749__osm_way_1489414443": {
+      "type": "choice",
+      "instructions": "セブンイレブン山口大島橘店 / セブンイレブン山口大島橘店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_13651969772__osm_way_1489413022": {
+      "type": "choice",
+      "instructions": "中本ストアー / 中本ストアーの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_1423654264__osm_way_722384492": {
+      "type": "choice",
+      "instructions": "光輝会光輝病院 / 光輝会 光輝病院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_1423654575__osm_node_1423654578": {
+      "type": "choice",
+      "instructions": "和同会宇部温泉病院 / 和同会片倉病院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_1423655821__osm_way_475283657": {
+      "type": "choice",
+      "instructions": "山口県立中央病院 / 山口県立総合医療センターの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_1423659775__osm_way_474111005": {
+      "type": "choice",
+      "instructions": "済生会山口総合病院 / 済生会山口総合病院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_2253197417__osm_way_215910952": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブンイレブン山口今井町店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_2253691125__osm_way_202793094": {
+      "type": "choice",
+      "instructions": "コープやまぐち / コープやまぐちの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_2527628179__osm_way_1069977638": {
+      "type": "choice",
+      "instructions": "マルキュウ / 山口銀行 丸久川西店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3799039405__osm_way_327749958": {
+      "type": "choice",
+      "instructions": "アルク / Arukの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3812551757__osm_way_311996791": {
+      "type": "choice",
+      "instructions": "広田眼科 / 広田皮膚科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3815583957__osm_node_3815584060": {
+      "type": "choice",
+      "instructions": "山下内科小児科 / 早川整形外科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3890041761__osm_node_3890044459": {
+      "type": "choice",
+      "instructions": "ハートデンタル / 宮里クリニックの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3951221857__osm_node_3951221858": {
+      "type": "choice",
+      "instructions": "マックスバリュ / イオン柳井新庄SCの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3951273760__osm_way_391864150": {
+      "type": "choice",
+      "instructions": "ファミリーマート / セブンイレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3987165058__osm_node_3987166157": {
+      "type": "choice",
+      "instructions": "岡藤内科 / 小林耳鼻咽喉科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_3987888378__osm_node_3987921290": {
+      "type": "choice",
+      "instructions": "梶原眼科 / しげおか医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4021833491__osm_node_4021864894": {
+      "type": "choice",
+      "instructions": "マックスバリュ / イオン下松山田SCの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4041096304__osm_way_401697682": {
+      "type": "choice",
+      "instructions": "しみず医院 / 手山産婦人科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4098795892__osm_way_407846298": {
+      "type": "choice",
+      "instructions": "ファミリーマート / ファミリーマート山口泉都町店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4107556704__osm_node_5456594526": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4315692495__osm_way_315713904": {
+      "type": "choice",
+      "instructions": "セブンイレブン / セブンイレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4326392992__osm_node_4326408491": {
+      "type": "choice",
+      "instructions": "しみず医院 / 高橋眼科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4354767908__osm_node_4466387201": {
+      "type": "choice",
+      "instructions": "コスモス / コスモスの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4354827193__osm_node_4354929289": {
+      "type": "choice",
+      "instructions": "田中眼科 / ひかり皮フ科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4354827193__osm_node_4466386290": {
+      "type": "choice",
+      "instructions": "田中眼科 / 五嶋内科クリニックの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4355083195__osm_node_4355096689": {
+      "type": "choice",
+      "instructions": "アルク / Bestの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4622724795__osm_way_1121030699": {
+      "type": "choice",
+      "instructions": "ヤマザキショップ / JA山口県JA​長門​大津​俵山 Yショップ俵山店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4623459001__osm_node_4623459002": {
+      "type": "choice",
+      "instructions": "青葉こどもクリニック / 新下関耳鼻クリニックの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4623459001__osm_node_4623459003": {
+      "type": "choice",
+      "instructions": "青葉こどもクリニック / 井町婦人科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4623459002__osm_node_4623459003": {
+      "type": "choice",
+      "instructions": "新下関耳鼻クリニック / 井町婦人科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4634596659__osm_node_4634596661": {
+      "type": "choice",
+      "instructions": "筒井整形外科 / いけだ内科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4814879241__osm_node_4814879243": {
+      "type": "choice",
+      "instructions": "たなべ内科 / 長井整形外科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4864137486__osm_node_4864138322": {
+      "type": "choice",
+      "instructions": "原医院 / 古屋敷医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_4864205029__osm_node_4864205030": {
+      "type": "choice",
+      "instructions": "ながみつクリニック / 澤内科消化器科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_5050356350__osm_way_672454065": {
+      "type": "choice",
+      "instructions": "セブン-イレブン / セブン-イレブンの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_5344701143__osm_way_378114877": {
+      "type": "choice",
+      "instructions": "フジ / フジ 西宇部店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_5463868168__osm_node_5482411383": {
+      "type": "choice",
+      "instructions": "ディスカウントドラッグ コスモス / ディスカウントドラッグコスモスの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_6168362552__osm_way_297142744": {
+      "type": "choice",
+      "instructions": "イオン / イオン防府店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_6194948464__osm_way_661710574": {
+      "type": "choice",
+      "instructions": "セブン-イレブン 岩国旭町店 / セブン-イレブン 岩国旭町店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_9472242519__osm_way_1027461546": {
+      "type": "choice",
+      "instructions": "ウォンツ 宇部亀浦店 / ウォンツ 宇部亀浦店の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_node_9472329366__osm_way_477971690": {
+      "type": "choice",
+      "instructions": "ウェスタまるき 西割店 / まるきの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_328496342__osm_way_328497286": {
+      "type": "choice",
+      "instructions": "千治松内科 / 明石整形外科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_336582998__osm_way_375085357": {
+      "type": "choice",
+      "instructions": "新南陽整形外科 / 上田内科小児科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_378467855__osm_way_549537614": {
+      "type": "choice",
+      "instructions": "まつばら薬局 / 佐村薬局の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_378567939__osm_way_549103339": {
+      "type": "choice",
+      "instructions": "荒川耳鼻咽喉科 / 岡本医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_444114318__osm_way_444114321": {
+      "type": "choice",
+      "instructions": "木村医院 / 岡本医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_450577272__osm_way_450577273": {
+      "type": "choice",
+      "instructions": "小野田赤十字病院 / 小野田赤十字病院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_549154606__osm_way_549154607": {
+      "type": "choice",
+      "instructions": "江本内科 / 江本智子ウィメンズクリニックの表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_549554510__osm_way_549554511": {
+      "type": "choice",
+      "instructions": "いそべ整形外科 / 今村皮膚科形成外科医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_551528863__osm_way_551528864": {
+      "type": "choice",
+      "instructions": "ニコニコ耳鼻科 / 野瀬内科小児科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_553055014__osm_way_553055015": {
+      "type": "choice",
+      "instructions": "永田消化器内科クリニック / 田中小児科医院の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_555622794__osm_way_555622803": {
+      "type": "choice",
+      "instructions": "徳久内科医院 / 寺西眼科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    },
+    "display_relation__osm_way_922754902__osm_way_922754903": {
+      "type": "choice",
+      "instructions": "のむら大腸肛門クリニック / おぎの歯科の表示上の関係を分類する。位置や営業状況を推測で確定せず、次の追加確認先を減らすための選別だけを行う。",
+      "criteria": {
+        "likely_same_display_entity": "同一店舗・同一施設の点と建物、表記違い、旧称と現名称である可能性が高く、公式資料または地図の追加確認を優先する。",
+        "likely_separate_entities": "近接していても別の店舗、館内テナント、併設施設、別診療科等である可能性が高く、重複統合の調査対象から外せる。",
+        "ambiguous_needs_external_evidence": "入力だけでは同一表示対象か別施設かを判定できず、Googleマップの現況または公式配置資料による確認が必要。"
+      }
+    }
+  }
+}

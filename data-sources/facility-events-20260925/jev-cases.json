@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-25",
+  "scope": "Ten real-source triage cases. Model output is not approval to change a facility.",
+  "cases": [
+    {"id":"maxvalu-hofu-closure","source_url":"https://www.the-fuji.com/company/ir/monthly/year2025.php","text":"運営会社フジの2025年度月次営業速報、閉店一覧に山口県・マックスバリュ防府西店・2025年9月20日を掲載。改装や当日営業時間の欄とは別の恒久閉店欄。","expected":"closed"},
+    {"id":"donki-hofu-opening","source_url":"https://www.donki.com/store/shop_detail.php?shop_id=738","text":"PPIHの2026年5月28日発表はドン・キホーテ防府店を2026年6月16日開店予定とする。2026年9月25日に公式店舗ページを確認し、同店の住所・通常営業時間・電話・店舗地図が掲載されている。","expected":"opened"},
+    {"id":"oka-renamed","source_url":"https://www.oka-hospital.net/2025/10/01/病院名称変更のお知らせ/","text":"施設自身の2025年10月1日告知。岡病院は同日から岡医院へ変更。診療所としての変更だが、診療科目・診療体制を維持。公式住所は下関市小月本町二丁目15-20。","expected":"renamed"},
+    {"id":"carehome-converted","source_url":"https://yamaguchihp.jp/news/id_3404","text":"運営者が介護老人保健施設ケアホーム山口から介護医療院への転換を告知。県の現行一覧は新種別、岩国市玖珂町11361、同運営者、事業所番号35B0800032、指定日2024年4月1日を掲載。元の台帳には旧番号3557280025。旧番号の法的終了日はこの資料だけでは確認できない。","expected":"service_change"},
+    {"id":"daimaru-scheduled","source_url":"https://www.daimaru.co.jp/shimonoseki/news/13520.html","text":"公式告知は大丸下関店の2027年8月31日営業終了予定を掲載。それまでは通常営業。確認日は2026年9月25日で、日付比較はコードで行い未到来と確認済み。","expected":"scheduled_change"},
+    {"id":"kobaido-daily-closing","source_url":"https://kobaido.com/","text":"パン屋の公式説明。ホームページの黄色のお知らせが出ていると当日の販売を終了しているという案内。商品が売り切れる場合のその日の閉店で、恒久的な廃業告知ではない。","expected":"not_lifecycle_change"},
+    {"id":"maruki-secondary-only","source_url":"https://kaiten-heiten-24.com/maruki-hikoshima/","text":"第三者の開店閉店情報サイトが、まるき彦島店の2025年5月31日閉店を掲載。今回、運営者発信の閉店告知は未取得。公式確定として扱えるかを判定する。","expected":"unverified"},
+    {"id":"youme-mitajiri-closure","source_url":"https://www.izumi.co.jp/news_release/pdf/2025/0203news.pdf","text":"運営会社イズミの公式告知は、ゆめマート三田尻を2025年3月4日閉店とする。アプリの既存レコードとの同一性はまだ確認していない。イベントの種類と施設ID一致は別の問い。","expected":"closed"},
+    {"id":"ohana-distinct-service","source_url":"https://www.pref.yamaguchi.lg.jp/uploaded/attachment/250152.pdf","text":"県の指定情報は2026年9月1日に福祉用具貸与販売事業所おはなを新規指定。既存レコードは同住所・同運営者の居宅介護支援事業所おはな。サービスが異なり、既存レコードの閉店・改称・同一指定を示す資料ではない。","expected":"service_change"},
+    {"id":"kumage-opening","source_url":"https://www.mrk09.co.jp/company/history/","text":"丸久の公式沿革に2025年10月の丸久熊毛店開店を記載。公式現行店舗ページにも周南市呼坂1106-1と通常営業時間を掲載。旧ミコーの閉店情報は第三者記事だけなので、旧店閉店の公式確定は別途必要。","expected":"opened"}
+  ]
+}

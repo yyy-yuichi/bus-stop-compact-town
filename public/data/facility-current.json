@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-25",
+  "updates": [
+    {
+      "id": "osm-way-475283671",
+      "expected": {
+        "name": "マックスバリュ防府西店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/475283671"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5395,
+            34.0489003
+          ]
+        }
+      },
+      "changes": {
+        "city": "防府市",
+        "address": "山口県防府市大字植松575-1"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2025-09-20",
+        "checked_at": "2026-09-25",
+        "summary": "運営会社の閉店一覧で営業終了を確認。近接する後継店舗とは別の店舗履歴として保持。",
+        "sources": [
+          {
+            "title": "フジ・2025年度月次営業速報の閉店一覧",
+            "url": "https://www.the-fuji.com/company/ir/monthly/year2025.php"
+          },
+          {
+            "title": "同住所の新店舗公式案内",
+            "url": "https://www.donki.com/store/shop_detail.php?shop_id=738"
+          }
+        ],
+        "limits": [
+          "建物全体の閉鎖を意味しません。旧OSM座標は維持し、入口は未確認です。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423658379",
+      "expected": {
+        "name": "星の里会岡病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423658379"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.036635,
+            34.070695
+          ]
+        }
+      },
+      "changes": {
+        "name": "医療法人星の里会 岡医院",
+        "category": "clinic",
+        "city": "下関市",
+        "address": "山口県下関市小月本町二丁目15-20",
+        "search_names": "星の里会岡病院 岡病院 岡医院"
+      },
+      "review": {
+        "status": "changed",
+        "event": "renamed",
+        "effective_at": "2025-10-01",
+        "checked_at": "2026-09-25",
+        "summary": "岡病院から岡医院（診療所）へ変更されたことを、施設の公式告知で確認しました。",
+        "sources": [
+          {
+            "title": "岡医院・名称変更のお知らせ",
+            "url": "https://www.oka-hospital.net/2025/10/01/病院名称変更のお知らせ/"
+          },
+          {
+            "title": "岡医院・アクセス",
+            "url": "https://www.oka-hospital.net/アクセス/"
+          }
+        ],
+        "limits": [
+          "診療内容の保証や受付状況のリアルタイム確認ではありません。",
+          "旧OSM代表点を維持し、入口は未確認です。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3557280025-a46f56b5db",
+      "expected": {
+        "name": "老人保健施設ケアホーム山口",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:792",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1042",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1310"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.092773,
+            34.100464
+          ]
+        }
+      },
+      "changes": {
+        "name": "介護医療院ケアホーム山口",
+        "search_names": "老人保健施設ケアホーム山口 介護医療院ケアホーム山口 ケアホーム山口"
+      },
+      "review": {
+        "status": "changed",
+        "event": "service_change",
+        "effective_at": "2024-04-01",
+        "checked_at": "2026-09-25",
+        "summary": "介護老人保健施設から介護医療院への転換を確認しました。県の現行一覧にも同じ住所・運営者で掲載されています。",
+        "sources": [
+          {
+            "title": "運営者・介護医療院への転換のお知らせ",
+            "url": "https://yamaguchihp.jp/news/id_3404"
+          },
+          {
+            "title": "山口県・現行の事業所番号35B0800032",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?no=35B0800032"
+          }
+        ],
+        "limits": [
+          "旧番号3557280025の法的な終了日・番号承継は未確定です。",
+          "取込時の番号・サービス詳細は履歴として保持し、現行指定情報に上書きしません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-2426673962",
+      "expected": {
+        "name": "大丸下関店",
+        "category": "mall",
+        "source_ids": [
+          "node/2426673962"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.923224,
+            33.949268
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "scheduled_change",
+        "event": "scheduled_closure",
+        "effective_at": "2027-08-31",
+        "checked_at": "2026-09-25",
+        "summary": "営業終了予定日までは通常営業と案内されています。閉店済みではありません。",
+        "sources": [
+          {
+            "title": "大丸下関店・営業終了のお知らせ",
+            "url": "https://www.daimaru.co.jp/shimonoseki/news/13520.html"
+          }
+        ],
+        "limits": [
+          "実際の営業終了は予定日以降に再確認が必要です。"
+        ]
+      }
+    }
+  ],
+  "additions": [
+    {
+      "type": "Feature",
+      "id": "official-donki-738",
+      "properties": {
+        "name": "ドン・キホーテ防府店",
+        "city": "防府市",
+        "official_address": "山口県防府市大字植松575-1",
+        "official_url": "https://www.donki.com/store/shop_detail.php?shop_id=738",
+        "address": "山口県防府市大字植松575-1",
+        "category": "mall",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:donki:738"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ドンキ ドン・キホーテ防府店",
+        "location_verification": "公式店舗ページからリンクされた店舗地図の指定座標。入口・徒歩到達性は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-06-16",
+          "checked_at": "2026-09-25",
+          "summary": "開店発表と現行の公式店舗案内を確認して、新しく掲載しました。",
+          "sources": [
+            {
+              "title": "PPIH・防府店開店発表",
+              "url": "https://ppih.co.jp/news/pdf/news_260528_houfu.pdf"
+            },
+            {
+              "title": "現行店舗案内",
+              "url": "https://www.donki.com/store/shop_detail.php?shop_id=738"
+            },
+            {
+              "title": "公式店舗地図",
+              "url": "https://www.donki.com/store/map.php?shop_id=738"
+            }
+          ],
+          "limits": [
+            "公式店舗地図の代表点であり、入口や歩行経路の検証ではありません。",
+            "営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5392133227103,
+          34.04890413355506
+        ]
+      }
+    }
+  ]
+}
