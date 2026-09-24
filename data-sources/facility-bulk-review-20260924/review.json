@@ -1,0 +1,232 @@
+{
+  "reviewed_at": "2026-09-24",
+  "dataset": {
+    "path": "public/data/shopping.geojson",
+    "facility_count": 7764,
+    "freshness_cohorts": 32,
+    "date_note": "The counts reflect the current input snapshot, not completed checks of all facilities."
+  },
+  "jev": {
+    "model": "jev-1.13.0",
+    "freshness_routing": {
+      "input_tokens": 8747,
+      "output_tokens": 2081,
+      "evaluation_time_ms": 133.9793030056171,
+      "cohort_count": 32,
+      "raw_choices": {
+        "bulk_official_refresh": 11,
+        "gpt_official_batch": 2,
+        "google_lead_then_official": 14,
+        "defer_lower_change_risk": 5
+      },
+      "adopted_routes_after_rules": {
+        "bulk_official_refresh": 5,
+        "official_registry_or_list_first": 13,
+        "split_brand_official_and_independent_google_lead": 12,
+        "defer_lower_change_risk": 2
+      },
+      "exact_raw_choice_label_matches": 7,
+      "routes_refined_after_rules": 25,
+      "interpretation": "Jev proposed investigation routes only. The adopted route is a later mechanical/human refinement; this run changed no facility facts."
+    },
+    "duplicate_triage": {
+      "candidate_pairs": 195,
+      "mechanical_distance_exclusions_m_or_more": 150,
+      "mechanically_kept_separate": 129,
+      "sent_to_jev": 66,
+      "jev_keep_separate": 36,
+      "same_candidate_evidence_queue": 21,
+      "manual_uncertain_queue": 9,
+      "gpt_candidate_pairs": 30,
+      "gpt_candidates_reduction_percent": 84.61538461538461,
+      "input_tokens": 10914,
+      "output_tokens": 2651,
+      "evaluation_time_ms": 207.65840000058233,
+      "interpretation": "Routing/candidate-count savings only; Jev did not confirm facility facts or authorize deleting/merging records."
+    },
+    "raw_artifact_sha256": {
+      "freshness_request": "364212C828A50F68480B9B96B67FE2583F2D39DC0E1C3DDEB908F9363717F150",
+      "freshness_response": "CF6307E29B49D23609DF75BA40D0283A2467D3C3FE7652607F4E9B5C4B34F7A8",
+      "freshness_adoption": "579B23A58FDBC33C570849672D2BEC72011E325041B310CE47D08F282BC91690",
+      "duplicate_request": "86E02809AA37FABBD90EE81E2ECA9DB78573059A72263656E145BFEB9001A63D",
+      "duplicate_response": "DE00FA44EBCCF95BB5586029C8B87F6ADE76F96AE0EFC8FC4D679677C2BB819D",
+      "duplicate_adoption": "9A56897056511EDF73D980A7ED26E23A1BF3F1A61687B4D5BA8662F00BF88050"
+    }
+  },
+  "gpt_chat": {
+    "commercial_facilities": {
+      "records": 47,
+      "returned_status_counts": {
+        "operating": 46,
+        "renamed": 1
+      },
+      "structured_evidence_urls_blank": 47,
+      "notes": "Citations appear inline in the reason text. Only the renamed Shimonoseki record was independently checked to primary sources and updated; the other 46 records were not adopted from this batch."
+    },
+    "source_cohorts": {
+      "cohorts": 18,
+      "landing_page_url_blank": 18,
+      "download_or_search_url_blank": 18,
+      "notes": "The response's usable-now total was not accepted as proof of a reproducible bulk source; current endpoints and extraction mode must be recorded per cohort."
+    },
+    "mext_school_candidate_join": {
+      "current_official_snapshot": "2026-05-01 provisional, published 2026-05-29; confirmed as the latest MEXT school-code listing on 2026-09-24",
+      "active_yamaguchi_official_rows": 815,
+      "school_code_csv_rows": 797,
+      "university_college_kosen_csv_rows": 18,
+      "app_features_checked": 654,
+      "app_category_counts": {
+        "school": 617,
+        "college": 37
+      },
+      "name_match_counts": {
+        "exact_unique_name": 45,
+        "unique_name_core_after_removing_municipality_prefix": 368,
+        "core_matching_multiple_official_rows": 15,
+        "no_name_candidate": 226
+      },
+      "location_relation_counts": {
+        "same_municipality": 408,
+        "municipality_mismatch": 5,
+        "multiple_official_municipalities": 15,
+        "no_name_candidate": 226
+      },
+      "municipality_source": "National Land Numerical Information N03-2026-01-01; used only to identify the municipality of the original feature, not to prove exact school-site correspondence",
+      "reproduction": {
+        "script": "scripts/match-mext-school-code.mjs",
+        "script_sha256": "0A00B3B4FBEBF0B70534A388A3FF47EE9F92107D6F958636A1F07E209EE69995",
+        "candidate_output": "data-sources/facility-bulk-review-20260924/mext-school-candidates.json",
+        "candidate_output_sha256": "DC43136A7A6D76A327D6A8EDB626110F68E45244AC1A8E4AAD23D084CB49E6BF",
+        "measured_script_wall_time_ms": 1603,
+        "input_csv_sha256": {
+          "school_code_csv": "8EDBCA9EF1B0958932EA1C6A292F93778A791A4F0F6FBAE7A197945158ABA7E6",
+          "university_code_csv": "CFE73C8CFC96E442FF4F6728343975CC46676F6A2FC07137CDE101AC3096E000"
+        }
+      },
+      "feature_updates_applied": 0,
+      "gpt6pro_research_performed": false,
+      "notes": "408 rows are candidate associations only. MEXT says school names/addresses can contain errors or be updated. No names or addresses were written to the app. The planned GPT-6 Pro UI request was not submitted because the current ChatGPT browser could not pass the computer-use URL safety check; no response/model state is claimed."
+    },
+    "duplicate_pairs": {
+      "candidate_pairs_sent": 30,
+      "visible_chat_decisions_retrieved": 7,
+      "visible_chat_decisions": {
+        "hold": 7
+      },
+      "complete_30_row_response_verified": false,
+      "older_checkpoint_claim_conflicts_with_visible_chat": true,
+      "database_merges_or_deletions": 0,
+      "notes": "The current ChatGPT page contains seven hold decisions, not a reproducible 30-row answer. A previous checkpoint summarized 17 same / 5 separate / 8 hold, but no corresponding raw response was found in the batch files, so those counts remain unverified and were not applied."
+    }
+  },
+  "official_sources_independently_checked": [
+    {
+      "cohort_scope": "school and college candidates",
+      "publisher": "MEXT",
+      "url": "https://www.mext.go.jp/b_menu/toukei/mext_01087.html",
+      "usable_mode": "prefecture CSV download",
+      "source_date": "2026-05-01 provisional",
+      "caveat": "Name/address may be corrected; campuses and closed sites need local official records."
+    },
+    {
+      "cohort_scope": "hospitals, clinics, dentists, pharmacies",
+      "publisher": "MHLW",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html",
+      "usable_mode": "CSV datasets",
+      "source_date": "2026-06-01",
+      "caveat": "Provider-reported data may be stale; identifiers may persist through operator/location changes."
+    },
+    {
+      "cohort_scope": "Yamaguchi public health and welfare facilities",
+      "publisher": "Yamaguchi Prefecture",
+      "url": "https://www.pref.yamaguchi.lg.jp/soshiki/44/18187.html",
+      "usable_mode": "multiple Excel files and a full PDF",
+      "source_date": "2026-04-01; page updated 2026-06-05",
+      "caveat": "Administrative categories must be mapped to OSM facility types; care-service categories use a separate source."
+    },
+    {
+      "cohort_scope": "care-service offices",
+      "publisher": "MHLW",
+      "url": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+      "usable_mode": "CSV open data and search system",
+      "source_date": "Current download must be checked at each run",
+      "caveat": "A public listing is a candidate source, not proof that every row is current or matches an OSM geometry."
+    },
+    {
+      "cohort_scope": "childcare facilities",
+      "publisher": "WAM",
+      "url": "https://www.wam.go.jp/content/wamnet/pcpub/jidou/kdmsyspub/public/kd001.html",
+      "usable_mode": "CSV download from search results",
+      "source_date": "Facility-reported records; per-row update dates required",
+      "caveat": "The CSV is reached through search results; keep cohort filters and extraction date."
+    },
+    {
+      "cohort_scope": "post offices",
+      "publisher": "Japan Post",
+      "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+      "usable_mode": "official list PDF",
+      "source_date": "Verify revision date and newest official list before a refresh",
+      "caveat": "Parse as candidate list and cross-check current changes; do not assume the PDF is continuously refreshed."
+    }
+  ],
+  "adopted_feature_update": {
+    "feature_id": "osm-node-2426673962",
+    "old_name": "下関大丸",
+    "new_name": "大丸下関店",
+    "official_address": "山口県下関市竹崎町4-4-10",
+    "status_as_of": "2026-09-24 open; announced closure on 2027-08-31",
+    "official_urls": [
+      "https://www.daimaru.co.jp/shimonoseki/hours.html",
+      "https://www.daimaru.co.jp/shimonoseki/news/13520.html",
+      "https://www.j-front-retailing.com/_data_json/financialresults/_upload/3711d945c817e4539f8a66746c87b8f6fa47d0d8.pdf"
+    ],
+    "geometry_id_category_changed": false,
+    "before_dataset_sha256": "a2be913c1ab1ec4e25fb2c8d89ee18df4438f3517425358f03be568ba0914e1c",
+    "after_dataset_sha256": "416b41ec01da8bc8510d42e1d758c685cac1710a242d46515aa6d215e26296ff"
+  },
+  "drive_storage": {
+    "folder_id": "1yBfyofQqGBohtXbqVN5h0PwOFKZq7AfN",
+    "folder_url": "https://drive.google.com/drive/folders/1yBfyofQqGBohtXbqVN5h0PwOFKZq7AfN",
+    "parent_case_folder_id": "1C2XkUsjRsiQqKBN69mPbMRKxO8hRa624",
+    "file_count_read_back": 23,
+    "mext_additions_read_back": [
+      {
+        "name": "mext-school-code-west-2026-05-01.csv",
+        "drive_id": "1JnHZM0ybSHMfGp1GvSn5EFuIGR05UpCa",
+        "size_bytes": 4000019,
+        "sha256": "8EDBCA9EF1B0958932EA1C6A292F93778A791A4F0F6FBAE7A197945158ABA7E6"
+      },
+      {
+        "name": "mext-university-code-west-2026-05-01.csv",
+        "drive_id": "1rOe7porGE_Jq8dG_zjtLtYxZ35SwYzPc",
+        "size_bytes": 182340,
+        "sha256": "CFE73C8CFC96E442FF4F6728343975CC46676F6A2FC07137CDE101AC3096E000"
+      },
+      {
+        "name": "mext-school-candidates.json",
+        "drive_id": "1l3nrSwdkNUN0MxCYJBNGyGir9MOIpmoe",
+        "size_bytes": 635747,
+        "sha256": "DC43136A7A6D76A327D6A8EDB626110F68E45244AC1A8E4AAD23D084CB49E6BF"
+      },
+      {
+        "name": "match-mext-school-code.mjs",
+        "drive_id": "1HkVaW8p5LuNHm0pEIv7MSi30fwtoRKXh",
+        "size_bytes": 9613,
+        "sha256": "0A00B3B4FBEBF0B70534A388A3FF47EE9F92107D6F958636A1F07E209EE69995"
+      }
+    ],
+    "updated_dataset_archive": "shopping.geojson.zip",
+    "archive_size_bytes": 430384,
+    "archived_geojson_size_bytes": 7313127,
+    "archived_geojson_sha256_matches_after_dataset_sha256": true
+  },
+  "verification": {
+    "commands": [
+      "npm run validate",
+      "npm run test:places",
+      "npm run test:map-display"
+    ],
+    "all_passed": true,
+    "commit_push_or_publication": false
+  }
+}
