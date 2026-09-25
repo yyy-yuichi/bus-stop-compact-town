@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-09-25",
+  "baseline": {
+    "total": 7764,
+    "reflected_updates": 24,
+    "explicitly_held": 2,
+    "not_attested_complete": 7738,
+    "verified_no_change_attested_in_this_ledger": 0,
+    "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
+  },
+  "additions": {
+    "reflected": 137
+  },
+  "article_events": {
+    "total": 1186,
+    "classified_by_jev": 1186,
+    "explicitly_completed_by_event": 0,
+    "pending_event_verification": 1186,
+    "with_related_source_only": 35,
+    "note": "An article link or adopted shop listing is not a final disposition for every event in the article."
+  },
+  "local_directory_batch": {
+    "total": 97,
+    "dispositions": {
+      "add_current_listing": 69,
+      "outside_scope": 3,
+      "aggregate_source": 1,
+      "hold_offsite": 8,
+      "hold_suspended": 1,
+      "add_opening": 3,
+      "already_present": 1,
+      "hold_relocated": 11
+    },
+    "new_map_additions": 72
+  },
+  "immediate_followups": {
+    "graduates": 11,
+    "fixed_address_reported": 10,
+    "address_from_operator": 9,
+    "address_from_event_organizer": 1,
+    "address_not_stated": 0,
+    "mobile_without_fixed_point": 1,
+    "closure_candidates_with_existing_ids": 2,
+    "map_changes_this_review": 0
+  },
+  "earlier_hold_rows_now_reflected": [
+    "osm-way-1121040363",
+    "osm-way-332618123",
+    "osm-way-305954680"
+  ],
+  "jev_remaining": {
+    "records": 984,
+    "conservative_budget_usd": 0.399952384,
+    "source": "data-sources/facility-local-stores-20260925/adoption-summary.json"
+  },
+  "inputs_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
+    "public/data/facility-current.json": "9c4333616ab9c3f1eb9329c4c0673ec731c4d0124fd64dc5d934b13054dc037b",
+    "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
+    "data-sources/facility-local-stores-20260925/decisions.json": "c63414f0ecb0172985d7369dc7d77c261fe6e4590b601bb94337c19dc1da8ad9",
+    "outputs/facility-local-stores-20260925/records.json": "967e2531f9984d9dc91437eeb553d8a6b9be529772d5c770867f41837dc32114",
+    "data-sources/facility-progress-20260925/source-plan.json": "69df756b6ee95c26250b1d175ddac5f8fa6021eea3c147cfabdae04ea04eb1b2",
+    "outputs/facility-progress-20260925/pages/95b9970dedbab6d4bb7b266d.json": "e374762f038b059e5828ad5c031e877397b4699550ce469d40f96922d099911d",
+    "outputs/facility-progress-20260925/pages/f63aa99749d4a248b059060e.json": "b5517a29747ec90c7796c1687a83ab6bace4b46c9ce259bfd03fbeebdd391315",
+    "outputs/facility-progress-20260925/pages/0bb35517490ff41f23dd522d.json": "8b4f381c3f9dd8236e17b317f155ed1bb772de8ca6d1c44622ce7414c55fa2e9",
+    "outputs/facility-progress-20260925/pages/864c4bb83bb0ccde0cb16a0c.json": "cac929e1b0de888cbb0d82e15676d708d079c164ed0b55f19a2cf9c6c47ed9d2",
+    "outputs/facility-progress-20260925/pages/9ae0123372fd2215d398c5f3.json": "0c38e549d3a0375f7a76f5d5aeda8809cc231106fb50824efdcf42d7bd0fae47",
+    "outputs/facility-progress-20260925/pages/7a2bd65b4da1d58a5475c26e.json": "d476ffc4f76a1921c1e50df8c7c2761e4148db9d3a7f42adf611b6996e4b42af"
+  }
+}
