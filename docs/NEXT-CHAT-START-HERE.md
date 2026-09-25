@@ -6,7 +6,7 @@
 
 実装正本は `C:/Users/user/.codex/worktrees/420a/バス停コンパクトタウン｜新規開発`。45e4は正本にしない。過去の待機指示は解除済み。
 
-Drive保存の再発防止は[保存エラー時の切り替え・復元手順](DRIVE-SAVE-PLAYBOOK.md)（[正式Drive版](https://drive.google.com/file/d/1Ey3KzJhvUipMse-YNNhRzcBxaUSQ45sj/view)）を参照。原本保全→保存先の実状態確認→代替転送→Driveからの復元検証の順で進める。共通AGENTS.mdにも適用ルールを保存した。
+**Chat移行後の開始前必読：** 移行先のChatで、作業を始める前に[保存エラー時の切り替え・復元手順の本文](https://drive.google.com/file/d/1Ey3KzJhvUipMse-YNNhRzcBxaUSQ45sj/view)を必ず開いて読む（[同文のローカル版](DRIVE-SAVE-PLAYBOOK.md)）。前Chatでの既読を引き継いで済ませない。次の引き継ぎ文にも必読指示とURLを残す。原本保全→保存先の実状態確認→代替転送→Driveからの復元検証の順を守る。
 
 - 前段9施設はcommit 96c61d2、CI #95成功、Drive ZIP・結果文書を読み戻してSHA256一致確認済み。[前段保存証明](https://drive.google.com/file/d/1R3yMTbQ6KRK0lSEvDh4mB7TShdWyHuc9/view)。
 - 続きは[周南・OZの24記事照合](FACILITY-SHUNAN-OZ-20260925.md)。ITTOKU・しづくや・鼓海の徳ちゃんを追加し、旧ジューシーのIDを保持してとらちゃん閉店を更新。元7,764／既存更新25／追加157／履歴込み7,921／通常候補7,859／閉店7。
@@ -176,6 +176,12 @@ Drive保存の再発防止は[保存エラー時の切り替え・復元手順](
 
 ```text
 この案件の施設データ鮮度更新を引き継いでください。前の作業場所では続けません。以下を読んで、同じ調査や説明を最初から繰り返さず、既存の記録とPRから実務を再開してください。
+
+【移行先での開始前必読】
+作業を始める前に、保存エラー時の切り替え・復元手順の本文を必ず開いて読んでください。
+https://drive.google.com/file/d/1Ey3KzJhvUipMse-YNNhRzcBxaUSQ45sj/view
+前Chatの既読やリンクの存在だけで読了と扱わず、次のChatへの引き継ぎにもこの指示とURLを必ず含めてください。本文を取得できない場合は未読と明示し、承認済みの別経路または検証済みの同文コピーで確認してください。現在地は次の最新入口の冒頭を優先してください。
+https://drive.google.com/file/d/1Zgtm8f-k2lb9zsQBdCi68Uk1BaGyuT3O/view
 
 【ユーザーの目的】
 山口県「バス停と暮らしマップ」の7,764件の施設データを、開店・閉店・改称・移転などの情報を取りこぼさず、根拠を残して効率よく最新化したい。ユーザーは変更情報が既に多数あると明言しているため、白紙から店探しをやり直すのではなく、過去のGPTChat・Drive・GitHubに蓄積済みの候補を先に回収し、元データIDへ大量照合する。候補の発見にはニュース、施設公式サイト、公式SNS（Instagram等）、確認可能な公式LINE、Googleマップ等を活用する。情報源の役割と確かさを分け、Googleマップの表示や口コミ等だけで閉店・移転・同一店舗を確定しない。
