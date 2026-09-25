@@ -2,14 +2,14 @@
 
 最終確認日：2026-09-25
 
-## 現在地：006で前段9施設を保存し、周南・OZの24記事を追加照合
+## 現在地：006の24記事照合と原本のDrive保存・復元検証が完了
 
 実装正本は `C:/Users/user/.codex/worktrees/420a/バス停コンパクトタウン｜新規開発`。45e4は正本にしない。過去の待機指示は解除済み。
 
 - 前段9施設はcommit 96c61d2、CI #95成功、Drive ZIP・結果文書を読み戻してSHA256一致確認済み。[前段保存証明](https://drive.google.com/file/d/1R3yMTbQ6KRK0lSEvDh4mB7TShdWyHuc9/view)。
 - 続きは[周南・OZの24記事照合](FACILITY-SHUNAN-OZ-20260925.md)。ITTOKU・しづくや・鼓海の徳ちゃんを追加し、旧ジューシーのIDを保持してとらちゃん閉店を更新。元7,764／既存更新25／追加157／履歴込み7,921／通常候補7,859／閉店7。
 - 記事1,186：全列挙対象処理済み39／一部確認6／未照合1,141。81イベント中74判断済み・7保留。新規保留はしづくや実開店日と飯島町徳ちゃんの開店・移転関係。該当IDなしの閉店店を別店に適用しない。
-- ローカル60バッチテスト、元ID・座標保持、検索・周辺・徒歩候補検証成功。最新HEADのCIとDrive保存・読み戻しの最終結果は[正式保存先](https://drive.google.com/drive/folders/10Xz7Tz3qnQrZnaG0PNL8FJzJQ5owu03h)の `006-shunan-oz-delivery-receipt.md` を参照。
+- 実装commit b1caaf8のCI #96成功（60テスト・182施設SSR・型検査・build・release）。原本ZIPは[5ボリュームと復元手順](https://drive.google.com/file/d/1plYfTOsVnWekkSMo-KsuhJMqf5eJvV5j/view)として正式Driveへ保存済み。Driveから取得した5ファイルだけで元ZIPを復元し、全体SHA256と内部78ファイルを照合済み。[保存証明](https://drive.google.com/file/d/1w67yI5sNktKKg2NO1IK4PRv7PlohPslF/view)。旧INCOMPLETE断片は不要。元ZIPの再送・再生成はしない。
 - Jev累計2,025対象、残975対象／保守的残額$0.39444736。006の追加送信0。再送・購入・自動チャージは禁止。
 - 記事採否正本は `data-sources/facility-progress-20260925/article-event-reviews.json`。台帳再生成は `node scripts/build-facility-progress-ledger.mjs`。続きも保存済み分類から自治体・運営元単位でまとめ、個店を含めて進める。全1,186記事の照合完了とは扱わない。
 - PR #14の更新は既存GitHub CLI認証を使う。連携更新は403、CLIは成功実績あり。連携の設定原因は未特定で、ユーザーの権限不足とは断定しない。マージ・公開禁止。
