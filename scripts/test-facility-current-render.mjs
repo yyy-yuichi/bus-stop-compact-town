@@ -51,6 +51,12 @@ try {
   assert(localFood.includes('食品・青果・鮮魚店')&&localFood.includes('施設全体の代表点'));
   assert(localFood.includes('開店日：未確認'));
   assert(render('official-harete-733e1c15c22e').includes('2026-06-25'));
+  const torachan = render('osm-node-12606873239');
+  assert(torachan.includes('閉店確認') && torachan.includes('2026-08-15') && torachan.includes('ジューシー'));
+  assert(render('official-ittoku-shunan-heiwadori').includes('2026-09-16'));
+  assert(render('official-shizquya-tokuyama-deck').includes('開店日：未確認'));
+  const tokuchan = render('official-tokuchan-kokai');
+  assert(tokuchan.includes('鼓海') && tokuchan.includes('開店日：未確認'));
   console.log(`Actual drawer render: ${reviewed.length} facilities, unknown opening dates distinguished, visible evidence and official provenance passed.`);
 } finally {
   if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow;

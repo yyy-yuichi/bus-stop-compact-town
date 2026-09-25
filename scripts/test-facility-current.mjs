@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 7918);
-assert.equal(patch.updates.length, 24);
-assert.equal(patch.additions.length, 154);
+assert.equal(current.length, 7921);
+assert.equal(patch.updates.length, 25);
+assert.equal(patch.additions.length, 157);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -37,7 +37,7 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 6);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 7);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -45,7 +45,7 @@ for (const f of patch.additions) {
   assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
   if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
 }
-assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 142);
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 144);
 const miko = get('osm-way-305954680'), oldWants = get('osm-way-332618123');
 assert(!facilityAvailable(miko) && !facilityAvailable(oldWants));
 assert.equal(miko.properties.freshness_review.effective_at, '2025-01');
@@ -61,7 +61,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Unresolved prior occupant and duplicate pair held');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7857);
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7859);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));
@@ -134,4 +134,4 @@ assert(facilityAvailable(pastSchedule), 'A past planned date is still unconfirme
 const loader = fs.readFileSync('src/shoppingData.ts', 'utf8');
 assert(loader.includes('data/facility-current.json') && loader.includes('applyFacilityCurrent(collections.flat(), reviews)'));
 assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(facilityAvailable)'));
-console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: 6, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));
+console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: 7, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));

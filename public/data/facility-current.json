@@ -985,6 +985,54 @@
           "元データですでに通常表示から除外済みの履歴整備です。"
         ]
       }
+    },
+    {
+      "id": "osm-node-12606873239",
+      "expected": {
+        "name": "小籠包酒場　ジューシー",
+        "category": "bar",
+        "source_ids": [
+          "node/12606873239"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8040289,
+            34.0508722
+          ]
+        }
+      },
+      "changes": {
+        "name": "ぎょうざ酒場 とらちゃん（旧 小籠包酒場ジューシー）",
+        "city": "周南市",
+        "address": "山口県周南市銀座1丁目31 徳山デッキD2 1階",
+        "search_names": "ぎょうざ酒場 とらちゃん 小籠包酒場 ジューシー"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-08-15",
+        "checked_at": "2026-09-25",
+        "summary": "旧名ジューシーの既存IDを保持し、改称後の自店による8月15日閉店告知を照合しました。後継しづくやは別施設として掲載します。",
+        "sources": [
+          {
+            "title": "自店の閉店告知（2026年8月7日投稿）",
+            "url": "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/"
+          },
+          {
+            "title": "店舗の旧名・改称と閉店を報じた記事",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/"
+          },
+          {
+            "title": "施設運営者の旧110区画案内（検索キャッシュで改称を照合、現ページは404）",
+            "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E3%81%A8%E3%82%89%E3%81%A1%E3%82%83%E3%82%93/"
+          }
+        ],
+        "limits": [
+          "改称前の元ID・元座標を履歴として保持しています。後継店へIDを付け替えていません。",
+          "改称の実施日は未確認です。施設運営者の旧店舗ページは取得時404で、改称文は検索キャッシュと報道で照合しました。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -9224,6 +9272,166 @@
         "coordinates": [
           131.17478099021,
           33.98586750714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-ittoku-shunan-heiwadori",
+      "properties": {
+        "name": "洋食酒場 ITTOKU",
+        "city": "周南市",
+        "address": "山口県周南市平和通2-23",
+        "official_address": "山口県周南市平和通2-23",
+        "official_url": "https://ya55808.gorp.jp/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:ittoku:shunan:heiwadori"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "洋食酒場 ITTOKU",
+        "location_verification": "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-09-16",
+          "checked_at": "2026-09-25",
+          "summary": "店舗公式の現行案内・開店表記・住所と店舗地図を照合しました。",
+          "sources": [
+            {
+              "title": "店舗または施設運営者の現行案内",
+              "url": "https://ya55808.gorp.jp/"
+            },
+            {
+              "title": "店舗が掲載する開店案内（9/16 OPEN、年は2026年記事と照合）",
+              "url": "https://www.hotpepper.jp/strJ003917267/"
+            }
+          ],
+          "limits": [
+            "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "近傍にある別名の山田歯科のID・位置・状態は変更していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.807025,
+          34.050136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-shizquya-tokuyama-deck",
+      "properties": {
+        "name": "甘味処 しづくや",
+        "city": "周南市",
+        "address": "山口県周南市銀座1丁目31 徳山デッキD2 1階110区画",
+        "official_address": "山口県周南市銀座1丁目31 徳山デッキD2 1階110区画",
+        "official_url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/",
+        "category": "cafe",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:shizquya:tokuyama:deck"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "甘味処 しづくや",
+        "location_verification": "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "施設運営者または店舗自身の現行案内・所在地と、店舗名に対応する地図点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗または施設運営者の現行案内",
+              "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/"
+            },
+            {
+              "title": "店舗名・住所に対応する地図の店舗代表点",
+              "url": "https://www.google.com/maps/place/%E7%94%98%E5%91%B3%E5%87%A6+%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/@34.0506127,131.8041195,17z/data=!3m1!4b1!4m6!3m5!1s0x3544e7ad64bce933:0x62514faf955cea64!8m2!3d34.0506127!4d131.8041195!16s%2Fg%2F11zx4fh1hb"
+            },
+            {
+              "title": "自店の9月18日商品案内・住所・電話",
+              "url": "https://www.instagram.com/shizqu_ya/p/DddDekyif8C/"
+            }
+          ],
+          "limits": [
+            "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "施設公式は110区画、自店投稿はD2-011、地図はD2-11と区画表記に差があります。名称・住所・電話番号の一致を照合し、店頭の区画表示は未確認です。",
+            "9月18日の開店予定報道と当日の商品案内は確認しましたが、実開店日は確定せず未確認で掲載します。",
+            "現行掲載の確認であり、実開店日やリアルタイム営業を保証するものではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8041195,
+          34.0506127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tokuchan-kokai",
+      "properties": {
+        "name": "拉麺 徳ちゃん",
+        "city": "周南市",
+        "address": "山口県周南市鼓海1丁目324-18",
+        "official_address": "山口県周南市鼓海1丁目324-18",
+        "official_url": "https://toku-chan.com/store",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tokuchan:kokai"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "拉麺 徳ちゃん",
+        "location_verification": "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "施設運営者または店舗自身の現行案内・所在地と、店舗名に対応する地図点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗または施設運営者の現行案内",
+              "url": "https://toku-chan.com/store"
+            },
+            {
+              "title": "店舗名・住所に対応する地図の店舗代表点",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8641329124166!2d131.82239767605307!3d34.02169831934198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6beb6096653%3A0x94391da6a6a3a5b1!2z5ouJ6bq6IOW-s-OBoeOCg-OCkw!5e0!3m2!1sja!2sjp!4v1749025113138!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗名と所在地に対応する代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "鼓海の現店舗として掲載。飯島町の新店舗との関係・移転は未確認であり、この店舗を移転済みとしていません。",
+            "現行掲載の確認であり、実開店日やリアルタイム営業を保証するものではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8249726,
+          34.0216939
         ]
       }
     }

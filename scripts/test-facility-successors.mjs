@@ -40,8 +40,9 @@ test('all eight city listings plus successor retain their own source points and 
     assert(feature.properties.location_verification.includes('入口'));
     assert(feature.properties.freshness_review.sources.some(s => s.url === row.url));
   }
-  assert.equal(hash({ ...overlay, additions: overlay.additions.filter(f => !rows.some(r => r.id === f.id)) }), summary.before_overlay_hash);
-  assert.equal(hash(overlay), summary.after_overlay_hash);
+  const checkpoint = { ...overlay, updates: overlay.updates.slice(0, summary.cumulative_updates), additions: overlay.additions.slice(0, summary.cumulative_additions) };
+  assert.equal(hash({ ...checkpoint, additions: checkpoint.additions.filter(f => !rows.some(r => r.id === f.id)) }), summary.before_overlay_hash);
+  assert.equal(hash(checkpoint), summary.after_overlay_hash);
   assert.equal(overlay.updates.find(r => r.id === 'osm-way-332618123').review.status, 'closed');
 });
 
