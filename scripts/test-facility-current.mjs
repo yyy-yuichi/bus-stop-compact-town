@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 7943);
+assert.equal(current.length, 7954);
 assert.equal(patch.updates.length, 30);
-assert.equal(patch.additions.length, 179);
+assert.equal(patch.additions.length, 190);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -47,7 +47,7 @@ for (const f of patch.additions) {
   assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
   if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
 }
-assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 164);
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 175);
 const miko = get('osm-way-305954680'), oldWants = get('osm-way-332618123');
 assert(!facilityAvailable(miko) && !facilityAvailable(oldWants));
 assert.equal(miko.properties.freshness_review.effective_at, '2025-01');
@@ -63,7 +63,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7879);
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7890);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));

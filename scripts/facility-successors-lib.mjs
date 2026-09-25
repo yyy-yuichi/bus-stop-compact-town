@@ -45,8 +45,11 @@ export function secondStreetStore(receipt) {
   assert.equal(destinations.length, 1, 'Need the official shop directions destination, not a viewport');
   const match = destinations[0];
   const address = field(receipt.html, '住所');
-  assert(address.startsWith('山口県山陽小野田市'));
-  return { id: `official-secondstreet-${id}`, name, address, city: '山陽小野田市', category: 'second_hand',
+  const city = address.match(/^山口県([^市]+市)/)?.[1];
+  assert(city, 'Require a Yamaguchi municipality');
+  const point = [Number(match[3]), Number(match[2])];
+  assert(point.every(Number.isFinite) && point[0] > 130 && point[0] < 133 && point[1] > 33 && point[1] < 35);
+  return { id: `official-secondstreet-${id}`, name, address, city, category: 'second_hand',
     url: receipt.url, coordinates: [Number(match[3]), Number(match[2])], map_url: match[1],
     location_method: 'official_shop_directions_destination', store_format: '独立店舗',
     source_id: `official:secondstreet:${id}` };

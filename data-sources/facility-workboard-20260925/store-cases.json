@@ -1080,6 +1080,46 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:secondstreet-ube-history",
+    "name": "旧セカンドストリート宇部店",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-secondstreet-32092"
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 5,
+        "hash": "cabf1961376f1b6f4d2864a69829efd375ee208cc6135b041f35553877388403"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:secondstreet-ube-history:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事では大小路の旧宇部店が2025-09-28閉店して宇部新川へ移転したと報告。現在の新店は確認できるが旧支店の事後告知は未取得。元地図に旧店名IDなし。現行店の追加と旧店履歴を分離。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "ube-81847:old-ube-relocation",
+          "ube-81621:old-ube-relocation"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81621",
+      "ube-81847"
+    ],
+    "held_event_ids": [
+      "ube-81621:old-ube-relocation",
+      "ube-81847:old-ube-relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:tsutaya-hofu-history",
     "name": "旧TSUTAYA防府店",
     "facility_ids": [],
@@ -1105,6 +1145,46 @@
     ],
     "held_event_ids": [
       "yamaguchi-40890:tsutaya-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:tsutaya-ube-history",
+    "name": "旧幸太郎本舗TSUTAYA宇部店",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-secondstreet-32092"
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 6,
+        "hash": "7246f8a66c6874ebc715707eecb44ab46eec7c4dd02e665fbad95dda2fe96b8c"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:tsutaya-ube-history:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事は幸太郎本舗TSUTAYA宇部店の跡地と説明。元地図に旧店名IDなし。自社閉店告知を未取得のため旧店履歴として保留。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "ube-81847:tsutaya-prior-closure",
+          "ube-81621:tsutaya-prior-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81621",
+      "ube-81847"
+    ],
+    "held_event_ids": [
+      "ube-81621:tsutaya-prior-closure",
+      "ube-81847:tsutaya-prior-closure"
     ],
     "supplemental_also_pending": false
   },
@@ -1872,6 +1952,205 @@
       "ube-83012:opening",
       "ube-83170:opening",
       "ube-83311:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-secondstreet-31787",
+    "name": "セカンドストリート 柳井店",
+    "facility_ids": [
+      "official-secondstreet-31787"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "476983aed996d5a4e244e9697b4ae9d4483959b9afeb08dac3745415a5b441e3"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-secondstreet-31787:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の店別掲載・地点は反映済み。記事にある開店・先行買取等の日付は実施記録未取得。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-509057:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-509057"
+    ],
+    "held_event_ids": [
+      "kaiten-509057:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-secondstreet-31983",
+    "name": "セカンドストリート 山陽小野田店",
+    "facility_ids": [
+      "official-secondstreet-31983"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 2,
+        "hash": "67d537b41802befdb96f1c8d6fda5a7de55bb8526b1f382904ba17bac49bfc9e"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-secondstreet-31983:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の店別掲載・地点は反映済み。記事にある開店・先行買取等の日付は実施記録未取得。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-571437:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-571437"
+    ],
+    "held_event_ids": [
+      "kaiten-571437:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-secondstreet-32092",
+    "name": "セカンドストリート 宇部新川店",
+    "facility_ids": [
+      "official-secondstreet-32092"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 4,
+        "hash": "904b36ba30b81718ed00d5e2de10e7727e26dd990b5955117fa9b9f6993e4f90"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-secondstreet-32092:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の店別掲載・地点は反映済み。記事にある開店・先行買取等の日付は実施記録未取得。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "ube-81847:opening-date",
+          "ube-81847:preopening-period",
+          "ube-81621:opening-date",
+          "ube-81621:preopening-period",
+          "ube-81621:preopening-pause"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81621",
+      "ube-81847"
+    ],
+    "held_event_ids": [
+      "ube-81621:opening-date",
+      "ube-81621:preopening-pause",
+      "ube-81621:preopening-period",
+      "ube-81847:opening-date",
+      "ube-81847:preopening-period"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-secondstreet-32214",
+    "name": "セカンドストリート 下松店",
+    "facility_ids": [
+      "official-secondstreet-32214"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 3,
+        "hash": "49d6b939158116ec1137a2fcf256dee3aa5ad888a0c288fd30707d24cc28cf88"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-secondstreet-32214:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の店別掲載・地点は反映済み。記事にある開店・先行買取等の日付は実施記録未取得。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-608532:opening-date",
+          "shunan-119477:opening-date",
+          "shunan-119477:preopening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-608532",
+      "shunan-119477"
+    ],
+    "held_event_ids": [
+      "kaiten-608532:opening-date",
+      "shunan-119477:opening-date",
+      "shunan-119477:preopening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-secondstreet-32241",
+    "name": "セカンドストリート ゆめタウン南岩国店",
+    "facility_ids": [
+      "official-secondstreet-32241"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-secondstreet-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "ea909af0f79add86c2866b1642b679ef9ddfeffdd297dae75bb5fcca93bfdfd2"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-secondstreet-32241:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の店別掲載・地点は反映済み。記事にある開店・先行買取等の日付は実施記録未取得。",
+        "next": "新しい店舗固有の事後告知が得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-617376:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-617376"
+    ],
+    "held_event_ids": [
+      "kaiten-617376:opening-date"
     ],
     "supplemental_also_pending": false
   },
