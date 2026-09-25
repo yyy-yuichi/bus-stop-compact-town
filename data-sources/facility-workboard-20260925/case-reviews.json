@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-25",
-  "scope": "Current 51 article holds including the seven-article pilot, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of all unreviewed articles or baseline facilities.",
+  "scope": "Reviewed article events including the Halows regional batch, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of unreviewed articles or baseline facilities.",
   "cases": [
     {
       "case_id": "facility:official-watts-47917",
@@ -326,8 +326,18 @@
           "event_ids": [
             "ube-83311:halows-opening",
             "ube-83101:halows-opening",
-            "ube-83154:halows-opening"
+            "ube-83154:halows-opening",
+            "kaiten-611564:opening-date",
+            "ube-83053:halows-opening-date"
           ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "fec8bd41e9a1774493d5c52d98a98972590cd423d14552a645a5009d27eb92ad"
         }
       ]
     },
@@ -361,7 +371,9 @@
           "reason": "同一商業施設との案内と公式支店座標が約3.3km相違。",
           "next": "新しい店別の一次地図で位置を確定し、訂正履歴を残す。",
           "event_ids": [
-            "ube-83311:wants-position"
+            "ube-83311:wants-position",
+            "ube-82926:wants-position",
+            "ube-83053:wants-position"
           ]
         }
       ],
@@ -371,6 +383,12 @@
           "section": "cases",
           "index": 6,
           "hash": "d449c02d910ecf3848b571451112dc7603c1332579b47040d0ec1f0af035a71d"
+        },
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 11,
+          "hash": "1a5534a8384fc3a0ce985320aa51b7199d4b51de357e6528a619dd0b8f1e9178"
         }
       ]
     },
@@ -391,7 +409,8 @@
           "next": "旧支店を特定できる運営元の移転・営業終了告知、または読める店頭告知原文が新たに得られた場合に再開。同じ旧URLと一般検索は繰り返さない。",
           "event_ids": [
             "ube-81233:relocation",
-            "ube-81345:relocation"
+            "ube-81345:relocation",
+            "ube-80673:mcd-relocation"
           ]
         }
       ],
@@ -401,6 +420,12 @@
           "section": "cases",
           "index": 1,
           "hash": "a5293baf7df1d23be249cc9bd2badc41452eec9407d6ac529fe263108576fd73"
+        },
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "c17641c50bc38b49dea7dfa6752bec73670687a19a208f938d9c2896414565ad"
         }
       ],
       "review_attempts": [
@@ -1506,6 +1531,336 @@
           "hash": "3a7cf5a2570a0f450fa6e886267b3e88292da838d9b67e02e1ded83b7c563c27"
         }
       ]
+    },
+    {
+      "case_id": "facility:official-halows-129",
+      "name": "ハローズ 小野田店",
+      "facility_ids": [
+        "official-halows-129"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-halows-129:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "kaiten-528297:opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "14b4b63cc596c45b810c01759a57be9593beebb6cc9ef2ad639d44f71633c987"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-sundrug-8207",
+      "name": "サンドラッグ ハローズ宇部モール店",
+      "facility_ids": [
+        "official-sundrug-8207"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-sundrug-8207:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "kaiten-561182:opening-date",
+            "ube-81111:sundrug-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "634a483cc984178ba791ab6a0412a34db8d0dcac13f7b04ee1a6743996dd4327"
+        }
+      ]
+    },
+    {
+      "case_id": "case:halows-ube-unnamed-units",
+      "name": "宇部モール2025年の未特定建物",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:halows-ube-unnamed-units:watch",
+          "impact": "watch",
+          "priority": "P2",
+          "reason": "工事区画の用途・店名・店舗地点は本文で未確定。色や近さから後続店舗と同定せず、区画を特定する一次情報を待つ。",
+          "next": "区画対応を確認できる一次図面・名称告知を得た際に照合。",
+          "event_ids": [
+            "ube-80673:mall-unnamed-units",
+            "ube-80854:mall-unnamed-units",
+            "ube-80984:mall-unnamed-units"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "c071a1cb89030931af93ea5622f9ac42072f1917e31d9cbc1101a764979ed0c6"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-mcdonalds-35538",
+      "name": "マクドナルド 宇部厚南店",
+      "facility_ids": [
+        "official-mcdonalds-35538"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-mcdonalds-35538:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "ube-80854:mcd-opening-date",
+            "ube-81111:mcd-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 5,
+          "hash": "e94a23e187c2863d3bcdd7579be7748c2df6994731364600cb99a3a256fa54bb"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-halows-131",
+      "name": "ハローズ 宇部店",
+      "facility_ids": [
+        "official-halows-131"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-halows-131:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "ube-81111:halows-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 6,
+          "hash": "e9ac4ac609ddd7166ab501e094866b2d471174625454cbfec35d764c8c5c212f"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-dondon-halows-ube",
+      "name": "どんどん ハローズ宇部店",
+      "facility_ids": [
+        "official-dondon-halows-ube"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-dondon-halows-ube:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "ube-81111:dondon-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 7,
+          "hash": "4be4ead06728c7e43dbeb18d16458458d079b230fa63fc31fab09a24c10c5792"
+        }
+      ]
+    },
+    {
+      "case_id": "case:quickcut-halows-ube",
+      "name": "クイックカットBB ハローズ宇部モール店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:quickcut-halows-ube:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ハローズ側のテナント案内には記載がある一方、クイックカット運営元の中国地方一覧は別の2店のみ。店舗固有の現況と地点を未確認。閉店も営業中も断定せず追加保留。",
+          "next": "店舗固有の運営元案内・営業終了案内と地点を確認。一覧の不掲載だけで閉店にしない。",
+          "event_ids": [
+            "ube-81111:quickcut-current"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 8,
+          "hash": "be2ef5fef05848bd80d56000def05d15c756a38178ca82121c323f399967c443"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-daiso-005565",
+      "name": "DAISO ハローズ宇部モール店",
+      "facility_ids": [
+        "official-daiso-005565"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-daiso-005565:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "ube-81111:daiso-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 9,
+          "hash": "cb9fd1775387537d914076a8d3002a6ce6718a2efaaf28bcff525cdaf1235648"
+        }
+      ]
+    },
+    {
+      "case_id": "case:halows-nishikiwa-planned-units",
+      "name": "西岐波の当初計画の併設区画",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:halows-nishikiwa-planned-units:watch",
+          "impact": "watch",
+          "priority": "P2",
+          "reason": "当初計画の別店舗・別棟の個別名は不明。現行ハローズ案内にはウォンツとコインランドリーがあるが、計画の各区画との対応は推定しない。",
+          "next": "区画対応を確認できる一次図面・名称告知を得た際に照合。",
+          "event_ids": [
+            "ube-81813:nishikiwa-planned-units"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 10,
+          "hash": "10b0f48efb3d3804d86c26b292d56abff608030f03ed4a6cbf81e0f661fcbefa"
+        }
+      ]
+    },
+    {
+      "case_id": "case:laundry-halows-nishikiwa",
+      "name": "コインランドリー西岐波店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:laundry-halows-nishikiwa:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ハローズの現行テナント欄でコインランドリー西岐波店を確認。店舗自身の住所・固有地点は未確認で、スーパーやウォンツの点を代用しない。",
+          "next": "店舗自身の案内または区画が明示されたテナント地図で地点を確認。",
+          "event_ids": [
+            "ube-83053:laundry-current"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 12,
+          "hash": "2d1a8e018d45eb90d5191eaad71ac67856e6cba44ed6a50fd219df687a871c43"
+        }
+      ]
+    },
+    {
+      "case_id": "case:halows-ube-2026-construction",
+      "name": "宇部モール2026年4月の工事区画",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:halows-ube-2026-construction:watch",
+          "impact": "watch",
+          "priority": "P2",
+          "reason": "工事区画の用途・店名・店舗地点は本文で未確定。色や近さから後続店舗と同定せず、区画を特定する一次情報を待つ。",
+          "next": "具体的な店舗名と区画が公表された場合に照合。",
+          "event_ids": [
+            "ube-82464:mall-2026-construction"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 13,
+          "hash": "8776db65655b267ed073ca5e90f1788abdb41ac22c295ad4b10e0b13918ab343"
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-beat-pilates-yamaguchi-ube",
+      "name": "Beat Pilates 山口宇部店",
+      "facility_ids": [
+        "official-beat-pilates-yamaguchi-ube"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "facility:official-beat-pilates-yamaguchi-ube:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。",
+          "next": "当日実施または事後の公式記録が明示された場合に日付を補完。",
+          "event_ids": [
+            "ube-82464:beat-opening-date"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-halows-20260925/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 14,
+          "hash": "0099bd2c9008decf640865c261c159713a7e7d241a5043ea7a7aac1e47a976ad"
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -1814,6 +2169,132 @@
       "event_hash": "b0c07966eb062b7b35de10510053b22e9b6bd5cb775bbdc8549d26299e736c88",
       "case_id": "case:autobacs-ube-konan",
       "issue_id": "case:autobacs-ube-konan:opening-date"
+    },
+    {
+      "event_id": "kaiten-611564:opening-date",
+      "event_hash": "8e46f3f8f73da468e2786bae2194facb2aa99003d98d7d74a65392bb0a6e3d73",
+      "case_id": "facility:official-halows-nishikiwa",
+      "issue_id": "facility:official-halows-nishikiwa:supplemental"
+    },
+    {
+      "event_id": "kaiten-528297:opening-date",
+      "event_hash": "a93599fb890eceeed256112b8195e3c9b4dd60a345789ec06e89065dea4fdded",
+      "case_id": "facility:official-halows-129",
+      "issue_id": "facility:official-halows-129:supplemental"
+    },
+    {
+      "event_id": "kaiten-561182:opening-date",
+      "event_hash": "b42163805a5ccc081b82d06c1aa8fcb777ba8f39bc11636bf2fbb2c0c1fdc045",
+      "case_id": "facility:official-sundrug-8207",
+      "issue_id": "facility:official-sundrug-8207:supplemental"
+    },
+    {
+      "event_id": "ube-80673:mcd-relocation",
+      "event_hash": "f95a9237387784dc037e91a0e2d47c28e7ca7edc63cb00af895ceda71b8378c7",
+      "case_id": "case:mcd-ube-konan",
+      "issue_id": "case:mcd-ube-konan:map_action"
+    },
+    {
+      "event_id": "ube-80673:mall-unnamed-units",
+      "event_hash": "bcc7eb419e4b6c89629f0186df82a5a6753e9abc27c7971b870aff4ae137f357",
+      "case_id": "case:halows-ube-unnamed-units",
+      "issue_id": "case:halows-ube-unnamed-units:watch"
+    },
+    {
+      "event_id": "ube-80854:mcd-opening-date",
+      "event_hash": "60dcba90ad343abff5c50f60a101d835e81e96521354294e5e514aa540fea9ec",
+      "case_id": "facility:official-mcdonalds-35538",
+      "issue_id": "facility:official-mcdonalds-35538:supplemental"
+    },
+    {
+      "event_id": "ube-80854:mall-unnamed-units",
+      "event_hash": "7d8560a71cd325e18e19bd87a0402528fdfbd997e974d85f85d3fa214122c5a9",
+      "case_id": "case:halows-ube-unnamed-units",
+      "issue_id": "case:halows-ube-unnamed-units:watch"
+    },
+    {
+      "event_id": "ube-80984:mall-unnamed-units",
+      "event_hash": "41270e7a79e40fbbb8505a9a9a7bfa32d253ac4c4582e7d4bc9d16a730504557",
+      "case_id": "case:halows-ube-unnamed-units",
+      "issue_id": "case:halows-ube-unnamed-units:watch"
+    },
+    {
+      "event_id": "ube-81111:halows-opening-date",
+      "event_hash": "8ea90690de7b85aa19314246d70aceabfc2e59ee92d34827d132edd95d0e9a76",
+      "case_id": "facility:official-halows-131",
+      "issue_id": "facility:official-halows-131:supplemental"
+    },
+    {
+      "event_id": "ube-81111:mcd-opening-date",
+      "event_hash": "8960a7e1c415a4300fd8d996adefeedff9e9d4aa3fb300278e8e269634c08609",
+      "case_id": "facility:official-mcdonalds-35538",
+      "issue_id": "facility:official-mcdonalds-35538:supplemental"
+    },
+    {
+      "event_id": "ube-81111:dondon-opening-date",
+      "event_hash": "5941ed7f75a8366ce5ac631d07b88b678d9a10dd4c56569af5ac668b7451d069",
+      "case_id": "facility:official-dondon-halows-ube",
+      "issue_id": "facility:official-dondon-halows-ube:supplemental"
+    },
+    {
+      "event_id": "ube-81111:sundrug-opening-date",
+      "event_hash": "a5523d690610ed2f0e69e147c8e9bd6372ea7b2b263407d13d33ff34a3ad3539",
+      "case_id": "facility:official-sundrug-8207",
+      "issue_id": "facility:official-sundrug-8207:supplemental"
+    },
+    {
+      "event_id": "ube-81111:quickcut-current",
+      "event_hash": "2ea5f04b47790ee6ce051d25d43d1e298f6787ea5c6db651d9f5fbc0fe93d8e0",
+      "case_id": "case:quickcut-halows-ube",
+      "issue_id": "case:quickcut-halows-ube:map_action"
+    },
+    {
+      "event_id": "ube-81111:daiso-opening-date",
+      "event_hash": "b1fac34d51f914a3ad63a3115d46ce55ac2f928cf3d2e9dbd0b70d62825439de",
+      "case_id": "facility:official-daiso-005565",
+      "issue_id": "facility:official-daiso-005565:supplemental"
+    },
+    {
+      "event_id": "ube-81813:nishikiwa-planned-units",
+      "event_hash": "19733db371e6d8afb9207409187dbf2df2d1ca4e54407aeb93d2770ea88cef40",
+      "case_id": "case:halows-nishikiwa-planned-units",
+      "issue_id": "case:halows-nishikiwa-planned-units:watch"
+    },
+    {
+      "event_id": "ube-82926:wants-position",
+      "event_hash": "d65fd77918f7cfbfe4097b62a63f3aaf37ad919c170aa9116dd1e0fe7f7a8545",
+      "case_id": "facility:official-tsuruha-10049",
+      "issue_id": "facility:official-tsuruha-10049:map_action"
+    },
+    {
+      "event_id": "ube-83053:halows-opening-date",
+      "event_hash": "9624bd493b67686e80e2a4e21bc787f465af06945cc163612302723a934db598",
+      "case_id": "facility:official-halows-nishikiwa",
+      "issue_id": "facility:official-halows-nishikiwa:supplemental"
+    },
+    {
+      "event_id": "ube-83053:wants-position",
+      "event_hash": "35d162a9e1abadedb000b4070af2903465fc657b6ed107d0465dbdabf2209057",
+      "case_id": "facility:official-tsuruha-10049",
+      "issue_id": "facility:official-tsuruha-10049:map_action"
+    },
+    {
+      "event_id": "ube-83053:laundry-current",
+      "event_hash": "74b951aca2f663028b1990db857e5d1bba57bf968656334965c92a88e40e6922",
+      "case_id": "case:laundry-halows-nishikiwa",
+      "issue_id": "case:laundry-halows-nishikiwa:map_action"
+    },
+    {
+      "event_id": "ube-82464:mall-2026-construction",
+      "event_hash": "4c09b68ba61363efd11acdd081e7d4110c12e40a3a05b0fd6d87e907b1738d98",
+      "case_id": "case:halows-ube-2026-construction",
+      "issue_id": "case:halows-ube-2026-construction:watch"
+    },
+    {
+      "event_id": "ube-82464:beat-opening-date",
+      "event_hash": "6520d469feb37e5a7deaa299004329c92dd9a26efe88d806c4d662213099d42b",
+      "case_id": "facility:official-beat-pilates-yamaguchi-ube",
+      "issue_id": "facility:official-beat-pilates-yamaguchi-ube:supplemental"
     }
   ],
   "legacy_audit": [

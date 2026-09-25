@@ -1,0 +1,519 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "6f27e05df9cfc32a53685088e6188829bd475cdfd20c1bc034e5b4764ef30a54",
+  "after_overlay_hash": "e7337ac0ef314b2f9eb488d40da6e890981cf8f2ee2d7663c475d38fc405ba81",
+  "batch_hash": "7e98998812fc0f094915646d012c0596c061a51e6390714dd4064da8d75fd154",
+  "inputs_hash": "ae2d9ac27a00d672206f12f70d371874f1f90173cc322969962085479374fd6f",
+  "article_inputs_hash": "436fcec55536eabdc50ef9d7b8e98f19c98de402946f1893f1ae903130cf37ec",
+  "article_keys": [
+    "kaiten-611564",
+    "kaiten-528297",
+    "kaiten-561182",
+    "ube-80673",
+    "ube-80854",
+    "ube-80909",
+    "ube-80984",
+    "ube-81111",
+    "ube-81813",
+    "ube-82372",
+    "ube-82926",
+    "ube-83053",
+    "ube-82464"
+  ],
+  "case_findings": [
+    {
+      "case_id": "facility:official-halows-nishikiwa",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "facility:official-halows-129",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "facility:official-sundrug-8207",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "case:mcd-ube-konan",
+      "reason": "新35538は掲載済み。旧35003の営業終了・移転実施の一次告知は未取得。予定日だけで旧店を閉店にしない。"
+    },
+    {
+      "case_id": "case:halows-ube-unnamed-units",
+      "reason": "工事区画の用途・店名・店舗地点は本文で未確定。色や近さから後続店舗と同定せず、区画を特定する一次情報を待つ。"
+    },
+    {
+      "case_id": "facility:official-mcdonalds-35538",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "facility:official-halows-131",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "facility:official-dondon-halows-ube",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "case:quickcut-halows-ube",
+      "reason": "ハローズ側のテナント案内には記載がある一方、クイックカット運営元の中国地方一覧は別の2店のみ。店舗固有の現況と地点を未確認。閉店も営業中も断定せず追加保留。"
+    },
+    {
+      "case_id": "facility:official-daiso-005565",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    },
+    {
+      "case_id": "case:halows-nishikiwa-planned-units",
+      "reason": "当初計画の別店舗・別棟の個別名は不明。現行ハローズ案内にはウォンツとコインランドリーがあるが、計画の各区画との対応は推定しない。"
+    },
+    {
+      "case_id": "facility:official-tsuruha-10049",
+      "reason": "現在の公式掲載は既存10049と一致するが、店別公式点はハローズから約3.3km離れる。既知の地点矛盾を維持し、入居先の点へ移さない。"
+    },
+    {
+      "case_id": "case:laundry-halows-nishikiwa",
+      "reason": "ハローズの現行テナント欄でコインランドリー西岐波店を確認。店舗自身の住所・固有地点は未確認で、スーパーやウォンツの点を代用しない。"
+    },
+    {
+      "case_id": "case:halows-ube-2026-construction",
+      "reason": "工事区画の用途・店名・店舗地点は本文で未確定。色や近さから後続店舗と同定せず、区画を特定する一次情報を待つ。"
+    },
+    {
+      "case_id": "facility:official-beat-pilates-yamaguchi-ube",
+      "reason": "現在の公式掲載・店舗地点は反映済み。残るのは実施日の補足。"
+    }
+  ],
+  "nearby": [
+    {
+      "id": "official-halows-131",
+      "nearby": [
+        {
+          "id": "official-autobacs-380064",
+          "name": "オートバックス 宇部厚南",
+          "category": "car_service",
+          "distance_m": 134
+        },
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 141
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 221
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 243
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    },
+    {
+      "id": "official-halows-129",
+      "nearby": [
+        {
+          "id": "osm-way-642327604",
+          "name": "ドラマティックス　小野田中央店",
+          "category": "hairdresser",
+          "distance_m": 61
+        },
+        {
+          "id": "cosmos-onoda",
+          "name": "コスモス小野田店",
+          "category": "drugstore",
+          "distance_m": 95
+        },
+        {
+          "id": "official-secondstreet-31983",
+          "name": "セカンドストリート 山陽小野田店",
+          "category": "second_hand",
+          "distance_m": 102
+        },
+        {
+          "id": "osm-way-332618123",
+          "name": "ウォンツ 小野田店",
+          "category": "drugstore",
+          "distance_m": 103
+        },
+        {
+          "id": "civic-care-3571600612-74ad0c1e58",
+          "name": "ヘルパーステーションミント",
+          "category": "social_facility",
+          "distance_m": 190
+        },
+        {
+          "id": "osm-way-646295773",
+          "name": "寿司よし",
+          "category": "restaurant",
+          "distance_m": 232
+        },
+        {
+          "id": "osm-way-649091319",
+          "name": "市立小野田小学校",
+          "category": "school",
+          "distance_m": 239
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    },
+    {
+      "id": "official-sundrug-8207",
+      "nearby": [
+        {
+          "id": "official-autobacs-380064",
+          "name": "オートバックス 宇部厚南",
+          "category": "car_service",
+          "distance_m": 64
+        },
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 112
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 190
+        },
+        {
+          "id": "osm-node-4709360558",
+          "name": "カレーハウスCoCo壱番屋",
+          "category": "restaurant",
+          "distance_m": 208
+        },
+        {
+          "id": "osm-node-4709360559",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 220
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 247
+        },
+        {
+          "id": "osm-way-477623030",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 249
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    },
+    {
+      "id": "official-dondon-halows-ube",
+      "nearby": [
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 34
+        },
+        {
+          "id": "official-autobacs-380064",
+          "name": "オートバックス 宇部厚南",
+          "category": "car_service",
+          "distance_m": 72
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 114
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 173
+        },
+        {
+          "id": "osm-node-4709360558",
+          "name": "カレーハウスCoCo壱番屋",
+          "category": "restaurant",
+          "distance_m": 204
+        },
+        {
+          "id": "osm-node-4709360559",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 211
+        },
+        {
+          "id": "osm-way-477623030",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 247
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    },
+    {
+      "id": "official-daiso-005565",
+      "nearby": [
+        {
+          "id": "official-autobacs-380064",
+          "name": "オートバックス 宇部厚南",
+          "category": "car_service",
+          "distance_m": 50
+        },
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 74
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 112
+        },
+        {
+          "id": "osm-node-4709360558",
+          "name": "カレーハウスCoCo壱番屋",
+          "category": "restaurant",
+          "distance_m": 131
+        },
+        {
+          "id": "osm-node-4709360559",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 137
+        },
+        {
+          "id": "osm-way-477623030",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 173
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 211
+        },
+        {
+          "id": "osm-way-477623262",
+          "name": "焼肉家しじゃん",
+          "category": "restaurant",
+          "distance_m": 231
+        },
+        {
+          "id": "osm-node-9472329371",
+          "name": "ステーキ宮 宇部厚南店",
+          "category": "restaurant",
+          "distance_m": 250
+        },
+        {
+          "id": "osm-way-476470561",
+          "name": "ドン・キホーテ",
+          "category": "mall",
+          "distance_m": 253
+        },
+        {
+          "id": "osm-way-476470418",
+          "name": "とりあえず吾平",
+          "category": "restaurant",
+          "distance_m": 253
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    },
+    {
+      "id": "official-beat-pilates-yamaguchi-ube",
+      "nearby": [
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 38
+        },
+        {
+          "id": "official-autobacs-380064",
+          "name": "オートバックス 宇部厚南",
+          "category": "car_service",
+          "distance_m": 58
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 113
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 182
+        },
+        {
+          "id": "osm-node-4709360558",
+          "name": "カレーハウスCoCo壱番屋",
+          "category": "restaurant",
+          "distance_m": 188
+        },
+        {
+          "id": "osm-node-4709360559",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 196
+        },
+        {
+          "id": "osm-way-477623030",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 231
+        }
+      ],
+      "decision": "別支店・異業種・併設店のIDは変更しない。既存同名支店なし。"
+    }
+  ],
+  "sources": [
+    {
+      "path": "outputs/facility-halows-20260925/pages/0d543410c9ff1326cf462072.json",
+      "url": "https://quickcutbb.com/shop/?region=chugoku",
+      "hash": "89114e095ed598ff785447791be76ac74b1c6a56bf2b49ba390ee0f6aac190c6",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/128e3dcb8789beea5df3a9bc.json",
+      "url": "https://sundrug-online.com/blogs/search-store/8207",
+      "hash": "28e200a2a9b2851500941acba008a3862f8c8175642bb8f8bac553eccdbf8292",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/14afcf6795a62eb055fa0560.json",
+      "url": "https://www.halows.com/stores/detail/129",
+      "hash": "ddd88312dc96891d7866bef1bf84f87f8ce7545eaf359f432e759ed80f72b133",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/162d8163f8dbaf9f957e3519.json",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6202851930693!2d131.21233619999998!3d33.97659799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381017c47625b%3A0xc326cb949b0e5edd!2zQmVhdFBpbGF0ZXMo44OT44O844OI44OU44Op44OG44Kj44K577yJ5bGx5Y-j5a6H6YOo5bqX!5e0!3m2!1sja!2sjp!4v1754466994238!5m2!1sja!2sjp",
+      "hash": "d1aebb23a71315a99c8d6a3c389805cedcb62c25ff4fd5b0a9f76a0be0d19565",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/3441ca5fa37c17ae4a51dd94.json",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.132101641836!2d131.21170695545692!3d33.97659079086197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543810003a9027f%3A0x4339ae1bc29ab516!2z44OP44Ot44O844K65a6H6YOo5bqX!5e0!3m2!1sja!2sjp!4v1752279560557!5m2!1sja!2sjp",
+      "hash": "c893303ff3ec0e56bbd182d1c1b2cf0be0de5753e8d2e8f5e9f958e498756fa7",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/3f006bab408c83ab7dde4928.json",
+      "url": "https://www.google.com/maps?q=山口県宇部市大字妻崎開作860番地の1%20どんどん%20ハローズ宇部店&output=embed",
+      "hash": "fde660243f86f91c367eefd4ac479201a3ed1e7b73b0b37591f4b06d5788b14c",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/529d9f1e3d17cf0afe2957c1.json",
+      "url": "https://prtimes.jp/main/html/rd/p/000000001.000171274.html",
+      "hash": "d4f0b7e294aa0fc90bcb0d0930ed8dffd40363d654ffdf107c9d27c9ba3324dc",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/5b464f3bfade9b9c8a76b4fb.json",
+      "url": "https://www.halows.com/stores/",
+      "hash": "043a0edd06b458145b4842dd9b0f5b504854989c84694334d99405585874bcfb",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/76206bdbf96b9acf92f7c2f9.json",
+      "url": "https://beat-pilates.com/yamaguchi-ube/",
+      "hash": "2bf0d4a2f2c97bf1445d18ef35597671e620332812312993e1e7761311ae872e",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/818daff95c9d8050d20733e9.json",
+      "url": "https://www.daiso-sangyo.co.jp/info/shop/40411",
+      "hash": "c2bf8450f8239d4dd8de0bf5a6f172c715252615b9065193f8a846b6fbcc217a",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/8b901cb34324b57364cf19c8.json",
+      "url": "https://www.halows.com/news/",
+      "hash": "c5d6127de943abf2a7265d260dd61d011a038c85661b7404f83a815dd1465d48",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/9303c1a1d76bd24283684548.json",
+      "url": "https://www.google.com/maps?q=33.9769098,131.2118217&output=embed&t=m&z=16&hl=ja",
+      "hash": "757f11748d7f426d62261ee3b7b0916fd4ca24064d82ada496b831177594fa23",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/bdd68c5dad8cc304680813f0.json",
+      "url": "https://www.sundrug.co.jp/news/post-21743",
+      "hash": "02622c7cb70fbbdae2931de0a1d2456f6ece06825e8b046d78f5aed26eea9611",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/d252f0240e990f262b5b98ce.json",
+      "url": "https://www.halows.com/stores/detail/131",
+      "hash": "6cfd4ee2d67053577b2dfeac28b9c0dd5751a823b85c86927619c3e0b8c4e86d",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/eb7bc90c8f2cb6c08a803d64.json",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.2937267577217!2d131.17246710100338!3d33.98583139440937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543830057005de9%3A0x85245ea42f47e5a8!2z44OP44Ot44O844K6IOWwj-mHjueUsOW6lw!5e0!3m2!1sja!2sjp!4v1732680245736!5m2!1sja!2sjp",
+      "hash": "c28d10230e623f4f4716427ae86f1bac1d02d9ebc32b637ba8c0626cefd866c2",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/eea9f417823f476c7ab3fae6.json",
+      "url": "https://maps.google.com/maps?output=embed&q=%E3%82%B5%E3%83%B3%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%83%8F%E3%83%AD%E3%83%BC%E3%82%BA%E5%AE%87%E9%83%A8%E3%83%A2%E3%83%BC%E3%83%AB%E5%BA%97%20%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%AE%87%E9%83%A8%E5%B8%82%E5%A4%A7%E5%AD%97%E5%A6%BB%E5%B4%8E%E9%96%8B%E4%BD%9C949%E7%95%AA5%20%E3%83%8F%E3%83%AD%E3%83%BC%E3%82%BA%E5%AE%87%E9%83%A8%E3%83%A2%E3%83%BC%E3%83%AB%E5%86%85&ll=33.976923,%20131.211948&t=m&hl=ja&z=15",
+      "hash": "61eb7b6001e8b7e5347b1d89d7c37e582af7947ecf9d5404adc5b04b15244eaa",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/f3d25e2ac3d117f8421b5053.json",
+      "url": "https://www.s-dondon.co.jp/shoplist/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E3%83%8F%E3%83%AD%E3%83%BC%E3%82%BA%E5%AE%87%E9%83%A8%E5%BA%97/",
+      "hash": "c155a7af1050c586ec6662d034ca3de6ab052756797119df1f3a12588b9abc72",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/f6d5656c02abef3abffe231d.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/005565",
+      "hash": "2aef76853c588ea1be59f633003d9c9e25a1e6c58f59eb037622cb382cab9445",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-halows-20260925/pages/f7454013f52cb7f0a32b24c0.json",
+      "url": "https://www.halows.com/news?page=2&sort=sort_date",
+      "hash": "fa98e542e5e40a9f105d005e0ad47e4ea7595a8358aaa81985c8a86180d5b897",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-ube-fastfood-20260925/pages/cf39d9a6eabd3ca336735151.json",
+      "url": "https://www.halows.com/stores/detail/138",
+      "hash": "a3f953c3cc9b69d63c90d756e2e181ec132d8e5bac2b8cf7a4bc0a931bf7cbf4",
+      "status": 200
+    },
+    {
+      "path": "outputs/facility-ube-fastfood-20260925/pages/ccf05dda56d6d2340ba740d4.json",
+      "url": "https://shop.tsuruha-g.com/10049",
+      "hash": "f541f149296639a7ac76b46022b8b53a9351c4a8e992151c2c4f492a65353e6c",
+      "status": 200
+    }
+  ],
+  "extra_jev_requests": 0,
+  "cumulative": {
+    "updates": 30,
+    "additions": 179,
+    "total": 7943,
+    "normal_candidates": 7879,
+    "closed": 9,
+    "duplicate_records": 1
+  },
+  "date_assessment": "公式ニュースに開店見出しと日付はあるが、記事の掲載日と実施日の関係は本文で明示されないものを含む。今回の主目的である現在掲載を反映し、日付補足を別管理。Beatの事前リリースは2025-11-01(金)と曜日も不整合。"
+}
