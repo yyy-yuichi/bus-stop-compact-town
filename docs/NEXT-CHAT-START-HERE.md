@@ -26,7 +26,7 @@
 
 ## 検証・正式保存
 
-今回のローカル87テストと検索・地図・徒歩候補の検証は成功。CIと今回の正式保存はこの後の保存証明を参照する。実装と保存の確認が終わるまでは前段の保存証明を今回の証明に流用しない。
+実装2f610a0の[CI](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/36131058715)成功。87テスト・202施設の詳細画面SSR・型検査・build・release確認。[今回の原本ZIP](https://drive.google.com/file/d/1BnzOLhJpabUPMP6o1WpKiZWxPI5a0T1T/view)は2,335,400 bytes。Drive読み戻しで全体SHA256と内部65ファイルのサイズ・SHA256一致。[今回の正式保存証明](https://drive.google.com/file/d/1kPnlWa3aUWxUqchBlJwXwwjqVtH_75vh/view)。入口は原本凍結後の文書更新で、実装コミットとは別。
 
 [前段の原本ZIP](https://drive.google.com/file/d/1RruySPDsY2_GVcQP62X_VZBMXqQTaJAQ/view)・[前段の保存証明](https://drive.google.com/file/d/1GOcTZ5dBE7QdlcFP9Mpvc18-LQ5HQYT-/view)は検証済み。再作成・再送不要。旧詳細履歴は[Gitの旧入口](https://github.com/yyy-yuichi/bus-stop-compact-town/blob/969dc417c8d76b58d13d9c71eab1e13e828b3eae/docs/NEXT-CHAT-START-HERE.md)に保持。
 
@@ -48,7 +48,9 @@ docs/NEXT-CHAT-START-HERE.md、docs/FACILITY-WORKBOARD-20260925.md、今回のFA
 ウォンツ7案件中4対応、3継続。地図課題22／補足18／旧店履歴2／待ち3／対象外9／対応済み4。更新30・追加172・通常候補7872・閉店9・重複履歴1。
 記事は43完了・38一部・1105未照合。1003は暫定候補で実店舗数ではない。
 次は旧マクドナルド厚南等のP0を既存資料から進める。西岐波の位置、下松山田の旧店、宇部沼の百菜屋は未確定のまま保持。対応済み4案件を再調査しない。
-今回の最新保存証明は上の検証・正式保存欄を参照。原本凍結後の入口更新と実装コミットを区別する。
+今回の正式保存証明：https://drive.google.com/file/d/1kPnlWa3aUWxUqchBlJwXwwjqVtH_75vh/view
+原本：https://drive.google.com/file/d/1BnzOLhJpabUPMP6o1WpKiZWxPI5a0T1T/view
+実装2f610a0・CI成功。2,335,400 bytes、内部65ファイルをDrive読み戻し照合済み。原本凍結後の入口更新と実装コミットを区別する。
 PR #14を継続。マージ・一般公開は禁止。Jev残975対象／$0.39444736、再送・購入禁止。
 ユーザーHTMLの変更・削除・一括ステージ禁止。モデルを継承し、PC負荷を抑える。
 ```
