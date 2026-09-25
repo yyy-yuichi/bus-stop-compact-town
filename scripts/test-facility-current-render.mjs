@@ -32,6 +32,8 @@ try {
   assert(!duplicate.includes('閉店確認') && duplicate.includes('閉店ではありません'));
   assert(render('osm-way-370584528').includes('閉店日：2018-05-16'));
   assert(render('osm-way-465881161').includes('閉店日：未確認（閉店自体は公式告知で確認）'));
+  const autobacs=render('official-autobacs-380064');
+  assert(autobacs.includes('カー用品・整備') && autobacs.includes('開店日：未確認'));
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);

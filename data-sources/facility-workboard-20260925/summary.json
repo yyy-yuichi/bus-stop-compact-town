@@ -4,8 +4,8 @@
   "known_cases": {
     "total": 58,
     "by_status": {
-      "map_action": 22,
-      "supplemental": 18,
+      "map_action": 21,
+      "supplemental": 19,
       "historical_only": 2,
       "watch": 3,
       "excluded_fixed_map": 9,
@@ -13,8 +13,8 @@
     },
     "held_article_events": 51,
     "event_impact_counts": {
-      "map_action": 12,
-      "supplemental": 33,
+      "map_action": 11,
+      "supplemental": 34,
       "historical_only": 3,
       "watch": 3,
       "excluded_fixed_map": 0,
@@ -35,8 +35,8 @@
   },
   "map_records": {
     "reflected_updates": 30,
-    "reflected_additions": 172,
-    "reflected_ids": 202
+    "reflected_additions": 173,
+    "reflected_ids": 203
   },
   "article_history": {
     "total": 1186,
@@ -44,8 +44,8 @@
     "articles_completed": 43,
     "articles_partially_reviewed": 38,
     "articles_pending": 1105,
-    "recorded_events": 157,
-    "final_event_decisions": 106,
+    "recorded_events": 158,
+    "final_event_decisions": 107,
     "held_events": 51,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
@@ -53,9 +53,9 @@
   "note": "Known cases and unreviewed candidate groups may overlap and must not be summed as unique stores. Supplemental status never resolves a held article event. Official links and names remain hints until store identity and all article events are checked. No time estimate follows from article counts.",
   "input_hashes": {
     "index": "0363a2c9722f354805a8e3a4491e06b9ca60ea2561918bd4404493f08d9a2cd7",
-    "reviews": "4586fd73193db751b76201e6c3d05b7836059ca6e3fc57b875cfbb5951d156ad",
-    "overlay": "f571fa6876a8c88311e169507f15375a14247fbc3fbdf2ea67775decee933397",
+    "reviews": "25b2bffdc7379c9026efdbc6058b3752deb2595373e1c551477f749f1e89b441",
+    "overlay": "6f27e05df9cfc32a53685088e6188829bd475cdfd20c1bc034e5b4764ef30a54",
     "article_inputs": "48912106cfbae678efdb890c6fba00bffd6cead8d19d793f224c141f602e2e5f",
-    "case_reviews": "6896f8688d717a546a634cb1a0d9632753bf9f91f37c8af95abf58e72623451d"
+    "case_reviews": "fecef76b9c192db05e1d99eb878f28d24772e3293c8872bdc25702247b52d45b"
   }
 }

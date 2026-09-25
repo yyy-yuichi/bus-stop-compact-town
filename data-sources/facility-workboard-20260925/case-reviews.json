@@ -388,11 +388,32 @@
           "impact": "map_action",
           "priority": "P0",
           "reason": "新店舗は掲載済みだが旧地点が通常候補に残る。支店の移転関係と旧地点の終了が未確認。",
-          "next": "旧店舗を特定する一次の閉店・移転告知を確認。",
+          "next": "旧支店を特定できる運営元の移転・営業終了告知、または読める店頭告知原文が新たに得られた場合に再開。同じ旧URLと一般検索は繰り返さない。",
           "event_ids": [
             "ube-81233:relocation",
             "ube-81345:relocation"
           ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+          "section": "cases",
+          "index": 1,
+          "hash": "a5293baf7df1d23be249cc9bd2badc41452eec9407d6ac529fe263108576fd73"
+        }
+      ],
+      "review_attempts": [
+        {
+          "checked_at": "2026-09-25",
+          "finding": "旧35003の公式店別・採用URLは現在一覧トップに転送。消滅は閉店の直接証拠ではないため未採用。現店舗35538は既掲載。",
+          "next": "旧支店を特定できる運営元の移転・営業終了告知、または読める店頭告知原文が新たに得られた場合に再開。同じ旧URLと一般検索は繰り返さない。",
+          "evidence_ref": {
+            "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 1,
+            "hash": "a5293baf7df1d23be249cc9bd2badc41452eec9407d6ac529fe263108576fd73"
+          }
         }
       ]
     },
@@ -493,18 +514,56 @@
     {
       "case_id": "case:autobacs-ube-konan",
       "name": "オートバックス宇部厚南",
-      "facility_ids": [],
+      "facility_ids": [
+        "official-autobacs-380064"
+      ],
       "related_facility_ids": [],
       "issues": [
         {
           "issue_id": "case:autobacs-ube-konan:map_action",
-          "impact": "map_action",
-          "priority": "P1",
-          "reason": "公式の移転予定・新住所は取得済み、現行店別点は未確認。",
-          "next": "現行公式店舗ページの支店ID・住所・代表点をまとめて照合。",
+          "impact": "resolved",
+          "priority": "P3",
+          "reason": "公式の移転先住所・支店名付き地図と移転後1周年告知で現在掲載を反映。実開店日だけは継続保留。",
+          "next": "現在の店舗掲載を維持。日付の補足だけを別課題で保持。",
+          "event_ids": [],
+          "previous_assessment": {
+            "impact": "map_action",
+            "priority": "P1",
+            "reason": "公式の移転予定・新住所は取得済み、現行店別点は未確認。",
+            "next": "現行公式店舗ページの支店ID・住所・代表点をまとめて照合。",
+            "event_ids": [
+              "ube-81345:autobacs-relocation"
+            ]
+          },
+          "resolution": {
+            "checked_at": "2026-09-25",
+            "reason": "公式の移転先住所・支店名付き地図と移転後1周年告知で現在掲載を反映。実開店日だけは継続保留。",
+            "outcome": "current_listing_added",
+            "evidence_ref": {
+              "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+              "section": "cases",
+              "index": 0,
+              "hash": "d6a1c63612ea319dc0c10cbd14a61b8159057e442939b09d837178091ac91a09"
+            }
+          }
+        },
+        {
+          "issue_id": "case:autobacs-ube-konan:opening-date",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "2025-09-04は移転前発表の予定日。現行掲載と1周年告知は確認済みだが、当日の実開店を裏付ける一次情報は未確認。",
+          "next": "当日の開店または日付を明示する事後公式案内が得られた場合に補完。",
           "event_ids": [
-            "ube-81345:autobacs-relocation"
+            "ube-81345:autobacs-opening-date"
           ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+          "section": "cases",
+          "index": 0,
+          "hash": "d6a1c63612ea319dc0c10cbd14a61b8159057e442939b09d837178091ac91a09"
         }
       ]
     },
@@ -632,7 +691,7 @@
           "impact": "map_action",
           "priority": "P0",
           "reason": "海都大内御堀の閉店の一次情報が未取得。",
-          "next": "二次情報の2026年1月4日を未採用。運営会社の該当店閉店告知を確認。",
+          "next": "運営会社の店別閉店告知・掲示原文が新たに得られた場合に再開。公式一覧の不掲載や同じサイト内検索だけで閉店にしない。",
           "event_ids": []
         }
       ],
@@ -641,6 +700,25 @@
           "path": "data-sources/facility-evidence-20260925/holds.json",
           "index": 4,
           "hash": "ab90e0bec167594384f88f35b8af50506543c0554b28b6c55dd00a4c377b05d4"
+        },
+        {
+          "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+          "section": "cases",
+          "index": 2,
+          "hash": "b2a0771fa7bdd3e2e3dd0467649a8e14794de2122c63d45f68b5686c4ad501f0"
+        }
+      ],
+      "review_attempts": [
+        {
+          "checked_at": "2026-09-25",
+          "finding": "会社サイト内の大内御堀検索は季節メニューのみ。2026-01-04は二次情報で、店別公式閉店告知を得られず未採用。",
+          "next": "運営会社の店別閉店告知・掲示原文が新たに得られた場合に再開。公式一覧の不掲載や同じサイト内検索だけで閉店にしない。",
+          "evidence_ref": {
+            "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 2,
+            "hash": "b2a0771fa7bdd3e2e3dd0467649a8e14794de2122c63d45f68b5686c4ad501f0"
+          }
         }
       ]
     },
@@ -726,7 +804,7 @@
           "impact": "map_action",
           "priority": "P0",
           "reason": "The current brand shop page still lists Shin-Shimonoseki; a branch-specific primary closure notice has not been obtained.",
-          "next": "Check a dated branch-specific operator notice before marking this ID closed.",
+          "next": "新下関店自身の営業終了告知・掲示原文、または運営元の訂正が得られた場合に再開。同じ公式掲載を再取得して解決扱いにしない。",
           "event_ids": []
         }
       ],
@@ -736,6 +814,25 @@
           "section": "closures",
           "index": 0,
           "hash": "ae788df1a527d3ccace65e190b7b3431d11b75d847de9ffe2c137435f140247a"
+        },
+        {
+          "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+          "section": "cases",
+          "index": 3,
+          "hash": "d7888aef76f5b2dc112073e7e533ceefd6e08d7bc7df7b32e104ef2235ba952c"
+        }
+      ],
+      "review_attempts": [
+        {
+          "checked_at": "2026-09-25",
+          "finding": "保存済み公式の店別掲載と、2026年8月閉店という利用者情報が相反。支店固有の一次閉店情報を得られず未採用。",
+          "next": "新下関店自身の営業終了告知・掲示原文、または運営元の訂正が得られた場合に再開。同じ公式掲載を再取得して解決扱いにしない。",
+          "evidence_ref": {
+            "path": "data-sources/facility-konankaiten-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 3,
+            "hash": "d7888aef76f5b2dc112073e7e533ceefd6e08d7bc7df7b32e104ef2235ba952c"
+          }
         }
       ]
     },
@@ -1617,12 +1714,6 @@
       "issue_id": "case:tecmopia-hagi:map_action"
     },
     {
-      "event_id": "ube-81345:autobacs-relocation",
-      "event_hash": "3903c7934e2aceb190a373b7ecd3128f989b6ebf7c4b6d79a4b197b9c9babecb",
-      "case_id": "case:autobacs-ube-konan",
-      "issue_id": "case:autobacs-ube-konan:map_action"
-    },
-    {
       "event_id": "ube-81149:old-mcd-closure",
       "event_hash": "ca70d1a2102cbe32419dc0ac6dc4851a25cd0fa1ce5c90ab384a4da2abf2856f",
       "case_id": "case:mcd-yumetown-history",
@@ -1717,6 +1808,12 @@
       "event_hash": "4325205e87f107a58b1e247c1528bfd01b3480f8acaba2ef677628fd97cd211d",
       "case_id": "case:watts-hofu-imono",
       "issue_id": "case:watts-hofu-imono:map_action"
+    },
+    {
+      "event_id": "ube-81345:autobacs-opening-date",
+      "event_hash": "b0c07966eb062b7b35de10510053b22e9b6bd5cb775bbdc8549d26299e736c88",
+      "case_id": "case:autobacs-ube-konan",
+      "issue_id": "case:autobacs-ube-konan:opening-date"
     }
   ],
   "legacy_audit": [

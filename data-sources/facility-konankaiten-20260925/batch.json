@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-09-25",
+  "updates": [],
+  "additions": [
+    {
+      "type": "Feature",
+      "id": "official-autobacs-380064",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2117328,
+          33.97646774
+        ]
+      },
+      "properties": {
+        "name": "オートバックス 宇部厚南",
+        "category": "car_service",
+        "city": "宇部市",
+        "official_address": "山口県宇部市大字妻崎開作860-1",
+        "official_url": "https://shop.autobacs.com/ja/retail/shops/380064",
+        "address": "山口県宇部市大字妻崎開作860-1",
+        "website": "https://shop.autobacs.com/ja/retail/shops/380064",
+        "search_names": "オートバックス 宇部厚南 オートバックス宇部厚南店 カー用品 整備",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:autobacs:380064"
+        ],
+        "source_timestamp": "2026-09-25",
+        "retrieved_at": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "geometry_kind": "representative_point",
+        "geometry_note": "公式店舗ページの支店名付き地図の代表点。入口の確認ではありません。",
+        "location_verification": "公式支店380064の店名・住所・電話番号と、支店名付き埋込地図のq座標を照合。建物や同住所の他店舗の座標を代用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の公式住所・店別地図と、移転後1周年の案内を照合し、現在の店舗を掲載しました。",
+          "sources": [
+            {
+              "title": "運営会社の宇部厚南店案内・店別地図",
+              "url": "https://shop.autobacs.com/ja/retail/shops/380064"
+            },
+            {
+              "title": "移転後1周年の店舗告知（2026-09-15）",
+              "url": "https://shop.autobacs.com/ja/retail/shops/380064/news/1000000201395"
+            },
+            {
+              "title": "移転前の発表（2025-09-03）",
+              "url": "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html"
+            }
+          ],
+          "limits": [
+            "2025年9月4日は移転前の発表上の予定日です。1周年告知は日単位の実施日を示さないため、実開店日は未確認として保持しています。",
+            "旧地点の店舗IDは既存7,936記録から見つからず、同じ敷地の他施設や旧マクドナルドは変更していません。",
+            "座標は公式の店舗代表点であり、現地入口や徒歩経路の確認ではありません。"
+          ]
+        }
+      }
+    }
+  ]
+}

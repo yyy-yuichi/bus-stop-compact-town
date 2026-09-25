@@ -37,7 +37,8 @@ export function buildWorkboard(index,reviews,overlay,metadata,caseReviews,checke
  for(const c of cases.values())for(const i of c.issues)if(i.impact==='resolved'){
   assert.equal(i.event_ids.length,0,'Held article events cannot become resolved workboard issues');
   const r=i.resolution;assert(r&&r.checked_at===checkedAt&&r.reason&&r.evidence_ref&&c.evidence_refs?.some(e=>hash(e)===hash(r.evidence_ref)),'Resolved issue needs checked evidence');
-  assert(['closure_history_updated','obsolete_predecessor_closed','duplicate_consolidated','verified_no_map_change'].includes(r.outcome));
+  assert(['closure_history_updated','obsolete_predecessor_closed','duplicate_consolidated','verified_no_map_change','current_listing_added'].includes(r.outcome));
+  if(r.outcome==='current_listing_added')assert(c.facility_ids.every(id=>overlay.additions.some(f=>f.id===id&&f.properties.freshness_review.status==='operating')),'Resolved listing must be an operating addition');
   if(r.outcome==='verified_no_map_change')assert.equal(c.facility_ids.length,0);
   else assert(c.facility_ids.length&&c.facility_ids.every(id=>reflected.has(id)),'Resolved change must be reflected');
  }

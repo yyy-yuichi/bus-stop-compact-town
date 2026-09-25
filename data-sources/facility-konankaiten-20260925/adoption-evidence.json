@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "f571fa6876a8c88311e169507f15375a14247fbc3fbdf2ea67775decee933397",
+  "after_overlay_hash": "6f27e05df9cfc32a53685088e6188829bd475cdfd20c1bc034e5b4764ef30a54",
+  "batch_hash": "bd7934c7f92849bfb630820f06b598711a5d9499e10d55fbc94dc0c96ae7567c",
+  "reviewed_inputs_hash": "3a0c5771fa5037767f0cdfec6c17289c8aa5385e05d7afe3f7e7a83e992c8808",
+  "extra_jev_requests": 0,
+  "cumulative": {
+    "updates": 30,
+    "additions": 173,
+    "total": 7937,
+    "normal_candidates": 7873,
+    "closed": 9,
+    "duplicate_records": 1
+  },
+  "sources": [
+    {
+      "path": "outputs/facility-konankaiten-20260925/autobacs-store-dom.json",
+      "url": "https://shop.autobacs.com/ja/retail/shops/380064",
+      "hash": "9499f936e175b77c4a354008fa4603e15f4b4f91430cb77f0a2d70aa47734bd1"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/autobacs-anniversary-dom.json",
+      "url": "https://shop.autobacs.com/ja/retail/shops/380064/news/1000000201395",
+      "hash": "a78ae5c32476d6050dc66b71e5c275e9063e17c9a9b03f2cf864d2ab265ef5a3"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/pages/5067f14861c7937bbb2782fd.json",
+      "url": "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html",
+      "hash": "8c38a84e5e1b4a7ff34532a7d21e253b364903e1bab3fd920d6415ad1692d8a7",
+      "status": 200,
+      "final_url": "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/pages/bf41b29b1ef5dc054bb78c57.json",
+      "url": "https://crewrecruiting.mcdonalds.co.jp/map/y35003",
+      "hash": "984edfed6aec844f54ba8294b5375805cb4afb5e9d5056a892f6d81cc8365f33",
+      "status": 200,
+      "final_url": "https://crewrecruiting.mcdonalds.co.jp/"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/pages/a4a0c11e817458ae0caf1af5.json",
+      "url": "https://map.mcdonalds.co.jp/map/35003",
+      "hash": "5725dd25ddde53e711251e023d4f688000c51d1852f8f83dd17dbf22b3485e47",
+      "status": 200,
+      "final_url": "https://map.mcdonalds.co.jp/"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/pages/b00325c7992ee28e78ca9576.json",
+      "url": "https://www.marinepolis.co.jp/?s=%E5%A4%A7%E5%86%85%E5%BE%A1%E5%A0%80",
+      "hash": "f5934b2762167d29e2d155191973adf84ef0e815d6323dfa6248bc9b51b51fca",
+      "status": 200,
+      "final_url": "https://www.marinepolis.co.jp/?s=%E5%A4%A7%E5%86%85%E5%BE%A1%E5%A0%80"
+    },
+    {
+      "path": "outputs/facility-konankaiten-20260925/pages/68a8ff3df3ff5776e05a2a76.json",
+      "url": "https://shop.autobacs.com/ja/retail/shops/380064",
+      "hash": "c2f92ffd4fce72ffc413e3f3b500068bf059bde05e25306c7b3ffcaaebb8c7f9",
+      "status": 403,
+      "final_url": "https://shop.autobacs.com/ja/retail/shops/380064",
+      "error": "HTTP 403"
+    },
+    {
+      "path": "outputs/facility-progress-20260925/pages/9ae0123372fd2215d398c5f3.json",
+      "url": "https://2929udon.co.jp/shop/",
+      "hash": "ba253de29ecb1fd70fea23120862ed2d33228b2f3ed4e12960e1e324c5f8ef40"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case:autobacs-ube-konan",
+      "status": "supplemental",
+      "map_outcome": "current_listing_added",
+      "facility_ids": [
+        "official-autobacs-380064"
+      ],
+      "reason": "公式の移転先住所・支店名付き地図と移転後1周年告知で現在掲載を反映。実開店日だけは継続保留。",
+      "nearest": [
+        {
+          "id": "official-mcdonalds-35538",
+          "name": "マクドナルド 宇部厚南店",
+          "category": "fast_food",
+          "distance_m": 92
+        },
+        {
+          "id": "osm-node-4709360558",
+          "name": "カレーハウスCoCo壱番屋",
+          "category": "restaurant",
+          "distance_m": 148
+        },
+        {
+          "id": "osm-way-1120637407",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 153
+        },
+        {
+          "id": "osm-node-4709360559",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 159
+        },
+        {
+          "id": "osm-way-477623030",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 190
+        },
+        {
+          "id": "osm-way-477623262",
+          "name": "焼肉家しじゃん",
+          "category": "restaurant",
+          "distance_m": 229
+        },
+        {
+          "id": "osm-way-862156892",
+          "name": "焼肉さかい",
+          "category": "restaurant",
+          "distance_m": 238
+        },
+        {
+          "id": "osm-node-9472329371",
+          "name": "ステーキ宮 宇部厚南店",
+          "category": "restaurant",
+          "distance_m": 255
+        },
+        {
+          "id": "osm-node-9472329370",
+          "name": "しゃぶ葉 宇部店",
+          "category": "restaurant",
+          "distance_m": 257
+        },
+        {
+          "id": "osm-way-476470418",
+          "name": "とりあえず吾平",
+          "category": "restaurant",
+          "distance_m": 258
+        },
+        {
+          "id": "osm-way-477623028",
+          "name": "大阪王将",
+          "category": "restaurant",
+          "distance_m": 258
+        },
+        {
+          "id": "osm-way-476470561",
+          "name": "ドン・キホーテ",
+          "category": "mall",
+          "distance_m": 268
+        }
+      ],
+      "existing_name_matches": []
+    },
+    {
+      "case_id": "case:mcd-ube-konan",
+      "status": "map_action",
+      "facility_ids": [
+        "osm-way-477623030",
+        "official-mcdonalds-35538"
+      ],
+      "reason": "旧35003の公式店別・採用URLは現在一覧トップに転送。消滅は閉店の直接証拠ではないため未採用。現店舗35538は既掲載。",
+      "next": "旧支店を特定できる運営元の移転・営業終了告知、または読める店頭告知原文が新たに得られた場合に再開。同じ旧URLと一般検索は繰り返さない。"
+    },
+    {
+      "case_id": "legacy:4",
+      "status": "map_action",
+      "facility_ids": [
+        "osm-way-465881162"
+      ],
+      "reason": "会社サイト内の大内御堀検索は季節メニューのみ。2026-01-04は二次情報で、店別公式閉店告知を得られず未採用。",
+      "next": "運営会社の店別閉店告知・掲示原文が新たに得られた場合に再開。公式一覧の不掲載や同じサイト内検索だけで閉店にしない。"
+    },
+    {
+      "case_id": "facility:osm-way-1236531275",
+      "status": "map_action",
+      "facility_ids": [
+        "osm-way-1236531275"
+      ],
+      "reason": "保存済み公式の店別掲載と、2026年8月閉店という利用者情報が相反。支店固有の一次閉店情報を得られず未採用。",
+      "next": "新下関店自身の営業終了告知・掲示原文、または運営元の訂正が得られた場合に再開。同じ公式掲載を再取得して解決扱いにしない。"
+    }
+  ]
+}

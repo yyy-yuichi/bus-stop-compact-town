@@ -2573,14 +2573,23 @@
       {
         "event_id": "ube-81345:autobacs-relocation",
         "event_type": "relocation",
-        "facility_ids": [],
-        "disposition": "hold",
+        "facility_ids": [
+          "official-autobacs-380064"
+        ],
+        "disposition": "reflected_addition",
         "effective_at": null,
-        "reason": "記事の9月4日移転予定はオートバックス自身の9月3日発表と一致。新住所は妻崎開作860-1だが、店別代表点と実施日が未確認のため今回の地図追加は保留。",
+        "reason": "移転先の現行支店住所・店別地点を確認し、移転後1周年の公式案内も照合して掲載。旧店舗IDは既存台帳に見当たらない。日単位の実開店日は別イベントで保留。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2025/08/24/mcdshop_ube0824/",
-          "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html"
-        ]
+          "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html",
+          "https://shop.autobacs.com/ja/retail/shops/380064",
+          "https://shop.autobacs.com/ja/retail/shops/380064/news/1000000201395"
+        ],
+        "previous_assessment": {
+          "disposition": "hold",
+          "facility_ids": [],
+          "reason": "記事の9月4日移転予定はオートバックス自身の9月3日発表と一致。新住所は妻崎開作860-1だが、店別代表点と実施日が未確認のため今回の地図追加は保留。"
+        }
       },
       {
         "event_id": "ube-81345:old-site-successor",
@@ -2593,6 +2602,21 @@
         "reason": "旧マクドナルド跡の工事を報じるが後継店の名前は未特定。新施設を推測して追加しない。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2025/08/24/mcdshop_ube0824/"
+        ]
+      },
+      {
+        "event_id": "ube-81345:autobacs-opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-autobacs-380064"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2025-09-04は移転前発表の予定日。現行掲載と1周年告知は確認済みだが、当日の実開店を裏付ける一次情報は未確認。",
+        "source_urls": [
+          "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html",
+          "https://shop.autobacs.com/ja/retail/shops/380064",
+          "https://shop.autobacs.com/ja/retail/shops/380064/news/1000000201395"
         ]
       }
     ]
