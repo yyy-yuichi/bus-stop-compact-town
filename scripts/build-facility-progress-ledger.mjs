@@ -142,8 +142,8 @@ const facilityRows = baseline.map(row => ({ ...row,
   scope: 'baseline',
 }));
 const additionRows = overlay.additions.map(row => ({
-  id: row.id, name: row.name ?? row.properties?.name ?? '', city: row.city ?? '',
-  category: row.category ?? '', dataset: 'public/data/facility-current.json',
+  id: row.id, name: row.properties?.name ?? row.name ?? '', city: row.properties?.city ?? row.city ?? '',
+  category: row.properties?.category ?? row.category ?? '', dataset: 'public/data/facility-current.json',
   status: 'reflected_addition', scope: 'addition',
 }));
 writeCsv(`${out}/facility-status.csv`, ['scope', 'id', 'name', 'city', 'category', 'status', 'dataset'], [...facilityRows, ...additionRows]);
@@ -151,17 +151,60 @@ writeCsv(`${out}/facility-status.csv`, ['scope', 'id', 'name', 'city', 'category
 const articles = read('outputs/facility-local-stores-20260925/continued-review-queue.json');
 assert.equal(articles.length, 1186);
 assert.equal(new Set(articles.map(row => row.key)).size, articles.length);
+const articleReviewPath = `${publicOut}/article-event-reviews.json`;
+const articleReviews = read(articleReviewPath);
+const articlesByKey = new Map(articles.map(row => [row.key, row]));
+const finalDispositions = new Set(['reflected_update', 'reflected_addition', 'verified_no_change', 'duplicate', 'out_of_scope']);
+const allDispositions = new Set([...finalDispositions, 'hold']);
+const reviewByArticle = new Map();
+const eventIds = new Set();
+const eventRows = [];
+for (const review of articleReviews) {
+  const article = articlesByKey.get(review.article_key);
+  assert(article, `Unknown reviewed article: ${review.article_key}`);
+  assert(!reviewByArticle.has(review.article_key), `Duplicate article review: ${review.article_key}`);
+  assert.equal(review.source_body_hash, article.body_hash, `Article text changed: ${review.article_key}`);
+  assert.equal(typeof review.inventory_complete, 'boolean');
+  assert(review.reviewed_at && review.inventory_reason && Array.isArray(review.events));
+  assert(review.events.length > 0 || review.inventory_complete);
+  for (const event of review.events) {
+    assert(event.event_id.startsWith(`${article.key}:`) && !eventIds.has(event.event_id));
+    eventIds.add(event.event_id);
+    assert(['closure', 'opening', 'relocation', 'rename', 'temporary_change', 'other'].includes(event.event_type));
+    assert(allDispositions.has(event.disposition));
+    assert(Array.isArray(event.facility_ids));
+    assert(Array.isArray(event.source_urls) && event.source_urls.every(url => /^https:\/\//.test(url)));
+    assert(event.reason);
+    if (event.disposition === 'reflected_update') {
+      assert(event.facility_ids.length && event.facility_ids.every(id => updateIds.has(id)));
+    }
+    if (event.disposition === 'reflected_addition') {
+      assert(event.facility_ids.length && event.facility_ids.every(id => additionIds.has(id)));
+    }
+    eventRows.push({ article_key: article.key, event_id: event.event_id,
+      event_type: event.event_type, facility_ids: event.facility_ids.join('|'),
+      disposition: event.disposition, effective_at: event.effective_at ?? '',
+      source_urls: event.source_urls.join('|'), reason: event.reason });
+  }
+  assert(!review.inventory_complete || review.events.every(event => finalDispositions.has(event.disposition)),
+    `A held event cannot complete an article: ${article.key}`);
+  reviewByArticle.set(review.article_key, review);
+}
+writeCsv(`${out}/event-status.csv`, ['article_key', 'event_id', 'event_type', 'facility_ids',
+  'disposition', 'effective_at', 'source_urls', 'reason'], eventRows);
 const hasRelatedSource = row => (row.linked_evidence ?? []).some(item => (item.adopted_ids ?? []).length)
   || (row.reconcile_linked_ids ?? []).length
   || (row.local_directory_reviews ?? []).some(item => ['add_current_listing', 'add_opening', 'already_present', 'aggregate_source'].includes(item.decision));
 const articleRows = articles.map(row => ({
   queue_number: row.queue_number, key: row.key, title: row.title, url: row.url,
   source: row.source, jev_event: row.jev_event,
-  status: 'pending_article_event_verification',
+  status: reviewByArticle.get(row.key)?.inventory_complete ? 'completed_all_identified_events'
+    : reviewByArticle.has(row.key) ? 'partially_reviewed' : 'pending_article_event_verification',
+  reviewed_events: reviewByArticle.get(row.key)?.events.length ?? 0,
   related_source: Boolean(hasRelatedSource(row)),
   source_receipts_fetched: (row.linked_evidence ?? []).filter(item => item.state === 'fetched').length,
 }));
-writeCsv(`${out}/article-status.csv`, ['queue_number', 'key', 'title', 'url', 'source', 'jev_event', 'status', 'related_source', 'source_receipts_fetched'], articleRows);
+writeCsv(`${out}/article-status.csv`, ['queue_number', 'key', 'title', 'url', 'source', 'jev_event', 'status', 'reviewed_events', 'related_source', 'source_receipts_fetched'], articleRows);
 const previousHolds = read('data-sources/facility-evidence-20260925/holds.json').items;
 const staleHoldIds = [...new Set(previousHolds.flatMap(row => row.facility_ids ?? []))].filter(id => updateIds.has(id));
 const localCounts = Object.fromEntries([...new Set(decisions.map(row => row.decision))].map(status =>
@@ -178,7 +221,12 @@ const summary = {
   additions: { reflected: additionRows.length },
   article_events: {
     total: articles.length, classified_by_jev: articles.length,
-    explicitly_completed_by_event: 0, pending_event_verification: articles.length,
+    articles_completed: articleRows.filter(row => row.status === 'completed_all_identified_events').length,
+    articles_partially_reviewed: articleRows.filter(row => row.status === 'partially_reviewed').length,
+    articles_pending: articleRows.filter(row => row.status === 'pending_article_event_verification').length,
+    recorded_events: eventRows.length,
+    final_event_decisions: eventRows.filter(row => finalDispositions.has(row.disposition)).length,
+    held_events: eventRows.filter(row => row.disposition === 'hold').length,
     with_related_source_only: articleRows.filter(row => row.related_source).length,
     note: 'An article link or adopted shop listing is not a final disposition for every event in the article.',
   },
@@ -192,13 +240,14 @@ const summary = {
     closure_candidates_with_existing_ids: closureReview.length,
     graduates_reflected: graduateReview.filter(row => row.map_adopted).length,
     graduates_pending: graduateReview.filter(row => !row.map_adopted && row.location_type === 'reported_fixed_address').length,
-    map_changes_this_review: graduateReview.filter(row => row.map_adopted).length },
+    graduate_map_additions_cumulative: graduateReview.filter(row => row.map_adopted).length },
   earlier_hold_rows_now_reflected: staleHoldIds,
   jev_remaining: { records: 984, conservative_budget_usd: 0.399952384,
     source: 'data-sources/facility-local-stores-20260925/adoption-summary.json' },
   inputs_sha256: Object.fromEntries([
     ...baselineFiles, 'public/data/facility-current.json',
     'outputs/facility-local-stores-20260925/continued-review-queue.json',
+    articleReviewPath,
     'data-sources/facility-local-stores-20260925/decisions.json',
     'outputs/facility-local-stores-20260925/records.json',
     `${publicOut}/source-plan.json`,

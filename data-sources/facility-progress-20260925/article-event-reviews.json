@@ -1,0 +1,20 @@
+[
+  {
+    "article_key": "kaiten-612997",
+    "source_body_hash": "62a2d90726f7875913eaab45579a47c0065af0bc2ea1f11c85655da48aeb008a",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "保存済み記事本文の変更対象は山の田店の閉店1件。公式は他県の別支店も告知しているが、記事イベントへ混入しない。",
+    "events": [
+      {
+        "event_id": "kaiten-612997:closure:osm-way-483625942",
+        "event_type": "closure",
+        "facility_ids": ["osm-way-483625942"],
+        "disposition": "reflected_update",
+        "effective_at": "2026-08-20",
+        "reason": "記事の山の田店と元データの同名同住所支店を照合し、運営元が閉店日時を明記。既存オーバーレイで閉店反映済み。",
+        "source_urls": ["https://www.royalhost.jp/news/2026/post-110.html"]
+      }
+    ]
+  }
+]
