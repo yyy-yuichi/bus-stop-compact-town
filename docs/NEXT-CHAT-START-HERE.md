@@ -22,7 +22,7 @@
 
 ## 検証・正式保存
 
-今回の最終CIと正式保存結果は確定後に追記する。前段の成功で今回分を完了扱いにしない。
+実装628d0a5の[CI #106](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/36124998510)成功。81テスト・198施設SSR・型検査・build・release確認。[今回の原本ZIP](https://drive.google.com/file/d/1RruySPDsY2_GVcQP62X_VZBMXqQTaJAQ/view)は556,722 bytes。Driveから読み戻し、全体SHA256と内部36ファイルのサイズ・SHA256一致。[正式保存証明](https://drive.google.com/file/d/1GOcTZ5dBE7QdlcFP9Mpvc18-LQ5HQYT-/view)。この入口は原本凍結後の文書更新で、実装コミットと別。
 [前段・宇部8記事の原本](https://drive.google.com/file/d/1BYRnQO-V3OKKvdUNfbZlVsEvewSZ6qNY/view)・[前段保存証明](https://drive.google.com/file/d/1iLBxzUuV8c-tuK36E4c5OuZg44yTsjuJ/view)は検証済み。再作成・再送不要。
 旧詳細履歴は[Gitの旧入口](https://github.com/yyy-yuichi/bus-stop-compact-town/blob/969dc417c8d76b58d13d9c71eab1e13e828b3eae/docs/NEXT-CHAT-START-HERE.md)に保持。現在の方針・数値は本書を優先する。
 
@@ -45,7 +45,10 @@ docs/NEXT-CHAT-START-HERE.md と docs/FACILITY-WORKBOARD-20260925.md を読み�
 主台帳 data-sources/facility-workboard-20260925/case-reviews.json。生成台帳 store-cases.json、次候補 next-batches.json。記事台帳の保留を消さない。
 ウォンツ7記事の試行済み。公式資料の再取得・Jev送信0、地図変更0。掲載済み店舗と日付を分離し、西岐波の位置相違・後継店や併設売場の確認を継続。
 次はウォンツの位置・後継・重複・閉店4支店を既存公式資料からまとめる。確定したまとまりで検証・PR・Drive読み戻しまで進める。
-保存状態は本書の「検証・正式保存」を確認。過去の原本・分類をやり直さない。
+今回の正式保存証明：https://drive.google.com/file/d/1GOcTZ5dBE7QdlcFP9Mpvc18-LQ5HQYT-/view
+原本：https://drive.google.com/file/d/1RruySPDsY2_GVcQP62X_VZBMXqQTaJAQ/view
+実装628d0a5・CI #106成功。556,722 bytes、内部36ファイルをDrive読み戻しで照合済み。入口文書更新コミットと凍結原本の実装コミットを混同しない。
+過去の原本・分類をやり直さない。
 PR #14を継続し、マージ・一般公開は禁止。Jev残975対象／$0.39444736、購入・再送禁止。
 ユーザーHTMLの変更・削除・一括ステージ禁止。モデルを継承し、PC負荷を抑える。
 ```
