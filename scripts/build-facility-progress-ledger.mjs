@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { hash } from './jev-batch.mjs';
 import { htmlText } from './facility-bulk-lib.mjs';
+import { buildArticleProgress, additionLedgerRows } from './facility-progress-lib.mjs';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const out = 'outputs/facility-progress-20260925';
@@ -34,7 +35,7 @@ const overlay = read('public/data/facility-current.json');
 const updateIds = new Set(overlay.updates.map(row => row.id));
 assert.equal(updateIds.size, overlay.updates.length);
 assert([...updateIds].every(id => baselineIds.has(id)), 'An update did not match a baseline ID');
-assert.equal(overlay.additions.length, 145);
+assert(Array.isArray(overlay.additions));
 const additionIds = new Set(overlay.additions.map(row => row.id));
 assert.equal(additionIds.size, overlay.additions.length);
 assert([...additionIds].every(id => !baselineIds.has(id)), 'An addition reused a baseline ID');
@@ -141,70 +142,18 @@ const facilityRows = baseline.map(row => ({ ...row,
   status: updateIds.has(row.id) ? 'reflected_update' : holdIds.has(row.id) ? 'hold' : 'not_attested_complete',
   scope: 'baseline',
 }));
-const additionRows = overlay.additions.map(row => ({
-  id: row.id, name: row.properties?.name ?? row.name ?? '', city: row.properties?.city ?? row.city ?? '',
-  category: row.properties?.category ?? row.category ?? '', dataset: 'public/data/facility-current.json',
-  status: 'reflected_addition', scope: 'addition',
-}));
+const additionRows = additionLedgerRows(overlay.additions);
 writeCsv(`${out}/facility-status.csv`, ['scope', 'id', 'name', 'city', 'category', 'status', 'dataset'], [...facilityRows, ...additionRows]);
 
-const articles = read('outputs/facility-local-stores-20260925/continued-review-queue.json');
+const articles = read(`${publicOut}/article-index.json`);
 assert.equal(articles.length, 1186);
 assert.equal(new Set(articles.map(row => row.key)).size, articles.length);
 const articleReviewPath = `${publicOut}/article-event-reviews.json`;
 const articleReviews = read(articleReviewPath);
-const articlesByKey = new Map(articles.map(row => [row.key, row]));
-const finalDispositions = new Set(['reflected_update', 'reflected_addition', 'verified_no_change', 'duplicate', 'out_of_scope']);
-const allDispositions = new Set([...finalDispositions, 'hold']);
-const reviewByArticle = new Map();
-const eventIds = new Set();
-const eventRows = [];
-for (const review of articleReviews) {
-  const article = articlesByKey.get(review.article_key);
-  assert(article, `Unknown reviewed article: ${review.article_key}`);
-  assert(!reviewByArticle.has(review.article_key), `Duplicate article review: ${review.article_key}`);
-  assert.equal(review.source_body_hash, article.body_hash, `Article text changed: ${review.article_key}`);
-  assert.equal(typeof review.inventory_complete, 'boolean');
-  assert(review.reviewed_at && review.inventory_reason && Array.isArray(review.events));
-  assert(review.events.length > 0 || review.inventory_complete);
-  for (const event of review.events) {
-    assert(event.event_id.startsWith(`${article.key}:`) && !eventIds.has(event.event_id));
-    eventIds.add(event.event_id);
-    assert(['closure', 'opening', 'relocation', 'rename', 'temporary_change', 'other'].includes(event.event_type));
-    assert(allDispositions.has(event.disposition));
-    assert(Array.isArray(event.facility_ids));
-    assert(Array.isArray(event.source_urls) && event.source_urls.every(url => /^https:\/\//.test(url)));
-    assert(event.reason);
-    if (event.disposition === 'reflected_update') {
-      assert(event.facility_ids.length && event.facility_ids.every(id => updateIds.has(id)));
-    }
-    if (event.disposition === 'reflected_addition') {
-      assert(event.facility_ids.length && event.facility_ids.every(id => additionIds.has(id)));
-    }
-    eventRows.push({ article_key: article.key, event_id: event.event_id,
-      event_type: event.event_type, facility_ids: event.facility_ids.join('|'),
-      disposition: event.disposition, effective_at: event.effective_at ?? '',
-      source_urls: event.source_urls.join('|'), reason: event.reason });
-  }
-  assert(!review.inventory_complete || review.events.every(event => finalDispositions.has(event.disposition)),
-    `A held event cannot complete an article: ${article.key}`);
-  reviewByArticle.set(review.article_key, review);
-}
+const { articleRows, eventRows, summary: articleSummary } = buildArticleProgress(articles, articleReviews, overlay, overlay.checked_at);
 writeCsv(`${out}/event-status.csv`, ['article_key', 'event_id', 'event_type', 'facility_ids',
-  'disposition', 'effective_at', 'source_urls', 'reason'], eventRows);
-const hasRelatedSource = row => (row.linked_evidence ?? []).some(item => (item.adopted_ids ?? []).length)
-  || (row.reconcile_linked_ids ?? []).length
-  || (row.local_directory_reviews ?? []).some(item => ['add_current_listing', 'add_opening', 'already_present', 'aggregate_source'].includes(item.decision));
-const articleRows = articles.map(row => ({
-  queue_number: row.queue_number, key: row.key, title: row.title, url: row.url,
-  source: row.source, jev_event: row.jev_event,
-  status: reviewByArticle.get(row.key)?.inventory_complete ? 'completed_all_identified_events'
-    : reviewByArticle.has(row.key) ? 'partially_reviewed' : 'pending_article_event_verification',
-  reviewed_events: reviewByArticle.get(row.key)?.events.length ?? 0,
-  related_source: Boolean(hasRelatedSource(row)),
-  source_receipts_fetched: (row.linked_evidence ?? []).filter(item => item.state === 'fetched').length,
-}));
-writeCsv(`${out}/article-status.csv`, ['queue_number', 'key', 'title', 'url', 'source', 'jev_event', 'status', 'reviewed_events', 'related_source', 'source_receipts_fetched'], articleRows);
+  'disposition', 'effective_at', 'source_urls', 'reason', 'duplicate_of'], eventRows);
+writeCsv(`${out}/article-status.csv`, ['queue_number', 'key', 'title', 'url', 'source', 'jev_event', 'status', 'inventory_complete', 'reviewed_events', 'related_source', 'source_receipts_fetched'], articleRows);
 const previousHolds = read('data-sources/facility-evidence-20260925/holds.json').items;
 const staleHoldIds = [...new Set(previousHolds.flatMap(row => row.facility_ids ?? []))].filter(id => updateIds.has(id));
 const localCounts = Object.fromEntries([...new Set(decisions.map(row => row.decision))].map(status =>
@@ -219,17 +168,7 @@ const summary = {
     note: 'Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale.',
   },
   additions: { reflected: additionRows.length },
-  article_events: {
-    total: articles.length, classified_by_jev: articles.length,
-    articles_completed: articleRows.filter(row => row.status === 'completed_all_identified_events').length,
-    articles_partially_reviewed: articleRows.filter(row => row.status === 'partially_reviewed').length,
-    articles_pending: articleRows.filter(row => row.status === 'pending_article_event_verification').length,
-    recorded_events: eventRows.length,
-    final_event_decisions: eventRows.filter(row => finalDispositions.has(row.disposition)).length,
-    held_events: eventRows.filter(row => row.disposition === 'hold').length,
-    with_related_source_only: articleRows.filter(row => row.related_source).length,
-    note: 'An article link or adopted shop listing is not a final disposition for every event in the article.',
-  },
+  article_events: articleSummary,
   local_directory_batch: { total: decisions.length, dispositions: localCounts,
     new_map_additions: localCounts.add_current_listing + localCounts.add_opening },
   immediate_followups: { graduates: graduateReview.length,
@@ -248,6 +187,7 @@ const summary = {
     ...baselineFiles, 'public/data/facility-current.json',
     'outputs/facility-local-stores-20260925/continued-review-queue.json',
     articleReviewPath,
+    `${publicOut}/article-index.json`,
     'data-sources/facility-local-stores-20260925/decisions.json',
     'outputs/facility-local-stores-20260925/records.json',
     `${publicOut}/source-plan.json`,

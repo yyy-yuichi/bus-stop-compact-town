@@ -16,6 +16,7 @@ assert.equal(overlay.updates.length, 24);
 assert([141, 145].includes(overlay.additions.length));
 const norm = value => value.normalize('NFKC').replace(/[\s・ー‐-]+/g, '').toLowerCase();
 const oldPoint = [130.9440486, 33.9575229];
+let newAdditions = 0;
 for (const item of items) {
   const row = statuses.find(row => row.graduate_id === item.graduate_id);
   assert(row, item.graduate_id);
@@ -54,7 +55,7 @@ for (const item of items) {
   };
   const existing = overlay.additions.find(value => value.id === item.facility_id);
   if (existing) assert.deepEqual(existing, feature, `Applied row drift: ${item.facility_id}`);
-  else overlay.additions.push(feature);
+  else { overlay.additions.push(feature); newAdditions += 1; }
   row.status = 'reflected_addition';
   row.map_feature_id = item.facility_id;
   row.reason = item.note;
@@ -75,6 +76,7 @@ if (process.argv.includes('--apply')) {
   write(file, overlay);
   write(statusesFile, statuses);
 }
-console.log(JSON.stringify({ additions: overlay.additions.length, newly_reflected: items.length,
+console.log(JSON.stringify({ additions: overlay.additions.length, reviewed_in_batch: items.length,
+  would_add: newAdditions, newly_reflected: process.argv.includes('--apply') ? newAdditions : 0,
   graduates_reflected: statuses.filter(row => row.status === 'reflected_addition').length,
   conflict_holds: statuses.filter(row => row.status === 'conflicting_current_listing_hold').length }));
