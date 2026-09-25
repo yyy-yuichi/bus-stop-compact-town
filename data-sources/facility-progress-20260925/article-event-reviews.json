@@ -1484,5 +1484,402 @@
         "duplicate_of": "shunan-100787:rename"
       }
     ]
+  },
+  {
+    "article_key": "kaiten-506694",
+    "source_body_hash": "88fe297cea86d91bab8840038ccba1ee22834deb229ce3eef7c938b4abd8a374",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ユーズボウル萩店の閉店1件。閉店日と変更対象なしの判定を区別。",
+    "events": [
+      {
+        "event_id": "kaiten-506694:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7,764件と既存追加157件を旧名・別表記・住所周辺で照合し該当IDなし。別名称の近隣施設を閉店対象にしない。2024年7月15日という報道はあるが旧公式告知を取得できず、実閉店日を確認済みとして記録しない。閉店報道の施設を新たな営業候補にも追加しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/us-bowl-hagi/",
+          "https://www.us-bowl.co.jp/hagi/event/3820/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-511755",
+    "source_body_hash": "a0623567452608a5b532a10d00bf9a5acf6febeb42e9f5b3936ae169973e94cc",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "Seria長門店の開店報道と、今回確認した現行公式掲載を分離。",
+    "events": [
+      {
+        "event_id": "kaiten-511755:date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-seria-nagato-2953"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024年7月12日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/seria-nagato/",
+          "https://shop.seria-group.com/seria/info/000002953?addresscode=35",
+          "https://shop.seria-group.com/seria/map?latlon=34.3706069,131.1903297&shopid=000002953"
+        ]
+      },
+      {
+        "event_id": "kaiten-511755:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-seria-nagato-2953"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "公式検索の現行ID000002953、長門店名・東深川821-1・店舗別地図リンクを画面照合。記事の位置を転用せず追加。",
+        "source_urls": [
+          "https://shop.seria-group.com/seria/info/000002953?addresscode=35",
+          "https://shop.seria-group.com/seria/map?latlon=34.3706069,131.1903297&shopid=000002953"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-513641",
+    "source_body_hash": "e1cdfd4dbd287fa1405a1f48ec94f743f20f2ffc40b57a7ead8352c9272b0c9f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "旧かしま閉店・後継千代丸開店予定・千代丸の現行掲載をすべて列挙。",
+    "events": [
+      {
+        "event_id": "kaiten-513641:kashima-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-08-17",
+        "reason": "基準7,764件と既存追加157件を旧名・別表記・住所周辺で照合し該当IDなし。別名称の近隣施設を閉店対象にしない。道の駅運営者が2024/8/17閉店を明記。萩市のかしまリハビリステーションは別施設。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/hajimarinorestaurant-kashima/",
+          "https://www.abucreation.com/topics/%E6%96%B0%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8C%E9%98%BF%E6%AD%A6%E7%94%A3%E7%9B%B4-%E5%8D%83%E4%BB%A3%E4%B8%B8%E9%A3%9F%E5%A0%82%E3%80%8D%E3%80%81%EF%BC%99%E6%9C%88%EF%BC%96%E6%97%A5/"
+        ]
+      },
+      {
+        "event_id": "kaiten-513641:date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-chiyomaru-abu"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024年9月6日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/hajimarinorestaurant-kashima/",
+          "https://chiyomaru.in/html/",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.3198912111036!2d131.46670736508864!3d34.49654958854333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544b3006b884165%3A0x991afb2b3448527c!2z5Y2D5Luj5Li46aOf5aCC77yI6YGT44Gu6aeFIOmYv-atpueUuu-8iQ!5e0!3m2!1sja!2sus!4v1745999647879!5m2!1sja!2sus",
+          "https://www.abucreation.com/topics/%E6%96%B0%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8C%E9%98%BF%E6%AD%A6%E7%94%A3%E7%9B%B4-%E5%8D%83%E4%BB%A3%E4%B8%B8%E9%A3%9F%E5%A0%82%E3%80%8D%E3%80%81%EF%BC%99%E6%9C%88%EF%BC%96%E6%97%A5/"
+        ]
+      },
+      {
+        "event_id": "kaiten-513641:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-chiyomaru-abu"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "自店現行メニュー・奈古2249・自店埋込地図の千代丸食堂名付き点を照合。旧かしまのIDや地図点を流用しない。",
+        "source_urls": [
+          "https://chiyomaru.in/html/",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.3198912111036!2d131.46670736508864!3d34.49654958854333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544b3006b884165%3A0x991afb2b3448527c!2z5Y2D5Luj5Li46aOf5aCC77yI6YGT44Gu6aeFIOmYv-atpueUuu-8iQ!5e0!3m2!1sja!2sus!4v1745999647879!5m2!1sja!2sus",
+          "https://www.abucreation.com/topics/%E6%96%B0%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8C%E9%98%BF%E6%AD%A6%E7%94%A3%E7%9B%B4-%E5%8D%83%E4%BB%A3%E4%B8%B8%E9%A3%9F%E5%A0%82%E3%80%8D%E3%80%81%EF%BC%99%E6%9C%88%EF%BC%96%E6%97%A5/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-519046",
+    "source_body_hash": "e20f593b3cce91b95f390ced08a6b26b7e00ec73be6dcccc25af50a1b6872277",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "東萩店の閉店1件。移転先は萩店の記事で別に処理。",
+    "events": [
+      {
+        "event_id": "kaiten-519046:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-10-14",
+        "reason": "基準7,764件と既存追加157件を旧名・別表記・住所周辺で照合し該当IDなし。別名称の近隣施設を閉店対象にしない。後継萩店の開店後公式PDFが旧東萩店の閉店日・旧住所を明記。近傍の飲食・学校・福祉施設は別施設。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/juntendo-higashihagi/",
+          "https://www.juntendo.co.jp/article_source/data/news/files/hagi20241120.pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-520473",
+    "source_body_hash": "0922af04bda90e4566a2b1624f1e8fe45e018066c0da447e8c02e52734583873",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "修理店の開店報道と現在の修理窓口掲載を分離。",
+    "events": [
+      {
+        "event_id": "kaiten-520473:date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-iphone-sokusyuri-hagitamagawa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024年10月7日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/iphone-hagitamagawa/",
+          "https://iphone-sokusyuri.com/hagitamagawa/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.193174642452!2d131.66368087651807!3d34.6498240859396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355b398160d6ec1b%3A0xec8df589266123ab!2zaVBob25l5Y2z5pel5L-u55CG5bGL44GV44KT6JCp55Sw5LiH5bed5bqX!5e0!3m2!1sja!2sjp!4v1760437241279!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "event_id": "kaiten-520473:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-iphone-sokusyuri-hagitamagawa"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "公式の萩田万川店ページ・下田万2909-1・店名と住所付き地図マーカーを照合。須佐自動車内の修理店として追加。",
+        "source_urls": [
+          "https://iphone-sokusyuri.com/hagitamagawa/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.193174642452!2d131.66368087651807!3d34.6498240859396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355b398160d6ec1b%3A0xec8df589266123ab!2zaVBob25l5Y2z5pel5L-u55CG5bGL44GV44KT6JCp55Sw5LiH5bed5bqX!5e0!3m2!1sja!2sjp!4v1760437241279!5m2!1sja!2sjp"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-523722",
+    "source_body_hash": "c4a8ad0f15ae6f81283992faaf9dbcdbdf6d06587171337d6336725a35f1ce73",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "酒ト定食はっち開店1件。",
+    "events": [
+      {
+        "event_id": "kaiten-523722:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-hacchi-hagi"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2024-10-29",
+        "reason": "萩市運営の食ポータルが2024年10月29日に開店したと事後掲載。住所・名称とその施設の埋込地図点を照合。",
+        "source_urls": [
+          "https://hagi-gochi.jp/eat/saketoteisyoku-hacchi",
+          "https://maps.google.co.jp/maps?q=%E6%97%A5%E6%9C%AC%E3%80%81%E5%B1%B1%E5%8F%A3%E7%9C%8C%E8%90%A9%E5%B8%82%E5%9C%9F%E5%8E%9F%EF%BC%95%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91+%E9%85%92%E3%83%88%E5%AE%9A%E9%A3%9F+%E3%81%AF%E3%81%A3%E3%81%A1&z=13&output=embed",
+          "https://www.instagram.com/hacci_8_hagi/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-526943",
+    "source_body_hash": "f98ba7a8d71abc28fe9627b6daca763078210e3934659c7e579c5891eaf2036b",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "萩店の開店と、公式照合で判明した東萩店からの移転を区別。",
+    "events": [
+      {
+        "event_id": "kaiten-526943:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-juntendo-hagi-274"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2024-11-20",
+        "reason": "実際の開店を発表した公式PDF原本を視認。現行公式店舗一覧の当該萩店に結び付く座標を採用し、アトラス萩とは別施設として追加。",
+        "source_urls": [
+          "https://www.j-eshop.jp/shops/yamaguchi.html#274",
+          "https://maps.app.goo.gl/Vv2uJ5jFknYcuQnQ7",
+          "https://www.juntendo.co.jp/article_source/data/news/files/hagi20241120.pdf"
+        ]
+      },
+      {
+        "event_id": "kaiten-526943:relocation",
+        "event_type": "relocation",
+        "facility_ids": [
+          "official-juntendo-hagi-274"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-11-20",
+        "reason": "公式PDFが旧東萩店からの移転・増床を明記。旧店に対応する既存IDはなく、移転先1件の追加で表現。移転として同じ施設を二重追加しない。",
+        "source_urls": [
+          "https://www.juntendo.co.jp/article_source/data/news/files/hagi20241120.pdf",
+          "https://www.j-eshop.jp/shops/yamaguchi.html#274",
+          "https://maps.app.goo.gl/Vv2uJ5jFknYcuQnQ7"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-540611",
+    "source_body_hash": "d09c527396d33f40f8b370f30acd98da237d6d946d67a88517d33318d1fa1ee2",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "記事の開店は旧H&G店からパワーへの改装。実施日と現行掲載を分離。",
+    "events": [
+      {
+        "event_id": "kaiten-540611:date",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-komeri-power-nagato-1054"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2025年2月23日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。2012年からの旧店を改装したもので、当該日を初出店日にはしない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/komeri-power-nagato/",
+          "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054",
+          "https://maps.app.goo.gl/nrUtZRDDRUi1GU287",
+          "https://prtimes.jp/main/html/rd/p/000000582.000079052.html"
+        ]
+      },
+      {
+        "event_id": "kaiten-540611:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-komeri-power-nagato-1054"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "運営会社の改装告知と現行パワー長門店住所、公式地図リンクの同住所旧H&G長門店点を照合。近隣コスモス・セブンイレブンを統合せず追加。",
+        "source_urls": [
+          "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054",
+          "https://maps.app.goo.gl/nrUtZRDDRUi1GU287",
+          "https://prtimes.jp/main/html/rd/p/000000582.000079052.html"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-543665",
+    "source_body_hash": "70c0894842b3b498cc84051ac77044d77bb7d4d09ea1bf3906f483d904f2a847",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "SOIL長門湯本の開業報道と現行複合施設掲載を分離。",
+    "events": [
+      {
+        "event_id": "kaiten-543665:date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-soil-nagatoyumoto"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2025年3月15日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/soil-nagatoyumoto/",
+          "https://soilis.co/nagatoyumoto/",
+          "https://maps.google.com/maps?q=SOIL%20Nagatoyuoto&t=m&z=17&output=embed&iwloc=near",
+          "https://yumotoonsen.com/hotspring/sauna_soil-nagatoyumoto/",
+          "https://yamaguchi-tourism.jp/spot/detail_19723.html",
+          "https://prtimes.jp/main/html/rd/p/000000037.000080587.html"
+        ]
+      },
+      {
+        "event_id": "kaiten-543665:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-soil-nagatoyumoto"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "自店・長門湯本公式観光・県観光連盟で名と深川湯本2257を照合。地域公式の名付き点と県掲載の座標が一致。自店から遷移するSOIL Setodaは別県の施設として不採用。",
+        "source_urls": [
+          "https://soilis.co/nagatoyumoto/",
+          "https://maps.google.com/maps?q=SOIL%20Nagatoyuoto&t=m&z=17&output=embed&iwloc=near",
+          "https://yumotoonsen.com/hotspring/sauna_soil-nagatoyumoto/",
+          "https://yamaguchi-tourism.jp/spot/detail_19723.html",
+          "https://prtimes.jp/main/html/rd/p/000000037.000080587.html"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-547780",
+    "source_body_hash": "f4e3089e6d2c46bbdb444dbe394626fa258850885affe251f9a6aadcec71d935",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "萩マイカーセンターつばき店の開店1件。現行住所確認と位置未確認を明記。",
+    "events": [
+      {
+        "event_id": "kaiten-547780:opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "販売会社とメーカーの現行掲載で川島369-1・電話を確認。メーカーの度分秒値は測地系が不明で、販売会社の案内図からも座標を確定できず地図追加を保留。報道の2025年4月12日という実開店日も未確認。福祉施設つばきのIDは転用しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/yamaguchi-toyopet-hagi/",
+          "https://www.p-yamaguchi.co.jp/shop/29hagi_mc",
+          "https://toyota.jp/ucar/shop/16501/28/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-558326",
+    "source_body_hash": "3540e4346001fe3df84fe394cb8b7f30711d8a1ac53fa7dbbc1f07480f0dbab1",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "テクモピア萩店の開店1件。運営元原本と店舗位置の未確定を残す。",
+    "events": [
+      {
+        "event_id": "kaiten-558326:opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "取引メーカーの掲載は確認したが、運営会社の開店PDFは取得エラーで原本を確認できず、当該店名に結び付く位置も未確定。2025年6月28日の報道のみで営業候補・日付を反映しない。同住所のホームケアサービス山口は福祉施設でありIDを流用しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/tecmopia-hagi/",
+          "https://www.wave.koeitecmo.co.jp/img/upload/TOPICS_img/69.pdf",
+          "https://bsp-prize.jp/shop/3485/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-612233",
+    "source_body_hash": "5b28cc6f13160ceb685348bdfcee09e1bf3c7e9dc8d54cbddd2c0834ab95961c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "すき家191号長門店の開店報道と現行店舗掲載を分離。毎日の休業時間は閉店ではない。",
+    "events": [
+      {
+        "event_id": "kaiten-612233:date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-sukiya-nagato-6605"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2026年8月19日は記事・事前告知の記載。現行公式掲載と代表点は別イベントで反映したが、実施日の一次確認は未了。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/sukiya-191gonagato/",
+          "https://maps.sukiya.jp/jp/detail/6605.html"
+        ]
+      },
+      {
+        "event_id": "kaiten-612233:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-sukiya-nagato-6605"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "支店公式JSON-LDの店名・仙崎331-1・geoを照合。既存の他市すき家や近傍ウォンツへ統合せず追加。",
+        "source_urls": [
+          "https://maps.sukiya.jp/jp/detail/6605.html"
+        ]
+      }
+    ]
   }
 ]

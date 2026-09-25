@@ -31,6 +31,9 @@ export const FACILITY_ICON_PATHS: Record<ShoppingCategory, string[]> = {
   social_facility: ['M12 20 3 11C-1 4 8-1 12 6c4-7 13-2 9 5l-9 9Z'],
   laundry: ['M3 2h18v20H3V2ZM3 6h18M7 4h1m3 0h1M12 9a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM7 14c4 3 6-3 10 0'],
   hairdresser: ['M7 14 20 3M7 10l13 11M6 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM6 15a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z'],
+  home_center: ['m2 10 10-7 10 7M5 8v13h14V8M9 21v-8h6v8'],
+  repair: ['M6 2h12v20H6V2ZM6 6h12M6 18h12M11 4h2'],
+  hotel: ['M3 21V3h18v18M8 21v-5h8v5M7 7h2m6 0h2M7 11h2m6 0h2'],
   reference: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z', 'M12 11v6m0-10v1'],
 };
 

@@ -18,6 +18,7 @@ export const SHOPPING_CATEGORIES = [
   { id: 'bakery', name: 'パン屋', color: '#a56b36', group: 'shopping' },
   { id: 'food_shop', name: '食品・青果・鮮魚店', color: '#7c7432', group: 'shopping' },
   { id: 'variety_store', name: '100円・生活雑貨', color: '#8b6438', group: 'shopping' },
+  { id: 'home_center', name: 'ホームセンター', color: '#746438', group: 'shopping' },
   { id: 'second_hand', name: 'リユース', color: '#477c60', group: 'shopping' },
   { id: 'restaurant', name: '飲食店', color: '#b56332', group: 'eating' },
   { id: 'cafe', name: 'カフェ・喫茶店', color: '#896440', group: 'eating' },
@@ -39,6 +40,8 @@ export const SHOPPING_CATEGORIES = [
   { id: 'townhall', name: '役所・支所', color: '#477461', group: 'services' },
   { id: 'community_centre', name: '公民館・交流施設', color: '#8b6550', group: 'services' },
   { id: 'laundry', name: '洗濯・クリーニング', color: '#4b7f9a', group: 'services' },
+  { id: 'repair', name: 'スマホ・修理', color: '#577887', group: 'services' },
+  { id: 'hotel', name: '宿泊施設', color: '#79688d', group: 'services' },
   { id: 'hairdresser', name: '理美容', color: '#9a6186', group: 'services' },
   { id: 'social_facility', name: '福祉施設', color: '#a16069', group: 'welfare' },
 ] as const;

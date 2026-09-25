@@ -1,0 +1,916 @@
+{
+  "checked_at": "2026-09-25",
+  "baseline_records": 7764,
+  "current_records_before": 7921,
+  "article_inventory": [
+    {
+      "key": "kaiten-506694",
+      "queue_number": 27,
+      "title": "【閉店】ユーズボウル萩店",
+      "url": "https://kaiten-heiten-24.com/us-bowl-hagi/",
+      "source": "kaiten",
+      "body_hash": "88fe297cea86d91bab8840038ccba1ee22834deb229ce3eef7c938b4abd8a374",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 2
+    },
+    {
+      "key": "kaiten-511755",
+      "queue_number": 39,
+      "title": "【開店】Seria 長門店",
+      "url": "https://kaiten-heiten-24.com/seria-nagato/",
+      "source": "kaiten",
+      "body_hash": "a0623567452608a5b532a10d00bf9a5acf6febeb42e9f5b3936ae169973e94cc",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-513641",
+      "queue_number": 1,
+      "title": "【閉店】はじまりのレストランかしま",
+      "url": "https://kaiten-heiten-24.com/hajimarinorestaurant-kashima/",
+      "source": "kaiten",
+      "body_hash": "e1cdfd4dbd287fa1405a1f48ec94f743f20f2ffc40b57a7ead8352c9272b0c9f",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-519046",
+      "queue_number": 12,
+      "title": "【閉店】ジュンテンドー東萩店",
+      "url": "https://kaiten-heiten-24.com/juntendo-higashihagi/",
+      "source": "kaiten",
+      "body_hash": "e20f593b3cce91b95f390ced08a6b26b7e00ec73be6dcccc25af50a1b6872277",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-520473",
+      "queue_number": 88,
+      "title": "【開店】iPhone 即日修理屋さん 萩田万川店",
+      "url": "https://kaiten-heiten-24.com/iphone-hagitamagawa/",
+      "source": "kaiten",
+      "body_hash": "0922af04bda90e4566a2b1624f1e8fe45e018066c0da447e8c02e52734583873",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-523722",
+      "queue_number": 77,
+      "title": "【開店】酒ト定食 はっち",
+      "url": "https://kaiten-heiten-24.com/hacci8-hagi/",
+      "source": "kaiten",
+      "body_hash": "c4a8ad0f15ae6f81283992faaf9dbcdbdf6d06587171337d6336725a35f1ce73",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-526943",
+      "queue_number": 66,
+      "title": "【開店】ジュンテンドー萩店",
+      "url": "https://kaiten-heiten-24.com/juntendo-hagi/",
+      "source": "kaiten",
+      "body_hash": "f98ba7a8d71abc28fe9627b6daca763078210e3934659c7e579c5891eaf2036b",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-540611",
+      "queue_number": 26,
+      "title": "【開店】コメリパワー長門店",
+      "url": "https://kaiten-heiten-24.com/komeri-power-nagato/",
+      "source": "kaiten",
+      "body_hash": "d09c527396d33f40f8b370f30acd98da237d6d946d67a88517d33318d1fa1ee2",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-543665",
+      "queue_number": 11,
+      "title": "【開店】SOIL Nagatoyumoto",
+      "url": "https://kaiten-heiten-24.com/soil-nagatoyumoto/",
+      "source": "kaiten",
+      "body_hash": "70c0894842b3b498cc84051ac77044d77bb7d4d09ea1bf3906f483d904f2a847",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-547780",
+      "queue_number": 53,
+      "title": "【開店】山口トヨペット 萩マイカーセンターつばき店",
+      "url": "https://kaiten-heiten-24.com/yamaguchi-toyopet-hagi/",
+      "source": "kaiten",
+      "body_hash": "f4e3089e6d2c46bbdb444dbe394626fa258850885affe251f9a6aadcec71d935",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-558326",
+      "queue_number": 40,
+      "title": "【開店】テクモピア萩店",
+      "url": "https://kaiten-heiten-24.com/tecmopia-hagi/",
+      "source": "kaiten",
+      "body_hash": "3540e4346001fe3df84fe394cb8b7f30711d8a1ac53fa7dbbc1f07480f0dbab1",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-612233",
+      "queue_number": 52,
+      "title": "【開店】すき家 191号長門店",
+      "url": "https://kaiten-heiten-24.com/sukiya-191gonagato/",
+      "source": "kaiten",
+      "body_hash": "5b28cc6f13160ceb685348bdfcee09e1bf3c7e9dc8d54cbddd2c0834ab95961c",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    }
+  ],
+  "targets": [
+    {
+      "key": "bowl",
+      "aliases": [
+        "ユーズ",
+        "us bowl",
+        "ボウル",
+        "ボーリング",
+        "ボウリング"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "seria",
+      "aliases": [
+        "seria",
+        "セリア"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "kashima",
+      "aliases": [
+        "かしま",
+        "千代丸"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "osm-node-1423659712",
+          "name": "浮島簡易郵便局",
+          "city": "周防大島町",
+          "category": "post_office",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.350105,
+              33.945394
+            ]
+          },
+          "reason": "浮島郵便局の読みの一部だけが一致する別自治体・別業態の施設。"
+        },
+        {
+          "id": "civic-care-3570400873-523906b8d5",
+          "name": "かしまリハビリステーション",
+          "city": "萩市",
+          "category": "social_facility",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.402725,
+              34.410397
+            ]
+          },
+          "reason": "名称の一部が同じ福祉施設。業態・住所が対象店舗と異なる。"
+        }
+      ],
+      "checked_records": 7921
+    },
+    {
+      "key": "juntendo",
+      "aliases": [
+        "ジュンテンド",
+        "順天堂",
+        "juntendo"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "iphone",
+      "aliases": [
+        "iphone",
+        "アイフォン",
+        "須佐自動車"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "hacchi",
+      "aliases": [
+        "はっち",
+        "ハッチ",
+        "hacchi"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "komeri",
+      "aliases": [
+        "コメリ",
+        "komeri"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "soil",
+      "aliases": [
+        "soil",
+        "ソイル",
+        "六角堂"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "toyopet",
+      "aliases": [
+        "トヨペット",
+        "toyopet",
+        "つばき"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "civic-care-3570400568-61ff29fc68",
+          "name": "萩市ヘルパーステーションつばき",
+          "city": "萩市",
+          "category": "social_facility",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.403122,
+              34.393936
+            ]
+          },
+          "reason": "名称の一部が同じ福祉施設。業態・住所が対象店舗と異なる。"
+        },
+        {
+          "id": "civic-care-3570400543-e0b4fe2563",
+          "name": "養護老人ホームつばき",
+          "city": "萩市",
+          "category": "social_facility",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.403122,
+              34.393936
+            ]
+          },
+          "reason": "名称の一部が同じ福祉施設。業態・住所が対象店舗と異なる。"
+        },
+        {
+          "id": "civic-care-3570400667-fbfcfa70f3",
+          "name": "ケアハウスつばき",
+          "city": "萩市",
+          "category": "social_facility",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.403122,
+              34.393936
+            ]
+          },
+          "reason": "名称の一部が同じ福祉施設。業態・住所が対象店舗と異なる。"
+        }
+      ],
+      "checked_records": 7921
+    },
+    {
+      "key": "tecmo",
+      "aliases": [
+        "テクモ",
+        "tecmo"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7921
+    },
+    {
+      "key": "sukiya",
+      "aliases": [
+        "すき家",
+        "sukiya"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "osm-node-4099850210",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.4360198,
+              34.1586015
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-node-4334950391",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.9281164,
+              33.9708761
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-node-4632096101",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.9538296,
+              34.0141995
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-node-4826883320",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.5741216,
+              34.0565861
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-node-9235019620",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.7744551,
+              34.070516
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-node-9472329369",
+          "name": "すき家 190号宇部西割店",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.2080572,
+              33.9768313
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-way-1347535224",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.92576830000002,
+              33.99880865
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-way-363127936",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.8415554,
+              34.0293943
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-way-477623025",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.2080019,
+              33.9768153
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        },
+        {
+          "id": "osm-way-503938285",
+          "name": "すき家",
+          "city": "",
+          "category": "fast_food",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.56983474999998,
+              34.036221350000005
+            ]
+          },
+          "reason": "長門市の対象店舗から離れた同系列の別支店。"
+        }
+      ],
+      "checked_records": 7921
+    }
+  ],
+  "comparison_only_searches": [
+    {
+      "name": "旧ユーズボウル萩",
+      "point": [
+        131.400981,
+        34.39159
+      ],
+      "method": "secondary_article_map_viewport_used_only_as_broad_search_area_never_as_an_adopted_point",
+      "radius_m": 450,
+      "candidates": [
+        {
+          "id": "civic-care-3570400261-48dba57398",
+          "name": "萩市ヘルパーステーションかがやき",
+          "category": "social_facility",
+          "address": "萩市椿2398－1",
+          "distance_m": 327
+        },
+        {
+          "id": "civic-care-3570400568-61ff29fc68",
+          "name": "萩市ヘルパーステーションつばき",
+          "category": "social_facility",
+          "address": "萩市椿2398－1",
+          "distance_m": 327
+        },
+        {
+          "id": "civic-care-3570400543-e0b4fe2563",
+          "name": "養護老人ホームつばき",
+          "category": "social_facility",
+          "address": "萩市椿2398－1",
+          "distance_m": 327
+        },
+        {
+          "id": "civic-care-3570400667-fbfcfa70f3",
+          "name": "ケアハウスつばき",
+          "category": "social_facility",
+          "address": "萩市椿2398－1",
+          "distance_m": 327
+        },
+        {
+          "id": "civic-care-3570400287-17f104c79c",
+          "name": "萩市指定居宅介護支援事業所かがやき",
+          "category": "social_facility",
+          "address": "萩市椿2398－1",
+          "distance_m": 327
+        }
+      ],
+      "decision": "候補は福祉施設・飲食店・学校等であり別名称・別業態。対象IDなし。"
+    },
+    {
+      "name": "旧ジュンテンドー東萩",
+      "point": [
+        131.409185,
+        34.414746
+      ],
+      "method": "secondary_article_map_viewport_used_only_as_broad_search_area_never_as_an_adopted_point",
+      "radius_m": 450,
+      "candidates": [
+        {
+          "id": "civic-care-3560490033-bd8de501fc",
+          "name": "株式会社 訪問看護ステーション陽向",
+          "category": "social_facility",
+          "address": "萩市土原300－6",
+          "distance_m": 197
+        },
+        {
+          "id": "osm-node-5787099553",
+          "name": "DonDon",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 233
+        },
+        {
+          "id": "civic-care-3570400675-29f7e209e9",
+          "name": "ライフケアステーション はぎ",
+          "category": "social_facility",
+          "address": "萩市椿東2942－13",
+          "distance_m": 308
+        },
+        {
+          "id": "civic-care-3570400683-9744c32e3f",
+          "name": "ライフケアデイサービスはぎ",
+          "category": "social_facility",
+          "address": "萩市椿東2942－13",
+          "distance_m": 308
+        },
+        {
+          "id": "osm-node-1423657398",
+          "name": "市立萩東中学校",
+          "category": "school",
+          "address": "山口県萩市土原",
+          "distance_m": 355
+        },
+        {
+          "id": "civic-care-3570400741-92c1a4553b",
+          "name": "リハビリ型デイサービスステップ",
+          "category": "social_facility",
+          "address": "萩市椿東2637－1",
+          "distance_m": 441
+        },
+        {
+          "id": "civic-care-3570400501-ea55c79886",
+          "name": "株式会社ホームケアサービス山口 萩店",
+          "category": "social_facility",
+          "address": "萩市椿東2880－1",
+          "distance_m": 446
+        }
+      ],
+      "decision": "候補は福祉施設・飲食店・学校等であり別名称・別業態。対象IDなし。"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://www.j-eshop.jp/shops/yamaguchi.html",
+      "confirmed_terms": [
+        "萩",
+        "土原457",
+        "0838-24-2012"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "5cabd3f77a3a1321266c6d08f22041c2931d56d79a8c32f9dbecce4cdd9ec042"
+    },
+    {
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054",
+      "confirmed_terms": [
+        "パワー長門",
+        "東深川２３３８",
+        "0837-23-2200"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "13c0d894ed32cc0ca54c4dd5f14b1d7f8b0efd27b63277b9dc0501f2ab4d4c90"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000582.000079052.html",
+      "confirmed_terms": [
+        "ハード",
+        "2012",
+        "パワー長門",
+        "２月23"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "0af45ce9ffb715f81cf445d343c71d78c5510cb2c56785f67035ccc152872777"
+    },
+    {
+      "url": "https://chiyomaru.in/html/",
+      "confirmed_terms": [
+        "千代丸",
+        "2249"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "7568d0640ac1230078202d889a3bb67b85a5244ee87042c90753cca873b06808"
+    },
+    {
+      "url": "https://www.abucreation.com/topics/%E6%96%B0%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8C%E9%98%BF%E6%AD%A6%E7%94%A3%E7%9B%B4-%E5%8D%83%E4%BB%A3%E4%B8%B8%E9%A3%9F%E5%A0%82%E3%80%8D%E3%80%81%EF%BC%99%E6%9C%88%EF%BC%96%E6%97%A5/",
+      "confirmed_terms": [
+        "かしま",
+        "2024/8/17",
+        "千代丸",
+        "9月6"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "b432f8bcc28b1273857dbf41c1c8d4787e7333a3f314388eef542bdd656388d1"
+    },
+    {
+      "url": "https://iphone-sokusyuri.com/hagitamagawa/",
+      "confirmed_terms": [
+        "萩田万川",
+        "2909-1",
+        "070-8991-4485"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "79cb470d050ec5f51fc3b2c8fb5d7fb7efacc3a56c936f50ee366848f71f3bbd"
+    },
+    {
+      "url": "https://hagi-gochi.jp/eat/saketoteisyoku-hacchi",
+      "confirmed_terms": [
+        "2024年10月29日",
+        "土原522-1",
+        "萩市 商工観光部 産業政策課"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "d45041aacdaf68b65ac9eeb8a18ff95730f4ff6d74ac990b11e04b463da55b2c"
+    },
+    {
+      "url": "https://soilis.co/nagatoyumoto/",
+      "confirmed_terms": [
+        "SOIL",
+        "2257",
+        "0837-25-3333"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "c7c5b6ac18d90a80a6c16d038d6a5acaf33c7489c5b3660cf6a53e1393fda067"
+    },
+    {
+      "url": "https://yumotoonsen.com/hotspring/sauna_soil-nagatoyumoto/",
+      "confirmed_terms": [
+        "SOIL Nagatoyumoto",
+        "深川湯本2257",
+        "0837-25-3333"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "a23ffa03d53c307e9d8791da804cc864375b1c3bc74435909fb34fc4ad23013c"
+    },
+    {
+      "url": "https://yamaguchi-tourism.jp/spot/detail_19723.html",
+      "confirmed_terms": [
+        "SOIL",
+        "2257"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "78a39da8817ecef59e2227101b844a782a954af632a16020d4729581545570c5"
+    },
+    {
+      "url": "https://maps.sukiya.jp/jp/detail/6605.html",
+      "confirmed_terms": [
+        "191号長門店",
+        "仙崎字網田331-1"
+      ],
+      "method": "retrieved_primary_html",
+      "receipt_hash": "96ed0952fcbd26b7b7fe3d15f290598bbb665736cb6ed1116dbe5456eeeabba6"
+    }
+  ],
+  "rejected_points": [
+    {
+      "url": "https://maps.app.goo.gl/NYcuACYWfvb5UHk56",
+      "final_url": "https://www.google.com/maps/place/SOIL+Setoda/@34.3042678,133.0818306,17z/data=!3m1!4b1!4m9!3m8!1s0x3550515a393c4383:0x9b63f40a6bf22d20!5m2!4m1!1i2!8m2!3d34.3042637!4d133.0842381!16s%2Fg%2F11n0bl1y7y?entry=tts&g_ep=EgoyMDI1MTAyOC4wIPu8ASoASAFQAw%3D%3D&skid=357f5c4b-da3e-477f-a7a7-5fc3917e3b77",
+      "reason": "SOIL Setodaという別県・別施設。長門湯本へ流用禁止。"
+    }
+  ],
+  "source_receipts": [
+    {
+      "url": "https://yamaguchi-tourism.jp/spot/detail_19723.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/0a7d5b88fc8a75e8e1f263df.json",
+      "hash": "78a39da8817ecef59e2227101b844a782a954af632a16020d4729581545570c5",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000037.000080587.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/11b57d2e7dfa5ea8fe3ee1b4.json",
+      "hash": "ecee41b72ad7fb2f6d7575da6f94dadec9ce50586b738b1fba7d5c47250f3ad0",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.3198912111036!2d131.46670736508864!3d34.49654958854333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544b3006b884165%3A0x991afb2b3448527c!2z5Y2D5Luj5Li46aOf5aCC77yI6YGT44Gu6aeFIOmYv-atpueUuu-8iQ!5e0!3m2!1sja!2sus!4v1745999647879!5m2!1sja!2sus",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/16319a5ec7b61184c68ae04a.json",
+      "hash": "1c2d94b565fd00a8c57968d6e15870c92f4b1c619bf19de42c9bf8d03a440e36",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.193174642452!2d131.66368087651807!3d34.6498240859396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355b398160d6ec1b%3A0xec8df589266123ab!2zaVBob25l5Y2z5pel5L-u55CG5bGL44GV44KT6JCp55Sw5LiH5bed5bqX!5e0!3m2!1sja!2sjp!4v1760437241279!5m2!1sja!2sjp",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/2ad20c042f52c7cc22925701.json",
+      "hash": "e559bf1e8ec12f8205f5821dd3376c87d18eb7056cbd3c91e4d597c350f4bf28",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.seria-group.com/shop/detail.html?code=000003059",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/307d5aa52df620d11bd14211.json",
+      "hash": "ace48ba463a3887c50959c1e345e98ee88050e0841b0e859207e93e3ec4f6591",
+      "status": 403,
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://www.p-yamaguchi.co.jp/shop/29hagi_mc",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/358540fe385a1933087dc221.json",
+      "hash": "94ab1a2e8074959e907ff775c9ae2700a2592093aa166285fd8b37fdb03a45bf",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.j-eshop.jp/shops/yamaguchi.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/3b31957ab9c08b006f240fa8.json",
+      "hash": "5cabd3f77a3a1321266c6d08f22041c2931d56d79a8c32f9dbecce4cdd9ec042",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000582.000079052.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/49ddf80217e456c2de843ba7.json",
+      "hash": "0af45ce9ffb715f81cf445d343c71d78c5510cb2c56785f67035ccc152872777",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://toyota.jp/ucar/shop/16501/28/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/4c27ae357840775cfbc4ae50.json",
+      "hash": "94eb28c1c2a8f50178dd7a62d67b08f8832a6230f3b12b5d4847b88d09c9c4b4",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://maps.google.com/maps?q=SOIL%20Nagatoyuoto&t=m&z=17&output=embed&iwloc=near",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/5144ee5472b9984ccaca522e.json",
+      "hash": "b4a2797c597ff9ef6d1998b5745dd4f3fc4bdd3c92cdee558dd4994124a146c0",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.abucreation.com/topics/%E6%96%B0%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8C%E9%98%BF%E6%AD%A6%E7%94%A3%E7%9B%B4-%E5%8D%83%E4%BB%A3%E4%B8%B8%E9%A3%9F%E5%A0%82%E3%80%8D%E3%80%81%EF%BC%99%E6%9C%88%EF%BC%96%E6%97%A5/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/5b4862fcd94c453d6c6d8250.json",
+      "hash": "b432f8bcc28b1273857dbf41c1c8d4787e7333a3f314388eef542bdd656388d1",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://toyota.jp/ucar/resource/pages/contents/jpucar/assets/js/tmiMapCommon.js",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/760fd6dae650bf43a7964600.json",
+      "hash": "fce722a349c0056a36b88942b295720f819b153046a439cca84790fae36f9a8e",
+      "status": 200,
+      "error": "Non-text format requires specific reader"
+    },
+    {
+      "url": "https://maps.google.co.jp/maps?q=%E6%97%A5%E6%9C%AC%E3%80%81%E5%B1%B1%E5%8F%A3%E7%9C%8C%E8%90%A9%E5%B8%82%E5%9C%9F%E5%8E%9F%EF%BC%95%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91+%E9%85%92%E3%83%88%E5%AE%9A%E9%A3%9F+%E3%81%AF%E3%81%A3%E3%81%A1&z=13&output=embed",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/8bb4ef1a9c724c9f687b548f.json",
+      "hash": "86a7b599c98fc9872662d17c0e13817726ebc8eb319938711dc04cf73010817a",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://shop.seria-group.com/seria/info/000002953",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/92f7ef0d513b46b19bf4b74a.json",
+      "hash": "4e0011033bde156d8c08e0b0713de4cd895eb4f535608a39c129676b2908fb7a",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/9f2029c26195d1418c1613ef.json",
+      "hash": "13c0d894ed32cc0ca54c4dd5f14b1d7f8b0efd27b63277b9dc0501f2ab4d4c90",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://hagi-gochi.jp/eat/saketoteisyoku-hacchi",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/a934455d10dbe6a50ff25e58.json",
+      "hash": "d45041aacdaf68b65ac9eeb8a18ff95730f4ff6d74ac990b11e04b463da55b2c",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.abucreation.com/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/b48835c9133b4a2820a3f029.json",
+      "hash": "4129a66c09273a42ed4776dc165772e82c40155404ab4cd6784c4ad173bd0694",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://maps.app.goo.gl/NYcuACYWfvb5UHk56",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/b72c790d96261dedc7a7d0a9.json",
+      "hash": "03d80f897dd40b41ee936409dcadce0622a0681a64929abf2faa0f8d596de7a1",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/hacci_8_hagi/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/bd622ca00f24a96ba072528d.json",
+      "hash": "7bec1e9b0193d84fb7b24bb29138d8ee52b0b4c97b8754e3712a921876ecb582",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://yumotoonsen.com/hotspring/sauna_soil-nagatoyumoto/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/be225ef601cfc37f85ed4bc9.json",
+      "hash": "a23ffa03d53c307e9d8791da804cc864375b1c3bc74435909fb34fc4ad23013c",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://maps.app.goo.gl/nrUtZRDDRUi1GU287",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/c0dd6816197ea54b2004574d.json",
+      "hash": "17379f7be8c13090ec4da4f9c00087b18464563d584a8f563a3553f065aca32d",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://chiyomaru.in/html/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/c27a022347526e4ab52133c3.json",
+      "hash": "7568d0640ac1230078202d889a3bb67b85a5244ee87042c90753cca873b06808",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.juntendo.co.jp/article_source/data/news/detail/000034.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/c4ea4775236edf17201157a9.json",
+      "hash": "68b29c661cdeecc7afef9cd6da2bb044e176ab97a665eafebd64196dc511736e",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://iphone-sokusyuri.com/hagitamagawa/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/c7048958b9729618774a4d08.json",
+      "hash": "79cb470d050ec5f51fc3b2c8fb5d7fb7efacc3a56c936f50ee366848f71f3bbd",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://bsp-prize.jp/shop/3485/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/c9ee24c82a0ef56d8449185c.json",
+      "hash": "e94121a268c6c9b9bba444612fdf230de81f0d1da048b797c95ae6ef579b3723",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://soilis.co/nagatoyumoto/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/d1ff2dcc948b1635368d0192.json",
+      "hash": "c7c5b6ac18d90a80a6c16d038d6a5acaf33c7489c5b3660cf6a53e1393fda067",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.us-bowl.co.jp/hagi/event/3820/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/d4731bc183cb7bef74d2b05b.json",
+      "hash": "3d03ff3d5ca2bff7f105a4bf617b896ac6b4d1906d653416d012c81a904fa946",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://maps.sukiya.jp/jp/detail/6605.html",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/d737bf0384651c1a5427d342.json",
+      "hash": "96ed0952fcbd26b7b7fe3d15f290598bbb665736cb6ed1116dbe5456eeeabba6",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.juntendo.co.jp/shop/new-shop-info/",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/dad83139df9d48c48af9f109.json",
+      "hash": "608240a0cbfb787119c196b43b5390aad7ad3f5612fa8f5b800d0127b8274d9f",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://maps.app.goo.gl/Vv2uJ5jFknYcuQnQ7",
+      "file": "outputs/facility-hagi-nagato-20260925/pages/eb78c76607478eaffb079125.json",
+      "hash": "470145678fbae68a10e53577cb00ef7fdecac2d52d594d44f5a50f541771893a",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "before_overlay_hash": "aa372a1d1807dcc394a41df8873e327cce525706dd4c201f286364c70a101a0e",
+  "article_inputs_hash": "6c10a2a477f6e0b47a56bf75130bccfb574230feb32838aef5b47c97072d5a26",
+  "visual_evidence_hash": "91aca5aadac565708e58b21cfb6ee4aad9f716d753d2e40aa82e6e60fdc3e2c1",
+  "extra_jev_requests": 0
+}
