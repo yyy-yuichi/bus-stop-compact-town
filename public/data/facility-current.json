@@ -199,6 +199,792 @@
           "他の支店の閉店日を転用していません。元データのID・代表点を維持しています。"
         ]
       }
+    },
+    {
+      "id": "osm-node-4364264590",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/4364264590"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9678412,
+            33.9412632
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 光室積店",
+        "city": "光市",
+        "address": "山口県光市室積新開2-1-2",
+        "search_names": "ウォンツ       ウォンツ 光室積店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3671"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4041136093",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/4041136093"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5674902,
+            34.0578553
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 防府八王子店",
+        "city": "防府市",
+        "address": "山口県防府市八王子2-8-9",
+        "search_names": "ウォンツ       ウォンツ 防府八王子店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3665"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-369683338",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/369683338"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8553433,
+            34.0247439
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 下松店",
+        "city": "下松市",
+        "address": "山口県下松市望町3-16-13",
+        "search_names": "ウォンツ       ウォンツ 下松店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3653"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-305521033",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/305521033"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8686306,
+            34.0159702
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 下松桜町店",
+        "city": "下松市",
+        "address": "山口県下松市桜町1-14-28",
+        "search_names": "ウォンツ      下松桜町店 ウォンツ 下松桜町店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3703"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1385818871",
+      "expected": {
+        "name": "ウォンツ 周防大島店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/1385818871"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.2076129,
+            33.9469383
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 周防大島店",
+        "city": "周防大島町",
+        "address": "山口県大島郡周防大島町大字西三蒲1653-1",
+        "search_names": "ウォンツ 周防大島店       ウォンツ 周防大島店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3772"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-350352664",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/350352664"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7562258,
+            34.0721273
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 周南富田店",
+        "city": "周南市",
+        "address": "山口県周南市平野2-1-25",
+        "search_names": "ウォンツ       ウォンツ 周南富田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3691"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3890136162",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/3890136162"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.827505,
+            34.0506064
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 周南周陽店",
+        "city": "周南市",
+        "address": "山口県周南市周陽1-1-1",
+        "search_names": "ウォンツ       ウォンツ 周南周陽店 ウォンツ 周南周陽薬局"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3707"
+          },
+          {
+            "title": "併設調剤薬局の公式案内（別営業時間）",
+            "url": "https://shop.tsuruha-g.com/2232"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+          "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4818155053",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/4818155053"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.843228,
+            34.0367819
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ イオンタウン周南久米店",
+        "city": "周南市",
+        "address": "山口県周南市久米中央五丁目８番１号",
+        "search_names": "ウォンツ       ウォンツ イオンタウン周南久米店 ウォンツ イオンタウン周南久米薬局"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3799"
+          },
+          {
+            "title": "併設調剤薬局の公式案内（別営業時間）",
+            "url": "https://shop.tsuruha-g.com/2225"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+          "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13019068187",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/13019068187"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8016187,
+            34.057105
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 周南新宿通店",
+        "city": "周南市",
+        "address": "山口県周南市新宿通1-16",
+        "search_names": "ウォンツ       ウォンツ 周南新宿通店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3912"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-353411446",
+      "expected": {
+        "name": "ウォンツ 宇部新川店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/353411446"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2426898,
+            33.9601824
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 宇部新川店",
+        "city": "宇部市",
+        "address": "山口県宇部市島3-5-1",
+        "search_names": "ウォンツ 宇部新川店      宇部新川店 ウォンツ 宇部新川店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3663"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-562104060",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/562104060"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2586713,
+            33.9571526
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 宇部琴芝店",
+        "city": "宇部市",
+        "address": "山口県宇部市北琴芝2-11-45",
+        "search_names": "ウォンツ      宇部琴芝店 ウォンツ 宇部琴芝店 ウォンツ 宇部琴芝薬局"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3717"
+          },
+          {
+            "title": "併設調剤薬局の公式案内（別営業時間）",
+            "url": "https://shop.tsuruha-g.com/2234"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+          "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-6011703186",
+      "expected": {
+        "name": "ウォンツ徳佐店",
+        "category": "drugstore",
+        "source_ids": [
+          "node/6011703186"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7186185,
+            34.3943131
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 徳佐店",
+        "city": "山口市",
+        "address": "山口県山口市阿東徳佐中3061-1",
+        "search_names": "ウォンツ徳佐店       ウォンツ 徳佐店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3774"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-405983078",
+      "expected": {
+        "name": "ウォンツ 山口熊野店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/405983078"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4591261,
+            34.1684946
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 山口熊野店",
+        "city": "山口市",
+        "address": "山口県山口市熊野町5-20",
+        "search_names": "ウォンツ 山口熊野店 ウォンツ 山口熊野店      ウォンツ 山口熊野店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の店舗名・所在地を既存IDへ照合し、支店情報と確認根拠を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://shop.tsuruha-g.com/3938"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "店舗検索65掲載を11併設薬局と54店舗に照合しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4002028297",
+      "expected": {
+        "name": "おむらいす亭",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4002028297"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8629696,
+            34.019074
+          ]
+        }
+      },
+      "changes": {
+        "name": "おむらいす亭 ゆめタウン下松店",
+        "city": "下松市",
+        "address": "山口県下松市中央町21-3 ゆめタウン下松2F",
+        "search_names": "おむらいす亭       おむらいす亭 ゆめタウン下松店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "既存施設の支店名・所在地を公式案内で確認し、情報を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://www.izumi.jp/tenpo/kudamatsu/shop/food/omuricetei"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "元ID・元位置を維持し、同じ店舗を新規に追加していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-10038289417",
+      "expected": {
+        "name": "ろくの家　宇部店",
+        "category": "restaurant",
+        "source_ids": [
+          "node/10038289417"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.246747,
+            33.9586084
+          ]
+        }
+      },
+      "changes": {
+        "name": "ろくの家 宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市南小串2丁目5-18",
+        "search_names": "ろくの家　宇部店       ろくの家 宇部店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "既存施設の支店名・所在地を公式案内で確認し、情報を補完しました。",
+        "sources": [
+          {
+            "title": "現行の公式店舗案内",
+            "url": "https://itsuki-inc.com/rokunoya/"
+          }
+        ],
+        "limits": [
+          "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+          "元ID・元位置を維持し、同じ店舗を新規に追加していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-305954680",
+      "expected": {
+        "name": "ミコー",
+        "category": "supermarket",
+        "source_ids": [
+          "way/305954680"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9502854,
+            34.03863
+          ]
+        }
+      },
+      "changes": {
+        "name": "ミコー熊毛店",
+        "city": "周南市",
+        "search_names": "ミコー      熊毛店 ミコー熊毛店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2025-01",
+        "date_precision": "month",
+        "checked_at": "2026-09-25",
+        "summary": "後継店の運営会社が、1月に閉店したミコー熊毛店の跡地への出店を明記しています。2025年の記事文脈から閉店年月を記録し、閉店日は未確認です。",
+        "sources": [
+          {
+            "title": "運営会社の閉店・後継店告知",
+            "url": "https://marukyu-saiyo.jp/news/丸久熊毛店オープンについて/"
+          }
+        ],
+        "limits": [
+          "元データのID・位置・登録履歴は維持し、通常の検索・周辺施設・徒歩圏候補から除外します。",
+          "閉店日は不明。閉店年は公式記事の年の文脈から、月は本文から確認しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-332618123",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/332618123"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1747895,
+            33.9858914
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 小野田店",
+        "city": "山陽小野田市",
+        "search_names": "ウォンツ       ウォンツ 小野田店",
+        "address": "山口県山陽小野田市中川3-10-17"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-25",
+        "summary": "運営会社の支店別告知で閉店を確認しました。告知掲載日2025-03-01を閉店日とは断定していません。",
+        "sources": [
+          {
+            "title": "運営会社の閉店・後継店告知",
+            "url": "https://www.wants.co.jp/news/close_3679/"
+          },
+          {
+            "title": "旧店舗の名称・所在地の照合用（現況判断には使用しない）",
+            "url": "https://pkg.navitime.co.jp/kose-shoplist/spot/detail?code=P00C125"
+          }
+        ],
+        "limits": [
+          "元データのID・位置・登録履歴は維持し、通常の検索・周辺施設・徒歩圏候補から除外します。",
+          "公式ページの掲載日を閉店日へ自動転用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4334964790",
+      "expected": {
+        "name": "ウォンツ",
+        "category": "drugstore",
+        "source_ids": [
+          "node/4334964790"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9260881,
+            33.9694864
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 光浅江店",
+        "city": "光市",
+        "search_names": "ウォンツ       ウォンツ 光浅江店",
+        "address": "山口県光市浅江5-4-1"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-25",
+        "summary": "運営会社の支店別告知で閉店を確認しました。告知掲載日2026-07-31を閉店日とは断定していません。",
+        "sources": [
+          {
+            "title": "運営会社の閉店・後継店告知",
+            "url": "https://www.wants.co.jp/news/close_3694/"
+          },
+          {
+            "title": "旧店舗の名称・所在地の照合用（現況判断には使用しない）",
+            "url": "https://pkg.navitime.co.jp/mochida/spot/detail?code=0000009152"
+          }
+        ],
+        "limits": [
+          "元データのID・位置・登録履歴は維持し、通常の検索・周辺施設・徒歩圏候補から除外します。",
+          "公式ページの掲載日を閉店日へ自動転用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1121040363",
+      "expected": {
+        "name": "ウォンツ 宇部厚南店",
+        "category": "reference",
+        "source_ids": [
+          "way/1121040363"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2196059,
+            33.9942868
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ宇部厚南店",
+        "city": "宇部市",
+        "search_names": "ウォンツ 宇部厚南店       ウォンツ宇部厚南店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-25",
+        "summary": "宇部東須恵店への移転に伴う閉店を公式で確認しました。元データですでに通常表示から除外済みで、新規の閉店発見ではありません。",
+        "sources": [
+          {
+            "title": "運営会社の閉店・後継店告知",
+            "url": "https://www.wants.co.jp/news/close_3666/"
+          }
+        ],
+        "limits": [
+          "元データのID・位置・登録履歴は維持し、通常の検索・周辺施設・徒歩圏候補から除外します。",
+          "公式ページの掲載日を閉店日へ自動転用していません。",
+          "元データですでに通常表示から除外済みの履歴整備です。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -790,10 +1576,10 @@
         "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
         "freshness_review": {
           "status": "operating",
-          "event": "listed",
-          "effective_at": null,
+          "event": "opened",
+          "effective_at": "2025-10-30",
           "checked_at": "2026-09-25",
-          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "summary": "運営会社がミコー熊毛店跡地への2025-10-30開店を明記しています。既存の新規掲載へ開店日を追記しました。",
           "sources": [
             {
               "title": "現行の公式店舗・施設案内",
@@ -802,6 +1588,10 @@
             {
               "title": "公式サイトが案内する所在地の地図",
               "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.1023629085823!2d131.95040052055464!3d34.038619192040215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354520306cb5cec5%3A0x12c73cff06816d07!2z44CSNzQ1LTA2MTIg5bGx5Y-j55yM5ZGo5Y2X5biC5ZG85Z2C77yR77yR77yQ77yW4oiS77yR!5e0!3m2!1sja!2sjp!4v1761098849635!5m2!1sja!2sjp"
+            },
+            {
+              "title": "後継店運営会社の開店報告",
+              "url": "https://marukyu-saiyo.jp/news/丸久熊毛店オープンについて/"
             }
           ],
           "limits": [
@@ -973,6 +1763,2506 @@
         "coordinates": [
           131.1770377,
           33.97910299999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3897",
+      "properties": {
+        "name": "ウォンツ 阿武店",
+        "city": "阿武町",
+        "address": "山口県阿武郡阿武町奈古3093番地1",
+        "official_address": "山口県阿武郡阿武町奈古3093番地1",
+        "official_url": "https://shop.tsuruha-g.com/3897",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3897"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 阿武店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3897"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.47630429772892,
+          34.50658428882527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3687",
+      "properties": {
+        "name": "ウォンツ 萩店",
+        "city": "萩市",
+        "address": "山口県萩市大字椿東2883-1",
+        "official_address": "山口県萩市大字椿東2883-1",
+        "official_url": "https://shop.tsuruha-g.com/3687",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3687"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 萩店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3687"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.41167060041298,
+          34.418681991185466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3959",
+      "properties": {
+        "name": "ウォンツ光島田店",
+        "city": "光市",
+        "address": "山口県光市島田2-3-29",
+        "official_address": "山口県光市島田2-3-29",
+        "official_url": "https://shop.tsuruha-g.com/3959",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3959"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ光島田店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3959"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.934256,
+          33.97337964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3945",
+      "properties": {
+        "name": "ウォンツ 防府松崎店",
+        "city": "防府市",
+        "address": "山口県防府市南松崎町4-26",
+        "official_address": "山口県防府市南松崎町4-26",
+        "official_url": "https://shop.tsuruha-g.com/3945",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3945",
+          "official:tsuruha:2299"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 防府松崎店 ウォンツ 防府松崎薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3945"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2299"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5785395,
+          34.05644842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3989",
+      "properties": {
+        "name": "ウォンツ 防府鋳物師店",
+        "city": "防府市",
+        "address": "山口県防府市鋳物師町8-30",
+        "official_address": "山口県防府市鋳物師町8-30",
+        "official_url": "https://shop.tsuruha-g.com/3989",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3989"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 防府鋳物師店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3989"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5752086,
+          34.05132869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3613",
+      "properties": {
+        "name": "ウォンツ 岩国室の木店",
+        "city": "岩国市",
+        "address": "山口県岩国市室の木町1-2-38",
+        "official_address": "山口県岩国市室の木町1-2-38",
+        "official_url": "https://shop.tsuruha-g.com/3613",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3613"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 岩国室の木店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3613"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2131341982407,
+          34.17009726831843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3620",
+      "properties": {
+        "name": "ウォンツ 南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国町1-20-36",
+        "official_address": "山口県岩国市南岩国町1-20-36",
+        "official_url": "https://shop.tsuruha-g.com/3620",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3620"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 南岩国店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3620"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.20279540170307,
+          34.13546639231643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3654",
+      "properties": {
+        "name": "ウォンツ 岩国まりふ店",
+        "city": "岩国市",
+        "address": "山口県岩国市麻里布町2-9-23",
+        "official_address": "山口県岩国市麻里布町2-9-23",
+        "official_url": "https://shop.tsuruha-g.com/3654",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3654"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 岩国まりふ店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3654"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.223275379374,
+          34.16902091814309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3719",
+      "properties": {
+        "name": "ウォンツ 周東店",
+        "city": "岩国市",
+        "address": "山口県岩国市周東町下久原436",
+        "official_address": "山口県岩国市周東町下久原436",
+        "official_url": "https://shop.tsuruha-g.com/3719",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3719"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 周東店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3719"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.06195822335542,
+          34.090156606683756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3805",
+      "properties": {
+        "name": "ウォンツ 由宇店",
+        "city": "岩国市",
+        "address": "山口県岩国市由宇中央1-6-1",
+        "official_address": "山口県岩国市由宇中央1-6-1",
+        "official_url": "https://shop.tsuruha-g.com/3805",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3805"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 由宇店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3805"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.212484,
+          34.045487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3835",
+      "properties": {
+        "name": "ウォンツ フジ南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国町3-22-63",
+        "official_address": "山口県岩国市南岩国町3-22-63",
+        "official_url": "https://shop.tsuruha-g.com/3835",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3835"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ フジ南岩国店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3835"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.19928313988117,
+          34.13146280515123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3873",
+      "properties": {
+        "name": "ウォンツ 岩国保津店",
+        "city": "岩国市",
+        "address": "山口県岩国市保津町2-13-34",
+        "official_address": "山口県岩国市保津町2-13-34",
+        "official_url": "https://shop.tsuruha-g.com/3873",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3873"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 岩国保津店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3873"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.20776,
+          34.081851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3926",
+      "properties": {
+        "name": "ウォンツ 岩国中津店",
+        "city": "岩国市",
+        "address": "山口県岩国市中津町2-4-33",
+        "official_address": "山口県岩国市中津町2-4-33",
+        "official_url": "https://shop.tsuruha-g.com/3926",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3926",
+          "official:tsuruha:2279"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 岩国中津店 ウォンツ 岩国中津薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3926"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2279"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2160484711757,
+          34.15400985024889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3929",
+      "properties": {
+        "name": "ウォンツ 岩国多田店",
+        "city": "岩国市",
+        "address": "山口県岩国市多田100-9",
+        "official_address": "山口県岩国市多田100-9",
+        "official_url": "https://shop.tsuruha-g.com/3929",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3929"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 岩国多田店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3929"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1585009,
+          34.17293156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3943",
+      "properties": {
+        "name": "ウォンツ 西岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市錦見6丁目14-34",
+        "official_address": "山口県岩国市錦見6丁目14-34",
+        "official_url": "https://shop.tsuruha-g.com/3943",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3943",
+          "official:tsuruha:2287"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 西岩国店 ウォンツ 西岩国薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3943"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2287"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.195395077888,
+          34.1640743976174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3678",
+      "properties": {
+        "name": "ウォンツ 平生店",
+        "city": "平生町",
+        "address": "山口県熊毛郡平生町大字平生町571",
+        "official_address": "山口県熊毛郡平生町大字平生町571",
+        "official_url": "https://shop.tsuruha-g.com/3678",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3678"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 平生店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3678"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0682896237196,
+          33.940122387875206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3856",
+      "properties": {
+        "name": "ウォンツ フジ長門店",
+        "city": "長門市",
+        "address": "山口県長門市仙崎字網田330-1",
+        "official_address": "山口県長門市仙崎字網田330-1",
+        "official_url": "https://shop.tsuruha-g.com/3856",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3856"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ フジ長門店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3856"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.19435047119862,
+          34.37569243303551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3710",
+      "properties": {
+        "name": "ウォンツ 厚狭店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市厚狭1065",
+        "official_address": "山口県山陽小野田市厚狭1065",
+        "official_url": "https://shop.tsuruha-g.com/3710",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3710"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 厚狭店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3710"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.17396389923425,
+          34.05766914611556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3877",
+      "properties": {
+        "name": "ウォンツ 有帆店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市新有帆町19-6",
+        "official_address": "山口県山陽小野田市新有帆町19-6",
+        "official_url": "https://shop.tsuruha-g.com/3877",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3877"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 有帆店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3877"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.20371872883607,
+          34.02104322279175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3881",
+      "properties": {
+        "name": "ウォンツ 西高泊店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市西高泊623-1",
+        "official_address": "山口県山陽小野田市西高泊623-1",
+        "official_url": "https://shop.tsuruha-g.com/3881",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3881"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 西高泊店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3881"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.17272588528482,
+          34.008654813487816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3979",
+      "properties": {
+        "name": "ウォンツ 竜王店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市北竜王町15-24",
+        "official_address": "山口県山陽小野田市北竜王町15-24",
+        "official_url": "https://shop.tsuruha-g.com/3979",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3979",
+          "official:tsuruha:2295"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 竜王店 ウォンツ 竜王薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3979"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2295"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1771911,
+          33.96941752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3937",
+      "properties": {
+        "name": "ウォンツ 菊川店",
+        "city": "下関市",
+        "address": "山口県下関市菊川町大字下岡枝157-1",
+        "official_address": "山口県下関市菊川町大字下岡枝157-1",
+        "official_url": "https://shop.tsuruha-g.com/3937",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3937"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 菊川店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3937"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.031992092866,
+          34.1218972212439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3983",
+      "properties": {
+        "name": "ウォンツ 周南河東店",
+        "city": "周南市",
+        "address": "山口県周南市河東町1-1",
+        "official_address": "山口県周南市河東町1-1",
+        "official_url": "https://shop.tsuruha-g.com/3983",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3983"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 周南河東店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3983"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8111428,
+          34.04997964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-10049",
+      "properties": {
+        "name": "ウォンツ ハローズ西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市西岐波4303-1",
+        "official_address": "山口県宇部市西岐波4303-1",
+        "official_url": "https://shop.tsuruha-g.com/10049",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:10049"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ ハローズ西岐波店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/10049"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.33282355062036,
+          33.958665617333054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3677",
+      "properties": {
+        "name": "ウォンツ 宇部西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市大字西岐波2450-1",
+        "official_address": "山口県宇部市大字西岐波2450-1",
+        "official_url": "https://shop.tsuruha-g.com/3677",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3677"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 宇部西岐波店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3677"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.30556983053913,
+          33.96595891295839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3848",
+      "properties": {
+        "name": "ウォンツ 宇部岬店",
+        "city": "宇部市",
+        "address": "山口県宇部市岬町3-6-18",
+        "official_address": "山口県宇部市岬町3-6-18",
+        "official_url": "https://shop.tsuruha-g.com/3848",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3848"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 宇部岬店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3848"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.27053931901435,
+          33.931837236981536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3888",
+      "properties": {
+        "name": "ウォンツ 宇部沼1丁目店",
+        "city": "宇部市",
+        "address": "山口県宇部市沼1-8-39",
+        "official_address": "山口県宇部市沼1-8-39",
+        "official_url": "https://shop.tsuruha-g.com/3888",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3888",
+          "official:tsuruha:3135"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 宇部沼1丁目店 ウォンツ 宇部沼1丁目薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3888"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/3135"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.26317927794454,
+          33.96179184393322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3939",
+      "properties": {
+        "name": "ウォンツ 宇部鍋倉店",
+        "city": "宇部市",
+        "address": "山口県宇部市鍋倉町6-52",
+        "official_address": "山口県宇部市鍋倉町6-52",
+        "official_url": "https://shop.tsuruha-g.com/3939",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3939",
+          "official:tsuruha:2285"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 宇部鍋倉店 ウォンツ 宇部鍋倉薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3939"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2285"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "公式構造化データの「宇部市宇部市」は重複表記を正規化。原文と併設薬局の所在地を証拠に保存しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2330509,
+          33.9684173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3993",
+      "properties": {
+        "name": "ウォンツ 宇部東須恵店",
+        "city": "宇部市",
+        "address": "山口県宇部市大字東須恵768",
+        "official_address": "山口県宇部市大字東須恵768",
+        "official_url": "https://shop.tsuruha-g.com/3993",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3993"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 宇部東須恵店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2025-05-21",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店発表と現行の店舗案内を確認して掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3993"
+            },
+            {
+              "title": "運営会社の開店発表（本文に日付を明示）",
+              "url": "https://www.wants.co.jp/news/open/"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.20704595774154,
+          33.989436747054285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3758",
+      "properties": {
+        "name": "ウォンツ 山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡下郷797-8",
+        "official_address": "山口県山口市小郡下郷797-8",
+        "official_url": "https://shop.tsuruha-g.com/3758",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3758",
+          "official:tsuruha:2243"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口小郡店 ウォンツ 山口小郡薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3758"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2243"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.39437911574606,
+          34.10416313678661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3778",
+      "properties": {
+        "name": "ウォンツ 上山口店",
+        "city": "山口市",
+        "address": "山口県山口市三の宮1-2-47",
+        "official_address": "山口県山口市三の宮1-2-47",
+        "official_url": "https://shop.tsuruha-g.com/3778",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3778",
+          "official:tsuruha:2245"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 上山口店 ウォンツ 上山口薬局",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3778"
+            },
+            {
+              "title": "併設調剤薬局の公式案内（別営業時間）",
+              "url": "https://shop.tsuruha-g.com/2245"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "同住所の調剤薬局は重複する物理店舗として追加せず、公式リンク・検索名を保持しています。店舗と薬局の営業時間は同一とはみなしません。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4888586613832,
+          34.18611085091521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3779",
+      "properties": {
+        "name": "ウォンツ 山口宮野店",
+        "city": "山口市",
+        "address": "山口県山口市宮野下2879-1",
+        "official_address": "山口県山口市宮野下2879-1",
+        "official_url": "https://shop.tsuruha-g.com/3779",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3779"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口宮野店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3779"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.50257600737493,
+          34.19625448501816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3834",
+      "properties": {
+        "name": "ウォンツ 吉敷店",
+        "city": "山口市",
+        "address": "山口県山口市吉敷中東2-1-21",
+        "official_address": "山口県山口市吉敷中東2-1-21",
+        "official_url": "https://shop.tsuruha-g.com/3834",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3834"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 吉敷店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3834"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4451036576721,
+          34.1658665201455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3895",
+      "properties": {
+        "name": "ウォンツ 山口秋穂店",
+        "city": "山口市",
+        "address": "山口県山口市秋穂東6893番地1",
+        "official_address": "山口県山口市秋穂東6893番地1",
+        "official_url": "https://shop.tsuruha-g.com/3895",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3895"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口秋穂店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3895"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.43246467629788,
+          34.020243517025435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3901",
+      "properties": {
+        "name": "ウォンツ 山口嘉川店",
+        "city": "山口市",
+        "address": "山口県山口市嘉川1379-3",
+        "official_address": "山口県山口市嘉川1379-3",
+        "official_url": "https://shop.tsuruha-g.com/3901",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3901"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口嘉川店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3901"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.38023233176253,
+          34.07783123187966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3946",
+      "properties": {
+        "name": "ウォンツ 山口大内千坊店",
+        "city": "山口市",
+        "address": "山口県山口市大内千坊4-4-30",
+        "official_address": "山口県山口市大内千坊4-4-30",
+        "official_url": "https://shop.tsuruha-g.com/3946",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3946"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口大内千坊店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3946"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4918412,
+          34.15436338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-4518",
+      "properties": {
+        "name": "ウォンツ 山口黄金店",
+        "city": "山口市",
+        "address": "山口県山口市黄金町4-3",
+        "official_address": "山口県山口市黄金町4-3",
+        "official_url": "https://shop.tsuruha-g.com/4518",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:4518"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 山口黄金店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-01-28",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店発表と現行の店舗案内を確認して掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/4518"
+            },
+            {
+              "title": "運営会社の開店発表（本文に日付を明示）",
+              "url": "https://www.wants.co.jp/news/open/"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4784553883606,
+          34.17142012440984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3692",
+      "properties": {
+        "name": "ウォンツ 柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市古開作647-1",
+        "official_address": "山口県柳井市古開作647-1",
+        "official_url": "https://shop.tsuruha-g.com/3692",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3692"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ 柳井店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3692"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0998979305819,
+          33.96580038042636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-tsuruha-3845",
+      "properties": {
+        "name": "ウォンツ フジ柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市柳井4687-1",
+        "official_address": "山口県柳井市柳井4687-1",
+        "official_url": "https://shop.tsuruha-g.com/3845",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:tsuruha:3845"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ウォンツ フジ柳井店",
+        "location_verification": "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3845"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1021807478504,
+          33.976952514907616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-soy-stock-karato",
+      "properties": {
+        "name": "SOY STOCK",
+        "city": "下関市",
+        "address": "山口県下関市中之町1-16 唐戸はれて横丁",
+        "official_address": "山口県下関市中之町1-16 唐戸はれて横丁",
+        "official_url": "https://www.karatoharete.com/soystock",
+        "category": "cafe",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:soy:stock:karato"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "SOY STOCK",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.karatoharete.com/soystock"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://maps.app.goo.gl/ehgJY5t5Qm9neuaf9"
+            },
+            {
+              "title": "所在地を確認した施設運営者案内",
+              "url": "https://www.karatoharete.com/"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.944833,
+          33.9576608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-minatoe198",
+      "properties": {
+        "name": "MINATOE198",
+        "city": "周南市",
+        "address": "山口県周南市銀座1丁目31番地 徳山デッキ内",
+        "official_address": "山口県周南市銀座1丁目31番地 徳山デッキ内",
+        "official_url": "https://minatoe198.com/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:minatoe198"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "MINATOE198",
+        "location_verification": "公式サイトから案内された徳山デッキD2の建物代表点です。テナント入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://minatoe198.com/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1419.0972079503565!2d131.80293084633993!3d34.050530764829894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6fe694d2c91%3A0x5537828f0a463665!2z44CSNzQ1LTAwMzIg5bGx5Y-j55yM5ZGo5Y2X5biC6YqA5bqn77yR5LiB55uuIOW-s-WxseODh-ODg-OCrSBEMg!5e0!3m2!1sja!2sjp!4v1706699102566!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式サイトから案内された徳山デッキD2の建物代表点です。テナント入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8043643,
+          34.0505388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-rokunoya-ogori",
+      "properties": {
+        "name": "ろくの家 小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡下郷788-2",
+        "official_address": "山口県山口市小郡下郷788-2",
+        "official_url": "https://itsuki-inc.com/rokunoya/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:rokunoya:ogori"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ろくの家 小郡店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://itsuki-inc.com/rokunoya/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.6808877545536!2d131.39273971548408!3d34.103314522483934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354484d11fffd8e1%3A0x3a0d3610d564e761!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a625bCP6YOh5bqX!5e0!3m2!1sja!2sjp!4v1640254139305!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3949333,
+          34.1033176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-rokunoya-shunan",
+      "properties": {
+        "name": "ろくの家 周南店",
+        "city": "周南市",
+        "address": "山口県周南市泉原町7-3",
+        "official_address": "山口県周南市泉原町7-3",
+        "official_url": "https://itsuki-inc.com/rokunoya/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:rokunoya:shunan"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ろくの家 周南店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://itsuki-inc.com/rokunoya/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.565204203666!2d131.81871171548323!3d34.05502272503047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e73a9ab3f86d%3A0x928cfc4d76ea485c!2z5ZGz5ZmM44Op44O844Oh44Oz5bCC6ZaA5bqXIOOBv-OBneWkqumDjiDlkajljZflupc!5e0!3m2!1sja!2sjp!4v1640265139736!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8209004,
+          34.0550183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-rokunoya-hofu",
+      "properties": {
+        "name": "ろくの家 防府店",
+        "city": "防府市",
+        "address": "山口県防府市鋳物師町12番12号",
+        "official_address": "山口県防府市鋳物師町12番12号",
+        "official_url": "https://itsuki-inc.com/rokunoya/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:rokunoya:hofu"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ろくの家 防府店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://itsuki-inc.com/rokunoya/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.739907647319!2d131.576191815483!3d34.0505423252667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544929451fb88b1%3A0x64d32437940a9694!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a626Ziy5bqc5bqX!5e0!3m2!1sja!2sjp!4v1640254091845!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5783805,
+          34.0505379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-rokunoya-kudamatsu",
+      "properties": {
+        "name": "ろくの家 下松店",
+        "city": "下松市",
+        "address": "山口県下松市望町1-9-5",
+        "official_address": "山口県下松市望町1-9-5",
+        "official_url": "https://itsuki-inc.com/rokunoya/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:rokunoya:kudamatsu"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ろくの家 下松店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://itsuki-inc.com/rokunoya/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.644634727746!2d131.8595725154825!3d34.027331626489485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e11fc6eeb813%3A0xd28a3f0444497c17!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a625LiL5p2-5bqX!5e0!3m2!1sja!2sjp!4v1640254115876!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+            "近接する3Qカット等は別業種の併存候補です。近さだけで閉店扱い・統合はしていません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8617612,
+          34.0273272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-worldplus-yamaguchi-ogori",
+      "properties": {
+        "name": "ワールドプラスジム 山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡新町6-3-15",
+        "official_address": "山口県山口市小郡新町6-3-15",
+        "official_url": "https://www.worldplus-gym.com/shop/yamaguchi-ogori.html",
+        "category": "sports_centre",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:worldplus:yamaguchi:ogori"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ワールドプラスジム 山口小郡店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.worldplus-gym.com/shop/yamaguchi-ogori.html"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.092741340363!2d131.4009718!3d34.1183754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449b9660d1cac9%3A0xfc059a2bb597fbf9!2z44Ov44O844Or44OJ44OX44Op44K544K444Og5bGx5Y-j5bCP6YOh5bqX!5e0!3m2!1sja!2sjp!4v1743991044313!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4009718,
+          34.1183754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-chaerin-yumetown-tokuyama",
+      "properties": {
+        "name": "韓国料理チェリン ゆめタウン徳山店",
+        "city": "周南市",
+        "address": "山口県周南市青山町1番18号 ゆめタウン徳山2F",
+        "official_address": "山口県周南市青山町1番18号 ゆめタウン徳山2F",
+        "official_url": "https://www.izumi.jp/tenpo/tokuyama/shop/food/chaerin",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:chaerin:yumetown:tokuyama"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "韓国料理チェリン ゆめタウン徳山店",
+        "location_verification": "公式テナント案内から案内されたゆめタウン徳山の建物代表点です。テナント入口・徒歩到達性は未確認です。母体の商業施設は別IDのまま保持します。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.izumi.jp/tenpo/tokuyama/shop/food/chaerin"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.044972157161!2d131.81349001554!3d34.04271747567876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6e6ad5e3527%3A0xf4fea649d4debc89!2z44KG44KB44K_44Km44Oz5b6z5bGx!5e0!3m2!1sja!2sjp!4v1612155823097!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式テナント案内から案内されたゆめタウン徳山の建物代表点です。テナント入口・徒歩到達性は未確認です。母体の商業施設は別IDのまま保持します。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8155655,
+          34.0427361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-furdi-tokuyama-deck",
+      "properties": {
+        "name": "ファディー 徳山デッキ",
+        "city": "周南市",
+        "address": "山口県周南市銀座1丁目31 TOKUYAMA DECK D2",
+        "official_address": "山口県周南市銀座1丁目31 TOKUYAMA DECK D2",
+        "official_url": "https://furdi.jp/lp/lp06/?studio=tokuyamadeck&gad_source=1",
+        "category": "sports_centre",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:furdi:tokuyama:deck"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ファディー 徳山デッキ",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://furdi.jp/lp/lp06/?studio=tokuyamadeck&gad_source=1"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7498044064882!2d131.80462!3d34.0502885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e700113fafad%3A0x6a5514a75addb5eb!2z44OV44Kh44OH44Kj44O8IOW-s-WxseODh-ODg-OCrQ!5e0!3m2!1sja!2sjp!4v1740025411175!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8046157,
+          34.0502168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-aruk-nagato",
+      "properties": {
+        "name": "アルク長門店",
+        "city": "長門市",
+        "address": "山口県長門市東深川803-1",
+        "official_address": "山口県長門市東深川803-1",
+        "official_url": "https://www.mrk09.co.jp/area_info/アルク長門店/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:aruk:nagato"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク長門店",
+        "location_verification": "公式店舗案内が案内する東深川803の住所代表点です。公式番地は803-1。店舗入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2024-03-09",
+          "checked_at": "2026-09-25",
+          "summary": "運営会社の開店発表と現行の店舗案内を確認して掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.mrk09.co.jp/area_info/アルク長門店/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.0706700669443!2d131.1844878755991!3d34.37412280066605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35435dce93750405%3A0x7bf705b1a85aac63!2z44CSNzU5LTQxMDEg5bGx5Y-j55yM6ZW36ZaA5biC5p2x5rex5bed77yY77yQ77yT!5e0!3m2!1sja!2sjp!4v1709529752404!5m2!1sja!2sjp"
+            },
+            {
+              "title": "運営会社の開店発表",
+              "url": "https://www.mrk09.co.jp/アルク長門店　新店オープンのお知らせ/"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式店舗案内が案内する東深川803の住所代表点です。公式番地は803-1。店舗入口・徒歩到達性は未確認です。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1870628,
+          34.3741184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-poplar-hikari-mii",
+      "properties": {
+        "name": "ローソン・ポプラ 光三井店",
+        "city": "光市",
+        "address": "山口県光市三井7丁目3番7号",
+        "official_address": "山口県光市三井7丁目3番7号",
+        "official_url": "https://poplarretail.com/store/store-2620/",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:poplar:hikari:mii"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン・ポプラ 光三井店",
+        "location_verification": "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式名称・所在地・店舗案内を確認して掲載しました。開店日不明の場合は確認日を代入していません。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://poplarretail.com/store/store-2620/"
+            },
+            {
+              "title": "公式ページから案内された所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.728725997092!2d131.94679499999998!3d33.999500999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451f00753c9657%3A0x3550e8f6c42c8a2f!2z44Ot44O844K944OzIOWFieS4ieS6leW6lw!5e0!3m2!1sja!2sjp!4v1737108430210!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "公式ページから案内された店舗の地図代表点。画面中心は採用していません。入口・徒歩到達性は未確認です。",
+            "運営会社の光三井店案内と、そこから案内されるローソン・ポプラ光三井店の地図を照合しました。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9568625,
+          33.9913449
         ]
       }
     }

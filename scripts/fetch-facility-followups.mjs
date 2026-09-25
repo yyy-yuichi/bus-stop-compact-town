@@ -4,7 +4,7 @@ import {hash} from './jev-batch.mjs';
 const planFile=process.argv[2];
 if(!planFile)throw Error('Pass an explicit reviewed URL plan');
 const plan=JSON.parse(fs.readFileSync(planFile,'utf8'));
-const dir='outputs/facility-evidence-20260925/followups';fs.mkdirSync(dir,{recursive:true});
+const dir=process.argv[3]??'outputs/facility-evidence-20260925/followups';fs.mkdirSync(dir,{recursive:true});
 function safe(url){const u=new URL(url);if(!['https:','http:'].includes(u.protocol)||u.username||u.password||u.port||net.isIP(u.hostname)||!u.hostname.includes('.')||/localhost|\.local$|\.internal$/.test(u.hostname))throw Error('Not a public page URL');return u.href;}
 for(const item of plan){const url=safe(item.url),file=`${dir}/${hash(url).slice(0,24)}.json`;if(fs.existsSync(file))continue;
   const r={...item,retrieved_at:new Date().toISOString()};

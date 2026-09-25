@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "tsuruha-3897",
+    "name": "ウォンツ 阿武店",
+    "address": "山口県阿武郡阿武町奈古3093番地1",
+    "url": "https://shop.tsuruha-g.com/3897",
+    "coordinates": [
+      131.47630429772892,
+      34.50658428882527
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3897",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3897",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e380b58679097a73b53a0e4c.json",
+      "sha256": "eccb002f91fa2f2264717073a4d2820a3ae5c8b9b5ce0c43e4934498189d466e"
+    }
+  },
+  {
+    "id": "tsuruha-3687",
+    "name": "ウォンツ 萩店",
+    "address": "山口県萩市大字椿東2883-1",
+    "url": "https://shop.tsuruha-g.com/3687",
+    "coordinates": [
+      131.41167060041298,
+      34.418681991185466
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3687",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3687",
+      "receipt": "outputs/facility-reconcile-20260925/pages/572deb49a8ef4dd61e6533e1.json",
+      "sha256": "db05654c936bf5b546642fbaeaf6b1dc74282116c0a39979521c0a3b2a268afa"
+    }
+  },
+  {
+    "id": "tsuruha-3671",
+    "name": "ウォンツ 光室積店",
+    "address": "山口県光市室積新開2-1-2",
+    "url": "https://shop.tsuruha-g.com/3671",
+    "coordinates": [
+      131.96785516059856,
+      33.94120284163967
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-4364264590",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3671",
+      "receipt": "outputs/facility-reconcile-20260925/pages/5d73c9d195779a3c615554b3.json",
+      "sha256": "b17c2a0bcdeb3d1f4f23d91b30483bf780db8440efaf0f1ee10c87fe206e5456"
+    }
+  },
+  {
+    "id": "tsuruha-3959",
+    "name": "ウォンツ光島田店",
+    "address": "山口県光市島田2-3-29",
+    "url": "https://shop.tsuruha-g.com/3959",
+    "coordinates": [
+      131.934256,
+      33.97337964
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3959",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3959",
+      "receipt": "outputs/facility-reconcile-20260925/pages/367cb41bf614f2fa8c2a6e47.json",
+      "sha256": "7989a6e5d6fb2328d75275fbe689bae662986134d6fb4e90f23ae3482fe00626"
+    }
+  },
+  {
+    "id": "tsuruha-2299",
+    "name": "ウォンツ 防府松崎薬局",
+    "address": "山口県防府市南松崎町4-26",
+    "url": "https://shop.tsuruha-g.com/2299",
+    "coordinates": [
+      131.5785144,
+      34.056454
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3945",
+    "paired_store_id": "3945",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2299",
+      "receipt": "outputs/facility-reconcile-20260925/pages/844dc99d6dcadd38057f0a6f.json",
+      "sha256": "0f2049415d2467e7495ccfd1eaca5841b678c57cf8b2c2ce9a5d2787cc133310"
+    }
+  },
+  {
+    "id": "tsuruha-3665",
+    "name": "ウォンツ 防府八王子店",
+    "address": "山口県防府市八王子2-8-9",
+    "url": "https://shop.tsuruha-g.com/3665",
+    "coordinates": [
+      131.5674471134918,
+      34.05786686788707
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-4041136093",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3665",
+      "receipt": "outputs/facility-reconcile-20260925/pages/f75348d5d1f607bfdf546102.json",
+      "sha256": "60dc477048c4de25907ba2dffe14afeaac9d8ce4c0f15fbf293caaa565c17724"
+    }
+  },
+  {
+    "id": "tsuruha-3945",
+    "name": "ウォンツ 防府松崎店",
+    "address": "山口県防府市南松崎町4-26",
+    "url": "https://shop.tsuruha-g.com/3945",
+    "coordinates": [
+      131.5785395,
+      34.05644842
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3945",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3945",
+      "receipt": "outputs/facility-reconcile-20260925/pages/f75a27f71e79bc5c59458488.json",
+      "sha256": "0e1b6eebf716d542d42f55585f4f7da9ee941472b4db308335b0ce16cbe4c890"
+    }
+  },
+  {
+    "id": "tsuruha-3989",
+    "name": "ウォンツ 防府鋳物師店",
+    "address": "山口県防府市鋳物師町8-30",
+    "url": "https://shop.tsuruha-g.com/3989",
+    "coordinates": [
+      131.5752086,
+      34.05132869
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3989",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3989",
+      "receipt": "outputs/facility-reconcile-20260925/pages/25ff11b6b88ca3b669c67dff.json",
+      "sha256": "5e55f0e1726b71f286d0c59bf2ff7d99b75ede122d2a004b032f6b0a7dcfaa2a"
+    }
+  },
+  {
+    "id": "tsuruha-2279",
+    "name": "ウォンツ 岩国中津薬局",
+    "address": "山口県岩国市中津町2-4-33",
+    "url": "https://shop.tsuruha-g.com/2279",
+    "coordinates": [
+      132.21601528543042,
+      34.15402007200026
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": false,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3926",
+    "paired_store_id": "3926",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2279",
+      "receipt": "outputs/facility-reconcile-20260925/pages/8c44bcb8ecb8fcb16c457fd9.json",
+      "sha256": "1430eb8532b17a31b6f163f294ef4d1f5311f72cd1a073c1ec43edfd3b392537"
+    }
+  },
+  {
+    "id": "tsuruha-2287",
+    "name": "ウォンツ 西岩国薬局",
+    "address": "山口県岩国市錦見6丁目14-34",
+    "url": "https://shop.tsuruha-g.com/2287",
+    "coordinates": [
+      132.195395077888,
+      34.1640743976174
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3943",
+    "paired_store_id": "3943",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2287",
+      "receipt": "outputs/facility-reconcile-20260925/pages/4bfe8942fcd96b1f46926296.json",
+      "sha256": "0909519807a68c70a11748ee983ee36afce7d2f09a297df2dfac53c31fa9fb35"
+    }
+  },
+  {
+    "id": "tsuruha-3613",
+    "name": "ウォンツ 岩国室の木店",
+    "address": "山口県岩国市室の木町1-2-38",
+    "url": "https://shop.tsuruha-g.com/3613",
+    "coordinates": [
+      132.2131341982407,
+      34.17009726831843
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3613",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3613",
+      "receipt": "outputs/facility-reconcile-20260925/pages/37e8018996819d1eca22144f.json",
+      "sha256": "e6f105e53427bcd398e4d1d71f8a1b42a7a2e0d83ef08f2ce56c5becc10674fd"
+    }
+  },
+  {
+    "id": "tsuruha-3620",
+    "name": "ウォンツ 南岩国店",
+    "address": "山口県岩国市南岩国町1-20-36",
+    "url": "https://shop.tsuruha-g.com/3620",
+    "coordinates": [
+      132.20279540170307,
+      34.13546639231643
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3620",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3620",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e4e3d0d0f11edacebbf6e687.json",
+      "sha256": "fae67a03682953fe75575a7c37a08db2fc36e843c6b4d8fa65b3530d53f4013d"
+    }
+  },
+  {
+    "id": "tsuruha-3654",
+    "name": "ウォンツ 岩国まりふ店",
+    "address": "山口県岩国市麻里布町2-9-23",
+    "url": "https://shop.tsuruha-g.com/3654",
+    "coordinates": [
+      132.223275379374,
+      34.16902091814309
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3654",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3654",
+      "receipt": "outputs/facility-reconcile-20260925/pages/3051214fdc3c04eead7b52a4.json",
+      "sha256": "4ed6703a14806e7f5fd1eec45ac74f8e5c248d88bf33c4121e75e2e35dc0cd1f"
+    }
+  },
+  {
+    "id": "tsuruha-3719",
+    "name": "ウォンツ 周東店",
+    "address": "山口県岩国市周東町下久原436",
+    "url": "https://shop.tsuruha-g.com/3719",
+    "coordinates": [
+      132.06195822335542,
+      34.090156606683756
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3719",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3719",
+      "receipt": "outputs/facility-reconcile-20260925/pages/7b0b1e79fb38cec448dbcfa1.json",
+      "sha256": "1e9d217b15728a77ab49607d8fba3fd0c22c22fc061cdea2918be4d27576b709"
+    }
+  },
+  {
+    "id": "tsuruha-3805",
+    "name": "ウォンツ 由宇店",
+    "address": "山口県岩国市由宇中央1-6-1",
+    "url": "https://shop.tsuruha-g.com/3805",
+    "coordinates": [
+      132.212484,
+      34.045487
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3805",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3805",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e90b9e3ed0f66bed5734229e.json",
+      "sha256": "4851036afea12554f66cd30a29af88b4dec6506de0eb95a240eb63d27b613882"
+    }
+  },
+  {
+    "id": "tsuruha-3835",
+    "name": "ウォンツ フジ南岩国店",
+    "address": "山口県岩国市南岩国町3-22-63",
+    "url": "https://shop.tsuruha-g.com/3835",
+    "coordinates": [
+      132.19928313988117,
+      34.13146280515123
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3835",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3835",
+      "receipt": "outputs/facility-reconcile-20260925/pages/b21b5b95594976c1ac8f0a83.json",
+      "sha256": "57e25f6ed5e881945cfd8ec542c830ea28b5f6eb34841aac65b897b1e0e4efdf"
+    }
+  },
+  {
+    "id": "tsuruha-3873",
+    "name": "ウォンツ 岩国保津店",
+    "address": "山口県岩国市保津町2-13-34",
+    "url": "https://shop.tsuruha-g.com/3873",
+    "coordinates": [
+      132.20776,
+      34.081851
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3873",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3873",
+      "receipt": "outputs/facility-reconcile-20260925/pages/91e459fa3ccd9d29d5dd5f2d.json",
+      "sha256": "31ceb5c8b3a58f463d0045dfca83ca07d7dab77a7901f2983e8b04a55749d1af"
+    }
+  },
+  {
+    "id": "tsuruha-3926",
+    "name": "ウォンツ 岩国中津店",
+    "address": "山口県岩国市中津町2-4-33",
+    "url": "https://shop.tsuruha-g.com/3926",
+    "coordinates": [
+      132.2160484711757,
+      34.15400985024889
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3926",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3926",
+      "receipt": "outputs/facility-reconcile-20260925/pages/72731b0042e74c1c638a642b.json",
+      "sha256": "ee08913ca7c2babe33c9dc5f6be34286ecd0a881f2627e4e85c3e7e5e6fdbf39"
+    }
+  },
+  {
+    "id": "tsuruha-3929",
+    "name": "ウォンツ 岩国多田店",
+    "address": "山口県岩国市多田100-9",
+    "url": "https://shop.tsuruha-g.com/3929",
+    "coordinates": [
+      132.1585009,
+      34.17293156
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3929",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3929",
+      "receipt": "outputs/facility-reconcile-20260925/pages/761d2e0866cc35abc9051099.json",
+      "sha256": "15ef2c900591431d33392582f7d1c7f1d4f176be36a0f9ce79e5d9aa10626690"
+    }
+  },
+  {
+    "id": "tsuruha-3943",
+    "name": "ウォンツ 西岩国店",
+    "address": "山口県岩国市錦見6丁目14-34",
+    "url": "https://shop.tsuruha-g.com/3943",
+    "coordinates": [
+      132.195395077888,
+      34.1640743976174
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3943",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3943",
+      "receipt": "outputs/facility-reconcile-20260925/pages/13daa3a47ff8c66e062d9568.json",
+      "sha256": "f480c73b55b4e3e7b3ad54dc32a7b2b271a9c5d80f3553cd67fd228b31799ea3"
+    }
+  },
+  {
+    "id": "tsuruha-3653",
+    "name": "ウォンツ 下松店",
+    "address": "山口県下松市望町3-16-13",
+    "url": "https://shop.tsuruha-g.com/3653",
+    "coordinates": [
+      131.8553266526293,
+      34.02476300086254
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-369683338",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3653",
+      "receipt": "outputs/facility-reconcile-20260925/pages/9edd568571bec46e73c91b61.json",
+      "sha256": "c63d03b8d244886c76c6d5d2e8d14ab65fc8a08544e5a30cc9d33ea979bc27f2"
+    }
+  },
+  {
+    "id": "tsuruha-3703",
+    "name": "ウォンツ 下松桜町店",
+    "address": "山口県下松市桜町1-14-28",
+    "url": "https://shop.tsuruha-g.com/3703",
+    "coordinates": [
+      131.8686049115248,
+      34.01598633944119
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-305521033",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3703",
+      "receipt": "outputs/facility-reconcile-20260925/pages/1d42acc9b30fbe3a4091520f.json",
+      "sha256": "be7f5b30b0e6732e26cc35f073650d82b24fa269a7f12dcdb09b11160fb0f5e9"
+    }
+  },
+  {
+    "id": "tsuruha-3889",
+    "name": "ウォンツ 下松山田店",
+    "address": "山口県下松市山田153番",
+    "url": "https://shop.tsuruha-g.com/3889",
+    "coordinates": [
+      131.9018631447746,
+      34.03236311402327
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "different_prior_occupant",
+    "route_overridden": true,
+    "decision": "hold",
+    "facility_id": null,
+    "paired_store_id": null,
+    "hold_reason": "Different prior occupant at the same site: ドラッグセガミ (10 m). Do not overwrite or add a duplicate until succession is verified.",
+    "base_ids": [
+      "osm-node-4021837791"
+    ],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3889",
+      "receipt": "outputs/facility-reconcile-20260925/pages/7318f4c8fe9f03fea60465e2.json",
+      "sha256": "666c2dcc5994419fc2e64d6b446989ce2bd2042473719f46aaa19bc1ebb87bc8"
+    }
+  },
+  {
+    "id": "tsuruha-3678",
+    "name": "ウォンツ 平生店",
+    "address": "山口県熊毛郡平生町大字平生町571",
+    "url": "https://shop.tsuruha-g.com/3678",
+    "coordinates": [
+      132.0682896237196,
+      33.940122387875206
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3678",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3678",
+      "receipt": "outputs/facility-reconcile-20260925/pages/345e7539e456d25492d7954f.json",
+      "sha256": "3cf81c002c8fc77075626f57d827c4a51a8521a5ea9c05ed7dde887ad26ed8df"
+    }
+  },
+  {
+    "id": "tsuruha-3856",
+    "name": "ウォンツ フジ長門店",
+    "address": "山口県長門市仙崎字網田330-1",
+    "url": "https://shop.tsuruha-g.com/3856",
+    "coordinates": [
+      131.19435047119862,
+      34.37569243303551
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3856",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3856",
+      "receipt": "outputs/facility-reconcile-20260925/pages/cf1d2a409d7beb5fc326b098.json",
+      "sha256": "06bd8224abcddaebdcc48a05643b65ef2c89062ab266a4907014ef36bb2ab959"
+    }
+  },
+  {
+    "id": "tsuruha-3772",
+    "name": "ウォンツ 周防大島店",
+    "address": "山口県大島郡周防大島町大字西三蒲1653-1",
+    "url": "https://shop.tsuruha-g.com/3772",
+    "coordinates": [
+      132.20762540000004,
+      33.946930023318835
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-1385818871",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3772",
+      "receipt": "outputs/facility-reconcile-20260925/pages/8d7905b3db253d20360b4223.json",
+      "sha256": "7a8326acfdc79d8dd29353b03ea08c401e2343cb62f7887fe57a35804597eaf2"
+    }
+  },
+  {
+    "id": "tsuruha-2295",
+    "name": "ウォンツ 竜王薬局",
+    "address": "山口県山陽小野田市北竜王町15-24",
+    "url": "https://shop.tsuruha-g.com/2295",
+    "coordinates": [
+      131.1771911,
+      33.96941752
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": false,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3979",
+    "paired_store_id": "3979",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2295",
+      "receipt": "outputs/facility-reconcile-20260925/pages/37345b249efca5234a2ca0db.json",
+      "sha256": "90e7d91047a8bca7faef529051e127a9e8d81fdcd7e118ff958202221fef37a7"
+    }
+  },
+  {
+    "id": "tsuruha-3710",
+    "name": "ウォンツ 厚狭店",
+    "address": "山口県山陽小野田市厚狭1065",
+    "url": "https://shop.tsuruha-g.com/3710",
+    "coordinates": [
+      131.17396389923425,
+      34.05766914611556
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3710",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3710",
+      "receipt": "outputs/facility-reconcile-20260925/pages/3cd28fb8cc06c4aebd82c507.json",
+      "sha256": "18a5aa939e3d00127484c69510d4f188caa1154b7d72445d4e343b2be7f2da36"
+    }
+  },
+  {
+    "id": "tsuruha-3877",
+    "name": "ウォンツ 有帆店",
+    "address": "山口県山陽小野田市新有帆町19-6",
+    "url": "https://shop.tsuruha-g.com/3877",
+    "coordinates": [
+      131.20371872883607,
+      34.02104322279175
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3877",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3877",
+      "receipt": "outputs/facility-reconcile-20260925/pages/2af7f537aa01db19a65ccfd6.json",
+      "sha256": "253dcab1aef259319a5f17ab47ff19432e29d28f04509597a78354e577b904f0"
+    }
+  },
+  {
+    "id": "tsuruha-3881",
+    "name": "ウォンツ 西高泊店",
+    "address": "山口県山陽小野田市西高泊623-1",
+    "url": "https://shop.tsuruha-g.com/3881",
+    "coordinates": [
+      131.17272588528482,
+      34.008654813487816
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3881",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3881",
+      "receipt": "outputs/facility-reconcile-20260925/pages/754d91c023e9dfdc0e8119e0.json",
+      "sha256": "2c427a27abd4ec985a4a8d665781c0c1b1445fb909f4be0141e4ec861456f9f9"
+    }
+  },
+  {
+    "id": "tsuruha-3979",
+    "name": "ウォンツ 竜王店",
+    "address": "山口県山陽小野田市北竜王町15-24",
+    "url": "https://shop.tsuruha-g.com/3979",
+    "coordinates": [
+      131.1771911,
+      33.96941752
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3979",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3979",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e8f703f9a72bfb0b5cbd38a2.json",
+      "sha256": "a2dfd4cbbddcc3dd72b855be0b16a60213b1db3c91181e84e0f3c3c552785191"
+    }
+  },
+  {
+    "id": "tsuruha-3937",
+    "name": "ウォンツ 菊川店",
+    "address": "山口県下関市菊川町大字下岡枝157-1",
+    "url": "https://shop.tsuruha-g.com/3937",
+    "coordinates": [
+      131.031992092866,
+      34.1218972212439
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3937",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3937",
+      "receipt": "outputs/facility-reconcile-20260925/pages/7ff51e2d4b1b8ca211faf48b.json",
+      "sha256": "75c1c2814dccb150ee0b9533660dc496b20fc2d5089885353ebd51f680aa97af"
+    }
+  },
+  {
+    "id": "tsuruha-2225",
+    "name": "ウォンツ イオンタウン周南久米薬局",
+    "address": "山口県周南市久米中央五丁目８番１号",
+    "url": "https://shop.tsuruha-g.com/2225",
+    "coordinates": [
+      131.84320560248145,
+      34.036722596629296
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "osm-node-4818155053",
+    "paired_store_id": "3799",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2225",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e15c84027d773f083c139c8a.json",
+      "sha256": "3bd205d5853de66d3a4f0811508b11e04d7af741ad0989dc61f55341547274d8"
+    }
+  },
+  {
+    "id": "tsuruha-2232",
+    "name": "ウォンツ 周南周陽薬局",
+    "address": "山口県周南市周陽1-1-1",
+    "url": "https://shop.tsuruha-g.com/2232",
+    "coordinates": [
+      131.8274644,
+      34.0506171
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "osm-node-3890136162",
+    "paired_store_id": "3707",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2232",
+      "receipt": "outputs/facility-reconcile-20260925/pages/2026c56795a91c0d85d5d8f1.json",
+      "sha256": "1a5e4855637860ccdf4ee72b9e80a657c9319566a7f6851559707ad74a362e32"
+    }
+  },
+  {
+    "id": "tsuruha-3691",
+    "name": "ウォンツ 周南富田店",
+    "address": "山口県周南市平野2-1-25",
+    "url": "https://shop.tsuruha-g.com/3691",
+    "coordinates": [
+      131.75621866432877,
+      34.07212024125357
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-350352664",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3691",
+      "receipt": "outputs/facility-reconcile-20260925/pages/c230cb68c0d8b5b977db0276.json",
+      "sha256": "6d2df35481eb0b1faef56c7054c9764c7e3358ed7bc0c4e01e0c96e678e5a7b3"
+    }
+  },
+  {
+    "id": "tsuruha-3707",
+    "name": "ウォンツ 周南周陽店",
+    "address": "山口県周南市周陽1-1-1",
+    "url": "https://shop.tsuruha-g.com/3707",
+    "coordinates": [
+      131.8274644,
+      34.0506171
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": true,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-3890136162",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3707",
+      "receipt": "outputs/facility-reconcile-20260925/pages/7b5f878c7054993fab3ee63a.json",
+      "sha256": "a312827b780d7b3abc7bbaa410df077edc5d3b1bf39356e725ca843844e6f87e"
+    }
+  },
+  {
+    "id": "tsuruha-3799",
+    "name": "ウォンツ イオンタウン周南久米店",
+    "address": "山口県周南市久米中央五丁目８番１号",
+    "url": "https://shop.tsuruha-g.com/3799",
+    "coordinates": [
+      131.8430639953821,
+      34.0366616295035
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": true,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-4818155053",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3799",
+      "receipt": "outputs/facility-reconcile-20260925/pages/d2522d91d7f3d0909e0db872.json",
+      "sha256": "e9ebe45235742e9004fca0d5930cff4ebb9dcab51ace5ff41014a3a4e1d29b15"
+    }
+  },
+  {
+    "id": "tsuruha-3912",
+    "name": "ウォンツ 周南新宿通店",
+    "address": "山口県周南市新宿通1-16",
+    "url": "https://shop.tsuruha-g.com/3912",
+    "coordinates": [
+      131.80153973289376,
+      34.056925033386584
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-13019068187",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3912",
+      "receipt": "outputs/facility-reconcile-20260925/pages/78de8d896ed23eb95521d656.json",
+      "sha256": "0b903622fac5edf93fc49b51324569b98729894e8c5c258c6bf0aaf75bd6451e"
+    }
+  },
+  {
+    "id": "tsuruha-3983",
+    "name": "ウォンツ 周南河東店",
+    "address": "山口県周南市河東町1-1",
+    "url": "https://shop.tsuruha-g.com/3983",
+    "coordinates": [
+      131.8111428,
+      34.04997964
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3983",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3983",
+      "receipt": "outputs/facility-reconcile-20260925/pages/7a00b2203601a125d99ef262.json",
+      "sha256": "b3e644d72142950ff26d94ce8b2932931a02f49cc70d948c401617951fdd997d"
+    }
+  },
+  {
+    "id": "tsuruha-10049",
+    "name": "ウォンツ ハローズ西岐波店",
+    "address": "山口県宇部市西岐波4303-1",
+    "url": "https://shop.tsuruha-g.com/10049",
+    "coordinates": [
+      131.33282355062036,
+      33.958665617333054
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-10049",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/10049",
+      "receipt": "outputs/facility-reconcile-20260925/pages/ccf05dda56d6d2340ba740d4.json",
+      "sha256": "aaaf61eb25b9aaac2aed737fd99e5b7e682d0ec4d3b3d4d66ea6b0d89ca35baa"
+    }
+  },
+  {
+    "id": "tsuruha-2234",
+    "name": "ウォンツ 宇部琴芝薬局",
+    "address": "山口県宇部市北琴芝2-11-45",
+    "url": "https://shop.tsuruha-g.com/2234",
+    "coordinates": [
+      131.25873556258296,
+      33.957152471818986
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "osm-way-562104060",
+    "paired_store_id": "3717",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2234",
+      "receipt": "outputs/facility-reconcile-20260925/pages/2ef1d38afedf3542c14b3751.json",
+      "sha256": "ce82c59ecf843e1abd1ea00b6533005360abd3651f1bc98a7fc3590ef8c1ef8c"
+    }
+  },
+  {
+    "id": "tsuruha-2285",
+    "name": "ウォンツ 宇部鍋倉薬局",
+    "address": "山口県宇部市鍋倉町6-52",
+    "url": "https://shop.tsuruha-g.com/2285",
+    "coordinates": [
+      131.233050903362,
+      33.9684173049896
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3939",
+    "paired_store_id": "3939",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2285",
+      "receipt": "outputs/facility-reconcile-20260925/pages/5a73ddf52fd0cece01dc9db7.json",
+      "sha256": "451054572f33091b7125458fd32e2c3b00fe7c0fa68d270df15785499c3808aa"
+    }
+  },
+  {
+    "id": "tsuruha-3135",
+    "name": "ウォンツ 宇部沼1丁目薬局",
+    "address": "山口県宇部市沼1-8-39",
+    "url": "https://shop.tsuruha-g.com/3135",
+    "coordinates": [
+      131.26315046625308,
+      33.96183073139687
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": true,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3888",
+    "paired_store_id": "3888",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3135",
+      "receipt": "outputs/facility-reconcile-20260925/pages/b4fd2d911a968cbc993e7fd0.json",
+      "sha256": "b1d9f73951ccccabec5355d2fd9cb65e6b4f0dfbec27a8a579a5f02e58e63f0f"
+    }
+  },
+  {
+    "id": "tsuruha-3663",
+    "name": "ウォンツ 宇部新川店",
+    "address": "山口県宇部市島3-5-1",
+    "url": "https://shop.tsuruha-g.com/3663",
+    "coordinates": [
+      131.24269889065798,
+      33.96013706271693
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-353411446",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3663",
+      "receipt": "outputs/facility-reconcile-20260925/pages/296f70f2d9beacd77066b61a.json",
+      "sha256": "06d93a48547ad4a0822065493b96a1039d70fe5db134c48679121e8c2eb7cf86"
+    }
+  },
+  {
+    "id": "tsuruha-3677",
+    "name": "ウォンツ 宇部西岐波店",
+    "address": "山口県宇部市大字西岐波2450-1",
+    "url": "https://shop.tsuruha-g.com/3677",
+    "coordinates": [
+      131.30556983053913,
+      33.96595891295839
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3677",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3677",
+      "receipt": "outputs/facility-reconcile-20260925/pages/1254d87121cde21d9780965b.json",
+      "sha256": "75cb0e48538b73f0c25e1fa9ff818bb7e14f605f4e0cc8beeaf1fd5472b937b7"
+    }
+  },
+  {
+    "id": "tsuruha-3717",
+    "name": "ウォンツ 宇部琴芝店",
+    "address": "山口県宇部市北琴芝2-11-45",
+    "url": "https://shop.tsuruha-g.com/3717",
+    "coordinates": [
+      131.2586349682921,
+      33.957131340036234
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-562104060",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3717",
+      "receipt": "outputs/facility-reconcile-20260925/pages/8095ae5c66864d0e28358193.json",
+      "sha256": "cede98689b0ecb95cdaedbd98625237f90f4cc2b6e1d38617e14d4e8edc1d916"
+    }
+  },
+  {
+    "id": "tsuruha-3848",
+    "name": "ウォンツ 宇部岬店",
+    "address": "山口県宇部市岬町3-6-18",
+    "url": "https://shop.tsuruha-g.com/3848",
+    "coordinates": [
+      131.27053931901435,
+      33.931837236981536
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3848",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3848",
+      "receipt": "outputs/facility-reconcile-20260925/pages/b36116fe1cebde526addfef9.json",
+      "sha256": "6d66553c5f097557e89abae336960c86723622f84666cd8294d5ac1125b0becf"
+    }
+  },
+  {
+    "id": "tsuruha-3888",
+    "name": "ウォンツ 宇部沼1丁目店",
+    "address": "山口県宇部市沼1-8-39",
+    "url": "https://shop.tsuruha-g.com/3888",
+    "coordinates": [
+      131.26317927794454,
+      33.96179184393322
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3888",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3888",
+      "receipt": "outputs/facility-reconcile-20260925/pages/52882000ea5beb7a7a26d821.json",
+      "sha256": "a0453bd0d50be18f052fa8cf524b0c7a5905c34b703efbda296dc0c900c1050b"
+    }
+  },
+  {
+    "id": "tsuruha-3905",
+    "name": "ウォンツ 宇部亀浦店",
+    "address": "山口県宇部市亀浦大字西岐波4675-1",
+    "url": "https://shop.tsuruha-g.com/3905",
+    "coordinates": [
+      131.2880831060022,
+      33.94276748226287
+    ],
+    "jev_route": "duplicate_or_ambiguous",
+    "reviewed_route": "duplicate_or_ambiguous",
+    "route_overridden": false,
+    "decision": "hold",
+    "facility_id": null,
+    "paired_store_id": null,
+    "hold_reason": "Two existing node/way records describe ウォンツ宇部亀浦店 at the same site. Preserve both pending deduplication review; do not add a third.",
+    "base_ids": [
+      "osm-node-9472242519",
+      "osm-way-1027461546"
+    ],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3905",
+      "receipt": "outputs/facility-reconcile-20260925/pages/a8c8517d95aa155a06666419.json",
+      "sha256": "fd97e7230080976a8fcbd17ab871240eed52f4cc7f79ae832c4144c00c5efed8"
+    }
+  },
+  {
+    "id": "tsuruha-3939",
+    "name": "ウォンツ 宇部鍋倉店",
+    "address": "山口県宇部市鍋倉町6-52",
+    "url": "https://shop.tsuruha-g.com/3939",
+    "coordinates": [
+      131.2330509,
+      33.9684173
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3939",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3939",
+      "receipt": "outputs/facility-reconcile-20260925/pages/a9686a5f9293e2dce93a44f5.json",
+      "sha256": "ef4a39706df88d9130ac1c57ee9c60bb9237a0c1845d77faf431faffa4dd5b29"
+    }
+  },
+  {
+    "id": "tsuruha-3993",
+    "name": "ウォンツ 宇部東須恵店",
+    "address": "山口県宇部市大字東須恵768",
+    "url": "https://shop.tsuruha-g.com/3993",
+    "coordinates": [
+      131.20704595774154,
+      33.989436747054285
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_opening",
+    "facility_id": "official-tsuruha-3993",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3993",
+      "receipt": "outputs/facility-reconcile-20260925/pages/c7b584dc12716b1c68eb2358.json",
+      "sha256": "adb6b8fc31e35b8d82991c25970a56b2211d1f852a18fa355589843bd27f1b9e"
+    }
+  },
+  {
+    "id": "tsuruha-2243",
+    "name": "ウォンツ 山口小郡薬局",
+    "address": "山口県山口市小郡下郷797-8",
+    "url": "https://shop.tsuruha-g.com/2243",
+    "coordinates": [
+      131.39437901779098,
+      34.10413707598273
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": false,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3758",
+    "paired_store_id": "3758",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2243",
+      "receipt": "outputs/facility-reconcile-20260925/pages/01f8942e97c3daf128c46694.json",
+      "sha256": "0b36bb221be4c73916d319ff7c111ce975371c430d1d5e69f460aab844fbc4d3"
+    }
+  },
+  {
+    "id": "tsuruha-2245",
+    "name": "ウォンツ 上山口薬局",
+    "address": "山口県山口市三の宮1-2-47",
+    "url": "https://shop.tsuruha-g.com/2245",
+    "coordinates": [
+      131.48883069767382,
+      34.18611466241928
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "co_located_pharmacy",
+    "route_overridden": false,
+    "decision": "co_located_service",
+    "facility_id": "official-tsuruha-3778",
+    "paired_store_id": "3778",
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/2245",
+      "receipt": "outputs/facility-reconcile-20260925/pages/c063c38c52bd4867bd38d5e3.json",
+      "sha256": "e0c5fa751e07a11afadad56b5fb6a43bdf3c154074810f87fe52222133c0f9e5"
+    }
+  },
+  {
+    "id": "tsuruha-3758",
+    "name": "ウォンツ 山口小郡店",
+    "address": "山口県山口市小郡下郷797-8",
+    "url": "https://shop.tsuruha-g.com/3758",
+    "coordinates": [
+      131.39437911574606,
+      34.10416313678661
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3758",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3758",
+      "receipt": "outputs/facility-reconcile-20260925/pages/ae5c38ac1429ffb06a422f83.json",
+      "sha256": "898912b2b312fcb549d5120c948b2fb5ce0f9eda91e59e01c359f781b4c755e8"
+    }
+  },
+  {
+    "id": "tsuruha-3774",
+    "name": "ウォンツ 徳佐店",
+    "address": "山口県山口市阿東徳佐中3061-1",
+    "url": "https://shop.tsuruha-g.com/3774",
+    "coordinates": [
+      131.7185638079866,
+      34.39428759253622
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-node-6011703186",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3774",
+      "receipt": "outputs/facility-reconcile-20260925/pages/2e6f3b678891fde2c8417de7.json",
+      "sha256": "42786e91524b63aad55cf7c9d1f697eb8683a6002e962db6ecee95b5c65cc6e7"
+    }
+  },
+  {
+    "id": "tsuruha-3778",
+    "name": "ウォンツ 上山口店",
+    "address": "山口県山口市三の宮1-2-47",
+    "url": "https://shop.tsuruha-g.com/3778",
+    "coordinates": [
+      131.4888586613832,
+      34.18611085091521
+    ],
+    "jev_route": "co_located_pharmacy",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": true,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3778",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3778",
+      "receipt": "outputs/facility-reconcile-20260925/pages/f80f686cde202e39838a47b7.json",
+      "sha256": "d9ba006f992aa3f3698f9777b7ea92f1966741109ed226d52328e593e0f72959"
+    }
+  },
+  {
+    "id": "tsuruha-3779",
+    "name": "ウォンツ 山口宮野店",
+    "address": "山口県山口市宮野下2879-1",
+    "url": "https://shop.tsuruha-g.com/3779",
+    "coordinates": [
+      131.50257600737493,
+      34.19625448501816
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3779",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3779",
+      "receipt": "outputs/facility-reconcile-20260925/pages/76c4b058b0764545da31fad2.json",
+      "sha256": "643b72630a7c54da65af1124386489d52cf4887b63efb96ae4efaab0be21f471"
+    }
+  },
+  {
+    "id": "tsuruha-3834",
+    "name": "ウォンツ 吉敷店",
+    "address": "山口県山口市吉敷中東2-1-21",
+    "url": "https://shop.tsuruha-g.com/3834",
+    "coordinates": [
+      131.4451036576721,
+      34.1658665201455
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3834",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3834",
+      "receipt": "outputs/facility-reconcile-20260925/pages/91e5016551518db47e27738d.json",
+      "sha256": "f78a485a15bf8d332d85b3ce46b1f64cfd5a3bd77b35964573c3ebdfd2574750"
+    }
+  },
+  {
+    "id": "tsuruha-3895",
+    "name": "ウォンツ 山口秋穂店",
+    "address": "山口県山口市秋穂東6893番地1",
+    "url": "https://shop.tsuruha-g.com/3895",
+    "coordinates": [
+      131.43246467629788,
+      34.020243517025435
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3895",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3895",
+      "receipt": "outputs/facility-reconcile-20260925/pages/049518b79a50a60e541c26ed.json",
+      "sha256": "10497a4756af705f8eb3370c5776860027dd3520b7a601d9e2216b68019fea38"
+    }
+  },
+  {
+    "id": "tsuruha-3901",
+    "name": "ウォンツ 山口嘉川店",
+    "address": "山口県山口市嘉川1379-3",
+    "url": "https://shop.tsuruha-g.com/3901",
+    "coordinates": [
+      131.38023233176253,
+      34.07783123187966
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3901",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3901",
+      "receipt": "outputs/facility-reconcile-20260925/pages/018e9e5fc678a594d8060892.json",
+      "sha256": "48dc687e8b337eebb8ebddb24bbc77e9f5914bebc33b75036704a772d68127f9"
+    }
+  },
+  {
+    "id": "tsuruha-3938",
+    "name": "ウォンツ 山口熊野店",
+    "address": "山口県山口市熊野町5-20",
+    "url": "https://shop.tsuruha-g.com/3938",
+    "coordinates": [
+      131.4591178,
+      34.1685442
+    ],
+    "jev_route": "existing_same_site",
+    "reviewed_route": "existing_same_site",
+    "route_overridden": false,
+    "decision": "enrich_existing",
+    "facility_id": "osm-way-405983078",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3938",
+      "receipt": "outputs/facility-reconcile-20260925/pages/abf5265036a56c334353ca4e.json",
+      "sha256": "41bc439f73d6835b3c9d8d91ddc20db7b185a0e68ecb5b61c551b6bd2a0bb50f"
+    }
+  },
+  {
+    "id": "tsuruha-3946",
+    "name": "ウォンツ 山口大内千坊店",
+    "address": "山口県山口市大内千坊4-4-30",
+    "url": "https://shop.tsuruha-g.com/3946",
+    "coordinates": [
+      131.4918412,
+      34.15436338
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3946",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3946",
+      "receipt": "outputs/facility-reconcile-20260925/pages/5b8bc74f712e03c01a6aca4b.json",
+      "sha256": "fd58ab5233dccc516ada0935ff052d2e287cf99c07c7028466c2660427b55a45"
+    }
+  },
+  {
+    "id": "tsuruha-4518",
+    "name": "ウォンツ 山口黄金店",
+    "address": "山口県山口市黄金町4-3",
+    "url": "https://shop.tsuruha-g.com/4518",
+    "coordinates": [
+      131.4784553883606,
+      34.17142012440984
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_opening",
+    "facility_id": "official-tsuruha-4518",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/4518",
+      "receipt": "outputs/facility-reconcile-20260925/pages/91ef45bdfe0adefb27eb9119.json",
+      "sha256": "2d48728a61faaba23631050d3970d562cd436f89db7fbe97acaf2645549565ba"
+    }
+  },
+  {
+    "id": "tsuruha-3692",
+    "name": "ウォンツ 柳井店",
+    "address": "山口県柳井市古開作647-1",
+    "url": "https://shop.tsuruha-g.com/3692",
+    "coordinates": [
+      132.0998979305819,
+      33.96580038042636
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3692",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3692",
+      "receipt": "outputs/facility-reconcile-20260925/pages/9adf7f701b8de026f7672cba.json",
+      "sha256": "162ee4e5abff22ff446530498d748bb9fcff0787146f4454e9663ac9213e3457"
+    }
+  },
+  {
+    "id": "tsuruha-3845",
+    "name": "ウォンツ フジ柳井店",
+    "address": "山口県柳井市柳井4687-1",
+    "url": "https://shop.tsuruha-g.com/3845",
+    "coordinates": [
+      132.1021807478504,
+      33.976952514907616
+    ],
+    "jev_route": "new_unmatched",
+    "reviewed_route": "new_unmatched",
+    "route_overridden": false,
+    "decision": "add_current_listing",
+    "facility_id": "official-tsuruha-3845",
+    "paired_store_id": null,
+    "hold_reason": null,
+    "base_ids": [],
+    "source": {
+      "url": "https://shop.tsuruha-g.com/3845",
+      "receipt": "outputs/facility-reconcile-20260925/pages/e535e7892a5087947e8da1a0.json",
+      "sha256": "bb4bb4dbf3fd1a78c70178ab45a2d47f6b330a0681d2f14b855daea660a663db"
+    }
+  }
+]

@@ -39,6 +39,13 @@ try {
   assert(render('osm-way-483625942').includes('2026-08-20'));
   assert(render('official-ichimatsu-hikari').includes('2024-03-15'));
   assert(render('official-toriichizu-yamaguchi-tokuyama').includes('2026-08-25'));
+  assert(render('osm-way-305954680').includes('閉店日：2025-01（年月まで確認）'));
+  const unknownClosed = render('osm-way-332618123');
+  assert(unknownClosed.includes('閉店日：未確認（閉店自体は公式告知で確認）'));
+  assert(!unknownClosed.includes('閉店日：2025-03-01') && !unknownClosed.includes('：null'));
+  assert(render('official-soy-stock-karato').includes('開店日：未確認'));
+  assert(render('official-tsuruha-3945').includes('併設調剤薬局の公式案内'));
+  assert(!render('official-soy-stock-karato').includes('店舗公式案内と開店発表を照合しました'));
   console.log(`Actual drawer render: ${reviewed.length} facilities, unknown opening dates distinguished, visible evidence and official provenance passed.`);
 } finally {
   if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow;

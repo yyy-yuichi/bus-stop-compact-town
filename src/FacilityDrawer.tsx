@@ -51,7 +51,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
       <SharePlace place={{ kind: 'facility', id: String(facility.id) }} />
       <details className="source-details"><summary>登録情報・確認状況</summary>
       {p.freshness_review && <p className="facility-status">元データの出典は下記のとおりです。更新した名称・種別・開閉店情報の確認範囲は、上部の「施設の変更確認」をご覧ください。</p>}
-      {official && <p className="facility-status">店舗公式案内と開店発表を照合しました。所在地・地図代表点は公式掲載の事実情報です。入口・徒歩到達性は未確認です。</p>}
+      {official && <p className="facility-status">店舗公式案内を照合しました。開店日まで確認できた場合のみ上部に記載しています。位置は公式掲載または公式案内から辿った地図の代表点で、入口・徒歩到達性は未確認です。</p>}
       {imported && <p className="facility-status">{p.classification_review ? '出典を基にOpenStreetMapの登録情報を点検した記録です。確認した範囲は下記をご覧ください。現地での位置・入口・営業状況の確認はしていません。' : 'OpenStreetMapの登録情報です。名称・所在地・営業状況は個別に確認していません。'}</p>}
       {civic && <p className="facility-status">自治体が公開した施設一覧を加工しています。公開元の時点の情報で、現在の開設状況・サービス・入口は個別に確認していません。</p>}
       {p.classification_review && <section className="soft-note"><strong>登録情報の点検{p.classification_review.status === 'pending' ? '・保留' : ''}</strong><p>{p.classification_review.note}</p>{p.classification_review.evidence_url && <a href={p.classification_review.evidence_url} target="_blank" rel="noreferrer">点検に用いた資料 ↗</a>}<p className="helper-text">点検日：{p.classification_review.checked_at}</p></section>}

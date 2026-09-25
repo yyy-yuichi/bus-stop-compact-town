@@ -5,6 +5,7 @@ export interface FreshnessReview {
   status: 'closed' | 'operating' | 'changed' | 'scheduled_change';
   event: 'closed' | 'opened' | 'listed' | 'renamed' | 'service_change' | 'scheduled_closure';
   effective_at: string | null; checked_at: string; summary: string;
+  date_precision?: 'day' | 'month' | 'unknown';
   sources: { title: string; url: string }[]; limits: string[];
 }
 interface CurrentData {
@@ -22,7 +23,15 @@ export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): 
   const statusForEvent = { closed: 'closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
   if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || r.checked_at !== checkedAt || !validDate(r.checked_at) || !r.summary?.trim()) throw Error('Invalid freshness event');
   // A current listing is not evidence of an opening date. Never invent one from a check/publication date.
-  if (r.event === 'listed' ? r.effective_at !== null : !validDate(r.effective_at)) throw Error('Invalid freshness event date');
+  const precision = r.date_precision ?? (r.event === 'listed' ? 'unknown' : 'day');
+  if (!['day', 'month', 'unknown'].includes(precision)) throw Error('Invalid date precision');
+  if (r.event === 'listed') {
+    if (precision !== 'unknown' || r.effective_at !== null) throw Error('Invalid listing date');
+  } else if (r.event === 'closed' && precision === 'unknown') {
+    if (r.effective_at !== null) throw Error('Unknown closure date must be null');
+  } else if (r.event === 'closed' && precision === 'month') {
+    if (typeof r.effective_at !== 'string' || !/^\d{4}-(0[1-9]|1[0-2])$/.test(r.effective_at)) throw Error('Invalid closure month');
+  } else if (precision !== 'day' || !validDate(r.effective_at)) throw Error('Invalid freshness event date');
   if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > checkedAt) throw Error('Future event cannot be applied as completed');
   if (!Array.isArray(r.sources) || !r.sources.length || r.sources.some(s => !s.title?.trim() || !safeUrl(s.url)) || !Array.isArray(r.limits) || !r.limits.length || r.limits.some(s => typeof s !== 'string' || !s.trim())) throw Error('Missing freshness evidence or limits');
 }
@@ -57,6 +66,12 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 
 /** A scheduled date never silently becomes a confirmed closure. */
 export const facilityAvailable = (f: ShoppingFeature) => f.properties.freshness_review?.status !== 'closed';
+export function freshnessDateText(r: FreshnessReview): string {
+  if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
+  if (r.event === 'closed' && r.date_precision === 'unknown') return '未確認（閉店自体は公式告知で確認）';
+  if (r.event === 'closed' && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
+  return r.effective_at ?? '';
+}
 export function freshnessLabel(f: ShoppingFeature): string {
   const r = f.properties.freshness_review;
   if (!r) return '';
