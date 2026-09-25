@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import { hash } from './jev-batch.mjs';
+import { municipalityIndex,facilityRows,articleRows,matchArticles,packArticles,counts,csv } from './facility-bulk-lib.mjs';
+const read=f=>JSON.parse(fs.readFileSync(f,'utf8'));
+const dir='outputs/facility-bulk-triage-20260925';
+const inputs=['public/data/shopping.geojson','public/data/civic-facilities.geojson','public/data/facility-current.json','data-sources/prefecture-directed-20260915/municipal-boundaries.geojson','data-sources/facility-bulk-triage-20260925/sources.json',dir+'/articles.json'];
+const [shop,civic,overlay,boundary,,collection]=inputs.map(read);
+const bounds=municipalityIndex(boundary.features);
+const facilities=facilityRows([...shop.features,...civic.features],overlay,bounds);
+const articles=articleRows(collection.articles,bounds.cities);
+matchArticles(articles,facilities);
+// Reuse all saved hold decisions by original ID, without pretending they are newly checked.
+const historicalFiles=['data-sources/facility-backlog-review-20260920/facility-decision-manifest.json','data-sources/facility-freshness-priority-20260920/facility-freshness-followup-manifest.json','data-sources/facility-events-20260925/decisions.json'];
+const historical=historicalFiles.flatMap(file=>(read(file).decisions??[]).map(d=>({source:file,...d})));
+for(const f of facilities)f.history_references=historical.filter(d=>(d.id??d.facility_id)===f.id).map(d=>({source:d.source,decision:d.decision}));
+const manifest=packArticles(articles);
+const summary={schema:1,baseline_count:shop.features.length+civic.features.length,added_count:overlay.additions.length,facility_count:facilities.length,facility_routes:counts(facilities,'route'),facility_cities:counts(facilities,'city'),municipality_conflicts:facilities.filter(f=>f.city_conflict).length,articles:articles.length,article_sources:counts(articles,'source'),article_match_status:counts(articles,'match_status'),facilities_with_news_candidates:facilities.filter(f=>f.event_articles.length).length,previous_decisions_reused:historical.length,previous_facilities_referenced:facilities.filter(f=>f.history_references.length).length,collection_statuses:collection.statuses,all_articles_collected:collection.statuses.every(s=>s.complete),article_period:{after:collection.after,before:collection.before},jev_status:'prepared_not_sent',jev_preflight:manifest.preflight,input_hashes:Object.fromEntries(inputs.concat(historicalFiles).map(f=>[f,hash(fs.readFileSync(f,'utf8'))])),limitation:'All facilities routed, not all facilities verified. Name candidates are not identity matches; no-name candidate is not proof of an unregistered new store. Source coverage is bounded, not prefecture-wide completeness.'};
+for(const [name,data] of Object.entries({'facility-ledger.json':facilities,'article-ledger.json':articles,'jev-manifest.json':manifest,'preflight-summary.json':summary}))fs.writeFileSync(`${dir}/${name}`,JSON.stringify(data,null,2)+'\n');
+fs.writeFileSync(`${dir}/facility-ledger.csv`,csv(facilities,['id','name','category','city','city_basis','city_conflict','route','review_status','brand_hint','operator_class','event_articles','history_references']));
+fs.writeFileSync(`${dir}/article-ledger.csv`,csv(articles,['key','title','url','published_at','cities','name_candidates','match_status','candidate_facilities','brand_hint','operator_class']));
+console.log(JSON.stringify(summary,null,2));

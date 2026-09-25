@@ -31,9 +31,10 @@ function eventsAt(dir) {
 function sameKeys(a, b) { return JSON.stringify(Object.keys(a).sort()) === JSON.stringify(Object.keys(b).sort()); }
 function probability(v) { return typeof v === 'number' && Number.isFinite(v) && v >= 0 && v <= 1; }
 
-export function validateManifest(manifest) {
+export function validateManifest(manifest, limits = {recordLimit:100,budgetLimit:0.05}) {
   if (manifest.schema !== 1 || manifest.model !== MODEL || !Array.isArray(manifest.jobs) || !manifest.jobs.length) throw new Error('Invalid manifest');
-  if (!(manifest.budget_usd > 0 && manifest.budget_usd <= 0.05)) throw new Error('Budget exceeds approved limit');
+  if (!Number.isInteger(limits.recordLimit) || limits.recordLimit < 1 || !Number.isFinite(limits.budgetLimit) || limits.budgetLimit<=0) throw new Error('Invalid approval limits');
+  if (!(manifest.budget_usd > 0 && manifest.budget_usd <= limits.budgetLimit)) throw new Error('Budget exceeds approved limit');
   const ids = new Set(), jobs = new Set();
   for (const job of manifest.jobs) {
     if (!/^[a-z0-9-]+$/.test(job.id) || jobs.has(job.id)) throw new Error('Invalid or duplicate job ID');
@@ -51,7 +52,7 @@ export function validateManifest(manifest) {
       if (q.type === 'choice' && (!q.criteria || Object.keys(q.criteria).length < 2)) throw new Error('Invalid choices');
     }
   }
-  if (ids.size > 100 || ids.size !== manifest.record_count) throw new Error('Record count exceeds approval or disagrees');
+  if (ids.size > limits.recordLimit || ids.size !== manifest.record_count) throw new Error('Record count exceeds approval or disagrees');
   return { records: ids.size, jobs: jobs.size, questions: manifest.jobs.reduce((n,j) => n + Object.keys(j.request.questions).length, 0) };
 }
 
@@ -105,7 +106,9 @@ export function summarize(manifest, dir) {
 }
 
 export async function runBatch(manifest, dir, options = {}) {
-  validateManifest(manifest);
+  const approval=options.authorization;
+  if(approval && (approval.status!=='approved' || approval.manifest_hash!==hash(manifest) || !approval.user_instruction)) throw new Error('Missing or mismatched explicit authorization');
+  validateManifest(manifest,approval?{recordLimit:approval.max_records,budgetLimit:approval.budget_usd}:undefined);
   const fetcher = options.fetcher ?? fetch, sleep = options.sleep ?? (ms=>new Promise(resolve=>setTimeout(resolve,ms)));
   fs.mkdirSync(dir, {recursive:true});
   const lockFile=path.join(dir,'runner.lock');

@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "baseline_count": 7764,
+  "added_count": 1,
+  "facility_count": 7765,
+  "facility_routes": {
+    "event_candidate_review": 29,
+    "local_news_and_store_sources": 736,
+    "brand_directory_candidate": 613,
+    "official_registry_or_list": 6318,
+    "existing_hold": 52,
+    "previously_adopted_review": 3,
+    "reference_not_operating_claim": 14
+  },
+  "facility_cities": {
+    "山陽小野田市": 327,
+    "下関市": 1444,
+    "山口市": 1012,
+    "防府市": 565,
+    "宇部市": 881,
+    "周南市": 816,
+    "柳井市": 153,
+    "下松市": 548,
+    "岩国市": 635,
+    "美祢市": 194,
+    "周防大島町": 171,
+    "萩市": 261,
+    "平生町": 50,
+    "光市": 306,
+    "長門市": 245,
+    "阿武町": 31,
+    "田布施町": 76,
+    "和木町": 25,
+    "上関町": 25
+  },
+  "municipality_conflicts": 0,
+  "articles": 1186,
+  "article_sources": {
+    "kaiten": 264,
+    "shimonoseki": 117,
+    "shunan": 583,
+    "ube": 103,
+    "yamaguchi": 119
+  },
+  "article_match_status": {
+    "no_name_candidate": 1133,
+    "multiple_name_candidates": 3,
+    "one_name_candidate": 28,
+    "municipality_conflict": 22
+  },
+  "facilities_with_news_candidates": 29,
+  "previous_decisions_reused": 69,
+  "previous_facilities_referenced": 59,
+  "collection_statuses": [
+    {
+      "source": "ube",
+      "scope": "宇部市・山陽小野田市",
+      "total": 103,
+      "collected": 103,
+      "pages": 2,
+      "complete": true,
+      "error": null
+    },
+    {
+      "source": "yamaguchi",
+      "scope": "山口市・防府市",
+      "total": 119,
+      "collected": 119,
+      "pages": 2,
+      "complete": true,
+      "error": null
+    },
+    {
+      "source": "shunan",
+      "scope": "周南市・下松市・光市",
+      "total": 583,
+      "collected": 583,
+      "pages": 6,
+      "complete": true,
+      "error": null
+    },
+    {
+      "source": "shimonoseki",
+      "scope": "下関市",
+      "total": 117,
+      "collected": 117,
+      "pages": 2,
+      "complete": true,
+      "error": null
+    },
+    {
+      "source": "kaiten",
+      "scope": "山口県",
+      "total": 264,
+      "collected": 264,
+      "pages": 3,
+      "complete": true,
+      "error": null
+    }
+  ],
+  "all_articles_collected": true,
+  "article_period": {
+    "after": "2024-01-01T00:00:00",
+    "before": "2026-09-25T09:00:00"
+  },
+  "jev_status": "classified_not_verified",
+  "jev_preflight": {
+    "requests": 106,
+    "one_attempt_each_reserve_usd": 0.29176627200000005,
+    "total_request_bytes": 3811411
+  },
+  "input_hashes": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
+    "public/data/facility-current.json": "8725b93d61003dec6cb92d78620c3b7e97126c343c92d617ddd49b940003e1c4",
+    "data-sources/prefecture-directed-20260915/municipal-boundaries.geojson": "96e4a13713079b5100f0813f0bf3efcbe1be13e9a0cb8d9f54bfbe873f6837d5",
+    "data-sources/facility-bulk-triage-20260925/sources.json": "aceb2b6649e9147e472ea5805bfb3ac43c2671a584057afcadfe673b7219e7b4",
+    "outputs/facility-bulk-triage-20260925/articles.json": "a650d7e7dda2c8f05c51cfc9ac2d5e42268f5c7a64d3a9eacc8b27af8c83ed24",
+    "data-sources/facility-backlog-review-20260920/facility-decision-manifest.json": "6b9fd1fd70222546bb9826e596d86a17f01407a58c2092b6c9a9d042b126b704",
+    "data-sources/facility-freshness-priority-20260920/facility-freshness-followup-manifest.json": "13f38550ba5ef3cd51c295ff034fdedb62a39c8f951098d0e8b99d8956834c15",
+    "data-sources/facility-events-20260925/decisions.json": "8cf4f9244aec1977ad1901caf9510f1fe226d60279df4b6f842d46b4e90758c1"
+  },
+  "limitation": "All facilities routed, not all facilities verified. Name candidates are not identity matches; no-name candidate is not proof of an unregistered new store. Source coverage is bounded, not prefecture-wide completeness.",
+  "jev": {
+    "manifest_hash": "fc4e9c99d4e316669058128f43210f539dd0642d56ba1345e4abc83a42d5f4e4",
+    "model": "jev-1.13.0",
+    "record_count": 1186,
+    "completed_records": 1186,
+    "completed_jobs": 106,
+    "expected_jobs": 106,
+    "completed_questions": 1186,
+    "missing_jobs": [],
+    "attempts": 106,
+    "conservative_cost_bound_usd": 0.29176627200000005,
+    "successful_input_tokens": 1321453,
+    "successful_output_tokens": 109650,
+    "successful_usage_cost_usd": 0.05550102600000001,
+    "sum_successful_request_wall_ms": 57655.4715,
+    "control_correct": 0,
+    "control_count": 0,
+    "control_mismatches": [],
+    "limitation": "Bulk classification of untrusted secondary news excerpts. Not store identity or operating-status confirmation. No map changes. Model outputs require later verification."
+  },
+  "invocations": [
+    {
+      "invocation": "e5a417d6-750e-4ae2-a2a8-806c17d91295",
+      "processed_jobs": 106,
+      "skipped_jobs": 0,
+      "wall_ms": 61916.7082
+    },
+    {
+      "invocation": "9d53f117-1d4a-4bfd-95b8-e04b3b79aeff",
+      "processed_jobs": 0,
+      "skipped_jobs": 106,
+      "wall_ms": 2102.3481
+    }
+  ],
+  "jev_event_counts": {
+    "multiple_changes": 320,
+    "closure": 198,
+    "opening": 568,
+    "relocation_rename": 33,
+    "temporary_renewal": 53,
+    "not_change": 14
+  },
+  "review_lane_counts": {
+    "ambiguous_review": 474,
+    "new_or_unmatched_discovery": 683,
+    "candidate_identity_and_primary_source": 12,
+    "location_conflict_review": 8,
+    "ambiguous_identity": 3,
+    "nonchange_check_sample": 6
+  },
+  "queue_order": "municipality round-robin; lifecycle priority; no-known-brand hints first; publication descending; article key ascending",
+  "queue_hash": "94031591752954c470ac13fc46503259652a6cadfec5bf9c2682bfacfe88f239",
+  "raw_input_hashes_unchanged": true,
+  "map_changes_this_batch": 0
+}
