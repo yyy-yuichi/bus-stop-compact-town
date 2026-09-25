@@ -18,6 +18,7 @@ export const FACILITY_ICON_PATHS: Record<ShoppingCategory, string[]> = {
   fast_food: ['M3 10a9 7 0 0 1 18 0H3ZM2 14h20M3 18h18v3H3v-3Z'],
   bar: ['M4 3h16L12 13 4 3ZM12 13v8M7 21h10'],
   bakery: ['M5 20V10C0 4 8 1 12 4c4-3 12 0 7 6v10H5Z', 'M8 10v6m4-6v6m4-6v6'],
+  food_shop: ['M4 10h16l-2 11H6L4 10Z', 'M8 10 10 3m6 7-2-7M9 14v3m6-3v3'],
   dentist: ['M12 5C3-2 2 9 6 13c0 10 4 10 6 1 2 9 6 9 6-1 4-4 3-15-6-8Z'],
   childcare: ['M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0ZM8 11h1m6 0h1M8 16c2 2 6 2 8 0M12 4c-3-4 4-4 2 0'],
   school: ['M3 21V9h18v12M8 9V5l4-3 4 3v4M10 21v-6h4v6M6 12v2m12-2v2'],

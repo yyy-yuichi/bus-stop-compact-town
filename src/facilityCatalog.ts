@@ -16,6 +16,7 @@ export const SHOPPING_CATEGORIES = [
   { id: 'convenience', name: 'コンビニ', color: '#667d2d', group: 'shopping' },
   { id: 'mall', name: '商業施設', color: '#276b73', group: 'shopping' },
   { id: 'bakery', name: 'パン屋', color: '#a56b36', group: 'shopping' },
+  { id: 'food_shop', name: '食品・青果・鮮魚店', color: '#7c7432', group: 'shopping' },
   { id: 'restaurant', name: '飲食店', color: '#b56332', group: 'eating' },
   { id: 'cafe', name: 'カフェ・喫茶店', color: '#896440', group: 'eating' },
   { id: 'fast_food', name: 'ファストフード', color: '#a97226', group: 'eating' },

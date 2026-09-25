@@ -30,7 +30,8 @@ try {
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);
-    assert(html.includes(f.properties.name));
+    const escapedName=f.properties.name.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#x27;');
+    assert(html.includes(escapedName));
     if (f.properties.freshness_review.event === 'listed') {
       assert(html.includes('公式掲載確認') && html.includes('開店日：未確認'));
       assert(!html.includes('開店日：2026-09-25') && !html.includes('：null'));
@@ -46,6 +47,10 @@ try {
   assert(render('official-soy-stock-karato').includes('開店日：未確認'));
   assert(render('official-tsuruha-3945').includes('併設調剤薬局の公式案内'));
   assert(!render('official-soy-stock-karato').includes('店舗公式案内と開店発表を照合しました'));
+  const localFood=render('official-karato-market-253');
+  assert(localFood.includes('食品・青果・鮮魚店')&&localFood.includes('施設全体の代表点'));
+  assert(localFood.includes('開店日：未確認'));
+  assert(render('official-harete-733e1c15c22e').includes('2026-06-25'));
   console.log(`Actual drawer render: ${reviewed.length} facilities, unknown opening dates distinguished, visible evidence and official provenance passed.`);
 } finally {
   if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow;

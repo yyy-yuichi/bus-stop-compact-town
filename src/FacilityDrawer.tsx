@@ -45,6 +45,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
       <FacilityFreshnessDetails facility={facility} />
       {p.classification_review?.status === 'pending' && <p className="mb-3 text-xs text-amber-800">情報確認中</p>}
       <section className="facility-address"><h3>所在地</h3><p>{p.official_address || p.address || '住所の登録なし'}</p></section>
+      {official && p.location_verification && <p className="helper-text">位置の確認範囲：{p.location_verification}</p>}
       <VerifiedFacilityDetails review={p.purpose_review} />
       {p.freshness_review && (p.registered_details || p.civic_details) ? <details className="source-details"><summary>取込時点の登録情報（履歴）</summary><p className="helper-text">以下は元データ取得時点の番号・サービス等です。上記の変更確認後の現行情報とは限りません。</p><RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} /></details> : <RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} />}
       {(p.official_url || p.website) && <a className="primary-link" href={p.official_url || p.website} target="_blank" rel="noreferrer">{imported || civic ? 'ウェブサイト' : '公式サイト'} <span aria-hidden="true">↗</span></a>}

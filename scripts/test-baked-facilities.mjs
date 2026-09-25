@@ -51,7 +51,7 @@ assert.deepEqual(found.map(f => [f.facility.id, f.group]), [['shop', 'shopping']
 for (const category of ['post_office','bank','library','townhall','community_centre']) {
   assert.equal(join(c,point(category,50,0,category))[0].group,'services');
 }
-for (const [category,group] of Object.entries({ restaurant:'eating',cafe:'eating',fast_food:'eating',bar:'eating',bakery:'shopping',dentist:'medical',childcare:'education',school:'education',college:'education',park:'leisure',playground:'leisure',sports_centre:'leisure',social_facility:'welfare',laundry:'services',hairdresser:'services' })) {
+for (const [category,group] of Object.entries({ restaurant:'eating',cafe:'eating',fast_food:'eating',bar:'eating',bakery:'shopping',food_shop:'shopping',dentist:'medical',childcare:'education',school:'education',college:'education',park:'leisure',playground:'leisure',sports_centre:'leisure',social_facility:'welfare',laundry:'services',hairdresser:'services' })) {
   assert.equal(join(c,point(category,50,0,category))[0].group,group);
 }
 const schoolArea = structuredClone(crossingArea); schoolArea.properties.category = 'school';
