@@ -6,6 +6,8 @@
 
 実装正本は `C:/Users/user/.codex/worktrees/420a/バス停コンパクトタウン｜新規開発`。45e4は正本にしない。過去の待機指示は解除済み。
 
+Drive保存の再発防止は[保存エラー時の切り替え・復元手順](DRIVE-SAVE-PLAYBOOK.md)（[正式Drive版](https://drive.google.com/file/d/1Ey3KzJhvUipMse-YNNhRzcBxaUSQ45sj/view)）を参照。原本保全→保存先の実状態確認→代替転送→Driveからの復元検証の順で進める。共通AGENTS.mdにも適用ルールを保存した。
+
 - 前段9施設はcommit 96c61d2、CI #95成功、Drive ZIP・結果文書を読み戻してSHA256一致確認済み。[前段保存証明](https://drive.google.com/file/d/1R3yMTbQ6KRK0lSEvDh4mB7TShdWyHuc9/view)。
 - 続きは[周南・OZの24記事照合](FACILITY-SHUNAN-OZ-20260925.md)。ITTOKU・しづくや・鼓海の徳ちゃんを追加し、旧ジューシーのIDを保持してとらちゃん閉店を更新。元7,764／既存更新25／追加157／履歴込み7,921／通常候補7,859／閉店7。
 - 記事1,186：全列挙対象処理済み39／一部確認6／未照合1,141。81イベント中74判断済み・7保留。新規保留はしづくや実開店日と飯島町徳ちゃんの開店・移転関係。該当IDなしの閉店店を別店に適用しない。
