@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-09-25",
+  "batch": "watts-ube-all-and-onoda-successor",
+  "reviewed_listings": 9,
+  "map_additions_in_checkpoint": 9,
+  "map_updates_in_checkpoint": 0,
+  "official_watts_city_count": 8,
+  "independent_new_buildings_claimed": 0,
+  "cumulative_updates": 24,
+  "cumulative_additions": 154,
+  "current_records_including_history": 7918,
+  "before_overlay_hash": "c8ce867a721781ee8ecda049d05d7ad08af218b02430a3c72b9cf0ef35173903",
+  "after_overlay_hash": "3cecaf5cc6b28f1304ba3d0e0c229483e4a5ab0e2979735e1606a33876a7d6e2",
+  "jev": {
+    "jev": {
+      "manifest_hash": "d27e151bfaeab58c54df169be2484c8d67a427a7e488f2ff8f30274b9d0ba4f3",
+      "model": "jev-1.13.0",
+      "record_count": 9,
+      "completed_records": 9,
+      "completed_jobs": 2,
+      "expected_jobs": 2,
+      "completed_questions": 9,
+      "missing_jobs": [],
+      "attempts": 2,
+      "conservative_cost_bound_usd": 0.005505024000000001,
+      "successful_input_tokens": 6516,
+      "successful_output_tokens": 723,
+      "successful_usage_cost_usd": 0.00027367200000000003,
+      "sum_successful_request_wall_ms": 1669.5717,
+      "control_correct": 0,
+      "control_count": 0,
+      "control_mismatches": [],
+      "limitation": "Saved historical candidate triage and synthetic controls only; no current web retrieval, fact confirmation, facility edits, or GPT research."
+    },
+    "classifications": {
+      "separate_tenant_same_site": 8,
+      "new_unmatched": 1
+    },
+    "prior_records": 2016,
+    "cumulative_records": 2025,
+    "cumulative_usage_estimate_usd": 0.11758425000000003,
+    "cumulative_reservation_usd": 0.6055526400000001,
+    "remaining_records": 975,
+    "remaining_budget_usd": 0.39444735999999986,
+    "map_changes_from_model": 0,
+    "batch_scope": "Saved current official listings versus existing candidate records. Routing only; final identity and adoption manually checked.",
+    "manually_rerouted": [
+      "official-secondstreet-31983"
+    ]
+  }
+}

@@ -1,0 +1,524 @@
+[
+  {
+    "id": "official-watts-53500",
+    "name": "ワッツウィズ西岐波ハローズ店",
+    "address": "山口県宇部市西岐波4301-2ハローズ西岐波店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/53500/",
+    "coordinates": [
+      131.30044190237766,
+      33.94569595944437
+    ],
+    "hours": "0:00～24:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "小型店",
+    "source_id": "official:watts:53500",
+    "receipt": "outputs/facility-successors-20260925/pages/fdaaa773e80ba9245be19a0f.json",
+    "receipt_hash": "d68464b75586f677b4ec2b087acbab36621fc8b20fbaa1872b4c52a017d091ae",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 1,
+      "probabilities": {
+        "separate_tenant_same_site": 1,
+        "new_unmatched": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0,
+        "ambiguous": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "official-halows-nishikiwa",
+        "name": "ハローズ西岐波店",
+        "address": "山口県宇部市西岐波4301番地2",
+        "distance_m_approx": 5,
+        "status": "operating",
+        "category": "supermarket"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-53500",
+      "decision": "add_current_listing",
+      "host_id": "official-halows-nishikiwa",
+      "reason": "別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"
+    }
+  },
+  {
+    "id": "official-watts-51608",
+    "name": "ワッツウィズ宇部西岐波ウォンツ店",
+    "address": "山口県宇部市西岐波2450-1ウォンツ宇部西岐波店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/51608/",
+    "coordinates": [
+      131.3055625112776,
+      33.96598586059922
+    ],
+    "hours": "9:00～21:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "小型店",
+    "source_id": "official:watts:51608",
+    "receipt": "outputs/facility-successors-20260925/pages/0c5de54cccdddfdf6e049d63.json",
+    "receipt_hash": "79e428c08fac7929b7ecfeda99b09c92f1e86951305b4df92b4e5e2725dbd73b",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 0.97,
+      "probabilities": {
+        "separate_tenant_same_site": 0.98,
+        "new_unmatched": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0.02,
+        "ambiguous": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "official-tsuruha-3677",
+        "name": "ウォンツ 宇部西岐波店",
+        "address": "山口県宇部市大字西岐波2450-1",
+        "distance_m_approx": 3,
+        "status": "operating",
+        "category": "drugstore"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-51608",
+      "decision": "add_current_listing",
+      "host_id": "official-tsuruha-3677",
+      "reason": "別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"
+    }
+  },
+  {
+    "id": "official-watts-47917",
+    "name": "ワッツウィズ宇部東須恵ウォンツ店",
+    "address": "山口県宇部市東須恵768 ウォンツ宇部東須恵店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/47917/",
+    "coordinates": [
+      131.20637383231363,
+      33.98988673599608
+    ],
+    "hours": "9:00～21:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "小型店",
+    "source_id": "official:watts:47917",
+    "receipt": "outputs/facility-successors-20260925/pages/07cf8ba1683feaff4ace5004.json",
+    "receipt_hash": "670d7825d238b53a7b9fa8f858a8a56b9cba799597c0860e82ec34f0322fd35b",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 0.91,
+      "probabilities": {
+        "separate_tenant_same_site": 0.9400000000000001,
+        "ambiguous": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0.06,
+        "new_unmatched": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "official-tsuruha-3993",
+        "name": "ウォンツ 宇部東須恵店",
+        "address": "山口県宇部市大字東須恵768",
+        "distance_m_approx": 80,
+        "status": "operating",
+        "category": "drugstore"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-47917",
+      "decision": "add_current_listing",
+      "host_id": "official-tsuruha-3993",
+      "reason": "現行売場と公式店舗点を確認。開店日の5月21日と自社PR本文2月21日は矛盾するため実開店日は採用しない。"
+    }
+  },
+  {
+    "id": "official-watts-44938",
+    "name": "ワッツウィズ宇部琴芝ウォンツ店",
+    "address": "山口県宇部市北琴芝2-11-45ウォンツ宇部琴芝店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/44938/",
+    "coordinates": [
+      131.25863022698832,
+      33.95696196138312
+    ],
+    "hours": "9:00～22:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "コーナー店",
+    "source_id": "official:watts:44938",
+    "receipt": "outputs/facility-successors-20260925/pages/f557cea3769732e0277f5222.json",
+    "receipt_hash": "19d16c1d2d4c5887931bd5781f00b4e8af0467f47ee5314eb2729010d00b7175",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 0.99,
+      "probabilities": {
+        "separate_tenant_same_site": 1,
+        "ambiguous": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0,
+        "new_unmatched": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "osm-way-562104060",
+        "name": "ウォンツ 宇部琴芝店",
+        "address": "",
+        "distance_m_approx": 21,
+        "status": "operating",
+        "category": "drugstore"
+      },
+      {
+        "id": "osm-way-562104056",
+        "name": "ジョリーパスタ",
+        "address": "",
+        "distance_m_approx": 81,
+        "status": "unverified",
+        "category": "restaurant"
+      },
+      {
+        "id": "osm-way-1091649492",
+        "name": "モスバーガー",
+        "address": "",
+        "distance_m_approx": 96,
+        "status": "unverified",
+        "category": "fast_food"
+      },
+      {
+        "id": "osm-way-560985751",
+        "name": "マクドナルド",
+        "address": "",
+        "distance_m_approx": 119,
+        "status": "unverified",
+        "category": "fast_food"
+      },
+      {
+        "id": "osm-way-1261695877",
+        "name": "スターバックス",
+        "address": "",
+        "distance_m_approx": 178,
+        "status": "unverified",
+        "category": "cafe"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-44938",
+      "decision": "add_current_listing",
+      "host_id": "osm-way-562104060",
+      "reason": "公式がコーナー店と明記。独立入口や別建物を意味しない売場情報として追加。"
+    }
+  },
+  {
+    "id": "official-watts-44053",
+    "name": "ワッツウィズ厚南アルク店",
+    "address": "山口県宇部市大字中野開作428番1アルク厚南店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/44053/",
+    "coordinates": [
+      131.2176107937799,
+      33.98316035008495
+    ],
+    "hours": "9:00～22:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "小型店",
+    "source_id": "official:watts:44053",
+    "receipt": "outputs/facility-successors-20260925/pages/1779930c5795a896db868ea7.json",
+    "receipt_hash": "4a6c47e6d2ddd8a01cbd6293407bf5c8ab214a1604538cb4c3f6af3d4bb7bd15",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 1,
+      "probabilities": {
+        "separate_tenant_same_site": 1,
+        "new_unmatched": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0,
+        "ambiguous": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "osm-way-862156871",
+        "name": "アルク厚南店",
+        "address": "",
+        "distance_m_approx": 23,
+        "status": "unverified",
+        "category": "supermarket"
+      },
+      {
+        "id": "osm-way-862156888",
+        "name": "はま寿司",
+        "address": "",
+        "distance_m_approx": 71,
+        "status": "unverified",
+        "category": "fast_food"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-44053",
+      "decision": "add_current_listing",
+      "host_id": "osm-way-862156871",
+      "reason": "アルク内の別運営者の売場。入居先の営業状態や名称は変更しない。"
+    }
+  },
+  {
+    "id": "official-watts-41695",
+    "name": "ワッツウィズ宇部鍋倉ウォンツ店",
+    "address": "山口県宇部市鍋倉町6-52ウォンツ宇部鍋倉店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/41695/",
+    "coordinates": [
+      131.23312585322427,
+      33.96841413041866
+    ],
+    "hours": "9:00～22:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "未記載",
+    "source_id": "official:watts:41695",
+    "receipt": "outputs/facility-successors-20260925/pages/50ec85b4df82ede143efdf5d.json",
+    "receipt_hash": "400ea57cb782871df2072cae664bf0d85d558f29b89dd33ec911bee7e85b9592",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 1,
+      "probabilities": {
+        "separate_tenant_same_site": 1,
+        "ambiguous": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0,
+        "new_unmatched": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "official-tsuruha-3939",
+        "name": "ウォンツ 宇部鍋倉店",
+        "address": "山口県宇部市鍋倉町6-52",
+        "distance_m_approx": 7,
+        "status": "operating",
+        "category": "drugstore"
+      },
+      {
+        "id": "osm-node-1423660606",
+        "name": "精華幼稚園",
+        "address": "",
+        "distance_m_approx": 165,
+        "status": "unverified",
+        "category": "childcare"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-41695",
+      "decision": "add_current_listing",
+      "host_id": "official-tsuruha-3939",
+      "reason": "別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"
+    }
+  },
+  {
+    "id": "official-watts-7607",
+    "name": "ワッツウィズ宇部亀浦ウォンツ店",
+    "address": "山口県宇部市大字西岐波4675-1　ウォンツ宇部亀浦店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/7607/",
+    "coordinates": [
+      131.2878766758791,
+      33.94268136163506
+    ],
+    "hours": "9:00～21:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "未記載",
+    "source_id": "official:watts:7607",
+    "receipt": "outputs/facility-successors-20260925/pages/731934171acaa03807c56747.json",
+    "receipt_hash": "3ada5224c1bda44d100b7967b681763049c046641337d0d641d274044d275b49",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 0.97,
+      "probabilities": {
+        "separate_tenant_same_site": 0.98,
+        "ambiguous": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0.02,
+        "new_unmatched": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "osm-node-9472242519",
+        "name": "ウォンツ 宇部亀浦店",
+        "address": "",
+        "distance_m_approx": 19,
+        "status": "unverified",
+        "category": "drugstore"
+      },
+      {
+        "id": "osm-way-1027461546",
+        "name": "ウォンツ 宇部亀浦店",
+        "address": "",
+        "distance_m_approx": 19,
+        "status": "unverified",
+        "category": "drugstore"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-7607",
+      "decision": "add_current_listing",
+      "host_candidate_ids": [
+        "osm-node-9472242519",
+        "osm-way-1027461546"
+      ],
+      "reason": "Watts自身の店舗点と店内住所を確認。入居先ウォンツの重複候補2IDは別問題として残し、どちらも統合・改名しない。"
+    }
+  },
+  {
+    "id": "official-watts-1638",
+    "name": "ワッツウィズ宇部沼1丁目ウォンツ店",
+    "address": "山口県宇部市沼1-8-39ウォンツ宇部沼1丁目店内",
+    "city": "宇部市",
+    "category": "variety_store",
+    "url": "https://www.watts-jp.com/shop/1638/",
+    "coordinates": [
+      131.2631947807421,
+      33.961876214537
+    ],
+    "hours": "9:00～21:00",
+    "location_method": "official_marker_exact_shop_id_and_name",
+    "store_format": "小型店",
+    "source_id": "official:watts:1638",
+    "receipt": "outputs/facility-successors-20260925/pages/32bb1fefd37d5bd8bd0ef25f.json",
+    "receipt_hash": "1cf9ffc9ef277d585f5d51f61460d96209260d3968b4a68f453e58b7bddfd0ac",
+    "jev": {
+      "type": "choice",
+      "choice": "separate_tenant_same_site",
+      "confidence": 0.82,
+      "probabilities": {
+        "separate_tenant_same_site": 0.86,
+        "new_unmatched": 0,
+        "different_prior_occupant": 0,
+        "existing_same_shop": 0.14,
+        "ambiguous": 0
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "official-tsuruha-3888",
+        "name": "ウォンツ 宇部沼1丁目店",
+        "address": "山口県宇部市沼1-8-39",
+        "distance_m_approx": 9,
+        "status": "operating",
+        "category": "drugstore"
+      },
+      {
+        "id": "osm-way-562664549",
+        "name": "A-プライス",
+        "address": "",
+        "distance_m_approx": 84,
+        "status": "unverified",
+        "category": "supermarket"
+      },
+      {
+        "id": "civic-care-3570204192-23730dd37c",
+        "name": "リハビリデイサービスエール",
+        "address": "",
+        "distance_m_approx": 143,
+        "status": "unverified",
+        "category": "social_facility"
+      },
+      {
+        "id": "osm-node-13062819740",
+        "name": "宇部中村郵便局",
+        "address": "",
+        "distance_m_approx": 174,
+        "status": "unverified",
+        "category": "post_office"
+      },
+      {
+        "id": "civic-care-3570202048-0223a0b5b8",
+        "name": "特別養護老人ホームむべの里博愛園",
+        "address": "",
+        "distance_m_approx": 179,
+        "status": "unverified",
+        "category": "social_facility"
+      }
+    ],
+    "decision": {
+      "id": "official-watts-1638",
+      "decision": "add_current_listing",
+      "host_id": "official-tsuruha-3888",
+      "reason": "別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"
+    }
+  },
+  {
+    "id": "official-secondstreet-31983",
+    "name": "セカンドストリート 山陽小野田店",
+    "address": "山口県山陽小野田市中川3丁目10番17号",
+    "city": "山陽小野田市",
+    "category": "second_hand",
+    "url": "https://www.2ndstreet.jp/shop/details?shopsId=31983",
+    "coordinates": [
+      131.17478099021,
+      33.98586750714
+    ],
+    "map_url": "https://www.google.com/maps/dir//33.98586750714,131.17478099021",
+    "location_method": "official_shop_directions_destination",
+    "store_format": "独立店舗",
+    "source_id": "official:secondstreet:31983",
+    "receipt": "outputs/facility-successors-20260925/pages/aef469a7b0f4b28729cd6dbf.json",
+    "receipt_hash": "ef94bbb3502911c99080a12d2d5f868719e8519641c6b234aca1f27d049fc9ba",
+    "jev": {
+      "type": "choice",
+      "choice": "new_unmatched",
+      "confidence": 0.47,
+      "probabilities": {
+        "existing_same_shop": 0,
+        "ambiguous": 0.06,
+        "new_unmatched": 0.58,
+        "different_prior_occupant": 0.25,
+        "separate_tenant_same_site": 0.11
+      }
+    },
+    "compared_candidates": [
+      {
+        "id": "osm-way-332618123",
+        "name": "ウォンツ 小野田店",
+        "address": "",
+        "distance_m_approx": 3,
+        "status": "closed",
+        "category": "drugstore"
+      },
+      {
+        "id": "cosmos-onoda",
+        "name": "コスモス小野田店",
+        "address": "山口県山陽小野田市高栄1丁目8-5",
+        "distance_m_approx": 105,
+        "status": "unverified",
+        "category": "drugstore"
+      },
+      {
+        "id": "osm-way-642327604",
+        "name": "ドラマティックス　小野田中央店",
+        "address": "",
+        "distance_m_approx": 152,
+        "status": "unverified",
+        "category": "hairdresser"
+      }
+    ],
+    "decision": {
+      "id": "official-secondstreet-31983",
+      "decision": "add_current_listing",
+      "prior_occupant_id": "osm-way-332618123",
+      "human_route": "different_prior_occupant",
+      "reason": "Jevはnew_unmatched。約3mの旧ウォンツ小野田店は閉店記録であり、同住所の後継店として別IDを追加。旧IDの改名や座標転用はしない。"
+    }
+  }
+]

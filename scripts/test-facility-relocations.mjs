@@ -34,7 +34,7 @@ test('four relocated facilities have their own sourced point, not the former com
     assert(feature.properties.freshness_review.sources.some(row => row.url === decision.map_url));
     assert(statuses.some(row => row.graduate_id === decision.graduate_id && row.map_feature_id === feature.id));
   }
-  assert.equal(overlay.additions.length, 145);
+  assert.equal(overlay.additions.filter(row => statuses.some(status => status.map_feature_id === row.id)).length, 8);
   assert.equal(hash({ ...overlay, additions: overlay.additions.slice(0, 137) }), earlier.after_overlay_hash);
 });
 

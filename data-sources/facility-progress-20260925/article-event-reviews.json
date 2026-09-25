@@ -340,7 +340,7 @@
     "source_body_hash": "e8c60eba1d5d4372bcb206b72f1573832652b0d862ba40eb65479bc627561cfd",
     "inventory_complete": true,
     "reviewed_at": "2026-09-25",
-    "inventory_reason": "小野田店閉店と跡地の未特定工事を別々に列挙。跡地の用途は未確定。",
+    "inventory_reason": "小野田店閉店と跡地工事を別々に列挙。後継は同住所の運営会社情報で特定。",
     "events": [
       {
         "event_id": "ube-80817:onoda",
@@ -358,11 +358,12 @@
       {
         "event_id": "ube-80817:successor",
         "event_type": "other",
-        "facility_ids": [],
-        "disposition": "hold",
-        "reason": "跡地工事の事業者・用途・開店を裏付ける一次情報なし。後継店の特定を継続。",
+        "facility_ids": ["official-secondstreet-31983"],
+        "disposition": "reflected_addition",
+      "reason": "後継のセカンドストリート山陽小野田店を運営会社の同住所・店舗点で特定して別ID追加。旧店舗閉店履歴は保持し、実開店日は未確定の現行掲載として反映。",
         "source_urls": [
-          "https://ube-sanyoonoda.goguynet.jp/2025/05/29/onodawants_closed/"
+        "https://ube-sanyoonoda.goguynet.jp/2025/05/29/onodawants_closed/",
+        "https://www.2ndstreet.jp/shop/details?shopsId=31983"
         ]
       }
     ]
@@ -372,7 +373,7 @@
     "source_body_hash": "e0305e5b9176b52db827621e00486f24c9d57b6b0cefe49cc7ca0ef672332ff3",
     "inventory_complete": true,
     "reviewed_at": "2026-09-25",
-    "inventory_reason": "小野田店閉店と跡地工事の続報。後継店舗の名称は本文でも未特定。",
+    "inventory_reason": "小野田店閉店と跡地工事の続報。同じ跡地の後継店舗を運営会社情報で特定。",
     "events": [
       {
         "event_id": "ube-81092:onoda",
@@ -391,11 +392,13 @@
       {
         "event_id": "ube-81092:successor",
         "event_type": "other",
-        "facility_ids": [],
-        "disposition": "hold",
-        "reason": "外装工事だけで新店舗の開店と判断しない。ube-80817と同じ跡地候補としてまとめて再照合。",
+        "facility_ids": ["official-secondstreet-31983"],
+        "disposition": "duplicate",
+        "duplicate_of": "ube-80817:successor",
+        "reason": "同じ跡地。運営会社の住所と店舗点でセカンドストリート山陽小野田店を照合。現行掲載を反映した元判断に集約。",
         "source_urls": [
-          "https://ube-sanyoonoda.goguynet.jp/2025/07/09/wants_onodashop/"
+        "https://ube-sanyoonoda.goguynet.jp/2025/07/09/wants_onodashop/",
+        "https://www.2ndstreet.jp/shop/details?shopsId=31983"
         ]
       }
     ]
@@ -425,10 +428,12 @@
         "event_id": "shunan-119970:kinryu-closure",
         "event_type": "closure",
         "facility_ids": [],
-        "disposition": "hold",
-        "reason": "食楽金龍の2026-01-31閉店は記事中の情報。該当旧IDと店舗・運営元の閉店告知は未確保。別市のラーメン金龍へ誤適用しない。",
+        "disposition": "verified_no_change",
+        "reason": "店舗自身のInstagramで1月31日閉店の告知を確認。元7764件と追加154件に食楽金龍・ベジモンの対象IDはなく、後継とりいちずは既に反映済み。別市のラーメン金龍は除外し、地図変更は不要。閉店告知だけで現地実施日を断定するものではない。",
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
         "source_urls": [
-          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/09/toriichizu-2/"
+        "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/09/toriichizu-2/",
+        "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja"
         ]
       }
     ]
@@ -469,19 +474,30 @@
       {
         "event_id": "ube-80654:watts",
         "event_type": "opening",
-        "facility_ids": [],
+        "facility_ids": ["official-watts-47917"],
         "disposition": "hold",
-        "reason": "併設100円ショップは記事中の看板観察。運営元の個別案内・施設単位・位置未照合。",
+        "reason": "現行売場・位置は公式店舗情報で確認し別イベントにて掲載済み。一方、公式ニュースは2025-05-21、自社PR本文は2025-02-21で開店日表記が矛盾。実開店日は保留。",
         "source_urls": [
-          "https://ube-sanyoonoda.goguynet.jp/2025/05/10/wants_ubeopen2025/"
+        "https://ube-sanyoonoda.goguynet.jp/2025/05/10/wants_ubeopen2025/",
+        "https://www.watts-jp.com/shop/47917/",
+        "https://www.watts-jp.com/news/?current=news",
+        "https://prtimes.jp/main/html/rd/p/000000098.000084599.html"
         ]
+      },
+      {
+        "event_id": "ube-80654:watts-current-listing",
+        "event_type": "other",
+        "facility_ids": ["official-watts-47917"],
+        "disposition": "reflected_addition",
+        "reason": "宇部市の公式8店一覧と店舗47917の名称・住所・店舗別マーカーを照合して店内売場を追加。入居先ウォンツの状態と開店日判断とは分離。",
+        "source_urls": ["https://www.watts-jp.com/shop/47917/"]
       },
       {
         "event_id": "ube-80654:pharmacy",
         "event_type": "temporary_change",
         "facility_ids": [],
         "disposition": "hold",
-        "reason": "処方せん看板からWatts看板への変更を理由に薬局開局なしとする記事。運営元の最終案内を未確認。",
+        "reason": "現行公式店舗3993はドラッグストアと100円ショップを掲載するが、薬局の計画中止・開局を明示していない。不掲載を中止や閉局の証明にはせず保留。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2025/05/10/wants_ubeopen2025/"
         ]
@@ -528,7 +544,7 @@
         "event_type": "opening",
         "facility_ids": [],
         "disposition": "hold",
-        "reason": "夏開局予定の記事だが後続ube-80654では看板変更。薬局の実開局を未確認。",
+        "reason": "夏開局予定に対し後続記事は看板変更を報告。現行公式店舗3993に薬局の開局・計画中止の明示がないため実開局は保留。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2025/05/02/wants_ubeopen202505/"
         ]
@@ -575,9 +591,10 @@
         "event_type": "other",
         "facility_ids": [],
         "disposition": "hold",
-        "reason": "旧厚南店跡の工事後の事業者・用途を未確認。色や外装だけで店名を推定しない。",
+        "reason": "後継メガドリ宇部店は公式Xの厚南中央1丁目7-48と現行投稿で特定。新店舗に対応した地図点を未確保のため追加は保留。旧ウォンツの座標を転用しない。",
         "source_urls": [
-          "https://ube-sanyoonoda.goguynet.jp/2025/07/22/konanwants_202507/"
+        "https://ube-sanyoonoda.goguynet.jp/2025/07/22/konanwants_202507/",
+        "https://x.com/megadori1"
         ]
       }
     ]
@@ -622,9 +639,10 @@
         "event_type": "other",
         "facility_ids": [],
         "disposition": "hold",
-        "reason": "旧厚南店跡の工事後の事業者・用途を未確認。色や外装だけで店名を推定しない。",
+        "reason": "後継メガドリ宇部店は公式Xの同住所と現行投稿で特定。ube-81165と同じ後継店。新店舗地図点の確認待ちであり、同じ保留を別施設として数えない。",
         "source_urls": [
-          "https://ube-sanyoonoda.goguynet.jp/2026/06/09/4colors_newshop/"
+        "https://ube-sanyoonoda.goguynet.jp/2026/06/09/4colors_newshop/",
+        "https://x.com/megadori1"
         ]
       }
     ]

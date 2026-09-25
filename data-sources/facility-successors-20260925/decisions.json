@@ -1,0 +1,11 @@
+[
+  {"id":"official-watts-53500","decision":"add_current_listing","host_id":"official-halows-nishikiwa","reason":"別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"},
+  {"id":"official-watts-51608","decision":"add_current_listing","host_id":"official-tsuruha-3677","reason":"別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"},
+  {"id":"official-watts-47917","decision":"add_current_listing","host_id":"official-tsuruha-3993","reason":"現行売場と公式店舗点を確認。開店日の5月21日と自社PR本文2月21日は矛盾するため実開店日は採用しない。"},
+  {"id":"official-watts-44938","decision":"add_current_listing","host_id":"osm-way-562104060","reason":"公式がコーナー店と明記。独立入口や別建物を意味しない売場情報として追加。"},
+  {"id":"official-watts-44053","decision":"add_current_listing","host_id":"osm-way-862156871","reason":"アルク内の別運営者の売場。入居先の営業状態や名称は変更しない。"},
+  {"id":"official-watts-41695","decision":"add_current_listing","host_id":"official-tsuruha-3939","reason":"別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"},
+  {"id":"official-watts-7607","decision":"add_current_listing","host_candidate_ids":["osm-node-9472242519","osm-way-1027461546"],"reason":"Watts自身の店舗点と店内住所を確認。入居先ウォンツの重複候補2IDは別問題として残し、どちらも統合・改名しない。"},
+  {"id":"official-watts-1638","decision":"add_current_listing","host_id":"official-tsuruha-3888","reason":"別運営者の店内売場。名称・入居先住所・公式店舗IDの地図点を照合。"},
+  {"id":"official-secondstreet-31983","decision":"add_current_listing","prior_occupant_id":"osm-way-332618123","human_route":"different_prior_occupant","reason":"Jevはnew_unmatched。約3mの旧ウォンツ小野田店は閉店記録であり、同住所の後継店として別IDを追加。旧IDの改名や座標転用はしない。"}
+]

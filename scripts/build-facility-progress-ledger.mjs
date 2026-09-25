@@ -181,8 +181,9 @@ const summary = {
     graduates_pending: graduateReview.filter(row => !row.map_adopted && row.location_type === 'reported_fixed_address').length,
     graduate_map_additions_cumulative: graduateReview.filter(row => row.map_adopted).length },
   earlier_hold_rows_now_reflected: staleHoldIds,
-  jev_remaining: { records: 984, conservative_budget_usd: 0.399952384,
-    source: 'data-sources/facility-local-stores-20260925/adoption-summary.json' },
+  jev_remaining: { records: read('data-sources/facility-successors-20260925/adoption-summary.json').jev.remaining_records,
+    conservative_budget_usd: read('data-sources/facility-successors-20260925/adoption-summary.json').jev.remaining_budget_usd,
+    source: 'data-sources/facility-successors-20260925/adoption-summary.json' },
   inputs_sha256: Object.fromEntries([
     ...baselineFiles, 'public/data/facility-current.json',
     'outputs/facility-local-stores-20260925/continued-review-queue.json',
