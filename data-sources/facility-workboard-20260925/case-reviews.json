@@ -2173,6 +2173,569 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "facility:osm-node-4420238015",
+      "name": "当時の休業・再開は記事で確認。現行公式案内は現在地のみで、当時の実施期間の一次記録未取得。",
+      "facility_ids": [
+        "osm-node-4420238015"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "623b7e89c3e44ac57bc8b5cbfd29d14ee7e1ae2d83da1b275840ce61471a7bfa"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:osm-node-4420238015:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "当時の休業・再開は記事で確認。現行公式案内は現在地のみで、当時の実施期間の一次記録未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-25061:temporary-2024"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-119577:housing-close",
+      "name": "ハウジングメッセ周南は記事で2026年6月末閉場。元地図に名称対応IDなし。運営元の終了原本は未取得。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "5131dcba627d3602ce33d61be4a778b9c1ab6cb6f94a19a85d708febb85fe75b"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-119577:housing-close:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "ハウジングメッセ周南は記事で2026年6月末閉場。元地図に名称対応IDなし。運営元の終了原本は未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-119577:housing-close"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-119577:housing-demolition",
+      "name": "住宅展示場跡の解体と新店敷地の範囲を確定する一次配置照合は未実施。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "9f0ee702c84b604595036fa08197264f15f3ed5f14033314b93f707354fb3062"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-119577:housing-demolition:watch",
+          "impact": "watch",
+          "priority": "P3",
+          "reason": "住宅展示場跡の解体と新店敷地の範囲を確定する一次配置照合は未実施。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-119577:housing-demolition"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-119577:future-mori",
+      "name": "県に提出された事業者の計画書を画像で確認。2027年6月開店予定、2026年9月着工予定。記事見出しの9月開店を採用せず",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "8acc049f08bad793a20b6b7ef7e8665c38454a7f4ea25dbe3d64c513893fead6"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-119577:future-mori:watch",
+          "impact": "watch",
+          "priority": "P3",
+          "reason": "県に提出された事業者の計画書を画像で確認。2027年6月開店予定、2026年9月着工予定。記事見出しの9月開店を採用せず、現行営業への追加は保留。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-119577:future-mori"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-95062:old-relocation",
+      "name": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "a7cd658d16d98837127d888a2738ae0daa9649a8c87f04b2224869c5a99daa6f"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-95062:old-relocation:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本文は未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-95062:old-relocation"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-0",
+      "name": "設置先候補：シャーメゾンコウジマチ（周南市糀町2-11）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 5,
+          "hash": "83b1591b4372d70b09266810eb570b0861489bcb864a5238964feab3f7ed5596"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-95062:new-site-0:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "設置先候補：シャーメゾンコウジマチ（周南市糀町2-11）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-95062:new-site-0"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-1",
+      "name": "設置先候補：三井のリパーク徳山駅前。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 6,
+          "hash": "d02722b84a9c5497c652bae0f61c4657271f90aad76ef1e8c267e5594d0ff277"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-95062:new-site-1:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "設置先候補：三井のリパーク徳山駅前。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-95062:new-site-1"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-2",
+      "name": "設置先候補：元かぶらや（下松市桜町3-16-21）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 7,
+          "hash": "59db4dd6a80a54e45e10c5e3f4502bbc8a9facf63f585dc250bd07e0d4e90fc2"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-95062:new-site-2:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "設置先候補：元かぶらや（下松市桜町3-16-21）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-95062:new-site-2"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-chihokatsu-tokuyama-deck",
+      "name": "施設公式が2025-11-21 11時の予定を当日付で案内。現在掲載は確認済み。実施日を明示した事後記録は未取得。",
+      "facility_ids": [
+        "official-chihokatsu-tokuyama-deck"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 8,
+          "hash": "220439545963a155bc07df13efa5a81dc47bee4bb2df6e78d22b10d3b36a1ce3"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-chihokatsu-tokuyama-deck:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "施設公式が2025-11-21 11時の予定を当日付で案内。現在掲載は確認済み。実施日を明示した事後記録は未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-116131:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:yamaguchi-32462:pets-current",
+      "name": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 9,
+          "hash": "710b0a76902e926713b821db4ae6e5606c194323dc926abfe31375d4ab73f18c"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:yamaguchi-32462:pets-current:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存カテゴリに専用分類もなく、近隣スーパーの点へ置換して追加しない。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:pets-current"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:yamaguchi-32462:seria-current",
+      "name": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 10,
+          "hash": "597511ab5d730dbd95f148e43afecc4de11622f0d6afad930b37515ea3c9e54e"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:yamaguchi-32462:seria-current:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:seria-current"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:yamaguchi-32462:coop-identity",
+      "name": "コープ現行公式住所9-1の地点と元2件は約72m差。元2件の旧店舗関係・現店舗対応は未確定。同名近接だけで統合・閉店・新",
+      "facility_ids": [
+        "osm-node-2253691125",
+        "osm-way-202793094"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 11,
+          "hash": "aef968d8fd0cf487612f4342dbf9321734c659f55106b3c987325befc8b2402a"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:yamaguchi-32462:coop-identity:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "コープ現行公式住所9-1の地点と元2件は約72m差。元2件の旧店舗関係・現店舗対応は未確定。同名近接だけで統合・閉店・新規追加しない。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:coop-identity"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-matsukiyo-21405568",
+      "name": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "facility_ids": [
+        "official-matsukiyo-21405568"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 12,
+          "hash": "f6fa1955ee2a6b1f4415291b3d4fb12b0d2b4c0d7d08216a4c938f35d200a95b"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-matsukiyo-21405568:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:matsu-opening",
+            "yamaguchi-32462:pharmacy-opening"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:yamaguchi-32462:pets-opening",
+      "name": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 13,
+          "hash": "8c71a1eb0ecfb6db045fb7a7a17f838504235d950a0bbd24f16995f5b741d5db"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:yamaguchi-32462:pets-opening:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:pets-opening"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-dondon-yuda",
+      "name": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "facility_ids": [
+        "official-dondon-yuda"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 14,
+          "hash": "8436730981c51e484b5df7e406e019c29388979a61cf18c761d5ffa94b862213"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-dondon-yuda:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "yamaguchi-32462:dondon-opening"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-sumibi-tomikawa",
+      "name": "2024-03-13予定は記事で確認。現店舗公式は確認できたが当時の実施日告知は未取得。",
+      "facility_ids": [
+        "official-sumibi-tomikawa"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 15,
+          "hash": "701d7648796fd2f19525b927a1d7be8a29f3168e93621b6fbb7c3221c87880f4"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-sumibi-tomikawa:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "2024-03-13予定は記事で確認。現店舗公式は確認できたが当時の実施日告知は未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-88839:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-88839:old-seven-close",
+      "name": "旧台湾料理7番酒場は記事で閉店済み。元地図に名称対応IDなし。店舗固有の終了原本未取得。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 16,
+          "hash": "54eff550be0614fe135dac2c8680c1f9f96d9a0bd9784679ba101bc97374fc13"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-88839:old-seven-close:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "旧台湾料理7番酒場は記事で閉店済み。元地図に名称対応IDなし。店舗固有の終了原本未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-88839:old-seven-close"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-91106:closure",
+      "name": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 17,
+          "hash": "63ec7c5786f12c3c1f0ab1490c8a86c81f7638461a2d82cf928b86c9199034ed"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-91106:closure:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図に同名店IDなし。現在一覧の不在だけで確定しない。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "shunan-91106:closure"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:old-yamada-ajisu",
+      "name": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 18,
+          "hash": "a4415a9625d0725e8327729f18ead0d6781970ba2fd151176374675ebde6903f"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:old-yamada-ajisu:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待ち。元地図に阿知須店の名称対応IDなし。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "kaiten-462519:integration",
+            "yamaguchi-27044:integration"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-neohas-shimonoseki",
+      "name": "2024-11-02開業は記事で確認。現在公式案内は取得済み。実施日を明示する運営元の過去原本は未取得。",
+      "facility_ids": [
+        "official-neohas-shimonoseki"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 19,
+          "hash": "622838c0feb7132e7d921ae1031bc595615ee1235cc048f1cb30e3b18f84d357"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-neohas-shimonoseki:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "2024-11-02開業は記事で確認。現在公式案内は取得済み。実施日を明示する運営元の過去原本は未取得。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "kaiten-524292:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:kaiten-550048:opening",
+      "name": "公式店別ページはPCのFortiGuardによりアルコールカテゴリとして閲覧制限。事業者の現行案内・地点未照合。フジの現",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 20,
+          "hash": "1c1706dde6da2581c5b0df9f167f212dc8409ba4ad799ec18e2ee3e3c3bfd0c9"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-550048:opening:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "公式店別ページはPCのFortiGuardによりアルコールカテゴリとして閲覧制限。事業者の現行案内・地点未照合。フジの現行テナント一覧でも当店の掲載を確認できず、住所一致だけで施設追加しない。",
+          "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
+          "event_ids": [
+            "kaiten-550048:opening"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -2733,6 +3296,144 @@
       "event_hash": "49de5b120d9fb2bee27d8625264ac2735d7bc3ebd3030a89a91d3b9ddaeb75db",
       "case_id": "facility:official-daiso-007944",
       "issue_id": "facility:official-daiso-007944:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-25061:temporary-2024",
+      "event_hash": "77292f1aedf12403f987411d329248a033716e1a39697227b2276234e1740d18",
+      "case_id": "facility:osm-node-4420238015",
+      "issue_id": "facility:osm-node-4420238015:supplemental"
+    },
+    {
+      "event_id": "shunan-119577:housing-close",
+      "event_hash": "f8113ff29a971471086181abd7519526d5a61e5f12a9166440f808f727db0120",
+      "case_id": "case:shunan-119577:housing-close",
+      "issue_id": "case:shunan-119577:housing-close:historical_only"
+    },
+    {
+      "event_id": "shunan-119577:housing-demolition",
+      "event_hash": "08f2563c7a5ee7b3072635fa7ad9a04e29e739f5353f3406238c79d3ac5f5a83",
+      "case_id": "case:shunan-119577:housing-demolition",
+      "issue_id": "case:shunan-119577:housing-demolition:watch"
+    },
+    {
+      "event_id": "shunan-119577:future-mori",
+      "event_hash": "07fa564d1a6ffe0a3384778661c14374313b9fc622f1e0527c15d5abcb110d71",
+      "case_id": "case:shunan-119577:future-mori",
+      "issue_id": "case:shunan-119577:future-mori:watch"
+    },
+    {
+      "event_id": "shunan-95062:old-relocation",
+      "event_hash": "aaa853b92df5fd80d20c77736302ac94173102fb6d45dacc5da6164f92c17745",
+      "case_id": "case:shunan-95062:old-relocation",
+      "issue_id": "case:shunan-95062:old-relocation:historical_only"
+    },
+    {
+      "event_id": "shunan-95062:new-site-0",
+      "event_hash": "85c748b1ae9310b707efce1b7e706a0f9213d776b7d704fff7b32f717228d667",
+      "case_id": "case:shunan-95062:new-site-0",
+      "issue_id": "case:shunan-95062:new-site-0:map_action"
+    },
+    {
+      "event_id": "shunan-95062:new-site-1",
+      "event_hash": "177a51c9f89ef5367677f31c782d0a507ef01f951ca6f1ab20ba8f4fe7d66364",
+      "case_id": "case:shunan-95062:new-site-1",
+      "issue_id": "case:shunan-95062:new-site-1:map_action"
+    },
+    {
+      "event_id": "shunan-95062:new-site-2",
+      "event_hash": "c79a58d1c2f1ebe34d7bc83b290f9e96f822f4d5be195597ffd75c597502083f",
+      "case_id": "case:shunan-95062:new-site-2",
+      "issue_id": "case:shunan-95062:new-site-2:map_action"
+    },
+    {
+      "event_id": "shunan-116131:opening-date",
+      "event_hash": "c2a75d1897103173366f14037711699f446c9f86050d9f05d875adbf9b6e0835",
+      "case_id": "facility:official-chihokatsu-tokuyama-deck",
+      "issue_id": "facility:official-chihokatsu-tokuyama-deck:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-32462:pets-current",
+      "event_hash": "23417006b9678af2160eac86fcf5ab2d71cd437ebae1fd85ed2760afc1a87ebf",
+      "case_id": "case:yamaguchi-32462:pets-current",
+      "issue_id": "case:yamaguchi-32462:pets-current:map_action"
+    },
+    {
+      "event_id": "yamaguchi-32462:seria-current",
+      "event_hash": "602476b33bea349419d1845dcd55716341ddb37d46d5a67ce3224d876f76e97d",
+      "case_id": "case:yamaguchi-32462:seria-current",
+      "issue_id": "case:yamaguchi-32462:seria-current:map_action"
+    },
+    {
+      "event_id": "yamaguchi-32462:coop-identity",
+      "event_hash": "fad6691e2b88e5eb404a99483dee1f0701ee7e3f56c53058d04b59d2d6c237b4",
+      "case_id": "case:yamaguchi-32462:coop-identity",
+      "issue_id": "case:yamaguchi-32462:coop-identity:map_action"
+    },
+    {
+      "event_id": "yamaguchi-32462:matsu-opening",
+      "event_hash": "42b786e085d6915361ab559d716306cd80f5950464b8132b7f58fe7b0876f459",
+      "case_id": "facility:official-matsukiyo-21405568",
+      "issue_id": "facility:official-matsukiyo-21405568:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-32462:pharmacy-opening",
+      "event_hash": "557fccbfb1349b1703c4dbaea710df14eaa55ae7629fcd364f2b8697177b7f63",
+      "case_id": "facility:official-matsukiyo-21405568",
+      "issue_id": "facility:official-matsukiyo-21405568:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-32462:pets-opening",
+      "event_hash": "b8984dcf8f8fc93c4a477aa887cbc7dc95af2b70d8cc68a1b25a32fc4502d7fa",
+      "case_id": "case:yamaguchi-32462:pets-opening",
+      "issue_id": "case:yamaguchi-32462:pets-opening:historical_only"
+    },
+    {
+      "event_id": "yamaguchi-32462:dondon-opening",
+      "event_hash": "553be9c338e3270ed1c2aed53a15004ddad4477e92b40d5fc3516d9494b97c50",
+      "case_id": "facility:official-dondon-yuda",
+      "issue_id": "facility:official-dondon-yuda:supplemental"
+    },
+    {
+      "event_id": "shunan-88839:opening-date",
+      "event_hash": "20f63bc418cbf9574ce067832b5b623d0576d2da31ed069e9f360c418baa36f9",
+      "case_id": "facility:official-sumibi-tomikawa",
+      "issue_id": "facility:official-sumibi-tomikawa:supplemental"
+    },
+    {
+      "event_id": "shunan-88839:old-seven-close",
+      "event_hash": "6b21055cf1af2fce94d74b54b953d8b7f860b8898a50fe49594e63476c49457d",
+      "case_id": "case:shunan-88839:old-seven-close",
+      "issue_id": "case:shunan-88839:old-seven-close:historical_only"
+    },
+    {
+      "event_id": "shunan-91106:closure",
+      "event_hash": "58de64eb20cdaf146b300abf2762e4232e6a7e1176d2cee8226882183c850671",
+      "case_id": "case:shunan-91106:closure",
+      "issue_id": "case:shunan-91106:closure:historical_only"
+    },
+    {
+      "event_id": "kaiten-462519:integration",
+      "event_hash": "209bc47933f66e1c441c69147d05e3a69ce3df83457575f44db838ffc0f7102c",
+      "case_id": "case:old-yamada-ajisu",
+      "issue_id": "case:old-yamada-ajisu:historical_only"
+    },
+    {
+      "event_id": "yamaguchi-27044:integration",
+      "event_hash": "1f5a431c390a837216d3f6f52a3cf2b4ba981439cd578c38b7c1d00b051c1575",
+      "case_id": "case:old-yamada-ajisu",
+      "issue_id": "case:old-yamada-ajisu:historical_only"
+    },
+    {
+      "event_id": "kaiten-524292:opening-date",
+      "event_hash": "ec595779e93465eb019c2d38f70f7d821b86196bf93d0bdfd2cfbccd4bf965e8",
+      "case_id": "facility:official-neohas-shimonoseki",
+      "issue_id": "facility:official-neohas-shimonoseki:supplemental"
+    },
+    {
+      "event_id": "kaiten-550048:opening",
+      "event_hash": "03835188a96e0dea2ba794082319f39754ea9a8df910ba0d054d0e79048b194f",
+      "case_id": "case:kaiten-550048:opening",
+      "issue_id": "case:kaiten-550048:opening:map_action"
     }
   ],
   "legacy_audit": [

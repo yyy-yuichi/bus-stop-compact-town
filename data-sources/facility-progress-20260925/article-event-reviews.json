@@ -4139,5 +4139,490 @@
         "reported_date": "2024-09-20"
       }
     ]
+  },
+  {
+    "article_key": "yamaguchi-25061",
+    "source_body_hash": "8129ab6cfe4baf3e1a88ca746988975f0070559f659c7d8a857e71e3a86efe0b",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "現在の支店同定と2024年1月11～15日一時休業・16日再開を分離。恒久閉店ではない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-25061:current-osm-node-4420238015",
+        "event_type": "other",
+        "facility_ids": [
+          "osm-node-4420238015"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/01/14/lawson_daidohofu/",
+          "https://crew.lawson.co.jp/jobfind-pc/job/All/93663"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-25061:temporary-2024",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "osm-node-4420238015"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "当時の休業・再開は記事で確認。現行公式案内は現在地のみで、当時の実施期間の一次記録未取得。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/01/14/lawson_daidohofu/",
+          "https://crew.lawson.co.jp/jobfind-pc/job/All/93663"
+        ],
+        "reported_date": "2024-01-11/2024-01-16"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119577",
+    "source_body_hash": "5ffdaf5acc8834cebbe4b9ca0a9865e3389801c5ed42ab3f85e2181e42e178e0",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "住宅展示場の閉場・解体、モリ下松美里町の将来出店計画を列挙。既存の下松店は比較説明であり閉店や移転を確定しない。",
+    "events": [
+      {
+        "event_id": "shunan-119577:housing-close",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "ハウジングメッセ周南は記事で2026年6月末閉場。元地図に名称対応IDなし。運営元の終了原本は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/01/housingmesseshunan/"
+        ],
+        "reported_date": "2026-06"
+      },
+      {
+        "event_id": "shunan-119577:housing-demolition",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "住宅展示場跡の解体と新店敷地の範囲を確定する一次配置照合は未実施。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/01/housingmesseshunan/"
+        ]
+      },
+      {
+        "event_id": "shunan-119577:future-mori",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "県に提出された事業者の計画書を画像で確認。2027年6月開店予定、2026年9月着工予定。記事見出しの9月開店を採用せず、現行営業への追加は保留。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/01/housingmesseshunan/",
+          "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/244364.pdf"
+        ],
+        "reported_date": "2027-06"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-95062",
+    "source_body_hash": "9872df3729b7f0ec7598cb8e3d8f9ea45a07556359d5d3d0391530c24dd9c2aa",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "旧店舗の道路拡張に伴う移転・取壊しと3設置先を列挙。かぶらや跡は設置先説明であり閉店時期の新情報ではない。",
+    "events": [
+      {
+        "event_id": "shunan-95062:old-relocation",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本文は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/16/jidouhanbaikinoomise-3/",
+          "https://www.instagram.com/jidohanbaiki_/"
+        ]
+      },
+      {
+        "event_id": "shunan-95062:new-site-0",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "設置先候補：シャーメゾンコウジマチ（周南市糀町2-11）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/16/jidouhanbaikinoomise-3/",
+          "https://www.instagram.com/jidohanbaiki_/"
+        ]
+      },
+      {
+        "event_id": "shunan-95062:new-site-1",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "設置先候補：三井のリパーク徳山駅前。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/16/jidouhanbaikinoomise-3/",
+          "https://www.instagram.com/jidohanbaiki_/"
+        ]
+      },
+      {
+        "event_id": "shunan-95062:new-site-2",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "設置先候補：元かぶらや（下松市桜町3-16-21）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/16/jidouhanbaikinoomise-3/",
+          "https://www.instagram.com/jidohanbaiki_/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-116131",
+    "source_body_hash": "2b6a88a00177d0f3027de6f48a5dff554616a8f835782da76381c2dcbdd6f662",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "現行1階105区画の店舗と開店予定日を分離。",
+    "events": [
+      {
+        "event_id": "shunan-116131:current-official-chihokatsu-tokuyama-deck",
+        "event_type": "other",
+        "facility_ids": [
+          "official-chihokatsu-tokuyama-deck"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/10/19/chihokatsu/",
+          "https://tokuyamadeck.com/shop/【d2-105】ちほ活プロジェクト/"
+        ]
+      },
+      {
+        "event_id": "shunan-116131:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-chihokatsu-tokuyama-deck"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "施設公式が2025-11-21 11時の予定を当日付で案内。現在掲載は確認済み。実施日を明示した事後記録は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/10/19/chihokatsu/",
+          "https://tokuyamadeck.com/information/店舗オープン情報-9/"
+        ],
+        "reported_date": "2025-11-21"
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-32462",
+    "source_body_hash": "bd91103dcbca933ae3244eef4706334356c7dc63f05b31fdf1df5b6399c098a8",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "主題3テナントだけでなくSeria、コープ本体、マツキヨ内調剤も列挙。調剤は同一物理店舗のサービスで追加を重複させない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-32462:current-official-matsukiyo-21405568",
+        "event_type": "other",
+        "facility_ids": [
+          "official-matsukiyo-21405568"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.matsukiyococokara-online.com/map?kid=21405568"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:current-official-dondon-yuda",
+        "event_type": "other",
+        "facility_ids": [
+          "official-dondon-yuda"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.s-dondon.co.jp/shoplist/どんどん-湯田店/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:pets-current",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存カテゴリに専用分類もなく、近隣スーパーの点へ置換して追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.inai-hc.co.jp/pets-park/shop/yamaguchi.html"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:seria-current",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:coop-identity",
+        "event_type": "relocation",
+        "facility_ids": [
+          "osm-node-2253691125",
+          "osm-way-202793094"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "コープ現行公式住所9-1の地点と元2件は約72m差。元2件の旧店舗関係・現店舗対応は未確定。同名近接だけで統合・閉店・新規追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.yamaguti-coop.or.jp/cocoto/izumi/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:matsu-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-matsukiyo-21405568"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.matsukiyococokara-online.com/map?kid=21405568"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:pharmacy-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-matsukiyo-21405568"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "同店舗内調剤の7月1日予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.matsukiyococokara-online.com/map?kid=21405568"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:pets-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.inai-hc.co.jp/pets-park/shop/yamaguchi.html"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-32462:dondon-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-dondon-yuda"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/25/cooptown_24open/",
+          "https://www.s-dondon.co.jp/shoplist/どんどん-湯田店/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-88839",
+    "source_body_hash": "7cf7203c729a0a7235894c6c60946aa581a41d3f9c1137e9621cb012e3d64f5c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "炭火富川の現店舗と開店日、旧台湾料理7番酒場の閉店を列挙。姉妹店の縁は関係紹介。",
+    "events": [
+      {
+        "event_id": "shunan-88839:current-official-sumibi-tomikawa",
+        "event_type": "other",
+        "facility_ids": [
+          "official-sumibi-tomikawa"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/02/21/sumibitomikawa/",
+          "https://sumibitomikawa.owst.jp/"
+        ]
+      },
+      {
+        "event_id": "shunan-88839:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-sumibi-tomikawa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024-03-13予定は記事で確認。現店舗公式は確認できたが当時の実施日告知は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/02/21/sumibitomikawa/",
+          "https://sumibitomikawa.owst.jp/"
+        ],
+        "reported_date": "2024-03-13"
+      },
+      {
+        "event_id": "shunan-88839:old-seven-close",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧台湾料理7番酒場は記事で閉店済み。元地図に名称対応IDなし。店舗固有の終了原本未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/02/21/sumibitomikawa/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-91106",
+    "source_body_hash": "461411e8fc3273dcd94fa2e24d26536e67ace18bf77179bc51f849f409ec533e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "バッケンモーツアルトサンリブ下松店の閉店1件。入居先スーパーは変更対象でない。",
+    "events": [
+      {
+        "event_id": "shunan-91106:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図に同名店IDなし。現在一覧の不在だけで確定しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/09/backenmozart-sunlivekudamatsu/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/04/IMG20240409095950.jpg",
+          "https://www.b-mozart.co.jp/?mode=f6"
+        ],
+        "reported_date": "2024-04-21"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-462519",
+    "source_body_hash": "1939667d8770ed1f35e043047a8fd50e53a04c21e49bbb259571130eedf9b3de",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "阿知須店から宇部北店への店舗統合1案件。",
+    "events": [
+      {
+        "event_id": "kaiten-462519:integration",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待ち。元地図に阿知須店の名称対応IDなし。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/yamadadenki-tl-achisu/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/02/IMG_1527.jpeg"
+        ],
+        "reported_date": "2024-01-28"
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-27044",
+    "source_body_hash": "1ed490564cee1b0a88677aeb9af640839e0b73406fd1e4b46e4a75aa1d9ce5e3",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同じ阿知須店統合の続報。統合先を新規開店として扱わない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-27044:integration",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の旧店から南進1.7kmの告知を実見。宇部北店公式案内も取得。歴史的統合の旧店名・年を確定できる店別一次原本の補完待ち。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/02/25/yamada_shopping/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/02/IMG_1527.jpeg",
+          "https://www.yamada-denki.jp/store/contents/?d=2104"
+        ],
+        "reported_date": "2024-01-28"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-524292",
+    "source_body_hash": "8420ae2b0663597a29bc2978a045b5315ae054f0a15b5b9283f55dc0ccf4e74e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "書店カフェ・レストラン・ホテルの複合施設を1施設として現況掲載し、開店日は分離。",
+    "events": [
+      {
+        "event_id": "kaiten-524292:current-official-neohas-shimonoseki",
+        "event_type": "other",
+        "facility_ids": [
+          "official-neohas-shimonoseki"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現行の名称・住所・代表点を公式情報と照合し今回の地図差分へ反映。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/newohasu/",
+          "https://neohas.jp/"
+        ]
+      },
+      {
+        "event_id": "kaiten-524292:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-neohas-shimonoseki"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024-11-02開業は記事で確認。現在公式案内は取得済み。実施日を明示する運営元の過去原本は未取得。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/newohasu/",
+          "https://neohas.jp/"
+        ],
+        "reported_date": "2024-11-02"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-550048",
+    "source_body_hash": "93854b77f4b6907955515bbc03186201b680d2f58f1930c94aac56f742af60c2",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "南岩国店の開店1件。周辺フジや別の酒販店に置換しない。",
+    "events": [
+      {
+        "event_id": "kaiten-550048:opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "公式店別ページはPCのFortiGuardによりアルコールカテゴリとして閲覧制限。事業者の現行案内・地点未照合。フジの現行テナント一覧でも当店の掲載を確認できず、住所一致だけで施設追加しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/yamaya-minamiiwakuni/",
+          "https://www.yamaya.jp/ynhp/contents/stores/store_detail.php?CDTENPO=40951",
+          "https://www.the-fuji.com/fuji/store/tenant/yamaguchi/fuji_minamiiwakuni.php"
+        ],
+        "reported_date": "2025-04-25"
+      }
+    ]
   }
 ]

@@ -1,0 +1,849 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "272b1fbb3a254b1c8d9004fc3163678de4711b35d2992779fa15c5f0425c10c6",
+  "after_overlay_hash": "321813989dce09a198143869cdbff5653b004ff2eb840cd20f2d00961eb85728",
+  "newly_added_ids": [
+    "official-matsukiyo-21405568",
+    "official-dondon-yuda",
+    "official-neohas-shimonoseki",
+    "official-sumibi-tomikawa",
+    "official-chihokatsu-tokuyama-deck"
+  ],
+  "corrected_ids": [
+    "osm-node-4420238015"
+  ],
+  "lawson_offset_metres": 5.098906999390149,
+  "reviewed_inputs": [
+    {
+      "id": "official-matsukiyo-21405568",
+      "name": "マツモトキヨシ コープここといずみ店",
+      "city": "山口市",
+      "address": "山口県山口市泉町9-2",
+      "category": "drugstore",
+      "point": [
+        131.4495832,
+        34.1666924
+      ],
+      "url": "https://www.matsukiyococokara-online.com/map?kid=21405568",
+      "map_url": "https://maps.app.goo.gl/cNnP2dBJQxKbmPs48",
+      "search": "調剤薬局 処方せん",
+      "location": "公式支店の店名・住所と、同ページからリンクされた店舗名付き地図目的地を照合。サイト内座標との差は約29m。地図目的地の店舗代表点を採用。調剤は同じ店舗内のサービスとして1施設。"
+    },
+    {
+      "id": "official-dondon-yuda",
+      "name": "どんどん 湯田店",
+      "city": "山口市",
+      "address": "山口県山口市泉町9-3 コープタウン敷地内",
+      "category": "restaurant",
+      "point": [
+        131.4493893,
+        34.1670697
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-湯田店/",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.189432846884!2d131.44681437531304!3d34.16707411165884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497001763e39d%3A0xd6bbbbfacb5cb411!2z44Gp44KT44Gp44KTIOa5r-eUsOW6lw!5e0!3m2!1sja!2sjp!4v1782604744169!5m2!1sja!2sjp",
+      "search": "うどん",
+      "location": "公式支店ページの名称・住所と、埋込地図の同名CID付き店舗地点を照合。地図内住所の9重複は正規の公式住所9-3を採用。"
+    },
+    {
+      "id": "official-neohas-shimonoseki",
+      "name": "ねをはす HOTEL BOOK & CAFE",
+      "city": "下関市",
+      "address": "山口県下関市秋根西町2丁目7-2",
+      "category": "hotel",
+      "point": [
+        130.9450259,
+        34.0075842
+      ],
+      "url": "https://neohas.jp/",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.9950800799934!2d130.94388970573024!3d34.0070996956868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a30043f5c517%3A0xb363282e9baeb841!2z44Gt44KS44Gv44GZIEhPVEVMIEJPT0sgJiBDQUZF!5e0!3m2!1sja!2sjp!4v1730384261421!5m2!1sja!2sjp",
+      "extra": [
+        "https://neohas.jp/access/"
+      ],
+      "search": "NEOHAS Book&Cafe 書店 本屋 カフェ Restaurant Neohas レストラン",
+      "location": "公式所在地・階別サービスと公式アクセスの施設名・住所付きCID地点を照合。ホテル・書店カフェ・レストランの複合施設を1施設として掲載。"
+    },
+    {
+      "id": "official-sumibi-tomikawa",
+      "name": "炭火 富川",
+      "city": "周南市",
+      "address": "山口県周南市若宮町2丁目38",
+      "category": "restaurant",
+      "point": [
+        131.8069376,
+        34.0508463
+      ],
+      "url": "https://sumibitomikawa.owst.jp/",
+      "search": "土鍋 銀シャリ",
+      "location": "店舗自身の公式ホームページに掲載された店名・住所と同ページの地図q目的地座標を照合。"
+    },
+    {
+      "id": "official-chihokatsu-tokuyama-deck",
+      "name": "ちほ活プロジェクト TOKUYAMA DECK店",
+      "city": "周南市",
+      "address": "山口県周南市銀座1丁目31 TOKUYAMA DECK D2 1階105区画",
+      "category": "variety_store",
+      "point": [
+        131.8046157,
+        34.0502168
+      ],
+      "url": "https://tokuyamadeck.com/shop/【d2-105】ちほ活プロジェクト/",
+      "extra": [
+        "https://tokuyamadeck.com/shop-floor/",
+        "https://furdi.jp/lp/lp06/?studio=tokuyamadeck&gad_source=1"
+      ],
+      "search": "地方活性化 地域産品 食品 徳山デッキ",
+      "location": "施設公式のD2・1階105区画を確認。既存の公式照合済みD2入居店ファディーの地点をD2建物の共通代表点として再利用。105区画固有の地点ではありません。",
+      "limits": [
+        "同じD2内の別テナントの検証済み地点を建物代表点として共用。売場間の距離や入口の位置は未確認。"
+      ]
+    }
+  ],
+  "nearby": [
+    {
+      "id": "official-matsukiyo-21405568",
+      "nearby": [
+        {
+          "id": "osm-way-202793094",
+          "name": "コープやまぐち",
+          "geometry": "Point",
+          "distance_m": 56
+        },
+        {
+          "id": "osm-node-2253691125",
+          "name": "コープやまぐち",
+          "geometry": "Point",
+          "distance_m": 59
+        },
+        {
+          "id": "osm-node-2498750501",
+          "name": "サキナビューティスペース山口",
+          "geometry": "Point",
+          "distance_m": 88
+        },
+        {
+          "id": "osm-node-2498750505",
+          "name": "美容室 ヘアー・ガール",
+          "geometry": "Point",
+          "distance_m": 88
+        },
+        {
+          "id": "osm-node-2495725777",
+          "name": "松屋",
+          "geometry": "Point",
+          "distance_m": 97
+        },
+        {
+          "id": "osm-way-1540363416",
+          "name": "セブン-イレブン",
+          "geometry": "Point",
+          "distance_m": 115
+        },
+        {
+          "id": "osm-way-202664945",
+          "name": "牛角　山口湯田店",
+          "geometry": "Point",
+          "distance_m": 127
+        },
+        {
+          "id": "civic-care-3570301691-5970107553",
+          "name": "株式会社 ぐりーん",
+          "geometry": "Point",
+          "distance_m": 133
+        },
+        {
+          "id": "osm-node-2498750492",
+          "name": "第一ドライ",
+          "geometry": "Point",
+          "distance_m": 143
+        }
+      ],
+      "decision": "公式名称・住所で別事業所と照合。同一敷地の入居先や異業種を同一店舗とは扱わない。"
+    },
+    {
+      "id": "official-dondon-yuda",
+      "nearby": [
+        {
+          "id": "osm-way-202793094",
+          "name": "コープやまぐち",
+          "geometry": "Point",
+          "distance_m": 13
+        },
+        {
+          "id": "osm-node-2253691125",
+          "name": "コープやまぐち",
+          "geometry": "Point",
+          "distance_m": 19
+        },
+        {
+          "id": "osm-node-2498750505",
+          "name": "美容室 ヘアー・ガール",
+          "geometry": "Point",
+          "distance_m": 47
+        },
+        {
+          "id": "osm-node-2498750501",
+          "name": "サキナビューティスペース山口",
+          "geometry": "Point",
+          "distance_m": 49
+        },
+        {
+          "id": "osm-node-2495725777",
+          "name": "松屋",
+          "geometry": "Point",
+          "distance_m": 72
+        },
+        {
+          "id": "osm-way-1540363416",
+          "name": "セブン-イレブン",
+          "geometry": "Point",
+          "distance_m": 84
+        },
+        {
+          "id": "civic-care-3570301691-5970107553",
+          "name": "株式会社 ぐりーん",
+          "geometry": "Point",
+          "distance_m": 96
+        },
+        {
+          "id": "osm-node-2498750492",
+          "name": "第一ドライ",
+          "geometry": "Point",
+          "distance_m": 107
+        },
+        {
+          "id": "osm-way-700233441",
+          "name": "ジョリーパスタ",
+          "geometry": "Point",
+          "distance_m": 136
+        },
+        {
+          "id": "osm-node-2498750488",
+          "name": "おおそら薬局",
+          "geometry": "Point",
+          "distance_m": 142
+        },
+        {
+          "id": "osm-node-2498750511",
+          "name": "とみなが皮ふ科",
+          "geometry": "Point",
+          "distance_m": 151
+        },
+        {
+          "id": "osm-node-9526809246",
+          "name": "田所商店",
+          "geometry": "Point",
+          "distance_m": 154
+        }
+      ],
+      "decision": "公式名称・住所で別事業所と照合。同一敷地の入居先や異業種を同一店舗とは扱わない。"
+    },
+    {
+      "id": "official-neohas-shimonoseki",
+      "nearby": [
+        {
+          "id": "osm-way-1236531275",
+          "name": "肉肉うどん",
+          "geometry": "Point",
+          "distance_m": 24
+        },
+        {
+          "id": "osm-node-4623473035",
+          "name": "ジョイフル",
+          "geometry": "Point",
+          "distance_m": 51
+        },
+        {
+          "id": "osm-node-4623471429",
+          "name": "ローソン",
+          "geometry": "Point",
+          "distance_m": 92
+        },
+        {
+          "id": "osm-node-4623472849",
+          "name": "信組広島商銀",
+          "geometry": "Point",
+          "distance_m": 107
+        },
+        {
+          "id": "osm-way-1236531281",
+          "name": "スシロー",
+          "geometry": "Point",
+          "distance_m": 135
+        },
+        {
+          "id": "osm-way-1236531280",
+          "name": "巌流島",
+          "geometry": "Point",
+          "distance_m": 152
+        }
+      ],
+      "decision": "公式名称・住所で別事業所と照合。同一敷地の入居先や異業種を同一店舗とは扱わない。"
+    },
+    {
+      "id": "official-sumibi-tomikawa",
+      "nearby": [
+        {
+          "id": "osm-node-3812556857",
+          "name": "友村歯科",
+          "geometry": "Point",
+          "distance_m": 22
+        },
+        {
+          "id": "osm-node-3812568557",
+          "name": "野村眼科",
+          "geometry": "Point",
+          "distance_m": 68
+        },
+        {
+          "id": "osm-node-3812569257",
+          "name": "山田歯科",
+          "geometry": "Point",
+          "distance_m": 76
+        },
+        {
+          "id": "official-ittoku-shunan-heiwadori",
+          "name": "洋食酒場 ITTOKU",
+          "geometry": "Point",
+          "distance_m": 79
+        },
+        {
+          "id": "osm-node-1423657630",
+          "name": "徳山中央保育園",
+          "geometry": "Point",
+          "distance_m": 83
+        },
+        {
+          "id": "osm-node-3812554657",
+          "name": "藤井内科",
+          "geometry": "Point",
+          "distance_m": 86
+        },
+        {
+          "id": "osm-way-385242809",
+          "name": "青空公園",
+          "geometry": "MultiPolygon",
+          "distance_m": 99
+        },
+        {
+          "id": "osm-way-312146297",
+          "name": "セブンイレブン",
+          "geometry": "Point",
+          "distance_m": 112
+        }
+      ],
+      "decision": "公式名称・住所で別事業所と照合。同一敷地の入居先や異業種を同一店舗とは扱わない。"
+    },
+    {
+      "id": "official-chihokatsu-tokuyama-deck",
+      "nearby": [
+        {
+          "id": "official-furdi-tokuyama-deck",
+          "name": "ファディー 徳山デッキ",
+          "geometry": "Point",
+          "distance_m": 0
+        },
+        {
+          "id": "osm-node-3987366363",
+          "name": "(仮)周南市役所",
+          "geometry": "Point",
+          "distance_m": 18
+        },
+        {
+          "id": "official-minatoe198",
+          "name": "MINATOE198",
+          "geometry": "Point",
+          "distance_m": 43
+        },
+        {
+          "id": "osm-way-311221431",
+          "name": "山口銀行",
+          "geometry": "Point",
+          "distance_m": 48
+        },
+        {
+          "id": "osm-node-4107640191",
+          "name": "大阪屋台居酒屋満マル",
+          "geometry": "Point",
+          "distance_m": 55
+        },
+        {
+          "id": "osm-node-4107579592",
+          "name": "ポパイ喫茶店",
+          "geometry": "Point",
+          "distance_m": 60
+        },
+        {
+          "id": "osm-node-4107639899",
+          "name": "豊丸水産",
+          "geometry": "Point",
+          "distance_m": 64
+        },
+        {
+          "id": "official-shizquya-tokuyama-deck",
+          "name": "甘味処 しづくや",
+          "geometry": "Point",
+          "distance_m": 64
+        },
+        {
+          "id": "osm-node-12606873239",
+          "name": "ぎょうざ酒場 とらちゃん（旧 小籠包酒場ジューシー）",
+          "geometry": "Point",
+          "distance_m": 91
+        },
+        {
+          "id": "osm-node-4107697190",
+          "name": "カフェミナ",
+          "geometry": "Point",
+          "distance_m": 96
+        },
+        {
+          "id": "osm-node-4107690499",
+          "name": "パーラーしみず",
+          "geometry": "Point",
+          "distance_m": 105
+        },
+        {
+          "id": "osm-node-4107669710",
+          "name": "ニパチ",
+          "geometry": "Point",
+          "distance_m": 106
+        },
+        {
+          "id": "osm-node-4107704790",
+          "name": "魚民",
+          "geometry": "Point",
+          "distance_m": 109
+        },
+        {
+          "id": "osm-node-4107668920",
+          "name": "情熱ホルモン",
+          "geometry": "Point",
+          "distance_m": 113
+        },
+        {
+          "id": "osm-node-4107719089",
+          "name": "ハラ薬局",
+          "geometry": "Point",
+          "distance_m": 116
+        },
+        {
+          "id": "osm-node-4107691791",
+          "name": "サン美容室",
+          "geometry": "Point",
+          "distance_m": 117
+        },
+        {
+          "id": "osm-node-4107620089",
+          "name": "炭火焼だいにんぐわたみん家",
+          "geometry": "Point",
+          "distance_m": 124
+        },
+        {
+          "id": "osm-way-310194668",
+          "name": "みずほ銀行",
+          "geometry": "Point",
+          "distance_m": 151
+        }
+      ],
+      "decision": "公式名称・住所で別事業所と照合。同一敷地の入居先や異業種を同一店舗とは扱わない。"
+    }
+  ],
+  "case_findings": [
+    {
+      "case_id": "facility:osm-node-4420238015",
+      "name": "当時の休業・再開は記事で確認。現行公式案内は現在地のみで、当時の実施期間の一次記録未取得。",
+      "reason": "当時の休業・再開は記事で確認。現行公式案内は現在地のみで、当時の実施期間の一次記録未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-119577:housing-close",
+      "name": "ハウジングメッセ周南は記事で2026年6月末閉場。元地図に名称対応IDなし。運営元の終了原本は未取得。",
+      "reason": "ハウジングメッセ周南は記事で2026年6月末閉場。元地図に名称対応IDなし。運営元の終了原本は未取得。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "case:shunan-119577:housing-demolition",
+      "name": "住宅展示場跡の解体と新店敷地の範囲を確定する一次配置照合は未実施。",
+      "reason": "住宅展示場跡の解体と新店敷地の範囲を確定する一次配置照合は未実施。",
+      "impact": "watch"
+    },
+    {
+      "case_id": "case:shunan-119577:future-mori",
+      "name": "県に提出された事業者の計画書を画像で確認。2027年6月開店予定、2026年9月着工予定。記事見出しの9月開店を採用せず",
+      "reason": "県に提出された事業者の計画書を画像で確認。2027年6月開店予定、2026年9月着工予定。記事見出しの9月開店を採用せず、現行営業への追加は保留。",
+      "impact": "watch"
+    },
+    {
+      "case_id": "case:shunan-95062:old-relocation",
+      "name": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本",
+      "reason": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本文は未取得。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-0",
+      "name": "設置先候補：シャーメゾンコウジマチ（周南市糀町2-11）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "reason": "設置先候補：シャーメゾンコウジマチ（周南市糀町2-11）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-1",
+      "name": "設置先候補：三井のリパーク徳山駅前。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "reason": "設置先候補：三井のリパーク徳山駅前。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-95062:new-site-2",
+      "name": "設置先候補：元かぶらや（下松市桜町3-16-21）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "reason": "設置先候補：元かぶらや（下松市桜町3-16-21）。記事の写真・住所はあるが現行の運営元確認と地点照合が未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "facility:official-chihokatsu-tokuyama-deck",
+      "name": "施設公式が2025-11-21 11時の予定を当日付で案内。現在掲載は確認済み。実施日を明示した事後記録は未取得。",
+      "reason": "施設公式が2025-11-21 11時の予定を当日付で案内。現在掲載は確認済み。実施日を明示した事後記録は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:yamaguchi-32462:pets-current",
+      "name": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存",
+      "reason": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存カテゴリに専用分類もなく、近隣スーパーの点へ置換して追加しない。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:yamaguchi-32462:seria-current",
+      "name": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
+      "reason": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:yamaguchi-32462:coop-identity",
+      "name": "コープ現行公式住所9-1の地点と元2件は約72m差。元2件の旧店舗関係・現店舗対応は未確定。同名近接だけで統合・閉店・新",
+      "reason": "コープ現行公式住所9-1の地点と元2件は約72m差。元2件の旧店舗関係・現店舗対応は未確定。同名近接だけで統合・閉店・新規追加しない。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "facility:official-matsukiyo-21405568",
+      "name": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "reason": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:yamaguchi-32462:pets-opening",
+      "name": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "reason": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "facility:official-dondon-yuda",
+      "name": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "reason": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "facility:official-sumibi-tomikawa",
+      "name": "2024-03-13予定は記事で確認。現店舗公式は確認できたが当時の実施日告知は未取得。",
+      "reason": "2024-03-13予定は記事で確認。現店舗公式は確認できたが当時の実施日告知は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-88839:old-seven-close",
+      "name": "旧台湾料理7番酒場は記事で閉店済み。元地図に名称対応IDなし。店舗固有の終了原本未取得。",
+      "reason": "旧台湾料理7番酒場は記事で閉店済み。元地図に名称対応IDなし。店舗固有の終了原本未取得。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "case:shunan-91106:closure",
+      "name": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図",
+      "reason": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図に同名店IDなし。現在一覧の不在だけで確定しない。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "case:old-yamada-ajisu",
+      "name": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待",
+      "reason": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待ち。元地図に阿知須店の名称対応IDなし。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "facility:official-neohas-shimonoseki",
+      "name": "2024-11-02開業は記事で確認。現在公式案内は取得済み。実施日を明示する運営元の過去原本は未取得。",
+      "reason": "2024-11-02開業は記事で確認。現在公式案内は取得済み。実施日を明示する運営元の過去原本は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:kaiten-550048:opening",
+      "name": "公式店別ページはPCのFortiGuardによりアルコールカテゴリとして閲覧制限。事業者の現行案内・地点未照合。フジの現",
+      "reason": "公式店別ページはPCのFortiGuardによりアルコールカテゴリとして閲覧制限。事業者の現行案内・地点未照合。フジの現行テナント一覧でも当店の掲載を確認できず、住所一致だけで施設追加しない。",
+      "impact": "map_action"
+    }
+  ],
+  "article_keys": [
+    "yamaguchi-25061",
+    "shunan-119577",
+    "shunan-95062",
+    "shunan-116131",
+    "yamaguchi-32462",
+    "shunan-88839",
+    "shunan-91106",
+    "kaiten-462519",
+    "yamaguchi-27044",
+    "kaiten-524292",
+    "kaiten-550048"
+  ],
+  "article_inputs_hash": "3d7606b143ae608dd4809985f0048600ffebfadbe9853c085afbb16837ad882e",
+  "sources": [
+    {
+      "url": "https://www.pref.yamaguchi.lg.jp/soshiki/85/202898.html",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/113e39352134dc19518df932.json",
+      "hash": "f5b5038f2f6d5981d42e7a8590ee29348932d28a2898b5e87007e4020d19a393"
+    },
+    {
+      "url": "https://tokuyamadeck.com/information/店舗オープン情報-9/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/11eeef5821092ee2537387be.json",
+      "hash": "25337d51a6dbc73b3f7622a9f0b0826d352c0925d29020d707a66a2c9e4a6dcf"
+    },
+    {
+      "url": "https://crew.lawson.co.jp/jobfind-pc/job/All/93663/map",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/18999f563ff4caf52ecf8441.json",
+      "hash": "421d178314dd74b7a461132d1adafa9c7a6f1fac4061f944a46449c2ad7b650b"
+    },
+    {
+      "url": "https://neohas.jp/access/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/18e1db49dfe46fb9d95b774c.json",
+      "hash": "68eeeab4c2737e37eec71424b6c4583565bccee3fbf55005ae7a6bc8125804fc"
+    },
+    {
+      "url": "https://www.matsukiyococokara-online.com/map?kid=21405568",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/1bd300d164ce533d641b42cf.json",
+      "hash": "2745b54323a8e122fedcc31e3956c9f558b6b5ed4a688d825016c73d37f05f3b"
+    },
+    {
+      "url": "https://www.inai-hc.co.jp/pets-park/shop/yamaguchi.html",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/269d80f9f2d824b03efc2567.json",
+      "hash": "82f318776b9d90066484de1e1cd80ce443ef08eb1569c2c1c8500202ce505631"
+    },
+    {
+      "url": "https://www.yamaguti-coop.or.jp/cocoto/izumi/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/2e934a6554d8ca09de14275a.json",
+      "hash": "11ce125f7d34187ba3a09225ff409371d43d17ac318348adb04a947fed6d575f"
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop/【d2-105】ちほ活プロジェクト/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/34d71509f8c3b7fafc40c64d.json",
+      "hash": "5bcee131da88ee9807574dff29f117f9df9bfa69cd1a5975f0c23f61234a7518"
+    },
+    {
+      "url": "https://www.instagram.com/jidohanbaiki_/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/48c3aa6c3c1659f2eca66c4e.json",
+      "hash": "2ceae91a131f573154a0f65a350ac797f90c6f5a3fdb39cfea24f73b7fb3a4f2"
+    },
+    {
+      "url": "https://maps.app.goo.gl/cNnP2dBJQxKbmPs48",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/4e3a9fda39ae49f05b812d9c.json",
+      "hash": "1cc9a5acf73433acd15c21473b1c2e5f3f5ce9231c7f470e964f9b8bd3a493d5"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-湯田店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/50de6a77a4d8f030ccbaddf6.json",
+      "hash": "3a24e765324c00d4e41aba269dc6f318e6fa8a5dc50ef3fd9bac9340d1802338"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.189432846884!2d131.44681437531304!3d34.16707411165884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497001763e39d%3A0xd6bbbbfacb5cb411!2z44Gp44KT44Gp44KTIOa5r-eUsOW6lw!5e0!3m2!1sja!2sjp!4v1782604744169!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/52cb793490d50d60ce1d0708.json",
+      "hash": "62a6f8fbd0088ebea0cd88e8d2645dc3d278e6de8084a370297452b9d10d5b0f"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7225392806354!2d131.80162517571637!3d34.050987773157466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e76242559149%3A0xb507dccc54666611!2z5b6z5bGxREVDS--8iOW-s-WxseODh-ODg-OCre-8iQ!5e0!3m2!1sja!2sjp!4v1699773577409!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/55edd891afa01c6e90051813.json",
+      "hash": "46db7c56e0a4b3f21caf65c3a041afde5459651dca7456b00da5e61c031719fa"
+    },
+    {
+      "url": "https://www.e-map.ne.jp/smt/lawson/inf/156541/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/6144de4bc450fea89a0916e7.json",
+      "hash": "c15179c7db10121b395bab07f0f5c9b1e2d0dd757d40073e56de318ae38f9ef1"
+    },
+    {
+      "url": "https://www.yamaya.jp/ynhp/contents/stores/store_detail.php?CDTENPO=40951",
+      "status": null,
+      "error": "fetch failed",
+      "path": "outputs/facility-stratified-20260926/receipts/6644e4f67135b123c23044f2.json",
+      "hash": "5052fd51d3a0ca2dfc6ba1209701c8db2aaf5a6eb9f06e3002f17f771d6e2eeb"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/66a5ce2017dd117cb89e4ac2.json",
+      "hash": "12c77ad776a5ee96f1328377fbe356b2b223a151bca499e05deedf7769c1f66b"
+    },
+    {
+      "url": "https://tokuyamadeck.com/access/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/66f271dd7e3225f6a4abed04.json",
+      "hash": "0b5b9993d71c532ab5c3cd3d9b03a81ea8b7cb6fd9f800275e4589eed4a987be"
+    },
+    {
+      "url": "https://www.yamada-denki.jp/store/contents/?d=2104",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/6ad25bc7c54388dd75b4a188.json",
+      "hash": "766de7f9b0ad78efd77af5eb60d94d14e5e7e2c2d91d8f712221abec7a4fec70"
+    },
+    {
+      "url": "https://www.yamaguti-coop.or.jp/%e3%82%b3%e3%83%bc%e3%83%97%e3%81%84%e3%81%9a%e3%81%bf%e5%ba%97-%e8%a4%87%e5%90%88%e6%96%bd%e8%a8%ad%e3%80%8c%e3%82%b3%e3%83%bc%e3%83%97%e3%82%bf%e3%82%a6%e3%83%b3%e3%80%8d%e3%81%ae%e3%83%86%e3%83%8a/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/78d47c1d37e018e853c8760f.json",
+      "hash": "18de982be5d08050467f6dcad7682fec479840b7b85471da1fc35db68df546d4"
+    },
+    {
+      "url": "https://sumibitomikawa.owst.jp/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/7cd93a721ed9f5ac6d2e0550.json",
+      "hash": "264d43435a52f936fb06a652248afff21bf1fd552b50218b7329673b87cad191"
+    },
+    {
+      "url": "https://neohas.jp/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/7e350432faab14705c661240.json",
+      "hash": "6039eb2700db70ab6e1199d47036889f9cc1ab0ebec75f47062afc431118e187"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2024/02/25/yamada_shopping/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/8a45093a7cf02211cac16906.json",
+      "hash": "246d3bce40e411094ddcfdc429321fac71ee04f108160a8d9d97c41a2bb73514"
+    },
+    {
+      "url": "https://www.yamada-denki.jp/store/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/a1f7a7d9b30432b22fa1e437.json",
+      "hash": "0989502de15d8413f3234e5cdaa991ab905af7445bcb77ef2fedce49d49cc4e4"
+    },
+    {
+      "url": "https://www.the-fuji.com/fuji/store/tenant/yamaguchi/fuji_minamiiwakuni.php",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/a6abb95c03e303281bffdfe6.json",
+      "hash": "58d55ca894f33f85498ea93b544bb22461a471e72d9738a18026596e70d25dfe"
+    },
+    {
+      "url": "https://crew.lawson.co.jp/jobfind-pc/job/All/93663",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/aa24c923c83b7b94577c364d.json",
+      "hash": "32eb0a28e9043afba159b565cad63e8af60af37ae19dbbce03d1a37089a6e78b"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.1849444765157!2d131.44757821521802!3d34.167188880574784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449751974b64ff%3A0x91189717e0de2c04!2z44Kz44O844OX44GT44GT44GoIOOBhOOBmuOBv-W6lw!5e0!3m2!1sja!2sjp!4v1629369826486!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/ac23587d329139b52901e088.json",
+      "hash": "2abb7abd72ec8da15344aaf93880316593f7a276a10e37c3ee3782f099eaf5d0"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.195020898151!2d131.4470284264964!3d34.16693122311396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544975190ba623d%3A0xfcb2d4eaad449dee!2z44CSNzUzLTAwNjYg5bGx5Y-j55yM5bGx5Y-j5biC5rOJ55S677yZ4oiS77yR77yV77yQ4oiS77yS!5e0!3m2!1sja!2sjp!4v1718673670677!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/c28ddd725e599eb2dc1d65ed.json",
+      "hash": "686222de57d8105247783b536d215b455de24183791e3a5a94d148e60f63890f"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.9950800799934!2d130.94388970573024!3d34.0070996956868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a30043f5c517%3A0xb363282e9baeb841!2z44Gt44KS44Gv44GZIEhPVEVMIEJPT0sgJiBDQUZF!5e0!3m2!1sja!2sjp!4v1730384261421!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/c9416fd68fdae60cd689a380.json",
+      "hash": "d8c632118a2e64a70aba4b0dcc2d6d4049e2d0b2ff2d636718f0fccca3064ac8"
+    },
+    {
+      "url": "https://www.the-fuji.com/store/shop/yamaguchi/fuji_minamiiwakuni.html",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/d3505f94c0385aef741f9220.json",
+      "hash": "b48326152a80b64e3560a9cf308aeb57770bbf14df992d97fb614f1245b26c17"
+    },
+    {
+      "url": "https://www.inai-hc.co.jp/openpage_PPyamaguchi/index.html",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/d80c665918e19e615c287567.json",
+      "hash": "ccb40d2e0f21d230e40820461ba83a05ba8d26ef8b5cc566b74e6c8ad5b6eabf"
+    },
+    {
+      "url": "https://www.b-mozart.co.jp/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/db468d8357cc1cef22b4eefa.json",
+      "hash": "58651224be2194630d897ad017fa726ec287448fd7e139feeb0657f5c91810c8"
+    },
+    {
+      "url": "https://www.b-mozart.co.jp/?mode=f6",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/e0105ced9e047adab897c517.json",
+      "hash": "c6a1f4ed14d7e84b252619b181f20b30652caaa92164304ba3f962742d8c4d62"
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop-floor/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/e2ff5d60bd98292511ca908e.json",
+      "hash": "119f0220a9dfdf997c19edaa92141f8d14176491f1d96a217cfb9914b5fc5ab4"
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/09/backenmozart-sunlivekudamatsu/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/ec52f559f11d1a114a9e49ca.json",
+      "hash": "c236c97c8ff9a6be8eab3b9ee6ca3e7ef0564a5dca5633135a4baa0f2a676693"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d649.7559987852766!2d131.44954171835056!3d34.16730958573959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544975197565c9b%3A0x82824d424b5a97f8!2z44CSNzUzLTAwNjYg5bGx5Y-j55yM5bGx5Y-j5biC5rOJ55S677yZ4oiS77yR77yV77yQ!5e0!3m2!1sja!2sjp!4v1715928541648!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-stratified-20260926/receipts/f107b927ca19673294f60f72.json",
+      "hash": "dbd88a75f2b4abcfa212179a212033db1a7c4fa65725c648de2f92e771b1b537"
+    }
+  ],
+  "map_coordinates": "Named place records or explicit official point; never viewport center. Chihokatsu uses a disclosed shared D2 building representative point.",
+  "extra_jev_requests": 0,
+  "cumulative": {
+    "updates": 31,
+    "additions": 242,
+    "total": 8006,
+    "normal_candidates": 7942
+  },
+  "limitations": "Mixed strata and common searches were timed together. No stratum-specific processing rate or total completion forecast is inferred."
+}
