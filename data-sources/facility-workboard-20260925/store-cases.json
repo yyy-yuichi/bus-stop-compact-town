@@ -678,17 +678,20 @@
         "reason": "ペッツパーク山口店の現行公式名称・住所は確認。公式埋込地図は旧地番9-150-2の住所地点で、店舗個体の点と未照合。既存カテゴリに専用分類もなく、近隣スーパーの点へ置換して追加しない。",
         "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
         "event_ids": [
-          "yamaguchi-32462:pets-current"
+          "yamaguchi-32462:pets-current",
+          "yamaguchi-33527:pets-current"
         ]
       }
     ],
     "status": "map_action",
     "priority": "P1",
     "article_keys": [
-      "yamaguchi-32462"
+      "yamaguchi-32462",
+      "yamaguchi-33527"
     ],
     "held_event_ids": [
-      "yamaguchi-32462:pets-current"
+      "yamaguchi-32462:pets-current",
+      "yamaguchi-33527:pets-current"
     ],
     "supplemental_also_pending": false
   },
@@ -1211,7 +1214,8 @@
         "reason": "2025-09-04は移転前発表の予定日。現行掲載と1周年告知は確認済みだが、当日の実開店を裏付ける一次情報は未確認。",
         "next": "当日の開店または日付を明示する事後公式案内が得られた場合に補完。",
         "event_ids": [
-          "ube-81345:autobacs-opening-date"
+          "ube-81345:autobacs-opening-date",
+          "ube-81398:opening-date"
         ]
       }
     ],
@@ -1226,10 +1230,12 @@
     "status": "supplemental",
     "priority": "P3",
     "article_keys": [
-      "ube-81345"
+      "ube-81345",
+      "ube-81398"
     ],
     "held_event_ids": [
-      "ube-81345:autobacs-opening-date"
+      "ube-81345:autobacs-opening-date",
+      "ube-81398:opening-date"
     ],
     "supplemental_also_pending": false
   },
@@ -1266,6 +1272,115 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:kaiten-452960:opening-date",
+    "name": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+    "facility_ids": [
+      "official-workman-409592"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 3,
+        "hash": "1d7041c11afa5ebac80a22d7540f677d4dfbbdd16ebdb0a391f6f7af814b51b0"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-452960:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-452960:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-452960"
+    ],
+    "held_event_ids": [
+      "kaiten-452960:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-455288:old-opening",
+    "name": "記事の旧住所は中之町1-16の横丁18番。現行施設は赤間町7-15に移転済み。同名だけで現店舗の開店日へ転用しない。旧店舗の2024年開店実",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 14,
+        "hash": "65b24660af8b05d042d3a1253b1148465701a171bcd99e296e4fd755df66b545"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-455288:old-opening:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事の旧住所は中之町1-16の横丁18番。現行施設は赤間町7-15に移転済み。同名だけで現店舗の開店日へ転用しない。旧店舗の2024年開店実施日原本は未確認。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-455288:old-opening"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-455288"
+    ],
+    "held_event_ids": [
+      "kaiten-455288:old-opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-486571:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-sanyoonoda-civic-activity"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 15,
+        "hash": "c45b5ed2f018858367f1735de8f7a1d71c46ede068b396dd447dc39fd86df244"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-486571:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-486571:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-486571"
+    ],
+    "held_event_ids": [
+      "kaiten-486571:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:kaiten-496981:old-daiso-closure",
     "name": "旧DAISOイオン小野田店",
     "facility_ids": [],
@@ -1297,6 +1412,265 @@
     ],
     "held_event_ids": [
       "kaiten-496981:old-daiso-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-550785:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-worldplus-yamaguchi-ogori"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 13,
+        "hash": "fb2ed43fc5490a54629b7a1cd40b229cbd4dd474b9db8747773d9acd79e1ad17"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-550785:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-550785:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-550785"
+    ],
+    "held_event_ids": [
+      "kaiten-550785:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-557308:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-relocated-harete-trip"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 17,
+        "hash": "eb09f6142528b9b068d69f514b942544cd5a28015a0af16d92ddb2620c15ea68"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-557308:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-557308:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-557308"
+    ],
+    "held_event_ids": [
+      "kaiten-557308:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-558246:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-relocated-harete-yamamoto"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 16,
+        "hash": "1755fb46c55b8049fc33f43d9a4f5ead1915a91cf92f2eb69b992f19bb845a2d"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-558246:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-558246:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-558246"
+    ],
+    "held_event_ids": [
+      "kaiten-558246:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-567663:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-autobacs-380064"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 7,
+        "hash": "fab77b628cb3d0c40c82c06e84a25df0782ac0d3a918c565b2d2cd5a861bf18d"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-567663:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-567663:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-567663"
+    ],
+    "held_event_ids": [
+      "kaiten-567663:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-590491:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-papanrepos-chofu"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 11,
+        "hash": "e9ce1accc4b5f90521b2e980d333ad5ef035cac246eb502664f907fe5bf73639"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-590491:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-590491:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-590491"
+    ],
+    "held_event_ids": [
+      "kaiten-590491:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-592846:opening-date",
+    "name": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+    "facility_ids": [
+      "official-workman-613708"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "96815276cf021077d8ae4a806d9fe5d2372292e41f4fd94fac28e480b21b5a0b"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-592846:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-592846:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-592846"
+    ],
+    "held_event_ids": [
+      "kaiten-592846:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-596738:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-kairikiya-hofu"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 18,
+        "hash": "526e7cd885c7eeac9e3f9da388f4caf81b9e9ad9ab427a5e4a64035f057a3c88"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-596738:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "kaiten-596738:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-596738"
+    ],
+    "held_event_ids": [
+      "kaiten-596738:opening-date"
     ],
     "supplemental_also_pending": false
   },
@@ -1441,6 +1815,43 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:shimonoseki-71212:opening-date",
+    "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+    "facility_ids": [
+      "official-papanrepos-chofu"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 12,
+        "hash": "2dc1844550eb960c5e85f7964a7068d474bf9712834d6345586e7799f66d9632"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shimonoseki-71212:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "shimonoseki-71212:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shimonoseki-71212"
+    ],
+    "held_event_ids": [
+      "shimonoseki-71212:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:shunan-102525:old-daiso-closure",
     "name": "旧DAISOイオン光店",
     "facility_ids": [],
@@ -1507,6 +1918,80 @@
     ],
     "held_event_ids": [
       "shunan-102525:shirokujichu-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:shunan-111025:rename",
+    "name": "現行Plusブランドは確認。2025年のWORKMANからPlusへの変更の実施日は一次履歴未確認。",
+    "facility_ids": [
+      "official-workman-16566"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 5,
+        "hash": "f98a9b0d668199ea5743650efd58ad1e631899e1a47416d9906f62d3b70d46fd"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-111025:rename:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "現行Plusブランドは確認。2025年のWORKMANからPlusへの変更の実施日は一次履歴未確認。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "shunan-111025:rename"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-111025"
+    ],
+    "held_event_ids": [
+      "shunan-111025:rename"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:shunan-111025:renewal",
+    "name": "記事が報じる内装改装の実施時期は現行ページでは確認できず履歴のみ保留。",
+    "facility_ids": [
+      "official-workman-16566"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 6,
+        "hash": "2f2784a2dc1ce618a6b68d91e796c6d63a3466f1b90eb27439189877878f4e98"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-111025:renewal:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "記事が報じる内装改装の実施時期は現行ページでは確認できず履歴のみ保留。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "shunan-111025:renewal"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-111025"
+    ],
+    "held_event_ids": [
+      "shunan-111025:renewal"
     ],
     "supplemental_also_pending": false
   },
@@ -1686,6 +2171,78 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:shunan-91946:old-relocation",
+    "name": "二番町の旧店閉店・児玉町への移転を記事で確認。新店は掲載済み。旧店固有IDと閉店・移転実施の一次履歴は未照合。",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 9,
+        "hash": "67d8804c7055649900db9fd951501dff7877102f27779e9a1006e09770bc2d6b"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-91946:old-relocation:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "二番町の旧店閉店・児玉町への移転を記事で確認。新店は掲載済み。旧店固有IDと閉店・移転実施の一次履歴は未照合。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "shunan-91946:old-relocation"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-91946"
+    ],
+    "held_event_ids": [
+      "shunan-91946:old-relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:shunan-91946:opening-date",
+    "name": "記事の4月17日開店に対応する実施日一次履歴は未取得。",
+    "facility_ids": [
+      "official-coffeeboy-kodama"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 10,
+        "hash": "1d3d91400d44cf481234dd724f296b0334b58f516edccae9d7eaa6f78ae6d538"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-91946:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "記事の4月17日開店に対応する実施日一次履歴は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "shunan-91946:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-91946"
+    ],
+    "held_event_ids": [
+      "shunan-91946:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:shunan-95062:old-relocation",
     "name": "旧清瀬町3-13-16の移転・取壊し。公式Instagramは公開プロフィール名のみ取得でき、2024-05-22告知本",
     "facility_ids": [],
@@ -1790,6 +2347,152 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:ube-81398:old-closure",
+    "name": "記事が報じる旧店8月24日閉店の実施日原本は未取得。既存台帳の旧地点IDは未同定。",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 8,
+        "hash": "7033fc7c012db007a9ad63605edc71e7d934c8d42306a53436e1ab66e7366931"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:ube-81398:old-closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事が報じる旧店8月24日閉店の実施日原本は未取得。既存台帳の旧地点IDは未同定。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "ube-81398:old-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81398"
+    ],
+    "held_event_ids": [
+      "ube-81398:old-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:ube-82122:opening-date",
+    "name": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+    "facility_ids": [
+      "official-workman-613708"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 2,
+        "hash": "5c34bb0dba51633582ea3518a36e67d3d4e80f3158228cc3da62b0f2db4ec4b0"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:ube-82122:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "ube-82122:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-82122"
+    ],
+    "held_event_ids": [
+      "ube-82122:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:ube-82255:opening-date",
+    "name": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+    "facility_ids": [
+      "official-workman-613708"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "139b0abf6e8c1776ed81977815e8eb59e46e77e8f472857bc3d36eab2a6aa562"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:ube-82255:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "ube-82255:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-82255"
+    ],
+    "held_event_ids": [
+      "ube-82255:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:yamaguchi-24609:opening-date",
+    "name": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+    "facility_ids": [
+      "official-workman-409592"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-routing-workman-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 4,
+        "hash": "5a245da88ccfecca19a357816af682d17ccef61e088b4525066db0fdb6200454"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:yamaguchi-24609:opening-date:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式支店により出店済みの現況は確認。記事の開店予定日と実施日は分離し、過去の実施日原本は未取得。",
+        "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
+        "event_ids": [
+          "yamaguchi-24609:opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-24609"
+    ],
+    "held_event_ids": [
+      "yamaguchi-24609:opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:yamaguchi-32462:pets-opening",
     "name": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
     "facility_ids": [],
@@ -1810,17 +2513,20 @@
         "reason": "ペッツパークの7月上旬予定（公式案内は7月3日、年の独立明記は未照合）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
         "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
         "event_ids": [
-          "yamaguchi-32462:pets-opening"
+          "yamaguchi-32462:pets-opening",
+          "yamaguchi-33527:pets-opening"
         ]
       }
     ],
     "status": "historical_only",
     "priority": "P3",
     "article_keys": [
-      "yamaguchi-32462"
+      "yamaguchi-32462",
+      "yamaguchi-33527"
     ],
     "held_event_ids": [
-      "yamaguchi-32462:pets-opening"
+      "yamaguchi-32462:pets-opening",
+      "yamaguchi-33527:pets-opening"
     ],
     "supplemental_also_pending": false
   },
@@ -2346,17 +3052,20 @@
         "reason": "どんどんの7月上旬予定（公式予告は7月11日）。現行掲載と歴史的実施日を分け、実施日原本は保留。",
         "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
         "event_ids": [
-          "yamaguchi-32462:dondon-opening"
+          "yamaguchi-32462:dondon-opening",
+          "yamaguchi-33527:dondon-opening"
         ]
       }
     ],
     "status": "supplemental",
     "priority": "P3",
     "article_keys": [
-      "yamaguchi-32462"
+      "yamaguchi-32462",
+      "yamaguchi-33527"
     ],
     "held_event_ids": [
-      "yamaguchi-32462:dondon-opening"
+      "yamaguchi-32462:dondon-opening",
+      "yamaguchi-33527:dondon-opening"
     ],
     "supplemental_also_pending": false
   },
@@ -2597,18 +3306,23 @@
         "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
         "event_ids": [
           "yamaguchi-32462:matsu-opening",
-          "yamaguchi-32462:pharmacy-opening"
+          "yamaguchi-32462:pharmacy-opening",
+          "yamaguchi-33527:matsu-opening",
+          "yamaguchi-33527:pharmacy-opening"
         ]
       }
     ],
     "status": "supplemental",
     "priority": "P3",
     "article_keys": [
-      "yamaguchi-32462"
+      "yamaguchi-32462",
+      "yamaguchi-33527"
     ],
     "held_event_ids": [
       "yamaguchi-32462:matsu-opening",
-      "yamaguchi-32462:pharmacy-opening"
+      "yamaguchi-32462:pharmacy-opening",
+      "yamaguchi-33527:matsu-opening",
+      "yamaguchi-33527:pharmacy-opening"
     ],
     "supplemental_also_pending": false
   },

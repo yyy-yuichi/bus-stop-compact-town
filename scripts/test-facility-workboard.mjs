@@ -1,3 +1,4 @@
+import {operatorLinkHints,enrichRoutingInputs} from './facility-routing-lib.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {hash} from './jev-batch.mjs';import {groupCandidates,operatorHint,buildWorkboard} from './facility-workboard-lib.mjs';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),pub='data-sources/facility-workboard-20260925';
 const index=read('data-sources/facility-progress-20260925/article-index.json'),reviews=read('data-sources/facility-progress-20260925/article-event-reviews.json'),overlay=read('public/data/facility-current.json'),metadata=read(pub+'/article-work-inputs.json').articles,cases=read(pub+'/case-reviews.json');
@@ -55,4 +56,29 @@ test('resolved map cases retain evidence and cannot swallow held article events'
  let c=structuredClone(cases),x=c.cases.find(c=>c.case_id==='reconcile:tsuruha-3905');delete x.issues[0].resolution;assert.throws(()=>run(c));
  c=structuredClone(cases);x=c.cases.find(c=>c.case_id==='reconcile:tsuruha-3905');x.facility_ids=['missing'];assert.throws(()=>run(c));
  c=structuredClone(cases);x=c.cases.find(c=>c.case_id==='facility:official-watts-47917');x.issues[0].impact='resolved';assert.throws(()=>run(c));
+});
+
+test('operator aliases and source domains route lookup without establishing ownership',()=>{
+ assert.equal(operatorHint('#ワークマン女子 コスパ新下関店'),'ワークマン');
+ assert.equal(operatorHint('Workman Colors 宇部厚南店'),'ワークマン');
+ const a={...article('empty'),name_candidates:[],operator_link_hints:[{operator:'chocoZAP',url:'https://chocozap.jp/studios/14513'}]};
+ const g=groupCandidates([a],new Set())[0];assert.equal(g.operator_hint,'chocoZAP');assert.equal(g.operator_hint_basis,'linked_domain_lookup_only');assert.equal(g.identity_status,'unverified_candidate_group');
+ const multiple={...a,article_key:'multi',name_candidates:['店舗A','店舗B']};assert.equal(groupCandidates([multiple],new Set())[0].operator_hint,null);
+ const conflict={...a,article_key:'conflict',operator_link_hints:[...a.operator_link_hints,{operator:'ワークマン',url:'https://www.workman.co.jp/store/'}]};assert.equal(groupCandidates([conflict],new Set())[0].operator_hint,null);
+});
+test('routing enrichment accepts exact domains and preserves source and city boundaries',()=>{
+ assert.deepEqual(operatorLinkHints(['https://workman.co.jp.evil.example/store','https://www.workman.co.jp/store?token=private']),[]);
+ assert.equal(operatorLinkHints(['https://www.workman.co.jp/store/']).length,1);
+ const a={...article('x'),source_body_hash:'body'};
+ const o={additions:[{id:'same',properties:{name:'店舗A',city:'宇部市',freshness_review:{status:'operating'}}},{id:'other-city',properties:{name:'店舗A',city:'下関市',freshness_review:{status:'operating'}}},{id:'closed',properties:{name:'店舗A',city:'宇部市',freshness_review:{status:'closed'}}}],updates:[]};
+ const enriched=enrichRoutingInputs([a],[{key:'x',body_hash:'body',outbound_links:['https://chocozap.jp/studios/14513']}],o);assert.deepEqual(enriched[0].reviewed_facility_hint_ids,['same']);assert.equal(a.operator_link_hints,undefined);
+ assert.throws(()=>enrichRoutingInputs([a],[{key:'x',body_hash:'changed'}],o));
+});
+test('reuse and operator batches precede regional batches without losing or completing candidates',()=>{
+ const baseline=run(),m=structuredClone(metadata),key=baseline.candidates.find(g=>!g.operator_hint).article_keys[0];m.find(a=>a.article_key===key).reviewed_facility_hint_ids=[overlay.additions[0].id];
+ const r=run(cases,reviews,m);assert.equal(r.batchRows[0].mode,'existing_evidence_comparison');
+ assert.equal(r.batchRows[1].mode,'official_directory_comparison');
+ const keys=r.batchRows.flatMap(b=>b.article_keys);assert.equal(keys.length,new Set(keys).size);assert.equal(keys.length,r.summary.unreviewed.articles);
+ assert(r.candidates.filter(g=>g.operator_hint_basis==='linked_domain_lookup_only').every(g=>g.identity_status==='unverified_candidate_group'));
+ assert.deepEqual(r.summary.article_history,read(pub+'/summary.json').article_history);
 });
