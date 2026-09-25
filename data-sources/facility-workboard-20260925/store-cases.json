@@ -1,0 +1,1739 @@
+[
+  {
+    "case_id": "case:mcd-ube-konan",
+    "name": "マクドナルド宇部厚南の旧地点・現行店舗",
+    "facility_ids": [
+      "osm-way-477623030",
+      "official-mcdonalds-35538"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:mcd-ube-konan:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "新店舗は掲載済みだが旧地点が通常候補に残る。支店の移転関係と旧地点の終了が未確認。",
+        "next": "旧店舗を特定する一次の閉店・移転告知を確認。",
+        "event_ids": [
+          "ube-81233:relocation",
+          "ube-81345:relocation"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [
+      "ube-81233",
+      "ube-81345"
+    ],
+    "held_event_ids": [
+      "ube-81233:relocation",
+      "ube-81345:relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-tsuruha-10049",
+    "name": "ウォンツ ハローズ西岐波店",
+    "facility_ids": [
+      "official-tsuruha-10049"
+    ],
+    "related_facility_ids": [
+      "official-halows-nishikiwa"
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-tsuruha-10049:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "ube-83311:wants-opening",
+          "ube-83101:opening",
+          "ube-83154:opening",
+          "ube-83224:opening"
+        ]
+      },
+      {
+        "issue_id": "facility:official-tsuruha-10049:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "同一商業施設との案内と公式支店座標が約3.3km相違。",
+        "next": "新しい店別の一次地図で位置を確定し、訂正履歴を残す。",
+        "event_ids": [
+          "ube-83311:wants-position"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [
+      "ube-83101",
+      "ube-83154",
+      "ube-83224",
+      "ube-83311"
+    ],
+    "held_event_ids": [
+      "ube-83101:opening",
+      "ube-83154:opening",
+      "ube-83224:opening",
+      "ube-83311:wants-opening",
+      "ube-83311:wants-position"
+    ],
+    "supplemental_also_pending": true
+  },
+  {
+    "case_id": "facility:osm-way-1236531275",
+    "name": "肉肉うどん 新下関店",
+    "facility_ids": [
+      "osm-way-1236531275"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:osm-way-1236531275:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "The current brand shop page still lists Shin-Shimonoseki; a branch-specific primary closure notice has not been obtained.",
+        "next": "Check a dated branch-specific operator notice before marking this ID closed.",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-progress-20260925/focus-review.json",
+        "section": "closures",
+        "index": 0,
+        "hash": "ae788df1a527d3ccace65e190b7b3431d11b75d847de9ffe2c137435f140247a"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:4",
+    "name": "海都大内御堀店",
+    "facility_ids": [
+      "osm-way-465881162"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:4:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "海都大内御堀の閉店の一次情報が未取得。",
+        "next": "二次情報の2026年1月4日を未採用。運営会社の該当店閉店告知を確認。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 4,
+        "hash": "ab90e0bec167594384f88f35b8af50506543c0554b28b6c55dd00a4c377b05d4"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:tsuruha-3889",
+    "name": "ウォンツ下松山田と旧ドラッグセガミ",
+    "facility_ids": [
+      "osm-node-4021837791"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:tsuruha-3889:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "Different prior occupant at the same site: ドラッグセガミ (10 m). Do not overwrite or add a duplicate until succession is verified.",
+        "next": "既存の建物・支店・後継関係を照合し、重複追加を避ける。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "held_sites",
+        "index": "3889",
+        "hash": "3fbc02abd63155f892159b676506c82d4503a060accf0c06c26ef5b7582d6275"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:tsuruha-3905",
+    "name": "ウォンツ宇部亀浦の重複候補",
+    "facility_ids": [
+      "osm-node-9472242519",
+      "osm-way-1027461546"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:tsuruha-3905:map_action",
+        "impact": "map_action",
+        "priority": "P0",
+        "reason": "Two existing node/way records describe ウォンツ宇部亀浦店 at the same site. Preserve both pending deduplication review; do not add a third.",
+        "next": "既存の建物・支店・後継関係を照合し、重複追加を避ける。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "held_sites",
+        "index": "3905",
+        "hash": "18feaeacc67f3270ad85f77922937c738ba4a5215203efb589fb2341c80fe9b7"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P0",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:autobacs-ube-konan",
+    "name": "オートバックス宇部厚南",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:autobacs-ube-konan:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "公式の移転予定・新住所は取得済み、現行店別点は未確認。",
+        "next": "現行公式店舗ページの支店ID・住所・代表点をまとめて照合。",
+        "event_ids": [
+          "ube-81345:autobacs-relocation"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "ube-81345"
+    ],
+    "held_event_ids": [
+      "ube-81345:autobacs-relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:megadori-ube",
+    "name": "メガドリ宇部店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:megadori-ube:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "自店住所の裏付けあり、店別代表点未確定。",
+        "next": "取得済み自店案内と公開地図を照合。",
+        "event_ids": [
+          "ube-81165:successor",
+          "ube-82743:successor"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "ube-81165",
+      "ube-82743"
+    ],
+    "held_event_ids": [
+      "ube-81165:successor",
+      "ube-82743:successor"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:tecmopia-hagi",
+    "name": "テクモピア萩店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:tecmopia-hagi:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "運営元原本・店名に結びついた位置が未確認。",
+        "next": "取得済みメーカー情報から運営元の現行店舗を確認。",
+        "event_ids": [
+          "kaiten-558326:opening"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "kaiten-558326"
+    ],
+    "held_event_ids": [
+      "kaiten-558326:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:tokuchan-iijima",
+    "name": "飯島町の居酒屋・拉麺徳ちゃん",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:tokuchan-iijima:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "新支店・移転・開店の関係が未確定。",
+        "next": "店舗自身の現行住所と支店関係を確認。",
+        "event_ids": [
+          "shunan-119994:tokuchan-iijima"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "shunan-119994"
+    ],
+    "held_event_ids": [
+      "shunan-119994:tokuchan-iijima"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:toyopet-hagi",
+    "name": "山口トヨペット 萩マイカーセンターつばき店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:toyopet-hagi:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "公式の住所・電話は確認済み、店別の採用座標未確定。",
+        "next": "販売会社の店舗地図から地点・測地系を確認。",
+        "event_ids": [
+          "kaiten-547780:opening"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "kaiten-547780"
+    ],
+    "held_event_ids": [
+      "kaiten-547780:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:watts-hofu-imono",
+    "name": "防府鋳物師のWatts売場",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-tsuruha-3989"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:watts-hofu-imono:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "入居先公式には100円ショップ設備。記事のWatts名と売場固有の一次情報をつなぐ確認が残る。",
+        "next": "Watts公式の防府市一覧をまとめて照合する。",
+        "event_ids": [
+          "yamaguchi-43926:watts-corner"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "yamaguchi-43926"
+    ],
+    "held_event_ids": [
+      "yamaguchi-43926:watts-corner"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:harete-graduate-01",
+    "name": "カラオケBAR　いいやん",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:harete-graduate-01:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "conflicting_current_listing_hold",
+        "next": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening.",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-progress-20260925/focus-review.json",
+        "section": "graduates",
+        "index": 0,
+        "hash": "fc80b4c4cf5680b7a797a10356519f641d6e2ffb40cf7042983b7b7a99c35748"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:harete-graduate-02",
+    "name": "DーDAY",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:harete-graduate-02:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "conflicting_current_listing_hold",
+        "next": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening.",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-progress-20260925/focus-review.json",
+        "section": "graduates",
+        "index": 1,
+        "hash": "e8a7a2c1ca16ca5a2a139ca1ec2595e0c67452b5064b1afce798a04d422bd4b6"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:1",
+    "name": "ふくぱん銀南街店舗",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:1:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "ふくぱん銀南街の販売終了に対応する元IDの確認が残る。",
+        "next": "工房移転・移動販売・委託販売と区別。事業全体の廃業とは扱わず、旧店舗のIDを探す。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 1,
+        "hash": "f178395d3f017ed04614bc67811873b6f383c41a60230a01119176800780d380"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:2",
+    "name": "サロン・ド・エミール中央店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:2:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "エミール中央店の閉店に対応する元IDの確認が残る。",
+        "next": "元データの名称一致なし。中央店以外の営業店へ閉店を転用しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 2,
+        "hash": "8528f99001558a5576f606f145330848aad4170a40207051a978da431354f0f0"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:3",
+    "name": "海商館",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:3:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "海商館の元施設の同一性確認が残る。",
+        "next": "2024年6月閉店の月情報。日付を月末と推測しない。元店舗のIDと日付精度を確認。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 3,
+        "hash": "b831afb2463942d70d2c96e1785e65ee8e913d31fcf898242eaf1a858fc16eca"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:7",
+    "name": "まちのパン屋さんkiki",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:7:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "kikiの店舗として公表された精密位置が未取得。",
+        "next": "公式住所は下松市旗岡5丁目まで。自宅の精密位置を推測せず、公開されている店舗位置の案内を確認。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 7,
+        "hash": "036171f377f15150140b205cef0cd81633232911a8a2b7638d3a386013aa17fd"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:8",
+    "name": "PilatesGenie",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:8:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "PilatesGenieの店舗位置が未確定。",
+        "next": "公式埋込地図は銀座1丁目の地域代表点。TOKUYAMA DECKの店舗位置として無条件採用しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 8,
+        "hash": "69f803884c9e161b633db63e87e17e23ae4316dc5dee02c846f4df118e43cacc"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "legacy:9",
+    "name": "SuouCoffeeFactory",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "legacy:9:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "SuouCoffeeFactoryの現行サービス分類の確認が残る。",
+        "next": "移転予定2026-04-03と現行の西松原1-1-26案内を確認。豆販売と飲食提供を区別し、既存のカフェ種別へ推測登録しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-evidence-20260925/holds.json",
+        "index": 9,
+        "hash": "03cbd0d8e39ef4b67c891e1a803367abb08604254f195735a13613a3dba57748"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:tadokoro-kudamatsu",
+    "name": "麺場田所商店 下松店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:tadokoro-kudamatsu:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "Official opening date known but same location as baseline まいどおおきに食堂. Resolve prior occupant before adoption.",
+        "next": "既存まいどおおきに食堂との同一性・後継関係を確認する。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 0,
+        "hash": "dbf20c50148812452187485e965972c0dfd5aea0cd25773b5fd0916a46f9f026"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-higashimizome",
+    "name": "旧ウォンツ宇部東見初店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-higashimizome:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-ube-numa",
+    "name": "旧ウォンツ宇部沼店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-ube-numa:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-yamaguchi-ouchi",
+    "name": "旧ウォンツ山口大内店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-yamaguchi-ouchi:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-yanai-shinjo",
+    "name": "旧ウォンツ柳井新庄店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-yanai-shinjo:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:wants-higashisue-pharmacy",
+    "name": "ウォンツ宇部東須恵の薬局計画",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-tsuruha-3993"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:wants-higashisue-pharmacy:map_action",
+        "impact": "map_action",
+        "priority": "P2",
+        "reason": "薬局の開局・計画変更は未確認。ドラッグストアとは別の機能。",
+        "next": "公式の薬局一覧と対象住所を照合。",
+        "event_ids": [
+          "ube-80654:pharmacy",
+          "ube-80473:pharmacy"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P2",
+    "article_keys": [
+      "ube-80473",
+      "ube-80654"
+    ],
+    "held_event_ids": [
+      "ube-80473:pharmacy",
+      "ube-80654:pharmacy"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:hofu-imono-clinic-plan",
+    "name": "防府鋳物師のクリニック区画募集",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-tsuruha-3989"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:hofu-imono-clinic-plan:watch",
+        "impact": "watch",
+        "priority": "P3",
+        "reason": "募集看板だけで店名・開院・診療科は未特定。",
+        "next": "開院の具体的な告知が出た場合に掲載候補へ。",
+        "event_ids": [
+          "yamaguchi-40890:clinic-plan",
+          "yamaguchi-42851:clinic-plan"
+        ]
+      }
+    ],
+    "status": "watch",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-40890",
+      "yamaguchi-42851"
+    ],
+    "held_event_ids": [
+      "yamaguchi-40890:clinic-plan",
+      "yamaguchi-42851:clinic-plan"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:mcd-konan-site",
+    "name": "旧マクドナルド厚南跡の後継計画",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "osm-way-477623030"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:mcd-konan-site:watch",
+        "impact": "watch",
+        "priority": "P3",
+        "reason": "工事記事のみで後継店舗未特定。既存施設の閉店確認とは別。",
+        "next": "店名・現行住所が公表された場合に新規掲載を検討。",
+        "event_ids": [
+          "ube-81345:old-site-successor"
+        ]
+      }
+    ],
+    "status": "watch",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81345"
+    ],
+    "held_event_ids": [
+      "ube-81345:old-site-successor"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:mcd-yumetown-history",
+    "name": "旧マクドナルド宇部ゆめタウン店",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "ube",
+      "official-kfc-5063"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:mcd-yumetown-history:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "既存対象テナントIDなし。後継KFCは別IDで掲載済み。閉店の一次記録は未確認だが現行地図を変更する対象は見つかっていない。",
+        "next": "閉店の一次告知が得られた際に履歴を補完。商業施設ubeは変更しない。",
+        "event_ids": [
+          "ube-81149:old-mcd-closure",
+          "ube-81774:old-mcd-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "ube-81149",
+      "ube-81774"
+    ],
+    "held_event_ids": [
+      "ube-81149:old-mcd-closure",
+      "ube-81774:old-mcd-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:tsutaya-hofu-history",
+    "name": "旧TSUTAYA防府店",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-tsuruha-3989"
+    ],
+    "issues": [
+      {
+        "issue_id": "case:tsutaya-hofu-history:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "元施設にTSUTAYA/ツタヤ名称候補なし。現行ウォンツは掲載済み。旧店閉店の一次記録は未確認。",
+        "next": "一次の閉店記録が得られた際に履歴を補完。",
+        "event_ids": [
+          "yamaguchi-40890:tsutaya-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-40890"
+    ],
+    "held_event_ids": [
+      "yamaguchi-40890:tsutaya-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:harete-graduate-11",
+    "name": "Tokidoki",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:harete-graduate-11:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "mobile_without_fixed_map_point",
+        "next": "Do not create a fixed map point for mobile operations.",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-progress-20260925/focus-review.json",
+        "section": "graduates",
+        "index": 10,
+        "hash": "09fb071f694197805e2e6ef9039f7b473e646e4ad67f845ebf4847001f48baef"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-228",
+    "name": "道中",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-228:watch",
+        "impact": "watch",
+        "priority": "P3",
+        "reason": "店舗詳細の営業時間欄に『只今、休業中です。』。過去の通常営業案内と混在するため営業中として追加せず保留。永久閉店とも扱わない。",
+        "next": "公式の再開告知が得られたら確認。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 37,
+        "hash": "75c9eea7cb675afecd06a26f8d0965326a21a239e4a38a96a04ac33dd13ab2ab"
+      }
+    ],
+    "status": "watch",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-2446",
+    "name": "青鮮魚商店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-2446:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 27,
+        "hash": "f57e7df28f9e40592946570c9b8dd813c1c2aa5bf1e4acb03b5e5f2f9350bf85"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-265",
+    "name": "酒井商店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-265:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 26,
+        "hash": "2ab24f1e786c19e80398550e7274d76fcdc2976b53aaf5bb64616b22437586d5"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-5773",
+    "name": "永野商店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-5773:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 25,
+        "hash": "ff06a8872dba86cfd326dccd9f378ae1785a02e6b1e410f34513ac9d1ece4aec"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-5775",
+    "name": "畑水産",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-5775:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 24,
+        "hash": "4097ea1128b45d5202523778e804cbb3c3f829fcecfc50b9965f4e7b603a583a"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-5778",
+    "name": "マルヨ水産",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-5778:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 23,
+        "hash": "45d688c38560e643fa63e576aef09fcc28eb0b0f00aa42f01d389a41b822746d"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-5780",
+    "name": "ふく陣吉田",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-5780:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 22,
+        "hash": "32049b61182b1384365c82dc37a8da550e225ad6486fdae9004373ef559828c6"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-5783",
+    "name": "ダイフク",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-5783:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 21,
+        "hash": "e1410b0e24faec1fb5539de9ff3ff29fe076bc466c0b648c0f9298f5e23352dc"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "directory:karato-market-6100",
+    "name": "山西水産",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "directory:karato-market-6100:excluded_fixed_map",
+        "impact": "excluded_fixed_map",
+        "priority": "P3",
+        "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+        "next": "場外の事業所を市場内の来店施設として追加しない。",
+        "event_ids": []
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-local-stores-20260925/decisions.json",
+        "index": 20,
+        "hash": "275e75afeaae673afced26940296b58183be06dc84d9168e19c5760db899baef"
+      }
+    ],
+    "status": "excluded_fixed_map",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-chiyomaru-abu",
+    "name": "阿武産直 千代丸食堂",
+    "facility_ids": [
+      "official-chiyomaru-abu"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-chiyomaru-abu:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-513641:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-513641"
+    ],
+    "held_event_ids": [
+      "kaiten-513641:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-halows-nishikiwa",
+    "name": "ハローズ西岐波店",
+    "facility_ids": [
+      "official-halows-nishikiwa"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-halows-nishikiwa:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "ube-83311:halows-opening",
+          "ube-83101:halows-opening",
+          "ube-83154:halows-opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-83101",
+      "ube-83154",
+      "ube-83311"
+    ],
+    "held_event_ids": [
+      "ube-83101:halows-opening",
+      "ube-83154:halows-opening",
+      "ube-83311:halows-opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-iphone-sokusyuri-hagitamagawa",
+    "name": "iPhone即日修理屋さん萩田万川店",
+    "facility_ids": [
+      "official-iphone-sokusyuri-hagitamagawa"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-iphone-sokusyuri-hagitamagawa:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-520473:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-520473"
+    ],
+    "held_event_ids": [
+      "kaiten-520473:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-kfc-5063",
+    "name": "ケンタッキーフライドチキン ゆめタウン宇部店",
+    "facility_ids": [
+      "official-kfc-5063"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-kfc-5063:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-575908:opening",
+          "ube-81774:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-575908",
+      "ube-81774"
+    ],
+    "held_event_ids": [
+      "kaiten-575908:opening",
+      "ube-81774:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-komeri-power-nagato-1054",
+    "name": "コメリパワー長門店",
+    "facility_ids": [
+      "official-komeri-power-nagato-1054"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-komeri-power-nagato-1054:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-540611:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-540611"
+    ],
+    "held_event_ids": [
+      "kaiten-540611:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-matsuya-2122",
+    "name": "松屋 山陽小野田店（松のや併設）",
+    "facility_ids": [
+      "official-matsuya-2122"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-matsuya-2122:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-510192:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-510192"
+    ],
+    "held_event_ids": [
+      "kaiten-510192:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-matsuya-2276",
+    "name": "松屋 新山口駅前店（松のや併設）",
+    "facility_ids": [
+      "official-matsuya-2276"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-matsuya-2276:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-588856:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-588856"
+    ],
+    "held_event_ids": [
+      "kaiten-588856:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-mcdonalds-35539",
+    "name": "マクドナルド 宇部西岐波店",
+    "facility_ids": [
+      "official-mcdonalds-35539"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-mcdonalds-35539:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "ube-83012:opening",
+          "ube-83170:opening",
+          "ube-83311:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-83012",
+      "ube-83170",
+      "ube-83311"
+    ],
+    "held_event_ids": [
+      "ube-83012:opening",
+      "ube-83170:opening",
+      "ube-83311:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-seria-nagato-2953",
+    "name": "Seria 長門店",
+    "facility_ids": [
+      "official-seria-nagato-2953"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-seria-nagato-2953:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-511755:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-511755"
+    ],
+    "held_event_ids": [
+      "kaiten-511755:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-shizquya-tokuyama-deck",
+    "name": "甘味処 しづくや",
+    "facility_ids": [
+      "official-shizquya-tokuyama-deck"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-shizquya-tokuyama-deck:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "shunan-119965:shizqu-opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-119965"
+    ],
+    "held_event_ids": [
+      "shunan-119965:shizqu-opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-soil-nagatoyumoto",
+    "name": "SOIL Nagatoyumoto",
+    "facility_ids": [
+      "official-soil-nagatoyumoto"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-soil-nagatoyumoto:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-543665:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-543665"
+    ],
+    "held_event_ids": [
+      "kaiten-543665:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-sukiya-nagato-6605",
+    "name": "すき家 191号長門店",
+    "facility_ids": [
+      "official-sukiya-nagato-6605"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-sukiya-nagato-6605:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-612233:date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-612233"
+    ],
+    "held_event_ids": [
+      "kaiten-612233:date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-sushiro-2516",
+    "name": "スシロー 光浅江店",
+    "facility_ids": [
+      "official-sushiro-2516"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-sushiro-2516:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-588036:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-588036"
+    ],
+    "held_event_ids": [
+      "kaiten-588036:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-tsuruha-3979",
+    "name": "ウォンツ 竜王店",
+    "facility_ids": [
+      "official-tsuruha-3979"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-tsuruha-3979:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の支店・住所・位置は反映済み。実開店日の確認は補足。",
+        "next": "公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-484359:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-484359"
+    ],
+    "held_event_ids": [
+      "kaiten-484359:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-tsuruha-3989",
+    "name": "ウォンツ 防府鋳物師店",
+    "facility_ids": [
+      "official-tsuruha-3989"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-tsuruha-3989:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の支店・住所・位置は反映済み。実開店日の確認は補足。",
+        "next": "公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "yamaguchi-40890:opening",
+          "yamaguchi-42851:opening",
+          "yamaguchi-43926:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-40890",
+      "yamaguchi-42851",
+      "yamaguchi-43926"
+    ],
+    "held_event_ids": [
+      "yamaguchi-40890:opening",
+      "yamaguchi-42851:opening",
+      "yamaguchi-43926:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-watts-47917",
+    "name": "ワッツウィズ宇部東須恵ウォンツ店",
+    "facility_ids": [
+      "official-watts-47917"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-watts-47917:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "ube-80654:watts"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-80654"
+    ],
+    "held_event_ids": [
+      "ube-80654:watts"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-yoshinoya-062592",
+    "name": "吉野家 宇部昭和町店",
+    "facility_ids": [
+      "official-yoshinoya-062592"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:official-yoshinoya-062592:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-581208:opening",
+          "ube-82059:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-581208",
+      "ube-82059"
+    ],
+    "held_event_ids": [
+      "kaiten-581208:opening",
+      "ube-82059:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:osm-way-1463857376",
+    "name": "はま寿司 新下関店",
+    "facility_ids": [
+      "osm-way-1463857376"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "facility:osm-way-1463857376:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行の公式掲載・支店地点は反映済み。未確認の実施日や歴史上の年・日付は記事台帳の保留として維持。",
+        "next": "通常の現行地図更新を妨げず、公式の実施記録が得られた際に補完。",
+        "event_ids": [
+          "kaiten-515559:opening",
+          "shimonoseki-56063:opening",
+          "shimonoseki-55069:opening",
+          "shimonoseki-51918:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-515559",
+      "shimonoseki-51918",
+      "shimonoseki-55069",
+      "shimonoseki-56063"
+    ],
+    "held_event_ids": [
+      "kaiten-515559:opening",
+      "shimonoseki-51918:opening",
+      "shimonoseki-55069:opening",
+      "shimonoseki-56063:opening"
+    ],
+    "supplemental_also_pending": false
+  }
+]

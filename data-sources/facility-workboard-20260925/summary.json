@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-09-25",
+  "scope": "Current 51 article holds including the seven-article pilot, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of all unreviewed articles or baseline facilities.",
+  "known_cases": {
+    "total": 58,
+    "by_status": {
+      "map_action": 26,
+      "supplemental": 18,
+      "historical_only": 2,
+      "watch": 3,
+      "excluded_fixed_map": 9
+    },
+    "held_article_events": 51,
+    "event_impact_counts": {
+      "map_action": 12,
+      "supplemental": 33,
+      "historical_only": 3,
+      "watch": 3,
+      "excluded_fixed_map": 0
+    },
+    "legacy_hold_rows_resolved": 5
+  },
+  "unreviewed": {
+    "articles": 1105,
+    "candidate_groups": 1003,
+    "groups_with_multiple_articles": 77,
+    "repeat_articles_grouped": 102,
+    "conflicting_address_groups": 4,
+    "groups_with_official_link_hints": 19,
+    "operator_batches": 17,
+    "area_batches": 14,
+    "unique_stores": null
+  },
+  "map_records": {
+    "reflected_updates": 26,
+    "reflected_additions": 172,
+    "reflected_ids": 198
+  },
+  "article_history": {
+    "total": 1186,
+    "classified_by_jev": 1186,
+    "articles_completed": 43,
+    "articles_partially_reviewed": 38,
+    "articles_pending": 1105,
+    "recorded_events": 157,
+    "final_event_decisions": 106,
+    "held_events": 51,
+    "with_related_source_only": 35,
+    "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
+  },
+  "note": "Known cases and unreviewed candidate groups may overlap and must not be summed as unique stores. Supplemental status never resolves a held article event. Official links and names remain hints until store identity and all article events are checked. No time estimate follows from article counts.",
+  "input_hashes": {
+    "index": "0363a2c9722f354805a8e3a4491e06b9ca60ea2561918bd4404493f08d9a2cd7",
+    "reviews": "4586fd73193db751b76201e6c3d05b7836059ca6e3fc57b875cfbb5951d156ad",
+    "overlay": "fbe59a3ade31ce7cd63bf437dfd0c29769af71470b8862eb91b722f77e7eb3a7",
+    "article_inputs": "48912106cfbae678efdb890c6fba00bffd6cead8d19d793f224c141f602e2e5f",
+    "case_reviews": "78a28ee044bb189e46858f1a4d65b70f6c62392f873e410dd190fbf1f1e56ca4"
+  }
+}

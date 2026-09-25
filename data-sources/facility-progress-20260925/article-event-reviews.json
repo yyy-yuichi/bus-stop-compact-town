@@ -2596,5 +2596,301 @@
         ]
       }
     ]
+  },
+  {
+    "article_key": "yamaguchi-40890",
+    "source_body_hash": "f973091a0ac196ae76dee7c9ea027b5f8c099e1eab2b652fbabd28690087cde0",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ウォンツ開店計画、旧TSUTAYA閉店、クリニック区画募集を列挙。営業継続のソフトバンクは変更イベントではない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-40890:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/10/20/wants_hofuopen24/",
+          "https://shop.tsuruha-g.com/3989"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-40890:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "取得済みの支店別公式本文・住所・座標と既存の掲載IDが一致。新たな施設追加は不要。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/10/20/wants_hofuopen24/",
+          "https://shop.tsuruha-g.com/3989"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-40890:tsutaya-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2023年3月の旧TSUTAYA防府店閉店を記載。基準施設のTSUTAYA/ツタヤ名称候補なし。現行ウォンツは既に掲載済み。旧店の一次閉店記録は未確認で履歴として保留。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/10/20/wants_hofuopen24/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-40890:clinic-plan",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "クリニック募集看板のみで開院・診療科・店舗名は未確定。空き区画募集を開院済み施設として追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/10/20/wants_hofuopen24/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-42851",
+    "source_body_hash": "3047f7026496417c041e7f0ea8b7017fe486efeb791dfadeaf81cbe96d73952c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同一ウォンツ開店計画とクリニック区画募集。ソフトバンクは継続営業、駐車場の工事は店舗の新設として別計上しない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-42851:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/11/23/newshop_12wants/",
+          "https://shop.tsuruha-g.com/3989"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-42851:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "取得済みの支店別公式本文・住所・座標と既存の掲載IDが一致。新たな施設追加は不要。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/11/23/newshop_12wants/",
+          "https://shop.tsuruha-g.com/3989"
+        ],
+        "duplicate_of": "yamaguchi-40890:current"
+      },
+      {
+        "event_id": "yamaguchi-42851:clinic-plan",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "クリニック募集看板のみで開院・診療科・店舗名は未確定。空き区画募集を開院済み施設として追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/11/23/newshop_12wants/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-43926",
+    "source_body_hash": "665ee71f659d35383eb213713f631920dbea82facea5c847d12aeb16f08d2b95",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同一ウォンツ開店予定と併設Watts売場の新設を列挙。給水機器等は設備説明。",
+    "events": [
+      {
+        "event_id": "yamaguchi-43926:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/12/15/wants_newopen1219/",
+          "https://shop.tsuruha-g.com/3989"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-43926:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tsuruha-3989"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "取得済みの支店別公式本文・住所・座標と既存の掲載IDが一致。新たな施設追加は不要。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/12/15/wants_newopen1219/",
+          "https://shop.tsuruha-g.com/3989"
+        ],
+        "duplicate_of": "yamaguchi-40890:current"
+      },
+      {
+        "event_id": "yamaguchi-43926:watts-corner",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事はWatts併設を案内。ウォンツ公式も100円ショップ設備を掲載するが、Watts自身の売場ID・地点は未確認。入居先ウォンツを二重追加せず別売場の確認へ。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/12/15/wants_newopen1219/",
+          "https://shop.tsuruha-g.com/3989"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83101",
+    "source_body_hash": "180fad69efc17f7c8a049255e594aba760b4508509f5ad7a79b73fa09fc97269",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ウォンツの開店予定と先行したハローズ開店を列挙。既知のウォンツ位置の相違は店舗案件で継続管理。",
+    "events": [
+      {
+        "event_id": "ube-83101:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-10049"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/13/wantsopen_202609/",
+          "https://shop.tsuruha-g.com/10049"
+        ]
+      },
+      {
+        "event_id": "ube-83101:halows-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-halows-nishikiwa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事はハローズ開店後1週間と記述。現行掲載済みで、一次資料による実施日の確認は補足として保留。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/13/wantsopen_202609/",
+          "https://www.halows.com/stores/detail/138",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.708242371653!2d131.29807534097003!3d33.945319034128744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35447f0077a14525%3A0xa2b554af7f0e6928!2z44OP44Ot44O844K66KW_5bKQ5rOi5bqX!5e0!3m2!1sja!2sjp!4v1785456999247!5m2!1sja!2sjp"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83154",
+    "source_body_hash": "a5bd9adbaa555c985c4503463d8439c759d1ccc8d5f139ff4c1b6545a863fa6a",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ウォンツ開店予定とハローズ8月6日開店を列挙。販促・営業時間の説明を別の施設に数えない。",
+    "events": [
+      {
+        "event_id": "ube-83154:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-10049"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/27/wants_open0910/",
+          "https://shop.tsuruha-g.com/10049"
+        ]
+      },
+      {
+        "event_id": "ube-83154:halows-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-halows-nishikiwa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2026年8月6日開店を記述。現行掲載済みで、一次資料による実施日の確認は補足として保留。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/27/wants_open0910/",
+          "https://www.halows.com/stores/detail/138",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.708242371653!2d131.29807534097003!3d33.945319034128744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35447f0077a14525%3A0xa2b554af7f0e6928!2z44OP44Ot44O844K66KW_5bKQ5rOi5bqX!5e0!3m2!1sja!2sjp!4v1785456999247!5m2!1sja!2sjp"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83224",
+    "source_body_hash": "26929e628650ef6676919d80dad0bb8a44d326d647e7600c7a2fc2f860f5d386",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同一ウォンツの9月10日開店予定。隣接ハローズは場所の説明でこの記事に独立した変更報道はない。",
+    "events": [
+      {
+        "event_id": "ube-83224:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-10049"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/08/wants_newopen0910/",
+          "https://shop.tsuruha-g.com/10049"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-484359",
+    "source_body_hash": "0e3c0d46eee7f038fa00f1c58996bae92e583829ec7444f7e81a6ece87ad4c16",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ウォンツ竜王開店1件。住所・電話が公式と一致し既に掲載済み。併設薬局を重複する物理店舗として追加しない。",
+    "events": [
+      {
+        "event_id": "kaiten-484359:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-3979"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の開店日は現行掲載と分離。公式の実開店日の確認は保留し、地図反映済みの名称・住所・位置を再追加しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/wants-ryuou/",
+          "https://shop.tsuruha-g.com/3979",
+          "https://shop.tsuruha-g.com/2295"
+        ]
+      },
+      {
+        "event_id": "kaiten-484359:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tsuruha-3979"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "取得済みの支店別公式本文・住所・座標と既存の掲載IDが一致。新たな施設追加は不要。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/wants-ryuou/",
+          "https://shop.tsuruha-g.com/3979",
+          "https://shop.tsuruha-g.com/2295"
+        ]
+      }
+    ]
   }
 ]
