@@ -1018,6 +1018,41 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:kaiten-496981:old-daiso-closure",
+    "name": "旧DAISOイオン小野田店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-daiso-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "a24c84a773daf1d0cb40e7b4568bf4fb02cd9e699b08c66493f0c1862c6e5dbe"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-496981:old-daiso-closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事は2024-04-14閉店と報告。旧店を特定した運営元の閉店告知は未取得。元地図にDAISO旧店IDなし。現在一覧からの不在だけでは閉店確定しない。",
+        "next": "店舗固有の実施済み告知が新しく得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-496981:old-daiso-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-496981"
+    ],
+    "held_event_ids": [
+      "kaiten-496981:old-daiso-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:mcd-konan-site",
     "name": "旧マクドナルド厚南跡の後継計画",
     "facility_ids": [],
@@ -1116,6 +1151,76 @@
     "held_event_ids": [
       "ube-81621:old-ube-relocation",
       "ube-81847:old-ube-relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:shunan-102525:old-daiso-closure",
+    "name": "旧DAISOイオン光店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-daiso-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "a770170d8ce68f4dfda266c815426a7c1c850b5f16b965191fbf008277f54646"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-102525:old-daiso-closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "記事は2024-10-20閉店と報告。旧店舗ページはHTTP200だが不存在案内。記事掲載の閉店ポスターは月日・曜日のみで店舗名・年が画像内に見えず、店舗固有の一次根拠として単独採用しない。旧店IDなし。",
+        "next": "店舗固有の実施済み告知が新しく得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "shunan-102525:old-daiso-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-102525"
+    ],
+    "held_event_ids": [
+      "shunan-102525:old-daiso-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:shunan-102525:shirokujichu-closure",
+    "name": "旧四六時中イオン光",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-daiso-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 2,
+        "hash": "560082d789e21f9b0a92aa4f7c865a90fd00bd5d893b323b6949f4bf0341b9bf"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-102525:shirokujichu-closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "本文に四六時中イオン光の2023年10月末閉店。元地図に同名対象IDなし。店別の運営元閉店告知未取得のため旧店履歴。",
+        "next": "店舗固有の実施済み告知が新しく得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "shunan-102525:shirokujichu-closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-102525"
+    ],
+    "held_event_ids": [
+      "shunan-102525:shirokujichu-closure"
     ],
     "supplemental_also_pending": false
   },
@@ -1569,6 +1674,47 @@
     ],
     "held_event_ids": [
       "ube-81111:daiso-opening-date"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-daiso-007944",
+    "name": "DAISO / Standard Products / THREEPPY シーモール下関店",
+    "facility_ids": [
+      "official-daiso-007944"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-daiso-20260925/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 3,
+        "hash": "7b28e645353468926713079f8ce30fe8e6f10bb5004d9da349fd9541fd56f9b1"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-daiso-007944:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "複合店の現行掲載は反映済み。2024年の改装・2ブランド出店の実施日の明記は保留。",
+        "next": "店舗固有の実施済み告知が新しく得られた際に補完。同日の同じ一覧・検索は繰り返さない。",
+        "event_ids": [
+          "kaiten-519909:daiso-expansion-date",
+          "kaiten-519909:standard-opening-date",
+          "kaiten-519909:threeppy-opening-date"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-519909"
+    ],
+    "held_event_ids": [
+      "kaiten-519909:daiso-expansion-date",
+      "kaiten-519909:standard-opening-date",
+      "kaiten-519909:threeppy-opening-date"
     ],
     "supplemental_also_pending": false
   },

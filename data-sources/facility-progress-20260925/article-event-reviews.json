@@ -4013,5 +4013,131 @@
         ]
       }
     ]
+  },
+  {
+    "article_key": "kaiten-496981",
+    "source_body_hash": "fff3a5c63e7ebfb146cb18aaacfd6bcf206a2a464d7cc63a6b4f058266eddb34",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "イオン小野田店の閉店1件。入居先のイオンそのものとは区別。",
+    "events": [
+      {
+        "event_id": "kaiten-496981:old-daiso-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2024-04-14閉店と報告。旧店を特定した運営元の閉店告知は未取得。元地図にDAISO旧店IDなし。現在一覧からの不在だけでは閉店確定しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/daiso-aeon-onoda/"
+        ],
+        "reported_date": "2024-04-14"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-102525",
+    "source_body_hash": "041ac901bc7e57e5c6be03874d5e18e3889c6b5960470e9edfffdeee56bd733e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "DAISO旧イオン光閉店と、四六時中イオン光の2023年10月末閉店を列挙。マックスバリュ浅江・下松末武は近隣現行店の説明で、開店イベントではない。",
+    "events": [
+      {
+        "event_id": "shunan-102525:old-daiso-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2024-10-20閉店と報告。旧店舗ページはHTTP200だが不存在案内。記事掲載の閉店ポスターは月日・曜日のみで店舗名・年が画像内に見えず、店舗固有の一次根拠として単独採用しない。旧店IDなし。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/19/aeonhikari/",
+          "https://www.daiso-sangyo.co.jp/shop/detail/008067"
+        ],
+        "reported_date": "2024-10-20"
+      },
+      {
+        "event_id": "shunan-102525:shirokujichu-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "本文に四六時中イオン光の2023年10月末閉店。元地図に同名対象IDなし。店別の運営元閉店告知未取得のため旧店履歴。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/19/aeonhikari/"
+        ],
+        "reported_date": "2023-10"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-519909",
+    "source_body_hash": "8db038f70f755841d7756a6e3546ed18054dbc9124e520b4d769be573ac63613",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "現行3ブランド複合店の1施設掲載、DAISO既存店拡張、Standard Products・THREEPPY出店の3日付事項。既存DAISOの新規開店として数えない。",
+    "events": [
+      {
+        "event_id": "kaiten-519909:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-daiso-007944"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "運営元と入居先が2階3ブランド複合店を現行掲載。DAISO店舗IDで1施設を追加し、他2ブランドを検索名に保存。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/standard-products-seamall-shimonoseki/",
+          "https://www.daiso-sangyo.co.jp/info/news/33151",
+          "https://www.seamall.jp/shopguide/2f-daiso-standard-products-threeppy/"
+        ]
+      },
+      {
+        "event_id": "kaiten-519909:daiso-expansion-date",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-daiso-007944"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "運営元は既存DAISOを含む複合店を2024-09-20に開く予定と事前告知。DAISO創業・新店日には変換しない。実施日の明記確認は保留。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/standard-products-seamall-shimonoseki/",
+          "https://www.daiso-sangyo.co.jp/info/news/33151"
+        ],
+        "reported_date": "2024-09-20"
+      },
+      {
+        "event_id": "kaiten-519909:standard-opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-daiso-007944"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "事前の予定日と当日付のオープン見出しは取得したが、本文に実施日の明記はない。現在掲載と実施日の確定を分離。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/standard-products-seamall-shimonoseki/",
+          "https://www.daiso-sangyo.co.jp/info/news/33151",
+          "https://www.daiso-sangyo.co.jp/info/shop/32693"
+        ],
+        "reported_date": "2024-09-20"
+      },
+      {
+        "event_id": "kaiten-519909:threeppy-opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-daiso-007944"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "事前発表の2024-09-20予定日を保存。入居先は現在掲載しているが実施日は明記していない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/standard-products-seamall-shimonoseki/",
+          "https://www.daiso-sangyo.co.jp/info/news/33151",
+          "https://www.seamall.jp/shopguide/2f-daiso-standard-products-threeppy/"
+        ],
+        "reported_date": "2024-09-20"
+      }
+    ]
   }
 ]
