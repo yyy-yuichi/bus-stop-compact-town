@@ -2,24 +2,24 @@
   "checked_at": "2026-09-25",
   "baseline": {
     "total": 7764,
-    "reflected_updates": 25,
+    "reflected_updates": 26,
     "explicitly_held": 2,
-    "not_attested_complete": 7737,
+    "not_attested_complete": 7736,
     "verified_no_change_attested_in_this_ledger": 0,
     "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
   },
   "additions": {
-    "reflected": 165
+    "reflected": 169
   },
   "article_events": {
     "total": 1186,
     "classified_by_jev": 1186,
     "articles_completed": 43,
-    "articles_partially_reviewed": 14,
-    "articles_pending": 1129,
-    "recorded_events": 101,
-    "final_event_decisions": 86,
-    "held_events": 15,
+    "articles_partially_reviewed": 23,
+    "articles_pending": 1120,
+    "recorded_events": 119,
+    "final_event_decisions": 95,
+    "held_events": 24,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
   },
@@ -62,9 +62,9 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "1f0864ce9ac4738360a03196370f05481363f3b6e22587d6b3522f72f453d379",
+    "public/data/facility-current.json": "78b19c72804c3771934adecf92d783c47450e84a25aaed9a11ddf7fc989d6b62",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
-    "data-sources/facility-progress-20260925/article-event-reviews.json": "c3803620e72aed8ef4c5e6c5a87d453c3ae5067034c31da0ecc5e3f50226da61",
+    "data-sources/facility-progress-20260925/article-event-reviews.json": "c85c8023ee49e4d81d98d795dfe15d54768013fba202a5ef17b7e10408f88caa",
     "data-sources/facility-progress-20260925/article-index.json": "0319ed1d7630403c8d2f9c2c1ce81e536021c7edd932cd3609621d91e5d729b2",
     "data-sources/facility-local-stores-20260925/decisions.json": "c63414f0ecb0172985d7369dc7d77c261fe6e4590b601bb94337c19dc1da8ad9",
     "outputs/facility-local-stores-20260925/records.json": "967e2531f9984d9dc91437eeb553d8a6b9be529772d5c770867f41837dc32114",

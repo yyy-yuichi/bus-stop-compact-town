@@ -1033,6 +1033,47 @@
           "改称の実施日は未確認です。施設運営者の旧店舗ページは取得時404で、改称文は検索キャッシュと報道で照合しました。"
         ]
       }
+    },
+    {
+      "id": "osm-way-1463857376",
+      "expected": {
+        "name": "はま寿司",
+        "category": "fast_food",
+        "source_ids": [
+          "way/1463857376"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.94318325,
+            34.0071475
+          ]
+        }
+      },
+      "changes": {
+        "name": "はま寿司 新下関店",
+        "city": "下関市",
+        "address": "山口県下関市秋根西町二丁目8-25",
+        "search_names": "はま寿司 はま寿司    はま寿司 新下関店 はま寿司 新下関店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "既存データの支店URL・名称と現行公式情報を照合し、同じIDの住所と支店名を補完しました。",
+        "sources": [
+          {
+            "title": "はま寿司 新下関店の現行公式情報",
+            "url": "https://maps.hama-sushi.co.jp/jp/detail/5747.html"
+          }
+        ],
+        "limits": [
+          "元のOSM ID・出典・代表点を保持しています。入口と徒歩到達性は未確認です。",
+          "2024年9月5日は開店前の記事・告知の記載で、実開店日は未確認です。",
+          "公式の毎日の閉店時刻・店舗検索メンテナンス・将来の営業時間変更を、店舗の恒久的な閉店と扱いません。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -9872,6 +9913,217 @@
         "coordinates": [
           131.193802611397,
           34.3754032143815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-matsuya-2122",
+      "properties": {
+        "name": "松屋 山陽小野田店（松のや併設）",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市中央一丁目3番46号",
+        "official_address": "山口県山陽小野田市中央一丁目3番46号",
+        "official_url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002122",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:matsuya:2122"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "松屋 山陽小野田店（松のや併設） 松のや 山陽小野田店",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店名・住所・支店IDと、その支店の代表点を照合しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗情報",
+              "url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002122"
+            },
+            {
+              "title": "運営元・施工会社の時点照合資料",
+              "url": "https://prtimes.jp/main/html/rd/p/000000635.000047538.html"
+            },
+            {
+              "title": "運営元・施工会社の時点照合資料",
+              "url": "https://cados.jp/results/2197/"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "松屋・松のやの複合店舗を1施設として掲載します。",
+            "記事の2024年7月26日と運営者の事前発表の7月28日が異なり、施工会社の7月26日は竣工日です。実開店日は未確認です。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.177153,
+          33.977647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-matsuya-2276",
+      "properties": {
+        "name": "松屋 新山口駅前店（松のや併設）",
+        "city": "山口市",
+        "address": "山口県山口市小郡黄金町13番39号",
+        "official_address": "山口県山口市小郡黄金町13番39号",
+        "official_url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002276",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:matsuya:2276"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "松屋 新山口駅前店（松のや併設） 松のや 新山口駅前店",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店名・住所・支店IDと、その支店の代表点を照合しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗情報",
+              "url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002276"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "松屋・松のやの複合店舗を1施設として掲載します。",
+            "記事の13-13ではなく、同一支店ID・電話番号の現行公式住所13番39号を採用しました。実開店日は未確認です。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.39823,
+          34.08838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-yoshinoya-062592",
+      "properties": {
+        "name": "吉野家 宇部昭和町店",
+        "city": "宇部市",
+        "address": "山口県宇部市昭和町２丁目６７３－５",
+        "official_address": "山口県宇部市昭和町２丁目６７３－５",
+        "official_url": "https://stores.yoshinoya.com/yoshinoya/spot/detail?code=ysn_062592",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:yoshinoya:062592"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "吉野家 宇部昭和町店",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店名・住所・支店IDと、その支店の代表点を照合しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗情報",
+              "url": "https://stores.yoshinoya.com/yoshinoya/spot/detail?code=ysn_062592"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "記事の373-5ではなく、同一支店ID・電話番号の現行公式住所673-5を採用しました。実開店日は未確認です。",
+            "公式に9月28日3～5時のメンテナンス休業予告があります。短時間の休業予告を恒久的な閉店として扱いません。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.255462,
+          33.940772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sushiro-2516",
+      "properties": {
+        "name": "スシロー 光浅江店",
+        "city": "光市",
+        "address": "山口県光市浅江5丁目14番25号",
+        "official_address": "山口県光市浅江5丁目14番25号",
+        "official_url": "https://www.akindo-sushiro.co.jp/shop/detail.php?id=2516",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sushiro:2516"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "スシロー 光浅江店",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店名・住所・支店IDと、その支店の代表点を照合しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗情報",
+              "url": "https://www.akindo-sushiro.co.jp/shop/detail.php?id=2516"
+            },
+            {
+              "title": "運営元・施工会社の時点照合資料",
+              "url": "https://www.akindo-sushiro.co.jp/news/detail.php?id=2595"
+            },
+            {
+              "title": "運営元・施工会社の時点照合資料",
+              "url": "https://www.akindo-sushiro.co.jp/news/?page=16"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "公式ニュースには同じ支店ID・住所の2022年2月10日開店記録があります。記事の2026年2月10日を新規開店日には採用せず、2026年の変更有無は未確認にしています。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.925216,
+          33.971354
         ]
       }
     }

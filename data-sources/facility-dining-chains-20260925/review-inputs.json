@@ -1,0 +1,388 @@
+{
+  "checked_at": "2026-09-25",
+  "article_inventory": [
+    {
+      "key": "kaiten-510192",
+      "queue_number": 211,
+      "title": "【開店】松屋 山陽小野田店（松のや併設）",
+      "url": "https://kaiten-heiten-24.com/matsuya-sanyoonoda/",
+      "source": "kaiten",
+      "body_hash": "5ac0c1fa465070ef1ae1ebecf41f777cd00765caf807c759d783f9d12d82e772",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-515559",
+      "queue_number": 762,
+      "title": "【開店】はま寿司 新下関店",
+      "url": "https://kaiten-heiten-24.com/hama-sushi-shinshimonoseki/",
+      "source": "kaiten",
+      "body_hash": "fe79a61d8654dbec521a5dd2425757c26427aa0e2e79e5b75e4f764fa78e7b2e",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-581208",
+      "queue_number": 621,
+      "title": "【開店】吉野家 宇部昭和町店",
+      "url": "https://kaiten-heiten-24.com/yoshinoya-ubeshowa/",
+      "source": "kaiten",
+      "body_hash": "684ea479b7f5412a3138a4fd0e9834508543449d8853886f6735c1ebf556f782",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-588036",
+      "queue_number": 173,
+      "title": "【開店】スシロー光浅江店",
+      "url": "https://kaiten-heiten-24.com/akindo-sushiro-hikariasae/",
+      "source": "kaiten",
+      "body_hash": "79fc19396387c6bd88edc23948c1670d87dc021e56854756a5022d8baa34f082",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-588856",
+      "queue_number": 273,
+      "title": "【開店】松屋 新山口駅前店（松のや併設）",
+      "url": "https://kaiten-heiten-24.com/matsuya-shinyamaguchiekimae/",
+      "source": "kaiten",
+      "body_hash": "9f1fe6bf5e66d76e09478dd775f9602170a7cd06ff700fe89ffc2361430eaec5",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shimonoseki-51918",
+      "queue_number": 835,
+      "title": "【下関市】新下関に新たな寿司屋「はま寿司」さんが建設中です。",
+      "url": "https://shimonoseki.goguynet.jp/2024/05/20/hamasusi/",
+      "source": "shimonoseki",
+      "body_hash": "1a583f6876d746f8f46c0f25bab9a0587df4473b53db92e4da6a25a1c8d1d858",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shimonoseki-55069",
+      "queue_number": 787,
+      "title": "【下関市】新下関のはま寿司さんの開店が決定したようです。",
+      "url": "https://shimonoseki.goguynet.jp/2024/07/29/hamasushi/",
+      "source": "shimonoseki",
+      "body_hash": "dc978bbf9ac9b8e3228d42460719b0ca3d3575fd3128129da76115ed23ecf646",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shimonoseki-56063",
+      "queue_number": 772,
+      "title": "【下関市】新下関のはま寿司さん、開店日の看板が・・！",
+      "url": "https://shimonoseki.goguynet.jp/2024/08/16/hanasusi/",
+      "source": "shimonoseki",
+      "body_hash": "ca94bdefe6c48d5f84f152a5c7bf213904214ad05ec3dd4ff122b0610e3ed598",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "ube-82059",
+      "queue_number": 626,
+      "title": "【宇部市】昭和町についにオープン。「吉野家 宇部昭和町店」オープン日が判明しました！！",
+      "url": "https://ube-sanyoonoda.goguynet.jp/2025/12/15/yoshinoya_ubeopen12-2/",
+      "source": "ube",
+      "body_hash": "36e3a5b17e7778cceef369ca8c134b60b061fd1d2d4531c9e9149204f6f960f1",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 2
+    }
+  ],
+  "before_overlay_hash": "0cae30a6d4801496a17ebbbb87c11fef173fefc70bf5582366746d8819f76267",
+  "article_inputs_hash": "7756ed8abd29edd0ae71b15be920a7261e77479d4041810fbffaa13e58a7954b",
+  "baseline_records": 7764,
+  "current_records_before": 7929,
+  "targets": [
+    {
+      "key": "onoda",
+      "aliases": [
+        "松屋",
+        "松のや",
+        "matsuya",
+        "matsunoya"
+      ],
+      "matching_existing_ids": [],
+      "excluded_same_chain": [
+        {
+          "id": "osm-node-10275700204",
+          "name": "松屋",
+          "coordinates": [
+            131.2459966,
+            33.9621653
+          ],
+          "distance_m": 6563,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-2495725777",
+          "name": "松屋",
+          "coordinates": [
+            131.4486059,
+            34.16701
+          ],
+          "distance_m": 32642,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-way-302012991",
+          "name": "松屋",
+          "coordinates": [
+            131.80041115,
+            34.0652965
+          ],
+          "distance_m": 58159,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        }
+      ]
+    },
+    {
+      "key": "shinyama",
+      "aliases": [
+        "松屋",
+        "松のや",
+        "matsuya",
+        "matsunoya"
+      ],
+      "matching_existing_ids": [],
+      "excluded_same_chain": [
+        {
+          "id": "osm-node-10275700204",
+          "name": "松屋",
+          "coordinates": [
+            131.2459966,
+            33.9621653
+          ],
+          "distance_m": 19810,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-2495725777",
+          "name": "松屋",
+          "coordinates": [
+            131.4486059,
+            34.16701
+          ],
+          "distance_m": 9882,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-way-302012991",
+          "name": "松屋",
+          "coordinates": [
+            131.80041115,
+            34.0652965
+          ],
+          "distance_m": 37089,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        }
+      ]
+    },
+    {
+      "key": "yoshi",
+      "aliases": [
+        "吉野家",
+        "yoshinoya"
+      ],
+      "matching_existing_ids": [],
+      "excluded_same_chain": [
+        {
+          "id": "osm-node-10981892383",
+          "name": "吉野家",
+          "coordinates": [
+            131.5113076,
+            34.0544114
+          ],
+          "distance_m": 26705,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-11288510352",
+          "name": "吉野家",
+          "coordinates": [
+            130.9232849,
+            33.9501687
+          ],
+          "distance_m": 30578,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-4040158699",
+          "name": "吉野家",
+          "coordinates": [
+            131.8538057,
+            34.0339623
+          ],
+          "distance_m": 56011,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-4107723107",
+          "name": "吉野家",
+          "coordinates": [
+            131.8029774,
+            34.0521965
+          ],
+          "distance_m": 51868,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-node-4820398982",
+          "name": "吉野家",
+          "coordinates": [
+            131.5645772,
+            34.055902
+          ],
+          "distance_m": 31178,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-way-614009225",
+          "name": "吉野家 下関幡生店",
+          "coordinates": [
+            130.93296850000002,
+            33.98455415
+          ],
+          "distance_m": 30065,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        }
+      ]
+    },
+    {
+      "key": "sushi",
+      "aliases": [
+        "スシロー",
+        "sushiro"
+      ],
+      "matching_existing_ids": [],
+      "excluded_same_chain": [
+        {
+          "id": "osm-way-1120637408",
+          "name": "スシロー",
+          "coordinates": [
+            131.20831685000002,
+            33.976771799999995
+          ],
+          "distance_m": 65957,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-way-1236531281",
+          "name": "スシロー",
+          "coordinates": [
+            130.94646575000002,
+            34.00780745
+          ],
+          "distance_m": 90136,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        },
+        {
+          "id": "osm-way-703007066",
+          "name": "スシロー",
+          "coordinates": [
+            131.4546599,
+            34.172087
+          ],
+          "distance_m": 48689,
+          "reason": "別支店。対象店の座標・市域または公式住所と異なり500m超離れている。"
+        }
+      ]
+    },
+    {
+      "key": "hama",
+      "aliases": [
+        "はま寿司",
+        "hama-sushi",
+        "hamasushi"
+      ],
+      "matching_existing_ids": [
+        "osm-way-1463857376"
+      ]
+    }
+  ],
+  "source_receipts": [
+    {
+      "url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002276",
+      "file": "outputs/facility-dining-chains-20260925/pages/023d1ca05987ecac39941be5.json",
+      "hash": "a3e62bc8ba73e439c832283fb29dda6f9ec5d1c633cc07607fb647d988491522",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.akindo-sushiro.co.jp/news/?page=16",
+      "file": "outputs/facility-dining-chains-20260925/pages/058b5c9a8db3f91218994ddb.json",
+      "hash": "dcb5b8c13da7e382173cf81a902a1ba7f3cb7e4e0a81a48e17a0a6dede669fe5",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.akindo-sushiro.co.jp/shop/detail.php?id=2516",
+      "file": "outputs/facility-dining-chains-20260925/pages/1cc22a8a3e53a6a76794f0a6.json",
+      "hash": "d508930c8ce10308ba0dad8755a4b1aac8e42155cf134ae0a82970c7e118075c",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.akindo-sushiro.co.jp/news/detail.php?id=2595",
+      "file": "outputs/facility-dining-chains-20260925/pages/31e80531e83de0593a1a27e2.json",
+      "hash": "c5010485791e9dba4ff574b0585a4a32677bb250e3c8057fe399379f7443f4c5",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://cados.jp/results/2197/",
+      "file": "outputs/facility-dining-chains-20260925/pages/50753c7260728b11a1bc885f.json",
+      "hash": "6e317988e88482da3b26d01d6c8c49a94e95faf3384c204bb687a26f4d2e7d1c",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000635.000047538.html",
+      "file": "outputs/facility-dining-chains-20260925/pages/91402401cf23b237f5fd1655.json",
+      "hash": "c34aa8d406bad6cb5b1628e2ccf5395ca67e957eca60c6dae1ca8ea3f978edc4",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.matsuyafoods-holdings.co.jp/2024/07/26/11995/",
+      "file": "outputs/facility-dining-chains-20260925/pages/a30f3333a4973684024eb2bc.json",
+      "hash": "bfa71f5127974b4269c3c40493a34ee3f361315a2a2d75e8fc5d544bc5b3f4bb",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://stores.yoshinoya.com/yoshinoya/spot/detail?code=ysn_062592",
+      "file": "outputs/facility-dining-chains-20260925/pages/b21e22422a3e6e5d9d3fbef5.json",
+      "hash": "b5c02b937ae9171b4f6c9068c0f6aed0d730bc6e0d9e973285f1b34b38e13f14",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://maps.hama-sushi.co.jp/jp/detail/5747.html",
+      "file": "outputs/facility-dining-chains-20260925/pages/cddae2f1f513b35d201ca6c1.json",
+      "hash": "d6dc20d0978305fe0f4ead69fa8b1165cc941e9f1352da595e5308e5ab4601f2",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000002122",
+      "file": "outputs/facility-dining-chains-20260925/pages/f98bf922377e9e4e0522e493.json",
+      "hash": "cccc274402ef8b4149277fde6714f2788f129b1f97185a85eb2a797351e164f1",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "extra_jev_requests": 0
+}
