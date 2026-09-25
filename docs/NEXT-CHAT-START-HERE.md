@@ -12,10 +12,10 @@
 - 実例10件は採用4、既存予定表示1、保留4、日次閉店の誤検知除外1。台帳 `data-sources/facility-events-20260925/decisions.json` に原ID・照合根拠・保留理由を記録。
 - Jev APIは使用可能。今回分は実資料の**Codex作成要約**10件・2通信・1.755秒・推定$0.000192528。検索や一次資料確認を代行した実績ではない。過去90対象と合わせ承認100対象を消費済み、推定合計$0.002316762。追加API送信には対象枠の確定が必要。キー再発行・購入不要。秘密はDrive/GitHubへ出さない。
 - 自動テスト・実コンポーネント表示・ブラウザー動作・build・配布物検査成功。容量不足で空だったテストファイルを復旧済み。新JSONの配布許可リスト漏れも修正・再検証済み。
-- GitHubは既存[PR #14](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/14)を使用。現在はローカル検証済み・push準備中。マージ・一般公開は行わない。
-- [正式Drive保存フォルダ](https://drive.google.com/drive/folders/1tNq3iJ_a1xUG9LqrBP38wRNtAzVcpkFi)。途中退避済みの3ファイルを最終内容へ更新し、ソース・生応答・検証結果を保存する作業が残る。
+- GitHubは既存[PR #14](https://github.com/yyy-yuichi/bus-stop-compact-town/pull/14)へ実装コミット `fe8d58a8ca1f1ec47ed92b2aaaf9589168b57718` をpush・読み戻し済み。[当該CI #36075404147](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/36075404147)成功。マージ・一般公開は行っていない。文書追補後の最新CIはPRのChecksを参照する。
+- [正式Drive保存フォルダ](https://drive.google.com/drive/folders/1tNq3iJ_a1xUG9LqrBP38wRNtAzVcpkFi)。[最終更新データ](https://drive.google.com/file/d/1wx78Z_z_lP0IxGCSMTjPu5urFenpYdBO/view)と[報告](https://drive.google.com/file/d/1bl3nyxp_cT2tP4-aerT2BgN95Skz5hmx/view)を保存。再現用ZIP・採否台帳・実行集計も同フォルダを使用する。
 
-次の操作：この4施設分をPR #14へpushして説明文を更新、当該headのCIとDrive保存を読み戻す。その後は保留台帳の一次根拠・ID対応を回収する。10件を再送したり、過去90対象の分類を新たな現況確認数として数えない。
+次の操作：ユーザーは「個人店舗の開閉店も反映されていない。チェーン・大型薬局からでもよいが、再現可能な順番を決めたい」と追加指定。[次バッチの処理順案](FACILITY-REVIEW-ORDER.md)を確認し、個人・地域店／チェーン／未判定と市町を分けた候補台帳へ進む。40候補案はまだ大量実行の承認ではない。保存済み候補を優先して使い、既存リストにない新店も拾う。10件を再送したり、過去90対象を新たな現況確認数として数えない。
 
 ## 履歴：005でJev API自動化を実測済み（2026-09-25 07:00 JST）
 
