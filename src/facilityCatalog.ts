@@ -19,6 +19,7 @@ export const SHOPPING_CATEGORIES = [
   { id: 'food_shop', name: '食品・青果・鮮魚店', color: '#7c7432', group: 'shopping' },
   { id: 'variety_store', name: '100円・生活雑貨', color: '#8b6438', group: 'shopping' },
   { id: 'home_center', name: 'ホームセンター', color: '#746438', group: 'shopping' },
+  { id: 'electronics', name: '家電・パソコン', color: '#53758b', group: 'shopping' },
   { id: 'clothing_store', name: '衣料・靴', color: '#74628b', group: 'shopping' },
   { id: 'second_hand', name: 'リユース', color: '#477c60', group: 'shopping' },
   { id: 'restaurant', name: '飲食店', color: '#b56332', group: 'eating' },

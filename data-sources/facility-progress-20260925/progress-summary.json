@@ -9,17 +9,17 @@
     "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
   },
   "additions": {
-    "reflected": 280
+    "reflected": 301
   },
   "article_events": {
     "total": 1186,
     "classified_by_jev": 1186,
-    "articles_completed": 48,
-    "articles_partially_reviewed": 107,
-    "articles_pending": 1031,
-    "recorded_events": 371,
-    "final_event_decisions": 187,
-    "held_events": 184,
+    "articles_completed": 49,
+    "articles_partially_reviewed": 111,
+    "articles_pending": 1026,
+    "recorded_events": 386,
+    "final_event_decisions": 195,
+    "held_events": 191,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
   },
@@ -62,9 +62,9 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "807d435ceb19989fd992be60f509d163d76d652f543e855d3b5a94de700ad546",
+    "public/data/facility-current.json": "ebcf46c5797c67e4890f741c4b346f2c1126af0b26291ecbfaa8794ffe0cd00f",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
-    "data-sources/facility-progress-20260925/article-event-reviews.json": "7f2f435499c67c1b3c6014eafbffe8aba18eedbd67833ccc7f528bf4d2249fb7",
+    "data-sources/facility-progress-20260925/article-event-reviews.json": "d6465236c04c513f5ba9c8c0cb6c7dc16236503680e739ed3939e0a380be6a07",
     "data-sources/facility-progress-20260925/article-index.json": "0319ed1d7630403c8d2f9c2c1ce81e536021c7edd932cd3609621d91e5d729b2",
     "data-sources/facility-local-stores-20260925/decisions.json": "c63414f0ecb0172985d7369dc7d77c261fe6e4590b601bb94337c19dc1da8ad9",
     "outputs/facility-local-stores-20260925/records.json": "967e2531f9984d9dc91437eeb553d8a6b9be529772d5c770867f41837dc32114",

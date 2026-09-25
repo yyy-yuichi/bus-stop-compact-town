@@ -1,0 +1,299 @@
+[
+  {
+    "article_key": "kaiten-462519",
+    "source_body_hash": "1939667d8770ed1f35e043047a8fd50e53a04c21e49bbb259571130eedf9b3de",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "阿知須店から宇部北店への店舗統合1案件。",
+    "events": [
+      {
+        "event_id": "kaiten-462519:integration",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待ち。元地図に阿知須店の名称対応IDなし。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/yamadadenki-tl-achisu/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/02/IMG_1527.jpeg"
+        ],
+        "reported_date": "2024-01-28"
+      },
+      {
+        "event_id": "kaiten-462519:destination-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-yamada-2104"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "統合先として報じられた宇部北店の現行公式を照合して掲載。過去の阿知須店の店舗同定・統合実施日の保留は保持。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/yamadadenki-tl-achisu/",
+          "https://www.yamada-denki.jp/store/contents/?d=2104"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-27044",
+    "source_body_hash": "1ed490564cee1b0a88677aeb9af640839e0b73406fd1e4b46e4a75aa1d9ce5e3",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同じ阿知須店統合の続報。統合先を新規開店として扱わない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-27044:integration",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の旧店から南進1.7kmの告知を実見。宇部北店公式案内も取得。歴史的統合の旧店名・年を確定できる店別一次原本の補完待ち。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/02/25/yamada_shopping/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/02/IMG_1527.jpeg",
+          "https://www.yamada-denki.jp/store/contents/?d=2104"
+        ],
+        "reported_date": "2024-01-28"
+      },
+      {
+        "event_id": "yamaguchi-27044:destination-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-yamada-2104"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "統合先として報じられた宇部北店の現行公式を照合して掲載。過去の阿知須店の店舗同定・統合実施日の保留は保持。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/02/25/yamada_shopping/",
+          "https://www.yamada-denki.jp/store/contents/?d=2104"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-99356",
+    "source_body_hash": "28328ac8dc5fba683787f8c47d5935c81c0c6068d1df2458bc3c96690d68890c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "主題はヤマダ新南陽店の併設カフェ閉店1件。本体営業や商品紹介は背景説明。テナント閉店を本体閉店へ転用しない。",
+    "events": [
+      {
+        "event_id": "shunan-99356:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-08-25",
+        "reason": "記事掲載の店頭掲示を実見し、当店カフェコーナー・2024年8月25日閉店を確認。翌日の事後記事、現在の公式カフェ一覧と照合。基準地図にカフェ単独の記録がなく変更不要。別の現行ヤマダ本体は営業施設として掲載。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/08/26/yamadadenkishinnanyoucafe/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/08/IMG_20240826_145013-1280x960.jpg",
+          "https://www.yamada-denki.jp/service/caferesto/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-101875",
+    "source_body_hash": "e0858198cd6c7b509e975b0d6e8928140e686956476a2fdd71147d0abe47f3ca",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "CAFE RESTO・雪松・さかたの閉店とDAISO一時改装の4案件。併設ラーメン販売を別の店舗として追加しない。",
+    "events": [
+      {
+        "event_id": "shunan-101875:cafe-close",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2024-08-25",
+        "reason": "同店・同日・同じ閉店告知写真によるCAFE RESTO閉店の再掲。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/05/2024august-september-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/08/IMG_20240826_145013-1280x960.jpg",
+          "https://www.yamada-denki.jp/service/caferesto/"
+        ],
+        "duplicate_of": "shunan-99356:closure"
+      },
+      {
+        "event_id": "shunan-101875:yukimatsu",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "餃子の雪松周南店の閉店報道。元地図に同名・旧店IDなし。店舗固有の閉店一次原本は未取得。施設追加せず履歴として保留。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/05/2024august-september-close/"
+        ]
+      },
+      {
+        "event_id": "shunan-101875:daiso-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-daiso-005307"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "同じ新南陽店の現行公式照合を再利用。2024年の一時改装を恒久閉店扱いしない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/05/2024august-september-close/",
+          "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35",
+          "https://www.daiso-sangyo.co.jp/shop/detail/005307",
+          "https://www.google.com/maps/dir//34.0705143,131.7723429"
+        ]
+      },
+      {
+        "event_id": "shunan-101875:daiso-renewal",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-daiso-005307"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現店舗は公式確認・反映済み。2024年9月29日の一時休業と11月下旬再開計画の実施履歴は未確認。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/05/2024august-september-close/",
+          "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35",
+          "https://www.daiso-sangyo.co.jp/shop/detail/005307",
+          "https://www.google.com/maps/dir//34.0705143,131.7723429"
+        ]
+      },
+      {
+        "event_id": "shunan-101875:sakata",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "さかた玩具店の2024年9月30日閉店報道。元地図に店名対応IDなし。店舗固有の一次閉店原本は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/05/2024august-september-close/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119145",
+    "source_body_hash": "b56276599e4720ac728b85c8ca69bfee06268d9d08288090bd0379ef125ebfc9",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "周南店1店舗の一時改装・休業。閉店セールを恒久閉店として扱わない。",
+    "events": [
+      {
+        "event_id": "shunan-119145:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-yamada-212"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式支店名・住所・代表地点を地図へ反映。新規開店や過去の統合実施日の確認とは別。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/06/20/yamadateclandshunan/",
+          "https://www.yamada-denki.jp/store/contents/?d=212"
+        ]
+      },
+      {
+        "event_id": "shunan-119145:renewal",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-yamada-212"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現在の公式店舗・地点を確認済み。記事が報じる2026年6月22～26日休業の歴史的実施原本は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/06/20/yamadateclandshunan/",
+          "https://www.yamada-denki.jp/store/contents/?d=212"
+        ],
+        "reported_period": "2026-06-22/2026-06-26"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119346",
+    "source_body_hash": "582594a60a588c636ec072502afb40764c5ead762d3e92aca4f26ea7f5b72c78",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "新南陽店の一時休業1案件。周南店は関連記事カード・比較紹介であり、新たな別店舗変更として重複列挙しない。",
+    "events": [
+      {
+        "event_id": "shunan-119346:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-yamada-1372"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式支店名・住所・代表地点を地図へ反映。新規開店や過去の統合実施日の確認とは別。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/08/yamadashinnanyou/",
+          "https://www.yamada-denki.jp/store/contents/?d=1372"
+        ]
+      },
+      {
+        "event_id": "shunan-119346:renewal",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-yamada-1372"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現在の公式支店名はテックランド新南陽店。記事の旧ブランド名は検索別名として保持。2026年7月6～10日の改装実施履歴は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/08/yamadashinnanyou/",
+          "https://www.yamada-denki.jp/store/contents/?d=1372"
+        ],
+        "reported_period": "2026-07-06/2026-07-10"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-93782",
+    "source_body_hash": "391086dc20f615353405ff7e87e73f808333121a2a06f913e608f6b2517c75ba",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "徳山とサンリブ下松の旧2店舗閉店を分離。記事に言及する岩国の現行2店舗も公式照合し、旧店の移転先と決め付けない。",
+    "events": [
+      {
+        "event_id": "shunan-93782:tokuyama-close",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧ゆめタウン徳山店の事後閉店記事。閉店時期は本文でも不明、店舗固有の一次閉店履歴は未取得。現在一覧の不在だけでは日付・履歴を確定しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/21/backenmozartyoumetowntokuyama/",
+          "https://www.b-mozart.co.jp/?mode=f6#all"
+        ]
+      },
+      {
+        "event_id": "shunan-93782:kudamatsu-close",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "サンリブ下松の既存閉店予告案件の続報。既確認の掲示写真・年の不足を維持して同案件へ結合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/21/backenmozartyoumetowntokuyama/",
+          "https://www.b-mozart.co.jp/?mode=f6#all"
+        ],
+        "related_prior_event": "shunan-91106:closure"
+      },
+      {
+        "event_id": "shunan-93782:iwakuni-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mozart-minamiiwakuni",
+          "official-mozart-fuji-iwakuni"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "公式一覧の岩国2店舗と、各支店が直接リンクする店舗名付き地点を確認して掲載。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/21/backenmozartyoumetowntokuyama/",
+          "https://www.b-mozart.co.jp/?mode=f6#all"
+        ]
+      }
+    ]
+  }
+]

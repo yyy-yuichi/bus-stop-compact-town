@@ -2662,7 +2662,8 @@
           "reason": "記事中の店舗告知写真を実見し、店名と4月21日(日)閉店予告を確認。写真内に年はなく、当日実施の事後確認は未取得。元地図に同名店IDなし。現在一覧の不在だけで確定しない。",
           "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
           "event_ids": [
-            "shunan-91106:closure"
+            "shunan-91106:closure",
+            "shunan-93782:kudamatsu-close"
           ]
         }
       ]
@@ -2671,7 +2672,9 @@
       "case_id": "case:old-yamada-ajisu",
       "name": "続報の店舗告知写真に1月28日をもって宇部北店へ統合済みと記載。写真だけでは旧店名・年が特定できず、店舗固有原本の補完待",
       "facility_ids": [],
-      "related_facility_ids": [],
+      "related_facility_ids": [
+        "official-yamada-2104"
+      ],
       "evidence_refs": [
         {
           "path": "data-sources/facility-stratified-20260926/adoption-evidence.json",
@@ -4049,6 +4052,168 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "case:shunan-101875:yukimatsu",
+      "name": "餃子の雪松周南店の閉店報道。元地図に同名・旧店IDなし。店舗固有の閉店一次原本は未取得。施設追加せず履歴として保留。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "86d721cae3fa569e3bae34ab6b581d072d71c0d824eca6a85b21c1d1c79ce515"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-101875:yukimatsu:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "餃子の雪松周南店の閉店報道。元地図に同名・旧店IDなし。店舗固有の閉店一次原本は未取得。施設追加せず履歴として保留。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-101875:yukimatsu"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-daiso-005307:temporary_change",
+      "name": "DAISO ゆめタウン新南陽店",
+      "facility_ids": [
+        "official-daiso-005307"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "7ac1acfc666ae3fda0f7aadc455960518d7a7c3e239e1add22be7e8afb94d4a6"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-daiso-005307:temporary_change:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現店舗は公式確認・反映済み。2024年9月29日の一時休業と11月下旬再開計画の実施履歴は未確認。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-101875:daiso-renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-101875:sakata",
+      "name": "さかた玩具店の2024年9月30日閉店報道。元地図に店名対応IDなし。店舗固有の一次閉店原本は未取得。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "ad34045162b327c67056f0a23db88375be6396c4f4865a585cd01b86312e80b6"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-101875:sakata:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "さかた玩具店の2024年9月30日閉店報道。元地図に店名対応IDなし。店舗固有の一次閉店原本は未取得。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-101875:sakata"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-yamada-212:temporary_change",
+      "name": "テックランド周南店",
+      "facility_ids": [
+        "official-yamada-212"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "1ac231bc1ae6964feb946164164c39edd346049fc8639b2961267e2d9db2e986"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-yamada-212:temporary_change:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式店舗・地点を確認済み。記事が報じる2026年6月22～26日休業の歴史的実施原本は未取得。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-119145:renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-yamada-1372:temporary_change",
+      "name": "テックランド新南陽店",
+      "facility_ids": [
+        "official-yamada-1372"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "c85db0bbeb7e56c3aefe51d64db01d7394d3d133a3ae6a7724611c67aa1d8301"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-yamada-1372:temporary_change:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式支店名はテックランド新南陽店。記事の旧ブランド名は検索別名として保持。2026年7月6～10日の改装実施履歴は未取得。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-119346:renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-93782:tokuyama-close",
+      "name": "旧ゆめタウン徳山店の事後閉店記事。閉店時期は本文でも不明、店舗固有の一次閉店履歴は未取得。現在一覧の不在だけでは日付・履歴を確定しない。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yamada-mozart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 5,
+          "hash": "c057382e8115e296be708f4b55296321921036c78918818eb635c083a1157ca9"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-93782:tokuyama-close:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "旧ゆめタウン徳山店の事後閉店記事。閉店時期は本文でも不明、店舗固有の一次閉店履歴は未取得。現在一覧の不在だけでは日付・履歴を確定しない。",
+          "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
+          "event_ids": [
+            "shunan-93782:tokuyama-close"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -5155,6 +5320,48 @@
       "event_hash": "900374472da35a4370d26af9f3f16205158bc133608fd3da290f2b48476289d3",
       "case_id": "case:shunan-90075:san",
       "issue_id": "case:shunan-90075:san:map_action"
+    },
+    {
+      "event_id": "shunan-101875:yukimatsu",
+      "event_hash": "7af3f94b6966521f6795511a650c130302fda1d58905f27583146e424f87e2a6",
+      "case_id": "case:shunan-101875:yukimatsu",
+      "issue_id": "case:shunan-101875:yukimatsu:historical_only"
+    },
+    {
+      "event_id": "shunan-101875:daiso-renewal",
+      "event_hash": "a2d7672bc7bb06080dff04c21a2d88d1bb560aa11c51ec2534894ce60b2522c2",
+      "case_id": "facility:official-daiso-005307:temporary_change",
+      "issue_id": "facility:official-daiso-005307:temporary_change:supplemental"
+    },
+    {
+      "event_id": "shunan-101875:sakata",
+      "event_hash": "9d842b92be447beec80e95c73a2e9247059d2f5441c89c27989354d97ad5dfa5",
+      "case_id": "case:shunan-101875:sakata",
+      "issue_id": "case:shunan-101875:sakata:historical_only"
+    },
+    {
+      "event_id": "shunan-119145:renewal",
+      "event_hash": "b5d327fae2298a92179c94deb33276b9b4151e73c433c99167c77f91d3f760ff",
+      "case_id": "facility:official-yamada-212:temporary_change",
+      "issue_id": "facility:official-yamada-212:temporary_change:supplemental"
+    },
+    {
+      "event_id": "shunan-119346:renewal",
+      "event_hash": "51b481a7ef46d69626c99ee60515d2f134433439c00e20026ed05d095914e37b",
+      "case_id": "facility:official-yamada-1372:temporary_change",
+      "issue_id": "facility:official-yamada-1372:temporary_change:supplemental"
+    },
+    {
+      "event_id": "shunan-93782:tokuyama-close",
+      "event_hash": "34ff95cb6746916a9a5a80eb1db55c41eb5ab601684e21f91782f0269afda20e",
+      "case_id": "case:shunan-93782:tokuyama-close",
+      "issue_id": "case:shunan-93782:tokuyama-close:historical_only"
+    },
+    {
+      "event_id": "shunan-93782:kudamatsu-close",
+      "event_hash": "1d5829cfe8847c7cb7623f81d3d67c8c17b353c30edea6235d6f10753eca3849",
+      "case_id": "case:shunan-91106:closure",
+      "issue_id": "case:shunan-91106:closure:historical_only"
     }
   ],
   "legacy_audit": [
