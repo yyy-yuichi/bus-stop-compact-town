@@ -2217,5 +2217,384 @@
         ]
       }
     ]
+  },
+  {
+    "article_key": "kaiten-575908",
+    "source_body_hash": "8ae596aff558f0fc4176cc7c7945e0397187af7b111619cfd4cbdc3083cfea63",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "KFCゆめタウン宇部の開店1件。現行テナントと予定日を分離。",
+    "events": [
+      {
+        "event_id": "kaiten-575908:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-kfc-5063"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2025年11月8日開店という記事。公式の11月1日新店告知は事前発表であり、現行掲載だけでは実施日を確定しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/kfc-yt-ube/",
+          "https://search.kfc.co.jp/points/5063",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc",
+          "https://japan.kfc.co.jp/news_release/8090"
+        ]
+      },
+      {
+        "event_id": "kaiten-575908:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-kfc-5063"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://search.kfc.co.jp/points/5063",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc",
+          "https://japan.kfc.co.jp/news_release/8090"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-81149",
+    "source_body_hash": "77a1ac4546e5a67818ccd9cab7c91b097ed77ba08249a10f8106ad74a0d83b29",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "旧マクドナルドゆめタウン宇部の閉店1件。覆い・椅子・店内写真は新施設の開店ではない。",
+    "events": [
+      {
+        "event_id": "ube-81149:old-mcd-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2025年6月30日の旧ゆめタウン宇部店閉店を報道。旧テナントに対応する既存IDは候補照合で見当たらず、商業施設ubeとは別。店自身の閉店告知本文は未取得で、日付の一次確認は保留。入居先の施設を閉店にしない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/07/19/0630closed_mcd/",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-81774",
+    "source_body_hash": "bee1a64ba076046a02387a290dbb9272556186cf9728f7b086b59f7c40c123e8",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "KFC新店1件と旧マクドナルド閉店1件。開店販促は独立施設イベントとして数えない。",
+    "events": [
+      {
+        "event_id": "ube-81774:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-kfc-5063"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "11月3日の記事は11月8日開店予定を紹介。公式発表も事前で、実施日の確認は保留。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/11/03/kfc_yumetown1108/",
+          "https://search.kfc.co.jp/points/5063",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc",
+          "https://japan.kfc.co.jp/news_release/8090"
+        ]
+      },
+      {
+        "event_id": "ube-81774:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-kfc-5063"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://search.kfc.co.jp/points/5063",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc",
+          "https://japan.kfc.co.jp/news_release/8090"
+        ],
+        "duplicate_of": "kaiten-575908:current"
+      },
+      {
+        "event_id": "ube-81774:old-mcd-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2025年6月30日の旧ゆめタウン宇部店閉店を報道。旧テナントに対応する既存IDは候補照合で見当たらず、商業施設ubeとは別。店自身の閉店告知本文は未取得で、日付の一次確認は保留。入居先の施設を閉店にしない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/11/03/kfc_yumetown1108/",
+          "https://www.izumi.jp/tenpo/ube/shop/food/kfc"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83012",
+    "source_body_hash": "d6b4b6117306dfd364e14f721ecc3dd673a7599ccaa17b722aa3f9bddc69f32f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "マクドナルド西岐波の建設・開店計画1件。求人や看板を営業開始の証拠としない。",
+    "events": [
+      {
+        "event_id": "ube-83012:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "7月27日の記事と9月18日更新の公式求人は9月25日開店予定。実開店日は未確認。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/07/27/mcd0925_nishikiwa/",
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ]
+      },
+      {
+        "event_id": "ube-83012:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83170",
+    "source_body_hash": "ccc739e9156951ac7ce8a2430a4fe02eae23e1b7efff45c418d21a241e506908",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "同じ西岐波店の開店予定1件。ドライブスルーは施設の設備で別店舗ではない。",
+    "events": [
+      {
+        "event_id": "ube-83170:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "8月30日の記事は9月25日予定を紹介。現行公式掲載と実開店日を分離。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/30/ubenishikiwa_mac/",
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ]
+      },
+      {
+        "event_id": "ube-83170:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ],
+        "duplicate_of": "ube-83012:current"
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83311",
+    "source_body_hash": "80114175e2a3cbf57b7f0a7ea66c4a1202cc0a0d97adbe7ab75c28423f239f9c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "西岐波マクドナルド開店、ハローズ8月6日開店、ウォンツ9月10日開店の3件を列挙。サービス記載の不一致とウォンツの位置も検討。",
+    "events": [
+      {
+        "event_id": "ube-83311:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "9月25日の記事でも写真は9月20日の開店前、文面は開店予定。朝マックなしという記事と公式表記が相違するためサービス情報は採用しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/25/mcdopen_0925/",
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ]
+      },
+      {
+        "event_id": "ube-83311:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mcdonalds-35539"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://map.mcdonalds.co.jp/map/35539",
+          "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+        ],
+        "duplicate_of": "ube-83012:current"
+      },
+      {
+        "event_id": "ube-83311:halows-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-halows-nishikiwa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の2026年8月6日開店と現行公式掲載を分離。実開店日の一次記録は未確認。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/25/mcdopen_0925/",
+          "https://www.halows.com/stores/detail/138"
+        ]
+      },
+      {
+        "event_id": "ube-83311:wants-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-tsuruha-10049"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の2026年9月10日開店は一次記録未確認。取得した公式新店一覧に不掲載でも、開店の否定とは扱わない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/25/mcdopen_0925/",
+          "https://shop.tsuruha-g.com/10049",
+          "https://www.wants.co.jp/news/open/"
+        ]
+      },
+      {
+        "event_id": "ube-83311:wants-position",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tsuruha-10049",
+          "official-halows-nishikiwa"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "同一商業施設とのハローズ公式案内に対し、ウォンツの現行公式座標はハローズの掲載点から3km超離れる。新しい正確な店別座標が未確定のため推測移動せず、既存掲載の位置修正を優先残件とする。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/25/mcdopen_0925/",
+          "https://www.halows.com/stores/detail/138",
+          "https://shop.tsuruha-g.com/10049"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-81233",
+    "source_body_hash": "e93cb386911538e445577b202fe506c59ed1096c6feeac19ea4ba6ceb7df826c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "マクドナルド厚南移転1件。旧建物解体・更地化を別施設の開店としない。",
+    "events": [
+      {
+        "event_id": "ube-81233:relocation",
+        "event_type": "relocation",
+        "facility_ids": [
+          "osm-way-477623030",
+          "official-mcdonalds-35538"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2025年7月15日の移転と旧建物撤去を報道。現行公式住所は妻崎開作860-1。旧OSMの地点は約245m西側。旧支店の閉店・移転関係・実施日は一次確認未了。元のIDと地点を保持する。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/08/03/mcd_renewal2025/",
+          "https://map.mcdonalds.co.jp/map/35538",
+          "https://crewrecruiting.mcdonalds.co.jp/map/35538"
+        ]
+      },
+      {
+        "event_id": "ube-81233:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mcdonalds-35538"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://map.mcdonalds.co.jp/map/35538",
+          "https://crewrecruiting.mcdonalds.co.jp/map/35538"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-81345",
+    "source_body_hash": "9d5d4f1dc8ffb46a3bdf2f879fc6d37070238b9b87eaf6975f9e49c9c96309b5",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "旧マクドナルド厚南の解体・工事と移転、オートバックス厚南の移転予定。旧敷地の基礎工事だけでは後継店を特定しない。",
+    "events": [
+      {
+        "event_id": "ube-81345:relocation",
+        "event_type": "relocation",
+        "facility_ids": [
+          "osm-way-477623030",
+          "official-mcdonalds-35538"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事は2025年7月15日の移転と旧建物撤去を報道。現行公式住所は妻崎開作860-1。旧OSMの地点は約245m西側。旧支店の閉店・移転関係・実施日は一次確認未了。元のIDと地点を保持する。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/08/24/mcdshop_ube0824/",
+          "https://map.mcdonalds.co.jp/map/35538",
+          "https://crewrecruiting.mcdonalds.co.jp/map/35538"
+        ]
+      },
+      {
+        "event_id": "ube-81345:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-mcdonalds-35538"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ支店の現行公式名称・住所・代表点を照合。現在の掲載と実開店日を分離。",
+        "source_urls": [
+          "https://map.mcdonalds.co.jp/map/35538",
+          "https://crewrecruiting.mcdonalds.co.jp/map/35538"
+        ],
+        "duplicate_of": "ube-81233:current"
+      },
+      {
+        "event_id": "ube-81345:autobacs-relocation",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の9月4日移転予定はオートバックス自身の9月3日発表と一致。新住所は妻崎開作860-1だが、店別代表点と実施日が未確認のため今回の地図追加は保留。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/08/24/mcdshop_ube0824/",
+          "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html"
+        ]
+      },
+      {
+        "event_id": "ube-81345:old-site-successor",
+        "event_type": "other",
+        "facility_ids": [
+          "osm-way-477623030"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧マクドナルド跡の工事を報じるが後継店の名前は未特定。新施設を推測して追加しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2025/08/24/mcdshop_ube0824/"
+        ]
+      }
+    ]
   }
 ]

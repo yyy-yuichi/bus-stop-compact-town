@@ -10126,6 +10126,166 @@
           33.971354
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcdonalds-35538",
+      "properties": {
+        "name": "マクドナルド 宇部厚南店",
+        "city": "宇部市",
+        "address": "山口県宇部市妻崎開作８６０ー１",
+        "official_address": "山口県宇部市妻崎開作８６０ー１",
+        "official_url": "https://map.mcdonalds.co.jp/map/35538",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcdonalds:35538"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "マクドナルド 宇部厚南店 マック",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式支店名・住所・支店に紐づく代表点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://map.mcdonalds.co.jp/map/35538"
+            },
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://crewrecruiting.mcdonalds.co.jp/map/35538"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "記事は2025年7月15日の移転を報じています。旧地点の閉店と実移転日は一次情報による確認が未了です。旧OSM施設は閉店処理せず保持しています。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.21262407444968,
+          33.97684313306655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcdonalds-35539",
+      "properties": {
+        "name": "マクドナルド 宇部西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市西岐波１５５０番１",
+        "official_address": "山口県宇部市西岐波１５５０番１",
+        "official_url": "https://map.mcdonalds.co.jp/map/35539",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcdonalds:35539"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "マクドナルド 宇部西岐波店 マック",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式支店名・住所・支店に紐づく代表点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://map.mcdonalds.co.jp/map/35539"
+            },
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://crewrecruiting.mcdonalds.co.jp/map/s35539"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "公式求人の2026年9月25日は開店前に掲載された予定です。現行の店舗掲載を確認しましたが実開店日は未確認です。記事と公式で朝マックの記載が異なるため、そのサービス情報は採用していません。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3169304,
+          33.9617303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-kfc-5063",
+      "properties": {
+        "name": "ケンタッキーフライドチキン ゆめタウン宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市黒石北3-4-1 ゆめタウン宇部1F",
+        "official_address": "山口県宇部市黒石北3-4-1 ゆめタウン宇部1F",
+        "official_url": "https://search.kfc.co.jp/points/5063",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:kfc:5063"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ケンタッキーフライドチキン ゆめタウン宇部店 KFC ケンタッキー ゆめタウン宇部",
+        "location_verification": "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式支店名・住所・支店に紐づく代表点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://search.kfc.co.jp/points/5063"
+            },
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://www.izumi.jp/tenpo/ube/shop/food/kfc"
+            },
+            {
+              "title": "店舗運営者・入居施設の公式情報",
+              "url": "https://japan.kfc.co.jp/news_release/8090"
+            }
+          ],
+          "limits": [
+            "公式の支店名・住所に対応する店舗代表点です。入口・徒歩到達性は未確認です。",
+            "公式の2025年11月8日開店告知は11月1日の事前発表です。現在の入居と公式掲載を確認しましたが、実開店日は未確認です。旧マクドナルドの閉店日も一次情報の確認が未了です。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.206695,
+          33.984492
+        ]
+      }
     }
   ]
 }

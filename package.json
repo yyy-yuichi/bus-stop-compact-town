@@ -14,7 +14,7 @@
     "test:baked-facilities": "node scripts/test-baked-facilities.mjs",
     "dev": "vite --host 127.0.0.1",
     "test:facility-current": "node scripts/test-facility-current.mjs && node scripts/test-facility-current-render.mjs",
-    "test:facility-bulk": "node --test --test-concurrency=1 scripts/test-facility-bulk.mjs scripts/test-jev-batch.mjs scripts/test-facility-evidence.mjs scripts/test-facility-reconcile.mjs scripts/test-facility-local-stores.mjs scripts/test-facility-relocations.mjs scripts/test-facility-relocations-followup.mjs scripts/test-facility-progress-ledger.mjs scripts/test-facility-successors.mjs scripts/test-facility-shunan-oz.mjs scripts/test-facility-hagi-nagato.mjs scripts/test-facility-dining-chains.mjs",
+    "test:facility-bulk": "node --test --test-concurrency=1 scripts/test-facility-bulk.mjs scripts/test-jev-batch.mjs scripts/test-facility-evidence.mjs scripts/test-facility-reconcile.mjs scripts/test-facility-local-stores.mjs scripts/test-facility-relocations.mjs scripts/test-facility-relocations-followup.mjs scripts/test-facility-progress-ledger.mjs scripts/test-facility-successors.mjs scripts/test-facility-shunan-oz.mjs scripts/test-facility-hagi-nagato.mjs scripts/test-facility-dining-chains.mjs scripts/test-facility-ube-fastfood.mjs",
     "validate": "node scripts/validate-shopping.mjs && npm run test:facility-current && npm run test:facility-bulk",
     "build": "npm run typecheck && npm run validate && vite build && node scripts/drop-walk-data-from-dist.mjs",
     "build:sites-private": "node scripts/build-sites-private.mjs",
