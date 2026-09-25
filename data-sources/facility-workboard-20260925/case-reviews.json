@@ -2435,7 +2435,8 @@
           "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
           "event_ids": [
             "yamaguchi-32462:pets-current",
-            "yamaguchi-33527:pets-current"
+            "yamaguchi-33527:pets-current",
+            "yamaguchi-35245:pets-current"
           ]
         }
       ]
@@ -2461,7 +2462,8 @@
           "reason": "Seriaは施設運営者の2024年案内に先行開業済みと記載。現在の支店固有公式一覧と館内地点の照合は未完。",
           "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
           "event_ids": [
-            "yamaguchi-32462:seria-current"
+            "yamaguchi-32462:seria-current",
+            "yamaguchi-35245:seria-current"
           ]
         }
       ]
@@ -2521,7 +2523,8 @@
             "yamaguchi-32462:matsu-opening",
             "yamaguchi-32462:pharmacy-opening",
             "yamaguchi-33527:matsu-opening",
-            "yamaguchi-33527:pharmacy-opening"
+            "yamaguchi-33527:pharmacy-opening",
+            "yamaguchi-35245:matsu-opening"
           ]
         }
       ]
@@ -2548,7 +2551,8 @@
           "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
           "event_ids": [
             "yamaguchi-32462:pets-opening",
-            "yamaguchi-33527:pets-opening"
+            "yamaguchi-33527:pets-opening",
+            "yamaguchi-35245:pets-opening"
           ]
         }
       ]
@@ -2577,7 +2581,8 @@
           "next": "記録した不足根拠・位置を取得できるとき再開。同じ検索・取得失敗を繰り返さない。",
           "event_ids": [
             "yamaguchi-32462:dondon-opening",
-            "yamaguchi-33527:dondon-opening"
+            "yamaguchi-33527:dondon-opening",
+            "yamaguchi-35245:dondon-opening"
           ]
         }
       ]
@@ -3265,6 +3270,782 @@
           "next": "記録済み不足根拠の一次履歴を取得できる時に再開。同じ現行ページ・失敗URLは再調査しない。",
           "event_ids": [
             "kaiten-596738:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:kaiten-527083:opening-date",
+      "name": "ラ・ムー周南久米店",
+      "facility_ids": [
+        "official-dkt-2012"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "b04eae53db23db73d384964748d13e7ced16256fe028f6227135910fbdd74daf"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "184d7354f8d947e69b1f8f8ef685b29111debacbcabe196c415583737667f41a"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "be649df55232580a2269c206f4bddb93cd3589e850e13f7ea69f9adca35aa3b6"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "5f2de4e2fc15df535f4a33070c4a3937f64ace57ccbd957c066e70a9ff3db6ad"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 8,
+          "hash": "401d33dcd8625bd20bacab31741ef809a699358654d85c84841e6cc209623b9a"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 9,
+          "hash": "7e6488f4aad8d9a0f1a88cf948fea4f3dfd0b6e177fb24462067b1cafd033937"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 10,
+          "hash": "d0aa358b94eee3fbdbf2d6b8dabaa447b9643c7d3efc28ee75bccb1abffca426"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-527083:opening-date:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "kaiten-527083:opening-date",
+            "shunan-104503:opening-date",
+            "shunan-104872:opening-date",
+            "shunan-93372:opening-date",
+            "shunan-85517:opening-date",
+            "shunan-86920:opening-date",
+            "shunan-98811:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-93372:higashishoya-date",
+      "name": "ラ・ムー東勝谷店",
+      "facility_ids": [
+        "official-dkt-2009"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "d58a874db9b7742325b28c8c09e8001373bc125a67cad17fe7da0d77b3a3911e"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 13,
+          "hash": "71e56e62794c41f7bb0a5a2ee98b840f825018f0216a0cf02553102173f7b550"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 15,
+          "hash": "b8beb72e521d55c446fd429aeca17cd5e83bdfa6d32de2f0b9f0a4be71fe738e"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-93372:higashishoya-date:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "本文が言及する東勝谷店の5月下旬計画も列挙。現況確認済み、歴史的な実施日原本は未取得。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "shunan-93372:higashishoya-date",
+            "shimonoseki-52560:opening-date",
+            "shimonoseki-51839:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:kaiten-586462:opening-date",
+      "name": "ラ・ムー宇部東須恵店",
+      "facility_ids": [
+        "official-dkt-2038"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 5,
+          "hash": "a723b19c2a39eb7f70d40f45a58464c65c64f7c8329ec90a1fb9060f2953d32b"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 6,
+          "hash": "c5b43f6c4882c90879c92287fd67c87258289c664be573067c1c39d604aa7508"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 7,
+          "hash": "77914d0e25458d392bd339117e9c7ad161773e1a63f87b468de1e620fd4c8666"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-586462:opening-date:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "kaiten-586462:opening-date",
+            "ube-82015:opening-date",
+            "ube-82198:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:kaiten-613665:opening-date",
+      "name": "ラ・ムー山の田店",
+      "facility_ids": [
+        "official-dkt-2045"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 11,
+          "hash": "0c39c23e8a21097d7e7d781fc33908863061bc85a5d35a05325689a6a986b9d8"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 12,
+          "hash": "0b74bbd24d72dbf76f59a42b0bf7c41bb308ebc54c2d81a2cffa579529a0fb09"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-613665:opening-date:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "kaiten-613665:opening-date",
+            "shimonoseki-73376:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shimonoseki-52560:predecessor-close",
+      "name": "記事の旧すたみな太郎跡地。元地図に店舗名の対応IDなし。閉店実施と新旧敷地の一次履歴未取得。",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 14,
+          "hash": "12639c59047f4a0f254441e430ff9f5d9fb9f5626ba2f07323432de8371b227c"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shimonoseki-52560:predecessor-close:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "記事の旧すたみな太郎跡地。元地図に店舗名の対応IDなし。閉店実施と新旧敷地の一次履歴未取得。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "shimonoseki-52560:predecessor-close"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-87623:renewal",
+      "name": "どんどん 光店",
+      "facility_ids": [
+        "official-dondon-1405"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 16,
+          "hash": "19940b52d1ec55965bee4ec3844418a58b503c107bd991a9848e4aca902d3bb7"
+        },
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 27,
+          "hash": "41340394fc45015bd0a7b6226cdb9c8273dd25228acf7d5fc43f4a53b3237233"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-87623:renewal:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現店舗は確認済み。過去の改装告知URLは404。期間の実施履歴は未取得。URL文字列の日付だけでは訂正しない。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "shunan-87623:renewal",
+            "shunan-90075:dondon-renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:yamaguchi-30016:renewal",
+      "name": "どんどん 小郡店",
+      "facility_ids": [
+        "osm-node-2253703800"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 17,
+          "hash": "a717112a5f3395591a89be912706cfc8869d4f153047dfc8cd5ea9e817bfe34d"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:yamaguchi-30016:renewal:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現店舗は確認済み。過去の改装告知URLは404。期間の実施履歴は未取得。URL文字列の日付だけでは訂正しない。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "yamaguchi-30016:renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:dondon-renewal",
+      "name": "どんどん ゆめタウン新南陽店",
+      "facility_ids": [
+        "official-dondon-1426"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 18,
+          "hash": "bf54b66996274d8f3bc3dc96e1888a13223fae880d1c6da29a5497f360f224e5"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:dondon-renewal:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現店舗は照合済み。記事の改装・休業期間について旧公式告知URLは404、当時実施の一次履歴は未取得。",
+          "next": "歴史的実施日を明示する一次資料を得たとき補完。404の旧告知や現行一覧を再取得して日付を捏造しない。",
+          "event_ids": [
+            "shunan-114721:dondon-renewal"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:yamato-new",
+      "name": "クロネコヤマト山口周南営業所",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 19,
+          "hash": "a8ce6ca86062c49fe70b7df33ce32f09319c22fac94bcef274a5565c65f5d612"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:yamato-new:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "クロネコヤマト山口周南営業所：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:yamato-new"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:yamato-old-three",
+      "name": "周南市内の旧3営業所（記事に個別名称なし）",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 20,
+          "hash": "4aa715571da8f100732a107ea55dc1a6bfd8d4d2224789cb5a4a48331a7cf343"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:yamato-old-three:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "周南市内の旧3営業所（記事に個別名称なし）：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:yamato-old-three"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:izutsuya",
+      "name": "山口井筒屋周南ショップ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 21,
+          "hash": "aed98356bd8ddf2c1e8dc085329dbee6468992d16ed5d79e338a6813d02b7468"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:izutsuya:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "山口井筒屋周南ショップ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:izutsuya"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:kaju",
+      "name": "フルーツブティック・カージュ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 22,
+          "hash": "5d2b38094f6e8bf0fdd0ad74cbb493e9dbe26e430add83253d354517d407d0bb"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:kaju:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "フルーツブティック・カージュ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:kaju"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:ajigen",
+      "name": "台湾料理味源櫛ケ浜店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 23,
+          "hash": "09273757196ed8dc097cb44a689c1fe0c947c347af5d7e0a713fa53a1f95c68d"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:ajigen:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "台湾料理味源櫛ケ浜店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:ajigen"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:old-seven",
+      "name": "旧セブンイレブン跡",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 24,
+          "hash": "80f4eb03473e836b83e321a11bdf499a1375fe9dec7f9d029752da18c55920d1"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:old-seven:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "旧セブンイレブン跡：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:old-seven"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:fino",
+      "name": "FINO",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 25,
+          "hash": "bc6502c62a10b95707aa52bea6466fde597e51b59af0c95674d93713b981806e"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:fino:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "FINO：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:fino"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-114721:shizuku",
+      "name": "夜喫茶雫",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 26,
+          "hash": "568929abea3e19c5b03e809926ce5adc256a56fa433d693b65447e4d9481c82e"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-114721:shizuku:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "夜喫茶雫：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-114721:shizuku"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:okachan",
+      "name": "岡ちゃん",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 28,
+          "hash": "e22ef416fc40eaf5f825671a1d8376d3c7d30f0c4db912a5076a5b468c959c67"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:okachan:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "岡ちゃん：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:okachan"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:minatoe",
+      "name": "MINATOE198",
+      "facility_ids": [
+        "official-minatoe198"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 29,
+          "hash": "651be4e5d042960c6f3a869259eb4c46a5f0910c77f35136faab76a409e13f3e"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:minatoe:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "MINATOE198：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:minatoe"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:774",
+      "name": "774徳山店（併設boutiqueを含む）",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 30,
+          "hash": "d113c4dda0f9c5456b7c7ee1191c6766c706a1063364a7c9c054369feba6ff88"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:774:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "774徳山店（併設boutiqueを含む）：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:774"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:nta",
+      "name": "JTB総合提携店NTAトラベル周南支店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 31,
+          "hash": "8f8949f65d79f44c4f8d972379531b2c843b79ba83734c534fdb5c414aa1e13c"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:nta:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "JTB総合提携店NTAトラベル周南支店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:nta"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:grandchariot",
+      "name": "グランシャリオ周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 32,
+          "hash": "19c2dcdaf5b57c96ff2ff26c068e7dd30cdd04dd59d928e654d2ad3649b86955"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:grandchariot:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "グランシャリオ周南店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:grandchariot"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:nodoka",
+      "name": "nodoka",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 33,
+          "hash": "e0b34db8558d77b571beed16d9839650e05055187a34b6eb5518e912714fef2f"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:nodoka:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "nodoka：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:nodoka"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:dailycafe",
+      "name": "デイリーカフェ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 34,
+          "hash": "5934a1fd1a8a1275619ca22ac39d9f39b15d410cc10a1169b04c610cee9a5bfe"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:dailycafe:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "デイリーカフェ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:dailycafe"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:nanaseto",
+      "name": "nanaseto",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 35,
+          "hash": "277b23b9c5f27fd57b02e1b8d5aca7695ab8c5abc6401aff660061dbf22263bb"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:nanaseto:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "nanaseto：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:nanaseto"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:mori",
+      "name": "ドラッグストアモリ遠石店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 36,
+          "hash": "1800334d6494b3ec97260d8e9168c9672433059cc0298446de10081aef504323"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:mori:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ドラッグストアモリ遠石店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:mori"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:shunan-90075:san",
+      "name": "MakeDining燦の日曜らーめん開始",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-dkt-dondon-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 37,
+          "hash": "ec110d6a405d76e758ff1aa55147c9903e108830db7b89a9e1550a486dd7dcb5"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:shunan-90075:san:map_action",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "MakeDining燦の日曜らーめん開始：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+          "next": "既存原資料・台帳から同一店舗の公式証拠を再利用し、不足する新旧地点だけ照合。",
+          "event_ids": [
+            "shunan-90075:san"
           ]
         }
       ]
@@ -4116,6 +4897,264 @@
       "event_hash": "e45836ac046a9f3c19e76be9dd65b56749062eca207e48aee07aab801a156fdb",
       "case_id": "case:kaiten-596738:opening-date",
       "issue_id": "case:kaiten-596738:opening-date:supplemental"
+    },
+    {
+      "event_id": "kaiten-527083:opening-date",
+      "event_hash": "2c035c2a7714358aa4f82b70298452cd0cd7707d5937ba2a76b27b10feb9469a",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-104503:opening-date",
+      "event_hash": "9bb5f8b2c7ff9d87a8198881173a0224fa9e2a21d79e5f33029f34e7f134e1f4",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-104872:opening-date",
+      "event_hash": "ea91ff198ae223bb2360960089d70a019511c4afd2bd904e9ce11f4498d67e1c",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-93372:opening-date",
+      "event_hash": "ccbda821e8e545c414bf1ff723d9a7695192d58443cb2ee9695d728cbf6b8543",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-93372:higashishoya-date",
+      "event_hash": "0c18b07e739ed235c4133e06b5b5fd9087b0bf6a6ce054ff938ba827bc6973ca",
+      "case_id": "case:shunan-93372:higashishoya-date",
+      "issue_id": "case:shunan-93372:higashishoya-date:supplemental"
+    },
+    {
+      "event_id": "kaiten-586462:opening-date",
+      "event_hash": "e14d6350c567ac3a75f9a5dd3faf9dd8661cbbcca7b05301c48010826721830d",
+      "case_id": "case:kaiten-586462:opening-date",
+      "issue_id": "case:kaiten-586462:opening-date:supplemental"
+    },
+    {
+      "event_id": "ube-82015:opening-date",
+      "event_hash": "68f70b6429c5be347472da0cd981f91de5f7816448fb4294d4532a4a7b334361",
+      "case_id": "case:kaiten-586462:opening-date",
+      "issue_id": "case:kaiten-586462:opening-date:supplemental"
+    },
+    {
+      "event_id": "ube-82198:opening-date",
+      "event_hash": "4e913c94c3557d84335efdbf317573c819c0fa1ca3a85f69e35f3e83867078f0",
+      "case_id": "case:kaiten-586462:opening-date",
+      "issue_id": "case:kaiten-586462:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-85517:opening-date",
+      "event_hash": "1e8ec54d846103109d8019c89a3706fdd94907b05d57d556c41b9721b196837d",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-86920:opening-date",
+      "event_hash": "a5366841959866d3eebbede36ba4629686787565b48343de7c2cb7c792ef833b",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "shunan-98811:opening-date",
+      "event_hash": "6707ed6782d7170a434aacf00b54021c10f51cb5bb12cb7a6c408ab64555549a",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:supplemental"
+    },
+    {
+      "event_id": "kaiten-613665:opening-date",
+      "event_hash": "4745cf3d2cf4cade22cc9be2615c6ea7ba24910a2130ec84cbba5c77ef5736b1",
+      "case_id": "case:kaiten-613665:opening-date",
+      "issue_id": "case:kaiten-613665:opening-date:supplemental"
+    },
+    {
+      "event_id": "shimonoseki-73376:opening-date",
+      "event_hash": "f2ec3877693600e7164b2f6d041eb8fb6003ce5a554245090c1033a9b9dbd40e",
+      "case_id": "case:kaiten-613665:opening-date",
+      "issue_id": "case:kaiten-613665:opening-date:supplemental"
+    },
+    {
+      "event_id": "shimonoseki-52560:opening-date",
+      "event_hash": "30fb3ee0241cbbd7dcf76e8c6a4548df803530fa1ecd9fe849ff078329125118",
+      "case_id": "case:shunan-93372:higashishoya-date",
+      "issue_id": "case:shunan-93372:higashishoya-date:supplemental"
+    },
+    {
+      "event_id": "shimonoseki-52560:predecessor-close",
+      "event_hash": "0d9fbf54e0ef0c6fdd678a67203f853bc8639f4a2771f6658a878bb2a926bab0",
+      "case_id": "case:shimonoseki-52560:predecessor-close",
+      "issue_id": "case:shimonoseki-52560:predecessor-close:historical_only"
+    },
+    {
+      "event_id": "shimonoseki-51839:opening-date",
+      "event_hash": "0afc9049a16c51021ec6f94b87a0fa78bc32ac2c671ded01acf930375d2e79d2",
+      "case_id": "case:shunan-93372:higashishoya-date",
+      "issue_id": "case:shunan-93372:higashishoya-date:supplemental"
+    },
+    {
+      "event_id": "shunan-87623:renewal",
+      "event_hash": "6b30e98adbee524567db2890e07e932d499ecb715278de926ee08451e1d3e77a",
+      "case_id": "case:shunan-87623:renewal",
+      "issue_id": "case:shunan-87623:renewal:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-30016:renewal",
+      "event_hash": "1364c69cce185a36e39dfa705a7e65144376b85da4cb9a3cd0b419b3e9200e6a",
+      "case_id": "case:yamaguchi-30016:renewal",
+      "issue_id": "case:yamaguchi-30016:renewal:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-35245:pets-current",
+      "event_hash": "4d515594b829a7b8d20592019a556c1c88bd2ec14493a8d3263762148eb807df",
+      "case_id": "case:yamaguchi-32462:pets-current",
+      "issue_id": "case:yamaguchi-32462:pets-current:map_action"
+    },
+    {
+      "event_id": "yamaguchi-35245:seria-current",
+      "event_hash": "ce39087e30a2f4c1f5df5a5d17f5457d0c9ba2ba30a5172b13fe9f97fe22f3fd",
+      "case_id": "case:yamaguchi-32462:seria-current",
+      "issue_id": "case:yamaguchi-32462:seria-current:map_action"
+    },
+    {
+      "event_id": "yamaguchi-35245:matsu-opening",
+      "event_hash": "595f5179bead108ab3ad4a1272d87fa62b000402a4e8d97e71c3ad8d55676ff2",
+      "case_id": "facility:official-matsukiyo-21405568",
+      "issue_id": "facility:official-matsukiyo-21405568:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-35245:pets-opening",
+      "event_hash": "d0a3bdd5660e5fb108b336320a5efbf3f6be26ea244cad996ecbd66d46ef3361",
+      "case_id": "case:yamaguchi-32462:pets-opening",
+      "issue_id": "case:yamaguchi-32462:pets-opening:historical_only"
+    },
+    {
+      "event_id": "yamaguchi-35245:dondon-opening",
+      "event_hash": "256ad8443abe6863451ebf606d9ef7e78c71d798e1d99d1539fe8938accbe305",
+      "case_id": "facility:official-dondon-yuda",
+      "issue_id": "facility:official-dondon-yuda:supplemental"
+    },
+    {
+      "event_id": "shunan-114721:dondon-renewal",
+      "event_hash": "51bbb94d76d01eded3025062efee7d9825120b46a538e26436955b7649431862",
+      "case_id": "case:shunan-114721:dondon-renewal",
+      "issue_id": "case:shunan-114721:dondon-renewal:supplemental"
+    },
+    {
+      "event_id": "shunan-114721:yamato-new",
+      "event_hash": "ef363611ef7df23add0cdabc1bd361a022e6bb7b2aaa41daed471fc808f80ddd",
+      "case_id": "case:shunan-114721:yamato-new",
+      "issue_id": "case:shunan-114721:yamato-new:map_action"
+    },
+    {
+      "event_id": "shunan-114721:yamato-old-three",
+      "event_hash": "9dca2a7a24fcb48ed2314e53143e4b8e127b4ce3107713e315900eb214f32e93",
+      "case_id": "case:shunan-114721:yamato-old-three",
+      "issue_id": "case:shunan-114721:yamato-old-three:map_action"
+    },
+    {
+      "event_id": "shunan-114721:izutsuya",
+      "event_hash": "f87121a22edde8c3df22075683d7cdc753502e3e01d16be849f7c656335485fb",
+      "case_id": "case:shunan-114721:izutsuya",
+      "issue_id": "case:shunan-114721:izutsuya:map_action"
+    },
+    {
+      "event_id": "shunan-114721:kaju",
+      "event_hash": "a74922382bd723baeb7c3a5daa497bfb51650d5fb96ba66d28d7d1f184c79427",
+      "case_id": "case:shunan-114721:kaju",
+      "issue_id": "case:shunan-114721:kaju:map_action"
+    },
+    {
+      "event_id": "shunan-114721:ajigen",
+      "event_hash": "cfda3da311a6c68df6abc5ffbc14f9b0fcf866c53b2235afe4541e5e1a8371d3",
+      "case_id": "case:shunan-114721:ajigen",
+      "issue_id": "case:shunan-114721:ajigen:map_action"
+    },
+    {
+      "event_id": "shunan-114721:old-seven",
+      "event_hash": "1aafc09d93e0c6518829bb1136dcc392e199b80705792a2bedba4fedf270deac",
+      "case_id": "case:shunan-114721:old-seven",
+      "issue_id": "case:shunan-114721:old-seven:map_action"
+    },
+    {
+      "event_id": "shunan-114721:fino",
+      "event_hash": "a1aeaf164100ce408b39fb237ca079d3946c1357965b168eed2e579e5a863d63",
+      "case_id": "case:shunan-114721:fino",
+      "issue_id": "case:shunan-114721:fino:map_action"
+    },
+    {
+      "event_id": "shunan-114721:shizuku",
+      "event_hash": "9b65830244137e54b6c637422381c062e603695e1c8889d06dfee257b89c8ee9",
+      "case_id": "case:shunan-114721:shizuku",
+      "issue_id": "case:shunan-114721:shizuku:map_action"
+    },
+    {
+      "event_id": "shunan-90075:dondon-renewal",
+      "event_hash": "f1cde73a5cf03d25c32d2d6cc0bad7f93cad7c735e582879d6667fb55ab09722",
+      "case_id": "case:shunan-87623:renewal",
+      "issue_id": "case:shunan-87623:renewal:supplemental"
+    },
+    {
+      "event_id": "shunan-90075:okachan",
+      "event_hash": "a2dc429c8a19bbde1214543e5316a441c8f839c7894dc94357e18ea96cabb997",
+      "case_id": "case:shunan-90075:okachan",
+      "issue_id": "case:shunan-90075:okachan:map_action"
+    },
+    {
+      "event_id": "shunan-90075:minatoe",
+      "event_hash": "26daa721e97e5f489800a44d4bbeb75e4fdf5718148bdeec241223e69ba5fd78",
+      "case_id": "case:shunan-90075:minatoe",
+      "issue_id": "case:shunan-90075:minatoe:map_action"
+    },
+    {
+      "event_id": "shunan-90075:774",
+      "event_hash": "bb6e70146f1c960f367b1ff63fbf22c10b01404882c0e6ca7543e952ea3b2e5a",
+      "case_id": "case:shunan-90075:774",
+      "issue_id": "case:shunan-90075:774:map_action"
+    },
+    {
+      "event_id": "shunan-90075:nta",
+      "event_hash": "01db395d7d90fce8d1a33c4bc2dde97b4f80a4b2c10fb5d0e7ac4e626df3af26",
+      "case_id": "case:shunan-90075:nta",
+      "issue_id": "case:shunan-90075:nta:map_action"
+    },
+    {
+      "event_id": "shunan-90075:grandchariot",
+      "event_hash": "f4b99515b8be4023a0b3119401c1ca867d0432daf84c152f0e6deb0a4edc410e",
+      "case_id": "case:shunan-90075:grandchariot",
+      "issue_id": "case:shunan-90075:grandchariot:map_action"
+    },
+    {
+      "event_id": "shunan-90075:nodoka",
+      "event_hash": "df97020b3cb04a83390633974dc276ff9737d93b7f795e7b80f283d41acc3bf0",
+      "case_id": "case:shunan-90075:nodoka",
+      "issue_id": "case:shunan-90075:nodoka:map_action"
+    },
+    {
+      "event_id": "shunan-90075:dailycafe",
+      "event_hash": "ea0e48db3aa8dbd50c6ceee1b9aabd88b313fae9fcafad199692d90dd4970090",
+      "case_id": "case:shunan-90075:dailycafe",
+      "issue_id": "case:shunan-90075:dailycafe:map_action"
+    },
+    {
+      "event_id": "shunan-90075:nanaseto",
+      "event_hash": "b7d74118802694228ee8b39c935c07f57057b0dbed714b82c3acf54e952cc6fb",
+      "case_id": "case:shunan-90075:nanaseto",
+      "issue_id": "case:shunan-90075:nanaseto:map_action"
+    },
+    {
+      "event_id": "shunan-90075:mori",
+      "event_hash": "fce3eff411221023dee56f6ec83debba2cc07e1d1cfa9a96031858e4e649c1ea",
+      "case_id": "case:shunan-90075:mori",
+      "issue_id": "case:shunan-90075:mori:map_action"
+    },
+    {
+      "event_id": "shunan-90075:san",
+      "event_hash": "900374472da35a4370d26af9f3f16205158bc133608fd3da290f2b48476289d3",
+      "case_id": "case:shunan-90075:san",
+      "issue_id": "case:shunan-90075:san:map_action"
     }
   ],
   "legacy_audit": [

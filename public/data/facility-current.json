@@ -1300,6 +1300,499 @@
           "2024年の一時休業を恒久閉店や新規開店として扱わない。公式店検索の旧URLは詳細本文を返さず、支店別公式求人を補完根拠に利用。"
         ]
       }
+    },
+    {
+      "id": "osm-node-4886834035",
+      "expected": {
+        "name": "ディオ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4886834035"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5741538,
+            34.0261852
+          ]
+        }
+      },
+      "changes": {
+        "name": "ディオ防府南店",
+        "city": "防府市",
+        "address": "山口県防府市浜方16番地3",
+        "category": "supermarket",
+        "search_names": "ディオ防府南店 ディオ ラムー ディオ PAKUPAKU パクパク"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約5m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.dkt-s.com/map.html?id=27"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.dkt-s.com/search.php?pref=35"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.dkt-s.com/search.php?id=27"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-356928497",
+      "expected": {
+        "name": "ディオ",
+        "category": "supermarket",
+        "source_ids": [
+          "way/356928497"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5941755,
+            34.0554776
+          ]
+        }
+      },
+      "changes": {
+        "name": "ディオ防府東店",
+        "city": "防府市",
+        "address": "山口県防府市岸津1丁目7番地1号",
+        "category": "supermarket",
+        "search_names": "ディオ防府東店 ディオ ラムー ディオ PAKUPAKU パクパク"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約33m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.dkt-s.com/map.html?id=28"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.dkt-s.com/search.php?pref=35"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.dkt-s.com/search.php?id=28"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-550383098",
+      "expected": {
+        "name": "どんどん",
+        "category": "restaurant",
+        "source_ids": [
+          "way/550383098"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.18841255,
+            34.37467075
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 長門南口店",
+        "city": "長門市",
+        "address": "山口県長門市東深川小丸山819ｰ7",
+        "category": "restaurant",
+        "search_names": "どんどん 長門南口店 どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約3m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-長門南口店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/page/3/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.0491563445225!2d131.18838!3d34.37467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35435dcdd62cbf7d%3A0x35af0fd507deaf6c!2z44Gp44KT44Gp44KTIOmVt-mWgOWNl-WPo-W6lw!5e0!3m2!1sja!2sjp!4v1780291395103!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4101767793",
+      "expected": {
+        "name": "どんどん",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4101767793"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.01388,
+            34.0295623
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん ゆめタウン長府店",
+        "city": "下関市",
+        "address": "山口県下関市ゆめタウン2-2",
+        "category": "restaurant",
+        "search_names": "どんどん ゆめタウン長府店 どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約5m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン長府店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5592866601432!2d131.0113080753071!3d34.02952181893038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543993bfc9d88c5%3A0xc46fad3790f6234e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mVt-W6nOW6lw!5e0!3m2!1sja!2sjp!4v1782606538798!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。",
+          "公式共通地図と店別の店舗地点は約129m差。店別の店舗名付き地点を採用。",
+          "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4825327463",
+      "expected": {
+        "name": "どんどん",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4825327463"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5807244,
+            34.0558186
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 緑町店",
+        "city": "防府市",
+        "address": "山口県防府市緑町2-6-14",
+        "category": "restaurant",
+        "search_names": "どんどん 緑町店 どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約2m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-緑町店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/d/u/3/embed?mid=17Q7oCh79NSn3rGmzcn450VisErRBukM&ll=34.185956,131.470649&z=9&ehbc=2E312F&noprof=1"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-2253703800",
+      "expected": {
+        "name": "手打ちうどん どんどん",
+        "category": "fast_food",
+        "source_ids": [
+          "node/2253703800"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4151342,
+            34.1290199
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡上郷1740番地の1",
+        "category": "restaurant",
+        "search_names": "どんどん 小郡店 手打ちうどん どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所・業種へ訂正。公式店舗地点との差は約4m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-小郡店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.677113865352!2d131.4151728!3d34.129014999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449aee176c7e8b%3A0x6ead649aa078febd!2z44Gp44KT44Gp44KTIOWwj-mDoeW6lw!5e0!3m2!1sja!2sjp!4v1780846155836!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13152129040",
+      "expected": {
+        "name": "どんどん",
+        "category": "restaurant",
+        "source_ids": [
+          "node/13152129040"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3486168,
+            33.9975909
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 東岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市東岐波1395ｰ1 ハイパーモールメルクス宇部店",
+        "category": "restaurant",
+        "search_names": "どんどん 東岐波店 どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約8m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-東岐波店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.802627899152!2d131.3468530861244!3d33.99760307192851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544815c0ab5187b%3A0x1b504af30af38d6a!2z44Gp44KT44Gp44KTIOadseWykOazouW6lw!5e0!3m2!1sja!2sjp!4v1782340284247!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。",
+          "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1121040365",
+      "expected": {
+        "name": "どんどん 宇部際波店",
+        "category": "restaurant",
+        "source_ids": [
+          "way/1121040365"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.21960485,
+            33.99488755
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 宇部際波店",
+        "city": "宇部市",
+        "address": "山口県宇部市厚南中央1丁目7番54号",
+        "category": "restaurant",
+        "search_names": "どんどん 宇部際波店 どんどん 宇部際波店 うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約12m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店-2/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9057913893844!2d131.2194975!3d33.9949535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381752318309f%3A0x345f88f8897614eb!2z44Gp44KT44Gp44KTIOWuh-mDqOmam-azouW6lw!5e0!3m2!1sja!2sjp!4v1780846028846!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-548874084",
+      "expected": {
+        "name": "どんどん",
+        "category": "restaurant",
+        "source_ids": [
+          "way/548874084"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.26464729999998,
+            33.9484097
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん フレスポ宇部東店",
+        "city": "宇部市",
+        "address": "山口県宇部市東梶返3-17-18",
+        "category": "restaurant",
+        "search_names": "どんどん フレスポ宇部東店 どんどん うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約5m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フレスポ宇部東店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.7153383565555!2d131.26466019999998!3d33.948448899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380b7205b5ae3%3A0x77f13f9505020784!2z44Gp44KT44Gp44KTIOODleODrOOCueODneWuh-mDqOadseW6lw!5e0!3m2!1sja!2sjp!4v1780833516101!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5787099553",
+      "expected": {
+        "name": "DonDon",
+        "category": "restaurant",
+        "source_ids": [
+          "node/5787099553"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.406922,
+            34.4156841
+          ]
+        }
+      },
+      "changes": {
+        "name": "どんどん 土原（ひじわら）店",
+        "city": "萩市",
+        "address": "山口県萩市土原377",
+        "category": "restaurant",
+        "search_names": "どんどん 土原（ひじわら）店 DonDon うどん"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "元のID・位置を保持し、公式支店名・市・住所へ訂正。公式店舗地点との差は約58m。",
+        "sources": [
+          {
+            "title": "現行公式の支店案内",
+            "url": "https://www.s-dondon.co.jp/shoplist/どんどん土原店/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.s-dondon.co.jp/shoplist/"
+          },
+          {
+            "title": "公式一覧・店舗地点の照合根拠",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.4298220600745!2d131.4063228!3d34.415835699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af819959241f%3A0xa68a9c35333adcfe!2z44Gp44KT44Gp44KT5Zyf5Y6f5bqX!5e0!3m2!1sja!2sjp!4v1780829830972!5m2!1sja!2sjp"
+          }
+        ],
+        "limits": [
+          "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+          "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -15071,6 +15564,1338 @@
         "coordinates": [
           131.7992754,
           34.063604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dkt-2009",
+      "properties": {
+        "name": "ラ・ムー東勝谷店",
+        "city": "下関市",
+        "address": "山口県下関市東勝谷1番33号",
+        "official_address": "山口県下関市東勝谷1番33号",
+        "official_url": "https://www.dkt-s.com/map.html?id=2009",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dkt:2009"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ラ・ムー東勝谷店 ラムー ディオ PAKUPAKU パクパク",
+        "location_verification": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.dkt-s.com/map.html?id=2009"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?pref=35"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?id=2009"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.973282,
+          34.002936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dkt-2012",
+      "properties": {
+        "name": "ラ・ムー周南久米店",
+        "city": "周南市",
+        "address": "山口県周南市久米1473番地の1",
+        "official_address": "山口県周南市久米1473番地の1",
+        "official_url": "https://www.dkt-s.com/map.html?id=2012",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dkt:2012"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ラ・ムー周南久米店 ラムー ディオ PAKUPAKU パクパク",
+        "location_verification": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.dkt-s.com/map.html?id=2012"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?pref=35"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?id=2012"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.844192,
+          34.035271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dkt-2038",
+      "properties": {
+        "name": "ラ・ムー宇部東須恵店",
+        "city": "宇部市",
+        "address": "山口県宇部市東須恵918番地2",
+        "official_address": "山口県宇部市東須恵918番地2",
+        "official_url": "https://www.dkt-s.com/map.html?id=2038",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dkt:2038"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ラ・ムー宇部東須恵店 ラムー ディオ PAKUPAKU パクパク",
+        "location_verification": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.dkt-s.com/map.html?id=2038"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?pref=35"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?id=2038"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "記事の地番918-1に対し、現行公式の地番918番地2を採用。店名・電話番号・場所は同一支店として照合。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.187755,
+          33.975819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dkt-2045",
+      "properties": {
+        "name": "ラ・ムー山の田店",
+        "city": "下関市",
+        "address": "山口県下関市山の田北町1番7号",
+        "official_address": "山口県下関市山の田北町1番7号",
+        "official_url": "https://www.dkt-s.com/map.html?id=2045",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dkt:2045"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ラ・ムー山の田店 ラムー ディオ PAKUPAKU パクパク",
+        "location_verification": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.dkt-s.com/map.html?id=2045"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?pref=35"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.dkt-s.com/search.php?id=2045"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.932066,
+          33.990827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1385",
+      "properties": {
+        "name": "どんどん おのだサンパーク店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市中川6ｰ6662 おのだサンパーク フードコート2F",
+        "official_address": "山口県山陽小野田市中川6ｰ6662 おのだサンパーク フードコート2F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-おのだサンパーク店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1385"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん おのだサンパーク店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-おのだサンパーク店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/3/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.3022518997104!2d131.16794481098614!3d33.98476942117877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543838f43293419%3A0x314f33101f0e012c!2z44Gp44KT44Gp44KTIOOBiuOBruOBoOOCteODs-ODkeODvOOCr-W6lw!5e0!3m2!1sja!2sjp!4v1780833184824!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約115m差。店別の店舗名付き地点を採用。",
+            "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1705251,
+          33.984765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1386",
+      "properties": {
+        "name": "どんどん アルク小野田店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市大字西高泊高泊ワカリ640ｰ1スーパーアルクアルク小野田敷地内",
+        "official_address": "山口県山陽小野田市大字西高泊高泊ワカリ640ｰ1スーパーアルクアルク小野田敷地内",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-アルク小野田店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1386"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん アルク小野田店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-アルク小野田店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/3/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.5029982538217!2d131.1741847!3d34.0052975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354383b75bb6dab9%3A0x654a4f55c92610e6!2z44Gp44KT44Gp44KTIOOCouODq-OCr-Wwj-mHjueUsOW6lw!5e0!3m2!1sja!2sjp!4v1780833294746!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約110m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1767927,
+          34.0049624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1393",
+      "properties": {
+        "name": "どんどん 南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国町3丁目22-22",
+        "official_address": "山口県岩国市南岩国町3丁目22-22",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん　ゆめタウン山口店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1393"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 南岩国店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん　ゆめタウン山口店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/3/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.5906421361306!2d132.1976884753114!3d34.13122821355624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545370036ac05cd%3A0xda21ddb6e33a6580!2z44Gp44KT44Gp44KTIOWNl-WyqeWbveW6lw!5e0!3m2!1sja!2sjp!4v1782606697539!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2002634,
+          34.1312238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1403",
+      "properties": {
+        "name": "どんどん ゆめタウン柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市南町4-5-3　ゆめタウン柳井店 2F",
+        "official_address": "山口県柳井市南町4-5-3　ゆめタウン柳井店 2F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン柳井店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1403"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン柳井店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン柳井店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/3/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3309.2173570488812!2d132.10392!3d33.9612524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354517d9a5fb7879%3A0xe21ba5e6b7bbd12c!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-afs-S6leW6lw!5e0!3m2!1sja!2sjp!4v1780848876523!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約75m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1054139,
+          33.9616499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1407",
+      "properties": {
+        "name": "どんどん サンリブ下松店",
+        "city": "下松市",
+        "address": "山口県下松市南花岡6-8-1 サンリブ下松店 1F",
+        "official_address": "山口県下松市南花岡6-8-1 サンリブ下松店 1F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-サンリブ下松店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1407"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん サンリブ下松店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-サンリブ下松店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/4/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.5192730878475!2d131.8633533!3d34.0305486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3e4547bab%3A0x9599faafc07f89d2!2z44Gp44KT44Gp44KTIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1780849802860!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約43m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8651571,
+          34.0307097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1405",
+      "properties": {
+        "name": "どんどん 光店",
+        "city": "光市",
+        "address": "山口県光市浅江3-22-12",
+        "official_address": "山口県光市浅江3-22-12",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-光店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1405"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 光店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-光店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/4/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7807237157917!2d131.9224693!3d33.9724751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451e03b1836fd9%3A0xb9f2a8aa04fc0d7b!2z44Gp44KT44Gp44KTIOWFieW6lw!5e0!3m2!1sja!2sjp!4v1780849296758!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9224693,
+          33.9724751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-864",
+      "properties": {
+        "name": "どんどん 唐樋(からひ)店",
+        "city": "萩市",
+        "address": "山口県萩市唐樋町30-1",
+        "official_address": "山口県萩市唐樋町30-1",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-唐樋からひ店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:864"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 唐樋(からひ)店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-唐樋からひ店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3291.6694795641524!2d131.4009772!3d34.409746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af82e5de3653%3A0x3b655f97c71b78df!2z44Gp44KT44Gp44KTIOWUkOaoi-W6lw!5e0!3m2!1sja!2sjp!4v1780291285673!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4031569,
+          34.4097099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1380",
+      "properties": {
+        "name": "dondon labo （どんどんラボ）アトラス萩店",
+        "city": "萩市",
+        "address": "山口県萩市大字土原420番地 アトラス萩店内",
+        "official_address": "山口県萩市大字土原420番地 アトラス萩店内",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/dondon-labo-（どんどんラボ）アトラス萩店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1380"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "dondon labo （どんどんラボ）アトラス萩店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/dondon-labo-（どんどんラボ）アトラス萩店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13167.16867509803!2d131.3882835078125!3d34.4066281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af060fac8b79%3A0x76d47e3a268e9f69!2zZG9uZG9uIGxhYm8o44Gp44KT44Gp44KT44Op44OcKeOCouODiOODqeOCueiQqeW6lw!5e0!3m2!1sja!2sjp!4v1782606448361!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.404763,
+          34.4066281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1382",
+      "properties": {
+        "name": "どんどん コスパ店",
+        "city": "下関市",
+        "address": "山口県下関市大字石原130",
+        "official_address": "山口県下関市大字石原130",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-コスパ店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1382"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん コスパ店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-コスパ店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.113186278304!2d130.9503459!3d34.0153055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a299b25e1d3b%3A0x3fee8b169809f2db!2z44Gp44KT44Gp44KTIOOCs-OCueODkeW6lw!5e0!3m2!1sja!2sjp!4v1780832815389!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9503459,
+          34.0153055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1383",
+      "properties": {
+        "name": "どんどん 武久店",
+        "city": "下関市",
+        "address": "山口県下関市武久町2丁目1番8号",
+        "official_address": "山口県下関市武久町2丁目1番8号",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-武久店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1383"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 武久店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-武久店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6725174421467!2d130.9195981!3d33.9752558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd023f9edcd7%3A0xdc34046866974d4b!2z44Gp44KT44Gp44KTIOatpuS5heW6lw!5e0!3m2!1sja!2sjp!4v1780832914787!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.919691,
+          33.975201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1400",
+      "properties": {
+        "name": "どんどん 三田尻店",
+        "city": "防府市",
+        "address": "山口県防府市新田109-1",
+        "official_address": "山口県防府市新田109-1",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-三田尻店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1400"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 三田尻店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-三田尻店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3073213884836!2d131.570987!3d34.035987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35448d7d2bf7d631%3A0xb45e35612bf0a0b9!2z44Gp44KT44Gp44KTIOS4ieeUsOWwu-W6lw!5e0!3m2!1sja!2sjp!4v1780847881429!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.570987,
+          34.035987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1399",
+      "properties": {
+        "name": "どんどん ゆめタウン防府店",
+        "city": "防府市",
+        "address": "山口県防府市八王子2-8-8 ゆめタウン防府店 3F",
+        "official_address": "山口県防府市八王子2-8-8 ゆめタウン防府店 3F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン防府店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1399"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン防府店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン防府店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.433099666781!2d131.5663653!3d34.0584103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492f326885a87%3A0x1934fb6276c82e93!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1780847704673!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.568531,
+          34.058367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1424",
+      "properties": {
+        "name": "どんどん ゆめタウン徳山店",
+        "city": "周南市",
+        "address": "山口県周南市青山町1-18 ゆめタウン徳山店 1F",
+        "official_address": "山口県周南市青山町1-18 ゆめタウン徳山店 1F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン徳山店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1424"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン徳山店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン徳山店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.049103368459!2d131.8135376!3d34.0426115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6e14b82d361%3A0x5c8de54ee49c4e9e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-W-s-WxseW6lw!5e0!3m2!1sja!2sjp!4v1780918396486!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約65m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8162561,
+          34.0426058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1425",
+      "properties": {
+        "name": "どんどん 徳山西店",
+        "city": "周南市",
+        "address": "山口県周南市西千代田町1-16",
+        "official_address": "山口県周南市西千代田町1-16",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-徳山西店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1425"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 徳山西店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-徳山西店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.001613342832!2d131.78629619999998!3d34.0694729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ba104a1d7b%3A0xd8450026fab41e84!2z44Gp44KT44Gp44KTIOW-s-Wxseilv-W6lw!5e0!3m2!1sja!2sjp!4v1780918523686!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.7862962,
+          34.0694729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1426",
+      "properties": {
+        "name": "どんどん ゆめタウン新南陽店",
+        "city": "周南市",
+        "address": "山口県周南市清水2-2-1　ゆめタウン新南陽店 ３F",
+        "official_address": "山口県周南市清水2-2-1　ゆめタウン新南陽店 ３F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン新南陽店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1426"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン新南陽店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン新南陽店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/page/2/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3304.9486412383185!2d131.7702723!3d34.0708308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ce6f563329%3A0xe954bfcbb01f11ee!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-aWsOWNl-mZveW6lw!5e0!3m2!1sja!2sjp!4v1780918590668!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.7723541,
+          34.0709228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1396",
+      "properties": {
+        "name": "どんどん 山口井筒屋店",
+        "city": "山口市",
+        "address": "山口県山口市中市町3-3　山口井筒屋4F",
+        "official_address": "山口県山口市中市町3-3　山口井筒屋4F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-山口井筒屋店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1396"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 山口井筒屋店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-山口井筒屋店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3300.779160266548!2d131.4763231!3d34.1775635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b10c52d%3A0x9a8043d9852af537!2z44Gp44KT44Gp44KTIOWxseWPo-S6leetkuWxi-W6lw!5e0!3m2!1sja!2sjp!4v1780846767912!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4785877,
+          34.1778048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1395",
+      "properties": {
+        "name": "どんどん フジグラン山口店",
+        "city": "山口市",
+        "address": "山口県山口市黒川3736　フジグラン山口店",
+        "official_address": "山口県山口市黒川3736　フジグラン山口店",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-フジグラン山口店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1395"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん フジグラン山口店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フジグラン山口店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3302.354298602578!2d131.4337235!3d34.1372767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449a7a28fe50f1%3A0xabaf896de7bc797a!2z44Gp44KT44Gp44KTIOODleOCuOOCsOODqeODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780846700325!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約101m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.435307,
+          34.137435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1394",
+      "properties": {
+        "name": "どんどん 大内御堀店",
+        "city": "山口市",
+        "address": "山口県山口市大内中央一丁目19番3号",
+        "official_address": "山口県山口市大内中央一丁目19番3号",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-大内御堀店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1394"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん 大内御堀店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-大内御堀店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.5987981106455!2d131.49707139999998!3d34.1566051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c1457fcf4f%3A0x7b97b50f5f6fe033!2z44Gp44KT44Gp44KTIOWkp-WGheW-oeWggOW6lw!5e0!3m2!1sja!2sjp!4v1780846509969!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4970714,
+          34.1566051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1422",
+      "properties": {
+        "name": "どんどん ゆめタウン山口店",
+        "city": "山口市",
+        "address": "山口県山口市大内千坊六丁目9番1号　ゆめタウン山口店１F",
+        "official_address": "山口県山口市大内千坊六丁目9番1号　ゆめタウン山口店１F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン山口店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1422"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン山口店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン山口店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3301.4502992889165!2d131.4889414!3d34.1604031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c32be2d261%3A0x20b57833d447a380!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780918272583!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "公式共通地図と店別の店舗地点は約51m差。店別の店舗名付き地点を採用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4907942,
+          34.1604529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-dondon-1388",
+      "properties": {
+        "name": "どんどん ゆめタウン宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市妻崎開作411ゆめタウン宇部店 １F",
+        "official_address": "山口県宇部市妻崎開作411ゆめタウン宇部店 １F",
+        "official_url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:dondon:1388"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "どんどん ゆめタウン宇部店 うどん",
+        "location_verification": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。 店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の現行店舗情報と店舗固有地点を照合。歴史的な開店・改装実施日とは区別。",
+          "sources": [
+            {
+              "title": "現行公式の支店案内",
+              "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.s-dondon.co.jp/shoplist/"
+            },
+            {
+              "title": "公式一覧・店舗地点の照合根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.299730426608!2d131.2040067!3d33.9848342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381674992644d%3A0xcb244362896c70a0!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-Wuh-mDqOW6lw!5e0!3m2!1sja!2sjp!4v1780834900256!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
+            "公式掲載確認でありリアルタイム営業の保証ではありません。",
+            "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2062997,
+          33.98492239999999
         ]
       }
     }

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "どんどん カジル岩国店",
+    "decision": "hold",
+    "reason": "店別地図は住所のみで店舗名なし。共通地図との約96m差の館内関係を未確定。",
+    "point": [
+      132.2135003,
+      34.1700254
+    ],
+    "detail_place": {
+      "name": "〒740-0021 山口県岩国市室の木町１丁目２−３８",
+      "coordinates": [
+        132.2145009,
+        34.1702517
+      ],
+      "method": "named_embed_place_record"
+    },
+    "url": "https://www.s-dondon.co.jp/shoplist/どんどん-カジル岩国店/"
+  },
+  {
+    "name": "CK（セントラル・キッチン）",
+    "decision": "out_of_scope",
+    "reason": "セントラルキッチン。一般の来店飲食施設と確認できず対象外。"
+  },
+  {
+    "name": "どんどん 湯田店",
+    "id": "official-dondon-yuda",
+    "decision": "verified_no_change",
+    "reason": "既存の同名・同住所・店別地点を保持。",
+    "shared_map_point": [
+      131.4493893,
+      34.1670697
+    ],
+    "current_point": [
+      131.4493893,
+      34.1670697
+    ],
+    "offset_m": 0
+  },
+  {
+    "name": "どんどん ハローズ宇部店",
+    "id": "official-dondon-halows-ube",
+    "decision": "verified_no_change",
+    "reason": "店別の確認済み地点を保持。共通公開地図はスーパー本体と同点で約110m差があり採用しない。",
+    "shared_map_point": [
+      131.2126966,
+      33.9755735
+    ],
+    "current_point": [
+      131.2125016,
+      33.9765512
+    ],
+    "offset_m": 110.31617802529809
+  }
+]

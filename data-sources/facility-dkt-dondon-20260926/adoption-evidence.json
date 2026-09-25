@@ -1,0 +1,2781 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "666820fb3b327d63b4bfe258523a4ccb3f30fcd1433e025bdc8fed0b243c1489",
+  "after_overlay_hash": "a3a18dc010165a7b743cfec42f67fdf9bbc3af2eda97153cacf86b6dd6e82e18",
+  "newly_added_ids": [
+    "official-dkt-2009",
+    "official-dkt-2012",
+    "official-dkt-2038",
+    "official-dkt-2045",
+    "official-dondon-1385",
+    "official-dondon-1386",
+    "official-dondon-1393",
+    "official-dondon-1403",
+    "official-dondon-1407",
+    "official-dondon-1405",
+    "official-dondon-864",
+    "official-dondon-1380",
+    "official-dondon-1382",
+    "official-dondon-1383",
+    "official-dondon-1400",
+    "official-dondon-1399",
+    "official-dondon-1424",
+    "official-dondon-1425",
+    "official-dondon-1426",
+    "official-dondon-1396",
+    "official-dondon-1395",
+    "official-dondon-1394",
+    "official-dondon-1422",
+    "official-dondon-1388"
+  ],
+  "corrected_ids": [
+    "osm-node-4886834035",
+    "osm-way-356928497",
+    "osm-way-550383098",
+    "osm-node-4101767793",
+    "osm-node-4825327463",
+    "osm-node-2253703800",
+    "osm-node-13152129040",
+    "osm-way-1121040365",
+    "osm-way-548874084",
+    "osm-node-5787099553"
+  ],
+  "reviewed_inputs": [
+    {
+      "operator": "dkt",
+      "code": "27",
+      "name": "ディオ防府南店",
+      "address": "山口県防府市浜方16番地3",
+      "source_address": "山口県防府市浜方16番地3",
+      "point": [
+        131.5741754,
+        34.02622804
+      ],
+      "telephone": "0835-20-3000",
+      "url": "https://www.dkt-s.com/map.html?id=27",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=27"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "suggested_id": "official-dkt-27",
+      "city": "防府市",
+      "id": "osm-node-4886834035",
+      "action": "update",
+      "existing_offset_m": 5.168576650089621,
+      "category": "supermarket"
+    },
+    {
+      "operator": "dkt",
+      "code": "28",
+      "name": "ディオ防府東店",
+      "address": "山口県防府市岸津1丁目7番地1号",
+      "source_address": "山口県防府市岸津1丁目7番地1号",
+      "point": [
+        131.594528,
+        34.05546833
+      ],
+      "telephone": "0835-27-5721",
+      "url": "https://www.dkt-s.com/map.html?id=28",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=28"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "suggested_id": "official-dkt-28",
+      "city": "防府市",
+      "id": "osm-way-356928497",
+      "action": "update",
+      "existing_offset_m": 32.526798376289186,
+      "category": "supermarket"
+    },
+    {
+      "operator": "dkt",
+      "code": "2009",
+      "name": "ラ・ムー東勝谷店",
+      "address": "山口県下関市東勝谷1番33号",
+      "source_address": "山口県下関市東勝谷（ヒガシショウヤ）1番33号",
+      "point": [
+        130.973282,
+        34.002936
+      ],
+      "telephone": "083-257-0140",
+      "url": "https://www.dkt-s.com/map.html?id=2009",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=2009"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "suggested_id": "official-dkt-2009",
+      "city": "下関市",
+      "id": "official-dkt-2009",
+      "action": "addition",
+      "category": "supermarket"
+    },
+    {
+      "operator": "dkt",
+      "code": "2012",
+      "name": "ラ・ムー周南久米店",
+      "address": "山口県周南市久米1473番地の1",
+      "source_address": "山口県周南市久米（シュウナンシクメ）1473番地の1",
+      "point": [
+        131.844192,
+        34.035271
+      ],
+      "telephone": "0834-36-1910",
+      "url": "https://www.dkt-s.com/map.html?id=2012",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=2012"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "suggested_id": "official-dkt-2012",
+      "city": "周南市",
+      "id": "official-dkt-2012",
+      "action": "addition",
+      "category": "supermarket"
+    },
+    {
+      "operator": "dkt",
+      "code": "2038",
+      "name": "ラ・ムー宇部東須恵店",
+      "address": "山口県宇部市東須恵918番地2",
+      "source_address": "山口県宇部市東須恵（ウベシヒガシスエ）918番地2",
+      "point": [
+        131.187755,
+        33.975819
+      ],
+      "telephone": "0836-41-0240",
+      "url": "https://www.dkt-s.com/map.html?id=2038",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=2038"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "limits": [
+        "記事の地番918-1に対し、現行公式の地番918番地2を採用。店名・電話番号・場所は同一支店として照合。"
+      ],
+      "suggested_id": "official-dkt-2038",
+      "city": "宇部市",
+      "id": "official-dkt-2038",
+      "action": "addition",
+      "category": "supermarket"
+    },
+    {
+      "operator": "dkt",
+      "code": "2045",
+      "name": "ラ・ムー山の田店",
+      "address": "山口県下関市山の田北町1番7号",
+      "source_address": "山口県下関市山の田北町（ヤマノタキタマチ）1番7号",
+      "point": [
+        130.932066,
+        33.990827
+      ],
+      "telephone": "083-242-1280",
+      "url": "https://www.dkt-s.com/map.html?id=2045",
+      "extra_urls": [
+        "https://www.dkt-s.com/search.php?pref=35",
+        "https://www.dkt-s.com/search.php?id=2045"
+      ],
+      "location": "公式山口県一覧と支店番号で取得した店別データの名称・住所・電話・座標が一致。公式店舗画面は同じ座標を店名付き地図q目的地として表示。",
+      "suggested_id": "official-dkt-2045",
+      "city": "下関市",
+      "id": "official-dkt-2045",
+      "action": "addition",
+      "category": "supermarket"
+    },
+    {
+      "operator": "dondon",
+      "code": "1385",
+      "name": "どんどん おのだサンパーク店",
+      "address": "山口県山陽小野田市中川6ｰ6662 おのだサンパーク フードコート2F",
+      "telephone": "0836-84-5065",
+      "point": [
+        131.1705251,
+        33.984765
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-おのだサンパーク店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/3/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.3022518997104!2d131.16794481098614!3d33.98476942117877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543838f43293419%3A0x314f33101f0e012c!2z44Gp44KT44Gp44KTIOOBiuOBruOBoOOCteODs-ODkeODvOOCr-W6lw!5e0!3m2!1sja!2sjp!4v1780833184824!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約115m差。店別の店舗名付き地点を採用。",
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        131.1717315,
+        33.9850048
+      ],
+      "shared_map_offset_m": 115,
+      "detail_place": {
+        "name": "〒756-0806 山口県山陽小野田市中川６丁目４−１ どんどん おのだサンパーク店 おのだサンパーク2F",
+        "coordinates": [
+          131.1705251,
+          33.984765
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1385",
+      "city": "山陽小野田市",
+      "id": "official-dondon-1385",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1386",
+      "name": "どんどん アルク小野田店",
+      "address": "山口県山陽小野田市大字西高泊高泊ワカリ640ｰ1スーパーアルクアルク小野田敷地内",
+      "telephone": "0836-84-8338",
+      "point": [
+        131.1767927,
+        34.0049624
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-アルク小野田店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/3/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.5029982538217!2d131.1741847!3d34.0052975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354383b75bb6dab9%3A0x654a4f55c92610e6!2z44Gp44KT44Gp44KTIOOCouODq-OCr-Wwj-mHjueUsOW6lw!5e0!3m2!1sja!2sjp!4v1780833294746!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約110m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        131.1758333,
+        34.0055556
+      ],
+      "shared_map_offset_m": 110,
+      "detail_place": {
+        "name": "〒756-0057 山口県山陽小野田市西高泊６４０ どんどん アルク小野田店",
+        "coordinates": [
+          131.1767927,
+          34.0049624
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1386",
+      "city": "山陽小野田市",
+      "id": "official-dondon-1386",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1393",
+      "name": "どんどん 南岩国店",
+      "address": "山口県岩国市南岩国町3丁目22-22",
+      "telephone": "0827-28-0006",
+      "point": [
+        132.2002634,
+        34.1312238
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん　ゆめタウン山口店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/3/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.5906421361306!2d132.1976884753114!3d34.13122821355624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545370036ac05cd%3A0xda21ddb6e33a6580!2z44Gp44KT44Gp44KTIOWNl-WyqeWbveW6lw!5e0!3m2!1sja!2sjp!4v1782606697539!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        132.2002634,
+        34.1312238
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒740-0034 山口県岩国市南岩国町３丁目２２−２２ どんどん 南岩国店",
+        "coordinates": [
+          132.2002634,
+          34.1312238
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1393",
+      "city": "岩国市",
+      "id": "official-dondon-1393",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1403",
+      "name": "どんどん ゆめタウン柳井店",
+      "address": "山口県柳井市南町4-5-3　ゆめタウン柳井店 2F",
+      "telephone": "0820-23-4478",
+      "point": [
+        132.1054139,
+        33.9616499
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン柳井店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/3/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3309.2173570488812!2d132.10392!3d33.9612524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354517d9a5fb7879%3A0xe21ba5e6b7bbd12c!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-afs-S6leW6lw!5e0!3m2!1sja!2sjp!4v1780848876523!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約75m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        132.1060265,
+        33.9612129
+      ],
+      "shared_map_offset_m": 75,
+      "detail_place": {
+        "name": "〒742-0031 山口県柳井市南町４丁目５−３ ゆめタウン柳井店 2F どんどん ゆめタウン柳井店",
+        "coordinates": [
+          132.1054139,
+          33.9616499
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1403",
+      "city": "柳井市",
+      "id": "official-dondon-1403",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "863",
+      "name": "どんどん 長門南口店",
+      "address": "山口県長門市東深川小丸山819ｰ7",
+      "telephone": "0837-22-2788",
+      "point": [
+        131.18838,
+        34.37467
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-長門南口店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/3/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.0491563445225!2d131.18838!3d34.37467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35435dcdd62cbf7d%3A0x35af0fd507deaf6c!2z44Gp44KT44Gp44KTIOmVt-mWgOWNl-WPo-W6lw!5e0!3m2!1sja!2sjp!4v1780291395103!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.18838,
+        34.37467
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒759-4101 山口県長門市東深川８１９ どんどん 長門南口店",
+        "coordinates": [
+          131.18838,
+          34.37467
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-863",
+      "city": "長門市",
+      "id": "osm-way-550383098",
+      "action": "update",
+      "existing_offset_m": 2.991840598340482,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1407",
+      "name": "どんどん サンリブ下松店",
+      "address": "山口県下松市南花岡6-8-1 サンリブ下松店 1F",
+      "telephone": "0833-41-0367",
+      "point": [
+        131.8651571,
+        34.0307097
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-サンリブ下松店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/4/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.5192730878475!2d131.8633533!3d34.0305486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3e4547bab%3A0x9599faafc07f89d2!2z44Gp44KT44Gp44KTIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1780849802860!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約43m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        131.8654204,
+        34.0303924
+      ],
+      "shared_map_offset_m": 43,
+      "detail_place": {
+        "name": "〒744-0027 山口県下松市南花岡６丁目８−１ どんどん サンリブ下松店",
+        "coordinates": [
+          131.8651571,
+          34.0307097
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1407",
+      "city": "下松市",
+      "id": "official-dondon-1407",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1405",
+      "name": "どんどん 光店",
+      "address": "山口県光市浅江3-22-12",
+      "telephone": "0833-72-9618",
+      "point": [
+        131.9224693,
+        33.9724751
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-光店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/4/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7807237157917!2d131.9224693!3d33.9724751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451e03b1836fd9%3A0xb9f2a8aa04fc0d7b!2z44Gp44KT44Gp44KTIOWFieW6lw!5e0!3m2!1sja!2sjp!4v1780849296758!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.9225054,
+        33.9724521
+      ],
+      "shared_map_offset_m": 4,
+      "detail_place": {
+        "name": "〒743-0021 山口県光市浅江３丁目２２−１２ どんどん 光店",
+        "coordinates": [
+          131.9224693,
+          33.9724751
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1405",
+      "city": "光市",
+      "id": "official-dondon-1405",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "864",
+      "name": "どんどん 唐樋(からひ)店",
+      "address": "山口県萩市唐樋町30-1",
+      "telephone": "0838-22-0761",
+      "point": [
+        131.4031569,
+        34.4097099
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-唐樋からひ店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3291.6694795641524!2d131.4009772!3d34.409746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af82e5de3653%3A0x3b655f97c71b78df!2z44Gp44KT44Gp44KTIOWUkOaoi-W6lw!5e0!3m2!1sja!2sjp!4v1780291285673!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.4031569,
+        34.4097099
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒758-0044 山口県萩市唐樋町３０−１ どんどん 唐樋店",
+        "coordinates": [
+          131.4031569,
+          34.4097099
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-864",
+      "city": "萩市",
+      "id": "official-dondon-864",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1380",
+      "name": "dondon labo （どんどんラボ）アトラス萩店",
+      "address": "山口県萩市大字土原420番地 アトラス萩店内",
+      "telephone": "0838-21-7307",
+      "point": [
+        131.404763,
+        34.4066281
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/dondon-labo-（どんどんラボ）アトラス萩店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13167.16867509803!2d131.3882835078125!3d34.4066281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af060fac8b79%3A0x76d47e3a268e9f69!2zZG9uZG9uIGxhYm8o44Gp44KT44Gp44KT44Op44OcKeOCouODiOODqeOCueiQqeW6lw!5e0!3m2!1sja!2sjp!4v1782606448361!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.4045458,
+        34.4065987
+      ],
+      "shared_map_offset_m": 20,
+      "detail_place": {
+        "name": "〒758-0042 山口県萩市土原４２０ アトラス萩店内 dondon labo(どんどんラボ)アトラス萩店",
+        "coordinates": [
+          131.404763,
+          34.4066281
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1380",
+      "city": "萩市",
+      "id": "official-dondon-1380",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1381",
+      "name": "どんどん ゆめタウン長府店",
+      "address": "山口県下関市ゆめタウン2-2",
+      "telephone": "083-248-5140",
+      "point": [
+        131.013883,
+        34.0295174
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン長府店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5592866601432!2d131.0113080753071!3d34.02952181893038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543993bfc9d88c5%3A0xc46fad3790f6234e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mVt-W6nOW6lw!5e0!3m2!1sja!2sjp!4v1782606538798!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約129m差。店別の店舗名付き地点を採用。",
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        131.0127807,
+        34.0302235
+      ],
+      "shared_map_offset_m": 129,
+      "detail_place": {
+        "name": "〒752-0926 山口県下関市ゆめタウン２−６ どんどん ゆめタウン長府店",
+        "coordinates": [
+          131.013883,
+          34.0295174
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1381",
+      "city": "下関市",
+      "id": "osm-node-4101767793",
+      "action": "update",
+      "existing_offset_m": 5.005924905218218,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1382",
+      "name": "どんどん コスパ店",
+      "address": "山口県下関市大字石原130",
+      "telephone": "083-257-4796",
+      "point": [
+        130.9503459,
+        34.0153055
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-コスパ店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.113186278304!2d130.9503459!3d34.0153055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a299b25e1d3b%3A0x3fee8b169809f2db!2z44Gp44KT44Gp44KTIOOCs-OCueODkeW6lw!5e0!3m2!1sja!2sjp!4v1780832815389!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        130.9503329,
+        34.0153029
+      ],
+      "shared_map_offset_m": 1,
+      "detail_place": {
+        "name": "〒751-0886 山口県下関市石原１３０ どんどん コスパ店",
+        "coordinates": [
+          130.9503459,
+          34.0153055
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1382",
+      "city": "下関市",
+      "id": "official-dondon-1382",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1383",
+      "name": "どんどん 武久店",
+      "address": "山口県下関市武久町2丁目1番8号",
+      "telephone": "083-251-1011",
+      "point": [
+        130.919691,
+        33.975201
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-武久店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6725174421467!2d130.9195981!3d33.9752558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd023f9edcd7%3A0xdc34046866974d4b!2z44Gp44KT44Gp44KTIOatpuS5heW6lw!5e0!3m2!1sja!2sjp!4v1780832914787!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        130.919691,
+        33.975201
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒751-0833 山口県下関市武久町２丁目１−４７２−１ どんどん 武久店",
+        "coordinates": [
+          130.919691,
+          33.975201
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1383",
+      "city": "下関市",
+      "id": "official-dondon-1383",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1400",
+      "name": "どんどん 三田尻店",
+      "address": "山口県防府市新田109-1",
+      "telephone": "0835-24-2388",
+      "point": [
+        131.570987,
+        34.035987
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-三田尻店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3073213884836!2d131.570987!3d34.035987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35448d7d2bf7d631%3A0xb45e35612bf0a0b9!2z44Gp44KT44Gp44KTIOS4ieeUsOWwu-W6lw!5e0!3m2!1sja!2sjp!4v1780847881429!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.570987,
+        34.035987
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒747-0825 山口県防府市新田１０９−１ どんどん 三田尻店",
+        "coordinates": [
+          131.570987,
+          34.035987
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1400",
+      "city": "防府市",
+      "id": "official-dondon-1400",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1399",
+      "name": "どんどん ゆめタウン防府店",
+      "address": "山口県防府市八王子2-8-8 ゆめタウン防府店 3F",
+      "telephone": "0835-25-9770",
+      "point": [
+        131.568531,
+        34.058367
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン防府店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.433099666781!2d131.5663653!3d34.0584103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492f326885a87%3A0x1934fb6276c82e93!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1780847704673!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.5684981,
+        34.058349
+      ],
+      "shared_map_offset_m": 4,
+      "detail_place": {
+        "name": "〒747-0037 山口県防府市八王子２丁目８−８ どんどん ゆめタウン防府店",
+        "coordinates": [
+          131.568531,
+          34.058367
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1399",
+      "city": "防府市",
+      "id": "official-dondon-1399",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1081",
+      "name": "どんどん 緑町店",
+      "address": "山口県防府市緑町2-6-14",
+      "telephone": "0835-26-1200",
+      "point": [
+        131.5807279,
+        34.055804
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-緑町店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/d/u/3/embed?mid=17Q7oCh79NSn3rGmzcn450VisErRBukM&ll=34.185956,131.470649&z=9&ehbc=2E312F&noprof=1"
+      ],
+      "location": "公式一覧の名称・住所・電話と、公式公開MyMapsの同名同電話マーカーを照合。元地図の同じうどん店から約2m。",
+      "limits": [],
+      "shared_map_point": [
+        131.5807279,
+        34.055804
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": null,
+      "suggested_id": "official-dondon-1081",
+      "city": "防府市",
+      "id": "osm-node-4825327463",
+      "action": "update",
+      "existing_offset_m": 1.657017546153824,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1424",
+      "name": "どんどん ゆめタウン徳山店",
+      "address": "山口県周南市青山町1-18 ゆめタウン徳山店 1F",
+      "telephone": "0834-27-4306",
+      "point": [
+        131.8162561,
+        34.0426058
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン徳山店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.049103368459!2d131.8135376!3d34.0426115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6e14b82d361%3A0x5c8de54ee49c4e9e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-W-s-WxseW6lw!5e0!3m2!1sja!2sjp!4v1780918396486!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約65m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        131.8155655,
+        34.0427361
+      ],
+      "shared_map_offset_m": 65,
+      "detail_place": {
+        "name": "〒745-0842 山口県周南市青山町１−１８ どんどん ゆめタウン徳山店",
+        "coordinates": [
+          131.8162561,
+          34.0426058
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1424",
+      "city": "周南市",
+      "id": "official-dondon-1424",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1425",
+      "name": "どんどん 徳山西店",
+      "address": "山口県周南市西千代田町1-16",
+      "telephone": "0834-63-5100",
+      "point": [
+        131.7862962,
+        34.0694729
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-徳山西店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.001613342832!2d131.78629619999998!3d34.0694729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ba104a1d7b%3A0xd8450026fab41e84!2z44Gp44KT44Gp44KTIOW-s-Wxseilv-W6lw!5e0!3m2!1sja!2sjp!4v1780918523686!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.7862962,
+        34.0694729
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒746-0002 山口県周南市西千代田町１−１６ どんどん 徳山西店",
+        "coordinates": [
+          131.7862962,
+          34.0694729
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1425",
+      "city": "周南市",
+      "id": "official-dondon-1425",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1426",
+      "name": "どんどん ゆめタウン新南陽店",
+      "address": "山口県周南市清水2-2-1　ゆめタウン新南陽店 ３F",
+      "telephone": "0834-62-7540",
+      "point": [
+        131.7723541,
+        34.0709228
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン新南陽店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/page/2/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3304.9486412383185!2d131.7702723!3d34.0708308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ce6f563329%3A0xe954bfcbb01f11ee!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-aWsOWNl-mZveW6lw!5e0!3m2!1sja!2sjp!4v1780918590668!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.7723652,
+        34.0707677
+      ],
+      "shared_map_offset_m": 17,
+      "detail_place": {
+        "name": "〒746-0015 山口県周南市清水２丁目２−１ ゆめタウン新南陽 ３階 どんどん ゆめタウン新南陽店",
+        "coordinates": [
+          131.7723541,
+          34.0709228
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1426",
+      "city": "周南市",
+      "id": "official-dondon-1426",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1396",
+      "name": "どんどん 山口井筒屋店",
+      "address": "山口県山口市中市町3-3　山口井筒屋4F",
+      "telephone": "083-923-5540",
+      "point": [
+        131.4785877,
+        34.1778048
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-山口井筒屋店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3300.779160266548!2d131.4763231!3d34.1775635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b10c52d%3A0x9a8043d9852af537!2z44Gp44KT44Gp44KTIOWxseWPo-S6leetkuWxi-W6lw!5e0!3m2!1sja!2sjp!4v1780846767912!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.4786075,
+        34.177593
+      ],
+      "shared_map_offset_m": 24,
+      "detail_place": {
+        "name": "〒753-0086 山口県山口市中市町３−３ どんどん 山口井筒屋店",
+        "coordinates": [
+          131.4785877,
+          34.1778048
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1396",
+      "city": "山口市",
+      "id": "official-dondon-1396",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1395",
+      "name": "どんどん フジグラン山口店",
+      "address": "山口県山口市黒川3736　フジグラン山口店",
+      "telephone": "083-925-6011",
+      "point": [
+        131.435307,
+        34.137435
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フジグラン山口店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3302.354298602578!2d131.4337235!3d34.1372767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449a7a28fe50f1%3A0xabaf896de7bc797a!2z44Gp44KT44Gp44KTIOODleOCuOOCsOODqeODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780846700325!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約101m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        131.4363725,
+        34.1376332
+      ],
+      "shared_map_offset_m": 101,
+      "detail_place": {
+        "name": "〒753-0851 山口県山口市黒川３７３６ フジグラン山口 どんどん フジグラン山口店",
+        "coordinates": [
+          131.435307,
+          34.137435
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1395",
+      "city": "山口市",
+      "id": "official-dondon-1395",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1394",
+      "name": "どんどん 大内御堀店",
+      "address": "山口県山口市大内中央一丁目19番3号",
+      "telephone": "083-941-1874",
+      "point": [
+        131.4970714,
+        34.1566051
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-大内御堀店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.5987981106455!2d131.49707139999998!3d34.1566051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c1457fcf4f%3A0x7b97b50f5f6fe033!2z44Gp44KT44Gp44KTIOWkp-WGheW-oeWggOW6lw!5e0!3m2!1sja!2sjp!4v1780846509969!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        131.4970714,
+        34.1566051
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒753-0214 山口県山口市大内御堀１９−１９−３ どんどん 大内御堀店",
+        "coordinates": [
+          131.4970714,
+          34.1566051
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1394",
+      "city": "山口市",
+      "id": "official-dondon-1394",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1422",
+      "name": "どんどん ゆめタウン山口店",
+      "address": "山口県山口市大内千坊六丁目9番1号　ゆめタウン山口店１F",
+      "telephone": "083-928-9618",
+      "point": [
+        131.4907942,
+        34.1604529
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン山口店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3301.4502992889165!2d131.4889414!3d34.1604031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c32be2d261%3A0x20b57833d447a380!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780918272583!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "公式共通地図と店別の店舗地点は約51m差。店別の店舗名付き地点を採用。"
+      ],
+      "shared_map_point": [
+        131.4913446,
+        34.1603847
+      ],
+      "shared_map_offset_m": 51,
+      "detail_place": {
+        "name": "〒753-0251 山口県山口市大内千坊６丁目９−１ どんどん ゆめタウン山口店",
+        "coordinates": [
+          131.4907942,
+          34.1604529
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1422",
+      "city": "山口市",
+      "id": "official-dondon-1422",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1392",
+      "name": "どんどん 小郡店",
+      "address": "山口県山口市小郡上郷1740番地の1",
+      "telephone": "083-972-7773",
+      "point": [
+        131.4151728,
+        34.129015
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-小郡店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.677113865352!2d131.4151728!3d34.129014999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449aee176c7e8b%3A0x6ead649aa078febd!2z44Gp44KT44Gp44KTIOWwj-mDoeW6lw!5e0!3m2!1sja!2sjp!4v1780846155836!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.4151728,
+        34.129015
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒754-0001 山口県山口市小郡上郷仁保津上１７４０−１ どんどん 小郡店",
+        "coordinates": [
+          131.4151728,
+          34.129015
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1392",
+      "city": "山口市",
+      "id": "osm-node-2253703800",
+      "action": "update",
+      "existing_offset_m": 3.5984969578664665,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1390",
+      "name": "どんどん 東岐波店",
+      "address": "山口県宇部市東岐波1395ｰ1 ハイパーモールメルクス宇部店",
+      "telephone": "0836-52-7772",
+      "point": [
+        131.3486975,
+        33.9975999
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-東岐波店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.802627899152!2d131.3468530861244!3d33.99760307192851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544815c0ab5187b%3A0x1b504af30af38d6a!2z44Gp44KT44Gp44KTIOadseWykOazouW6lw!5e0!3m2!1sja!2sjp!4v1782340284247!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        131.3486975,
+        33.9975999
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒755-0241 山口県宇部市東岐波1569−１ どんどん 東岐波店",
+        "coordinates": [
+          131.3486975,
+          33.9975999
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1390",
+      "city": "宇部市",
+      "id": "osm-node-13152129040",
+      "action": "update",
+      "existing_offset_m": 7.514973013007592,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1388",
+      "name": "どんどん ゆめタウン宇部店",
+      "address": "山口県宇部市妻崎開作411ゆめタウン宇部店 １F",
+      "telephone": "0836-44-5333",
+      "point": [
+        131.2062997,
+        33.98492239999999
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.299730426608!2d131.2040067!3d33.9848342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381674992644d%3A0xcb244362896c70a0!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-Wuh-mDqOW6lw!5e0!3m2!1sja!2sjp!4v1780834900256!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [
+        "店別地図の住所表記と公式掲載住所に地番・住居表示の差があります。公式住所を採用し、同名店舗の固有地図地点を照合。"
+      ],
+      "shared_map_point": [
+        131.2062371,
+        33.9847155
+      ],
+      "shared_map_offset_m": 24,
+      "detail_place": {
+        "name": "〒759-0213 山口県宇部市黒石北４丁目４−１ どんどん ゆめタウン宇部店",
+        "coordinates": [
+          131.2062997,
+          33.98492239999999
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1388",
+      "city": "宇部市",
+      "id": "official-dondon-1388",
+      "action": "addition",
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1391",
+      "name": "どんどん 宇部際波店",
+      "address": "山口県宇部市厚南中央1丁目7番54号",
+      "telephone": "0836-45-5300",
+      "point": [
+        131.2194975,
+        33.9949535
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店-2/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9057913893844!2d131.2194975!3d33.9949535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381752318309f%3A0x345f88f8897614eb!2z44Gp44KT44Gp44KTIOWuh-mDqOmam-azouW6lw!5e0!3m2!1sja!2sjp!4v1780846028846!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.2194975,
+        33.9949535
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒759-0212 山口県宇部市厚南中央１丁目７−５４ どんどん 宇部際波店",
+        "coordinates": [
+          131.2194975,
+          33.9949535
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1391",
+      "city": "宇部市",
+      "id": "osm-way-1121040365",
+      "action": "update",
+      "existing_offset_m": 12.33134316473891,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "1387",
+      "name": "どんどん フレスポ宇部東店",
+      "address": "山口県宇部市東梶返3-17-18",
+      "telephone": "0836-37-2627",
+      "point": [
+        131.2646602,
+        33.9484489
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フレスポ宇部東店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.7153383565555!2d131.26466019999998!3d33.948448899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380b7205b5ae3%3A0x77f13f9505020784!2z44Gp44KT44Gp44KTIOODleODrOOCueODneWuh-mDqOadseW6lw!5e0!3m2!1sja!2sjp!4v1780833516101!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.2646602,
+        33.9484489
+      ],
+      "shared_map_offset_m": 0,
+      "detail_place": {
+        "name": "〒755-0039 山口県宇部市東梶返３丁目１７−１８ フレスポ 宇部東 どんどん フレスポ宇部東店",
+        "coordinates": [
+          131.2646602,
+          33.9484489
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-1387",
+      "city": "宇部市",
+      "id": "osm-way-548874084",
+      "action": "update",
+      "existing_offset_m": 4.52341928653478,
+      "category": "restaurant"
+    },
+    {
+      "operator": "dondon",
+      "code": "787",
+      "name": "どんどん 土原（ひじわら）店",
+      "address": "山口県萩市土原377",
+      "telephone": "0838-22-7537",
+      "point": [
+        131.4063228,
+        34.4158357
+      ],
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん土原店/",
+      "extra_urls": [
+        "https://www.s-dondon.co.jp/shoplist/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.4298220600745!2d131.4063228!3d34.415835699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af819959241f%3A0xa68a9c35333adcfe!2z44Gp44KT44Gp44KT5Zyf5Y6f5bqX!5e0!3m2!1sja!2sjp!4v1780829830972!5m2!1sja!2sjp"
+      ],
+      "location": "公式店別ページの名称・住所・電話と、同ページ埋込地図の同名CID付き店舗地点を照合。共通MyMapsとの点の差を記録し店別の店舗名付き地点を優先。",
+      "limits": [],
+      "shared_map_point": [
+        131.4063262,
+        34.4158204
+      ],
+      "shared_map_offset_m": 2,
+      "detail_place": {
+        "name": "〒758-0025 山口県萩市土原３７７ どんどん土原店",
+        "coordinates": [
+          131.4063228,
+          34.4158357
+        ],
+        "method": "named_embed_place_record"
+      },
+      "suggested_id": "official-dondon-787",
+      "city": "萩市",
+      "id": "osm-node-5787099553",
+      "action": "update",
+      "existing_offset_m": 57.55677969042149,
+      "category": "restaurant"
+    }
+  ],
+  "excluded_or_unchanged": [
+    {
+      "name": "どんどん カジル岩国店",
+      "decision": "hold",
+      "reason": "店別地図は住所のみで店舗名なし。共通地図との約96m差の館内関係を未確定。",
+      "point": [
+        132.2135003,
+        34.1700254
+      ],
+      "detail_place": {
+        "name": "〒740-0021 山口県岩国市室の木町１丁目２−３８",
+        "coordinates": [
+          132.2145009,
+          34.1702517
+        ],
+        "method": "named_embed_place_record"
+      },
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-カジル岩国店/"
+    },
+    {
+      "name": "CK（セントラル・キッチン）",
+      "decision": "out_of_scope",
+      "reason": "セントラルキッチン。一般の来店飲食施設と確認できず対象外。"
+    },
+    {
+      "name": "どんどん 湯田店",
+      "id": "official-dondon-yuda",
+      "decision": "verified_no_change",
+      "reason": "既存の同名・同住所・店別地点を保持。",
+      "shared_map_point": [
+        131.4493893,
+        34.1670697
+      ],
+      "current_point": [
+        131.4493893,
+        34.1670697
+      ],
+      "offset_m": 0
+    },
+    {
+      "name": "どんどん ハローズ宇部店",
+      "id": "official-dondon-halows-ube",
+      "decision": "verified_no_change",
+      "reason": "店別の確認済み地点を保持。共通公開地図はスーパー本体と同点で約110m差があり採用しない。",
+      "shared_map_point": [
+        131.2126966,
+        33.9755735
+      ],
+      "current_point": [
+        131.2125016,
+        33.9765512
+      ],
+      "offset_m": 110.31617802529809
+    }
+  ],
+  "nearby": [
+    {
+      "name": "ディオ防府南店",
+      "point": [
+        131.5741754,
+        34.02622804
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4886834035",
+          "name": "ディオ",
+          "distance_m": 5
+        },
+        {
+          "id": "osm-node-4886834036",
+          "name": "トライアル",
+          "distance_m": 81
+        }
+      ]
+    },
+    {
+      "name": "ディオ防府東店",
+      "point": [
+        131.594528,
+        34.05546833
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-356928497",
+          "name": "ディオ",
+          "distance_m": 33
+        },
+        {
+          "id": "osm-node-4823256034",
+          "name": "のん太鮨",
+          "distance_m": 76
+        },
+        {
+          "id": "osm-node-4825439982",
+          "name": "牟礼歯科",
+          "distance_m": 40
+        }
+      ]
+    },
+    {
+      "name": "ラ・ムー東勝谷店",
+      "point": [
+        130.973282,
+        34.002936
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-999332203",
+          "name": "東勝谷公園",
+          "distance_m": 75
+        },
+        {
+          "id": "civic-care-3570106140-c3ed715571",
+          "name": "訪問介護 ハビリス",
+          "distance_m": 106
+        },
+        {
+          "id": "civic-care-3570106108-49a88dbd46",
+          "name": "居宅介護支援 ハビリス",
+          "distance_m": 106
+        }
+      ]
+    },
+    {
+      "name": "ラ・ムー周南久米店",
+      "point": [
+        131.844192,
+        34.035271
+      ],
+      "nearby": []
+    },
+    {
+      "name": "ラ・ムー宇部東須恵店",
+      "point": [
+        131.187755,
+        33.975819
+      ],
+      "nearby": []
+    },
+    {
+      "name": "ラ・ムー山の田店",
+      "point": [
+        130.932066,
+        33.990827
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-629891665",
+          "name": "稗田県営住宅第2集会所",
+          "distance_m": 99
+        }
+      ]
+    },
+    {
+      "name": "どんどん おのだサンパーク店",
+      "point": [
+        131.1705251,
+        33.984765
+      ],
+      "nearby": [
+        {
+          "id": "sunpark",
+          "name": "おのだサンパーク",
+          "distance_m": 44
+        }
+      ]
+    },
+    {
+      "name": "どんどん アルク小野田店",
+      "point": [
+        131.1767927,
+        34.0049624
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-332618202",
+          "name": "アルク",
+          "distance_m": 91
+        },
+        {
+          "id": "official-daiso-007519",
+          "name": "DAISO アルク小野田店",
+          "distance_m": 89
+        }
+      ]
+    },
+    {
+      "name": "どんどん 南岩国店",
+      "point": [
+        132.2002634,
+        34.1312238
+      ],
+      "nearby": [
+        {
+          "id": "official-tsuruha-3835",
+          "name": "ウォンツ フジ南岩国店",
+          "distance_m": 94
+        },
+        {
+          "id": "official-daiso-007407",
+          "name": "DAISO フジ南岩国店",
+          "distance_m": 99
+        }
+      ]
+    },
+    {
+      "name": "どんどん ゆめタウン柳井店",
+      "point": [
+        132.1054139,
+        33.9616499
+      ],
+      "nearby": [
+        {
+          "id": "official-daiso-002674",
+          "name": "DAISO ゆめタウン柳井店",
+          "distance_m": 62
+        }
+      ]
+    },
+    {
+      "name": "どんどん 長門南口店",
+      "point": [
+        131.18838,
+        34.37467
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-550383098",
+          "name": "どんどん",
+          "distance_m": 3
+        }
+      ]
+    },
+    {
+      "name": "どんどん サンリブ下松店",
+      "point": [
+        131.8651571,
+        34.0307097
+      ],
+      "nearby": [
+        {
+          "id": "sunlive-kudamatsu",
+          "name": "サンリブ下松",
+          "distance_m": 34
+        },
+        {
+          "id": "osm-way-305489114",
+          "name": "ABC Mart",
+          "distance_m": 36
+        },
+        {
+          "id": "official-ryoyupan-kudamatsu",
+          "name": "プルネール下松店",
+          "distance_m": 43
+        }
+      ]
+    },
+    {
+      "name": "どんどん 光店",
+      "point": [
+        131.9224693,
+        33.9724751
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4326408489",
+          "name": "マックスバリュ",
+          "distance_m": 47
+        },
+        {
+          "id": "osm-node-4326413589",
+          "name": "クスリ岩崎チェーン",
+          "distance_m": 80
+        },
+        {
+          "id": "osm-node-4326414389",
+          "name": "ファミリーマート",
+          "distance_m": 99
+        },
+        {
+          "id": "osm-node-4326413489",
+          "name": "西京銀行",
+          "distance_m": 27
+        },
+        {
+          "id": "osm-node-4326371797",
+          "name": "儀本歯科",
+          "distance_m": 85
+        },
+        {
+          "id": "osm-node-4326392991",
+          "name": "ジョイフル",
+          "distance_m": 50
+        }
+      ]
+    },
+    {
+      "name": "どんどん 唐樋(からひ)店",
+      "point": [
+        131.4031569,
+        34.4097099
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-6832096567",
+          "name": "ローソン",
+          "distance_m": 100
+        },
+        {
+          "id": "osm-way-1366711182",
+          "name": "SunLive",
+          "distance_m": 78
+        },
+        {
+          "id": "osm-node-1631278804",
+          "name": "萩市在宅介護支援センターパール",
+          "distance_m": 45
+        },
+        {
+          "id": "civic-care-3570400873-523906b8d5",
+          "name": "かしまリハビリステーション",
+          "distance_m": 86
+        }
+      ]
+    },
+    {
+      "name": "dondon labo （どんどんラボ）アトラス萩店",
+      "point": [
+        131.404763,
+        34.4066281
+      ],
+      "nearby": []
+    },
+    {
+      "name": "どんどん ゆめタウン長府店",
+      "point": [
+        131.013883,
+        34.0295174
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4101767793",
+          "name": "どんどん",
+          "distance_m": 5
+        },
+        {
+          "id": "osm-node-4101791591",
+          "name": "長崎ちゃんめん",
+          "distance_m": 29
+        }
+      ]
+    },
+    {
+      "name": "どんどん コスパ店",
+      "point": [
+        130.9503459,
+        34.0153055
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4632065650",
+          "name": "モスバーガー",
+          "distance_m": 57
+        },
+        {
+          "id": "osm-node-4632065659",
+          "name": "CoCo壱番屋",
+          "distance_m": 39
+        },
+        {
+          "id": "osm-node-4632065660",
+          "name": "餃子の王将",
+          "distance_m": 22
+        },
+        {
+          "id": "osm-way-389157196",
+          "name": "石原有富公園",
+          "distance_m": 74
+        },
+        {
+          "id": "official-lovewins-shinshimonoseki",
+          "name": "ラビンズゴルフ コスパ新下関",
+          "distance_m": 79
+        },
+        {
+          "id": "official-daiso-002650",
+          "name": "DAISO コスパ新下関店",
+          "distance_m": 97
+        },
+        {
+          "id": "official-workman-418447",
+          "name": "Workman Colors コスパ新下関店",
+          "distance_m": 56
+        }
+      ]
+    },
+    {
+      "name": "どんどん 武久店",
+      "point": [
+        130.919691,
+        33.975201
+      ],
+      "nearby": []
+    },
+    {
+      "name": "どんどん 三田尻店",
+      "point": [
+        131.570987,
+        34.035987
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-303472852",
+          "name": "アルク",
+          "distance_m": 40
+        },
+        {
+          "id": "osm-way-503938284",
+          "name": "ほっともっと",
+          "distance_m": 107
+        },
+        {
+          "id": "osm-way-503938285",
+          "name": "すき家",
+          "distance_m": 109
+        }
+      ]
+    },
+    {
+      "name": "どんどん ゆめタウン防府店",
+      "point": [
+        131.568531,
+        34.058367
+      ],
+      "nearby": [
+        {
+          "id": "hohu",
+          "name": "ゆめタウン防府",
+          "distance_m": 1
+        },
+        {
+          "id": "osm-node-4861933257",
+          "name": "甲嶋内科",
+          "distance_m": 94
+        },
+        {
+          "id": "civic-care-3570601223-82ea92599e",
+          "name": "サンキ・ウエルビィ　デイサービスセンター防府",
+          "distance_m": 96
+        },
+        {
+          "id": "official-daiso-008401",
+          "name": "DAISO ゆめタウン防府店",
+          "distance_m": 20
+        }
+      ]
+    },
+    {
+      "name": "どんどん 緑町店",
+      "point": [
+        131.5807279,
+        34.055804
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4825327464",
+          "name": "ファミリーマート",
+          "distance_m": 108
+        },
+        {
+          "id": "osm-node-3010302302",
+          "name": "松乃家",
+          "distance_m": 100
+        },
+        {
+          "id": "osm-node-4825327463",
+          "name": "どんどん",
+          "distance_m": 2
+        }
+      ]
+    },
+    {
+      "name": "どんどん ゆめタウン徳山店",
+      "point": [
+        131.8162561,
+        34.0426058
+      ],
+      "nearby": [
+        {
+          "id": "tokuyama",
+          "name": "ゆめタウン徳山",
+          "distance_m": 60
+        },
+        {
+          "id": "osm-node-3816821666",
+          "name": "中原医院",
+          "distance_m": 100
+        },
+        {
+          "id": "osm-way-312181482",
+          "name": "遠石緑地",
+          "distance_m": 38
+        },
+        {
+          "id": "official-chaerin-yumetown-tokuyama",
+          "name": "韓国料理チェリン ゆめタウン徳山店",
+          "distance_m": 65
+        },
+        {
+          "id": "official-daiso-002826",
+          "name": "DAISO ゆめタウン徳山店",
+          "distance_m": 77
+        }
+      ]
+    },
+    {
+      "name": "どんどん 徳山西店",
+      "point": [
+        131.7862962,
+        34.0694729
+      ],
+      "nearby": []
+    },
+    {
+      "name": "どんどん ゆめタウン新南陽店",
+      "point": [
+        131.7723541,
+        34.0709228
+      ],
+      "nearby": [
+        {
+          "id": "shinnanyo",
+          "name": "ゆめタウン新南陽",
+          "distance_m": 33
+        },
+        {
+          "id": "osm-way-385249453",
+          "name": "清水東公園",
+          "distance_m": 64
+        },
+        {
+          "id": "official-daiso-005307",
+          "name": "DAISO ゆめタウン新南陽店",
+          "distance_m": 45
+        }
+      ]
+    },
+    {
+      "name": "どんどん 山口井筒屋店",
+      "point": [
+        131.4785877,
+        34.1778048
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-561705134",
+          "name": "山口井筒屋",
+          "distance_m": 34
+        },
+        {
+          "id": "osm-node-1423655411",
+          "name": "山口中市郵便局",
+          "distance_m": 69
+        },
+        {
+          "id": "osm-way-561705117",
+          "name": "中市コミュニティホールNac",
+          "distance_m": 97
+        },
+        {
+          "id": "osm-way-561705132",
+          "name": "山口中市郵便局",
+          "distance_m": 69
+        },
+        {
+          "id": "official-lopia-yamaguchi-izutsuya",
+          "name": "ロピア 山口井筒屋店",
+          "distance_m": 31
+        }
+      ]
+    },
+    {
+      "name": "どんどん フジグラン山口店",
+      "point": [
+        131.435307,
+        34.137435
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-4098812296",
+          "name": "フジグラン山口",
+          "distance_m": 100
+        },
+        {
+          "id": "official-daiso-001839",
+          "name": "DAISO フジグラン山口店",
+          "distance_m": 78
+        }
+      ]
+    },
+    {
+      "name": "どんどん 大内御堀店",
+      "point": [
+        131.4970714,
+        34.1566051
+      ],
+      "nearby": []
+    },
+    {
+      "name": "どんどん ゆめタウン山口店",
+      "point": [
+        131.4907942,
+        34.1604529
+      ],
+      "nearby": [
+        {
+          "id": "yamaguchi",
+          "name": "ゆめタウン山口",
+          "distance_m": 82
+        },
+        {
+          "id": "official-daiso-008998",
+          "name": "DAISO ゆめタウン山口店",
+          "distance_m": 65
+        }
+      ]
+    },
+    {
+      "name": "どんどん 小郡店",
+      "point": [
+        131.4151728,
+        34.129015
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-2253703800",
+          "name": "手打ちうどん どんどん",
+          "distance_m": 4
+        }
+      ]
+    },
+    {
+      "name": "どんどん 東岐波店",
+      "point": [
+        131.3486975,
+        33.9975999
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-13152129040",
+          "name": "どんどん",
+          "distance_m": 8
+        },
+        {
+          "id": "osm-node-4182322141",
+          "name": "ガスト",
+          "distance_m": 102
+        }
+      ]
+    },
+    {
+      "name": "どんどん ゆめタウン宇部店",
+      "point": [
+        131.2062997,
+        33.98492239999999
+      ],
+      "nearby": [
+        {
+          "id": "official-kfc-5063",
+          "name": "ケンタッキーフライドチキン ゆめタウン宇部店",
+          "distance_m": 60
+        },
+        {
+          "id": "official-daiso-001563",
+          "name": "DAISO ゆめタウン宇部店",
+          "distance_m": 19
+        }
+      ]
+    },
+    {
+      "name": "どんどん 宇部際波店",
+      "point": [
+        131.2194975,
+        33.9949535
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-1121040361",
+          "name": "トライアル",
+          "distance_m": 82
+        },
+        {
+          "id": "osm-way-1121040363",
+          "name": "ウォンツ宇部厚南店",
+          "distance_m": 75
+        },
+        {
+          "id": "osm-node-10253619832",
+          "name": "丸亀製麺 宇部際波店",
+          "distance_m": 49
+        },
+        {
+          "id": "osm-way-1121040364",
+          "name": "丸亀製麺",
+          "distance_m": 32
+        },
+        {
+          "id": "osm-way-1121040365",
+          "name": "どんどん 宇部際波店",
+          "distance_m": 12
+        }
+      ]
+    },
+    {
+      "name": "どんどん フレスポ宇部東店",
+      "point": [
+        131.2646602,
+        33.9484489
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-351353313",
+          "name": "ユニクロ",
+          "distance_m": 69
+        },
+        {
+          "id": "osm-way-549154625",
+          "name": "かりん薬局",
+          "distance_m": 19
+        },
+        {
+          "id": "osm-way-549154626",
+          "name": "ふじもと内科胃腸科医院",
+          "distance_m": 43
+        },
+        {
+          "id": "osm-way-548874084",
+          "name": "どんどん",
+          "distance_m": 5
+        },
+        {
+          "id": "osm-way-548874085",
+          "name": "牛角",
+          "distance_m": 36
+        },
+        {
+          "id": "osm-way-549154584",
+          "name": "シュクルヴァン",
+          "distance_m": 65
+        }
+      ]
+    },
+    {
+      "name": "どんどん 土原（ひじわら）店",
+      "point": [
+        131.4063228,
+        34.4158357
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-5787099553",
+          "name": "DonDon",
+          "distance_m": 58
+        }
+      ]
+    }
+  ],
+  "case_findings": [
+    {
+      "case_id": "case:kaiten-527083:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-104503:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-104872:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-93372:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-93372:higashishoya-date",
+      "reason": "本文が言及する東勝谷店の5月下旬計画も列挙。現況確認済み、歴史的な実施日原本は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:kaiten-586462:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:ube-82015:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:ube-82198:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-85517:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-86920:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-98811:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:kaiten-613665:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shimonoseki-73376:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shimonoseki-52560:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shimonoseki-52560:predecessor-close",
+      "reason": "記事の旧すたみな太郎跡地。元地図に店舗名の対応IDなし。閉店実施と新旧敷地の一次履歴未取得。",
+      "impact": "historical_only"
+    },
+    {
+      "case_id": "case:shimonoseki-51839:opening-date",
+      "reason": "現行掲載は公式確認済み。記事の計画・予告・当日報告と、実施日を証明する運営元の事後一次履歴は分離。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-87623:renewal",
+      "reason": "現店舗は確認済み。過去の改装告知URLは404。期間の実施履歴は未取得。URL文字列の日付だけでは訂正しない。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:yamaguchi-30016:renewal",
+      "reason": "現店舗は確認済み。過去の改装告知URLは404。期間の実施履歴は未取得。URL文字列の日付だけでは訂正しない。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-114721:dondon-renewal",
+      "reason": "現店舗は照合済み。記事の改装・休業期間について旧公式告知URLは404、当時実施の一次履歴は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-114721:yamato-new",
+      "reason": "クロネコヤマト山口周南営業所：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:yamato-old-three",
+      "reason": "周南市内の旧3営業所（記事に個別名称なし）：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:izutsuya",
+      "reason": "山口井筒屋周南ショップ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:kaju",
+      "reason": "フルーツブティック・カージュ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:ajigen",
+      "reason": "台湾料理味源櫛ケ浜店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:old-seven",
+      "reason": "旧セブンイレブン跡：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:fino",
+      "reason": "FINO：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-114721:shizuku",
+      "reason": "夜喫茶雫：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:dondon-renewal",
+      "reason": "現店舗は照合済み。記事の改装・休業期間について旧公式告知URLは404、当時実施の一次履歴は未取得。",
+      "impact": "supplemental"
+    },
+    {
+      "case_id": "case:shunan-90075:okachan",
+      "reason": "岡ちゃん：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:minatoe",
+      "reason": "MINATOE198：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:774",
+      "reason": "774徳山店（併設boutiqueを含む）：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:nta",
+      "reason": "JTB総合提携店NTAトラベル周南支店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:grandchariot",
+      "reason": "グランシャリオ周南店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:nodoka",
+      "reason": "nodoka：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:dailycafe",
+      "reason": "デイリーカフェ：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:nanaseto",
+      "reason": "nanaseto：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:mori",
+      "reason": "ドラッグストアモリ遠石店：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    },
+    {
+      "case_id": "case:shunan-90075:san",
+      "reason": "MakeDining燦の日曜らーめん開始：複数店記事の別案件として列挙。今回の事業者一括照合範囲外のため、固有の公式証拠と既存ID・新旧地点照合は未完。",
+      "impact": "map_action"
+    }
+  ],
+  "article_keys": [
+    "kaiten-527083",
+    "shunan-104503",
+    "shunan-104872",
+    "shunan-93372",
+    "kaiten-586462",
+    "ube-82015",
+    "ube-82198",
+    "shunan-85517",
+    "shunan-86920",
+    "shunan-98811",
+    "kaiten-613665",
+    "shimonoseki-73376",
+    "shimonoseki-52560",
+    "shimonoseki-51839",
+    "yamaguchi-35245",
+    "shunan-114721",
+    "shunan-90075",
+    "shunan-87623",
+    "yamaguchi-30016"
+  ],
+  "sources": [
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-光店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/006d1a22b78e3bda22e0942d.json",
+      "hash": "2674c2ab58f191d0eed65101d736a056bc58b6d05e30376fb4cca0caed93692f"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン山口店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/01afb263d0c5a85f09dd7b0d.json",
+      "hash": "7e46f9a9a79ff1f0ed77fc9ba26a1c316f7219653a08bddca8c9f0b440d6642b"
+    },
+    {
+      "url": "https://www.dkt-s.com/area.html?pref=35&reg=3",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/02d0e9318a6aaf3604526037.json",
+      "hash": "753b99d6e29e14254f8c2e958b73758e862ca8741f3a82c71bf603ea04c97b18"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=2009",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/0ce1cf08e585660207ed63eb.json",
+      "hash": "606413e246c1859b9496f619c4385e21417c8da0465d494708f27dc9bab769af"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/2024/03/29/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E5%B0%8F%E9%83%A1%E5%BA%97%E3%80%804%E6%9C%8821%E6%97%A5%E6%97%A5%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3/",
+      "status": 404,
+      "error": "HTTP 404",
+      "path": "outputs/facility-dkt-20260926/receipts/130ab62671afd1b86fc17455.json",
+      "hash": "b08570c8af3c453b5555eeabbce3125d7e190138d11bccf72ecf07f950227db8"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d794.1038541361079!2d132.2140199!3d34.1702556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354535a17fd91f15%3A0x195a8f3d4c27bc08!2z44CSNzQwLTAwMjEg5bGx5Y-j55yM5bKp5Zu95biC5a6k44Gu5pyo55S677yR5LiB55uu77yS4oiS77yT77yY!5e1!3m2!1sja!2sjp!4v1780848771277!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/173dceb0ef9297f4e7300a79.json",
+      "hash": "187b1cd26b88e02bf055184984e645e8d6a425c80adb80630dab7ca37fa3e294"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.4298220600745!2d131.4063228!3d34.415835699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af819959241f%3A0xa68a9c35333adcfe!2z44Gp44KT44Gp44KT5Zyf5Y6f5bqX!5e0!3m2!1sja!2sjp!4v1780829830972!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/1847c268bc270b46900c0330.json",
+      "hash": "811499492ee2da5740d706e70e2dd0bede5c6c618a171b1d0bcb59e4d5b4676c"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-三田尻店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/1c9e1ab7a3393e37b118eed8.json",
+      "hash": "86d29454124cbe0b6f7977f4b9bb27cce9e7b01da68c1439083dbfb9a3560da6"
+    },
+    {
+      "url": "https://www.google.com/maps?q=山口県宇部市大字妻崎開作860番地の1%20どんどん%20ハローズ宇部店&#038;output=embed",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/1cf6a6dd2d4163a5d9ac3e71.json",
+      "hash": "a120c6ba9eeb50fed99e2fbc48f254d978f8a23d55b346eadfad7424682d14fb"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/2024/07/01/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E6%B9%AF%E7%94%B0%E5%BA%97%E3%81%8C7%E6%9C%8811%E6%97%A5%EF%BC%88%E6%9C%A8%EF%BC%89%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%97%E3%81%BE%E3%81%99%EF%BC%81/",
+      "status": 404,
+      "error": "HTTP 404",
+      "path": "outputs/facility-dkt-20260926/receipts/1d01a371442140736672823a.json",
+      "hash": "a8172d94e7361b0b393f8be9f4a3d6848a20849d2c729f93dfc2b8916e5f5c62"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3073213884836!2d131.570987!3d34.035987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35448d7d2bf7d631%3A0xb45e35612bf0a0b9!2z44Gp44KT44Gp44KTIOS4ieeUsOWwu-W6lw!5e0!3m2!1sja!2sjp!4v1780847881429!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/1d3c5b7955ded80ad5d42e20.json",
+      "hash": "90a43211156f5d687eff4e75bdee7f4adbaf8cc6eaa88bae24503b84d97fb1e1"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3309.2173570488812!2d132.10392!3d33.9612524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354517d9a5fb7879%3A0xe21ba5e6b7bbd12c!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-afs-S6leW6lw!5e0!3m2!1sja!2sjp!4v1780848876523!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/202d82bd187164772d8f39d4.json",
+      "hash": "284682782cd55524826da38fe739665fe055f9c4af8a26adff2dff688b75153c"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?pref=35",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/28c3d1248754a695aa5c5996.json",
+      "hash": "397f39e11611a15bba36853da4f603371c44df3258edbdad63755b4eaa5a718d"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン防府店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/28ee7cd8457b6e5627459f2d.json",
+      "hash": "352a253cdc769e371abf96964178942c6a59c57eb1bdbf844146056c9a8226b0"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.802627899152!2d131.3468530861244!3d33.99760307192851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544815c0ab5187b%3A0x1b504af30af38d6a!2z44Gp44KT44Gp44KTIOadseWykOazouW6lw!5e0!3m2!1sja!2sjp!4v1782340284247!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/2a73fb60ee91e96974acaf91.json",
+      "hash": "39a435874874cccd906c0ea2efacd74786d456ecdb1598e31f1c3aa58f58ec3a"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/dondon-labo-（どんどんラボ）アトラス萩店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/32c4d20a952b48fe1c1e54e5.json",
+      "hash": "beabadd1d824a2d09b113fa77048b0469cab574a5cedb7ea1d8479654a9305fa"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.0491563445225!2d131.18838!3d34.37467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35435dcdd62cbf7d%3A0x35af0fd507deaf6c!2z44Gp44KT44Gp44KTIOmVt-mWgOWNl-WPo-W6lw!5e0!3m2!1sja!2sjp!4v1780291395103!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/3a4303f76f3b6b68f6b6bec1.json",
+      "hash": "3fc08d7e7791ee05c148a7193ba43c442af6e17478c5448b78a56e350032eac0"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん土原店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/3d1da2280a75459688f20691.json",
+      "hash": "b5db4c701802f4e2dbe14df3aa77c4bd0508451cbe56819c275664fff8954c7b"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.5906421361306!2d132.1976884753114!3d34.13122821355624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545370036ac05cd%3A0xda21ddb6e33a6580!2z44Gp44KT44Gp44KTIOWNl-WyqeWbveW6lw!5e0!3m2!1sja!2sjp!4v1782606697539!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/3f1410677514f0cba7c2d403.json",
+      "hash": "ec5efefccfe2b9b83bfb3e89d4cc37d48c3ee8ae05782de582b2f4f033ea5bd6"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/page/3/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/412b4266a66bf3c9fd2c4834.json",
+      "hash": "81841df9629942ad05159fe6ed7378e633b1a3eeb13e63d3efc76140f33790a7"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6725174421467!2d130.9195981!3d33.9752558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd023f9edcd7%3A0xdc34046866974d4b!2z44Gp44KT44Gp44KTIOatpuS5heW6lw!5e0!3m2!1sja!2sjp!4v1780832914787!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/4295fefbe77929665d569583.json",
+      "hash": "dc34542bed948824895ef0e9ee7006f0db1d13f6cc14fbba209f8ced11376dd4"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フレスポ宇部東店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/4429b2db9acde2d479a4752d.json",
+      "hash": "99c401018d0aecbbfe9ceda24fcbece3dd729b05a80329de0f217910e2f099a5"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.7153383565555!2d131.26466019999998!3d33.948448899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380b7205b5ae3%3A0x77f13f9505020784!2z44Gp44KT44Gp44KTIOODleODrOOCueODneWuh-mDqOadseW6lw!5e0!3m2!1sja!2sjp!4v1780833516101!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/46fd1bbdc67f7559bf51b872.json",
+      "hash": "b3af16e5d1608b40efb6ed1327ed09329bd146280baaea2bdcefabfe1276f758"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン長府店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/492539159cfc379628a9011e.json",
+      "hash": "70f141cb69171c56fa2fae11a42872b55a0abf517a8ec76633b9a6876a1e5cbf"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9057913893844!2d131.2194975!3d33.9949535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381752318309f%3A0x345f88f8897614eb!2z44Gp44KT44Gp44KTIOWuh-mDqOmam-azouW6lw!5e0!3m2!1sja!2sjp!4v1780846028846!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/4a00e1bca1b0d4bf7d9f250a.json",
+      "hash": "e1d3c1394ad7951fc64114fb30eb44096e74b042ec0ce8b87fbcba0737474c44"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-コスパ店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/4f0acac7022db159968554a7.json",
+      "hash": "7281a36f243501cb1da9d326c2fa3b24e0e74d08e5beb0f2827dcc2b0f466372"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/2024/01/15/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E5%85%89%E5%BA%97%E3%80%802%E6%9C%8810%E6%97%A5%E5%9C%9F%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%AE/",
+      "status": 404,
+      "error": "HTTP 404",
+      "path": "outputs/facility-dkt-20260926/receipts/50c1f814de5ec22c0e649d19.json",
+      "hash": "d9c9c2b81e45df3f48517361f394baba6dd7ea08db6c108aec2d7baabaaffa91"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/page/4/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/5374476e0fce4827e77405ca.json",
+      "hash": "41c89476b7125c7ad2802bfa498d9a6a9de989773419e51b4220e47cdbc64466"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/page/2/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/577c5ea06aee585e9629edc9.json",
+      "hash": "cb4d214e1c24cd14bfd1fef9afbe313de22fc1ddff71f31e5f75d3ca5227772c"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3304.9486412383185!2d131.7702723!3d34.0708308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ce6f563329%3A0xe954bfcbb01f11ee!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-aWsOWNl-mZveW6lw!5e0!3m2!1sja!2sjp!4v1780918590668!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/5916da3ac4792ac34738b521.json",
+      "hash": "df6ac45707c920489ff811fc023e0ac0b5f8c31eea17fe7032061bf08c72bd04"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-長門南口店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/5957eee8bdac68fffc5c1da1.json",
+      "hash": "30377a9d5a7a899e1b326daf70d5b2ad129f36e20d8e415dd84ba646611d1209"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-カジル岩国店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/599a9c93a4bc8d73ce112682.json",
+      "hash": "ed7719e1f50a7ac404071162f3b4c1eaba35cf7e31a6e4839b3c2143e3fb2802"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-武久店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/616f52a6e81797a5f6c9d703.json",
+      "hash": "1ca44281439e3bdb6f46c8ce21f3db1bd8d344c12567493f40b9a7e937949ddd"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.433099666781!2d131.5663653!3d34.0584103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492f326885a87%3A0x1934fb6276c82e93!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1780847704673!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/61f8d18c8e780d1b2d7d243c.json",
+      "hash": "81da94c6bb313bbee8fa2a71092b6301d16f0e4d91523af746c64c25f1f7dc60"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-小郡店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/64468545090f94b2200c4777.json",
+      "hash": "5490616e9da3ed1e68846f1885dde5407ab4957f81b45e21f5f975cd7847b119"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン徳山店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/666805890102debe4a2ded40.json",
+      "hash": "ecdb11e8eb4379c829538aa6c2ed2603df31d8d352fc62c090819ea2ec097745"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/66a5ce2017dd117cb89e4ac2.json",
+      "hash": "cdc771384bf13048878ec6d2d14cf395cedd67c8cefa1ac8dc439b0f7f47834e"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.001613342832!2d131.78629619999998!3d34.0694729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7ba104a1d7b%3A0xd8450026fab41e84!2z44Gp44KT44Gp44KTIOW-s-Wxseilv-W6lw!5e0!3m2!1sja!2sjp!4v1780918523686!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/6737936e22d4c1d29d48a16f.json",
+      "hash": "6c3cf6fbd12d8068e87a12a35bf51a0c9d067f7e93f37f5789d84648d3fb8c3a"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13167.16867509803!2d131.3882835078125!3d34.4066281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af060fac8b79%3A0x76d47e3a268e9f69!2zZG9uZG9uIGxhYm8o44Gp44KT44Gp44KT44Op44OcKeOCouODiOODqeOCueiQqeW6lw!5e0!3m2!1sja!2sjp!4v1782606448361!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/6760bbb53a12c5d364d1eb5a.json",
+      "hash": "47c3146e4e0205875eae9207a6d0fa95d37be7ec692d75cafd509513b6dec5f1"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=2038",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/6b3120637e3b7ca06ad12cfc.json",
+      "hash": "41f7c137e7b12eefc3a8c65dd3768f94b04e3cfb2455f99d0578e81997962187"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.677113865352!2d131.4151728!3d34.129014999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449aee176c7e8b%3A0x6ead649aa078febd!2z44Gp44KT44Gp44KTIOWwj-mDoeW6lw!5e0!3m2!1sja!2sjp!4v1780846155836!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/6c2316258561023ad31c3c03.json",
+      "hash": "92e1f1517778b35bc8d886152802c98e4ff1f4225eef4867295ed16e8c677570"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/70d6b64bc9e198c5e89c5720.json",
+      "hash": "3f4716ee89aada79c333d1d0953536a0cb1a1be30c9f7895fd8e63268b72bf0d"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店-2/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/77ed9f968b7e737b877dd5fd.json",
+      "hash": "bdfd9879261e99c578bbb6ab18e91bf1e3a05a454150154bd7e4dd71a784aee8"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.3022518997104!2d131.16794481098614!3d33.98476942117877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543838f43293419%3A0x314f33101f0e012c!2z44Gp44KT44Gp44KTIOOBiuOBruOBoOOCteODs-ODkeODvOOCr-W6lw!5e0!3m2!1sja!2sjp!4v1780833184824!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/7a7c35fd95abfcd64bb272ab.json",
+      "hash": "150a09060c47493003924c57e456776b8c00d08e85a75c6936738e456c4cf677"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.299730426608!2d131.2040067!3d33.9848342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354381674992644d%3A0xcb244362896c70a0!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-Wuh-mDqOW6lw!5e0!3m2!1sja!2sjp!4v1780834900256!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/802e375892a9602dc7bd5e56.json",
+      "hash": "5fd31ffdcad68632e754dbac88d6461687a5538ce973e84b84c0965d1b4e1aa1"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.113186278304!2d130.9503459!3d34.0153055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a299b25e1d3b%3A0x3fee8b169809f2db!2z44Gp44KT44Gp44KTIOOCs-OCueODkeW6lw!5e0!3m2!1sja!2sjp!4v1780832815389!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/837fa3726a681c2846752451.json",
+      "hash": "7607ebc31aa300f85484ad345570b61d1aed59d7742540792830042f0c859463"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン新南陽店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/874272d25be8c57c74527d07.json",
+      "hash": "3b5b7e4ed26c0b62093a7c0a0f29b2c87fec77237dbe5a6f371f9fe8f81a4f20"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-宇部際波店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/87a5367a1a567a46099e95b0.json",
+      "hash": "0932c6f81667a5e5534ce9e8195fdc4622dea4c605b23b97b16bdb1e072ac2d6"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3300.779160266548!2d131.4763231!3d34.1775635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b10c52d%3A0x9a8043d9852af537!2z44Gp44KT44Gp44KTIOWxseWPo-S6leetkuWxi-W6lw!5e0!3m2!1sja!2sjp!4v1780846767912!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/8a37c06339d7b8ba18f90c3d.json",
+      "hash": "37a2f16a1e9d610790831cdbac50c627ea008394aad24cdfb824d9c755019a0a"
+    },
+    {
+      "url": "https://www.dkt-s.com/common/js/store_area.js?v=1783564647",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/8beb2dc055ad7d217e3aeb11.json",
+      "hash": "b0e6451241e4e592f925cbb033a32594a02842284dbacc01723900669ace71df"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-フジグラン山口店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/8d8009290d321f88e75a7cb1.json",
+      "hash": "3baf155d80657e4e2303f85b3535f73eeac1b7aca602d1533bd4f5d8503e0c5f"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.5192730878475!2d131.8633533!3d34.0305486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3e4547bab%3A0x9599faafc07f89d2!2z44Gp44KT44Gp44KTIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1780849802860!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/9173bebd5f5a2b92772986e7.json",
+      "hash": "c61dbf90c1057fe1aa8594654c07900633b634b4a95c762e0aac9f46f46324fc"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.5029982538217!2d131.1741847!3d34.0052975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354383b75bb6dab9%3A0x654a4f55c92610e6!2z44Gp44KT44Gp44KTIOOCouODq-OCr-Wwj-mHjueUsOW6lw!5e0!3m2!1sja!2sjp!4v1780833294746!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/9294bafdb403f298a3858304.json",
+      "hash": "26595ff0bbd31bd269e7572ed158384b408d776d2abd71f6750904fede774c11"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/2025/06/03/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93-%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E6%96%B0%E5%8D%97%E9%99%BD%E5%BA%97-6%E6%9C%885%E6%97%A5%E6%9C%A8%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2/",
+      "status": 404,
+      "error": "HTTP 404",
+      "path": "outputs/facility-dkt-20260926/receipts/97c54789b0a602a44f6fea2f.json",
+      "hash": "15e3bc2b2cd4240d102fa5f5225e0cc68c2131fe48d73a30c24cc3690dad380d"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=28",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/9931e77d8d5472c353431cb7.json",
+      "hash": "a4ae769987eca34a2e989e3c1b51841c6fb76708397076eb2e42d9191672db41"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん　ゆめタウン山口店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/9cfe41bb99792ff1f75faff9.json",
+      "hash": "844223ec5e45bb474ae4221dbf88796be7813ea660be67664fb3fe1bdaf9895f"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-サンリブ下松店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/a7c7212ce4740694684dc5e9.json",
+      "hash": "e51d32219be9e3d752422d074c16e6e79501a8ad4f5f75a694cd2ece83cecf28"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-ゆめタウン柳井店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/abcf8045bd8915fd62f2cae3.json",
+      "hash": "d36f80da84801333ca903c0bae08d34f0991417337e80301a6548b335f92e35b"
+    },
+    {
+      "url": "https://www.google.com/maps?q=山口県防府市緑町2-6-14%20どんどん%20緑町店&#038;output=embed",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/af01a879fba9faa8637745d4.json",
+      "hash": "e14901e87fc8eb8b9a5e2040ba9df0cd9ce1ffc2f5b68b062bf0404142aa1d7a"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5592866601432!2d131.0113080753071!3d34.02952181893038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543993bfc9d88c5%3A0xc46fad3790f6234e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-mVt-W6nOW6lw!5e0!3m2!1sja!2sjp!4v1782606538798!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/b14d8279291a5d1adb62ecb2.json",
+      "hash": "9534d94ce73faeb758d10489bdaf851dea3e63bfbe5e56eb85f15ea415dcb592"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.049103368459!2d131.8135376!3d34.0426115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6e14b82d361%3A0x5c8de54ee49c4e9e!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-W-s-WxseW6lw!5e0!3m2!1sja!2sjp!4v1780918396486!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/b67ec9f76bb737506cefbd58.json",
+      "hash": "651909bea2b42420299f2e7a87376ee4c2d84800a735f029f9e02f950d98de7a"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3302.354298602578!2d131.4337235!3d34.1372767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449a7a28fe50f1%3A0xabaf896de7bc797a!2z44Gp44KT44Gp44KTIOODleOCuOOCsOODqeODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780846700325!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/bb0d79d27d08b9fc32c5f33e.json",
+      "hash": "e4c239fb9081f37dccfc64b24222fb880400b388a4f7c6cc0e52303d3261dc5c"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-唐樋からひ店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/c38787c1279cceeebdef1029.json",
+      "hash": "014892d4015df78ac2b3d1602286b7ac9bc022ec0e38d5a49aeb4a4ba4516ca8"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=2045",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/c45a43dce8462272a03b1dd0.json",
+      "hash": "d13e2f4475565fcceec632da5bb90399a9e9b0ba56903b4755bfac634e61ad2f"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-大内御堀店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/c8749e3ba63d5dbeafa078ec.json",
+      "hash": "e359d72b3a3f1e0581c088ff6f0a781b6c5b6a2d2e99fe7b8d33f9969030b35d"
+    },
+    {
+      "url": "https://www.google.com/maps/d/u/3/embed?mid=17Q7oCh79NSn3rGmzcn450VisErRBukM&ll=34.185956,131.470649&z=9&ehbc=2E312F&noprof=1",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/c8c194c32901d218dac0fa9b.json",
+      "hash": "080d84e94d80cf6c0a955b1b72a715007ae0f47312f73d13e4cf26ca7d44322a"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-徳山西店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/cb0cb33015da2a0e9f3fb23d.json",
+      "hash": "0840b022e84c4f5d0ff5450a1cacbbfa88ed4418d06a8cef1511fd29ca93169b"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-山口井筒屋店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/cbf781ed6f850e72e9a77c48.json",
+      "hash": "631fabcade12b19e67f4640cc5372af84cafef804d570ae73a555d5632f99707"
+    },
+    {
+      "url": "https://www.dkt-s.com/map.html?id=2012",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/d06bc6df9642d73f7af9009c.json",
+      "hash": "36483e61a20981ae70d1088e8a556f856d6e490c356965128bda83c162124bda"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-おのだサンパーク店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/d220a8f1754fb26eab14aa4b.json",
+      "hash": "0aa392cea85d1eb264f3f106b071930c93bf7e69c5f962e413ea338591a63631"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=27",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/d2521b154208d6b4e7ca1eed.json",
+      "hash": "ed45cb8247458a9663b3db9d118b3ebc6b41ed83d50e4d2fafaedeaa1854b284"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-東岐波店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/e103ab833033679a9da70971.json",
+      "hash": "e2f7df623a14f2265b8575e0228fd831a27673538b4d287ce259a085274496f6"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-アルク小野田店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/e2812ca36196857131b05185.json",
+      "hash": "5038c34c6d3d740ba50bb46043c87aa43aa228be391644837d2e34f0714e3002"
+    },
+    {
+      "url": "https://www.dkt-s.com/search.php?id=2012",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/e47b90ca0047f2ee6c595079.json",
+      "hash": "fe5bf6988b40934f6ead215042afcefd1d7587eb5ed6c339b9a7907c39bab6aa"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどん-緑町店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f070a4eba643d45969999252.json",
+      "hash": "3dbe2e17d8d260abe0d14ef1175a7f62024c8801d05ee180ee2352a3a09833ca"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.5987981106455!2d131.49707139999998!3d34.1566051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c1457fcf4f%3A0x7b97b50f5f6fe033!2z44Gp44KT44Gp44KTIOWkp-WGheW-oeWggOW6lw!5e0!3m2!1sja!2sjp!4v1780846509969!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f0d0f16e5bafd39e64bca221.json",
+      "hash": "ac9f8c4c7c1853df0312e9d3c266f1931f6ceafd116a82dee515a80b8537b93e"
+    },
+    {
+      "url": "https://www.dkt-s.com/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f3c0e0877137e308e81dff8b.json",
+      "hash": "03fae463bb9568e9c407b40216714f60c7f1bb34d7c79a02c16b620f4c0e320a"
+    },
+    {
+      "url": "https://www.s-dondon.co.jp/shoplist/どんどんハローズ宇部店/",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f3d25e2ac3d117f8421b5053.json",
+      "hash": "017c6e16c899a300ae90d731e028c70333eb500088a81a953255b158ddceebbd"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3291.6694795641524!2d131.4009772!3d34.409746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544af82e5de3653%3A0x3b655f97c71b78df!2z44Gp44KT44Gp44KTIOWUkOaoi-W6lw!5e0!3m2!1sja!2sjp!4v1780291285673!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f61a4d90233a75c3b8b4a5ec.json",
+      "hash": "5724235566f1ff474188d7a5dc812ffd3c42d5eb253ff6e51bd991a6e8ee80b9"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7807237157917!2d131.9224693!3d33.9724751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451e03b1836fd9%3A0xb9f2a8aa04fc0d7b!2z44Gp44KT44Gp44KTIOWFieW6lw!5e0!3m2!1sja!2sjp!4v1780849296758!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/f9ce9a87c85de692296f43b1.json",
+      "hash": "fa5ace34922fe7c6a3d2565a5150e08dfaba97c345970b11015b045fb28e7e36"
+    },
+    {
+      "url": "https://www.dkt-s.com/common/js/store_detail.js?v=1787618660",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/fe36ec0b2877644367e80166.json",
+      "hash": "3b9d48a01b36c1a8e44c45547fb397bfd5844c0d1ec2706ef456e19f67830b3f"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3301.4502992889165!2d131.4889414!3d34.1604031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354496c32be2d261%3A0x20b57833d447a380!2z44Gp44KT44Gp44KTIOOChuOCgeOCv-OCpuODs-WxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1780918272583!5m2!1sja!2sjp",
+      "status": 200,
+      "error": null,
+      "path": "outputs/facility-dkt-20260926/receipts/ffd41e933029745d8de1662c.json",
+      "hash": "55de0f1045a6e0bfb2836496bfc81f5141bb3ea960f45f8c89550038d2304ec0"
+    }
+  ],
+  "extra_jev_requests": 0,
+  "limitations": "Official shared MyMaps is used for comparison, not as blanket proof of every store point. Named individual store map points override mall-centre markers. Co-located departments are not separate stores. Historic dates remain separate."
+}
