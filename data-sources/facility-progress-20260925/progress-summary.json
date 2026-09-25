@@ -9,7 +9,7 @@
     "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
   },
   "additions": {
-    "reflected": 141
+    "reflected": 145
   },
   "article_events": {
     "total": 1186,
@@ -41,9 +41,9 @@
     "address_not_stated": 0,
     "mobile_without_fixed_point": 1,
     "closure_candidates_with_existing_ids": 2,
-    "graduates_reflected": 4,
-    "graduates_pending": 6,
-    "map_changes_this_review": 4
+    "graduates_reflected": 8,
+    "graduates_pending": 2,
+    "map_changes_this_review": 8
   },
   "earlier_hold_rows_now_reflected": [
     "osm-way-1121040363",
@@ -58,12 +58,12 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "e92afce0e323e923d28092f74b612b575a93eb86cede3cfbd320551f04a292ed",
+    "public/data/facility-current.json": "e45992534838b82c1f0cb5b8a920576f8336571c48e3fc93c719b5f30d1e41f7",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
     "data-sources/facility-local-stores-20260925/decisions.json": "c63414f0ecb0172985d7369dc7d77c261fe6e4590b601bb94337c19dc1da8ad9",
     "outputs/facility-local-stores-20260925/records.json": "967e2531f9984d9dc91437eeb553d8a6b9be529772d5c770867f41837dc32114",
     "data-sources/facility-progress-20260925/source-plan.json": "69df756b6ee95c26250b1d175ddac5f8fa6021eea3c147cfabdae04ea04eb1b2",
-    "data-sources/facility-relocations-20260925/relocation-review.json": "7a182f73eb97c0c8eaf41619cebf2cd6b10b0a2f3309e84f2bd0d8c77ba0f2eb",
+    "data-sources/facility-relocations-20260925/relocation-review.json": "0d8d207f1edf2fa0e3398485913dbdff2812dde6a66681fe066d9eb4a04142e3",
     "data-sources/facility-relocations-20260925/adoptions.json": "b2e094219ed7ff59f5c5d3984216bffb5cc4070c5e4cb00545b37e84277fa102",
     "outputs/facility-progress-20260925/pages/95b9970dedbab6d4bb7b266d.json": "e374762f038b059e5828ad5c031e877397b4699550ce469d40f96922d099911d",
     "outputs/facility-progress-20260925/pages/f63aa99749d4a248b059060e.json": "b5517a29747ec90c7796c1687a83ab6bace4b46c9ce259bfd03fbeebdd391315",

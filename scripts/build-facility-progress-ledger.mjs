@@ -34,7 +34,7 @@ const overlay = read('public/data/facility-current.json');
 const updateIds = new Set(overlay.updates.map(row => row.id));
 assert.equal(updateIds.size, overlay.updates.length);
 assert([...updateIds].every(id => baselineIds.has(id)), 'An update did not match a baseline ID');
-assert.equal(overlay.additions.length, 141);
+assert.equal(overlay.additions.length, 145);
 const additionIds = new Set(overlay.additions.map(row => row.id));
 assert.equal(additionIds.size, overlay.additions.length);
 assert([...additionIds].every(id => !baselineIds.has(id)), 'An addition reused a baseline ID');
@@ -88,7 +88,8 @@ const graduateReview = graduateDecisions.map(decision => {
   if (mapAdopted) assert(overlay.additions.some(row => row.id === adopted.map_feature_id));
   return {
     id: decision.id, name: decision.name, kind: 'relocated_graduate',
-    review_status: mapAdopted ? 'reflected_addition' : locationType === 'reported_fixed_address'
+    review_status: mapAdopted ? 'reflected_addition' : adopted.status === 'conflicting_current_listing_hold'
+      ? 'conflicting_current_listing_hold' : locationType === 'reported_fixed_address'
       ? 'address_sourced_geometry_and_identity_pending'
       : locationType === 'mobile_no_fixed_point' ? 'mobile_without_fixed_map_point'
         : 'address_not_stated',

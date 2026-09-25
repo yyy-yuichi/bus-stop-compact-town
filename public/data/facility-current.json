@@ -8579,6 +8579,218 @@
           33.95490536
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-wakadan",
+      "properties": {
+        "name": "マジックバーWAKADAN",
+        "city": "下関市",
+        "address": "山口県下関市豊前田町1-1-13 南栄ビル2階",
+        "official_address": "山口県下関市豊前田町1-1-13 南栄ビル2階",
+        "official_url": "https://wakadan.com/about/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:03"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "マジックバーWAKADAN 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "店舗自身の現行案内",
+              "url": "https://wakadan.com/about/"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗点",
+              "url": "https://maps.app.goo.gl/ssDKJ9zqDoehzcHh6"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "店自身の現行店舗案内から直接リンクされた同名・同住所のGoogleマップ店舗点。営業時間は臨時休業を含まず、実開店日は採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9299891,
+          33.9525726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-zubaghetti",
+      "properties": {
+        "name": "イタリアンダイニング ズバゲッティ",
+        "city": "下関市",
+        "address": "山口県下関市観音崎町13-22 栄光ビル101",
+        "official_address": "山口県下関市観音崎町13-22 栄光ビル101",
+        "official_url": "https://www.karatoharete.com/卒業生",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:07"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "イタリアンダイニング ズバゲッティ 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "横丁運営元の卒業生案内",
+              "url": "https://www.karatoharete.com/卒業生"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗点",
+              "url": "https://www.google.com/maps/place/イタリアンダイニング+ズバゲッティ/data=!4m6!3m5!1s0x3543bdb12fbb70d5:0xfadb0759f8a137be!8m2!3d33.952294!4d130.9371995!16s%2Fg%2F11vlvtm94q"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "横丁運営元の新住所・電話と地図の同名同住所同電話を照合。運営元の『10月オープン予定』を実開店日にはしない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9371995,
+          33.952294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-yukogyo",
+      "properties": {
+        "name": "居酒屋 遊こうぎょう",
+        "city": "下関市",
+        "address": "山口県下関市中之町2-14",
+        "official_address": "山口県下関市中之町2-14",
+        "official_url": "https://www.karatoharete.com/卒業生",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:08"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "居酒屋 遊こうぎょう 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "横丁運営元の卒業生案内",
+              "url": "https://www.karatoharete.com/卒業生"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗点",
+              "url": "https://www.google.com/maps/place/居酒屋+遊こうぎょう/data=!4m7!3m6!1s0x3543bd007a76dcc5:0xadb4f0be433e1fe4!8m2!3d33.9580212!4d130.9439382!16s%2Fg%2F11ys88hxrg"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "中之町2-14の新店舗点を中之町1-16の旧店舗点と分離。開店日は運営元と他媒体に不一致があるため採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9439382,
+          33.9580212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-curryfull",
+      "properties": {
+        "name": "米と肉と咖喱 CurryFull",
+        "city": "下関市",
+        "address": "山口県下関市幸町8-7",
+        "official_address": "山口県下関市幸町8-7",
+        "official_url": "https://www.karatoharete.com/卒業生",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:10"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "米と肉と咖喱 CurryFull 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "横丁運営元の卒業生案内",
+              "url": "https://www.karatoharete.com/卒業生"
+            },
+            {
+              "title": "地域媒体の現行店舗紹介",
+              "url": "https://www.hop-s.jp/shop/28435"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗点",
+              "url": "https://www.google.com/maps/place/米と肉と咖喱+CurryFull/data=!4m6!3m5!1s0x3543bd1127c6ec49:0xe2cc2bd28a497388!8m2!3d33.9608582!4d130.9431285!16s%2Fg%2F11lcbr__fx"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "横丁運営元・地元媒体・地図で新住所と電話が一致。旧横丁の地図点は使わず実開店日は採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9431285,
+          33.9608582
+        ]
+      }
     }
   ]
 }

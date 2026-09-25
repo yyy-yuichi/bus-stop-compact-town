@@ -13,8 +13,8 @@ const earlier = read('data-sources/facility-local-stores-20260925/adoption-summa
 test('all eleven graduates have separate final states without pretending mobile is a fixed shop', () => {
   assert.equal(statuses.length, 11);
   assert.equal(new Set(statuses.map(row => row.graduate_id)).size, 11);
-  assert.equal(statuses.filter(row => row.status === 'reflected_addition').length, 4);
-  assert.equal(statuses.filter(row => row.status === 'geometry_or_current_identity_pending').length, 6);
+  assert.equal(statuses.filter(row => row.status === 'reflected_addition').length, 8);
+  assert.equal(statuses.filter(row => row.status === 'conflicting_current_listing_hold').length, 2);
   assert.equal(statuses.filter(row => row.status === 'mobile_no_fixed_point').length, 1);
   assert.equal(summary.map_changes_this_batch, 4);
   assert.equal(summary.jev_additional_requests, 0);
@@ -34,7 +34,7 @@ test('four relocated facilities have their own sourced point, not the former com
     assert(feature.properties.freshness_review.sources.some(row => row.url === decision.map_url));
     assert(statuses.some(row => row.graduate_id === decision.graduate_id && row.map_feature_id === feature.id));
   }
-  assert.equal(overlay.additions.length, 141);
+  assert.equal(overlay.additions.length, 145);
   assert.equal(hash({ ...overlay, additions: overlay.additions.slice(0, 137) }), earlier.after_overlay_hash);
 });
 

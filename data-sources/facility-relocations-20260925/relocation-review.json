@@ -2,23 +2,47 @@
   {
     "graduate_id": "harete-graduate-01",
     "name": "カラオケBAR　いいやん",
-    "status": "geometry_or_current_identity_pending",
+    "status": "conflicting_current_listing_hold",
     "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "reason": "運営元は赤間町2-1・赤間プラザ1階、同名地図店舗は赤間町2-4。再移転または誤記の可能性を解消するまで保留。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/カラオケBARいいやん/data=!4m6!3m5!1s0x3543bd0067a7bed5:0x23c48aef4ffb1165!8m2!3d33.9587296!4d130.9432557!16s%2Fg%2F11vrzbfhc8"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-02",
     "name": "DーDAY",
-    "status": "geometry_or_current_identity_pending",
+    "status": "conflicting_current_listing_hold",
     "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "reason": "運営元は赤間プラザ2階を案内する一方、同名同住所の地図店舗は「閉業」。支店別の一次情報がないため追加・閉店とも保留。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/D-DAY/data=!4m6!3m5!1s0x3543bdeba7eb4451:0xd07d7e11708c985b!8m2!3d33.9588478!4d130.9434144!16s%2Fg%2F11vlvtyhlk"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-03",
     "name": "マジックバー　WAKADAN",
-    "status": "geometry_or_current_identity_pending",
-    "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-wakadan",
+    "reason": "店自身の現行店舗案内から直接リンクされた同名・同住所のGoogleマップ店舗点。営業時間は臨時休業を含まず、実開店日は採用しない。",
+    "sources": [
+      {
+        "url": "https://wakadan.com/about/"
+      },
+      {
+        "url": "https://maps.app.goo.gl/ssDKJ9zqDoehzcHh6"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-04",
@@ -80,16 +104,32 @@
   {
     "graduate_id": "harete-graduate-07",
     "name": "THE　ZUBAGHETTI",
-    "status": "geometry_or_current_identity_pending",
-    "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-zubaghetti",
+    "reason": "横丁運営元の新住所・電話と地図の同名同住所同電話を照合。運営元の『10月オープン予定』を実開店日にはしない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/イタリアンダイニング+ズバゲッティ/data=!4m6!3m5!1s0x3543bdb12fbb70d5:0xfadb0759f8a137be!8m2!3d33.952294!4d130.9371995!16s%2Fg%2F11vlvtm94q"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-08",
     "name": "居酒屋　遊こうぎょう",
-    "status": "geometry_or_current_identity_pending",
-    "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-yukogyo",
+    "reason": "中之町2-14の新店舗点を中之町1-16の旧店舗点と分離。開店日は運営元と他媒体に不一致があるため採用しない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/居酒屋+遊こうぎょう/data=!4m7!3m6!1s0x3543bd007a76dcc5:0xadb4f0be433e1fe4!8m2!3d33.9580212!4d130.9439382!16s%2Fg%2F11ys88hxrg"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-09",
@@ -113,9 +153,20 @@
   {
     "graduate_id": "harete-graduate-10",
     "name": "お米とお肉と咖喱　Curry Full",
-    "status": "geometry_or_current_identity_pending",
-    "map_feature_id": null,
-    "reason": "Match this address and shop identity to a location point; verify any date before publishing it as an actual opening."
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-curryfull",
+    "reason": "横丁運営元・地元媒体・地図で新住所と電話が一致。旧横丁の地図点は使わず実開店日は採用しない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.hop-s.jp/shop/28435"
+      },
+      {
+        "url": "https://www.google.com/maps/place/米と肉と咖喱+CurryFull/data=!4m6!3m5!1s0x3543bd1127c6ec49:0xe2cc2bd28a497388!8m2!3d33.9608582!4d130.9431285!16s%2Fg%2F11lcbr__fx"
+      }
+    ]
   },
   {
     "graduate_id": "harete-graduate-11",
