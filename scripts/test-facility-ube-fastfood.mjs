@@ -27,7 +27,7 @@ test('mall polygon is retained in proximity screening and all prior records rema
  assert.equal(hash(rows),summary.adoptions_hash);assert.equal(hash(inputs),summary.inputs_hash);
  assert.deepEqual(addDiningBatch(current,rows).overlay,current);assert.equal(addDiningBatch(current,rows).added,0);
  assert(rows.point_reviews.find(p=>p.id==='official-kfc-5063').compared_candidates.some(c=>c.id==='ube'&&c.method==='bounding_box_screen_only'));
- const base=['shopping.geojson','civic-facilities.geojson'].flatMap(f=>read('public/data/'+f).features),old=applyFacilityCurrent(base,before),after=applyFacilityCurrent(base,current);
+ const base=['shopping.geojson','civic-facilities.geojson'].flatMap(f=>read('public/data/'+f).features),old=applyFacilityCurrent(base,before),after=applyFacilityCurrent(base,historical); // Check this frozen batch; later reviewed updates have their own invariants.
  for(const f of old)assert.deepEqual(after.find(r=>r.id===f.id),f);
  assert(rows.point_reviews.find(p=>p.id==='official-mcdonalds-35538').compared_candidates.some(c=>c.id==='osm-way-477623030'));
 });

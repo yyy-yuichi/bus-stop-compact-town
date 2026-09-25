@@ -66,6 +66,14 @@
         ]
       }
     ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 6,
+        "hash": "d449c02d910ecf3848b571451112dc7603c1332579b47040d0ec1f0af035a71d"
+      }
+    ],
     "status": "map_action",
     "priority": "P0",
     "article_keys": [
@@ -167,38 +175,12 @@
         "section": "held_sites",
         "index": "3889",
         "hash": "3fbc02abd63155f892159b676506c82d4503a060accf0c06c26ef5b7582d6275"
-      }
-    ],
-    "status": "map_action",
-    "priority": "P0",
-    "article_keys": [],
-    "held_event_ids": [],
-    "supplemental_also_pending": false
-  },
-  {
-    "case_id": "reconcile:tsuruha-3905",
-    "name": "ウォンツ宇部亀浦の重複候補",
-    "facility_ids": [
-      "osm-node-9472242519",
-      "osm-way-1027461546"
-    ],
-    "related_facility_ids": [],
-    "issues": [
+      },
       {
-        "issue_id": "reconcile:tsuruha-3905:map_action",
-        "impact": "map_action",
-        "priority": "P0",
-        "reason": "Two existing node/way records describe ウォンツ宇部亀浦店 at the same site. Preserve both pending deduplication review; do not add a third.",
-        "next": "既存の建物・支店・後継関係を照合し、重複追加を避ける。",
-        "event_ids": []
-      }
-    ],
-    "evidence_refs": [
-      {
-        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
-        "section": "held_sites",
-        "index": "3905",
-        "hash": "18feaeacc67f3270ad85f77922937c738ba4a5215203efb589fb2341c80fe9b7"
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 5,
+        "hash": "86fd86e0096491d01d7eb14ba9f6f7c0ce7e687ae986e21b922093c642913be7"
       }
     ],
     "status": "map_action",
@@ -630,47 +612,26 @@
     "supplemental_also_pending": false
   },
   {
-    "case_id": "reconcile:wants-closed-higashimizome",
-    "name": "旧ウォンツ宇部東見初店",
-    "facility_ids": [],
-    "related_facility_ids": [],
-    "issues": [
-      {
-        "issue_id": "reconcile:wants-closed-higashimizome:map_action",
-        "impact": "map_action",
-        "priority": "P1",
-        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
-        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
-        "event_ids": []
-      }
-    ],
-    "evidence_refs": [
-      {
-        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
-        "section": "other_holds",
-        "index": 3,
-        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
-      }
-    ],
-    "status": "map_action",
-    "priority": "P1",
-    "article_keys": [],
-    "held_event_ids": [],
-    "supplemental_also_pending": false
-  },
-  {
     "case_id": "reconcile:wants-closed-ube-numa",
     "name": "旧ウォンツ宇部沼店",
-    "facility_ids": [],
+    "facility_ids": [
+      "osm-way-562664551"
+    ],
     "related_facility_ids": [],
     "issues": [
       {
         "issue_id": "reconcile:wants-closed-ube-numa:map_action",
         "impact": "map_action",
         "priority": "P1",
-        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
-        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
-        "event_ids": []
+        "reason": "公式閉店支店の住所・代表点は特定。1m先の元登録は百菜屋で、その閉店・承継の根拠は未確認。465m先の現行宇部沼1丁目店は別店舗。",
+        "next": "百菜屋上宇部店の閉店・跡地資料を確認する。宇部沼1丁目店に閉店を誤適用しない。",
+        "event_ids": [],
+        "previous_assessment": {
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+          "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。"
+        }
       }
     ],
     "evidence_refs": [
@@ -679,64 +640,12 @@
         "section": "other_holds",
         "index": 3,
         "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
-      }
-    ],
-    "status": "map_action",
-    "priority": "P1",
-    "article_keys": [],
-    "held_event_ids": [],
-    "supplemental_also_pending": false
-  },
-  {
-    "case_id": "reconcile:wants-closed-yamaguchi-ouchi",
-    "name": "旧ウォンツ山口大内店",
-    "facility_ids": [],
-    "related_facility_ids": [],
-    "issues": [
+      },
       {
-        "issue_id": "reconcile:wants-closed-yamaguchi-ouchi:map_action",
-        "impact": "map_action",
-        "priority": "P1",
-        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
-        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
-        "event_ids": []
-      }
-    ],
-    "evidence_refs": [
-      {
-        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
-        "section": "other_holds",
-        "index": 3,
-        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
-      }
-    ],
-    "status": "map_action",
-    "priority": "P1",
-    "article_keys": [],
-    "held_event_ids": [],
-    "supplemental_also_pending": false
-  },
-  {
-    "case_id": "reconcile:wants-closed-yanai-shinjo",
-    "name": "旧ウォンツ柳井新庄店",
-    "facility_ids": [],
-    "related_facility_ids": [],
-    "issues": [
-      {
-        "issue_id": "reconcile:wants-closed-yanai-shinjo:map_action",
-        "impact": "map_action",
-        "priority": "P1",
-        "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
-        "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。",
-        "event_ids": []
-      }
-    ],
-    "evidence_refs": [
-      {
-        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
-        "section": "other_holds",
-        "index": 3,
-        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 4,
+        "hash": "fe92b40af5d42bccbb32008ab53ffb7c02ea67423858f6865b8c739cebd4582f"
       }
     ],
     "status": "map_action",
@@ -1734,6 +1643,221 @@
       "shimonoseki-55069:opening",
       "shimonoseki-56063:opening"
     ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:tsuruha-3905",
+    "name": "ウォンツ宇部亀浦の重複候補",
+    "facility_ids": [
+      "osm-node-9472242519",
+      "osm-way-1027461546"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:tsuruha-3905:map_action",
+        "impact": "resolved",
+        "priority": "P3",
+        "reason": "同じ公式支店に対応する2件を、nodeを通常表示・wayを履歴に整理。両ID・両位置・元情報を保持。",
+        "next": "対応済み。新しい相反資料が得られた場合のみ再確認。",
+        "event_ids": [],
+        "previous_assessment": {
+          "impact": "map_action",
+          "priority": "P0",
+          "reason": "Two existing node/way records describe ウォンツ宇部亀浦店 at the same site. Preserve both pending deduplication review; do not add a third.",
+          "next": "既存の建物・支店・後継関係を照合し、重複追加を避ける。"
+        },
+        "resolution": {
+          "checked_at": "2026-09-25",
+          "outcome": "duplicate_consolidated",
+          "reason": "同じ公式支店に対応する2件を、nodeを通常表示・wayを履歴に整理。両ID・両位置・元情報を保持。",
+          "evidence_ref": {
+            "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 2,
+            "hash": "bb66bf46b131aa1876e7bb84ec64689ff04d57227f43350a5c7146f12fc3fcc9"
+          }
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "held_sites",
+        "index": "3905",
+        "hash": "18feaeacc67f3270ad85f77922937c738ba4a5215203efb589fb2341c80fe9b7"
+      },
+      {
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 2,
+        "hash": "bb66bf46b131aa1876e7bb84ec64689ff04d57227f43350a5c7146f12fc3fcc9"
+      }
+    ],
+    "status": "resolved",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-higashimizome",
+    "name": "旧ウォンツ宇部東見初店",
+    "facility_ids": [
+      "osm-way-370584528"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-higashimizome:map_action",
+        "impact": "resolved",
+        "priority": "P3",
+        "reason": "旧レデイ名の登録を発見。旧店の住所資料と会社閉店表で2018-05-16閉店を確認して除外。同住所のウォンツ閉店も公式確認し、新たな閉店施設は追加しない。",
+        "next": "対応済み。新しい相反資料が得られた場合のみ再確認。",
+        "event_ids": [],
+        "previous_assessment": {
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+          "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。"
+        },
+        "resolution": {
+          "checked_at": "2026-09-25",
+          "outcome": "obsolete_predecessor_closed",
+          "reason": "旧レデイ名の登録を発見。旧店の住所資料と会社閉店表で2018-05-16閉店を確認して除外。同住所のウォンツ閉店も公式確認し、新たな閉店施設は追加しない。",
+          "evidence_ref": {
+            "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 1,
+            "hash": "17bf78eebcbd86fd5eacbe68e237a74306cc0f6b857c216e282aa41bcfaada37"
+          }
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      },
+      {
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 1,
+        "hash": "17bf78eebcbd86fd5eacbe68e237a74306cc0f6b857c216e282aa41bcfaada37"
+      }
+    ],
+    "status": "resolved",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-yamaguchi-ouchi",
+    "name": "旧ウォンツ山口大内店",
+    "facility_ids": [
+      "osm-way-465881161"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-yamaguchi-ouchi:map_action",
+        "impact": "resolved",
+        "priority": "P3",
+        "reason": "旧IDは既にreference。公式告知と旧住所・3m差の店舗点で閉店情報を構造化し、通常検索からも除外。",
+        "next": "対応済み。新しい相反資料が得られた場合のみ再確認。",
+        "event_ids": [],
+        "previous_assessment": {
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+          "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。"
+        },
+        "resolution": {
+          "checked_at": "2026-09-25",
+          "outcome": "closure_history_updated",
+          "reason": "旧IDは既にreference。公式告知と旧住所・3m差の店舗点で閉店情報を構造化し、通常検索からも除外。",
+          "evidence_ref": {
+            "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 0,
+            "hash": "3a7cf5a2570a0f450fa6e886267b3e88292da838d9b67e02e1ded83b7c563c27"
+          }
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      },
+      {
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 0,
+        "hash": "3a7cf5a2570a0f450fa6e886267b3e88292da838d9b67e02e1ded83b7c563c27"
+      }
+    ],
+    "status": "resolved",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "reconcile:wants-closed-yanai-shinjo",
+    "name": "旧ウォンツ柳井新庄店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "reconcile:wants-closed-yanai-shinjo:map_action",
+        "impact": "resolved",
+        "priority": "P3",
+        "reason": "公式閉店を確認。全7936記録の名称・近傍照合でウォンツ旧IDなし。18mのSCと48mのマックスバリュは別の施設で変更しない。",
+        "next": "対応済み。新しい相反資料が得られた場合のみ再確認。",
+        "event_ids": [],
+        "previous_assessment": {
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "Explicit official closure signals preserved. No guessed baseline match; review historical address and branch identity next.",
+          "next": "保存済みの支店別閉店案内と旧住所・元施設の同一性を照合する。"
+        },
+        "resolution": {
+          "checked_at": "2026-09-25",
+          "outcome": "verified_no_map_change",
+          "reason": "公式閉店を確認。全7936記録の名称・近傍照合でウォンツ旧IDなし。18mのSCと48mのマックスバリュは別の施設で変更しない。",
+          "evidence_ref": {
+            "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+            "section": "cases",
+            "index": 3,
+            "hash": "a3aa60941ab0d2f0d270b96d3c0dcbae1c457b3a6972453e59ab41c24b2c2d34"
+          }
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-reconcile-20260925/review-decisions.json",
+        "section": "other_holds",
+        "index": 3,
+        "hash": "e1504f5f28a6e76ff8869fa4e936384e8bd1176760815462fe17f93a74433afc"
+      },
+      {
+        "path": "data-sources/facility-wants-corrections-20260925/adoption-evidence.json",
+        "section": "cases",
+        "index": 3,
+        "hash": "a3aa60941ab0d2f0d270b96d3c0dcbae1c457b3a6972453e59ab41c24b2c2d34"
+      }
+    ],
+    "status": "resolved",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
     "supplemental_also_pending": false
   }
 ]

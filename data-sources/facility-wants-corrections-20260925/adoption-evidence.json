@@ -1,0 +1,594 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "fbe59a3ade31ce7cd63bf437dfd0c29769af71470b8862eb91b722f77e7eb3a7",
+  "after_overlay_hash": "f571fa6876a8c88311e169507f15375a14247fbc3fbdf2ea67775decee933397",
+  "batch_hash": "3f546672b32a772bfc6a9bd286dfd4e486eb62f9b431caa13afa505fd02a55c1",
+  "updates_this_batch": 4,
+  "additions_this_batch": 0,
+  "closed_history_records_added": 2,
+  "previously_normal_record_closed": 1,
+  "duplicate_records_excluded": 1,
+  "cumulative": {
+    "updates": 30,
+    "additions": 172,
+    "total": 7936,
+    "normal_candidates": 7872,
+    "closed": 9,
+    "duplicate_records": 1
+  },
+  "sources": [
+    {
+      "url": "https://map.noevirgroup.jp/nov_search/spot/detail?code=0000010445",
+      "path": "outputs/facility-wants-corrections-20260925/pages/d6d9e1474ea6cfb019556072.json",
+      "hash": "b2e22c9d510f1bf7cba781767efc3efb491cbb602b16cda526c724ae6feb1a11"
+    },
+    {
+      "url": "https://map-refre.livedo.jp/points/0007894",
+      "path": "outputs/facility-wants-corrections-20260925/pages/f3625a3e541af3f628f05037.json",
+      "hash": "f663dcc50c5bbd03a06f4548a8d807f9bb3244f07c03e235b6754ba0ce82dc61"
+    },
+    {
+      "url": "https://store-search.tsumura.co.jp/points/692032",
+      "path": "outputs/facility-wants-corrections-20260925/pages/a21af081545c5518b8511d58.json",
+      "hash": "834ec572e74f43a7072194b96eae3dd59e78b303d90c63ed03581c86db2055e6"
+    },
+    {
+      "url": "https://pkg.navitime.co.jp/kose-shoplist/spot/detail?code=P00C273",
+      "path": "outputs/facility-wants-corrections-20260925/pages/c68b18207dc1910d56632fba.json",
+      "hash": "fe2d3f9914800810fe33201241299e6dd6950ab4f47c6d84093e87d3c126b74f"
+    },
+    {
+      "url": "https://www.wants.co.jp/news/close_3695/",
+      "path": "outputs/facility-reconcile-20260925/pages/044acd959ba86b7b4c199534.json",
+      "hash": "f65cdcbdb1a63a01c530fe1eae31638d0678e1ed7f86daf981016548c6989a89"
+    },
+    {
+      "url": "https://www.wants.co.jp/news/close_3833/",
+      "path": "outputs/facility-reconcile-20260925/pages/dc4c22ca761d1471df3c3027.json",
+      "hash": "c1f7827d53b5ab2812911e36d04e29dd7efe6e49cbc403de7763cf637fe87d3d"
+    },
+    {
+      "url": "https://www.wants.co.jp/news/close_3791/",
+      "path": "outputs/facility-reconcile-20260925/pages/3c60b16b694192b5f62de094.json",
+      "hash": "4209f379b358367b40615d48a93e6e18f23bcbd15f218f7443b66ac4cdaf7804"
+    },
+    {
+      "url": "https://www.wants.co.jp/news/close_3760/",
+      "path": "outputs/facility-wants-corrections-20260925/pages/e70fda90613fbd9b4499c802.json",
+      "hash": "3530ac9f8bcd5e329de36f55a3d54b9839f8cd46db5497bc96638ab286770450"
+    },
+    {
+      "url": "https://f.irbank.net/pdf/20180629/140120180629474419.pdf",
+      "path": "outputs/facility-wants-corrections-20260925/tsuruha-201806.pdf",
+      "bytes": 116421,
+      "sha256": "dddbc1c60d6af5d372f73cd8cf739022dc2f4133f666aa3dd91d9bcc0cbe772a"
+    },
+    {
+      "url": "https://www.kose.co.jp/faq/pdf/YNYMchushikoku.pdf",
+      "path": "outputs/facility-wants-corrections-20260925/kose-historical.pdf",
+      "bytes": 718335,
+      "sha256": "3395209827b2369f055a4b1feaaaeeecb0f9eb3ea4880878422bde3153196954"
+    },
+    {
+      "url": "https://shop.tsuruha-g.com/3905",
+      "path": "outputs/facility-reconcile-20260925/pages/a8c8517d95aa155a06666419.json",
+      "hash": "fd97e7230080976a8fcbd17ab871240eed52f4cc7f79ae832c4144c00c5efed8"
+    }
+  ],
+  "pdf_review_hash": "8177b7693e0059a48b6d222a3f892a708052b65e3ea05c34477abebdf354eb3b",
+  "cases": [
+    {
+      "case_id": "reconcile:wants-closed-yamaguchi-ouchi",
+      "status": "resolved",
+      "outcome": "closure_history_updated",
+      "facility_ids": [
+        "osm-way-465881161"
+      ],
+      "point": [
+        131.484038,
+        34.165773
+      ],
+      "nearest": [
+        {
+          "id": "osm-way-465881161",
+          "name": "ウォンツ山口大内御堀店",
+          "category": "reference",
+          "address": "",
+          "distance_m": 3
+        },
+        {
+          "id": "osm-way-465881162",
+          "name": "海都大内御堀店",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 28
+        },
+        {
+          "id": "osm-way-465881152",
+          "name": "長崎ちゃんめん",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 166
+        },
+        {
+          "id": "osm-node-1423657620",
+          "name": "御堀郵便局",
+          "category": "post_office",
+          "address": "山口県山口市大内御堀1丁目5",
+          "distance_m": 171
+        },
+        {
+          "id": "civic-care-3570303614-8fa76c05cd",
+          "name": "ツクイ山口",
+          "category": "social_facility",
+          "address": "山口市大内御堀6－2－5",
+          "distance_m": 180
+        },
+        {
+          "id": "osm-node-1631273190",
+          "name": "山口県みほり学園",
+          "category": "social_facility",
+          "address": "",
+          "distance_m": 207
+        },
+        {
+          "id": "osm-way-407971357",
+          "name": "セブンイレブン山口宮島町店",
+          "category": "convenience",
+          "address": "",
+          "distance_m": 222
+        },
+        {
+          "id": "osm-node-1423655962",
+          "name": "山口養護学校・みほり分校",
+          "category": "school",
+          "address": "",
+          "distance_m": 246
+        },
+        {
+          "id": "civic-care-3570302178-317e5e6161",
+          "name": "デイサービスゆうの里なごみ館",
+          "category": "social_facility",
+          "address": "山口市大内千坊1－8－8",
+          "distance_m": 395
+        },
+        {
+          "id": "osm-way-409218005",
+          "name": "しゃぼん大内御堀店",
+          "category": "laundry",
+          "address": "",
+          "distance_m": 423
+        },
+        {
+          "id": "civic-care-3590300491-56348a7c3e",
+          "name": "デイサービスゆうの里ひだまり館",
+          "category": "social_facility",
+          "address": "山口市大内御堀5－10－5",
+          "distance_m": 427
+        },
+        {
+          "id": "civic-care-3590300301-8b42056c5d",
+          "name": "デイサービスゆうの里ぬくもり館",
+          "category": "social_facility",
+          "address": "山口市大内千坊1－6－33",
+          "distance_m": 434
+        }
+      ],
+      "reason": "旧IDは既にreference。公式告知と旧住所・3m差の店舗点で閉店情報を構造化し、通常検索からも除外。"
+    },
+    {
+      "case_id": "reconcile:wants-closed-higashimizome",
+      "status": "resolved",
+      "outcome": "obsolete_predecessor_closed",
+      "facility_ids": [
+        "osm-way-370584528"
+      ],
+      "point": [
+        131.2569717,
+        33.9325993
+      ],
+      "nearest": [
+        {
+          "id": "osm-way-370584528",
+          "name": "くすりのレデイ",
+          "category": "drugstore",
+          "address": "",
+          "distance_m": 0
+        },
+        {
+          "id": "osm-way-376175645",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "address": "",
+          "distance_m": 86
+        },
+        {
+          "id": "osm-way-376175635",
+          "name": "大戸屋",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 113
+        },
+        {
+          "id": "osm-way-370791461",
+          "name": "SSSスポーツプラザ",
+          "category": "sports_centre",
+          "address": "",
+          "distance_m": 147
+        },
+        {
+          "id": "osm-way-562476620",
+          "name": "SSSフットサルクラブ宇部",
+          "category": "sports_centre",
+          "address": "",
+          "distance_m": 199
+        },
+        {
+          "id": "osm-way-561432834",
+          "name": "壱番薬局",
+          "category": "pharmacy",
+          "address": "",
+          "distance_m": 260
+        },
+        {
+          "id": "fuji-ube",
+          "name": "フジグラン宇部",
+          "category": "mall",
+          "address": "山口県宇部市明神町三丁目1番1号",
+          "distance_m": 314
+        },
+        {
+          "id": "osm-way-370584628",
+          "name": "法泉寺保育園",
+          "category": "childcare",
+          "address": "",
+          "distance_m": 330
+        },
+        {
+          "id": "osm-way-552712571",
+          "name": "ローソン",
+          "category": "convenience",
+          "address": "",
+          "distance_m": 356
+        },
+        {
+          "id": "civic-care-3570202931-4422fa8374",
+          "name": "居宅介護支援センター美咲",
+          "category": "social_facility",
+          "address": "宇部市昭和町4－2－1",
+          "distance_m": 367
+        },
+        {
+          "id": "civic-care-3570202568-807ef60f7c",
+          "name": "デイサービス美咲",
+          "category": "social_facility",
+          "address": "宇部市昭和町4‐2‐1",
+          "distance_m": 367
+        },
+        {
+          "id": "osm-way-287683183",
+          "name": "岬小学校",
+          "category": "school",
+          "address": "",
+          "distance_m": 368
+        }
+      ],
+      "reason": "旧レデイ名の登録を発見。旧店の住所資料と会社閉店表で2018-05-16閉店を確認して除外。同住所のウォンツ閉店も公式確認し、新たな閉店施設は追加しない。"
+    },
+    {
+      "case_id": "reconcile:tsuruha-3905",
+      "status": "resolved",
+      "outcome": "duplicate_consolidated",
+      "facility_ids": [
+        "osm-node-9472242519",
+        "osm-way-1027461546"
+      ],
+      "point": [
+        131.2880831060022,
+        33.94276748226287
+      ],
+      "nearest": [
+        {
+          "id": "osm-node-9472242519",
+          "name": "ウォンツ 宇部亀浦店",
+          "category": "drugstore",
+          "address": "山口県宇部市西岐波",
+          "distance_m": 4
+        },
+        {
+          "id": "osm-way-1027461546",
+          "name": "ウォンツ 宇部亀浦店",
+          "category": "drugstore",
+          "address": "山口県宇部市西岐波",
+          "distance_m": 8
+        },
+        {
+          "id": "official-watts-7607",
+          "name": "ワッツウィズ宇部亀浦ウォンツ店",
+          "category": "variety_store",
+          "address": "山口県宇部市大字西岐波4675-1　ウォンツ宇部亀浦店内",
+          "distance_m": 21
+        },
+        {
+          "id": "osm-way-549554485",
+          "name": "焼肉家えんず",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 318
+        },
+        {
+          "id": "osm-way-332618155",
+          "name": "とんかつ浜勝",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 377
+        },
+        {
+          "id": "osm-node-1631266859",
+          "name": "セルプときわ",
+          "category": "social_facility",
+          "address": "",
+          "distance_m": 520
+        },
+        {
+          "id": "civic-care-3560290250-e17fe31c00",
+          "name": "リハビリ訪問看護ステーション Ｆｕｎ ｔｏ Ｌｉｆｅ",
+          "category": "social_facility",
+          "address": "宇部市西岐波4470－8",
+          "distance_m": 536
+        },
+        {
+          "id": "civic-care-3570203814-bce2c7ebd8",
+          "name": "ケアマネステーションＦｕｎｔｏＬｉｆｅ",
+          "category": "social_facility",
+          "address": "宇部市西岐波4470－8",
+          "distance_m": 536
+        },
+        {
+          "id": "civic-care-3590200451-245106ceb5",
+          "name": "リハビリ特化型デイサービスＦｕｎｔｏＬｉfe",
+          "category": "social_facility",
+          "address": "宇部市西岐波4470－8",
+          "distance_m": 536
+        },
+        {
+          "id": "osm-way-565295645",
+          "name": "バル・ミエール",
+          "category": "cafe",
+          "address": "",
+          "distance_m": 577
+        },
+        {
+          "id": "osm-node-9671261878",
+          "name": "ハワイアン リゾート カフェ　レオラ",
+          "category": "cafe",
+          "address": "山口県宇部市大字沖宇部254",
+          "distance_m": 589
+        },
+        {
+          "id": "osm-way-826008670",
+          "name": "かめうら苑",
+          "category": "restaurant",
+          "address": "",
+          "distance_m": 593
+        }
+      ],
+      "reason": "同じ公式支店に対応する2件を、nodeを通常表示・wayを履歴に整理。両ID・両位置・元情報を保持。"
+    },
+    {
+      "case_id": "reconcile:wants-closed-yanai-shinjo",
+      "status": "resolved",
+      "outcome": "verified_no_map_change",
+      "facility_ids": [],
+      "point": [
+        132.0962429,
+        33.9736413
+      ],
+      "nearest": [
+        {
+          "id": "osm-node-3951221858",
+          "name": "イオン柳井新庄SC",
+          "category": "supermarket",
+          "address": "",
+          "distance_m": 18
+        },
+        {
+          "id": "osm-node-3951221857",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "address": "",
+          "distance_m": 48
+        },
+        {
+          "id": "civic-care-3571200595-baa893b872",
+          "name": "わたぼうしヘルパーステーション",
+          "category": "social_facility",
+          "address": "柳井市柳井4920－2",
+          "distance_m": 111
+        },
+        {
+          "id": "civic-care-3571200314-2d5e3d10f0",
+          "name": "わたぼうし居宅介護支援事業所",
+          "category": "social_facility",
+          "address": "柳井市柳井4920－2",
+          "distance_m": 111
+        },
+        {
+          "id": "osm-node-3951222960",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "address": "",
+          "distance_m": 166
+        },
+        {
+          "id": "osm-node-1423659207",
+          "name": "柳井市児童館",
+          "category": "community_centre",
+          "address": "",
+          "distance_m": 335
+        },
+        {
+          "id": "civic-care-3571200702-538cb26834",
+          "name": "ヘルパーステーションＡＳＯＫＡやない",
+          "category": "social_facility",
+          "address": "柳井市柳井4896－1",
+          "distance_m": 372
+        },
+        {
+          "id": "civic-care-3571200694-15f8056018",
+          "name": "デイサービスセンターＡＳＯＫＡやない",
+          "category": "social_facility",
+          "address": "柳井市柳井4896－1",
+          "distance_m": 372
+        },
+        {
+          "id": "civic-care-3561290044-feff772245",
+          "name": "ゆうわ訪問看護ステーション",
+          "category": "social_facility",
+          "address": "柳井市古開作479－3",
+          "distance_m": 479
+        },
+        {
+          "id": "civic-care-3591200062-537d813349",
+          "name": "定期巡回訪問サービス ユー・アンド２４ゆうわ",
+          "category": "social_facility",
+          "address": "柳井市古開作479－3",
+          "distance_m": 479
+        },
+        {
+          "id": "civic-care-3591200112-515a12a06a",
+          "name": "看護小規模多機能サンリンク",
+          "category": "social_facility",
+          "address": "柳井市古開作479－3",
+          "distance_m": 479
+        },
+        {
+          "id": "osm-node-1423659112",
+          "name": "柳井きたまち郵便局",
+          "category": "post_office",
+          "address": "山口県柳井市柳井8",
+          "distance_m": 645
+        }
+      ],
+      "reason": "公式閉店を確認。全7936記録の名称・近傍照合でウォンツ旧IDなし。18mのSCと48mのマックスバリュは別の施設で変更しない。"
+    },
+    {
+      "case_id": "reconcile:wants-closed-ube-numa",
+      "status": "map_action",
+      "outcome": "prior_occupant_identity_unresolved",
+      "facility_ids": [
+        "osm-way-562664551"
+      ],
+      "point": [
+        131.267726,
+        33.959992
+      ],
+      "nearest": [
+        {
+          "id": "osm-way-562664551",
+          "name": "百菜屋",
+          "category": "supermarket",
+          "address": "宇部山口県宇部市沼3丁目5-205-20",
+          "distance_m": 1
+        },
+        {
+          "id": "civic-care-3570202360-8a60affbff",
+          "name": "茶話本舗デイサービス陽",
+          "category": "social_facility",
+          "address": "宇部市常盤台1－20－2",
+          "distance_m": 53
+        },
+        {
+          "id": "osm-way-287682662",
+          "name": "宇部高等学校",
+          "category": "school",
+          "address": "",
+          "distance_m": 224
+        },
+        {
+          "id": "civic-care-3590200477-d7a1242c64",
+          "name": "（有）てご屋デイサービスセンター",
+          "category": "social_facility",
+          "address": "宇部市常盤台1－2576－2",
+          "distance_m": 245
+        },
+        {
+          "id": "osm-way-287682660",
+          "name": "上宇部中学校",
+          "category": "school",
+          "address": "",
+          "distance_m": 274
+        },
+        {
+          "id": "osm-way-562664546",
+          "name": "第二あそか保育園",
+          "category": "childcare",
+          "address": "",
+          "distance_m": 346
+        },
+        {
+          "id": "civic-care-3590200303-19b3619eae",
+          "name": "協立グループホームかいなん",
+          "category": "social_facility",
+          "address": "宇部市海南町5－14",
+          "distance_m": 365
+        },
+        {
+          "id": "osm-way-371986059",
+          "name": "まるき",
+          "category": "supermarket",
+          "address": "",
+          "distance_m": 375
+        },
+        {
+          "id": "official-tsuruha-3888",
+          "name": "ウォンツ 宇部沼1丁目店",
+          "category": "drugstore",
+          "address": "山口県宇部市沼1-8-39",
+          "distance_m": 465
+        },
+        {
+          "id": "official-watts-1638",
+          "name": "ワッツウィズ宇部沼1丁目ウォンツ店",
+          "category": "variety_store",
+          "address": "山口県宇部市沼1-8-39ウォンツ宇部沼1丁目店内",
+          "distance_m": 468
+        },
+        {
+          "id": "osm-way-562664549",
+          "name": "A-プライス",
+          "category": "supermarket",
+          "address": "",
+          "distance_m": 483
+        },
+        {
+          "id": "civic-care-3570203079-c36ac5a372",
+          "name": "日和庵",
+          "category": "social_facility",
+          "address": "宇部市沼1‐2‐18",
+          "distance_m": 511
+        }
+      ],
+      "reason": "公式閉店支店の住所・代表点は特定。1m先の元登録は百菜屋で、その閉店・承継の根拠は未確認。465m先の現行宇部沼1丁目店は別店舗。"
+    },
+    {
+      "case_id": "reconcile:tsuruha-3889",
+      "status": "map_action",
+      "outcome": "prior_occupant_identity_unresolved",
+      "facility_ids": [
+        "osm-node-4021837791"
+      ],
+      "reason": "現行公式下松山田店から10mの元登録はドラッグセガミ。商業施設内の旧店との承継を裏付ける資料が不足。新旧を同一店舗と断定しない。"
+    },
+    {
+      "case_id": "facility:official-tsuruha-10049",
+      "status": "map_action",
+      "outcome": "branch_position_conflict",
+      "facility_ids": [
+        "official-tsuruha-10049"
+      ],
+      "reason": "公式支店JSON-LDと公式埋込地図は同座標だが、入居先ハローズの店舗地点から約3.3km離れる。採用できる支店固有の訂正地点が未確認。ハローズの座標へ機械的に移動しない。"
+    }
+  ],
+  "extra_jev_requests": 0
+}

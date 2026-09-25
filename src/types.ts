@@ -59,6 +59,7 @@ export interface ShoppingProperties {
   search_names?: string;
   verification_status?: string;
   freshness_review?: import('./facilityFreshness').FreshnessReview;
+  duplicate_of?: string;
   retrieved_at?: string;
   license?: string;
   source?: string;

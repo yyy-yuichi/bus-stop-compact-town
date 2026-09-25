@@ -2,9 +2,9 @@
   "checked_at": "2026-09-25",
   "baseline": {
     "total": 7764,
-    "reflected_updates": 26,
+    "reflected_updates": 30,
     "explicitly_held": 2,
-    "not_attested_complete": 7736,
+    "not_attested_complete": 7732,
     "verified_no_change_attested_in_this_ledger": 0,
     "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
   },
@@ -62,7 +62,7 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "54b1f5b3b527127b91015aaa047408cd5f3db9e4ce3e906f6db3ee36e18fbe8d",
+    "public/data/facility-current.json": "417d4494e1d22969ce5c96759bbc76a9336efb6a88e23ef2f422120441253d00",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
     "data-sources/facility-progress-20260925/article-event-reviews.json": "fd1d3bcafdc575d21ae39e9370b918980d0cd46bba8cc0108fcfc3e7c56f6f89",
     "data-sources/facility-progress-20260925/article-index.json": "0319ed1d7630403c8d2f9c2c1ce81e536021c7edd932cd3609621d91e5d729b2",

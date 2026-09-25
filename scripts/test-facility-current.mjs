@@ -14,7 +14,7 @@ const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
 assert.equal(current.length, 7936);
-assert.equal(patch.updates.length, 26);
+assert.equal(patch.updates.length, 30);
 assert.equal(patch.additions.length, 172);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
@@ -37,7 +37,9 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 7);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 9);
+assert.equal(current.filter(f => f.properties.duplicate_of).length, 1);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 10);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -60,8 +62,8 @@ assert.equal(patch.additions.filter(f => String(f.id).startsWith('official-tsuru
 assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore is not a second physical store');
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
-assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Unresolved prior occupant and duplicate pair held');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7874);
+assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7872);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));
@@ -134,4 +136,4 @@ assert(facilityAvailable(pastSchedule), 'A past planned date is still unconfirme
 const loader = fs.readFileSync('src/shoppingData.ts', 'utf8');
 assert(loader.includes('data/facility-current.json') && loader.includes('applyFacilityCurrent(collections.flat(), reviews)'));
 assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(facilityAvailable)'));
-console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: 7, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));
+console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: current.filter(f=>f.properties.freshness_review?.status==='closed').length, reviewed_duplicate_records: current.filter(f=>f.properties.duplicate_of).length, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));

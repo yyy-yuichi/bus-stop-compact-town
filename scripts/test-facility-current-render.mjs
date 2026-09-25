@@ -27,6 +27,11 @@ try {
   assert(scheduled.includes('営業終了予定日') && scheduled.includes('2027-08-31'));
   assert(!scheduled.includes('候補には表示しません'));
   assert(render('osm-node-1423658379').includes('医療法人星の里会 岡医院'));
+  const duplicate = render('osm-way-1027461546');
+  assert(duplicate.includes('同じ店舗の登録をまとめています') && duplicate.includes('#kind=facility&amp;id=osm-node-9472242519'));
+  assert(!duplicate.includes('閉店確認') && duplicate.includes('閉店ではありません'));
+  assert(render('osm-way-370584528').includes('閉店日：2018-05-16'));
+  assert(render('osm-way-465881161').includes('閉店日：未確認（閉店自体は公式告知で確認）'));
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);

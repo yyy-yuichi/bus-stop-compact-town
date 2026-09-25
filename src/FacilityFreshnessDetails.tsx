@@ -9,6 +9,7 @@ export default function FacilityFreshnessDetails({ facility }: { facility: Shopp
     <h3 className="text-base font-bold">{freshnessLabel(facility)}</h3>
     <p className="my-2 font-semibold">{dateLabel}：{freshnessDateText(r)}</p>
     <p>{r.summary}</p>
+    {facility.properties.duplicate_of && <p className="font-semibold">同じ店舗の登録をまとめています。この記録は通常の候補から除外し、<a className="underline" href={'#kind=facility&id=' + encodeURIComponent(facility.properties.duplicate_of)}>通常表示の店舗</a>からご覧いただけます。</p>}
     {r.status === 'closed' && <p className="font-semibold">この店舗は通常の検索・周辺施設・徒歩圏の候補には表示しません。</p>}
     <details className="mt-3"><summary className="flex min-h-11 cursor-pointer items-center underline underline-offset-2">確認した資料・注意点</summary>
       {r.sources.map(s => <p key={s.url}><a className="inline-flex min-h-11 items-center underline underline-offset-2" href={s.url} target="_blank" rel="noreferrer">{s.title} ↗</a></p>)}
