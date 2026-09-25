@@ -27,7 +27,19 @@ try {
   assert(scheduled.includes('営業終了予定日') && scheduled.includes('2027-08-31'));
   assert(!scheduled.includes('候補には表示しません'));
   assert(render('osm-node-1423658379').includes('医療法人星の里会 岡医院'));
-  console.log('Actual drawer render: 5 facilities, visible evidence, historical service information and official provenance passed.');
+  const reviewed = facilities.filter(f => f.properties.freshness_review);
+  for (const f of reviewed) {
+    const html = render(f.id);
+    assert(html.includes(f.properties.name));
+    if (f.properties.freshness_review.event === 'listed') {
+      assert(html.includes('公式掲載確認') && html.includes('開店日：未確認'));
+      assert(!html.includes('開店日：2026-09-25') && !html.includes('：null'));
+    }
+  }
+  assert(render('osm-way-483625942').includes('2026-08-20'));
+  assert(render('official-ichimatsu-hikari').includes('2024-03-15'));
+  assert(render('official-toriichizu-yamaguchi-tokuyama').includes('2026-08-25'));
+  console.log(`Actual drawer render: ${reviewed.length} facilities, unknown opening dates distinguished, visible evidence and official provenance passed.`);
 } finally {
   if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow;
   await server.close();

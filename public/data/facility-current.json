@@ -165,6 +165,40 @@
           "実際の営業終了は予定日以降に再確認が必要です。"
         ]
       }
+    },
+    {
+      "id": "osm-way-483625942",
+      "expected": {
+        "name": "ロイヤルホスト 山の田店",
+        "category": "restaurant",
+        "source_ids": [
+          "way/483625942"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.92981500000002,
+            33.988692549999996
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-08-20",
+        "checked_at": "2026-09-25",
+        "summary": "運営会社の支店別閉店告知で山の田店の営業終了日を確認しました。",
+        "sources": [
+          {
+            "title": "ロイヤルホスト・蛍茶屋店／山の田店／千田町店の閉店告知",
+            "url": "https://www.royalhost.jp/news/2026/post-110.html"
+          }
+        ],
+        "limits": [
+          "他の支店の閉店日を転用していません。元データのID・代表点を維持しています。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -220,6 +254,725 @@
         "coordinates": [
           131.5392133227103,
           34.04890413355506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-ichimatsu-hikari",
+      "properties": {
+        "name": "大阪串かつ市松",
+        "city": "光市",
+        "official_address": "山口県光市島田1丁目9-19 明正ビル1階",
+        "address": "山口県光市島田1丁目9-19 明正ビル1階",
+        "official_url": "https://www7b.biglobe.ne.jp/~kushikatsu_ichimatsu/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:ichimatsu:hikari"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "大阪串かつ市松",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2024-03-15",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店情報と現行の店舗案内を確認して、新しく掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www7b.biglobe.ne.jp/~kushikatsu_ichimatsu/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.8474211577814!2d131.935401!3d33.970761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451f0052490e3b%3A0x70450a6f197d845b!2z5aSn6Ziq5Liy44GL44GkIOW4guadviAo5Y-q5LuK44CB6ZaL5bqX5rqW5YKZ5Lit77yJ!5e0!3m2!1sja!2sjp!4v1709494214109!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9354012,
+          33.9707607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-hareruya-ube",
+      "properties": {
+        "name": "居酒屋はれるや",
+        "city": "宇部市",
+        "official_address": "山口県宇部市中央町1-7-1",
+        "address": "山口県宇部市中央町1-7-1",
+        "official_url": "https://hareruyaking.com/",
+        "category": "bar",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:hareruya:ube"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "居酒屋はれるや",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2024-08-05",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店情報と現行の店舗案内を確認して、新しく掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://hareruyaking.com/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.4057360919696!2d131.23993304016616!3d33.95640952289614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543810068189bc5%3A0x23a46063f2ba1137!2z5bGF6YWS5bGLIOOBr-OCjOOCi-OChA!5e0!3m2!1sja!2sjp!4v1784193889181!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2425026,
+          33.9564051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-ufuya-shimonoseki",
+      "properties": {
+        "name": "うふ家",
+        "city": "下関市",
+        "official_address": "山口県下関市幸町7-6",
+        "address": "山口県下関市幸町7-6",
+        "official_url": "https://ufuya.jp/",
+        "category": "cafe",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:ufuya:shimonoseki"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "cafe 卵匠 うふ屋 うふ家",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://ufuya.jp/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d292.4971869820917!2d130.94196933274944!3d33.960979354470226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd75920c31ff%3A0xf1ce0ee7ebc55c18!2z44CSNzUwLTAwMDEg5bGx5Y-j55yM5LiL6Zai5biC5bm455S677yX4oiS77yW!5e0!3m2!1sja!2sjp!4v1729778665322!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941951,
+          33.9610184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-matatabi-shimonoseki",
+      "properties": {
+        "name": "またたびcafe",
+        "city": "下関市",
+        "official_address": "山口県下関市豊前田町1-2-12 第一富士ビル2階",
+        "address": "山口県下関市豊前田町1-2-12 第一富士ビル2階",
+        "official_url": "https://matatabi-cafe.com/index.html",
+        "category": "cafe",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:matatabi:shimonoseki"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "またたびcafe またたびカフェ",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://matatabi-cafe.com/index.html"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.56242127741!2d130.9266441757123!3d33.95238097319486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f6!3m3!1m2!1s0x3543bd2ca25641c7%3A0x8441c77b8a1a4f20!2z44G-44Gf44Gf44Gz44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1709693785126!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9292191,
+          33.952381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-papanrepos-chofu",
+      "properties": {
+        "name": "ぱぱん。ルポ",
+        "city": "下関市",
+        "official_address": "山口県下関市長府扇町6-30",
+        "address": "山口県下関市長府扇町6-30",
+        "official_url": "https://papanrepos.com/",
+        "category": "bakery",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:papanrepos:chofu"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ぱぱん。ルポ",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://papanrepos.com/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.8327699773736!2d131.00969999999998!3d34.0165607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354399fd58c0a479%3A0xc1513b7f6c9b217a!2z44Gx44Gx44KT44CC44Or44Od!5e1!3m2!1sja!2sjp!4v1772017855042!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.0097,
+          34.0165607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-coffeeboy-kodama",
+      "properties": {
+        "name": "COFFEEBOY 児玉町店",
+        "city": "周南市",
+        "official_address": "山口県周南市児玉町2-18 1階",
+        "address": "山口県周南市児玉町2-18 1階",
+        "official_url": "https://www.coffeeboy.co.jp/shoplist/kodama/",
+        "category": "cafe",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:coffeeboy:kodama"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "コーヒーボーイ 児玉町店 COFFEEBOY",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.coffeeboy.co.jp/shoplist/kodama/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.486847482999!2d131.80619261226923!3d34.05703207304338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e704e3c16ad7%3A0xa8f131ba72b1af35!2z44CSNzQ1LTAwNzEg5bGx5Y-j55yM5ZGo5Y2X5biC5YWQ546J55S677yS5LiB55uu77yR77yY!5e0!3m2!1sja!2sjp!4v1713423700561!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.808774,
+          34.0570293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-ryoyupan-kudamatsu",
+      "properties": {
+        "name": "プルネール下松店",
+        "city": "下松市",
+        "official_address": "山口県下松市南花岡6丁目8-1 サンリブ下松店内",
+        "address": "山口県下松市南花岡6丁目8-1 サンリブ下松店内",
+        "official_url": "https://www.ryoyupan.co.jp/shop/archives/98",
+        "category": "bakery",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:ryoyupan:kudamatsu"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "プルネール下松店",
+        "location_verification": "公式が案内するサンリブ下松の建物代表点。テナント区画・入口の位置ではありません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.ryoyupan.co.jp/shop/archives/98"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7142.625697009823!2d131.8607716068252!3d34.02877628006381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3e45481e3%3A0x31080bb41571972e!2z44K144Oz44Oq44OW5LiL5p2-!5e0!3m2!1sja!2sjp!4v1781053765096!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式が案内するサンリブ下松の建物代表点。テナント区画・入口の位置ではありません。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8654204,
+          34.0303924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-halows-nishikiwa",
+      "properties": {
+        "name": "ハローズ西岐波店",
+        "city": "宇部市",
+        "official_address": "山口県宇部市西岐波4301番地2",
+        "address": "山口県宇部市西岐波4301番地2",
+        "official_url": "https://www.halows.com/stores/detail/138",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:halows:nishikiwa"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ハローズ西岐波店",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.halows.com/stores/detail/138"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.708242371653!2d131.29807534097003!3d33.945319034128744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35447f0077a14525%3A0xa2b554af7f0e6928!2z44OP44Ot44O844K66KW_5bKQ5rOi5bqX!5e0!3m2!1sja!2sjp!4v1785456999247!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3004254,
+          33.945742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-kairikiya-hofu",
+      "properties": {
+        "name": "京都北白川ラーメン魁力屋 防府店",
+        "city": "防府市",
+        "official_address": "山口県防府市高倉2丁目14-25",
+        "address": "山口県防府市高倉2丁目14-25",
+        "official_url": "https://shop.kairikiya.co.jp/stores/195",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:kairikiya:hofu"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "京都北白川ラーメン魁力屋 防府店",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://shop.kairikiya.co.jp/stores/195"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.616409798812!2d131.55535077586913!3d34.05370957315649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354493002e42ec09%3A0x44d82d557a9edcc5!2z5Lqs6YO95YyX55m95bed44Op44O844Oh44Oz6a2B5Yqb5bGLIOmYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1776241393099!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5579257,
+          34.0537096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lopia-yamaguchi-izutsuya",
+      "properties": {
+        "name": "ロピア 山口井筒屋店",
+        "city": "山口市",
+        "official_address": "山口県山口市中市町3-3 山口井筒屋地下1階",
+        "address": "山口県山口市中市町3-3 山口井筒屋地下1階",
+        "official_url": "https://lopia.jp/shops/izutsuya",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lopia:yamaguchi:izutsuya"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ロピア 山口井筒屋店",
+        "location_verification": "公式リンク先の店舗代表点。地下1階の売場・入口・階間移動は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-07-22",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店情報と現行の店舗案内を確認して、新しく掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://lopia.jp/shops/izutsuya"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://maps.app.goo.gl/8sMQH3DXoxPv7pWy5"
+            }
+          ],
+          "limits": [
+            "公式リンク先の店舗代表点。地下1階の売場・入口・階間移動は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.478579,
+          34.1775256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-marukyu-kumage",
+      "properties": {
+        "name": "マルキュウ熊毛店",
+        "city": "周南市",
+        "official_address": "山口県周南市呼坂1106-1",
+        "address": "山口県周南市呼坂1106-1",
+        "official_url": "https://www.mrk09.co.jp/area_info/マルキュウ熊毛店/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:marukyu:kumage"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "マルキュウ熊毛店",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://www.mrk09.co.jp/area_info/マルキュウ熊毛店/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.1023629085823!2d131.95040052055464!3d34.038619192040215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354520306cb5cec5%3A0x12c73cff06816d07!2z44CSNzQ1LTA2MTIg5bGx5Y-j55yM5ZGo5Y2X5biC5ZG85Z2C77yR77yR77yQ77yW4oiS77yR!5e0!3m2!1sja!2sjp!4v1761098849635!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "近接する旧ミコーの閉店日は一次資料で未確認のため、その元データは今回変更していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9502986,
+          34.038637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-toriichizu-yamaguchi-tokuyama",
+      "properties": {
+        "name": "とりいちず 山口徳山店",
+        "city": "周南市",
+        "official_address": "山口県周南市平和通り1丁目19番地 フロンティアビル1階",
+        "address": "山口県周南市平和通り1丁目19番地 フロンティアビル1階",
+        "official_url": "https://toriichizu.net/shoplist/3906/",
+        "category": "bar",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:toriichizu:yamaguchi:tokuyama"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "とりいちず 山口徳山店",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-08-25",
+          "checked_at": "2026-09-25",
+          "summary": "公式の開店情報と現行の店舗案内を確認して、新しく掲載しました。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://toriichizu.net/shoplist/3906/"
+            },
+            {
+              "title": "運営会社の開店発表",
+              "url": "https://prtimes.jp/main/html/rd/p/000000226.000035671.html"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.693952955934!2d131.80592607585365!3d34.05172091775768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e702f279da23%3A0xb5b937a8061f763a!2z44CSNzQ1LTAwMTUg5bGx5Y-j55yM5ZGo5Y2X5biC5bmz5ZKM6YCa77yR5LiB55uu77yR77yZ!5e0!3m2!1sja!2sjp!4v1781850051372!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.808501,
+          34.0517165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lovewins-shinshimonoseki",
+      "properties": {
+        "name": "ラビンズゴルフ コスパ新下関",
+        "city": "下関市",
+        "official_address": "山口県下関市石原305 コスパビル1階",
+        "address": "山口県下関市石原305 コスパビル1階",
+        "official_url": "https://lovewins.jp/",
+        "category": "sports_centre",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lovewins:shinshimonoseki"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ラビンズゴルフ コスパ新下関",
+        "location_verification": "公式が示すコスパビルの住所代表点。1階の区画・入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://lovewins.jp/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4677.014212809856!2d130.94790530270902!3d34.01439984867899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a298481d817d%3A0x48e353c646cb2bbd!2z44CSNzUxLTA4ODYg5bGx5Y-j55yM5LiL6Zai5biC55-z5Y6f77yT77yQ77yVIOOCs-OCueODkeODk-ODqw!5e0!3m2!1sja!2sjp!4v1686098182840!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式が示すコスパビルの住所代表点。1階の区画・入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9497345,
+          34.0148081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sanyoonoda-civic-activity",
+      "properties": {
+        "name": "山陽小野田市民活動センター",
+        "city": "山陽小野田市",
+        "official_address": "山口県山陽小野田市中央二丁目3番1号 Aスクエア1階",
+        "address": "山口県山陽小野田市中央二丁目3番1号 Aスクエア1階",
+        "official_url": "https://soc-cac.jp/",
+        "category": "community_centre",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sanyoonoda:civic:activity"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "山陽小野田市民活動センター",
+        "location_verification": "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式の名称・所在地・施設案内を確認して、新しく掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗・施設案内",
+              "url": "https://soc-cac.jp/"
+            },
+            {
+              "title": "公式サイトが案内する所在地の地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.522798304701!2d131.17446277571332!3d33.9791029731845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543830000b0a1eb%3A0x4f1e380bdaf1f369!2z5bGx6Zm95bCP6YeO55Sw5biC5rCR5rS75YuV44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1714459329157!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式サイトから案内された地図の店舗・住所代表点。画面中心を座標として使用していません。入口・徒歩到達性は未確認です。",
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1770377,
+          33.97910299999999
         ]
       }
     }

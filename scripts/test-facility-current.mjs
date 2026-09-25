@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 7765);
-assert.equal(patch.updates.length, 4);
-assert.equal(patch.additions.length, 1);
+assert.equal(current.length, 7779);
+assert.equal(patch.updates.length, 5);
+assert.equal(patch.additions.length, 15);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -34,6 +34,19 @@ for (const before of raw) {
 assert.equal(facilityAvailable(closed), false);
 assert.equal(facilityAvailable(daimar), true, 'Scheduled closure is not a completed closure');
 assert.equal(freshnessLabel(daimar), '営業終了予定');
+const royal = get('osm-way-483625942');
+assert.equal(facilityAvailable(royal), false);
+assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 2);
+assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
+for (const f of patch.additions) {
+  assert(facilityAvailable(f));
+  assert(searchPlaces(f.properties.name, [], current).facilities.some(r => r.id === f.id));
+  assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
+  if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
+}
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 10);
+for (const id of ['aeon-hofu', 'sunpark', 'sunlive-kudamatsu', 'osm-way-561705134']) assert(!patch.updates.some(u => u.id === id), 'A tenant event never modifies the containing mall');
 assert.equal(oka.properties.category, 'clinic');
 assert.equal(care.properties.name, '介護医療院ケアホーム山口');
 assert.notDeepEqual(added.geometry, closed.geometry, 'Do not inherit the old store position');
@@ -83,6 +96,9 @@ reject(p => p.additions[0].properties.freshness_review.effective_at = '2027-01-0
 reject(p => p.additions[0].properties.official_url = 'https://example.org/unmatched');
 reject(p => p.additions[0].geometry.coordinates = [0, 0]);
 reject(p => p.additions[0].geometry.coordinates = [131, Number.NaN]);
+reject(p => p.additions.find(f => f.properties.freshness_review.event === 'listed').properties.freshness_review.effective_at = p.checked_at);
+reject(p => p.additions[0].properties.freshness_review.effective_at = null);
+reject(p => p.additions.find(f => f.properties.freshness_review.event === 'listed').properties.freshness_review.status = 'closed');
 assert.throws(() => applyFacilityCurrent([...raw, raw[0]], patch));
 const pastSchedule = structuredClone(daimar);
 pastSchedule.properties.freshness_review.effective_at = '2020-01-01';
@@ -90,4 +106,4 @@ assert(facilityAvailable(pastSchedule), 'A past planned date is still unconfirme
 const loader = fs.readFileSync('src/shoppingData.ts', 'utf8');
 assert(loader.includes('data/facility-current.json') && loader.includes('applyFacilityCurrent(collections.flat(), reviews)'));
 assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(facilityAvailable)'));
-console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, newly_changed_facilities: 4, existing_scheduled_notice_structured: 1, invalid_overlays_rejected: rejected, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));
+console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, this_batch_changed_facilities: 15, cumulative_additions: patch.additions.length, cumulative_closures: 2, existing_scheduled_notice_structured: 1, invalid_overlays_rejected: rejected, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-25",
+  "scope": "Selected independently reviewed holds, not an exhaustive disposition of the 1186 articles. Dates are null unless the effective event date was found in primary material.",
+  "items": [
+    {"names":["ギフトギャラリーOZ宇部店","ギフトギャラリーOZ下松瑞穂店"],"url":"https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/","event":"closed","date":"2026-09-23","status":"primary_closure_no_baseline_identity","next":"元データのOZ/オズ名称一致なし。住所・旧名称の照合へ。営業中の新施設として追加しない。"},
+    {"names":["ふくぱん銀南街店舗"],"url":"https://fukupan.crayonsite.com/","event":"storefront_sales_ended","date":"2024-06-29","status":"primary_event_no_baseline_identity","next":"工房移転・移動販売・委託販売と区別。事業全体の廃業とは扱わず、旧店舗のIDを探す。"},
+    {"names":["サロン・ド・エミール中央店"],"url":"https://www.emile-group.jp/profile/","event":"closed","date":"2024-12-29","status":"primary_closure_no_baseline_identity","next":"元データの名称一致なし。中央店以外の営業店へ閉店を転用しない。"},
+    {"names":["海商館"],"url":"https://kaishokan.com/info","event":"closed","date":null,"status":"primary_closure_month_only_no_baseline_identity","next":"2024年6月閉店の月情報。日付を月末と推測しない。元店舗のIDと日付精度を確認。"},
+    {"names":["海都大内御堀店"],"url":"https://www.marinepolis.co.jp/","facility_ids":["osm-way-465881162"],"event":"closure_candidate","date":null,"status":"primary_closure_missing","next":"二次情報の2026年1月4日を未採用。運営会社の該当店閉店告知を確認。"},
+    {"names":["ウォンツ宇部厚南店"],"url":"https://shop.tsuruha-g.com/3993","facility_ids":["osm-way-1121040363"],"event":"relocation_candidate","date":null,"status":"old_new_identity_pending","next":"現行住所は宇部市東須恵768。旧店IDと移転告知を確認してから座標変更。"},
+    {"names":["ウォンツ小野田店"],"url":"https://www.wants.co.jp/news/close_3679/","facility_ids":["osm-way-332618123"],"event":"closed","date":null,"status":"generic_baseline_name_and_date_pending","next":"公式の告知掲載日2025-03-01は閉店日とは限らない。元データの支店名なしウォンツとの住所照合が必要。"},
+    {"names":["まちのパン屋さんkiki"],"url":"http://outipankiki.saturn.bindcloud.jp/","event":"opened","date":"2024-08-06","status":"precise_public_location_missing","next":"公式住所は下松市旗岡5丁目まで。自宅の精密位置を推測せず、公開されている店舗位置の案内を確認。"},
+    {"names":["PilatesGenie"],"url":"https://pilatesgenie.com/2024/04/16/grandopen/","event":"opened","date":"2024-05-09","status":"building_position_pending","next":"公式埋込地図は銀座1丁目の地域代表点。TOKUYAMA DECKの店舗位置として無条件採用しない。"},
+    {"names":["SuouCoffeeFactory"],"url":"https://suoucf.com/post-804/","event":"relocation_candidate","date":null,"status":"service_category_pending","next":"移転予定2026-04-03と現行の西松原1-1-26案内を確認。豆販売と飲食提供を区別し、既存のカフェ種別へ推測登録しない。"},
+    {"names":["SOYSTOCK"],"url":"https://www.karatoharete.com/soystock","event":"current_listing","date":null,"status":"official_tenant_address_pending","next":"公式テナント案内あり。施設全体とテナントを分け、住所・棟・店舗の地図位置を確認。"},
+    {"names":["ミコー熊毛店"],"url":"https://www.mrk09.co.jp/area_info/マルキュウ熊毛店/","facility_ids":["osm-way-305954680"],"event":"predecessor_closure_candidate","date":null,"status":"predecessor_event_pending","next":"現行マルキュウ熊毛店を別IDで追加済み。旧ミコーの閉店・転換日と同一建物内の関係が未確定なので旧IDは未変更。重複見えの残課題として優先する。"}
+  ]
+}

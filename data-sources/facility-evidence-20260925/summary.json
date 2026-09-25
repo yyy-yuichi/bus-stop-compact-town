@@ -1,0 +1,77 @@
+{
+  "collection": {
+    "fetched": 572,
+    "fetch_failed": 123
+  },
+  "jev": {
+    "manifest_hash": "8b2df7a8858d9f377c146ad2954b97a489f3f4890f232520e7655201a2be0110",
+    "model": "jev-1.13.0",
+    "record_count": 668,
+    "completed_records": 668,
+    "completed_jobs": 88,
+    "expected_jobs": 88,
+    "completed_questions": 668,
+    "missing_jobs": [],
+    "attempts": 88,
+    "conservative_cost_bound_usd": 0.24222105600000005,
+    "successful_input_tokens": 1143739,
+    "successful_output_tokens": 57318,
+    "successful_usage_cost_usd": 0.048037038000000004,
+    "sum_successful_request_wall_ms": 48233.51820000003,
+    "control_correct": 0,
+    "control_count": 0,
+    "control_mismatches": [],
+    "limitation": "Unverified evidence routing and identity suggestions, not factual adoption."
+  },
+  "classifications": {
+    "generic_or_unrelated": 263,
+    "target_change_notice": 83,
+    "target_current_listing": 176,
+    "unreadable_or_unclear": 1,
+    "other_store_or_landmark": 49,
+    "same_target": 30,
+    "different_branch_or_entity": 58,
+    "container_or_landmark": 7,
+    "unclear": 1
+  },
+  "cumulative_records": 1854,
+  "cumulative_reservation_usd": 0.533987328,
+  "cumulative_usage_estimate_usd": 0.10353806400000001,
+  "map_changes_from_model": 0,
+  "invocations": [
+    {
+      "invocation": "2687c8cf-a775-4866-9c8f-4a97986cca13",
+      "processed_jobs": 88,
+      "skipped_jobs": 0,
+      "wall_ms": 51168.5498
+    },
+    {
+      "invocation": "e299a700-ae25-4c43-9c73-a01a0cc81a32",
+      "processed_jobs": 0,
+      "skipped_jobs": 88,
+      "wall_ms": 1508.5070999999998
+    }
+  ],
+  "changes_this_batch": {
+    "closures": 1,
+    "new_opening_date_confirmed": 4,
+    "new_current_listing_date_unknown": 10,
+    "total": 15
+  },
+  "cumulative_overlay": {
+    "updates": 5,
+    "additions": 15
+  },
+  "facility_count": 7779,
+  "remaining_record_limit": 1146,
+  "remaining_conservative_budget_usd": 0.4660126719999999,
+  "continued_queue_records": 1186,
+  "continued_queue_hash": "fb7cfb743b4c42c0dd516edc97c36cfd42f76369768952c0da0fa2a7f1f1ce78",
+  "hold_records": 12,
+  "limitations": [
+    "Jev routing is not factual verification or map changes.",
+    "Current listing adoption does not verify an opening date or every linked news event.",
+    "No full prefecture, SNS, or all-facility freshness coverage claim.",
+    "Actual billing reconciliation and classification accuracy audit remain unperformed."
+  ]
+}

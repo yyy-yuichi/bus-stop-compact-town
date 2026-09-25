@@ -4,10 +4,10 @@ import { freshnessLabel } from './facilityFreshness';
 export default function FacilityFreshnessDetails({ facility }: { facility: ShoppingFeature }) {
   const r = facility.properties.freshness_review;
   if (!r) return null;
-  const dateLabel = { closed: '閉店日', opened: '開店日', renamed: '名称変更日', service_change: '変更日', scheduled_closure: '営業終了予定日' }[r.event];
+  const dateLabel = { closed: '閉店日', opened: '開店日', listed: '開店日', renamed: '名称変更日', service_change: '変更日', scheduled_closure: '営業終了予定日' }[r.event];
   return <section className="mb-5 rounded-xl border border-stone-300 bg-stone-50 p-4 text-sm leading-relaxed text-stone-800" aria-label="施設の変更確認">
     <h3 className="text-base font-bold">{freshnessLabel(facility)}</h3>
-    <p className="my-2 font-semibold">{dateLabel}：{r.effective_at}</p>
+    <p className="my-2 font-semibold">{dateLabel}：{r.event === 'listed' ? '未確認（公式の店舗・施設案内を確認して掲載）' : r.effective_at}</p>
     <p>{r.summary}</p>
     {r.status === 'closed' && <p className="font-semibold">この店舗は通常の検索・周辺施設・徒歩圏の候補には表示しません。</p>}
     <details className="mt-3"><summary className="flex min-h-11 cursor-pointer items-center underline underline-offset-2">確認した資料・注意点</summary>

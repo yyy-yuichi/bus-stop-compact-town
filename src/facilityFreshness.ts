@@ -3,8 +3,8 @@ import { SHOPPING_CATEGORIES } from './facilityCatalog.ts';
 
 export interface FreshnessReview {
   status: 'closed' | 'operating' | 'changed' | 'scheduled_change';
-  event: 'closed' | 'opened' | 'renamed' | 'service_change' | 'scheduled_closure';
-  effective_at: string; checked_at: string; summary: string;
+  event: 'closed' | 'opened' | 'listed' | 'renamed' | 'service_change' | 'scheduled_closure';
+  effective_at: string | null; checked_at: string; summary: string;
   sources: { title: string; url: string }[]; limits: string[];
 }
 interface CurrentData {
@@ -19,9 +19,11 @@ const categories = new Set<string>(SHOPPING_CATEGORIES.map(c => c.id));
 const allowedChanges = new Set(['name', 'category', 'city', 'address', 'search_names']);
 
 export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): void {
-  const statusForEvent = { closed: 'closed', opened: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
-  if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || r.checked_at !== checkedAt || !validDate(r.checked_at) || !validDate(r.effective_at) || !r.summary?.trim()) throw Error('Invalid freshness event');
-  if (r.event !== 'scheduled_closure' && r.effective_at > checkedAt) throw Error('Future event cannot be applied as completed');
+  const statusForEvent = { closed: 'closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
+  if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || r.checked_at !== checkedAt || !validDate(r.checked_at) || !r.summary?.trim()) throw Error('Invalid freshness event');
+  // A current listing is not evidence of an opening date. Never invent one from a check/publication date.
+  if (r.event === 'listed' ? r.effective_at !== null : !validDate(r.effective_at)) throw Error('Invalid freshness event date');
+  if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > checkedAt) throw Error('Future event cannot be applied as completed');
   if (!Array.isArray(r.sources) || !r.sources.length || r.sources.some(s => !s.title?.trim() || !safeUrl(s.url)) || !Array.isArray(r.limits) || !r.limits.length || r.limits.some(s => typeof s !== 'string' || !s.trim())) throw Error('Missing freshness evidence or limits');
 }
 
@@ -47,7 +49,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     if (!Array.isArray(p.source_ids) || !p.source_ids.length || p.source_ids.some(id => !/^official:[a-z0-9:-]+$/.test(id) || sourceIds.has(id)) || new Set(p.source_ids).size !== p.source_ids.length) throw Error('Duplicate or invalid new source ID');
     if (f.geometry?.type !== 'Point' || p.geometry_kind !== 'representative_point' || f.geometry.coordinates.length !== 2 || !f.geometry.coordinates.every(Number.isFinite) || f.geometry.coordinates[0] < 130 || f.geometry.coordinates[0] > 133 || f.geometry.coordinates[1] < 33 || f.geometry.coordinates[1] > 35) throw Error('Invalid official position');
     validateFreshnessReview(p.freshness_review!, data.checked_at);
-    if (p.freshness_review?.event !== 'opened' || !p.freshness_review.sources.some(s => s.url === p.official_url)) throw Error('New facility requires opening and current official evidence');
+    if (!['opened', 'listed'].includes(p.freshness_review?.event ?? '') || !p.freshness_review!.sources.some(s => s.url === p.official_url)) throw Error('New facility requires current official evidence');
     p.source_ids.forEach(id => sourceIds.add(id)); additions.push(structuredClone(f));
   }
   return [...base.map(f => updates.get(String(f.id)) ?? f), ...additions];
@@ -58,5 +60,6 @@ export const facilityAvailable = (f: ShoppingFeature) => f.properties.freshness_
 export function freshnessLabel(f: ShoppingFeature): string {
   const r = f.properties.freshness_review;
   if (!r) return '';
+  if (r.event === 'listed') return '公式掲載確認';
   return { closed: '閉店確認', operating: '開店・掲載確認', changed: '名称・種別変更を確認', scheduled_change: '営業終了予定' }[r.status];
 }

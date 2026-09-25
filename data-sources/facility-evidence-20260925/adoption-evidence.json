@@ -1,0 +1,822 @@
+{
+  "checked_at": "2026-09-25",
+  "baseline_count": 7764,
+  "before_count": 7765,
+  "after_count": 7779,
+  "changes_this_batch": {
+    "closures": 1,
+    "new_opening_date_confirmed": 4,
+    "new_current_listing_date_unknown": 10,
+    "total": 15
+  },
+  "cumulative_overlay": {
+    "updates": 5,
+    "additions": 15
+  },
+  "before_overlay_hash": "7107e02a1ea3da226c236b35b529e0a905a15244c6f386918499ecb081a51099",
+  "after_overlay_hash": "37cd6353a18a9a9514b782b80bf14d345f9bad011478a7b18ecd71411c02d315",
+  "adoptions_hash": "471c0970a54497093387299c382ac16648784d9e7db19d5e76578e094d6f8d76",
+  "evidence": [
+    {
+      "id": "osm-way-483625942",
+      "decision": "adopt_closure",
+      "identity": "元データの支店名が完全一致し、代表点は下関市山の田。同名の別支店候補なし。公式告知では3支店それぞれ別日に閉店し、山の田店の行だけを採用。",
+      "sources": [
+        {
+          "url": "https://www.royalhost.jp/news/2026/post-110.html",
+          "receipt": "outputs/facility-evidence-20260925/followups/79ce143b78d6a86585786968.json",
+          "sha256": "2f68904754ed274f03c575a295b23ac4a1eb6e346b2859082a35cd7f35fb8b5e"
+        }
+      ]
+    },
+    {
+      "id": "official-ichimatsu-hikari",
+      "name": "大阪串かつ市松",
+      "decision": "adopt_opening",
+      "identity": "店舗自身の開店報告・所在地・公式埋込地図が一致。既存の名称検索と近傍5施設に該当店舗なし。古い短縮地図URLに開店準備中表記が残るため、営業判断は店舗自身の現行告知を使用。",
+      "operator_group": "individual_confirmed",
+      "sources": [
+        {
+          "url": "https://www7b.biglobe.ne.jp/~kushikatsu_ichimatsu/",
+          "receipt": "outputs/facility-evidence-20260925/pages/93c247cc247d5f7c93fd9553.json",
+          "sha256": "01d65e87a2e14e9e717c24cfa6cd302686b227097ea6ba6d706d4f5b60d5ffeb"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.8474211577814!2d131.935401!3d33.970761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451f0052490e3b%3A0x70450a6f197d845b!2z5aSn6Ziq5Liy44GL44GkIOW4guadviAo5Y-q5LuK44CB6ZaL5bqX5rqW5YKZ5Lit77yJ!5e0!3m2!1sja!2sjp!4v1709494214109!5m2!1sja!2sjp",
+        "coordinates": [
+          131.9354012,
+          33.9707607
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/f62df3024f50dff8265f785a.json",
+        "sha256": "c78ffe9845ce7400a5654230f0fa4043f5eeb430468c31a392866f7b594929dd"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-node-4355089099",
+          "name": "福本医院",
+          "category": "clinic",
+          "distance_m": 68
+        },
+        {
+          "id": "osm-node-4355095194",
+          "name": "くもい歯科",
+          "category": "dentist",
+          "distance_m": 80
+        },
+        {
+          "id": "osm-node-4355083195",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 89
+        },
+        {
+          "id": "osm-node-4355080590",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 107
+        },
+        {
+          "id": "osm-node-4355096689",
+          "name": "Best",
+          "category": "supermarket",
+          "distance_m": 112
+        }
+      ]
+    },
+    {
+      "id": "official-hareruya-ube",
+      "name": "居酒屋はれるや",
+      "decision": "adopt_opening",
+      "identity": "H&Nの公式店舗案内と開店告知。近隣のジモンは同じ運営者の別店舗のため統合しない。",
+      "operator_group": "regional_operator",
+      "sources": [
+        {
+          "url": "https://hareruyaking.com/",
+          "receipt": "outputs/facility-evidence-20260925/pages/14411662df5dd333b5a0ded3.json",
+          "sha256": "ac1596a9584659ff551c0cc457ee7dee25c3ea7a74779fe5449b0ea9e740df7c"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.4057360919696!2d131.23993304016616!3d33.95640952289614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543810068189bc5%3A0x23a46063f2ba1137!2z5bGF6YWS5bGLIOOBr-OCjOOCi-OChA!5e0!3m2!1sja!2sjp!4v1784193889181!5m2!1sja!2sjp",
+        "coordinates": [
+          131.2425026,
+          33.9564051
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/fae40e760c822ecbe4892b67.json",
+        "sha256": "51ca0daddd10930991b63edb04bfea6108847232de5a8c8d41e50028fbbbc6ed"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-378567994",
+          "name": "ジモン",
+          "category": "bar",
+          "distance_m": 65
+        },
+        {
+          "id": "osm-way-378567954",
+          "name": "一久",
+          "category": "restaurant",
+          "distance_m": 85
+        },
+        {
+          "id": "osm-way-549539675",
+          "name": "賄い屋",
+          "category": "bar",
+          "distance_m": 87
+        },
+        {
+          "id": "osm-way-378568010",
+          "name": "メルバニ",
+          "category": "restaurant",
+          "distance_m": 89
+        },
+        {
+          "id": "osm-node-12223884298",
+          "name": "焼き鳥Ricky",
+          "category": "bar",
+          "distance_m": 90
+        }
+      ]
+    },
+    {
+      "id": "official-ufuya-shimonoseki",
+      "name": "うふ家",
+      "decision": "adopt_current_listing",
+      "identity": "セキラン運営の卵カフェ。公式所在地と公式埋込地図の住所が一致。開店日を確認日で代用しない。",
+      "operator_group": "regional_operator",
+      "sources": [
+        {
+          "url": "https://ufuya.jp/",
+          "receipt": "outputs/facility-evidence-20260925/pages/d7f1c2ad6611555179825f8e.json",
+          "sha256": "31bb09f645dec847b01f2e8bf64446f2cc93d78972c1f7c0eef0af8823129b6c"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d292.4971869820917!2d130.94196933274944!3d33.960979354470226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd75920c31ff%3A0xf1ce0ee7ebc55c18!2z44CSNzUwLTAwMDEg5bGx5Y-j55yM5LiL6Zai5biC5bm455S677yX4oiS77yW!5e0!3m2!1sja!2sjp!4v1729778665322!5m2!1sja!2sjp",
+        "coordinates": [
+          130.941951,
+          33.9610184
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/0b6fdf376f3f8536a163f528.json",
+        "sha256": "3375fbe3073fa5c4039e9cf61bd324efe6b8aa4801ca76081317aee3606ca353"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-733823978",
+          "name": "田中公園",
+          "category": "playground",
+          "distance_m": 50
+        },
+        {
+          "id": "osm-way-553527914",
+          "name": "ときわ公園",
+          "category": "playground",
+          "distance_m": 52
+        },
+        {
+          "id": "civic-care-3570106348-852a7e6250",
+          "name": "あおぞらの里 西の端ケアプランセンター",
+          "category": "social_facility",
+          "distance_m": 72
+        },
+        {
+          "id": "osm-node-1423658596",
+          "name": "東光保育園",
+          "category": "childcare",
+          "distance_m": 108
+        },
+        {
+          "id": "civic-care-3570105613-d21775ccf3",
+          "name": "ハピネスケア",
+          "category": "social_facility",
+          "distance_m": 127
+        }
+      ]
+    },
+    {
+      "id": "official-matatabi-shimonoseki",
+      "name": "またたびcafe",
+      "decision": "adopt_current_listing",
+      "identity": "Animal ENSHIA運営の飲食カフェ。公式サイトは猫がいないカフェと明示するため猫カフェと誤記しない。公式店舗地図の店舗名・住所・階数が一致。",
+      "operator_group": "local_organization",
+      "sources": [
+        {
+          "url": "https://matatabi-cafe.com/index.html",
+          "receipt": "outputs/facility-evidence-20260925/followups/07dd0371bd04b8fcf9ef404b.json",
+          "sha256": "d6853d4f5edb66765e1045a43a1fb7e60421efcdfe225ff5c6a7b72f21116aff"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.56242127741!2d130.9266441757123!3d33.95238097319486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f6!3m3!1m2!1s0x3543bd2ca25641c7%3A0x8441c77b8a1a4f20!2z44G-44Gf44Gf44Gz44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1709693785126!5m2!1sja!2sjp",
+        "coordinates": [
+          130.9292191,
+          33.952381
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/02b9cc6bb8d4ef16492112eb.json",
+        "sha256": "664695ae0b54e375f0c63e45665dfeb8df7a9fc117354f2491b24d7fcb373dfb"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-node-1423653931",
+          "name": "下関天使幼稚園",
+          "category": "childcare",
+          "distance_m": 172
+        },
+        {
+          "id": "osm-way-1257540955",
+          "name": "笹山町広場公園",
+          "category": "playground",
+          "distance_m": 181
+        },
+        {
+          "id": "civic-care-3570101299-fc0416a980",
+          "name": "ハートケアセンター下関",
+          "category": "social_facility",
+          "distance_m": 218
+        },
+        {
+          "id": "civic-care-3570100382-bd94139600",
+          "name": "ニチイケアセンター下関",
+          "category": "social_facility",
+          "distance_m": 219
+        },
+        {
+          "id": "osm-node-1423654023",
+          "name": "下関豊前田郵便局",
+          "category": "reference",
+          "distance_m": 230
+        }
+      ]
+    },
+    {
+      "id": "official-papanrepos-chofu",
+      "name": "ぱぱん。ルポ",
+      "decision": "adopt_current_listing",
+      "identity": "和田又のベーカリー公式サイト。2026年9月の営業告知・店舗案内と公式地図を確認。日付のない新店紹介から開店日を推測しない。",
+      "operator_group": "regional_operator",
+      "sources": [
+        {
+          "url": "https://papanrepos.com/",
+          "receipt": "outputs/facility-evidence-20260925/pages/a66c53e037318203408e5862.json",
+          "sha256": "87c981e5d8df29ff4845db9ab658383bbd3fdace98d2e400756edf6d05d01c37"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.8327699773736!2d131.00969999999998!3d34.0165607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354399fd58c0a479%3A0xc1513b7f6c9b217a!2z44Gx44Gx44KT44CC44Or44Od!5e1!3m2!1sja!2sjp!4v1772017855042!5m2!1sja!2sjp",
+        "coordinates": [
+          131.0097,
+          34.0165607
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/52890ffc1d9f1633f1b87d6f.json",
+        "sha256": "3351f7f39e42acbfc609c1a87b825b37fbaef11f1b670b646bb7a1b5db092d99"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-488785143",
+          "name": "運動広場",
+          "category": "park",
+          "distance_m": 462
+        },
+        {
+          "id": "osm-way-732590601",
+          "name": "下関市市民プール",
+          "category": "sports_centre",
+          "distance_m": 497
+        },
+        {
+          "id": "civic-care-3570106413-e515ee3ccb",
+          "name": "関門産業株式会社",
+          "category": "social_facility",
+          "distance_m": 551
+        },
+        {
+          "id": "osm-node-827126224",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 753
+        },
+        {
+          "id": "osm-node-4812740097",
+          "name": "ジョイフル",
+          "category": "restaurant",
+          "distance_m": 757
+        }
+      ]
+    },
+    {
+      "id": "official-coffeeboy-kodama",
+      "name": "COFFEEBOY 児玉町店",
+      "decision": "adopt_current_listing",
+      "identity": "公式で二番町からの移転と現店舗住所を確認。旧所在地の元IDを特定していないため他の喫茶店を改称しない。開店・移転日は未確認。",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://www.coffeeboy.co.jp/shoplist/kodama/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1993a15e334643a34a58aafc.json",
+          "sha256": "2df35ec1df2b158eef8e7345957de3914d21a7a12e2b8ed997041ead799c72b0"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.486847482999!2d131.80619261226923!3d34.05703207304338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e704e3c16ad7%3A0xa8f131ba72b1af35!2z44CSNzQ1LTAwNzEg5bGx5Y-j55yM5ZGo5Y2X5biC5YWQ546J55S677yS5LiB55uu77yR77yY!5e0!3m2!1sja!2sjp!4v1713423700561!5m2!1sja!2sjp",
+        "coordinates": [
+          131.808774,
+          34.0570293
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/8483672a4926a2167ed29a88.json",
+        "sha256": "95ed4d70568256d6456c674be7dfb20cd16036c15b9b430e13dcce8498da657e"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-node-3846496960",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 28
+        },
+        {
+          "id": "osm-node-3846496364",
+          "name": "福谷歯科",
+          "category": "dentist",
+          "distance_m": 80
+        },
+        {
+          "id": "osm-node-1423654519",
+          "name": "周南市立中央図書館",
+          "category": "library",
+          "distance_m": 142
+        },
+        {
+          "id": "osm-node-12376461152",
+          "name": "chocoZAP",
+          "category": "sports_centre",
+          "distance_m": 149
+        },
+        {
+          "id": "osm-node-1423657628",
+          "name": "徳山めぐみ幼稚園",
+          "category": "childcare",
+          "distance_m": 210
+        }
+      ]
+    },
+    {
+      "id": "official-ryoyupan-kudamatsu",
+      "name": "プルネール下松店",
+      "decision": "adopt_current_listing",
+      "identity": "リョーユーパンの店舗ページで入居先まで確認。サンリブ本体・ABC Martと異なるパン店テナント。建物をパン店に改称しない。",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://www.ryoyupan.co.jp/shop/archives/98",
+          "receipt": "outputs/facility-evidence-20260925/pages/850cb5ba9c0990ffefa15832.json",
+          "sha256": "416b3619efbfb2acaaad73dde03ed397778316437c18414d860cd62d71b7dcdc"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7142.625697009823!2d131.8607716068252!3d34.02877628006381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3e45481e3%3A0x31080bb41571972e!2z44K144Oz44Oq44OW5LiL5p2-!5e0!3m2!1sja!2sjp!4v1781053765096!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8654204,
+          34.0303924
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/5b3d216a70b14f9891a2040b.json",
+        "sha256": "a72a552f9b2baacdea6fcb71036311ab40793fb91279efca3916092a6672ae85"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-305489114",
+          "name": "ABC Mart",
+          "category": "mall",
+          "distance_m": 21
+        },
+        {
+          "id": "sunlive-kudamatsu",
+          "name": "サンリブ下松",
+          "category": "mall",
+          "distance_m": 33
+        },
+        {
+          "id": "osm-way-369045559",
+          "name": "原田歯科",
+          "category": "dentist",
+          "distance_m": 130
+        },
+        {
+          "id": "osm-way-369070973",
+          "name": "カルビ王国",
+          "category": "restaurant",
+          "distance_m": 250
+        },
+        {
+          "id": "civic-kdpark000010",
+          "name": "上藤光街区公園",
+          "category": "park",
+          "distance_m": 300
+        }
+      ]
+    },
+    {
+      "id": "official-halows-nishikiwa",
+      "name": "ハローズ西岐波店",
+      "decision": "adopt_current_listing",
+      "identity": "ハローズ現行店舗案内の店名・住所と地図の店舗点が一致。防府新田店は別支店。開店日は今回公式本文から未確定。",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://www.halows.com/stores/detail/138",
+          "receipt": "outputs/facility-evidence-20260925/pages/cf39d9a6eabd3ca336735151.json",
+          "sha256": "87c2dfe40caeed2fd192b91143a6e89d015265cf8141526cb09d2e560eafe46c"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.708242371653!2d131.29807534097003!3d33.945319034128744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35447f0077a14525%3A0xa2b554af7f0e6928!2z44OP44Ot44O844K66KW_5bKQ5rOi5bqX!5e0!3m2!1sja!2sjp!4v1785456999247!5m2!1sja!2sjp",
+        "coordinates": [
+          131.3004254,
+          33.945742
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/51a453ecee0c2b0d3fdda555.json",
+        "sha256": "78938cbc04ec492a8f0500f22b58689bc639a1f4c7b9f10936065eabbd8668b5"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-370993928",
+          "name": "明光幼稚園",
+          "category": "childcare",
+          "distance_m": 471
+        },
+        {
+          "id": "civic-care-3560290219-b688414006",
+          "name": "サンキ・ウエルビィ訪問看護ステーション宇部",
+          "category": "social_facility",
+          "distance_m": 477
+        },
+        {
+          "id": "osm-node-1423657000",
+          "name": "市立常盤小学校",
+          "category": "school",
+          "distance_m": 662
+        },
+        {
+          "id": "civic-care-3560290250-e17fe31c00",
+          "name": "リハビリ訪問看護ステーション Ｆｕｎ ｔｏ Ｌｉｆｅ",
+          "category": "social_facility",
+          "distance_m": 729
+        },
+        {
+          "id": "civic-care-3570203814-bce2c7ebd8",
+          "name": "ケアマネステーションＦｕｎｔｏＬｉｆｅ",
+          "category": "social_facility",
+          "distance_m": 729
+        }
+      ]
+    },
+    {
+      "id": "official-kairikiya-hofu",
+      "name": "京都北白川ラーメン魁力屋 防府店",
+      "decision": "adopt_current_listing",
+      "identity": "公式店舗案内・公式埋込地図の名称と住所が一致。近隣のセブンイレブンやジョリーパスタとは別店舗。",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://shop.kairikiya.co.jp/stores/195",
+          "receipt": "outputs/facility-evidence-20260925/pages/61532d847af4afca63758a10.json",
+          "sha256": "c4168bf4ba11fb9c185ed5ffb92b999acb6e5f3cd0cfed84624b0b0b984ded0f"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.616409798812!2d131.55535077586913!3d34.05370957315649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354493002e42ec09%3A0x44d82d557a9edcc5!2z5Lqs6YO95YyX55m95bed44Op44O844Oh44Oz6a2B5Yqb5bGLIOmYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1776241393099!5m2!1sja!2sjp",
+        "coordinates": [
+          131.5579257,
+          34.0537096
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/0fc45249eee7a0f83f3dbda1.json",
+        "sha256": "f3dee4158cd7c127d86995ff658b8fbf47bcd73343b6eb6ab6b890b7c8d5e928"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-node-4820335896",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 22
+        },
+        {
+          "id": "civic-care-3560690244-555ccf44ba",
+          "name": "訪問看護ステーション ライフナース",
+          "category": "social_facility",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-node-4820336181",
+          "name": "ジョリーパスタ",
+          "category": "restaurant",
+          "distance_m": 60
+        },
+        {
+          "id": "civic-care-3570601017-744b032a1f",
+          "name": "デイサービスセンター ふじ防府",
+          "category": "social_facility",
+          "distance_m": 100
+        },
+        {
+          "id": "osm-node-4820338779",
+          "name": "ケンタッキーフライドチキン",
+          "category": "fast_food",
+          "distance_m": 120
+        }
+      ]
+    },
+    {
+      "id": "official-lopia-yamaguchi-izutsuya",
+      "name": "ロピア 山口井筒屋店",
+      "decision": "adopt_opening",
+      "identity": "公式に開店日・地下1階所在地を掲載。既存の山口井筒屋本体とは別テナントとして追加。",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://lopia.jp/shops/izutsuya",
+          "receipt": "outputs/facility-evidence-20260925/pages/d490c85d688fabe91e6e65e8.json",
+          "sha256": "365daf9cd48d5b46aa4495abf287d045ae83dad5df047394fdfaf99ae870f4c8"
+        }
+      ],
+      "position": {
+        "method": "place_url_data_not_viewport",
+        "url": "https://maps.app.goo.gl/8sMQH3DXoxPv7pWy5",
+        "coordinates": [
+          131.478579,
+          34.1775256
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/7b603d5f0bc52591c0fba140.json",
+        "sha256": "ff0f8a6e4b905125faac38307046a2ef2bf0f89fc6e25136f50f285c5ca8fec9"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-561705134",
+          "name": "山口井筒屋",
+          "category": "mall",
+          "distance_m": 3
+        },
+        {
+          "id": "osm-node-1423655411",
+          "name": "山口中市郵便局",
+          "category": "post_office",
+          "distance_m": 88
+        },
+        {
+          "id": "osm-way-561705132",
+          "name": "山口中市郵便局",
+          "category": "post_office",
+          "distance_m": 89
+        },
+        {
+          "id": "osm-way-561705117",
+          "name": "中市コミュニティホールNac",
+          "category": "community_centre",
+          "distance_m": 118
+        },
+        {
+          "id": "osm-way-561705156",
+          "name": "山口銀行",
+          "category": "bank",
+          "distance_m": 134
+        }
+      ]
+    },
+    {
+      "id": "official-marukyu-kumage",
+      "name": "マルキュウ熊毛店",
+      "decision": "adopt_current_listing",
+      "identity": "現行の運営者・店舗案内と住所指定地図を確認。近接する旧ミコーは名称・運営者が異なるため元IDを流用しない。",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://www.mrk09.co.jp/area_info/マルキュウ熊毛店/",
+          "receipt": "outputs/facility-evidence-20260925/pages/3bbdbafa389074d3d87223ca.json",
+          "sha256": "22948cce7ccce913463314a84977e1a85251b06b89ae80edac9300a571861180"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.1023629085823!2d131.95040052055464!3d34.038619192040215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354520306cb5cec5%3A0x12c73cff06816d07!2z44CSNzQ1LTA2MTIg5bGx5Y-j55yM5ZGo5Y2X5biC5ZG85Z2C77yR77yR77yQ77yW4oiS77yR!5e0!3m2!1sja!2sjp!4v1761098849635!5m2!1sja!2sjp",
+        "coordinates": [
+          131.9502986,
+          34.038637
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/05631790950650526dcedd85.json",
+        "sha256": "6f745470a0d9129b73e095482cc27d7cc2471dd5060f9cb2fef03a73b18dbf1d"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-305954680",
+          "name": "ミコー",
+          "category": "supermarket",
+          "distance_m": 1
+        },
+        {
+          "id": "osm-node-1423654340",
+          "name": "勝間簡易郵便局",
+          "category": "post_office",
+          "distance_m": 100
+        },
+        {
+          "id": "osm-node-1423654338",
+          "name": "勝間保育園",
+          "category": "childcare",
+          "distance_m": 324
+        },
+        {
+          "id": "osm-node-3038307233",
+          "name": "ふれあい公園",
+          "category": "park",
+          "distance_m": 445
+        },
+        {
+          "id": "civic-care-3561590112-71049dca66",
+          "name": "ボヌール訪問看護ステーション",
+          "category": "social_facility",
+          "distance_m": 476
+        }
+      ]
+    },
+    {
+      "id": "official-toriichizu-yamaguchi-tokuyama",
+      "name": "とりいちず 山口徳山店",
+      "decision": "adopt_opening",
+      "identity": "運営会社FS.shake発表と現行店舗案内・建物住所指定地図を確認。隣接銀行等とは別施設。",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://toriichizu.net/shoplist/3906/",
+          "receipt": "outputs/facility-evidence-20260925/pages/46adf9a66eac80b4e81bc936.json",
+          "sha256": "c2181dec0b5582ea1243a20d61e28341569c03a4e2bdb9c7bae2ab12ce110046"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "receipt": "outputs/facility-evidence-20260925/pages/ebb96b7b95dd44bbc8a70eca.json",
+          "sha256": "c1468a298b1efa8be44604daddc524390f215e398324e4ef8f1815b4c3d4fd00"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.693952955934!2d131.80592607585365!3d34.05172091775768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e702f279da23%3A0xb5b937a8061f763a!2z44CSNzQ1LTAwMTUg5bGx5Y-j55yM5ZGo5Y2X5biC5bmz5ZKM6YCa77yR5LiB55uu77yR77yZ!5e0!3m2!1sja!2sjp!4v1781850051372!5m2!1sja!2sjp",
+        "coordinates": [
+          131.808501,
+          34.0517165
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/565dce0afd491e23f44310ed.json",
+        "sha256": "8c3487b28dc99bf465475709c0420f762b63760aa479ff8aef1376d86396603b"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-312146581",
+          "name": "西京銀行",
+          "category": "bank",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-way-312146297",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 78
+        },
+        {
+          "id": "osm-node-1423657660",
+          "name": "周南市立飯島保育園",
+          "category": "childcare",
+          "distance_m": 82
+        },
+        {
+          "id": "osm-node-3813312059",
+          "name": "藤井医院",
+          "category": "clinic",
+          "distance_m": 117
+        },
+        {
+          "id": "osm-node-3812554657",
+          "name": "藤井内科",
+          "category": "clinic",
+          "distance_m": 127
+        }
+      ]
+    },
+    {
+      "id": "official-lovewins-shinshimonoseki",
+      "name": "ラビンズゴルフ コスパ新下関",
+      "decision": "adopt_current_listing",
+      "identity": "公式で室内ゴルフ練習場と所在地を確認。近接するゆめタウン等と別の施設。",
+      "operator_group": "regional_operator",
+      "sources": [
+        {
+          "url": "https://lovewins.jp/",
+          "receipt": "outputs/facility-evidence-20260925/pages/0a675e800bbf8278d4b0494b.json",
+          "sha256": "d6281987a52cdc1852cb2e5b94f6521a04bc797e1f8f437e96c90ad779cac1d3"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4677.014212809856!2d130.94790530270902!3d34.01439984867899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a298481d817d%3A0x48e353c646cb2bbd!2z44CSNzUxLTA4ODYg5bGx5Y-j55yM5LiL6Zai5biC55-z5Y6f77yT77yQ77yVIOOCs-OCueODkeODk-ODqw!5e0!3m2!1sja!2sjp!4v1686098182840!5m2!1sja!2sjp",
+        "coordinates": [
+          130.9497345,
+          34.0148081
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/d568d67dc6632ca4dd296aa2.json",
+        "sha256": "a06b84ec1e4efe9a42e40f9c236148d898809d11c454f1c32f85b869efea7212"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-389157196",
+          "name": "石原有富公園",
+          "category": "playground",
+          "distance_m": 84
+        },
+        {
+          "id": "osm-node-4632065660",
+          "name": "餃子の王将",
+          "category": "restaurant",
+          "distance_m": 101
+        },
+        {
+          "id": "osm-node-4632065659",
+          "name": "CoCo壱番屋",
+          "category": "fast_food",
+          "distance_m": 118
+        },
+        {
+          "id": "osm-node-4632049772",
+          "name": "ゆめタウン",
+          "category": "supermarket",
+          "distance_m": 122
+        },
+        {
+          "id": "osm-node-4632065650",
+          "name": "モスバーガー",
+          "category": "fast_food",
+          "distance_m": 133
+        }
+      ]
+    },
+    {
+      "id": "official-sanyoonoda-civic-activity",
+      "name": "山陽小野田市民活動センター",
+      "decision": "adopt_current_listing",
+      "identity": "施設自身の案内・所在地・施設名指定地図と一致。名称検索と近傍5施設に重複対象なし。開館日ではなく現行掲載確認。",
+      "operator_group": "civic_facility",
+      "sources": [
+        {
+          "url": "https://soc-cac.jp/",
+          "receipt": "outputs/facility-evidence-20260925/pages/ef9470d7952d337fdba525a6.json",
+          "sha256": "f71c2fd5b4d96b89c1d1967c9b726bf5df6a9f37c0947c67a4df53f1eb7284b5"
+        }
+      ],
+      "position": {
+        "method": "named_embed_place_record",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.522798304701!2d131.17446277571332!3d33.9791029731845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543830000b0a1eb%3A0x4f1e380bdaf1f369!2z5bGx6Zm95bCP6YeO55Sw5biC5rCR5rS75YuV44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1714459329157!5m2!1sja!2sjp",
+        "coordinates": [
+          131.1770377,
+          33.97910299999999
+        ],
+        "receipt": "outputs/facility-evidence-20260925/followups/32ba0ebcc3fe0212aa409bac.json",
+        "sha256": "56e030a9db56d0d6aa845839d3d9df0e7330e8de55ca8d8bb80ab04beb13db7e"
+      },
+      "nearest_before": [
+        {
+          "id": "osm-way-741220123",
+          "name": "県立小野田工業高等学校",
+          "category": "school",
+          "distance_m": 89
+        },
+        {
+          "id": "civic-care-3571600760-cf7c120139",
+          "name": "デイサービスいこい",
+          "category": "social_facility",
+          "distance_m": 95
+        },
+        {
+          "id": "civic-care-3571600950-41f21a71ab",
+          "name": "リハビリデイサービスプラスワン",
+          "category": "social_facility",
+          "distance_m": 183
+        },
+        {
+          "id": "osm-way-332618145",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 234
+        },
+        {
+          "id": "civic-care-3571601123-44f0490da2",
+          "name": "ヘルパーステーションいちえ",
+          "category": "social_facility",
+          "distance_m": 250
+        }
+      ]
+    }
+  ]
+}
