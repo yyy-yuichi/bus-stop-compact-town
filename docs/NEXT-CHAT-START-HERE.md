@@ -10,7 +10,7 @@
 
 - [今回の9記事照合](FACILITY-DINING-CHAINS-20260925.md)：松屋2店・吉野家宇部昭和町・スシロー光浅江を追加。はま寿司新下関は元IDと座標を保持して更新。基準7,764／既存更新26／追加169／履歴込み7,933／通常候補7,871／閉店7。
 - 記事1,186：全列挙対象処理済み43／一部確認23／未照合1,120。119イベント中95判断済み・24保留。今回の9開店報道（5店舗）は実施日や年の相違が未解消で保留。現行掲載の反映と記事の全件完了を混同しない。
-- 今回の検証・PR更新・正式Drive保存は処理中。完了前に保存済みと扱わない。
+- 実装6c6b088の[CI #102成功](https://github.com/yyy-yuichi/bus-stop-compact-town/actions/runs/36116773041)：69テスト、195施設SSR、型検査・build・release検証。元ID・座標・履歴と再適用0を確認。[原本ZIP](https://drive.google.com/file/d/1lRc9_J4bJsQITU6jJq8z1HpiLHWjFp7T/view)をDriveから読み戻し、全体SHA256と内部44ファイル一致。[保存証明](https://drive.google.com/file/d/1vMaZuEcHbtLkjYOuAN6rpu0akAbjCbRf/view)。前段原本も保持。
 - 次：保存済み分類から未照合記事を自治体・運営元単位で進める。採否正本は data-sources/facility-progress-20260925/article-event-reviews.json。松屋新山口は13番39号、吉野家宇部昭和町は673-5を採用。光浅江は公式の2022年開店記録があり、2026年初開店としない。
 - Jev残975対象／保守的残額$0.39444736、追加送信0。再送・購入・自動チャージ、マージ・一般公開はしない。PR #14は既存gh CLIで更新。ユーザーHTMLは変更・削除・一括ステージ禁止。
 
@@ -215,18 +215,19 @@ PR #14：https://github.com/yyy-yuichi/bus-stop-compact-town/pull/14
 
 目的は、元7,764件（shopping.geojsonとcivic-facilities.geojson）の施設を、開閉店・改称・移転を区別して根拠付きで更新すること。既存ID・座標・履歴を保持し、同名他店・入居先・近隣施設へ変更を誤適用しない。
 
-最新の飲食チェーン9記事では4施設追加・既存1施設更新。今回の検証・正式保存は処理中で、下記保存済みZIPは前段。未完了工程から続け、前段原本を再生成しない。
+最新の飲食チェーン9記事では4施設追加・既存1施設更新。実装6c6b088f7de69a01da4714a780ac923605d70bfaのCI #102成功（69テスト、195施設SSR、型検査、build、release）。原本ZIPの正式保存と読み戻し検証も完了。この入口は原本確定後の文書更新であり、実装コミットと混同しない。
 
 累計は元7,764／既存更新26／追加169／履歴込み7,933／通常候補7,871／閉店7。記事1,186の全列挙対象処理済み43、一部確認23、未照合1,120。119イベント中95判断済み・24保留。全体完了ではない。
 採否正本：data-sources/facility-progress-20260925/article-event-reviews.json。
 台帳再生成：node scripts/build-facility-progress-ledger.mjs。
 
-【前段の保存済み】
-保存証明：https://drive.google.com/file/d/1A6eIltt4pUK8qWbkoEn26qLf3K-Q0Y4C/view
-原本ZIP：https://drive.google.com/file/d/1H6tzEijQ3DFuX-3BStIJraj_kBIJjaDR/view
-1,720,320 bytes、SHA256 f8aacdea8fe6334bd9946bfa0fd651dea10291a14afb83a90e9afc351ce2f9de。
-Drive読み戻しでZIP全体と内部73ファイル一致。前段原本も検証済みで再作成・再送しない。
-連携のInternalError後に保存先の実状態・原本ハッシュを調べ、ログイン済みDriveのファイル選択から同じ原本を送って成功。容量・権限不足とは断定しない。
+【今回の保存済み】
+保存証明：https://drive.google.com/file/d/1vMaZuEcHbtLkjYOuAN6rpu0akAbjCbRf/view
+原本ZIP：https://drive.google.com/file/d/1lRc9_J4bJsQITU6jJq8z1HpiLHWjFp7T/view
+1,073,751 bytes、SHA256 ed63af2ecf77004bbea970927379715fa5ed64898e55824dc9f27e1d2b40f1cd。
+Drive読み戻しでZIP全体と内部44ファイル一致。基準8fb429dまたは前段保存プロジェクトへ適用する増分原本。
+前段の萩・長門原本：https://drive.google.com/file/d/1H6tzEijQ3DFuX-3BStIJraj_kBIJjaDR/view
+過去のZIPも検証済みで再作成・再送しない。今回の通常アップロードはファイル選択処理に約20分かかった。完了表示とDrive側ID・サイズを確認し、読み戻しまで検証した。途中の100%やフォルダ未掲載を根拠に重複送信しない。遅延原因は未特定。
 
 【次の実務】
 保存済み1,186記事の分類から未照合記事を自治体・運営元ごとにまとめて照合する。白紙の候補探しや、完了済みの原本保存からやり直さない。
