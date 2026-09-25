@@ -34,7 +34,7 @@ const overlay = read('public/data/facility-current.json');
 const updateIds = new Set(overlay.updates.map(row => row.id));
 assert.equal(updateIds.size, overlay.updates.length);
 assert([...updateIds].every(id => baselineIds.has(id)), 'An update did not match a baseline ID');
-assert.equal(overlay.additions.length, 137);
+assert.equal(overlay.additions.length, 141);
 const additionIds = new Set(overlay.additions.map(row => row.id));
 assert.equal(additionIds.size, overlay.additions.length);
 assert([...additionIds].every(id => !baselineIds.has(id)), 'An addition reused a baseline ID');
@@ -71,6 +71,7 @@ const addressFrom = body => {
   if (continuation) address += ' ' + continuation[1].trim();
   return address.replace(/\s+/g, ' ').trim();
 };
+const relocationStatus = new Map(read('data-sources/facility-relocations-20260925/relocation-review.json').map(row => [row.graduate_id, row]));
 const graduateReview = graduateDecisions.map(decision => {
   const record = recordById.get(decision.id);
   assert(record && record.name === decision.name);
@@ -81,9 +82,13 @@ const graduateReview = graduateDecisions.map(decision => {
   const exactNameCandidates = [...baseline, ...overlay.additions].filter(item => normalize(item.name ?? '') === normalize(record.name)).map(item => item.id);
   assert(normalize(currentGraduateText).includes(normalize(record.name)), `${record.name} vanished from the current operator page`);
   if (operatorAddress) assert(normalize(currentGraduateText).includes(normalize(operatorAddress)), `${record.name} address changed on the current operator page`);
+  const adopted = relocationStatus.get(decision.id);
+  assert(adopted && adopted.name === decision.name);
+  const mapAdopted = adopted.status === 'reflected_addition';
+  if (mapAdopted) assert(overlay.additions.some(row => row.id === adopted.map_feature_id));
   return {
     id: decision.id, name: decision.name, kind: 'relocated_graduate',
-    review_status: locationType === 'reported_fixed_address'
+    review_status: mapAdopted ? 'reflected_addition' : locationType === 'reported_fixed_address'
       ? 'address_sourced_geometry_and_identity_pending'
       : locationType === 'mobile_no_fixed_point' ? 'mobile_without_fixed_map_point'
         : 'address_not_stated',
@@ -92,7 +97,7 @@ const graduateReview = graduateDecisions.map(decision => {
     address_source_receipt: decision.id === 'harete-graduate-05' ? source(sushiEventSource).path : address ? source(graduateSource).path : null,
     identity_corrob_source: decision.id === 'harete-graduate-05' ? sushiCitySource : null,
     identity_corrob_receipt: decision.id === 'harete-graduate-05' ? source(sushiCitySource).path : null,
-    old_location_excluded: true, map_adopted: false,
+    old_location_excluded: true, map_adopted: mapAdopted, map_feature_id: adopted.map_feature_id,
     exact_name_candidate_ids: exactNameCandidates,
     official_directory_url: graduateSource,
     official_directory_receipt: source(graduateSource).path,
@@ -101,7 +106,8 @@ const graduateReview = graduateDecisions.map(decision => {
     current_self_operated_address: decision.id === 'harete-graduate-04'
       ? '山口県下関市唐戸町2-12 プロートン泰平1F-D' : null,
     source_record: 'outputs/facility-local-stores-20260925/records.json',
-    next: locationType === 'mobile_no_fixed_point' ? 'Do not create a fixed map point for mobile operations.'
+    next: mapAdopted ? 'Keep checking self-operated current notices and do not turn a representative map point into an entrance.'
+      : locationType === 'mobile_no_fixed_point' ? 'Do not create a fixed map point for mobile operations.'
       : locationType === 'fixed_address_not_stated' ? 'Find the current shop address from the operator or the shop itself.'
       : 'Match this address and shop identity to a location point; verify any date before publishing it as an actual opening.',
   };
@@ -109,7 +115,7 @@ const graduateReview = graduateDecisions.map(decision => {
 assert.equal(graduateReview.filter(row => row.location_type === 'reported_fixed_address').length, 10);
 assert.equal(graduateReview.filter(row => row.location_type === 'fixed_address_not_stated').length, 0);
 assert.equal(graduateReview.filter(row => row.location_type === 'mobile_no_fixed_point').length, 1);
-assert(graduateReview.every(row => row.exact_name_candidate_ids.length === 0), 'Check newly found exact-name candidates');
+assert(graduateReview.every(row => row.exact_name_candidate_ids.every(id => id === row.map_feature_id)), 'Check newly found exact-name candidates');
 
 const closureReview = [
   {
@@ -182,7 +188,10 @@ const summary = {
     address_from_operator: graduateReview.filter(row => row.address_source === graduateSource).length,
     address_from_event_organizer: graduateReview.filter(row => row.address_source === sushiEventSource).length,
     address_not_stated: 0, mobile_without_fixed_point: 1,
-    closure_candidates_with_existing_ids: closureReview.length, map_changes_this_review: 0 },
+    closure_candidates_with_existing_ids: closureReview.length,
+    graduates_reflected: graduateReview.filter(row => row.map_adopted).length,
+    graduates_pending: graduateReview.filter(row => !row.map_adopted && row.location_type === 'reported_fixed_address').length,
+    map_changes_this_review: graduateReview.filter(row => row.map_adopted).length },
   earlier_hold_rows_now_reflected: staleHoldIds,
   jev_remaining: { records: 984, conservative_budget_usd: 0.399952384,
     source: 'data-sources/facility-local-stores-20260925/adoption-summary.json' },
@@ -191,7 +200,10 @@ const summary = {
     'outputs/facility-local-stores-20260925/continued-review-queue.json',
     'data-sources/facility-local-stores-20260925/decisions.json',
     'outputs/facility-local-stores-20260925/records.json',
-    `${publicOut}/source-plan.json`, ...[...receipts.values()].map(item => item.path),
+    `${publicOut}/source-plan.json`,
+    'data-sources/facility-relocations-20260925/relocation-review.json',
+    'data-sources/facility-relocations-20260925/adoptions.json',
+    ...[...receipts.values()].map(item => item.path),
   ].map(path => [path, digest(path)])),
 };
 assert.equal(summary.local_directory_batch.new_map_additions, 72);

@@ -8367,6 +8367,218 @@
           33.9575229
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-trip",
+      "properties": {
+        "name": "焼き鳥とワイン トリップ",
+        "city": "下関市",
+        "address": "山口県下関市唐戸町2-12 プロートン泰平1F-D",
+        "official_address": "山口県下関市唐戸町2-12 プロートン泰平1F-D",
+        "official_url": "https://yakitoritowine-trip.com/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:04"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "焼き鳥とワイン トリップ 唐戸 はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "店舗自身の現行案内",
+              "url": "https://yakitoritowine-trip.com/"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗掲載・代表点",
+              "url": "https://map.yahoo.co.jp/v3/place/H4nMTScdRoQ"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "店自身の現行サイトに住所・部屋番号と電話あり。地図サービスの同名同住所店舗点。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.94284987316,
+          33.957588467001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-yamamoto",
+      "properties": {
+        "name": "唐戸ステーキ山本",
+        "city": "下関市",
+        "address": "山口県下関市赤間町7-15",
+        "official_address": "山口県下関市赤間町7-15",
+        "official_url": "https://www.karatoharete.com/卒業生",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:06"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "唐戸ステーキ山本 ステーキ山本 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "横丁運営元の卒業生案内",
+              "url": "https://www.karatoharete.com/卒業生"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗掲載・代表点",
+              "url": "https://map.yahoo.co.jp/v3/place/mPO1q53lRd6"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "横丁運営元の卒業生ページの新住所・電話と地図サービスの同名同住所同電話を照合。営業日・開店日を確定しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9442679885996,
+          33.95864509649852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-en",
+      "properties": {
+        "name": "串揚げ酒場 縁",
+        "city": "下関市",
+        "address": "山口県下関市田中町3-11 力石ビル1F",
+        "official_address": "山口県下関市田中町3-11 力石ビル1F",
+        "official_url": "https://kushiagesakaba-en.com/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:09"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "串揚げ酒場 縁 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "店舗自身の現行案内",
+              "url": "https://kushiagesakaba-en.com/"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗掲載・代表点",
+              "url": "https://map.yahoo.co.jp/v3/place/pE6yVfE4wcI"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "店自身の現行サイトにビル名・階あり。店サイトの地図iframe中心は店舗点と混同せず、同住所の地図サービス店舗点を使用。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941711,
+          33.9596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-relocated-harete-hibiki",
+      "properties": {
+        "name": "寿司 響",
+        "city": "下関市",
+        "address": "山口県下関市南部町26-3 奥野ビル2F",
+        "official_address": "山口県下関市南部町26-3 奥野ビル2F",
+        "official_url": "https://yamaguchi-kujira.jp/store/",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:harete:graduate:05"
+        ],
+        "source_timestamp": "2026-09-25",
+        "verified_at": "2026-09-25",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "寿司 響 寿司響 唐戸はれて横丁 移転",
+        "location_verification": "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "移転先の店舗名・住所と同名同住所の地図掲載を照合して追加しました。実開店日・リアルタイム営業は確定していません。",
+          "sources": [
+            {
+              "title": "イベント主催者の店舗表",
+              "url": "https://yamaguchi-kujira.jp/store/"
+            },
+            {
+              "title": "下関市・参加店舗の発表",
+              "url": "https://www.city.shimonoseki.lg.jp/site/kisya/161843.html"
+            },
+            {
+              "title": "同名同住所の地図サービス店舗掲載・代表点",
+              "url": "https://map.yahoo.co.jp/v3/place/mdSQ3pwP9sg"
+            }
+          ],
+          "limits": [
+            "掲載時点の案内であり、現地の営業保証ではありません。",
+            "地図サービスの同名・同住所の店舗代表点です。建物の入口、階への動線、バス停からの徒歩到達性は未確認です。旧横丁の代表点は使用していません。",
+            "イベント主催者の店舗表と下関市発表で同定。地図サービスの同名同住所同電話の店舗点。店自身の現営業保証ではない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.94108993,
+          33.95490536
+        ]
+      }
     }
   ]
 }

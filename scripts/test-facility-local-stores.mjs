@@ -43,9 +43,10 @@ test('food specialists use dedicated shopping category and shared-point warning'
  assert.equal(new Set(added.map(f=>JSON.stringify(f.geometry.coordinates))).size,2,'Two complex points, not 72 measured entrances');
 });
 test('latest checkpoint exact overlay, previous data immutable, approval cap respected',()=>{
- assert.equal(hash(overlay),s.after_overlay_hash);assert.equal(hash(p),s.policy_hash);
+ const historical={...overlay,additions:overlay.additions.slice(0,137)};
+ assert.equal(hash(historical),s.after_overlay_hash);assert.equal(hash(p),s.policy_hash);
  const addedIds=new Set(rows.filter(r=>r.decision.startsWith('add_')).map(r=>r.facility_id));
- assert.equal(hash({...overlay,additions:overlay.additions.filter(f=>!addedIds.has(f.id))}),s.before_overlay_hash);
+ assert.equal(hash({...historical,additions:historical.additions.filter(f=>!addedIds.has(f.id))}),s.before_overlay_hash);
  assert.equal(s.jev.cumulative_records,2016);assert(s.jev.cumulative_reservation_usd<=1);assert.equal(s.jev.remaining_records,984);
  assert.equal(s.after_count,7901);assert.equal(s.normal_candidates,7840);
 });
