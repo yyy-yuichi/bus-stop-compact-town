@@ -1,0 +1,618 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "7fe1be0cb1da6cf9e70167db82992b23c496cc3886b1ae9db50e993d81602931",
+  "after_overlay_hash": "7092e19aa350f4b2288447a3743ecb60361a3621c4f6989fab075dc43738ab6c",
+  "newly_added_ids": [
+    "official-cosmos-10283",
+    "official-cosmos-21395",
+    "official-cosmos-21364",
+    "official-cosmos-21173",
+    "official-cosmos-98724",
+    "official-cosmos-98229",
+    "official-cosmos-97512",
+    "official-cosmos-95280",
+    "official-cosmos-93491",
+    "official-cosmos-91466",
+    "official-cosmos-94658",
+    "official-cosmos-11372",
+    "official-cosmos-93996",
+    "official-cosmos-18593",
+    "official-cosmos-17749",
+    "official-cosmos-17725",
+    "official-cosmos-16575",
+    "official-cosmos-14168",
+    "official-cosmos-13871",
+    "official-cosmos-13383",
+    "official-cosmos-12829",
+    "official-cosmos-95037",
+    "official-cosmos-92494",
+    "official-cosmos-93644",
+    "official-cosmos-93736",
+    "official-cosmos-98304",
+    "official-cosmos-10085",
+    "official-cosmos-11884",
+    "official-cosmos-12140",
+    "official-cosmos-11303",
+    "official-cosmos-12003",
+    "official-cosmos-96287",
+    "official-cosmos-92340",
+    "official-cosmos-98700",
+    "official-cosmos-98588",
+    "official-cosmos-92722",
+    "official-cosmos-10719",
+    "official-cosmos-94252",
+    "official-cosmos-10764",
+    "official-cosmos-11594"
+  ],
+  "corrected_ids": [
+    "osm-node-4040475289",
+    "osm-node-4814518117",
+    "osm-node-4941751456",
+    "osm-way-405833069",
+    "osm-way-1338403053",
+    "osm-node-5517945321",
+    "osm-way-1236531251",
+    "osm-way-549154587",
+    "osm-way-550383090",
+    "osm-node-3804918121",
+    "osm-way-880501227",
+    "osm-way-466029165",
+    "osm-way-391893283",
+    "osm-node-5482408601",
+    "osm-node-3926469060",
+    "osm-node-8370495729",
+    "osm-way-1126862856",
+    "osm-node-4817157852",
+    "osm-node-4038113306",
+    "osm-way-549154604",
+    "osm-node-4101056002"
+  ],
+  "directory_url": "https://www.cosmospc.co.jp/shop/shop_list.json",
+  "directory_receipt": {
+    "path": "outputs/facility-multi-chain-20260926/sanitized/354c6706cf2299a1672bf592.json",
+    "hash": "93101c28b068fdfa0fd911b8436c7b7d339ccf3d2a06ad9102f36a605c36272c"
+  },
+  "directory_count": 75,
+  "counts": {
+    "additions": 40,
+    "corrections": 21,
+    "existing_unchanged": 6,
+    "held": 8
+  },
+  "case_findings": [
+    {
+      "case_id": "directory:cosmos:97239",
+      "name": "ディスカウントドラッグ コスモス 東高泊店",
+      "reason": "公式点と元店点は約55m差で、改装予定記載も残る。支店地点・実施後状況を別照合する。",
+      "facility_ids": [
+        "osm-way-600688031"
+      ],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97239.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:93637",
+      "name": "ディスカウントドラッグ コスモス 新下関店",
+      "reason": "公式点が元コスモスから約76m、山小屋から約19m。公式名住所は一致するが地点の食違いを先に確認する。",
+      "facility_ids": [
+        "osm-node-4628665515"
+      ],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93637.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:93385",
+      "name": "ディスカウントドラッグ コスモス 深川店",
+      "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。",
+      "facility_ids": [
+        "osm-node-5482411383",
+        "osm-node-5463868168"
+      ],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93385.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:20718",
+      "name": "ディスカウントドラッグ コスモス 湯田店",
+      "reason": "同地周辺に旧ドラッグセガミが残る。後継関係と建物を照合するまで追加しない。",
+      "facility_ids": [],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/20718.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:12881",
+      "name": "ディスカウントドラッグ コスモス 山の田店",
+      "reason": "旧レッドキャベツと約4m差。同じ敷地の旧店と後継関係を先に確認する。",
+      "facility_ids": [],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12881.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:92357",
+      "name": "ディスカウントドラッグ コスモス 光店",
+      "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。",
+      "facility_ids": [
+        "osm-node-4354767908",
+        "osm-node-4466387201"
+      ],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92357.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:97970",
+      "name": "ディスカウントドラッグ コスモス 西岐波店",
+      "reason": "ウォンツ・併設Wattsと約38m差。別敷地か位置差かを店別地図で照合する。",
+      "facility_ids": [],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97970.html",
+      "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。"
+    },
+    {
+      "case_id": "directory:cosmos:97819",
+      "name": "ディスカウントドラッグ コスモス 室の木店",
+      "reason": "公式店別ページHTTP403。再試行せず地点未確認として保持。",
+      "facility_ids": [],
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97819.html",
+      "next": "既存の失敗条件で再取得せず、閲覧可能な新しい公式位置根拠が得られたとき再開。"
+    }
+  ],
+  "sources": [
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/5375b740309eff84a6421cba.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97239.html",
+      "status": 200,
+      "hash": "0edb02be6be0116bf948fad1c723c35daf40fdde5eeac5cafd6bb4aaefeb8659"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/ccb89ed97cb7ed7541a031e7.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94511.html",
+      "status": 200,
+      "hash": "5f5e0cb0cef9f654c69320992f76489e5bb9380b76617a7d2f3c4f034501357f"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/1b0dd87f1df60e0bdd157231.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10283.html",
+      "status": 200,
+      "hash": "3d9286596271728b1a850a39b3be6d1cd5c1c14daa12758bc7f96a04bb660202"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/aab3f0b3919c0624ffc10ba3.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21395.html",
+      "status": 200,
+      "hash": "4f0a4a3b3e3157c7d83fa96eeb8b6fe31acca497eff60260e7c3f5462b95e66b"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/c012467777dd8a5e305341d5.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21364.html",
+      "status": 200,
+      "hash": "9871455c6d069d62d3e126eac1355598c35d204bfba9f31d13884fba843195ca"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/32dcb4234c28b341a6b776e2.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21173.html",
+      "status": 200,
+      "hash": "315c17d46350b5c3a6f7900f8f10b2c91e661e6bf078981b8697876899974030"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/af4cf3283d475faf576743e9.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98724.html",
+      "status": 200,
+      "hash": "125a6a24809969f0db8d14e6de6c817e6b50dfc391abb6281b36ff9495a989ba"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/ab52a76bc0cb2673121f7478.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98229.html",
+      "status": 200,
+      "hash": "ea501665729b5ae784dba219c0a06a0cc0fadbfee21a573585c92a62a9053abe"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/23d01d1030d534a828799717.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97512.html",
+      "status": 200,
+      "hash": "97723123637a650c044477856661864f31a79e899f7ed067ca91f3ef07577d09"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/d4b7e716c6eb69dc37657c74.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95280.html",
+      "status": 200,
+      "hash": "5ce1306796426b295ad41aaf69ae40272a36876fc6ce19117f235490685f260d"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/856c17da810619a4a3a75f22.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95129.html",
+      "status": 200,
+      "hash": "790dc261433c7259cc29393edd202cce38205b20b28dd159db63f149b220aef6"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/31a1d02644bf0b7c07ab3fb8.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93637.html",
+      "status": 200,
+      "hash": "ddca935f12205f34bb38d49e19990ed963ebc5bba532e5c89e801a9c96ef77f8"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/c1527342a4d38c30427146e9.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93491.html",
+      "status": 200,
+      "hash": "5c26462d3542cb4cbb0e1465e7e38ced959b541047b0f61bbb66dae54083fc1c"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/e59d998a13e28493b2cade86.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93385.html",
+      "status": 200,
+      "hash": "ed7f9eff178d0bf320ec8edfb3228f5f03923a1e634920b559c0bf4030099fd0"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/38feda8554b0d487f48907e8.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91466.html",
+      "status": 200,
+      "hash": "5e7c22e506676187e50e8700976622c79351f4615c8955692f3549856024bcba"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/a3cd5574559bb91319a219a9.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94481.html",
+      "status": 200,
+      "hash": "64353bcf9ee21856d63aee065bae68a5dde9cf2d650f4ce28b2a66f04d76add3"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/b3163a8ed0577d9dd6cd5cef.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95020.html",
+      "status": 200,
+      "hash": "38e634b140e6f32a4b970db4a8ca1ab9fbf51e9bd4ed1136404664f6c635c388"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/d10d269398318baea2c567f9.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94658.html",
+      "status": 200,
+      "hash": "d8de181989ad5fd7f658b5599bcda17a9751a9e23dde5af1597d42b1fd494aeb"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/49506b6c289a7b07085de4a1.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11372.html",
+      "status": 200,
+      "hash": "74cf44a667dffdcec013e36266a23e59359d11e64a4491fcc6d1cbfe42f6f8a4"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/a8c70bb02dfe085130e708b6.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91404.html",
+      "status": 200,
+      "hash": "710af05ceeeedadddf5bb2d39cf6294127ccdea41f0a3f60c9c4a0d568ea37c8"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/4f9d6fb94cc26ae851f12684.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/18128.html",
+      "status": 200,
+      "hash": "0c022eb2cfb526852d3e5b4741fd50f7cefab78e7da0f61d944f5378b98cc14b"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/6bf6a0da392355080fc671f7.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/20718.html",
+      "status": 200,
+      "hash": "e219f4228d2426ed6f5c00bbde93291324ba58d44838d6f8bd3c3b25b18609af"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/e39db1db2763fa95c7bba10f.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95990.html",
+      "status": 200,
+      "hash": "0941106d44647a103ee539f8947079bd205fc049a198253af9f73196f56ac615"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/1afe331c0785ce08aa2d3d7b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93996.html",
+      "status": 200,
+      "hash": "31204f15f2939d9f9f3f1fb6f7140f63245cee6a4613db149ac97d90a89839ad"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/25a3f036961cd17c1417a1e2.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/18593.html",
+      "status": 200,
+      "hash": "af83e713ce333ae830cedd512a800a2f0b5a36656b0b7cb229fb181508627f36"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/4397513638cdca8618bcfcbe.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/17749.html",
+      "status": 200,
+      "hash": "7d82b4ebbff29348d462c5c6f02d53ad4d770be28e753d339c6d0dab6d3ad168"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/6d619f486ac3adac15ea751a.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/17725.html",
+      "status": 200,
+      "hash": "bcffb1aa036df0da27553a7ab7aa8984aa153547be60f06381fcdd09bb71971c"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/65a5ccb3479f48531adb4eaa.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/16575.html",
+      "status": 200,
+      "hash": "dc121de6be7b469b22440d71951fbd9532f1abac06547fc6c2b8a01cf9676094"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/a2831942b78e68153e4343bd.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/16377.html",
+      "status": 200,
+      "hash": "85b58bdb50b51512ed43330764ab929083f80444a44f890d12d9dde630685f37"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/11cc502354da87f925e2c2da.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/14168.html",
+      "status": 200,
+      "hash": "e48ecefcb2f0788600a0cbac922b1be957b5a274ef660bc0795ac245edf0ac86"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/7bc5fb3598998234454f1470.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/13871.html",
+      "status": 200,
+      "hash": "fcff02b7c7db45a94505d3447df959314192f35fda054575f51b9338e927353f"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/015b02621604506357bf133c.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/13383.html",
+      "status": 200,
+      "hash": "729b353a54d23e3c663ecf8470e94bdaf51933b910bb7a5271e4fed7bd7c8de6"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/0de0f93b084edbd75cc1067b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91817.html",
+      "status": 200,
+      "hash": "8b836de16d7a5663df81e66426af8755fbc9d4449e833b01a174cf07d8a55097"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/5a708e27374d3b86ea20206f.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12829.html",
+      "status": 200,
+      "hash": "a4daa156266e8047c6b96a58c388465feb9f6e13c6782fee172f993dafccffb5"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/6e63c222bcd16fff5f2f4c1d.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12881.html",
+      "status": 200,
+      "hash": "367c8cfb07339dc46b0b8b70c658403ec2858bd2fa501e6d090d8f7e6b54b377"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/54a65b34ce161a10858f9858.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95037.html",
+      "status": 200,
+      "hash": "49edd1465417f9b37068f1e1d93f203afe91ee72cc0879851d8ade3b3afe2d7f"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/38703999f8e4bba58f3d3993.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94498.html",
+      "status": 200,
+      "hash": "10d536702cd387322d71b73824e16eaa373e63914e29226a7dc7cc9997744ab1"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/45afe3cbdbef7e1829dc5d27.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93347.html",
+      "status": 200,
+      "hash": "79d2655cf11615a98644879d250f65296324783a922b4994fd86d203984087cf"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/8d39490eed39c807e29dc59f.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92494.html",
+      "status": 200,
+      "hash": "f543aeb2037d40d7b7f63f28cfda30631c2ff67a11c7ad9b2550fb9db50bf1d9"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/0694fcd00f0afb08598d6752.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91718.html",
+      "status": 200,
+      "hash": "064b2125476d335f82962920a97c38c73ce97009545ed3eb118b585da1d25a49"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/817d1c45f116730a923d45ad.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92036.html",
+      "status": 200,
+      "hash": "cc8a40b9e75009655d80a5bdf1df0506500a1e6a7ecc0f8befff0fea37f2f7a9"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/c4d3c511b66e33a63f76d5b1.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93644.html",
+      "status": 200,
+      "hash": "6dad3f0174b75b5cf66588e5f33bb550c10e89283fa4659d6acf66e8965211fd"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/5f4e1f5bd737f18b047f509e.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93736.html",
+      "status": 200,
+      "hash": "96a48568a4c6be05d1888b62500b392a6f8b45552633bdc9a296da78f4755a40"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/3181dc5d40cd84e8d0927362.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98304.html",
+      "status": 200,
+      "hash": "585ea7c919e7cef4a3e09d4b3e13fc7360b2fa58152b5f1ade9f375dbd06dad1"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/47f72c5533acd112a6f21ff5.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92715.html",
+      "status": 200,
+      "hash": "cd964b663e64aab2e989735f236d85c3f608b7f2f6ed776e29e0d274cd1e8f2a"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/d53139b138b1d0a1988a4940.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10085.html",
+      "status": 200,
+      "hash": "cf997aaeccfd712b48ec9f5c01066be85974d6dd865958baac9e7718a4a057ff"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/da453f92bbb1af2df565cb4d.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10467.html",
+      "status": 200,
+      "hash": "13a4c27f0b83b4035e5311a62e098f64617d366e6b20a4b2ceddde7eac6712a3"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/b637fa0ad40a94d2bc5afad7.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96171.html",
+      "status": 200,
+      "hash": "cfb13321eb63241b4e2cdaba5db6dddad46998cb8d0134110d856f1d0e7cf347"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/cba5c35992d9dca266e8cb8f.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92289.html",
+      "status": 200,
+      "hash": "681c7916159d46df55c8e64e130d5b5760881509b935e7e6298c2f412e71f40b"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/934bf0cecabc6e318b8ececf.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11884.html",
+      "status": 200,
+      "hash": "93d8554a9a7f3bea7c5a2c2e394cecd52d510e2a2b48b4bc96af46f2663eb399"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/9274f84531639520e7da9871.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12140.html",
+      "status": 200,
+      "hash": "cfce6b1cb9788c38a2cb53a440e30847212c9943d21f0bae1e7e9075ef06b0cc"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/ff9048709525b03aaf584bed.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92357.html",
+      "status": 200,
+      "hash": "34f20940633f7ff02b535f7198737fa5683e401fb1252396f0411719d2cee003"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/69450dbc256edd4ec808b65b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11303.html",
+      "status": 200,
+      "hash": "8d82924f9490f2a8b29194d012745c644e5458cfdea780388be5bbadffeb8eb1"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/92b79a7460a50288cfa36c77.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12003.html",
+      "status": 200,
+      "hash": "a71481f312592a4beeb0c8000573ccbd5c478acc49c97f69997e4770164e3cad"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/7e164bb84a9cc15361eca95a.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98281.html",
+      "status": 200,
+      "hash": "d9f07eb30def94e181a3edff76ecc1fa1a5b9979c22c3d219cc57db1fc3d8a50"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/365fefef2e52e0b40a24f83b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96287.html",
+      "status": 200,
+      "hash": "bb45fd82557288732b8a0251d6e5b42d6b3dce7e391ebc195355950808cf08f6"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/b767fa304220dc925f78cee3.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95488.html",
+      "status": 200,
+      "hash": "1f5690496eccd044ccdc7c7735c45b6e4a01bad63bacfdbd6b5d898cc901d40b"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/f86206637306d3664fd83509.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11754.html",
+      "status": 200,
+      "hash": "d9ff5e12e6aaea754685ceb5dfbbe8205166c3be0c3a545f9c400446be03fc1c"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/a3a86df7e19cfed2efa9b34d.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92340.html",
+      "status": 200,
+      "hash": "20dbabd55298a07aa6dc9443e4df295c68dec40336b29c0dd2d4387c2393f756"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/919a0b9444ce155f9c9cf3f2.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12157.html",
+      "status": 200,
+      "hash": "305ea4b999a9d5f89367c6adabdb3885a969e7b9829be67d9246cdafbf7ebafb"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/944091d0f2ae1965c4a77c6b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98700.html",
+      "status": 200,
+      "hash": "34a1d476b13436c6b610528d4f13cb9f659b1b50c88dd11125870cebcfe86c74"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/e367ef2cac05fdfa664712d3.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96980.html",
+      "status": 200,
+      "hash": "832e9cfce3a4725f59110a13aad9b5c8bf4981d726dd415682e3db77494aeedf"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/c8273770c27996fe8cb38dff.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98588.html",
+      "status": 200,
+      "hash": "3ff580a2b555319cc880e12e5c7b91e008c90ce70627d629e1b1f21b26bdb15a"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/6ba8218b0f68d51e607a0697.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97154.html",
+      "status": 200,
+      "hash": "19f1236c6007c8fae741bf35ee0392445efe612ba65a04df042b634501017baf"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/56e60ab0457e04cb9080a752.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92722.html",
+      "status": 200,
+      "hash": "6f65ef35e698555604b6bf11772b4057cf02defdef8ee7af637125093e88b653"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/60c0cb8b304b6dbd649794ad.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96812.html",
+      "status": 200,
+      "hash": "56b75b5e2aa7cd9cbb4cef9b5b93bb43743ce6c29a795429a75d15f0f23313fa"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/22dd7159ed406456c8925cc5.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97970.html",
+      "status": 200,
+      "hash": "216a1bf192cc8e5118bda1ade940da2dad0eeec729fc05fb80c8d883d21e44de"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/b48ae1328357d8d9336d8916.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94313.html",
+      "status": 200,
+      "hash": "094e47469885f32c5e18edb0ab29513c308ffa029bf9f5071bcaba82719d2382"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/1c5008e8a751c2642d63c5b9.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10719.html",
+      "status": 200,
+      "hash": "2c521a314a6a8ba7588affe1e746f8c455bbdc33443dea488e8d5f23b1c77cdf"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/1dfcf306ec5abf68d74f026d.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98403.html",
+      "status": 200,
+      "hash": "0610169f5f77949d567f5ea425f24228b78a9d4cf6a00cedf502652e427c1df3"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/1bde91137f9e048b35680860.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97819.html",
+      "status": 403,
+      "hash": "655ce9cb9076f0b2265bd0ec8b52539b291fc60576ee9453cbc224d6df725835"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/84fdfc255f4c310a3951ca4e.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94252.html",
+      "status": 200,
+      "hash": "3a4b47922fb6297c3a9015322e4f2fee1b091ce83967c83afb2007e45cb2ef5b"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/a4f4f9b3e018f1676a8ad52e.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10764.html",
+      "status": 200,
+      "hash": "1fec2ef13b5409ef741a0cd62b04bf1ec7bfb4972962b17203319b8bc01ff741"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/e606911983c80ed1e24efc1b.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11594.html",
+      "status": 200,
+      "hash": "6363621e79761b19ed373662624ce5a1c91e340b830eb2886efda9ff995ef59e"
+    },
+    {
+      "path": "outputs/facility-multi-chain-20260926/sanitized/be22d156b658dbb67004c745.json",
+      "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91558.html",
+      "status": 200,
+      "hash": "cf25a408e428ddd086a47b9c1efa347ade12880f4a6e510ca2a3f7f433feaa24"
+    }
+  ],
+  "article_scope": "No article was marked complete from directory matching. Existing article inventories, held opening/closure dates and all reviewed_at values are unchanged. Cosmos Kudamatsu closure article remains pending.",
+  "efficiency": "Compared the 75-store official regional directory with all base and overlay facilities once; one implementation/build/save batch. Includes explicit official GeoCoordinates, municipality, URL/name and polygon duplicate checks. DoraMori 20 pages were collected as reusable preliminary evidence but no positions were verified or adopted.",
+  "limitations": [
+    "40 additions are current official listings, not 40 proven new openings. Exact opening dates remain unknown.",
+    "Eight location/succession/duplicate conflicts remain held; official store list absence alone never proves closure.",
+    "Only 21 missing branch-name corrections are counted; six already represented stores are not counted as updates."
+  ],
+  "extra_jev_requests": 0
+}

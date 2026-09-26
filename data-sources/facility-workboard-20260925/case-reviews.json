@@ -4731,6 +4731,208 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "directory:cosmos:97239",
+      "name": "ディスカウントドラッグ コスモス 東高泊店",
+      "facility_ids": [
+        "osm-way-600688031"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "dc668790b35c9ee770a3a664d887e3bcb24d51b5354d7bb52a4c431749756eb4"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:97239:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式点と元店点は約55m差で、改装予定記載も残る。支店地点・実施後状況を別照合する。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:93637",
+      "name": "ディスカウントドラッグ コスモス 新下関店",
+      "facility_ids": [
+        "osm-node-4628665515"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "111da58be581fd286a9b5169ce3c5c837e131a7b1a27ebfa8a7f893466d44ca8"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:93637:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式点が元コスモスから約76m、山小屋から約19m。公式名住所は一致するが地点の食違いを先に確認する。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:93385",
+      "name": "ディスカウントドラッグ コスモス 深川店",
+      "facility_ids": [
+        "osm-node-5482411383",
+        "osm-node-5463868168"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "e145fc299498f9ba5482763fb4666bb6cefb01cee57bf533b24251f1f9bf0909"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:93385:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:20718",
+      "name": "ディスカウントドラッグ コスモス 湯田店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "f5658c971f4d285e2e0b09a8dd9400d06724c5e4e8dc044f9b1bdae3d41f2808"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:20718:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "同地周辺に旧ドラッグセガミが残る。後継関係と建物を照合するまで追加しない。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:12881",
+      "name": "ディスカウントドラッグ コスモス 山の田店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "d805b2c5c23ba4e524c29e7a774b68179b1c94409dd2e18bda8463523bae1253"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:12881:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "旧レッドキャベツと約4m差。同じ敷地の旧店と後継関係を先に確認する。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:92357",
+      "name": "ディスカウントドラッグ コスモス 光店",
+      "facility_ids": [
+        "osm-node-4354767908",
+        "osm-node-4466387201"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 5,
+          "hash": "5090a46779f21a347e0058f802d181475fa4a94e51730579d26d3c856be46b90"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:92357:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:97970",
+      "name": "ディスカウントドラッグ コスモス 西岐波店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 6,
+          "hash": "6b01baad6b46482d9c933a741ee2242208f92bc2b830d0fb4d1d1815b0420730"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:97970:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ウォンツ・併設Wattsと約38m差。別敷地か位置差かを店別地図で照合する。",
+          "next": "元施設・同敷地の別店との建物関係と店舗固有地図を比較。元ID・元位置を保持し、距離だけで削除・統合しない。",
+          "event_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "directory:cosmos:97819",
+      "name": "ディスカウントドラッグ コスモス 室の木店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-multi-chain-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 7,
+          "hash": "20b73f150e065f9876c27c540046d4e6f76cce8eeaafaeec1d02d69f83fee690"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "directory:cosmos:97819:map_action",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式店別ページHTTP403。再試行せず地点未確認として保持。",
+          "next": "既存の失敗条件で再取得せず、閲覧可能な新しい公式位置根拠が得られたとき再開。",
+          "event_ids": []
+        }
+      ]
     }
   ],
   "event_bindings": [
