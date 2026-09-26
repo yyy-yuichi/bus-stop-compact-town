@@ -1,5 +1,23 @@
 [
   {
+    "batch_id": "reuse:reviewed-current",
+    "label": "照合済み施設との再照合",
+    "mode": "existing_evidence_comparison",
+    "group_ids": [
+      "candidate:59a8d1b7e9a57380",
+      "candidate:ec903fd091b85fbe"
+    ],
+    "article_keys": [
+      "kaiten-611331",
+      "ube-83043",
+      "ube-82494"
+    ],
+    "existing_official_hint_groups": 0,
+    "high_priority_groups": 0,
+    "candidate_groups": 2,
+    "article_count": 3
+  },
+  {
     "batch_id": "operator:chocoZAP",
     "label": "chocoZAP",
     "mode": "official_directory_comparison",
@@ -17,42 +35,6 @@
     "high_priority_groups": 0,
     "candidate_groups": 3,
     "article_count": 3
-  },
-  {
-    "batch_id": "operator:ゆめタウン・ゆめマート",
-    "label": "ゆめタウン・ゆめマート",
-    "mode": "official_directory_comparison",
-    "group_ids": [
-      "candidate:d4b9239e1eff4d61",
-      "candidate:fe23f48d9999fd5e",
-      "candidate:9bb4c18438b3c186"
-    ],
-    "article_keys": [
-      "kaiten-538012",
-      "yamaguchi-48161",
-      "ube-82309"
-    ],
-    "existing_official_hint_groups": 0,
-    "high_priority_groups": 2,
-    "candidate_groups": 3,
-    "article_count": 3
-  },
-  {
-    "batch_id": "operator:ヒマラヤ",
-    "label": "ヒマラヤ",
-    "mode": "official_directory_comparison",
-    "group_ids": [
-      "candidate:a45b48b2b5aed4b8",
-      "candidate:bf74cd513278a2fc"
-    ],
-    "article_keys": [
-      "shunan-119876",
-      "kaiten-600483"
-    ],
-    "existing_official_hint_groups": 0,
-    "high_priority_groups": 2,
-    "candidate_groups": 2,
-    "article_count": 2
   },
   {
     "batch_id": "operator:マックスバリュ",
@@ -1907,7 +1889,6 @@
       "candidate:f6c85a9ca5f3d630",
       "candidate:172635c68723c402",
       "candidate:3bb51f3134b2a35d",
-      "candidate:59a8d1b7e9a57380",
       "candidate:080fded8d61211d4",
       "candidate:098e49c350134e8a",
       "candidate:15789511b9a1af73",
@@ -1937,7 +1918,6 @@
       "candidate:dae90c2550a241cc",
       "candidate:db7f46d1bcf74ff2",
       "candidate:dfcc9401869d0fe5",
-      "candidate:ec903fd091b85fbe",
       "candidate:f5b40fe4de381c16",
       "candidate:1ced9d1971df1db4",
       "candidate:44cb8c874445cd14",
@@ -1973,8 +1953,6 @@
       "ube-81764",
       "ube-81139",
       "ube-81615",
-      "kaiten-611331",
-      "ube-83043",
       "kaiten-560363",
       "kaiten-584620",
       "kaiten-532678",
@@ -2004,7 +1982,6 @@
       "kaiten-598984",
       "kaiten-595908",
       "kaiten-559467",
-      "ube-82494",
       "ube-80945",
       "ube-81475",
       "ube-81667",
@@ -2014,8 +1991,8 @@
     ],
     "existing_official_hint_groups": 0,
     "high_priority_groups": 22,
-    "candidate_groups": 60,
-    "article_count": 66
+    "candidate_groups": 58,
+    "article_count": 63
   },
   {
     "batch_id": "area:光市",

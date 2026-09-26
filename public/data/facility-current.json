@@ -18946,6 +18946,168 @@
           34.1604687
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "official-machilibrary-1268",
+      "properties": {
+        "name": "まちライブラリー＠ゆめタウン宇部",
+        "city": "宇部市",
+        "address": "山口県宇部市黒石北3丁目4-1 ゆめタウン宇部1階",
+        "official_address": "山口県宇部市黒石北3丁目4-1 ゆめタウン宇部1階",
+        "official_url": "https://machi-library.org/where/detail/12122/",
+        "category": "library",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:machilibrary:1268"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "まちライブラリー＠ゆめタウン宇部 図書館 市民交流 読書",
+        "location_verification": "運営団体の当該施設ページに掲載された地図点。ゆめタウン宇部の敷地内と照合。館内の入口・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-05-01",
+          "checked_at": "2026-09-26",
+          "summary": "運営団体の現行案内・施設固有地点と、市の事後開設報告を照合。",
+          "sources": [
+            {
+              "title": "現在の運営元・自店案内",
+              "url": "https://machi-library.org/where/detail/12122/"
+            },
+            {
+              "title": "施設固有地点・実施履歴の根拠",
+              "url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/006/690/hurusato202606.pdf"
+            },
+            {
+              "title": "施設固有地点・実施履歴の根拠",
+              "url": "https://www.google.com/maps?q=33.985086952473594%20131.20629969631975"
+            }
+          ],
+          "limits": [
+            "運営団体の当該施設ページに掲載された地図点。ゆめタウン宇部の敷地内と照合。館内の入口・徒歩動線は未確認。",
+            "市の2026年6月資料の写真付き事後報告と、画像中の「5月1日（金）オープン」を実見。商業施設本体の新設とは区別。",
+            "利用可能時間10～20時と、スタッフ対応（水～日11～18時30分）を区別。月火はスタッフ不在であり施設全体の休館とは扱わない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.20629969631975,
+          33.985086952473594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-himaraya-0210",
+      "properties": {
+        "name": "ヒマラヤスポーツ サンリブ下松店",
+        "city": "下松市",
+        "address": "山口県下松市南花岡6-8-1 サンリブ下松2階",
+        "official_address": "山口県下松市南花岡6-8-1 サンリブ下松2階",
+        "official_url": "https://www.himaraya.co.jp/shop_detail/0210",
+        "category": "sports_shop",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:himaraya:0210"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ヒマラヤスポーツ サンリブ下松店",
+        "location_verification": "公式支店ページの同名CID付き埋込地図から店舗固有点を確認。地図表示中心を採用していない。2階の店舗代表点で入口・階移動・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行の自店・運営元案内と店舗固有地点を照合。予定・履歴と現在掲載を区別。",
+          "sources": [
+            {
+              "title": "現在の運営元・自店案内",
+              "url": "https://www.himaraya.co.jp/shop_detail/0210"
+            },
+            {
+              "title": "施設固有地点・実施履歴の根拠",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6613.030438843952!2d131.86293417599956!3d34.030652618869524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3f1430629%3A0xffdf737cfc7bd686!2z44OS44Oe44Op44Ok44K544Od44O844OEIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1715743072376!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式支店ページの同名CID付き埋込地図から店舗固有点を確認。地図表示中心を採用していない。2階の店舗代表点で入口・階移動・徒歩動線は未確認。",
+            "確認日は2026年9月26日。公式に9月28日～10月4日の増床休館予定がある。休館前の現行掲載として記録し、予定を実施済みの閉店・再開と扱わない。",
+            "記事にある7月24日～10月8日の店頭買取中止は、今回サービス実施状況を一次資料で確認できていない。店舗全体の休館とは分離して要確認。",
+            "現在の公式掲載は開店日やリアルタイムの営業を保証しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8655091,
+          34.0306482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-megadori-ube",
+      "properties": {
+        "name": "メガドリ宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市厚南中央1丁目7-48",
+        "official_address": "山口県宇部市厚南中央1丁目7-48",
+        "official_url": "https://x.com/megadori1",
+        "category": "amusement_arcade",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:megadori:ube"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "メガドリ宇部店 メガ★ドリ クレーンゲーム",
+        "location_verification": "自店の住所とSEGA ALL.Netの店舗ID18357の名称・住所・地図マーカーを照合。旧ウォンツの点を転用せず、現行メガドリ固有の地点を採用。入口・徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行の自店・運営元案内と店舗固有地点を照合。予定・履歴と現在掲載を区別。",
+          "sources": [
+            {
+              "title": "現在の運営元・自店案内",
+              "url": "https://x.com/megadori1"
+            },
+            {
+              "title": "施設固有地点・実施履歴の根拠",
+              "url": "https://location.am-all.net/alm/shop?sid=18357"
+            }
+          ],
+          "limits": [
+            "自店の住所とSEGA ALL.Netの店舗ID18357の名称・住所・地図マーカーを照合。旧ウォンツの点を転用せず、現行メガドリ固有の地点を採用。入口・徒歩動線は未確認。",
+            "自店の現行入荷・稼働投稿とメーカーの設置店情報を照合。プロフィールの8月7日グランドオープンは、当日実施の事後一次記録とは分け、実開店日は未確認。",
+            "旧ウォンツ宇部厚南店の閉店履歴・ID・座標を保持。同所の後継店は別ID。",
+            "設置店リストは機器接続に基づく情報で、リアルタイムの営業や設置機種を保証しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2195704,
+          33.9942251
+        ]
+      }
     }
   ]
 }

@@ -340,36 +340,6 @@
     "supplemental_also_pending": false
   },
   {
-    "case_id": "case:megadori-ube",
-    "name": "メガドリ宇部店",
-    "facility_ids": [],
-    "related_facility_ids": [],
-    "issues": [
-      {
-        "issue_id": "case:megadori-ube:map_action",
-        "impact": "map_action",
-        "priority": "P1",
-        "reason": "自店住所の裏付けあり、店別代表点未確定。",
-        "next": "取得済み自店案内と公開地図を照合。",
-        "event_ids": [
-          "ube-81165:successor",
-          "ube-82743:successor"
-        ]
-      }
-    ],
-    "status": "map_action",
-    "priority": "P1",
-    "article_keys": [
-      "ube-81165",
-      "ube-82743"
-    ],
-    "held_event_ids": [
-      "ube-81165:successor",
-      "ube-82743:successor"
-    ],
-    "supplemental_also_pending": false
-  },
-  {
     "case_id": "case:quickcut-halows-ube",
     "name": "クイックカットBB ハローズ宇部モール店",
     "facility_ids": [],
@@ -1847,6 +1817,45 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "facility:official-himaraya-0210:planned-changes",
+    "name": "ヒマラヤスポーツ サンリブ下松店",
+    "facility_ids": [
+      "official-himaraya-0210"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "4e19c714853178bbe83e996d00fb88b96f0be06f981083d0f4af33a7756b788b"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-himaraya-0210:planned-changes:watch",
+        "impact": "watch",
+        "priority": "P2",
+        "reason": "9月28日～10月4日の増床休館・再開実施と、店頭買取中止の一次実施履歴が未確認。",
+        "next": "9月28日以降の休館実施、10月の再開と買取サービスを公式で再確認。",
+        "event_ids": [
+          "shunan-119876:temporary-closure",
+          "shunan-119876:buyback-service"
+        ]
+      }
+    ],
+    "status": "watch",
+    "priority": "P2",
+    "article_keys": [
+      "shunan-119876"
+    ],
+    "held_event_ids": [
+      "shunan-119876:buyback-service",
+      "shunan-119876:temporary-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:autobacs-ube-konan",
     "name": "オートバックス宇部厚南",
     "facility_ids": [
@@ -2743,6 +2752,48 @@
       "ube-81149:old-mcd-closure",
       "ube-81774:old-mcd-closure"
     ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:megadori-ube",
+    "name": "メガドリ宇部店",
+    "facility_ids": [
+      "official-megadori-ube"
+    ],
+    "related_facility_ids": [],
+    "issues": [
+      {
+        "issue_id": "case:megadori-ube:map_action",
+        "impact": "resolved",
+        "priority": "P3",
+        "reason": "自店案内とSEGA店舗ID18357の名前・同住所・マーカー座標を照合。旧店舗の座標を流用せず追加。",
+        "next": "現在掲載は反映済み。新たな実施日根拠が得られた場合だけ補完する。",
+        "event_ids": [],
+        "resolution": {
+          "checked_at": "2026-09-26",
+          "outcome": "current_listing_added",
+          "reason": "自店案内とSEGA店舗ID18357の名前・同住所・マーカー座標を照合。旧店舗の座標を流用せず追加。",
+          "evidence_ref": {
+            "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+            "section": "case_findings",
+            "index": 0,
+            "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
+          }
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
+      }
+    ],
+    "status": "resolved",
+    "priority": "P3",
+    "article_keys": [],
+    "held_event_ids": [],
     "supplemental_also_pending": false
   },
   {

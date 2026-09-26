@@ -603,15 +603,21 @@
       {
         "event_id": "ube-81165:successor",
         "event_type": "other",
-        "facility_ids": [],
-        "disposition": "hold",
-        "reason": "後継メガドリ宇部店は公式Xの厚南中央1丁目7-48と現行投稿で特定。新店舗に対応した地図点を未確保のため追加は保留。旧ウォンツの座標を転用しない。",
+        "facility_ids": [
+          "official-megadori-ube"
+        ],
+        "disposition": "reflected_addition",
+        "reason": "自店の現行案内・稼働投稿とSEGAの店舗別名称住所・地図点を照合し別IDで掲載。旧店舗の点は保持。実開店日は確定しない。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2025/07/22/konanwants_202507/",
-          "https://x.com/megadori1"
-        ]
+          "https://x.com/megadori1",
+          "https://location.am-all.net/alm/shop?sid=18357"
+        ],
+        "effective_at": null,
+        "resolution_checked_at": "2026-09-26"
       }
-    ]
+    ],
+    "followup_reviewed_at": "2026-09-26"
   },
   {
     "article_key": "ube-82743",
@@ -651,15 +657,22 @@
       {
         "event_id": "ube-82743:successor",
         "event_type": "other",
-        "facility_ids": [],
-        "disposition": "hold",
-        "reason": "後継メガドリ宇部店は公式Xの同住所と現行投稿で特定。ube-81165と同じ後継店。新店舗地図点の確認待ちであり、同じ保留を別施設として数えない。",
+        "facility_ids": [
+          "official-megadori-ube"
+        ],
+        "disposition": "duplicate",
+        "reason": "自店の現行案内・稼働投稿とSEGAの店舗別名称住所・地図点を照合し別IDで掲載。旧店舗の点は保持。実開店日は確定しない。",
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2026/06/09/4colors_newshop/",
-          "https://x.com/megadori1"
-        ]
+          "https://x.com/megadori1",
+          "https://location.am-all.net/alm/shop?sid=18357"
+        ],
+        "effective_at": null,
+        "resolution_checked_at": "2026-09-26",
+        "duplicate_of": "ube-81165:successor"
       }
-    ]
+    ],
+    "followup_reviewed_at": "2026-09-26"
   },
   {
     "article_key": "ube-83294",
@@ -7616,6 +7629,148 @@
         "source_urls": [
           "https://ube-sanyoonoda.goguynet.jp/2026/04/12/lawson_reopen0416/",
           "https://www.areamarker.com/lawson/info/207103"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-538012",
+    "source_body_hash": "f04b46d84124074f33e63ad4dd33c21782521a50dc9147f1df71b1d6c0b04e85",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "閉店対象は三田尻の1店舗。既存地図のIDがないため閉店済みの新規通常掲載は行わない。",
+    "events": [
+      {
+        "event_id": "kaiten-538012:closed",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2025-03-04",
+        "reason": "公式閉店告知と閉店後の看板撤去報道を照合。baseと過去overlay全件の名称・住所・周辺地点を確認したが同店IDはない。近隣アルクや別棟どんどんを閉店補正しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/youmemart-mitajiri/",
+          "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+          "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-48161",
+    "source_body_hash": "2bcdf0c7862427b2e2cb2f5c38bd16cb80727c91123b45d922b4ba22823d2fab",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "同じ三田尻店の閉店後の現地状況。新しい店舗の開設情報は含まれていない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-48161:closed",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2025-03-04",
+        "reason": "同一旧店舗の閉店確認へ統合。地図反映件数を増やさない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/",
+          "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+          "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/"
+        ],
+        "duplicate_of": "kaiten-538012:closed"
+      }
+    ]
+  },
+  {
+    "article_key": "ube-82309",
+    "source_body_hash": "cdcaed2381dfefe6461d71e1ae6891c079e47658262ffec8599b8e2736edc512",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "まちライブラリー1施設の開設。ゆめタウン宇部本体とは別施設。事前記事と市の事後報告を照合。",
+    "events": [
+      {
+        "event_id": "ube-82309:library-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-machilibrary-1268"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2026-05-01",
+        "reason": "市の6月事後資料を本文・画像で確認。運営元の現行案内と施設点を照合。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/03/25/yume_libraryopen0501/",
+          "https://machi-library.org/where/detail/12122/",
+          "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/006/690/hurusato202606.pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-600483",
+    "source_body_hash": "af0704617f7062ccac66bfdb6758121d5bab6a11bb2e1b680d6c9f666840d3b2",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "南岩国店1店舗の閉店。現在もある母施設や別テナントと分離。",
+    "events": [
+      {
+        "event_id": "kaiten-600483:closed",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-05-06",
+        "reason": "公式支店の事後閉店案内で実施を確認。baseと過去overlay全件に同店IDはなく、母施設ゆめタウンや別テナントを閉店補正しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/himaraya-yt-minamiiwakuni/",
+          "https://www.himaraya.co.jp/shop_detail/0151"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119876",
+    "source_body_hash": "7b0c056bcc7abe9943fd51031d32596f8af53a5fe6ed8456c2c1f78d7d76d6bc",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "下松店1店舗の現行掲載・将来増床休館・店頭買取中止を分離。未来の休館を営業終了に変換しない。",
+    "events": [
+      {
+        "event_id": "shunan-119876:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-himaraya-0210"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "公式店舗案内と同名の固有地図地点を照合。休館予定は将来事項として注記。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/26/himaraya/",
+          "https://www.himaraya.co.jp/shop_detail/0210",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6613.030438843952!2d131.86293417599956!3d34.030652618869524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3f1430629%3A0xffdf737cfc7bd686!2z44OS44Oe44Op44Ok44K544Od44O844OEIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1715743072376!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "event_id": "shunan-119876:temporary-closure",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-himaraya-0210"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "9月28日～10月4日は確認日より後の公式休館予定。増床後再開の実施は未確認。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/26/himaraya/",
+          "https://www.himaraya.co.jp/shop_detail/0210"
+        ]
+      },
+      {
+        "event_id": "shunan-119876:buyback-service",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-himaraya-0210"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "店頭買取7月24日～10月8日中止の記載は記事にあるが、当該サービスの実施を示す一次記録を未確認。全店閉店とは分離。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/26/himaraya/",
+          "https://www.himaraya.co.jp/shop_detail/0210"
         ]
       }
     ]

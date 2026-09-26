@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 8073);
+assert.equal(current.length, 8076);
 assert.equal(patch.updates.length, 50);
-assert.equal(patch.additions.length, 309);
+assert.equal(patch.additions.length, 312);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -47,7 +47,7 @@ for (const f of patch.additions) {
   assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
   if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
 }
-assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 292);
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 294);
 const miko = get('osm-way-305954680'), oldWants = get('osm-way-332618123');
 assert(!facilityAvailable(miko) && !facilityAvailable(oldWants));
 assert.equal(miko.properties.freshness_review.effective_at, '2025-01');
@@ -63,7 +63,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 8001);
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 8004);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));
@@ -165,3 +165,21 @@ assert(!get('official-lawson-377897'), 'Existing Lawson Poplar Mitsui must not b
 assert.notDeepEqual(get('official-lawson-377992').geometry, get('official-washhouse-706').geometry);
 assert.equal(get('official-washhouse-706').properties.category, 'laundry');
 assert(get('official-lawson-385141').properties.freshness_review.limits.some(s => s.includes('土日祝')));
+
+// Distinct tenants/successors and future changes must not close their parent or predecessor twice.
+const libraryUbe = get('official-machilibrary-1268');
+assert.equal(libraryUbe.properties.category, 'library');
+assert.equal(libraryUbe.properties.freshness_review.effective_at, '2026-05-01');
+assert(facilityAvailable(get('ube')));
+const himarayaKudamatsu = get('official-himaraya-0210');
+assert.equal(himarayaKudamatsu.properties.category, 'sports_shop');
+assert(facilityAvailable(himarayaKudamatsu));
+assert.equal(himarayaKudamatsu.properties.freshness_review.effective_at, null);
+assert(himarayaKudamatsu.properties.freshness_review.limits.some(x => x.includes('9月28日～10月4日')));
+assert(facilityAvailable(get('minamiiwakuni')));
+assert(facilityAvailable(get('osm-way-303472852')), 'Nearby Aruk is not the closed Yumemart');
+const megadori = get('official-megadori-ube');
+assert.equal(megadori.properties.category, 'amusement_arcade');
+assert(facilityAvailable(megadori));
+assert(!facilityAvailable(get('osm-way-1121040363')));
+assert.notDeepEqual(megadori.geometry, get('osm-way-1121040363').geometry);

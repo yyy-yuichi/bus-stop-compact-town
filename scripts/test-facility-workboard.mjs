@@ -52,7 +52,9 @@ test('pilot inventories co-tenants and predecessor, reuses current listings and 
 });
 
 test('resolved map cases retain evidence and cannot swallow held article events',()=>{
- const r=run();assert.equal(r.caseRows.filter(c=>c.status==='resolved').length,4);
+ const r=run();assert.equal(r.caseRows.filter(c=>c.status==='resolved').length,5);
+ assert.equal(r.caseRows.find(c=>c.case_id==='case:megadori-ube').status,'resolved');
+ assert.equal(r.caseRows.find(c=>c.case_id==='facility:official-himaraya-0210:planned-changes').status,'watch');
  let c=structuredClone(cases),x=c.cases.find(c=>c.case_id==='reconcile:tsuruha-3905');delete x.issues[0].resolution;assert.throws(()=>run(c));
  c=structuredClone(cases);x=c.cases.find(c=>c.case_id==='reconcile:tsuruha-3905');x.facility_ids=['missing'];assert.throws(()=>run(c));
  c=structuredClone(cases);x=c.cases.find(c=>c.case_id==='facility:official-watts-47917');x.issues[0].impact='resolved';assert.throws(()=>run(c));

@@ -466,19 +466,37 @@
     {
       "case_id": "case:megadori-ube",
       "name": "メガドリ宇部店",
-      "facility_ids": [],
+      "facility_ids": [
+        "official-megadori-ube"
+      ],
       "related_facility_ids": [],
       "issues": [
         {
           "issue_id": "case:megadori-ube:map_action",
-          "impact": "map_action",
-          "priority": "P1",
-          "reason": "自店住所の裏付けあり、店別代表点未確定。",
-          "next": "取得済み自店案内と公開地図を照合。",
-          "event_ids": [
-            "ube-81165:successor",
-            "ube-82743:successor"
-          ]
+          "impact": "resolved",
+          "priority": "P3",
+          "reason": "自店案内とSEGA店舗ID18357の名前・同住所・マーカー座標を照合。旧店舗の座標を流用せず追加。",
+          "next": "現在掲載は反映済み。新たな実施日根拠が得られた場合だけ補完する。",
+          "event_ids": [],
+          "resolution": {
+            "checked_at": "2026-09-26",
+            "outcome": "current_listing_added",
+            "reason": "自店案内とSEGA店舗ID18357の名前・同住所・マーカー座標を照合。旧店舗の座標を流用せず追加。",
+            "evidence_ref": {
+              "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+              "section": "case_findings",
+              "index": 0,
+              "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
+            }
+          }
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
         }
       ]
     },
@@ -4574,6 +4592,35 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "facility:official-himaraya-0210:planned-changes",
+      "name": "ヒマラヤスポーツ サンリブ下松店",
+      "facility_ids": [
+        "official-himaraya-0210"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-yume-himaraya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "4e19c714853178bbe83e996d00fb88b96f0be06f981083d0f4af33a7756b788b"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-himaraya-0210:planned-changes:watch",
+          "impact": "watch",
+          "priority": "P2",
+          "reason": "9月28日～10月4日の増床休館・再開実施と、店頭買取中止の一次実施履歴が未確認。",
+          "next": "9月28日以降の休館実施、10月の再開と買取サービスを公式で再確認。",
+          "event_ids": [
+            "shunan-119876:temporary-closure",
+            "shunan-119876:buyback-service"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -4750,18 +4797,6 @@
       "event_hash": "33ab3b2c54fa3893364f0cf8bb3b8bc4631cb38e3e704ab4118bb0e9865bebd1",
       "case_id": "case:wants-higashisue-pharmacy",
       "issue_id": "case:wants-higashisue-pharmacy:map_action"
-    },
-    {
-      "event_id": "ube-81165:successor",
-      "event_hash": "35cd90da59260617cf5f889df4560272863cc0dece89dd3595103309ff98ad22",
-      "case_id": "case:megadori-ube",
-      "issue_id": "case:megadori-ube:map_action"
-    },
-    {
-      "event_id": "ube-82743:successor",
-      "event_hash": "fb30ada104a27c45dcbba3294ed1ebadb35da732f55de01394e909460759034c",
-      "case_id": "case:megadori-ube",
-      "issue_id": "case:megadori-ube:map_action"
     },
     {
       "event_id": "shunan-119994:tokuchan-iijima",
@@ -5812,6 +5847,18 @@
       "event_hash": "6f4930c94dc60b8271dd4b0203537426a2cf4b77c6343214a094053f6c220b87",
       "case_id": "facility:official-lawson-207103:temporary_change",
       "issue_id": "facility:official-lawson-207103:temporary_change:supplemental"
+    },
+    {
+      "event_id": "shunan-119876:temporary-closure",
+      "event_hash": "59592eaa5ed95707cce65452136e82457fa2156f4452c8a48fc7c936f3e45573",
+      "case_id": "facility:official-himaraya-0210:planned-changes",
+      "issue_id": "facility:official-himaraya-0210:planned-changes:watch"
+    },
+    {
+      "event_id": "shunan-119876:buyback-service",
+      "event_hash": "c0008b12ceb0bcac43236a530fdc4874840f33142d9d62f899893831756a2e69",
+      "case_id": "facility:official-himaraya-0210:planned-changes",
+      "issue_id": "facility:official-himaraya-0210:planned-changes:watch"
     }
   ],
   "legacy_audit": [

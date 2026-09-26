@@ -34,6 +34,12 @@ try {
   assert(render('osm-way-465881161').includes('閉店日：未確認（閉店自体は公式告知で確認）'));
   const autobacs=render('official-autobacs-380064');
   assert(autobacs.includes('カー用品・整備') && autobacs.includes('開店日：未確認'));
+  const himaraya = render('official-himaraya-0210');
+  assert(himaraya.includes('スポーツ用品') && himaraya.includes('9月28日～10月4日'));
+  assert(!himaraya.includes('営業終了予定') && !himaraya.includes('閉店確認'));
+  const library = render('official-machilibrary-1268');
+  assert(library.includes('2026-05-01') && library.includes('スタッフ不在'));
+  assert(render('official-megadori-ube').includes('ゲームセンター'));
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);
