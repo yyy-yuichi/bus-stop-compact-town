@@ -2069,6 +2069,37 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "directory:iwasaki:20002887",
+    "name": "クスリ岩崎チェーン 湯田西店",
+    "facility_ids": [
+      "osm-way-202664935"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-juntendo-iwasaki-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "1cb4ade9dadfa03902a38b09e774e3d41a1cbfc8cb7da772fded452693720dc0"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "directory:iwasaki:20002887:map_action",
+        "impact": "map_action",
+        "priority": "P2",
+        "reason": "湯田西店の公式地点から10.2mに旧称の可能性があるドラッグセガミが存在。運営・改称の連続性を未確認のため追加も改称もしない。",
+        "next": "旧セガミから岩崎への運営・改称の連続性と建物関係を一次資料で確認。既存ID・位置を保持し、距離だけで統合・追加しない。",
+        "event_ids": []
+      }
+    ],
+    "status": "map_action",
+    "priority": "P2",
+    "article_keys": [],
+    "held_event_ids": [],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "facility:official-himaraya-0210:planned-changes",
     "name": "ヒマラヤスポーツ サンリブ下松店",
     "facility_ids": [
