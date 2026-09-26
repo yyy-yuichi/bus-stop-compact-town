@@ -85,7 +85,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 export const facilityAvailable = (f: ShoppingFeature) => f.properties.freshness_review?.status !== 'closed' && !f.properties.duplicate_of;
 export function freshnessDateText(r: FreshnessReview): string {
   if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
-  if (r.event === 'closed' && r.date_precision === 'unknown') return '未確認（閉店自体は公式告知で確認）';
+  if (r.event === 'closed' && r.date_precision === 'unknown') return '未確認（閉店状態を確認）';
   if (r.event === 'closed' && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
   return r.effective_at ?? '';
 }

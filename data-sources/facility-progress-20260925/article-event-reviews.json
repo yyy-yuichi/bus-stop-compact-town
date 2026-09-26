@@ -7774,5 +7774,233 @@
         ]
       }
     ]
+  },
+  {
+    "article_key": "kaiten-498291",
+    "source_body_hash": "f3125e8214716f6e3486ae28565efc91f1b41aafe31c9e38f81c6fd6fc298be7",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "同じ運営元・敷地での業態転換1件。新規施設として重複追加せず元IDの名称変更として反映。",
+    "events": [
+      {
+        "event_id": "kaiten-498291:conversion",
+        "event_type": "rename",
+        "facility_ids": [
+          "osm-node-4041110344"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2024-04-27",
+        "reason": "公式の事前・事後資料、現行支店と固有点を照合。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/max-valu-at-houfu/",
+          "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownhofu.php",
+          "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf",
+          "https://www.the-fuji.com/company/docs/20240419_release.pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-30414",
+    "source_body_hash": "5ec318e774db48078267903fd57dc38756e0e9da509b9954655fae03a274887f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "旧ブランド営業終了と同地業態転換の2イベント。別のザ・ビッグ防府店、商業施設本体を変更しない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-30414:old-brand-end",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4041110344"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-04-07",
+        "reason": "フジの事後閉店一覧で4月7日の旧ブランド終了を確認。現在は同運営元の名称変更として継続し、永久閉店へ重複反映しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/24/maxvalu_hofuaeon2024/",
+          "https://www.the-fuji.com/company/ir/monthly/year2024.php"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-30414:conversion",
+        "event_type": "rename",
+        "facility_ids": [
+          "osm-node-4041110344"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2024-04-27",
+        "reason": "同じ業態転換へ統合。件数を増やさない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/24/maxvalu_hofuaeon2024/",
+          "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+        ],
+        "duplicate_of": "kaiten-498291:conversion"
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-29876",
+    "source_body_hash": "b04c1871e33a2e789849c2ce3d683a8d86749f65119fc9bdfb56be258bea4bdf",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "スーパーの改装再開、写真店の休業、別テナントの通常営業、過去の駐車場方式変更を分離。",
+    "events": [
+      {
+        "event_id": "yamaguchi-29876:renewal",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "osm-way-391863066"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2024-04-20",
+        "reason": "店頭の休業・再開掲示と公式事後資料の日付・店舗写真を確認。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/",
+          "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_ogoriminami.php",
+          "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-29876:silk-history",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "映像のシルクの休店予定は店舗自身の案内もあるが、再開実施日と当時の単独施設IDを未確認。100円店シルクと混同しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/",
+          "https://www.ekiten.jp/shop_2378197/info/2345112/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-29876:cleaner",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "effective_at": null,
+        "reason": "朝日化学クリーニングの当時の通常営業を店頭掲示で確認。開閉店の変化ではなく、この記述を現行店舗追加・訂正へ転用しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/",
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-29876:parking",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "effective_at": null,
+        "reason": "2023年の駐車料金認識方式という付帯設備の回顧。店舗開閉店とは別で固定施設の変更対象外。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/",
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-45815",
+    "source_body_hash": "252b2157fc4474651afc51a1ede35ddf393ddf44ba32431626bc2262d9d6aaf3",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "旧すき家の閉店状態と、一次資料が現存確認できない閉店実施日を分ける。",
+    "events": [
+      {
+        "event_id": "yamaguchi-45815:closed",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4826883320"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "旧名住所・店舗点一致、看板撤去後の現地写真と閉店表示を確認。閉店日未確認。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/",
+          "https://map.yahoo.co.jp/v3/place/02pBwCtGnwM",
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-45815:closure-date",
+        "event_type": "other",
+        "facility_ids": [
+          "osm-node-4826883320"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "記事の1月6日という実施日の一次告知本文は旧公式URLで再確認できない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/",
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/",
+          "https://maps.sukiya.jp/jp/detail/355.html"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-47840",
+    "source_body_hash": "db19667378889d221e1a824a6e9aee467423e8b3b4bee8d382d91c7f56ad0c9c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "現行すき家、開店実施日、同地旧セブンの閉店状態・未確認閉店日を分離。",
+    "events": [
+      {
+        "event_id": "yamaguchi-47840:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-sukiya-6146"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "公式支店の固有点を採用し、現行AM3～AM4休業を優先。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/",
+          "https://maps.sukiya.jp/jp/detail/6146.html"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-47840:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-sukiya-6146"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "3月27日朝9時の当日公式開店告知はあるが事後実施記録は未確認。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/",
+          "https://www.sukiya.jp/news/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-47840:predecessor",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4826868298"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "旧コンビニ跡地の建替え写真と後継公式住所点を確認。旧ID・座標保持。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/",
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/",
+          "https://maps.sukiya.jp/jp/detail/6146.html"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-47840:predecessor-date",
+        "event_type": "other",
+        "facility_ids": [
+          "osm-node-4826868298"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧セブンの閉店実施日は記事にも一次記録にも未確認。後継の開店日で補わない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/",
+          "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/"
+        ]
+      }
+    ]
   }
 ]

@@ -4621,6 +4621,116 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-29876:silk-history",
+      "name": "映像のシルク イオンタウン小郡店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-maxvalu-sukiya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "63f2f2f16a4b38754d56a15ba76468b7c39b51d5d5e3107777eb76d7bd3bdf94"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "maxvalu-sukiya:yamaguchi-29876:silk-history:history",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "映像のシルクの休店予定は店舗自身の案内もあるが、再開実施日と当時の単独施設IDを未確認。100円店シルクと混同しない。",
+          "next": "同じ取得を反復せず、新しい一次の実施記録が得られた際に補完。",
+          "event_ids": [
+            "yamaguchi-29876:silk-history"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-45815:closure-date",
+      "name": "すき家 防府天神店",
+      "facility_ids": [
+        "osm-node-4826883320"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-maxvalu-sukiya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "1d091682e961dc07314c5ee24cbc345fd0cc7f91149860856f6550842a7f131b"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "maxvalu-sukiya:yamaguchi-45815:closure-date:history",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "記事の1月6日という実施日の一次告知本文は旧公式URLで再確認できない。",
+          "next": "同じ取得を反復せず、新しい一次の実施記録が得られた際に補完。",
+          "event_ids": [
+            "yamaguchi-45815:closure-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:opening-date",
+      "name": "すき家 防府南松崎店",
+      "facility_ids": [
+        "official-sukiya-6146"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-maxvalu-sukiya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "d2d83a01421e24064e17e159794a73dd635a3ecc8839ba43f3c6a0638ffa254d"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "maxvalu-sukiya:yamaguchi-47840:opening-date:history",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "3月27日朝9時の当日公式開店告知はあるが事後実施記録は未確認。",
+          "next": "同じ取得を反復せず、新しい一次の実施記録が得られた際に補完。",
+          "event_ids": [
+            "yamaguchi-47840:opening-date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date",
+      "name": "セブン-イレブン 防府南松崎町店",
+      "facility_ids": [
+        "osm-node-4826868298"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-maxvalu-sukiya-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "b5e9c37b9d54dc3ddcb9a61a5377faa401dcc7c4e6a2955cfb0685b80cdd5fd8"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date:history",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "旧セブンの閉店実施日は記事にも一次記録にも未確認。後継の開店日で補わない。",
+          "next": "同じ取得を反復せず、新しい一次の実施記録が得られた際に補完。",
+          "event_ids": [
+            "yamaguchi-47840:predecessor-date"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -5859,6 +5969,30 @@
       "event_hash": "c0008b12ceb0bcac43236a530fdc4874840f33142d9d62f899893831756a2e69",
       "case_id": "facility:official-himaraya-0210:planned-changes",
       "issue_id": "facility:official-himaraya-0210:planned-changes:watch"
+    },
+    {
+      "event_id": "yamaguchi-29876:silk-history",
+      "event_hash": "9cdc8cd8365cf825b37a31477e24db6832572b313e0f8a317bcc48702df6fe96",
+      "case_id": "maxvalu-sukiya:yamaguchi-29876:silk-history",
+      "issue_id": "maxvalu-sukiya:yamaguchi-29876:silk-history:history"
+    },
+    {
+      "event_id": "yamaguchi-45815:closure-date",
+      "event_hash": "1d886cea89dc94362cd59a79306cce1586f72b65567f903a2b3e5add6c75587b",
+      "case_id": "maxvalu-sukiya:yamaguchi-45815:closure-date",
+      "issue_id": "maxvalu-sukiya:yamaguchi-45815:closure-date:history"
+    },
+    {
+      "event_id": "yamaguchi-47840:opening-date",
+      "event_hash": "da0d43d2dfcf7c4a67d502ac22238e0b55bde0f760d6a3f1b155d5a9e814e908",
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:opening-date",
+      "issue_id": "maxvalu-sukiya:yamaguchi-47840:opening-date:history"
+    },
+    {
+      "event_id": "yamaguchi-47840:predecessor-date",
+      "event_hash": "a22a8618f29bff41775dce0b26fc4aea64a9e5d317fb4d19b7f66aaba7c12e99",
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date",
+      "issue_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date:history"
     }
   ],
   "legacy_audit": [

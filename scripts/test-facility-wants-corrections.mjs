@@ -30,7 +30,7 @@ test('invalid duplicate targets, chains, mismatched identities and evidence are 
 });
 test('historical Lady closure date is not the later Wants notice date; Ouchi notice does not invent an effective date',()=>{
  assert.equal(get(lady).properties.freshness_review.effective_at,'2018-05-16');assert(!facilityAvailable(get(lady)));
- assert.equal(get(ouchi).properties.freshness_review.effective_at,null);assert.equal(freshnessDateText(get(ouchi).properties.freshness_review),'未確認（閉店自体は公式告知で確認）');
+ assert.equal(get(ouchi).properties.freshness_review.effective_at,null);assert.equal(freshnessDateText(get(ouchi).properties.freshness_review),'未確認（閉店状態を確認）');
  assert.equal(get(ouchi).properties.category,'reference');assert(!searchPlaces('山口大内御堀店',[],current).facilities.some(f=>f.id===ouchi));
  assert(!searchPlaces('くすりのレデイ 宇部店',[],current).facilities.some(f=>f.id===lady));assert(!prepareFacilities(current).some(p=>[lady,ouchi].includes(p.facility.id)));
 });
@@ -44,5 +44,5 @@ test('adopted changes preserve the preceding overlay and bind public evidence wi
  assert.equal(hash(batch),evidence.batch_hash);assert.equal(hash(read('data-sources/facility-wants-corrections-20260925/pdf-row-review.json')),evidence.pdf_review_hash);
  const before={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,26),additions:overlay.additions.slice(0,172)},after={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)};
  assert.equal(hash(before),evidence.before_overlay_hash);assert.equal(hash(after),evidence.after_overlay_hash);assert.deepEqual(after.updates.slice(26),batch.updates);assert.equal(evidence.extra_jev_requests,0);
- assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed').length,17);assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);
+ assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed').length,19);assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);
 });

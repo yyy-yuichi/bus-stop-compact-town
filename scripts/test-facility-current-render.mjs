@@ -31,7 +31,7 @@ try {
   assert(duplicate.includes('同じ店舗の登録をまとめています') && duplicate.includes('#kind=facility&amp;id=osm-node-9472242519'));
   assert(!duplicate.includes('閉店確認') && duplicate.includes('閉店ではありません'));
   assert(render('osm-way-370584528').includes('閉店日：2018-05-16'));
-  assert(render('osm-way-465881161').includes('閉店日：未確認（閉店自体は公式告知で確認）'));
+  assert(render('osm-way-465881161').includes('閉店日：未確認（閉店状態を確認）'));
   const autobacs=render('official-autobacs-380064');
   assert(autobacs.includes('カー用品・整備') && autobacs.includes('開店日：未確認'));
   const himaraya = render('official-himaraya-0210');
@@ -40,6 +40,9 @@ try {
   const library = render('official-machilibrary-1268');
   assert(library.includes('2026-05-01') && library.includes('スタッフ不在'));
   assert(render('official-megadori-ube').includes('ゲームセンター'));
+  assert(render('official-sukiya-6146').includes('AM3～AM4は休業'));
+  assert(render('osm-node-4826868298').includes('閉店日：未確認（閉店状態を確認）'));
+  assert(render('osm-node-4041110344').includes('2024-04-27'));
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);
@@ -55,7 +58,7 @@ try {
   assert(render('official-toriichizu-yamaguchi-tokuyama').includes('2026-08-25'));
   assert(render('osm-way-305954680').includes('閉店日：2025-01（年月まで確認）'));
   const unknownClosed = render('osm-way-332618123');
-  assert(unknownClosed.includes('閉店日：未確認（閉店自体は公式告知で確認）'));
+  assert(unknownClosed.includes('閉店日：未確認（閉店状態を確認）'));
   assert(!unknownClosed.includes('閉店日：2025-03-01') && !unknownClosed.includes('：null'));
   assert(render('official-soy-stock-karato').includes('開店日：未確認'));
   assert(render('official-tsuruha-3945').includes('併設調剤薬局の公式案内'));

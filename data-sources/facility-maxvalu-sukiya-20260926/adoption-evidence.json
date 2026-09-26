@@ -1,0 +1,458 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "55707b889c0da44918fdc196ee60df38fdf2bd0297fa28056d367c1a59d818c2",
+  "after_overlay_hash": "7fe1be0cb1da6cf9e70167db82992b23c496cc3886b1ae9db50e993d81602931",
+  "newly_added_ids": [
+    "official-sukiya-6146"
+  ],
+  "corrected_ids": [
+    "osm-node-4041110344",
+    "osm-way-391863066",
+    "osm-node-4826883320",
+    "osm-node-4826868298"
+  ],
+  "updates": [
+    {
+      "id": "osm-node-4041110344",
+      "name": "マックスバリュイオンタウン防府店",
+      "city": "防府市",
+      "address": "山口県防府市鐘紡町7番1号",
+      "point": [
+        131.5891746,
+        34.049069
+      ],
+      "review": {
+        "status": "changed",
+        "event": "renamed",
+        "effective_at": "2024-04-27",
+        "checked_at": "2026-09-26",
+        "summary": "同じ場所・運営元のザ・ビッグからマックスバリュへの業態転換を公式事後報告で確認。既存ID・元地点を維持して名称を訂正。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownhofu.php"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.817275636265!2d131.589038!3d34.048558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492b80a3af6c1%3A0x1fc33eb211f39af6!2z44Oe44OD44Kv44K544OQ44Oq44OlIOOCpOOCquODs-OCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1729151168362!5m2!1sja!2sjp"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/company/ir/monthly/year2024.php"
+          },
+          {
+            "title": "フジの2024年10月事後報告",
+            "url": "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/company/docs/20240419_release.pdf"
+          }
+        ],
+        "limits": [
+          "元のザ・ビッグ点と公式の同名店舗点は約16m差。別所在地のザ・ビッグ防府店、商業施設本体aeon-hofuとは分離。",
+          "2024年4月7日の旧ブランド営業終了、4月27日の業態転換再開を区別。独立した新施設の追加や移転とは数えない。",
+          "現在の営業時間9～21時。店舗入口・館内動線は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-391863066",
+      "name": "マックスバリュ小郡南店",
+      "city": "山口市",
+      "address": "山口県山口市小郡前田町2番24号",
+      "point": [
+        131.3969258,
+        34.0865545
+      ],
+      "review": {
+        "status": "changed",
+        "event": "service_change",
+        "effective_at": "2024-04-20",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の改装休業掲示とフジの事後実績資料を照合し、4月20日の改装再開を確認。既存施設の改装履歴として反映。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_ogoriminami.php"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.334947243756!2d131.3943508761361!3d34.08655891591686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354484e159fa20af%3A0xdbd651e6af6746d0!2z44Oe44OD44Kv44K544OQ44Oq44OlIOWwj-mDoeWNl-W6lw!5e0!3m2!1sja!2sjp!4v1706871894039!5m2!1sja!2sjp"
+          },
+          {
+            "title": "フジの2024年10月事後報告",
+            "url": "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/"
+          }
+        ],
+        "limits": [
+          "4月7日18時の一時閉店、4月8～19日休業、4月20日再開を恒久閉店と区別。店頭写真の過去営業時間8～23時と、現行公式7～23時は別時点。",
+          "元ID・元点を維持。写真店シルクの休業・再開やクリーニング店の通常営業をスーパー全体の状態へ混入しない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4826883320",
+      "name": "すき家 防府天神店",
+      "city": "防府市",
+      "address": "山口県防府市天神2丁目3-36",
+      "point": [
+        131.57411811,
+        34.05660971
+      ],
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧支店名・住所・固有地点と、看板撤去・改修後の現地写真、現行の閉店表示を照合し旧店の営業終了を確認。",
+        "sources": [
+          {
+            "title": "旧支店名・住所・店舗点と閉店表示",
+            "url": "https://map.yahoo.co.jp/v3/place/02pBwCtGnwM"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/"
+          }
+        ],
+        "limits": [
+          "同名旧店舗点との差約3m。南松崎の新店は約189m東の別敷地・別IDで、旧点を移動しない。",
+          "記事は2025年1月6日閉店と報道するが、リンク先の旧公式355は現在検索画面へ移る。閉店日の一次告知本文を再確認できないため実施日は未確認とする。",
+          "現地写真の看板撤去・三角屋根撤去を実見。建物全体の閉鎖や後継店の状態を意味しない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4826868298",
+      "name": "セブン-イレブン 防府南松崎町店",
+      "city": "防府市",
+      "address": "山口県防府市南松崎町1-1",
+      "point": [
+        131.57614467214316,
+        34.056364128729584
+      ],
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧コンビニ跡地の建替え写真・店舗名付き事後記事と、同地のすき家公式住所・固有座標を照合。残っていた旧セブンの点を閉店履歴として保持。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://maps.sukiya.jp/jp/detail/6146.html"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/"
+          }
+        ],
+        "limits": [
+          "旧セブンの元点と後継すき家の店舗固有点は約13m差。複数の同地記事で旧支店を同定し、単なる近接だけで閉店にしていない。",
+          "旧セブンの閉店実施日は未確認。すき家の開店日を旧店の閉店日へ流用しない。",
+          "元ID・元点を維持し、後継すき家は別ID。"
+        ]
+      }
+    }
+  ],
+  "nearby_new_store": [
+    {
+      "id": "osm-node-4826868298",
+      "name": "セブン-イレブン",
+      "point": [
+        131.5761073,
+        34.056476
+      ],
+      "distance_m": 12.886911007803276
+    },
+    {
+      "id": "osm-node-4826870950",
+      "name": "東山口信金",
+      "point": [
+        131.5744458,
+        34.0561496
+      ],
+      "distance_m": 158.4357418203451
+    },
+    {
+      "id": "osm-node-13300792175",
+      "name": "ラモンの食堂",
+      "point": [
+        131.5771312,
+        34.0542739
+      ],
+      "distance_m": 249.20769359983834
+    },
+    {
+      "id": "osm-node-1423653624",
+      "name": "みどり保育園",
+      "point": [
+        131.577036,
+        34.055066
+      ],
+      "distance_m": 165.88010898455934
+    },
+    {
+      "id": "osm-node-1423658779",
+      "name": "松崎幼稚園",
+      "point": [
+        131.575092,
+        34.058232
+      ],
+      "distance_m": 228.92620424796957
+    },
+    {
+      "id": "osm-node-4825331394",
+      "name": "くら寿司",
+      "point": [
+        131.5778926,
+        34.0559319
+      ],
+      "distance_m": 168.14885222255057
+    },
+    {
+      "id": "osm-node-4826883319",
+      "name": "長崎ちゃんめん",
+      "point": [
+        131.5751363,
+        34.0565286
+      ],
+      "distance_m": 94.74739700055353
+    },
+    {
+      "id": "osm-node-4826883320",
+      "name": "すき家",
+      "point": [
+        131.5741216,
+        34.0565861
+      ],
+      "distance_m": 188.14751286424828
+    },
+    {
+      "id": "civic-care-3570600100-ac36bcb0fb",
+      "name": "社会福祉法人防府市社会福祉事業団 ホームヘルパーセンター",
+      "point": [
+        131.574127,
+        34.055134
+      ],
+      "distance_m": 230.76236684402897
+    },
+    {
+      "id": "civic-care-3570602478-5a9fb94c01",
+      "name": "まる居宅介護支援センター",
+      "point": [
+        131.576126,
+        34.057362
+      ],
+      "distance_m": 110.77708917822119
+    },
+    {
+      "id": "official-tsuruha-3945",
+      "name": "ウォンツ 防府松崎店",
+      "point": [
+        131.5785395,
+        34.05644842
+      ],
+      "distance_m": 221.00127248928248
+    }
+  ],
+  "article_keys": [
+    "kaiten-498291",
+    "yamaguchi-30414",
+    "yamaguchi-29876",
+    "yamaguchi-45815",
+    "yamaguchi-47840"
+  ],
+  "case_findings": [
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-29876:silk-history",
+      "name": "映像のシルク イオンタウン小郡店",
+      "impact": "historical_only",
+      "reason": "映像のシルクの休店予定は店舗自身の案内もあるが、再開実施日と当時の単独施設IDを未確認。100円店シルクと混同しない。"
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-45815:closure-date",
+      "name": "すき家 防府天神店",
+      "impact": "historical_only",
+      "reason": "記事の1月6日という実施日の一次告知本文は旧公式URLで再確認できない。"
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:opening-date",
+      "name": "すき家 防府南松崎店",
+      "impact": "supplemental",
+      "reason": "3月27日朝9時の当日公式開店告知はあるが事後実施記録は未確認。"
+    },
+    {
+      "case_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date",
+      "name": "セブン-イレブン 防府南松崎町店",
+      "impact": "historical_only",
+      "reason": "旧セブンの閉店実施日は記事にも一次記録にも未確認。後継の開店日で補わない。"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sukiya.jp/news/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/0353d209ba0becc47479dc37.json",
+      "status": 200,
+      "hash": "332ab3d77bacea624465787101e6ce6c133072e4e8938b779e438822d161e69c"
+    },
+    {
+      "url": "https://kaiten-heiten-24.com/max-valu-at-houfu/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/0b25c3904e5e5e6f5211097e.json",
+      "status": 200,
+      "hash": "a92fc3a5df4a0272839cb302807ab287ccce5c3923d932927171e1715c1f4b9c"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.817275636265!2d131.589038!3d34.048558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492b80a3af6c1%3A0x1fc33eb211f39af6!2z44Oe44OD44Kv44K544OQ44Oq44OlIOOCpOOCquODs-OCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1729151168362!5m2!1sja!2sjp",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/2307a513528392a45ac2a419.json",
+      "status": 200,
+      "hash": "f94f9148b3734df242f08a8cc7a318d55c490d94e1b76105f59db1f4abdf32fa"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2024/04/24/maxvalu_hofuaeon2024/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/2c8973b87a74cb74d90940c0.json",
+      "status": 200,
+      "hash": "4ef85b4d0cdaef176a8b5b243c6d5be04789cb33037b356158c31d2a9b3abaf2"
+    },
+    {
+      "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_ogoriminami.php",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/33fbb5ba11c281cc0d38b13b.json",
+      "status": 200,
+      "hash": "c832a77c49b8c524092fb509840dd2db9e1f0cd4b1cde22bb7cd9a86ad86d730"
+    },
+    {
+      "url": "https://maps.sukiya.jp/jp/detail/355.html",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/57a4c6cdb185be3065d6eec5.json",
+      "status": 200,
+      "hash": "8db8f242ded2967787dea39e6b1677d98a1e942c27168a50ac0f729b5f0a9bdb"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/02pBwCtGnwM",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/62c5cdf44761c84eb4b658e2.json",
+      "status": 200,
+      "hash": "2676a323ecaad2a5abe0c80601b8981168c87637a94f94b78b82be1d897e7ddd"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.334947243756!2d131.3943508761361!3d34.08655891591686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354484e159fa20af%3A0xdbd651e6af6746d0!2z44Oe44OD44Kv44K544OQ44Oq44OlIOWwj-mDoeWNl-W6lw!5e0!3m2!1sja!2sjp!4v1706871894039!5m2!1sja!2sjp",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/7083198be2f49a92705e3853.json",
+      "status": 200,
+      "hash": "4af2aab7b794bc1c8ddb3baf735601be1f226e2406fed04c2746fc114a6fb642"
+    },
+    {
+      "url": "https://www.the-fuji.com/company/storelist/yamaguchi/yamaguchi-shi/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/7cf7537124562318e09305e0.json",
+      "status": 200,
+      "hash": "b41fc89bfac170344bbfd4dd983223d17ba98fed151cf2879dce90e82711bb3f"
+    },
+    {
+      "url": "https://maps.sukiya.jp/jp/detail/6146.html",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/88a58b289f1a9bc80072435d.json",
+      "status": 200,
+      "hash": "324399ba68c9eca3ef4fd63adb064b1ee5420e0549723930ed811428168c58ec"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/92a38124ca0cf874a71d00f1.json",
+      "status": 200,
+      "hash": "e510f5aac27b280f1385cd638ee4d550727a16744f07bdb5076ae95fdbbe2f43"
+    },
+    {
+      "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownhofu.php",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/96fd37b116c294d1052666e6.json",
+      "status": 200,
+      "hash": "087d5140a5ccb0f63b9e1de816a186de5ca5adee4952c7a1dc88f8dfcf763759"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/a5816877ca7c49f8c65b52c0.json",
+      "status": 200,
+      "hash": "944b1996fc50fe9f943825a74f063d6adea426b0ff505002926449da834c02af"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/c551b9aa962c3f911f4163e9.json",
+      "status": 200,
+      "hash": "bcd3af0465a4f3236ef1cf9f343c9de7ca70c5ecd5461e4fe3ae2b5d0544b3dd"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/deb79718a71e934e59ceb8c1.json",
+      "status": 200,
+      "hash": "36f5883373ad907c13130a8b354fa514b6277a566c942234f1bf678931d9e181"
+    },
+    {
+      "url": "https://www.the-fuji.com/company/ir/monthly/year2024.php",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/e8d107bf54e64134f6872059.json",
+      "status": 200,
+      "hash": "ce0e504df7b21121d81a96bc62c20e2f71855017e8839e711de3ffb9124a2df4"
+    },
+    {
+      "url": "https://www.ekiten.jp/shop_2378197/info/2345112/",
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sanitized/eab9bbb26627c1aa70a61442.json",
+      "status": 200,
+      "hash": "f0591d065c4b595fb9f89544c376b909873595b33728e478a3544d00e394c21c"
+    }
+  ],
+  "visual_evidence": [
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/fuji-retrospective.pdf",
+      "url": "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf",
+      "sha256": "df3ebc478191182aad04832b1a61fe631522b7732deda8a35a1211e85967b810",
+      "visually_read": true,
+      "interpretation": "15頁の小郡南4月20日・16頁の防府4月27日、実施写真・前年比を実見。"
+    },
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/fuji-conversion.pdf",
+      "url": "https://www.the-fuji.com/company/docs/20240419_release.pdf",
+      "sha256": "1dcd2f99cc0cec1cdc76b75372e97ce81f1298fd2cd8c883f50a6a3b666cef90",
+      "visually_read": false,
+      "interpretation": "同運営元・敷地の業態転換という一次説明。事後報告と併用。"
+    },
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/ogori-sign.jpeg",
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/04/IMG_3551.jpeg",
+      "sha256": "2da1c89b8b4436a8d1a677d0522b30b77e2e98472846c06c7077ecfa01ed5fbe",
+      "visually_read": true,
+      "interpretation": "休業7日18時・8～19日・再開20日9時、シルク休業・朝日化学通常営業を実見。"
+    },
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sukiya-old-photo.jpeg",
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2025/01/IMG_2676.jpeg",
+      "sha256": "61553a58d185f6ac087722e7474ccfe1f521ebab165f922d8b6390f31456fe30",
+      "visually_read": true,
+      "interpretation": "旧店看板撤去・入口規制・養生を実見。"
+    },
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/sukiya-old-after.jpeg",
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2025/01/IMG_2794.jpeg",
+      "sha256": "825eac15aecd468bae68a43c8951a83fa74f6d2a7c50579e5a4fb8709bd8955e",
+      "visually_read": true,
+      "interpretation": "同じ建物の三角屋根撤去・看板撤去を実見。"
+    },
+    {
+      "path": "outputs/facility-maxvalu-sukiya-20260926/new-site.jpeg",
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2025/01/IMG_2391.jpeg",
+      "sha256": "eb36e3cf16fb021edc6a0644fe820d128de2579ccb3187a3377124e936c8597a",
+      "visually_read": true,
+      "interpretation": "旧コンビニ敷地に建替え中のすき家建物を実見。"
+    }
+  ],
+  "extra_jev_requests": 0,
+  "efficiency": "One shared Fuji retrospective PDF resolved two stores and brand-end history. Existing base plus all overlays compared once before edits. Reused receipts by URL; failed old MaxValu endpoint and Seven API not retried. One sequential build and known-successful in-app-browser upload planned.",
+  "limitations": "One new current listing and four original-facility corrections. Exact dates of two closures, Sukiya actual opening and Silk resumption remain held. No completion percentage or ETA."
+}
