@@ -4407,6 +4407,52 @@
           "元ID・元座標・元source_idsを保持。支店名補完を移転・改称の実施日として扱いません。"
         ]
       }
+    },
+    {
+      "id": "osm-node-2748741363",
+      "expected": {
+        "name": "マツモトキヨシ",
+        "category": "pharmacy",
+        "source_ids": [
+          "node/2748741363"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9240995,
+            33.9496277
+          ]
+        }
+      },
+      "changes": {
+        "name": "ドラッグストア マツモトキヨシ シーモール店",
+        "city": "下関市",
+        "address": "山口県下関市竹崎町4-4-8 シーモール1階122号",
+        "search_names": "マツモトキヨシ ドラッグストア マツモトキヨシ シーモール店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-26",
+        "summary": "公式支店名・住所・店舗固有地点と元の同系列施設を照合し、支店情報を補完。",
+        "sources": [
+          {
+            "title": "公式の当該支店案内・店舗固有座標",
+            "url": "https://www.matsukiyococokara-online.com/map/?kid=20805483"
+          },
+          {
+            "title": "運営会社の公式店舗一覧",
+            "url": "https://www.matsukiyococokara-online.com/map"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+          "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+          "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。",
+          "元ID・元座標・元source_idsを保持。シーモールの同系列店舗として支店名を補完し、別館リピエのココカラファインと統合しません。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -30472,6 +30518,3906 @@
         "coordinates": [
           131.853119,
           34.025944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000105",
+      "properties": {
+        "name": "エディオン 岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市麻里布町7-9-40",
+        "official_address": "山口県岩国市麻里布町7-9-40",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000105",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000105"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 岩国店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000105"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.218023,
+          34.171045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000126",
+      "properties": {
+        "name": "エディオン 宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市神原町2-6-4",
+        "official_address": "山口県宇部市神原町2-6-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000126",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000126"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 宇部店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000126"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.259725,
+          33.947583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000128",
+      "properties": {
+        "name": "エディオン 萩店",
+        "city": "萩市",
+        "address": "山口県萩市土原川島沖田519",
+        "official_address": "山口県萩市土原川島沖田519",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000128",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000128"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 萩店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000128"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.40459,
+          34.410375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000136",
+      "properties": {
+        "name": "エディオン 柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市南町5-1-56",
+        "official_address": "山口県柳井市南町5-1-56",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000136",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000136"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 柳井店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000136"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.104088,
+          33.961089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000141",
+      "properties": {
+        "name": "エディオン 防府店",
+        "city": "防府市",
+        "address": "山口県防府市高倉1-3-32",
+        "official_address": "山口県防府市高倉1-3-32",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000141",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000141"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 防府店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000141"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.558748,
+          34.054981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000143",
+      "properties": {
+        "name": "エディオン 山口本店",
+        "city": "山口市",
+        "address": "山口県山口市平井90",
+        "official_address": "山口県山口市平井90",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000143",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000143"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 山口本店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000143"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.471473,
+          34.163603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000195",
+      "properties": {
+        "name": "エディオン 玖珂店",
+        "city": "岩国市",
+        "address": "山口県岩国市玖珂町上市779-1",
+        "official_address": "山口県岩国市玖珂町上市779-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000195",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000195"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 玖珂店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000195"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.083109,
+          34.098514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000222",
+      "properties": {
+        "name": "エディオン 美祢店",
+        "city": "美祢市",
+        "address": "山口県美祢市大嶺町東分361-8",
+        "official_address": "山口県美祢市大嶺町東分361-8",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000222",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000222"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 美祢店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000222"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.207521,
+          34.169528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000247",
+      "properties": {
+        "name": "エディオン 北河内店",
+        "city": "岩国市",
+        "address": "山口県岩国市大字下444-1",
+        "official_address": "山口県岩国市大字下444-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000247",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000247"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 北河内店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000247"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.091096,
+          34.162459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000285",
+      "properties": {
+        "name": "エディオン 大島久賀店",
+        "city": "周防大島町",
+        "address": "山口県大島郡周防大島町大字久賀4535",
+        "official_address": "山口県大島郡周防大島町大字久賀4535",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000285",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000285"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 大島久賀店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000285"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.266987,
+          33.947313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000289",
+      "properties": {
+        "name": "エディオン 室積店",
+        "city": "光市",
+        "address": "山口県光市室積松原5-3",
+        "official_address": "山口県光市室積松原5-3",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000289",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000289"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 室積店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000289"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.970162,
+          33.934628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000290",
+      "properties": {
+        "name": "エディオン 豊田店",
+        "city": "下関市",
+        "address": "山口県下関市豊田町大字矢田270-10",
+        "official_address": "山口県下関市豊田町大字矢田270-10",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000290",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000290"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 豊田店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000290"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.075267,
+          34.200799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000305",
+      "properties": {
+        "name": "エディオン 楠店",
+        "city": "宇部市",
+        "address": "山口県宇部市船木442-9",
+        "official_address": "山口県宇部市船木442-9",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000305",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000305"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 楠店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000305"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.226309,
+          34.046306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000399",
+      "properties": {
+        "name": "エディオン 西岩国駅前店",
+        "city": "岩国市",
+        "address": "山口県岩国市錦見6-9-15",
+        "official_address": "山口県岩国市錦見6-9-15",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000399",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000399"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 西岩国駅前店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000399"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.194004,
+          34.162638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000406",
+      "properties": {
+        "name": "エディオン 長門店",
+        "city": "長門市",
+        "address": "山口県長門市東深川真名ｹ崎724-4",
+        "official_address": "山口県長門市東深川真名ｹ崎724-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000406",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000406"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 長門店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000406"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.191701,
+          34.375986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000414",
+      "properties": {
+        "name": "エディオン 下松店",
+        "city": "下松市",
+        "address": "山口県下松市桜町1-16-2",
+        "official_address": "山口県下松市桜町1-16-2",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000414",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000414"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 下松店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000414"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.867454,
+          34.017423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000420",
+      "properties": {
+        "name": "エディオン 光店",
+        "city": "光市",
+        "address": "山口県光市虹ヶ浜1丁目4-15",
+        "official_address": "山口県光市虹ヶ浜1丁目4-15",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000420",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000420"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 光店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000420"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.918104,
+          33.973356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000434",
+      "properties": {
+        "name": "エディオン 長府店",
+        "city": "下関市",
+        "address": "山口県下関市ゆめタウン2-3",
+        "official_address": "山口県下関市ゆめタウン2-3",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000434",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000434"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 長府店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000434"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.014218,
+          34.028286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000440",
+      "properties": {
+        "name": "エディオン ゆめタウン宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市黒石北三丁目3番45号",
+        "official_address": "山口県宇部市黒石北三丁目3番45号",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000440",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000440"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ゆめタウン宇部店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000440"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.205314,
+          33.983851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000466",
+      "properties": {
+        "name": "エディオン 周南本店",
+        "city": "周南市",
+        "address": "山口県周南市川崎3丁目17-8",
+        "official_address": "山口県周南市川崎3丁目17-8",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000466",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000466"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 周南本店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000466"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.783061,
+          34.069992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000488",
+      "properties": {
+        "name": "エディオン とよかわ電機",
+        "city": "周南市",
+        "address": "山口県周南市遠石3-2-8",
+        "official_address": "山口県周南市遠石3-2-8",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000488",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000488"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン とよかわ電機",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000488"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.823496,
+          34.038477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000560",
+      "properties": {
+        "name": "エディオン マミヤ",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市日の出3-15-23",
+        "official_address": "山口県山陽小野田市日の出3-15-23",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000560",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000560"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン マミヤ",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000560"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.180348,
+          34.006915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000599",
+      "properties": {
+        "name": "エディオン 岩国平田店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国2-103-11",
+        "official_address": "山口県岩国市南岩国2-103-11",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000599",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000599"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 岩国平田店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000599"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.189953,
+          34.135778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000633",
+      "properties": {
+        "name": "エディオン 菊川店",
+        "city": "周南市",
+        "address": "山口県周南市下上上野1978-2",
+        "official_address": "山口県周南市下上上野1978-2",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000633",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000633"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 菊川店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000633"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.781544,
+          34.08819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000646",
+      "properties": {
+        "name": "エディオン ハシモト家電",
+        "city": "周南市",
+        "address": "山口県周南市鹿野下1275-1",
+        "official_address": "山口県周南市鹿野下1275-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000646",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000646"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ハシモト家電",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000646"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.817035,
+          34.226093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000671",
+      "properties": {
+        "name": "エディオン 政所店",
+        "city": "周南市",
+        "address": "山口県周南市政所3-2-16",
+        "official_address": "山口県周南市政所3-2-16",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000671",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000671"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 政所店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000671"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.773317,
+          34.072501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000734",
+      "properties": {
+        "name": "エディオン マサデン",
+        "city": "防府市",
+        "address": "山口県防府市大字上右田790-2",
+        "official_address": "山口県防府市大字上右田790-2",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000734",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000734"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン マサデン",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000734"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.577134,
+          34.089777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000741",
+      "properties": {
+        "name": "エディオン 石が口店",
+        "city": "防府市",
+        "address": "山口県防府市石が口1-7-15",
+        "official_address": "山口県防府市石が口1-7-15",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000741",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000741"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 石が口店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000741"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.566964,
+          34.042896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000758",
+      "properties": {
+        "name": "エディオン 一冨士電機",
+        "city": "宇部市",
+        "address": "山口県宇部市西岐波6494-40",
+        "official_address": "山口県宇部市西岐波6494-40",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000758",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000758"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 一冨士電機",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000758"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.286671,
+          33.972916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000000886",
+      "properties": {
+        "name": "エディオン ヤマデン",
+        "city": "周南市",
+        "address": "山口県周南市岡田町2-10",
+        "official_address": "山口県周南市岡田町2-10",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000000886",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000000886"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ヤマデン",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000000886"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.805384,
+          34.060523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000001127",
+      "properties": {
+        "name": "エディオン 周東店",
+        "city": "岩国市",
+        "address": "山口県岩国市周東町下久原431-1",
+        "official_address": "山口県岩国市周東町下久原431-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000001127",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000001127"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 周東店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000001127"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.063406,
+          34.090955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000001131",
+      "properties": {
+        "name": "エディオン 新下関店",
+        "city": "下関市",
+        "address": "山口県下関市秋根西町2丁目6番1号",
+        "official_address": "山口県下関市秋根西町2丁目6番1号",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000001131",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000001131"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 新下関店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000001131"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.945323,
+          34.007173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000001133",
+      "properties": {
+        "name": "エディオン シーモール下関店",
+        "city": "下関市",
+        "address": "山口県下関市竹崎町4-4-8　シーモール下関4階",
+        "official_address": "山口県下関市竹崎町4-4-8　シーモール下関4階",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000001133",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000001133"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン シーモール下関店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000001133"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.924197,
+          33.949461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000001143",
+      "properties": {
+        "name": "エディオン 山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡前田町4番12号",
+        "official_address": "山口県山口市小郡前田町4番12号",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000001143",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000001143"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 山口小郡店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000001143"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.399791,
+          34.085702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003025",
+      "properties": {
+        "name": "エディオン 田布施店",
+        "city": "田布施町",
+        "address": "山口県熊毛郡田布施町大字宿井1122-10",
+        "official_address": "山口県熊毛郡田布施町大字宿井1122-10",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003025",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003025"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 田布施店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003025"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.01759,
+          33.97078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003074",
+      "properties": {
+        "name": "エディオン 小串店",
+        "city": "下関市",
+        "address": "山口県下関市豊浦町大字小串8-6",
+        "official_address": "山口県下関市豊浦町大字小串8-6",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003074",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003074"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 小串店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003074"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.928258,
+          34.16951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003087",
+      "properties": {
+        "name": "エディオン 仙崎店",
+        "city": "長門市",
+        "address": "山口県長門市仙崎1302-22",
+        "official_address": "山口県長門市仙崎1302-22",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003087",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003087"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 仙崎店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003087"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.198262,
+          34.391621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003147",
+      "properties": {
+        "name": "エディオン 豊電",
+        "city": "下関市",
+        "address": "山口県下関市豊浦町大字黒井2334-4",
+        "official_address": "山口県下関市豊浦町大字黒井2334-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003147",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003147"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 豊電",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003147"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.910884,
+          34.127076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003150",
+      "properties": {
+        "name": "エディオン 東萩店ヨシミ電器",
+        "city": "萩市",
+        "address": "山口県萩市椿東3176-22",
+        "official_address": "山口県萩市椿東3176-22",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003150",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003150"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 東萩店ヨシミ電器",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003150"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.411611,
+          34.422766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003174",
+      "properties": {
+        "name": "エディオン オカムラ電器",
+        "city": "下関市",
+        "address": "山口県下関市勝谷新町4-12-23",
+        "official_address": "山口県下関市勝谷新町4-12-23",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003174",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003174"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン オカムラ電器",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003174"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.972783,
+          34.005456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003192",
+      "properties": {
+        "name": "エディオン しみずでんき",
+        "city": "防府市",
+        "address": "山口県防府市自力町3-15",
+        "official_address": "山口県防府市自力町3-15",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003192",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003192"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン しみずでんき",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003192"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.575693,
+          34.043727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003194",
+      "properties": {
+        "name": "エディオン いわもと家電",
+        "city": "山口市",
+        "address": "山口県山口市秋穂東6684-4",
+        "official_address": "山口県山口市秋穂東6684-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003194",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003194"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン いわもと家電",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003194"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.434927,
+          34.015283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003214",
+      "properties": {
+        "name": "エディオン 深井電器",
+        "city": "岩国市",
+        "address": "山口県岩国市青木町1-4-22",
+        "official_address": "山口県岩国市青木町1-4-22",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003214",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003214"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 深井電器",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003214"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.202594,
+          34.100705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003215",
+      "properties": {
+        "name": "エディオン 徳佐店",
+        "city": "山口市",
+        "address": "山口県山口市阿東町徳佐中3061-1ショッピングセンターアピア内",
+        "official_address": "山口県山口市阿東町徳佐中3061-1ショッピングセンターアピア内",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003215",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003215"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 徳佐店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003215"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.718494,
+          34.394306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003228",
+      "properties": {
+        "name": "エディオン 土田デンキ",
+        "city": "周南市",
+        "address": "山口県周南市坂根町8-40",
+        "official_address": "山口県周南市坂根町8-40",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003228",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003228"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 土田デンキ",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003228"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.756089,
+          34.079986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003252",
+      "properties": {
+        "name": "エディオン むらかみデンキ",
+        "city": "田布施町",
+        "address": "山口県熊毛郡田布施町麻郷2947-21",
+        "official_address": "山口県熊毛郡田布施町麻郷2947-21",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003252",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003252"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン むらかみデンキ",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003252"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.046841,
+          33.930863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003277",
+      "properties": {
+        "name": "エディオン ぎんなん熊毛店",
+        "city": "周南市",
+        "address": "山口県周南市大字呼坂1100-17 勝間ニュ-タウン内",
+        "official_address": "山口県周南市大字呼坂1100-17 勝間ニュ-タウン内",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003277",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003277"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ぎんなん熊毛店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003277"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.952691,
+          34.038782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003309",
+      "properties": {
+        "name": "エディオン 秋芳店",
+        "city": "美祢市",
+        "address": "山口県美祢市秋芳町嘉万2432",
+        "official_address": "山口県美祢市秋芳町嘉万2432",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003309",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003309"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 秋芳店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003309"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.253311,
+          34.277114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003323",
+      "properties": {
+        "name": "エディオン 門前店",
+        "city": "岩国市",
+        "address": "山口県岩国市門前町1-16-12",
+        "official_address": "山口県岩国市門前町1-16-12",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003323",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003323"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 門前店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003323"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.212575,
+          34.148843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003335",
+      "properties": {
+        "name": "エディオン ニューデンキのかど",
+        "city": "下松市",
+        "address": "山口県下松市東豊井1428",
+        "official_address": "山口県下松市東豊井1428",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003335",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003335"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ニューデンキのかど",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003335"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.870221,
+          34.004271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003338",
+      "properties": {
+        "name": "エディオン 村田デンキ",
+        "city": "長門市",
+        "address": "山口県長門市三隅上3244-4",
+        "official_address": "山口県長門市三隅上3244-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003338",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003338"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 村田デンキ",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003338"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.299291,
+          34.351122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003339",
+      "properties": {
+        "name": "エディオン 井川電機",
+        "city": "周南市",
+        "address": "山口県周南市櫛ケ浜西本町113",
+        "official_address": "山口県周南市櫛ケ浜西本町113",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003339",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003339"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 井川電機",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003339"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.828883,
+          34.029074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003341",
+      "properties": {
+        "name": "エディオン 厚狭店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市鴨庄16-7",
+        "official_address": "山口県山陽小野田市鴨庄16-7",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003341",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003341"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 厚狭店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003341"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.15743,
+          34.056488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003342",
+      "properties": {
+        "name": "エディオン テイネン山陽新山口店",
+        "city": "山口市",
+        "address": "山口県山口市下小鯖894-1",
+        "official_address": "山口県山口市下小鯖894-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003342",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003342"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン テイネン山陽新山口店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003342"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.519358,
+          34.140785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003358",
+      "properties": {
+        "name": "エディオン 内藤電器",
+        "city": "下松市",
+        "address": "山口県下松市美里町3-25-22",
+        "official_address": "山口県下松市美里町3-25-22",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003358",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003358"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 内藤電器",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003358"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.858636,
+          34.023271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003368",
+      "properties": {
+        "name": "エディオン くわはらでんき",
+        "city": "山口市",
+        "address": "山口県山口市徳地堀1810",
+        "official_address": "山口県山口市徳地堀1810",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003368",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003368"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン くわはらでんき",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003368"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.654694,
+          34.188359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003380",
+      "properties": {
+        "name": "エディオン 埴生店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市埴生985-4",
+        "official_address": "山口県山陽小野田市埴生985-4",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003380",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003380"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 埴生店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003380"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.090248,
+          34.040413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003383",
+      "properties": {
+        "name": "エディオン 田万川店",
+        "city": "萩市",
+        "address": "山口県萩市大字下田万1231-1",
+        "official_address": "山口県萩市大字下田万1231-1",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003383",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003383"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 田万川店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003383"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.66001,
+          34.642776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003389",
+      "properties": {
+        "name": "エディオン ひかり大和店",
+        "city": "光市",
+        "address": "山口県光市岩田1032-7",
+        "official_address": "山口県光市岩田1032-7",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003389",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003389"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン ひかり大和店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003389"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.994283,
+          33.975096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003402",
+      "properties": {
+        "name": "エディオン 阿武店",
+        "city": "阿武町",
+        "address": "山口県阿武郡阿武町奈古2313-2",
+        "official_address": "山口県阿武郡阿武町奈古2313-2",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003402",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003402"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 阿武店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003402"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.470081,
+          34.50184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003407",
+      "properties": {
+        "name": "エディオン 岩国昭和町店",
+        "city": "岩国市",
+        "address": "山口県岩国市昭和町2-11-23",
+        "official_address": "山口県岩国市昭和町2-11-23",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003407",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003407"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 岩国昭和町店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003407"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.230569,
+          34.173821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-edion-0000003417",
+      "properties": {
+        "name": "エディオン 西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市西岐波1138-5",
+        "official_address": "山口県宇部市西岐波1138-5",
+        "official_url": "https://search.edion.com/e_store/spot/detail?code=0000003417",
+        "category": "electronics",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:edion:0000003417"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "エディオン 西岐波店",
+        "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://search.edion.com/e_store/spot/detail?code=0000003417"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.324183,
+          33.963635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001135",
+      "properties": {
+        "name": "ドラッグセガミ 山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市津市1-2 小郡プラッツ内",
+        "official_address": "山口県山口市津市1-2 小郡プラッツ内",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001135",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001135"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ドラッグセガミ 山口小郡店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001135"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3944653,
+          34.1006168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001448",
+      "properties": {
+        "name": "ドラッグセガミ あじす店",
+        "city": "山口市",
+        "address": "山口県山口市阿知須4825-1 サンリブ阿知須店内",
+        "official_address": "山口県山口市阿知須4825-1 サンリブ阿知須店内",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001448",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001448"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ドラッグセガミ あじす店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001448"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3513139,
+          34.0092809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001472",
+      "properties": {
+        "name": "ドラッグセガミ 彦島店",
+        "city": "下関市",
+        "address": "山口県下関市彦島迫町3-12-1",
+        "official_address": "山口県下関市彦島迫町3-12-1",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001472",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001472"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ドラッグセガミ 彦島店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001472"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.8997656,
+          33.9420148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001743",
+      "properties": {
+        "name": "ココカラファイン サンリブ下松店",
+        "city": "下松市",
+        "address": "山口県下松市南花岡6-8-1 サンリブ下松店 店内",
+        "official_address": "山口県下松市南花岡6-8-1 サンリブ下松店 店内",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001743",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001743"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン サンリブ下松店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001743"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8656081,
+          34.0307723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001756",
+      "properties": {
+        "name": "ココカラファイン おのだサンパーク店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市中川6-4-1 おのだサンパーク西館1F",
+        "official_address": "山口県山陽小野田市中川6-4-1 おのだサンパーク西館1F",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001756",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001756"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン おのだサンパーク店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001756"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1708833,
+          33.9848638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001804",
+      "properties": {
+        "name": "ドラッグセガミ フジ新南陽店",
+        "city": "周南市",
+        "address": "山口県周南市政所2-2-1 フジ新南陽店内",
+        "official_address": "山口県周南市政所2-2-1 フジ新南陽店内",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001804",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001804"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ドラッグセガミ フジ新南陽店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001804"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.7693497,
+          34.0728046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001805",
+      "properties": {
+        "name": "ココカラファイン薬局 河東店",
+        "city": "周南市",
+        "address": "山口県周南市河東町9-22",
+        "official_address": "山口県周南市河東町9-22",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001805",
+        "category": "pharmacy",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001805"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン薬局 河東店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001805"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8125764,
+          34.0461528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001806",
+      "properties": {
+        "name": "ココカラファイン薬局 政所店",
+        "city": "周南市",
+        "address": "山口県周南市桶川町7-11",
+        "official_address": "山口県周南市桶川町7-11",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001806",
+        "category": "pharmacy",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001806"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン薬局 政所店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001806"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.774017,
+          34.0723947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001807",
+      "properties": {
+        "name": "ココカラファイン薬局 周南久米店",
+        "city": "周南市",
+        "address": "山口県周南市久米中央1-15-13",
+        "official_address": "山口県周南市久米中央1-15-13",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001807",
+        "category": "pharmacy",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001807"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン薬局 周南久米店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001807"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.839015,
+          34.034512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20001808",
+      "properties": {
+        "name": "ココカラファイン薬局 光店",
+        "city": "光市",
+        "address": "山口県光市木園1-5-28",
+        "official_address": "山口県光市木園1-5-28",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20001808",
+        "category": "pharmacy",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20001808"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン薬局 光店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20001808"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9299167,
+          33.9779963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20002195",
+      "properties": {
+        "name": "ココカラファイン リピエ下関店",
+        "city": "下関市",
+        "address": "山口県下関市竹崎町4-3-3 リピエ下関1F",
+        "official_address": "山口県下関市竹崎町4-3-3 リピエ下関1F",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20002195",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20002195"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン リピエ下関店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20002195"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9230474,
+          33.950145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20002389",
+      "properties": {
+        "name": "ココカラファイン サンタウン東駅店",
+        "city": "下関市",
+        "address": "山口県下関市羽山町4-2 マルショク東駅店内",
+        "official_address": "山口県下関市羽山町4-2 マルショク東駅店内",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20002389",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20002389"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン サンタウン東駅店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20002389"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.92924,
+          33.9686482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mcc-20002856",
+      "properties": {
+        "name": "ココカラファイン 山口吉敷店",
+        "city": "山口市",
+        "address": "山口県山口市吉敷上東2-5-8",
+        "official_address": "山口県山口市吉敷上東2-5-8",
+        "official_url": "https://www.matsukiyococokara-online.com/map/?kid=20002856",
+        "category": "drugstore",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mcc:20002856"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ココカラファイン 山口吉敷店",
+        "location_verification": "公式の支店ID別ページwindow.shopの店舗固有座標を、保存済み公開店舗一覧の同じ支店ID・名称・住所・座標と照合。キャッシュ時刻だけが異なる同一公開データを再利用。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "公式の当該支店案内・店舗固有座標",
+              "url": "https://www.matsukiyococokara-online.com/map/?kid=20002856"
+            },
+            {
+              "title": "運営会社の公式店舗一覧",
+              "url": "https://www.matsukiyococokara-online.com/map"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
+            "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
+            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4395022,
+          34.1681397
         ]
       }
     }
