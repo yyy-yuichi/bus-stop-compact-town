@@ -4378,6 +4378,60 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "case:kaiten-555660:closure",
+      "name": "旧ファミリーマート 下関大和町一丁目店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-familymart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "b3bb26c04e82517663f218e5b2de3261bddd7cb293bd941bc80a3dbbaf92b08d"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-555660:closure:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "2025年6月30日の閉店は事前の二次報道。住所地点の100m以内に元施設はなく、最寄りのFamilyMartは約2.57km離れる。住所点を旧店舗施設として新規追加せず、実施日の一次根拠を待つ。",
+          "next": "店舗固有の一次履歴が得られたとき補完。閉店予告・二次報道を実施日の一次確認として扱わない。",
+          "event_ids": [
+            "kaiten-555660:closure"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "case:kaiten-454300:closure-date",
+      "name": "ファミリーマート 周南徳山店",
+      "facility_ids": [
+        "osm-node-3885981764"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-familymart-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "5483cc9d601322a6c7aa23df3d1d644c27f2dbae34f3895c1aa3f52a43edab4f"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "case:kaiten-454300:closure-date:historical_only",
+          "impact": "historical_only",
+          "priority": "P3",
+          "reason": "閉店状態は解体写真・旧店舗地点で反映済み。2024年1月26日の実施日を直接示す店頭掲示・運営元履歴は未取得。二次報道の日付は地図の確定日に転記しない。",
+          "next": "店舗固有の一次履歴が得られたとき補完。閉店予告・二次報道を実施日の一次確認として扱わない。",
+          "event_ids": [
+            "kaiten-454300:closure-date"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -5562,6 +5616,18 @@
       "event_hash": "8e6af442a6061370f5e8a900e758083e01e5e02c7c7460985b6224b71197f312",
       "case_id": "facility:osm-node-11548197840:opening",
       "issue_id": "facility:osm-node-11548197840:opening:supplemental"
+    },
+    {
+      "event_id": "kaiten-555660:closure",
+      "event_hash": "08436d3b164b4e3089233495eb65594b2d9adb9cd15fec3ffa72fc218e1e3ec6",
+      "case_id": "case:kaiten-555660:closure",
+      "issue_id": "case:kaiten-555660:closure:historical_only"
+    },
+    {
+      "event_id": "kaiten-454300:closure-date",
+      "event_hash": "091e3059a46125ccd66ac375e541d4a16c39681637b76a2d3cf5f442d5db0d02",
+      "case_id": "case:kaiten-454300:closure-date",
+      "issue_id": "case:kaiten-454300:closure-date:historical_only"
     }
   ],
   "legacy_audit": [

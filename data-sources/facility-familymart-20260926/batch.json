@@ -1,0 +1,216 @@
+{
+  "checked_at": "2026-09-26",
+  "additions": [],
+  "updates": [
+    {
+      "id": "osm-node-4001921801",
+      "expected": {
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "source_ids": [
+          "node/4001921801"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.858853,
+            34.0179844
+          ]
+        }
+      },
+      "changes": {
+        "name": "ファミリーマート 下松末武店",
+        "city": "下松市",
+        "address": "山口県下松市せせらぎ町3丁目13-1",
+        "search_names": "ファミリーマート 下松末武店 ファミマ コンビニ"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2025-02-28",
+        "date_precision": "day",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の2月28日9時閉店告知と、閉店後の解体写真・現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3307.0078324793485%212d131.85885869999998%213d34.018009899999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e13da136b56d%3A0xaa53a9963132c532%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOS4i-advuacq-atpuW6lw%215e0%213m2%211sja%212sjp%214v1739522371332%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/20/familymartsuetake/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/04/IMG_20250420_154739_1-1280x960.jpg"
+          },
+          {
+            "title": "店頭閉店告知写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/02/IMG_20250214_162822.jpg"
+          }
+        ],
+        "limits": [
+          "店頭告知写真の年は記事文脈・事後報道による補完。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3913901858",
+      "expected": {
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "source_ids": [
+          "node/3913901858"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8435488,
+            34.0399929
+          ]
+        }
+      },
+      "changes": {
+        "name": "ファミリーマート 徳山東インター店",
+        "city": "周南市",
+        "address": "山口県周南市久米3405-1",
+        "search_names": "ファミリーマート 徳山東インター店 ファミマ コンビニ"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2024-02-29",
+        "date_precision": "day",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の2月29日AM9時閉店告知と、閉店後の看板撤去・改装写真および現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13224.60100793295%212d131.8435467%213d34.0400167%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e0d470fdd627%3A0x6ee25cfb321d7072%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOW-s-WxseadseOCpOODs-OCv-ODvOW6lw%215e0%213m2%211sja%212sjp%214v1708071131535%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/14/ardentmansion-familimarttokuyamahigashiinter/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/05/IMG_20240507_135144.jpg"
+          },
+          {
+            "title": "店頭閉店告知写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/02/IMG20240216132237.jpg"
+          }
+        ],
+        "limits": [
+          "店頭告知写真の年は記事文脈・事後報道による補完。後継の事業所は別施設であり追加しない。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3885981764",
+      "expected": {
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "source_ids": [
+          "node/3885981764"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7988022,
+            34.0668835
+          ]
+        }
+      },
+      "changes": {
+        "name": "ファミリーマート 周南徳山店",
+        "city": "周南市",
+        "address": "山口県周南市徳山7858-18",
+        "search_names": "ファミリーマート 周南徳山店 ファミマ コンビニ"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧店舗名付き地図点と、閉店前外観・解体後写真および現地報道を照合。閉店状態を反映し、実施日の一次資料は未確認として日付を保留。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13220.42596397928%212d131.7990091%213d34.0667843%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e7a724058185%3A0xe32ed2b5bea1a925%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOWRqOWNl-W-s-WxseW6lw%215e0%213m2%211sja%212sjp%214v1711973655848%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/01/2024shunantamura-imajyuku-familymart/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/03/IMG_20240326_162000.jpg"
+          },
+          {
+            "title": "閉店前の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/01/IMG_20240115_141025.jpg"
+          }
+        ],
+        "limits": [
+          "2024年1月26日という日付は二次報道。今回の一次掲示では確認しておらず、実施日はnull。",
+          "同名の昭和通の旧店舗・後継焼肉店とは別地点。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385247378",
+      "expected": {
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "source_ids": [
+          "way/385247378"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7815195,
+            34.0694044
+          ]
+        }
+      },
+      "changes": {
+        "name": "ファミリーマート 周南川手店",
+        "city": "周南市",
+        "address": "山口県周南市川手1丁目1-22",
+        "search_names": "ファミリーマート 周南川手店 ファミマ コンビニ"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "店名・住所付き旧店舗地点、閉店表示、2026年8月の看板撤去・空店舗写真と現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://map.yahoo.co.jp/v3/place/IMnANh2cfIM"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/04/familymartkawate/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170650-1280x960.jpg"
+          }
+        ],
+        "limits": [
+          "記事の7月末閉店という情報から特定の閉店日を作らず、日付不明で反映。",
+          "図書返却ボックスの2月撤去は店舗閉店とは別であり、閉店根拠に使用しない。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      }
+    }
+  ]
+}

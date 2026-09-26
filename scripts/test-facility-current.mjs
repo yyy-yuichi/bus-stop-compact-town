@@ -14,7 +14,7 @@ const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
 assert.equal(current.length, 8067);
-assert.equal(patch.updates.length, 44);
+assert.equal(patch.updates.length, 48);
 assert.equal(patch.additions.length, 303);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
@@ -37,9 +37,9 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 11);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 15);
 assert.equal(current.filter(f => f.properties.duplicate_of).length, 1);
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 12);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 16);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -63,7 +63,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 8001);
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7997);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));
@@ -145,3 +145,12 @@ reject(p => p.updates[0].review.checked_at = '2026-09-27');
 reject(p => p.additions[0].properties.verified_at = '2026-09-27');
 reject(p => p.additions[0].properties.source_timestamp = '2026-09-24');
 reject(p => p.additions[0].properties.freshness_review.checked_at = '2026-09-24');
+
+// FamilyMart closures must leave original geometry intact and disappear from normal search.
+for (const id of ['osm-node-4001921801', 'osm-node-3913901858', 'osm-node-3885981764', 'osm-way-385247378']) {
+ const f = get(id); assert.equal(f.properties.freshness_review.status, 'closed'); assert(!facilityAvailable(f));
+ assert.deepEqual(f.geometry, raw.find(r => r.id === id).geometry);
+ assert(!searchPlaces(f.properties.name, [], current).facilities.some(r => r.id === id));
+}
+assert.equal(get('osm-node-3885981764').properties.freshness_review.effective_at, null);
+assert.equal(get('osm-way-385247378').properties.freshness_review.effective_at, null);

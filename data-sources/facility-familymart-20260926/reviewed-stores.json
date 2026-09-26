@@ -1,0 +1,62 @@
+[
+  {
+    "id": "osm-node-4001921801",
+    "name": "ファミリーマート 下松末武店",
+    "city": "下松市",
+    "address": "山口県下松市せせらぎ町3丁目13-1",
+    "map": "87e50f97768872c98a2ca17a",
+    "date": "2025-02-28",
+    "notice": "suetake-notice.jpg",
+    "after": "suetake-after.jpg",
+    "report": "ffc1af0a044cc55ef1638056",
+    "summary": "店頭の2月28日9時閉店告知と、閉店後の解体写真・現地報道を照合。",
+    "limits": [
+      "店頭告知写真の年は記事文脈・事後報道による補完。"
+    ]
+  },
+  {
+    "id": "osm-node-3913901858",
+    "name": "ファミリーマート 徳山東インター店",
+    "city": "周南市",
+    "address": "山口県周南市久米3405-1",
+    "map": "5e1e6fb1dabcfe8e72279bca",
+    "date": "2024-02-29",
+    "notice": "inter-notice.jpg",
+    "after": "inter-after.jpg",
+    "report": "a3eebdd6fe672aea154f2ced",
+    "summary": "店頭の2月29日AM9時閉店告知と、閉店後の看板撤去・改装写真および現地報道を照合。",
+    "limits": [
+      "店頭告知写真の年は記事文脈・事後報道による補完。後継の事業所は別施設であり追加しない。"
+    ]
+  },
+  {
+    "id": "osm-node-3885981764",
+    "name": "ファミリーマート 周南徳山店",
+    "city": "周南市",
+    "address": "山口県周南市徳山7858-18",
+    "map": "1954f817bee2246014436fda",
+    "date": null,
+    "after": "tokuyama-after.jpg",
+    "report": "0b74e646afe54cabb15e0d4a",
+    "summary": "旧店舗名付き地図点と、閉店前外観・解体後写真および現地報道を照合。閉店状態を反映し、実施日の一次資料は未確認として日付を保留。",
+    "limits": [
+      "2024年1月26日という日付は二次報道。今回の一次掲示では確認しておらず、実施日はnull。",
+      "同名の昭和通の旧店舗・後継焼肉店とは別地点。"
+    ]
+  },
+  {
+    "id": "osm-way-385247378",
+    "name": "ファミリーマート 周南川手店",
+    "city": "周南市",
+    "address": "山口県周南市川手1丁目1-22",
+    "map": "864335c35870e2953d851b6f",
+    "date": null,
+    "after": "kawate-after.jpg",
+    "report_url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/04/familymartkawate/",
+    "summary": "店名・住所付き旧店舗地点、閉店表示、2026年8月の看板撤去・空店舗写真と現地報道を照合。",
+    "limits": [
+      "記事の7月末閉店という情報から特定の閉店日を作らず、日付不明で反映。",
+      "図書返却ボックスの2月撤去は店舗閉店とは別であり、閉店根拠に使用しない。"
+    ]
+  }
+]

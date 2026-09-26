@@ -44,5 +44,5 @@ test('adopted changes preserve the preceding overlay and bind public evidence wi
  assert.equal(hash(batch),evidence.batch_hash);assert.equal(hash(read('data-sources/facility-wants-corrections-20260925/pdf-row-review.json')),evidence.pdf_review_hash);
  const before={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,26),additions:overlay.additions.slice(0,172)},after={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)};
  assert.equal(hash(before),evidence.before_overlay_hash);assert.equal(hash(after),evidence.after_overlay_hash);assert.deepEqual(after.updates.slice(26),batch.updates);assert.equal(evidence.extra_jev_requests,0);
- assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed').length,11);assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);
+ assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed').length,15);assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);
 });

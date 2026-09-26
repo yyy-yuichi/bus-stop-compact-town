@@ -1,0 +1,426 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "6c82ee14b4f68754845f2e8d54673aa6800c39d87a4f60a148ecee9e12c7100c",
+  "after_overlay_hash": "d5f2f984c3e646de5489d74358226bbaa541cf4f6ce4485ead0c9ad85e692005",
+  "newly_added_ids": [],
+  "corrected_ids": [
+    "osm-node-4001921801",
+    "osm-node-3913901858",
+    "osm-node-3885981764",
+    "osm-way-385247378"
+  ],
+  "corrections": [
+    {
+      "id": "osm-node-4001921801",
+      "name": "ファミリーマート 下松末武店",
+      "city": "下松市",
+      "address": "山口県下松市せせらぎ町3丁目13-1",
+      "search_names": "ファミリーマート 下松末武店 ファミマ コンビニ",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2025-02-28",
+        "date_precision": "day",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の2月28日9時閉店告知と、閉店後の解体写真・現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3307.0078324793485%212d131.85885869999998%213d34.018009899999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e13da136b56d%3A0xaa53a9963132c532%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOS4i-advuacq-atpuW6lw%215e0%213m2%211sja%212sjp%214v1739522371332%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/20/familymartsuetake/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/04/IMG_20250420_154739_1-1280x960.jpg"
+          },
+          {
+            "title": "店頭閉店告知写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/02/IMG_20250214_162822.jpg"
+          }
+        ],
+        "limits": [
+          "店頭告知写真の年は記事文脈・事後報道による補完。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      },
+      "identity": {
+        "id": "osm-node-4001921801",
+        "place_point": [
+          131.8588587,
+          34.0180099
+        ],
+        "candidates_within_100m": [
+          {
+            "id": "osm-node-4001921801",
+            "distance_m": 2.8788752216076015
+          }
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3913901858",
+      "name": "ファミリーマート 徳山東インター店",
+      "city": "周南市",
+      "address": "山口県周南市久米3405-1",
+      "search_names": "ファミリーマート 徳山東インター店 ファミマ コンビニ",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2024-02-29",
+        "date_precision": "day",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の2月29日AM9時閉店告知と、閉店後の看板撤去・改装写真および現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13224.60100793295%212d131.8435467%213d34.0400167%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e0d470fdd627%3A0x6ee25cfb321d7072%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOW-s-WxseadseOCpOODs-OCv-ODvOW6lw%215e0%213m2%211sja%212sjp%214v1708071131535%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/14/ardentmansion-familimarttokuyamahigashiinter/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/05/IMG_20240507_135144.jpg"
+          },
+          {
+            "title": "店頭閉店告知写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/02/IMG20240216132237.jpg"
+          }
+        ],
+        "limits": [
+          "店頭告知写真の年は記事文脈・事後報道による補完。後継の事業所は別施設であり追加しない。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      },
+      "identity": {
+        "id": "osm-node-3913901858",
+        "place_point": [
+          131.8435467,
+          34.0400167
+        ],
+        "candidates_within_100m": [
+          {
+            "id": "osm-node-3913901858",
+            "distance_m": 2.6488857932382097
+          }
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3885981764",
+      "name": "ファミリーマート 周南徳山店",
+      "city": "周南市",
+      "address": "山口県周南市徳山7858-18",
+      "search_names": "ファミリーマート 周南徳山店 ファミマ コンビニ",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧店舗名付き地図点と、閉店前外観・解体後写真および現地報道を照合。閉店状態を反映し、実施日の一次資料は未確認として日付を保留。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13220.42596397928%212d131.7990091%213d34.0667843%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e7a724058185%3A0xe32ed2b5bea1a925%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOWRqOWNl-W-s-WxseW6lw%215e0%213m2%211sja%212sjp%214v1711973655848%215m2%211sja%212sjp"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/01/2024shunantamura-imajyuku-familymart/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/03/IMG_20240326_162000.jpg"
+          },
+          {
+            "title": "閉店前の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/01/IMG_20240115_141025.jpg"
+          }
+        ],
+        "limits": [
+          "2024年1月26日という日付は二次報道。今回の一次掲示では確認しておらず、実施日はnull。",
+          "同名の昭和通の旧店舗・後継焼肉店とは別地点。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      },
+      "identity": {
+        "id": "osm-node-3885981764",
+        "place_point": [
+          131.7990091,
+          34.0667843
+        ],
+        "candidates_within_100m": [
+          {
+            "id": "osm-node-3885981764",
+            "distance_m": 22.02605658798462
+          }
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385247378",
+      "name": "ファミリーマート 周南川手店",
+      "city": "周南市",
+      "address": "山口県周南市川手1丁目1-22",
+      "search_names": "ファミリーマート 周南川手店 ファミマ コンビニ",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "店名・住所付き旧店舗地点、閉店表示、2026年8月の看板撤去・空店舗写真と現地報道を照合。元のID・座標を保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "旧店舗名・住所・店舗地点の照合",
+            "url": "https://map.yahoo.co.jp/v3/place/IMnANh2cfIM"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/04/familymartkawate/"
+          },
+          {
+            "title": "閉店後の外観写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170650-1280x960.jpg"
+          }
+        ],
+        "limits": [
+          "記事の7月末閉店という情報から特定の閉店日を作らず、日付不明で反映。",
+          "図書返却ボックスの2月撤去は店舗閉店とは別であり、閉店根拠に使用しない。",
+          "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
+        ]
+      },
+      "identity": {
+        "id": "osm-way-385247378",
+        "place_point": [
+          131.7815073,
+          34.0694191
+        ],
+        "candidates_within_100m": [
+          {
+            "id": "osm-way-385247378",
+            "distance_m": 1.9818450788405007
+          }
+        ]
+      }
+    }
+  ],
+  "nearby": [
+    {
+      "id": "osm-node-4001921801",
+      "place_point": [
+        131.8588587,
+        34.0180099
+      ],
+      "candidates_within_100m": [
+        {
+          "id": "osm-node-4001921801",
+          "distance_m": 2.8788752216076015
+        }
+      ]
+    },
+    {
+      "id": "osm-node-3913901858",
+      "place_point": [
+        131.8435467,
+        34.0400167
+      ],
+      "candidates_within_100m": [
+        {
+          "id": "osm-node-3913901858",
+          "distance_m": 2.6488857932382097
+        }
+      ]
+    },
+    {
+      "id": "osm-node-3885981764",
+      "place_point": [
+        131.7990091,
+        34.0667843
+      ],
+      "candidates_within_100m": [
+        {
+          "id": "osm-node-3885981764",
+          "distance_m": 22.02605658798462
+        }
+      ]
+    },
+    {
+      "id": "osm-way-385247378",
+      "place_point": [
+        131.7815073,
+        34.0694191
+      ],
+      "candidates_within_100m": [
+        {
+          "id": "osm-way-385247378",
+          "distance_m": 1.9818450788405007
+        }
+      ]
+    }
+  ],
+  "unmatched_old_store": {
+    "address_point": {
+      "name": "〒750-0067 山口県下関市大和町１丁目１１−６",
+      "coordinates": [
+        130.918058,
+        33.9445963
+      ],
+      "method": "named_embed_place_record"
+    },
+    "any_original_facilities_within_100m": 0
+  },
+  "case_findings": [
+    {
+      "case_id": "case:kaiten-555660:closure",
+      "name": "旧ファミリーマート 下関大和町一丁目店",
+      "impact": "historical_only",
+      "reason": "2025年6月30日の閉店は事前の二次報道。住所地点の100m以内に元施設はなく、最寄りのFamilyMartは約2.57km離れる。住所点を旧店舗施設として新規追加せず、実施日の一次根拠を待つ。"
+    },
+    {
+      "case_id": "case:kaiten-454300:closure-date",
+      "name": "ファミリーマート 周南徳山店",
+      "impact": "historical_only",
+      "reason": "閉店状態は解体写真・旧店舗地点で反映済み。2024年1月26日の実施日を直接示す店頭掲示・運営元履歴は未取得。二次報道の日付は地図の確定日に転記しない。"
+    }
+  ],
+  "article_keys": [
+    "shunan-109555",
+    "kaiten-543212",
+    "shunan-88572",
+    "kaiten-463264",
+    "kaiten-454300",
+    "shunan-119604",
+    "kaiten-555660"
+  ],
+  "photos": [
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/02/IMG_20250214_162822.jpg",
+      "path": "outputs/facility-familymart-20260926/suetake-notice.jpg",
+      "sha256": "6fc1fc76f37707ba1c7eec75123e0e2643f046fcfaea6a391a20d25a3405e399",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/02/IMG20240216132237.jpg",
+      "path": "outputs/facility-familymart-20260926/inter-notice.jpg",
+      "sha256": "754412442a897fd59a842e07dc76e7935965e814744fad83bec0d5a505cf181b",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170650-1280x960.jpg",
+      "path": "outputs/facility-familymart-20260926/kawate-after.jpg",
+      "sha256": "9fa92d809dd36eb895dc8f46fb1f85939ae61f240671650bb415af6df62b55cb",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/04/IMG_20250420_154739_1-1280x960.jpg",
+      "path": "outputs/facility-familymart-20260926/suetake-after.jpg",
+      "sha256": "9054a6675a265f1e8d76d6e5dfacaf093f56b44c17f2d93cbf244298a4d3eaab",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/05/IMG_20240507_135144.jpg",
+      "path": "outputs/facility-familymart-20260926/inter-after.jpg",
+      "sha256": "e5849702c39d078b967adf6597533dc3d287a9dd6148910c8d6c9459954dfbb6",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/03/IMG_20240326_162000.jpg",
+      "path": "outputs/facility-familymart-20260926/tokuyama-after.jpg",
+      "sha256": "7506a51b0104e6c224c285f9aac1fc1088ebbaf474e25a64c5c10690c6efaa81",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/01/IMG_20240115_141025.jpg",
+      "path": "outputs/facility-familymart-20260926/tokuyama-before.jpg",
+      "sha256": "a622ceef903dddef904d640133227a8df3a470a8b3f4970dd8e9f25341a6cb25",
+      "visually_read": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1479124671655!2d131.84098817666748!3d34.040076718370955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0d471a13c8f%3A0x3812243f5a29d9de!2z44CSNzQ1LTA4MDEg5bGx5Y-j55yM5ZGo5Y2X5biC5LmF57Gz77yT77yU77yQ77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1708166328275!5m2!1sja!2sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/08bd17f5aa42fc2c844ac1d4.json",
+      "status": 200,
+      "hash": "d6090cde705a0f871c8d4a7e59e9edc03096e5dab4b1739089670d0221f5a81d"
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/01/2024shunantamura-imajyuku-familymart/",
+      "path": "outputs/facility-familymart-20260926/receipts/0b74e646afe54cabb15e0d4a.json",
+      "status": 200,
+      "hash": "74276aac6405fd793929a0efc3d79a1569319aea20c7f18359a98ec5feb23355"
+    },
+    {
+      "url": "https://www.family.co.jp/",
+      "path": "outputs/facility-familymart-20260926/receipts/0ddefb7780e01c87888afd65.json",
+      "status": 200,
+      "hash": "f66d7eeba58f3fc4d480a6bcba06644f7339da03b4897635007d116fec846135"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13220.42596397928%212d131.7990091%213d34.0667843%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e7a724058185%3A0xe32ed2b5bea1a925%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOWRqOWNl-W-s-WxseW6lw%215e0%213m2%211sja%212sjp%214v1711973655848%215m2%211sja%212sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/1954f817bee2246014436fda.json",
+      "status": 200,
+      "hash": "d7025777cadb6f6ae02d4517382782986cd2de2ea61d97bfc297345390273ce8"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0084511471996!2d131.85627107666684!3d34.01799401953632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e13d9ff70203%3A0xf0745c30f508b310!2z44CSNzQ0LTAwNzYg5bGx5Y-j55yM5LiL5p2-5biC44Gb44Gb44KJ44GO55S677yT5LiB55uu77yR77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1741703666490!5m2!1sja!2sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/2041e5c42bb92ec625665011.json",
+      "status": 200,
+      "hash": "c88f05d31047c2e97603d41e395649d81723d364888f26c0718d85e951a650f1"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1802.1234728737084!2d131.79755689351097!3d34.06672116529155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7a71465392f%3A0x36c6cb981337c142!2z44CSNzQ1LTA4NjMg5bGx5Y-j55yM5ZGo5Y2X5biC5b6z5bGx77yU4oiS77yX77yY77yV77yY4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1705580085875!5m2!1sja!2sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/5241c173e8fca0c5c3a303ee.json",
+      "status": 200,
+      "hash": "640f6c2fbd9318ebe25faaff85660424c81c09a4e748967c45807719521a7b41"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13224.60100793295%212d131.8435467%213d34.0400167%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e0d470fdd627%3A0x6ee25cfb321d7072%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOW-s-WxseadseOCpOODs-OCv-ODvOW6lw%215e0%213m2%211sja%212sjp%214v1708071131535%215m2%211sja%212sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/5e1e6fb1dabcfe8e72279bca.json",
+      "status": 200,
+      "hash": "488db3121c0a549dd11a851cc22044281c5679f2bbfd905d5500c53615038884"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/IMnANh2cfIM",
+      "path": "outputs/facility-familymart-20260926/receipts/864335c35870e2953d851b6f.json",
+      "status": 200,
+      "hash": "c227f0103595ca79998e3bf1a52dabd29701732ac336925f56960b7f4120e052"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3307.0078324793485%212d131.85885869999998%213d34.018009899999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e13da136b56d%3A0xaa53a9963132c532%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOS4i-advuacq-atpuW6lw%215e0%213m2%211sja%212sjp%214v1739522371332%215m2%211sja%212sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/87e50f97768872c98a2ca17a.json",
+      "status": 200,
+      "hash": "a2fa070279e2978cabfa93dd85ac97d1adf2679d756e453d948e33f9f137bac3"
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/14/ardentmansion-familimarttokuyamahigashiinter/",
+      "path": "outputs/facility-familymart-20260926/receipts/a3eebdd6fe672aea154f2ced.json",
+      "status": 200,
+      "hash": "e082053a0b4d8d8c1c20328ee65a9f9f73c48384cbc2b3468cfd538af83caf34"
+    },
+    {
+      "url": "https://store.family.co.jp/",
+      "path": "outputs/facility-familymart-20260926/receipts/c0300cc9aaac7df216611289.json",
+      "status": 200,
+      "hash": "93bbd8703633909e5473dc8d54702fa662cbc7a368dafaa5f705209534ad192c"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1804.7170207635197!2d130.9169243604027!3d33.944586224911646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bc32d6694b9f%3A0x19efb1773f5e0c66!2z44CSNzUwLTAwNjcg5bGx5Y-j55yM5LiL6Zai5biC5aSn5ZKM55S677yR5LiB55uu77yR77yR4oiS77yW!5e0!3m2!1sja!2sjp!4v1749295351039!5m2!1sja!2sjp",
+      "path": "outputs/facility-familymart-20260926/receipts/e19f88533c3990aa2a5ab968.json",
+      "status": 200,
+      "hash": "d563418a9be74388bb6f8e0c361091213158c18400a94b42901b3572c9aad329"
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/20/familymartsuetake/",
+      "path": "outputs/facility-familymart-20260926/receipts/ffc1af0a044cc55ef1638056.json",
+      "status": 200,
+      "hash": "764440758bd246963de5ff7ddd81938e3c14959f6bf2a6d058d64466a67a4c54"
+    }
+  ],
+  "extra_jev_requests": 0,
+  "limitations": "Only seven articles concerning five stores were inventoried. Follow-up articles were used only for the corresponding store evidence, not marked fully reviewed. No prefecture-wide directory comparison or global completion estimate. Two dates remain unknown. Existing dates and IDs retained."
+}
