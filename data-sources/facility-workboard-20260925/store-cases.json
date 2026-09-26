@@ -4655,6 +4655,157 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "facility:official-lawson-207103:temporary_change",
+    "name": "ローソン 宇部中尾二丁目店",
+    "facility_ids": [
+      "official-lawson-207103"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 4,
+        "hash": "3f69551ff3c0563b1a117174571443ce5f3039464eaabf7f8b975ad19df196c7"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-lawson-207103:temporary_change:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "2026年4月9日～15日休業と4月16日7時再開は事前告知。現行公式掲載を確認したが、当日の実施履歴は未取得。",
+        "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+        "event_ids": [
+          "ube-82425:history"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-82425"
+    ],
+    "held_event_ids": [
+      "ube-82425:history"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-lawson-377992:opening",
+    "name": "ローソン 山口若宮町店",
+    "facility_ids": [
+      "official-lawson-377992"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 2,
+        "hash": "230b3b6e6b00f8a994be14517a278a020c87511e3e1bd21b948233f0979f9cbf"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-lawson-377992:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式掲載は反映済み。2024年8月1日の開店は記事の事前告知と事後報道にあるが、今回実施日を直接裏付ける一次原本は取得していない。",
+        "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+        "event_ids": [
+          "yamaguchi-36606:lawson-opening",
+          "yamaguchi-37107:lawson-opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-36606",
+      "yamaguchi-37107"
+    ],
+    "held_event_ids": [
+      "yamaguchi-36606:lawson-opening",
+      "yamaguchi-37107:lawson-opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-lawson-385187:opening",
+    "name": "ローソン 宇部空港前店",
+    "facility_ids": [
+      "official-lawson-385187"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "57fe16a9128a751b37ce6e119b5f634e12b843b4ac2d8c5165d395173d5b3c68"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-lawson-385187:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "旧店舗の閉店と新店の現行掲載は反映。2026年4月10日8時の予定通りの開店実施日を示す一次履歴は未取得。",
+        "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+        "event_ids": [
+          "ube-82361:history"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-82361"
+    ],
+    "held_event_ids": [
+      "ube-82361:history"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-lawson-poplar-hikari-mii:opening",
+    "name": "ローソン・ポプラ 光三井店",
+    "facility_ids": [
+      "official-lawson-poplar-hikari-mii"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "563a66130a953d02e5d0ee702cc09ad07b1d6274b2858fcda6e5db3c6dde668a"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-lawson-poplar-hikari-mii:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在の公式掲載は確認。2025年1月17日の開店実施日を裏付ける一次履歴は未取得。",
+        "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+        "event_ids": [
+          "shunan-107065:history"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-107065"
+    ],
+    "held_event_ids": [
+      "shunan-107065:history"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "facility:official-matsukiyo-21405568",
     "name": "マツキヨ売場の6月中旬予定。現行掲載と歴史的実施日を分け、実施日原本は保留。",
     "facility_ids": [
@@ -5427,6 +5578,46 @@
       "yamaguchi-40890:opening",
       "yamaguchi-42851:opening",
       "yamaguchi-43926:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-washhouse-706:opening",
+    "name": "WASHハウス 山口若宮店",
+    "facility_ids": [
+      "official-washhouse-706"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 3,
+        "hash": "fbf3ebef8d5daadce9dfe8bd61f27be7703136e8cbbe2b7cb84676c0b80cfe23"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-washhouse-706:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式掲載は反映済み。記事には当初計画から2024年8月23日へ予定変更がある。実際の開店日を示す一次履歴は未取得。",
+        "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+        "event_ids": [
+          "yamaguchi-36606:wash-opening",
+          "yamaguchi-37107:wash-opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-36606",
+      "yamaguchi-37107"
+    ],
+    "held_event_ids": [
+      "yamaguchi-36606:wash-opening",
+      "yamaguchi-37107:wash-opening"
     ],
     "supplemental_also_pending": false
   },

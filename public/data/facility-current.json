@@ -2138,6 +2138,109 @@
           "写真は現地記事に掲載されたものを実見。運営会社サイト上の原本とは扱わない。元の座標・IDを保持し、跡地を新店舗として扱わない。"
         ]
       }
+    },
+    {
+      "id": "osm-way-552712571",
+      "expected": {
+        "name": "ローソン",
+        "category": "convenience",
+        "source_ids": [
+          "way/552712571"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2607723,
+            33.9320413
+          ]
+        }
+      },
+      "changes": {
+        "name": "ローソン 宇部明神町一丁目店",
+        "city": "宇部市",
+        "search_names": "ローソン 宇部明神町一丁目店 LAWSON"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-03-31",
+        "checked_at": "2026-09-26",
+        "summary": "元の支店タグで旧店舗を同定。令和8年3月31日20時の店頭閉店掲示と、2日後の看板撤去写真・新店舗案内を実見し、旧店を閉店補正。",
+        "sources": [
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7154.jpeg"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7152.jpeg"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/"
+          }
+        ],
+        "limits": [
+          "宇部空港前の新店は別IDで掲載。旧ID・座標を新店へ移動しない。",
+          "元の施設ID・座標と過去の確認日は保持。写真は掲載媒体から実見したもので、運営会社サイト上の画像原本とは扱わない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-2253707359",
+      "expected": {
+        "name": "ローソン",
+        "category": "convenience",
+        "source_ids": [
+          "node/2253707359"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4023052,
+            34.1187947
+          ]
+        }
+      },
+      "changes": {
+        "name": "ローソン 小郡インター店（移転前）",
+        "city": "山口市",
+        "search_names": "ローソン 小郡インター店（移転前） LAWSON"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2024-06-30",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の移転休業告知、旧店舗内ポストの固定地点、看板撤去後の旧店と営業する新店が同時に写った写真、移転後報道を照合。旧店を閉店補正。",
+        "sources": [
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://www.postmap.org/map/414706"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://www.postmap.org/photo/1181111"
+          },
+          {
+            "title": "旧店舗・閉店・移転の照合",
+            "url": "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/"
+          }
+        ],
+        "limits": [
+          "旧店舗内ポストの地点と元施設点は10m以内。新店との約66mの違いを単なる位置誤差として吸収しない。",
+          "旧店の営業終了日6月30日は移転休業告知。7月12日の写真で旧店の撤去と新店の営業を事後確認。住所の新旧混在があるため旧施設住所は推測補完しない。",
+          "元の施設ID・座標と過去の確認日は保持。写真は掲載媒体から実見したもので、運営会社サイト上の画像原本とは扱わない。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -18505,6 +18608,342 @@
         "coordinates": [
           131.86067894,
           34.02519091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-385141",
+      "properties": {
+        "name": "ローソン 山口県庁店",
+        "city": "山口市",
+        "address": "山口県山口市滝町1-1 県庁厚生棟2階",
+        "official_address": "山口県山口市滝町1-1 県庁厚生棟2階",
+        "official_url": "https://www.areamarker.com/lawson/info/385141",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:385141"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン 山口県庁店 LAWSON コンビニ",
+        "location_verification": "公式画面・公式事後報告の店名・住所・厚生棟2階という区画に一致するGoogle店舗代表点。県庁本庁や郵便局の点とは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-03-23",
+          "checked_at": "2026-09-26",
+          "summary": "開店告知・実施後の資料と現行公式支店情報、店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://www.areamarker.com/lawson/info/385141"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.768259227443!2d131.46986926547282!3d34.186661335149005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544971d112c5621%3A0x1e30b1908736f8d0!2z44Ot44O844K944OzIOWxseWPo-ecjOW6geW6lw!5e0!3m2!1sja!2sjp!4v1774160290222!5m2!1sja!2sjp"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://www.lawson.co.jp/company/activity/topics/detail_jin/1520946_9112.html"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://www.pref.yamaguchi.lg.jp/press/339285.html"
+            }
+          ],
+          "limits": [
+            "県庁開庁日8:00～18:00。土日祝・年末年始休業。確認当日9月26日～27日も公式に休業と表示。常時利用できる店舗ではない。",
+            "2026年1月5日仮店舗営業、3月2日一部改修継続で新店舗営業、3月23日グランドオープンを区別。今回の開店日はグランドオープン。",
+            "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4703068,
+          34.1866594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-385187",
+      "properties": {
+        "name": "ローソン 宇部空港前店",
+        "city": "宇部市",
+        "address": "山口県宇部市岬町3-6-3",
+        "official_address": "山口県宇部市岬町3-6-3",
+        "official_url": "https://www.areamarker.com/lawson/info/385187",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:385187"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン 宇部空港前店 LAWSON コンビニ",
+        "location_verification": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行公式店舗情報の支店名・所在地と店舗固有地点を照合して掲載。過去の実施日とは分離。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://www.areamarker.com/lawson/info/385187"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://map.yahoo.co.jp/v3/place/kYv3jvacvRs"
+            }
+          ],
+          "limits": [
+            "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+            "記事の予定開店日は、現行掲載の確認から実施日確定へ昇格させない。",
+            "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.270813,
+          33.9327782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-377992",
+      "properties": {
+        "name": "ローソン 山口若宮町店",
+        "city": "山口市",
+        "address": "山口県山口市若宮町2-23",
+        "official_address": "山口県山口市若宮町2-23",
+        "official_url": "https://www.areamarker.com/lawson/info/377992",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:377992"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン 山口若宮町店 LAWSON コンビニ",
+        "location_verification": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行公式店舗情報の支店名・所在地と店舗固有地点を照合して掲載。過去の実施日とは分離。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://www.areamarker.com/lawson/info/377992"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://map.yahoo.co.jp/v3/place/htCDEiMMVJ-"
+            }
+          ],
+          "limits": [
+            "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+            "記事の予定開店日は、現行掲載の確認から実施日確定へ昇格させない。",
+            "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4566076,
+          34.1603468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-156050",
+      "properties": {
+        "name": "ローソン 小郡インター店",
+        "city": "山口市",
+        "address": "山口県山口市小郡みらい町1-1-10",
+        "official_address": "山口県山口市小郡みらい町1-1-10",
+        "official_url": "https://www.areamarker.com/lawson/info/156050",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:156050"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン 小郡インター店 LAWSON コンビニ",
+        "location_verification": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2024-07-05",
+          "checked_at": "2026-09-26",
+          "summary": "開店告知・実施後の資料と現行公式支店情報、店舗固有地点を照合して掲載。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://www.areamarker.com/lawson/info/156050"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://map.yahoo.co.jp/v3/place/wmjq3V9p1c6"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6402.jpeg"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg"
+            }
+          ],
+          "limits": [
+            "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+            "7月5日開店の店頭告知と2024年7月11日の実施後報道、旧店・新店が写る7月12日の写真で照合。",
+            "現在公式の住所は1-1-10。旧掲載や一部の媒体に1-1-15が残るが、現行公式の住所を採用。旧施設は約66m南で別IDとして閉店履歴を保持。",
+            "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4025916,
+          34.1193407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-lawson-207103",
+      "properties": {
+        "name": "ローソン 宇部中尾二丁目店",
+        "city": "宇部市",
+        "address": "山口県宇部市中尾2-1-8",
+        "official_address": "山口県宇部市中尾2-1-8",
+        "official_url": "https://www.areamarker.com/lawson/info/207103",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:lawson:207103"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ローソン 宇部中尾二丁目店 LAWSON コンビニ",
+        "location_verification": "現行ローソン公式画面と同名・同住所・同電話のJ-Coin Pay加盟店S877805の店舗座標。住所区画の座標や地図表示中心ではない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行公式店舗情報の支店名・所在地と店舗固有地点を照合して掲載。過去の実施日とは分離。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://www.areamarker.com/lawson/info/207103"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://map.j-coin.jp/jcoinpay/spot/detail?code=S877805"
+            }
+          ],
+          "limits": [
+            "位置の出典はJ-Coin Pay加盟店検索。位置データには2023年更新とあるが、名称・住所・電話は今回の現行ローソン公式表示と一致。",
+            "2026年4月の休業・4月16日の再開実施日の一次履歴は未確認。現在の公式掲載と分けて保留。",
+            "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.265306,
+          33.966566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-washhouse-706",
+      "properties": {
+        "name": "WASHハウス 山口若宮店",
+        "city": "山口市",
+        "address": "山口県山口市若宮町2-23",
+        "official_address": "山口県山口市若宮町2-23",
+        "official_url": "https://shop.wash-house.jp/detail/706/",
+        "category": "laundry",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:washhouse:706"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "WASHハウス 山口若宮店 コインランドリー 洗濯",
+        "location_verification": "WASHハウス公式店舗詳細のStore JSON-LDに結びついた店舗固有座標。隣のローソンと同住所だが約31m離れた別棟を別カテゴリで掲載。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "現行公式店舗情報の支店名・所在地と店舗固有地点を照合して掲載。過去の実施日とは分離。",
+          "sources": [
+            {
+              "title": "現在の公式支店情報",
+              "url": "https://shop.wash-house.jp/detail/706/"
+            },
+            {
+              "title": "店舗・地点・履歴の照合",
+              "url": "https://www.wash-house.jp/shop/detail.php?id=706"
+            }
+          ],
+          "limits": [
+            "公式の現行掲載として反映。2024年8月の当初予定日・変更予定日から実施日を確定しない。",
+            "同敷地のローソンの座標を流用しない。店舗代表点であり入口精度は保証しない。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.456908,
+          34.1604687
         ]
       }
     }

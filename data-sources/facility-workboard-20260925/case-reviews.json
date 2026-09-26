@@ -4432,6 +4432,148 @@
           ]
         }
       ]
+    },
+    {
+      "case_id": "facility:official-lawson-poplar-hikari-mii:opening",
+      "name": "ローソン・ポプラ 光三井店",
+      "facility_ids": [
+        "official-lawson-poplar-hikari-mii"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "563a66130a953d02e5d0ee702cc09ad07b1d6274b2858fcda6e5db3c6dde668a"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-lawson-poplar-hikari-mii:opening:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現在の公式掲載は確認。2025年1月17日の開店実施日を裏付ける一次履歴は未取得。",
+          "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+          "event_ids": [
+            "shunan-107065:history"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-lawson-385187:opening",
+      "name": "ローソン 宇部空港前店",
+      "facility_ids": [
+        "official-lawson-385187"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 1,
+          "hash": "57fe16a9128a751b37ce6e119b5f634e12b843b4ac2d8c5165d395173d5b3c68"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-lawson-385187:opening:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "旧店舗の閉店と新店の現行掲載は反映。2026年4月10日8時の予定通りの開店実施日を示す一次履歴は未取得。",
+          "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+          "event_ids": [
+            "ube-82361:history"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-lawson-377992:opening",
+      "name": "ローソン 山口若宮町店",
+      "facility_ids": [
+        "official-lawson-377992"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 2,
+          "hash": "230b3b6e6b00f8a994be14517a278a020c87511e3e1bd21b948233f0979f9cbf"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-lawson-377992:opening:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現行公式掲載は反映済み。2024年8月1日の開店は記事の事前告知と事後報道にあるが、今回実施日を直接裏付ける一次原本は取得していない。",
+          "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+          "event_ids": [
+            "yamaguchi-36606:lawson-opening",
+            "yamaguchi-37107:lawson-opening"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-washhouse-706:opening",
+      "name": "WASHハウス 山口若宮店",
+      "facility_ids": [
+        "official-washhouse-706"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 3,
+          "hash": "fbf3ebef8d5daadce9dfe8bd61f27be7703136e8cbbe2b7cb84676c0b80cfe23"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-washhouse-706:opening:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現行公式掲載は反映済み。記事には当初計画から2024年8月23日へ予定変更がある。実際の開店日を示す一次履歴は未取得。",
+          "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+          "event_ids": [
+            "yamaguchi-36606:wash-opening",
+            "yamaguchi-37107:wash-opening"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "facility:official-lawson-207103:temporary_change",
+      "name": "ローソン 宇部中尾二丁目店",
+      "facility_ids": [
+        "official-lawson-207103"
+      ],
+      "related_facility_ids": [],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-lawson-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 4,
+          "hash": "3f69551ff3c0563b1a117174571443ce5f3039464eaabf7f8b975ad19df196c7"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "facility:official-lawson-207103:temporary_change:supplemental",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "2026年4月9日～15日休業と4月16日7時再開は事前告知。現行公式掲載を確認したが、当日の実施履歴は未取得。",
+          "next": "店舗固有の一次実施履歴を取得できる場合に補完。現在の公式掲載を歴史日付の確定に流用しない。",
+          "event_ids": [
+            "ube-82425:history"
+          ]
+        }
+      ]
     }
   ],
   "event_bindings": [
@@ -5628,6 +5770,48 @@
       "event_hash": "091e3059a46125ccd66ac375e541d4a16c39681637b76a2d3cf5f442d5db0d02",
       "case_id": "case:kaiten-454300:closure-date",
       "issue_id": "case:kaiten-454300:closure-date:historical_only"
+    },
+    {
+      "event_id": "shunan-107065:history",
+      "event_hash": "0185af80696e9901cc386452e2500082c7120c39d9ee0d719da3391cab35622e",
+      "case_id": "facility:official-lawson-poplar-hikari-mii:opening",
+      "issue_id": "facility:official-lawson-poplar-hikari-mii:opening:supplemental"
+    },
+    {
+      "event_id": "ube-82361:history",
+      "event_hash": "49c708af462d9456fde1301eba3994382e1f3f647dbae46db89d3a23882f5665",
+      "case_id": "facility:official-lawson-385187:opening",
+      "issue_id": "facility:official-lawson-385187:opening:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-36606:lawson-opening",
+      "event_hash": "7720aa8c94e90e1a855e8f659141851b80b355b3191caea1e7fc41f095c5185c",
+      "case_id": "facility:official-lawson-377992:opening",
+      "issue_id": "facility:official-lawson-377992:opening:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-37107:lawson-opening",
+      "event_hash": "e07b914f8c09a9bc54bd7e4be7071841c87e257f43facd60fe810fe89d00b355",
+      "case_id": "facility:official-lawson-377992:opening",
+      "issue_id": "facility:official-lawson-377992:opening:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-36606:wash-opening",
+      "event_hash": "946d7c31514b7c832808623b8d4830ff760c99b2560703e12451265328cb5bce",
+      "case_id": "facility:official-washhouse-706:opening",
+      "issue_id": "facility:official-washhouse-706:opening:supplemental"
+    },
+    {
+      "event_id": "yamaguchi-37107:wash-opening",
+      "event_hash": "1ff0f55e3df81d856bcee9386cd25f131fbc99ec118e7cb8f4812f84c4cb21f8",
+      "case_id": "facility:official-washhouse-706:opening",
+      "issue_id": "facility:official-washhouse-706:opening:supplemental"
+    },
+    {
+      "event_id": "ube-82425:history",
+      "event_hash": "6f4930c94dc60b8271dd4b0203537426a2cf4b77c6343214a094053f6c220b87",
+      "case_id": "facility:official-lawson-207103:temporary_change",
+      "issue_id": "facility:official-lawson-207103:temporary_change:supplemental"
     }
   ],
   "legacy_audit": [

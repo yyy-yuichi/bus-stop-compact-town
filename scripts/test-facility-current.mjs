@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 8067);
-assert.equal(patch.updates.length, 48);
-assert.equal(patch.additions.length, 303);
+assert.equal(current.length, 8073);
+assert.equal(patch.updates.length, 50);
+assert.equal(patch.additions.length, 309);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -37,9 +37,9 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 15);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 17);
 assert.equal(current.filter(f => f.properties.duplicate_of).length, 1);
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 16);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 18);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -47,7 +47,7 @@ for (const f of patch.additions) {
   assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
   if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
 }
-assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 288);
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 292);
 const miko = get('osm-way-305954680'), oldWants = get('osm-way-332618123');
 assert(!facilityAvailable(miko) && !facilityAvailable(oldWants));
 assert.equal(miko.properties.freshness_review.effective_at, '2025-01');
@@ -63,7 +63,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 7997);
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, 8001);
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));
@@ -154,3 +154,14 @@ for (const id of ['osm-node-4001921801', 'osm-node-3913901858', 'osm-node-388598
 }
 assert.equal(get('osm-node-3885981764').properties.freshness_review.effective_at, null);
 assert.equal(get('osm-way-385247378').properties.freshness_review.effective_at, null);
+
+// Relocated Lawson stores retain distinct old and new sites.
+for (const [oldId, newId] of [['osm-way-552712571', 'official-lawson-385187'], ['osm-node-2253707359', 'official-lawson-156050']]) {
+ assert(!facilityAvailable(get(oldId))); assert(facilityAvailable(get(newId)));
+ assert.deepEqual(get(oldId).geometry, raw.find(f => f.id === oldId).geometry);
+ assert.notDeepEqual(get(oldId).geometry, get(newId).geometry);
+}
+assert(!get('official-lawson-377897'), 'Existing Lawson Poplar Mitsui must not be duplicated');
+assert.notDeepEqual(get('official-lawson-377992').geometry, get('official-washhouse-706').geometry);
+assert.equal(get('official-washhouse-706').properties.category, 'laundry');
+assert(get('official-lawson-385141').properties.freshness_review.limits.some(s => s.includes('土日祝')));

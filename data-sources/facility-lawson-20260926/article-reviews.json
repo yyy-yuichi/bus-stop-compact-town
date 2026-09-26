@@ -1,0 +1,339 @@
+[
+  {
+    "article_key": "shunan-107065",
+    "source_body_hash": "d9028dbbad49fb576c2c12fd23138d9d695a23bc50907f12de9039d62d8b0bbc",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "光三井店1店舗の開店予告。住所地域の中心点を店舗点として採用せず、現行公式支店と同名住所電話の店舗点を採用。",
+    "events": [
+      {
+        "event_id": "shunan-107065:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-lawson-poplar-hikari-mii"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "既存のローソン・ポプラ光三井と同一住所・店舗地点であり追加不要。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/12/29/lawsonhikarimi-2/",
+          "https://www.areamarker.com/lawson/info/377897",
+          "https://map.yahoo.co.jp/v3/place/wdtZiRVORtI",
+          "https://poplarretail.com/store/store-2620/"
+        ]
+      },
+      {
+        "event_id": "shunan-107065:history",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-poplar-hikari-mii"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現在の公式掲載は確認。2025年1月17日の開店実施日を裏付ける一次履歴は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/12/29/lawsonhikarimi-2/",
+          "https://www.areamarker.com/lawson/info/377897"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-593553",
+    "source_body_hash": "7a9672d0dbd253088b904399fda44cd250902d4a5b84b95a55271a27ae6d162d",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "県庁厚生棟2階の売店1施設。仮店舗・一部営業・3月23日グランドオープンを区別し、県庁本体とは別ID。",
+    "events": [
+      {
+        "event_id": "kaiten-593553:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-385141"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2026-03-23",
+        "reason": "実施後資料・現行公式案内・支店地点を照合。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/lawson-yamaguchikencho/",
+          "https://www.areamarker.com/lawson/info/385141",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.768259227443!2d131.46986926547282!3d34.186661335149005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544971d112c5621%3A0x1e30b1908736f8d0!2z44Ot44O844K944OzIOWxseWPo-ecjOW6geW6lw!5e0!3m2!1sja!2sjp!4v1774160290222!5m2!1sja!2sjp",
+          "https://www.lawson.co.jp/company/activity/topics/detail_jin/1520946_9112.html",
+          "https://www.pref.yamaguchi.lg.jp/press/339285.html"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-82361",
+    "source_body_hash": "aa0b2930d715fe84373aa0e7bb68151cdfe5a39fd917e1c77c52e7e0c51a5602",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "旧明神町一丁目と新空港前の2施設。スーパー・Seriaは所在説明で、この記事の新規変更案件ではない。",
+    "events": [
+      {
+        "event_id": "ube-82361:closed-old",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-way-552712571"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2026-03-31",
+        "reason": "元の支店タグで旧店舗を同定。令和8年3月31日20時の店頭閉店掲示と、2日後の看板撤去写真・新店舗案内を実見し、旧店を閉店補正。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/",
+          "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7154.jpeg",
+          "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7152.jpeg",
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/"
+        ]
+      },
+      {
+        "event_id": "ube-82361:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-lawson-385187"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式案内と同定した支店地点を照合して追加。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/",
+          "https://www.areamarker.com/lawson/info/385187",
+          "https://map.yahoo.co.jp/v3/place/kYv3jvacvRs"
+        ]
+      },
+      {
+        "event_id": "ube-82361:history",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-385187"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧店舗の閉店と新店の現行掲載は反映。2026年4月10日8時の予定通りの開店実施日を示す一次履歴は未取得。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/",
+          "https://www.areamarker.com/lawson/info/385187"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-36606",
+    "source_body_hash": "dba31706005cbe4c681ccfc7d7bda40df4be4f27a180683769abf63b4b5eb225",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "ローソン山口若宮町と別棟WASHハウス山口若宮の2店舗を分離。予定日と現在掲載を分ける。",
+    "events": [
+      {
+        "event_id": "yamaguchi-36606:lawson-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-lawson-377992"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式案内と同定した支店地点を照合して追加。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/07/31/lawson_081open/",
+          "https://www.areamarker.com/lawson/info/377992",
+          "https://map.yahoo.co.jp/v3/place/htCDEiMMVJ-"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-36606:wash-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-washhouse-706"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式案内と同定した支店地点を照合して追加。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/07/31/lawson_081open/",
+          "https://shop.wash-house.jp/detail/706/",
+          "https://www.wash-house.jp/shop/detail.php?id=706"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-36606:lawson-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-377992"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現行公式掲載は反映済み。2024年8月1日の開店は記事の事前告知と事後報道にあるが、今回実施日を直接裏付ける一次原本は取得していない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/07/31/lawson_081open/",
+          "https://www.areamarker.com/lawson/info/377992"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-36606:wash-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-washhouse-706"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現行公式掲載は反映済み。記事には当初計画から2024年8月23日へ予定変更がある。実際の開店日を示す一次履歴は未取得。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/07/31/lawson_081open/",
+          "https://shop.wash-house.jp/detail/706/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-37107",
+    "source_body_hash": "7fc0d0aae6c5bba4a3170ad708a6dc4fe11674c947a8bff45293b849363ee18f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "ローソン既開店の振り返りとWASHハウス予定日変更。2店舗の現行反映は先行記事へ参照し、未確認履歴は同じ店舗案件へ束ねる。",
+    "events": [
+      {
+        "event_id": "yamaguchi-37107:lawson-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-lawson-377992"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同一店の現行掲載は先行記事の確定判断へ統合。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/08/07/new_washhouse0809/",
+          "https://www.areamarker.com/lawson/info/377992"
+        ],
+        "duplicate_of": "yamaguchi-36606:lawson-current"
+      },
+      {
+        "event_id": "yamaguchi-37107:wash-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-washhouse-706"
+        ],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同一店の現行掲載は先行記事の確定判断へ統合。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/08/07/new_washhouse0809/",
+          "https://shop.wash-house.jp/detail/706/"
+        ],
+        "duplicate_of": "yamaguchi-36606:wash-current"
+      },
+      {
+        "event_id": "yamaguchi-37107:lawson-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-377992"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現行公式掲載は反映済み。2024年8月1日の開店は記事の事前告知と事後報道にあるが、今回実施日を直接裏付ける一次原本は取得していない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/08/07/new_washhouse0809/",
+          "https://www.areamarker.com/lawson/info/377992"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-37107:wash-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-washhouse-706"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現行公式掲載は反映済み。記事には当初計画から2024年8月23日へ予定変更がある。実際の開店日を示す一次履歴は未取得。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/08/07/new_washhouse0809/",
+          "https://shop.wash-house.jp/detail/706/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-34659",
+    "source_body_hash": "c34906f3fdd30765a5c034d89cae047cec44d582b81899556ccce067d855c6be",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "小郡インターの移転前後2施設。6月30日旧店終了・7月5日新店開店を別々に記録。BMWの過去移転は跡地説明でありリンク先記事の棚卸し完了とは扱わない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-34659:closed-old",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-2253707359"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2024-06-30",
+        "reason": "店頭の移転休業告知、旧店舗内ポストの固定地点、看板撤去後の旧店と営業する新店が同時に写った写真、移転後報道を照合。旧店を閉店補正。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/06/30/post-34659/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg",
+          "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg",
+          "https://www.postmap.org/map/414706",
+          "https://www.postmap.org/photo/1181111",
+          "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-34659:opening-new",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-lawson-156050"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2024-07-05",
+        "reason": "実施後資料・現行公式案内・支店地点を照合。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/06/30/post-34659/",
+          "https://www.areamarker.com/lawson/info/156050",
+          "https://map.yahoo.co.jp/v3/place/wmjq3V9p1c6",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6402.jpeg",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg",
+          "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/",
+          "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-82425",
+    "source_body_hash": "46d41f9d52a3efa58a4db7a830028ebb75ecf22ab30d3047cbe312a28df3c65e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "中尾二丁目店1店舗の一時休業・再開予定。現在の営業案内を確認し、過去の休業予定を現在の閉店と扱わない。",
+    "events": [
+      {
+        "event_id": "ube-82425:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-lawson-207103"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式案内と同定した支店地点を照合して追加。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/12/lawson_reopen0416/",
+          "https://www.areamarker.com/lawson/info/207103",
+          "https://map.j-coin.jp/jcoinpay/spot/detail?code=S877805"
+        ]
+      },
+      {
+        "event_id": "ube-82425:history",
+        "event_type": "temporary_change",
+        "facility_ids": [
+          "official-lawson-207103"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2026年4月9日～15日休業と4月16日7時再開は事前告知。現行公式掲載を確認したが、当日の実施履歴は未取得。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/12/lawson_reopen0416/",
+          "https://www.areamarker.com/lawson/info/207103"
+        ]
+      }
+    ]
+  }
+]
