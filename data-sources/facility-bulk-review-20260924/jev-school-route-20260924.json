@@ -1,0 +1,99 @@
+{
+  "run_date": "2026-09-24",
+  "service": "TypeSafe Playground",
+  "requested_model": "jev-latest",
+  "reported_model": "jev-1.13.0",
+  "request_id": "playground_19cacaec7cffc2b4f3686bbc1e3dceac10e",
+  "source_data": "mext-school-candidates.json",
+  "source_scope": {
+    "feature_count": 20,
+    "feature_ids": [
+      "osm-node-1423656571",
+      "osm-node-1423656572",
+      "osm-node-1423656751",
+      "osm-node-1423656752",
+      "osm-node-1423656883",
+      "osm-node-1423656887",
+      "osm-node-1423656946",
+      "osm-node-1423656950",
+      "osm-node-1423656952",
+      "osm-node-1423657089",
+      "osm-node-1423657361",
+      "osm-node-1423657390",
+      "osm-node-1423657391",
+      "osm-node-1423659938",
+      "osm-node-1423659947",
+      "osm-node-1423660178",
+      "osm-way-432750761",
+      "osm-way-552718106",
+      "osm-way-574705071",
+      "osm-way-574705072"
+    ],
+    "source_caveat": "MEXT file is labeled as a 2026-05-01 snapshot; its CSV header showed 2026-05-20. Official rows do not identify OSM feature IDs or coordinates."
+  },
+  "question": {
+    "type": "choice",
+    "per_feature_instruction": "Use only the supplied municipality, coordinates, and MEXT candidates to choose the next most efficient research route. Do not verify facts or decide facility correspondence.",
+    "criteria": {
+      "gpt_now": "Prioritize focused GPT-6 Pro research where official pages or maps plausibly identify which candidate corresponds to the exact OSM feature.",
+      "mechanical_first": "Do not spend GPT-6 Pro yet; first run deterministic coordinate/address/municipality checks or local joins, then reconsider unresolved cases.",
+      "defer_hard_evidence": "Defer GPT-6 Pro where ordinary web search is unlikely to prove feature-to-campus identity and stronger evidence is needed."
+    }
+  },
+  "response": {
+    "usage": {
+      "input_tokens": 10639,
+      "output_tokens": 1279,
+      "evaluation_time_ms": 118.23509900023055
+    },
+    "counts": {
+      "mechanical_first": 20,
+      "gpt_now": 0,
+      "defer_hard_evidence": 0
+    },
+    "mean_confidence": 0.9475,
+    "confidence_range": [0.93, 0.96],
+    "answers": [
+      ["osm-node-1423656571", "mechanical_first", 0.95, 0.96, 0.02, 0.02],
+      ["osm-node-1423656572", "mechanical_first", 0.96, 0.97, 0.02, 0.01],
+      ["osm-node-1423656751", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423656752", "mechanical_first", 0.96, 0.98, 0.01, 0.01],
+      ["osm-node-1423656883", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423656887", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423656946", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423656950", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423656952", "mechanical_first", 0.93, 0.96, 0.02, 0.02],
+      ["osm-node-1423657089", "mechanical_first", 0.94, 0.96, 0.02, 0.02],
+      ["osm-node-1423657361", "mechanical_first", 0.96, 0.98, 0.01, 0.01],
+      ["osm-node-1423657390", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-node-1423657391", "mechanical_first", 0.94, 0.97, 0.02, 0.01],
+      ["osm-node-1423659938", "mechanical_first", 0.95, 0.96, 0.02, 0.02],
+      ["osm-node-1423659947", "mechanical_first", 0.94, 0.97, 0.02, 0.01],
+      ["osm-node-1423660178", "mechanical_first", 0.94, 0.96, 0.03, 0.01],
+      ["osm-way-432750761", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-way-552718106", "mechanical_first", 0.94, 0.96, 0.03, 0.01],
+      ["osm-way-574705071", "mechanical_first", 0.95, 0.97, 0.02, 0.01],
+      ["osm-way-574705072", "mechanical_first", 0.94, 0.96, 0.03, 0.01]
+    ],
+    "answer_tuple_fields": ["feature_id", "choice", "confidence", "p_mechanical_first", "p_gpt_now", "p_defer_hard_evidence"]
+  },
+  "post_run_mechanical_crosscheck": {
+    "method": "Count candidate MEXT rows whose official_address contains the OSM feature_municipality string.",
+    "exactly_one_same_municipality_candidate": 15,
+    "no_same_municipality_candidate": 5,
+    "no_same_municipality_candidate_ids": [
+      "osm-node-1423656752",
+      "osm-node-1423656883",
+      "osm-node-1423657361",
+      "osm-node-1423659938",
+      "osm-way-432750761"
+    ],
+    "meaning": "Candidate filtering only; not proof that an official school corresponds to an OSM feature. No merge or app-data update was made."
+  },
+  "interpretation": {
+    "efficiency": "One Jev evaluation classified 20 questions, but every item received the same route. The run did not discriminate which individual records deserve GPT-6 Pro; the 15-versus-5 split comes from the deterministic municipality/address crosscheck, not Jev.",
+    "confidence_warning": "Jev confidence/probabilities are model outputs, not calibrated factual verification.",
+    "gpt6_pro_followup": "Not sent. The existing project ChatGPT conversation was found, but browser control timed out before the model could be verified; no prompt or data was submitted there.",
+    "data_change": "None"
+  }
+}

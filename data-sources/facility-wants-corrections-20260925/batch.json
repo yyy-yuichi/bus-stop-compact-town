@@ -1,0 +1,188 @@
+{
+  "checked_at": "2026-09-25",
+  "updates": [
+    {
+      "id": "osm-way-465881161",
+      "expected": {
+        "name": "ウォンツ山口大内御堀店",
+        "category": "reference",
+        "source_ids": [
+          "way/465881161"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4840626,
+            34.1657535
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 山口大内店",
+        "city": "山口市",
+        "address": "山口県山口市大内御堀字下堀962-1",
+        "search_names": "ウォンツ 山口大内店 ウォンツ山口大内御堀店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-25",
+        "summary": "公式閉店告知を旧店舗の住所・店舗代表点と照合しました。参考記録に移されていた旧IDに閉店確認を補完しています。",
+        "sources": [
+          {
+            "title": "運営会社の閉店告知",
+            "url": "https://www.wants.co.jp/news/close_3695/"
+          },
+          {
+            "title": "旧店舗の名称・住所・位置の照合用（現況判断には使用しない）",
+            "url": "https://map.noevirgroup.jp/nov_search/spot/detail?code=0000010445"
+          }
+        ],
+        "limits": [
+          "元ID・元位置・取得時点の登録情報を履歴として維持します。",
+          "告知の掲載日2025-12-31を閉店日とはみなしていません。メーカー案内の住所表記を保持しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-370584528",
+      "expected": {
+        "name": "くすりのレデイ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/370584528"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2569707,
+            33.9326006
+          ]
+        }
+      },
+      "changes": {
+        "name": "くすりのレデイ 宇部店",
+        "city": "宇部市",
+        "address": "山口県宇部市東見初町1-66-4",
+        "search_names": "くすりのレデイ 宇部店 レデイ薬局 L宇部店 旧所在地 ウォンツ 宇部東見初店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2018-05-16",
+        "date_precision": "day",
+        "checked_at": "2026-09-25",
+        "summary": "元登録のくすりのレデイ宇部店は、運営グループの2018年6月度開閉店表で閉店を確認しました。同じ住所のウォンツ宇部東見初店についても、別の公式閉店告知を確認しています。",
+        "sources": [
+          {
+            "title": "運営グループの2018年6月度開閉店表・2頁（公開開示資料の保存コピー）",
+            "url": "https://f.irbank.net/pdf/20180629/140120180629474419.pdf"
+          },
+          {
+            "title": "旧レデイ宇部店の住所照合・10頁（現況判断には使用しない）",
+            "url": "https://www.kose.co.jp/faq/pdf/YNYMchushikoku.pdf"
+          },
+          {
+            "title": "同住所のウォンツ宇部東見初店の名称・位置照合用",
+            "url": "https://map-refre.livedo.jp/points/0007894"
+          },
+          {
+            "title": "ウォンツ宇部東見初店の閉店告知",
+            "url": "https://www.wants.co.jp/news/close_3833/"
+          }
+        ],
+        "limits": [
+          "元ID・元位置・取得時点の登録情報を履歴として維持します。",
+          "表示する2018-05-16は旧レデイ宇部店の閉店日です。ウォンツ宇部東見初店の閉店日は未確認で、2026-08-31の告知掲載日を代入していません。",
+          "発行元の旧PDF URLが404のため、会社発行資料の公開保存コピーを使用し、原本の表を目視確認しました。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-9472242519",
+      "expected": {
+        "name": "ウォンツ 宇部亀浦店",
+        "category": "drugstore",
+        "source_ids": [
+          "node/9472242519"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2880451,
+            33.9427873
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 宇部亀浦店",
+        "city": "宇部市",
+        "address": "山口県宇部市亀浦大字西岐波4675-1",
+        "search_names": "ウォンツ 宇部亀浦店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の宇部亀浦店に一致する2件の元登録を照合し、こちらを通常表示の店舗にしています。",
+        "sources": [
+          {
+            "title": "運営会社の宇部亀浦店案内",
+            "url": "https://shop.tsuruha-g.com/3905"
+          }
+        ],
+        "limits": [
+          "元ID・元位置・取得時点の登録情報を履歴として維持します。",
+          "同名・同住所の元node/wayは約4m差で、公式の支店代表点からともに10m以内です。現地入口の確認ではありません。",
+          "通常表示にはOSM店舗nodeを採用。建物範囲の中心から作られたway側は履歴として残します。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1027461546",
+      "expected": {
+        "name": "ウォンツ 宇部亀浦店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/1027461546"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2880165,
+            33.9428121
+          ]
+        }
+      },
+      "changes": {
+        "name": "ウォンツ 宇部亀浦店",
+        "city": "宇部市",
+        "address": "山口県宇部市亀浦大字西岐波4675-1",
+        "search_names": "ウォンツ 宇部亀浦店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-25",
+        "summary": "公式の宇部亀浦店に一致する同一店舗の重複登録です。閉店ではありません。",
+        "sources": [
+          {
+            "title": "運営会社の宇部亀浦店案内",
+            "url": "https://shop.tsuruha-g.com/3905"
+          }
+        ],
+        "limits": [
+          "元ID・元位置・取得時点の登録情報を履歴として維持します。",
+          "同名・同住所の元node/wayは約4m差で、公式の支店代表点からともに10m以内です。現地入口の確認ではありません。",
+          "通常表示にはOSM店舗nodeを採用。建物範囲の中心から作られたway側は履歴として残します。"
+        ]
+      },
+      "duplicate_of": "osm-node-9472242519"
+    }
+  ],
+  "additions": []
+}

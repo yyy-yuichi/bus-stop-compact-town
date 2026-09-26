@@ -1,6 +1,7 @@
 /** Reads pre-baked walking catchments (Task 3's bake). No client-side routing. */
 import type { ShoppingFeature } from './types';
 import { categoryOf } from './facilityCatalog.ts';
+import { facilityAvailable } from './facilityFreshness.ts';
 import type { FacilityGroup } from './facilityCatalog.ts';
 export type { FacilityGroup } from './facilityCatalog.ts';
 export type Coordinate = [number, number];
@@ -131,7 +132,7 @@ function nearbyBounds(a: Bounds, b: Bounds, latitude: number): boolean {
 export function prepareFacilities(facilities: ShoppingFeature[]): PreparedFacility[] {
   return facilities.flatMap(facility => {
     const group = categoryOf(facility).group;
-    if (!group) return [];
+    if (!group || !facilityAvailable(facility)) return [];
     const point = facility.geometry.type === 'Point' ? facility.geometry.coordinates as Coordinate : undefined;
     const polygons = facility.geometry.type === 'MultiPolygon' ? facility.geometry.coordinates as Coordinate[][][] : [];
     const points = point ? [point] : polygons.flat(2);

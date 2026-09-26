@@ -1,0 +1,3267 @@
+[
+  {
+    "id": "official-cosmos-97239",
+    "name": "ディスカウントドラッグ コスモス 東高泊店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97239.html",
+    "address": "山口県山陽小野田市東高泊１０４８−１",
+    "city": "山陽小野田市",
+    "location_city": [
+      "山陽小野田市"
+    ],
+    "point": [
+      131.177228,
+      34.007908
+    ],
+    "hours": "10:00〜21:00",
+    "note": "（※9/16〜9/18改装予定）",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/5375b740309eff84a6421cba.json",
+    "receipt_hash": "0edb02be6be0116bf948fad1c723c35daf40fdde5eeac5cafd6bb4aaefeb8659",
+    "nearest": [
+      {
+        "id": "osm-way-600688031",
+        "name": "ディスカウントドラッグ コスモス",
+        "category": "drugstore",
+        "point": [
+          131.1769647,
+          34.0083474
+        ],
+        "source_ids": [
+          "way/600688031"
+        ],
+        "distance_m": 54.5
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [
+      "osm-way-600688031"
+    ],
+    "reason": "公式点と元店点は約55m差で、改装予定記載も残る。支店地点・実施後状況を別照合する。"
+  },
+  {
+    "id": "official-cosmos-94511",
+    "name": "ディスカウントドラッグ コスモス 戎町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94511.html",
+    "address": "山口県防府市戎町１丁目１１−１５",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.570263,
+      34.056608
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/ccb89ed97cb7ed7541a031e7.json",
+    "receipt_hash": "5f5e0cb0cef9f654c69320992f76489e5bb9380b76617a7d2f3c4f034501357f",
+    "nearest": [
+      {
+        "id": "osm-node-4040475289",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.5701265,
+          34.0565576
+        ],
+        "source_ids": [
+          "node/4040475289"
+        ],
+        "distance_m": 13.8
+      },
+      {
+        "id": "osm-node-4041096298",
+        "name": "大西眼科",
+        "category": "clinic",
+        "point": [
+          131.5709056,
+          34.0571016
+        ],
+        "source_ids": [
+          "node/4041096298"
+        ],
+        "distance_m": 80.7
+      },
+      {
+        "id": "osm-node-4041096304",
+        "name": "しみず医院",
+        "category": "clinic",
+        "point": [
+          131.5707248,
+          34.0559637
+        ],
+        "source_ids": [
+          "node/4041096304"
+        ],
+        "distance_m": 83.2
+      },
+      {
+        "id": "osm-way-401637602",
+        "name": "緒方歯科",
+        "category": "dentist",
+        "point": [
+          131.56972865,
+          34.055911699999996
+        ],
+        "source_ids": [
+          "way/401637602"
+        ],
+        "distance_m": 91.7
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4040475289"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-10283",
+    "name": "ディスカウントドラッグ コスモス 望町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10283.html",
+    "address": "山口県下松市望町２丁目５−２９",
+    "city": "下松市",
+    "location_city": [
+      "下松市"
+    ],
+    "point": [
+      131.859517,
+      34.02596
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/1b0dd87f1df60e0bdd157231.json",
+    "receipt_hash": "3d9286596271728b1a850a39b3be6d1cd5c1c14daa12758bc7f96a04bb660202",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-21395",
+    "name": "ディスカウントドラッグ コスモス 防府田島店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21395.html",
+    "address": "山口県防府市田島１４３４−３４",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.545942,
+      34.020002
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/aab3f0b3919c0624ffc10ba3.json",
+    "receipt_hash": "4f0a4a3b3e3157c7d83fa96eeb8b6fe31acca497eff60260e7c3f5462b95e66b",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-21364",
+    "name": "ディスカウントドラッグ コスモス 小月店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21364.html",
+    "address": "山口県下関市清末鞍馬３丁目９−１４",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      131.028567,
+      34.065388
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/c012467777dd8a5e305341d5.json",
+    "receipt_hash": "9871455c6d069d62d3e126eac1355598c35d204bfba9f31d13884fba843195ca",
+    "nearest": [
+      {
+        "id": "osm-node-3506568531",
+        "name": "博多一番どり 居食家あらい",
+        "category": "restaurant",
+        "point": [
+          131.028136,
+          34.0656876
+        ],
+        "source_ids": [
+          "node/3506568531"
+        ],
+        "distance_m": 51.8
+      },
+      {
+        "id": "osm-node-6423126603",
+        "name": "旨い麺焼 やきそばや",
+        "category": "restaurant",
+        "point": [
+          131.0280477,
+          34.0656891
+        ],
+        "source_ids": [
+          "node/6423126603"
+        ],
+        "distance_m": 58.4
+      },
+      {
+        "id": "osm-node-3506567697",
+        "name": "串かつ鍋おがた",
+        "category": "bar",
+        "point": [
+          131.0279807,
+          34.0657006
+        ],
+        "source_ids": [
+          "node/3506567697"
+        ],
+        "distance_m": 64.2
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-21173",
+    "name": "ディスカウントドラッグ コスモス 柳井南町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/21173.html",
+    "address": "山口県柳井市南町２丁目３−４３",
+    "city": "柳井市",
+    "location_city": [
+      "柳井市"
+    ],
+    "point": [
+      132.107223,
+      33.963639
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/32dcb4234c28b341a6b776e2.json",
+    "receipt_hash": "315c17d46350b5c3a6f7900f8f10b2c91e661e6bf078981b8697876899974030",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-98724",
+    "name": "ディスカウントドラッグ コスモス 川下店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98724.html",
+    "address": "山口県岩国市中津町３丁目５−５",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.21907,
+      34.153206
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/af4cf3283d475faf576743e9.json",
+    "receipt_hash": "125a6a24809969f0db8d14e6de6c817e6b50dfc391abb6281b36ff9495a989ba",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-98229",
+    "name": "ディスカウントドラッグ コスモス 植松店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98229.html",
+    "address": "山口県防府市植松８３１",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.528471,
+      34.046997
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/ab52a76bc0cb2673121f7478.json",
+    "receipt_hash": "ea501665729b5ae784dba219c0a06a0cc0fadbfee21a573585c92a62a9053abe",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-97512",
+    "name": "ディスカウントドラッグ コスモス 厚南北店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97512.html",
+    "address": "山口県宇部市厚南北１丁目４−７",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.218168,
+      33.997585
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/23d01d1030d534a828799717.json",
+    "receipt_hash": "97723123637a650c044477856661864f31a79e899f7ed067ca91f3ef07577d09",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-95280",
+    "name": "ディスカウントドラッグ コスモス 萩南店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95280.html",
+    "address": "山口県萩市椿２４３８−３",
+    "city": "萩市",
+    "location_city": [
+      "萩市"
+    ],
+    "point": [
+      131.405277,
+      34.392123
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/d4b7e716c6eb69dc37657c74.json",
+    "receipt_hash": "5ce1306796426b295ad41aaf69ae40272a36876fc6ce19117f235490685f260d",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-95129",
+    "name": "ディスカウントドラッグ コスモス 清末店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95129.html",
+    "address": "山口県下関市清末千房２丁目８−６",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      131.019105,
+      34.051908
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/856c17da810619a4a3a75f22.json",
+    "receipt_hash": "790dc261433c7259cc29393edd202cce38205b20b28dd159db63f149b220aef6",
+    "nearest": [
+      {
+        "id": "osm-node-4814518117",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.0189832,
+          34.0519945
+        ],
+        "source_ids": [
+          "node/4814518117"
+        ],
+        "distance_m": 14.8
+      },
+      {
+        "id": "osm-node-4814524034",
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "point": [
+          131.0196387,
+          34.0524564
+        ],
+        "source_ids": [
+          "node/4814524034"
+        ],
+        "distance_m": 78.3
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4814518117"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-93637",
+    "name": "ディスカウントドラッグ コスモス 新下関店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93637.html",
+    "address": "山口県下関市伊倉新町１丁目１−３３",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.940796,
+      34.006546
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/31a1d02644bf0b7c07ab3fb8.json",
+    "receipt_hash": "ddca935f12205f34bb38d49e19990ed963ebc5bba532e5c89e801a9c96ef77f8",
+    "nearest": [
+      {
+        "id": "osm-node-4628681411",
+        "name": "山小屋",
+        "category": "fast_food",
+        "point": [
+          130.9407756,
+          34.0067166
+        ],
+        "source_ids": [
+          "node/4628681411"
+        ],
+        "distance_m": 19
+      },
+      {
+        "id": "osm-node-4628665515",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          130.9415856,
+          34.0067377
+        ],
+        "source_ids": [
+          "node/4628665515"
+        ],
+        "distance_m": 75.8
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [
+      "osm-node-4628665515"
+    ],
+    "reason": "公式点が元コスモスから約76m、山小屋から約19m。公式名住所は一致するが地点の食違いを先に確認する。"
+  },
+  {
+    "id": "official-cosmos-93491",
+    "name": "ディスカウントドラッグ コスモス 下関大和町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93491.html",
+    "address": "山口県下関市大和町２丁目１−１１",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.916908,
+      33.944636
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/c1527342a4d38c30427146e9.json",
+    "receipt_hash": "5c26462d3542cb4cbb0e1465e7e38ced959b541047b0f61bbb66dae54083fc1c",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-93385",
+    "name": "ディスカウントドラッグ コスモス 深川店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93385.html",
+    "address": "山口県長門市東深川２３０６−４",
+    "city": "長門市",
+    "location_city": [
+      "長門市"
+    ],
+    "point": [
+      131.174187,
+      34.369476
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/e59d998a13e28493b2cade86.json",
+    "receipt_hash": "ed7f9eff178d0bf320ec8edfb3228f5f03923a1e634920b559c0bf4030099fd0",
+    "nearest": [
+      {
+        "id": "osm-node-5482411383",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.1741943,
+          34.3694038
+        ],
+        "source_ids": [
+          "node/5482411383"
+        ],
+        "distance_m": 8
+      },
+      {
+        "id": "osm-node-5463868168",
+        "name": "ディスカウントドラッグ コスモス",
+        "category": "drugstore",
+        "point": [
+          131.174276,
+          34.3695271
+        ],
+        "source_ids": [
+          "node/5463868168"
+        ],
+        "distance_m": 10
+      },
+      {
+        "id": "official-komeri-power-nagato-1054",
+        "name": "コメリパワー長門店",
+        "category": "home_center",
+        "point": [
+          131.1748772,
+          34.3690512
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式案内・住所と、この店舗名に対応する地図の代表点を照合しました。",
+          "sources": [
+            {
+              "title": "店舗・施設の現行公式案内",
+              "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054"
+            },
+            {
+              "title": "当該施設の代表点を示す地図",
+              "url": "https://maps.app.goo.gl/nrUtZRDDRUi1GU287"
+            },
+            {
+              "title": "運営者・自治体等の補足案内",
+              "url": "https://prtimes.jp/main/html/rd/p/000000582.000079052.html"
+            }
+          ],
+          "limits": [
+            "店舗・施設名と所在地に対応する代表点です。入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "2012年からの旧ハード＆グリーン長門店をパワーへ改装した店舗です。地図の旧ブランド名は現行公式リンク・同住所・運営元の改装告知で照合しました。",
+            "2025年2月23日は改装開店の予定告知。最初の開店日として反映せず、実施日は未確認にしています。",
+            "現行掲載の確認であり、リアルタイムの営業を保証しません。"
+          ]
+        },
+        "source_ids": [
+          "official:komeri:power:nagato:1054"
+        ],
+        "distance_m": 79.2
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [
+      "osm-node-5482411383",
+      "osm-node-5463868168"
+    ],
+    "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。"
+  },
+  {
+    "id": "official-cosmos-91466",
+    "name": "ディスカウントドラッグ コスモス 萩店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91466.html",
+    "address": "山口県萩市椿東２６３８−８",
+    "city": "萩市",
+    "location_city": [
+      "萩市"
+    ],
+    "point": [
+      131.411979,
+      34.411689
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/38feda8554b0d487f48907e8.json",
+    "receipt_hash": "5e7c22e506676187e50e8700976622c79351f4615c8955692f3549856024bcba",
+    "nearest": [
+      {
+        "id": "civic-care-3570400741-92c1a4553b",
+        "name": "リハビリ型デイサービスステップ",
+        "category": "social_facility",
+        "point": [
+          131.412109,
+          34.411602
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1568"
+        ],
+        "distance_m": 15.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-94481",
+    "name": "ディスカウントドラッグ コスモス 三田尻店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94481.html",
+    "address": "山口県防府市新田１７８−４",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.573037,
+      34.034384
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/a3cd5574559bb91319a219a9.json",
+    "receipt_hash": "64353bcf9ee21856d63aee065bae68a5dde9cf2d650f4ce28b2a66f04d76add3",
+    "nearest": [
+      {
+        "id": "osm-node-4941751456",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.5731084,
+          34.0347297
+        ],
+        "source_ids": [
+          "node/4941751456"
+        ],
+        "distance_m": 38.9
+      },
+      {
+        "id": "osm-node-4279736995",
+        "name": "風月(お好み焼き)",
+        "category": "restaurant",
+        "point": [
+          131.572487,
+          34.034649
+        ],
+        "source_ids": [
+          "node/4279736995"
+        ],
+        "distance_m": 58.6
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4941751456"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-95020",
+    "name": "ディスカウントドラッグ コスモス 東岐波店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95020.html",
+    "address": "山口県宇部市東岐波２１７１",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.343572,
+      33.986898
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/b3163a8ed0577d9dd6cd5cef.json",
+    "receipt_hash": "38e634b140e6f32a4b970db4a8ca1ab9fbf51e9bd4ed1136404664f6c635c388",
+    "nearest": [
+      {
+        "id": "osm-node-12487748792",
+        "name": "コスモス東岐波店",
+        "category": "drugstore",
+        "point": [
+          131.343201,
+          33.9871936
+        ],
+        "source_ids": [
+          "node/12487748792"
+        ],
+        "distance_m": 47.4
+      },
+      {
+        "id": "osm-node-12487748793",
+        "name": "CoCo壱番屋宇部東岐波店",
+        "category": "restaurant",
+        "point": [
+          131.3439227,
+          33.987269
+        ],
+        "source_ids": [
+          "node/12487748793"
+        ],
+        "distance_m": 52.4
+      },
+      {
+        "id": "osm-node-12487748791",
+        "name": "ダイレックス東岐波店",
+        "category": "supermarket",
+        "point": [
+          131.3429076,
+          33.9864574
+        ],
+        "source_ids": [
+          "node/12487748791"
+        ],
+        "distance_m": 78.4
+      },
+      {
+        "id": "osm-node-12383832808",
+        "name": "きわのもり歯科クリニック",
+        "category": "clinic",
+        "point": [
+          131.3441128,
+          33.9874808
+        ],
+        "source_ids": [
+          "node/12383832808"
+        ],
+        "distance_m": 81.7
+      },
+      {
+        "id": "osm-node-12487748790",
+        "name": "セブンイレブン宇部東岐波店",
+        "category": "convenience",
+        "point": [
+          131.3438188,
+          33.9860978
+        ],
+        "source_ids": [
+          "node/12487748790"
+        ],
+        "distance_m": 91.7
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "osm-node-12487748792"
+    ],
+    "reason": "既存支店名と地点を照合済み。表示の実質変更なしで今回訂正数に含めない。"
+  },
+  {
+    "id": "official-cosmos-94658",
+    "name": "ディスカウントドラッグ コスモス 柳井東店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94658.html",
+    "address": "山口県柳井市柳井１５５７−２",
+    "city": "柳井市",
+    "location_city": [
+      "柳井市"
+    ],
+    "point": [
+      132.124886,
+      33.960336
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/d10d269398318baea2c567f9.json",
+    "receipt_hash": "d8de181989ad5fd7f658b5599bcda17a9751a9e23dde5af1597d42b1fd494aeb",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-11372",
+    "name": "ディスカウントドラッグ コスモス 東大和町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11372.html",
+    "address": "山口県下関市東大和町１丁目４−４５",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.921459,
+      33.944876
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/49506b6c289a7b07085de4a1.json",
+    "receipt_hash": "74cf44a667dffdcec013e36266a23e59359d11e64a4491fcc6d1cbfe42f6f8a4",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-91404",
+    "name": "ディスカウントドラッグ コスモス 大内店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91404.html",
+    "address": "山口県山口市大内矢田南４丁目８−７",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.507393,
+      34.153542
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/a8c70bb02dfe085130e708b6.json",
+    "receipt_hash": "710af05ceeeedadddf5bb2d39cf6294127ccdea41f0a3f60c9c4a0d568ea37c8",
+    "nearest": [
+      {
+        "id": "osm-way-405833069",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.5074264,
+          34.1535742
+        ],
+        "source_ids": [
+          "way/405833069"
+        ],
+        "distance_m": 4.7
+      },
+      {
+        "id": "osm-node-6753275483",
+        "name": "ローソン 山口大内矢田南四丁目店",
+        "category": "convenience",
+        "point": [
+          131.5082904,
+          34.1538236
+        ],
+        "source_ids": [
+          "node/6753275483"
+        ],
+        "distance_m": 88.4
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-405833069"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-18128",
+    "name": "ディスカウントドラッグ コスモス 山口緑町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/18128.html",
+    "address": "山口県山口市緑町５−８",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.464672,
+      34.169663
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/4f9d6fb94cc26ae851f12684.json",
+    "receipt_hash": "0c022eb2cfb526852d3e5b4741fd50f7cefab78e7da0f61d944f5378b98cc14b",
+    "nearest": [
+      {
+        "id": "osm-way-1338403053",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.4641446,
+          34.1695797
+        ],
+        "source_ids": [
+          "way/1338403053"
+        ],
+        "distance_m": 49.5
+      },
+      {
+        "id": "osm-way-1338403043",
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "point": [
+          131.4638364,
+          34.1694689
+        ],
+        "source_ids": [
+          "way/1338403043"
+        ],
+        "distance_m": 80
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-1338403053"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-20718",
+    "name": "ディスカウントドラッグ コスモス 湯田店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/20718.html",
+    "address": "山口県山口市湯田温泉６丁目８−２９",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.450999,
+      34.165417
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/6bf6a0da392355080fc671f7.json",
+    "receipt_hash": "e219f4228d2426ed6f5c00bbde93291324ba58d44838d6f8bd3c3b25b18609af",
+    "nearest": [
+      {
+        "id": "osm-way-202664938",
+        "name": "居酒屋坂田山口店",
+        "category": "bar",
+        "point": [
+          131.4511234,
+          34.16554455
+        ],
+        "source_ids": [
+          "way/202664938"
+        ],
+        "distance_m": 18.2
+      },
+      {
+        "id": "osm-way-202664935",
+        "name": "ドラッグセガミ",
+        "category": "pharmacy",
+        "point": [
+          131.451174,
+          34.164975
+        ],
+        "source_ids": [
+          "way/202664935"
+        ],
+        "distance_m": 51.6
+      },
+      {
+        "id": "osm-way-409218006",
+        "name": "コインランドリーデポ湯田温泉店",
+        "category": "laundry",
+        "point": [
+          131.45158305,
+          34.165282149999996
+        ],
+        "source_ids": [
+          "way/409218006"
+        ],
+        "distance_m": 55.9
+      },
+      {
+        "id": "osm-way-202664937",
+        "name": "サンキューカット湯田店",
+        "category": "hairdresser",
+        "point": [
+          131.45169835000002,
+          34.16537855
+        ],
+        "source_ids": [
+          "way/202664937"
+        ],
+        "distance_m": 64.6
+      },
+      {
+        "id": "osm-way-202664945",
+        "name": "牛角　山口湯田店",
+        "category": "restaurant",
+        "point": [
+          131.45069009999997,
+          34.166005350000006
+        ],
+        "source_ids": [
+          "way/202664945"
+        ],
+        "distance_m": 71.2
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [],
+    "reason": "同地周辺に旧ドラッグセガミが残る。後継関係と建物を照合するまで追加しない。"
+  },
+  {
+    "id": "official-cosmos-95990",
+    "name": "ディスカウントドラッグ コスモス 美祢店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95990.html",
+    "address": "山口県美祢市大嶺町東分１２６７−２",
+    "city": "美祢市",
+    "location_city": [
+      "美祢市"
+    ],
+    "point": [
+      131.21117,
+      34.179312
+    ],
+    "hours": "9:00〜20:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/e39db1db2763fa95c7bba10f.json",
+    "receipt_hash": "0941106d44647a103ee539f8947079bd205fc049a198253af9f73196f56ac615",
+    "nearest": [
+      {
+        "id": "osm-node-5517945321",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.2108765,
+          34.1792221
+        ],
+        "source_ids": [
+          "node/5517945321"
+        ],
+        "distance_m": 28.8
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-5517945321"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-93996",
+    "name": "ディスカウントドラッグ コスモス 桑山店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93996.html",
+    "address": "山口県防府市桑山２丁目１２−３４",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.558569,
+      34.047615
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/1afe331c0785ce08aa2d3d7b.json",
+    "receipt_hash": "31204f15f2939d9f9f3f1fb6f7140f63245cee6a4613db149ac97d90a89839ad",
+    "nearest": [
+      {
+        "id": "osm-node-13188392553",
+        "name": "ラーメンショップ桑山",
+        "category": "restaurant",
+        "point": [
+          131.5585205,
+          34.048143
+        ],
+        "source_ids": [
+          "node/13188392553"
+        ],
+        "distance_m": 58.8
+      },
+      {
+        "id": "official-secondstreet-03984",
+        "name": "セカンドストリート 防府店",
+        "category": "second_hand",
+        "point": [
+          131.55779738,
+          34.04711938
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式県内一覧と支店別の名称・住所・経路案内目的地を照合して追加しました。",
+          "sources": [
+            {
+              "title": "運営会社の山口県店舗一覧",
+              "url": "https://www.2ndstreet.jp/shop/search?prefectural=35"
+            },
+            {
+              "title": "運営会社の現行店舗紹介・店舗別地図",
+              "url": "https://www.2ndstreet.jp/shop/details?shopsId=03984"
+            },
+            {
+              "title": "運営会社の店舗経路検索リンク",
+              "url": "https://www.google.com/maps/dir//34.04711938000,131.55779738000"
+            }
+          ],
+          "limits": [
+            "運営会社が店舗名に対応付けた代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "公式掲載の確認であり、実開店日やリアルタイム営業を確定するものではありません。"
+          ]
+        },
+        "source_ids": [
+          "official:secondstreet:03984"
+        ],
+        "distance_m": 89.9
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-18593",
+    "name": "ディスカウントドラッグ コスモス 川中豊町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/18593.html",
+    "address": "山口県下関市川中豊町７丁目１１−１２",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.939255,
+      33.992685
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/25a3f036961cd17c1417a1e2.json",
+    "receipt_hash": "af83e713ce333ae830cedd512a800a2f0b5a36656b0b7cb229fb181508627f36",
+    "nearest": [
+      {
+        "id": "civic-care-3570105506-b3bd433fa0",
+        "name": "杉山薬局ケアセンター",
+        "category": "social_facility",
+        "point": [
+          130.939163,
+          33.992584
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:881"
+        ],
+        "distance_m": 14.1
+      },
+      {
+        "id": "osm-node-1423653933",
+        "name": "下関川中豊町郵便局",
+        "category": "post_office",
+        "point": [
+          130.938672,
+          33.992952
+        ],
+        "source_ids": [
+          "node/1423653933"
+        ],
+        "distance_m": 61.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-17749",
+    "name": "ディスカウントドラッグ コスモス 小郡下郷店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/17749.html",
+    "address": "山口県山口市小郡下郷３４１９−１",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.390654,
+      34.088551
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/4397513638cdca8618bcfcbe.json",
+    "receipt_hash": "7d82b4ebbff29348d462c5c6f02d53ad4d770be28e753d339c6d0dab6d3ad168",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-17725",
+    "name": "ディスカウントドラッグ コスモス 宇部中山店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/17725.html",
+    "address": "山口県宇部市中山１１１８−１",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.234372,
+      33.987241
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/6d619f486ac3adac15ea751a.json",
+    "receipt_hash": "bcffb1aa036df0da27553a7ab7aa8984aa153547be60f06381fcdd09bb71971c",
+    "nearest": [
+      {
+        "id": "civic-care-3560290425-809af3c98b",
+        "name": "セノーテ訪問看護 宇部山陽小野田美祢エリアステーション",
+        "category": "social_facility",
+        "point": [
+          131.233795,
+          33.987427
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:426"
+        ],
+        "distance_m": 57.1
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-16575",
+    "name": "ディスカウントドラッグ コスモス 貴船店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/16575.html",
+    "address": "山口県下関市貴船町１丁目１−１６",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.943054,
+      33.962937
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/65a5ccb3479f48531adb4eaa.json",
+    "receipt_hash": "dc121de6be7b469b22440d71951fbd9532f1abac06547fc6c2b8a01cf9676094",
+    "nearest": [
+      {
+        "id": "osm-way-483838363",
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "point": [
+          130.9424502,
+          33.9628629
+        ],
+        "source_ids": [
+          "way/483838363"
+        ],
+        "distance_m": 56.3
+      },
+      {
+        "id": "civic-care-3570103923-5af811f75d",
+        "name": "あいサービス下関",
+        "category": "social_facility",
+        "point": [
+          130.944,
+          33.962883
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:44"
+        ],
+        "distance_m": 87.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-16377",
+    "name": "ディスカウントドラッグ コスモス 豊浦黒井店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/16377.html",
+    "address": "山口県下関市豊浦町大字吉永１７６１−１",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.918539,
+      34.140359
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/a2831942b78e68153e4343bd.json",
+    "receipt_hash": "85b58bdb50b51512ed43330764ab929083f80444a44f890d12d9dde630685f37",
+    "nearest": [
+      {
+        "id": "osm-way-1236531251",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          130.918139,
+          34.1401224
+        ],
+        "source_ids": [
+          "way/1236531251"
+        ],
+        "distance_m": 45.3
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-1236531251"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-14168",
+    "name": "ディスカウントドラッグ コスモス 平生店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/14168.html",
+    "address": "山口県熊毛郡平生町平生村７６４−１",
+    "city": "平生町",
+    "location_city": [
+      "平生町"
+    ],
+    "point": [
+      132.072001,
+      33.94128
+    ],
+    "hours": "9:00〜20:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/11cc502354da87f925e2c2da.json",
+    "receipt_hash": "e48ecefcb2f0788600a0cbac922b1be957b5a274ef660bc0795ac245edf0ac86",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-13871",
+    "name": "ディスカウントドラッグ コスモス 南岩国店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/13871.html",
+    "address": "山口県岩国市南岩国町５丁目２７−７",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.199456,
+      34.122973
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/7bc5fb3598998234454f1470.json",
+    "receipt_hash": "fcff02b7c7db45a94505d3447df959314192f35fda054575f51b9338e927353f",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-13383",
+    "name": "ディスカウントドラッグ コスモス 錦帯橋店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/13383.html",
+    "address": "山口県岩国市岩国２丁目８−３３",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.179631,
+      34.162793
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/015b02621604506357bf133c.json",
+    "receipt_hash": "729b353a54d23e3c663ecf8470e94bdaf51933b910bb7a5271e4fed7bd7c8de6",
+    "nearest": [
+      {
+        "id": "osm-node-1618763376",
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "point": [
+          132.1792331,
+          34.1634337
+        ],
+        "source_ids": [
+          "node/1618763376"
+        ],
+        "distance_m": 80
+      },
+      {
+        "id": "civic-care-3570801542-dd339a5ffe",
+        "name": "デイサービスきらら",
+        "category": "social_facility",
+        "point": [
+          132.180099,
+          34.163467
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1269"
+        ],
+        "distance_m": 86.4
+      },
+      {
+        "id": "civic-care-3570801989-0ad3bf6a78",
+        "name": "運動特化型デイサービスふぁいと",
+        "category": "social_facility",
+        "point": [
+          132.180099,
+          34.163467
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1276"
+        ],
+        "distance_m": 86.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-91817",
+    "name": "ディスカウントドラッグ コスモス 厚南店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91817.html",
+    "address": "山口県宇部市妻崎開作５２０−１",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.210066,
+      33.982981
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/0de0f93b084edbd75cc1067b.json",
+    "receipt_hash": "8b836de16d7a5663df81e66426af8755fbc9d4449e833b01a174cf07d8a55097",
+    "nearest": [
+      {
+        "id": "osm-way-477971916",
+        "name": "ディスカウントドラッグコスモス厚南店",
+        "category": "drugstore",
+        "point": [
+          131.2100965,
+          33.9830526
+        ],
+        "source_ids": [
+          "way/477971916"
+        ],
+        "distance_m": 8.4
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "osm-way-477971916"
+    ],
+    "reason": "既存支店名と地点を照合済み。表示の実質変更なしで今回訂正数に含めない。"
+  },
+  {
+    "id": "official-cosmos-12829",
+    "name": "ディスカウントドラッグ コスモス 大内御堀店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12829.html",
+    "address": "山口県山口市宮島町８−５",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.481746,
+      34.166205
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/5a708e27374d3b86ea20206f.json",
+    "receipt_hash": "a4daa156266e8047c6b96a58c388465feb9f6e13c6782fee172f993dafccffb5",
+    "nearest": [
+      {
+        "id": "osm-way-407971357",
+        "name": "セブンイレブン山口宮島町店",
+        "category": "convenience",
+        "point": [
+          131.482164,
+          34.1670207
+        ],
+        "source_ids": [
+          "way/407971357"
+        ],
+        "distance_m": 98.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-12881",
+    "name": "ディスカウントドラッグ コスモス 山の田店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12881.html",
+    "address": "山口県下関市山の田本町１−５",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.929298,
+      33.988438
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/6e63c222bcd16fff5f2f4c1d.json",
+    "receipt_hash": "367c8cfb07339dc46b0b8b70c658403ec2858bd2fa501e6d090d8f7e6b54b377",
+    "nearest": [
+      {
+        "id": "osm-way-483625943",
+        "name": "レッドキャベツ",
+        "category": "supermarket",
+        "point": [
+          130.9292625,
+          33.988422
+        ],
+        "source_ids": [
+          "way/483625943"
+        ],
+        "distance_m": 3.7
+      },
+      {
+        "id": "osm-way-483625942",
+        "name": "ロイヤルホスト 山の田店",
+        "category": "restaurant",
+        "point": [
+          130.92981500000002,
+          33.988692549999996
+        ],
+        "review": {
+          "status": "closed",
+          "event": "closed",
+          "effective_at": "2026-08-20",
+          "checked_at": "2026-09-25",
+          "summary": "運営会社の支店別閉店告知で山の田店の営業終了日を確認しました。",
+          "sources": [
+            {
+              "title": "ロイヤルホスト・蛍茶屋店／山の田店／千田町店の閉店告知",
+              "url": "https://www.royalhost.jp/news/2026/post-110.html"
+            }
+          ],
+          "limits": [
+            "他の支店の閉店日を転用していません。元データのID・代表点を維持しています。"
+          ]
+        },
+        "source_ids": [
+          "way/483625942"
+        ],
+        "distance_m": 55.4
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [],
+    "reason": "旧レッドキャベツと約4m差。同じ敷地の旧店と後継関係を先に確認する。"
+  },
+  {
+    "id": "official-cosmos-95037",
+    "name": "ディスカウントドラッグ コスモス 安養寺店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95037.html",
+    "address": "山口県下関市長府安養寺１丁目３−１３",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.98088,
+      34.008317
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/54a65b34ce161a10858f9858.json",
+    "receipt_hash": "49edd1465417f9b37068f1e1d93f203afe91ee72cc0879851d8ade3b3afe2d7f",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-94498",
+    "name": "ディスカウントドラッグ コスモス 恩田店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94498.html",
+    "address": "山口県宇部市恩田町１丁目２−５",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.261349,
+      33.944667
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/38703999f8e4bba58f3d3993.json",
+    "receipt_hash": "10d536702cd387322d71b73824e16eaa373e63914e29226a7dc7cc9997744ab1",
+    "nearest": [
+      {
+        "id": "osm-way-549154587",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.2614631,
+          33.9445803
+        ],
+        "source_ids": [
+          "way/549154587"
+        ],
+        "distance_m": 14.3
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-549154587"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-93347",
+    "name": "ディスカウントドラッグ コスモス 小野田店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93347.html",
+    "address": "山口県山陽小野田市高栄１丁目８−５",
+    "city": "山陽小野田市",
+    "location_city": [
+      "山陽小野田市"
+    ],
+    "point": [
+      131.174318,
+      33.985238
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/45afe3cbdbef7e1829dc5d27.json",
+    "receipt_hash": "79d2655cf11615a98644879d250f65296324783a922b4994fd86d203984087cf",
+    "nearest": [
+      {
+        "id": "official-secondstreet-31983",
+        "name": "セカンドストリート 山陽小野田店",
+        "category": "second_hand",
+        "point": [
+          131.17478099021,
+          33.98586750714
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "運営会社の現行店舗紹介・住所・経路検索の店舗点を照合して追加。旧店舗とは別IDで管理します。",
+          "sources": [
+            {
+              "title": "運営会社の現行店舗紹介・店舗別地図",
+              "url": "https://www.2ndstreet.jp/shop/details?shopsId=31983"
+            },
+            {
+              "title": "運営会社の店舗経路検索リンク",
+              "url": "https://www.google.com/maps/dir//33.98586750714,131.17478099021"
+            }
+          ],
+          "limits": [
+            "運営会社が店舗名に対応付けた代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "公式掲載の確認であり、実開店日やリアルタイム営業を確定するものではありません。"
+          ]
+        },
+        "source_ids": [
+          "official:secondstreet:31983"
+        ],
+        "distance_m": 81.9
+      },
+      {
+        "id": "osm-way-332618123",
+        "name": "ウォンツ 小野田店",
+        "category": "drugstore",
+        "point": [
+          131.1747895,
+          33.9858914
+        ],
+        "review": {
+          "status": "closed",
+          "event": "closed",
+          "effective_at": null,
+          "date_precision": "unknown",
+          "checked_at": "2026-09-25",
+          "summary": "運営会社の支店別告知で閉店を確認しました。告知掲載日2025-03-01を閉店日とは断定していません。",
+          "sources": [
+            {
+              "title": "運営会社の閉店・後継店告知",
+              "url": "https://www.wants.co.jp/news/close_3679/"
+            },
+            {
+              "title": "旧店舗の名称・所在地の照合用（現況判断には使用しない）",
+              "url": "https://pkg.navitime.co.jp/kose-shoplist/spot/detail?code=P00C125"
+            }
+          ],
+          "limits": [
+            "元データのID・位置・登録履歴は維持し、通常の検索・周辺施設・徒歩圏候補から除外します。",
+            "公式ページの掲載日を閉店日へ自動転用していません。"
+          ]
+        },
+        "source_ids": [
+          "way/332618123"
+        ],
+        "distance_m": 84.6
+      },
+      {
+        "id": "official-halows-129",
+        "name": "ハローズ 小野田店",
+        "category": "supermarket",
+        "point": [
+          131.173676,
+          33.9859325
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "公式店舗案内の名称・住所・支店別地図を照合し、現在の店舗を追加しました。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗案内",
+              "url": "https://www.halows.com/stores/detail/129"
+            },
+            {
+              "title": "公式店舗案内からリンクされた地図",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.2937267577217!2d131.17246710100338!3d33.98583139440937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543830057005de9%3A0x85245ea42f47e5a8!2z44OP44Ot44O844K6IOWwj-mHjueUsOW6lw!5e0!3m2!1sja!2sjp!4v1732680245736!5m2!1sja!2sjp"
+            }
+          ],
+          "limits": [
+            "公式に案内された店舗代表点です。入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "現行の公式掲載を確認した記録で、リアルタイムの営業保証ではありません。",
+            "開店記事の報告日や事前予定日、公式ニュースの掲載日を実開店日に自動変換していません。"
+          ]
+        },
+        "source_ids": [
+          "official:halows:129"
+        ],
+        "distance_m": 97.2
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "cosmos-onoda"
+    ],
+    "reason": "既存の店別公式URL一致。小野田の既存建物ポリゴンを維持。"
+  },
+  {
+    "id": "official-cosmos-92494",
+    "name": "ディスカウントドラッグ コスモス 柳井店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92494.html",
+    "address": "山口県柳井市古開作４３０−１",
+    "city": "柳井市",
+    "location_city": [
+      "柳井市"
+    ],
+    "point": [
+      132.101091,
+      33.970311
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/8d39490eed39c807e29dc59f.json",
+    "receipt_hash": "f543aeb2037d40d7b7f63f28cfda30631c2ff67a11c7ad9b2550fb9db50bf1d9",
+    "nearest": [
+      {
+        "id": "osm-node-1423660431",
+        "name": "私立柳井学園高等学校",
+        "category": "school",
+        "point": [
+          132.102022,
+          33.96998
+        ],
+        "source_ids": [
+          "node/1423660431"
+        ],
+        "distance_m": 93.4
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-91718",
+    "name": "ディスカウントドラッグ コスモス 長門店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91718.html",
+    "address": "山口県長門市仙崎鳥越８４６−１",
+    "city": "長門市",
+    "location_city": [
+      "長門市"
+    ],
+    "point": [
+      131.198663,
+      34.381197
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/0694fcd00f0afb08598d6752.json",
+    "receipt_hash": "064b2125476d335f82962920a97c38c73ce97009545ed3eb118b585da1d25a49",
+    "nearest": [
+      {
+        "id": "osm-way-550383090",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.1987482,
+          34.3811241
+        ],
+        "source_ids": [
+          "way/550383090"
+        ],
+        "distance_m": 11.3
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-550383090"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-92036",
+    "name": "ディスカウントドラッグ コスモス 徳山駅店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92036.html",
+    "address": "山口県周南市千代田町１１−１",
+    "city": "周南市",
+    "location_city": [
+      "周南市"
+    ],
+    "point": [
+      131.799309,
+      34.054508
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/817d1c45f116730a923d45ad.json",
+    "receipt_hash": "cc8a40b9e75009655d80a5bdf1df0506500a1e6a7ecc0f8befff0fea37f2f7a9",
+    "nearest": [
+      {
+        "id": "osm-node-3804918121",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.799279,
+          34.0545429
+        ],
+        "source_ids": [
+          "node/3804918121"
+        ],
+        "distance_m": 4.8
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-3804918121"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-93644",
+    "name": "ディスカウントドラッグ コスモス 防府緑町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93644.html",
+    "address": "山口県防府市緑町２丁目１−１１",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.579405,
+      34.053442
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/c4d3c511b66e33a63f76d5b1.json",
+    "receipt_hash": "6dad3f0174b75b5cf66588e5f33bb550c10e89283fa4659d6acf66e8965211fd",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-93736",
+    "name": "ディスカウントドラッグ コスモス 萩新川店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/93736.html",
+    "address": "山口県萩市椿東３１１５−１",
+    "city": "萩市",
+    "location_city": [
+      "萩市"
+    ],
+    "point": [
+      131.409796,
+      34.421311
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/5f4e1f5bd737f18b047f509e.json",
+    "receipt_hash": "96a48568a4c6be05d1888b62500b392a6f8b45552633bdc9a296da78f4755a40",
+    "nearest": [
+      {
+        "id": "osm-node-1423660835",
+        "name": "萩新川郵便局",
+        "category": "post_office",
+        "point": [
+          131.409183,
+          34.421643
+        ],
+        "source_ids": [
+          "node/1423660835"
+        ],
+        "distance_m": 67.5
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-98304",
+    "name": "ディスカウントドラッグ コスモス 遠石店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98304.html",
+    "address": "山口県周南市上遠石町１−２２",
+    "city": "周南市",
+    "location_city": [
+      "周南市"
+    ],
+    "point": [
+      131.823681,
+      34.044094
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/3181dc5d40cd84e8d0927362.json",
+    "receipt_hash": "585ea7c919e7cef4a3e09d4b3e13fc7360b2fa58152b5f1ade9f375dbd06dad1",
+    "nearest": [
+      {
+        "id": "osm-node-3888378762",
+        "name": "遠石ファミリー歯科",
+        "category": "dentist",
+        "point": [
+          131.823583,
+          34.0447493
+        ],
+        "source_ids": [
+          "node/3888378762"
+        ],
+        "distance_m": 73.3
+      },
+      {
+        "id": "osm-node-1423657671",
+        "name": "徳山遠石郵便局",
+        "category": "post_office",
+        "point": [
+          131.822681,
+          34.044353
+        ],
+        "source_ids": [
+          "node/1423657671"
+        ],
+        "distance_m": 96.6
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-92715",
+    "name": "ディスカウントドラッグ コスモス 矢原店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92715.html",
+    "address": "山口県山口市矢原町１０−２０",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.451722,
+      34.156914
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/47f72c5533acd112a6f21ff5.json",
+    "receipt_hash": "cd964b663e64aab2e989735f236d85c3f608b7f2f6ed776e29e0d274cd1e8f2a",
+    "nearest": [
+      {
+        "id": "osm-way-496416479",
+        "name": "ドラッグコスモス矢原店",
+        "category": "drugstore",
+        "point": [
+          131.4516346,
+          34.1571074
+        ],
+        "source_ids": [
+          "way/496416479"
+        ],
+        "distance_m": 22.9
+      },
+      {
+        "id": "civic-care-3570302913-08bdf269c0",
+        "name": "光山医院山口ヘルパーステーション",
+        "category": "social_facility",
+        "point": [
+          131.452179,
+          34.156242
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:180"
+        ],
+        "distance_m": 85.7
+      },
+      {
+        "id": "osm-way-522788377",
+        "name": "光山医院",
+        "category": "hospital",
+        "point": [
+          131.4525832,
+          34.1564405
+        ],
+        "source_ids": [
+          "way/522788377"
+        ],
+        "distance_m": 95.2
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "osm-way-496416479"
+    ],
+    "reason": "既存支店名と地点を照合済み。表示の実質変更なしで今回訂正数に含めない。"
+  },
+  {
+    "id": "official-cosmos-10085",
+    "name": "ディスカウントドラッグ コスモス 宮野恋路店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10085.html",
+    "address": "山口県山口市宮野下１０１９−１",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.497769,
+      34.186822
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/d53139b138b1d0a1988a4940.json",
+    "receipt_hash": "cf997aaeccfd712b48ec9f5c01066be85974d6dd865958baac9e7718a4a057ff",
+    "nearest": [
+      {
+        "id": "osm-way-405835932",
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "point": [
+          131.4979745,
+          34.1864157
+        ],
+        "source_ids": [
+          "way/405835932"
+        ],
+        "distance_m": 48.9
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-10467",
+    "name": "ディスカウントドラッグ コスモス 松美町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10467.html",
+    "address": "山口県山口市松美町２−８０",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.465635,
+      34.163733
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/da453f92bbb1af2df565cb4d.json",
+    "receipt_hash": "13a4c27f0b83b4035e5311a62e098f64617d366e6b20a4b2ceddde7eac6712a3",
+    "nearest": [
+      {
+        "id": "osm-way-880501227",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.4657168,
+          34.1636718
+        ],
+        "source_ids": [
+          "way/880501227"
+        ],
+        "distance_m": 10.2
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-880501227"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-96171",
+    "name": "ディスカウントドラッグ コスモス 平川店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96171.html",
+    "address": "山口県山口市平井１２１６−１",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.461839,
+      34.147286
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/b637fa0ad40a94d2bc5afad7.json",
+    "receipt_hash": "cfb13321eb63241b4e2cdaba5db6dddad46998cb8d0134110d856f1d0e7cf347",
+    "nearest": [
+      {
+        "id": "osm-way-466029165",
+        "name": "ドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.4616444,
+          34.1476159
+        ],
+        "source_ids": [
+          "way/466029165"
+        ],
+        "distance_m": 40.8
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-466029165"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-92289",
+    "name": "ディスカウントドラッグ コスモス 新山口駅店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92289.html",
+    "address": "山口県山口市小郡平成町１−３１",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.400045,
+      34.088419
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/cba5c35992d9dca266e8cb8f.json",
+    "receipt_hash": "681c7916159d46df55c8e64e130d5b5760881509b935e7e6298c2f412e71f40b",
+    "nearest": [
+      {
+        "id": "osm-way-391893283",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.4002611,
+          34.0883874
+        ],
+        "source_ids": [
+          "way/391893283"
+        ],
+        "distance_m": 20.2
+      },
+      {
+        "id": "civic-care-3570300792-7fc645a99b",
+        "name": "青藍会在宅医療支援センター新山口ヘルパーステーション",
+        "category": "social_facility",
+        "point": [
+          131.400269,
+          34.088314
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:156"
+        ],
+        "distance_m": 23.7
+      },
+      {
+        "id": "civic-care-3560390134-b47cb72876",
+        "name": "青藍会在宅医療支援センター新山口訪問看護ステーション",
+        "category": "social_facility",
+        "point": [
+          131.400269,
+          34.088314
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:378"
+        ],
+        "distance_m": 23.7
+      },
+      {
+        "id": "civic-care-3577600418-b9d6150fe8",
+        "name": "青藍会在宅医療支援センター新山口指定居",
+        "category": "social_facility",
+        "point": [
+          131.400269,
+          34.088314
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:692"
+        ],
+        "distance_m": 23.7
+      },
+      {
+        "id": "civic-care-3590300368-e8780347d2",
+        "name": "青藍会 在宅医療支援センター新山口 定期巡回・随時対応型訪問介護看護",
+        "category": "social_facility",
+        "point": [
+          131.400269,
+          34.088314
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1240"
+        ],
+        "distance_m": 23.7
+      },
+      {
+        "id": "civic-care-3590300400-2540d915b9",
+        "name": "青藍会 在宅医療支援センター新山口 看護小規模多機能型居宅介護",
+        "category": "social_facility",
+        "point": [
+          131.400269,
+          34.088314
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1260"
+        ],
+        "distance_m": 23.7
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-391893283"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-11884",
+    "name": "ディスカウントドラッグ コスモス 沖今宿店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11884.html",
+    "address": "山口県防府市沖今宿２丁目２−５",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.601337,
+      34.050434
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/934bf0cecabc6e318b8ececf.json",
+    "receipt_hash": "93d8554a9a7f3bea7c5a2c2e394cecd52d510e2a2b48b4bc96af46f2663eb399",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-12140",
+    "name": "ディスカウントドラッグ コスモス 大崎店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12140.html",
+    "address": "山口県防府市大崎３５７",
+    "city": "防府市",
+    "location_city": [
+      "防府市"
+    ],
+    "point": [
+      131.546206,
+      34.065991
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/9274f84531639520e7da9871.json",
+    "receipt_hash": "cfce6b1cb9788c38a2cb53a440e30847212c9943d21f0bae1e7e9075ef06b0cc",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-92357",
+    "name": "ディスカウントドラッグ コスモス 光店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92357.html",
+    "address": "山口県光市木園１丁目５−３８",
+    "city": "光市",
+    "location_city": [
+      "光市"
+    ],
+    "point": [
+      131.930336,
+      33.978712
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/ff9048709525b03aaf584bed.json",
+    "receipt_hash": "34f20940633f7ff02b535f7198737fa5683e401fb1252396f0411719d2cee003",
+    "nearest": [
+      {
+        "id": "osm-node-4354767908",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.930372,
+          33.9786606
+        ],
+        "source_ids": [
+          "node/4354767908"
+        ],
+        "distance_m": 6.6
+      },
+      {
+        "id": "osm-node-4466387201",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.9302527,
+          33.9787661
+        ],
+        "source_ids": [
+          "node/4466387201"
+        ],
+        "distance_m": 9.7
+      },
+      {
+        "id": "osm-node-4354827192",
+        "name": "セブンイレブン",
+        "category": "convenience",
+        "point": [
+          131.9299872,
+          33.9784474
+        ],
+        "source_ids": [
+          "node/4354827192"
+        ],
+        "distance_m": 43.6
+      },
+      {
+        "id": "osm-node-4466386290",
+        "name": "五嶋内科クリニック",
+        "category": "clinic",
+        "point": [
+          131.9300481,
+          33.9782721
+        ],
+        "source_ids": [
+          "node/4466386290"
+        ],
+        "distance_m": 55.6
+      },
+      {
+        "id": "civic-care-3571000177-b493b7a1ce",
+        "name": "ニチイケアセンター光",
+        "category": "social_facility",
+        "point": [
+          131.929779,
+          33.978184
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:79",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:541",
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:581"
+        ],
+        "distance_m": 77.9
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [
+      "osm-node-4354767908",
+      "osm-node-4466387201"
+    ],
+    "reason": "同一ブランドの元施設が複数近接。どちらかを機械的に削除・統合せず保留。"
+  },
+  {
+    "id": "official-cosmos-11303",
+    "name": "ディスカウントドラッグ コスモス 虹ケ浜店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11303.html",
+    "address": "山口県光市虹ケ浜１丁目６−２８",
+    "city": "光市",
+    "location_city": [
+      "光市"
+    ],
+    "point": [
+      131.920464,
+      33.972177
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/69450dbc256edd4ec808b65b.json",
+    "receipt_hash": "8d82924f9490f2a8b29194d012745c644e5458cfdea780388be5bbadffeb8eb1",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-12003",
+    "name": "ディスカウントドラッグ コスモス 光井店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12003.html",
+    "address": "山口県光市中央２丁目９−２８",
+    "city": "光市",
+    "location_city": [
+      "光市"
+    ],
+    "point": [
+      131.949436,
+      33.955593
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/92b79a7460a50288cfa36c77.json",
+    "receipt_hash": "a71481f312592a4beeb0c8000573ccbd5c478acc49c97f69997e4770164e3cad",
+    "nearest": [
+      {
+        "id": "civic-care-3571000920-886a568f29",
+        "name": "株式会社あすなろ",
+        "category": "social_facility",
+        "point": [
+          131.948883,
+          33.955086
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:856",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1166"
+        ],
+        "distance_m": 75.9
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-98281",
+    "name": "ディスカウントドラッグ コスモス 長門市駅店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98281.html",
+    "address": "山口県長門市東深川９４９−１",
+    "city": "長門市",
+    "location_city": [
+      "長門市"
+    ],
+    "point": [
+      131.183339,
+      34.375656
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/7e164bb84a9cc15361eca95a.json",
+    "receipt_hash": "d9f07eb30def94e181a3edff76ecc1fa1a5b9979c22c3d219cc57db1fc3d8a50",
+    "nearest": [
+      {
+        "id": "osm-node-5482408601",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.1833191,
+          34.3756561
+        ],
+        "source_ids": [
+          "node/5482408601"
+        ],
+        "distance_m": 1.8
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-5482408601"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-96287",
+    "name": "ディスカウントドラッグ コスモス 古泉店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96287.html",
+    "address": "山口県周南市古泉１丁目２−２２",
+    "city": "周南市",
+    "location_city": [
+      "周南市"
+    ],
+    "point": [
+      131.76595,
+      34.06766
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/365fefef2e52e0b40a24f83b.json",
+    "receipt_hash": "bb45fd82557288732b8a0251d6e5b42d6b3dce7e391ebc195355950808cf08f6",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-95488",
+    "name": "ディスカウントドラッグ コスモス 久米店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/95488.html",
+    "address": "山口県周南市久米中央５丁目５−１５",
+    "city": "周南市",
+    "location_city": [
+      "周南市"
+    ],
+    "point": [
+      131.843155,
+      34.038162
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/b767fa304220dc925f78cee3.json",
+    "receipt_hash": "1f5690496eccd044ccdc7c7735c45b6e4a01bad63bacfdbd6b5d898cc901d40b",
+    "nearest": [
+      {
+        "id": "osm-node-3926469060",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.8431491,
+          34.0382199
+        ],
+        "source_ids": [
+          "node/3926469060"
+        ],
+        "distance_m": 6.4
+      },
+      {
+        "id": "osm-node-3926469160",
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "point": [
+          131.8425951,
+          34.0375536
+        ],
+        "source_ids": [
+          "node/3926469160"
+        ],
+        "distance_m": 85
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-3926469060"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-11754",
+    "name": "ディスカウントドラッグ コスモス 川手店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11754.html",
+    "address": "山口県周南市川手２丁目１０−１",
+    "city": "周南市",
+    "location_city": [
+      "周南市"
+    ],
+    "point": [
+      131.779584,
+      34.068946
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/f86206637306d3664fd83509.json",
+    "receipt_hash": "d9ff5e12e6aaea754685ceb5dfbbe8205166c3be0c3a545f9c400446be03fc1c",
+    "nearest": [
+      {
+        "id": "osm-node-8370495729",
+        "name": "ディスカウントドラッグ　コスモス",
+        "category": "drugstore",
+        "point": [
+          131.7797113,
+          34.0691799
+        ],
+        "source_ids": [
+          "node/8370495729"
+        ],
+        "distance_m": 28.5
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-8370495729"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-92340",
+    "name": "ディスカウントドラッグ コスモス 豊浦店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92340.html",
+    "address": "山口県下関市豊浦町川棚６３３２",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.926388,
+      34.150411
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/a3a86df7e19cfed2efa9b34d.json",
+    "receipt_hash": "20dbabd55298a07aa6dc9443e4df295c68dec40336b29c0dd2d4387c2393f756",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-12157",
+    "name": "ディスカウントドラッグ コスモス 富任店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/12157.html",
+    "address": "山口県下関市富任町２丁目３−４５",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.918761,
+      34.020192
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/919a0b9444ce155f9c9cf3f2.json",
+    "receipt_hash": "305ea4b999a9d5f89367c6adabdb3885a969e7b9829be67d9246cdafbf7ebafb",
+    "nearest": [
+      {
+        "id": "osm-way-1126862856",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          130.9188928,
+          34.0203292
+        ],
+        "source_ids": [
+          "way/1126862856"
+        ],
+        "distance_m": 19.5
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-1126862856"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-98700",
+    "name": "ディスカウントドラッグ コスモス 長府店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98700.html",
+    "address": "山口県下関市長府才川１丁目５７−５",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      131.012078,
+      34.027497
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/944091d0f2ae1965c4a77c6b.json",
+    "receipt_hash": "34a1d476b13436c6b610528d4f13cb9f659b1b50c88dd11125870cebcfe86c74",
+    "nearest": [
+      {
+        "id": "civic-care-3570103329-23d788548f",
+        "name": "アイユウの苑 ゆめタウン ショートステイ",
+        "category": "social_facility",
+        "point": [
+          131.012833,
+          34.027565
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:224"
+        ],
+        "distance_m": 70
+      },
+      {
+        "id": "civic-care-3590106021-5ebc599bb2",
+        "name": "アイユウの苑 ゆめタウン",
+        "category": "social_facility",
+        "point": [
+          131.012833,
+          34.027565
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1071"
+        ],
+        "distance_m": 70
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-96980",
+    "name": "ディスカウントドラッグ コスモス 王喜店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96980.html",
+    "address": "山口県下関市王喜本町４丁目３−１９",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      131.049316,
+      34.066807
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/e367ef2cac05fdfa664712d3.json",
+    "receipt_hash": "832e9cfce3a4725f59110a13aad9b5c8bf4981d726dd415682e3db77494aeedf",
+    "nearest": [
+      {
+        "id": "osm-node-4817157852",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.0491151,
+          34.0667058
+        ],
+        "source_ids": [
+          "node/4817157852"
+        ],
+        "distance_m": 21.7
+      },
+      {
+        "id": "osm-node-4817157854",
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "point": [
+          131.0490991,
+          34.0665396
+        ],
+        "source_ids": [
+          "node/4817157854"
+        ],
+        "distance_m": 35.8
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4817157852"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-98588",
+    "name": "ディスカウントドラッグ コスモス 秋根東店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98588.html",
+    "address": "山口県下関市秋根東町７−１７",
+    "city": "下関市",
+    "location_city": [
+      "下関市"
+    ],
+    "point": [
+      130.954336,
+      34.009179
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/c8273770c27996fe8cb38dff.json",
+    "receipt_hash": "3ff580a2b555319cc880e12e5c7b91e008c90ce70627d629e1b1f21b26bdb15a",
+    "nearest": [
+      {
+        "id": "civic-care-3570102768-c567a5e122",
+        "name": "あみいケアサポート",
+        "category": "social_facility",
+        "point": [
+          130.954544,
+          34.009502
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:852"
+        ],
+        "distance_m": 40.7
+      },
+      {
+        "id": "civic-care-3570102735-7533e6cf1e",
+        "name": "あみいデイサービス新下関",
+        "category": "social_facility",
+        "point": [
+          130.954544,
+          34.009502
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1482"
+        ],
+        "distance_m": 40.7
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-97154",
+    "name": "ディスカウントドラッグ コスモス 丸河内店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97154.html",
+    "address": "山口県山陽小野田市丸河内１０３２−５",
+    "city": "山陽小野田市",
+    "location_city": [
+      "山陽小野田市"
+    ],
+    "point": [
+      131.184214,
+      33.9781
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/6ba8218b0f68d51e607a0697.json",
+    "receipt_hash": "19f1236c6007c8fae741bf35ee0392445efe612ba65a04df042b634501017baf",
+    "nearest": [
+      {
+        "id": "cosmos-marugouchi",
+        "name": "コスモス丸河内店",
+        "category": "drugstore",
+        "point": [
+          131.1841872,
+          33.9782029
+        ],
+        "source_ids": [
+          "node/9472329358"
+        ],
+        "distance_m": 11.7
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "cosmos-marugouchi"
+    ],
+    "reason": "既存の店別公式URL一致。小野田の既存建物ポリゴンを維持。"
+  },
+  {
+    "id": "official-cosmos-92722",
+    "name": "ディスカウントドラッグ コスモス 田布施店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/92722.html",
+    "address": "山口県熊毛郡田布施町中央南２−７",
+    "city": "田布施町",
+    "location_city": [
+      "田布施町"
+    ],
+    "point": [
+      132.041876,
+      33.953383
+    ],
+    "hours": "9:00〜20:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/56e60ab0457e04cb9080a752.json",
+    "receipt_hash": "6f65ef35e698555604b6bf11772b4057cf02defdef8ee7af637125093e88b653",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-96812",
+    "name": "ディスカウントドラッグ コスモス 花岡店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/96812.html",
+    "address": "山口県下松市末武上１８０６−２",
+    "city": "下松市",
+    "location_city": [
+      "下松市"
+    ],
+    "point": [
+      131.869184,
+      34.036145
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/60c0cb8b304b6dbd649794ad.json",
+    "receipt_hash": "56b75b5e2aa7cd9cbb4cef9b5b93bb43743ce6c29a795429a75d15f0f23313fa",
+    "nearest": [
+      {
+        "id": "osm-node-4038113306",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.869401,
+          34.0361617
+        ],
+        "source_ids": [
+          "node/4038113306"
+        ],
+        "distance_m": 20.1
+      },
+      {
+        "id": "civic-care-3570700876-0f6a9ffe4b",
+        "name": "のんびり村 花岡",
+        "category": "social_facility",
+        "point": [
+          131.870178,
+          34.036152
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1117"
+        ],
+        "distance_m": 91.7
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4038113306"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "id": "official-cosmos-97970",
+    "name": "ディスカウントドラッグ コスモス 西岐波店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97970.html",
+    "address": "山口県宇部市西岐波２４４９−１",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.305973,
+      33.966033
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/22dd7159ed406456c8925cc5.json",
+    "receipt_hash": "216a1bf192cc8e5118bda1ade940da2dad0eeec729fc05fb80c8d883d21e44de",
+    "nearest": [
+      {
+        "id": "official-tsuruha-3677",
+        "name": "ウォンツ 宇部西岐波店",
+        "category": "drugstore",
+        "point": [
+          131.30556983053913,
+          33.96595891295839
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "現行の公式店舗名・住所・店舗代表点を確認して掲載しました。開店日の確認とは区別しています。",
+          "sources": [
+            {
+              "title": "現行の公式店舗案内",
+              "url": "https://shop.tsuruha-g.com/3677"
+            }
+          ],
+          "limits": [
+            "公式サイトの掲載内容を確認した記録で、営業時間のリアルタイム保証ではありません。",
+            "店舗検索65掲載を11併設薬局と54店舗に照合しています。",
+            "運営会社の店舗ページに明記された当該店舗の座標（JSON-LD）。地図の画面中心ではありません。入口・徒歩到達性は未確認です。"
+          ]
+        },
+        "source_ids": [
+          "official:tsuruha:3677"
+        ],
+        "distance_m": 38.1
+      },
+      {
+        "id": "official-watts-51608",
+        "name": "ワッツウィズ宇部西岐波ウォンツ店",
+        "category": "variety_store",
+        "point": [
+          131.3055625112776,
+          33.96598586059922
+        ],
+        "review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-25",
+          "summary": "運営会社の店舗一覧・住所・店舗別地図を照合し、店内の100円ショップとして追加。入居先の営業状態は変更していません。",
+          "sources": [
+            {
+              "title": "運営会社の現行店舗紹介・店舗別地図",
+              "url": "https://www.watts-jp.com/shop/51608/"
+            }
+          ],
+          "limits": [
+            "運営会社が店舗名に対応付けた代表点です。店舗入口・館内動線・バス停からの徒歩到達性は未確認です。",
+            "公式掲載の確認であり、実開店日やリアルタイム営業を確定するものではありません。",
+            "店内売場（公式区分：小型店）。入居先と独立した入口があるという意味ではありません。"
+          ]
+        },
+        "source_ids": [
+          "official:watts:51608"
+        ],
+        "distance_m": 38.2
+      }
+    ],
+    "action": "hold",
+    "facility_ids": [],
+    "reason": "ウォンツ・併設Wattsと約38m差。別敷地か位置差かを店別地図で照合する。"
+  },
+  {
+    "id": "official-cosmos-94313",
+    "name": "ディスカウントドラッグ コスモス 小松原店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94313.html",
+    "address": "山口県宇部市小松原町２丁目６−１０",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.239837,
+      33.961922
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/b48ae1328357d8d9336d8916.json",
+    "receipt_hash": "094e47469885f32c5e18edb0ab29513c308ffa029bf9f5071bcaba82719d2382",
+    "nearest": [
+      {
+        "id": "osm-way-560979799",
+        "name": "ディスカウントドラッグコスモス 小松原店",
+        "category": "drugstore",
+        "point": [
+          131.2401139,
+          33.9619995
+        ],
+        "source_ids": [
+          "way/560979799"
+        ],
+        "distance_m": 26.9
+      }
+    ],
+    "action": "existing",
+    "facility_ids": [
+      "osm-way-560979799"
+    ],
+    "reason": "既存支店名と地点を照合済み。表示の実質変更なしで今回訂正数に含めない。"
+  },
+  {
+    "id": "official-cosmos-10719",
+    "name": "ディスカウントドラッグ コスモス 北琴芝店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10719.html",
+    "address": "山口県宇部市北琴芝２丁目１５−８",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.257453,
+      33.959195
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/1c5008e8a751c2642d63c5b9.json",
+    "receipt_hash": "2c521a314a6a8ba7588affe1e746f8c455bbdc33443dea488e8d5f23b1c77cdf",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-98403",
+    "name": "ディスカウントドラッグ コスモス 神原店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/98403.html",
+    "address": "山口県宇部市神原町２丁目１−８",
+    "city": "宇部市",
+    "location_city": [
+      "宇部市"
+    ],
+    "point": [
+      131.260191,
+      33.949929
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/1dfcf306ec5abf68d74f026d.json",
+    "receipt_hash": "0610169f5f77949d567f5ea425f24228b78a9d4cf6a00cedf502652e427c1df3",
+    "nearest": [
+      {
+        "id": "osm-way-549154604",
+        "name": "ディスカウントドラッグコスモス",
+        "category": "drugstore",
+        "point": [
+          131.2603123,
+          33.9497501
+        ],
+        "source_ids": [
+          "way/549154604"
+        ],
+        "distance_m": 22.8
+      },
+      {
+        "id": "osm-way-755592069",
+        "name": "焼肉 蔵元",
+        "category": "restaurant",
+        "point": [
+          131.25982485,
+          33.94981315
+        ],
+        "source_ids": [
+          "way/755592069"
+        ],
+        "distance_m": 36.1
+      },
+      {
+        "id": "osm-way-549154610",
+        "name": "神原歯科医院",
+        "category": "dentist",
+        "point": [
+          131.25975340000002,
+          33.950046799999996
+        ],
+        "source_ids": [
+          "way/549154610"
+        ],
+        "distance_m": 42.4
+      },
+      {
+        "id": "osm-way-549154614",
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "point": [
+          131.2596706,
+          33.950482
+        ],
+        "source_ids": [
+          "way/549154614"
+        ],
+        "distance_m": 77.9
+      },
+      {
+        "id": "osm-node-5412395602",
+        "name": "ファミリーマート",
+        "category": "convenience",
+        "point": [
+          131.2601624,
+          33.9506948
+        ],
+        "source_ids": [
+          "node/5412395602"
+        ],
+        "distance_m": 85
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-way-549154604"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  },
+  {
+    "name": "室の木",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/97819.html",
+    "hold": "HTTP 403",
+    "action": "hold",
+    "facility_ids": [],
+    "reason": "公式店別ページHTTP403。再試行せず地点未確認として保持。",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/1bde91137f9e048b35680860.json",
+    "receipt_hash": "655ce9cb9076f0b2265bd0ec8b52539b291fc60576ee9453cbc224d6df725835"
+  },
+  {
+    "id": "official-cosmos-94252",
+    "name": "ディスカウントドラッグ コスモス 周東店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/94252.html",
+    "address": "山口県岩国市周東町下久原６０４−２",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.058072,
+      34.090621
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/84fdfc255f4c310a3951ca4e.json",
+    "receipt_hash": "3a4b47922fb6297c3a9015322e4f2fee1b091ce83967c83afb2007e45cb2ef5b",
+    "nearest": [
+      {
+        "id": "civic-care-3570801070-f054d34dc2",
+        "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター周東",
+        "category": "social_facility",
+        "point": [
+          132.057373,
+          34.090099
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:11"
+        ],
+        "distance_m": 86.7
+      },
+      {
+        "id": "civic-care-3570802128-86fac32e9a",
+        "name": "西日本医療サービス株式会社 岩国営業所",
+        "category": "social_facility",
+        "point": [
+          132.057373,
+          34.090099
+        ],
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:843",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1153"
+        ],
+        "distance_m": 86.7
+      },
+      {
+        "id": "civic-care-3570801146-abe3239ed9",
+        "name": "社会福祉法人岩国市社会福祉協議会社協介護相談センター周東",
+        "category": "social_facility",
+        "point": [
+          132.057373,
+          34.090099
+        ],
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:508"
+        ],
+        "distance_m": 86.7
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-10764",
+    "name": "ディスカウントドラッグ コスモス 玖珂店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/10764.html",
+    "address": "山口県岩国市玖珂町１１１６−１",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.087746,
+      34.095156
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/a4f4f9b3e018f1676a8ad52e.json",
+    "receipt_hash": "1fec2ef13b5409ef741a0cd62b04bf1ec7bfb4972962b17203319b8bc01ff741",
+    "nearest": [],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-11594",
+    "name": "ディスカウントドラッグ コスモス 旭町店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/11594.html",
+    "address": "山口県岩国市旭町２−９−５３",
+    "city": "岩国市",
+    "location_city": [
+      "岩国市"
+    ],
+    "point": [
+      132.227011,
+      34.161015
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/e606911983c80ed1e24efc1b.json",
+    "receipt_hash": "6363621e79761b19ed373662624ce5a1c91e340b830eb2886efda9ff995ef59e",
+    "nearest": [
+      {
+        "id": "osm-node-6194948464",
+        "name": "セブン-イレブン 岩国旭町店",
+        "category": "convenience",
+        "point": [
+          132.2268239,
+          34.1605659
+        ],
+        "source_ids": [
+          "node/6194948464"
+        ],
+        "distance_m": 52.8
+      }
+    ],
+    "action": "add",
+    "facility_ids": [],
+    "reason": "公式の現行支店名・住所・店舗固有GeoCoordinatesが一致。既存全地図・追加済み店舗・同名/公式URLを比較し未掲載。"
+  },
+  {
+    "id": "official-cosmos-91558",
+    "name": "ディスカウントドラッグ コスモス 吉敷店",
+    "url": "https://www.cosmospc.co.jp/shop/chugoku/yamaguchi/91558.html",
+    "address": "山口県山口市維新公園３丁目７−７",
+    "city": "山口市",
+    "location_city": [
+      "山口市"
+    ],
+    "point": [
+      131.441513,
+      34.15512
+    ],
+    "hours": "10:00〜21:00",
+    "note": "",
+    "receipt": "outputs/facility-multi-chain-20260926/sanitized/be22d156b658dbb67004c745.json",
+    "receipt_hash": "cf25a408e428ddd086a47b9c1efa347ade12880f4a6e510ca2a3f7f433feaa24",
+    "nearest": [
+      {
+        "id": "osm-node-4101056002",
+        "name": "コスモス",
+        "category": "drugstore",
+        "point": [
+          131.4416044,
+          34.1551712
+        ],
+        "source_ids": [
+          "node/4101056002"
+        ],
+        "distance_m": 10.2
+      }
+    ],
+    "action": "update",
+    "facility_ids": [
+      "osm-node-4101056002"
+    ],
+    "reason": "元のブランド・店舗種別と50m以内の公式固有点、支店住所の地域を照合。元ID・元座標を維持して欠けた支店名を補完。"
+  }
+]

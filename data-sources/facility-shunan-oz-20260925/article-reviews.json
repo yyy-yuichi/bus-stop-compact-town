@@ -1,0 +1,826 @@
+[
+  {
+    "article_key": "ube-83294",
+    "source_body_hash": "81b7013a8e1fb276db7994ef26fcc1447a01af54bda5209b233410a4b0ab9c5e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "宇部店の閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "ube-83294:oz-ube",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-09-23",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。運営会社の宇部店・下松瑞穂店告知で宇部店の閉店日を確認。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/22/giftoz_ubeshop2026/",
+          "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119852",
+    "source_body_hash": "b8ddbc15714e2065d04c5482d4ab0fa4824836b9585622156053ba12e95a41e9",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "下松瑞穂店の閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-119852:oz-kudamatsu",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-09-23",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。運営会社の支店別告知と一致。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/24/ozkudamatsu/",
+          "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83212",
+    "source_body_hash": "4c29e75e4db4147f7712103b3023bddfbdaeb15ba68eda101db3560103031275",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "本文の宇部店と下松瑞穂店、2支店の閉店を列挙。",
+    "events": [
+      {
+        "event_id": "ube-83212:oz-ube",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-09-23",
+        "reason": "同じ宇部店の閉店。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/05/giftgalleryoz_ube0923/",
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/22/giftoz_ubeshop2026/",
+          "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/"
+        ],
+        "duplicate_of": "ube-83294:oz-ube"
+      },
+      {
+        "event_id": "ube-83212:oz-kudamatsu",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-09-23",
+        "reason": "同じ下松瑞穂店の閉店。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/05/giftgalleryoz_ube0923/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/24/ozkudamatsu/",
+          "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/"
+        ],
+        "duplicate_of": "shunan-119852:oz-kudamatsu"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-613336",
+    "source_body_hash": "108e11e106d33928217786cc211e373e561880f3079d90a66757acc96aa08930",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "宇部店閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "kaiten-613336:oz-ube",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-09-23",
+        "reason": "宇部店の同じ閉店。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/giftgalleryoz-ube/",
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/22/giftoz_ubeshop2026/",
+          "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/"
+        ],
+        "duplicate_of": "ube-83294:oz-ube"
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-31552",
+    "source_body_hash": "d3f01aceb5466213edc8d3295dff10e4cf6bae823c4c59716407ac114d9c6c9a",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "防府店閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "yamaguchi-31552:oz-hofu",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2024-05-31",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。店頭告知写真と2024年記事を照合。旧公式ページ404は閉店根拠にしない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/05/11/gift_ozshop202405/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/05/IMG_4917.jpeg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119439",
+    "source_body_hash": "412fe625ce89488dafb570290893ec96ecb2c93770c9e2be4c3e4a7addbfb743",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "ラ・シェールの閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-119439:lachere",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-06-21",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。自店の6月22日投稿が前日6月21日の営業終了を明記。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/14/lachere_cafe/",
+          "https://www.instagram.com/lachere_cafe/p/DZ4WWLynZa3/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119313",
+    "source_body_hash": "14fad991c64497744fd08acb22a116b903c3c3d946c1a4abde7dff80b03dbbc4",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "シュヴェーネ閉店1件。店頭告知の月単位と読者の6月29日情報を区別。",
+    "events": [
+      {
+        "event_id": "shunan-119313:schwane",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。店頭告知は令和8年6月末まで。閉店日を6月29日や6月30日と断定せず月情報として記録。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/05/schwane/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/07/IMG_20260703_091120-1280x960.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119510",
+    "source_body_hash": "9f7cf2434fe2cb956a11cc10a5cac088335d894747ff119640446bbf94177807",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "6月まとめのラ・シェールとシュヴェーネ、2店を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-119510:lachere",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-06-21",
+        "reason": "ラ・シェールの同じ閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/21/2026-6-shunan-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/14/lachere_cafe/",
+          "https://www.instagram.com/lachere_cafe/p/DZ4WWLynZa3/"
+        ],
+        "duplicate_of": "shunan-119439:lachere"
+      },
+      {
+        "event_id": "shunan-119510:schwane",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "シュヴェーネの同じ月単位の閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/21/2026-6-shunan-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/05/schwane/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/07/IMG_20260703_091120-1280x960.jpg"
+        ],
+        "duplicate_of": "shunan-119313:schwane"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119492",
+    "source_body_hash": "0acc1f30af7b0641c31f300d1a89751bdf16e553067370c219e50657fa2c666e",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "とらちゃん閉店と、同一店の旧名開店・改称の背景3件を区別。",
+    "events": [
+      {
+        "event_id": "shunan-119492:torachan",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-12606873239"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2026-08-15",
+        "reason": "自店の8月7日告知で8月15日閉店を確認。旧名ジューシーのID・座標を保持し閉店更新。",
+        "source_urls": [
+          "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/"
+        ]
+      },
+      {
+        "event_id": "shunan-119492:juicy-opening-history",
+        "event_type": "opening",
+        "facility_ids": [
+          "osm-node-12606873239"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "2024年4月開店という背景記述。既存の旧名IDを閉店履歴として維持するため営業店の新規追加は不要。実開店日は月のみの記述から生成しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/"
+        ]
+      },
+      {
+        "event_id": "shunan-119492:rename-history",
+        "event_type": "rename",
+        "facility_ids": [
+          "osm-node-12606873239"
+        ],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "同じ110区画での改称は報道と施設公式の検索抜粋で照合し閉店更新の名称に含めた。日付は未確認で、独立した日付付き改称や別店舗追加を作らない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/",
+          "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E3%81%A8%E3%82%89%E3%81%A1%E3%82%83%E3%82%93/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-101155",
+    "source_body_hash": "e61eda11c082461c422661ab7b44e3858f1f05c06df543e363d0553cb2268d18",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "Shoji開店と追記された旧入居店訂正を列挙。料理紹介は施設変更ではない。",
+    "events": [
+      {
+        "event_id": "shunan-101155:shoji-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。記事は2024年9月19日開店を報道するが、現在は自店告知で閉店を確認。過去の開店記事から営業中として追加しない。日付は現行施設の開店日へ反映しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/"
+        ]
+      },
+      {
+        "event_id": "shunan-101155:predecessor-correction",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "記事追記は「シェーク跡」を訂正し、お重と焼肉ドラゴンに言及。Shojiとシェークを同じ店舗や座標として結び付けない。過去入居順の曖昧な打消し表示から移転イベントを作らない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119951",
+    "source_body_hash": "c1ba0af19c65b2393f5c1c9b477ad252ba871c719243c4a0ac586a39ddba1aee",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "Shojiの8月16日閉店と2024年9月開店の背景を列挙。契約終了8月末を最終営業日と混同しない。",
+    "events": [
+      {
+        "event_id": "shunan-119951:shoji",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-08-16",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。自店7月31日投稿が8月16日閉店を明記。8月31日投稿は契約終了の報告。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/05/shoji-2/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/",
+          "https://www.instagram.com/shoji_0442/p/DcuZoXtvzXE/"
+        ]
+      },
+      {
+        "event_id": "shunan-119951:shoji-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "閉店済みShojiの同じ過去開店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/05/shoji-2/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/"
+        ],
+        "duplicate_of": "shunan-101155:shoji-opening"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-604989",
+    "source_body_hash": "cb6a19de0256090e9075d5505672fc24a6c598cd86db01ac81113eb65ce292ca",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "シュープラザ周南久米店の閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "kaiten-604989:shoes",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-08-16",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。千代田の店舗公式データに8月16日をもって閉店した旨がある。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/shoesplaza-at-shunankume/",
+          "https://stores.chiyodagrp.co.jp/store/39227.html"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119838",
+    "source_body_hash": "d22d687f9e916d12ee1838de664eec0355a6b418f40bade89d9530e7a3939165",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "かざみどりサンリブ下松店の閉店1件を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-119838:kazamidori",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-08-31",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。店頭告知写真の8月31日と記事年2026年を照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/22/kazamidori-3/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260821_1505242-1280x960.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-521041",
+    "source_body_hash": "a26a05f05a73971062e51436a8469edaaaff22e43b7344eaaa8a759e3130caf2",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "VANSANの2024年開店1件を列挙。現在の後継店情報まで照合。",
+    "events": [
+      {
+        "event_id": "kaiten-521041:vansan-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。2024年10月11日開店の過去報道。現在は同住所のITTOKUが自店案内を掲載しており、VANSANを現在営業中として追加しない。過去実開店日は一次告知未取得で日付確定扱いにしない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-120037",
+    "source_body_hash": "add54316a916075e865d4a3dfa5461da576e6b5838450f27dffb838fbc88eca7",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "VANSAN閉店と後継ITTOKU開店の2件を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-120037:vansan",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。報道に自店LINE通知の引用と8月31日閉店情報があるが、元通知自体は未取得。現在同住所にITTOKUの公式案内を確認。閉店日を一次検証済みとせず、地図の変更対象がないという判定に限る。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ]
+      },
+      {
+        "event_id": "shunan-120037:ittoku",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-ittoku-shunan-heiwadori"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2026-09-16",
+        "reason": "店自身の現行案内、9/16 OPEN表記、2026年9月18日記事の年・店舗名を照合。公式JSON-LDの店名・住所・geoを採用し、近くの歯科と別IDで追加。",
+        "source_urls": [
+          "https://ya55808.gorp.jp/",
+          "https://www.hotpepper.jp/strJ003917267/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119953",
+    "source_body_hash": "cfc8274414918f9e58964c9a9f748d9c631a8c2e0117d023e192f21548c701af",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "VANSAN閉店、過去開店、後継店予告の3件を列挙。元LINE未取得の制約を残す。",
+    "events": [
+      {
+        "event_id": "shunan-119953:vansan",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ旧店。閉店日が未一次検証である制約も継承。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/",
+          "https://ya55808.gorp.jp/"
+        ],
+        "duplicate_of": "shunan-120037:vansan"
+      },
+      {
+        "event_id": "shunan-119953:vansan-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ2024年の開店背景。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+          "https://kaiten-heiten-24.com/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ],
+        "duplicate_of": "kaiten-521041:vansan-opening"
+      },
+      {
+        "event_id": "shunan-119953:ittoku",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-ittoku-shunan-heiwadori"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2026-09-16",
+        "reason": "本文末の同じ場所の後継予告を後続記事と現在のITTOKU公式で解決。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/",
+          "https://www.hotpepper.jp/strJ003917267/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/"
+        ],
+        "duplicate_of": "shunan-120037:ittoku"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119996",
+    "source_body_hash": "4e0158cadd58710ba5fcbed710d14ff3c93f842d912da5fd0c74c78f9432c049",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "8月まとめにある5店舗すべてを列挙。契約終了日・同名店との混同を避ける。",
+    "events": [
+      {
+        "event_id": "shunan-119996:torachan",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-12606873239"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-15",
+        "reason": "とらちゃん8月15日閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+          "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/"
+        ],
+        "duplicate_of": "shunan-119492:torachan"
+      },
+      {
+        "event_id": "shunan-119996:shoji",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-16",
+        "reason": "Shoji8月16日閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/05/shoji-2/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/",
+          "https://www.instagram.com/shoji_0442/p/DcuZoXtvzXE/"
+        ],
+        "duplicate_of": "shunan-119951:shoji"
+      },
+      {
+        "event_id": "shunan-119996:shoes",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-16",
+        "reason": "シュープラザ8月16日閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+          "https://kaiten-heiten-24.com/shoesplaza-at-shunankume/",
+          "https://stores.chiyodagrp.co.jp/store/39227.html"
+        ],
+        "duplicate_of": "kaiten-604989:shoes"
+      },
+      {
+        "event_id": "shunan-119996:kazamidori",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-31",
+        "reason": "かざみどり8月31日閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/22/kazamidori-3/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260821_1505242-1280x960.jpg"
+        ],
+        "duplicate_of": "shunan-119838:kazamidori"
+      },
+      {
+        "event_id": "shunan-119996:vansan",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "VANSANの閉店報道。日付の一次確認は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ],
+        "duplicate_of": "shunan-120037:vansan"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119511",
+    "source_body_hash": "bff0afe06962681ec9e8730ee6f35f5cd1227a47cc916298407d26d40560f9de",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "第三スターの閉店1件を列挙。スター本店・第二スターの紹介は第三スター閉店の対象外。",
+    "events": [
+      {
+        "event_id": "shunan-119511:dai3star",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": "2026-07-14",
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。店頭告知の店舗名と令和8年7月14日を視認確認。他のスター店へ閉店を適用しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/22/dai3star/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/07/IMG_1955-1-1280x960.jpeg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-92674",
+    "source_body_hash": "2ce28674ff3d45937dd6e927d325757669cd17ae1c5de7e8a850e38f06d2e7ea",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "シェーク閉店1件を列挙。店主の私的事情は記録対象外。",
+    "events": [
+      {
+        "event_id": "shunan-92674:shake",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。2024年6月27日閉店を店主への取材記事が報じる。Shojiの旧所在地と同一視しない。独立した一次日付告知を取得した扱いにしない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/05/shake-3/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-99289",
+    "source_body_hash": "3863cb62428c94a649165a5ed293193d93a5f9262b210bb7afad4f0ae99b81e7",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "Shoji開店予定、シェーク閉店、旧入居店の誤認を列挙し訂正記事へ接続。",
+    "events": [
+      {
+        "event_id": "shunan-99289:shoji-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "開店予定は後続記事と現在の閉店告知まで照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/08/24/shoji/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/"
+        ],
+        "duplicate_of": "shunan-101155:shoji-opening"
+      },
+      {
+        "event_id": "shunan-99289:shake",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "シェークの同じ閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/08/24/shoji/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/05/shake-3/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/"
+        ],
+        "duplicate_of": "shunan-92674:shake"
+      },
+      {
+        "event_id": "shunan-99289:predecessor-correction",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "後続記事が跡地の誤認を訂正。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/08/24/shoji/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/"
+        ],
+        "duplicate_of": "shunan-101155:predecessor-correction"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-95765",
+    "source_body_hash": "6c3805203ebe35d7654dd648ba577427bb7f75ec0352e4aae94ece836aa91128",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "VANSANの2024年開店予定1件。現在の後継店情報まで接続。",
+    "events": [
+      {
+        "event_id": "shunan-95765:vansan-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同じ開店。過去予定から現在営業中を作らない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/26/italian-kitchen-vansan/",
+          "https://kaiten-heiten-24.com/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ],
+        "duplicate_of": "kaiten-521041:vansan-opening"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119965",
+    "source_body_hash": "4cba4537884b2f2c724fa4e08456b2f91455501d6ac58141d439058b3ced0207",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "とらちゃん閉店、しづくや開店予定、現行掲載の3イベントを分離。",
+    "events": [
+      {
+        "event_id": "shunan-119965:torachan",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-12606873239"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-15",
+        "reason": "旧入居店の同じ閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/08/shizqu_ya/",
+          "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/"
+        ],
+        "duplicate_of": "shunan-119492:torachan"
+      },
+      {
+        "event_id": "shunan-119965:shizqu-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-shizquya-tokuyama-deck"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "9月18日開店予定の報道と同日の自店商品案内は確認。ただし実開店を明言した一次告知が未取得のため日付は未確定。現行掲載の確認と分離。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/08/shizqu_ya/",
+          "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/",
+          "https://www.instagram.com/shizqu_ya/p/DddDekyif8C/"
+        ]
+      },
+      {
+        "event_id": "shunan-119965:shizqu-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-shizquya-tokuyama-deck"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "施設公式の現行テナント案内、自店の名称・所在地・電話、Googleの同名店舗点を照合。旧店のID・座標を転用せず追加。区画番号の表記差を制約に残す。",
+        "source_urls": [
+          "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/",
+          "https://www.google.com/maps/place/%E7%94%98%E5%91%B3%E5%87%A6+%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/@34.0506127,131.8041195,17z/data=!3m1!4b1!4m6!3m5!1s0x3544e7ad64bce933:0x62514faf955cea64!8m2!3d34.0506127!4d131.8041195!16s%2Fg%2F11zx4fh1hb",
+          "https://www.instagram.com/shizqu_ya/p/DddDekyif8C/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-100787",
+    "source_body_hash": "393fe5a85d7be8eb44b9a16c62c4df6b8bf0e647be2f4eed772d87600f3f096f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "並木から徳ちゃんへの改称、改装準備の一時休業、現在の鼓海店掲載を分離。",
+    "events": [
+      {
+        "event_id": "shunan-100787:rename",
+        "event_type": "rename",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "旧名並木青果市場店・新名徳ちゃんとも既存IDなし。2024年9月21日の改称報道と現在の自店名は整合するが、元動画の特定・取得は未了。現行掲載として別イベントで反映し、日付付き改称を生成しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/20/tokuchan/",
+          "https://toku-chan.com/store"
+        ]
+      },
+      {
+        "event_id": "shunan-100787:renovation",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reason": "2024年9月20日の現地取材時の改装準備休業。現在は自店店舗案内があるため過去の一時休業を現行状態に適用しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/20/tokuchan/",
+          "https://toku-chan.com/store"
+        ]
+      },
+      {
+        "event_id": "shunan-100787:tokuchan-current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-tokuchan-kokai"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "鼓海1丁目324-18の自店案内と同サイト埋込地図の店名・CID付きマーカーを照合。地図表示中心を除外し、開店日は未確認で掲載。",
+        "source_urls": [
+          "https://toku-chan.com/store"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119994",
+    "source_body_hash": "349b2840b85ab7b94ec46ba87223a8ce123eaa3a3fed04a5540a680f4e95c312",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-25",
+    "inventory_reason": "Shoji閉店、飯島町新店舗と鼓海店の関係、関連記事の改称背景を列挙。",
+    "events": [
+      {
+        "event_id": "shunan-119994:shoji",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2026-08-16",
+        "reason": "Shojiの同じ閉店。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/12/tokuchan-2/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/05/shoji-2/",
+          "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/",
+          "https://www.instagram.com/shoji_0442/p/DcuZoXtvzXE/"
+        ],
+        "duplicate_of": "shunan-119951:shoji"
+      },
+      {
+        "event_id": "shunan-119994:tokuchan-iijima",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "飯島町に居酒屋・拉麺徳ちゃんの文字があるが、現行の自店サイト・SNSから開店、移転、新支店のいずれかを確定できない。鼓海店を移転済みにせず、飯島町へ旧Shojiの点も転用しない。追加・関係判定を保留。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/12/tokuchan-2/",
+          "https://toku-chan.com/store",
+          "https://www.instagram.com/ra_mentokuchan/"
+        ]
+      },
+      {
+        "event_id": "shunan-119994:rename-background",
+        "event_type": "rename",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "関連記事が扱う鼓海店の同じ旧名改称背景。飯島町への移転とは別。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/12/tokuchan-2/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/20/tokuchan/",
+          "https://toku-chan.com/store"
+        ],
+        "duplicate_of": "shunan-100787:rename"
+      }
+    ]
+  }
+]

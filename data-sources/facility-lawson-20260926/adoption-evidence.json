@@ -1,0 +1,575 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "d5f2f984c3e646de5489d74358226bbaa541cf4f6ce4485ead0c9ad85e692005",
+  "after_overlay_hash": "c8deb25a749003e539f3d412b8872a99acebd9b6eb0be1186251ddbde16783be",
+  "newly_added_ids": [
+    "official-lawson-385141",
+    "official-lawson-385187",
+    "official-lawson-377992",
+    "official-lawson-156050",
+    "official-lawson-207103",
+    "official-washhouse-706"
+  ],
+  "corrected_ids": [
+    "osm-way-552712571",
+    "osm-node-2253707359"
+  ],
+  "reviewed_inputs": [
+    {
+      "code": "377897",
+      "city": "光市",
+      "address": "山口県光市三井7丁目3-7",
+      "receipt": "1ee235b748f85990c4148946",
+      "date": null,
+      "id": "official-lawson-poplar-hikari-mii",
+      "name": "ローソン・ポプラ 光三井店",
+      "url": "https://www.areamarker.com/lawson/info/377897",
+      "category": "convenience",
+      "telephone": "0833-77-1235",
+      "extra_urls": [
+        "https://map.yahoo.co.jp/v3/place/wdtZiRVORtI",
+        "https://poplarretail.com/store/store-2620/"
+      ],
+      "limits": [
+        "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+        "記事の予定開店日は、現行掲載の確認から実施日確定へ昇格させない。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.9568101,
+        33.9913318
+      ],
+      "location": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。",
+      "existing": true
+    },
+    {
+      "code": "385141",
+      "city": "山口市",
+      "address": "山口県山口市滝町1-1 県庁厚生棟2階",
+      "receipt": "113d7ee16b9c4d73650497bb",
+      "date": "2026-03-23",
+      "id": "official-lawson-385141",
+      "name": "ローソン 山口県庁店",
+      "url": "https://www.areamarker.com/lawson/info/385141",
+      "category": "convenience",
+      "telephone": "083-902-7848",
+      "extra_urls": [
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.768259227443!2d131.46986926547282!3d34.186661335149005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544971d112c5621%3A0x1e30b1908736f8d0!2z44Ot44O844K944OzIOWxseWPo-ecjOW6geW6lw!5e0!3m2!1sja!2sjp!4v1774160290222!5m2!1sja!2sjp",
+        "https://www.lawson.co.jp/company/activity/topics/detail_jin/1520946_9112.html",
+        "https://www.pref.yamaguchi.lg.jp/press/339285.html"
+      ],
+      "limits": [
+        "県庁開庁日8:00～18:00。土日祝・年末年始休業。確認当日9月26日～27日も公式に休業と表示。常時利用できる店舗ではない。",
+        "2026年1月5日仮店舗営業、3月2日一部改修継続で新店舗営業、3月23日グランドオープンを区別。今回の開店日はグランドオープン。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.4703068,
+        34.1866594
+      ],
+      "location": "公式画面・公式事後報告の店名・住所・厚生棟2階という区画に一致するGoogle店舗代表点。県庁本庁や郵便局の点とは分離。"
+    },
+    {
+      "code": "385187",
+      "city": "宇部市",
+      "address": "山口県宇部市岬町3-6-3",
+      "receipt": "d65eba3ee911ad4d6f4f1529",
+      "date": null,
+      "id": "official-lawson-385187",
+      "name": "ローソン 宇部空港前店",
+      "url": "https://www.areamarker.com/lawson/info/385187",
+      "category": "convenience",
+      "telephone": "0836-35-5221",
+      "extra_urls": [
+        "https://map.yahoo.co.jp/v3/place/kYv3jvacvRs"
+      ],
+      "limits": [
+        "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+        "記事の予定開店日は、現行掲載の確認から実施日確定へ昇格させない。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.270813,
+        33.9327782
+      ],
+      "location": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。"
+    },
+    {
+      "code": "377992",
+      "city": "山口市",
+      "address": "山口県山口市若宮町2-23",
+      "receipt": "64a7a2e995a484e81743ac5a",
+      "date": null,
+      "id": "official-lawson-377992",
+      "name": "ローソン 山口若宮町店",
+      "url": "https://www.areamarker.com/lawson/info/377992",
+      "category": "convenience",
+      "telephone": "083-976-8380",
+      "extra_urls": [
+        "https://map.yahoo.co.jp/v3/place/htCDEiMMVJ-"
+      ],
+      "limits": [
+        "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+        "記事の予定開店日は、現行掲載の確認から実施日確定へ昇格させない。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.4566076,
+        34.1603468
+      ],
+      "location": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。"
+    },
+    {
+      "code": "156050",
+      "city": "山口市",
+      "address": "山口県山口市小郡みらい町1-1-10",
+      "receipt": "9fc68bf09a923019f42602fa",
+      "date": "2024-07-05",
+      "id": "official-lawson-156050",
+      "name": "ローソン 小郡インター店",
+      "url": "https://www.areamarker.com/lawson/info/156050",
+      "category": "convenience",
+      "telephone": "083-972-7811",
+      "extra_urls": [
+        "https://map.yahoo.co.jp/v3/place/wmjq3V9p1c6",
+        "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6402.jpeg",
+        "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg",
+        "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/",
+        "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg"
+      ],
+      "limits": [
+        "座標の出典は同名・同住所・同電話のYahoo!マップ。公式ローソン座標とは扱わない。",
+        "7月5日開店の店頭告知と2024年7月11日の実施後報道、旧店・新店が写る7月12日の写真で照合。",
+        "現在公式の住所は1-1-10。旧掲載や一部の媒体に1-1-15が残るが、現行公式の住所を採用。旧施設は約66m南で別IDとして閉店履歴を保持。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.4025916,
+        34.1193407
+      ],
+      "location": "現在の公式店舗画面の支店名・住所・電話に一致するYahoo!マップの店舗ID・道案内目的地の代表点。表示中心ではない。"
+    },
+    {
+      "code": "207103",
+      "city": "宇部市",
+      "address": "山口県宇部市中尾2-1-8",
+      "receipt": "54dcd6ddaa12acc6bda5e310",
+      "date": null,
+      "id": "official-lawson-207103",
+      "name": "ローソン 宇部中尾二丁目店",
+      "url": "https://www.areamarker.com/lawson/info/207103",
+      "category": "convenience",
+      "telephone": "0836-35-9113",
+      "extra_urls": [
+        "https://map.j-coin.jp/jcoinpay/spot/detail?code=S877805"
+      ],
+      "limits": [
+        "位置の出典はJ-Coin Pay加盟店検索。位置データには2023年更新とあるが、名称・住所・電話は今回の現行ローソン公式表示と一致。",
+        "2026年4月の休業・4月16日の再開実施日の一次履歴は未確認。現在の公式掲載と分けて保留。",
+        "代表点であり入口・売場・徒歩動線の測量ではない。公式画面の生の経路座標は測地系未確認のため変換・採用しない。"
+      ],
+      "point": [
+        131.265306,
+        33.966566
+      ],
+      "location": "現行ローソン公式画面と同名・同住所・同電話のJ-Coin Pay加盟店S877805の店舗座標。住所区画の座標や地図表示中心ではない。"
+    },
+    {
+      "id": "official-washhouse-706",
+      "code": "washhouse-706",
+      "name": "WASHハウス 山口若宮店",
+      "city": "山口市",
+      "address": "山口県山口市若宮町2-23",
+      "category": "laundry",
+      "url": "https://shop.wash-house.jp/detail/706/",
+      "extra_urls": [
+        "https://www.wash-house.jp/shop/detail.php?id=706"
+      ],
+      "point": [
+        131.456908,
+        34.1604687
+      ],
+      "date": null,
+      "location": "WASHハウス公式店舗詳細のStore JSON-LDに結びついた店舗固有座標。隣のローソンと同住所だが約31m離れた別棟を別カテゴリで掲載。",
+      "limits": [
+        "公式の現行掲載として反映。2024年8月の当初予定日・変更予定日から実施日を確定しない。",
+        "同敷地のローソンの座標を流用しない。店舗代表点であり入口精度は保証しない。"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "osm-way-552712571",
+      "name": "ローソン 宇部明神町一丁目店",
+      "city": "宇部市",
+      "date": "2026-03-31",
+      "summary": "元の支店タグで旧店舗を同定。令和8年3月31日20時の店頭閉店掲示と、2日後の看板撤去写真・新店舗案内を実見し、旧店を閉店補正。",
+      "urls": [
+        "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7154.jpeg",
+        "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7152.jpeg",
+        "https://ube-sanyoonoda.goguynet.jp/2026/04/03/lawson_ubeairport/"
+      ],
+      "limits": [
+        "宇部空港前の新店は別IDで掲載。旧ID・座標を新店へ移動しない。"
+      ]
+    },
+    {
+      "id": "osm-node-2253707359",
+      "name": "ローソン 小郡インター店（移転前）",
+      "city": "山口市",
+      "date": "2024-06-30",
+      "summary": "店頭の移転休業告知、旧店舗内ポストの固定地点、看板撤去後の旧店と営業する新店が同時に写った写真、移転後報道を照合。旧店を閉店補正。",
+      "urls": [
+        "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg",
+        "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg",
+        "https://www.postmap.org/map/414706",
+        "https://www.postmap.org/photo/1181111",
+        "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/"
+      ],
+      "limits": [
+        "旧店舗内ポストの地点と元施設点は10m以内。新店との約66mの違いを単なる位置誤差として吸収しない。",
+        "旧店の営業終了日6月30日は移転休業告知。7月12日の写真で旧店の撤去と新店の営業を事後確認。住所の新旧混在があるため旧施設住所は推測補完しない。"
+      ]
+    }
+  ],
+  "nearby": [
+    {
+      "id": "official-lawson-poplar-hikari-mii",
+      "point": [
+        131.9568101,
+        33.9913318
+      ],
+      "existing_match_distance_m": 5.0453615567305805,
+      "action": "verified_no_change"
+    },
+    {
+      "id": "official-lawson-385141",
+      "point": [
+        131.4703068,
+        34.1866594
+      ],
+      "same_category_within_100m": []
+    },
+    {
+      "id": "official-lawson-385187",
+      "point": [
+        131.270813,
+        33.9327782
+      ],
+      "same_category_within_100m": []
+    },
+    {
+      "id": "official-lawson-377992",
+      "point": [
+        131.4566076,
+        34.1603468
+      ],
+      "same_category_within_100m": []
+    },
+    {
+      "id": "official-lawson-156050",
+      "point": [
+        131.4025916,
+        34.1193407
+      ],
+      "same_category_within_100m": [
+        {
+          "id": "osm-node-2253707359",
+          "name": "ローソン",
+          "distance_m": 66.10876112083868
+        }
+      ]
+    },
+    {
+      "id": "official-lawson-207103",
+      "point": [
+        131.265306,
+        33.966566
+      ],
+      "same_category_within_100m": []
+    },
+    {
+      "id": "official-washhouse-706",
+      "point": [
+        131.456908,
+        34.1604687
+      ],
+      "same_category_within_100m": []
+    }
+  ],
+  "ogori_old_identity": {
+    "point": [
+      131.402246,
+      34.118831
+    ],
+    "distance_to_original_m": 6.784367501503905,
+    "old_facility": "osm-node-2253707359",
+    "new_facility": "official-lawson-156050",
+    "old_new_distance_m": 66.10876112083868,
+    "photo_interpretation": "2024-07-12の旧店ポスト投稿写真を実見。手前の旧店はブランド表示・売場撤去、奥に営業する新店が同時に写る。"
+  },
+  "case_findings": [
+    {
+      "case_id": "facility:official-lawson-poplar-hikari-mii:opening",
+      "name": "ローソン・ポプラ 光三井店",
+      "impact": "supplemental",
+      "reason": "現在の公式掲載は確認。2025年1月17日の開店実施日を裏付ける一次履歴は未取得。"
+    },
+    {
+      "case_id": "facility:official-lawson-385187:opening",
+      "name": "ローソン 宇部空港前店",
+      "impact": "supplemental",
+      "reason": "旧店舗の閉店と新店の現行掲載は反映。2026年4月10日8時の予定通りの開店実施日を示す一次履歴は未取得。"
+    },
+    {
+      "case_id": "facility:official-lawson-377992:opening",
+      "name": "ローソン 山口若宮町店",
+      "impact": "supplemental",
+      "reason": "現行公式掲載は反映済み。2024年8月1日の開店は記事の事前告知と事後報道にあるが、今回実施日を直接裏付ける一次原本は取得していない。"
+    },
+    {
+      "case_id": "facility:official-washhouse-706:opening",
+      "name": "WASHハウス 山口若宮店",
+      "impact": "supplemental",
+      "reason": "現行公式掲載は反映済み。記事には当初計画から2024年8月23日へ予定変更がある。実際の開店日を示す一次履歴は未取得。"
+    },
+    {
+      "case_id": "facility:official-lawson-207103:temporary_change",
+      "name": "ローソン 宇部中尾二丁目店",
+      "impact": "supplemental",
+      "reason": "2026年4月9日～15日休業と4月16日7時再開は事前告知。現行公式掲載を確認したが、当日の実施履歴は未取得。"
+    }
+  ],
+  "article_keys": [
+    "shunan-107065",
+    "kaiten-593553",
+    "ube-82361",
+    "yamaguchi-36606",
+    "yamaguchi-37107",
+    "yamaguchi-34659",
+    "ube-82425"
+  ],
+  "browser_observations": {
+    "recorded_at": "2026-09-26T02:20:14.086Z",
+    "method": "Read visible rendered official store pages through browser DOM snapshots; no hidden state.",
+    "coordinate_policy": "Raw official route latlon values differ from WGS84 named-place points by hundreds of metres. Their datum was not established and raw route values are not adopted or transformed. Named external points or explicit official JSON-LD WGS positions are separately attributed.",
+    "observed": [
+      {
+        "code": "385141",
+        "name": "山口県庁",
+        "address": "山口県山口市滝町１‐１",
+        "telephone": "083-902-7848",
+        "hours": "08:00 ~ 18:00",
+        "notice": "2026年09月26日〜2026年09月27日は休業期間です",
+        "url": "https://www.areamarker.com/lawson/info/385141"
+      },
+      {
+        "code": "385187",
+        "name": "宇部空港前",
+        "address": "山口県宇部市岬町３‐６‐３",
+        "telephone": "0836-35-5221",
+        "hours": "24時間営業",
+        "url": "https://www.areamarker.com/lawson/info/385187"
+      },
+      {
+        "code": "207103",
+        "name": "宇部中尾二丁目",
+        "address": "山口県宇部市中尾２‐１‐８",
+        "telephone": "0836-35-9113",
+        "hours": "24時間営業",
+        "url": "https://www.areamarker.com/lawson/info/207103"
+      },
+      {
+        "code": "377992",
+        "name": "山口若宮町",
+        "address": "山口県山口市若宮町２‐２３",
+        "telephone": "083-976-8380",
+        "hours": "24時間営業",
+        "url": "https://www.areamarker.com/lawson/info/377992"
+      },
+      {
+        "code": "156050",
+        "name": "小郡インター",
+        "address": "山口県山口市小郡みらい町１‐１‐１０",
+        "telephone": "083-972-7811",
+        "hours": "24時間営業",
+        "url": "https://www.areamarker.com/lawson/info/156050"
+      },
+      {
+        "code": "377897",
+        "name": "光三井",
+        "address": "山口県光市三井７丁目３番７号",
+        "telephone": "0833-77-1235",
+        "hours": "24時間営業",
+        "url": "https://www.areamarker.com/lawson/info/377897"
+      }
+    ]
+  },
+  "photos": [
+    {
+      "url": "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7154.jpeg",
+      "path": "outputs/facility-lawson-20260926/ube-old-closure.jpeg",
+      "sha256": "8cb6635f3760893f98aa71171815818f4075ee15dca78c8942645484882cc38d",
+      "visually_read": true,
+      "note": null
+    },
+    {
+      "url": "https://ube-sanyoonoda.goguynet.jp/wp-content/uploads/sites/176/2026/04/IMG_7152.jpeg",
+      "path": "outputs/facility-lawson-20260926/ube-old-after.jpeg",
+      "sha256": "c7a644a1fff8ed553350447a6865633bfee931f7278099846132fc456cdbf343",
+      "visually_read": true,
+      "note": null
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6478.jpeg",
+      "path": "outputs/facility-lawson-20260926/ogori-notice.jpeg",
+      "sha256": "e28b86762f3d41e42114f7cd32f1682812cd5690d75ffe86233b0f56616e98d8",
+      "visually_read": true,
+      "note": null
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/06/IMG_6402.jpeg",
+      "path": "outputs/facility-lawson-20260926/ogori-after.jpeg",
+      "sha256": "691d6de6b215a734acffdc0ac1ce5931b08b7a3e5fe3bd537d47a08503e6a2fa",
+      "visually_read": true,
+      "note": "新店開店予定の告知写真。実施後写真ではない。"
+    },
+    {
+      "url": "https://files.postmap.org/files/202407/1721052863_35276_414706_0T9Ne6OK.jpg",
+      "path": "outputs/facility-lawson-20260926/ogori-old-closed.jpg",
+      "sha256": "b9e2eca4ac9b7c7c0b6e61464c89db2fc08eaa8b939ed072c327aed61e309947",
+      "visually_read": true,
+      "note": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.768259227443!2d131.46986926547282!3d34.186661335149005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544971d112c5621%3A0x1e30b1908736f8d0!2z44Ot44O844K944OzIOWxseWPo-ecjOW6geW6lw!5e0!3m2!1sja!2sjp!4v1774160290222!5m2!1sja!2sjp",
+      "path": "outputs/facility-lawson-20260926/receipts/113d7ee16b9c4d73650497bb.json",
+      "status": 200,
+      "hash": "6916e9553acffac91044de8a0e12df3581f677218ba872170768020644b5679d"
+    },
+    {
+      "url": "https://www.lawson.co.jp/company/activity/topics/detail_jin/1520946_9112.html",
+      "path": "outputs/facility-lawson-20260926/receipts/1150cb6364bc749727e3d94d.json",
+      "status": 200,
+      "hash": "db77cd99e35318a5455d40732b12023999bb56cfde3415c6d38fd465b27fcff2"
+    },
+    {
+      "url": "https://mldata.lawson.co.jp/company/news/detail/1519873_2504.html",
+      "path": "outputs/facility-lawson-20260926/receipts/11666f1f935beff0cb5301ac.json",
+      "status": 200,
+      "hash": "5686326eed1d2a2eb1c62e1a8ed14c1952554adee7b724fbd0e6d8159c4718ef"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/wdtZiRVORtI",
+      "path": "outputs/facility-lawson-20260926/receipts/1ee235b748f85990c4148946.json",
+      "status": 200,
+      "hash": "d7b544a0fa5c2fa8e2a0ea27e4e10f0ae926c1499effde0bf653e2736715e2bb"
+    },
+    {
+      "url": "https://www.lawson.co.jp/company/activity/topics/tag/area/1379534_8947.html",
+      "path": "outputs/facility-lawson-20260926/receipts/1f5de8f062178de682d43823.json",
+      "status": 200,
+      "hash": "fd12ed00ad952ed7f721f9d956baa5e4804d61693691ddc9fb0f72d2ba483296"
+    },
+    {
+      "url": "https://poplarretail.com/store/store-2620/",
+      "path": "outputs/facility-lawson-20260926/receipts/40b5af6cba451451b9393330.json",
+      "status": 200,
+      "hash": "ac32fc4e36a6f36c4242fb3d2aa15b452c4057ef9efab41721d9f9614b7bbd8f"
+    },
+    {
+      "url": "https://bkss.co.jp/2024%E5%B9%B47%E6%9C%88/3613/",
+      "path": "outputs/facility-lawson-20260926/receipts/40d13a14166894fd8a01eb19.json",
+      "status": 200,
+      "hash": "0f054721bbc3ebbda41336e9dabfc9e4b038c9fe553fdfbbf165a9aa5c4ee0ff"
+    },
+    {
+      "url": "https://www.e-map.ne.jp/smt/lawson/inf/156050/?p_s1=%2Fsmt%2Flawson%2Ffw.htm%3F%26keyword%3D%E5%B0%8F%E9%83%A1%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC",
+      "path": "outputs/facility-lawson-20260926/receipts/4933f13b8b3b288286ebce55.json",
+      "status": 200,
+      "hash": "d70a0f705534e67799d69742193c5245c23c9fba6e81794a03b5df1ca1b5a2d6"
+    },
+    {
+      "url": "https://www.wash-house.jp/shop/detail.php?id=706",
+      "path": "outputs/facility-lawson-20260926/receipts/4f42f3fc646292c916cf6422.json",
+      "status": 200,
+      "hash": "8170a82caa19873b57bb02dbbacd935c280421256d09d0f0f5f6480102351829"
+    },
+    {
+      "url": "https://www.postmap.org/photo/1181111",
+      "path": "outputs/facility-lawson-20260926/receipts/529a49a757f6a7585b29fab5.json",
+      "status": 200,
+      "hash": "17f2db1cbccdf250fd1a238e8358124e69906c7e0ef8ef47ac56db0a6d219b25"
+    },
+    {
+      "url": "https://map.j-coin.jp/jcoinpay/spot/detail?code=S877805",
+      "path": "outputs/facility-lawson-20260926/receipts/54dcd6ddaa12acc6bda5e310.json",
+      "status": 200,
+      "hash": "c3343f7e390d78e6a44c9e402df6c4ee2d47aa016dca91e47870b259cec083ff"
+    },
+    {
+      "url": "https://www.pref.yamaguchi.lg.jp/press/339285.html",
+      "path": "outputs/facility-lawson-20260926/receipts/550d06afd5bfae819c0346fc.json",
+      "status": 200,
+      "hash": "14fdd0c7648b268ce0eb0923745590986cd131cce536fb34f117c4a52000d847"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/htCDEiMMVJ-",
+      "path": "outputs/facility-lawson-20260926/receipts/64a7a2e995a484e81743ac5a.json",
+      "status": 200,
+      "hash": "ca953d40cdc2866151f153b5af2e102e1eea9d7a6b5f0927439d82d503f214a5"
+    },
+    {
+      "url": "https://www.e-map.ne.jp/smt/lawson/inf/377992/",
+      "path": "outputs/facility-lawson-20260926/receipts/783596009ca872df312b9a8b.json",
+      "status": 200,
+      "hash": "cebdffc759cae15d4050220b33d96ee7d6ef6b0d4a359202ba31c0112c4c630f"
+    },
+    {
+      "url": "https://www.areamarker.com/lawson/info/385141",
+      "path": "outputs/facility-lawson-20260926/receipts/9608430674ec27232251433a.json",
+      "status": 200,
+      "hash": "6acaf08183c59c8b583f33aea99c09c1b1c1b2ed2aa794c73d48a1908471a1d9"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/wmjq3V9p1c6",
+      "path": "outputs/facility-lawson-20260926/receipts/9fc68bf09a923019f42602fa.json",
+      "status": 200,
+      "hash": "82e0b615cb8f69527b9762dd98a446157041b76552ad181783aaee4bd224bb86"
+    },
+    {
+      "url": "https://www.areamarker.com/lawson/info/207103?shopid=207103",
+      "path": "outputs/facility-lawson-20260926/receipts/a8b6f4900770a2a1bc794cb3.json",
+      "status": 200,
+      "hash": "d427dd264655444aae9623323219d411ad1e626282b2b150d99d098ebca95dab"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6616.067174071052%212d131.9516304441638%213d33.99167104271909%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x35451fabb29bd303%3A0xc2efc41bd7d788af%212z44CSNzQzLTAwNTIg5bGx5Y-j55yM5YWJ5biC5LiJ5LqV77yX5LiB55uu%215e0%213m2%211sja%212sjp%214v1735353380234%215m2%211sja%212sjp",
+      "path": "outputs/facility-lawson-20260926/receipts/c3164b60f6d65b3a1e55db3e.json",
+      "status": 200,
+      "hash": "3b86d933d869a9fd94aa65167896466d8f38524a95fdf4c6023474cc15c7e8fa"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/kYv3jvacvRs",
+      "path": "outputs/facility-lawson-20260926/receipts/d65eba3ee911ad4d6f4f1529.json",
+      "status": 200,
+      "hash": "67a8a006e40ebf820508a6eaf9b2d9927d6e581373f1a72b0fdc3253a4a70eed"
+    },
+    {
+      "url": "https://www.areamarker.com/lawson/info/385187",
+      "path": "outputs/facility-lawson-20260926/receipts/e67e34bc55f483be679c6f59.json",
+      "status": 200,
+      "hash": "44e7fbfded4709ad64676344b954debf5bad040a3da76dae2e2b444302f8e9d2"
+    },
+    {
+      "url": "https://www.postmap.org/map/414706",
+      "path": "outputs/facility-lawson-20260926/receipts/e902e87f5e8d509b31aa3a49.json",
+      "status": 200,
+      "hash": "76aafdebc689045eccd848eba5b458d57f17d97451286f93d46c7422314addda"
+    }
+  ],
+  "extra_jev_requests": 0,
+  "limitations": "Seven articles were inventoried. Current listing and historical dates are separate. County office regular closed days preserved in limits. No prefecture-wide directory reconciliation or global ETA. Five unresolved history cases bind seven held events."
+}

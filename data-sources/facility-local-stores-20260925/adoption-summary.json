@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-09-25",
+  "records": 97,
+  "dispositions": {
+    "add_current_listing": 69,
+    "outside_scope": 3,
+    "aggregate_source": 1,
+    "hold_offsite": 8,
+    "hold_suspended": 1,
+    "add_opening": 3,
+    "already_present": 1,
+    "hold_relocated": 11
+  },
+  "added": 72,
+  "added_by_directory": {
+    "market_current": 64,
+    "harete_current": 8
+  },
+  "added_categories": {
+    "food_shop": 60,
+    "restaurant": 6,
+    "bar": 4,
+    "cafe": 2
+  },
+  "opening_dates_confirmed": 3,
+  "new_confirmed_closures": 0,
+  "route_corrections": 7,
+  "category_corrections": 1,
+  "baseline_count": 7764,
+  "before_count": 7829,
+  "after_count": 7901,
+  "normal_candidates": 7840,
+  "cumulative_overlay": {
+    "updates": 24,
+    "additions": 137
+  },
+  "before_overlay_hash": "3672fa62d0bd694d25f0d4e00b7e94c1ce2849a6e9d1a16d6052ffe6777b0036",
+  "after_overlay_hash": "92ed83cd17c5479fb521e1c6ca21a2b1a6bce3fff0dfaf6bf5218e69b052ea5a",
+  "policy_hash": "caea2f71683e61c4ce3fec515dbc1cf3416b872d907317883d0b544dd481b093",
+  "input_hash": "15d91089209850ed5600be983a8daa52a74f32b6f8470b0bc1d7f61e89ce1a38",
+  "jev": {
+    "jev": {
+      "manifest_hash": "0f787863ca4ef50a95267534045e9641dd75cd43e00d88d5b149eb75008afcfa",
+      "model": "jev-1.13.0",
+      "record_count": 97,
+      "completed_records": 97,
+      "completed_jobs": 15,
+      "expected_jobs": 15,
+      "completed_questions": 194,
+      "missing_jobs": [],
+      "attempts": 15,
+      "conservative_cost_bound_usd": 0.04128768000000001,
+      "successful_input_tokens": 198632,
+      "successful_output_tokens": 13774,
+      "successful_usage_cost_usd": 0.008342544,
+      "sum_successful_request_wall_ms": 9611.772600000004,
+      "control_correct": 0,
+      "control_count": 0,
+      "control_mismatches": [],
+      "limitation": "Saved historical candidate triage and synthetic controls only; no current web retrieval, fact confirmation, facility edits, or GPT research."
+    },
+    "scope_note": "Official current regional retail and relocated graduates: 97 source listings, route and category questions. Not adopted facility count or exhaustive freshness verification.",
+    "routes": {
+      "new_current_listing": 77,
+      "duplicate_directory_entry": 2,
+      "conflict_or_unclear": 6,
+      "existing_identity": 1,
+      "historical_relocated": 11
+    },
+    "categories": {
+      "food_shop": 71,
+      "unsupported": 3,
+      "restaurant": 9,
+      "bar": 10,
+      "cafe": 4
+    },
+    "cumulative_records": 2016,
+    "cumulative_usage_estimate_usd": 0.11731057800000003,
+    "cumulative_reservation_usd": 0.6000476160000001,
+    "remaining_records": 984,
+    "remaining_budget_usd": 0.39995238399999994
+  },
+  "input_limitations": [
+    "The frozen Jev input uses preliminary complex locations for all market entries; section 10 is explicitly offsite and is rejected after reading its directory introduction. Those preliminary coordinates are never adopted.",
+    "A source description says 14 graduates, but this batch has 11 individually described graduates.",
+    "Jev missed the explicit suspension of 道中; review rejects operating adoption.",
+    "Raw runner limitation text is inherited from its historical pilot; actual input scope is documented here."
+  ]
+}

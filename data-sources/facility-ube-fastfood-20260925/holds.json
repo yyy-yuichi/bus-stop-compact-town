@@ -1,0 +1,42 @@
+[
+  {
+    "topic": "wants_halows_nishikiwa_position_conflict",
+    "ids": [
+      "official-tsuruha-10049",
+      "official-halows-nishikiwa"
+    ],
+    "distance_m": 3308,
+    "official_wants_point": [
+      131.33282355062036,
+      33.958665617333054
+    ],
+    "existing_halows_point": [
+      131.3004254,
+      33.945742
+    ],
+    "source_urls": [
+      "https://shop.tsuruha-g.com/10049",
+      "https://www.halows.com/stores/detail/138"
+    ],
+    "finding": "ハローズ公式が同一ショッピングセンターの店舗とするウォンツの公式座標が3km超離れる。取得処理の誤抽出ではなく、現行公式JSON-LDも既存掲載点と一致。正しいウォンツの店別地点は未確定。",
+    "next": "店別の一次地図または公式訂正を確認し、既存掲載の修正履歴を残して位置を訂正する。ハローズ中心へ推測移動しない。",
+    "priority": "high"
+  },
+  {
+    "topic": "old_mcd_konan_closure",
+    "ids": [
+      "osm-way-477623030"
+    ],
+    "finding": "旧施設と新店舗約245mの移転記事があるが旧支店の公式閉店告知が未取得。旧IDは通常候補に残る。",
+    "next": "旧店舗の支店名・住所・閉店告知を一次情報で確認。"
+  },
+  {
+    "topic": "autobacs_relocation",
+    "ids": [],
+    "source_urls": [
+      "https://www.autobacs.co.jp/ja/news/news-202509031400-1.html"
+    ],
+    "finding": "2025年9月3日の公式事前発表は9月4日移転予定、妻崎開作860-1。店別の現在地点と実施日は未確認。",
+    "next": "現行店舗ページと店別代表点を照合する。"
+  }
+]

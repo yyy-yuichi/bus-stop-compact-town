@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "after": "2024-01-01T00:00:00",
+  "before": "2026-09-25T09:00:00",
+  "scope_note": "2024年以降の公開開閉店記事を候補として回収。カテゴリ外の記事、過去記事の更新、SNSだけの告知、全県全店舗の網羅性は保証しない。本文は非公開の再現用保存に限り、Gitへ転載しない。",
+  "sources": [
+    {"id":"ube","collection":"https://ube-sanyoonoda.goguynet.jp/wp-json/wp/v2/posts","category":8,"category_url":"https://ube-sanyoonoda.goguynet.jp/category/cat_openclose/","scope":"宇部市・山陽小野田市"},
+    {"id":"yamaguchi","collection":"https://yamaguchi-hofu.goguynet.jp/wp-json/wp/v2/posts","category":9,"category_url":"https://yamaguchi-hofu.goguynet.jp/category/cat_openclose/","scope":"山口市・防府市"},
+    {"id":"shunan","collection":"https://shunan-kudamatsu-hikari.goguynet.jp/wp-json/wp/v2/posts","category":3,"category_url":"https://shunan-kudamatsu-hikari.goguynet.jp/category/cat_openclose/","scope":"周南市・下松市・光市"},
+    {"id":"shimonoseki","collection":"https://shimonoseki.goguynet.jp/wp-json/wp/v2/posts","category":3,"category_url":"https://shimonoseki.goguynet.jp/category/cat_openclose/","scope":"下関市"},
+    {"id":"kaiten","collection":"https://kaiten-heiten-24.com/wp-json/wp/v2/posts","category":197,"category_url":"https://kaiten-heiten-24.com/category/chugoku/yamaguchi/","scope":"山口県"}
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "c475b872c49e7fed0fae0b09f1983833dfe0253c867691d84a1f19e91e792e4f",
+  "after_overlay_hash": "a00bc64121751e95ffc5c0d53f4ebf903a7e256020ebdb28b1583c27999e76c6",
+  "newly_added_ids": [
+    "official-juntendo-137",
+    "official-juntendo-266",
+    "official-juntendo-212",
+    "official-juntendo-288",
+    "official-juntendo-268",
+    "official-juntendo-302",
+    "official-juntendo-320",
+    "official-juntendo-314",
+    "official-juntendo-269",
+    "official-juntendo-222",
+    "official-juntendo-294",
+    "official-juntendo-278",
+    "official-juntendo-257",
+    "official-juntendo-231",
+    "official-juntendo-309",
+    "official-juntendo-226",
+    "official-juntendo-284",
+    "official-juntendo-255",
+    "official-juntendo-297",
+    "official-juntendo-256",
+    "official-iwasaki-20002834",
+    "official-iwasaki-20002835",
+    "official-iwasaki-20002836",
+    "official-iwasaki-20002837",
+    "official-iwasaki-20002838",
+    "official-iwasaki-20002839",
+    "official-iwasaki-20002845",
+    "official-iwasaki-20002847",
+    "official-iwasaki-20002852",
+    "official-iwasaki-20002854",
+    "official-iwasaki-20002855",
+    "official-iwasaki-20002858",
+    "official-iwasaki-20002859",
+    "official-iwasaki-20002865",
+    "official-iwasaki-20002876",
+    "official-iwasaki-20002877",
+    "official-iwasaki-20002878",
+    "official-iwasaki-20002882",
+    "official-iwasaki-20002884",
+    "official-iwasaki-20002886",
+    "official-iwasaki-20002889",
+    "official-iwasaki-20002890",
+    "official-iwasaki-20002891",
+    "official-iwasaki-20002892",
+    "official-iwasaki-20002893"
+  ],
+  "corrected_ids": [
+    "osm-node-4326423990",
+    "osm-node-4861964038",
+    "osm-node-3896587457",
+    "osm-node-4034162900",
+    "osm-node-4098836989",
+    "osm-node-5412600025",
+    "osm-node-4501621210",
+    "osm-node-4326413589",
+    "osm-node-5414588708",
+    "osm-node-4404247490",
+    "osm-node-5484018456",
+    "osm-node-5712889433",
+    "osm-node-5517944227",
+    "osm-node-4561853737",
+    "osm-node-3892840857",
+    "osm-node-4099850208",
+    "osm-node-6011255090",
+    "osm-node-2253200282",
+    "osm-node-3767101960",
+    "osm-way-561533121",
+    "osm-node-5485705111",
+    "osm-way-343867624"
+  ],
+  "counts": {
+    "additions": 45,
+    "corrections": 22,
+    "juntendo_additions": 20,
+    "iwasaki_additions": 25,
+    "existing_unchanged": 5,
+    "held": 1
+  },
+  "directory_counts": {
+    "juntendo": 21,
+    "iwasaki": 52
+  },
+  "sources": [
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/4eed5992dd33516fcc1f62f0.json",
+      "hash": "3733ea4f2c79c6ba499b22e925ade001f5880a732496c3ec846cc24bedabf6c8",
+      "url": "https://www.j-eshop.jp/assets/json/shops/list.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/34898f6b896cc0eec00c3adf.json",
+      "hash": "d76c35d68b43cfacc7d38956ee2517bd65dd0512a0271ba7f3b4125f7e23f693",
+      "url": "https://www.j-eshop.jp/assets/juntendo.js"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/f4f4d9dcb0e92d5e99800fa5.json",
+      "hash": "1e2defc3a172e0209b97564a17bb4d163548730c41e9ae124f91dfdf12f2cc95",
+      "url": "https://www.j-eshop.jp/assets/utils.js"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/db6c79655521c090d666de5f.json",
+      "hash": "0e2aedaf8a2baf6bfc499aeb59eba3cefa67deb3fdebd8841b99da5a09543de0",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002846"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/d3e5dcfcb7f45b4cc275d4e4-complete.json",
+      "hash": "a3e78c1c9b273d6469a3168b074844705770ea4241bdc5e0e2fa20938c99ee8e",
+      "url": "https://www.matsukiyococokara-online.com/map/s3/json/stores.json?202609261753"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/4f507968f4f2606480fc1914.json",
+      "hash": "8dd93a75b9cdb3625da0485e644793ed69131ac29e29afee057a5930976df499",
+      "url": "https://www.j-eshop.jp/assets/json/shops/137.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/ffd41ea97cc41eeee2eb5dd0.json",
+      "hash": "6d1030991aa51e503e20c25898072da08e913642460f2ddc9dcd3998c51a2dbe",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.87358625061!2d132.22063867572174!3d34.17514957311093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35453576cd712fc1%3A0x6bed0949628ee57!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWyqeWbveW6lw!5e0!3m2!1sja!2sjp!4v1764414920002!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/13a77ac29749b9a97b16dd9a.json",
+      "hash": "11723141835284207c088344a444db57801e9e6f7c383a7102c093b389fa0aa1",
+      "url": "https://www.j-eshop.jp/assets/json/shops/266.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/e567e91ef6d4fa9bd4c81d7b.json",
+      "hash": "d46945373f7bcba5c926c94ecd27e8d6c460887fb334fb439b9288b7d1908dfd",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26407.710459078648!2d132.159508!3d34.172843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35453409af272c21%3A0xd726667f979dabb5!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWyqeWbveOCpOODs-OCv-ODvOW6lw!5e0!3m2!1sja!2sjp!4v1769647785559!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/72246a7543625f9f7a4b5d2d.json",
+      "hash": "3bf758a0738d692466bec50b9b8beaeac9424ec947045d39d1f75f70996480bc",
+      "url": "https://www.j-eshop.jp/assets/json/shops/212.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/a0939c7ae9d04e88a321ff8d.json",
+      "hash": "76ed8eb70866f0da7cb8de386421f8250716596c946e011249616edc8bfc219d",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26419.51923253542!2d132.201167!3d34.135086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545367cbb4acee5%3A0x4cb24a578c2b85f6!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWNl-WyqeWbveW6lw!5e0!3m2!1sja!2sjp!4v1769647873485!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/2d5f39e8fa9920364f77c54d.json",
+      "hash": "e941e7e4b0dd656c92b8410c648ac3650f7830137bae99db3b4e942c382cd4f1",
+      "url": "https://www.j-eshop.jp/assets/json/shops/288.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/a49a45ec938ea3571640652b.json",
+      "hash": "c171b3aaeadbbfa1cc0932018d96f9089f8aafad64e4c365b22e70a450a079fe",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13219.61211557051!2d132.204151!3d34.072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545378887fecb2d%3A0xd3a3b56a78b00b45!2z44K444Ol44Oz44OG44Oz44OJ44O8IOmAmua0peW6lw!5e0!3m2!1sja!2sjp!4v1766741170290!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/43ebc1266618fd4082703c99.json",
+      "hash": "5691a782e19b41dfa340840d684d8b3ab70c9fc7542d5835384fa77361fba30d",
+      "url": "https://www.j-eshop.jp/assets/json/shops/268.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/40a0f7057470c3671923a17e.json",
+      "hash": "328326d46eb9a393f5411dadffd3355b49777afb33ff8ce94de4554825205f57",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22265.540276562!2d132.25500588545148!3d33.94646811549943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354540ecf314c6a9%3A0xb87d1533c17bba83!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWkp-WztuW6lw!5e0!3m2!1sja!2sjp!4v1769647933947!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/ac2c1e7ce038280fff5c3eec.json",
+      "hash": "4f71d0a9d65ebbd623154f9f2441cc3c8dbe2e21d837c8645b16e0a09d1f5960",
+      "url": "https://www.j-eshop.jp/assets/json/shops/302.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/8c1e12aa9996a1d708903eed.json",
+      "hash": "2c07724829710630cacf117450b4f2146c4c5717db54d28d95867eb44d29fca1",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52942.48447199903!2d131.930351!3d33.969274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451e05e738b9d7%3A0xa124c7a9509a94ac!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWFieW6lw!5e0!3m2!1sja!2sjp!4v1766743868499!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/604f91ab8ceecc83403c31d9.json",
+      "hash": "ded727e00db45b19d5eb7a867f700f886c4145fd883e0489170697e81eb00217",
+      "url": "https://www.j-eshop.jp/assets/json/shops/320.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/1c8f1e8fbde707bb903e593f.json",
+      "hash": "32fd48c4942c1ab6e48caec075b88f059dbc77a8c87ddce6301e12e2d2324216",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13221.631204533429!2d131.804352!3d34.059059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e70667065b6f%3A0x1a8ba99d3b5f74af!2z44K444Ol44Oz44OG44Oz44OJ44O8IOe3keeUuuW6lw!5e0!3m2!1sja!2sjp!4v1766903266471!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/fd839979cfa9d6a5a31d7a6e.json",
+      "hash": "785c78d46908563151f1c8da8802f34a2a11233f2850bb0b25b11d1c898a60ca",
+      "url": "https://www.j-eshop.jp/assets/json/shops/314.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/b422cbad22bb281ff624a22f.json",
+      "hash": "a5ae995aec41dbe880b33d9066e6c8341aead7305c31bfc59556c6b22192723f",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.0975544323137!2d131.8615761757192!3d34.1182521731322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544deea142fd8cf%3A0xa14acaad1014463a!2z44K444Ol44Oz44OG44Oz44OJ44O8IOmgiOOAheS4h-W6lw!5e0!3m2!1sja!2sjp!4v1766745811610!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/d7c34abd27af02666512abe6.json",
+      "hash": "e533bd01df80cfe76a1c314c3fb4ea48e1c8b83f5d5ce719c12a3374c0331565",
+      "url": "https://www.j-eshop.jp/assets/json/shops/269.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/d7ea31021a3b88d6eeba5052.json",
+      "hash": "93d2bb3d474174731d8d147bb1d69e23305f7473b4389cfb216df402749b1084",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13220.846646806272!2d131.785133!3d34.064088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7b40f5cdedd%3A0x9d117b010da85dbd!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWRqOWNl-W6lw!5e0!3m2!1sja!2sjp!4v1769648022309!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/9cc575abc0348e1e069d2dac.json",
+      "hash": "7e8ab150672e8dfcac203a26568ff13effd2fd5c3b8b92341d0b0c42ee5d1887",
+      "url": "https://www.j-eshop.jp/assets/json/shops/222.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/4405c01c1ff4abed31244a2d.json",
+      "hash": "5eec0bfd28bcd82818dad329a353818fd11722b1e659fe70dbd8932fb83f329d",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6609.686834231108!2d131.767058!3d34.073528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e7d11373875d%3A0xd11d924a8875ff31!2z44K444Ol44Oz44OG44Oz44OJ44O8IOaWsOWNl-mZveW6lw!5e0!3m2!1sja!2sjp!4v1766481646720!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/33d1ea3ec9024c6234bc5c12.json",
+      "hash": "95b44215af15617d257f491d6b8d0f82624cc0371e8fb487f7ea3310d7835645",
+      "url": "https://www.j-eshop.jp/assets/json/shops/294.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/4e349ab2ea439473c272b78a.json",
+      "hash": "0949dfeeea89bc3713fceb69f0be0ef962a55ac443b657ec308a66187044a7c0",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105634.58270840893!2d131.36758640021574!3d34.16985409999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544975004e24183%3A0x1c4a13ebf01c9374!2z44K444Ol44Oz44OG44Oz44OJ44O8IOa5r-eUsOW6lw!5e0!3m2!1sja!2sjp!4v1766742468435!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/69f19941c63875e330d26544.json",
+      "hash": "90476106530f285f72cef3a61e0086a098b7800046ff7ade46ed2d15a47d50b1",
+      "url": "https://www.j-eshop.jp/assets/json/shops/278.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/c89ffe779eb97f30f250c743.json",
+      "hash": "f667bdf74aa665f275a2062202cf1039121bf4e0273f471f7e3c62d8120d8652",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.3611882116365!2d131.71311157573103!3d34.3921643730308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544ccfb5518db57%3A0xc130ec22f7d73d47!2z44K444Ol44Oz44OG44Oz44OJ44O8IOW-s-S9kOW6lw!5e0!3m2!1sja!2sjp!4v1766739056166!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/9c6ec737c7a6172e0c900fd6.json",
+      "hash": "77517b92ce095a15957b1c704bc99cf2351ffa0aca25de2bf65031f9914993a1",
+      "url": "https://www.j-eshop.jp/assets/json/shops/257.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/eebb3f86fb15aa6767a40b3d.json",
+      "hash": "f654df014057f438e413343107b1d89f13971e5b01ab3da394a52aa5fae83e7b",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6611.476877374623!2d131.366645!3d34.05058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35448403d33b41c3%3A0x28abbc615f764e63!2z44K444Ol44Oz44OG44Oz44OJ44O8IOa3sea6neW6lw!5e0!3m2!1sja!2sjp!4v1769648102906!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/2c8949da4a24e1ac7767d968.json",
+      "hash": "8c8d6e0e93dbb5295ce205868653607c3447f670873f93c0d5a31498beaeb3a4",
+      "url": "https://www.j-eshop.jp/assets/json/shops/231.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/35a7756692ee74c13314d623.json",
+      "hash": "d28a3c7517f9fcdc3f50a3fe4974cebc1a669fbc7034b96d4d148acfb2d247d8",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.9335224159086!2d131.2736551757117!3d33.94283787319838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380a9310d298f%3A0x5e1f4c05d10b3d0b!2z44K444Ol44Oz44OG44Oz44OJ44O8IOW4uOebpOW6lw!5e0!3m2!1sja!2sjp!4v1766564394675!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/f1c0e1cdc7e80d854d6708b3.json",
+      "hash": "c432a02c8b1bc1e27707f040570984185cb2b0c1a26876ed6f8f6d1884957b9b",
+      "url": "https://www.j-eshop.jp/assets/json/shops/309.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/80cf5d13b23176d786adf996.json",
+      "hash": "6b527c210ff307f9fd32eb8c3aca9aee0d16b2bb12d376965ac907448af5f92e",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26466.256220128176!2d131.213322!3d33.985289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543816c5d629dbb%3A0xa1a8774a52b83afe!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWOmuWNl-W6lw!5e0!3m2!1sja!2sjp!4v1766745014939!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/8eeed55b8bf3ec98f8bddefd.json",
+      "hash": "8dcafbb3b144c04ccf4215e25d49e41f120c216e55f1dc2bad774175d43ed73e",
+      "url": "https://www.j-eshop.jp/assets/json/shops/226.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/d168786d529eea308522e713.json",
+      "hash": "c16e25dc0ae48c187972f0101ac33e5822b368417f8b42d71398e16fb8528afa",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4744151507407!2d131.15273287571682!3d34.057350873155045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35438283d66d8e93%3A0x2cab96cf8895ebca!2z44K444Ol44Oz44OG44Oz44OJ44O8IOWOmueLreW6lw!5e0!3m2!1sja!2sjp!4v1766561200526!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/0ba1ac64f79ea3a0609d1a3a.json",
+      "hash": "3aea926c6656f1d220719249512630b9e70f926d6a8c500fa69b85ef62630e87",
+      "url": "https://www.j-eshop.jp/assets/json/shops/239.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/dc0ab34f0169bb40b43c3be7.json",
+      "hash": "01c5a8a0f4ac462afe27c6eb50567d86ab613f98053b30d86466ca0bb81fd9f1",
+      "url": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6583.505490244191!2d131.403763!3d34.40763!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI0JzI3LjUiTiAxMzHCsDI0JzEzLjYiRQ!5e0!3m2!1sja!2sjp!4v1769648154426!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/9c1ec02789ae558278609897.json",
+      "hash": "2f2ad54c725fd9fb79fbc6e9c930bd242a3a052d9681696e305fc0e09ccf3ca6",
+      "url": "https://www.j-eshop.jp/assets/json/shops/284.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/0f4bda222875530b3ba40072.json",
+      "hash": "b64d32d13dce5759bc38e32f13cc04aa06ee664244d853fefc07036bd2e81544",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3296.413563199432!2d130.952386!3d34.2890036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35430d566a9f5579%3A0x729ef8d850ae8c47!2z44K444Ol44Oz44OG44Oz44OJ44O8IOa7nemDqOW6lw!5e0!3m2!1sja!2sjp!4v1766740448362!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/cfc84a53ca32a4bc2ca777ba.json",
+      "hash": "9a0efc9e120a2eed7e84f82d3c97b404834cd8e875c8e1693eb634c521ff2e70",
+      "url": "https://www.j-eshop.jp/assets/json/shops/255.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/0e47dcc87dffbacfdac9ef0d.json",
+      "hash": "39a2173741eb4249c3a9f3febd94cdcbc5aa45f35fea46b44518f1b99b5ad8f3",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6606.557800014635!2d131.034586!3d34.11360899999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354375fc018c216d%3A0x2cdb7d1a8efed1c7!2z44K444Ol44Oz44OG44Oz44OJ44O8IOiPiuW3neW6lw!5e0!3m2!1sja!2sjp!4v1769648213521!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/811e00cf700e29e5d1353efe.json",
+      "hash": "cf4a47228f17d0c13fc47510b6733826bb0aed181487a46f0c4daf136fcb6128",
+      "url": "https://www.j-eshop.jp/assets/json/shops/297.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/4aa9ca322296c8284cf1fa95.json",
+      "hash": "4f0a58467d2cac638705669710c67548e27c6351eb6d8013e1ba096e433f5e3a",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3302.2075814858176!2d130.9183101!3d34.141031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a061e2959c47%3A0x808e0cd9cd99d556!2z44K444Ol44Oz44OG44Oz44OJ44O8IOW3neajmuW6lw!5e0!3m2!1sja!2sjp!4v1766743052318!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/76e3932b44e477c6726343c0.json",
+      "hash": "2b5aabaa7890a637a867224a990d50c2a000dd303385437000945639166dafb7",
+      "url": "https://www.j-eshop.jp/assets/json/shops/256.json"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/cd485d38066ce5b8b768146a.json",
+      "hash": "cfe1674d8ffcb20d049de072849827888fdca6a9473eaf4771b3bf88cdcf0f3a",
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.298287033442!2d130.947667!3d33.984196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd4525a9b217%3A0x259584d5cb69ea48!2z44K444Ol44Oz44OG44Oz44OJ44O8IOaki-mHjuW6lw!5e0!3m2!1sja!2sjp!4v1769645760856!5m2!1sja!2sjp"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/eabcdccb6b0414a281bf20fe.json",
+      "hash": "6bcfb15738b48a899b590338f4a7da10cd6d8c9fe37a2834fcde21013e453391",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002832"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/77a38d3ea10a4cc196e6ff03.json",
+      "hash": "23992a41616fca4c169bb5c21b0ec1322891d145ee293867ac4ed0fa895670be",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002833"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/e44c9148be4ed356a281fd9e.json",
+      "hash": "ca354f5a2956df220b12a568c8969f02f3d73896dd517c94f355e7a0a059139a",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002834"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/6ea4fdbeda2fd77741efdd6b.json",
+      "hash": "f8ebdf67077fa1542683082a8988667732eabce874c57ee947adf29f8db6078d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002835"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/546b38a70062b98dcd4ac023.json",
+      "hash": "8ed4f57d1c9c47600798ec7e8f36f55dab7f91354db9b06b24354a9170df6f1e",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002836"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/dedbc3c69911faf1ac364371.json",
+      "hash": "1dba96afcc040b347f29b3d741edf26d248becaadeaf8a13b4bcf73e4a3135e7",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002837"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/afa002badba225d9607b087b.json",
+      "hash": "9a36f57a99115cd766b29bab657f5a5649a4fa55989a7a39e0477c2ee4673efc",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002838"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/130f5053417a36f5afec58fa.json",
+      "hash": "87c9b35ad58580c150194e5e906644630ac1bd459fda922ba8b21a39c888745f",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002839"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/949dfa1019dec5803e386b00.json",
+      "hash": "0a8d69afa98fb2d0463398cebe51e3aec9bed37bec671ebfcd08987e05f6368d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002840"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/b326120e7b55e5d7b414eaf9.json",
+      "hash": "4263b67952a47f69e1fa241dfacfac2e6470334dab12ceb0d132d29a5e16e299",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002841"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/67e713d80cdd28a49a1ecc78.json",
+      "hash": "f584aed733a727d161f88328740b2976c5dd149b4cba7fb9b03a27d8ade42e03",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002842"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/f8a21b644d21bbc0418cb2e7.json",
+      "hash": "f8841a76d888266569573c92c83601638bfe4673746020cd3e8c0949b46116af",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002843"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/608f60db51250687c27ed227.json",
+      "hash": "34471fdc4235dd89296a830b227f6bfb7358d1e3f3cdfad056958c6a6a5f960e",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002845"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/1ae42e9c9630c1e2483bc335.json",
+      "hash": "0df7d6961332fcac70d7023b2f518d1697c8dae3bf08206f635366ad8f9dfe1d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002847"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/277edb6dd1d738e94f98afaf.json",
+      "hash": "d8dc91414b31f67c8831ec0378b3d072c3259e54bf6abdc486446eb48397ff5f",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002848"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/19598641dad66d818aefd02c.json",
+      "hash": "5430eb73a18dd76c39e217b1bc32e75a558414bf76043bf2c47e97fcb77bc6b0",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002849"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/e0c3d40f722fc5defb0e7164.json",
+      "hash": "188f2648f11a6e5a4cb5b3a8a8c326ce0e17b7f73fec5e3020da2666de06120e",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002850"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/3c98add625863fa2f2a5e3fe.json",
+      "hash": "3b9b555d816f63062fe6dc5b35f553eb0b9c7fc83465cc525592af2529244f99",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002851"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/437bace49f1b9da03fb412ea.json",
+      "hash": "9a1f9b61978fcebe5568e939551301e9c8b06ac8982e0df0fa9bd9c36f29a961",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002852"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/882c63b9104a7776e4e7f02f.json",
+      "hash": "3dbfdd9f6d3bb8bed216a8ed7e24fa62ea7fcb507261804ba67208af676bae01",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002854"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/73fcbf6ef4d6b44f0378a181.json",
+      "hash": "984437ae7180db4d68113b65222db85ae5d1cd5dfded8f1f57e2c78029d55ccc",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002855"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/acc1e458a2c3bc8d81a427ea.json",
+      "hash": "10bd229208054a09a7bce6e28932c4c592c729b0bd17636bd46aff8ff2955e81",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002857"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/1bc19818e8782d7a076c4174.json",
+      "hash": "830d5426344a3b9d66b077d92e0e4a49ed78a924fc60788fa7f6be0330beb1db",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002858"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/be77d6d90a85d068a0b61839.json",
+      "hash": "8aee7c32087036ec40e7fc11b1ed0f4b94bb7aacf84b09466495fdcb8316f0f8",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002859"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/94b5edf186d596feae969f7d.json",
+      "hash": "f5b7e918862513640a9a077f8b1bbcab2769a28340b324274efa5013806a1114",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002860"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/032f2445ac60778bb9eca7ea.json",
+      "hash": "2e2405ad2c4665f3ae0654e9d4939ff0865904b7aaf61726ce73a6ddc26a3c28",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002862"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/f54e381301b076193c65d67a.json",
+      "hash": "60af346ccdbce4a4e4610454c5fbace915a237c798d6fd746170d5667075033c",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002864"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/58685df303046ea434dc771d.json",
+      "hash": "429243ddb706afb07956faf8d6425f8c2c56b7646a095b868a332bde9d3d42a4",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002865"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/87d239492a1f7e48cd204afc.json",
+      "hash": "03faae4fcea6eec49ef595620aa0e696ead5c56bce05fbe3226425ffb9276e8d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002868"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/0a1f63249b5f7529fd80ee8d.json",
+      "hash": "943615b519ef5914e1fd2a9ff55612f1252ff88dfa7bbd54e0a7e2dd3927aaf2",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002869"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/524f4b006d1b4c7b7b1eda0b.json",
+      "hash": "9e7b7fec933c0e5ffb4606668a8ce5c2fb4dccd6cf7476e6375aa0236e77dc88",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002870"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/2e5689bed59111f03b2a519d.json",
+      "hash": "006518e368fda7db636fc45096cf289c48ac23d676ba82a49ea3d3c3f982c930",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002871"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/36273663361eb3f4172647d0.json",
+      "hash": "09fe6ca7172e9602da648e40711068caa2472782e8dec4490288b92fa647a646",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002872"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/5a63f33a2695615eb406535a.json",
+      "hash": "434af9071a99958a0ee59d3416700251001430258b9004e7de32eee067788b12",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002875"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/d63916c326b14ee348d3c12b.json",
+      "hash": "cc7f8dcb2123368efcbdafe04f912e1272d54518ce6985dec46578e85a307e20",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002876"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/9ec8b399541d93b08e79fcf2.json",
+      "hash": "c6ca5756262ec8616c7655c08c6fbb1e4c91b5b4dc4ddbb25d06a64fbaf319aa",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002877"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/b758055832607584f6cdd5b2.json",
+      "hash": "339c27dea718de2dcf17d550f7868d188073871753d02b22ce56bd48301112bb",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002878"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/e183925fca5622ecad2e3fc7.json",
+      "hash": "f881ad0cf6daac5e1ef764d06c7d153681a1e8a64dff66e06366bf7408675757",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002879"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/bb46c47f129ad949db958ac2.json",
+      "hash": "473cfac3de7a09ea2f294c3d90695106ce26701d33441276fc6239dfce069145",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002880"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/a98b69a533e4c61e816bfa79.json",
+      "hash": "a28808e1b2c3e1c0101b9552b9fd1d5f97c50ad3dd996d18fbdad51b42d74708",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002882"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/2f52c34f993723cddc55847c.json",
+      "hash": "4f9f419fe09c3b06627cea5c1c3baaa157f1f8b84da925669046a3244aa510be",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002884"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/97fdc9fe21b654c4f65067a2.json",
+      "hash": "c1d03bec7921c703396fbb74c5d3e116a0808b1113b47d6fdcf4f5300c0d9733",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002885"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/e80233073d9eab3066aaf76f.json",
+      "hash": "8147a4165d09d47c6151fc243ff6b88bd08f426d686d0790480b5b509040f70d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002886"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/741c4da86f560b6ab4b91440.json",
+      "hash": "96fd450b92375511db4bf6dfc50b7a33d59603d2c7c2a292dec526bb37b70a14",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002887"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/52343163d6cc56f9a8a8689f.json",
+      "hash": "8a8b1ee52e30ab8b9760127332ef52321aa40f66f276bbe8bdf016bc12591f2a",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002888"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/1666bc0afb601ab3be79882f.json",
+      "hash": "ca6aa8344afb8c40f70b86e29c2799f490b992d75dea1dfe8732a1558a2deff9",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002889"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/950a0b7c1648e311c9dcb90c.json",
+      "hash": "48b4681422a1a0670361cdd70a296d7d67b2b2b799c9c5afb6f6989d8b267cfa",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002890"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/970fb11c707d103c9064d859.json",
+      "hash": "3d64f77d3c0cc1c4f83860715af4ef1b88a6c9eb1cf7cd2864e50766511beced",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002891"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/f777a9d1d0437390bb6d55e9.json",
+      "hash": "59b9889036af6ad6ea0c71945c1cd72daf5a0a4f8353ceb819d3279d807a9ba7",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002892"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/460ed5ad0a33550e97d5c9d7.json",
+      "hash": "0ea8036a4e8b8e926a9a1826807f8ee2f28aff93def68ca4eaeaa1a765a5732d",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002893"
+    },
+    {
+      "path": "outputs/facility-juntendo-iwasaki-20260926/sanitized/776038d4f6c25ad610d913f0.json",
+      "hash": "7f84199ac046556d39272cdc467e697734f6cb1e6259eb2b69e787450cbf94fb",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002894"
+    }
+  ],
+  "case_findings": [
+    {
+      "case_id": "directory:iwasaki:20002887",
+      "name": "クスリ岩崎チェーン 湯田西店",
+      "reason": "湯田西店の公式地点から10.2mに旧称の可能性があるドラッグセガミが存在。運営・改称の連続性を未確認のため追加も改称もしない。",
+      "facility_ids": [
+        "osm-way-202664935"
+      ],
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002887",
+      "next": "旧セガミから岩崎への運営・改称の連続性と建物関係を一次資料で確認。既存ID・位置を保持し、距離だけで統合・追加しない。"
+    }
+  ],
+  "article_scope": "All previous article decisions and dates are unchanged. Current listings do not complete article histories.",
+  "efficiency": "Indexed 2209 saved receipt paths before fetching; reused the previous Juntendo prefectural list. Compared 73 current official branch records in one batch. Public per-branch data and named place records independently checked against IDs, names, addresses, N03 boundaries, all base/overlay and containing polygons. The public MCC nationwide dataset exceeded the generic 3MB limit and was fetched once with an explicit 20MB bound; no authentication change.",
+  "limitations": [
+    "45 current listings do not prove 45 new openings. All new opening dates remain null.",
+    "22 general-name corrections preserve original IDs, geometry and source_ids.",
+    "Five already named stores are unchanged, including Hagi whose old/new website IDs differ.",
+    "Iwasaki Yuda-nishi and nearby former-name Segami relationship remains held."
+  ],
+  "extra_jev_requests": 0
+}

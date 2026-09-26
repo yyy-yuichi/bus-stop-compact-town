@@ -58,6 +58,8 @@ export interface ShoppingProperties {
   website?: string;
   search_names?: string;
   verification_status?: string;
+  freshness_review?: import('./facilityFreshness').FreshnessReview;
+  duplicate_of?: string;
   retrieved_at?: string;
   license?: string;
   source?: string;

@@ -256,3 +256,16 @@ Terms: https://www.city.kudamatsu.lg.jp/jyouhou/opendata.html
 https://yamaguchi-opendata.jp/www/terms.html
 Modified by Bus Stop Compact Town: classification, exact provider/address/coordinate
 aggregation, name/location duplicate filtering, and GeoJSON conversion.
+
+Reviewed current facts (public/data/facility-current.json), checked 2026-09-25:
+Operator announcements and current public listings support individual event updates.
+Source URLs, effective dates, verification dates and limitations are recorded per entry.
+Original OSM and civic records retain their source attribution and identifiers.
+The 15 added entries use published facility facts and operator-linked place/address
+points, not map viewport centers or copied former-store identifiers. Ten current
+listings have no verified opening date and are explicitly displayed as such.
+The Don Quijote Hofu entry uses its official linked map point. No source article text or
+images are reproduced. The internal label "official-published-facts" describes
+provenance; it is not a grant of rights over the source websites.
+https://www.donki.com/store/shop_detail.php?shop_id=738
+https://www.donki.com/store/map.php?shop_id=738

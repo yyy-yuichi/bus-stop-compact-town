@@ -1,0 +1,221 @@
+[
+  {
+    "article_key": "yamaguchi-25952",
+    "source_body_hash": "1b7313ef21135b881a92c50d564d9e1c1d7cc97d6cdb91e99b5f65229cefc8aa",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "植松店1件の閉店。写真には閉店掲示があるが日付なし。記事の日を実施日に変換しない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-25952:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4820384258"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "閉店掲示・事後記事・店名住所付き旧地点を照合。日付不明の閉店として反映。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/01/31/closed_seven31/",
+          "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/01/IMG_0595.jpeg",
+          "https://map.yahoo.co.jp/v3/place/xYvDiopqVVA"
+        ],
+        "date_precision": "unknown"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119605",
+    "source_body_hash": "0ca64012a7b261396da4b8ae94caebcf863ff651013b3722869440805cc182d1",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "周南新宿通6丁目店1件の閉店。隣接ファディは所在地説明で別の変更案件ではない。",
+    "events": [
+      {
+        "event_id": "shunan-119605:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-way-376604899"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2026-07-28",
+        "reason": "撤去後の写真・閉店掲示と日付を記載した事後記事、元の支店タグを照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/02/seveneleven-shinjyuku6choume/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170849-1280x960.jpg",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_1708462.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-462915",
+    "source_body_hash": "8208489200b4a474591c295727e6d0f4de3c598adf773d1cee07c34509ad538a",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "宇部新川駅キヨスク1件の閉店。駅全体や近隣のセブンを変更しない。",
+    "events": [
+      {
+        "event_id": "kaiten-462915:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024年2月28日閉店の二次報道。店舗名付き旧地点周辺に元施設IDはなく、現行JR公式一覧にも不在だが、それだけで一次閉店履歴を確定しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/sej-jr-kiosk-ubeshinkawaeki/",
+          "https://www.sn-hiroshima.co.jp/pages/60/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3320488642657!2d131.24085864537642!3d33.95830395773632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380d7bcd9b2e5%3A0x9c08f6f3daa4e179!2z44K744OW44OzLeOCpOODrOODluODsyDjgq3jg6jjgrnjgq_vvKrvvLLlrofpg6jmlrDlt53pp4Xlupc!5e0!3m2!1sja!2sjp!4v1708090567174!5m2!1sja!2sjp"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-517166",
+    "source_body_hash": "99b1606eae328cdef20f51bd089cfb5ef39e21d47f254158a88585a2accd5d66",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "山口中央3丁目店1件の閉店。地図は住所地点であり、その座標を新規店舗として掲載しない。",
+    "events": [
+      {
+        "event_id": "kaiten-517166:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2024年8月29日閉店の二次報道。住所地図の100m以内に元の施設なし。店舗固有の一次閉店資料は未取得。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/sej-yamaguchichuo3chome/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-82916",
+    "source_body_hash": "2738700b7a6f64d24704860fb4c7518b3fe989020da13c6295e90583650527bb",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "宇部常盤台2丁目1店舗。記事当時は開店前で、隣接郵便局・学校は場所の説明。",
+    "events": [
+      {
+        "event_id": "ube-82916:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-seven-559931"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "現在の公式店舗画面と、同店名・住所・電話の店舗地点を照合して掲載。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/07/08/seventokiwa_0709/",
+          "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1",
+          "https://map.yahoo.co.jp/v3/place/1FF5Ah7nNXU"
+        ]
+      },
+      {
+        "event_id": "ube-82916:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-seven-559931"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現行公式掲載は反映済み。2026年7月9日の予定どおりの開店実施日を示す一次履歴は未取得。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/07/08/seventokiwa_0709/",
+          "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-115609",
+    "source_body_hash": "8ee24ff2e54e90e16a5e39285809e3ec5d4828b143a1bf320413317b89d26cc4",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "旧藤光町1丁目店と移転先美里町3丁目店を区別。旧店リンクの現在応答は新店を指すため、旧店IDの同定には使わない。",
+    "events": [
+      {
+        "event_id": "shunan-115609:current",
+        "event_type": "other",
+        "facility_ids": [
+          "official-seven-misato3"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": null,
+        "reason": "新店の公式採用案内・住所・勤務地座標と同名店舗地点、商工会議所の現行掲載を照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/09/19/seven/",
+          "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/",
+          "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6613.75774547288%212d131.8691641%213d34.021319999999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e19ccab3567b%3A0xc98b75042994dd9f%212z44K744OW44OzLeOCpOODrOODluODsyDkuIvmnb7ol6TlhYnnlLox5LiB55uu5bqX%215e0%213m2%211sja%212sjp%214v1758282662373%215m2%211sja%212sjp",
+          "https://kudamatsu-cci.or.jp/premiumticket_page/"
+        ]
+      },
+      {
+        "event_id": "shunan-115609:old-relocation",
+        "event_type": "relocation",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "旧藤光町1丁目店から移転する店頭掲示は実見。記事の旧店用地図リンクは現在新店を返すため、旧点の確定・旧施設の閉店処理は保留。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/09/19/seven/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/09/003.jpg",
+          "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6613.75774547288%212d131.8691641%213d34.021319999999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e19ccab3567b%3A0xc98b75042994dd9f%212z44K744OW44OzLeOCpOODrOODluODsyDkuIvmnb7ol6TlhYnnlLox5LiB55uu5bqX%215e0%213m2%211sja%212sjp%214v1758282662373%215m2%211sja%212sjp"
+        ]
+      },
+      {
+        "event_id": "shunan-115609:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-seven-misato3"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "新店は現行掲載済み。掲示の2025年9月25日7時は予定で、実施日の一次履歴は未取得。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/09/19/seven/",
+          "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/09/003.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-25426",
+    "source_body_hash": "1ccc4ab2b2cac28da0a6638cc3c39983f5fcdeacff18dffbf6bfd0053f4128ad",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "湯田温泉スマートインター1店舗の開店予定。現行掲載と歴史的な開店実施日を分ける。",
+    "events": [
+      {
+        "event_id": "yamaguchi-25426:current",
+        "event_type": "other",
+        "facility_ids": [
+          "osm-node-11548197840"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "現行公式支店情報に一致する既存施設の自治体・住所・検索名を補完。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/01/22/yudasmart_7eleven/",
+          "https://seven-eleven.areamarker.com/711map/info/532027"
+        ]
+      },
+      {
+        "event_id": "yamaguchi-25426:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "osm-node-11548197840"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "現在営業施設として公式確認・地図補完済み。2024年1月25日の実際の開店日を示す一次原本は未取得。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/01/22/yudasmart_7eleven/",
+          "https://seven-eleven.areamarker.com/711map/info/532027"
+        ]
+      }
+    ]
+  }
+]

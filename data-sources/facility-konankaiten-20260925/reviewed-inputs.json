@@ -1,0 +1,40 @@
+{
+  "store": {
+    "checked_at": "2026-09-25",
+    "method": "cua_repl read-only DOM extraction in normal logged-out browser; selected fields only; not full HTML",
+    "url": "https://shop.autobacs.com/ja/retail/shops/380064",
+    "retail_id": "380064",
+    "brand": "オートバックス",
+    "branch": "宇部厚南",
+    "rows": [
+      "住所\t山口県宇部市大字妻崎開作８６０－１",
+      "電話番号\t\n0836-44-3744",
+      "駐車場台数\t25台"
+    ],
+    "map_src": "https://maps.google.com/maps?output=embed&q=オートバックス宇部厚南,33.97646774,131.2117328&ll=33.97646774,131.2117328&t=m&hl=ja&z=18",
+    "ld_identity": {
+      "@context": "https://schema.org/",
+      "@type": "Localbusiness",
+      "name": "宇部厚南",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "JP",
+        "addressLocality": "宇部市",
+        "addressRegion": "山口県",
+        "postalCode": "759-0204",
+        "streetAddress": "大字妻崎開作８６０－１"
+      },
+      "telephone": "+81-0836-44-3744",
+      "url": "https://shop.autobacs.com/ja/retail/shops/380064"
+    }
+  },
+  "anniversary": {
+    "checked_at": "2026-09-25",
+    "method": "cua_repl rendered DOM text excerpt; not full HTML",
+    "url": "https://shop.autobacs.com/ja/retail/shops/380064/news/1000000201395",
+    "published_text": "公開日：2026/9/15",
+    "title": "宇部厚南リニューアルオープン１周年記念セールを開催いたします！",
+    "text": "おかげさまで宇部厚南店は今月で１周年を迎えます☆彡",
+    "interpretation": "移転後の現行店舗が営業していることを裏付ける。日単位の移転開店日は示さない。"
+  }
+}

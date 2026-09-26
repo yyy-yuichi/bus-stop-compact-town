@@ -1,0 +1,664 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "d71723554c1cbcf464dec7927d0001b4ca27d62ef8c371bd16c203fce4409531",
+  "after_overlay_hash": "6c82ee14b4f68754845f2e8d54673aa6800c39d87a4f60a148ecee9e12c7100c",
+  "newly_added_ids": [
+    "official-seven-559931",
+    "official-seven-misato3"
+  ],
+  "corrected_ids": [
+    "osm-node-4820384258",
+    "osm-way-376604899",
+    "osm-node-11548197840"
+  ],
+  "reviewed_inputs": [
+    {
+      "id": "official-seven-559931",
+      "code": "559931",
+      "name": "セブン-イレブン 宇部常盤台2丁目店",
+      "city": "宇部市",
+      "address": "山口県宇部市常盤台2丁目13-5",
+      "url": "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1",
+      "point": [
+        131.275469,
+        33.9535176
+      ],
+      "extra_urls": [
+        "https://map.yahoo.co.jp/v3/place/1FF5Ah7nNXU"
+      ],
+      "location": "公式店舗画面の支店名・住所・電話と一致するYahoo!マップの店舗ID・同名道案内目的地を照合。地図の表示中心ではない。",
+      "limits": [
+        "座標は同名・同住所・同電話のYahoo!マップ店舗代表点。セブン公式の座標データは取得できておらず、公式由来の座標とは扱わない。",
+        "記事の2026年7月9日は予定日。実際の開店日とは分けて現行掲載のみ反映。"
+      ]
+    },
+    {
+      "id": "official-seven-misato3",
+      "code": "misato3",
+      "name": "セブン-イレブン 下松美里町3丁目店",
+      "city": "下松市",
+      "address": "山口県下松市美里町3丁目17-1",
+      "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/",
+      "point": [
+        131.86067894,
+        34.02519091
+      ],
+      "extra_urls": [
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6613.75774547288%212d131.8691641%213d34.021319999999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e19ccab3567b%3A0xc98b75042994dd9f%212z44K744OW44OzLeOCpOODrOODluODsyDkuIvmnb7ol6TlhYnnlLox5LiB55uu5bqX%215e0%213m2%211sja%212sjp%214v1758282662373%215m2%211sja%212sjp",
+        "https://kudamatsu-cci.or.jp/premiumticket_page/"
+      ],
+      "location": "現行公式採用案内の支店名・住所に結びついた勤務地座標。新支店名・同住所のGoogle店舗地点と20m以内、商工会議所の現行取扱店一覧にも掲載。旧店の座標とは分離。",
+      "limits": [
+        "公式採用ページの勤務地代表点。売場入口・徒歩動線は未確認。",
+        "記事当時は旧藤光町店を指していた地図の現在応答が美里町へ移っている。旧店の元座標・旧店IDの確定には使わない。",
+        "2025年9月25日の移転開店は事前掲示の予定。現在掲載は確認できるが実施日の一次履歴は未取得。"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "osm-node-4820384258",
+      "name": "セブン-イレブン 防府植松店",
+      "city": "防府市",
+      "address": "山口県防府市大字植松252-1",
+      "search_names": "セブン-イレブン 防府植松店 セブンイレブン",
+      "identity": "同名・住所付きYahoo旧店舗地点から元Seven単独点は6.2m、100m以内の同チェーン候補はこの1件。入口の閉店掲示写真を実見。",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "店舗入口の閉店掲示写真を実見し、2024年1月31日の事後記事、同名・同住所の閉店地点と照合。旧点・IDを保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "店頭の閉店掲示写真（号外NET掲載）",
+            "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/01/IMG_0595.jpeg"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2024/01/31/closed_seven31/"
+          },
+          {
+            "title": "旧店舗名・住所・地点の照合",
+            "url": "https://map.yahoo.co.jp/v3/place/xYvDiopqVVA"
+          }
+        ],
+        "limits": [
+          "写真の閉店表示には日付がなく、記事日を閉店日へ流用しない。",
+          "元の地図ID・座標は保持。現在の跡地利用は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-376604899",
+      "name": "セブン-イレブン 周南新宿通6丁目店",
+      "city": "周南市",
+      "search_names": "セブン-イレブン 周南新宿通6丁目店 セブンイレブン",
+      "identity": "基準地図に周南新宿通6丁目店の支店タグがあり、写真・記事と同じファディ隣接位置。",
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-07-28",
+        "checked_at": "2026-09-26",
+        "summary": "8月2日の事後記事に掲載された店舗入口の閉店掲示と、看板撤去・駐車場封鎖後の写真を実見。既存支店名とファディ隣接の立地を照合。",
+        "sources": [
+          {
+            "title": "店舗入口の閉店掲示写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170849-1280x960.jpg"
+          },
+          {
+            "title": "看板撤去後の店舗外観写真",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_1708462.jpg"
+          },
+          {
+            "title": "日付・店舗を特定した事後報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/02/seveneleven-shinjyuku6choume/"
+          }
+        ],
+        "limits": [
+          "年月日は記事本文による補完を含む。写真単独で年まで読めたとは扱わない。",
+          "既存の店舗ID・座標を保持。跡地の現在用途は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-11548197840",
+      "city": "山口市",
+      "address": "山口県山口市吉田2834-1",
+      "search_names": "セブン-イレブン 湯田温泉スマ―トインタ―店 セブンイレブン 湯田温泉スマートインター店",
+      "identity": "既存の支店名が現行公式案内と完全一致し、地点の自治体も一致。",
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-26",
+        "summary": "現行公式店舗案内の同じ支店名・住所・電話を確認。既存ID・座標を保持して自治体・住所を補完。",
+        "sources": [
+          {
+            "title": "公式支店別店舗案内",
+            "url": "https://seven-eleven.areamarker.com/711map/info/532027"
+          }
+        ],
+        "limits": [
+          "2024年1月25日の開店日は記事時点の予定であり、実施日の一次資料は未取得。",
+          "既存代表点を保持しており、入口の再測定はしていない。"
+        ]
+      }
+    }
+  ],
+  "nearby": [
+    {
+      "name": "ube",
+      "point": [
+        131.275469,
+        33.9535176
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-13062819742",
+          "name": "宇部常盤台郵便局",
+          "search_names": "宇部常盤台郵便局 宇部常盤台郵便局 うべ ときわだい ゆうびんきょく    ",
+          "point": [
+            131.2755831,
+            33.9532038
+          ],
+          "metres": 36.47534677768727
+        },
+        {
+          "id": "osm-way-287682215",
+          "name": "常盤中学校",
+          "search_names": "常盤中学校      ",
+          "point": [
+            131.274206,
+            33.9538038
+          ],
+          "metres": 120.48467227180316
+        },
+        {
+          "id": "civic-care-3570204473-b9f550c5f0",
+          "name": "株式会社ヒューマン２４",
+          "search_names": "株式会社ヒューマン２４ カブシキガイシャヒューマン２４",
+          "point": [
+            131.273972,
+            33.954124
+          ],
+          "metres": 153.37780372607105
+        },
+        {
+          "id": "osm-node-1423660497",
+          "name": "第二慈光幼稚園",
+          "search_names": "第二慈光幼稚園      ",
+          "point": [
+            131.272869,
+            33.953156
+          ],
+          "metres": 242.5633301366823
+        }
+      ]
+    },
+    {
+      "name": "misato",
+      "point": [
+        131.86067894,
+        34.02519091
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-369372177",
+          "name": "みほり峠",
+          "search_names": "みほり峠      ",
+          "point": [
+            131.86097840000002,
+            34.025614700000006
+          ],
+          "metres": 54.63170945601674
+        },
+        {
+          "id": "osm-way-370307191",
+          "name": "味の蔵",
+          "search_names": "味の蔵      ",
+          "point": [
+            131.85940449999998,
+            34.024762499999994
+          ],
+          "metres": 126.576457154797
+        },
+        {
+          "id": "civic-kdpark000103",
+          "name": "平田東公園",
+          "search_names": "平田東公園 ヒラタヒガシコウエン",
+          "point": [
+            131.8611087,
+            34.0235474
+          ],
+          "metres": 187.1789898633829
+        },
+        {
+          "id": "osm-way-369091510",
+          "name": "のぞみ医院",
+          "search_names": "のぞみ医院      ",
+          "point": [
+            131.8615271,
+            34.026983
+          ],
+          "metres": 214.2130512953942
+        },
+        {
+          "id": "osm-node-1423657573",
+          "name": "平田保育園",
+          "search_names": "平田保育園      ",
+          "point": [
+            131.860095,
+            34.023245
+          ],
+          "metres": 223.18101748776496
+        },
+        {
+          "id": "civic-KD0000500044",
+          "name": "子育て支援センターくだまつ",
+          "search_names": "子育て支援センターくだまつ コソダテシエンセンタークダマツ",
+          "point": [
+            131.8599798,
+            34.0232244
+          ],
+          "metres": 228.1657129999651
+        },
+        {
+          "id": "osm-way-369072036",
+          "name": "マックスバリュ",
+          "search_names": "マックスバリュ      ",
+          "point": [
+            131.862869,
+            34.0264173
+          ],
+          "metres": 243.38159100790338
+        },
+        {
+          "id": "osm-node-3729127825",
+          "name": "CoCo壱番屋",
+          "search_names": "CoCo壱番屋      ",
+          "point": [
+            131.8622596,
+            34.0269487
+          ],
+          "metres": 243.7965251457015
+        },
+        {
+          "id": "osm-node-3729136425",
+          "name": "のん太鮨",
+          "search_names": "のん太鮨      ",
+          "point": [
+            131.8621386,
+            34.0270248
+          ],
+          "metres": 244.35655385077754
+        }
+      ]
+    },
+    {
+      "name": "yuda",
+      "point": [
+        131.4658262,
+        34.1409343
+      ],
+      "nearby": [
+        {
+          "id": "osm-node-11548197840",
+          "name": "セブン-イレブン 湯田温泉スマ―トインタ―店",
+          "search_names": "セブン-イレブン 湯田温泉スマ―トインタ―店      ",
+          "point": [
+            131.4658262,
+            34.1409343
+          ],
+          "metres": 0
+        },
+        {
+          "id": "civic-care-3570303341-4e055abf40",
+          "name": "特定非営利活動法人介護派遣センターライフライン山口",
+          "search_names": "特定非営利活動法人介護派遣センターライフライン山口 トクテイヒエイリカツドウホウジンカイゴハケンセンターライフラインヤマグチ",
+          "point": [
+            131.46669,
+            34.140472
+          ],
+          "metres": 94.67777977729976
+        }
+      ]
+    },
+    {
+      "name": "shinjuku",
+      "point": [
+        131.7981327,
+        34.0651728
+      ],
+      "nearby": [
+        {
+          "id": "osm-way-376604899",
+          "name": "セブン-イレブン",
+          "search_names": "セブン-イレブン セブン-イレブン    7-ELEVEN 周南新宿通6丁目店",
+          "point": [
+            131.7981327,
+            34.0651728
+          ],
+          "metres": 0
+        },
+        {
+          "id": "osm-node-1631273352",
+          "name": "尚白園",
+          "search_names": "尚白園      ",
+          "point": [
+            131.7983408,
+            34.0651853
+          ],
+          "metres": 19.195701480349015
+        },
+        {
+          "id": "osm-node-1423657653",
+          "name": "徳山市立尚白保育園",
+          "search_names": "徳山市立尚白保育園      ",
+          "point": [
+            131.798183,
+            34.065378
+          ],
+          "metres": 23.306889914753352
+        },
+        {
+          "id": "osm-way-376603670",
+          "name": "CAFÉ FADIE'S",
+          "search_names": "CAFÉ FADIE'S      徳山店",
+          "point": [
+            131.79871205,
+            34.064477600000004
+          ],
+          "metres": 93.9684596771168
+        },
+        {
+          "id": "osm-way-385245589",
+          "name": "尚白公園",
+          "search_names": "尚白公園      ",
+          "point": [
+            131.7992897,
+            34.0650884
+          ],
+          "metres": 106.85784401534066
+        },
+        {
+          "id": "osm-way-338243033",
+          "name": "マクドナルド",
+          "search_names": "マクドナルド      ",
+          "point": [
+            131.7998374,
+            34.0657134
+          ],
+          "metres": 167.9820972103717
+        },
+        {
+          "id": "osm-way-376604483",
+          "name": "土田酒店",
+          "search_names": "土田酒店      ",
+          "point": [
+            131.79766115,
+            34.0634522
+          ],
+          "metres": 196.38876215771677
+        },
+        {
+          "id": "osm-node-3885981764",
+          "name": "ファミリーマート",
+          "search_names": "ファミリーマート      ",
+          "point": [
+            131.7988022,
+            34.0668835
+          ],
+          "metres": 200.1483382125066
+        },
+        {
+          "id": "osm-node-1631278871",
+          "name": "西部老人憩の家",
+          "search_names": "西部老人憩の家      ",
+          "point": [
+            131.799841,
+            34.064037
+          ],
+          "metres": 201.7096350437533
+        },
+        {
+          "id": "osm-way-376522425",
+          "name": "宇都宮クリニック",
+          "search_names": "宇都宮クリニック      ",
+          "point": [
+            131.7962162,
+            34.0661766
+          ],
+          "metres": 208.74515263482192
+        },
+        {
+          "id": "osm-way-302012991",
+          "name": "松屋",
+          "search_names": "松屋 松屋    松屋 周南店",
+          "point": [
+            131.80041115,
+            34.0652965
+          ],
+          "metres": 210.0692150326421
+        },
+        {
+          "id": "osm-way-385246055",
+          "name": "西松原公園",
+          "search_names": "西松原公園      ",
+          "point": [
+            131.7965394,
+            34.0633661
+          ],
+          "metres": 248.8709463208479
+        }
+      ]
+    }
+  ],
+  "case_findings": [
+    {
+      "case_id": "case:kaiten-462915:closure",
+      "name": "旧セブン-イレブン キヨスクJR宇部新川駅店",
+      "impact": "historical_only",
+      "reason": "2024年2月28日閉店の二次報道。店舗名付き旧地点周辺に元施設IDはなく、現行JR公式一覧にも不在だが、それだけで一次閉店履歴を確定しない。"
+    },
+    {
+      "case_id": "case:kaiten-517166:closure",
+      "name": "旧セブン-イレブン 山口中央3丁目店",
+      "impact": "historical_only",
+      "reason": "2024年8月29日閉店の二次報道。住所地図の100m以内に元の施設なし。店舗固有の一次閉店資料は未取得。"
+    },
+    {
+      "case_id": "facility:official-seven-559931:opening",
+      "name": "セブン-イレブン 宇部常盤台2丁目店",
+      "impact": "supplemental",
+      "reason": "現行公式掲載は反映済み。2026年7月9日の予定どおりの開店実施日を示す一次履歴は未取得。"
+    },
+    {
+      "case_id": "case:shunan-115609:old-relocation",
+      "name": "旧セブン-イレブン 下松藤光町1丁目店",
+      "impact": "map_action",
+      "reason": "旧藤光町1丁目店から移転する店頭掲示は実見。記事の旧店用地図リンクは現在新店を返すため、旧点の確定・旧施設の閉店処理は保留。"
+    },
+    {
+      "case_id": "facility:official-seven-misato3:opening",
+      "name": "セブン-イレブン 下松美里町3丁目店",
+      "impact": "supplemental",
+      "reason": "新店は現行掲載済み。掲示の2025年9月25日7時は予定で、実施日の一次履歴は未取得。"
+    },
+    {
+      "case_id": "facility:osm-node-11548197840:opening",
+      "name": "セブン-イレブン 湯田温泉スマ―トインタ―店",
+      "impact": "supplemental",
+      "reason": "現在営業施設として公式確認・地図補完済み。2024年1月25日の実際の開店日を示す一次原本は未取得。"
+    }
+  ],
+  "article_keys": [
+    "yamaguchi-25952",
+    "shunan-119605",
+    "kaiten-462915",
+    "kaiten-517166",
+    "ube-82916",
+    "shunan-115609",
+    "yamaguchi-25426"
+  ],
+  "browser_observations": {
+    "recorded_at": "2026-09-26T01:19:25.999Z",
+    "method": "Observed rendered official detail pages using browser accessibility and visible body text; fields transcribed from returned UI, no hidden state.",
+    "observed": [
+      {
+        "url": "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1",
+        "name": "宇部常盤台２丁目",
+        "address": "山口県宇部市常盤台２丁目１３－５",
+        "telephone": "0836-21-0711",
+        "hours": "24時間営業"
+      },
+      {
+        "url": "https://seven-eleven.areamarker.com/711map/info/532027",
+        "name": "湯田温泉スマ―トインタ―",
+        "address": "山口県山口市吉田２８３４－１",
+        "telephone": "083-924-1077",
+        "hours": "24時間営業"
+      }
+    ]
+  },
+  "photos": [
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_1708462.jpg",
+      "path": "outputs/facility-seven-20260926/shinjuku-notice.jpg",
+      "sha256": "1a851b78a228f6eb5eb220432cb63929f85f1a2e242c3ca76651a0dff72b2705",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/09/IMG_20250915_1134292.jpg",
+      "path": "outputs/facility-seven-20260926/fujimitsu-notice.jpg",
+      "sha256": "8a9e2a0cff2881da93c93825b6d018afb8775856557999ccb28434522bc89c05",
+      "visually_read": true
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/01/IMG_0595.jpeg",
+      "path": "outputs/facility-seven-20260926/uematsu-notice.jpeg",
+      "sha256": "5800d3e41df9845b6a6f75a0a82963e1cc94af88b2132374f1b15d2e9d8207d3",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170849-1280x960.jpg",
+      "path": "outputs/facility-seven-20260926/shinjuku-poster.jpg",
+      "sha256": "99b22b1fa1c92149232dd37a356173b89cb7bcdf498f422dc9292e02f49b0018",
+      "visually_read": true
+    },
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/09/003.jpg",
+      "path": "outputs/facility-seven-20260926/relocation-poster.jpg",
+      "sha256": "3587153f7a3b71910057977f460ffa6264e100807942becfa7b921e700f27344",
+      "visually_read": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sn-hiroshima.co.jp/pages/60/",
+      "path": "outputs/facility-seven-20260926/receipts/071d4da4e8c3788ee7042fdb.json",
+      "status": 200,
+      "hash": "b0739f75ca1a9753c9df65d1f5d53577a54a9902b2df46913b01b379e9da2a5b"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3306.7228692089343%212d131.8582297757153%213d34.025323873167146%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e11f683d08e3%3A0xb2945021ebf2310c%212z44CSNzQ0LTAwNzMg5bGx5Y-j55yM5LiL5p2-5biC576O6YeM55S677yT5LiB55uu77yR77yX4oiS77yR%215e0%213m2%211sja%212sjp%214v1758282738907%215m2%211sja%212sjp",
+      "path": "outputs/facility-seven-20260926/receipts/13f045ea9c5e7dbf5b758605.json",
+      "status": 200,
+      "hash": "b7cc3887b9e56d33798487e946400c09265c1a97418064383dda73a6697aa875"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/xYvDiopqVVA",
+      "path": "outputs/facility-seven-20260926/receipts/143ba9fb2ada7e4a1f30dcbe.json",
+      "status": 200,
+      "hash": "f3838869a1186c4b68a18736b1dbd089f1b97043324d4642a5b9c572c76f710d"
+    },
+    {
+      "url": "https://www.sej.co.jp/sitemap/",
+      "path": "outputs/facility-seven-20260926/receipts/1b33e37ce250d5435e9a670f.json",
+      "status": 200,
+      "hash": "a5e2b01c2ddfe1d8fdaa65925189f451e2abf46e9724bb2878ac93826e69b646"
+    },
+    {
+      "url": "https://kudamatsu-cci.or.jp/premiumticket_page/",
+      "path": "outputs/facility-seven-20260926/receipts/4d60a653bd9d648977364815.json",
+      "status": 200,
+      "hash": "8c0044f68b7f3828f161c98a17f083f2da376310b221c7ed855543e27f258a37"
+    },
+    {
+      "url": "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1",
+      "path": "outputs/facility-seven-20260926/receipts/4e2d12638c37138ce0cfb333.json",
+      "status": 200,
+      "hash": "0e002aaaabd214edf8056895001b734f0ee2a237c0ea62b25d4d41034096e018"
+    },
+    {
+      "url": "https://www.sej.co.jp/products/andst_shoplist_s/",
+      "path": "outputs/facility-seven-20260926/receipts/5aa285b18e4bc8d18ce29d15.json",
+      "status": 200,
+      "hash": "6c8dfdc2f43e246f295ab8547f4fd1302e0b4eb60824e716061a824ecc0a7bf2"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3320488642657!2d131.24085864537642!3d33.95830395773632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380d7bcd9b2e5%3A0x9c08f6f3daa4e179!2z44K744OW44OzLeOCpOODrOODluODsyDjgq3jg6jjgrnjgq_vvKrvvLLlrofpg6jmlrDlt53pp4Xlupc!5e0!3m2!1sja!2sjp!4v1708090567174!5m2!1sja!2sjp",
+      "path": "outputs/facility-seven-20260926/receipts/7d5714232317535315db9721.json",
+      "status": 200,
+      "hash": "78a7688f629512a57b8281ad9286ecfc5609d57eeed3779ee342cff4fa6a19ac"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.8661918266025!2d131.47029097667095!3d34.17533861121885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544971a272d174f%3A0x2702409f32a57e55!2z44CSNzUzLTAwNzQg5bGx5Y-j55yM5bGx5Y-j5biC5Lit5aSu77yT5LiB55uu77yR4oiS77yT77yQ!5e0!3m2!1sja!2sjp!4v1726318119873!5m2!1sja!2sjp",
+      "path": "outputs/facility-seven-20260926/receipts/89ce1689eac7899ff5283e6e.json",
+      "status": 200,
+      "hash": "aa4d7e75d60dc8c835071138269ce7d55fc33b8f04518f574f95c404812b5073"
+    },
+    {
+      "url": "https://seven-eleven.areamarker.com/711map/main-es2015.968f66f824c9f59812d7.js",
+      "path": "outputs/facility-seven-20260926/receipts/8d159f5a8e2a82059c2ba023.json",
+      "status": 200,
+      "hash": "db2a1a4fd841dab61b3f8d7a25e3e3529d52ca1d4d1b2cc4d700ee38e2370406"
+    },
+    {
+      "url": "https://seven-eleven.areamarker.com/711map/data/custom-config.json",
+      "path": "outputs/facility-seven-20260926/receipts/a8c594ee44222e9a1672f87a.json",
+      "status": 200,
+      "hash": "814bd064923ec9be17957397f166473d2c9581f53c7e8fe3ec85b0696c8f555c"
+    },
+    {
+      "url": "https://map.yahoo.co.jp/v3/place/1FF5Ah7nNXU",
+      "path": "outputs/facility-seven-20260926/receipts/ac800f6cc82b01e6cee6d895.json",
+      "status": 200,
+      "hash": "fbc4343e3888320bff312a4f5276041dca0e6bb2ff7c0d3075c9b740d1c383fc"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6613.75774547288%212d131.8691641%213d34.021319999999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e19ccab3567b%3A0xc98b75042994dd9f%212z44K744OW44OzLeOCpOODrOODluODsyDkuIvmnb7ol6TlhYnnlLox5LiB55uu5bqX%215e0%213m2%211sja%212sjp%214v1758282662373%215m2%211sja%212sjp",
+      "path": "outputs/facility-seven-20260926/receipts/b5a96ef41b4f107fca37d273.json",
+      "status": 200,
+      "hash": "cfe6950d97031e5945b9707bb7325485c9215f02f3f50eec02d8999b4654f351"
+    },
+    {
+      "url": "https://seven-eleven.areamarker.com/711map/info/532027",
+      "path": "outputs/facility-seven-20260926/receipts/d997cc104b088d36e62d2fcf.json",
+      "status": 200,
+      "hash": "6efb9515cc2b624ddd4f22ed2265182da45b5c5ddb46b4f8c13d3e0952975b53"
+    },
+    {
+      "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/",
+      "path": "outputs/facility-seven-20260926/receipts/da5b76f99859296216734964.json",
+      "status": 200,
+      "hash": "bde72f50ef40978661e35422ea49f24ba7d32419c95b81d594209e7c3036928c"
+    },
+    {
+      "url": "https://seven-eleven.areamarker.com/711map/data/config.json",
+      "path": "outputs/facility-seven-20260926/receipts/f06760d9ba9ea8937200ca55.json",
+      "status": 200,
+      "hash": "3143faf3a57243d206c082fe67315af4bba42d5de8bdebe40e8ed95774ca5c27"
+    }
+  ],
+  "directory_attempts": {
+    "status": [
+      401,
+      401
+    ],
+    "outcome": "Both read-only direct queries returned 401. No directory data adopted. Official rendered UI used for two identified stores; no access bypass or token extraction."
+  },
+  "extra_jev_requests": 0,
+  "limitations": "Only these identified stores were reviewed; no prefecture-wide Seven inventory or remaining-store estimate is claimed. Historical dates remain explicit holds. Existing verification dates are preserved."
+}

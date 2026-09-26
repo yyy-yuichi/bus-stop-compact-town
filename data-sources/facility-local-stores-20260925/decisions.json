@@ -1,0 +1,3452 @@
+[
+  {
+    "id": "karato-market-217",
+    "name": "山本菓子店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/217/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-217",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/217/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/400e6eb28fea15815b25d433.json",
+        "sha256": "42e28b6620f61289c0dbbc0a60812b0532169fadbbe7c29816d46440561f54f3"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5563",
+    "name": "コマツ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5563/",
+    "decision": "outside_scope",
+    "route": "outside_current_scope",
+    "reason": "包材・道具またはたばこ中心。食品店へ誤分類しない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "unsupported",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5563/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/55cf524134d53d0c8dd7cb8d.json",
+        "sha256": "8773aefaf4c886681c06153f7b80a8d99f51cc0dae3b466506109ac7e75d1a2f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5544",
+    "name": "仁井田商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5544/",
+    "decision": "aggregate_source",
+    "route": "duplicate_directory_entry",
+    "target": "karato-market-232",
+    "reason": "仁井田商店の2掲載は同じ法人名・会社所在地・公式サイト。正確な場内区画が未確認のため、1事業者の場内案内としてまとめて掲載し、両方の出典ID・URLを残す。異なる売場の存在や営業時間の一致は断定しない。",
+    "facility_id": "official-karato-market-232",
+    "jev_route": "duplicate_directory_entry",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5544/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3e4ce5df028a73464267cf0b.json",
+        "sha256": "52cdcafe1730b8bc93a4e7f7c315c159b19218e4b9218e9fb367a984234a711c"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5540",
+    "name": "英彦山",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5540/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5540",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5540/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1bd7352319d4b972192b238b.json",
+        "sha256": "3bda8fb5d3af7c51719834d6300800522af4b97ac103fbd1b4ed37f9b5cb6f19"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5538",
+    "name": "高野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5538/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5538",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5538/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/dbb2cd4c6dc23e787b91654e.json",
+        "sha256": "171982ae152e2ac88803e4281c13b15be324d9c7a8ae770638989953ac8d6fb6"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5534",
+    "name": "兼子商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5534/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5534",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5534/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/16b1b619a832c061919b665d.json",
+        "sha256": "6f2fb15ed64d7db6973ab59bf57b872d612a2654b4eb40ecba520c375f35cb3b"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5532",
+    "name": "ほんぽ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5532/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5532",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5532/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/668ccee4af595c640f5ac487.json",
+        "sha256": "a9595c0bd3987abd8ac9045e0649da23a9f37117c6f696dc128daeeb20d4eccf"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5526",
+    "name": "むねおか茶舗",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5526/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5526",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5526/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/0dde44f92ad30443e2d72510.json",
+        "sha256": "68a1ad60556e430cd149ddf44cc03e885daef4d55944dc5c3319a045fed231a6"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5524",
+    "name": "畠中包材店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5524/",
+    "decision": "outside_scope",
+    "route": "outside_current_scope",
+    "reason": "包材・道具またはたばこ中心。食品店へ誤分類しない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "unsupported",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5524/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/8200603e6d42fd8695743bc4.json",
+        "sha256": "8c5cc1cc05a2cff417e99ca0f63eae2e340d41a129a407effac7486f247efb1f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5522",
+    "name": "宮下商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5522/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5522",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5522/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3d71550df2c2f0036b8b17fc.json",
+        "sha256": "139664e3f2414a84236cdda9cfc716213f5726c4f7f0a235f1b7698ebb2435ec"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5455",
+    "name": "海鮮KARATO 河上商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5455/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5455",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5455/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/fabc01d4ad266cabf9b270c2.json",
+        "sha256": "e9502d25cdc5feb3c93a01596d3e13fa99b8cfaea617037f02db3e2102abcd3a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-212",
+    "name": "林すし店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/212/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-212",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/212/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/8fe35b5045f80205a6cec520.json",
+        "sha256": "c3712a45b146aff6246a4a40e092d0b320d1f926dfa61ac2258c71c6a125cdaa"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-213",
+    "name": "はぎはら商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/213/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-213",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/213/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/789d2ce695b2f164413fbfef.json",
+        "sha256": "987ec3edd4197c9c024ab780fe667b15311c2ba076c5a50d829017eb5daa9d5e"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-215",
+    "name": "かねよし",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/215/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-215",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/215/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1b6f8724b90396bec276bd9d.json",
+        "sha256": "9659fcc06c7ca3bea248462a251f64eb6f56e4ee1a0fd9fe68910012163a05b5"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-216",
+    "name": "安光商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/216/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-216",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/216/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/89915327acab4f22cfd01e99.json",
+        "sha256": "5cd0d589a4baafc2c13d70cacb8220e6cb42265e58ec859d2117713d25075953"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-218",
+    "name": "市村蒲鉾",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/218/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-218",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/218/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/7797d9ec2f2cac143cb2c86c.json",
+        "sha256": "d024033e2b04ec631b9b43924faf285aafbec9a64c8f5a87e7156a0dafcd049f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-220",
+    "name": "おさかなフーズ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/220/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-220",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/220/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3e739ade5de365521bade40f.json",
+        "sha256": "69538128fb6d00b6c6a26c533d06e405db269e3389da446ab8f1aecc55181f4e"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-221",
+    "name": "海龍",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/221/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-221",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/221/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/9e1f238e027d62d2f3bf25cf.json",
+        "sha256": "8f9ae3a6d00cbc9ada1fde9ca9e3dc2d80b404ed4254af1845176b30a1c51e3f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-229",
+    "name": "横井たばこ店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/229/",
+    "decision": "outside_scope",
+    "route": "outside_current_scope",
+    "reason": "包材・道具またはたばこ中心。食品店へ誤分類しない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "unsupported",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/229/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/47213c13aa3399367e4e49a0.json",
+        "sha256": "78c10cf7d82a01e2cb6b22a06015b34f1ac7714d3f94d961fd56a0e0844d80dd"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-211",
+    "name": "林商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/211/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-211",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/211/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/7f46425b1a2f887ddce20360.json",
+        "sha256": "1da9ed23f64315c6e83540edae156941ae765d6e3f8697a76328f66a0949d04a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4e066ef9b7788a697392769a.json",
+        "sha256": "eb69bed6f70ab6b7990f5986850f4b6918c557e2e3e202042ddb3f2d8f0a779d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-6100",
+    "name": "山西水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/6100/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/6100/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/c1771867e8a20e55ecb3961a.json",
+        "sha256": "03d5178874a5e051714b6164e24ef7d1e4d64ec16c775e496eb74146c0955a22"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5783",
+    "name": "ダイフク",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5783/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5783/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/ba0f5684864700a5b0fdf240.json",
+        "sha256": "895e6a7d80b1980f55d176c4f9a54d85b193e860825834977a21c0d1e0cf387d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5780",
+    "name": "ふく陣吉田",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5780/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5780/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3a1ca9a7905d4e8b3deff1e8.json",
+        "sha256": "3660cf2d1eaf268ab5a1bdf5267d2680d9d403e5f7ad33a290cb56d8f60af38c"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5778",
+    "name": "マルヨ水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5778/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5778/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/64dab2ca565cac5bc5be993d.json",
+        "sha256": "92342a9a3239fe0358428b0fcfbb01136b5846cf18fb7358013657d15cab0ff7"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5775",
+    "name": "畑水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5775/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5775/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/35b22ae7744c2651b0f64bed.json",
+        "sha256": "2d8fe7100c42ccaa7803ac306e2100ca8cd38671f22828538b73299eea04e70b"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5773",
+    "name": "永野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5773/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "conflict_or_unclear",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5773/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/b61d421ee135db47b70f6a0d.json",
+        "sha256": "e39da0efdedfc98dfd12502ee629a01e2107f156642201dd6ce4515ee3a7dc0c"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-265",
+    "name": "酒井商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/265/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/265/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/446e478398993a2248675e7a.json",
+        "sha256": "e8be8d9fec59f5a2102525e484d66d2952abb18fc20bfcaf02aa37ab6fd43062"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-2446",
+    "name": "青鮮魚商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/2446/",
+    "decision": "hold_offsite",
+    "route": "conflict_or_unclear",
+    "reason": "公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/2446/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/15bf96748f9cea35fed72a68.json",
+        "sha256": "25f1abf62341c94add0b87f2bc0048d1be37754b9e7c66bcd987511669fb6af8"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=10",
+        "receipt": "outputs/facility-local-stores-20260925/pages/70b80b3871fce7e2073bdbee.json",
+        "sha256": "e317aa7c4754dec5e36209cf778c1d6ea8d45ca454bffbd6cfeac777e1b8abd0"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5557",
+    "name": "平越商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5557/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5557",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5557/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/6d036cd405fa90bb2b049d20.json",
+        "sha256": "8c4bec703011304baad0431f103411cb50c5f8f53541b5f00a692972ff6be506"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5555",
+    "name": "平尾商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5555/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5555",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5555/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/f9387071c78fed512306ebbc.json",
+        "sha256": "39505b4b21669d3eea8c88f2d74326bdfa95e7d50e1478f963074834cdbfc14e"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5260",
+    "name": "福一商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5260/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5260",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5260/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/831a6f615135f421aea66245.json",
+        "sha256": "50ba17033faf54d6b91f289a64d2259f8b9af564ea9bcac9ec0883b4ea18742c"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-3817",
+    "name": "カネヒ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/3817/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-3817",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/3817/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/d55f8f3dea7a24ae167d0a76.json",
+        "sha256": "04c0dcf19821fb461405b8583508f2080340bfd1a66832ab1d097bf6de16fcd0"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-223",
+    "name": "吉田水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/223/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-223",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/223/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/a0f9e83b29d12fa58f3e6ee0.json",
+        "sha256": "b1d1c8f78624034bf4e77598b61e263242516b02f35d7980df0e900720f571d7"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-224",
+    "name": "森本商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/224/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-224",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/224/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/71b89f3d4d77b9424766a0f8.json",
+        "sha256": "b0e8293412cb9aad813850a4bda1e8ed3310c8c86de83c954eba96b06c6a6c75"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-225",
+    "name": "木村水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/225/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-225",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/225/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/c39340062e14ad81d5ee8868.json",
+        "sha256": "16f75922e39da7b0a73fb7146a560fc2c7817767a19c94e17cce51e1db402b10"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-226",
+    "name": "伊東繁商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/226/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-226",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/226/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/a37d596bb27011c6017cc4e4.json",
+        "sha256": "b762a7b33613fa143ca05b921cc484dd90219f5815ab329586eb8417236117c6"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-227",
+    "name": "海（かい）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/227/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-227",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/227/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/afec21b6ce1a10b7d39c9846.json",
+        "sha256": "eeb1a5f8eb2af5f138a696e7b39344c4e1bfc9ef04f90716ca267beac6405914"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-228",
+    "name": "道中",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/228/",
+    "decision": "hold_suspended",
+    "route": "conflict_or_unclear",
+    "reason": "店舗詳細の営業時間欄に『只今、休業中です。』。過去の通常営業案内と混在するため営業中として追加せず保留。永久閉店とも扱わない。",
+    "facility_id": null,
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": null,
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/228/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3749aeba5cead0054741e55e.json",
+        "sha256": "6c8540b07f27a7bc51294b08896cca00067613054c03e90092e5ced919e2e810"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-2982",
+    "name": "下関勇次水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/2982/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-2982",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/2982/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/f819bebd1a4e2a19c25b530f.json",
+        "sha256": "007011c5ef8dc5f21deb81ecbeb5b6054d6e33f67e222c33ad39e07d29608ce1"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=2",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e45f1bbb781e3090cbe915ae.json",
+        "sha256": "744227c3f2f03efc6e31e18874e0bf423b73e06cdcc46849e3af83a42f4db631"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5605",
+    "name": "村野商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5605/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5605",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5605/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/efdec6b9b683812b6d351228.json",
+        "sha256": "cc86f33aba84a5352ab0d97a9216f25dc93fe17bb077e92252be687a181891b6"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5561",
+    "name": "井上商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5561/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5561",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5561/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/53b756b73d7a93f9eb40d45c.json",
+        "sha256": "019ff20f7e88808dc87879a28c1ac6454ce3cd6e1580267b7f6dac2c7d4abef4"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5559",
+    "name": "竹野内商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5559/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5559",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5559/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/9f93dfa9435d7b232f1e3414.json",
+        "sha256": "8248a44cdf325be16e15b318ac85115d5277bfd60609ea0eb8daee2b57167ac1"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5553",
+    "name": "雨森商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5553/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5553",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5553/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/482124fe3555597d175f8665.json",
+        "sha256": "267d7c38cedc8ba34e56449982f37c6a0d171098bc50b725cdf173b802d892f9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5536",
+    "name": "うお華",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5536/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5536",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5536/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/97eed49978af802c986f4774.json",
+        "sha256": "ca82e435891889a94df8509825cacc16a9873fed7df92de7094f24f4cc1f010f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5530",
+    "name": "浜尾商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5530/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5530",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5530/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/5e4f564395c898dca9c76fe5.json",
+        "sha256": "696aad08dff17002dc3b0488163302164ddd5ea660b0ec91c342df41d9634fef"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5528",
+    "name": "山崎商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5528/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5528",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5528/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95ca19c6c0650a7fe1512a49.json",
+        "sha256": "d2344e6435d86e91a61b203d714be79fe1c65dd9776a078f9587ba68a14e4586"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5517",
+    "name": "タケショー",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5517/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5517",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5517/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4a16532527c5fef567622cb7.json",
+        "sha256": "1cf444caaf30526bd055add24aab6cdde15652a00ab7a3bbb0938519ef5c2f21"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5515",
+    "name": "中ヨ商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5515/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5515",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5515/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/db288f5e27b54e8f256d7f31.json",
+        "sha256": "ab71020afd7b51f207be9d226dfcd06ec790821bf178b26bb945081e605bc3ad"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-4607",
+    "name": "川人（かわと）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/4607/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-4607",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/4607/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/6f170f2e65973024a0f38b6e.json",
+        "sha256": "ab96326d22c8142bd0c369fca7c61af03cec4064ccdb964365888478054b47a3"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-2682",
+    "name": "魚重",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/2682/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-2682",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/2682/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/7b2866f9fb2489469e537c22.json",
+        "sha256": "6f24c0be1fc93429f14a639cae41de6126f11aeff97f42c41d53bce981b4407d"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-231",
+    "name": "柳川水産",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/231/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-231",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/231/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4312a0b8278cfc7cf4958105.json",
+        "sha256": "70e240d2d4504842adf36d9a708f6d37204327527f605d185487d4936b251bc6"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-232",
+    "name": "仁井田商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/232/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-232",
+    "jev_route": "duplicate_directory_entry",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": true,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/232/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/610d98dc12a5c7ed8f4e2e66.json",
+        "sha256": "41601974810f1807f2e96230b161000af3151a5de5976d18ce03472e55890e71"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/5544/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3e4ce5df028a73464267cf0b.json",
+        "sha256": "52cdcafe1730b8bc93a4e7f7c315c159b19218e4b9218e9fb367a984234a711c"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-233",
+    "name": "磯部商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/233/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-233",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/233/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/567ec48b5ce96108da472c63.json",
+        "sha256": "b3fc2107b58d0a96fce781459d9c7835018c49df602079eda0293d7488c44d28"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-235",
+    "name": "浦商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/235/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-235",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/235/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/199525a3e3c178072931d488.json",
+        "sha256": "498e839d0bb28a5a189831d4e0981ce5547ff826433209ee17064f5097b0d8e1"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-236",
+    "name": "植野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/236/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-236",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/236/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/84d752db437f86bdc8eb40e0.json",
+        "sha256": "d47b446a91f72843573fca82fea93a30b1b1e1de9c09c9f94b7f0941e6793809"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-239",
+    "name": "河上商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/239/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-239",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/239/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/f06db2b20e4b8e306c2fbc00.json",
+        "sha256": "70f6a47a85403e7db69bf7d9b0c3831d7422d7b41ec291867b226e28f8afa70e"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-240",
+    "name": "相田鮮魚（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/240/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-240",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/240/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/e86a18abdbd468fa793a784a.json",
+        "sha256": "26320e924bb77bbbeebe8c46c78ecbef127f2a4a31d53c79a64d38f86c413b1e"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-243",
+    "name": "松甚商店（北浦エリア）",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/243/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-243",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/243/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/6125520acc42989ad2f91fcd.json",
+        "sha256": "70ff578bbfefce961a670efbcc85a5b001cde3cf432df1748baa09515308a0d9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-244",
+    "name": "湊商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/244/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-244",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/244/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/d44bce4c3cfcb58cbafdf79d.json",
+        "sha256": "71909de76d0220d2c08564c2eb0b6b110c40e8f722b4f9eee3454b49b49e5c73"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-245",
+    "name": "丸十タナカ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/245/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-245",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/245/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/4cd5a93d08314b91356923ca.json",
+        "sha256": "41d4e8d0f294529190e204d3a39f95742dd884bade203e2ff445291295821217"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-1825",
+    "name": "村本商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/1825/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-1825",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/1825/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3186332f4a52bee283cf207c.json",
+        "sha256": "241da6f34468f40e57440fc643ee813e7980ddf7c52d19e4cba4b3b1017067df"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=3",
+        "receipt": "outputs/facility-local-stores-20260925/pages/710fa0c8664f0beb38104a6c.json",
+        "sha256": "75dd649ad526e89f5e2ba8524ce035bf11622f074316bb3a8a70238420aacab9"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5569",
+    "name": "桶尾商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5569/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5569",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5569/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/827dde51cca2db16cfe8ae6a.json",
+        "sha256": "2ba7d421beb02dc6ad58a6efb52b5f87c7e5c81131b5bcd9ff00ca22635a140b"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=4",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1909c22efe2baf5016dead61.json",
+        "sha256": "738dffbc4a39a37a780e099dd00555b6d46b8f4aa5915e257bd02a146b8e0b8a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-246",
+    "name": "久保田商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/246/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-246",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/246/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/f744188b4b836a7dfa9ee1dc.json",
+        "sha256": "687dda38adca33b4e7a01f5f238b34c3d697056f347a3ec877447538ce2f0ee1"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=4",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1909c22efe2baf5016dead61.json",
+        "sha256": "738dffbc4a39a37a780e099dd00555b6d46b8f4aa5915e257bd02a146b8e0b8a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-247",
+    "name": "村田商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/247/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-247",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/247/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/9cce084f5e554a010b08d76b.json",
+        "sha256": "ad7285d36481fb2331093afdfe9ce546c6635385b6d4784c5f6e41d7b9e8d66f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=4",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1909c22efe2baf5016dead61.json",
+        "sha256": "738dffbc4a39a37a780e099dd00555b6d46b8f4aa5915e257bd02a146b8e0b8a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-250",
+    "name": "藤野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/250/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-250",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/250/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/5145d02c3094d7f6eb7bff50.json",
+        "sha256": "f1aa6b4d904bb5087ed647e81bfddd2613197e294dbe6cdc695bdf89e68044a2"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=4",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1909c22efe2baf5016dead61.json",
+        "sha256": "738dffbc4a39a37a780e099dd00555b6d46b8f4aa5915e257bd02a146b8e0b8a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-251",
+    "name": "先野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/251/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-251",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/251/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/0b6c0081b49b264bb2fc042b.json",
+        "sha256": "89a62474be2200462fb88c6fc2c1a35260b303047aa86ae81d623ccf3a653e87"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=4",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1909c22efe2baf5016dead61.json",
+        "sha256": "738dffbc4a39a37a780e099dd00555b6d46b8f4aa5915e257bd02a146b8e0b8a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5565",
+    "name": "木村商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5565/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5565",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5565/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/01bdf04b0617340a80c68b05.json",
+        "sha256": "fdd32fd71f0d18bbff659cf5f752ba80e40388ec4f3659d7601953abcedf6175"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=5",
+        "receipt": "outputs/facility-local-stores-20260925/pages/50a90182a537eb94c77dda8f.json",
+        "sha256": "f757a97dddc4fea1f5ef0f6fb8bef99c125810e9dfc12f3b89354f1bafdb8fc0"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5542",
+    "name": "丸一青果",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5542/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5542",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5542/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/eb3b6ad14f925c0d391403e9.json",
+        "sha256": "fa4a3f1c8c943ebc53e4078f48df8fa68959168908b6767076f099adb3e69982"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=5",
+        "receipt": "outputs/facility-local-stores-20260925/pages/50a90182a537eb94c77dda8f.json",
+        "sha256": "f757a97dddc4fea1f5ef0f6fb8bef99c125810e9dfc12f3b89354f1bafdb8fc0"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-253",
+    "name": "田中青果",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/253/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-253",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/253/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/f73c4f8357a4a438f37535ea.json",
+        "sha256": "f05dd8f1b83bddd0dae4f2565e346b0bd9d206c580c6c46b5f98ba5dbd8a8cb4"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=5",
+        "receipt": "outputs/facility-local-stores-20260925/pages/50a90182a537eb94c77dda8f.json",
+        "sha256": "f757a97dddc4fea1f5ef0f6fb8bef99c125810e9dfc12f3b89354f1bafdb8fc0"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5519",
+    "name": "浦野商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5519/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5519",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5519/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/0fadbd98722ee17fd3887113.json",
+        "sha256": "20ac7b3f9991d0e6e4825a42347b160bad8b829f24661465e7320e63f8c5d4ea"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=6",
+        "receipt": "outputs/facility-local-stores-20260925/pages/bced66fd2fba78f015818d37.json",
+        "sha256": "4008d67836c9163c9839190c3477666db98d4c9971787338b9456b4b0167fcfb"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5740",
+    "name": "下関そ菜生産者直売組合",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5740/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5740",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5740/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/63989cbe701bac9aa744cf86.json",
+        "sha256": "b6fe1200400c97241cf6d913e3e2dc435a852facdf3be04e9259c16ed9a353aa"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=7",
+        "receipt": "outputs/facility-local-stores-20260925/pages/5434916a6888cbc3cc4dab87.json",
+        "sha256": "d582dc95ea1aa8623407dfe4eada81674c3aa8f057b4bd837531ed10257b03a2"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5567",
+    "name": "瓜生商店",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5567/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5567",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5567/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/a6bb01666e19b2bac6ccad7c.json",
+        "sha256": "3dc9dc1649828675a23b24263b87a17fbc3be114b978147f2a31fedfe90b8341"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=8",
+        "receipt": "outputs/facility-local-stores-20260925/pages/a5577d106a324db4e3c1beeb.json",
+        "sha256": "c78d63d0caa71671019cd0c5c5712ecf163b914c655780361645204b6c64a682"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-258",
+    "name": "下関沿岸漁業生産者事業協同組合",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/258/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "food_shop",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-258",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "food_shop",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/258/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/abed2f8f680a6a7c7ea2aede.json",
+        "sha256": "bd0e06486b85c0bbf9d35922e7d4449bebaf47893dceb918cb0c2784be974e6f"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=8",
+        "receipt": "outputs/facility-local-stores-20260925/pages/a5577d106a324db4e3c1beeb.json",
+        "sha256": "c78d63d0caa71671019cd0c5c5712ecf163b914c655780361645204b6c64a682"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-5547",
+    "name": "唐戸食堂",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/5547/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-5547",
+    "jev_route": "new_current_listing",
+    "jev_category": "restaurant",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/5547/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/fc79aad15dcddcb322147c11.json",
+        "sha256": "aaf8eb92939bcb1814dbfb9ca89dcf4b1be28c6c5f4c62af174378a661bb9b85"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=9",
+        "receipt": "outputs/facility-local-stores-20260925/pages/789660a7ad41d02303f6a1e0.json",
+        "sha256": "4b8c326399bc18b1521c4f6b468a1fe73d22168ce88a219f602d1a6eeb369d01"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-4660",
+    "name": "市場食堂 まぐろとかめ",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/4660/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-4660",
+    "jev_route": "new_current_listing",
+    "jev_category": "restaurant",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/4660/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/0a355dd42970c5a5ea175da6.json",
+        "sha256": "9b8e3d9302213e3adffb17a83101c3e48f8e8502a272862a5cba58e874532e3a"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=9",
+        "receipt": "outputs/facility-local-stores-20260925/pages/789660a7ad41d02303f6a1e0.json",
+        "sha256": "4b8c326399bc18b1521c4f6b468a1fe73d22168ce88a219f602d1a6eeb369d01"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-261",
+    "name": "市場食堂　よし",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/261/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-261",
+    "jev_route": "new_current_listing",
+    "jev_category": "restaurant",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/261/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/8b5eea3d5ce850f71c7a6463.json",
+        "sha256": "54af803ed7559457899b7aa144bde9d49e6a601863d7f308a6c923d681901ed1"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=9",
+        "receipt": "outputs/facility-local-stores-20260925/pages/789660a7ad41d02303f6a1e0.json",
+        "sha256": "4b8c326399bc18b1521c4f6b468a1fe73d22168ce88a219f602d1a6eeb369d01"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "karato-market-262",
+    "name": "海転からと市場寿司",
+    "group": "market_current",
+    "url": "https://www.karatoichiba.com/stores/262/",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "reason": "既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。",
+    "facility_id": "official-karato-market-262",
+    "jev_route": "new_current_listing",
+    "jev_category": "restaurant",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoichiba.com/stores/262/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/dc5a406cda1022803593eb4a.json",
+        "sha256": "79d6b52f45f9701e01e863d1ab4b5935d06364d89d2865082d1a5de9c69483ef"
+      },
+      {
+        "url": "https://www.karatoichiba.com/stores/?corner=9",
+        "receipt": "outputs/facility-local-stores-20260925/pages/789660a7ad41d02303f6a1e0.json",
+        "sha256": "4b8c326399bc18b1521c4f6b468a1fe73d22168ce88a219f602d1a6eeb369d01"
+      },
+      {
+        "url": "https://www.karatoichiba.com/access/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/665ccd6168065835d4a55f88.json",
+        "sha256": "15b92c097b016c0f022c267f55f3975f702460df87e676ff9ff7143239279aa8"
+      },
+      {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.396811140177!2d130.94368731571575!3d33.956638980631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bd9d08825735%3A0x6c22b1c00c89b942!2z5ZSQ5oi45biC5aC0!5e0!3m2!1sja!2sjp!4v1531386892523",
+        "receipt": "outputs/facility-local-stores-20260925/pages/99f69a0c819e350b36107ea0.json",
+        "sha256": "7f5c63af88435ae741bbfe5598aaaa402d2317f9e980d96386dc206bc4951645"
+      }
+    ]
+  },
+  {
+    "id": "harete-3ef746b2b020",
+    "name": "Sports&Bar わさび",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/米と肉と咖喱curryfull",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "bar",
+    "date": null,
+    "reason": "2026-05-24は当初のOPEN予定。現行掲載を確認したが、実開店日と断定せず日付未確認で登録。",
+    "facility_id": "official-harete-3ef746b2b020",
+    "jev_route": "new_current_listing",
+    "jev_category": "bar",
+    "reviewed_category": "bar",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/米と肉と咖喱curryfull",
+        "receipt": "outputs/facility-local-stores-20260925/pages/3ef746b2b020dd80562f2ac5.json",
+        "sha256": "5d3b3246740bcff551fdb8678392e4b017f89cb61ac9e35298b7f2e440c6a302"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-51f886473578",
+    "name": "日本酒処　なごみ",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/韓国ぽちゃアンニョン-1",
+    "decision": "add_opening",
+    "route": "new_current_listing",
+    "category": "bar",
+    "date": "2026-07-10",
+    "reason": "ホームのイヤシロチのリンク先がこのページにも向く。現行ページのタイトル・本文は日本酒処なごみ、15番、2026-07-10開店。別ページのイヤシロチは4番への場内移動を明記。既存『なごみ』は5.6km離れた別店として保持。",
+    "facility_id": "official-harete-51f886473578",
+    "jev_route": "new_current_listing",
+    "jev_category": "bar",
+    "reviewed_category": "bar",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/韓国ぽちゃアンニョン-1",
+        "receipt": "outputs/facility-local-stores-20260925/pages/51f886473578611e85c4f7e5.json",
+        "sha256": "ae0f4f6a3c561fe649815217057bbe7678d95af1156313d814802c241ccb6d85"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-733e1c15c22e",
+    "name": "酒処　OWL",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/串揚げ酒場縁",
+    "decision": "add_opening",
+    "route": "new_current_listing",
+    "category": "bar",
+    "date": "2026-06-25",
+    "reason": "URL名は卒業した串揚げ酒場縁を残すが、現行タイトル・本文は酒処OWL。縁の新住所は卒業生台帳に分離。古い別店SNSリンクは採用しない。",
+    "facility_id": "official-harete-733e1c15c22e",
+    "jev_route": "new_current_listing",
+    "jev_category": "bar",
+    "reviewed_category": "bar",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/串揚げ酒場縁",
+        "receipt": "outputs/facility-local-stores-20260925/pages/733e1c15c22e2d802033b9b9.json",
+        "sha256": "baf4fa783e759da8d8bd2b02a491439d648aa5a3ffc59feebe6a88427419be3b"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-9999acd5021d",
+    "name": "唐戸からあげ　角打ち　 えっこ",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/準備中-8",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "bar",
+    "date": null,
+    "reason": "現行の店舗別タイトル・本文・公式ナビを確認。旧URL名を店舗名に使わない。",
+    "facility_id": "official-harete-9999acd5021d",
+    "jev_route": "new_current_listing",
+    "jev_category": "bar",
+    "reviewed_category": "bar",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/準備中-8",
+        "receipt": "outputs/facility-local-stores-20260925/pages/9999acd5021d40590a17476e.json",
+        "sha256": "2fa398c72a8184ad3349af800b9ff4ecc7a14b73183f90685c7a4b4aa80c1a5d"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-b61ee2509630",
+    "name": "SOY STOCK",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/soystock",
+    "decision": "already_present",
+    "route": "existing_identity",
+    "target": "official-soy-stock-karato",
+    "reason": "前段で掲載済み。再追加・既存店舗位置の変更なし。",
+    "facility_id": "official-soy-stock-karato",
+    "jev_route": "existing_identity",
+    "jev_category": "cafe",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/soystock",
+        "receipt": "outputs/facility-local-stores-20260925/pages/b61ee250963007f7ac2f8295.json",
+        "sha256": "5e1ab10dc7cf65f12968763f77d74e422d21f293d24931f78807adea344db32c"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-1a903d5adbe5",
+    "name": "レシピノート",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/comingsoon-17",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "date": null,
+    "reason": "現行の店舗別タイトル・本文・公式ナビを確認。旧URL名を店舗名に使わない。",
+    "facility_id": "official-harete-1a903d5adbe5",
+    "jev_route": "new_current_listing",
+    "jev_category": "restaurant",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/comingsoon-17",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1a903d5adbe5e6a60001d25d.json",
+        "sha256": "6b15525f64be49143d92242afff403d48c077d33010fbe083320a38c3cf6111c"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-23473ca65ebf",
+    "name": "軽食・喫茶　オネット",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/軽食喫茶オネット",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "cafe",
+    "date": null,
+    "reason": "現行の店舗別タイトル・本文・公式ナビを確認。旧URL名を店舗名に使わない。",
+    "facility_id": "official-harete-23473ca65ebf",
+    "jev_route": "new_current_listing",
+    "jev_category": "cafe",
+    "reviewed_category": "cafe",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/軽食喫茶オネット",
+        "receipt": "outputs/facility-local-stores-20260925/pages/23473ca65ebf05a1507d567d.json",
+        "sha256": "bde9027577637776562dbf2aabed3531a75e139a61afe20aa4a732b966ef4bc8"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-1c9820ff03dc",
+    "name": "ごろうのきっちん",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/blank",
+    "decision": "add_opening",
+    "route": "new_current_listing",
+    "category": "restaurant",
+    "date": "2025-12-20",
+    "reason": "ホームの募集表示と詳細・ナビに相違あり。詳細にはごろうのきっちん、2025-12-20開店、営業時間・公式アカウントを明記。詳細を採用し相違を残す。",
+    "facility_id": "official-harete-1c9820ff03dc",
+    "jev_route": "new_current_listing",
+    "jev_category": "food_shop",
+    "reviewed_category": "restaurant",
+    "route_overridden": false,
+    "category_overridden": true,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/blank",
+        "receipt": "outputs/facility-local-stores-20260925/pages/1c9820ff03dcf86e85826459.json",
+        "sha256": "6a7e1a1fdf9d4cfe312c94250077dff638152af14b794d9563727de2c5f17a6b"
+      },
+      {
+        "url": "https://www.karatoharete.com/軽食喫茶オネット",
+        "receipt": "outputs/facility-local-stores-20260925/pages/23473ca65ebf05a1507d567d.json",
+        "sha256": "bde9027577637776562dbf2aabed3531a75e139a61afe20aa4a732b966ef4bc8"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-c3cde32a6b7f",
+    "name": "イヤシロチ",
+    "group": "harete_current",
+    "url": "https://www.karatoharete.com/なべと酒tokidoki",
+    "decision": "add_current_listing",
+    "route": "new_current_listing",
+    "category": "cafe",
+    "date": null,
+    "reason": "旧URL名はなべと酒tokidokiだが、現行タイトル・本文はイヤシロチ。15番から4番への場内移動を明記。元の一の宮店が閉店したとは推測しない。",
+    "facility_id": "official-harete-c3cde32a6b7f",
+    "jev_route": "new_current_listing",
+    "jev_category": "cafe",
+    "reviewed_category": "cafe",
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/なべと酒tokidoki",
+        "receipt": "outputs/facility-local-stores-20260925/pages/c3cde32a6b7f7761b6a31b8f.json",
+        "sha256": "b7c6bf5807d69e2588553dd38a6387a1d7b5d36348316ff9c757a8420dadf904"
+      },
+      {
+        "url": "https://www.karatoharete.com/軽食喫茶オネット",
+        "receipt": "outputs/facility-local-stores-20260925/pages/23473ca65ebf05a1507d567d.json",
+        "sha256": "bde9027577637776562dbf2aabed3531a75e139a61afe20aa4a732b966ef4bc8"
+      },
+      {
+        "url": "https://www.karatoharete.com/",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      },
+      {
+        "url": "https://www.google.com/maps/dir//%E3%80%92750-0004+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E9%96%A2%E5%B8%82%E4%B8%AD%E4%B9%8B%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%96/@33.9574951,130.8616458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3543bdefceea84af:0x39989e7a8ec4c4e5!2m2!1d130.9440486!2d33.9575229?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
+        "receipt": "outputs/facility-local-stores-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+        "sha256": "e7a4e9c2d97f3b02f24dc5793ec9cd137d804f6f0b649f3f25558cebe8efe298"
+      }
+    ]
+  },
+  {
+    "id": "harete-graduate-01",
+    "name": "カラオケBAR　いいやん",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市赤間町2-1赤間プラザ1階",
+      "reported_months": [
+        "2024年10月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-02",
+    "name": "DーDAY",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市赤間町2-1 赤間プラザ2階",
+      "reported_months": [
+        "2025年2月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-03",
+    "name": "マジックバー　WAKADAN",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市豊前田町1丁目1-13",
+      "reported_months": [
+        "2025年5月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-04",
+    "name": "焼き鳥とワイン　トリップ",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "restaurant",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市唐戸町2-12プロ-トン泰平１階",
+      "reported_months": [
+        "2025年6月",
+        "2025年3月"
+      ],
+      "note": "本文の移転月と独立時期の整合確認が必要。"
+    }
+  },
+  {
+    "id": "harete-graduate-05",
+    "name": "寿司　響",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "restaurant",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": null,
+      "reported_months": [
+        "2025年5月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-06",
+    "name": "ステーキ山本",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "restaurant",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市赤間町7－15",
+      "reported_months": [
+        "2025年7月",
+        "2025年5月"
+      ],
+      "note": "本文の移転月と独立時期の整合確認が必要。"
+    }
+  },
+  {
+    "id": "harete-graduate-07",
+    "name": "THE　ZUBAGHETTI",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "restaurant",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市観音崎町13-22",
+      "reported_months": [
+        "2025年8月"
+      ],
+      "note": "予定と独立時期が混在。実開店日を追加確認。"
+    }
+  },
+  {
+    "id": "harete-graduate-08",
+    "name": "居酒屋　遊こうぎょう",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市中之町2-14",
+      "reported_months": [
+        "2026年1月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-09",
+    "name": "串揚げ酒場　縁",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市田中町3-11力石ビル1階",
+      "reported_months": [
+        "2026年2月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-10",
+    "name": "お米とお肉と咖喱　Curry Full",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "bar",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "下関市幸町８-７",
+      "reported_months": [
+        "2026年3月"
+      ],
+      "note": "新住所・現在の店舗位置を確認する。"
+    }
+  },
+  {
+    "id": "harete-graduate-11",
+    "name": "Tokidoki",
+    "group": "harete_graduate",
+    "url": "https://www.karatoharete.com/卒業生",
+    "decision": "hold_relocated",
+    "route": "historical_relocated",
+    "reason": "移転先の店舗位置・日付を確認するまで旧施設へ登録しない。",
+    "facility_id": null,
+    "jev_route": "historical_relocated",
+    "jev_category": "cafe",
+    "reviewed_category": null,
+    "route_overridden": false,
+    "category_overridden": false,
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-local-stores-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "7cf07ed7af72766f0e516249db05266c33256b60785f98a04c9a9a6da88aa6cf"
+      }
+    ],
+    "followup": {
+      "new_address": "各地",
+      "reported_months": [
+        "2026年3月"
+      ],
+      "note": "移動販売。固定店舗として旧施設や任意地点へ登録しない。"
+    }
+  }
+]

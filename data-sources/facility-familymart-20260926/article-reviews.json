@@ -1,0 +1,188 @@
+[
+  {
+    "article_key": "shunan-109555",
+    "source_body_hash": "620caa3a707fd3576196cc5fb1671e1ee9cd2dd66561f4c4e57430cfd58c917c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "下松末武店1店舗の閉店。個別サービス終了と近隣の学校・ほっともっとは別の施設変更として数えない。",
+    "events": [
+      {
+        "event_id": "shunan-109555:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4001921801"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2025-02-28",
+        "reason": "店頭の2月28日9時閉店告知と、閉店後の解体写真・現地報道を照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/02/14/familymartkudamatsusuetaketen/",
+          "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3307.0078324793485%212d131.85885869999998%213d34.018009899999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e13da136b56d%3A0xaa53a9963132c532%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOS4i-advuacq-atpuW6lw%215e0%213m2%211sja%212sjp%214v1739522371332%215m2%211sja%212sjp",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/20/familymartsuetake/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/04/IMG_20250420_154739_1-1280x960.jpg",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2025/02/IMG_20250214_162822.jpg"
+        ],
+        "date_precision": "day"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-543212",
+    "source_body_hash": "0a91d563587a0ef5c70d38150ebdb743b86152fb9330e684c1b5b7323988e75f",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "下松末武店の同じ閉店情報。先行記事・店頭告知・事後報道に対応。",
+    "events": [
+      {
+        "event_id": "kaiten-543212:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4001921801"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2025-02-28",
+        "reason": "同一店舗・同一閉店を先行記事の確定判断へ統合。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/family-kudamatsusuetake/"
+        ],
+        "duplicate_of": "shunan-109555:closure"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-88572",
+    "source_body_hash": "6c1c3dcb7954a8d698ba1a18905da9c6d65484412a6d7cbc937ff0be557318d8",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "徳山東インター店1店舗の閉店。サービス・酒類販売終了は同一閉店の構成要素。",
+    "events": [
+      {
+        "event_id": "shunan-88572:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-3913901858"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": "2024-02-29",
+        "reason": "店頭の2月29日AM9時閉店告知と、閉店後の看板撤去・改装写真および現地報道を照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/02/16/familymarttokuyamahigasiinter/",
+          "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13224.60100793295%212d131.8435467%213d34.0400167%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e0d470fdd627%3A0x6ee25cfb321d7072%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOW-s-WxseadseOCpOODs-OCv-ODvOW6lw%215e0%213m2%211sja%212sjp%214v1708071131535%215m2%211sja%212sjp",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/14/ardentmansion-familimarttokuyamahigashiinter/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/05/IMG_20240507_135144.jpg",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/02/IMG20240216132237.jpg"
+        ],
+        "date_precision": "day"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-463264",
+    "source_body_hash": "fefd2bce6d4614237cb35b4ab7b1eda61d5d6ae58f1f86e9ee37be9173f22a73",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "徳山東インター店の同一閉店情報。",
+    "events": [
+      {
+        "event_id": "kaiten-463264:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-3913901858"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2024-02-29",
+        "reason": "同一店舗・同一閉店を先行記事の確定判断へ統合。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/family-tokuyamahigashi-ic/"
+        ],
+        "duplicate_of": "shunan-88572:closure"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-454300",
+    "source_body_hash": "d6ef0ccb4d6e42bc2f6b6b50e27bef12d5fc04fbd37ddfe66027841c634d8dd5",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "周南徳山店1店舗。閉店状態の反映と実施日確認を分離。後継店や昭和通の旧店舗は含めない。",
+    "events": [
+      {
+        "event_id": "kaiten-454300:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-3885981764"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "旧店舗名付き地図点と、閉店前外観・解体後写真および現地報道を照合。閉店状態を反映し、実施日の一次資料は未確認として日付を保留。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/family-shunantokuyama/",
+          "https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d13220.42596397928%212d131.7990091%213d34.0667843%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e7a724058185%3A0xe32ed2b5bea1a925%212z44OV44Kh44Of44Oq44O844Oe44O844OIIOWRqOWNl-W-s-WxseW6lw%215e0%213m2%211sja%212sjp%214v1711973655848%215m2%211sja%212sjp",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/04/01/2024shunantamura-imajyuku-familymart/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/03/IMG_20240326_162000.jpg",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2024/01/IMG_20240115_141025.jpg"
+        ],
+        "date_precision": "unknown"
+      },
+      {
+        "event_id": "kaiten-454300:closure-date",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-3885981764"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "閉店状態は解体写真・旧店舗地点で反映済み。2024年1月26日の実施日を直接示す店頭掲示・運営元履歴は未取得。二次報道の日付は地図の確定日に転記しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/family-shunantokuyama/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-119604",
+    "source_body_hash": "6545c0573c01b46555fe6c1be0334e9d9703854e900eceecd37ff493c59d6956",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "周南川手店1店舗の閉店。隣接エディオンは所在地説明。店舗名撤去後の外観と旧店舗地点を照合。",
+    "events": [
+      {
+        "event_id": "shunan-119604:closure",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-way-385247378"
+        ],
+        "disposition": "reflected_update",
+        "effective_at": null,
+        "reason": "店名・住所付き旧店舗地点、閉店表示、2026年8月の看板撤去・空店舗写真と現地報道を照合。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/04/familymartkawate/",
+          "https://map.yahoo.co.jp/v3/place/IMnANh2cfIM",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/04/familymartkawate/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170650-1280x960.jpg"
+        ],
+        "date_precision": "unknown"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-555660",
+    "source_body_hash": "3f0c67fead0a529b7a52e7969cba5fab244321f155b0cac0424cf5e642d08e88",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-26",
+    "inventory_reason": "下関大和町一丁目店1店舗。閉店予告はあるが既存施設ID・実施日の根拠が不足。",
+    "events": [
+      {
+        "event_id": "kaiten-555660:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "hold",
+        "effective_at": null,
+        "reason": "2025年6月30日の閉店は事前の二次報道。住所地点の100m以内に元施設はなく、最寄りのFamilyMartは約2.57km離れる。住所点を旧店舗施設として新規追加せず、実施日の一次根拠を待つ。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/family-shimonosekiyamatocho1chome/"
+        ]
+      }
+    ]
+  }
+]

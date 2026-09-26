@@ -3,6 +3,7 @@ from pathlib import Path
 from collections import Counter
 import argparse, datetime, hashlib, json, unicodedata, urllib.parse, urllib.request
 import neighborhood_facilities
+from facility_freshness_review import apply_facility_freshness_review
 from facility_decision_manifest import apply_facility_decision_manifest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -179,6 +180,7 @@ def main():
     from route_facility_review import apply_reviewed_facilities
     data = apply_reviewed_facilities(data)
     data = apply_facility_decision_manifest(data)
+    data = apply_facility_freshness_review(data)
     (neighborhood_facilities.WORK/'import-report.json').write_text(json.dumps({**neighborhood_report,'registered_details':details_report},ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     (LIFE_WORK/'import-report.json').write_text(json.dumps(life_report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     dest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')

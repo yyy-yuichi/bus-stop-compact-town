@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-09-25",
+  "before": {
+    "completed": 43,
+    "partial": 23,
+    "pending": 1120,
+    "unresolved": 1143
+  },
+  "after": {
+    "total": 1186,
+    "classified_by_jev": 1186,
+    "articles_completed": 43,
+    "articles_partially_reviewed": 31,
+    "articles_pending": 1112,
+    "recorded_events": 140,
+    "final_event_decisions": 102,
+    "held_events": 38,
+    "with_related_source_only": 35,
+    "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated.",
+    "reviewed_articles": 74,
+    "unresolved_articles": 1143
+  },
+  "pending_by_city_queue": {
+    "下関市": 173,
+    "岩国市": 13,
+    "山口市": 116,
+    "山陽小野田市": 33,
+    "美祢市": 1,
+    "平生町": 1,
+    "防府市": 68,
+    "柳井市": 4,
+    "宇部市": 97,
+    "下松市": 107,
+    "光市": 49,
+    "自治体未確定": 69,
+    "周南市": 379,
+    "萩市": 2
+  },
+  "pending_by_classification": {
+    "closure": 175,
+    "opening": 537,
+    "multiple_changes": 301,
+    "relocation_rename": 32,
+    "temporary_renewal": 53,
+    "not_change": 14
+  },
+  "single_literal_candidate_articles": 815,
+  "distinct_literal_candidate_names": 638,
+  "interpretation": "Literal names are grouping hints, not deduplicated physical stores. Incomplete article count is not stale facility count. Batch arithmetic is not a duration estimate.",
+  "simple_previous_batch_equivalents": {
+    "min": 96,
+    "max": 127,
+    "assumed_articles_per_batch": [
+      9,
+      12
+    ]
+  },
+  "queue_hash": "5527b90f567f28a0d6abf246e3785631a2a507bf8e2ee5ba1eed3a911f012ea0",
+  "index_hash": "0363a2c9722f354805a8e3a4491e06b9ca60ea2561918bd4404493f08d9a2cd7",
+  "reviews_hash": "1148c430165a7070fb52cdea723c1d10e1a0b0019015da035a0b6ff1368fad8b"
+}

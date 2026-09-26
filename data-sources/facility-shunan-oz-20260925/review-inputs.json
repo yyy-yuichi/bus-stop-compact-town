@@ -1,0 +1,875 @@
+{
+  "checked_at": "2026-09-25",
+  "baseline_records": 7764,
+  "current_records_before": 7918,
+  "article_inventory": [
+    {
+      "key": "ube-83294",
+      "queue_number": 2,
+      "title": "【宇部市】お買い物を楽しませてくれて本当にありがとう。「ギフトギャラリーOZ 宇部店」の閉店日が近付いてきました…。",
+      "url": "https://ube-sanyoonoda.goguynet.jp/2026/09/22/giftoz_ubeshop2026/",
+      "source": "ube",
+      "body_hash": "81b7013a8e1fb276db7994ef26fcc1447a01af54bda5209b233410a4b0ab9c5e",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-119852",
+      "queue_number": 4,
+      "title": "【下松市】瑞穂町「ギフトギャラリーオズ」が9月23日をもって閉店へ。9月1日より感謝をこめて特別セール開催予定。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/24/ozkudamatsu/",
+      "source": "shunan",
+      "body_hash": "b8ddbc15714e2065d04c5482d4ab0fa4824836b9585622156053ba12e95a41e9",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "ube-83212",
+      "queue_number": 30,
+      "title": "【宇部市】大切な人への贈り物は、いつもここで。街の思い出に寄り添う「ギフトギャラリーOZ 宇部店」が9月23日に閉店。",
+      "url": "https://ube-sanyoonoda.goguynet.jp/2026/09/05/giftgalleryoz_ube0923/",
+      "source": "ube",
+      "body_hash": "4c29e75e4db4147f7712103b3023bddfbdaeb15ba68eda101db3560103031275",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-613336",
+      "queue_number": 43,
+      "title": "【閉店】ギフトギャラリーオズ宇部店",
+      "url": "https://kaiten-heiten-24.com/giftgalleryoz-ube/",
+      "source": "kaiten",
+      "body_hash": "108e11e106d33928217786cc211e373e561880f3079d90a66757acc96aa08930",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "yamaguchi-31552",
+      "queue_number": 151,
+      "title": "【防府市】イオンタウン防府1階にある「オズ イオンタウン防府店」へ訪れると、そこには目を疑うほどの衝撃の告知がありました…。",
+      "url": "https://yamaguchi-hofu.goguynet.jp/2024/05/11/gift_ozshop202405/",
+      "source": "yamaguchi",
+      "body_hash": "d3f01aceb5466213edc8d3295dff10e4cf6bae823c4c59716407ac114d9c6c9a",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119439",
+      "queue_number": 6,
+      "title": "【光市】188号線沿い30年以上続いたカントリー調のかわいいお店「カフェ・ラ・シェール」が6月21日をもって閉店されたそうです。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/14/lachere_cafe/",
+      "source": "shunan",
+      "body_hash": "412fe625ce89488dafb570290893ec96ecb2c93770c9e2be4c3e4a7addbfb743",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119510",
+      "queue_number": 24,
+      "title": "【周南市・光市】地域で愛されたお店が閉店。周南エリアで6月に閉店されたお店まとめです。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/21/2026-6-shunan-close/",
+      "source": "shunan",
+      "body_hash": "9f7cf2434fe2cb956a11cc10a5cac088335d894747ff119640446bbf94177807",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119313",
+      "queue_number": 51,
+      "title": "【周南市】桜のトンネルと一緒にあった岐南町「お菓子のアトリエ シュヴェーネ」が6月末で閉店。SNSには閉店を惜しむ声多数。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/05/schwane/",
+      "source": "shunan",
+      "body_hash": "14fad991c64497744fd08acb22a116b903c3c3d946c1a4abde7dff80b03dbbc4",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119996",
+      "queue_number": 9,
+      "title": "【周南市・下松市】8月に周南エリアで閉店されたお店を振り返り。長く親しまれたお店や短い期間で多くの人に愛されたお店がありました。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/13/2026-8shunan-close/",
+      "source": "shunan",
+      "body_hash": "4e0158cadd58710ba5fcbed710d14ff3c93f842d912da5fd0c74c78f9432c049",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-119951",
+      "queue_number": 10,
+      "title": "【周南市】2年間愛し愛されたお店。青空公園「スパイスカレー&パスタShoji」が8月16日に閉店されました。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/05/shoji-2/",
+      "source": "shunan",
+      "body_hash": "c1ba0af19c65b2393f5c1c9b477ad252ba871c719243c4a0ac586a39ddba1aee",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119492",
+      "queue_number": 1031,
+      "title": "【周南市】こだわり餃子が味わえるのはあと1か月もない…。徳山デッキ「ぎょうざ酒場とらちゃん」が8月15日をもって閉店へ。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/17/torachan/",
+      "source": "shunan",
+      "body_hash": "0acc1f30af7b0641c31f300d1a89751bdf16e553067370c219e50657fa2c666e",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119838",
+      "queue_number": 172,
+      "title": "【下松市】サンリブ下松1階レストラン「かざみどり」が8月31日をもって閉店へ。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/22/kazamidori-3/",
+      "source": "shunan",
+      "body_hash": "d22d687f9e916d12ee1838de664eec0355a6b418f40bade89d9530e7a3939165",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119953",
+      "queue_number": 1025,
+      "title": "【周南市】2024年オープン本格イタリアン「Italian Kitchen VANSAN 周南平和通店」が8月31日に閉店されたそうです。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/06/italian-kitchen-vansan-shunanheiwadori/",
+      "source": "shunan",
+      "body_hash": "cfc8274414918f9e58964c9a9f748d9c631a8c2e0117d023e192f21548c701af",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "kaiten-604989",
+      "queue_number": 493,
+      "title": "【閉店】シュープラザ イオンタウン周南久米店",
+      "url": "https://kaiten-heiten-24.com/shoesplaza-at-shunankume/",
+      "source": "kaiten",
+      "body_hash": "cb6a19de0256090e9075d5505672fc24a6c598cd86db01ac81113eb65ce292ca",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-119511",
+      "queue_number": 25,
+      "title": "【周南市】70年以上に渡り愛された徳山ブラックを提供するスター系3店のうちの1店「第三スター」が7月14日閉店されました。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/22/dai3star/",
+      "source": "shunan",
+      "body_hash": "bff0afe06962681ec9e8730ee6f35f5cd1227a47cc916298407d26d40560f9de",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-101155",
+      "queue_number": 941,
+      "title": "【周南市】スパイスカレーに乗っているのは◯◯！？ 青空公園近くの新店舗「スパイスカレー&パスタshoji」にお邪魔しました！ ※追記あり",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/28/spicecurrypastashoji/",
+      "source": "shunan",
+      "body_hash": "e61eda11c082461c422661ab7b44e3858f1f05c06df543e363d0553cb2268d18",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-99289",
+      "queue_number": 1111,
+      "title": "【周南市】青空公園シェーク跡地に「スパイスカレー＆パスタ Shoji」が9月オープン予定！",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/08/24/shoji/",
+      "source": "shunan",
+      "body_hash": "3863cb62428c94a649165a5ed293193d93a5f9262b210bb7afad4f0ae99b81e7",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-92674",
+      "queue_number": 405,
+      "title": "【周南市】色んな思いが溢れ出る。様々な年代の思い出を紡いだ「シェーク」が6月27日惜しまれつつ閉店へ。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/05/05/shake-3/",
+      "source": "shunan",
+      "body_hash": "2ce28674ff3d45937dd6e927d325757669cd17ae1c5de7e8a850e38f06d2e7ea",
+      "jev_event": "closure",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "kaiten-521041",
+      "queue_number": 931,
+      "title": "【開店】Italian Kitchen VANSAN 周南平和通店",
+      "url": "https://kaiten-heiten-24.com/italian-kitchen-vansan-shunanheiwadori/",
+      "source": "kaiten",
+      "body_hash": "a26a05f05a73971062e51436a8469edaaaff22e43b7344eaaa8a759e3130caf2",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-95765",
+      "queue_number": 971,
+      "title": "【周南市】楽しみ過ぎる！ あの乗せ放題パスタ「Italian Kitchen VANSAN」が10月平和通に開店予定！",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/26/italian-kitchen-vansan/",
+      "source": "shunan",
+      "body_hash": "6c3805203ebe35d7654dd648ba577427bb7f75ec0352e4aae94ece836aa91128",
+      "jev_event": "opening",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-120037",
+      "queue_number": 1021,
+      "title": "【周南市】閉店からわずか半月程度で新店舗。平和通「Italian Kitchen VANSAN 」跡に「洋食酒場ITTOKU」9月16日オープン！",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/18/ittoku/",
+      "source": "shunan",
+      "body_hash": "add54316a916075e865d4a3dfa5461da576e6b5838450f27dffb838fbc88eca7",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-119965",
+      "queue_number": 1024,
+      "title": "【周南市】徳山デッキ「ぎょうざ酒場とらちゃん」跡に早くも新店舗・和菓子の「甘味処しづくや」が9月18日オープン予定！",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/08/shizqu_ya/",
+      "source": "shunan",
+      "body_hash": "4cba4537884b2f2c724fa4e08456b2f91455501d6ac58141d439058b3ced0207",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    },
+    {
+      "key": "shunan-119994",
+      "queue_number": 1022,
+      "title": "【周南市】あの場所に早くも新店舗か？ 8月16日に閉店された「スパイスカレー&パスタShoji」跡に「拉麺」「居酒屋」「徳ちゃん」の文字出現。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/12/tokuchan-2/",
+      "source": "shunan",
+      "body_hash": "349b2840b85ab7b94ec46ba87223a8ce123eaa3a3fed04a5540a680f4e95c312",
+      "jev_event": "multiple_changes",
+      "related_source": false,
+      "source_receipts_fetched": 1
+    },
+    {
+      "key": "shunan-100787",
+      "queue_number": 1015,
+      "title": "【周南市】既存メニューは継続。9月21日より鼓海の「ラーメン並木青果市場店」が「拉麺 徳ちゃん」に変わります。",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2024/09/20/tokuchan/",
+      "source": "shunan",
+      "body_hash": "393fe5a85d7be8eb44b9a16c62c4df6b8bf0e647be2f4eed772d87600f3f096f",
+      "jev_event": "relocation_rename",
+      "related_source": false,
+      "source_receipts_fetched": 0
+    }
+  ],
+  "targets": [
+    {
+      "id": "oz-ube",
+      "name": "ギフトギャラリーOZ 宇部店",
+      "aliases": [
+        "ギフトギャラリー",
+        "オズ",
+        "oz"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "osm-node-12376461152",
+          "name": "chocoZAP",
+          "city": "",
+          "category": "sports_centre",
+          "reason": "chocoZAPはOZギフト店と別業態・別名称"
+        }
+      ],
+      "checked_records": 7918
+    },
+    {
+      "id": "oz-kudamatsu",
+      "name": "ギフトギャラリーOZ 下松瑞穂店",
+      "aliases": [
+        "ギフトギャラリー",
+        "オズ",
+        "oz"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "osm-node-12376461152",
+          "name": "chocoZAP",
+          "city": "",
+          "category": "sports_centre",
+          "reason": "chocoZAPはOZギフト店と別業態・別名称"
+        }
+      ],
+      "checked_records": 7918
+    },
+    {
+      "id": "oz-hofu",
+      "name": "オズ イオンタウン防府店",
+      "aliases": [
+        "ギフトギャラリー",
+        "オズ",
+        "oz"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "osm-node-12376461152",
+          "name": "chocoZAP",
+          "city": "",
+          "category": "sports_centre",
+          "reason": "chocoZAPはOZギフト店と別業態・別名称"
+        }
+      ],
+      "checked_records": 7918
+    },
+    {
+      "id": "lachere",
+      "name": "カフェ・ラ・シェール",
+      "aliases": [
+        "ラシェール",
+        "ラ・シェール",
+        "lachere",
+        "la chere"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "schwane",
+      "name": "お菓子のアトリエ シュヴェーネ",
+      "aliases": [
+        "シュヴェーネ",
+        "シュベーネ",
+        "schwane",
+        "schwäne"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "dai3star",
+      "name": "第三スター",
+      "aliases": [
+        "第三スター",
+        "第3スター"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "shoji",
+      "name": "スパイスカレー＆パスタShoji",
+      "aliases": [
+        "shoji",
+        "しょうじ",
+        "ショウジ"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [
+        {
+          "id": "civic-KD0000900004",
+          "name": "松寿苑指定居宅介護支援事業所",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-KD0000900020",
+          "name": "特別養護老人ホーム松寿苑",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-KD0000900045",
+          "name": "松寿苑ホームヘルパーステーション",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-KD0000900055",
+          "name": "松寿苑デイサービスセンター",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3570701205-3e2f9f3a58",
+          "name": "松寿苑ホームヘルパーステーション",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3570204002-f023d040b0",
+          "name": "むべの里訪問介護事業所大小路",
+          "city": "宇部市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3570700082-d0d2af184a",
+          "name": "松寿苑デイサービスセンター",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3570202659-f7682ac0f6",
+          "name": "西日本商事株式会社宇部営業所",
+          "city": "宇部市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3571600190-0ed27dc78d",
+          "name": "西日本商事株式会社 山口営業所",
+          "city": "山陽小野田市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        },
+        {
+          "id": "civic-care-3570700173-e8e968f0d8",
+          "name": "特別養護老人ホーム松寿苑",
+          "city": "下松市",
+          "category": "social_facility",
+          "reason": "読みの一部（しょうじ等）の一致のみ。名称・自治体・介護事業の業態が周南市飯島町の飲食店Shojiと異なる。"
+        }
+      ],
+      "checked_records": 7918
+    },
+    {
+      "id": "vansan",
+      "name": "VANSAN 周南平和通店",
+      "aliases": [
+        "vansan",
+        "バンサン"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "kazamidori",
+      "name": "かざみどり サンリブ下松店",
+      "aliases": [
+        "かざみどり",
+        "風見鶏"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "shoes",
+      "name": "シュープラザ イオンタウン周南久米店",
+      "aliases": [
+        "シュープラザ",
+        "shoes plaza"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "shake",
+      "name": "シェーク",
+      "aliases": [
+        "シェーク",
+        "シェイク"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "torachan",
+      "name": "ぎょうざ酒場とらちゃん（旧ジューシー）",
+      "aliases": [
+        "とらちゃん",
+        "ジューシー",
+        "juicy",
+        "小籠包"
+      ],
+      "matching_existing_ids": [
+        "osm-node-12606873239"
+      ],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "ittoku",
+      "name": "洋食酒場 ITTOKU",
+      "aliases": [
+        "ittoku",
+        "洋食酒場"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "shizqu",
+      "name": "甘味処しづくや",
+      "aliases": [
+        "しづくや",
+        "しずくや",
+        "shizqu"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    },
+    {
+      "id": "tokuchan",
+      "name": "拉麺徳ちゃん（鼓海）",
+      "aliases": [
+        "徳ちゃん",
+        "並木",
+        "とくちゃん"
+      ],
+      "matching_existing_ids": [],
+      "excluded_similar_names": [],
+      "checked_records": 7918
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/42b930d1aea6d0c09a3aaa1d.json",
+      "receipt_hash": "e755356e713c5ab26f3732818570b194bffd772bb66b38c46aac77519a3f4451",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "宇部店・下松瑞穂店",
+        "2026年9月23日"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/3a7cc4fa8b55ac19b0773f22.json",
+      "receipt_hash": "b6885dd557a4aeef334ceb93469614a68eddfbc91dce147345767a7a58357d36",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "gyoza_torachan on August 7, 2026",
+        "8/15の営業をもって閉店"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/86cfce74555590bc3cd8080f.json",
+      "receipt_hash": "73fdaa0200f61b496ce151482c5fda9dd7d86149d0a64f20ffa678ec74f4b6f4",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "shoji_0442 on July 31, 2026",
+        "8月16日",
+        "閉店"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/shoji_0442/p/DcuZoXtvzXE/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/7e065bb2792acbde26869797.json",
+      "receipt_hash": "55bcb6a764f257de043c701cbb96d143580ec71b0fdb986f2d89c82a8bd9b149",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "8月末",
+        "全ての契約も終え"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/lachere_cafe/p/DZ4WWLynZa3/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/5f30d9ea31da46cc4f113a54.json",
+      "receipt_hash": "cc0bf9347fc0c2c6fdb10a0de872a52ee935d26d99d6f85d7de188bbf2ba9f7e",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "lachere_cafe on June 22, 2026",
+        "6月21日の営業",
+        "閉店"
+      ]
+    },
+    {
+      "url": "https://stores.chiyodagrp.co.jp/store/39227.html",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/7c8ea2dff769ade5b049b027.json",
+      "receipt_hash": "6dd6a156945cfec0948a9ec4bcb1795101ab10574297a262e625a940ceba8dad",
+      "method": "official_store_announcement",
+      "confirmed_terms": [
+        "2026年8月16日(日)をもちまして閉店"
+      ]
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/f6ecf86cf32735c1b41e7fbe.json",
+      "receipt_hash": "61169e1e619cc630e1d0f91c0f5384c1d09a8e63a0720f06797f5458f9199b6f",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "甘味処 しづくや",
+        "110",
+        "0834-20-0129"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/p/DddDekyif8C/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/6790e1d2aaf79a73184c3b1b.json",
+      "receipt_hash": "2ca878e172d04c0d2d1490e5b74d279bd8e507897f5714188ed957e9bc8df082",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "shizqu_ya on September 18, 2026",
+        "周南市銀座1-31",
+        "0834-20-0129"
+      ]
+    },
+    {
+      "url": "https://toku-chan.com/store",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/cdf51c4211370eb6a4994dd2.json",
+      "receipt_hash": "3b2bed44d0c1d9ca4e1ad8acc221275ca7618d687beac8313e4fc82fb6588137",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "拉麺",
+        "徳ちゃん",
+        "山口県周南市鼓海1丁目324-18",
+        "0834-34-1528"
+      ]
+    },
+    {
+      "url": "https://www.hotpepper.jp/strJ003917267/",
+      "receipt": "outputs/facility-shunan-oz-20260925/pages/e44afb2e88dc290262c945a6.json",
+      "receipt_hash": "d270a722e8a6fdeb51c6453ad1bf2ddc3ca53e79643e91cf34ddedf0f2af04b1",
+      "method": "public_primary_page",
+      "confirmed_terms": [
+        "9/16 OPEN",
+        "洋食酒場ITTOKU"
+      ]
+    }
+  ],
+  "source_receipts": [
+    {
+      "url": "https://www.instagram.com/schwane_kakkyyossy/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/17795b5f56fd841d7beda67a.json",
+      "hash": "d9f9a2ff0ed9bdb53fbe1416481d8fef1bcf9fcc1eaa8f900ed557d5283415f7",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/p/Ddkhn2qEuOs/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/2b768185d3283bbd734f108d.json",
+      "hash": "c0ff28a821fbfa91635bb956e1d43951e207acb754526d6bbbaf8973bbedc509",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/gyoza_torachan/reel/Dbw03kVvIXH/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/3a7cc4fa8b55ac19b0773f22.json",
+      "hash": "b6885dd557a4aeef334ceb93469614a68eddfbc91dce147345767a7a58357d36",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://reggirt.jp/news/gift-galleryoz-ube-kudamatsu-sale/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/42b930d1aea6d0c09a3aaa1d.json",
+      "hash": "e755356e713c5ab26f3732818570b194bffd772bb66b38c46aac77519a3f4451",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7225392806354!2d131.80162517571637!3d34.050987773157466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e76242559149%3A0xb507dccc54666611!2z5b6z5bGxREVDS--8iOW-s-WxseODh-ODg-OCre-8iQ!5e0!3m2!1sja!2sjp!4v1699773577409!5m2!1sja!2sjp",
+      "file": "outputs/facility-shunan-oz-20260925/pages/55edd891afa01c6e90051813.json",
+      "hash": "1bbd7da26f6655525ad27a8d91b31221eb7ac2c03a2103ac1c288c149ea96b7b",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shoji_0442/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/5be38758f4401ea308ae8d20.json",
+      "hash": "fa26bc38fb6c297098a8ddf377a036dd32d4c098fddef0d08a705c7df124ed24",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://reggirt.jp/news/hofu-heitensale/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/5d8b37c3466a3180836f1420.json",
+      "hash": "efa7e4f0ccbe7e03bd78c6035b7e2cdf4d73f9513712ee76ac6e3539feb838fc",
+      "status": 404,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.instagram.com/lachere_cafe/p/DZ4WWLynZa3/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/5f30d9ea31da46cc4f113a54.json",
+      "hash": "cc0bf9347fc0c2c6fdb10a0de872a52ee935d26d99d6f85d7de188bbf2ba9f7e",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://tokuyamadeck.com/access/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/66f271dd7e3225f6a4abed04.json",
+      "hash": "04cfabfea6c0c34af2fbea29298764ff1bcbbaba4e02639adc8360add77b27ee",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/p/DddDekyif8C/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/6790e1d2aaf79a73184c3b1b.json",
+      "hash": "2ca878e172d04c0d2d1490e5b74d279bd8e507897f5714188ed957e9bc8df082",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/vansan_syunan/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/709362b76bdb610216d3d8c7.json",
+      "hash": "024bedc4f526617ed445ba7d5a3a0748007477dcbf99038526eba482712626aa",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://toku-chan.com/news",
+      "file": "outputs/facility-shunan-oz-20260925/pages/7314dfcafd061a8acfbe7dab.json",
+      "hash": "558e049efd2ba5290998b6b83814c66b9a8821d73757febabb2f5133fe56e6eb",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/ra_mentokuchan/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/75e60df6b0f23f2593d19585.json",
+      "hash": "57b0ea3ec53bc6e0384c552c70b3c741176528da02e411549d95f6ab380061eb",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://stores.chiyodagrp.co.jp/store/39227.html",
+      "file": "outputs/facility-shunan-oz-20260925/pages/7c8ea2dff769ade5b049b027.json",
+      "hash": "6dd6a156945cfec0948a9ec4bcb1795101ab10574297a262e625a940ceba8dad",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shoji_0442/p/DcuZoXtvzXE/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/7e065bb2792acbde26869797.json",
+      "hash": "55bcb6a764f257de043c701cbb96d143580ec71b0fdb986f2d89c82a8bd9b149",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/p/Ddfxm7PCV_M/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/81251db59be05e7d255fc929.json",
+      "hash": "e258fb9c62849b6e56f030ffe52be515c33090c10a7eeb325a045fb5403d1c83",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shoji_0442/p/Dbc2R5upXCk/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/86cfce74555590bc3cd8080f.json",
+      "hash": "73fdaa0200f61b496ce151482c5fda9dd7d86149d0a64f20ffa678ec74f4b6f4",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://toku-chan.com/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/a1402448e2868781386c97af.json",
+      "hash": "55861d1a751f850cde05fca03eab208ae7be541dfb63355ea3aa615ff51dd4b7",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E3%81%A8%E3%82%89%E3%81%A1%E3%82%83%E3%82%93/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/a9bc778790ec73a7690961d6.json",
+      "hash": "cd9be6c54dbb17c3ec4c166b7b49e61a6dd4b1f4754ac16605cfac161da73294",
+      "status": 404,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/be5fb37821a47fb12ad27fe7.json",
+      "hash": "f4c297ab5974a1df8226d5c351289a3793bacdb181b38b0f5c68231446cafe94",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://ya55808.gorp.jp/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/c4014cce7437622d28ddcd6f.json",
+      "hash": "e91746e916ee8ec657affd5f1446649683f32060b0ac5ba1333432dc972ae44e",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://toku-chan.com/store",
+      "file": "outputs/facility-shunan-oz-20260925/pages/cdf51c4211370eb6a4994dd2.json",
+      "hash": "3b2bed44d0c1d9ca4e1ad8acc221275ca7618d687beac8313e4fc82fb6588137",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/gyoza_torachan/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/d101062529316e9502c363ea.json",
+      "hash": "18d5bafafc48a7060ff9db9209419d71f84a7576eda369381486c2c0eb97a73f",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/place/%E7%94%98%E5%91%B3%E5%87%A6+%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/@34.0506127,131.8041195,17z/data=!3m1!4b1!4m6!3m5!1s0x3544e7ad64bce933:0x62514faf955cea64!8m2!3d34.0506127!4d131.8041195!16s%2Fg%2F11zx4fh1hb",
+      "file": "outputs/facility-shunan-oz-20260925/pages/d581cee36e6ed337a21f29e2.json",
+      "hash": "93144c2d6b84b5617aa1091b608a3145a480071b92020c953f6c2979db667d08",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/shizqu_ya/p/DdalcBZJF4T/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/dc4bd0d1502bc4442c3efb19.json",
+      "hash": "6c171e9f995e519e871a0d60634b29834ef6d4d27df4f8cdc4e894cc0b9a4b64",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8641329124166!2d131.82239767605307!3d34.02169831934198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6beb6096653%3A0x94391da6a6a3a5b1!2z5ouJ6bq6IOW-s-OBoeOCg-OCkw!5e0!3m2!1sja!2sjp!4v1749025113138!5m2!1sja!2sjp",
+      "file": "outputs/facility-shunan-oz-20260925/pages/ddbd208e071e02932dbe25f4.json",
+      "hash": "e7dba7a706f8f3124e38437143ed1ec8ae7c521942259e64f37b10188b80f456",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop-floor/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/e2ff5d60bd98292511ca908e.json",
+      "hash": "aba832f37892ee7759eb3cdc6186eaa1cf796cee72c4720125584d2c2ee4e3c7",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.hotpepper.jp/strJ003917267/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/e44afb2e88dc290262c945a6.json",
+      "hash": "d270a722e8a6fdeb51c6453ad1bf2ddc3ca53e79643e91cf34ddedf0f2af04b1",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/lachere_cafe/p/DZmGFaXt6ut/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/e9952685588380b7bf10f694.json",
+      "hash": "17d976d4cebf5c6d3893800f44a97060977b5c7c40742f68c515d915e72011de",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.instagram.com/lachere_cafe/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/ed9f4429b17a2453f3fb8b32.json",
+      "hash": "23f970cda210bfda79fa67691da7f39751506a2c6bf769b13ef1c8c432bc065d",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E7%94%98%E5%91%B3%E5%87%A6-%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/",
+      "file": "outputs/facility-shunan-oz-20260925/pages/f6ecf86cf32735c1b41e7fbe.json",
+      "hash": "61169e1e619cc630e1d0f91c0f5384c1d09a8e63a0720f06797f5458f9199b6f",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "before_overlay_hash": "3cecaf5cc6b28f1304ba3d0e0c229483e4a5ab0e2979735e1606a33876a7d6e2",
+  "extra_jev_requests": 0
+}

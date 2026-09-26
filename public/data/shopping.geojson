@@ -9108,14 +9108,14 @@
       "type": "Feature",
       "id": "osm-node-2426673962",
       "properties": {
-        "name": "下関大丸",
-        "city": "",
+        "name": "大丸下関店",
+        "city": "下関市",
         "category": "mall",
-        "official_address": "",
-        "official_url": "",
-        "address": "",
+        "official_address": "山口県下関市竹崎町4-4-10",
+        "official_url": "https://www.daimaru.co.jp/shimonoseki/hours.html",
+        "address": "山口県下関市竹崎町4-4-10",
         "website": "",
-        "search_names": "下関大丸      ",
+        "search_names": "下関大丸 大丸下関店",
         "geometry_kind": "representative_point",
         "source": "OpenStreetMap",
         "source_ids": [
@@ -9123,12 +9123,21 @@
         ],
         "source_timestamp": "2026-07-28T02:16:18Z",
         "retrieved_at": "2026-09-11T14:49:47.247389+00:00",
-        "verified_at": "",
-        "verification_status": "osm_unverified",
+        "verified_at": "2026-09-24",
+        "verification_status": "official_name_and_address_confirmed; scheduled_closure_2027-08-31; representative_point_not_independently_verified",
         "license": "ODbL-1.0",
         "geometry_note": "Original OSM node",
         "osm_tags": {
           "shop": "department_store"
+        },
+        "osm_name": "下関大丸",
+        "location_verification": "公式店舗ページの現行名称・所在地を確認。OSM代表点の位置精度・入口は未確認。",
+        "classification_review": {
+          "checked_at": "2026-09-24",
+          "status": "retained",
+          "original_category": "mall",
+          "note": "大丸松坂屋百貨店の公式ページで「大丸下関店」、所在地、通常営業を確認。公式告知では2027年8月31日営業終了予定（同日までは営業）。店舗名・住所を更新し、OSMの原ID・座標・形状・分類は維持。代表点の位置精度・入口は未確認。",
+          "evidence_url": "https://www.daimaru.co.jp/shimonoseki/news/13520.html"
         }
       },
       "geometry": {

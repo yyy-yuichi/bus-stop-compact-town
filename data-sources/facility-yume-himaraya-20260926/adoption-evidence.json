@@ -1,0 +1,543 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "c8deb25a749003e539f3d412b8872a99acebd9b6eb0be1186251ddbde16783be",
+  "after_overlay_hash": "55707b889c0da44918fdc196ee60df38fdf2bd0297fa28056d367c1a59d818c2",
+  "newly_added_ids": [
+    "official-machilibrary-1268",
+    "official-himaraya-0210",
+    "official-megadori-ube"
+  ],
+  "corrected_ids": [],
+  "reviewed_inputs": [
+    {
+      "id": "official-machilibrary-1268",
+      "name": "まちライブラリー＠ゆめタウン宇部",
+      "city": "宇部市",
+      "address": "山口県宇部市黒石北3丁目4-1 ゆめタウン宇部1階",
+      "category": "library",
+      "point": [
+        131.20629969631975,
+        33.985086952473594
+      ],
+      "url": "https://machi-library.org/where/detail/12122/",
+      "date": "2026-05-01",
+      "sources": [
+        "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/006/690/hurusato202606.pdf",
+        "https://www.google.com/maps?q=33.985086952473594%20131.20629969631975"
+      ],
+      "location": "運営団体の当該施設ページに掲載された地図点。ゆめタウン宇部の敷地内と照合。館内の入口・徒歩動線は未確認。",
+      "limits": [
+        "市の2026年6月資料の写真付き事後報告と、画像中の「5月1日（金）オープン」を実見。商業施設本体の新設とは区別。",
+        "利用可能時間10～20時と、スタッフ対応（水～日11～18時30分）を区別。月火はスタッフ不在であり施設全体の休館とは扱わない。"
+      ]
+    },
+    {
+      "id": "official-himaraya-0210",
+      "name": "ヒマラヤスポーツ サンリブ下松店",
+      "city": "下松市",
+      "address": "山口県下松市南花岡6-8-1 サンリブ下松2階",
+      "category": "sports_shop",
+      "point": [
+        131.8655091,
+        34.0306482
+      ],
+      "url": "https://www.himaraya.co.jp/shop_detail/0210",
+      "date": null,
+      "sources": [
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6613.030438843952!2d131.86293417599956!3d34.030652618869524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3f1430629%3A0xffdf737cfc7bd686!2z44OS44Oe44Op44Ok44K544Od44O844OEIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1715743072376!5m2!1sja!2sjp"
+      ],
+      "location": "公式支店ページの同名CID付き埋込地図から店舗固有点を確認。地図表示中心を採用していない。2階の店舗代表点で入口・階移動・徒歩動線は未確認。",
+      "limits": [
+        "確認日は2026年9月26日。公式に9月28日～10月4日の増床休館予定がある。休館前の現行掲載として記録し、予定を実施済みの閉店・再開と扱わない。",
+        "記事にある7月24日～10月8日の店頭買取中止は、今回サービス実施状況を一次資料で確認できていない。店舗全体の休館とは分離して要確認。",
+        "現在の公式掲載は開店日やリアルタイムの営業を保証しない。"
+      ]
+    },
+    {
+      "id": "official-megadori-ube",
+      "name": "メガドリ宇部店",
+      "city": "宇部市",
+      "address": "山口県宇部市厚南中央1丁目7-48",
+      "category": "amusement_arcade",
+      "point": [
+        131.2195704,
+        33.9942251
+      ],
+      "url": "https://x.com/megadori1",
+      "date": null,
+      "sources": [
+        "https://location.am-all.net/alm/shop?sid=18357"
+      ],
+      "location": "自店の住所とSEGA ALL.Netの店舗ID18357の名称・住所・地図マーカーを照合。旧ウォンツの点を転用せず、現行メガドリ固有の地点を採用。入口・徒歩動線は未確認。",
+      "limits": [
+        "自店の現行入荷・稼働投稿とメーカーの設置店情報を照合。プロフィールの8月7日グランドオープンは、当日実施の事後一次記録とは分け、実開店日は未確認。",
+        "旧ウォンツ宇部厚南店の閉店履歴・ID・座標を保持。同所の後継店は別ID。",
+        "設置店リストは機器接続に基づく情報で、リアルタイムの営業や設置機種を保証しない。"
+      ]
+    }
+  ],
+  "nearby": [
+    {
+      "id": "official-machilibrary-1268",
+      "nearby": [
+        {
+          "id": "ube",
+          "name": "ゆめタウン宇部",
+          "category": "mall",
+          "point": [
+            131.2049415,
+            33.9847652
+          ],
+          "distance_m": 130.21905919022876
+        },
+        {
+          "id": "official-kfc-5063",
+          "name": "ケンタッキーフライドチキン ゆめタウン宇部店",
+          "category": "fast_food",
+          "point": [
+            131.206695,
+            33.984492
+          ],
+          "distance_m": 75.42962932734554
+        },
+        {
+          "id": "official-daiso-001563",
+          "name": "DAISO ゆめタウン宇部店",
+          "category": "variety_store",
+          "point": [
+            131.20615,
+            33.98481
+          ],
+          "distance_m": 33.69790575420331
+        },
+        {
+          "id": "official-dondon-1388",
+          "name": "どんどん ゆめタウン宇部店",
+          "category": "restaurant",
+          "point": [
+            131.2062997,
+            33.98492239999999
+          ],
+          "distance_m": 18.265324573445515
+        }
+      ]
+    },
+    {
+      "id": "official-himaraya-0210",
+      "nearby": [
+        {
+          "id": "sunlive-kudamatsu",
+          "name": "サンリブ下松",
+          "category": "mall",
+          "point": [
+            131.8655221,
+            34.0306724
+          ],
+          "distance_m": 2.9414813271861053
+        },
+        {
+          "id": "osm-way-305489114",
+          "name": "ABC Mart",
+          "category": "mall",
+          "point": [
+            131.865503,
+            34.0305697
+          ],
+          "distance_m": 8.731632064432635
+        },
+        {
+          "id": "osm-way-369045559",
+          "name": "原田歯科",
+          "category": "dentist",
+          "point": [
+            131.86406449999998,
+            34.030068799999995
+          ],
+          "distance_m": 147.90657270749807
+        },
+        {
+          "id": "official-ryoyupan-kudamatsu",
+          "name": "プルネール下松店",
+          "category": "bakery",
+          "point": [
+            131.8654204,
+            34.0303924
+          ],
+          "distance_m": 29.54809388639637
+        },
+        {
+          "id": "official-dondon-1407",
+          "name": "どんどん サンリブ下松店",
+          "category": "restaurant",
+          "point": [
+            131.8651571,
+            34.0307097
+          ],
+          "distance_m": 33.1645772107207
+        }
+      ]
+    },
+    {
+      "id": "official-megadori-ube",
+      "nearby": [
+        {
+          "id": "osm-way-1121040361",
+          "name": "トライアル",
+          "category": "supermarket",
+          "point": [
+            131.2186295,
+            33.9947954
+          ],
+          "distance_m": 107.39199375245353
+        },
+        {
+          "id": "osm-way-1121040362",
+          "name": "セブン-イレブン 宇部厚南中央店",
+          "category": "convenience",
+          "point": [
+            131.2186738,
+            33.9941412
+          ],
+          "distance_m": 83.18944425458443
+        },
+        {
+          "id": "osm-way-1121040363",
+          "name": "ウォンツ宇部厚南店",
+          "category": "reference",
+          "point": [
+            131.2196059,
+            33.9942868
+          ],
+          "distance_m": 7.59064393129517
+        },
+        {
+          "id": "osm-node-10253619832",
+          "name": "丸亀製麺 宇部際波店",
+          "category": "restaurant",
+          "point": [
+            131.2198351,
+            33.995298
+          ],
+          "distance_m": 121.56685924237567
+        },
+        {
+          "id": "osm-way-1121040364",
+          "name": "丸亀製麺",
+          "category": "fast_food",
+          "point": [
+            131.21967265,
+            33.9951999
+          ],
+          "distance_m": 108.61271905894363
+        },
+        {
+          "id": "osm-way-1121040365",
+          "name": "どんどん 宇部際波店",
+          "category": "restaurant",
+          "point": [
+            131.21960485,
+            33.99488755
+          ],
+          "distance_m": 73.60051962425565
+        },
+        {
+          "id": "osm-way-1121040366",
+          "name": "牛角",
+          "category": "restaurant",
+          "point": [
+            131.2194612,
+            33.993847450000004
+          ],
+          "distance_m": 43.111304705251456
+        }
+      ]
+    }
+  ],
+  "closed_without_existing_map_id": [
+    {
+      "name": "ゆめマート三田尻",
+      "article_keys": [
+        "kaiten-538012",
+        "yamaguchi-48161"
+      ],
+      "date": "2025-03-04",
+      "point_hint": [
+        131.569074,
+        34.036082
+      ],
+      "urls": [
+        "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+        "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/"
+      ],
+      "reason": "公式閉店告知と閉店後の看板撤去報道を照合。baseと過去overlay全件の名称・住所・周辺地点を確認したが同店IDはない。近隣アルクや別棟どんどんを閉店補正しない。",
+      "nearby": [
+        {
+          "id": "osm-way-303472852",
+          "name": "アルク",
+          "point": [
+            131.5711318,
+            34.0363271
+          ]
+        },
+        {
+          "id": "osm-node-1423661325",
+          "name": "防府新田郵便局",
+          "point": [
+            131.5689815,
+            34.0349986
+          ]
+        },
+        {
+          "id": "osm-node-4941734383",
+          "name": "マクドナルド",
+          "point": [
+            131.5699248,
+            34.0369926
+          ]
+        },
+        {
+          "id": "osm-node-4941735828",
+          "name": "理容カットエー",
+          "point": [
+            131.569599,
+            34.0367016
+          ]
+        },
+        {
+          "id": "osm-way-503938284",
+          "name": "ほっともっと",
+          "point": [
+            131.569955,
+            34.036418
+          ]
+        },
+        {
+          "id": "osm-way-503938285",
+          "name": "すき家",
+          "point": [
+            131.56983474999998,
+            34.036221350000005
+          ]
+        },
+        {
+          "id": "official-dondon-1400",
+          "name": "どんどん 三田尻店",
+          "point": [
+            131.570987,
+            34.035987
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ヒマラヤスポーツ ゆめタウン南岩国店",
+      "article_keys": [
+        "kaiten-600483"
+      ],
+      "date": "2026-05-06",
+      "point_hint": [
+        132.201703,
+        34.134515
+      ],
+      "urls": [
+        "https://www.himaraya.co.jp/shop_detail/0151"
+      ],
+      "reason": "公式支店の事後閉店案内で実施を確認。baseと過去overlay全件に同店IDはなく、母施設ゆめタウンや別テナントを閉店補正しない。",
+      "nearby": [
+        {
+          "id": "minamiiwakuni",
+          "name": "ゆめタウン南岩国",
+          "point": [
+            132.2026417,
+            34.134839
+          ]
+        },
+        {
+          "id": "civic-care-3570801062-ece5abe117",
+          "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター岩国",
+          "point": [
+            132.20166,
+            34.132782
+          ]
+        },
+        {
+          "id": "civic-care-3570802185-828c70c343",
+          "name": "訪問介護サービス つぼみ",
+          "point": [
+            132.204208,
+            34.135208
+          ]
+        },
+        {
+          "id": "civic-care-3570800916-c574fe90fa",
+          "name": "ウェルネス",
+          "point": [
+            132.202591,
+            34.136539
+          ]
+        },
+        {
+          "id": "official-tsuruha-3620",
+          "name": "ウォンツ 南岩国店",
+          "point": [
+            132.20279540170307,
+            34.13546639231643
+          ]
+        },
+        {
+          "id": "official-secondstreet-32241",
+          "name": "セカンドストリート ゆめタウン南岩国店",
+          "point": [
+            132.20192365647,
+            34.13457139669
+          ]
+        },
+        {
+          "id": "official-mozart-minamiiwakuni",
+          "name": "バッケンモーツアルト 南岩国店",
+          "point": [
+            132.2024543,
+            34.1349896
+          ]
+        }
+      ]
+    }
+  ],
+  "case_findings": [
+    {
+      "case_id": "case:megadori-ube",
+      "name": "メガドリ宇部店",
+      "impact": "resolved",
+      "outcome": "current_listing_added",
+      "facility_id": "official-megadori-ube",
+      "reason": "自店案内とSEGA店舗ID18357の名前・同住所・マーカー座標を照合。旧店舗の座標を流用せず追加。"
+    },
+    {
+      "case_id": "facility:official-himaraya-0210:planned-changes",
+      "name": "ヒマラヤスポーツ サンリブ下松店",
+      "impact": "watch",
+      "reason": "9月28日～10月4日の増床休館・再開実施と、店頭買取中止の一次実施履歴が未確認。"
+    }
+  ],
+  "article_keys": [
+    "kaiten-538012",
+    "yamaguchi-48161",
+    "ube-82309",
+    "kaiten-600483",
+    "shunan-119876"
+  ],
+  "reassessed_article_keys": [
+    "ube-81165",
+    "ube-82743"
+  ],
+  "pdf_evidence": [
+    {
+      "path": "outputs/facility-yume-himaraya-20260926/mitajiri-closure.pdf",
+      "url": "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+      "sha256": "ffee69ffceb5b85143134fc997b974bc64d9e93a456c0d4d7fc9bac7cd8f7fa7",
+      "interpretation": "公式の事前閉店告知。実施後の記事と併用。"
+    },
+    {
+      "path": "outputs/facility-yume-himaraya-20260926/ube-report.pdf",
+      "url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/006/690/hurusato202606.pdf",
+      "sha256": "f91f27134c99dc21c962b6d6632c5261079e2e8a355cd450db8bb00c5d5983a8",
+      "page": 2,
+      "visually_read": true,
+      "interpretation": "6月資料の事後開設報告、5月1日（金）オープンの画像文字と館内利用写真を実見。"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/26/himaraya/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/015fea5130ca416abfd5e0e9.json",
+      "status": 200,
+      "hash": "6df7805e355bf00b0213d048d9503e88d474890a7e85b2c85738ce98c3a8c4c1"
+    },
+    {
+      "url": "https://ube-sanyoonoda.goguynet.jp/2026/03/25/yume_libraryopen0501/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/05697a750449490b6f381648.json",
+      "status": 200,
+      "hash": "8a69fa3c1c9c4e5e18d85fe6dcf130db10b21b6ce70e7b8338d627c1e0330025"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6613.030438843952!2d131.86293417599956!3d34.030652618869524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e0e3f1430629%3A0xffdf737cfc7bd686!2z44OS44Oe44Op44Ok44K544Od44O844OEIOOCteODs-ODquODluS4i-advuW6lw!5e0!3m2!1sja!2sjp!4v1715743072376!5m2!1sja!2sjp",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/0a62216b36447b80e6b9dbeb.json",
+      "status": 200,
+      "hash": "ca74eafbed78c76156c6e7d05bf11ad2ee2cce6d8fe731fff841185e4e953938"
+    },
+    {
+      "url": "https://machi-library.org/where/detail/12122/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/1a888b400c8e9fb42c05e00f.json",
+      "status": 200,
+      "hash": "fc66bdb9d1df85f4bb5b59080272982ed770775e27853a7299164afb0f36a10e"
+    },
+    {
+      "url": "https://www.izumi.jp/tenpo/mitajiri",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/20e367c337fb032b9de2ab69.json",
+      "status": 404,
+      "hash": "5dca5017b5232ca1e485d953a518487973f0d72a1fabbff0a709ca0c12d13676"
+    },
+    {
+      "url": "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/757d33a31eeaa0c52fc49383.json",
+      "status": 200,
+      "hash": "a3fe8b9a99b2fd3e164de47fc2b47406169c92d3e1179218c81b3271928f4deb"
+    },
+    {
+      "url": "https://x.com/megadori1",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/7d635272657619d5626e2ac6.json",
+      "status": 200,
+      "hash": "7ebe63f1ebb89c64e2a0b2ca4e4b93a6919ad3edd3c4368af19f392b80d2d4dd"
+    },
+    {
+      "url": "https://location.am-all.net/alm/shop?sid=18357",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/83f486d606827080699c2436.json",
+      "status": 200,
+      "hash": "6207ed4b9aebda9310bc4a0d9205877220fa470a443a83b2d17029d5d95997b1"
+    },
+    {
+      "url": "https://www.himaraya.co.jp/shop_detail/0151",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/932cc0b85e4dec25ebdecdf4.json",
+      "status": 200,
+      "hash": "1e93401cc072dee03442940ca978205f4186e8c0eda8a4c8fbb53fab29e38a59"
+    },
+    {
+      "url": "https://kaiten-heiten-24.com/youmemart-mitajiri/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/94a247ac31e6e7af5ae70614.json",
+      "status": 200,
+      "hash": "e248a655fddc9a505273d91fa9e8eb2e1cfebd79fa7a71c65bb728cfd092fa8d"
+    },
+    {
+      "url": "https://izumi.co.jp/news_release/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/9c8880ac8785d25a26834081.json",
+      "status": 200,
+      "hash": "f5c239732daba8f3c6b67afaf5620b31b784e85d7fbd564aa85a84eabef2062b"
+    },
+    {
+      "url": "https://www.city.ube.yamaguchi.jp/shisei/kouhou/kishahappyou/1008059/1028265/1028927.html",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/9ef5b421cf124d9673667673.json",
+      "status": 200,
+      "hash": "5b2e3e272b6dab6c0f34e32d470077614960089c7794291959a79b03ea6d2951"
+    },
+    {
+      "url": "https://www.himaraya.co.jp/shop_detail/0210",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/a1a9e5725e9966bd5efa36a5.json",
+      "status": 200,
+      "hash": "b2a23b0dc9ebc5e0c23b5bae8a1e6233dc976396df3022af759b0bc438d5af00"
+    },
+    {
+      "url": "https://kaiten-heiten-24.com/himaraya-yt-minamiiwakuni/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/ad34469004805de48395dc76.json",
+      "status": 200,
+      "hash": "446ca05104bb046a3b2d97947ed708212b13a5b085d98e4b1e3746192791ca86"
+    },
+    {
+      "url": "https://chiba-crane-info.com/newopen/amipara-ube-konan/",
+      "path": "outputs/facility-yume-himaraya-20260926/sanitized/ece192047f710333bdfef55a.json",
+      "status": 200,
+      "hash": "41b512bff5ef0a32d211fa35d3dc8a9ec3795b50b88b2fba0a64792c0523ce1a"
+    }
+  ],
+  "extra_jev_requests": 0,
+  "limitations": "Three additions, zero map corrections. Two closed stores have no baseline/overlay ID; no parent or nearby business was closed. Himaraya future closure and buyback-service history remain two held events in one watch case. Existing Megadori map-action case resolved from new store-specific position. No global completion percentage or ETA."
+}

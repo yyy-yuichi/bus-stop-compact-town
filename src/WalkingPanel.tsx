@@ -5,6 +5,7 @@ import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } 
 import type { Coordinate, WalkingGraph } from './walking';
 import { focusContent } from './mapLayout';
 import type { WalkingConditions } from './placeLink';
+import { facilityAvailable } from './facilityFreshness';
 
 export function useWalkingData(facilities: ShoppingFeature[], facilityState: LoadState) {
   const [graph, setGraph] = useState<WalkingGraph | null>(null);
@@ -38,7 +39,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   const [showPath, setShowPath] = useState(false);
   const supported = !!data && inPilot(data.graph, id);
   const result = useMemo(() => supported && data ? calculateWalk(data.graph, origin, speed * 1000 / 60 * 10) : null, [data, supported, origin, speed]);
-  const candidates = useMemo(() => result && data ? data.facilities.map(f => {
+  const candidates = useMemo(() => result && data ? data.facilities.filter(facilityAvailable).map(f => {
     const rings: Coordinate[][] = f.geometry.type === 'Point' ? [[f.geometry.coordinates as Coordinate]] : f.geometry.coordinates.map(polygon => polygon[0] as Coordinate[]);
     return { facility: f, reach: reachFacility(result, rings) };
   }) : [], [result, data]);

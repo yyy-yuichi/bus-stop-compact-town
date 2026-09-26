@@ -1,0 +1,66 @@
+{
+  "images": [
+    {
+      "target": "schwane",
+      "file": "outputs/facility-shunan-oz-20260925/signs/schwane-front.jpg",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/07/IMG_20260703_091120-1280x960.jpg",
+      "article_key": "shunan-119313",
+      "reading": "店名が一致する店頭告知に「令和8年6月末」をもって営業終了とある。日付は月まで。読者情報の6月29日には確定しない。",
+      "effective_at": null,
+      "reported_month": "2026-06",
+      "sha256": "f5bb1aadafa9455dac550632bca999ad8ba7d1a29a908ab2810a3da1da22eff1",
+      "method": "manual_visual_reading_of_shop_notice_reproduced_in_local_news",
+      "reviewed_at": "2026-09-25"
+    },
+    {
+      "target": "kazamidori",
+      "file": "outputs/facility-shunan-oz-20260925/signs/kazamidori-notice.jpg",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260821_1505242-1280x960.jpg",
+      "article_key": "shunan-119838",
+      "reading": "かざみどりの店頭告知に8月31日閉店とある。2026年8月記事に撮影された当該店舗の掲示として年を照合。",
+      "effective_at": "2026-08-31",
+      "sha256": "326d5bb14c9acd0b191401ea6b2db1d9b318f53c146f36244e7233dbec040edb",
+      "method": "manual_visual_reading_of_shop_notice_reproduced_in_local_news",
+      "reviewed_at": "2026-09-25"
+    },
+    {
+      "target": "dai3star",
+      "file": "outputs/facility-shunan-oz-20260925/signs/dai3star-notice.jpeg",
+      "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/07/IMG_1955-1-1280x960.jpeg",
+      "article_key": "shunan-119511",
+      "reading": "第三スターの店頭告知に令和8年7月14日閉店とある。",
+      "effective_at": "2026-07-14",
+      "sha256": "37b0d02e7c4078323fdfb14860259a0c038e733c41bda80b7713fb532b7e4b71",
+      "method": "manual_visual_reading_of_shop_notice_reproduced_in_local_news",
+      "reviewed_at": "2026-09-25"
+    },
+    {
+      "target": "oz-hofu",
+      "file": "outputs/facility-shunan-oz-20260925/signs/oz-hofu.jpg",
+      "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/05/IMG_4917.jpeg",
+      "article_key": "yamaguchi-31552",
+      "reading": "オズ防府店の告知に5月31日閉店とある。2024年5月の記事と店舗を照合。旧公式URLは404のため代用せず、この掲示写真を根拠とする。",
+      "effective_at": "2024-05-31",
+      "sha256": "ff2515112870272320bfc505a5bdfc3c3d97664fc8e772ec925e1760699c759c",
+      "method": "manual_visual_reading_of_shop_notice_reproduced_in_local_news",
+      "reviewed_at": "2026-09-25"
+    }
+  ],
+  "observations": [
+    {
+      "method": "browser_visible_place_details",
+      "checked_at": "2026-09-25",
+      "url": "https://www.google.com/maps/place/%E7%94%98%E5%91%B3%E5%87%A6+%E3%81%97%E3%81%A5%E3%81%8F%E3%82%84/@34.0506127,131.8041195,17z/data=!3m1!4b1!4m6!3m5!1s0x3544e7ad64bce933:0x62514faf955cea64!8m2!3d34.0506127!4d131.8041195!16s%2Fg%2F11zx4fh1hb",
+      "name": "甘味処 しづくや",
+      "address": "銀座1-31 TOKUYAMA DECK D2-11",
+      "phone": "0834-20-0129",
+      "note": "公開Google Maps店舗詳細の名称・所在地・電話を画面で照合。保存したHTMLは基本店舗名・CID・座標を含むが電話・住所本文を含まない。電話一致をHTML自動検証したとは扱わない。施設公式110、自店投稿D2-011との区画表示差は残す。"
+    },
+    {
+      "method": "official_site_search_excerpt",
+      "checked_at": "2026-09-25",
+      "url": "https://tokuyamadeck.com/shop/%E3%80%90d2-110%E3%80%91%E3%81%A8%E3%82%89%E3%81%A1%E3%82%83%E3%82%93/",
+      "note": "施設運営者の検索結果抜粋でジューシーからぎょうざ酒場とらちゃんへの改称案内を確認。ページ本体の取得は404。現行本文の取得成功として扱わず、保存済み報道の旧名・改称記述と合わせて同じ店舗の履歴を照合。"
+    }
+  ]
+}

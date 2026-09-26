@@ -1,0 +1,23 @@
+{
+  "checked_at":"2026-09-25",
+  "scope":"Local retailers and current tenants from complete official directory sections. A new map listing is not a new opening. No automatic adoption of Jev outputs.",
+  "market":{
+    "outside_retail_scope":["karato-market-5563","karato-market-5524","karato-market-229"],
+    "offsite_directory":"https://www.karatoichiba.com/stores/?corner=10",
+    "offsite_reason":"公式区画一覧が『唐戸市場に店舗はおいていません』と明記。会社所在地と来店可能な店の所在地を区別し、唐戸市場の代表点へ追加しない。",
+    "suspended":{"karato-market-228":"店舗詳細の営業時間欄に『只今、休業中です。』。過去の通常営業案内と混在するため営業中として追加せず保留。永久閉店とも扱わない。"},
+    "aggregate":{"karato-market-5544":"karato-market-232"},
+    "aggregate_reason":"仁井田商店の2掲載は同じ法人名・会社所在地・公式サイト。正確な場内区画が未確認のため、1事業者の場内案内としてまとめて掲載し、両方の出典ID・URLを残す。異なる売場の存在や営業時間の一致は断定しない。",
+    "restaurant_ids":["karato-market-5547","karato-market-4660","karato-market-261","karato-market-262"],
+    "identity_note":"既存全7,829施設と名称・近傍を照合。市場内の別店『敦煌』や近隣福祉施設を統合しない。会社所在地は場内売場位置と区別。場内案内は運営組合の現行区画一覧を根拠とする。"
+  },
+  "harete":{
+    "existing":{"harete-b61ee2509630":"official-soy-stock-karato"},
+    "categories":{"harete-3ef746b2b020":"bar","harete-51f886473578":"bar","harete-733e1c15c22e":"bar","harete-9999acd5021d":"bar","harete-b61ee2509630":"cafe","harete-1a903d5adbe5":"restaurant","harete-23473ca65ebf":"cafe","harete-1c9820ff03dc":"restaurant","harete-c3cde32a6b7f":"cafe"},
+    "opening_dates":{"harete-51f886473578":"2026-07-10","harete-733e1c15c22e":"2026-06-25","harete-1c9820ff03dc":"2025-12-20"},
+    "planned_only":{"harete-3ef746b2b020":"2026-05-24は当初のOPEN予定。現行掲載を確認したが、実開店日と断定せず日付未確認で登録。"},
+    "notes":{"harete-51f886473578":"ホームのイヤシロチのリンク先がこのページにも向く。現行ページのタイトル・本文は日本酒処なごみ、15番、2026-07-10開店。別ページのイヤシロチは4番への場内移動を明記。既存『なごみ』は5.6km離れた別店として保持。","harete-c3cde32a6b7f":"旧URL名はなべと酒tokidokiだが、現行タイトル・本文はイヤシロチ。15番から4番への場内移動を明記。元の一の宮店が閉店したとは推測しない。","harete-733e1c15c22e":"URL名は卒業した串揚げ酒場縁を残すが、現行タイトル・本文は酒処OWL。縁の新住所は卒業生台帳に分離。古い別店SNSリンクは採用しない。","harete-1c9820ff03dc":"ホームの募集表示と詳細・ナビに相違あり。詳細にはごろうのきっちん、2025-12-20開店、営業時間・公式アカウントを明記。詳細を採用し相違を残す。"}
+  },
+  "graduates_policy":"紹介本文で11店舗を個別確認（紹介文の総数14とは区別）。旧施設への追加禁止。新所在地・移動販売・日付矛盾を個別の保留台帳に残す。",
+  "location_policy":"地図の点は施設全体の代表点です。個別の区画・店舗入口の座標、バス停からの徒歩到達性は未確認です。同じ施設内の店舗は同じ点で表示しています。"
+}

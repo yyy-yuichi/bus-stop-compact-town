@@ -1,0 +1,509 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "a00bc64121751e95ffc5c0d53f4ebf903a7e256020ebdb28b1583c27999e76c6",
+  "after_overlay_hash": "df689ba046d6cc62ca8adeccef193f31314844d8b8c492e6691a73ee179fbac4",
+  "newly_added_ids": [
+    "official-edion-0000000105",
+    "official-edion-0000000126",
+    "official-edion-0000000128",
+    "official-edion-0000000136",
+    "official-edion-0000000141",
+    "official-edion-0000000143",
+    "official-edion-0000000195",
+    "official-edion-0000000222",
+    "official-edion-0000000247",
+    "official-edion-0000000285",
+    "official-edion-0000000289",
+    "official-edion-0000000290",
+    "official-edion-0000000305",
+    "official-edion-0000000399",
+    "official-edion-0000000406",
+    "official-edion-0000000414",
+    "official-edion-0000000420",
+    "official-edion-0000000434",
+    "official-edion-0000000440",
+    "official-edion-0000000466",
+    "official-edion-0000000488",
+    "official-edion-0000000560",
+    "official-edion-0000000599",
+    "official-edion-0000000633",
+    "official-edion-0000000646",
+    "official-edion-0000000671",
+    "official-edion-0000000734",
+    "official-edion-0000000741",
+    "official-edion-0000000758",
+    "official-edion-0000000886",
+    "official-edion-0000001127",
+    "official-edion-0000001131",
+    "official-edion-0000001133",
+    "official-edion-0000001143",
+    "official-edion-0000003025",
+    "official-edion-0000003074",
+    "official-edion-0000003087",
+    "official-edion-0000003147",
+    "official-edion-0000003150",
+    "official-edion-0000003174",
+    "official-edion-0000003192",
+    "official-edion-0000003194",
+    "official-edion-0000003214",
+    "official-edion-0000003215",
+    "official-edion-0000003228",
+    "official-edion-0000003252",
+    "official-edion-0000003277",
+    "official-edion-0000003309",
+    "official-edion-0000003323",
+    "official-edion-0000003335",
+    "official-edion-0000003338",
+    "official-edion-0000003339",
+    "official-edion-0000003341",
+    "official-edion-0000003342",
+    "official-edion-0000003358",
+    "official-edion-0000003368",
+    "official-edion-0000003380",
+    "official-edion-0000003383",
+    "official-edion-0000003389",
+    "official-edion-0000003402",
+    "official-edion-0000003407",
+    "official-edion-0000003417",
+    "official-mcc-20001135",
+    "official-mcc-20001448",
+    "official-mcc-20001472",
+    "official-mcc-20001743",
+    "official-mcc-20001756",
+    "official-mcc-20001804",
+    "official-mcc-20001805",
+    "official-mcc-20001806",
+    "official-mcc-20001807",
+    "official-mcc-20001808",
+    "official-mcc-20002195",
+    "official-mcc-20002389",
+    "official-mcc-20002856"
+  ],
+  "corrected_ids": [
+    "osm-node-2748741363"
+  ],
+  "counts": {
+    "additions": 75,
+    "corrections": 1,
+    "edion_additions": 62,
+    "mcc_additions": 13,
+    "existing_unchanged": 1,
+    "held": 0
+  },
+  "directory_counts": {
+    "edion": 62,
+    "mcc_non_iwasaki": 15
+  },
+  "sources": [
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/638a1a77bc8dbee4e63126dc.json",
+      "hash": "1e156b3423efff71558dfc90953d540d82918a87c14632d0e4538ad4db4c3dd8",
+      "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/9ccf6f885c49983bf350ff83.json",
+      "hash": "39007aa6d3a5c4f0bf25a9643c61fdc69d890f82be988d89e451c532d03d7126",
+      "url": "https://search.edion.com/e_store/api/proxy2/shop/list?address=35&search=address&exclude-category=15.11.12.13.14&add=detail.image&device=pc&sort=default&random-seed=557229269&datum=wgs84&limit=100&offset=0&ex-code=only.prior.notgroupby&ignore-i18n=true&exclude-i18n=detail-text&timeStamp=20260926"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d3e5dcfcb7f45b4cc275d4e4-complete.json",
+      "hash": "a3e78c1c9b273d6469a3168b074844705770ea4241bdc5e0e2fa20938c99ee8e",
+      "url": "https://www.matsukiyococokara-online.com/map/s3/json/stores.json?202609261753"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1b353d79b75a8052424f17c0.json",
+      "hash": "9eaaaa6eeaf551d28096f54f085285b2ac395350a72fa08a470e8fe93b0412be",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000105"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/38ad5857acc15e24c030c00e.json",
+      "hash": "b04872290e6c802696739a2c63859b3c69828f7805d74e11531dc0bbf92edaf7",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000126"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/79ff9864a547acbe1f1f3eb8.json",
+      "hash": "38e86a0ea5e5ab36c5c773641ef7a999c9d860e5ee3b4315e32906bbb9d7c967",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000128"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1940e6d305864b363e5784e9.json",
+      "hash": "7eb53fe4915f9cb72613988639fd22e6760d149faf146df5a78f690f78302390",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000136"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/3bf4d4cf4c3473589e0ccda4.json",
+      "hash": "034e07bc0d3cfa7d0ed34746784333a751e7b71b34d3e22d2e5c2d4b9abb1ac9",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000141"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/3580e38abb622af1d38fa923.json",
+      "hash": "0ecc460edb64f0269423305f83afbd56963abe5c95d57d09dde4d0f1b90d45fa",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000143"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/19d47be6fde5a306ee00d826.json",
+      "hash": "ac3877fc98ff8fb49b5add8fadaab47c0b91bdbd0815fbd4014e11693b0e3d0a",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000195"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/665f2fdc3df3d82534186410.json",
+      "hash": "558315a0d72b1b517f5e411813bdfac3dc598c5dbd252bb90836104bb22441f6",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000222"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/8849a65326ce8e293ddeabc9.json",
+      "hash": "58177477a26d20a660bbf2697e7937b68074e95d99b32378e92ea2953907befc",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000247"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/8593f6bfb0f0ced0dc5c8870.json",
+      "hash": "e62c675307506e904e87c5d76fb5f0d0eac6fcf77f2c2496605625188e1aff7b",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000285"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/22e45628d52cc73642649bb2.json",
+      "hash": "eadba1e82b69c56d4b1f34e437cec73adc572b0f5eea766318f122e36b157ac3",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000289"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d028053aad0e52c9d3211710.json",
+      "hash": "9667079e5f5e2bea21081dea9d0b46a0bfce4c36907587b4609b9d62cfafbdb7",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000290"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/77d6fecf4e608f7031226e21.json",
+      "hash": "cffd4ebe9214086169cb7b79e4492ce27bcf4c69dfee79cc9016ae2bfcb8ad71",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000305"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/88f70abfa640891a43f60849.json",
+      "hash": "51b35771685c58444a0991b824b58772de50f2b6418aa2f63d244df055cc92da",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000399"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d6f855b3a6af8fef4a4f9ed9.json",
+      "hash": "fc59f09de9f3b57e44a7878a76929bf3763d9a2c89c6be7dd88a466518919279",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000406"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/f00f5c99c17e6422ad7adbfd.json",
+      "hash": "61cd2a9fe2b46a969b60be35a2c88e7be31147bfa0af9078316f4d40dba79534",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000414"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/4bd3e160cd60e4068d64ab28.json",
+      "hash": "3e6470934633b99bbcf764ed9d15138d8217f2e6d4fc87972a063899a2beb3bb",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000420"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/777368a7b705db57e22dad5e.json",
+      "hash": "2310e07ba6058bfc6c1737c4ee5b404df6d17fc13b577abb5fe1cc96d39e1e4d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000434"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/489445939bd8490a3a6f80b4.json",
+      "hash": "f3254689c848abe69a5df813026ca8d7c9c93becdada4ab914cb24cd833e1cd7",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000440"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/6d8bedbf47ae83dcc90df215.json",
+      "hash": "8c273ec03c03bd475cfbac5647317f3952bdf92ecc6c23d2624c64574899d41d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000466"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/6f99918555bd53ab923deb73.json",
+      "hash": "ce7fa69cff992d13e4e67813caee2a76a5f247f4b7efde4cf04d39f6cd4656dd",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000488"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/701a8bd6d063e09116d286d1.json",
+      "hash": "b9077b7f7fe76528d2bb42e219dcf7f5b0cb943d28c2ed394dca1e3e71a2e78e",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000560"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/cffeff0d8dc32f9e27556154.json",
+      "hash": "9cb1e6f28aeb307a69a533fbb4e9124247e036931254a5e2969e3c541c5e4fa4",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000599"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/58b6fd67f14b6e559e6e429b.json",
+      "hash": "120a5c2885f2cad362d06f8a12e3d0db4518fdfb5c1879d0886800356bef5df4",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000633"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/120147b59e7421bdb407abbe.json",
+      "hash": "131aff652a50e07039e4827de962361d78ee43a82bfe75499087b15caac0ecd7",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000646"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/7ec0f74450732dcfa680340d.json",
+      "hash": "af480ae08b961ae2baad1ab128baf777da11840750261eb7f7bdc7b79f294ba5",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000671"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/c94ac2d35b777ddbc8dfb526.json",
+      "hash": "e1000dd6775703491cf087abbbc31f343b54a6ee27d318d7d48b91225a69a0ad",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000734"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/06013a37a39644db54ba906d.json",
+      "hash": "4fddb662f64eebb5e2c97d848597fab155889c7d4b7ed3cb9facae7c11286e5d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000741"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/7ee20a19ef134eb31ba972bc.json",
+      "hash": "37b9f40c78a3596437fc45ad3bf7f3dd19f276a9220d8b26a80077fa8c382a9b",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000758"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/35565732f3440e06530d9933.json",
+      "hash": "c211637dc78027a493ecd901a75c19b2b65ad1ce929560f3e1b2ed95f0443591",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000000886"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/0390a66160b17e610cb36ee1.json",
+      "hash": "cbd9c8ab25e6360fb5d8e73b82fe619a06555cec5c622a39f5754480ecd5402f",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000001127"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/4b436bdd9765f4f7ba7744a9.json",
+      "hash": "f934ee6b59c0c453ef0828b08b973413fcd80256de9d413ec4438ba2e31701bd",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000001131"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/45fc4245f296afa55ffb75fc.json",
+      "hash": "965c1a89649f73d1cbc1fed61316810dc75458e38a8cdaddbdbb7846a55fc74f",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000001133"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/b62364566492ceb8cbfeaea8.json",
+      "hash": "2a613a074c71c8e9ea07c37c0011ad4f88e542425cd9709ab30d6fa75309bc32",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000001143"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/46dc42220ead50ea7f618edd.json",
+      "hash": "69496001559672b92196d1541c6e99133a6fab973caf430f7ab2ee98c482610d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003025"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/29bdc508dddbdbb4979b39e9.json",
+      "hash": "9b5da4c4764fd866a59fbfeda9e9358a43d53277b94c36ee5bfc48938d786719",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003074"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/0ba8dcc0ffa1a73c91212187.json",
+      "hash": "9a8063b512b511ecf705de5359c5a7b9f11c80e94adb5537503e2eb1bd4358d5",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003087"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/7f25d85d314c5bdd3fdc4f32.json",
+      "hash": "729ef7f4b5ad72b58af15dd2f3b1366a666e00bbd0cbf2239eea1d9a66b85dba",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003147"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/80a422691d7cf050dccd620d.json",
+      "hash": "3ae6775802ce0e8cbf554820edb1f6d1ea32306c4392c2a2f2bb6d2ae698aede",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003150"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/8d12a6dad4085f4cad32b5bf.json",
+      "hash": "291d8f280e8453b75678aa009a583ab5361a794b1f1aeceeaf326ca5e4fedef5",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003174"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d0f580708bcc40776391f459.json",
+      "hash": "427a602e06c8074911f80eda1e5664fdd7c8f13e7f7fe53dee76735737417449",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003192"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/18cf35fd62843ffe06ca7d07.json",
+      "hash": "31b89f50db2e036732c54add6ba5fdf84c89dd40a72785dae854dcfffcdb906a",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003194"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/6bc27ba1686385c88b63204f.json",
+      "hash": "989938f3693e923c832f3d103467c050c04de6ded21e4184b300af900915b381",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003214"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d3a47793cf8e95f9bc034b10.json",
+      "hash": "dafccc2541b17a0b860f971dc36125e35deb783948ee33044eec060f84be1fde",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003215"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/751ef449d610be784d147b41.json",
+      "hash": "ccadb5e354ee3e8770797d4e34a347161379abc964ed993840ef7a26a5042618",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003228"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/ba6f207a0a976f845aa05473.json",
+      "hash": "ad90422b60b1c81d967c358c6876a5f1b6f8f658dcba38f5148ff6fe2ba6541d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003252"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/9102819253e7033cf126b8d5.json",
+      "hash": "f393ef4a51c816af87e65528f0ffb5e19818247b5ee12960974b039bf6be58a0",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003277"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/6408f063358219150b665220.json",
+      "hash": "b595023dcc13169f0cafe547f95c4ee2de0b257d687117d013aa53c83715a323",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003309"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d1d83f36d294bebf95143175.json",
+      "hash": "b4062097028aa3e4bbacb1e69ea49b35a6bd871cc91ef2c594016e27d4de9d52",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003323"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/d5732c7eb06a31331816566a.json",
+      "hash": "ab0b2bbd4bfd5de16e253d580cb4a4d891e90061e40e76ff67d54093d38938ea",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003335"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1ac1cb397d20bee305bfa9ff.json",
+      "hash": "0d5d708663d0481d1393a059855abced9d7df0fe22df3babf282f88781dd3eef",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003338"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/f2adb8772461e488b6d42d91.json",
+      "hash": "6f8cc5e6bc194462fcf112aa569f936d2c2723c7a4c4994cd6c4e1aefa76b25d",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003339"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/3fbb00cdd13995c3acd212c5.json",
+      "hash": "0ece457e2ab21fbbe1759ae1e0a3e32a965d6b86f49d82a84c5b49260167f139",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003341"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/e0e1fdd5ee4113ba0bb8ac24.json",
+      "hash": "588a5df4920f9fbb187ed05d65ea45f14d5caab1550bf46cbc709b20880d6f70",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003342"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1c51bd47045767e04f3e187f.json",
+      "hash": "c1188fdd8c2e804292eba9c18fd67e8a0c17a70557cbbbb600d9b01129c3be0c",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003358"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/de84757cb0b408da71c88fd7.json",
+      "hash": "71289770aac332220ebb0a31b165c8822f39eef1fae51a37cafbb14c4e2d2ba8",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003368"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/8651c4287c30f916a00bb014.json",
+      "hash": "73d0f053968cbdf3c182a3977a7aba43a2eec4b98b6306a0d8e3b23a2955ba5b",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003380"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/5dc3af785e5059077bece617.json",
+      "hash": "289ad01c3fca7dc73159733a9cc7e45beadd421180eb6b73a499e4f38b22ce3b",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003383"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/8122053bdbc5c9e9a1e94c14.json",
+      "hash": "95920fbc7faac7eff7dccf8296a40d847741d8641a8793e7b32e8a881e633eea",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003389"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/05695e9af305ee21a410c72e.json",
+      "hash": "f6bb84df3cc2531025b35d069bd9cb076643a6ef9cf9b62730ab06d1a16e7147",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003402"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1b217cd998284712fe2119ae.json",
+      "hash": "5cf7b82129acbc07cadcb2501906fc0eb50c92dd18c1a2f13136573745b02296",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003407"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/40d7e07e592f6af8feb0720d.json",
+      "hash": "5d058e8ea1f314901e96905ab5680466ca7f995d8dc34fb8e726ac6d5c10e9eb",
+      "url": "https://search.edion.com/e_store/spot/detail?code=0000003417"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1f5e22246aca53c8da57e289.json",
+      "hash": "f149a252dc4ed6a350767c02b9046f4247830790be74c2a7b8540f2a1626d053",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001135"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/fd2b960c7b8620eb83724200.json",
+      "hash": "060959fa02851841f8598e4234388ee8388fd7bca6d494c0b12534938b9eab0b",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001448"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/45b8077d643610fa4d10acc2.json",
+      "hash": "c8b52dbf77a7d0b27ec6a31ba991249b9ba20cf20473e2b11bee44c15a0beab4",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001472"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/4662b435c5c00d0ed9f84423.json",
+      "hash": "e6b18cabec90b8cbbdda7a06717dccef5a0790a661c6018fcdf941fbd55695c1",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001743"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/be264d4c2364b3a5e0a23a5b.json",
+      "hash": "73948565394527237d43d4d3e4fd48fe2a19784d2c41df39d9adf534f2286dec",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001756"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/881544c93542dd796943ed62.json",
+      "hash": "b6092eb73f2fe8fc7a35545f38aeffe43d5244a7f3684998ff169872c37ead4b",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001804"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/f1bdb984338c7126293121df.json",
+      "hash": "d94c485c281e35c5b1b833a3b9cc329f5e7af730bca817cea9a67474884bc7c4",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001805"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/158119e45946c39e3334af64.json",
+      "hash": "0a627d821172500421ac3b37b11db92cbac1f9ad6324c8bd67de8f38c54ffa68",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001806"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/275a27004c3fff279db3c15c.json",
+      "hash": "f65f6ee4d8bf27bb421fb27d26cf683fdf75ff9accb74619118eeb760fd2fb61",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001807"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/46e7f3a5afa81e758091df0b.json",
+      "hash": "54a5bc074e2f127aaf5a854548a277be9351d28c6cde7caf3f09e171472b7ee1",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20001808"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/40a6c91b2acfd00cc11b2807.json",
+      "hash": "01f9608787e623d0eefef3f52a851b43c2a1d38923c42fedfbb00e578867497f",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002195"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/ba1b9005babf09f97a862b46.json",
+      "hash": "740b3d0c5f43b747857375979dabdc162089475210044d2864ad7bb90e62250b",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002389"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/f2a3903acd4fcfce68383b80.json",
+      "hash": "095d0846bdb35b1ea39d13001aac6531735e32255530098575d72733eedc96b8",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20002856"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/7e82feb80b63b9567d233b61.json",
+      "hash": "ae235c8e5bd3c142d81511fd3e38775f74f7cbb30ed4d026e0973705b6c9bc15",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=20805483"
+    },
+    {
+      "path": "outputs/facility-mcc-edion-20260926/sanitized/1bc43290c78ce5ba87159905.json",
+      "hash": "b0084eb6682e1eb5573c8ef22ef72bd485fe159ddd0801ecc02f34dd25e37a5e",
+      "url": "https://www.matsukiyococokara-online.com/map/?kid=21405568"
+    }
+  ],
+  "article_scope": "All previous article decisions, dates and known cases are unchanged. Current listings never complete article histories. Absent directory entries never prove closure.",
+  "efficiency": "Reused the 9.1MB official MCC nationwide dataset and indexed stored URLs before new requests. One official Edion prefecture request with documented defaults and limit returned all 62 stores, then independently verified each branch against JSON-LD and shop-specific data. 77 stores in one implementation/build/save batch.",
+  "limitations": [
+    "75 additions are current listings, not 75 proven openings. New opening dates remain null.",
+    "One Matsukiyo branch-name correction preserves original ID, point and source_ids.",
+    "The existing Co-op Cocoto Izumi branch is unchanged despite a 29m official point difference.",
+    "Edion Tokusa is within shopping center Apia, a separate store from nearby Wants and its Watts section.",
+    "MCC listings do not resolve former Segami sites or absent Kokokara Shimonoseki Ikuno; the prior Yuda-nishi/Segami hold remains unchanged."
+  ],
+  "extra_jev_requests": 0
+}

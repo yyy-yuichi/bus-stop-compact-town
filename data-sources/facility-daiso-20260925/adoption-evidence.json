@@ -1,0 +1,1487 @@
+{
+  "checked_at": "2026-09-25",
+  "before_overlay_hash": "cfb84607a9230491ad4c7e454d33e0e9e7a6ef4a67c01fb2956e546a86724f41",
+  "after_overlay_hash": "272b1fbb3a254b1c8d9004fc3163678de4711b35d2992779fa15c5f0425c10c6",
+  "directory_url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35",
+  "directory_ids": [
+    "001479",
+    "001515",
+    "001563",
+    "001709",
+    "001839",
+    "002294",
+    "002477",
+    "002650",
+    "002654",
+    "002674",
+    "002740",
+    "002826",
+    "002999",
+    "003096",
+    "003393",
+    "003496",
+    "003523",
+    "003527",
+    "003542",
+    "005302",
+    "005307",
+    "005452",
+    "005565",
+    "007003",
+    "007040",
+    "007044",
+    "007090",
+    "007369",
+    "007407",
+    "007519",
+    "007599",
+    "007944",
+    "007968",
+    "008005",
+    "008020",
+    "008072",
+    "008139",
+    "008141",
+    "008142",
+    "008237",
+    "008401",
+    "008448",
+    "008499",
+    "008686",
+    "008754",
+    "008768",
+    "008853",
+    "008998"
+  ],
+  "existing_unchanged_ids": [
+    "official-daiso-005565"
+  ],
+  "newly_added_ids": [
+    "official-daiso-001479",
+    "official-daiso-001515",
+    "official-daiso-001563",
+    "official-daiso-001709",
+    "official-daiso-001839",
+    "official-daiso-002294",
+    "official-daiso-002477",
+    "official-daiso-002650",
+    "official-daiso-002654",
+    "official-daiso-002674",
+    "official-daiso-002740",
+    "official-daiso-002826",
+    "official-daiso-002999",
+    "official-daiso-003096",
+    "official-daiso-003393",
+    "official-daiso-003496",
+    "official-daiso-003523",
+    "official-daiso-003527",
+    "official-daiso-003542",
+    "official-daiso-005302",
+    "official-daiso-005307",
+    "official-daiso-005452",
+    "official-daiso-007003",
+    "official-daiso-007040",
+    "official-daiso-007044",
+    "official-daiso-007090",
+    "official-daiso-007369",
+    "official-daiso-007407",
+    "official-daiso-007519",
+    "official-daiso-007599",
+    "official-daiso-007944",
+    "official-daiso-007968",
+    "official-daiso-008005",
+    "official-daiso-008020",
+    "official-daiso-008072",
+    "official-daiso-008139",
+    "official-daiso-008141",
+    "official-daiso-008142",
+    "official-daiso-008237",
+    "official-daiso-008401",
+    "official-daiso-008448",
+    "official-daiso-008499",
+    "official-daiso-008686",
+    "official-daiso-008754",
+    "official-daiso-008768",
+    "official-daiso-008853",
+    "official-daiso-008998"
+  ],
+  "corrected_ids": [],
+  "municipality_boundary": {
+    "path": "data-sources/prefecture-directed-20260915/municipal-boundaries.geojson",
+    "hash": "4e3947a6b2ab5b7f45f8e89727cbcdb2287a751d6730c9fa5e0fc13248d3d509"
+  },
+  "seamall_host_contains_official_point": true,
+  "nearby": [
+    {
+      "id": "official-daiso-001479",
+      "nearby": [
+        {
+          "id": "fuji-ube",
+          "name": "フジグラン宇部",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 96
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-001515",
+      "nearby": [
+        {
+          "id": "osm-node-3951240957",
+          "name": "ミコー",
+          "geometry_type": "Point",
+          "distance_m": 4
+        },
+        {
+          "id": "official-secondstreet-31787",
+          "name": "セカンドストリート 柳井店",
+          "geometry_type": "Point",
+          "distance_m": 14
+        },
+        {
+          "id": "osm-node-3951224359",
+          "name": "ケンタッキーフライドチキン",
+          "geometry_type": "Point",
+          "distance_m": 22
+        },
+        {
+          "id": "osm-node-4242357002",
+          "name": "果子乃季 ハーフスイーツ",
+          "geometry_type": "Point",
+          "distance_m": 45
+        },
+        {
+          "id": "osm-node-3951238758",
+          "name": "CoCo壱番屋",
+          "geometry_type": "Point",
+          "distance_m": 64
+        },
+        {
+          "id": "osm-way-425948277",
+          "name": "SL公園",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 95
+        },
+        {
+          "id": "osm-node-3951224785",
+          "name": "MrMax柳井SC",
+          "geometry_type": "Point",
+          "distance_m": 98
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-001563",
+      "nearby": [
+        {
+          "id": "official-kfc-5063",
+          "name": "ケンタッキーフライドチキン ゆめタウン宇部店",
+          "geometry_type": "Point",
+          "distance_m": 62
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-001709",
+      "nearby": [
+        {
+          "id": "osm-way-409782430",
+          "name": "とんかつ浜勝",
+          "geometry_type": "Point",
+          "distance_m": 88
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-001839",
+      "nearby": [
+        {
+          "id": "osm-node-4098812296",
+          "name": "フジグラン山口",
+          "geometry_type": "Point",
+          "distance_m": 65
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002294",
+      "nearby": [
+        {
+          "id": "civic-care-3590104158-232da0aad9",
+          "name": "グループホームあやらぎの里",
+          "geometry_type": "Point",
+          "distance_m": 76
+        },
+        {
+          "id": "civic-care-3590103192-76caabca7c",
+          "name": "小規模多機能あやらぎの里",
+          "geometry_type": "Point",
+          "distance_m": 76
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002477",
+      "nearby": [],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002650",
+      "nearby": [
+        {
+          "id": "official-lovewins-shinshimonoseki",
+          "name": "ラビンズゴルフ コスパ新下関",
+          "geometry_type": "Point",
+          "distance_m": 22
+        },
+        {
+          "id": "osm-way-389157196",
+          "name": "石原有富公園",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 85
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002654",
+      "nearby": [
+        {
+          "id": "civic-care-3570302798-e35ecb57f0",
+          "name": "株式会社 河村福祉サービス",
+          "geometry_type": "Point",
+          "distance_m": 12
+        },
+        {
+          "id": "osm-node-9570903452",
+          "name": "山口銀行ATM",
+          "geometry_type": "Point",
+          "distance_m": 29
+        },
+        {
+          "id": "osm-way-417442224",
+          "name": "サンパークあじす",
+          "geometry_type": "Point",
+          "distance_m": 33
+        },
+        {
+          "id": "osm-node-9570903453",
+          "name": "ゆうちょ銀行ATM",
+          "geometry_type": "Point",
+          "distance_m": 37
+        },
+        {
+          "id": "osm-node-9570903454",
+          "name": "サンリブ阿知須",
+          "geometry_type": "Point",
+          "distance_m": 56
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002674",
+      "nearby": [
+        {
+          "id": "yanai",
+          "name": "ゆめタウン柳井",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 60
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002740",
+      "nearby": [
+        {
+          "id": "osm-way-314669174",
+          "name": "フジ",
+          "geometry_type": "Point",
+          "distance_m": 30
+        },
+        {
+          "id": "osm-way-336318591",
+          "name": "東山口信金",
+          "geometry_type": "Point",
+          "distance_m": 87
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002826",
+      "nearby": [
+        {
+          "id": "official-chaerin-yumetown-tokuyama",
+          "name": "韓国料理チェリン ゆめタウン徳山店",
+          "geometry_type": "Point",
+          "distance_m": 15
+        },
+        {
+          "id": "tokuyama",
+          "name": "ゆめタウン徳山",
+          "geometry_type": "Point",
+          "distance_m": 26
+        },
+        {
+          "id": "osm-way-378279929",
+          "name": "スポーツクラブ&スパルネサンス",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 100
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-002999",
+      "nearby": [],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003096",
+      "nearby": [
+        {
+          "id": "osm-way-713427957",
+          "name": "ゆめマート",
+          "geometry_type": "Point",
+          "distance_m": 27
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003393",
+      "nearby": [
+        {
+          "id": "osm-node-4182391105",
+          "name": "ハイパーモールメルクス宇部",
+          "geometry_type": "Point",
+          "distance_m": 89
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003496",
+      "nearby": [
+        {
+          "id": "civic-care-3570102271-d58a1a6bdf",
+          "name": "アイユウの苑 グループホーム",
+          "geometry_type": "Point",
+          "distance_m": 67
+        },
+        {
+          "id": "civic-care-3570102297-1aa92b5560",
+          "name": "アイユウの苑 デイサービスセンター しおはま",
+          "geometry_type": "Point",
+          "distance_m": 67
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003523",
+      "nearby": [
+        {
+          "id": "osm-node-5336218226",
+          "name": "ユアーズ・バリュ",
+          "geometry_type": "Point",
+          "distance_m": 29
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003527",
+      "nearby": [
+        {
+          "id": "osm-node-5344701143",
+          "name": "フジ",
+          "geometry_type": "Point",
+          "distance_m": 0
+        },
+        {
+          "id": "osm-way-378114877",
+          "name": "フジ 西宇部店",
+          "geometry_type": "Point",
+          "distance_m": 27
+        },
+        {
+          "id": "osm-node-10253616807",
+          "name": "クスリ岩崎チェーン 西宇部店",
+          "geometry_type": "Point",
+          "distance_m": 55
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-003542",
+      "nearby": [
+        {
+          "id": "official-tsuruha-3979",
+          "name": "ウォンツ 竜王店",
+          "geometry_type": "Point",
+          "distance_m": 37
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-005302",
+      "nearby": [
+        {
+          "id": "osm-node-4820362141",
+          "name": "ユアーズバリュー",
+          "geometry_type": "Point",
+          "distance_m": 9
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-005307",
+      "nearby": [
+        {
+          "id": "osm-way-385249453",
+          "name": "清水東公園",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 75
+        },
+        {
+          "id": "osm-node-4561837226",
+          "name": "佐波歯科",
+          "geometry_type": "Point",
+          "distance_m": 76
+        },
+        {
+          "id": "shinnanyo",
+          "name": "ゆめタウン新南陽",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 77
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-005452",
+      "nearby": [
+        {
+          "id": "osm-way-561529898",
+          "name": "アトラス萩",
+          "geometry_type": "Point",
+          "distance_m": 29
+        },
+        {
+          "id": "official-juntendo-hagi-274",
+          "name": "ジュンテンドー萩店",
+          "geometry_type": "Point",
+          "distance_m": 68
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007003",
+      "nearby": [
+        {
+          "id": "osm-node-4334964689",
+          "name": "浅江SC",
+          "geometry_type": "Point",
+          "distance_m": 39
+        },
+        {
+          "id": "osm-node-3596474500",
+          "name": "マックスバリュ",
+          "geometry_type": "Point",
+          "distance_m": 95
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007040",
+      "nearby": [
+        {
+          "id": "osm-node-6154596937",
+          "name": "サイゼリヤ",
+          "geometry_type": "Point",
+          "distance_m": 30
+        },
+        {
+          "id": "osm-node-1423653664",
+          "name": "ゆめタウン長府簡易郵便局",
+          "geometry_type": "Point",
+          "distance_m": 44
+        },
+        {
+          "id": "chohu",
+          "name": "ゆめタウン長府",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 54
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007044",
+      "nearby": [
+        {
+          "id": "osm-way-369541103",
+          "name": "端穂診療所",
+          "geometry_type": "Point",
+          "distance_m": 77
+        },
+        {
+          "id": "civic-care-3570700108-241aaf0147",
+          "name": "さくら苑ホームヘルプサービス",
+          "geometry_type": "Point",
+          "distance_m": 77
+        },
+        {
+          "id": "civic-care-3570700264-43ce80bd2a",
+          "name": "さくら苑デイサービスセンター",
+          "geometry_type": "Point",
+          "distance_m": 77
+        },
+        {
+          "id": "civic-care-3570700421-bcbacedc34",
+          "name": "ショートステイ 野の花",
+          "geometry_type": "Point",
+          "distance_m": 77
+        },
+        {
+          "id": "civic-care-3570700041-3a3f92811b",
+          "name": "さくら苑指定居宅介護支援事業所",
+          "geometry_type": "Point",
+          "distance_m": 77
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007090",
+      "nearby": [
+        {
+          "id": "civic-care-3560690244-555ccf44ba",
+          "name": "訪問看護ステーション ライフナース",
+          "geometry_type": "Point",
+          "distance_m": 38
+        },
+        {
+          "id": "osm-node-4820335896",
+          "name": "セブンイレブン",
+          "geometry_type": "Point",
+          "distance_m": 56
+        },
+        {
+          "id": "osm-node-4820336181",
+          "name": "ジョリーパスタ",
+          "geometry_type": "Point",
+          "distance_m": 71
+        },
+        {
+          "id": "official-kairikiya-hofu",
+          "name": "京都北白川ラーメン魁力屋 防府店",
+          "geometry_type": "Point",
+          "distance_m": 77
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007369",
+      "nearby": [
+        {
+          "id": "civic-care-3570200356-27b4843328",
+          "name": "特別養護老人ホーム神原苑",
+          "geometry_type": "Point",
+          "distance_m": 35
+        },
+        {
+          "id": "civic-care-3570200091-5fea59e19e",
+          "name": "神原苑在宅介護支援センター",
+          "geometry_type": "Point",
+          "distance_m": 35
+        },
+        {
+          "id": "osm-way-287682214",
+          "name": "宇部中央高等学校",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-way-549154628",
+          "name": "神原苑",
+          "geometry_type": "Point",
+          "distance_m": 87
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007407",
+      "nearby": [
+        {
+          "id": "official-tsuruha-3835",
+          "name": "ウォンツ フジ南岩国店",
+          "geometry_type": "Point",
+          "distance_m": 43
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007519",
+      "nearby": [
+        {
+          "id": "osm-way-332618202",
+          "name": "アルク",
+          "geometry_type": "Point",
+          "distance_m": 6
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007599",
+      "nearby": [
+        {
+          "id": "osm-node-5712889433",
+          "name": "クスリ岩崎チェーン",
+          "geometry_type": "Point",
+          "distance_m": 26
+        },
+        {
+          "id": "osm-node-5712889434",
+          "name": "マックスバリュ",
+          "geometry_type": "Point",
+          "distance_m": 90
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007944",
+      "nearby": [
+        {
+          "id": "osm-node-2748741361",
+          "name": "MaxValu",
+          "geometry_type": "Point",
+          "distance_m": 11
+        },
+        {
+          "id": "osm-node-2748741363",
+          "name": "マツモトキヨシ",
+          "geometry_type": "Point",
+          "distance_m": 15
+        },
+        {
+          "id": "osm-node-2748741364",
+          "name": "ロッテリア",
+          "geometry_type": "Point",
+          "distance_m": 42
+        },
+        {
+          "id": "osm-node-2748599318",
+          "name": "わたみん家",
+          "geometry_type": "Point",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-node-12186022122",
+          "name": "Seattle's Best Coffee",
+          "geometry_type": "Point",
+          "distance_m": 49
+        },
+        {
+          "id": "osm-node-12073258317",
+          "name": "九十九",
+          "geometry_type": "Point",
+          "distance_m": 51
+        },
+        {
+          "id": "osm-node-11288510351",
+          "name": "スターバックス",
+          "geometry_type": "Point",
+          "distance_m": 88
+        },
+        {
+          "id": "osm-node-6154596938",
+          "name": "サイゼリヤ",
+          "geometry_type": "Point",
+          "distance_m": 89
+        },
+        {
+          "id": "osm-way-554108663",
+          "name": "細江埠頭緑地",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 97
+        }
+      ],
+      "decision": "公式地点はシーモール既存ポリゴン内。境界頂点との距離を施設中心との距離と誤認しない。3ブランド複合店は1施設。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-007968",
+      "nearby": [
+        {
+          "id": "osm-node-3951221858",
+          "name": "イオン柳井新庄SC",
+          "geometry_type": "Point",
+          "distance_m": 56
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008005",
+      "nearby": [],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008020",
+      "nearby": [
+        {
+          "id": "sunpark",
+          "name": "おのだサンパーク",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 87
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008072",
+      "nearby": [
+        {
+          "id": "official-tsuruha-3710",
+          "name": "ウォンツ 厚狭店",
+          "geometry_type": "Point",
+          "distance_m": 20
+        },
+        {
+          "id": "osm-node-5482447139",
+          "name": "マックスバリュ",
+          "geometry_type": "Point",
+          "distance_m": 68
+        },
+        {
+          "id": "osm-way-1170894476",
+          "name": "マックスバリュ厚狭店",
+          "geometry_type": "Point",
+          "distance_m": 70
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008139",
+      "nearby": [
+        {
+          "id": "civic-care-3567390020-7c5723a57c",
+          "name": "平生訪問看護ステーション きらら",
+          "geometry_type": "Point",
+          "distance_m": 61
+        },
+        {
+          "id": "official-tsuruha-3678",
+          "name": "ウォンツ 平生店",
+          "geometry_type": "Point",
+          "distance_m": 82
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008141",
+      "nearby": [
+        {
+          "id": "osm-way-550383091",
+          "name": "フジ",
+          "geometry_type": "Point",
+          "distance_m": 31
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008142",
+      "nearby": [],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008237",
+      "nearby": [
+        {
+          "id": "osm-way-282445351",
+          "name": "ザ・ビッグ",
+          "geometry_type": "Point",
+          "distance_m": 25
+        },
+        {
+          "id": "civic-care-3570802458-29631600c4",
+          "name": "株式会社一期一会",
+          "geometry_type": "Point",
+          "distance_m": 31
+        },
+        {
+          "id": "official-tsuruha-3719",
+          "name": "ウォンツ 周東店",
+          "geometry_type": "Point",
+          "distance_m": 39
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008401",
+      "nearby": [
+        {
+          "id": "hohu",
+          "name": "ゆめタウン防府",
+          "geometry_type": "Point",
+          "distance_m": 19
+        },
+        {
+          "id": "civic-care-3570601223-82ea92599e",
+          "name": "サンキ・ウエルビィ　デイサービスセンター防府",
+          "geometry_type": "Point",
+          "distance_m": 77
+        },
+        {
+          "id": "osm-node-4041136093",
+          "name": "ウォンツ 防府八王子店",
+          "geometry_type": "Point",
+          "distance_m": 97
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008448",
+      "nearby": [],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008499",
+      "nearby": [
+        {
+          "id": "youmecity",
+          "name": "ゆめシティ",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 66
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008686",
+      "nearby": [
+        {
+          "id": "osm-way-547913492",
+          "name": "Fresta Mall",
+          "geometry_type": "Point",
+          "distance_m": 17
+        },
+        {
+          "id": "official-tsuruha-3613",
+          "name": "ウォンツ 岩国室の木店",
+          "geometry_type": "Point",
+          "distance_m": 55
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008754",
+      "nearby": [
+        {
+          "id": "osm-way-391863664",
+          "name": "モスバーガー イオンタウン小郡店",
+          "geometry_type": "Point",
+          "distance_m": 29
+        },
+        {
+          "id": "osm-way-391863727",
+          "name": "カフェ・ダガリ",
+          "geometry_type": "Point",
+          "distance_m": 69
+        },
+        {
+          "id": "osm-way-391863726",
+          "name": "牛角 山口小郡店",
+          "geometry_type": "Point",
+          "distance_m": 79
+        },
+        {
+          "id": "osm-way-391863155",
+          "name": "餃子の王将 山口小郡店",
+          "geometry_type": "Point",
+          "distance_m": 82
+        },
+        {
+          "id": "osm-way-391863725",
+          "name": "すし日和 イオンタウン小郡店",
+          "geometry_type": "Point",
+          "distance_m": 93
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008768",
+      "nearby": [
+        {
+          "id": "osm-way-657113152",
+          "name": "サイゼリヤ",
+          "geometry_type": "Point",
+          "distance_m": 55
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008853",
+      "nearby": [
+        {
+          "id": "osm-node-4237167187",
+          "name": "ザ・ビッグ",
+          "geometry_type": "Point",
+          "distance_m": 35
+        },
+        {
+          "id": "osm-node-6824803779",
+          "name": "Redking Burger",
+          "geometry_type": "Point",
+          "distance_m": 84
+        },
+        {
+          "id": "osm-node-6824803769",
+          "name": "Coin Laundry",
+          "geometry_type": "Point",
+          "distance_m": 91
+        },
+        {
+          "id": "osm-node-5257020317",
+          "name": "山口銀行",
+          "geometry_type": "Point",
+          "distance_m": 94
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    },
+    {
+      "id": "official-daiso-008998",
+      "nearby": [
+        {
+          "id": "yamaguchi",
+          "name": "ゆめタウン山口",
+          "geometry_type": "MultiPolygon",
+          "distance_m": 77
+        }
+      ],
+      "decision": "同名既存支店なし。同一地点の入居先スーパーや近隣異業種は別施設として保持。",
+      "distance_limit": "Polygonの場合は境界頂点への補助距離。中心・入口までの距離ではない。"
+    }
+  ],
+  "closure_name_candidates": [],
+  "case_findings": [
+    {
+      "case_id": "case:kaiten-496981:old-daiso-closure",
+      "reason": "記事は2024-04-14閉店と報告。旧店を特定した運営元の閉店告知は未取得。元地図にDAISO旧店IDなし。現在一覧からの不在だけでは閉店確定しない。"
+    },
+    {
+      "case_id": "case:shunan-102525:old-daiso-closure",
+      "reason": "記事は2024-10-20閉店と報告。旧店舗ページはHTTP200だが不存在案内。記事掲載の閉店ポスターは月日・曜日のみで店舗名・年が画像内に見えず、店舗固有の一次根拠として単独採用しない。旧店IDなし。"
+    },
+    {
+      "case_id": "case:shunan-102525:shirokujichu-closure",
+      "reason": "本文に四六時中イオン光の2023年10月末閉店。元地図に同名対象IDなし。店別の運営元閉店告知未取得のため旧店履歴。"
+    },
+    {
+      "case_id": "facility:official-daiso-007944",
+      "reason": "複合店の現行掲載は反映済み。2024年の改装・2ブランド出店の実施日の明記は保留。"
+    }
+  ],
+  "sources": [
+    {
+      "path": "outputs/facility-daiso-20260925/0b8d47351b79713968dd6851.json",
+      "url": "https://www.seamall.jp/shopguide/2f-daiso-standard-products-threeppy/",
+      "hash": "fc338201a1de747d4e33f95c9ff3f1870513f840bd1c62954cb39387887e7697",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/05d0737fc19ab5c2db69b0df.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007944",
+      "hash": "336731a7c969fb894336dd48cc679454ddfb60eda20ef970689b4b9828ddf596",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/06e815ef21f0add0ce36226d.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008768",
+      "hash": "5149e04c798339a0fd510736dd36b9df48f1ce80442d1cdefef68f5a5f76d55b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/0ccca1b85acab388d79202cf.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/001709",
+      "hash": "210f200cfe4948389cc9cf28ae3e8bcbb68b4d40c97f865afe03347fa59e8c25",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/0e999a67562cf7be4f9513ed.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/001839",
+      "hash": "ffc51de54a17010c9061f7019e73effc42a3eb23aaee51f086e4b2cbb9cc5205",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/1b1f50840d510ad6380f5197.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003542",
+      "hash": "d22ed34d889d976da1792b7c31a5cc623dc49a9658b45c79fa458a67ef88ebd0",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/21c5398337a0ca7792ab0fbd.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008072",
+      "hash": "37782dc8ffc6f62fe236f38fe66b2d466a47baf8b2fd430b7f1bb3d5dc0bd6f2",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/2b7a93ac0fbcef321c16e895.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007044",
+      "hash": "17d452de7ed82fc764719c00d2af1f6f2c3e7edebe982f4db2580b785589cb1d",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/2c714cdf6d913a892f88ea39.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002674",
+      "hash": "eb792bfba60ec20968066feb30e9f0d70f55dc47e6e80fffcbfb256a0fe840d5",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/352e27790a38a21569152867.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/005452",
+      "hash": "b6c020fde052688fdfbf0c6fc56004ef96acdcd78d6be3f534766a70825af3b1",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/37855b35af1eaefd6cc73acd.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008139",
+      "hash": "d77c4a9f7e0d09219b79e18ad16646de0d18662a8cc08ea27bd305c8451804be",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/3c1f63b4dac453f6f1aa77b2.json",
+      "url": "https://www.daiso-sangyo.co.jp/info/shop/32693",
+      "hash": "edcb2387af2a76550a561d23027e667f89c7bd72dbf09c1e72a0ba22f20874b6",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/3d649fe843682ed655ba03fc.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007003",
+      "hash": "d276b040e79c7e8f28e3158624da4f2dd984e94665c2fc298ca03bb2c335f853",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/3d8e29668a47b7803d0d51ca.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008005",
+      "hash": "b78a64c378fea9416cd8a34e8b5e20560c2eed568466604a095ba392ae9a5b54",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/42a697701bc8f53f1f09060c.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002999",
+      "hash": "3396cb9ef8dacd065b4e668344dc4583b893fb96feabee32dedd8449f4dd7455",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/45fbf4d1a689c2b7d440a0c7.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007407",
+      "hash": "880177f9eda7b932d1191595227577dfec19bbe2b31f8f73324db7a222ae903b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/46488e6537cd283c1f6273ac.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003496",
+      "hash": "cee1ecf6265cdde1118fb1c560ff211a178b774c548390f93520b6cfea1ade3b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/4958787da267e85bafc63bac.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007519",
+      "hash": "655b18f4ca238feb04eec45c6dbb9fc691a0423c6d4297649eadb44f22063038",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/4d14974a97000081257fc478.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003527",
+      "hash": "19463a897a984fd4b6d4689759726754b5747a72239b51fd9e41023dc0bd7182",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/4d642f3a9e97d132c4f5e702.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003523",
+      "hash": "84b0cd9b7b91c4564199e4e0cc4d9e137a347b7722e83efe0b2e8aabd1733399",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/50fb587aa9a8d2f9537e2045.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35/page/1",
+      "hash": "ac0364eb41b32ce2fb9716804e086afdd89348ba46ef8e69e749ddc04a373e8c",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/51d5b458df1fbd4d5fc68af6.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007090",
+      "hash": "79c97c308e92827f2458722fce521587a296e386746c34988488c79851f17799",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/6388020a738cb202f924250c.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003096",
+      "hash": "798888c27858d7b289a9528329564ac469746ea1fa52758498f0c7674727b863",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/653361b3e38be74a935cd084.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008020",
+      "hash": "aa25481ee469f0892d179e472bb3bebdd09121b12a512785980787db138dd4f8",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/6b02ebc99c2ed73616c3d612.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35/page/4",
+      "hash": "79b7aef794c4be1d99e021445d18d6e8f53e24008fc98c9bf9122c9209ad5c1b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/6b03af80136291f49cdc0dfc.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008998",
+      "hash": "5b0d921ef2ad551f938f99b24bad217bc221fc62f8eb14936d1e9af24a2cb9e3",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/6bc5b5fdfbad6219d4221bfd.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002654",
+      "hash": "f81744a576b7040c147d5db86c14c73035bba8b880517488e8675ff6ccd925e4",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/6f3f18880a3b80a9d2eb72c8.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/005307",
+      "hash": "017a93fd1e198281c4e1a4dbfe85c4d48202f1a749d98fa42612624f411d1cdd",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/79467ce594c80732562ce5b4.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008754",
+      "hash": "5666433acfa2404a4c995565ab8926cd4e97db0e2cf328741fe0591a1f164ff1",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/80823bd08b071bafd8bc663b.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007040",
+      "hash": "906c2f0fece0050eead5de3caa6077e26f095c9bb6162c86bbd017e37de73979",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/80fc568e1b3fb0a12c21f0fc.json",
+      "url": "https://www.aeon.com/store/イオン/イオン光店/shop_info/floor_guide/27087/",
+      "hash": "06cc400fb4cfc9efeae7790cdc4b68563386b89ffdb09c4024bef1f625e395b4",
+      "status": 404,
+      "usable": false
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/84265f3daabf7ce3f32d4d6f.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008401",
+      "hash": "38497c77956faea7f6c702a8b68cd1ba37f4619a9ef8278a8a59117fc648b80e",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/86ad875beecd5e0d1d8cbd18.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002477",
+      "hash": "b710976017dce6d0909884f6b94dfb67de9aad49c6e7c3edfa5fdb1ea2601612",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/876e4875caedd4c84677ec87.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002650",
+      "hash": "c7fb6e9c1d31d893b96ab70bbb8493517c74f768254041172b09bd73871ace76",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/8b7f279371626c1fc95ed2dd.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/001515",
+      "hash": "109d5f274db5819fb09086f3531bac7193858eb41d5e282eaa27f0629d3d2ae5",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/8d38f5d2362e10323b96e407.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/001563",
+      "hash": "be55b3ae659ff9bbb4bcb4abb462d0272023ea8f1161442ce409e9e16a286b96",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/8ecffa6710a62662a7b27688.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002740",
+      "hash": "796de444ef98a1aef893b02c8a5f9cfd7930bafa0961fa0fc1f12b069d367f75",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/9228aa47123b4d94deb708a9.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/001479",
+      "hash": "7e8d88091623a11cd9f6e10a2bee259550da77cef5f26b5940314d4cd57ae700",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/955d56473e1888706b5438c0.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008448",
+      "hash": "6d295e472696fe6a9b4863f6d2f355094675a41047621fb00cb40e99ed5dfb75",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/99c525cc7d18ef8302272290.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002826",
+      "hash": "e2bcd334c84d8dbc07cf61dd30c272efb917d8d9bdb7139bed6f472660422077",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/9e148a259f457655bb0f6287.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35",
+      "hash": "e9de0752a0af457047c92292dd238254f4d2451dee3f10e34dbce108020c636e",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/a53ad44f70b7343bc62b1404.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/003393",
+      "hash": "8c75b6ee641a4fbff22798463cddd5290923820daa8129f954e587163648263b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/b37d7b87a47d0108ace77430.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35/page/5",
+      "hash": "a35066f0b68141466fe18284bce9f23e129988280b09f4cc8f0ff853e8230ab6",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/bddf87b7e40c1d58be61f2e1.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008686",
+      "hash": "4160eb18290611e8e0632290edf038a37908e1b02ff4991e13ba57ad40458c2a",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/c022c1bafb4692451560606d.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008853",
+      "hash": "11cfc9a2e7b4f856b0e3fe878414cb617c01edfc5b110146f67533ecd40cd1d3",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/c6406271460c58e0929e0ed1.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35/page/3",
+      "hash": "66b2869b377d8c6424acbf2412ee66a735a4edaeaaa9f423993e305f6e534123",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/ca1cc19bbf5a31b7282f7ca8.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/002294",
+      "hash": "9e8676cf6d75b42a0621b07fbf7a5a759f515e0f56cdd0784960d5e080b2b4b9",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/cf666c8907d8442da2d3e635.json",
+      "url": "https://www.daiso-sangyo.co.jp/info/news/33151",
+      "hash": "096d1f3f19fd4c8029ff34e986cd7f8b1f8a00b6a57035770976213f2b8ad3af",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/d04af4c30b54a0e3491512d2.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008141",
+      "hash": "3746e8b707fed4fc476bff3cb0ad8e45e2782f7b375e78c9ec954bb29fcdeac4",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/d29eb66d599b47d48851a713.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008499",
+      "hash": "f429ab1f7d5c8969f19bb9b587a4d9702f52595be075c9f42c6b5c16e9622298",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/d7e4513f6e9fa00db6b6d6f0.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/daiso/pref/35/page/2",
+      "hash": "08c474095cc7016ab419a7b1abf21a36b06ac2779e772df04dac6b16e9974fac",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/daf7925c05fdbe5c9cbbaff4.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/005302",
+      "hash": "3d659fc93ba7f11c95c9ba94f11722d5e720fd3b07e1962dbf15a2430c1cc6b5",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/de1f783a8c97c4ccea345016.json",
+      "url": "https://www.daiso-sangyo.co.jp/infolist/shop/page/80",
+      "hash": "e6333daa7dac1c19e98ebcd728700895363d5cc05ead6c11f347cb23e3ab7cda",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/e56f48cf2c7aa7c6dfe7ea1c.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008067",
+      "hash": "30b91cd93f69053242bb1be68a533f5b544960f98e4c90a2ee325aa2823fe532",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/ee98b66cc55e879592bdd9e7.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007599",
+      "hash": "8aa9bfe7559ecf7690035aae110bded8775fbfd57e0ea61fb92a1e470ab5e9d9",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/f05373d59af1424b5dce7363.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007369",
+      "hash": "c5294cb73b522c7d4c0d9b0a84a0152ace411799ed299b071e0ea33c23df3cf5",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/f599dba3561502f7683816a5.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/007968",
+      "hash": "c20f38a977518cefad3da632da6c4871cad5eb30b9acd382fb26aa635ac5ff7b",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/fbbe71e3abf0565a82c1eff2.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008142",
+      "hash": "b489559631356c611f53497b61762c8ceed08b6b06b2201c7826b7ef3cea6283",
+      "status": 200,
+      "usable": true
+    },
+    {
+      "path": "outputs/facility-daiso-20260925/pages/fd8c6f57b38fa9e55e5bef1e.json",
+      "url": "https://www.daiso-sangyo.co.jp/shop/detail/008237",
+      "hash": "293eceb5ea9dcf3cde164f34b1534eb3c0def88d81a2ced022bafbe286a1d41c",
+      "status": 200,
+      "usable": true
+    }
+  ],
+  "article_keys": [
+    "kaiten-496981",
+    "shunan-102525",
+    "kaiten-519909"
+  ],
+  "article_inputs_hash": "c8c61adeca1edbc8cef7053a5cd5f1455bc33feff00fdb5972af3aa612323daa",
+  "extra_jev_requests": 0,
+  "cumulative": {
+    "updates": 30,
+    "additions": 237,
+    "total": 8001,
+    "normal_candidates": 7937
+  }
+}

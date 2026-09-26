@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-09-25",
+  "observations": [
+    {
+      "method": "browser_visible_official_detail",
+      "url": "https://shop.seria-group.com/seria/info/000002953?addresscode=35",
+      "official_store_id": "000002953",
+      "name": "Seria 長門店",
+      "address": "山口県長門市東深川字塚ヶ坪８２１－１",
+      "phone": "0837-27-0235",
+      "map_url": "https://shop.seria-group.com/seria/map?latlon=34.3706069,131.1903297&shopid=000002953",
+      "coordinates": [
+        131.1903297,
+        34.3706069
+      ],
+      "note": "公式ショップ入口から県一覧2頁を開いて長門店を選択。公式住所行に結び付く店舗ID付き地図リンクの明示座標を視認。通常HTML取得はJSの殻のみで、本文の自動抽出成功とは扱わない。旧サイトの推測ID000003059は不採用。"
+    },
+    {
+      "method": "manual_visual_reading_of_original_pdf",
+      "url": "https://www.juntendo.co.jp/article_source/data/news/files/hagi20241120.pdf",
+      "file": "outputs/facility-hagi-nagato-20260925/pdf/juntendo-hagi-open.pdf",
+      "sha256": "c18511365f7402a7cf76ae8ca7f89d00e4337b35cfb86d436259ce035e2d0ca9",
+      "pages": [
+        1
+      ],
+      "confirmed_facts": {
+        "old_name": "ジュンテンドー東萩店",
+        "old_address": "萩市大字椿東2940番地1",
+        "closed_at": "2024-10-14",
+        "name": "ジュンテンドー萩店",
+        "opened_at": "2024-11-20",
+        "relationship": "旧東萩店の後継店として移転・増床"
+      },
+      "note": "PDF原本1ページをレンダリングして視認。文字抽出には文字化けがあるため抽出JSONを根拠にしない。"
+    }
+  ]
+}

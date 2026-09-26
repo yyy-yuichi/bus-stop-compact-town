@@ -1,0 +1,438 @@
+{
+  "checked_at": "2026-09-26",
+  "before_overlay_hash": "f2a152e9b2d96df4e2609e7bedd720e87c23e5708774676e15c4d892534247dd",
+  "after_overlay_hash": "c475b872c49e7fed0fae0b09f1983833dfe0253c867691d84a1f19e91e792e4f",
+  "newly_added_ids": [
+    "official-komeri-1478",
+    "official-komeri-1353",
+    "official-komeri-1342",
+    "official-komeri-1703",
+    "official-komeri-1321",
+    "official-komeri-1381",
+    "official-komeri-1491",
+    "official-komeri-1551",
+    "official-komeri-1581",
+    "official-komeri-1679",
+    "official-komeri-1692",
+    "official-komeri-1279",
+    "official-komeri-1373",
+    "official-komeri-1693",
+    "official-komeri-1447",
+    "official-nafco-0260",
+    "official-nafco-0370",
+    "official-nafco-0480",
+    "official-nafco-0590",
+    "official-nafco-0760",
+    "official-nafco-0770",
+    "official-nafco-0780",
+    "official-nafco-0811",
+    "official-nafco-0850",
+    "official-nafco-0870",
+    "official-nafco-1240",
+    "official-nafco-1300",
+    "official-nafco-1350",
+    "official-nafco-1390",
+    "official-nafco-1640",
+    "official-nafco-1870",
+    "official-nafco-2020",
+    "official-nafco-2030",
+    "official-nafco-2110",
+    "official-nafco-2210",
+    "official-nafco-2220",
+    "official-nafco-2250",
+    "official-nafco-2280",
+    "official-nafco-2330",
+    "official-nafco-3720",
+    "official-nafco-3960"
+  ],
+  "corrected_ids": [],
+  "counts": {
+    "additions": 41,
+    "corrections": 0,
+    "nafco_additions": 26,
+    "komeri_additions": 15,
+    "existing_unchanged": 1,
+    "same_store_department": 1,
+    "held_homecenters": 0
+  },
+  "directory_counts": {
+    "nafco": 26,
+    "komeri": 17,
+    "komeri_city_lists": 11
+  },
+  "sources": [
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/718a8004024bfaef471ef5c8.json",
+      "hash": "4032c6cb6489d9440bab7aa95d736ae4bb1af35da5f81670ddcf90396fca0fd4",
+      "url": "https://www.komeri.com/shop/storeSearch/CtiySelect.aspx?p_code=35"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/dbc2b7fa2812decf3bcad8df.json",
+      "hash": "2a2debdadf5c865269a84a4ab748c1df3e7843c042e7f0ccff5195700f44950b",
+      "url": "https://www.nafco.life/shop_areas/ken-yamaguchi/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/3e69de12ddcf1ca4502a2907.json",
+      "hash": "b801153bf656dc93eb2a43cc50194bdb5160abc2e246f2f09e8c21b17d24ceca",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%85%89%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/c3c4b49932c6357264a4bac2.json",
+      "hash": "c884047132b0dcd43e816174d55d5dc2805ce0c83f76db5f233083a109d727af",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%91%a8%e5%8d%97%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/f7da459b48c87f91868b0c1b.json",
+      "hash": "76259a51fe974a296b4076bd26120fe1230ff324781853396c21d1ce91b13943",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%91%a8%e9%98%b2%e5%a4%a7%e5%b3%b6%e7%94%ba"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/4de4c3d44988d5cfd7850edd.json",
+      "hash": "0b4b21ffb58d6069be1d5f9c4c383bec7017bd1e2048c168e1a9d55fde415f69",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%b1%b1%e5%8f%a3%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/f0ad302dd1beb6193ac015ad.json",
+      "hash": "c090e9a17265f6b54df7870c9e623432798b10fdd30c84fb419f1173fb11954e",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%b1%b1%e9%99%bd%e5%b0%8f%e9%87%8e%e7%94%b0%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/41f591f485466ab23a611fc4.json",
+      "hash": "9f2815eae41ca177c58a8966d199005fe42d6fc6f226f9c9f4185ae8d5804013",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e5%b2%a9%e5%9b%bd%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/8dd0d8c2f120a23cd405986b.json",
+      "hash": "ed15b8659bb4fac47f95b5ccb20fd46364aeb890d3e68f890a0b5a8abc1859e9",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e6%9f%b3%e4%ba%95%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/a05ad8ecb43a41d1f17ca917.json",
+      "hash": "5678e85291861504c99aa691492099e29e8d3f5d6ea96f84bfebeb81d4a0e0d5",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e7%94%b0%e5%b8%83%e6%96%bd%e7%94%ba"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/302d6007a51fab6c4cb911af.json",
+      "hash": "233d6c292d4f71ccf496de8c5ab5ce7c8dfe4caf5a35a17ed23ac4a34ceb05ac",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e7%be%8e%e7%a5%a2%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/45ea9e630bb0ca5af97e8d43.json",
+      "hash": "30669aed1a009430fc8436ec94c7f43b9a000db39667e4e8c0bde03827bfaf74",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e8%90%a9%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/73304a7257b057ea78a1264a.json",
+      "hash": "502277a581a6b9e468dba5300b3ce5c334365d222f5a050b0e26aee2bbbc40df",
+      "url": "https://www.komeri.com/shop/storeSearch/StoreSelect.aspx?p_code=35&a_name=%e9%95%b7%e9%96%80%e5%b8%82"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/92b53d6ae2db6ba6af654dac.json",
+      "hash": "9d1b4e5511b4bf4985bd6a0d0423fc92bb72368447326615bfe17c77d4c6d612",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1478&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/be4e612fe3353c73cbe74bab.json",
+      "hash": "0e368ad79ef2e880657a076792a4ff73e3fa17a4194b43339f263c21b47d600d",
+      "url": "https://goo.gl/maps/6nRyyaV8GrSeHGQ56"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/5ae5ac17aa4c2a12a684d33b.json",
+      "hash": "636d39ff0b7bc10c271737a4987027d9f87c6a3b834fac98749209104d0c9be6",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1353&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/e42117b4dbc899d08c40678a.json",
+      "hash": "8b01ff1457b17292246d3b80d5e82614467efdbf84a4238d00eef352f9a80fc8",
+      "url": "https://goo.gl/maps/UtMa9aoYgsjTVpHM7"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/e396b5a5f1c5213670ec4894.json",
+      "hash": "35449133745bdbdc54efa94ba4b9a5b281aae97633788846bd235536c592a856",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1342&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/bc3c9b22c6675b0b92a8cf6f.json",
+      "hash": "1075ff26e3aaa04d31927109a1ad6e81b793c0562bc361a6b0bab320317a8366",
+      "url": "https://goo.gl/maps/Vgk6wemg6yP541rF8"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/43086ce04ad10329838dc03b.json",
+      "hash": "1a62283186bdd03385bd4d01acdc898ae0851c153b49b1cdd5c97e7efada5445",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1703&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/80e28a94ecea82ef24802409.json",
+      "hash": "3f4812a3ffca63a4ad967d8d6072968112e584266655fef8596ea7da8acee1c8",
+      "url": "https://goo.gl/maps/fkuszwcdvygPTh5g7"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/0a0309cfc477ce76237c75f3.json",
+      "hash": "64077100cacd792f56a18cf6f32d5eb1090fd9c6e65016be0d6f5a24eb044670",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1321&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/332f764dcb80aacf916b1ae4.json",
+      "hash": "07ea953413ad5eb869a1e5b47866447269172f9289af40cbb299597a4716b808",
+      "url": "https://goo.gl/maps/Y3Cm6rNTX2RgTNmP7"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/84d2f01951884f9128e81c97.json",
+      "hash": "5d11a39357577dba43fb624ca6297b3a7b5d0389849fa3f52e71e009ec337d59",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1381&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/78ba2d01dba1bbe4e4ec571a.json",
+      "hash": "abaf0d780ae200afcbc3908b8926164ac12d0deb2cab9e05fd46e5e07e4c26f1",
+      "url": "https://goo.gl/maps/iSa4D67bckmXu3xR8"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/ae664432d145426a88fc5e2f.json",
+      "hash": "251cc0b6d40d6197320cef76c1a7b5838054759beeb75fab49dc3d1389545636",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1491&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/983e6fc3d86c8c0c927b4e77.json",
+      "hash": "e48447d4d99ee68efaf064ca1aa01e27142a6fb43493873172dc04a9307d1931",
+      "url": "https://goo.gl/maps/5pRetYn28GS6M1Kw7"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/20853d375bd2fa30736269fb.json",
+      "hash": "5140ef4d123de938fbfcad8d9935c00be749afb3dfa618f63f5f2bb09fbaceaa",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1551&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/6993f333b191c74e18c5a65d.json",
+      "hash": "17e93cb858db5439cb399c6c58d37dc4389026b62f4509805c5fb523b81e4b2e",
+      "url": "https://goo.gl/maps/VK2SZqd8hmnvHAh19"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/af75ac90ad548795d6b314c3.json",
+      "hash": "8e629fdba04b51b8751299b4d1921ea4036c0a2f81ef27972d96f41b118ab2f9",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1581&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/51dc1c85556649e5fb5bde96.json",
+      "hash": "f517b1d703bb02dffebacc8eca65339106310f42a564e1989159dbc3ef441e02",
+      "url": "https://goo.gl/maps/cAj8V2mq2BvWXoak9"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/60a233c2f5f45ca058d5c8da.json",
+      "hash": "294e7f0f5900e046b99b394f7bf713bc7c5941661dd406a36283194b1db7f940",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1679&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/9ca6af8e68a99253efde0143.json",
+      "hash": "8a0b527fb7b6c686a429c357a3e137f49a586e4fb75d7682440e9d8cdfae2cb1",
+      "url": "https://goo.gl/maps/8J2CCyj9y1WBKqA68"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/e62072d5d088632e9b514998.json",
+      "hash": "3028ccb5b014940f2ef82816ca5444b8e9d7a6604077f1bc37a519379a57e644",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1692&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/821bdabc90e5cc06733907ba.json",
+      "hash": "a2ce461583153102ba71e4b61efe9946e487fb68b45a0923e28ff20b4c12bec8",
+      "url": "https://goo.gl/maps/FDAi8HNxBMCVkkc96"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/622ff5ed705c4546769037ac.json",
+      "hash": "445c36036460de6f62d7323311fa73f394044dde8d1b05d47cc8168a9fc8e1ac",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1279&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/e1aa8deb4d87384a1008cad4.json",
+      "hash": "90bc445a3dabaff817d31393de96de340855871c0fffdb68bea59089d46cb50d",
+      "url": "https://goo.gl/maps/CnvPGhUhoJ55jK7fA"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/63698bcaa995ad80205f9feb.json",
+      "hash": "5ef671e130e143a9fd4af1fb21039f66e52673f5e999474141795b66aa1548fe",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1373&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/99443c8d3685e402327e66b9.json",
+      "hash": "1345f5bbafb2b429c508ba09df711eb8f94e428130258104f3061d60e8dc16b6",
+      "url": "https://goo.gl/maps/NjuAw7VZwcctYAsV9"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/0db89130a5d8cb693c1e3637.json",
+      "hash": "a5a33501e1e440bbe4cc5d9986f678a7969d0c11687db93e1616fb6d2f6259bd",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1693&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/01ee2970a890649d0606799e.json",
+      "hash": "dc1d66044fcc0d97014ba4eb7ed7c304863913295afbc61b40978af3a635e2e5",
+      "url": "https://goo.gl/maps/B4BqzHJ2yJu3JJuQ7"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/6ae4afcbcabd50c218ff05b3.json",
+      "hash": "343de5a75c4ce4fecd89add7791c6f428efb978ab552935da7ea241171f6a013",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1054&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/c0dd6816197ea54b2004574d.json",
+      "hash": "e8ad2156a63bde5096ce82cacba248f13f930a227360dbd41a03b5c1b77b2d92",
+      "url": "https://maps.app.goo.gl/nrUtZRDDRUi1GU287"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/b4fb3ee4da32b5d8241653ec.json",
+      "hash": "72c26a4980f384a8082c044e9b94df0c99f7889096f6e0b0e09a5167af018d43",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=1447&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/da3b045792e30235e5148e6d.json",
+      "hash": "294a6ba1c637a87133a6d35c5f3a7f010c7d16f7a8a8d2cb9f1ba022a0fc7d35",
+      "url": "https://goo.gl/maps/uB8xSyxhEH9inDk99"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/7fa4bb5b845d8a44e4659558.json",
+      "hash": "afc158d4d9f106367d4c3934403dfe43f2b2a8eadddd9cd59ff4443ee65dd630",
+      "url": "https://www.komeri.com/shop/storeSearch/storeDetail.aspx?id=8806&cmdStoreSearch=0"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/c7c7553f4367ff4a6c502cf7.json",
+      "hash": "e279bf58d4a2e3498d12c94ae3ae841e346c98ea8e9271a29b0786d28cbb9e44",
+      "url": "https://goo.gl/maps/9cV8fcRq3E1iNMcc8"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/ac77652b855215f4a0c2cfed.json",
+      "hash": "20b3517e1e2a0e9b7ad7bb66fa6eddb0b949e3c43403083e57aa159876b85966",
+      "url": "https://www.nafco.life/shop_list/0260/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/4d9c6bce58f3435942a07e90.json",
+      "hash": "67d1ddfc1c0a425da0f41c3de18b04841263d059083c6d264b18017ee5ea9944",
+      "url": "https://www.nafco.life/shop_list/0370/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/7fce380ddc25a37433675fb6.json",
+      "hash": "d798b70b1f0eaa89bb5568b5e7eee6dc17efbdd67423ba13b2d210e77ae04d86",
+      "url": "https://www.nafco.life/shop_list/0480/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/ff7d17f3efd27b2e4715aa11.json",
+      "hash": "54b4d2ea5ca43585b7024cc40d7a3e6dc6816fd1db137794e5d787e3ed3a5ffe",
+      "url": "https://www.nafco.life/shop_list/0590/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/46d7697a427a88d88146bca0.json",
+      "hash": "db4b74e9178be557c87c1d298a5cf64049017515595f60cb27f424240a7a8205",
+      "url": "https://www.nafco.life/shop_list/0760/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/4e04e13ea3d4c9af0ba9f809.json",
+      "hash": "60bfe3b020652f0ff96d5d4758877a6190c121f2f7962e02662188d3ab428d08",
+      "url": "https://www.nafco.life/shop_list/0770/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/8f6810fef9a69a64ad0a2843.json",
+      "hash": "4251a45aada28bd63acf59a743ed9b5c833bd34e559fd4efa94f249e24f397db",
+      "url": "https://www.nafco.life/shop_list/0780/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/78c52e3ad08f8706a5a387d4.json",
+      "hash": "9a45d2c83796836898cafddece9835a239fd6cb5e34cbb6b1a096afa8f0f558a",
+      "url": "https://www.nafco.life/shop_list/0811/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/842057bf2fd58bde5213a7fa.json",
+      "hash": "3fe993006f43a3217c6df486b000a9eabd18d6fd6b4821a38dfaf0d50388f75f",
+      "url": "https://www.nafco.life/shop_list/0850/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/e19f5423005a6ec350b1438c.json",
+      "hash": "5e86278ca140febed4fe145c63180a633269b21dc1c259fdd14470e344b07a98",
+      "url": "https://www.nafco.life/shop_list/0870/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/dec4c65902bd0ff9a4537cc0.json",
+      "hash": "f7aba213354086e3ad04c5581b45ad17653496c42c7b06563a59142f4911d8ff",
+      "url": "https://www.nafco.life/shop_list/1240/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/889f0a464d2cfec387f8399a.json",
+      "hash": "a0e06159d5c925eab44c8233e35d1c3da8d80c61b3555de15723b2b0ee74be52",
+      "url": "https://www.nafco.life/shop_list/1300/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/988aa1e9cf4fc3dc798f921c.json",
+      "hash": "20c391b8303b5d510ca3297bd443f9e217400c3297c7758bd7dbaa14c9affd67",
+      "url": "https://www.nafco.life/shop_list/1350/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/5b7bc31c7670a2ae76700bbe.json",
+      "hash": "786a63351aca24d65a1395c11fb5902caf34e163310b2d2f44047bb99d20b114",
+      "url": "https://www.nafco.life/shop_list/1390/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/3bc380d90168de6c00c588c6.json",
+      "hash": "453b3e32d5b6aa28e7b4d23ca5015da66e154a72522fede81a2830ee415b022e",
+      "url": "https://www.nafco.life/shop_list/1640/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/dfed1991761198da5fcdbcff.json",
+      "hash": "7d12076f920c555efb1d623c882f93b03bd2c79885b7f8c9dd19b51683578741",
+      "url": "https://www.nafco.life/shop_list/1870/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/12f83d7639ba51f7ce5066f0.json",
+      "hash": "d95f11de8f34f8540a8b724a30049bb1e2a1cda6544ccf33359d2348d27fdb68",
+      "url": "https://www.nafco.life/shop_list/2020/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/2ff18c6b5664daaae6dd6d51.json",
+      "hash": "96c870623d4d022dd92111ea5e54362d82703e3171e06e9cdf8aee6920456546",
+      "url": "https://www.nafco.life/shop_list/2030/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/d028c4793983b5d8b6aabcbe.json",
+      "hash": "4484b3b22d7e43bb9588d584c984fa53157189bc8edd88f665558f5a148fe6fd",
+      "url": "https://www.nafco.life/shop_list/2110/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/4356decd15403964dcad0e9c.json",
+      "hash": "1a9ff5349c043af997ea71084632849c5fbab12029d8a95c14547cb942d7300a",
+      "url": "https://www.nafco.life/shop_list/2210/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/5ae74027674056a9ed018391.json",
+      "hash": "86f35415f522561f6b2b5d0d7aef0ba2598d227aa5865140159f743ad8a02aff",
+      "url": "https://www.nafco.life/shop_list/2220/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/92410c01a2698f52d5176763.json",
+      "hash": "08fc64647dca44841d4cb3e30cd924745851696f0c940e157467e1b5f0c9e728",
+      "url": "https://www.nafco.life/shop_list/2250/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/5a878a7484d43e4872684be0.json",
+      "hash": "7bd87b758844e1245474126dcfacdbfb1b270103bdf5ecaba84d8f2585912051",
+      "url": "https://www.nafco.life/shop_list/2280/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/2f909a828f7cd21143f08cd8.json",
+      "hash": "076c7d7a0a1311d726e0ea6e253367786c8f1aefce2581f3cc166347873e885e",
+      "url": "https://www.nafco.life/shop_list/2330/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/8bfe0858b900927075eeca00.json",
+      "hash": "a65100569fd8794e491ec723c1d3626d96b42b621f87729c6a5230d4653c8d46",
+      "url": "https://www.nafco.life/shop_list/3720/"
+    },
+    {
+      "path": "outputs/facility-homecenters-20260926/sanitized/41e9140b5a62b75cd8a1ab6d.json",
+      "hash": "ee72a6fe796738c06f5986c568307a5b56d4e8c2ad437b3cdff20ecac7f51280",
+      "url": "https://www.nafco.life/shop_list/3960/"
+    }
+  ],
+  "article_scope": "All article inventories, event decisions, dates and known cases are unchanged. Current directory listings never mark article histories complete.",
+  "efficiency": "One batch compares 26 Nafco and 17 Komeri official entries. 41 new stores, one existing store and one in-store reform department. Official GeoCoordinates or named Place data, exact shop identity, municipality and base/overlay/polygon checks. Seria public search returned HTTP401 once; stopped that route without retries or permission changes and changed operator.",
+  "limitations": [
+    "41 additions are current listings, not 41 proven openings. Opening dates remain null.",
+    "Komeri Nagato already present; its reform department is not another homecenter.",
+    "Seria store search was not verified; no Seria additions, closures or article completions are claimed."
+  ],
+  "extra_jev_requests": 0
+}

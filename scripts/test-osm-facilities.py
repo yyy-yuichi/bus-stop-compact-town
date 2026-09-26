@@ -34,10 +34,19 @@ class ImportTests(unittest.TestCase):
         from route_facility_review import apply_reviewed_facilities
         reviewed=apply_reviewed_facilities(enriched)
         decided=module.apply_facility_decision_manifest(reviewed)
-        self.assertEqual(decided, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        from facility_freshness_review import apply_facility_freshness_review
+        freshness=apply_facility_freshness_review(decided)
+        self.assertEqual(freshness, json.loads((module.ROOT/'public/data/shopping.geojson').read_text(encoding='utf-8')))
+        self.assertEqual(apply_facility_freshness_review(freshness), freshness)
         self.assertEqual(apply_reviewed_facilities(reviewed),reviewed)
         self.assertEqual(module.apply_facility_decision_manifest(decided),decided)
-        self.assertEqual([(f['id'],f['geometry']) for f in enriched['features']],[(f['id'],f['geometry']) for f in decided['features']])
+        self.assertEqual([(f['id'],f['geometry']) for f in enriched['features']],[(f['id'],f['geometry']) for f in freshness['features']])
+        before={f['id']:f for f in decided['features']}['osm-node-2426673962']
+        after={f['id']:f for f in freshness['features']}['osm-node-2426673962']
+        self.assertEqual(after['geometry'],before['geometry'])
+        self.assertEqual(after['properties']['source_ids'],before['properties']['source_ids'])
+        self.assertEqual(after['properties']['category'],before['properties']['category'])
+        self.assertEqual(after['properties']['verification_status'],'official_name_and_address_confirmed; scheduled_closure_2027-08-31; representative_point_not_independently_verified')
         records={f['id']:f for f in decided['features']}
         self.assertEqual(records['osm-node-1423657090']['properties']['name'],'萩・明倫学舎')
         self.assertEqual(records['osm-node-1423657090']['properties']['category'],'reference')

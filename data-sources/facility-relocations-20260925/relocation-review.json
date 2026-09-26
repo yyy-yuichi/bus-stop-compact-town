@@ -1,0 +1,178 @@
+[
+  {
+    "graduate_id": "harete-graduate-01",
+    "name": "カラオケBAR　いいやん",
+    "status": "conflicting_current_listing_hold",
+    "map_feature_id": null,
+    "reason": "運営元は赤間町2-1・赤間プラザ1階、同名地図店舗は赤間町2-4。再移転または誤記の可能性を解消するまで保留。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/カラオケBARいいやん/data=!4m6!3m5!1s0x3543bd0067a7bed5:0x23c48aef4ffb1165!8m2!3d33.9587296!4d130.9432557!16s%2Fg%2F11vrzbfhc8"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-02",
+    "name": "DーDAY",
+    "status": "conflicting_current_listing_hold",
+    "map_feature_id": null,
+    "reason": "運営元は赤間プラザ2階を案内する一方、同名同住所の地図店舗は「閉業」。支店別の一次情報がないため追加・閉店とも保留。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/D-DAY/data=!4m6!3m5!1s0x3543bdeba7eb4451:0xd07d7e11708c985b!8m2!3d33.9588478!4d130.9434144!16s%2Fg%2F11vlvtyhlk"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-03",
+    "name": "マジックバー　WAKADAN",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-wakadan",
+    "reason": "店自身の現行店舗案内から直接リンクされた同名・同住所のGoogleマップ店舗点。営業時間は臨時休業を含まず、実開店日は採用しない。",
+    "sources": [
+      {
+        "url": "https://wakadan.com/about/"
+      },
+      {
+        "url": "https://maps.app.goo.gl/ssDKJ9zqDoehzcHh6"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-04",
+    "name": "焼き鳥とワイン　トリップ",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-trip",
+    "reason": "店自身の現行サイトに住所・部屋番号と電話あり。地図サービスの同名同住所店舗点。",
+    "sources": [
+      {
+        "url": "https://yakitoritowine-trip.com/",
+        "receipt": "outputs/facility-relocations-20260925/pages/f63aa99749d4a248b059060e.json",
+        "sha256": "11be8b4c0306ff3df93ebac43750339492288176830b9b657a95bb96a2e9f3a0"
+      },
+      {
+        "url": "https://map.yahoo.co.jp/v3/place/H4nMTScdRoQ",
+        "receipt": "outputs/facility-relocations-20260925/pages/4fbb1755957c2fbb7f1305af.json",
+        "sha256": "ecc88072e50543c68296a8fe1e8a2058486489569184981c277eb5fe943b74c6"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-05",
+    "name": "寿司　響",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-hibiki",
+    "reason": "イベント主催者の店舗表と下関市発表で同定。地図サービスの同名同住所同電話の店舗点。店自身の現営業保証ではない。",
+    "sources": [
+      {
+        "url": "https://yamaguchi-kujira.jp/store/",
+        "receipt": "outputs/facility-progress-20260925/pages/0bb35517490ff41f23dd522d.json",
+        "sha256": "8b4f381c3f9dd8236e17b317f155ed1bb772de8ca6d1c44622ce7414c55fa2e9"
+      },
+      {
+        "url": "https://map.yahoo.co.jp/v3/place/mdSQ3pwP9sg",
+        "receipt": "outputs/facility-relocations-20260925/pages/713220472cd2bff9b9153669.json",
+        "sha256": "6288fc6f65014cb576a23e226893a7647d419e5326da998ec57ad59cbe6d3fcd"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-06",
+    "name": "ステーキ山本",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-yamamoto",
+    "reason": "横丁運営元の卒業生ページの新住所・電話と地図サービスの同名同住所同電話を照合。営業日・開店日を確定しない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生",
+        "receipt": "outputs/facility-progress-20260925/pages/95b9970dedbab6d4bb7b266d.json",
+        "sha256": "e374762f038b059e5828ad5c031e877397b4699550ce469d40f96922d099911d"
+      },
+      {
+        "url": "https://map.yahoo.co.jp/v3/place/mPO1q53lRd6",
+        "receipt": "outputs/facility-relocations-20260925/pages/dd13e1d6e37b1cdbc069e094.json",
+        "sha256": "de7489edd79a141ecd559429901ebb328baa6e5ccb65e7ee6a29acf61c9e4e47"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-07",
+    "name": "THE　ZUBAGHETTI",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-zubaghetti",
+    "reason": "横丁運営元の新住所・電話と地図の同名同住所同電話を照合。運営元の『10月オープン予定』を実開店日にはしない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/イタリアンダイニング+ズバゲッティ/data=!4m6!3m5!1s0x3543bdb12fbb70d5:0xfadb0759f8a137be!8m2!3d33.952294!4d130.9371995!16s%2Fg%2F11vlvtm94q"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-08",
+    "name": "居酒屋　遊こうぎょう",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-yukogyo",
+    "reason": "中之町2-14の新店舗点を中之町1-16の旧店舗点と分離。開店日は運営元と他媒体に不一致があるため採用しない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.google.com/maps/place/居酒屋+遊こうぎょう/data=!4m7!3m6!1s0x3543bd007a76dcc5:0xadb4f0be433e1fe4!8m2!3d33.9580212!4d130.9439382!16s%2Fg%2F11ys88hxrg"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-09",
+    "name": "串揚げ酒場　縁",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-en",
+    "reason": "店自身の現行サイトにビル名・階あり。店サイトの地図iframe中心は店舗点と混同せず、同住所の地図サービス店舗点を使用。",
+    "sources": [
+      {
+        "url": "https://kushiagesakaba-en.com/",
+        "receipt": "outputs/facility-relocations-20260925/pages/e96414571b2e487dba851350.json",
+        "sha256": "c5134d4066e30bb1735ef9f72fbe793b82cf71311bb70c4a18352db6c493a691"
+      },
+      {
+        "url": "https://map.yahoo.co.jp/v3/place/pE6yVfE4wcI",
+        "receipt": "outputs/facility-relocations-20260925/pages/db23e31c28873f348026a6e7.json",
+        "sha256": "edecb5990ed72ded0e0d317d0c621ef885442a286ab6e571208d2a697fa28c3d"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-10",
+    "name": "お米とお肉と咖喱　Curry Full",
+    "status": "reflected_addition",
+    "map_feature_id": "official-relocated-harete-curryfull",
+    "reason": "横丁運営元・地元媒体・地図で新住所と電話が一致。旧横丁の地図点は使わず実開店日は採用しない。",
+    "sources": [
+      {
+        "url": "https://www.karatoharete.com/卒業生"
+      },
+      {
+        "url": "https://www.hop-s.jp/shop/28435"
+      },
+      {
+        "url": "https://www.google.com/maps/place/米と肉と咖喱+CurryFull/data=!4m6!3m5!1s0x3543bd1127c6ec49:0xe2cc2bd28a497388!8m2!3d33.9608582!4d130.9431285!16s%2Fg%2F11lcbr__fx"
+      }
+    ]
+  },
+  {
+    "graduate_id": "harete-graduate-11",
+    "name": "Tokidoki",
+    "status": "mobile_no_fixed_point",
+    "map_feature_id": null,
+    "reason": "Do not create a fixed map point for mobile operations."
+  }
+]

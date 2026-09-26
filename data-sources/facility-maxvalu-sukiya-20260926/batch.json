@@ -1,0 +1,268 @@
+{
+  "checked_at": "2026-09-26",
+  "additions": [
+    {
+      "type": "Feature",
+      "id": "official-sukiya-6146",
+      "properties": {
+        "name": "すき家 防府南松崎店",
+        "city": "防府市",
+        "address": "山口県防府市南松崎町1-1",
+        "official_address": "山口県防府市南松崎町1-1",
+        "official_url": "https://maps.sukiya.jp/jp/detail/6146.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:6146"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 防府南松崎店 牛丼 ドライブスルー",
+        "location_verification": "公式の当該支店ページにあるGeoCoordinatesと外部地図目的地が一致。旧セブン同地・旧すき家別敷地を照合。店舗入口や徒歩動線は未確認。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式支店の現行住所・店舗固有点を照合し、旧店と分けて掲載。",
+          "sources": [
+            {
+              "title": "運営会社の公式店舗・履歴案内",
+              "url": "https://maps.sukiya.jp/jp/detail/6146.html"
+            },
+            {
+              "title": "運営会社の公式店舗・履歴案内",
+              "url": "https://www.sukiya.jp/news/"
+            }
+          ],
+          "limits": [
+            "現行公式ではAM3～AM4は休業。2025年の事前記事にある24時間営業を現在の営業時間に採用しない。",
+            "2025年3月27日朝9時開店の当日公式告知はあるが、実施後の一次記録としては未確認。現行掲載と開店日を分離。",
+            "近隣の旧防府天神店と、同地の旧セブンのID・位置・閉店履歴を保持。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.57614467214316,
+          34.056364128729584
+        ]
+      }
+    }
+  ],
+  "updates": [
+    {
+      "id": "osm-node-4041110344",
+      "expected": {
+        "name": "ザ・ビッグ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4041110344"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5892965,
+            34.0491695
+          ]
+        }
+      },
+      "changes": {
+        "name": "マックスバリュイオンタウン防府店",
+        "city": "防府市",
+        "address": "山口県防府市鐘紡町7番1号",
+        "search_names": "マックスバリュイオンタウン防府店 ザ・ビッグ イオンタウン防府東店"
+      },
+      "review": {
+        "status": "changed",
+        "event": "renamed",
+        "effective_at": "2024-04-27",
+        "checked_at": "2026-09-26",
+        "summary": "同じ場所・運営元のザ・ビッグからマックスバリュへの業態転換を公式事後報告で確認。既存ID・元地点を維持して名称を訂正。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownhofu.php"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.817275636265!2d131.589038!3d34.048558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354492b80a3af6c1%3A0x1fc33eb211f39af6!2z44Oe44OD44Kv44K544OQ44Oq44OlIOOCpOOCquODs-OCv-OCpuODs-mYsuW6nOW6lw!5e0!3m2!1sja!2sjp!4v1729151168362!5m2!1sja!2sjp"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/company/ir/monthly/year2024.php"
+          },
+          {
+            "title": "フジの2024年10月事後報告",
+            "url": "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/company/docs/20240419_release.pdf"
+          }
+        ],
+        "limits": [
+          "元のザ・ビッグ点と公式の同名店舗点は約16m差。別所在地のザ・ビッグ防府店、商業施設本体aeon-hofuとは分離。",
+          "2024年4月7日の旧ブランド営業終了、4月27日の業態転換再開を区別。独立した新施設の追加や移転とは数えない。",
+          "現在の営業時間9～21時。店舗入口・館内動線は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-391863066",
+      "expected": {
+        "name": "マックスバリュ 小郡南店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/391863066"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.396881,
+            34.0866292
+          ]
+        }
+      },
+      "changes": {
+        "name": "マックスバリュ小郡南店",
+        "city": "山口市",
+        "address": "山口県山口市小郡前田町2番24号",
+        "search_names": "マックスバリュ小郡南店"
+      },
+      "review": {
+        "status": "changed",
+        "event": "service_change",
+        "effective_at": "2024-04-20",
+        "checked_at": "2026-09-26",
+        "summary": "店頭の改装休業掲示とフジの事後実績資料を照合し、4月20日の改装再開を確認。既存施設の改装履歴として反映。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_ogoriminami.php"
+          },
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.334947243756!2d131.3943508761361!3d34.08655891591686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354484e159fa20af%3A0xdbd651e6af6746d0!2z44Oe44OD44Kv44K544OQ44Oq44OlIOWwj-mDoeWNl-W6lw!5e0!3m2!1sja!2sjp!4v1706871894039!5m2!1sja!2sjp"
+          },
+          {
+            "title": "フジの2024年10月事後報告",
+            "url": "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2024/04/17/maxvalu_ogori2024/"
+          }
+        ],
+        "limits": [
+          "4月7日18時の一時閉店、4月8～19日休業、4月20日再開を恒久閉店と区別。店頭写真の過去営業時間8～23時と、現行公式7～23時は別時点。",
+          "元ID・元点を維持。写真店シルクの休業・再開やクリーニング店の通常営業をスーパー全体の状態へ混入しない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4826883320",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "node/4826883320"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5741216,
+            34.0565861
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 防府天神店",
+        "city": "防府市",
+        "address": "山口県防府市天神2丁目3-36",
+        "search_names": "すき家 防府天神店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧支店名・住所・固有地点と、看板撤去・改修後の現地写真、現行の閉店表示を照合し旧店の営業終了を確認。",
+        "sources": [
+          {
+            "title": "旧支店名・住所・店舗点と閉店表示",
+            "url": "https://map.yahoo.co.jp/v3/place/02pBwCtGnwM"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/29/hofutenjin_sukiya25/"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/"
+          }
+        ],
+        "limits": [
+          "同名旧店舗点との差約3m。南松崎の新店は約189m東の別敷地・別IDで、旧点を移動しない。",
+          "記事は2025年1月6日閉店と報道するが、リンク先の旧公式355は現在検索画面へ移る。閉店日の一次告知本文を再確認できないため実施日は未確認とする。",
+          "現地写真の看板撤去・三角屋根撤去を実見。建物全体の閉鎖や後継店の状態を意味しない。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4826868298",
+      "expected": {
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "source_ids": [
+          "node/4826868298"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5761073,
+            34.056476
+          ]
+        }
+      },
+      "changes": {
+        "name": "セブン-イレブン 防府南松崎町店",
+        "city": "防府市",
+        "address": "山口県防府市南松崎町1-1",
+        "search_names": "セブン-イレブン 防府南松崎町店"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "旧コンビニ跡地の建替え写真・店舗名付き事後記事と、同地のすき家公式住所・固有座標を照合。残っていた旧セブンの点を閉店履歴として保持。",
+        "sources": [
+          {
+            "title": "運営会社の公式店舗・履歴案内",
+            "url": "https://maps.sukiya.jp/jp/detail/6146.html"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/03/23/sukiya_hofuopen27/"
+          },
+          {
+            "title": "店舗掲示・現地の事後写真と記事",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2025/01/05/seven7_hofusukiya/"
+          }
+        ],
+        "limits": [
+          "旧セブンの元点と後継すき家の店舗固有点は約13m差。複数の同地記事で旧支店を同定し、単なる近接だけで閉店にしていない。",
+          "旧セブンの閉店実施日は未確認。すき家の開店日を旧店の閉店日へ流用しない。",
+          "元ID・元点を維持し、後継すき家は別ID。"
+        ]
+      }
+    }
+  ]
+}

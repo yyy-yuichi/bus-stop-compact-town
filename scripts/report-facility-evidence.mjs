@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import {hash, summarize} from './jev-batch.mjs';
+import {evidenceCsv} from './facility-evidence-lib.mjs';
+const d='outputs/facility-evidence-20260925',p='data-sources/facility-evidence-20260925',prior='outputs/facility-bulk-triage-20260925';
+const read=f=>JSON.parse(fs.readFileSync(f,'utf8'));
+const triage=read(d+'/triage.json'),adopted=read(p+'/adoption-evidence.json'),holds=read(p+'/holds.json');
+const current=summarize(read(d+'/jev-manifest.json'),d+'/jev'),previous=summarize(read(prior+'/jev-manifest.json'),prior+'/jev');
+const invocations=fs.readFileSync(d+'/jev/journal.ndjson','utf8').trim().split('\n').map(JSON.parse).filter(e=>e.event==='invocation_completed').map(e=>({invocation:e.invocation,processed_jobs:e.invocation_processed_jobs,skipped_jobs:e.invocation_skipped_jobs,wall_ms:e.invocation_wall_ms}));
+const canon=u=>decodeURI(u).replace(/\/$/,'');
+const routes=read(d+'/index.json').map(row=>{
+  const result=triage.find(t=>t.id==='page-'+row.key);
+  return {...row,classification:result?.choice??'not_fetched',confidence:result?.confidence??null,adopted_ids:adopted.evidence.filter(e=>e.sources.some(s=>canon(s.url)===canon(row.url))).map(e=>e.id),hold_notes:holds.items.filter(h=>canon(h.url)===canon(row.url)).map(h=>h.status+': '+h.next)};
+});
+const queue=read(prior+'/review-queue.json').map(a=>({...a,linked_evidence:routes.filter(r=>r.article_keys.includes(a.key)).map(r=>({url:r.url,state:r.state,classification:r.classification,adopted_ids:r.adopted_ids,hold_notes:r.hold_notes})),identity_routing:triage.filter(t=>t.article_key===a.key).map(t=>({id:t.facility_id,choice:t.choice,confidence:t.confidence})),disposition:'Article-level lifecycle verification is not implied by an adopted linked current listing.'}));
+fs.writeFileSync(d+'/continued-review-queue.json',JSON.stringify(queue,null,2)+'\n');
+fs.writeFileSync(d+'/continued-review-queue.csv',evidenceCsv(queue,['queue_number','key','title','url','published_at','city_queue','jev_event','review_lane','candidate_facilities','linked_evidence','identity_routing','disposition']));
+fs.writeFileSync(d+'/linked-evidence-queue.json',JSON.stringify(routes,null,2)+'\n');
+const summary={...read(d+'/summary.json'),jev:current,invocations,changes_this_batch:adopted.changes_this_batch,cumulative_overlay:adopted.cumulative_overlay,facility_count:adopted.after_count,cumulative_records:previous.record_count+current.record_count,cumulative_usage_estimate_usd:previous.successful_usage_cost_usd+current.successful_usage_cost_usd,cumulative_reservation_usd:previous.conservative_cost_bound_usd+current.conservative_cost_bound_usd,remaining_record_limit:3000-previous.record_count-current.record_count,remaining_conservative_budget_usd:1-previous.conservative_cost_bound_usd-current.conservative_cost_bound_usd,continued_queue_records:queue.length,continued_queue_hash:hash(queue),hold_records:holds.items.length,limitations:['Jev routing is not factual verification or map changes.','Current listing adoption does not verify an opening date or every linked news event.','No full prefecture, SNS, or all-facility freshness coverage claim.','Actual billing reconciliation and classification accuracy audit remain unperformed.']};
+for(const dir of [d,p])fs.writeFileSync(dir+'/summary.json',JSON.stringify(summary,null,2)+'\n');
+console.log(JSON.stringify({changes:summary.changes_this_batch,queue:queue.length,remaining_records:summary.remaining_record_limit,remaining_budget:summary.remaining_conservative_budget_usd,invocations},null,2));

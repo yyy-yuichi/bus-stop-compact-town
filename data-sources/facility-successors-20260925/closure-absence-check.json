@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-09-25",
+  "target_name": "食楽 金龍",
+  "city": "周南市",
+  "checked_baseline": 7764,
+  "checked_additions": 154,
+  "aliases": [
+    "食楽金龍",
+    "ベジモン"
+  ],
+  "matching_existing_ids": [],
+  "excluded_similar_names": [
+    {
+      "id": "osm-node-2253231310",
+      "name": "ラーメン金龍",
+      "coordinates": [
+        131.4574361,
+        34.1604915
+      ],
+      "reason": "周南市平和通の食楽金龍ではないラーメン金龍。名称・市域が異なるため除外。"
+    }
+  ],
+  "current_successor_id": "official-toriichizu-yamaguchi-tokuyama",
+  "current_successor_address": "山口県周南市平和通り1丁目19番地 フロンティアビル1階",
+  "primary_announcement_url": "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+  "primary_receipt": "outputs/facility-successors-20260925/pages/0246e705c0452feaedbe74d5.json",
+  "primary_receipt_hash": "39abf566d414e00d29b1f828b542610e177010d358499b690281d6549a9576e2",
+  "conclusion": "verified_no_change",
+  "limits": "店舗の閉店告知を確認。既存の対象店舗IDはないため閉店パッチは追加しない。告知の予定日だけで実施日を断定せず、現行後継店と異店の除外も確認した。",
+  "input_hashes": {
+    "public/data/shopping.geojson": "b945442777972d724c97b55b13d8be8570a94a2f0aa521e0d2fd7b8e873c58b4",
+    "public/data/civic-facilities.geojson": "bd9f469df64ff0b8eea78d749e6c92985d7dfa1e6ec8e73a5bd766c048b3e099",
+    "public/data/facility-current.json": "3cecaf5cc6b28f1304ba3d0e0c229483e4a5ab0e2979735e1606a33876a7d6e2"
+  }
+}

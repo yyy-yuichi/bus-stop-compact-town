@@ -1,0 +1,3928 @@
+{
+  "checked_at": "2026-09-25",
+  "baseline_count": 7764,
+  "before_count": 7779,
+  "after_count": 7829,
+  "normal_candidate_count": 7768,
+  "changes_this_batch": {
+    "additions": 50,
+    "chain_drugstore_additions": 39,
+    "other_additions": 11,
+    "new_confirmed_closures": 3,
+    "already_excluded_closure_structured": 1,
+    "existing_store_info_enriched": 15,
+    "existing_addition_opening_date_added": 1,
+    "distinct_facility_records": 70
+  },
+  "cumulative_overlay": {
+    "updates": 24,
+    "additions": 65,
+    "closed_records": 6
+  },
+  "official_directory": {
+    "listings": 65,
+    "physical_sites": 54,
+    "co_located_pharmacy_listings": 11,
+    "held_physical_sites": 2,
+    "jev_review_route_disagreements": 17
+  },
+  "jev": {
+    "jev": {
+      "manifest_hash": "484c81d413c140115203e5c360c8cc18ba9d67c0819dd65fc75c7d7db503861f",
+      "model": "jev-1.13.0",
+      "record_count": 65,
+      "completed_records": 65,
+      "completed_jobs": 9,
+      "expected_jobs": 9,
+      "completed_questions": 65,
+      "missing_jobs": [],
+      "attempts": 9,
+      "conservative_cost_bound_usd": 0.024772608,
+      "successful_input_tokens": 129285,
+      "successful_output_tokens": 5109,
+      "successful_usage_cost_usd": 0.005429970000000001,
+      "sum_successful_request_wall_ms": 5927.437900000001,
+      "control_correct": 0,
+      "control_count": 0,
+      "control_mismatches": [],
+      "limitation": "Saved historical candidate triage and synthetic controls only; no current web retrieval, fact confirmation, facility edits, or GPT research."
+    },
+    "classifications": {
+      "new_unmatched": 34,
+      "existing_same_site": 17,
+      "co_located_pharmacy": 13,
+      "duplicate_or_ambiguous": 1
+    },
+    "prior_records": 1854,
+    "cumulative_records": 1919,
+    "cumulative_usage_estimate_usd": 0.10896803400000002,
+    "cumulative_reservation_usd": 0.5587599360000001,
+    "remaining_records": 1081,
+    "remaining_budget_usd": 0.44124006399999993,
+    "map_changes_from_model": 0,
+    "scope_note": "65 current official listings paired with baseline candidates; the raw runner summary limitation is a legacy pilot default, not a description of these inputs."
+  },
+  "before_overlay_hash": "37cd6353a18a9a9514b782b80bf14d345f9bad011478a7b18ecd71411c02d315",
+  "after_overlay_hash": "3672fa62d0bd694d25f0d4e00b7e94c1ce2849a6e9d1a16d6052ffe6777b0036",
+  "decisions_hash": "1c326bdd02794fec697571596fc7f0100c719ac72a53274174fcc4b155088d2d",
+  "evidence": [
+    {
+      "id": "official-tsuruha-3897",
+      "operation": "addition",
+      "name": "ウォンツ 阿武店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3897",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e380b58679097a73b53a0e4c.json",
+          "sha256": "eccb002f91fa2f2264717073a4d2820a3ae5c8b9b5ce0c43e4934498189d466e"
+        }
+      ],
+      "official_store_ids": [
+        "3897"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423661423",
+          "name": "阿武町立みどり保育園",
+          "category": "childcare",
+          "distance_m": 186
+        },
+        {
+          "id": "osm-node-1423659950",
+          "name": "町立奈古小学校",
+          "category": "school",
+          "distance_m": 195
+        },
+        {
+          "id": "osm-node-1423660054",
+          "name": "町立阿武中学校",
+          "category": "school",
+          "distance_m": 262
+        },
+        {
+          "id": "osm-node-1423660119",
+          "name": "県立奈古高等学校",
+          "category": "school",
+          "distance_m": 346
+        },
+        {
+          "id": "osm-way-520304907",
+          "name": "グリーンパークあぶ",
+          "category": "park",
+          "distance_m": 518
+        },
+        {
+          "id": "osm-node-1423654797",
+          "name": "奈古郵便局",
+          "category": "post_office",
+          "distance_m": 535
+        },
+        {
+          "id": "osm-way-601504684",
+          "name": "阿武町役場",
+          "category": "townhall",
+          "distance_m": 579
+        },
+        {
+          "id": "osm-node-5071484558",
+          "name": "サンマート",
+          "category": "supermarket",
+          "distance_m": 734
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3687",
+      "operation": "addition",
+      "name": "ウォンツ 萩店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3687",
+          "receipt": "outputs/facility-reconcile-20260925/pages/572deb49a8ef4dd61e6533e1.json",
+          "sha256": "db05654c936bf5b546642fbaeaf6b1dc74282116c0a39979521c0a3b2a268afa"
+        }
+      ],
+      "official_store_ids": [
+        "3687"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570400501-ea55c79886",
+          "name": "株式会社ホームケアサービス山口 萩店",
+          "category": "social_facility",
+          "distance_m": 53
+        },
+        {
+          "id": "civic-care-3540440439-29aa9730df",
+          "name": "あおば",
+          "category": "social_facility",
+          "distance_m": 205
+        },
+        {
+          "id": "osm-node-1423660835",
+          "name": "萩新川郵便局",
+          "category": "post_office",
+          "distance_m": 401
+        },
+        {
+          "id": "civic-care-3570400576-79d0cdef3e",
+          "name": "萩市無田ヶ原口デイサービスセンターおとずれ",
+          "category": "social_facility",
+          "distance_m": 479
+        },
+        {
+          "id": "osm-node-1631273579",
+          "name": "新川西こども遊園地",
+          "category": "social_facility",
+          "distance_m": 482
+        },
+        {
+          "id": "osm-node-5787099553",
+          "name": "DonDon",
+          "category": "restaurant",
+          "distance_m": 549
+        },
+        {
+          "id": "osm-node-1423660814",
+          "name": "萩市新川保育園",
+          "category": "childcare",
+          "distance_m": 561
+        },
+        {
+          "id": "civic-care-3570400675-29f7e209e9",
+          "name": "ライフケアステーション はぎ",
+          "category": "social_facility",
+          "distance_m": 569
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4364264590",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3671",
+          "receipt": "outputs/facility-reconcile-20260925/pages/5d73c9d195779a3c615554b3.json",
+          "sha256": "b17c2a0bcdeb3d1f4f23d91b30483bf780db8440efaf0f1ee10c87fe206e5456"
+        }
+      ],
+      "official_store_ids": [
+        "3671"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.96785516059856,
+        33.94120284163967
+      ]
+    },
+    {
+      "id": "official-tsuruha-3959",
+      "operation": "addition",
+      "name": "ウォンツ光島田店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3959",
+          "receipt": "outputs/facility-reconcile-20260925/pages/367cb41bf614f2fa8c2a6e47.json",
+          "sha256": "7989a6e5d6fb2328d75275fbe689bae662986134d6fb4e90f23ae3482fe00626"
+        }
+      ],
+      "official_store_ids": [
+        "3959"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3571000730-16fbc96d60",
+          "name": "訪問介護ステーション幸せます山口",
+          "category": "social_facility",
+          "distance_m": 94
+        },
+        {
+          "id": "osm-way-602142500",
+          "name": "新町公園",
+          "category": "park",
+          "distance_m": 109
+        },
+        {
+          "id": "osm-node-4356791591",
+          "name": "吉村医院",
+          "category": "clinic",
+          "distance_m": 113
+        },
+        {
+          "id": "civic-care-3561090048-3f8ceb4ba9",
+          "name": "リハビリ＆ケア訪問看護ステーションのあ",
+          "category": "social_facility",
+          "distance_m": 139
+        },
+        {
+          "id": "osm-node-4354923290",
+          "name": "島田公民館",
+          "category": "community_centre",
+          "distance_m": 148
+        },
+        {
+          "id": "osm-node-1423656257",
+          "name": "島田市郵便局",
+          "category": "post_office",
+          "distance_m": 177
+        },
+        {
+          "id": "osm-node-4355095191",
+          "name": "多田クリニック",
+          "category": "clinic",
+          "distance_m": 193
+        },
+        {
+          "id": "osm-node-3548905400",
+          "name": "光市地域づくり支援センター",
+          "category": "community_centre",
+          "distance_m": 217
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4041136093",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3665",
+          "receipt": "outputs/facility-reconcile-20260925/pages/f75348d5d1f607bfdf546102.json",
+          "sha256": "60dc477048c4de25907ba2dffe14afeaac9d8ce4c0f15fbf293caaa565c17724"
+        }
+      ],
+      "official_store_ids": [
+        "3665"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.5674471134918,
+        34.05786686788707
+      ]
+    },
+    {
+      "id": "official-tsuruha-3945",
+      "operation": "addition",
+      "name": "ウォンツ 防府松崎店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3945",
+          "receipt": "outputs/facility-reconcile-20260925/pages/f75a27f71e79bc5c59458488.json",
+          "sha256": "0e1b6eebf716d542d42f55585f4f7da9ee941472b4db308335b0ce16cbe4c890"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2299",
+          "receipt": "outputs/facility-reconcile-20260925/pages/844dc99d6dcadd38057f0a6f.json",
+          "sha256": "0f2049415d2467e7495ccfd1eaca5841b678c57cf8b2c2ce9a5d2787cc133310"
+        }
+      ],
+      "official_store_ids": [
+        "3945",
+        "2299"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-4825331394",
+          "name": "くら寿司",
+          "category": "fast_food",
+          "distance_m": 83
+        },
+        {
+          "id": "osm-node-4825327464",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 107
+        },
+        {
+          "id": "osm-node-3010302302",
+          "name": "松乃家",
+          "category": "fast_food",
+          "distance_m": 120
+        },
+        {
+          "id": "osm-node-1423657598",
+          "name": "康淳会緑町三祐病院",
+          "category": "hospital",
+          "distance_m": 199
+        },
+        {
+          "id": "osm-node-1423653624",
+          "name": "みどり保育園",
+          "category": "childcare",
+          "distance_m": 207
+        },
+        {
+          "id": "osm-node-1423661331",
+          "name": "防府緑町郵便局",
+          "category": "post_office",
+          "distance_m": 211
+        },
+        {
+          "id": "osm-node-4825327463",
+          "name": "どんどん",
+          "category": "restaurant",
+          "distance_m": 213
+        },
+        {
+          "id": "osm-node-4826868298",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 224
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3989",
+      "operation": "addition",
+      "name": "ウォンツ 防府鋳物師店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3989",
+          "receipt": "outputs/facility-reconcile-20260925/pages/25ff11b6b88ca3b669c67dff.json",
+          "sha256": "5e55f0e1726b71f286d0c59bf2ff7d99b75ede122d2a004b032f6b0a7dcfaa2a"
+        }
+      ],
+      "official_store_ids": [
+        "3989"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570602205-2327edf21c",
+          "name": "居宅介護支援事業所 山吹",
+          "category": "social_facility",
+          "distance_m": 39
+        },
+        {
+          "id": "civic-care-3570601389-bca3c2cf54",
+          "name": "株式会社 ひまわり 山口支店",
+          "category": "social_facility",
+          "distance_m": 109
+        },
+        {
+          "id": "osm-node-4864225362",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 119
+        },
+        {
+          "id": "osm-node-1423661347",
+          "name": "防府車塚郵便局",
+          "category": "post_office",
+          "distance_m": 125
+        },
+        {
+          "id": "osm-node-1423660599",
+          "name": "米沢記念桑陽病院",
+          "category": "hospital",
+          "distance_m": 134
+        },
+        {
+          "id": "civic-care-3570602213-0287bbbfcd",
+          "name": "デイサービス きたえるーむ防府中央",
+          "category": "social_facility",
+          "distance_m": 217
+        },
+        {
+          "id": "osm-node-4864225363",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 254
+        },
+        {
+          "id": "osm-node-1423660442",
+          "name": "私立誠英高等学校",
+          "category": "school",
+          "distance_m": 256
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3613",
+      "operation": "addition",
+      "name": "ウォンツ 岩国室の木店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3613",
+          "receipt": "outputs/facility-reconcile-20260925/pages/37e8018996819d1eca22144f.json",
+          "sha256": "e6f105e53427bcd398e4d1d71f8a1b42a7a2e0d83ef08f2ce56c5becc10674fd"
+        }
+      ],
+      "official_store_ids": [
+        "3613"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-547913494",
+          "name": "(株）フレスタ室の木店",
+          "category": "supermarket",
+          "distance_m": 57
+        },
+        {
+          "id": "osm-way-547913492",
+          "name": "Fresta Mall",
+          "category": "mall",
+          "distance_m": 69
+        },
+        {
+          "id": "osm-way-661710553",
+          "name": "Mos Burger Iwakuni",
+          "category": "fast_food",
+          "distance_m": 147
+        },
+        {
+          "id": "civic-care-3570801955-bc8f2686d7",
+          "name": "ヘルパーステーションさくらんぼ",
+          "category": "social_facility",
+          "distance_m": 244
+        },
+        {
+          "id": "civic-care-3570800437-d63dff8301",
+          "name": "デイサービスセンターさくらんぼ麻里布",
+          "category": "social_facility",
+          "distance_m": 244
+        },
+        {
+          "id": "osm-node-1423657535",
+          "name": "市立麻里布小学校",
+          "category": "school",
+          "distance_m": 248
+        },
+        {
+          "id": "osm-node-1423656104",
+          "name": "岩国室木郵便局",
+          "category": "post_office",
+          "distance_m": 283
+        },
+        {
+          "id": "civic-care-3570801880-9a1a4e00d8",
+          "name": "いこいふじ",
+          "category": "social_facility",
+          "distance_m": 288
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3620",
+      "operation": "addition",
+      "name": "ウォンツ 南岩国店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3620",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e4e3d0d0f11edacebbf6e687.json",
+          "sha256": "fae67a03682953fe75575a7c37a08db2fc36e843c6b4d8fa65b3530d53f4013d"
+        }
+      ],
+      "official_store_ids": [
+        "3620"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "minamiiwakuni",
+          "name": "ゆめタウン南岩国",
+          "category": "mall",
+          "distance_m": 71
+        },
+        {
+          "id": "civic-care-3570800916-c574fe90fa",
+          "name": "ウェルネス",
+          "category": "social_facility",
+          "distance_m": 121
+        },
+        {
+          "id": "civic-care-3570802185-828c70c343",
+          "name": "訪問介護サービス つぼみ",
+          "category": "social_facility",
+          "distance_m": 133
+        },
+        {
+          "id": "civic-care-3560890158-5f527b4493",
+          "name": "訪問看護ステーションｃｏｃｏｌｏ",
+          "category": "social_facility",
+          "distance_m": 289
+        },
+        {
+          "id": "civic-care-3570801062-ece5abe117",
+          "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター岩国",
+          "category": "social_facility",
+          "distance_m": 317
+        },
+        {
+          "id": "civic-care-3570802359-ee5e89e1d9",
+          "name": "三志会居宅介護支援センター",
+          "category": "social_facility",
+          "distance_m": 368
+        },
+        {
+          "id": "osm-node-1423656107",
+          "name": "岩国尾津簡易郵便局",
+          "category": "post_office",
+          "distance_m": 407
+        },
+        {
+          "id": "osm-way-1149928038",
+          "name": "学校法人高水学園(高等学校/付属中学校)",
+          "category": "school",
+          "distance_m": 490
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3654",
+      "operation": "addition",
+      "name": "ウォンツ 岩国まりふ店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3654",
+          "receipt": "outputs/facility-reconcile-20260925/pages/3051214fdc3c04eead7b52a4.json",
+          "sha256": "4ed6703a14806e7f5fd1eec45ac74f8e5c248d88bf33c4121e75e2e35dc0cd1f"
+        }
+      ],
+      "official_store_ids": [
+        "3654"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "fuji-iwakuni",
+          "name": "フジグラン岩国",
+          "category": "mall",
+          "distance_m": 34
+        },
+        {
+          "id": "osm-node-3888982649",
+          "name": "POS Cafe",
+          "category": "cafe",
+          "distance_m": 35
+        },
+        {
+          "id": "osm-node-3888982648",
+          "name": "広島銀行",
+          "category": "bank",
+          "distance_m": 45
+        },
+        {
+          "id": "osm-node-3888982929",
+          "name": "ローソン",
+          "category": "convenience",
+          "distance_m": 50
+        },
+        {
+          "id": "osm-node-734018340",
+          "name": "岩国郵便局",
+          "category": "post_office",
+          "distance_m": 98
+        },
+        {
+          "id": "civic-care-3560890018-2c6ad1945e",
+          "name": "訪問看護ステーション わかあゆ",
+          "category": "social_facility",
+          "distance_m": 137
+        },
+        {
+          "id": "civic-care-3570800486-e431872d70",
+          "name": "いしいケア・クリニック デイサービスセンター のぞみ",
+          "category": "social_facility",
+          "distance_m": 137
+        },
+        {
+          "id": "civic-care-3570801237-834b5c8233",
+          "name": "いしいケア・クリニック介護保険相談室",
+          "category": "social_facility",
+          "distance_m": 137
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3719",
+      "operation": "addition",
+      "name": "ウォンツ 周東店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3719",
+          "receipt": "outputs/facility-reconcile-20260925/pages/7b0b1e79fb38cec448dbcfa1.json",
+          "sha256": "1e9d217b15728a77ab49607d8fba3fd0c22c22fc061cdea2918be4d27576b709"
+        }
+      ],
+      "official_store_ids": [
+        "3719"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-282445351",
+          "name": "ザ・ビッグ",
+          "category": "supermarket",
+          "distance_m": 52
+        },
+        {
+          "id": "civic-care-3570802458-29631600c4",
+          "name": "株式会社一期一会",
+          "category": "social_facility",
+          "distance_m": 69
+        },
+        {
+          "id": "osm-way-282445642",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 215
+        },
+        {
+          "id": "civic-care-3590800441-e9edaa2d13",
+          "name": "グループホームだんけぐーと",
+          "category": "social_facility",
+          "distance_m": 240
+        },
+        {
+          "id": "osm-node-1423656662",
+          "name": "市立周東中学校",
+          "category": "school",
+          "distance_m": 270
+        },
+        {
+          "id": "civic-care-3570801070-f054d34dc2",
+          "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター周東",
+          "category": "social_facility",
+          "distance_m": 423
+        },
+        {
+          "id": "civic-care-3570802128-86fac32e9a",
+          "name": "西日本医療サービス株式会社 岩国営業所",
+          "category": "social_facility",
+          "distance_m": 423
+        },
+        {
+          "id": "civic-care-3570801146-abe3239ed9",
+          "name": "社会福祉法人岩国市社会福祉協議会社協介護相談センター周東",
+          "category": "social_facility",
+          "distance_m": 423
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3805",
+      "operation": "addition",
+      "name": "ウォンツ 由宇店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3805",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e90b9e3ed0f66bed5734229e.json",
+          "sha256": "4851036afea12554f66cd30a29af88b4dec6506de0eb95a240eb63d27b613882"
+        }
+      ],
+      "official_store_ids": [
+        "3805"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423659889",
+          "name": "由宇郵便局",
+          "category": "post_office",
+          "distance_m": 74
+        },
+        {
+          "id": "osm-node-5173143534",
+          "name": "由宇飯店",
+          "category": "restaurant",
+          "distance_m": 89
+        },
+        {
+          "id": "civic-care-3577200474-a45effffda",
+          "name": "こすもすめーる由宇店",
+          "category": "social_facility",
+          "distance_m": 126
+        },
+        {
+          "id": "civic-care-3570801104-91cc3392aa",
+          "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター由宇",
+          "category": "social_facility",
+          "distance_m": 142
+        },
+        {
+          "id": "osm-node-1423659887",
+          "name": "岩国市立由宇図書館",
+          "category": "library",
+          "distance_m": 163
+        },
+        {
+          "id": "osm-node-5167389301",
+          "name": "ファミーユカフェ",
+          "category": "cafe",
+          "distance_m": 219
+        },
+        {
+          "id": "osm-node-1423653553",
+          "name": "岩国市立ちどり幼稚園",
+          "category": "childcare",
+          "distance_m": 291
+        },
+        {
+          "id": "osm-node-1423659886",
+          "name": "岩国市立ちどり保育園",
+          "category": "childcare",
+          "distance_m": 309
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3835",
+      "operation": "addition",
+      "name": "ウォンツ フジ南岩国店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3835",
+          "receipt": "outputs/facility-reconcile-20260925/pages/b21b5b95594976c1ac8f0a83.json",
+          "sha256": "57e25f6ed5e881945cfd8ec542c830ea28b5f6eb34841aac65b897b1e0e4efdf"
+        }
+      ],
+      "official_store_ids": [
+        "3835"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570801021-78b6bfd171",
+          "name": "デイサービスセンター かえで",
+          "category": "social_facility",
+          "distance_m": 216
+        },
+        {
+          "id": "civic-care-3570801187-6151e7843b",
+          "name": "グループホーム かえで",
+          "category": "social_facility",
+          "distance_m": 216
+        },
+        {
+          "id": "civic-care-3570800940-c02d48a1b6",
+          "name": "有限会社岩国メディカルサポート居宅介護支援事業所かえで",
+          "category": "social_facility",
+          "distance_m": 216
+        },
+        {
+          "id": "civic-care-3590800508-c5dafd1a9c",
+          "name": "認知症対応型デイサービスセンターかえで",
+          "category": "social_facility",
+          "distance_m": 216
+        },
+        {
+          "id": "civic-care-3570801658-c1ee74257d",
+          "name": "アースサポート岩国",
+          "category": "social_facility",
+          "distance_m": 228
+        },
+        {
+          "id": "civic-care-3570801062-ece5abe117",
+          "name": "社会福祉法人岩国市社会福祉協議会社協ヘルパーセンター岩国",
+          "category": "social_facility",
+          "distance_m": 264
+        },
+        {
+          "id": "osm-node-1423654423",
+          "name": "南岩国三郵便局",
+          "category": "post_office",
+          "distance_m": 266
+        },
+        {
+          "id": "civic-care-3570800742-b10f5626bc",
+          "name": "第一あんしんサービス岩国",
+          "category": "social_facility",
+          "distance_m": 399
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3873",
+      "operation": "addition",
+      "name": "ウォンツ 岩国保津店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3873",
+          "receipt": "outputs/facility-reconcile-20260925/pages/91e459fa3ccd9d29d5dd5f2d.json",
+          "sha256": "31ceb5c8b3a58f463d0045dfca83ca07d7dab77a7901f2983e8b04a55749d1af"
+        }
+      ],
+      "official_store_ids": [
+        "3873"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-9235019618",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 67
+        },
+        {
+          "id": "civic-care-3590800078-ce399cad52",
+          "name": "グループホームあかしあ保津",
+          "category": "social_facility",
+          "distance_m": 132
+        },
+        {
+          "id": "civic-care-3570802417-2a6f60ffb1",
+          "name": "訪問介護ステーションいちご",
+          "category": "social_facility",
+          "distance_m": 184
+        },
+        {
+          "id": "civic-care-3570802292-44723f2db5",
+          "name": "ウェルネス通津",
+          "category": "social_facility",
+          "distance_m": 306
+        },
+        {
+          "id": "civic-care-3570800734-a62a2f5365",
+          "name": "グループホーム たんぽぽ",
+          "category": "social_facility",
+          "distance_m": 430
+        },
+        {
+          "id": "osm-node-1423656062",
+          "name": "岩国むつみ幼稚園",
+          "category": "childcare",
+          "distance_m": 581
+        },
+        {
+          "id": "osm-node-1423658355",
+          "name": "日照幼稚園",
+          "category": "childcare",
+          "distance_m": 863
+        },
+        {
+          "id": "osm-way-1080315005",
+          "name": "市立通津小学校",
+          "category": "school",
+          "distance_m": 942
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3926",
+      "operation": "addition",
+      "name": "ウォンツ 岩国中津店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3926",
+          "receipt": "outputs/facility-reconcile-20260925/pages/72731b0042e74c1c638a642b.json",
+          "sha256": "ee08913ca7c2babe33c9dc5f6be34286ecd0a881f2627e4e85c3e7e5e6fdbf39"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2279",
+          "receipt": "outputs/facility-reconcile-20260925/pages/8c44bcb8ecb8fcb16c457fd9.json",
+          "sha256": "1430eb8532b17a31b6f163f294ef4d1f5311f72cd1a073c1ec43edfd3b392537"
+        }
+      ],
+      "official_store_ids": [
+        "3926",
+        "2279"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-1150872477",
+          "name": "市立川下中学校",
+          "category": "school",
+          "distance_m": 135
+        },
+        {
+          "id": "osm-node-2499032822",
+          "name": "中央フード川下店",
+          "category": "supermarket",
+          "distance_m": 242
+        },
+        {
+          "id": "osm-node-1423656111",
+          "name": "岩国川下郵便局",
+          "category": "post_office",
+          "distance_m": 247
+        },
+        {
+          "id": "osm-node-1423656126",
+          "name": "岩国市立かわしも保育園",
+          "category": "childcare",
+          "distance_m": 266
+        },
+        {
+          "id": "osm-node-2499032636",
+          "name": "岩国市役所川下出張所",
+          "category": "bank",
+          "distance_m": 268
+        },
+        {
+          "id": "osm-node-4213159701",
+          "name": "Rib House Bar & Grill",
+          "category": "restaurant",
+          "distance_m": 300
+        },
+        {
+          "id": "osm-node-4213171016",
+          "name": "California",
+          "category": "restaurant",
+          "distance_m": 306
+        },
+        {
+          "id": "osm-node-734815211",
+          "name": "山口銀行川下支店",
+          "category": "bank",
+          "distance_m": 314
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3929",
+      "operation": "addition",
+      "name": "ウォンツ 岩国多田店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3929",
+          "receipt": "outputs/facility-reconcile-20260925/pages/761d2e0866cc35abc9051099.json",
+          "sha256": "15ef2c900591431d33392582f7d1c7f1d4f176be36a0f9ce79e5d9aa10626690"
+        }
+      ],
+      "official_store_ids": [
+        "3929"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-663128840",
+          "name": "ローソン",
+          "category": "convenience",
+          "distance_m": 269
+        },
+        {
+          "id": "civic-care-3570801427-bacb1f8869",
+          "name": "あいらの杜 新岩国駅前",
+          "category": "social_facility",
+          "distance_m": 423
+        },
+        {
+          "id": "civic-care-3560890109-78ba0a2886",
+          "name": "訪問ステーションてとてと岩国",
+          "category": "social_facility",
+          "distance_m": 452
+        },
+        {
+          "id": "civic-care-3570800072-ab2d785e53",
+          "name": "株式会社 メディス 岩国支店",
+          "category": "social_facility",
+          "distance_m": 452
+        },
+        {
+          "id": "osm-node-6207423482",
+          "name": "ローソン",
+          "category": "convenience",
+          "distance_m": 455
+        },
+        {
+          "id": "osm-way-663128841",
+          "name": "Daily Yamazaki",
+          "category": "convenience",
+          "distance_m": 481
+        },
+        {
+          "id": "civic-care-3570800767-b02e8c1cce",
+          "name": "サンハイティー",
+          "category": "social_facility",
+          "distance_m": 513
+        },
+        {
+          "id": "civic-care-3570802474-5628d5f06d",
+          "name": "訪問介護事業所にじいろ",
+          "category": "social_facility",
+          "distance_m": 693
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3943",
+      "operation": "addition",
+      "name": "ウォンツ 西岩国店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3943",
+          "receipt": "outputs/facility-reconcile-20260925/pages/13daa3a47ff8c66e062d9568.json",
+          "sha256": "f480c73b55b4e3e7b3ad54dc32a7b2b271a9c5d80f3553cd67fd228b31799ea3"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2287",
+          "receipt": "outputs/facility-reconcile-20260925/pages/4bfe8942fcd96b1f46926296.json",
+          "sha256": "0909519807a68c70a11748ee983ee36afce7d2f09a297df2dfac53c31fa9fb35"
+        }
+      ],
+      "official_store_ids": [
+        "3943",
+        "2287"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423656236",
+          "name": "岩国錦見郵便局",
+          "category": "post_office",
+          "distance_m": 80
+        },
+        {
+          "id": "osm-node-1423658395",
+          "name": "曙保育園",
+          "category": "childcare",
+          "distance_m": 133
+        },
+        {
+          "id": "civic-care-3590800409-520836f9db",
+          "name": "小規模多機能事業所 よりそい",
+          "category": "social_facility",
+          "distance_m": 250
+        },
+        {
+          "id": "osm-node-9081354218",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 348
+        },
+        {
+          "id": "civic-care-3570800585-047eaadc53",
+          "name": "特別養護老人ホームかなえ",
+          "category": "social_facility",
+          "distance_m": 373
+        },
+        {
+          "id": "civic-care-3570800577-8d83562d6c",
+          "name": "グループホーム かなえ",
+          "category": "social_facility",
+          "distance_m": 373
+        },
+        {
+          "id": "civic-care-3570800569-fb8bd62e5c",
+          "name": "かなえ介護保険相談室",
+          "category": "social_facility",
+          "distance_m": 373
+        },
+        {
+          "id": "osm-way-1153118885",
+          "name": "山口県立岩国 総合支援学校",
+          "category": "school",
+          "distance_m": 385
+        }
+      ]
+    },
+    {
+      "id": "osm-way-369683338",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3653",
+          "receipt": "outputs/facility-reconcile-20260925/pages/9edd568571bec46e73c91b61.json",
+          "sha256": "c63d03b8d244886c76c6d5d2e8d14ab65fc8a08544e5a30cc9d33ea979bc27f2"
+        }
+      ],
+      "official_store_ids": [
+        "3653"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.8553266526293,
+        34.02476300086254
+      ]
+    },
+    {
+      "id": "osm-way-305521033",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3703",
+          "receipt": "outputs/facility-reconcile-20260925/pages/1d42acc9b30fbe3a4091520f.json",
+          "sha256": "be7f5b30b0e6732e26cc35f073650d82b24fa269a7f12dcdb09b11160fb0f5e9"
+        }
+      ],
+      "official_store_ids": [
+        "3703"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.8686049115248,
+        34.01598633944119
+      ]
+    },
+    {
+      "id": "official-tsuruha-3678",
+      "operation": "addition",
+      "name": "ウォンツ 平生店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3678",
+          "receipt": "outputs/facility-reconcile-20260925/pages/345e7539e456d25492d7954f.json",
+          "sha256": "3cf81c002c8fc77075626f57d827c4a51a8521a5ea9c05ed7dde887ad26ed8df"
+        }
+      ],
+      "official_store_ids": [
+        "3678"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3567390020-7c5723a57c",
+          "name": "平生訪問看護ステーション きらら",
+          "category": "social_facility",
+          "distance_m": 30
+        },
+        {
+          "id": "osm-node-1423657561",
+          "name": "平生町立平生図書館",
+          "category": "library",
+          "distance_m": 79
+        },
+        {
+          "id": "osm-node-3951224360",
+          "name": "イオンタウン平生",
+          "category": "mall",
+          "distance_m": 214
+        },
+        {
+          "id": "civic-care-3571200389-c59687c5e2",
+          "name": "株式会社 河村福祉サービス 柳井介護センター",
+          "category": "social_facility",
+          "distance_m": 214
+        },
+        {
+          "id": "osm-way-391860485",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "distance_m": 249
+        },
+        {
+          "id": "civic-care-3577300068-0c57fafb26",
+          "name": "光輝会居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 364
+        },
+        {
+          "id": "osm-node-1423657572",
+          "name": "平生郵便局",
+          "category": "post_office",
+          "distance_m": 480
+        },
+        {
+          "id": "osm-way-601687674",
+          "name": "平生町役場",
+          "category": "townhall",
+          "distance_m": 506
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3856",
+      "operation": "addition",
+      "name": "ウォンツ フジ長門店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3856",
+          "receipt": "outputs/facility-reconcile-20260925/pages/cf1d2a409d7beb5fc326b098.json",
+          "sha256": "06bd8224abcddaebdcc48a05643b65ef2c89062ab266a4907014ef36bb2ab959"
+        }
+      ],
+      "official_store_ids": [
+        "3856"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-550383091",
+          "name": "フジ",
+          "category": "mall",
+          "distance_m": 137
+        },
+        {
+          "id": "civic-care-3501100022-df34ba06a2",
+          "name": "長門市東地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 137
+        },
+        {
+          "id": "civic-care-3571100522-273bb73f12",
+          "name": "訪問介護ステーションすこやか",
+          "category": "social_facility",
+          "distance_m": 160
+        },
+        {
+          "id": "osm-node-1423661250",
+          "name": "長門総合病院",
+          "category": "hospital",
+          "distance_m": 232
+        },
+        {
+          "id": "osm-way-667784317",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 325
+        },
+        {
+          "id": "osm-node-6252709159",
+          "name": "ながと総合体育館",
+          "category": "sports_centre",
+          "distance_m": 339
+        },
+        {
+          "id": "osm-way-668017920",
+          "name": "ジョイフル",
+          "category": "restaurant",
+          "distance_m": 467
+        },
+        {
+          "id": "osm-way-550383098",
+          "name": "どんどん",
+          "category": "restaurant",
+          "distance_m": 557
+        }
+      ]
+    },
+    {
+      "id": "osm-way-1385818871",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3772",
+          "receipt": "outputs/facility-reconcile-20260925/pages/8d7905b3db253d20360b4223.json",
+          "sha256": "7a8326acfdc79d8dd29353b03ea08c401e2343cb62f7887fe57a35804597eaf2"
+        }
+      ],
+      "official_store_ids": [
+        "3772"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        132.20762540000004,
+        33.946930023318835
+      ]
+    },
+    {
+      "id": "official-tsuruha-3710",
+      "operation": "addition",
+      "name": "ウォンツ 厚狭店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3710",
+          "receipt": "outputs/facility-reconcile-20260925/pages/3cd28fb8cc06c4aebd82c507.json",
+          "sha256": "18a5aa939e3d00127484c69510d4f188caa1154b7d72445d4e343b2be7f2da36"
+        }
+      ],
+      "official_store_ids": [
+        "3710"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-5482447139",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "distance_m": 49
+        },
+        {
+          "id": "osm-way-1170894476",
+          "name": "マックスバリュ厚狭店",
+          "category": "mall",
+          "distance_m": 51
+        },
+        {
+          "id": "osm-node-1423660203",
+          "name": "真珠幼稚園",
+          "category": "childcare",
+          "distance_m": 139
+        },
+        {
+          "id": "osm-node-1423660202",
+          "name": "真珠保育園",
+          "category": "childcare",
+          "distance_m": 159
+        },
+        {
+          "id": "osm-way-620195651",
+          "name": "ジョイフル",
+          "category": "restaurant",
+          "distance_m": 414
+        },
+        {
+          "id": "osm-way-618928000",
+          "name": "マルキュウ",
+          "category": "supermarket",
+          "distance_m": 415
+        },
+        {
+          "id": "osm-node-1423656609",
+          "name": "市立厚狭小学校",
+          "category": "school",
+          "distance_m": 432
+        },
+        {
+          "id": "osm-way-1170894501",
+          "name": "県立厚狭高等学校(北校舎)",
+          "category": "school",
+          "distance_m": 456
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3877",
+      "operation": "addition",
+      "name": "ウォンツ 有帆店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3877",
+          "receipt": "outputs/facility-reconcile-20260925/pages/2af7f537aa01db19a65ccfd6.json",
+          "sha256": "253dcab1aef259319a5f17ab47ff19432e29d28f04509597a78354e577b904f0"
+        }
+      ],
+      "official_store_ids": [
+        "3877"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-1083206717",
+          "name": "市立有帆小学校",
+          "category": "school",
+          "distance_m": 217
+        },
+        {
+          "id": "osm-node-13062819732",
+          "name": "小野田有帆郵便局",
+          "category": "post_office",
+          "distance_m": 256
+        },
+        {
+          "id": "osm-node-1423658397",
+          "name": "有帆児童館",
+          "category": "community_centre",
+          "distance_m": 334
+        },
+        {
+          "id": "civic-care-3571600471-9286b43ee6",
+          "name": "訪問介護事業所 いこい",
+          "category": "social_facility",
+          "distance_m": 692
+        },
+        {
+          "id": "civic-care-3571601008-7309a34209",
+          "name": "生活介護事業所いこい",
+          "category": "social_facility",
+          "distance_m": 692
+        },
+        {
+          "id": "civic-care-3561690128-4eb3b6541c",
+          "name": "訪問看護ステーション結希",
+          "category": "social_facility",
+          "distance_m": 886
+        },
+        {
+          "id": "civic-care-3570900104-9dfeef99bb",
+          "name": "高千帆苑デイサービスセンター",
+          "category": "social_facility",
+          "distance_m": 886
+        },
+        {
+          "id": "civic-care-3571600497-8c8c6ba4bf",
+          "name": "デイサービス 笑家",
+          "category": "social_facility",
+          "distance_m": 886
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3881",
+      "operation": "addition",
+      "name": "ウォンツ 西高泊店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3881",
+          "receipt": "outputs/facility-reconcile-20260925/pages/754d91c023e9dfdc0e8119e0.json",
+          "sha256": "2c427a27abd4ec985a4a8d665781c0c1b1445fb909f4be0141e4ec861456f9f9"
+        }
+      ],
+      "official_store_ids": [
+        "3881"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-5518491536",
+          "name": "ウェスタまるき 神田店",
+          "category": "supermarket",
+          "distance_m": 282
+        },
+        {
+          "id": "osm-way-600688031",
+          "name": "ディスカウントドラッグ コスモス",
+          "category": "drugstore",
+          "distance_m": 393
+        },
+        {
+          "id": "osm-way-332618202",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 473
+        },
+        {
+          "id": "osm-node-1631266446",
+          "name": "ケアハウスとまりの郷",
+          "category": "social_facility",
+          "distance_m": 540
+        },
+        {
+          "id": "osm-node-9104794217",
+          "name": "マックカフェ",
+          "category": "fast_food",
+          "distance_m": 610
+        },
+        {
+          "id": "civic-care-3571600257-cd16f25181",
+          "name": "サンキ・ウエルビィ介護センター小野田",
+          "category": "social_facility",
+          "distance_m": 683
+        },
+        {
+          "id": "civic-care-3571600836-7f76840c2a",
+          "name": "介護付き有料老人ホーム ココフレ紫苑",
+          "category": "social_facility",
+          "distance_m": 700
+        },
+        {
+          "id": "osm-way-448271790",
+          "name": "山陽小野田市立日の出保育園",
+          "category": "childcare",
+          "distance_m": 709
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3979",
+      "operation": "addition",
+      "name": "ウォンツ 竜王店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3979",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e8f703f9a72bfb0b5cbd38a2.json",
+          "sha256": "a2dfd4cbbddcc3dd72b855be0b16a60213b1db3c91181e84e0f3c3c552785191"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2295",
+          "receipt": "outputs/facility-reconcile-20260925/pages/37345b249efca5234a2ca0db.json",
+          "sha256": "90e7d91047a8bca7faef529051e127a9e8d81fdcd7e118ff958202221fef37a7"
+        }
+      ],
+      "official_store_ids": [
+        "3979",
+        "2295"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-802774264",
+          "name": "新沖緑地公園",
+          "category": "park",
+          "distance_m": 328
+        },
+        {
+          "id": "civic-care-3510910783-35558ac28d",
+          "name": "あおぞら居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 367
+        },
+        {
+          "id": "civic-care-3591600162-b58e8bb0ea",
+          "name": "デイサービスひなたぼっこ",
+          "category": "social_facility",
+          "distance_m": 374
+        },
+        {
+          "id": "civic-care-3571600810-b3057976e8",
+          "name": "訪問介護Ｓ．Ｌ．Ｃ「ゆとり」",
+          "category": "social_facility",
+          "distance_m": 477
+        },
+        {
+          "id": "civic-care-3561690094-139017644a",
+          "name": "訪問看護ステーションゆとり",
+          "category": "social_facility",
+          "distance_m": 477
+        },
+        {
+          "id": "osm-node-1423657506",
+          "name": "市立須恵小学校",
+          "category": "school",
+          "distance_m": 506
+        },
+        {
+          "id": "osm-node-1423661507",
+          "name": "須恵児童館",
+          "category": "community_centre",
+          "distance_m": 602
+        },
+        {
+          "id": "civic-care-3591600196-48d8fd3d38",
+          "name": "デーサービスほほえみ西の浜",
+          "category": "social_facility",
+          "distance_m": 611
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3937",
+      "operation": "addition",
+      "name": "ウォンツ 菊川店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3937",
+          "receipt": "outputs/facility-reconcile-20260925/pages/7ff51e2d4b1b8ca211faf48b.json",
+          "sha256": "75c1c2814dccb150ee0b9533660dc496b20fc2d5089885353ebd51f680aa97af"
+        }
+      ],
+      "official_store_ids": [
+        "3937"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423660787",
+          "name": "菊川郵便局",
+          "category": "post_office",
+          "distance_m": 40
+        },
+        {
+          "id": "osm-node-4607181745",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 139
+        },
+        {
+          "id": "osm-way-465798424",
+          "name": "菊川運動公園",
+          "category": "park",
+          "distance_m": 155
+        },
+        {
+          "id": "osm-node-1631278788",
+          "name": "荒小田児童遊園",
+          "category": "social_facility",
+          "distance_m": 229
+        },
+        {
+          "id": "osm-node-1423653973",
+          "name": "下関市立菊川図書館",
+          "category": "library",
+          "distance_m": 282
+        },
+        {
+          "id": "osm-node-4607735889",
+          "name": "武道館",
+          "category": "sports_centre",
+          "distance_m": 302
+        },
+        {
+          "id": "civic-care-3500100130-25dd23f917",
+          "name": "下関市菊川・豊田地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 303
+        },
+        {
+          "id": "osm-node-1423660172",
+          "name": "県立田部高等学校",
+          "category": "school",
+          "distance_m": 398
+        }
+      ]
+    },
+    {
+      "id": "osm-way-350352664",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3691",
+          "receipt": "outputs/facility-reconcile-20260925/pages/c230cb68c0d8b5b977db0276.json",
+          "sha256": "6d2df35481eb0b1faef56c7054c9764c7e3358ed7bc0c4e01e0c96e678e5a7b3"
+        }
+      ],
+      "official_store_ids": [
+        "3691"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.75621866432877,
+        34.07212024125357
+      ]
+    },
+    {
+      "id": "osm-node-3890136162",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3707",
+          "receipt": "outputs/facility-reconcile-20260925/pages/7b5f878c7054993fab3ee63a.json",
+          "sha256": "a312827b780d7b3abc7bbaa410df077edc5d3b1bf39356e725ca843844e6f87e"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2232",
+          "receipt": "outputs/facility-reconcile-20260925/pages/2026c56795a91c0d85d5d8f1.json",
+          "sha256": "1a5e4855637860ccdf4ee72b9e80a657c9319566a7f6851559707ad74a362e32"
+        }
+      ],
+      "official_store_ids": [
+        "3707",
+        "2232"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.8274644,
+        34.0506171
+      ]
+    },
+    {
+      "id": "osm-node-4818155053",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3799",
+          "receipt": "outputs/facility-reconcile-20260925/pages/d2522d91d7f3d0909e0db872.json",
+          "sha256": "e9ebe45235742e9004fca0d5930cff4ebb9dcab51ace5ff41014a3a4e1d29b15"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2225",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e15c84027d773f083c139c8a.json",
+          "sha256": "3bd205d5853de66d3a4f0811508b11e04d7af741ad0989dc61f55341547274d8"
+        }
+      ],
+      "official_store_ids": [
+        "3799",
+        "2225"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.8430639953821,
+        34.0366616295035
+      ]
+    },
+    {
+      "id": "osm-node-13019068187",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3912",
+          "receipt": "outputs/facility-reconcile-20260925/pages/78de8d896ed23eb95521d656.json",
+          "sha256": "0b903622fac5edf93fc49b51324569b98729894e8c5c258c6bf0aaf75bd6451e"
+        }
+      ],
+      "official_store_ids": [
+        "3912"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.80153973289376,
+        34.056925033386584
+      ]
+    },
+    {
+      "id": "official-tsuruha-3983",
+      "operation": "addition",
+      "name": "ウォンツ 周南河東店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3983",
+          "receipt": "outputs/facility-reconcile-20260925/pages/7a00b2203601a125d99ef262.json",
+          "sha256": "b3e644d72142950ff26d94ce8b2932931a02f49cc70d948c401617951fdd997d"
+        }
+      ],
+      "official_store_ids": [
+        "3983"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-3815584060",
+          "name": "早川整形外科",
+          "category": "clinic",
+          "distance_m": 102
+        },
+        {
+          "id": "osm-node-3815583957",
+          "name": "山下内科小児科",
+          "category": "clinic",
+          "distance_m": 104
+        },
+        {
+          "id": "osm-way-328497286",
+          "name": "明石整形外科",
+          "category": "clinic",
+          "distance_m": 116
+        },
+        {
+          "id": "osm-way-328496342",
+          "name": "千治松内科",
+          "category": "clinic",
+          "distance_m": 118
+        },
+        {
+          "id": "osm-way-378275834",
+          "name": "しゃぶしゃぶ温野菜",
+          "category": "restaurant",
+          "distance_m": 157
+        },
+        {
+          "id": "osm-way-328492845",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 186
+        },
+        {
+          "id": "civic-care-3571501885-57d360481c",
+          "name": "内山ケアマネジャー事務所",
+          "category": "social_facility",
+          "distance_m": 189
+        },
+        {
+          "id": "osm-node-1423658246",
+          "name": "愛光幼稚園",
+          "category": "childcare",
+          "distance_m": 197
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-10049",
+      "operation": "addition",
+      "name": "ウォンツ ハローズ西岐波店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/10049",
+          "receipt": "outputs/facility-reconcile-20260925/pages/ccf05dda56d6d2340ba740d4.json",
+          "sha256": "aaaf61eb25b9aaac2aed737fd99e5b7e682d0ec4d3b3d4d66ea6b0d89ca35baa"
+        }
+      ],
+      "official_store_ids": [
+        "10049"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570202758-4fd1142bd6",
+          "name": "ヘルパーステーション「Ｅｎｊｙｕ」",
+          "category": "social_facility",
+          "distance_m": 818
+        },
+        {
+          "id": "civic-care-3570202741-f7985fc794",
+          "name": "デイサービス「Ｅｎｊｙｕ」",
+          "category": "social_facility",
+          "distance_m": 818
+        },
+        {
+          "id": "osm-node-1423654864",
+          "name": "宇部興産中央病院",
+          "category": "hospital",
+          "distance_m": 889
+        },
+        {
+          "id": "civic-care-35B0200043-ced3ac406a",
+          "name": "医療法人太白会シーサイド病院 介護医療院",
+          "category": "social_facility",
+          "distance_m": 945
+        },
+        {
+          "id": "civic-care-3570200778-99a620641d",
+          "name": "グループホーム サンきらら",
+          "category": "social_facility",
+          "distance_m": 945
+        },
+        {
+          "id": "osm-node-13062819749",
+          "name": "宇部吉田郵便局",
+          "category": "post_office",
+          "distance_m": 1097
+        },
+        {
+          "id": "civic-care-3570204234-2f3cd1b740",
+          "name": "日の山園 向陽デイサービスセンター",
+          "category": "social_facility",
+          "distance_m": 1322
+        },
+        {
+          "id": "civic-care-3500200138-0d3e06f363",
+          "name": "宇部市東部第１地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 1322
+        }
+      ]
+    },
+    {
+      "id": "osm-way-353411446",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3663",
+          "receipt": "outputs/facility-reconcile-20260925/pages/296f70f2d9beacd77066b61a.json",
+          "sha256": "06d93a48547ad4a0822065493b96a1039d70fe5db134c48679121e8c2eb7cf86"
+        }
+      ],
+      "official_store_ids": [
+        "3663"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.24269889065798,
+        33.96013706271693
+      ]
+    },
+    {
+      "id": "official-tsuruha-3677",
+      "operation": "addition",
+      "name": "ウォンツ 宇部西岐波店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3677",
+          "receipt": "outputs/facility-reconcile-20260925/pages/1254d87121cde21d9780965b.json",
+          "sha256": "75cb0e48538b73f0c25e1fa9ff818bb7e14f605f4e0cc8beeaf1fd5472b937b7"
+        }
+      ],
+      "official_store_ids": [
+        "3677"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3560290433-d0419ca865",
+          "name": "医療法人聖比留会 西岐波セントヒル訪問看護ステーション",
+          "category": "social_facility",
+          "distance_m": 249
+        },
+        {
+          "id": "civic-care-3570200869-2901ab19fd",
+          "name": "グループホ－ム喜楽苑",
+          "category": "social_facility",
+          "distance_m": 253
+        },
+        {
+          "id": "osm-node-1423660730",
+          "name": "聖比留会セントヒル病院",
+          "category": "hospital",
+          "distance_m": 264
+        },
+        {
+          "id": "civic-care-3570204556-a5663a9c1b",
+          "name": "ケアサービスオクト",
+          "category": "social_facility",
+          "distance_m": 266
+        },
+        {
+          "id": "civic-care-3570203251-b8a1944590",
+          "name": "喜楽苑居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 266
+        },
+        {
+          "id": "civic-care-3590200352-4df99713cf",
+          "name": "第２宅老所 喜楽苑",
+          "category": "social_facility",
+          "distance_m": 266
+        },
+        {
+          "id": "osm-way-617322351",
+          "name": "岩上公園",
+          "category": "park",
+          "distance_m": 320
+        },
+        {
+          "id": "osm-node-1423654575",
+          "name": "和同会宇部温泉病院",
+          "category": "hospital",
+          "distance_m": 370
+        }
+      ]
+    },
+    {
+      "id": "osm-way-562104060",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3717",
+          "receipt": "outputs/facility-reconcile-20260925/pages/8095ae5c66864d0e28358193.json",
+          "sha256": "cede98689b0ecb95cdaedbd98625237f90f4cc2b6e1d38617e14d4e8edc1d916"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2234",
+          "receipt": "outputs/facility-reconcile-20260925/pages/2ef1d38afedf3542c14b3751.json",
+          "sha256": "ce82c59ecf843e1abd1ea00b6533005360abd3651f1bc98a7fc3590ef8c1ef8c"
+        }
+      ],
+      "official_store_ids": [
+        "3717",
+        "2234"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.2586349682921,
+        33.957131340036234
+      ]
+    },
+    {
+      "id": "official-tsuruha-3848",
+      "operation": "addition",
+      "name": "ウォンツ 宇部岬店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3848",
+          "receipt": "outputs/facility-reconcile-20260925/pages/b36116fe1cebde526addfef9.json",
+          "sha256": "6d66553c5f097557e89abae336960c86723622f84666cd8294d5ac1125b0becf"
+        }
+      ],
+      "official_store_ids": [
+        "3848"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570203798-4d433b1b1d",
+          "name": "はーとけあさんちの生活支援",
+          "category": "social_facility",
+          "distance_m": 335
+        },
+        {
+          "id": "osm-node-5419672879",
+          "name": "ヤマザキショップ",
+          "category": "convenience",
+          "distance_m": 398
+        },
+        {
+          "id": "civic-care-3570204135-d4980469c8",
+          "name": "ツクイ宇部",
+          "category": "social_facility",
+          "distance_m": 468
+        },
+        {
+          "id": "osm-way-416507806",
+          "name": "学校法人聖和学園しょうわ幼稚園",
+          "category": "childcare",
+          "distance_m": 474
+        },
+        {
+          "id": "osm-way-552712570",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 479
+        },
+        {
+          "id": "civic-care-3560290227-209b723bc0",
+          "name": "訪問看護ステーション あん",
+          "category": "social_facility",
+          "distance_m": 495
+        },
+        {
+          "id": "osm-way-578749461",
+          "name": "ふれあい公園",
+          "category": "park",
+          "distance_m": 650
+        },
+        {
+          "id": "osm-way-370791608",
+          "name": "宇部協立病院",
+          "category": "hospital",
+          "distance_m": 709
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3888",
+      "operation": "addition",
+      "name": "ウォンツ 宇部沼1丁目店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3888",
+          "receipt": "outputs/facility-reconcile-20260925/pages/52882000ea5beb7a7a26d821.json",
+          "sha256": "a0453bd0d50be18f052fa8cf524b0c7a5905c34b703efbda296dc0c900c1050b"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/3135",
+          "receipt": "outputs/facility-reconcile-20260925/pages/b4fd2d911a968cbc993e7fd0.json",
+          "sha256": "b1d9f73951ccccabec5355d2fd9cb65e6b4f0dfbec27a8a579a5f02e58e63f0f"
+        }
+      ],
+      "official_store_ids": [
+        "3888",
+        "3135"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-562664549",
+          "name": "A-プライス",
+          "category": "supermarket",
+          "distance_m": 75
+        },
+        {
+          "id": "civic-care-3570204192-23730dd37c",
+          "name": "リハビリデイサービスエール",
+          "category": "social_facility",
+          "distance_m": 153
+        },
+        {
+          "id": "osm-node-13062819740",
+          "name": "宇部中村郵便局",
+          "category": "post_office",
+          "distance_m": 168
+        },
+        {
+          "id": "civic-care-3570202048-0223a0b5b8",
+          "name": "特別養護老人ホームむべの里博愛園",
+          "category": "social_facility",
+          "distance_m": 187
+        },
+        {
+          "id": "civic-care-3500200089-1caf3a64a4",
+          "name": "宇部市中部第１地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 207
+        },
+        {
+          "id": "osm-way-287682660",
+          "name": "上宇部中学校",
+          "category": "school",
+          "distance_m": 212
+        },
+        {
+          "id": "osm-node-1631272206",
+          "name": "むべの里 ららら会館",
+          "category": "social_facility",
+          "distance_m": 221
+        },
+        {
+          "id": "osm-node-1631272184",
+          "name": "むべの里",
+          "category": "social_facility",
+          "distance_m": 227
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3939",
+      "operation": "addition",
+      "name": "ウォンツ 宇部鍋倉店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3939",
+          "receipt": "outputs/facility-reconcile-20260925/pages/a9686a5f9293e2dce93a44f5.json",
+          "sha256": "ef4a39706df88d9130ac1c57ee9c60bb9237a0c1845d77faf431faffa4dd5b29"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2285",
+          "receipt": "outputs/facility-reconcile-20260925/pages/5a73ddf52fd0cece01dc9db7.json",
+          "sha256": "451054572f33091b7125458fd32e2c3b00fe7c0fa68d270df15785499c3808aa"
+        }
+      ],
+      "official_store_ids": [
+        "3939",
+        "2285"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423660606",
+          "name": "精華幼稚園",
+          "category": "childcare",
+          "distance_m": 160
+        },
+        {
+          "id": "civic-care-3570201057-78f5822fcf",
+          "name": "グループホーム藤山",
+          "category": "social_facility",
+          "distance_m": 261
+        },
+        {
+          "id": "civic-care-3570202410-8ac95939d2",
+          "name": "サンキ・ウエルビィ介護センター宇部",
+          "category": "social_facility",
+          "distance_m": 274
+        },
+        {
+          "id": "civic-care-3590200444-fedfc7276d",
+          "name": "リハビリサポートｃａｎｏｎ藤山店",
+          "category": "social_facility",
+          "distance_m": 304
+        },
+        {
+          "id": "civic-care-3570204572-e8035971bd",
+          "name": "助さん訪問介護事業所",
+          "category": "social_facility",
+          "distance_m": 332
+        },
+        {
+          "id": "civic-care-3590200634-3036a04f1e",
+          "name": "夜間対応型訪問介護 よる助",
+          "category": "social_facility",
+          "distance_m": 332
+        },
+        {
+          "id": "osm-way-567353498",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 348
+        },
+        {
+          "id": "osm-node-1631273019",
+          "name": "居能児童遊園",
+          "category": "playground",
+          "distance_m": 365
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3993",
+      "operation": "addition",
+      "name": "ウォンツ 宇部東須恵店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3993",
+          "receipt": "outputs/facility-reconcile-20260925/pages/c7b584dc12716b1c68eb2358.json",
+          "sha256": "adb6b8fc31e35b8d82991c25970a56b2211d1f852a18fa355589843bd27f1b9e"
+        },
+        {
+          "url": "https://www.wants.co.jp/news/open/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/61e215fc369113d7f078d4d3.json",
+          "sha256": "888ffad025fd72f4d993accabac5ff63aa9fe6df58c42b6ca0ab34d1dc951246"
+        }
+      ],
+      "official_store_ids": [
+        "3993"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1631273178",
+          "name": "山口県このみ園",
+          "category": "social_facility",
+          "distance_m": 179
+        },
+        {
+          "id": "osm-node-1423654910",
+          "name": "宇部総合支援学校",
+          "category": "school",
+          "distance_m": 274
+        },
+        {
+          "id": "civic-care-3570204143-cb79fe3465",
+          "name": "ツクイ宇部厚南",
+          "category": "social_facility",
+          "distance_m": 351
+        },
+        {
+          "id": "osm-node-1423654821",
+          "name": "宇部中野郵便局",
+          "category": "post_office",
+          "distance_m": 353
+        },
+        {
+          "id": "civic-care-3570203327-6c8d5aa2e9",
+          "name": "むべの里訪問介護事業所厚南",
+          "category": "social_facility",
+          "distance_m": 429
+        },
+        {
+          "id": "civic-care-3570203335-a600b0d9b6",
+          "name": "むべの里デイサービスセンター厚南",
+          "category": "social_facility",
+          "distance_m": 429
+        },
+        {
+          "id": "civic-care-3570200620-a116788555",
+          "name": "グループホーム厚南",
+          "category": "social_facility",
+          "distance_m": 429
+        },
+        {
+          "id": "osm-way-288252222",
+          "name": "黒石小学校",
+          "category": "school",
+          "distance_m": 468
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3758",
+      "operation": "addition",
+      "name": "ウォンツ 山口小郡店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3758",
+          "receipt": "outputs/facility-reconcile-20260925/pages/ae5c38ac1429ffb06a422f83.json",
+          "sha256": "898912b2b312fcb549d5120c948b2fb5ce0f9eda91e59e01c359f781b4c755e8"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2243",
+          "receipt": "outputs/facility-reconcile-20260925/pages/01f8942e97c3daf128c46694.json",
+          "sha256": "0b36bb221be4c73916d319ff7c111ce975371c430d1d5e69f460aab844fbc4d3"
+        }
+      ],
+      "official_store_ids": [
+        "3758",
+        "2243"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570303655-b764d33fb2",
+          "name": "ゆめのいろケアプランセンター",
+          "category": "social_facility",
+          "distance_m": 101
+        },
+        {
+          "id": "osm-node-1423655219",
+          "name": "小郡郵便局",
+          "category": "post_office",
+          "distance_m": 154
+        },
+        {
+          "id": "osm-way-474110996",
+          "name": "小郡第一総合病院",
+          "category": "hospital",
+          "distance_m": 265
+        },
+        {
+          "id": "osm-node-1631272971",
+          "name": "小郡町在宅介護支援センター",
+          "category": "social_facility",
+          "distance_m": 267
+        },
+        {
+          "id": "civic-care-3500300045-4f431f45df",
+          "name": "山口市川西地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 270
+        },
+        {
+          "id": "civic-care-3560390159-0bbbd181f7",
+          "name": "小郡第一総合病院訪問看護ステーション",
+          "category": "social_facility",
+          "distance_m": 280
+        },
+        {
+          "id": "civic-care-3557680000-fd9c38e453",
+          "name": "山口県厚生農業協同組合連合会 老人保健施設みのり苑",
+          "category": "social_facility",
+          "distance_m": 280
+        },
+        {
+          "id": "osm-node-1423655190",
+          "name": "小郡町立小郡図書館",
+          "category": "library",
+          "distance_m": 312
+        }
+      ]
+    },
+    {
+      "id": "osm-node-6011703186",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3774",
+          "receipt": "outputs/facility-reconcile-20260925/pages/2e6f3b678891fde2c8417de7.json",
+          "sha256": "42786e91524b63aad55cf7c9d1f697eb8683a6002e962db6ecee95b5c65cc6e7"
+        }
+      ],
+      "official_store_ids": [
+        "3774"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.7185638079866,
+        34.39428759253622
+      ]
+    },
+    {
+      "id": "official-tsuruha-3778",
+      "operation": "addition",
+      "name": "ウォンツ 上山口店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3778",
+          "receipt": "outputs/facility-reconcile-20260925/pages/f80f686cde202e39838a47b7.json",
+          "sha256": "d9ba006f992aa3f3698f9777b7ea92f1966741109ed226d52328e593e0f72959"
+        },
+        {
+          "url": "https://shop.tsuruha-g.com/2245",
+          "receipt": "outputs/facility-reconcile-20260925/pages/c063c38c52bd4867bd38d5e3.json",
+          "sha256": "e0c5fa751e07a11afadad56b5fb6a43bdf3c154074810f87fe52222133c0f9e5"
+        }
+      ],
+      "official_store_ids": [
+        "3778",
+        "2245"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423655664",
+          "name": "山口市立三の宮保育園",
+          "category": "childcare",
+          "distance_m": 242
+        },
+        {
+          "id": "osm-node-1423655952",
+          "name": "山口金古曽郵便局",
+          "category": "post_office",
+          "distance_m": 285
+        },
+        {
+          "id": "osm-way-1303500793",
+          "name": "聖サビエル記念公園",
+          "category": "park",
+          "distance_m": 311
+        },
+        {
+          "id": "civic-care-3570303887-1c97856714",
+          "name": "あさがおケアプラン事業所",
+          "category": "social_facility",
+          "distance_m": 507
+        },
+        {
+          "id": "civic-care-3560390274-dd0a150c49",
+          "name": "訪問看護ステーションふれんず",
+          "category": "social_facility",
+          "distance_m": 538
+        },
+        {
+          "id": "civic-care-3570303283-b353caf0cf",
+          "name": "デイサービスひなた",
+          "category": "social_facility",
+          "distance_m": 572
+        },
+        {
+          "id": "civic-care-3570303127-5d14ae2c10",
+          "name": "ひなた居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 572
+        },
+        {
+          "id": "osm-way-555889201",
+          "name": "綜合病院山口赤十字病院",
+          "category": "hospital",
+          "distance_m": 592
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3779",
+      "operation": "addition",
+      "name": "ウォンツ 山口宮野店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3779",
+          "receipt": "outputs/facility-reconcile-20260925/pages/76c4b058b0764545da31fad2.json",
+          "sha256": "643b72630a7c54da65af1124386489d52cf4887b63efb96ae4efaab0be21f471"
+        }
+      ],
+      "official_store_ids": [
+        "3779"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-425596518",
+          "name": "クスリ岩崎チェーン　山口北店",
+          "category": "drugstore",
+          "distance_m": 124
+        },
+        {
+          "id": "civic-care-3560390324-cff2ae4d4f",
+          "name": "さんコープ訪問看護ステーション 宮野",
+          "category": "social_facility",
+          "distance_m": 177
+        },
+        {
+          "id": "civic-care-3590300533-b5807d86b6",
+          "name": "さんコープ定期巡回・随時対応型訪問介護看護 宮野",
+          "category": "social_facility",
+          "distance_m": 177
+        },
+        {
+          "id": "civic-care-3590300467-5f4f7381fc",
+          "name": "さんコープ看護小規模多機能型居宅介護宮野",
+          "category": "social_facility",
+          "distance_m": 177
+        },
+        {
+          "id": "civic-care-3590300020-44ca4ab115",
+          "name": "グループホームグッドスマイルズ",
+          "category": "social_facility",
+          "distance_m": 180
+        },
+        {
+          "id": "osm-node-1423656832",
+          "name": "市立宮野中学校",
+          "category": "school",
+          "distance_m": 196
+        },
+        {
+          "id": "osm-way-696539917",
+          "name": "桜畠公園",
+          "category": "park",
+          "distance_m": 230
+        },
+        {
+          "id": "osm-node-1522565882",
+          "name": "萩山口信用金庫",
+          "category": "bank",
+          "distance_m": 278
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3834",
+      "operation": "addition",
+      "name": "ウォンツ 吉敷店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3834",
+          "receipt": "outputs/facility-reconcile-20260925/pages/91e5016551518db47e27738d.json",
+          "sha256": "f78a485a15bf8d332d85b3ce46b1f64cfd5a3bd77b35964573c3ebdfd2574750"
+        }
+      ],
+      "official_store_ids": [
+        "3834"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-685797754",
+          "name": "山口銀行 吉敷視点",
+          "category": "bank",
+          "distance_m": 63
+        },
+        {
+          "id": "osm-way-465967712",
+          "name": "かつや山口吉敷店",
+          "category": "restaurant",
+          "distance_m": 132
+        },
+        {
+          "id": "osm-way-407965646",
+          "name": "ローソン山口吉敷店",
+          "category": "convenience",
+          "distance_m": 154
+        },
+        {
+          "id": "civic-care-3570303473-2bf236b8a6",
+          "name": "青藍会　在宅医療支援センター山口福祉用具事業所",
+          "category": "social_facility",
+          "distance_m": 162
+        },
+        {
+          "id": "osm-way-465967718",
+          "name": "じゅげむ",
+          "category": "convenience",
+          "distance_m": 164
+        },
+        {
+          "id": "osm-way-465967713",
+          "name": "ゼッテリア",
+          "category": "fast_food",
+          "distance_m": 186
+        },
+        {
+          "id": "osm-way-477271573",
+          "name": "斉藤外科眼科",
+          "category": "clinic",
+          "distance_m": 206
+        },
+        {
+          "id": "osm-way-465967732",
+          "name": "ドラゴンラーメン",
+          "category": "restaurant",
+          "distance_m": 230
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3895",
+      "operation": "addition",
+      "name": "ウォンツ 山口秋穂店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3895",
+          "receipt": "outputs/facility-reconcile-20260925/pages/049518b79a50a60e541c26ed.json",
+          "sha256": "10497a4756af705f8eb3370c5776860027dd3520b7a601d9e2216b68019fea38"
+        }
+      ],
+      "official_store_ids": [
+        "3895"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-562738487",
+          "name": "市立秋穂小学校",
+          "category": "school",
+          "distance_m": 452
+        },
+        {
+          "id": "osm-node-4420227590",
+          "name": "サンマート（株） 秋穂店",
+          "category": "supermarket",
+          "distance_m": 473
+        },
+        {
+          "id": "osm-node-1423660462",
+          "name": "秋穂郵便局",
+          "category": "post_office",
+          "distance_m": 733
+        },
+        {
+          "id": "osm-node-1423661679",
+          "name": "黒潟保育所",
+          "category": "childcare",
+          "distance_m": 741
+        },
+        {
+          "id": "osm-node-1423660458",
+          "name": "秋穂保育園",
+          "category": "childcare",
+          "distance_m": 772
+        },
+        {
+          "id": "osm-relation-11172373",
+          "name": "山口市役所 秋穂総合支所",
+          "category": "townhall",
+          "distance_m": 779
+        },
+        {
+          "id": "osm-way-564319571",
+          "name": "市立秋穂中学校",
+          "category": "school",
+          "distance_m": 871
+        },
+        {
+          "id": "osm-node-1631278165",
+          "name": "秋穂町コミュニティセンター",
+          "category": "social_facility",
+          "distance_m": 942
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3901",
+      "operation": "addition",
+      "name": "ウォンツ 山口嘉川店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3901",
+          "receipt": "outputs/facility-reconcile-20260925/pages/018e9e5fc678a594d8060892.json",
+          "sha256": "48dc687e8b337eebb8ebddb24bbc77e9f5914bebc33b75036704a772d68127f9"
+        }
+      ],
+      "official_store_ids": [
+        "3901"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-687887311",
+          "name": "三つ葉保育園",
+          "category": "childcare",
+          "distance_m": 193
+        },
+        {
+          "id": "osm-node-6448935187",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 274
+        },
+        {
+          "id": "osm-node-1631273133",
+          "name": "山口市老人憩の家嘉泉荘",
+          "category": "social_facility",
+          "distance_m": 288
+        },
+        {
+          "id": "osm-way-687887324",
+          "name": "市立嘉川小学校",
+          "category": "school",
+          "distance_m": 504
+        },
+        {
+          "id": "osm-node-13067967898",
+          "name": "嘉川郵便局",
+          "category": "post_office",
+          "distance_m": 683
+        },
+        {
+          "id": "civic-care-3570302459-664fe405d1",
+          "name": "アイビーケアサポートセンター",
+          "category": "social_facility",
+          "distance_m": 798
+        },
+        {
+          "id": "osm-way-687887362",
+          "name": "セブンイレブン",
+          "category": "convenience",
+          "distance_m": 817
+        },
+        {
+          "id": "osm-way-391864739",
+          "name": "若草公園",
+          "category": "park",
+          "distance_m": 1529
+        }
+      ]
+    },
+    {
+      "id": "osm-way-405983078",
+      "operation": "update",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3938",
+          "receipt": "outputs/facility-reconcile-20260925/pages/abf5265036a56c334353ca4e.json",
+          "sha256": "41bc439f73d6835b3c9d8d91ddc20db7b185a0e68ecb5b61c551b6bd2a0bb50f"
+        }
+      ],
+      "official_store_ids": [
+        "3938"
+      ],
+      "identity": "Reviewed same brand at this branch location within 30 m; original ID and coordinates preserved.",
+      "official_point": [
+        131.4591178,
+        34.1685442
+      ]
+    },
+    {
+      "id": "official-tsuruha-3946",
+      "operation": "addition",
+      "name": "ウォンツ 山口大内千坊店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3946",
+          "receipt": "outputs/facility-reconcile-20260925/pages/5b8bc74f712e03c01a6aca4b.json",
+          "sha256": "fd58ab5233dccc516ada0935ff052d2e287cf99c07c7028466c2660427b55a45"
+        }
+      ],
+      "official_store_ids": [
+        "3946"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-way-465831131",
+          "name": "ウエスタまるき山口大内店",
+          "category": "supermarket",
+          "distance_m": 175
+        },
+        {
+          "id": "osm-way-465851858",
+          "name": "新鮮市場大内店",
+          "category": "supermarket",
+          "distance_m": 252
+        },
+        {
+          "id": "civic-care-3590300137-cabce22f60",
+          "name": "ハートハウス大内脳活性リハビリ",
+          "category": "social_facility",
+          "distance_m": 322
+        },
+        {
+          "id": "civic-care-3570303002-8c692920c3",
+          "name": "ヘルパーステーションおおうち",
+          "category": "social_facility",
+          "distance_m": 398
+        },
+        {
+          "id": "civic-care-3570303036-7427ac11f4",
+          "name": "デイサービスセンター おおうち",
+          "category": "social_facility",
+          "distance_m": 398
+        },
+        {
+          "id": "civic-care-3570302954-006686fd70",
+          "name": "居宅介護支援事業所おおうち",
+          "category": "social_facility",
+          "distance_m": 398
+        },
+        {
+          "id": "osm-way-405965519",
+          "name": "すずき内科クリニック",
+          "category": "clinic",
+          "distance_m": 516
+        },
+        {
+          "id": "osm-way-405965520",
+          "name": "おおうちクリニック",
+          "category": "clinic",
+          "distance_m": 530
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-4518",
+      "operation": "addition",
+      "name": "ウォンツ 山口黄金店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/4518",
+          "receipt": "outputs/facility-reconcile-20260925/pages/91ef45bdfe0adefb27eb9119.json",
+          "sha256": "2d48728a61faaba23631050d3970d562cd436f89db7fbe97acaf2645549565ba"
+        },
+        {
+          "url": "https://www.wants.co.jp/news/open/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/61e215fc369113d7f078d4d3.json",
+          "sha256": "888ffad025fd72f4d993accabac5ff63aa9fe6df58c42b6ca0ab34d1dc951246"
+        }
+      ],
+      "official_store_ids": [
+        "4518"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3570301733-3c7e1cbd9c",
+          "name": "アースサポート山口",
+          "category": "social_facility",
+          "distance_m": 92
+        },
+        {
+          "id": "civic-care-3570303408-cc85ede09f",
+          "name": "アス・ライフ",
+          "category": "social_facility",
+          "distance_m": 120
+        },
+        {
+          "id": "osm-node-1423660416",
+          "name": "私立 中村女子高等学校",
+          "category": "school",
+          "distance_m": 254
+        },
+        {
+          "id": "osm-node-1423654114",
+          "name": "亀山幼稚園",
+          "category": "childcare",
+          "distance_m": 315
+        },
+        {
+          "id": "civic-care-3590300525-57d348c099",
+          "name": "デイサービスきたえるーむ山口中央",
+          "category": "social_facility",
+          "distance_m": 321
+        },
+        {
+          "id": "osm-way-366897705",
+          "name": "山口銀行",
+          "category": "bank",
+          "distance_m": 326
+        },
+        {
+          "id": "civic-care-3570302855-88d8ffb376",
+          "name": "脳活性化デイサービス ポインセチア",
+          "category": "social_facility",
+          "distance_m": 357
+        },
+        {
+          "id": "osm-way-366899552",
+          "name": "樹一会 山口病院",
+          "category": "hospital",
+          "distance_m": 385
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3692",
+      "operation": "addition",
+      "name": "ウォンツ 柳井店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3692",
+          "receipt": "outputs/facility-reconcile-20260925/pages/9adf7f701b8de026f7672cba.json",
+          "sha256": "162ee4e5abff22ff446530498d748bb9fcff0787146f4454e9663ac9213e3457"
+        }
+      ],
+      "official_store_ids": [
+        "3692"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "civic-care-3571200090-c61936240f",
+          "name": "ニチイケアセンター柳井",
+          "category": "social_facility",
+          "distance_m": 215
+        },
+        {
+          "id": "civic-care-3501200012-13954d3d1f",
+          "name": "柳井市地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 231
+        },
+        {
+          "id": "osm-node-1423660163",
+          "name": "県立柳井高等学校",
+          "category": "school",
+          "distance_m": 240
+        },
+        {
+          "id": "osm-node-3951227859",
+          "name": "マクドナルド",
+          "category": "fast_food",
+          "distance_m": 259
+        },
+        {
+          "id": "osm-way-601705748",
+          "name": "柳井市役所",
+          "category": "townhall",
+          "distance_m": 271
+        },
+        {
+          "id": "osm-node-1423659209",
+          "name": "柳井市役所",
+          "category": "townhall",
+          "distance_m": 277
+        },
+        {
+          "id": "civic-care-3571200710-1abd6140a5",
+          "name": "デイサービスセンター一陽",
+          "category": "social_facility",
+          "distance_m": 314
+        },
+        {
+          "id": "osm-node-1423659139",
+          "name": "柳井南町郵便局",
+          "category": "post_office",
+          "distance_m": 325
+        }
+      ]
+    },
+    {
+      "id": "official-tsuruha-3845",
+      "operation": "addition",
+      "name": "ウォンツ フジ柳井店",
+      "sources": [
+        {
+          "url": "https://shop.tsuruha-g.com/3845",
+          "receipt": "outputs/facility-reconcile-20260925/pages/e535e7892a5087947e8da1a0.json",
+          "sha256": "bb4bb4dbf3fd1a78c70178ab45a2d47f6b330a0681d2f14b855daea660a663db"
+        }
+      ],
+      "official_store_ids": [
+        "3845"
+      ],
+      "identity": "Official branch name/address/point; all-category nearest records reviewed without a same-brand existing site.",
+      "operator_group": "chain",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423659112",
+          "name": "柳井きたまち郵便局",
+          "category": "post_office",
+          "distance_m": 170
+        },
+        {
+          "id": "osm-node-1423659207",
+          "name": "柳井市児童館",
+          "category": "community_centre",
+          "distance_m": 326
+        },
+        {
+          "id": "osm-way-1087265031",
+          "name": "市立柳井中学校",
+          "category": "school",
+          "distance_m": 460
+        },
+        {
+          "id": "osm-node-3951222960",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 498
+        },
+        {
+          "id": "osm-node-3951221857",
+          "name": "マックスバリュ",
+          "category": "supermarket",
+          "distance_m": 614
+        },
+        {
+          "id": "civic-care-3571200702-538cb26834",
+          "name": "ヘルパーステーションＡＳＯＫＡやない",
+          "category": "social_facility",
+          "distance_m": 615
+        },
+        {
+          "id": "civic-care-3571200694-15f8056018",
+          "name": "デイサービスセンターＡＳＯＫＡやない",
+          "category": "social_facility",
+          "distance_m": 615
+        },
+        {
+          "id": "civic-care-3571200595-baa893b872",
+          "name": "わたぼうしヘルパーステーション",
+          "category": "social_facility",
+          "distance_m": 652
+        }
+      ]
+    },
+    {
+      "id": "official-soy-stock-karato",
+      "operation": "addition",
+      "name": "SOY STOCK",
+      "operator_group": "independent_local",
+      "sources": [
+        {
+          "url": "https://www.karatoharete.com/soystock",
+          "receipt": "outputs/facility-evidence-20260925/pages/b61ee250963007f7ac2f8295.json",
+          "sha256": "fac184b90d4d210a4d9faa535183c3060c94d249a9ebb7e63e9ffce376b5eedc"
+        },
+        {
+          "url": "https://www.karatoharete.com/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/57e3fd1fa508b1e4edbf5f44.json",
+          "sha256": "fe888c587df89581756c9bfb005c410f37d29aecebfee273ef840f962ba8c4a1"
+        }
+      ],
+      "position": {
+        "url": "https://maps.app.goo.gl/ehgJY5t5Qm9neuaf9",
+        "coordinates": [
+          130.944833,
+          33.9576608
+        ],
+        "method": "place_url_data_not_viewport",
+        "receipt": "outputs/facility-evidence-20260925/followups/ef2f2c32bf15cafff10b457b.json",
+        "sha256": "2c714d3ec43f0f5b8801ab9567ba4e72dcfcfc22758f8d44fe0dcc6af1305a9a"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423653916",
+          "name": "下関中之町郵便局",
+          "category": "post_office",
+          "distance_m": 87
+        },
+        {
+          "id": "civic-care-3570106116-9c65e307d6",
+          "name": "プランセンターはる",
+          "category": "social_facility",
+          "distance_m": 100
+        },
+        {
+          "id": "civic-care-3570106306-5ad9bcaa59",
+          "name": "居宅介護支援事業所そら",
+          "category": "social_facility",
+          "distance_m": 102
+        },
+        {
+          "id": "civic-care-3590109207-238e8190ce",
+          "name": "スマートエイジングラボそらおと",
+          "category": "social_facility",
+          "distance_m": 102
+        },
+        {
+          "id": "osm-node-2749691196",
+          "name": "下関市立大学サテライトキャンパス",
+          "category": "college",
+          "distance_m": 141
+        },
+        {
+          "id": "osm-node-6534587185",
+          "name": "Cafe ＆ Bar nine",
+          "category": "cafe",
+          "distance_m": 142
+        },
+        {
+          "id": "osm-node-11288510330",
+          "name": "敦煌",
+          "category": "restaurant",
+          "distance_m": 161
+        },
+        {
+          "id": "osm-node-2749691198",
+          "name": "浜寿司",
+          "category": "restaurant",
+          "distance_m": 183
+        }
+      ]
+    },
+    {
+      "id": "official-minatoe198",
+      "operation": "addition",
+      "name": "MINATOE198",
+      "operator_group": "independent_local",
+      "sources": [
+        {
+          "url": "https://minatoe198.com/",
+          "receipt": "outputs/facility-evidence-20260925/pages/ef177b8c5a04f3577fc32dac.json",
+          "sha256": "95e2d6bc347f8251a3618e78d3dc40e9b182d6094cade9b843050294303a366b"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1419.0972079503565!2d131.80293084633993!3d34.050530764829894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6fe694d2c91%3A0x5537828f0a463665!2z44CSNzQ1LTAwMzIg5bGx5Y-j55yM5ZGo5Y2X5biC6YqA5bqn77yR5LiB55uuIOW-s-WxseODh-ODg-OCrSBEMg!5e0!3m2!1sja!2sjp!4v1706699102566!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8043643,
+          34.0505388
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/ab840d9ddbe3608501b4602f.json",
+        "sha256": "4ae40758c5aaf7c814a191dbe66f199c1bcce554bfe72f058876f9717e3b73cc"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-way-311221431",
+          "name": "山口銀行",
+          "category": "bank",
+          "distance_m": 10
+        },
+        {
+          "id": "osm-node-3987366363",
+          "name": "(仮)周南市役所",
+          "category": "reference",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-node-12606873239",
+          "name": "小籠包酒場　ジューシー",
+          "category": "bar",
+          "distance_m": 48
+        },
+        {
+          "id": "osm-node-4107697190",
+          "name": "カフェミナ",
+          "category": "cafe",
+          "distance_m": 56
+        },
+        {
+          "id": "osm-node-4107579592",
+          "name": "ポパイ喫茶店",
+          "category": "cafe",
+          "distance_m": 58
+        },
+        {
+          "id": "osm-node-4107640191",
+          "name": "大阪屋台居酒屋満マル",
+          "category": "bar",
+          "distance_m": 58
+        },
+        {
+          "id": "osm-node-4107690499",
+          "name": "パーラーしみず",
+          "category": "cafe",
+          "distance_m": 63
+        },
+        {
+          "id": "osm-node-4107704790",
+          "name": "魚民",
+          "category": "bar",
+          "distance_m": 66
+        }
+      ]
+    },
+    {
+      "id": "official-rokunoya-ogori",
+      "operation": "addition",
+      "name": "ろくの家 小郡店",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://itsuki-inc.com/rokunoya/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1e95b6a7953a5c5d714c5759.json",
+          "sha256": "63eeb5cc4c46b89ebb0e80e56ad91acd36f5614455ac826be7abd77185dca741"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.6808877545536!2d131.39273971548408!3d34.103314522483934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354484d11fffd8e1%3A0x3a0d3610d564e761!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a625bCP6YOh5bqX!5e0!3m2!1sja!2sjp!4v1640254139305!5m2!1sja!2sjp",
+        "coordinates": [
+          131.3949333,
+          34.1033176
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/8d938b5a950c74bc4d6f4211.json",
+        "sha256": "710b5800983447b4c116aaca626becf7470c5c4e3b9129df64648773509fbabf"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-node-1423655219",
+          "name": "小郡郵便局",
+          "category": "post_office",
+          "distance_m": 113
+        },
+        {
+          "id": "civic-care-3570303655-b764d33fb2",
+          "name": "ゆめのいろケアプランセンター",
+          "category": "social_facility",
+          "distance_m": 126
+        },
+        {
+          "id": "osm-way-474110996",
+          "name": "小郡第一総合病院",
+          "category": "hospital",
+          "distance_m": 189
+        },
+        {
+          "id": "osm-node-1631272971",
+          "name": "小郡町在宅介護支援センター",
+          "category": "social_facility",
+          "distance_m": 231
+        },
+        {
+          "id": "civic-care-3560390159-0bbbd181f7",
+          "name": "小郡第一総合病院訪問看護ステーション",
+          "category": "social_facility",
+          "distance_m": 236
+        },
+        {
+          "id": "civic-care-3557680000-fd9c38e453",
+          "name": "山口県厚生農業協同組合連合会 老人保健施設みのり苑",
+          "category": "social_facility",
+          "distance_m": 236
+        },
+        {
+          "id": "osm-way-465864279",
+          "name": "ザ・ビッグ小郡店",
+          "category": "supermarket",
+          "distance_m": 247
+        },
+        {
+          "id": "civic-care-3500300045-4f431f45df",
+          "name": "山口市川西地域包括支援センター",
+          "category": "social_facility",
+          "distance_m": 273
+        }
+      ]
+    },
+    {
+      "id": "official-rokunoya-shunan",
+      "operation": "addition",
+      "name": "ろくの家 周南店",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://itsuki-inc.com/rokunoya/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1e95b6a7953a5c5d714c5759.json",
+          "sha256": "63eeb5cc4c46b89ebb0e80e56ad91acd36f5614455ac826be7abd77185dca741"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.565204203666!2d131.81871171548323!3d34.05502272503047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e73a9ab3f86d%3A0x928cfc4d76ea485c!2z5ZGz5ZmM44Op44O844Oh44Oz5bCC6ZaA5bqXIOOBv-OBneWkqumDjiDlkajljZflupc!5e0!3m2!1sja!2sjp!4v1640265139736!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8209004,
+          34.0550183
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/f558d9a2592bef6bc8136462.json",
+        "sha256": "21efd798a9a403c60f0aa509eede9e312b1b1b568dee08cdd2a53f1cd467daba"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-way-381165992",
+          "name": "ファミリーマート",
+          "category": "convenience",
+          "distance_m": 104
+        },
+        {
+          "id": "osm-node-1631273351",
+          "name": "徳山市いずみ荘",
+          "category": "social_facility",
+          "distance_m": 139
+        },
+        {
+          "id": "osm-node-1631265394",
+          "name": "おあしす",
+          "category": "social_facility",
+          "distance_m": 195
+        },
+        {
+          "id": "osm-node-1631270860",
+          "name": "地域生活支援センターウイング",
+          "category": "social_facility",
+          "distance_m": 195
+        },
+        {
+          "id": "osm-node-1423658251",
+          "name": "愛命会泉原病院",
+          "category": "hospital",
+          "distance_m": 200
+        },
+        {
+          "id": "osm-node-3844054864",
+          "name": "楠木公園",
+          "category": "park",
+          "distance_m": 204
+        },
+        {
+          "id": "osm-node-3891702557",
+          "name": "三戸医院",
+          "category": "clinic",
+          "distance_m": 369
+        },
+        {
+          "id": "civic-care-3570500565-65618ff03b",
+          "name": "あい・周南ケアセンター",
+          "category": "social_facility",
+          "distance_m": 373
+        }
+      ]
+    },
+    {
+      "id": "official-rokunoya-hofu",
+      "operation": "addition",
+      "name": "ろくの家 防府店",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://itsuki-inc.com/rokunoya/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1e95b6a7953a5c5d714c5759.json",
+          "sha256": "63eeb5cc4c46b89ebb0e80e56ad91acd36f5614455ac826be7abd77185dca741"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.739907647319!2d131.576191815483!3d34.0505423252667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544929451fb88b1%3A0x64d32437940a9694!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a626Ziy5bqc5bqX!5e0!3m2!1sja!2sjp!4v1640254091845!5m2!1sja!2sjp",
+        "coordinates": [
+          131.5783805,
+          34.0505379
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/61e702150e4c914bbd4692bb.json",
+        "sha256": "855fcd88ed85ad6456fe5d47c6cc48bcf966dd5ece3ff5956b1a76f5664450e7"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "civic-care-3560690152-1421bf7dc9",
+          "name": "株式会社ピーエー　訪問看護ステーションゆうの風三田尻",
+          "category": "social_facility",
+          "distance_m": 48
+        },
+        {
+          "id": "civic-care-3570601330-7864c0f09a",
+          "name": "株式会社ピーエー デイサービスセンターゆうの風",
+          "category": "social_facility",
+          "distance_m": 48
+        },
+        {
+          "id": "civic-care-3590600296-833aca7974",
+          "name": "巡回サービス ゆうの風三田尻",
+          "category": "social_facility",
+          "distance_m": 48
+        },
+        {
+          "id": "civic-care-3570601181-dfcb6ec1c3",
+          "name": "株式会社ピーエー ヘルパーステーションゆうの風三田尻",
+          "category": "social_facility",
+          "distance_m": 71
+        },
+        {
+          "id": "civic-care-3570601249-650cfcff12",
+          "name": "株式会社ピーエー　ゆうの風三田尻居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 71
+        },
+        {
+          "id": "osm-way-357029138",
+          "name": "ザ・ビッグ",
+          "category": "supermarket",
+          "distance_m": 242
+        },
+        {
+          "id": "osm-node-1423660442",
+          "name": "私立誠英高等学校",
+          "category": "school",
+          "distance_m": 270
+        },
+        {
+          "id": "civic-care-3570602205-2327edf21c",
+          "name": "居宅介護支援事業所 山吹",
+          "category": "social_facility",
+          "distance_m": 292
+        }
+      ]
+    },
+    {
+      "id": "official-rokunoya-kudamatsu",
+      "operation": "addition",
+      "name": "ろくの家 下松店",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://itsuki-inc.com/rokunoya/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1e95b6a7953a5c5d714c5759.json",
+          "sha256": "63eeb5cc4c46b89ebb0e80e56ad91acd36f5614455ac826be7abd77185dca741"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.644634727746!2d131.8595725154825!3d34.027331626489485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e11fc6eeb813%3A0xd28a3f0444497c17!2z44Op44O844Oh44Oz6aOf5aCC44KN44GP44Gu5a625LiL5p2-5bqX!5e0!3m2!1sja!2sjp!4v1640254115876!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8617612,
+          34.0273272
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/a2e26644f99048503ddc2b97.json",
+        "sha256": "b8f86f30f7fcb62332ad2fad5151e44c45009699afd726e233ce22ec1aead308"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-node-3729208427",
+          "name": "3Qカット",
+          "category": "hairdresser",
+          "distance_m": 7
+        },
+        {
+          "id": "osm-way-369091510",
+          "name": "のぞみ医院",
+          "category": "clinic",
+          "distance_m": 44
+        },
+        {
+          "id": "osm-node-3729136425",
+          "name": "のん太鮨",
+          "category": "fast_food",
+          "distance_m": 48
+        },
+        {
+          "id": "civic-care-3570701189-c40eb5429b",
+          "name": "訪問介護ステーションきょうとも",
+          "category": "social_facility",
+          "distance_m": 51
+        },
+        {
+          "id": "osm-node-3729127825",
+          "name": "CoCo壱番屋",
+          "category": "fast_food",
+          "distance_m": 62
+        },
+        {
+          "id": "civic-KD0000900042",
+          "name": "訪問介護ステーションブリスケア",
+          "category": "social_facility",
+          "distance_m": 106
+        },
+        {
+          "id": "civic-KD0000900063",
+          "name": "デイサービスセンターブリスケア",
+          "category": "social_facility",
+          "distance_m": 106
+        },
+        {
+          "id": "civic-KD0000900007",
+          "name": "ル・モンド下松居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 107
+        }
+      ]
+    },
+    {
+      "id": "official-worldplus-yamaguchi-ogori",
+      "operation": "addition",
+      "name": "ワールドプラスジム 山口小郡店",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://www.worldplus-gym.com/shop/yamaguchi-ogori.html",
+          "receipt": "outputs/facility-evidence-20260925/pages/ab505c798ef1423a77401884.json",
+          "sha256": "aed21c17cd266eab2b7a3e859a6db099686ae279cb3f798787aec20fffbb6f04"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.092741340363!2d131.4009718!3d34.1183754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449b9660d1cac9%3A0xfc059a2bb597fbf9!2z44Ov44O844Or44OJ44OX44Op44K544K444Og5bGx5Y-j5bCP6YOh5bqX!5e0!3m2!1sja!2sjp!4v1743991044313!5m2!1sja!2sjp",
+        "coordinates": [
+          131.4009718,
+          34.1183754
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/fbf811710f0e1721f6e84913.json",
+        "sha256": "7811c0bfe272358211a76d39aac7a2cae062a9b38385c282bc9977a17f6c7515"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-node-13041016003",
+          "name": "まるき",
+          "category": "supermarket",
+          "distance_m": 55
+        },
+        {
+          "id": "osm-node-13238355726",
+          "name": "二代目Yutaka",
+          "category": "restaurant",
+          "distance_m": 59
+        },
+        {
+          "id": "osm-node-13040984700",
+          "name": "ケンタッキーフライドチキン",
+          "category": "fast_food",
+          "distance_m": 110
+        },
+        {
+          "id": "osm-node-2253707359",
+          "name": "ローソン",
+          "category": "convenience",
+          "distance_m": 131
+        },
+        {
+          "id": "osm-node-1423655916",
+          "name": "山口学芸大学",
+          "category": "college",
+          "distance_m": 324
+        },
+        {
+          "id": "osm-node-1423656397",
+          "name": "市立上郷小学校",
+          "category": "school",
+          "distance_m": 445
+        },
+        {
+          "id": "osm-node-1423655178",
+          "name": "小郡新町郵便局",
+          "category": "post_office",
+          "distance_m": 499
+        },
+        {
+          "id": "osm-way-813007732",
+          "name": "セブン-イレブン",
+          "category": "convenience",
+          "distance_m": 559
+        }
+      ]
+    },
+    {
+      "id": "official-chaerin-yumetown-tokuyama",
+      "operation": "addition",
+      "name": "韓国料理チェリン ゆめタウン徳山店",
+      "operator_group": "tenant",
+      "sources": [
+        {
+          "url": "https://www.izumi.jp/tenpo/tokuyama/shop/food/chaerin",
+          "receipt": "outputs/facility-evidence-20260925/pages/ec530054eef520c2b4fba335.json",
+          "sha256": "d77a350c1309939e3a346bf3768c879d1236122c4d9e50c442b32a2aa5be4f8c"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.044972157161!2d131.81349001554!3d34.04271747567876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6e6ad5e3527%3A0xf4fea649d4debc89!2z44KG44KB44K_44Km44Oz5b6z5bGx!5e0!3m2!1sja!2sjp!4v1612155823097!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8155655,
+          34.0427361
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/669ffdcadf6486de30b8bcf3.json",
+        "sha256": "5c28091b8f4326a818701f54971cf657435bce40a9a55a7c795a0622298214a7"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "tokuyama",
+          "name": "ゆめタウン徳山",
+          "category": "mall",
+          "distance_m": 11
+        },
+        {
+          "id": "osm-way-312181482",
+          "name": "遠石緑地",
+          "category": "park",
+          "distance_m": 103
+        },
+        {
+          "id": "osm-way-378279929",
+          "name": "スポーツクラブ&スパルネサンス",
+          "category": "sports_centre",
+          "distance_m": 108
+        },
+        {
+          "id": "osm-node-3816821666",
+          "name": "中原医院",
+          "category": "clinic",
+          "distance_m": 155
+        },
+        {
+          "id": "osm-way-92831078",
+          "name": "アルク",
+          "category": "supermarket",
+          "distance_m": 167
+        },
+        {
+          "id": "osm-way-385408131",
+          "name": "青山公園",
+          "category": "park",
+          "distance_m": 205
+        },
+        {
+          "id": "osm-node-1423657476",
+          "name": "市立遠石小学校",
+          "category": "school",
+          "distance_m": 245
+        },
+        {
+          "id": "osm-node-1423661151",
+          "name": "遠石保育園",
+          "category": "childcare",
+          "distance_m": 327
+        }
+      ]
+    },
+    {
+      "id": "official-furdi-tokuyama-deck",
+      "operation": "addition",
+      "name": "ファディー 徳山デッキ",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://furdi.jp/lp/lp06/?studio=tokuyamadeck&gad_source=1",
+          "receipt": "outputs/facility-evidence-20260925/pages/f9ad20b068866aa5c98b0849.json",
+          "sha256": "ef0caf7d11188f411a63173bb702b7e328cb965dbc7b7d2e5a7d95513059ae80"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7498044064882!2d131.80462!3d34.0502885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e700113fafad%3A0x6a5514a75addb5eb!2z44OV44Kh44OH44Kj44O8IOW-s-WxseODh-ODg-OCrQ!5e0!3m2!1sja!2sjp!4v1740025411175!5m2!1sja!2sjp",
+        "coordinates": [
+          131.8046157,
+          34.0502168
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/74b129311b93a2e4b002cd14.json",
+        "sha256": "bbfc820f3066c4d762f3af5f38497db3acb9cf96b979865068c242d1b5fd1193"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-node-3987366363",
+          "name": "(仮)周南市役所",
+          "category": "reference",
+          "distance_m": 18
+        },
+        {
+          "id": "osm-way-311221431",
+          "name": "山口銀行",
+          "category": "bank",
+          "distance_m": 48
+        },
+        {
+          "id": "osm-node-4107640191",
+          "name": "大阪屋台居酒屋満マル",
+          "category": "bar",
+          "distance_m": 55
+        },
+        {
+          "id": "osm-node-4107579592",
+          "name": "ポパイ喫茶店",
+          "category": "cafe",
+          "distance_m": 60
+        },
+        {
+          "id": "osm-node-4107639899",
+          "name": "豊丸水産",
+          "category": "fast_food",
+          "distance_m": 64
+        },
+        {
+          "id": "osm-node-12606873239",
+          "name": "小籠包酒場　ジューシー",
+          "category": "bar",
+          "distance_m": 91
+        },
+        {
+          "id": "osm-node-4107697190",
+          "name": "カフェミナ",
+          "category": "cafe",
+          "distance_m": 96
+        },
+        {
+          "id": "osm-node-4107690499",
+          "name": "パーラーしみず",
+          "category": "cafe",
+          "distance_m": 105
+        }
+      ]
+    },
+    {
+      "id": "official-aruk-nagato",
+      "operation": "addition",
+      "name": "アルク長門店",
+      "operator_group": "regional_chain",
+      "sources": [
+        {
+          "url": "https://www.mrk09.co.jp/area_info/アルク長門店/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/88a9710d3a2491767ce7249a.json",
+          "sha256": "db0f5e6412781634f02e2bbf78545f0f45fa12da9415507eff2412adbb44aed4"
+        },
+        {
+          "url": "https://www.mrk09.co.jp/アルク長門店　新店オープンのお知らせ/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/248eff3264ed660b05623d61.json",
+          "sha256": "5b96dc678263a60c2d7ccbfec3c379735e8bdf54d55023287316b55e6b1c47ae"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.0706700669443!2d131.1844878755991!3d34.37412280066605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35435dce93750405%3A0x7bf705b1a85aac63!2z44CSNzU5LTQxMDEg5bGx5Y-j55yM6ZW36ZaA5biC5p2x5rex5bed77yY77yQ77yT!5e0!3m2!1sja!2sjp!4v1709529752404!5m2!1sja!2sjp",
+        "coordinates": [
+          131.1870628,
+          34.3741184
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/e3efaf726166e26351daf613.json",
+        "sha256": "18289c068b242a526b24c9927c2783889598f78baba400fd2950a9082ecd5f5d"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "osm-way-550383098",
+          "name": "どんどん",
+          "category": "restaurant",
+          "distance_m": 138
+        },
+        {
+          "id": "osm-node-1631277527",
+          "name": "社会福祉法人新永福祉会　恵光苑",
+          "category": "social_facility",
+          "distance_m": 174
+        },
+        {
+          "id": "osm-node-1631279536",
+          "name": "長門市在宅介護支援センター恵光苑",
+          "category": "social_facility",
+          "distance_m": 174
+        },
+        {
+          "id": "osm-way-668017920",
+          "name": "ジョイフル",
+          "category": "restaurant",
+          "distance_m": 231
+        },
+        {
+          "id": "civic-care-3561190020-3738e2b2e4",
+          "name": "訪問看護ステーションこころの樹",
+          "category": "social_facility",
+          "distance_m": 239
+        },
+        {
+          "id": "osm-node-1423661243",
+          "name": "長門市立東深川保育園",
+          "category": "childcare",
+          "distance_m": 283
+        },
+        {
+          "id": "osm-node-4353641970",
+          "name": "ふれあい食堂",
+          "category": "restaurant",
+          "distance_m": 299
+        },
+        {
+          "id": "osm-node-1423658265",
+          "name": "成蹊会岡田病院",
+          "category": "hospital",
+          "distance_m": 301
+        }
+      ]
+    },
+    {
+      "id": "official-lawson-poplar-hikari-mii",
+      "operation": "addition",
+      "name": "ローソン・ポプラ 光三井店",
+      "operator_group": "chain",
+      "sources": [
+        {
+          "url": "https://poplarretail.com/store/store-2620/",
+          "receipt": "outputs/facility-evidence-20260925/pages/40b5af6cba451451b9393330.json",
+          "sha256": "a3b4f92bec3925604da99ba7bb546114a0244dbfb606663dfa99876434ced11a"
+        }
+      ],
+      "position": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.728725997092!2d131.94679499999998!3d33.999500999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451f00753c9657%3A0x3550e8f6c42c8a2f!2z44Ot44O844K944OzIOWFieS4ieS6leW6lw!5e0!3m2!1sja!2sjp!4v1737108430210!5m2!1sja!2sjp",
+        "coordinates": [
+          131.9568625,
+          33.9913449
+        ],
+        "method": "named_embed_place_record",
+        "receipt": "outputs/facility-evidence-20260925/followups/08f1a40be53af9442263a082.json",
+        "sha256": "29206486423be2a7aeac151fe21664a48c7b9b09c5f8d5426ee9928fa1a6b81c"
+      },
+      "identity": "Branch-specific official address and linked named place agree; same-name baseline and nearby-site records reviewed.",
+      "nearest_before": [
+        {
+          "id": "civic-care-3571000664-55b6ece91e",
+          "name": "訪問介護事業所ひだまりの家",
+          "category": "social_facility",
+          "distance_m": 262
+        },
+        {
+          "id": "osm-node-1631268124",
+          "name": "光市三島憩の家",
+          "category": "social_facility",
+          "distance_m": 306
+        },
+        {
+          "id": "civic-care-3571000326-739341bdc0",
+          "name": "ヘルパーステーションおりづる",
+          "category": "social_facility",
+          "distance_m": 322
+        },
+        {
+          "id": "civic-care-3571000631-3dbe13e7dd",
+          "name": "おりづる居宅介護支援事業所",
+          "category": "social_facility",
+          "distance_m": 322
+        },
+        {
+          "id": "osm-node-1423653656",
+          "name": "やよい幼稚園",
+          "category": "childcare",
+          "distance_m": 399
+        },
+        {
+          "id": "civic-care-3571000961-b880c429f6",
+          "name": "美来ケアプランセンター",
+          "category": "social_facility",
+          "distance_m": 424
+        },
+        {
+          "id": "osm-node-1423656362",
+          "name": "市立三井小学校",
+          "category": "school",
+          "distance_m": 446
+        },
+        {
+          "id": "civic-care-35B1000012-9ba838a2cc",
+          "name": "河村循環器神経内科介護医療院",
+          "category": "social_facility",
+          "distance_m": 489
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4002028297",
+      "operation": "update",
+      "identity": "Same tenant name within the named shopping centre, 50 m from its building representative point. Keep original tenant position, do not add a duplicate.",
+      "sources": [
+        {
+          "url": "https://www.izumi.jp/tenpo/kudamatsu/shop/food/omuricetei",
+          "receipt": "outputs/facility-evidence-20260925/pages/2445c4c465b3d35912b2a0a8.json",
+          "sha256": "b430001791f60a1a311941c39f2e41b8e0bc3923483c2e7d3364169b34f7428f"
+        }
+      ]
+    },
+    {
+      "id": "osm-node-10038289417",
+      "operation": "update",
+      "identity": "Branch name and operator-linked branch map agree within 4 m. Other four Yamaguchi branches are distinct.",
+      "sources": [
+        {
+          "url": "https://itsuki-inc.com/rokunoya/",
+          "receipt": "outputs/facility-evidence-20260925/pages/1e95b6a7953a5c5d714c5759.json",
+          "sha256": "63eeb5cc4c46b89ebb0e80e56ad91acd36f5614455ac826be7abd77185dca741"
+        }
+      ]
+    },
+    {
+      "id": "osm-way-305954680",
+      "operation": "update",
+      "identity": "Baseline registered branch is 熊毛店; old point is 1 m from confirmed successor. Successor operator explicitly identifies ミコー熊毛跡地 and January closure. Year 2025 comes from the 2025-11-03 article context; exact day unknown.",
+      "already_excluded": false,
+      "sources": [
+        {
+          "url": "https://marukyu-saiyo.jp/news/丸久熊毛店オープンについて/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/dee04fe2f504a49c6cc71c4f.json",
+          "sha256": "daccb7a4b54a89a09b11a98654bb7612c9c7b3a1561ef3fa9afd75fe6093f621"
+        }
+      ]
+    },
+    {
+      "id": "osm-way-332618123",
+      "operation": "update",
+      "identity": "Historical manufacturer retailer name/address/point agrees within 4 m with the only baseline Wants at this site. Retailer listing is used only for identity, operator's explicit closure overrides its stale operation information.",
+      "already_excluded": false,
+      "sources": [
+        {
+          "url": "https://www.wants.co.jp/news/close_3679/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/0973bf7849214c4e7876c0cc.json",
+          "sha256": "b43bb6cb8241874cc47e3204ce40487763c18a2b8537a85e03c879421adc1d61"
+        },
+        {
+          "url": "https://pkg.navitime.co.jp/kose-shoplist/spot/detail?code=P00C125",
+          "receipt": "outputs/facility-reconcile-20260925/pages/d091e4e0327bd85f1a4894dc.json",
+          "sha256": "45bceb51664762d64e2c28f1b06ff74ff87098ecbee4d7925cc1aa50220039b7"
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4334964790",
+      "operation": "update",
+      "identity": "Historical manufacturer retailer name/address/point agrees within 10 m with baseline; operator confirms closure. Secondary news date is kept separate from the operator's undated closure statement.",
+      "already_excluded": false,
+      "sources": [
+        {
+          "url": "https://www.wants.co.jp/news/close_3694/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/d9c7fd48afc5cefdcd14a68a.json",
+          "sha256": "9a45d85bb32a81aaf7f63c05b44d65da5f83230acade731fbc0b620b7b159404"
+        },
+        {
+          "url": "https://pkg.navitime.co.jp/mochida/spot/detail?code=0000009152",
+          "receipt": "outputs/facility-reconcile-20260925/pages/a1a4f31037ef7348417fae5e.json",
+          "sha256": "c44af4660c00c456bb2f089371c3584e230d602f2937347000b27b1a41984d90"
+        }
+      ]
+    },
+    {
+      "id": "osm-way-1121040363",
+      "operation": "update",
+      "identity": "Already reference/excluded in baseline; same branch and same original classification source. Structure the existing closure and explicit relocation link, not a new closure discovery.",
+      "already_excluded": true,
+      "sources": [
+        {
+          "url": "https://www.wants.co.jp/news/close_3666/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/a721743f62f520d6300e4823.json",
+          "sha256": "e5d04484e3414d07a9af4baee6f04c825661689f85e22e1cb4354bc6cf5aafb0"
+        }
+      ]
+    },
+    {
+      "id": "official-marukyu-kumage",
+      "operation": "amend_existing_addition",
+      "sources": [
+        {
+          "url": "https://marukyu-saiyo.jp/news/丸久熊毛店オープンについて/",
+          "receipt": "outputs/facility-reconcile-20260925/pages/dee04fe2f504a49c6cc71c4f.json",
+          "sha256": "daccb7a4b54a89a09b11a98654bb7612c9c7b3a1561ef3fa9afd75fe6093f621"
+        }
+      ],
+      "identity": "Same previously adopted facility; adds opening-date evidence, not a second facility."
+    }
+  ]
+}
