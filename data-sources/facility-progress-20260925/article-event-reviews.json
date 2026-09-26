@@ -2781,13 +2781,16 @@
       {
         "event_id": "yamaguchi-43926:watts-corner",
         "event_type": "opening",
-        "facility_ids": [],
+        "facility_ids": [
+          "official-watts-46699"
+        ],
         "disposition": "hold",
         "effective_at": null,
-        "reason": "記事はWatts併設を案内。ウォンツ公式も100円ショップ設備を掲載するが、Watts自身の売場ID・地点は未確認。入居先ウォンツを二重追加せず別売場の確認へ。",
+        "reason": "Watts自身の公式店名・店舗ID・住所・店舗地図を照合し、現行売場を掲載。記事の開店予定日から実開店日を確定する判断は保留のまま。",
         "source_urls": [
           "https://yamaguchi-hofu.goguynet.jp/2024/12/15/wants_newopen1219/",
-          "https://shop.tsuruha-g.com/3989"
+          "https://shop.tsuruha-g.com/3989",
+          "https://www.watts-jp.com/shop/46699/"
         ]
       }
     ]

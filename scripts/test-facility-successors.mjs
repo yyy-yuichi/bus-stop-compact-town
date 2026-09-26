@@ -16,6 +16,9 @@ test('Watts parser binds name and ID, never another nearby marker or viewport', 
     + '{id: 47917, name: "ワッツ東須恵店<!-- note -->", lat: 33.989, lng: 131.206}';
   const r = { status: 200, url: 'https://www.watts-jp.com/shop/47917/', html };
   assert.deepEqual(wattsStore(r).coordinates, [131.206, 33.989]);
+  assert.equal(wattsStore({ ...r, html: html.replace('宇部市東須恵768 ウォンツ店内', '山口市嘉川1379-3') }).city, '山口市');
+  assert.equal(wattsStore({ ...r, html: html.replace('宇部市東須恵768 ウォンツ店内', '大島郡周防大島町西三蒲1653-1') }).city, '周防大島町');
+  assert.throws(() => wattsStore({ ...r, html: html.replace('山口県宇部市', '広島県広島市') }));
   assert.throws(() => wattsStore({ ...r, html: html.replace('id: 47917', 'id: 222') }));
   assert.throws(() => wattsStore({ ...r, html: html.replace('ワッツ東須恵店<!-- note -->', '別の支店') }));
   assert.throws(() => wattsStore({ ...r, html: html + '{id: 47917, name: "ワッツ東須恵店", lat: 33.9, lng: 131.2}' }));

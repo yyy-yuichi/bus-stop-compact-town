@@ -1245,20 +1245,30 @@
     {
       "case_id": "case:watts-hofu-imono",
       "name": "防府鋳物師のWatts売場",
-      "facility_ids": [],
+      "facility_ids": [
+        "official-watts-46699"
+      ],
       "related_facility_ids": [
         "official-tsuruha-3989"
       ],
       "issues": [
         {
           "issue_id": "case:watts-hofu-imono:map_action",
-          "impact": "map_action",
+          "impact": "supplemental",
           "priority": "P1",
-          "reason": "入居先公式には100円ショップ設備。記事のWatts名と売場固有の一次情報をつなぐ確認が残る。",
-          "next": "Watts公式の防府市一覧をまとめて照合する。",
+          "reason": "Watts自身の公式店名・店舗ID・住所・店舗地図を照合し、現行売場を掲載。記事の開店予定日から実開店日を確定する判断は保留のまま。",
+          "next": "記事の予定イベントと実開店日を確認できる事後資料が得られた時に補足。現在の売場の再追加はしない。",
           "event_ids": [
             "yamaguchi-43926:watts-corner"
           ]
+        }
+      ],
+      "evidence_refs": [
+        {
+          "path": "data-sources/facility-watts-bulk-20260926/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "e847622ed8a320e42c7a13436d12ed45fa362465a5f53b0fa306830fc833d11e"
         }
       ]
     },
@@ -5220,7 +5230,7 @@
     },
     {
       "event_id": "yamaguchi-43926:watts-corner",
-      "event_hash": "4325205e87f107a58b1e247c1528bfd01b3480f8acaba2ef677628fd97cd211d",
+      "event_hash": "9f663a55520dafba5fd55ef87b37e7f69bb37978eeeb4d84fca420c9d2bc3067",
       "case_id": "case:watts-hofu-imono",
       "issue_id": "case:watts-hofu-imono:map_action"
     },

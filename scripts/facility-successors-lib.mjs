@@ -24,8 +24,9 @@ export function wattsStore(receipt) {
   const coordinates = [Number(marker[4]), Number(marker[3])];
   assert(coordinates[0] > 130 && coordinates[0] < 133 && coordinates[1] > 33 && coordinates[1] < 35);
   const address = field(receipt.html, '住所');
-  assert(address.startsWith('山口県宇部市') && address.includes('店内'));
-  return { id: `official-watts-${id}`, name, address, city: '宇部市', category: 'variety_store',
+  const city = address.match(/^山口県(?:[^市町村]+郡)?([^市町村]+[市町村])/u)?.[1];
+  assert(city, 'Require a Yamaguchi municipality');
+  return { id: `official-watts-${id}`, name, address, city, category: 'variety_store',
     url: receipt.url, coordinates, hours: field(receipt.html, '営業時間'),
     location_method: 'official_marker_exact_shop_id_and_name',
     store_format: htmlText(h1.match(/<i[^>]*>([\s\S]*?)<\/i>/)?.[1] ?? '') || '未記載',
