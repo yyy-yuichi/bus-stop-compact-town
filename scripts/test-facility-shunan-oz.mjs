@@ -44,7 +44,7 @@ test('a public post caption is required rather than an empty profile or login pa
 });
 
 test('new batch preserves every prior overlay record and replay cannot silently replace facts',()=>{
- const historical={...overlay,updates:overlay.updates.slice(0,summary.cumulative_updates),additions:overlay.additions.slice(0,summary.cumulative_additions)};
+ const historical={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,summary.cumulative_updates),additions:overlay.additions.slice(0,summary.cumulative_additions)};
  const prior={...historical,updates:historical.updates.filter(r=>r.id!==rows.update.id),additions:historical.additions.filter(r=>!rows.additions.some(a=>a.id===r.id))};
  assert.equal(hash(prior),summary.before_overlay_hash);
  assert.equal(hash(historical),summary.after_overlay_hash);

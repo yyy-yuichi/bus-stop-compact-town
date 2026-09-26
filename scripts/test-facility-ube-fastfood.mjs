@@ -21,7 +21,7 @@ test('KFC coordinates belong to the identified tenant, never default Tokyo centr
 });
 test('mall polygon is retained in proximity screening and all prior records remain unchanged',()=>{
  assert.equal(geometryDistance([131,34],{type:'MultiPolygon',coordinates:[[[[130.9,33.9],[131.1,33.9],[131.1,34.1],[130.9,34.1],[130.9,33.9]]]]}).distance_m,0);
- const historical={...current,updates:current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
+ const historical={ ...current, checked_at: '2026-09-25', updates: current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
  const before={...historical,additions:historical.additions.filter(r=>!rows.additions.some(x=>x.id===r.id))};
  assert.equal(hash(before),summary.before_overlay_hash);assert.equal(hash(historical),summary.after_overlay_hash);
  assert.equal(hash(rows),summary.adoptions_hash);assert.equal(hash(inputs),summary.inputs_hash);

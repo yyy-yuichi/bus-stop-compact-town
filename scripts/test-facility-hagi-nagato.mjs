@@ -8,7 +8,7 @@ import {SHOPPING_CATEGORIES,categoryOf} from '../src/facilityCatalog.ts';
 import {facilityIconMarkup} from '../src/facilityIcons.ts';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),pub='data-sources/facility-hagi-nagato-20260925';
 const rows=read(pub+'/adoptions.json'),inputs=read(pub+'/review-inputs.json'),summary=read(pub+'/adoption-summary.json'),reviews=read(pub+'/article-reviews.json'),current=read('public/data/facility-current.json');
-const historical={...current,updates:current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
+const historical={ ...current, checked_at: '2026-09-25', updates: current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
 const base=['shopping.geojson','civic-facilities.geojson'].flatMap(f=>read('public/data/'+f).features),applied=applyFacilityCurrent(base,current);
 const get=id=>applied.find(f=>f.id===id);
 test('map selection rejects a viewport, wrong branch, wrong address and repeated marker',()=>{

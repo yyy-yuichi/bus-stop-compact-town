@@ -22,7 +22,7 @@ test('pharmacy service remains traceable without duplicate physical additions',(
 });
 test('published manifest binds the historical reviewed prefix and approval totals',()=>{
  // Later append-only batches must not invalidate or silently modify this checkpoint.
- const checkpoint={...overlay,updates:overlay.updates.slice(0,evidence.cumulative_overlay.updates),additions:overlay.additions.slice(0,evidence.cumulative_overlay.additions)};
+ const checkpoint={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,evidence.cumulative_overlay.updates),additions:overlay.additions.slice(0,evidence.cumulative_overlay.additions)};
  assert.equal(evidence.after_overlay_hash,hash(checkpoint));assert.equal(evidence.decisions_hash,hash(config));
  assert.equal(evidence.evidence.length,70);assert.equal(new Set(evidence.evidence.map(e=>e.id)).size,70);
  assert(evidence.jev.cumulative_records<=3000&&evidence.jev.cumulative_reservation_usd<=1);

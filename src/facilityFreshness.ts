@@ -21,7 +21,7 @@ const allowedChanges = new Set(['name', 'category', 'city', 'address', 'search_n
 
 export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): void {
   const statusForEvent = { closed: 'closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
-  if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || r.checked_at !== checkedAt || !validDate(r.checked_at) || !r.summary?.trim()) throw Error('Invalid freshness event');
+  if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || !validDate(checkedAt) || !validDate(r.checked_at) || r.checked_at > checkedAt || !r.summary?.trim()) throw Error('Invalid freshness event');
   // A current listing is not evidence of an opening date. Never invent one from a check/publication date.
   const precision = r.date_precision ?? (r.event === 'listed' ? 'unknown' : 'day');
   if (!['day', 'month', 'unknown'].includes(precision)) throw Error('Invalid date precision');
@@ -32,7 +32,7 @@ export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): 
   } else if (r.event === 'closed' && precision === 'month') {
     if (typeof r.effective_at !== 'string' || !/^\d{4}-(0[1-9]|1[0-2])$/.test(r.effective_at)) throw Error('Invalid closure month');
   } else if (precision !== 'day' || !validDate(r.effective_at)) throw Error('Invalid freshness event date');
-  if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > checkedAt) throw Error('Future event cannot be applied as completed');
+  if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > r.checked_at) throw Error('Future event cannot be applied as completed');
   if (!Array.isArray(r.sources) || !r.sources.length || r.sources.some(s => !s.title?.trim() || !safeUrl(s.url)) || !Array.isArray(r.limits) || !r.limits.length || r.limits.some(s => typeof s !== 'string' || !s.trim())) throw Error('Missing freshness evidence or limits');
 }
 
@@ -54,7 +54,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
   const additions: ShoppingFeature[] = [];
   for (const f of data.additions) {
     const p = f?.properties;
-    if (f?.type !== 'Feature' || !/^official-[a-z0-9-]+$/.test(String(f.id)) || byId.has(String(f.id)) || additions.some(a => a.id === f.id) || !p || p.duplicate_of !== undefined || !p.name?.trim() || !p.city?.trim() || !p.official_address?.trim() || !safeUrl(p.official_url) || !categories.has(p.category ?? '') || p.source !== '店舗公式情報' || p.license !== 'official-published-facts' || p.verification_status !== 'official_current_listing' || p.verified_at !== data.checked_at || p.source_timestamp !== data.checked_at || !p.location_verification?.trim()) throw Error('Invalid official facility addition');
+    if (f?.type !== 'Feature' || !/^official-[a-z0-9-]+$/.test(String(f.id)) || byId.has(String(f.id)) || additions.some(a => a.id === f.id) || !p || p.duplicate_of !== undefined || !p.name?.trim() || !p.city?.trim() || !p.official_address?.trim() || !safeUrl(p.official_url) || !categories.has(p.category ?? '') || p.source !== '店舗公式情報' || p.license !== 'official-published-facts' || p.verification_status !== 'official_current_listing' || !validDate(p.verified_at) || p.verified_at > data.checked_at || p.source_timestamp !== p.verified_at || p.freshness_review?.checked_at !== p.verified_at || !p.location_verification?.trim()) throw Error('Invalid official facility addition');
     if (!Array.isArray(p.source_ids) || !p.source_ids.length || p.source_ids.some(id => !/^official:[a-z0-9:-]+$/.test(id) || sourceIds.has(id)) || new Set(p.source_ids).size !== p.source_ids.length) throw Error('Duplicate or invalid new source ID');
     if (f.geometry?.type !== 'Point' || p.geometry_kind !== 'representative_point' || f.geometry.coordinates.length !== 2 || !f.geometry.coordinates.every(Number.isFinite) || f.geometry.coordinates[0] < 130 || f.geometry.coordinates[0] > 133 || f.geometry.coordinates[1] < 33 || f.geometry.coordinates[1] > 35) throw Error('Invalid official position');
     validateFreshnessReview(p.freshness_review!, data.checked_at);

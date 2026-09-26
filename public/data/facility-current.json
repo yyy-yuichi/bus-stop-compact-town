@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-25",
+  "checked_at": "2026-09-26",
   "updates": [
     {
       "id": "osm-way-475283671",
@@ -1791,6 +1791,141 @@
         "limits": [
           "店舗代表点。建物入口・階移動・徒歩動線は未確認。",
           "公式掲載確認でありリアルタイム営業の保証ではありません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4820384258",
+      "expected": {
+        "name": "セブンイレブン",
+        "category": "convenience",
+        "source_ids": [
+          "node/4820384258"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5347947,
+            34.0495585
+          ]
+        }
+      },
+      "changes": {
+        "name": "セブン-イレブン 防府植松店",
+        "city": "防府市",
+        "address": "山口県防府市大字植松252-1",
+        "search_names": "セブン-イレブン 防府植松店 セブンイレブン"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-26",
+        "summary": "店舗入口の閉店掲示写真を実見し、2024年1月31日の事後記事、同名・同住所の閉店地点と照合。旧点・IDを保持して通常候補から除外。",
+        "sources": [
+          {
+            "title": "店頭の閉店掲示写真（号外NET掲載）",
+            "url": "https://yamaguchi-hofu.goguynet.jp/wp-content/uploads/sites/232/2024/01/IMG_0595.jpeg"
+          },
+          {
+            "title": "閉店後の現地報道",
+            "url": "https://yamaguchi-hofu.goguynet.jp/2024/01/31/closed_seven31/"
+          },
+          {
+            "title": "旧店舗名・住所・地点の照合",
+            "url": "https://map.yahoo.co.jp/v3/place/xYvDiopqVVA"
+          }
+        ],
+        "limits": [
+          "写真の閉店表示には日付がなく、記事日を閉店日へ流用しない。",
+          "元の地図ID・座標は保持。現在の跡地利用は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-376604899",
+      "expected": {
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "source_ids": [
+          "way/376604899"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7981327,
+            34.0651728
+          ]
+        }
+      },
+      "changes": {
+        "name": "セブン-イレブン 周南新宿通6丁目店",
+        "city": "周南市",
+        "search_names": "セブン-イレブン 周南新宿通6丁目店 セブンイレブン"
+      },
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-07-28",
+        "checked_at": "2026-09-26",
+        "summary": "8月2日の事後記事に掲載された店舗入口の閉店掲示と、看板撤去・駐車場封鎖後の写真を実見。既存支店名とファディ隣接の立地を照合。",
+        "sources": [
+          {
+            "title": "店舗入口の閉店掲示写真（号外NET掲載）",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_170849-1280x960.jpg"
+          },
+          {
+            "title": "看板撤去後の店舗外観写真",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/wp-content/uploads/sites/40/2026/08/IMG_20260802_1708462.jpg"
+          },
+          {
+            "title": "日付・店舗を特定した事後報道",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2026/08/02/seveneleven-shinjyuku6choume/"
+          }
+        ],
+        "limits": [
+          "年月日は記事本文による補完を含む。写真単独で年まで読めたとは扱わない。",
+          "既存の店舗ID・座標を保持。跡地の現在用途は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-11548197840",
+      "expected": {
+        "name": "セブン-イレブン 湯田温泉スマ―トインタ―店",
+        "category": "convenience",
+        "source_ids": [
+          "node/11548197840"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4658262,
+            34.1409343
+          ]
+        }
+      },
+      "changes": {
+        "city": "山口市",
+        "address": "山口県山口市吉田2834-1",
+        "search_names": "セブン-イレブン 湯田温泉スマ―トインタ―店 セブンイレブン 湯田温泉スマートインター店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-26",
+        "summary": "現行公式店舗案内の同じ支店名・住所・電話を確認。既存ID・座標を保持して自治体・住所を補完。",
+        "sources": [
+          {
+            "title": "公式支店別店舗案内",
+            "url": "https://seven-eleven.areamarker.com/711map/info/532027"
+          }
+        ],
+        "limits": [
+          "2024年1月25日の開店日は記事時点の予定であり、実施日の一次資料は未取得。",
+          "既存代表点を保持しており、入口の再測定はしていない。"
         ]
       }
     }
@@ -18051,6 +18186,115 @@
         "coordinates": [
           132.223356,
           34.168731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-seven-559931",
+      "properties": {
+        "name": "セブン-イレブン 宇部常盤台2丁目店",
+        "city": "宇部市",
+        "address": "山口県宇部市常盤台2丁目13-5",
+        "official_address": "山口県宇部市常盤台2丁目13-5",
+        "official_url": "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:seven:559931"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "セブン-イレブン 宇部常盤台2丁目店 セブンイレブン コンビニ",
+        "location_verification": "公式店舗画面の支店名・住所・電話と一致するYahoo!マップの店舗ID・同名道案内目的地を照合。地図の表示中心ではない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の支店別現行案内と所在地・店舗地点を照合して掲載。過去の開店・移転実施日は未確定。",
+          "sources": [
+            {
+              "title": "現在の公式支店案内",
+              "url": "https://seven-eleven.areamarker.com/711map/info/559931?sej_nwshp=1"
+            },
+            {
+              "title": "現店舗・地点の照合",
+              "url": "https://map.yahoo.co.jp/v3/place/1FF5Ah7nNXU"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、営業時間のリアルタイム保証ではありません。",
+            "座標は同名・同住所・同電話のYahoo!マップ店舗代表点。セブン公式の座標データは取得できておらず、公式由来の座標とは扱わない。",
+            "記事の2026年7月9日は予定日。実際の開店日とは分けて現行掲載のみ反映。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.275469,
+          33.9535176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-seven-misato3",
+      "properties": {
+        "name": "セブン-イレブン 下松美里町3丁目店",
+        "city": "下松市",
+        "address": "山口県下松市美里町3丁目17-1",
+        "official_address": "山口県下松市美里町3丁目17-1",
+        "official_url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/",
+        "category": "convenience",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:seven:misato3"
+        ],
+        "source_timestamp": "2026-09-26",
+        "verified_at": "2026-09-26",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "セブン-イレブン 下松美里町3丁目店 セブンイレブン コンビニ",
+        "location_verification": "現行公式採用案内の支店名・住所に結びついた勤務地座標。新支店名・同住所のGoogle店舗地点と20m以内、商工会議所の現行取扱店一覧にも掲載。旧店の座標とは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-26",
+          "summary": "公式の支店別現行案内と所在地・店舗地点を照合して掲載。過去の開店・移転実施日は未確定。",
+          "sources": [
+            {
+              "title": "現在の公式支店案内",
+              "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/ChugokuShikoku/1327399/"
+            },
+            {
+              "title": "現店舗・地点の照合",
+              "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d6613.75774547288%212d131.8691641%213d34.021319999999996%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x3544e19ccab3567b%3A0xc98b75042994dd9f%212z44K744OW44OzLeOCpOODrOODluODsyDkuIvmnb7ol6TlhYnnlLox5LiB55uu5bqX%215e0%213m2%211sja%212sjp%214v1758282662373%215m2%211sja%212sjp"
+            },
+            {
+              "title": "現店舗・地点の照合",
+              "url": "https://kudamatsu-cci.or.jp/premiumticket_page/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、営業時間のリアルタイム保証ではありません。",
+            "公式採用ページの勤務地代表点。売場入口・徒歩動線は未確認。",
+            "記事当時は旧藤光町店を指していた地図の現在応答が美里町へ移っている。旧店の元座標・旧店IDの確定には使わない。",
+            "2025年9月25日の移転開店は事前掲示の予定。現在掲載は確認できるが実施日の一次履歴は未取得。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86067894,
+          34.02519091
         ]
       }
     }

@@ -35,7 +35,7 @@ test('four relocated facilities have their own sourced point, not the former com
     assert(statuses.some(row => row.graduate_id === decision.graduate_id && row.map_feature_id === feature.id));
   }
   assert.equal(overlay.additions.filter(row => statuses.some(status => status.map_feature_id === row.id)).length, 8);
-  assert.equal(hash({ ...overlay, updates: overlay.updates.slice(0, 24), additions: overlay.additions.slice(0, 137) }), earlier.after_overlay_hash);
+  assert.equal(hash({ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0, 24), additions: overlay.additions.slice(0, 137) }), earlier.after_overlay_hash);
 });
 
 test('unresolved closure candidates stay unchanged', () => {

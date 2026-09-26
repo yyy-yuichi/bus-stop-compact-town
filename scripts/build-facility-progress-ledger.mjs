@@ -160,7 +160,7 @@ const localCounts = Object.fromEntries([...new Set(decisions.map(row => row.deci
   [status, decisions.filter(row => row.decision === status).length]));
 writeJson(`${publicOut}/focus-review.json`, {checked_at: '2026-09-25', graduates: graduateReview, closures: closureReview});
 const summary = {
-  checked_at: '2026-09-25',
+  checked_at: overlay.checked_at,
   baseline: {
     total: baseline.length, reflected_updates: updateIds.size, explicitly_held: holdIds.size,
     not_attested_complete: baseline.length - updateIds.size - holdIds.size,

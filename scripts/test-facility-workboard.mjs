@@ -2,7 +2,7 @@ import {operatorLinkHints,enrichRoutingInputs} from './facility-routing-lib.mjs'
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {hash} from './jev-batch.mjs';import {groupCandidates,operatorHint,buildWorkboard} from './facility-workboard-lib.mjs';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),pub='data-sources/facility-workboard-20260925';
 const index=read('data-sources/facility-progress-20260925/article-index.json'),reviews=read('data-sources/facility-progress-20260925/article-event-reviews.json'),overlay=read('public/data/facility-current.json'),metadata=read(pub+'/article-work-inputs.json').articles,cases=read(pub+'/case-reviews.json');
-const run=(c=cases,r=reviews,m=metadata)=>buildWorkboard(index,r,overlay,m,c,'2026-09-25');
+const run=(c=cases,r=reviews,m=metadata)=>buildWorkboard(index,r,overlay,m,c,overlay.checked_at);
 const article=(key,city='宇部市',name='店舗A',address=null)=>({article_key:key,city,name_candidates:[name],address_hint:address,published_at:'2026-09-01',jev_event:'opening',official_link_hint_ids:[],existing_name_hint_ids:[]});
 test('same-city names can group for review but never establish identity; cross-city names stay separate',()=>{
  const g=groupCandidates([article('a'),article('b'),article('c','防府市')],new Set());assert.equal(g.length,2);assert.equal(g[0].article_count,2);
@@ -81,4 +81,10 @@ test('reuse and operator batches precede regional batches without losing or comp
  const keys=r.batchRows.flatMap(b=>b.article_keys);assert.equal(keys.length,new Set(keys).size);assert.equal(keys.length,r.summary.unreviewed.articles);
  assert(r.candidates.filter(g=>g.operator_hint_basis==='linked_domain_lookup_only').every(g=>g.identity_status==='unverified_candidate_group'));
  assert.deepEqual(r.summary.article_history,read(pub+'/summary.json').article_history);
+});
+
+test('past resolved evidence survives later batches but future and invalid dates are rejected',()=>{
+ const c=structuredClone(cases),i=c.cases.find(c=>c.issues.some(i=>i.impact==='resolved')).issues.find(i=>i.impact==='resolved');
+ assert.doesNotThrow(()=>buildWorkboard(index,reviews,overlay,metadata,c,'2026-09-27'));
+ for(const date of ['2026-09-28','2026-02-30','invalid',undefined]){i.resolution.checked_at=date;assert.throws(()=>run(c));}
 });

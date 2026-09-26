@@ -13,7 +13,7 @@ test('six separate tenants are discoverable without duplicating already listed M
  assert.equal(batch.additions.length,6);assert.equal(new Set(batch.additions.map(f=>f.id)).size,6);
  for(const f of batch.additions){assert.deepEqual(current.find(x=>x.id===f.id),f);assert(facilityAvailable(f));assert(searchPlaces(f.properties.name,[],current).facilities.some(x=>x.id===f.id));assert(prepareFacilities(current).some(x=>x.facility.id===f.id));assert.equal(f.properties.freshness_review.effective_at,null);}
  for(const id of ['official-mcdonalds-35538','official-autobacs-380064','official-halows-nishikiwa','official-tsuruha-10049'])assert.equal(current.filter(f=>f.id===id).length,1);
- const before={...overlay,updates:overlay.updates.slice(0,30),additions:overlay.additions.slice(0,173)},after={...before,additions:[...before.additions,...batch.additions]};
+ const before={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,173)},after={...before,additions:[...before.additions,...batch.additions]};
  assert.equal(hash(before),e.before_overlay_hash);assert.equal(hash(after),e.after_overlay_hash);assert.equal(hash(batch),e.batch_hash);assert.equal(hash(inputs),e.inputs_hash);
  assert.deepEqual(current.find(f=>f.id==='osm-way-477623030'),base.find(f=>f.id==='osm-way-477623030'));
  assert.deepEqual(current.find(f=>f.id==='official-tsuruha-10049').geometry.coordinates,[131.33282355062036,33.958665617333054]);

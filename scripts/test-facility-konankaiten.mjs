@@ -16,7 +16,7 @@ test('new car-service category reaches map, search and walking without changing 
  assert.equal(mapFacilities(current,['repair'],null,'konan',walking).length,0);
  for(const old of ['osm-way-477623030','osm-way-465881162','osm-way-1236531275'])assert.deepEqual(get(old),base.find(f=>f.id===old));
  assert(facilityAvailable(get('official-mcdonalds-35538')));
- const historical={...overlay,updates:overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)};
+ const historical={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)};
  assert.equal(hash(historical),evidence.before_overlay_hash);
  const after={...historical,additions:[...historical.additions,...batch.additions]};assert.equal(hash(after),evidence.after_overlay_hash);
  assert.deepEqual(after.additions.at(-1),f);assert.equal(hash(batch),evidence.batch_hash);assert.equal(hash(inputs),evidence.reviewed_inputs_hash);

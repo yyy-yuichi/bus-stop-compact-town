@@ -685,6 +685,43 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:shunan-115609:old-relocation",
+    "name": "旧セブン-イレブン 下松藤光町1丁目店",
+    "facility_ids": [],
+    "related_facility_ids": [
+      "official-seven-misato3"
+    ],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 3,
+        "hash": "a9fdf7275acc96b75fefd05bf30b62b50c8515c3d733389d8539996d5f623646"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:shunan-115609:old-relocation:map_action",
+        "impact": "map_action",
+        "priority": "P1",
+        "reason": "旧藤光町1丁目店から移転する店頭掲示は実見。記事の旧店用地図リンクは現在新店を返すため、旧点の確定・旧施設の閉店処理は保留。",
+        "next": "旧店を指す固定住所・建物資料を確認。移動済み地図リンクや新店座標で代用しない。",
+        "event_ids": [
+          "shunan-115609:old-relocation"
+        ]
+      }
+    ],
+    "status": "map_action",
+    "priority": "P1",
+    "article_keys": [
+      "shunan-115609"
+    ],
+    "held_event_ids": [
+      "shunan-115609:old-relocation"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:shunan-90075:774",
     "name": "774徳山店（併設boutiqueを含む）",
     "facility_ids": [],
@@ -1982,6 +2019,41 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "case:kaiten-462915:closure",
+    "name": "旧セブン-イレブン キヨスクJR宇部新川駅店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "2c66132d2fe909d1177b83634a9471001e33a7ac46560d4da3599de0fffba603"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-462915:closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "2024年2月28日閉店の二次報道。店舗名付き旧地点周辺に元施設IDはなく、現行JR公式一覧にも不在だが、それだけで一次閉店履歴を確定しない。",
+        "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
+        "event_ids": [
+          "kaiten-462915:closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-462915"
+    ],
+    "held_event_ids": [
+      "kaiten-462915:closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "case:kaiten-486571:opening-date",
     "name": "現在の同名同住所施設は公式照合済み。記事の歴史的開店日は既存掲載では未確認のため補完項目として保持。",
     "facility_ids": [
@@ -2050,6 +2122,41 @@
     ],
     "held_event_ids": [
       "kaiten-496981:old-daiso-closure"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "case:kaiten-517166:closure",
+    "name": "旧セブン-イレブン 山口中央3丁目店",
+    "facility_ids": [],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 1,
+        "hash": "e264d9df4fd6d41b72f0510d33d28ca41048da94509fa82fbca87d97aeaf7a98"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "case:kaiten-517166:closure:historical_only",
+        "impact": "historical_only",
+        "priority": "P3",
+        "reason": "2024年8月29日閉店の二次報道。住所地図の100m以内に元の施設なし。店舗固有の一次閉店資料は未取得。",
+        "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
+        "event_ids": [
+          "kaiten-517166:closure"
+        ]
+      }
+    ],
+    "status": "historical_only",
+    "priority": "P3",
+    "article_keys": [
+      "kaiten-517166"
+    ],
+    "held_event_ids": [
+      "kaiten-517166:closure"
     ],
     "supplemental_also_pending": false
   },
@@ -4921,6 +5028,80 @@
     "supplemental_also_pending": false
   },
   {
+    "case_id": "facility:official-seven-559931:opening",
+    "name": "セブン-イレブン 宇部常盤台2丁目店",
+    "facility_ids": [
+      "official-seven-559931"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 2,
+        "hash": "417af79028e737f3c5dba71e5226893e77662586ac092f0eaf584724dcd11988"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-seven-559931:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現行公式掲載は反映済み。2026年7月9日の予定どおりの開店実施日を示す一次履歴は未取得。",
+        "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
+        "event_ids": [
+          "ube-82916:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "ube-82916"
+    ],
+    "held_event_ids": [
+      "ube-82916:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:official-seven-misato3:opening",
+    "name": "セブン-イレブン 下松美里町3丁目店",
+    "facility_ids": [
+      "official-seven-misato3"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 4,
+        "hash": "af461878d61be7a8f443749074323531e6420ea339726019bba662cdae08fe64"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:official-seven-misato3:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "新店は現行掲載済み。掲示の2025年9月25日7時は予定で、実施日の一次履歴は未取得。",
+        "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
+        "event_ids": [
+          "shunan-115609:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "shunan-115609"
+    ],
+    "held_event_ids": [
+      "shunan-115609:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
     "case_id": "facility:official-shizquya-tokuyama-deck",
     "name": "甘味処 しづくや",
     "facility_ids": [
@@ -5309,6 +5490,43 @@
     "held_event_ids": [
       "kaiten-581208:opening",
       "ube-82059:opening"
+    ],
+    "supplemental_also_pending": false
+  },
+  {
+    "case_id": "facility:osm-node-11548197840:opening",
+    "name": "セブン-イレブン 湯田温泉スマ―トインタ―店",
+    "facility_ids": [
+      "osm-node-11548197840"
+    ],
+    "related_facility_ids": [],
+    "evidence_refs": [
+      {
+        "path": "data-sources/facility-seven-20260926/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 5,
+        "hash": "797db56175e4d4b75bd6c53c264fdf26a563ce0820cc50fb8d9482fd073bcdf0"
+      }
+    ],
+    "issues": [
+      {
+        "issue_id": "facility:osm-node-11548197840:opening:supplemental",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現在営業施設として公式確認・地図補完済み。2024年1月25日の実際の開店日を示す一次原本は未取得。",
+        "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
+        "event_ids": [
+          "yamaguchi-25426:opening"
+        ]
+      }
+    ],
+    "status": "supplemental",
+    "priority": "P3",
+    "article_keys": [
+      "yamaguchi-25426"
+    ],
+    "held_event_ids": [
+      "yamaguchi-25426:opening"
     ],
     "supplemental_also_pending": false
   },

@@ -13,9 +13,9 @@ const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 assert.equal(raw.length, 7764);
-assert.equal(current.length, 8065);
-assert.equal(patch.updates.length, 41);
-assert.equal(patch.additions.length, 301);
+assert.equal(current.length, 8067);
+assert.equal(patch.updates.length, 44);
+assert.equal(patch.additions.length, 303);
 assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
@@ -37,9 +37,9 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 9);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 11);
 assert.equal(current.filter(f => f.properties.duplicate_of).length, 1);
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 10);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, 12);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -47,7 +47,7 @@ for (const f of patch.additions) {
   assert.equal(freshnessLabel(f), f.properties.freshness_review.event === 'listed' ? '公式掲載確認' : '開店・掲載確認');
   if (f.properties.freshness_review.event === 'listed') assert.equal(f.properties.freshness_review.effective_at, null);
 }
-assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 286);
+assert.equal(patch.additions.filter(f => f.properties.freshness_review.event === 'listed').length, 288);
 const miko = get('osm-way-305954680'), oldWants = get('osm-way-332618123');
 assert(!facilityAvailable(miko) && !facilityAvailable(oldWants));
 assert.equal(miko.properties.freshness_review.effective_at, '2025-01');
@@ -137,3 +137,11 @@ const loader = fs.readFileSync('src/shoppingData.ts', 'utf8');
 assert(loader.includes('data/facility-current.json') && loader.includes('applyFacilityCurrent(collections.flat(), reviews)'));
 assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(facilityAvailable)'));
 console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: current.filter(f=>f.properties.freshness_review?.status==='closed').length, reviewed_duplicate_records: current.filter(f=>f.properties.duplicate_of).length, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));
+
+const later = structuredClone(patch); later.checked_at = '2026-09-27';
+assert.deepEqual(applyFacilityCurrent(raw, later), current, 'A later batch preserves actual earlier check dates');
+assert.throws(() => validateFreshnessReview({...closed.properties.freshness_review, checked_at:'2026-09-25',effective_at:'2026-09-26'}, '2026-09-27'));
+reject(p => p.updates[0].review.checked_at = '2026-09-27');
+reject(p => p.additions[0].properties.verified_at = '2026-09-27');
+reject(p => p.additions[0].properties.source_timestamp = '2026-09-24');
+reject(p => p.additions[0].properties.freshness_review.checked_at = '2026-09-24');

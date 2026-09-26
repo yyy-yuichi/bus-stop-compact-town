@@ -7,7 +7,7 @@ import {applyFacilityCurrent} from '../src/facilityFreshness.ts';
 import {searchPlaces} from '../src/placeSearch.ts';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),pub='data-sources/facility-dining-chains-20260925';
 const rows=read(pub+'/adoptions.json'),inputs=read(pub+'/review-inputs.json'),summary=read(pub+'/adoption-summary.json'),reviews=read(pub+'/article-reviews.json'),current=read('public/data/facility-current.json');
-const historical={...current,updates:current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
+const historical={ ...current, checked_at: '2026-09-25', updates: current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
 const base=['shopping.geojson','civic-facilities.geojson'].flatMap(f=>read('public/data/'+f).features),applied=applyFacilityCurrent(base,current),get=id=>applied.find(f=>f.id===id);
 test('branch parsing ignores address-centre coordinates and rejects conflicting or wrong shops',()=>{
  const spec=rows.point_reviews[0].spec,j={code:spec.code,name:spec.name,addressName:spec.address,lat:'33.977647',lon:'131.177153',detailAddress:{coord:{lat:122318427,lon:472236379}}};

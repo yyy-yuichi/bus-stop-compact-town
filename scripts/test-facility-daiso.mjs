@@ -3,7 +3,7 @@ import {hash} from './jev-batch.mjs';import {daisoStore} from './facility-daiso-
 const R=f=>JSON.parse(fs.readFileSync(f,'utf8')),p='data-sources/facility-daiso-20260925',e=R(p+'/adoption-evidence.json'),rows=R(p+'/reviewed-stores.json'),overlay=R('public/data/facility-current.json'),reviews=R(p+'/article-reviews.json');
 test('DAISO directory reconciles 48 shops with 47 additions and preserves previous state',()=>{
  assert.equal(rows.length,47);assert.equal(new Set(e.directory_ids).size,48);assert.equal(new Set(rows.map(r=>r.id)).size,47);
- const checkpoint={...overlay,updates:overlay.updates.slice(0,30),additions:overlay.additions.slice(0,237)};
+ const checkpoint={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,237)};
  assert.equal(hash(checkpoint),e.after_overlay_hash);assert.equal(hash({...checkpoint,additions:checkpoint.additions.slice(0,190)}),e.before_overlay_hash);
  for(const r of rows){const f=overlay.additions.find(f=>f.id===r.id);assert.deepEqual(f.geometry.coordinates,r.point);assert.equal(f.properties.city,r.city);assert.equal(f.properties.official_address,r.address);assert.equal(f.properties.freshness_review.effective_at,null);}
  assert.equal(overlay.additions.filter(f=>f.id==='official-daiso-005565').length,1);assert.equal(rows.find(r=>r.id==='official-daiso-008139').city,'平生町');

@@ -5,7 +5,7 @@ test('county directory adds eleven branches once and leaves twelve distinct bran
  assert.equal(rows.length,11);assert.equal(new Set(e.directory_ids).size,12);assert.equal(new Set(rows.map(r=>r.id)).size,11);
  for(const r of rows){const f=overlay.additions.find(f=>f.id===r.id);assert.deepEqual(f.geometry.coordinates,r.coordinates);assert.equal(f.properties.official_address,r.address);assert.equal(f.properties.freshness_review.effective_at,null);assert(f.properties.freshness_review.sources.some(s=>s.url===r.url));}
  assert.equal(overlay.additions.filter(f=>f.id==='official-secondstreet-31983').length,1);
- const checkpoint={...overlay,updates:overlay.updates.slice(0,30),additions:overlay.additions.slice(0,190)};
+ const checkpoint={ ...overlay, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,190)};
  assert.equal(hash(checkpoint),e.after_overlay_hash);assert.equal(hash({...checkpoint,additions:checkpoint.additions.slice(0,179)}),e.before_overlay_hash);
  assert(overlay.additions.find(f=>f.id==='official-secondstreet-32241').properties.freshness_review.limits.some(s=>s.includes('西館')));
 });
