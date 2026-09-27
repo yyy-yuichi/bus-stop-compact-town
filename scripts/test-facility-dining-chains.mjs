@@ -38,7 +38,9 @@ test('existing hama ID stays intact and co-located brands are one searchable fac
  for(const row of rows.additions){assert.equal(row.properties.freshness_review.effective_at,null);assert.equal(row.properties.freshness_review.event,'listed');}
  assert(get('official-sushiro-2516').properties.freshness_review.limits.some(t=>t.includes('2022')&&t.includes('2026')));
  const priorApplied=applyFacilityCurrent(base,{...historical,updates:historical.updates.filter(r=>!rows.updates.some(x=>x.id===r.id)),additions:historical.additions.filter(r=>!rows.additions.some(x=>x.id===r.id))});
- for(const p of rows.point_reviews)for(const n of p.compared_candidates)if(n.id!==before.id)assert.deepEqual(get(n.id),priorApplied.find(f=>f.id===n.id));
+ // Compare this historical batch only; later verified updates may correct nearby shops.
+ const historicalApplied=applyFacilityCurrent(base,historical);
+ for(const p of rows.point_reviews)for(const n of p.compared_candidates)if(n.id!==before.id)assert.deepEqual(historicalApplied.find(f=>f.id===n.id),priorApplied.find(f=>f.id===n.id));
 });
 test('nine articles retain nine unresolved opening reports and four resolved listing duplicates',()=>{
  assert.equal(reviews.length,9);const events=reviews.flatMap(r=>r.events);assert.equal(events.length,18);

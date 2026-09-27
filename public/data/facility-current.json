@@ -4767,6 +4767,3595 @@
           "公園全体の改装実施日を記載。愛称単独の変更日を確定したものではありません。"
         ]
       }
+    },
+    {
+      "id": "osm-node-2527628179",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/2527628179"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1766597,
+            34.1580033
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ川西店",
+        "address": "山口県岩国市川西二丁目７番１６号",
+        "city": "岩国市",
+        "search_names": "マルキュウ マルキュウ川西店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%b7%9d%e8%a5%bf%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-282445782",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "way/282445782"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.960957,
+            34.2631281
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート広瀬店",
+        "address": "山口県岩国市錦町広瀬９－３",
+        "city": "岩国市",
+        "search_names": "サンマート サンマート広瀬店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e5%ba%83%e7%80%ac%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-315851153",
+      "expected": {
+        "name": "サンマート 美和店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/315851153"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.0892964,
+            34.2226308
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート美和店",
+        "address": "山口県岩国市美和町渋前１５４４番地１",
+        "city": "岩国市",
+        "search_names": "サンマート 美和店 サンマート美和店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e7%be%8e%e5%92%8c%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-2523081786",
+      "expected": {
+        "name": "中央フード山手店",
+        "category": "supermarket",
+        "source_ids": [
+          "node/2523081786"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.2148119,
+            34.1656916
+          ]
+        }
+      },
+      "changes": {
+        "name": "中央フード山手店",
+        "address": "山口県岩国市山手町2丁目7-9",
+        "city": "岩国市",
+        "search_names": "中央フード山手店 中央フード山手店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e5%b1%b1%e6%89%8b%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-2508259669",
+      "expected": {
+        "name": "中央フード平田店",
+        "category": "supermarket",
+        "source_ids": [
+          "node/2508259669"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1921333,
+            34.1391329
+          ]
+        }
+      },
+      "changes": {
+        "name": "中央フード平田店",
+        "address": "山口県岩国市南岩国町2丁目76-27",
+        "city": "岩国市",
+        "search_names": "中央フード平田店 中央フード平田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e5%b9%b3%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-309139911",
+      "expected": {
+        "name": "中央フード",
+        "category": "supermarket",
+        "source_ids": [
+          "way/309139911"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.0522721,
+            34.0875678
+          ]
+        }
+      },
+      "changes": {
+        "name": "中央フード高森店",
+        "address": "山口県岩国市周東町下久原1029-1",
+        "city": "岩国市",
+        "search_names": "中央フード 中央フード高森店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e9%ab%98%e6%a3%ae%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-323720957",
+      "expected": {
+        "name": "マルキュウ大島小松店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/323720957"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1934402,
+            33.9311102
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ大島小松店",
+        "address": "山口県大島郡周防大島町大字小松215番1",
+        "city": "周防大島町",
+        "search_names": "マルキュウ大島小松店 マルキュウ大島小松店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%a4%a7%e5%b3%b6%e5%b0%8f%e6%9d%be%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1172084149",
+      "expected": {
+        "name": "中央フード大島店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/1172084149"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.2607335,
+            33.9472011
+          ]
+        }
+      },
+      "changes": {
+        "name": "中央フード大島店",
+        "address": "山口県大島郡周防大島町大字久賀5129-3",
+        "city": "周防大島町",
+        "search_names": "中央フード大島店 中央フード大島店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e5%a4%a7%e5%b3%b6%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-314358338",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/314358338"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8292528,
+            34.055796
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク秋月店",
+        "address": "山口県周南市秋月三丁目２番１号",
+        "city": "周南市",
+        "search_names": "アルク アルク秋月店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%a7%8b%e6%9c%88%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4030770698",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4030770698"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8871973,
+            34.0363555
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク生野屋店",
+        "address": "山口県下松市生野屋四丁目２番１号",
+        "city": "下松市",
+        "search_names": "アルク アルク生野屋店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%94%9f%e9%87%8e%e5%b1%8b%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4355083195",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4355083195"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.935254,
+            33.9699703
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク光店",
+        "address": "山口県光市島田一丁目１２番２０号",
+        "city": "光市",
+        "search_names": "アルク アルク光店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%85%89%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-92831078",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/92831078"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8142292,
+            34.0437548
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク徳山東店",
+        "address": "山口県周南市松保町９番１号",
+        "city": "周南市",
+        "search_names": "アルク アルク徳山東店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%be%b3%e5%b1%b1%e6%9d%b1%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-314791993",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/314791993"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8004906,
+            34.0631926
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク今宿店",
+        "address": "山口県周南市新宿通り五丁目４番３３号",
+        "city": "周南市",
+        "search_names": "アルク アルク今宿店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e4%bb%8a%e5%ae%bf%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-305512799",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/305512799"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8679419,
+            34.0170583
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク下松店",
+        "address": "山口県下松市桜町1丁目15-1",
+        "city": "下松市",
+        "search_names": "アルク アルク下松店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e4%b8%8b%e6%9d%be%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-350352291",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/350352291"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7578999,
+            34.0723755
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク新南陽店",
+        "address": "山口県周南市富田新町一丁目6番18号",
+        "city": "周南市",
+        "search_names": "アルク アルク新南陽店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%96%b0%e5%8d%97%e9%99%bd%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-328492845",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/328492845"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8131064,
+            34.0496176
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク慶万店",
+        "address": "山口県周南市慶万町４番８号",
+        "city": "周南市",
+        "search_names": "アルク アルク慶万店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%85%b6%e4%b8%87%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-313908909",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/313908909"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8107308,
+            34.0607222
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク徳山中央店",
+        "address": "山口県周南市花畠町７番１５号",
+        "city": "周南市",
+        "search_names": "アルク アルク徳山中央店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%be%b3%e5%b1%b1%e4%b8%ad%e5%a4%ae%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4404216494",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4404216494"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9558174,
+            33.9548746
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク光井店",
+        "address": "山口県光市光井四丁目３３番１号",
+        "city": "光市",
+        "search_names": "アルク アルク光井店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%85%89%e4%ba%95%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3913970158",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/3913970158"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8451927,
+            34.0402544
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ久米店",
+        "address": "山口県周南市久米2818−1",
+        "city": "周南市",
+        "search_names": "マルキュウ マルキュウ久米店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e4%b9%85%e7%b1%b3%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4356810991",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4356810991"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9939076,
+            33.9857869
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ岩田店",
+        "address": "山口県光市大字岩田２２９９番地",
+        "city": "光市",
+        "search_names": "マルキュウ マルキュウ岩田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%b2%a9%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-282443603",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "way/282443603"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8626077,
+            34.1171657
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート須々万店",
+        "address": "山口県周南市大字須々万本郷307-1",
+        "city": "周南市",
+        "search_names": "サンマート サンマート須々万店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e9%a0%88%e3%80%85%e4%b8%87%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-282443650",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "way/282443650"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8126944,
+            34.2242202
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート鹿野店",
+        "address": "山口県周南市鹿野中875番地の1",
+        "city": "周南市",
+        "search_names": "サンマート サンマート鹿野店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e9%b9%bf%e9%87%8e%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-305797112",
+      "expected": {
+        "name": "中央フード",
+        "category": "supermarket",
+        "source_ids": [
+          "way/305797112"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9697319,
+            34.0505119
+          ]
+        }
+      },
+      "changes": {
+        "name": "中央フード熊毛店",
+        "address": "山口県周南市熊毛中央町2番1号",
+        "city": "周南市",
+        "search_names": "中央フード 中央フード熊毛店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e7%86%8a%e6%af%9b%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-303472852",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/303472852"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5711318,
+            34.0363271
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク三田尻店",
+        "address": "山口県防府市新田111-5",
+        "city": "防府市",
+        "search_names": "アルク アルク三田尻店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e4%b8%89%e7%94%b0%e5%b0%bb%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4501645537",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4501645537"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.6051361,
+            34.0491441
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク牟礼店",
+        "address": "山口県防府市大字江泊1936番地",
+        "city": "防府市",
+        "search_names": "アルク アルク牟礼店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%89%9f%e7%a4%bc%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-303463599",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/303463599"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5453825,
+            34.023314
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク中関店",
+        "address": "山口県防府市大字田島１４９７番２",
+        "city": "防府市",
+        "search_names": "アルク アルク中関店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e4%b8%ad%e9%96%a2%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4441538293",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4441538293"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.6057204,
+            34.060921
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ上木部店",
+        "address": "山口県防府市牟礼544",
+        "city": "防府市",
+        "search_names": "マルキュウ マルキュウ上木部店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e4%b8%8a%e6%9c%a8%e9%83%a8%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4861927248",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4861927248"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5703622,
+            34.0622214
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ宮市店",
+        "address": "山口県防府市迫戸町６番４７号",
+        "city": "防府市",
+        "search_names": "マルキュウ マルキュウ宮市店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%ae%ae%e5%b8%82%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5366029880",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5366029880"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4928394,
+            34.0531663
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート大道店",
+        "address": "山口県防府市台道３５４１番地",
+        "city": "防府市",
+        "search_names": "サンマート サンマート大道店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e5%a4%a7%e9%81%93%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5336229369",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5336229369"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5496271,
+            34.0687349
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート右田店",
+        "address": "山口県防府市大字高井８０８番２",
+        "city": "防府市",
+        "search_names": "サンマート サンマート右田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e5%8f%b3%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4989995843",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4989995843"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5586593,
+            34.0413805
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート華城店",
+        "address": "山口県防府市桑南二丁目６番２８号",
+        "city": "防府市",
+        "search_names": "サンマート サンマート華城店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e8%8f%af%e5%9f%8e%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-522788381",
+      "expected": {
+        "name": "アルク山口店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/522788381"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4678708,
+            34.1723997
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク山口店",
+        "address": "山口県山口市中央４丁目７番２０号",
+        "city": "山口市",
+        "search_names": "アルク山口店 アルク山口店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b1%b1%e5%8f%a3%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-474106650",
+      "expected": {
+        "name": "アルク小郡店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/474106650"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3909245,
+            34.0967458
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク小郡店",
+        "address": "山口県山口市小郡下郷２２７３番地１",
+        "city": "山口市",
+        "search_names": "アルク小郡店 アルク小郡店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b0%8f%e9%83%a1%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-405831487",
+      "expected": {
+        "name": "アルク 大内店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/405831487"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5011831,
+            34.1553396
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク大内店",
+        "address": "山口県山口市大内矢田南一丁目4番7号",
+        "city": "山口市",
+        "search_names": "アルク 大内店 アルク大内店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%a4%a7%e5%86%85%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-409782418",
+      "expected": {
+        "name": "アルク葵店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/409782418"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4508101,
+            34.1603237
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク葵店",
+        "address": "山口県山口市葵一丁目4番70号",
+        "city": "山口市",
+        "search_names": "アルク葵店 アルク葵店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e8%91%b5%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4315767097",
+      "expected": {
+        "name": "丸久徳佐店",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4315767097"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7171225,
+            34.3940981
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ徳佐店",
+        "address": "山口県山口市阿東徳佐中3044番地1",
+        "city": "山口市",
+        "search_names": "丸久徳佐店 マルキュウ徳佐店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%be%b3%e4%bd%90%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5483813906",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5483813906"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0615845,
+            34.3745575
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート人丸店",
+        "address": "山口県長門市油谷新別名１１０７番３",
+        "city": "長門市",
+        "search_names": "サンマート サンマート人丸店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e4%ba%ba%e4%b8%b8%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5071484558",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5071484558"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4701982,
+            34.5023205
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート奈古店",
+        "address": "山口県阿武郡阿武町大字奈古字市2316番2",
+        "city": "阿武町",
+        "search_names": "サンマート サンマート奈古店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e5%a5%88%e5%8f%a4%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5429467234",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5429467234"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2246399,
+            34.370266
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート三隅店",
+        "address": "山口県長門市三隅下２０３２番１",
+        "city": "長門市",
+        "search_names": "サンマート サンマート三隅店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e4%b8%89%e9%9a%85%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4650828326",
+      "expected": {
+        "name": "（株）サンマート 熊谷店",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4650828326"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.401137,
+            34.4159704
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート熊谷店",
+        "address": "山口県萩市大字今古萩４５",
+        "city": "萩市",
+        "search_names": "（株）サンマート 熊谷店 サンマート熊谷店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e7%86%8a%e8%b0%b7%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-356932947",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/356932947"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2707999,
+            33.9417602
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク恩田店",
+        "address": "山口県宇部市草江一丁目１番１号",
+        "city": "宇部市",
+        "search_names": "アルク アルク恩田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%81%a9%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-332618202",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/332618202"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.175919,
+            34.0053323
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク小野田店",
+        "address": "山口県山陽小野田市西高泊640番地の1",
+        "city": "山陽小野田市",
+        "search_names": "アルク アルク小野田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b0%8f%e9%87%8e%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-378115000",
+      "expected": {
+        "name": "アルク 西宇部店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/378115000"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2185733,
+            34.0019638
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク西宇部店",
+        "address": "山口県宇部市厚南北五丁目１番２５号",
+        "city": "宇部市",
+        "search_names": "アルク 西宇部店 アルク西宇部店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e8%a5%bf%e5%ae%87%e9%83%a8%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-353411368",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/353411368"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2526935,
+            33.9582856
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク琴芝店",
+        "address": "山口県宇部市西琴芝一丁目７番２５－１号",
+        "city": "宇部市",
+        "search_names": "アルク アルク琴芝店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%90%b4%e8%8a%9d%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-567353498",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "way/567353498"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2323298,
+            33.9653494
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク南浜店",
+        "address": "山口県宇部市南浜町二丁目８番４号",
+        "city": "宇部市",
+        "search_names": "アルク アルク南浜店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%8d%97%e6%b5%9c%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-618928000",
+      "expected": {
+        "name": "マルキュウ",
+        "category": "supermarket",
+        "source_ids": [
+          "way/618928000"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1727682,
+            34.0540769
+          ]
+        }
+      },
+      "changes": {
+        "name": "マルキュウ厚狭店",
+        "address": "山口県山陽小野田市厚狭478番地の1",
+        "city": "山陽小野田市",
+        "search_names": "マルキュウ マルキュウ厚狭店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e5%8e%9a%e7%8b%ad%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5517944162",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/5517944162"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2106628,
+            34.1819611
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート美祢店",
+        "address": "山口県美祢市大嶺町東分１２３１",
+        "city": "美祢市",
+        "search_names": "サンマート サンマート美祢店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e7%be%8e%e7%a5%a2%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4814880282",
+      "expected": {
+        "name": "アルク",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4814880282"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.03434,
+            34.0692611
+          ]
+        }
+      },
+      "changes": {
+        "name": "アルク小月店",
+        "address": "山口県下関市小月駅前一丁目１番１号",
+        "city": "下関市",
+        "search_names": "アルク アルク小月店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b0%8f%e6%9c%88%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4676631339",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4676631339"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9467755,
+            34.2868235
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート滝部店",
+        "address": "山口県下関市豊北町大字滝部3415-1",
+        "city": "下関市",
+        "search_names": "サンマート サンマート滝部店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e6%bb%9d%e9%83%a8%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4622018354",
+      "expected": {
+        "name": "サンマート",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4622018354"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0768413,
+            34.2034113
+          ]
+        }
+      },
+      "changes": {
+        "name": "サンマート豊田店",
+        "address": "山口県下関市豊田町大字殿敷1917-5",
+        "city": "下関市",
+        "search_names": "サンマート サンマート豊田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.mrk09.co.jp/shopinfo/list/"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.mrk09.co.jp/area_info/%e3%82%b5%e3%83%b3%e3%83%9e%e3%83%bc%e3%83%88%e8%b1%8a%e7%94%b0%e5%ba%97/"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4812740097",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4812740097"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0021819,
+            34.0192907
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 下関長府店",
+        "address": "山口県下関市長府松小田東町3番24号",
+        "city": "下関市",
+        "search_names": "ジョイフル ジョイフル 下関長府店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/564"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4100999989",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4100999989"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4355641,
+            34.1506459
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 山口朝田店",
+        "address": "山口県山口市朝田605-6",
+        "city": "山口市",
+        "search_names": "ジョイフル ジョイフル 山口朝田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/562"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-367201218",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/367201218"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.78031099999998,
+            34.0644774
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 新南陽野村店",
+        "address": "山口県周南市野村3丁目20-2",
+        "city": "周南市",
+        "search_names": "ジョイフル ジョイフル 新南陽野村店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/533"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4020977990",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4020977990"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8860371,
+            34.021448
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 下松河内店",
+        "address": "山口県下松市河内1928-2",
+        "city": "下松市",
+        "search_names": "ジョイフル ジョイフル 下松河内店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/532"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5257015429",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/5257015429"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2089835,
+            34.1717774
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 山口美祢店",
+        "address": "山口県美祢市大嶺町東分432-3",
+        "city": "美祢市",
+        "search_names": "ジョイフル ジョイフル 山口美祢店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/526"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4321176608",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4321176608"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8727597,
+            34.0078433
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 下松宮前店",
+        "address": "山口県下松市東豊井1534-1",
+        "city": "下松市",
+        "search_names": "ジョイフル ジョイフル 下松宮前店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/513"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-620195651",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/620195651"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.17415899999997,
+            34.053952949999996
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 山口厚狭店",
+        "address": "山口県山陽小野田市厚狭481-2",
+        "city": "山陽小野田市",
+        "search_names": "ジョイフル ジョイフル 山口厚狭店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/484"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-277943291",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/277943291"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.46392095,
+            34.155773100000005
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 山口平井店",
+        "address": "山口県山口市平井601-9",
+        "city": "山口市",
+        "search_names": "ジョイフル ジョイフル 山口平井店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/475"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1443029712",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/1443029712"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.40406645000002,
+            34.4178539
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 萩店",
+        "address": "山口県萩市東浜崎町2区609",
+        "city": "萩市",
+        "search_names": "ジョイフル ジョイフル 萩店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/473"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-668017920",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/668017920"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.18956895,
+            34.37425835
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 長門店",
+        "address": "山口県長門市東深川10062番12",
+        "city": "長門市",
+        "search_names": "ジョイフル ジョイフル 長門店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/472"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-477623455",
+      "expected": {
+        "name": "ジョイフル宇部黒石店",
+        "category": "restaurant",
+        "source_ids": [
+          "way/477623455"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2080737,
+            33.983687950000004
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 宇部黒石店",
+        "address": "山口県宇部市黒石北三丁目2番38号",
+        "city": "宇部市",
+        "search_names": "ジョイフル宇部黒石店 ジョイフル 宇部黒石店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/291"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-737606304",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/737606304"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.56623155,
+            34.05249485
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 防府駅南町店",
+        "address": "山口県防府市防府駅南町7-1",
+        "city": "防府市",
+        "search_names": "ジョイフル ジョイフル 防府駅南町店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/232"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4707545638",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4707545638"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9198382,
+            34.141654
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 山口豊浦店",
+        "address": "山口県下関市豊浦町吉永1856",
+        "city": "下関市",
+        "search_names": "ジョイフル ジョイフル 山口豊浦店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/213"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-549154614",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/549154614"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2596706,
+            33.950482
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 宇部神原店",
+        "address": "山口県宇部市神原町1丁目6-39",
+        "city": "宇部市",
+        "search_names": "ジョイフル ジョイフル 宇部神原店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/203"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4623473035",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4623473035"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9447427,
+            34.0079792
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 新下関店",
+        "address": "山口県下関市秋根西町1丁目7-2",
+        "city": "下関市",
+        "search_names": "ジョイフル ジョイフル 新下関店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/197"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4989064612",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4989064612"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5565083,
+            34.0254417
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 防府田島店",
+        "address": "山口県防府市田島594-2",
+        "city": "防府市",
+        "search_names": "ジョイフル ジョイフル 防府田島店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/196"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4326392991",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4326392991"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9225215,
+            33.9720311
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 光浅江店",
+        "address": "山口県光市浅江5丁目25-1",
+        "city": "光市",
+        "search_names": "ジョイフル ジョイフル 光浅江店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/186"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-638999585",
+      "expected": {
+        "name": "Joyfull",
+        "category": "restaurant",
+        "source_ids": [
+          "way/638999585"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.17709854999998,
+            33.989591
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 小野田中川店",
+        "address": "山口県山陽小野田市中川4丁目6785番27",
+        "city": "山陽小野田市",
+        "search_names": "Joyfull ジョイフル 小野田中川店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/181"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-325354904",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "way/325354904"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.23181885,
+            34.2007905
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 岩国装束店",
+        "address": "山口県岩国市装束5丁目7-20",
+        "city": "岩国市",
+        "search_names": "ジョイフル ジョイフル 岩国装束店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/148"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4814525088",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4814525088"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0210498,
+            34.0538765
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 下関清末店",
+        "address": "山口県下関市清末千房町3丁目2番23号",
+        "city": "下関市",
+        "search_names": "ジョイフル ジョイフル 下関清末店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/145"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5336882591",
+      "expected": {
+        "name": "ジョイフル",
+        "category": "restaurant",
+        "source_ids": [
+          "node/5336882591"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5100581,
+            34.0480617
+          ]
+        }
+      },
+      "changes": {
+        "name": "ジョイフル 西防府店",
+        "address": "山口県防府市佐野1398-1",
+        "city": "防府市",
+        "search_names": "ジョイフル ジョイフル 西防府店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://www.joyfull.co.jp/shop/137"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4099850210",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "node/4099850210"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4360198,
+            34.1586015
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 山口維新公園前店",
+        "address": "山口県山口市維新公園5-2-10",
+        "city": "山口市",
+        "search_names": "すき家 すき家 山口維新公園前店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/175.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-477623025",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "way/477623025"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2080019,
+            33.9768153
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 190号宇部西割店",
+        "address": "山口県宇部市大字妻崎開作871-2",
+        "city": "宇部市",
+        "search_names": "すき家 すき家 190号宇部西割店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/601.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。",
+          "同じ店舗の既存の別記録との関係を保持し、今回新たな重複施設は追加していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4334950391",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "node/4334950391"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9281164,
+            33.9708761
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 188号光浅江店",
+        "address": "山口県光市浅江1-11-7",
+        "city": "光市",
+        "search_names": "すき家 すき家 188号光浅江店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/1347.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-363127936",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "way/363127936"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8415554,
+            34.0293943
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 周南久米店",
+        "address": "山口県周南市大字久米1142-1",
+        "city": "周南市",
+        "search_names": "すき家 すき家 周南久米店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/1671.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-503938285",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "way/503938285"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.56983474999998,
+            34.036221350000005
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 防府新田店",
+        "address": "山口県防府市大字新田573-1",
+        "city": "防府市",
+        "search_names": "すき家 すき家 防府新田店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/1721.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-9235019620",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "node/9235019620"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7744551,
+            34.070516
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 周南新南陽店",
+        "address": "山口県周南市古川町5-15",
+        "city": "周南市",
+        "search_names": "すき家 すき家 周南新南陽店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/5383.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1347535224",
+      "expected": {
+        "name": "すき家",
+        "category": "fast_food",
+        "source_ids": [
+          "way/1347535224"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.92576830000002,
+            33.99880865
+          ]
+        }
+      },
+      "changes": {
+        "name": "すき家 下関稗田西町店",
+        "address": "山口県下関市稗田西町10-13",
+        "city": "下関市",
+        "search_names": "すき家 すき家 下関稗田西町店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
+            "url": "https://maps.sukiya.jp/jp/detail/5565.html"
+          }
+        ],
+        "limits": [
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -35210,6 +38799,1774 @@
         "coordinates": [
           131.813039,
           34.0551566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-413593597666",
+      "properties": {
+        "name": "アルク南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国三丁目８番６３号",
+        "official_address": "山口県岩国市南岩国三丁目８番６３号",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%8d%97%e5%b2%a9%e5%9b%bd%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:413593597666"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク南岩国店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%8d%97%e5%b2%a9%e5%9b%bd%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2009305,
+          34.1276121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-5cf906049949",
+      "properties": {
+        "name": "アルク玖珂店",
+        "city": "岩国市",
+        "address": "山口県岩国市玖珂町１０１４番１",
+        "official_address": "山口県岩国市玖珂町１０１４番１",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%8e%96%e7%8f%82%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:5cf906049949"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク玖珂店",
+        "location_verification": "named_place_record_same_64bit_cid。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e7%8e%96%e7%8f%82%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0874539,
+          34.0966633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-eee25ea191f5",
+      "properties": {
+        "name": "中央フード多田店",
+        "city": "岩国市",
+        "address": "山口県岩国市多田2丁目111-7",
+        "official_address": "山口県岩国市多田2丁目111-7",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e5%a4%9a%e7%94%b0%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:eee25ea191f5"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "中央フード多田店",
+        "location_verification": "named_place_record_same_64bit_cid。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e4%b8%ad%e5%a4%ae%e3%83%95%e3%83%bc%e3%83%89%e5%a4%9a%e7%94%b0%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1656835,
+          34.1799826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-75d9a064744d",
+      "properties": {
+        "name": "アルク柳井中央店",
+        "city": "柳井市",
+        "address": "山口県柳井市古開作665番地１",
+        "official_address": "山口県柳井市古開作665番地１",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%9f%b3%e4%ba%95%e4%b8%ad%e5%a4%ae%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:75d9a064744d"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク柳井中央店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%9f%b3%e4%ba%95%e4%b8%ad%e5%a4%ae%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.098678,
+          33.968072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-39ff9ba11097",
+      "properties": {
+        "name": "アルク平生店",
+        "city": "平生町",
+        "address": "山口県熊毛郡平生町平生村236−4",
+        "official_address": "山口県熊毛郡平生町平生村236−4",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b9%b3%e7%94%9f%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:39ff9ba11097"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク平生店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%b9%b3%e7%94%9f%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0764564,
+          33.9387288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-166ca22e1cec",
+      "properties": {
+        "name": "マルキュウ華城店",
+        "city": "防府市",
+        "address": "山口県防府市華城中央一丁目３番２３号",
+        "official_address": "山口県防府市華城中央一丁目３番２３号",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e8%8f%af%e5%9f%8e%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:166ca22e1cec"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "マルキュウ華城店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%83%9e%e3%83%ab%e3%82%ad%e3%83%a5%e3%82%a6%e8%8f%af%e5%9f%8e%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.547722,
+          34.046719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-d9fd50bf65b5",
+      "properties": {
+        "name": "アルク西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市大字西岐波１５６０番地１",
+        "official_address": "山口県宇部市大字西岐波１５６０番地１",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e8%a5%bf%e5%b2%90%e6%b3%a2%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:d9fd50bf65b5"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク西岐波店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e8%a5%bf%e5%b2%90%e6%b3%a2%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.316492,
+          33.960575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-3ba03a6da0ea",
+      "properties": {
+        "name": "アルク港町店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市港町９番２号",
+        "official_address": "山口県山陽小野田市港町９番２号",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%b8%af%e7%94%ba%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:3ba03a6da0ea"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク港町店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e6%b8%af%e7%94%ba%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1761242,
+          33.9733668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-48dd6981b23c",
+      "properties": {
+        "name": "アルク彦島店",
+        "city": "下関市",
+        "address": "山口県下関市彦島福浦町二丁目２６番１５号",
+        "official_address": "山口県下関市彦島福浦町二丁目２６番１５号",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%bd%a6%e5%b3%b6%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:48dd6981b23c"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク彦島店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e5%bd%a6%e5%b3%b6%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9128547,
+          33.9287163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-mrk09-3c39e60d17ce",
+      "properties": {
+        "name": "アルク長府中土居店",
+        "city": "下関市",
+        "address": "山口県下関市長府中土居本町１番２４号",
+        "official_address": "山口県下関市長府中土居本町１番２４号",
+        "official_url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e9%95%b7%e5%ba%9c%e4%b8%ad%e5%9c%9f%e5%b1%85%e5%ba%97/",
+        "category": "supermarket",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:mrk09:3c39e60d17ce"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アルク長府中土居店",
+        "location_verification": "named_embed_place_record。全base+overlayと同名/同系列近傍を照合し対象ID不在。親・別業種と分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.mrk09.co.jp/shopinfo/list/"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.mrk09.co.jp/area_info/%e3%82%a2%e3%83%ab%e3%82%af%e9%95%b7%e5%ba%9c%e4%b8%ad%e5%9c%9f%e5%b1%85%e5%ba%97/"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9919432,
+          34.007985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-552",
+      "properties": {
+        "name": "ジョイフル 山口柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市古開作587-2",
+        "official_address": "山口県柳井市古開作587-2",
+        "official_url": "https://www.joyfull.co.jp/shop/552",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:552"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口柳井店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/552"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0969085350765,
+          33.9683980047808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-478",
+      "properties": {
+        "name": "ジョイフル 宇部西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市今村南3丁目11-1",
+        "official_address": "山口県宇部市今村南3丁目11-1",
+        "official_url": "https://www.joyfull.co.jp/shop/478",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:478"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 宇部西岐波店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/478"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.30813072288743,
+          33.956581675242006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-466",
+      "properties": {
+        "name": "ジョイフル 下関店",
+        "city": "下関市",
+        "address": "山口県下関市大坪本町1365-1",
+        "official_address": "山口県下関市大坪本町1365-1",
+        "official_url": "https://www.joyfull.co.jp/shop/466",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:466"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 下関店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/466"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.91897586552167,
+          33.973878186879055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-398",
+      "properties": {
+        "name": "ジョイフル 下関ホテル内店",
+        "city": "下関市",
+        "address": "山口県下関市長府八幡町2番1号",
+        "official_address": "山口県下関市長府八幡町2番1号",
+        "official_url": "https://www.joyfull.co.jp/shop/398",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:398"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 下関ホテル内店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/398"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.99518725418127,
+          34.009332323273206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-264",
+      "properties": {
+        "name": "ジョイフル 南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市南岩国町3丁目12-5",
+        "official_address": "山口県岩国市南岩国町3丁目12-5",
+        "official_url": "https://www.joyfull.co.jp/shop/264",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:264"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 南岩国店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/264"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1993909481358,
+          34.12864557261569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-258",
+      "properties": {
+        "name": "ジョイフル 山口宮野店",
+        "city": "山口市",
+        "address": "山口県山口市桜畠4丁目2311-5",
+        "official_address": "山口県山口市桜畠4丁目2311-5",
+        "official_url": "https://www.joyfull.co.jp/shop/258",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:258"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口宮野店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/258"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.501575746492,
+          34.19589643182929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-238",
+      "properties": {
+        "name": "ジョイフル 山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡下郷3060-1",
+        "official_address": "山口県山口市小郡下郷3060-1",
+        "official_url": "https://www.joyfull.co.jp/shop/238",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:238"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口小郡店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/238"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.39009082222213,
+          34.08960060274477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-222",
+      "properties": {
+        "name": "ジョイフル 光小周防店",
+        "city": "光市",
+        "address": "山口県光市小周防859-1",
+        "official_address": "山口県光市小周防859-1",
+        "official_url": "https://www.joyfull.co.jp/shop/222",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:222"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 光小周防店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/222"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.97899968585224,
+          34.02039263463635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-209",
+      "properties": {
+        "name": "ジョイフル 山口大畠店",
+        "city": "柳井市",
+        "address": "山口県柳井市大畠923-1",
+        "official_address": "山口県柳井市大畠923-1",
+        "official_url": "https://www.joyfull.co.jp/shop/209",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:209"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口大畠店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/209"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.1729549368163,
+          33.962005909394925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-190",
+      "properties": {
+        "name": "ジョイフル 下関彦島店",
+        "city": "下関市",
+        "address": "山口県下関市彦島本村町6丁目8-8",
+        "official_address": "山口県下関市彦島本村町6丁目8-8",
+        "official_url": "https://www.joyfull.co.jp/shop/190",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:190"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 下関彦島店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/190"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.91353605082932,
+          33.9398810879656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-174",
+      "properties": {
+        "name": "ジョイフル 山口周東店",
+        "city": "岩国市",
+        "address": "山口県岩国市周東町下久原1869-1",
+        "official_address": "山口県岩国市周東町下久原1869-1",
+        "official_url": "https://www.joyfull.co.jp/shop/174",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:174"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口周東店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/174"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.04456888438838,
+          34.091860053189166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-147",
+      "properties": {
+        "name": "ジョイフル 山口平生店",
+        "city": "平生町",
+        "address": "山口県熊毛郡平生町570-17",
+        "official_address": "山口県熊毛郡平生町570-17",
+        "official_url": "https://www.joyfull.co.jp/shop/147",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:147"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 山口平生店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/147"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.06726208403143,
+          33.94050459638106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-140",
+      "properties": {
+        "name": "ジョイフル 綾羅木店",
+        "city": "下関市",
+        "address": "山口県下関市綾羅木新町3丁目1番1号",
+        "official_address": "山口県下関市綾羅木新町3丁目1番1号",
+        "official_url": "https://www.joyfull.co.jp/shop/140",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:140"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 綾羅木店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/140"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.92345595292434,
+          34.01349067840634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-joyfull-135",
+      "properties": {
+        "name": "ジョイフル 小野田店",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市西高泊925-5",
+        "official_address": "山口県山陽小野田市西高泊925-5",
+        "official_url": "https://www.joyfull.co.jp/shop/135",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:joyfull:135"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ジョイフル 小野田店",
+        "location_verification": "official per-store data-latitude/data-longitude on prefecture directory; used by its marker script。全base+overlayに同じ公式店ID/同名/同住所/近傍同ブランド点なし。別業態の近隣施設・親ホテルとは分離。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://www.joyfull.co.jp/shop?prefecture=35"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://www.joyfull.co.jp/shop/135"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1681140797908,
+          34.011615020343406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-368",
+      "properties": {
+        "name": "すき家 南岩国店",
+        "city": "岩国市",
+        "address": "山口県岩国市尾津町2-20-33",
+        "official_address": "山口県岩国市尾津町2-20-33",
+        "official_url": "https://maps.sukiya.jp/jp/detail/368.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:368"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 南岩国店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/368.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.20831986115,
+          34.1383309952006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-553",
+      "properties": {
+        "name": "すき家 山口大内店",
+        "city": "山口市",
+        "address": "山口県山口市大内千坊5-3-2",
+        "official_address": "山口県山口市大内千坊5-3-2",
+        "official_url": "https://maps.sukiya.jp/jp/detail/553.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:553"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 山口大内店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/553.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.492436750047,
+          34.1578302938738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1462",
+      "properties": {
+        "name": "すき家 下関赤間店",
+        "city": "下関市",
+        "address": "山口県下関市赤間町3-35",
+        "official_address": "山口県下関市赤間町3-35",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1462.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1462"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 下関赤間店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1462.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.942150181879,
+          33.9597724217944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1540",
+      "properties": {
+        "name": "すき家 9号山口小郡店",
+        "city": "山口市",
+        "address": "山口県山口市小郡明治1-2-16",
+        "official_address": "山口県山口市小郡明治1-2-16",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1540.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1540"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 9号山口小郡店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1540.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.392772777412,
+          34.098100497304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1900",
+      "properties": {
+        "name": "すき家 2国下関長府店",
+        "city": "下関市",
+        "address": "山口県下関市長府松小田本町24-6",
+        "official_address": "山口県下関市長府松小田本町24-6",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1900.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1900"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 2国下関長府店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1900.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.998408561606,
+          34.0141437000021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1907",
+      "properties": {
+        "name": "すき家 188号柳井店",
+        "city": "柳井市",
+        "address": "山口県柳井市南町3-7-1",
+        "official_address": "山口県柳井市南町3-7-1",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1907.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1907"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 188号柳井店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1907.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.103876928541,
+          33.9620813559694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1918",
+      "properties": {
+        "name": "すき家 2国岩国室の木店",
+        "city": "岩国市",
+        "address": "山口県岩国市室の木町1-8-38",
+        "official_address": "山口県岩国市室の木町1-8-38",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1918.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1918"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 2国岩国室の木店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1918.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.207139584871,
+          34.17058974639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-1937",
+      "properties": {
+        "name": "すき家 191号萩店",
+        "city": "萩市",
+        "address": "山口県萩市大字平安古町127",
+        "official_address": "山口県萩市大字平安古町127",
+        "official_url": "https://maps.sukiya.jp/jp/detail/1937.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:1937"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 191号萩店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/1937.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.388257049728,
+          34.4055764194953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-4742",
+      "properties": {
+        "name": "すき家 宇部神原店",
+        "city": "宇部市",
+        "address": "山口県宇部市神原町2-1-15",
+        "official_address": "山口県宇部市神原町2-1-15",
+        "official_url": "https://maps.sukiya.jp/jp/detail/4742.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:4742"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 宇部神原店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/4742.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.260964,
+          33.949685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-sukiya-5592",
+      "properties": {
+        "name": "すき家 190号宇部西岐波店",
+        "city": "宇部市",
+        "address": "山口県宇部市大字西岐波4165-1",
+        "official_address": "山口県宇部市大字西岐波4165-1",
+        "official_url": "https://maps.sukiya.jp/jp/detail/5592.html",
+        "category": "fast_food",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:sukiya:5592"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "すき家 190号宇部西岐波店",
+        "location_verification": "Official public search API mapdata store lat/lng joined to list by shopclick(index), name checked。全base+overlayに同店の名称・公式ID・住所・近傍同ブランド点なし。県境と住所市町も一致。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "公式の現行店舗一覧・支店情報・店舗固有位置を照合して掲載。",
+          "sources": [
+            {
+              "title": "運営元の現行店舗一覧",
+              "url": "https://maps.sukiya.jp/jp/here.html"
+            },
+            {
+              "title": "公式の当該支店案内",
+              "url": "https://maps.sukiya.jp/jp/detail/5592.html"
+            }
+          ],
+          "limits": [
+            "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+            "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.30252054745478,
+          33.9489362252996
         ]
       }
     }
