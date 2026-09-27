@@ -1,0 +1,68 @@
+[
+  {
+    "id": "osm-node-1423654496",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2022-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "県教育委員会の公立幼稚園一覧が名田島幼稚園の2022年3月31日廃園を明記。旧公的施設座標と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立幼稚園一覧",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html"
+        },
+        {
+          "title": "山口県 子育て施設一覧（旧施設の位置・住所照合）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv"
+        }
+      ],
+      "limits": [
+        "名田島幼稚園の廃園を反映しています。敷地や建物の現在用途を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。近隣施設や統合先へ閉園状態を適用しません。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_closure_date_and_prior_official_named_site_full_address",
+      "row": {
+        "name": "山口市立名田島幼稚園",
+        "address": "山口市名田島1536-1",
+        "phone": "",
+        "status_note": "廃園(令和4年3月31日)",
+        "row": 17,
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+        "source_sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64",
+        "source_as_of": "2026-04-01",
+        "service": "公立幼稚園"
+      },
+      "bridge": {
+        "number": "3500155598",
+        "name": "山口市立名田島幼稚園",
+        "address": "山口市名田島1536-1",
+        "phone": "083-972-2600",
+        "coordinates": [
+          131.415604,
+          34.076714
+        ],
+        "service": "公立幼稚園",
+        "line": 599,
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+        "source_sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26",
+        "source_as_of": "2021-05-31",
+        "distance_m": 48.99
+      },
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.415884,
+          34.07634
+        ]
+      },
+      "source_ids": [
+        "node/1423654496"
+      ]
+    }
+  }
+]

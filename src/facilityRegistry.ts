@@ -1,5 +1,5 @@
 export interface RegistryReview {
-  scope: 'care_service_registry' | 'school_register';
+  scope: 'care_service_registry' | 'school_register' | 'childcare_register' | 'medical_register';
   checked_at: string;
   source_as_of: string;
   registry_id: string;
@@ -25,7 +25,7 @@ const httpsUrl = (value: unknown): boolean => {
 
 export function validateRegistryReview(value: RegistryReview, overlayCheckedAt: string): void {
   const review = value as RegistryReview | undefined;
-  if (!review || !['care_service_registry', 'school_register'].includes(review.scope) ||
+  if (!review || !['care_service_registry', 'school_register', 'childcare_register', 'medical_register'].includes(review.scope) ||
       !validDate(review.source_as_of) || !validDate(review.checked_at) || !validDate(overlayCheckedAt) ||
       review.source_as_of > review.checked_at || review.checked_at > overlayCheckedAt ||
       !nonempty(review.registry_id) || !nonempty(review.official_name) ||
@@ -33,7 +33,7 @@ export function validateRegistryReview(value: RegistryReview, overlayCheckedAt: 
     throw Error('Invalid registry review');
   }
   if (!Array.isArray(review.services) || review.services.some(s => !nonempty(s)) ||
-      (review.scope === 'care_service_registry' && review.services.length === 0) ||
+      (review.scope !== 'school_register' && review.services.length === 0) ||
       !Array.isArray(review.sources) || review.sources.length === 0 ||
       review.sources.some(s => !s || !nonempty(s.title) || !httpsUrl(s.url) || !/^[0-9a-fA-F]{64}$/.test(s.sha256)) ||
       !Array.isArray(review.limits) || review.limits.length === 0 || review.limits.some(s => !nonempty(s))) {

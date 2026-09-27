@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-28",
+  "baseline_head": "9d2bc54445b9b68a4edab9a050b683ec8ea13302",
+  "previous_checked_at": "2026-09-27",
+  "previous_overlay_sha256": "2be28a7e7b25bedc8926fced57850293a3000022c652ab87dc8b909a837a7284",
+  "baseline_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137"
+  },
+  "candidates": 2107,
+  "registry_reviews": 567,
+  "freshness_events": 1,
+  "additions": 0,
+  "corrections": 18,
+  "verified_no_change": 550,
+  "held": 1539,
+  "groups": [
+    {
+      "group": "childcare",
+      "candidates": 566,
+      "registry_reviews": 239,
+      "events": 1,
+      "corrections": 12,
+      "verified_no_change": 228,
+      "held": 326
+    },
+    {
+      "group": "medical",
+      "candidates": 445,
+      "registry_reviews": 241,
+      "events": 0,
+      "corrections": 6,
+      "verified_no_change": 235,
+      "held": 204
+    },
+    {
+      "group": "care_delta",
+      "candidates": 479,
+      "registry_reviews": 5,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 5,
+      "held": 474
+    },
+    {
+      "group": "schools",
+      "candidates": 617,
+      "registry_reviews": 82,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 82,
+      "held": 535
+    }
+  ],
+  "previously_completed_excluded": 1982,
+  "limits": [
+    "確認候補と確認完了を区別。台帳照合は開館・営業・受入・入口の現況保証ではありません。",
+    "元の施設ID、全座標、元出典と過去の更新記録を保持。",
+    "台帳不掲載・古い計画・属性設定日だけで閉業や開業を推定しません。",
+    "取得元原本と再現処理・全保留根拠は正式Drive保存原本に収録。"
+  ],
+  "audits": [
+    "childcare-independent-audit.json",
+    "medical-independent-audit.json",
+    "shimonoseki-independent-audit.json",
+    "schools-independent-audit.json",
+    "transitions-independent-audit.json"
+  ]
+}

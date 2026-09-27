@@ -67,6 +67,14 @@ reject(p => p.verifications[0].review.sources[0].sha256 = 'short', 'Evidence has
 reject(p => p.verifications[0].review.sources[0].url = 'http://example.org', 'HTTPS source required');
 reject(p => p.verifications[0].review.sources[0].url = 'https://user:pass@example.org', 'Credential-bearing URL rejected');
 reject(p => p.verifications[0].review.limits = [], 'Review scope limits required');
+reject(p => p.verifications[0].review.scope = 'unreviewed', 'Unknown scope rejected');
+for (const scope of ['childcare_register', 'medical_register']) {
+  const scoped = structuredClone(overlay);
+  scoped.verifications[0].review.scope = scope;
+  assert.equal(applyFacilityCurrent(base, scoped)[0].properties.registry_review.scope, scope);
+  scoped.verifications[0].review.services = [];
+  assert.throws(() => applyFacilityCurrent(base, scoped), 'Facility type is required for the new registers');
+}
 
 const server = await createServer({ server: { middlewareMode: true, watch: null }, appType: 'custom' });
 const previousWindow = globalThis.window;
@@ -79,6 +87,12 @@ try {
   assert(!html.includes('開店・掲載確認'), 'Registry listing must not render as an opening event');
   const schoolHtml = renderToStaticMarkup(React.createElement(Drawer, { facility: result[1], onClose() {} }));
   assert(schoolHtml.includes('学校名簿') && !schoolHtml.includes('掲載サービス'));
+  for (const [scope, label] of [['childcare_register', '保育・幼稚園等の施設名簿'], ['medical_register', '保険医療機関名簿']]) {
+    const scoped = { ...result[0], properties: { ...result[0].properties, registry_review: { ...careReview, scope } } };
+    const rendered = renderToStaticMarkup(React.createElement(Drawer, { facility: scoped, onClose() {} }));
+    assert(rendered.includes(label) && !rendered.includes('学校名簿'));
+    assert(!rendered.includes('開店・掲載確認'), 'Registry scope must not imply an opening event');
+  }
 } finally {
   if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow;
   await server.close();

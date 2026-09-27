@@ -1,10 +1,17 @@
 import type { RegistryReview } from './facilityRegistry';
 
+const registryLabels: Record<RegistryReview['scope'], string> = {
+  care_service_registry: '介護サービス事業者台帳',
+  school_register: '学校名簿',
+  childcare_register: '保育・幼稚園等の施設名簿',
+  medical_register: '保険医療機関名簿',
+};
+
 export default function FacilityRegistryDetails({ review }: { review?: RegistryReview }) {
   if (!review) return null;
   return <section className="registered-details verified-facility" aria-label="行政台帳の掲載確認">
     <h3>行政台帳の掲載確認</h3>
-    <p className="helper-text">{review.scope === 'care_service_registry' ? '介護サービス事業者台帳' : '学校名簿'}の掲載内容を照合しました。建物全体の営業・開業、現地での稼働、入口や現在の利用可否を確認したものではありません。</p>
+    <p className="helper-text">{registryLabels[review.scope]}の掲載内容を照合しました。建物全体の営業・開業、現地での稼働、入口や現在の利用可否を確認したものではありません。</p>
     <dl>
       <div className="registered-field"><dt>資料基準日</dt><dd>{review.source_as_of}</dd></div>
       <div className="registered-field"><dt>照合日</dt><dd>{review.checked_at}</dd></div>

@@ -90,5 +90,5 @@ test('reuse and operator batches precede regional batches without losing or comp
 test('past resolved evidence survives later batches but future and invalid dates are rejected',()=>{
  const c=structuredClone(cases),i=c.cases.find(c=>c.issues.some(i=>i.impact==='resolved')).issues.find(i=>i.impact==='resolved');
  assert.doesNotThrow(()=>buildWorkboard(index,reviews,overlay,metadata,c,'2026-09-27'));
- for(const date of ['2026-09-28','2026-02-30','invalid',undefined]){i.resolution.checked_at=date;assert.throws(()=>run(c));}
+ for(const date of [new Date(Date.parse(overlay.checked_at)+86400000).toISOString().slice(0,10),'2026-02-30','invalid',undefined]){i.resolution.checked_at=date;assert.throws(()=>run(c));}
 });
