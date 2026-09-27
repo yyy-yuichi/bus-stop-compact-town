@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { hash } from './jev-batch.mjs';
 import { htmlText } from './facility-bulk-lib.mjs';
 import { buildArticleProgress, additionLedgerRows } from './facility-progress-lib.mjs';
+import { applyFacilityCurrent } from '../src/facilityFreshness.ts';
 
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const out = 'outputs/facility-progress-20260925';
@@ -32,6 +33,10 @@ assert.equal(baseline.length, 7764);
 const baselineIds = new Set(baseline.map(row => row.id));
 assert.equal(baselineIds.size, baseline.length);
 const overlay = read('public/data/facility-current.json');
+applyFacilityCurrent(baselineFiles.flatMap(path => read(path).features), overlay);
+const registryRows = overlay.verifications ?? [];
+const registryIds = new Set(registryRows.map(row => row.id));
+const registryChanged = new Set(registryRows.filter(row => Object.keys(row.changes).length).map(row => row.id));
 const updateIds = new Set(overlay.updates.map(row => row.id));
 assert.equal(updateIds.size, overlay.updates.length);
 assert([...updateIds].every(id => baselineIds.has(id)), 'An update did not match a baseline ID');
@@ -139,7 +144,7 @@ const closureReview = [
 assert(closureReview.every(row => baselineIds.has(row.id) && !updateIds.has(row.id)));
 const holdIds = new Set(closureReview.map(row => row.id));
 const facilityRows = baseline.map(row => ({ ...row,
-  status: updateIds.has(row.id) ? 'reflected_update' : holdIds.has(row.id) ? 'hold' : 'not_attested_complete',
+  status: updateIds.has(row.id) ? 'reflected_update' : registryChanged.has(row.id) ? 'registry_corrected' : registryIds.has(row.id) ? 'registry_verified_no_change' : holdIds.has(row.id) ? 'hold' : 'not_attested_complete',
   scope: 'baseline',
 }));
 const additionRows = additionLedgerRows(overlay.additions);
@@ -163,8 +168,11 @@ const summary = {
   checked_at: overlay.checked_at,
   baseline: {
     total: baseline.length, reflected_updates: updateIds.size, explicitly_held: holdIds.size,
-    not_attested_complete: baseline.length - updateIds.size - holdIds.size,
-    verified_no_change_attested_in_this_ledger: 0,
+    not_attested_complete: baseline.length - updateIds.size - holdIds.size - registryIds.size,
+    registry_verified: registryIds.size,
+    registry_corrected: registryChanged.size,
+    verified_no_change_attested_in_this_ledger: registryIds.size - registryChanged.size,
+    registry_scope: 'Name, address and listed services/school identity at the official registry snapshot; not physical opening status or an entrance survey.',
     note: 'Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale.',
   },
   additions: { reflected: additionRows.length },
@@ -181,9 +189,9 @@ const summary = {
     graduates_pending: graduateReview.filter(row => !row.map_adopted && row.location_type === 'reported_fixed_address').length,
     graduate_map_additions_cumulative: graduateReview.filter(row => row.map_adopted).length },
   earlier_hold_rows_now_reflected: staleHoldIds,
-  jev_remaining: { records: read('data-sources/facility-successors-20260925/adoption-summary.json').jev.remaining_records,
-    conservative_budget_usd: read('data-sources/facility-successors-20260925/adoption-summary.json').jev.remaining_budget_usd,
-    source: 'data-sources/facility-successors-20260925/adoption-summary.json' },
+  jev_remaining: { records: read('data-sources/facility-hundred-20260927/batch.json').jev.remaining_records,
+    conservative_budget_usd: read('data-sources/facility-hundred-20260927/batch.json').jev.remaining_budget_usd,
+    source: 'data-sources/facility-hundred-20260927/batch.json' },
   inputs_sha256: Object.fromEntries([
     ...baselineFiles, 'public/data/facility-current.json',
     'outputs/facility-local-stores-20260925/continued-review-queue.json',

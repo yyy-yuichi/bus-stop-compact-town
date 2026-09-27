@@ -8,7 +8,7 @@ import {SHOPPING_CATEGORIES,categoryOf} from '../src/facilityCatalog.ts';
 import {facilityIconMarkup} from '../src/facilityIcons.ts';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),pub='data-sources/facility-hagi-nagato-20260925';
 const rows=read(pub+'/adoptions.json'),inputs=read(pub+'/review-inputs.json'),summary=read(pub+'/adoption-summary.json'),reviews=read(pub+'/article-reviews.json'),current=read('public/data/facility-current.json');
-const historical={ ...current, checked_at: '2026-09-25', updates: current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
+const historical={ schema_version: current.schema_version, checked_at: '2026-09-25', updates: current.updates.slice(0,summary.cumulative_updates),additions:current.additions.slice(0,summary.cumulative_additions)};
 const base=['shopping.geojson','civic-facilities.geojson'].flatMap(f=>read('public/data/'+f).features),applied=applyFacilityCurrent(base,current);
 const get=id=>applied.find(f=>f.id===id);
 test('map selection rejects a viewport, wrong branch, wrong address and repeated marker',()=>{
@@ -33,9 +33,10 @@ test('all previous records survive and a replay cannot replace an adopted fact',
  assert.equal(summary.extra_jev_requests,0);assert.equal(summary.jev_remaining.records,975);
 });
 test('verified new facilities have distinct identities from nearby stores and old branches',()=>{
+ const historicalApplied=applyFacilityCurrent(base,historical);
  for(const p of rows.point_reviews)for(const near of p.compared_candidates){
    const prior=base.find(f=>f.id===near.id)??historical.additions.find(f=>f.id===near.id);
-   assert.deepEqual(get(near.id),prior);
+   assert.deepEqual(historicalApplied.find(f=>f.id===near.id),prior);
  }
  assert.equal(get('official-juntendo-hagi-274').properties.freshness_review.effective_at,'2024-11-20');
  assert.equal(get('official-hacchi-hagi').properties.freshness_review.effective_at,'2024-10-29');

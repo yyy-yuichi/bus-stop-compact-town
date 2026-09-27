@@ -1,0 +1,197 @@
+{
+  "checked_at": "2026-09-27",
+  "source_as_of": "2026-09-01",
+  "source_rows": 6969,
+  "care_baseline": 2453,
+  "care_verified": 1973,
+  "care_verified_no_change": 1951,
+  "care_name_corrections": 22,
+  "care_held": 480,
+  "school_corrections": 9,
+  "registry_verifications": 1982,
+  "additions": 0,
+  "corrections": 31,
+  "verified_no_change": 1951,
+  "completed_article_delta": 0,
+  "source_index": [
+    {
+      "city_code": "35201",
+      "city": "下関市",
+      "rows": 1594,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35201",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+      "csv_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f",
+      "retrieved_at": "2026-09-27T05:05:34.001844+00:00"
+    },
+    {
+      "city_code": "35202",
+      "city": "宇部市",
+      "rows": 905,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35202",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+      "csv_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e",
+      "retrieved_at": "2026-09-27T05:05:34.866632+00:00"
+    },
+    {
+      "city_code": "35203",
+      "city": "山口市",
+      "rows": 919,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35203",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+      "csv_sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04",
+      "retrieved_at": "2026-09-27T05:05:35.657811+00:00"
+    },
+    {
+      "city_code": "35204",
+      "city": "萩市",
+      "rows": 253,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35204",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35204&od=1",
+      "csv_sha256": "1c2640435ce6ddb5e4f2258988dac564a834c43e5baf45182a33f292143b1431",
+      "retrieved_at": "2026-09-27T05:05:36.312088+00:00"
+    },
+    {
+      "city_code": "35206",
+      "city": "防府市",
+      "rows": 508,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35206",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+      "csv_sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1",
+      "retrieved_at": "2026-09-27T05:05:37.120575+00:00"
+    },
+    {
+      "city_code": "35207",
+      "city": "下松市",
+      "rows": 251,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35207",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35207&od=1",
+      "csv_sha256": "e9b3a915aece958300d6917b658b10e7814df0911e42a8151662f6ec8989ebb5",
+      "retrieved_at": "2026-09-27T05:05:37.830896+00:00"
+    },
+    {
+      "city_code": "35208",
+      "city": "岩国市",
+      "rows": 624,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35208",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35208&od=1",
+      "csv_sha256": "fb123b00fe93263ce93c22e84a901898d22a9076e94b6c11438dbd67d53055df",
+      "retrieved_at": "2026-09-27T05:05:38.559066+00:00"
+    },
+    {
+      "city_code": "35210",
+      "city": "光市",
+      "rows": 258,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35210",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+      "csv_sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa",
+      "retrieved_at": "2026-09-27T05:05:39.248447+00:00"
+    },
+    {
+      "city_code": "35211",
+      "city": "長門市",
+      "rows": 158,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35211",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+      "csv_sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c",
+      "retrieved_at": "2026-09-27T05:05:39.996498+00:00"
+    },
+    {
+      "city_code": "35212",
+      "city": "柳井市",
+      "rows": 176,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35212",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35212&od=1",
+      "csv_sha256": "731d3468bfd0e07e1e5a00d9eedf6da3bc5fbc54e2ba26c1f06848a16d8ef5f3",
+      "retrieved_at": "2026-09-27T05:05:40.810483+00:00"
+    },
+    {
+      "city_code": "35213",
+      "city": "美祢市",
+      "rows": 109,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35213",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35213&od=1",
+      "csv_sha256": "65c23e1b6d8ffe16956a1e20180ac5c692467d22b41e6f06aa1fd4980590a830",
+      "retrieved_at": "2026-09-27T05:05:41.447204+00:00"
+    },
+    {
+      "city_code": "35215",
+      "city": "周南市",
+      "rows": 591,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35215",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+      "csv_sha256": "bf8af3864354628856fe4c0797557c89ca1560d5140bbd9fff106d1b8fc41c92",
+      "retrieved_at": "2026-09-27T05:05:42.194240+00:00"
+    },
+    {
+      "city_code": "35216",
+      "city": "山陽小野田市",
+      "rows": 346,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35216",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+      "csv_sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a",
+      "retrieved_at": "2026-09-27T05:05:42.957618+00:00"
+    },
+    {
+      "city_code": "35305",
+      "city": "大島郡周防大島町",
+      "rows": 118,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35305",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35305&od=1",
+      "csv_sha256": "971cc2e50f829a3b56da921c95ae7ce71d4813f1cc26d3b1e3d88a5458691dad",
+      "retrieved_at": "2026-09-27T05:05:43.702799+00:00"
+    },
+    {
+      "city_code": "35321",
+      "city": "玖珂郡和木町",
+      "rows": 19,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35321",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35321&od=1",
+      "csv_sha256": "841c9de857069bf26420795fe3decac5065910c858d5042411a92c8e3cc57fad",
+      "retrieved_at": "2026-09-27T05:05:44.331692+00:00"
+    },
+    {
+      "city_code": "35341",
+      "city": "熊毛郡上関町",
+      "rows": 17,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35341",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35341&od=1",
+      "csv_sha256": "db59393d73fcc73ea1ff038e6dad3145501fc9aeebd3485eed94c3620553ffa3",
+      "retrieved_at": "2026-09-27T05:05:44.930189+00:00"
+    },
+    {
+      "city_code": "35343",
+      "city": "熊毛郡田布施町",
+      "rows": 45,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35343",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35343&od=1",
+      "csv_sha256": "f06d68114f6fcd9403691f0cd5596222769d1d4a890a74a03dfc92919f08ef42",
+      "retrieved_at": "2026-09-27T05:05:45.560563+00:00"
+    },
+    {
+      "city_code": "35344",
+      "city": "熊毛郡平生町",
+      "rows": 58,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35344",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35344&od=1",
+      "csv_sha256": "342a3685ff60c3f57ac2ccb6727d1839f413499a483005d37d74b7ca0c6542ff",
+      "retrieved_at": "2026-09-27T05:05:46.207447+00:00"
+    },
+    {
+      "city_code": "35502",
+      "city": "阿武郡阿武町",
+      "rows": 20,
+      "search_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?minasi=1&city=35502",
+      "export_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35502&od=1",
+      "csv_sha256": "3f433c64e9f0e4cbd351d6d6c14538cf92f4b01bb8a1d3fa80b8fd343d4b2761",
+      "retrieved_at": "2026-09-27T05:05:46.861433+00:00"
+    }
+  ],
+  "baseline_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137"
+  },
+  "limits": [
+    "Registry matches are scoped attestations, not whole-building operational surveys.",
+    "No new geometry, closure, opening or rename dates inferred."
+  ]
+}

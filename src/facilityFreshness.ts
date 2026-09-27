@@ -1,5 +1,6 @@
 import type { ShoppingFeature } from './types';
 import { SHOPPING_CATEGORIES } from './facilityCatalog.ts';
+import { validateRegistryReview, type RegistryReview } from './facilityRegistry.ts';
 
 export interface FreshnessReview {
   status: 'closed' | 'operating' | 'changed' | 'scheduled_change';
@@ -11,6 +12,7 @@ export interface FreshnessReview {
 interface CurrentData {
   schema_version: number; checked_at: string;
   updates: { id: string; expected: { name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'] }; changes: Record<string, string>; review: FreshnessReview; duplicate_of?: string }[];
+  verifications?: { id: string; expected: { name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'] }; changes: Record<string, string>; review: RegistryReview }[];
   additions: ShoppingFeature[];
 }
 const validDate = (s: unknown): s is string => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && Number.isFinite(Date.parse(s)) && new Date(s).toISOString().slice(0, 10) === s;
@@ -39,7 +41,7 @@ export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): 
 /** Apply reviewed changes, preserving the original imports and their identifiers. */
 export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): ShoppingFeature[] {
   const data = value as CurrentData;
-  if (!data || data.schema_version !== 1 || !validDate(data.checked_at) || !Array.isArray(data.updates) || !Array.isArray(data.additions)) throw Error('Invalid current facility data');
+  if (!data || data.schema_version !== 1 || !validDate(data.checked_at) || !Array.isArray(data.updates) || !Array.isArray(data.additions) || (data.verifications !== undefined && !Array.isArray(data.verifications))) throw Error('Invalid current facility data');
   const byId = new Map(base.map(f => [String(f.id), f]));
   if (byId.size !== base.length) throw Error('Duplicate base facility ID');
   const updates = new Map<string, ShoppingFeature>(), sourceIds = new Set(base.flatMap(f => f.properties.source_ids));
@@ -51,6 +53,22 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     validateFreshnessReview(item.review, data.checked_at);
     updates.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, freshness_review: structuredClone(item.review) } });
   }
+  const verifications = new Map<string, ShoppingFeature>();
+  const allowedVerificationChanges = new Set(['name', 'city', 'address']);
+  for (const item of data.verifications ?? []) {
+    const before = byId.get(item?.id), expected = item?.expected;
+    if (!before || updates.has(item.id) || verifications.has(item.id) || !expected ||
+        before.properties.name !== expected.name || before.properties.category !== expected.category ||
+        !same(before.properties.source_ids, expected.source_ids) || !same(before.geometry, expected.geometry)) {
+      throw Error(`Source drift or duplicate verification: ${item?.id}`);
+    }
+    if (!item.changes || Array.isArray(item.changes) || typeof item.changes !== 'object' ||
+        Object.entries(item.changes).some(([key, val]) => !allowedVerificationChanges.has(key) || typeof val !== 'string' || !val.trim())) {
+      throw Error('Forbidden registry verification change');
+    }
+    validateRegistryReview(item.review, data.checked_at);
+    verifications.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, registry_review: structuredClone(item.review) } });
+  }
   const additions: ShoppingFeature[] = [];
   for (const f of data.additions) {
     const p = f?.properties;
@@ -61,7 +79,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     if (!['opened', 'listed'].includes(p.freshness_review?.event ?? '') || !p.freshness_review!.sources.some(s => s.url === p.official_url)) throw Error('New facility requires current official evidence');
     p.source_ids.forEach(id => sourceIds.add(id)); additions.push(structuredClone(f));
   }
-  const result = [...base.map(f => updates.get(String(f.id)) ?? f), ...additions];
+  const result = [...base.map(f => updates.get(String(f.id)) ?? verifications.get(String(f.id)) ?? f), ...additions];
   const finalById = new Map(result.map(f => [String(f.id), f]));
   const aliasIds = new Set(data.updates.filter(u => u.duplicate_of !== undefined).map(u => u.id));
   for (const item of data.updates.filter(u => u.duplicate_of !== undefined)) {

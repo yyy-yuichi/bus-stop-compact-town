@@ -23,6 +23,15 @@ try {
   const care = render('civic-care-3557280025-a46f56b5db');
   assert(care.includes('介護医療院ケアホーム山口') && care.includes('取込時点の登録情報（履歴）'));
   assert(care.includes('35B0800032') && care.includes('3557280025'));
+  const escaped = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
+  for (const verified of facilities.filter(f => f.properties.registry_review)) {
+    const review = verified.properties.registry_review;
+    const html = render(verified.id);
+    assert(html.includes('行政台帳の掲載確認') && html.includes(review.source_as_of) && html.includes(review.checked_at));
+    assert(html.includes(escaped(review.official_name)) && html.includes(escaped(review.official_address)));
+    assert(html.includes('建物全体の営業・開業') && html.includes('現況・入口は未確認'));
+    assert(!html.includes('開店・掲載確認'), 'Registry listing alone must not create a freshness event');
+  }
   const scheduled = render('osm-node-2426673962');
   assert(scheduled.includes('営業終了予定日') && scheduled.includes('2027-08-31'));
   assert(!scheduled.includes('候補には表示しません'));

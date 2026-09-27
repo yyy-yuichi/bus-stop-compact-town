@@ -22,6 +22,7 @@ assert.equal(JSON.stringify(raw), original, 'Never modify original imports');
 assert.equal(JSON.stringify(patch), originalPatch, 'Never mutate the reviewed overlay');
 assert.deepEqual(applyFacilityCurrent(raw, patch), current, 'Same inputs yield the same output');
 const get = id => current.find(f => f.id === id);
+const reviewedBaseIds = new Set([...patch.updates.map(p => p.id), ...(patch.verifications ?? []).map(p => p.id)]);
 const closed = get('osm-way-475283671'), added = get('official-donki-738');
 const oka = get('osm-node-1423658379'), care = get('civic-care-3557280025-a46f56b5db');
 const daimar = get('osm-node-2426673962');
@@ -31,7 +32,7 @@ for (const before of raw) {
   assert.deepEqual(after.properties.source_ids, before.properties.source_ids);
   assert.deepEqual(after.properties.registered_details, before.properties.registered_details);
   assert.deepEqual(after.properties.civic_details, before.properties.civic_details);
-  if (!patch.updates.some(p => p.id === before.id)) assert.deepEqual(after, before);
+  if (!reviewedBaseIds.has(before.id)) assert.deepEqual(after, before);
 }
 assert.equal(facilityAvailable(closed), false);
 assert.equal(facilityAvailable(daimar), true, 'Scheduled closure is not a completed closure');

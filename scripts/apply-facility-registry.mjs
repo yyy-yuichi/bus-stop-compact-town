@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { applyFacilityCurrent } from '../src/facilityFreshness.ts';
+const dir='data-sources/facility-registry-20260927';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const batch=read(`${dir}/batch.json`), reviews=read(`${dir}/reviews.json`);
+for(const [path,sha] of Object.entries(batch.baseline_sha256))assert.equal(createHash('sha256').update(fs.readFileSync(path)).digest('hex'),sha,'Registry baseline drift');
+const base=Object.keys(batch.baseline_sha256).flatMap(p=>read(p).features), byId=new Map(base.map(f=>[f.id,f]));
+const current=read('public/data/facility-current.json'), ids=new Set(reviews.map(r=>r.id));
+assert.equal(ids.size,reviews.length);
+const verifications=reviews.map(({id,changes,review})=>{
+  const f=byId.get(id);assert(f&&!current.updates.some(r=>r.id===id),'Unknown or already updated registry ID');
+  return {id,expected:{name:f.properties.name,category:f.properties.category,source_ids:f.properties.source_ids,geometry:f.geometry},changes,review};
+});
+const existing=current.verifications??[];
+for(const row of existing.filter(r=>ids.has(r.id)))assert.deepEqual(row,verifications.find(r=>r.id===row.id),'Existing verification differs');
+const next={...current,verifications:[...existing.filter(r=>!ids.has(r.id)),...verifications]};
+applyFacilityCurrent(base,next);
+assert.equal(verifications.filter(r=>Object.keys(r.changes).length).length,batch.corrections);
+if(process.argv.includes('--apply'))fs.writeFileSync('public/data/facility-current.json',JSON.stringify(next,null,2)+'\n');
+console.log(JSON.stringify({registry_verifications:verifications.length,corrections:batch.corrections,no_change:batch.verified_no_change,applied:process.argv.includes('--apply')}));
