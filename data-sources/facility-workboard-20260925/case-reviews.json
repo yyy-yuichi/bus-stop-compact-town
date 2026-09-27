@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-25",
-  "scope": "Reviewed article events including the Halows regional batch, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of unreviewed articles or baseline facilities.",
+  "checked_at": "2026-09-27",
+  "scope": "Reviewed article events including the Halows regional batch, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of unreviewed articles or baseline facilities. 2026-09-27の100記事で追加した226件のheldイベントを分類。",
   "cases": [
     {
       "case_id": "facility:official-watts-47917",
@@ -729,6 +729,16 @@
           "reason": "海商館の元施設の同一性確認が残る。",
           "next": "2024年6月閉店の月情報。日付を月末と推測しない。元店舗のIDと日付精度を確認。",
           "event_ids": []
+        },
+        {
+          "issue_id": "legacy:3:hundred:map_action:5d0966c1e6",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "海商館：2024-06-02との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:03"
+          ]
         }
       ],
       "evidence_refs": [
@@ -796,6 +806,17 @@
           "reason": "kikiの店舗として公表された精密位置が未取得。",
           "next": "公式住所は下松市旗岡5丁目まで。自宅の精密位置を推測せず、公開されている店舗位置の案内を確認。",
           "event_ids": []
+        },
+        {
+          "issue_id": "legacy:7:hundred:map_action:2929a27b01",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "自店の2024.8.6オープンしましたと2025.8.6一周年の二重記載で実施日支持。独立店の地図点未取得。公開所在地は旗岡5丁目まで。 一次資料にHTTP URLあり。取得した原URLはsupplemental_http_sourcesに保持し、未取得のHTTPSへ置換しない。 / まちのパン屋さんkiki：2024-08-06との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:03",
+            "shunan-98698:kiki-opening"
+          ]
         }
       ],
       "evidence_refs": [
@@ -1384,6 +1405,16 @@
           "reason": "Official opening date known but same location as baseline まいどおおきに食堂. Resolve prior occupant before adoption.",
           "next": "既存まいどおおきに食堂との同一性・後継関係を確認する。",
           "event_ids": []
+        },
+        {
+          "issue_id": "reconcile:tadokoro-kudamatsu:hundred:map_action:45550575e7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "麺場 田所商店 下松店：2025-11-24との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116550:proposal:02"
+          ]
         }
       ],
       "evidence_refs": [
@@ -2018,6 +2049,16 @@
             "kaiten-608532:opening-date",
             "shunan-119477:opening-date",
             "shunan-119477:preopening-date"
+          ]
+        },
+        {
+          "issue_id": "facility:official-secondstreet-32214:hundred:map_action:3b29ebc596",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "セカンドストリート下松店：2026-07-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:05"
           ]
         }
       ]
@@ -3389,6 +3430,18 @@
             "shunan-86920:opening-date",
             "shunan-98811:opening-date"
           ]
+        },
+        {
+          "issue_id": "case:kaiten-527083:opening-date:hundred:map_action:b06b6a7c13",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。 / ラ・ムー周南久米店：2024-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 / ラ・ムー周南久米店：2024-11-21との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:lamu",
+            "shunan-107077:proposal:08",
+            "shunan-89605:proposal:04"
+          ]
         }
       ]
     },
@@ -4069,6 +4122,16 @@
           "event_ids": [
             "shunan-90075:mori"
           ]
+        },
+        {
+          "issue_id": "case:shunan-90075:mori:hundred:map_action:7bb23d3e11",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ドラッグストアモリ 遠石店：2024-02-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-462854:proposal:01"
+          ]
         }
       ]
     },
@@ -4148,6 +4211,16 @@
           "next": "不足する歴史的・店舗固有資料を得たとき補完。現行一覧の再取得や元施設の誤閉店で代用しない。",
           "event_ids": [
             "shunan-101875:daiso-renewal"
+          ]
+        },
+        {
+          "issue_id": "facility:official-daiso-005307:temporary_change:hundred:map_action:c9d9463cb7",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "DAISOゆめタウン新南陽店：2024-11-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:09"
           ]
         }
       ]
@@ -4392,6 +4465,16 @@
           "next": "店舗固有の一次履歴が得られたとき補完。現行確認を実施日の確認と扱わない。",
           "event_ids": [
             "shunan-115609:opening"
+          ]
+        },
+        {
+          "issue_id": "facility:official-seven-misato3:opening:hundred:map_action:ff26e887e5",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "セブン-イレブン下松美里町3丁目店：2025-09-25との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:04"
           ]
         }
       ]
@@ -4986,6 +5069,3375 @@
           "event_ids": []
         }
       ]
+    },
+    {
+      "case_id": "case:hundred:f157d22455fdeaed",
+      "name": "文栄堂",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f157d22455fdeaed:hundred:map_action:6317febc6a",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "運営NICの保存資料は2024年4月30日の閉店予定告知。閉店済みと明示する事後資料は未取得。地図ID不在だけでは実閉店の完了判断にせず保留。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-499534:buneido-closure"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d96ab1f5f4b5ec73",
+      "name": "ALOOK",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d96ab1f5f4b5ec73:hundred:map_action:2f22f4ff9a",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ALOOK公式の保存資料は当該支店の閉店告知への言及で、閉店実施を明示する本文は未確認。記事9月28日を実施済みとせず保留。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-570209:alook-closure"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:0923267db8825bc0",
+      "name": "日産新店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:0923267db8825bc0:hundred:map_action:04ce1df5c4",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式グランドオープンページに実店舗名と固有地点がある。主要本文が画像で、5/9の実施日を画像未確認のまま確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-600114:nissan-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b6e2c214f9105bf5",
+      "name": "COCOLAND",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b6e2c214f9105bf5:hundred:watch:0713d49f85",
+          "impact": "watch",
+          "priority": "P1",
+          "reason": "2026-11-10は基準日より未来。告知済みでも閉店実施として完了不可。ホテル本体とゴルフ練習場を分離。",
+          "next": "予定日後に運営元の実施告知と現行営業を確認。基準日前は閉店・開店へ反映しない。",
+          "event_ids": [
+            "kaiten-615972:cocoland-future-close"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8487f5e0f5aa6b9c",
+      "name": "大丸下関店",
+      "facility_ids": [
+        "osm-node-2426673962"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8487f5e0f5aa6b9c:hundred:watch:ed94c828ef",
+          "impact": "watch",
+          "priority": "P1",
+          "reason": "2027-08-31は基準日より未来。公式もそれまでは営業と案内。現在閉店への更新不可。",
+          "next": "予定日後に運営元の実施告知と現行営業を確認。基準日前は閉店・開店へ反映しない。",
+          "event_ids": [
+            "kaiten-606783:daimaru-future-close"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:6ce45bb254ed48ae",
+      "name": "ユーズボウル宇部",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:6ce45bb254ed48ae:hundred:map_action:744a1ee8c7",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ユーズボウル宇部の公式閉館告知は主要本文が画像で未読。実閉店の事後確認はできておらず、旧ID不在だけで完了にしない。3月31日は報道値として保持。 一次資料にHTTP URLあり。取得した原URLはsupplemental_http_sourcesに保持し、未取得のHTTPSへ置換しない。 / 同じユーズボウル宇部閉館だが、参照先kaiten-458401も実施根拠未確認で保留。最終判断済みへのduplicateとしては扱わない。公式告知の主要画像本文は未読。 一次資料にHTTP URLあり。取得した原URLはsupplemental_http_sourcesに保持し、未取得のHTTPSへ置換しない。 / 1996年開店という背景履歴を保持。閉店実施を確認できていないため「閉店済み同一施設の過去開店は地図変更不要」という最終判断へは接続しない。過去開業年の一次実施根拠も未確認。 一次資料にHTTP URLあり。取得した原URLはsupplemental_http_sourcesに保持し、未取得のHTTPSへ置換しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-458401:us-bowl-closure",
+            "ube-59781:opening-history",
+            "ube-59781:us-bowl-closure"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8ce58d4719fefe39",
+      "name": "Zoff",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8ce58d4719fefe39:hundred:map_action:0b518e6a6c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式当該支店に2026年7月4日オープン表記と営業情報あり。歴史根拠は支持されるが、眼鏡店の既存カテゴリ適合と固有地点の最終検証が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-606870:zoff-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d2c69c68a68a3eb1",
+      "name": "火の山キャンプ場",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d2c69c68a68a3eb1:hundred:map_action:83c0d8b896",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式9/19グランドオープンと予約案内を確認。現行施設として掲載可否を検討。キャンプ場の分類適合と事後の実開業日確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-616734:hinoyama-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ba98c09ed0fe2f8d",
+      "name": "やすらガーデン",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ba98c09ed0fe2f8d:hundred:map_action:85d607dbbe",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "市公式に2025年1月供用開始済みの記載あり。園芸センター跡の複合施設。固有敷地/入口点と構成施設の重複整理が未完。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shimonoseki-61661:yasura-complex"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:72e0dba177935459",
+      "name": "安岡公民館",
+      "facility_ids": [
+        "osm-way-323473573"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:72e0dba177935459:hundred:map_action:04e914c4d5",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "公式に旧公民館1階から新集会施設棟1階へ移転済み。旧地図IDを新住所富任町5-10-1へ移す必要あり。新点未確認。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shimonoseki-61661:yasuoka-relocation"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:7be68ebd8a1442d7",
+      "name": "はまゆう図書館",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:7be68ebd8a1442d7:hundred:map_action:55c494c56a",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "図書館の新施設への入居を列挙。既存図書館の移転/新設区別と図書館固有位置を要確認。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shimonoseki-61661:hamayu-library"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:cbb1f794175f985e",
+      "name": "やすらガーデン公園",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:cbb1f794175f985e:hundred:map_action:1e93ec2569",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公園・貸会議室を含む改築。公園の独立掲載と親複合施設の表現を要照合。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shimonoseki-61661:garden-park"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:851df1c4675b8ba5",
+      "name": "紳士服フタタ・フォーエル",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:851df1c4675b8ba5:hundred:watch:01278e6ea7",
+          "impact": "watch",
+          "priority": "P1",
+          "reason": "9/30閉店は基準日より未来。統合予定であり実閉店には更新しない。 / 9/30は未来。公式閉店セール告知と合わせても実閉店処理しない。 / 10/17予定も未来。はるやまを閉店・改称しない。",
+          "next": "予定日後に運営元の実施告知と現行営業を確認。基準日前は閉店・開店へ反映しない。",
+          "event_ids": [
+            "shunan-119725:foel-future-close",
+            "shunan-120074:foel-oldclose",
+            "shunan-120074:foel-relocation"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:5502b77da149a9e9",
+      "name": "あにちゃん",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:5502b77da149a9e9:hundred:map_action:2c11d234b8",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "空港公式7/17記事は7/21開店予定のみ。実施根拠と国内線2F特産品プラザ内の固有区画点が不足。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "ube-81156:anichan-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:1cb26d54a390c5a8",
+      "name": "ぐるんぐるん空港店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:1cb26d54a390c5a8:hundred:map_action:67dc44ec91",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "空港公式3/19の3/28予定のみ。実施確認と国内線1F到着側区画の固有位置が不足。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "ube-82282:gurungurun-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ccfcd88eb35839c3",
+      "name": "サードプラネット東岐波店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ccfcd88eb35839c3:hundred:map_action:14addd1b02",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "本文が最近東岐波にオープンした同社店に言及。別施設の開店背景を保持。根拠は当該空港告知と分けて要照合。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "ube-82282:thirdplanet-background"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8c4d6d69c0f9b3b5",
+      "name": "ドラッグストア岩崎チェーン宇部店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8c4d6d69c0f9b3b5:hundred:map_action:86285510dd",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "求人一次は7/21予定で変更ありと明記。別記事22の運営公式一覧に同店の現行掲載を確認したが実施日根拠には転用しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "ube-82981:iwasaki-ube-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:492b85e0c22fade0",
+      "name": "沖縄料理としゃぶしゃぶ ハレの日",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:492b85e0c22fade0:hundred:map_action:f5e4d11818",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式7/5記事はcoming soonのみ。2024年8月上旬予定の実施/現在の同店確認が不足。 / 沖縄料理としゃぶしゃぶ ハレの日：2024-08-06との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:04",
+            "shunan-97525:harenohi-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:0e244658513d7272",
+      "name": "花の海フラワーガーデン",
+      "facility_ids": [
+        "osm-way-238680318"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:0e244658513d7272:hundred:map_action:88f231cbdd",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "公式4/7記事は4/25開設予定。親公園IDはあるが新エリアの固有範囲と実施確認が未完。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-48288:flowergarden"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:988501d2850dcc33",
+      "name": "休憩所テレワーク施設",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:988501d2850dcc33:hundred:map_action:9e899f68f4",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "同日開始予定の休憩所改修を別イベントとして保持。テレワーク施設の実施確認が不足。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-48288:remote-work"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:0f52ab009fa921f0",
+      "name": "岩崎チェーン新南陽店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:0f52ab009fa921f0:hundred:map_action:5bd43269f0",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "2026年夏という報道/求人の予定は正確な実施日を確定しない。公式一覧に政所2-2-1の現営業店あり、現行掲載と分離。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119140:iwasaki-shin-nanyo"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:133bba2c3dd1c7d4",
+      "name": "金次郎",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:133bba2c3dd1c7d4:hundred:map_action:363ddeef9c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "運営会社採用ページが2025年5月オープンいたしましたと明言。本文1月→3月予定は延期された。完了月は支持されるが固有所在地/地点と地図反映待ち。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-108360:kinjiro-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f670a85c04974755",
+      "name": "周南市陸上競技場",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f670a85c04974755:hundred:map_action:05e17eadc3",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "公式は2026年4月リニューアル予定。事後完成/営業根拠不足。 / 市公式契約に4/1以降の愛称期間を明記。現在名採用候補だが固有施設ID・位置/実施確認が必要。 / 2024年10月から2026年3月改築・2026年4月再開計画。告知を完了証拠にせず実施確認が必要。 ほか1件も同一施設の保留。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-117130:stadium-amenities",
+            "shunan-117130:stadium-construction",
+            "shunan-118019:stadium-rename",
+            "shunan-118019:stadium-renewal"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:7a25d5e2d08b5cef",
+      "name": "周南市陸上競技場カフェ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:7a25d5e2d08b5cef:hundred:map_action:630cf54780",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "本文に具体的な入居予定があり、競技場改修だけで消さない。店名・現在営業・固有位置が不足。 / 名称/実施未確認の入居カフェ計画を保持。競技場だけで記事完了にしない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-117130:stadium-cafe",
+            "shunan-118019:stadium-cafe"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e85e97dd61b1ac9f",
+      "name": "HOTEL R9 The Yard 阿知須",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e85e97dd61b1ac9f:hundred:map_action:caae2f0794",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "会社配信プレスは10/19予定。現行公式ホテル案内の確認が必要。宇部昭和町の別店ではなく山口市阿知須。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "ube-81573:r9-ajisu"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:fa661feb07a5aeee",
+      "name": "メンチの鉄人＆マイティカレー光店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:fa661feb07a5aeee:hundred:map_action:4f88dfc124",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "公式は上棟式報告と2024年5月オープン予定のみ。2ブランド共同店舗の実開業/固有位置不足。 / メンチの鉄人＆マイティカレー光店：2025-06-30との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-114793:proposal:01",
+            "shunan-91705:menchi-mighty"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:106f3ffe457cd1ed",
+      "name": "RAMEN OF TODAY",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:106f3ffe457cd1ed:hundred:map_action:a8f6104504",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "運営公式が2025.04.07同店OPENと現店住所美里町3-9-12を明示。記事の春/4月予定を実施根拠で更新可能。固有点と地図反映待ち。 / 28と同一開店。公式2025-04-07実施支持あり、固有点/反映待ち。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-110210:ramen-today",
+            "shunan-111909:ramen-today"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:5fb2a15343c8d0a2",
+      "name": "イオン光店",
+      "facility_ids": [
+        "osm-node-4354872989"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:5fb2a15343c8d0a2:hundred:map_action:bc27c64c98",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "当日7/10 14:30の会社プレスにリニューアルと新営業時間・設備を明記するが文面は実施予定形。事後実施確認を優先。既存ID維持。 / 7:00〜24:00の新営業時間。既存営業時間項目の有無と現行店舗案内を照合後更新。 / イオン光店：2026-07-10との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119413:aeon-hours",
+            "shunan-119413:aeon-renewal",
+            "shunan-119931:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:69962a98b480ab88",
+      "name": "グッデイ山口小郡店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:69962a98b480ab88:hundred:map_action:7c4a58deab",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "公式が2022年12月の一旦閉店を回顧するが、現在再開予定資料だけでは最新の営業状態と地図差分を確定しない。 / 11/25公式は12/6再オープン予定。建替えを永久閉店とせず現店の実施/位置を照合する。 / グッデイ山口小郡店：2024-12-06との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-529424:proposal:01",
+            "yamaguchi-43324:gooday-hiatus",
+            "yamaguchi-43324:gooday-reopening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a75abea72a83883c",
+      "name": "DECK PLAZA",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "10/4企業プレスは10/24予定。公式現在ページも元の予定案内のまま。D2親施設代表点をテナント固有点としない。 / 本文が11月追加オープン予定を別時期で記載。主店舗の開店と別に実施確認する。 / 2024-10-24の元開店背景。公式保存は開店前予定形、記事2025年営業取材を一次実施日にはしない。 ほか4件も同一施設の保留。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-101978:deck-opening",
+            "shunan-101978:natural-zone",
+            "shunan-116018:proposal:05",
+            "shunan-116386:deck-hiatus",
+            "shunan-116386:deck-history-opening",
+            "shunan-116386:deck-renewal",
+            "shunan-116594:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:129ff01d77f89dd7",
+      "name": "ワンダーステーキ旧店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:129ff01d77f89dd7:hundred:map_action:72552d7e08",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "旧店舗跡を本文が明示。旧店不在の確認だけで閉店一次情報を取得済みとはしない。現在同住所RAMEN OF TODAY公式と結び付けたno-change候補だが旧同店住所照合を要する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-110210:wonder-steak-predecessor"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a3507616c91d96ec",
+      "name": "好鐵",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a3507616c91d96ec:hundred:map_action:9b8c577ef5",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:kotetsu"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:459be7570589b7c6",
+      "name": "大吉",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:459be7570589b7c6:hundred:map_action:263694765b",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:daikichi"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:75e42b30c82d8efa",
+      "name": "3 meal",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:75e42b30c82d8efa:hundred:map_action:a5fa0ead1f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:meal3"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ff41ce9585a788b0",
+      "name": "スズキアリーナ徳山",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ff41ce9585a788b0:hundred:map_action:1296f2bcde",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。 / スズキアリーナ徳山：2024-10-05との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:suzuki",
+            "shunan-99731:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d49ffde722ade6d0",
+      "name": "丸源ラーメン周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d49ffde722ade6d0:hundred:map_action:b351a018fc",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。 / 丸源ラーメン周南店：2024-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:marugen",
+            "shunan-99731:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:eb469116bbf36f62",
+      "name": "24スイーツショップ周南平和通り店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:eb469116bbf36f62:hundred:map_action:d39f5088a7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。 / 24スイーツショップ周南平和通り店：2024-11-02との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:24sweets",
+            "shunan-107077:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:120d6b9838fde65c",
+      "name": "徳山デッキ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:120d6b9838fde65c:hundred:map_action:2354f43c68",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:deck"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:6b6f5a8d4c2e0555",
+      "name": "オムライス店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:6b6f5a8d4c2e0555:hundred:map_action:7089a65a89",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。本文はゆめタウン徳山と下松店名が混在、所在取り違え解消が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:omurice"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:03d72b40a146b3ff",
+      "name": "きじん",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:03d72b40a146b3ff:hundred:map_action:6b847e5bdc",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:kijin"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d381653ccf6198b1",
+      "name": "エカシムロ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d381653ccf6198b1:hundred:map_action:908d91ca96",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ記事の各店舗を保持。現行一覧だけを開業日根拠にせず同店・実施・地点を個別照合する。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:ekashimuro"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a5166f95393ee89f",
+      "name": "こんにちは",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a5166f95393ee89f:hundred:map_action:441b431866",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "好鐵の旧入居店として本文明示。別途同店閉店/後継同住所根拠が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100384:konnichiwa-predecessor"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:9595ca02710c6621",
+      "name": "ジモティースポット光店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:9595ca02710c6621:hundred:map_action:b22fbeb674",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "記事は11/29開業後取材だが公式企業一次は11/14の開設予定。現行店舗案内/実施日確認と固有点が必要。 / ジモティースポット光店：2024-11-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-105491:jimoty-opening",
+            "shunan-107077:proposal:12"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:9ff20ad56559fa14",
+      "name": "Prink周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:9ff20ad56559fa14:hundred:map_action:e47125ad60",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / Prink周南店：2024-03-01との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:01",
+            "shunan-90677:prink"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ccb9e75e036b41af",
+      "name": "THE BAKERS LOAF周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ccb9e75e036b41af:hundred:map_action:df048a592f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / THE BAKERS LOAF周南店：2024-03-13との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:02",
+            "shunan-90677:bakers"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2ff4b49d217a03b6",
+      "name": "山福",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2ff4b49d217a03b6:hundred:map_action:38249dd76f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90677:yamafuku"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ae19b5475f6576bc",
+      "name": "富川",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ae19b5475f6576bc:hundred:map_action:57a756b515",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90677:tomikawa"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:229c27bfe4020bd7",
+      "name": "シュースポTOKUYAMA",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:229c27bfe4020bd7:hundred:map_action:0394149edc",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / シュースポTOKUYAMA：2024-03-15との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:03",
+            "shunan-90677:shoes"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a360a12b574ffb6b",
+      "name": "BAEGOL45.",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a360a12b574ffb6b:hundred:map_action:15addb69d1",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / BAEGOL45.：2024-03-15との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:04",
+            "shunan-90677:baegol"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:47d6f6a77a72770f",
+      "name": "大阪串カツ一松",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:47d6f6a77a72770f:hundred:map_action:235d332903",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90677:ichimatsu"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a0e0756c6e25bf03",
+      "name": "DayDay＆DODODONUT",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a0e0756c6e25bf03:hundred:map_action:7d4e98f564",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / DayDay＆DODODONUT：2024-03-22との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:05",
+            "shunan-90677:dodo"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4f40235837ba6894",
+      "name": "ユニクロ徳山店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4f40235837ba6894:hundred:map_action:9dd3f8e212",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / 2023年1月建替え休業という背景を再開と分離。現行掲載のみを休業実施日にしない。 / ユニクロ徳山店：2024-03-22との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-89605:proposal:02",
+            "shunan-90677:uniqlo",
+            "shunan-90677:uniqlo-hiatus"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f19dbcecab22c975",
+      "name": "STOLEN MOBLER.",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f19dbcecab22c975:hundred:map_action:e12abd4019",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "まとめ全店舗を個別保持。固有施設と実施根拠の照合が未完。 / STOLEN MOBLER.：2024-03-25との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90327:proposal:06",
+            "shunan-90677:stolen"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:c7a6f21237511357",
+      "name": "TSUTAYA旧店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:c7a6f21237511357:hundred:map_action:53f96fcef7",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "旧建物から駐車場化の背景。TSUTAYA支店ID・廃止/移転関係の照合が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-90677:tsutaya-predecessor"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:20bc71fd41443f47",
+      "name": "MERESANKH",
+      "facility_ids": [
+        "official-meresankh"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:20bc71fd41443f47:hundred:supplemental:c41e11f7fb",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "自店現行サイトNEW OPENと同名住所/固有点で現行掲載可能。2025年6月21日は記事のみ、実施日未確定。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "shunan-115367:meresankh-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e5335490cab0cdd2",
+      "name": "タオル美術館下関店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e5335490cab0cdd2:hundred:map_action:ddd560fb8f",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "タオル美術館公式は2024年1月22日の最終営業日2月25日という事前告知。閉店済みを明示する事後資料は未取得のため、旧ID不在でも実施は保留。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-454981:towel-shimonoseki"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e19afe66ad2dbe23",
+      "name": "京一防府店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e19afe66ad2dbe23:hundred:map_action:dbaa78eb10",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "自店4/25は5/3開店予定。現在営業/固有点と実施確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-49005:kyoichi-hofu"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:c92c8471a50d6bec",
+      "name": "すき家旧店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:c92c8471a50d6bec:hundred:map_action:dcf563c7ff",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "移転のため旧店閉鎖を本文明示。新店と旧店ID・同一店舗関係を照合する必要あり。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-49005:sukiya-relocation"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:5e55c5a2218a894f",
+      "name": "京一周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:5e55c5a2218a894f:hundred:map_action:14fe406775",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "2024年4月の1号店開店背景。防府2号店の根拠だけで別市1号店の歴史を確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-49005:kyoichi-shunan-history"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:19303274651cf7f6",
+      "name": "パリス",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:19303274651cf7f6:hundred:map_action:162fc54f66",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "本文の各閉店を保持。付属一次はジュエルセブンの別年改装で、当該閉店根拠ではない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118903:paris"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b65decfaf10e8473",
+      "name": "ザ・ドン",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b65decfaf10e8473:hundred:map_action:8b32607577",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "本文の各閉店を保持。付属一次はジュエルセブンの別年改装で、当該閉店根拠ではない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118903:thedon"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:6e9786363e982370",
+      "name": "ハースブラウン",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:6e9786363e982370:hundred:map_action:2e0598cfe3",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "本文の各閉店を保持。付属一次はジュエルセブンの別年改装で、当該閉店根拠ではない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118903:hearth"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a2584a56ee78ad61",
+      "name": "ジュエルセブン サンリブ下松店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a2584a56ee78ad61:hundred:map_action:1a676adb25",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "記事は2026年の改装閉店セール、保存候補は2025.06.01で別年。同一改装と断定不可。永久閉店へ変換しない。 / ジュエルセブン サンリブ下松店：2025-05-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-113785:proposal:02",
+            "shunan-118903:jewel-renovation"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8b008d01e484b640",
+      "name": "プリュネル",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8b008d01e484b640:hundred:map_action:e236e7e5f4",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ハースブラウン後継として2026年6月中旬予定。別途実施・店名・区画確認。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118903:prunelle"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:564da41f1d24bdcf",
+      "name": "防府市役所",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:564da41f1d24bdcf:hundred:map_action:d9ea60c5f8",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "記事の1/6新庁舎業務開始と旧庁舎関係。丸久のAruk EX告知だけで庁舎位置/実施を確定しない。 / 8:15〜17:00から8:30〜17:15へという記事。市公式で要確認。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-44713:cityhall-hours",
+            "yamaguchi-44713:hofu-cityhall"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:9c764a57b3d98d9e",
+      "name": "アルクEX防府市役所店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:9c764a57b3d98d9e:hundred:map_action:e0329de92e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "丸久公式は2025年1/6開店予定。現行店・建物内区画位置と実施確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-44713:aruk-ex"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:571e88f21234b1ae",
+      "name": "菜さい来んさい",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:571e88f21234b1ae:hundred:map_action:eb8569a855",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "5/17は旧店そばの新店舗へのプレオープン予定。公式5/14は予定告知のみ。地図IDと新旧位置を照合する。 / 11月末グランドオープンはプレ開業と別段階。事後完成確認不足。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-113897:nasai-grandopen",
+            "shunan-113897:nasai-relocation-preopen"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b9e157dba32fc70c",
+      "name": "BMW山口",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b9e157dba32fc70c:hundred:map_action:6bea5833aa",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "小郡から朝田へ移転予定。一次候補は2/20の3/9告知で画像主体。新旧住所・固有位置・実施根拠を要照合。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-27658:bmw-relocation"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:25f1584dc8f58b98",
+      "name": "BMW Motorrad山口",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:25f1584dc8f58b98:hundred:map_action:6a779ec79d",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "BMWと別の二輪店の初出店。2店舗を1イベントに潰さず、事後開業根拠/位置照合が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-27658:motorrad-opening"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:620f8352530038ba",
+      "name": "マツモトキヨシ コープタウンいずみ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:620f8352530038ba:hundred:map_action:37fe43cd70",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "マツモトキヨシ コープタウンいずみ店：2024-06との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-31432:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f22bc8fcd4fb5aa4",
+      "name": "ペッツパーク コープタウンいずみ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f22bc8fcd4fb5aa4:hundred:map_action:6d55f975e7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ペッツパーク コープタウンいずみ店：2024-07との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-31432:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:1d7ad1a1e9a9d2d6",
+      "name": "どんどん コープタウンいずみ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:1d7ad1a1e9a9d2d6:hundred:map_action:9bfe86f9b0",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "どんどん コープタウンいずみ店：2024-07との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-31432:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d234841f440e845f",
+      "name": "鰻の成瀬 光店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d234841f440e845f:hundred:map_action:55fd9c1f87",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "鰻の成瀬 光店：2025-07-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-114793:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e890abf3c48cdd45",
+      "name": "GoGoCAFE",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e890abf3c48cdd45:hundred:map_action:99da98ad9a",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "GoGoCAFE：2025-08との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-114793:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ea801ef9f2021fff",
+      "name": "HOTEL R9 The Yard 光",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ea801ef9f2021fff:hundred:map_action:5557857a3d",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "HOTEL R9 The Yard 光：2026-07-12との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119159:proposal:01",
+            "shunan-119931:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e8d3bdb2ba359fac",
+      "name": "ウォンツ周南河東店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e8d3bdb2ba359fac:hundred:map_action:bdd04bce6d",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ウォンツ周南河東店：2024-05との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-89605:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:cb570608e4883d57",
+      "name": "ユニクロゆめタウン新南陽店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:cb570608e4883d57:hundred:map_action:0d2d2c4f1f",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ユニクロゆめタウン新南陽店：2024-03-07との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-89605:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a5891a6a105d0ffd",
+      "name": "チャティクロス下松店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a5891a6a105d0ffd:hundred:map_action:8d7f7e1859",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "チャティクロス下松店：2025-05-20との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-113785:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:766812ba48a8348e",
+      "name": "カーンアーツ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:766812ba48a8348e:hundred:map_action:47ae124aef",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "カーンアーツ：実施日不明。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-113785:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:be7c0d9297a88a44",
+      "name": "中華そば小惑星",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:be7c0d9297a88a44:hundred:map_action:a8e557109d",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "中華そば小惑星：2025-12-08との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 / 中華そば小惑星：2025-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116550:proposal:04",
+            "shunan-116597:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:18ec02d8b44950ce",
+      "name": "ラーメン キンモクセイ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:18ec02d8b44950ce:hundred:map_action:e2923ee450",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ラーメン キンモクセイ：2025-12-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 / ラーメン キンモクセイ：2025-11との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116550:proposal:03",
+            "shunan-116597:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a060b724ea88e6b8",
+      "name": "ラーメン十四郎 周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a060b724ea88e6b8:hundred:map_action:80b61158de",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ラーメン十四郎 周南店：2025-11-21との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116550:proposal:01",
+            "shunan-116597:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:86b0a98184d2af63",
+      "name": "Can★Doイオンタウン周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:86b0a98184d2af63:hundred:map_action:74a1715d99",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "Can★Doイオンタウン周南店：2024-07-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96574:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:66e1aa9f0f898699",
+      "name": "京鴨と和牛 つむぎ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:66e1aa9f0f898699:hundred:map_action:4143ed399e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "京鴨と和牛 つむぎ：2024-07-16との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96574:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f21c334c75289ba4",
+      "name": "SUBWAY ゆめタウン下松店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f21c334c75289ba4:hundred:map_action:d5104416c7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "SUBWAY ゆめタウン下松店：2024-07-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96574:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ec8a750bc4f634ce",
+      "name": "スパイスカレー＆パスタ Shoji",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ec8a750bc4f634ce:hundred:map_action:43ab09141e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "スパイスカレー＆パスタ Shoji：2024-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-99731:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:910f0218d056cd35",
+      "name": "パフェット",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:910f0218d056cd35:hundred:map_action:8983438d5c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "パフェット：2024-09-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-99731:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:fcb9cf35258041db",
+      "name": "韓国Cafe＆Barプトゥプトゥ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:fcb9cf35258041db:hundred:map_action:5cdec90db0",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "韓国Cafe＆Barプトゥプトゥ：2024-09-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-99731:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:022b547559fcf5bf",
+      "name": "レトロcafe洋燈",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:022b547559fcf5bf:hundred:map_action:23742f83d8",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "レトロcafe洋燈：2024-09-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 / レトロcafe洋燈：2025-09-08との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:01",
+            "shunan-99731:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:aade46d5a8afb40a",
+      "name": "欧風Curry Sourire",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:aade46d5a8afb40a:hundred:map_action:a2c30ec080",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "欧風Curry Sourire：2024-06-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ba12ce971328f78a",
+      "name": "宇佐川水産 若宮町店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ba12ce971328f78a:hundred:map_action:94de0f031a",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "宇佐川水産 若宮町店：2024-06-01との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:959a092b679648c3",
+      "name": "シェーク",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:959a092b679648c3:hundred:map_action:76cbd26b5b",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "シェーク：2024-06との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:fb597504f0e279d3",
+      "name": "近江焼肉ホルモンすだく周南徳山店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:fb597504f0e279d3:hundred:map_action:815b60281a",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "近江焼肉ホルモンすだく周南徳山店：2024-06との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:07"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:9e4b555eba2d2d27",
+      "name": "魚なげ2号店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:9e4b555eba2d2d27:hundred:map_action:f4668e5195",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "魚なげ2号店：実施日不明。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-96066:proposal:08"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:1395ca87532414db",
+      "name": "おかぱん",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:1395ca87532414db:hundred:map_action:85aacffcb7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "おかぱん：2024-11-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:74e88a82b5237fe5",
+      "name": "トレジャーコレクションイオンタウン周南久米店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:74e88a82b5237fe5:hundred:map_action:4e0431d270",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "トレジャーコレクションイオンタウン周南久米店：2024-11-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e86e4587825cc631",
+      "name": "焼肉 ホルモンきらめき",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e86e4587825cc631:hundred:map_action:c1c301789e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "焼肉 ホルモンきらめき：2024-11-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f3ccc286ffb83edc",
+      "name": "Cafe＆Bar Dayz",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f3ccc286ffb83edc:hundred:map_action:1977345dee",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "Cafe＆Bar Dayz：2024-11-04との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4fa9c3d4e9685db2",
+      "name": "ドライヘッドスパ専門店utatane",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4fa9c3d4e9685db2:hundred:map_action:59f9c750e2",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ドライヘッドスパ専門店utatane：2024-11との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:07be62ffaa6bf130",
+      "name": "煮干しラーメン まるにぼ総本店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:07be62ffaa6bf130:hundred:map_action:45a38ba5d2",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "煮干しラーメン まるにぼ総本店：2024-11-11との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:07"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f3438c3c4217eb49",
+      "name": "THREEPPYゆめタウン新南陽店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f3438c3c4217eb49:hundred:map_action:5a8b62adea",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "THREEPPYゆめタウン新南陽店：2024-11-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:10"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:876c09a07e518946",
+      "name": "OTONARI CAFE",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:876c09a07e518946:hundred:map_action:2f64fb3ea5",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "OTONARI CAFE：2024-11-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-107077:proposal:11"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:40a43d2b12edae28",
+      "name": "ご飯屋 どんぶり来",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:40a43d2b12edae28:hundred:map_action:f7254c42a4",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ご飯屋 どんぶり来：2024-08-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:54b32d36047eddba",
+      "name": "縁 徳山駅前店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:54b32d36047eddba:hundred:map_action:ffde0e3c35",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "縁 徳山駅前店：2024-08-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:80b597cf80d7dadc",
+      "name": "BEYOND",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:80b597cf80d7dadc:hundred:map_action:4fb70e6d12",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "BEYOND：2024-08-15との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a758c6b9a161e5f1",
+      "name": "馳走菜 業務スーパー徳山デッキ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a758c6b9a161e5f1:hundred:map_action:97d4457e39",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "馳走菜 業務スーパー徳山デッキ店：2024-08-22との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-100236:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a0597f9920cc06dc",
+      "name": "酒と魚 天海 tenkai",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a0597f9920cc06dc:hundred:map_action:1f8a496104",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "酒と魚 天海 tenkai：2025-10-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:c4995b92604ce2fd",
+      "name": "なか卯 下松望町店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:c4995b92604ce2fd:hundred:map_action:d944bd519f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "なか卯 下松望町店：2025-10-09との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8f0facf26fd4488f",
+      "name": "tuju",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8f0facf26fd4488f:hundred:map_action:4735d6488a",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "tuju：2025-10との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ae278a7343d142cf",
+      "name": "牡蠣奉行",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ae278a7343d142cf:hundred:map_action:3122222d45",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "牡蠣奉行：2025-10-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2843d4a81c1d3aaf",
+      "name": "花百",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2843d4a81c1d3aaf:hundred:map_action:0db1af5872",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "花百：2025-10-24との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:3bdf6bd82fdff0e6",
+      "name": "マルキュウ 熊毛店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:3bdf6bd82fdff0e6:hundred:map_action:3bc2132361",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "マルキュウ 熊毛店：2025-10-30との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116594:proposal:07"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:74374e9d9769addc",
+      "name": "YOGURT WORLD 周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:74374e9d9769addc:hundred:map_action:471da09509",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "YOGURT WORLD 周南店：2026-08-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e46bbbe499d3f9cc",
+      "name": "麺鮮醤油房 周月 徳山店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e46bbbe499d3f9cc:hundred:map_action:2f11258f3e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "麺鮮醤油房 周月 徳山店：2026-08-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d886176852749acf",
+      "name": "ウチダクレープ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d886176852749acf:hundred:map_action:d7f21de2b1",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ウチダクレープ：2026-08-05との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2007e6004a2a2794",
+      "name": "TOTONOU",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2007e6004a2a2794:hundred:map_action:fac1d9992e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "TOTONOU：2026-08-06との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:eb6cd5e87461154a",
+      "name": "Standard Products 下松末武店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:eb6cd5e87461154a:hundred:map_action:a84c6c9be5",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "Standard Products 下松末武店：2026-08-07との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e9ca26fc1f198dde",
+      "name": "ガチャガチャのとり 下松店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e9ca26fc1f198dde:hundred:map_action:9a6e45a4ac",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ガチャガチャのとり 下松店：2026-08-15との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:398f506cb8c8dfae",
+      "name": "小谷姐姐麻辣燙 周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:398f506cb8c8dfae:hundred:map_action:4dcd4f0181",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "小谷姐姐麻辣燙 周南店：2026-08-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-120010:proposal:08"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b758f481694fa16a",
+      "name": "オフィスランド イオンタウン防府店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b758f481694fa16a:hundred:map_action:a208a08c5c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "オフィスランド イオンタウン防府店：実施日不明。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-38108:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:5218be01a92d40dc",
+      "name": "ECOLIFE COCO イオンタウン防府店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:5218be01a92d40dc:hundred:map_action:7caff4931f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ECOLIFE COCO イオンタウン防府店：2024-08-30との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "yamaguchi-38108:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:72cd1823e896e12a",
+      "name": "おみやげ街道徳山新幹線改札内店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:72cd1823e896e12a:hundred:map_action:30ef7df01b",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "おみやげ街道徳山新幹線改札内店：2026-01-07との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4a5da50a874baa67",
+      "name": "ボナール",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4a5da50a874baa67:hundred:map_action:e5867d0d56",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ボナール：2026-01-11との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:02eaa0d0c72ca291",
+      "name": "だがし夢や 星プラザ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:02eaa0d0c72ca291:hundred:map_action:6806ff00c4",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "だがし夢や 星プラザ店：2026-01-12との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:7e53aa4c25adcd3c",
+      "name": "オックス・フォード",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:7e53aa4c25adcd3c:hundred:map_action:4f9c653727",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "オックス・フォード：2026-01-20との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:00c4b8018458d68c",
+      "name": "すぎもと 星プラザ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:00c4b8018458d68c:hundred:map_action:cb8f1db07e",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "すぎもと 星プラザ店：2026-01-13との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ff225c958673cefe",
+      "name": "ほうえい堂新南陽店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ff225c958673cefe:hundred:map_action:77924a3809",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ほうえい堂新南陽店：2026-01との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。 本文に1月15日、公式HPには1月10日という日付差があり、どちらも事後実施の確定には使わない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118006:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:9e26c599dff9bff4",
+      "name": "空間演出×セルフ写真館 chesky",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:9e26c599dff9bff4:hundred:map_action:60b3a0cd96",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "空間演出×セルフ写真館 chesky：2026-02-07との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:244a49f2e2aed4df",
+      "name": "ぐるんぐるん星プラザカプセル商店街",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:244a49f2e2aed4df:hundred:map_action:3485e60c56",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ぐるんぐるん星プラザカプセル商店街：2026-02-13との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f5b7c41475c43e38",
+      "name": "麺櫓やまおか",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f5b7c41475c43e38:hundred:map_action:8296546f4e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "麺櫓やまおか：2026-02-18との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:afd495ce7212ee70",
+      "name": "CHANOORI DOGCAFE",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:afd495ce7212ee70:hundred:map_action:124a250444",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "CHANOORI DOGCAFE：2026-02-19との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2c7c6ddc3d0c750b",
+      "name": "シャトレーゼ下松店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2c7c6ddc3d0c750b:hundred:map_action:5ac879a637",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "シャトレーゼ下松店：2026-02-27との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:f871922297b24335",
+      "name": "KeePer LABO 周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:f871922297b24335:hundred:map_action:6fa33d2ec0",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "KeePer LABO 周南店：2026-02-28との記事記載。運営元の実施日根拠は保存済み。ただし対応する現行地図施設の同一性・反映が未確定。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118214:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:38deaaa9f8cb4014",
+      "name": "酔牛亭",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:38deaaa9f8cb4014:hundred:map_action:7f9b709b6d",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "酔牛亭：2025-09-14との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:36a33c0012b13749",
+      "name": "セブン-イレブン下松藤光1丁目店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:36a33c0012b13749:hundred:map_action:b60ccad45b",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "セブン-イレブン下松藤光1丁目店：2025-09-24との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 同所の既存レビュー shunan-115609:old-relocation はholdであり、そこへduplicateして完了にしない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8a90df9f1c96897d",
+      "name": "新南陽うどん店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8a90df9f1c96897d:hundred:map_action:809359e919",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "新南陽うどん店：2025-09-30との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:fd7d88a1d2956831",
+      "name": "ミートショップ朝日屋",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:fd7d88a1d2956831:hundred:map_action:b5c7fad6ec",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "ミートショップ朝日屋：2025-09-30との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:07"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ad5821a1739b1fb0",
+      "name": "コスパン光店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ad5821a1739b1fb0:hundred:map_action:27866109ca",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "コスパン光店：2025-09-30との記事記載。閉店記事の記載を公式事後資料と照合し、全base+overlayの同一ID有無も確認が必要。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-116018:proposal:08"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:528e254bc432424d",
+      "name": "占いの館千里眼 徳山駅前店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:528e254bc432424d:hundred:map_action:cc6bca3a24",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "占いの館千里眼 徳山駅前店：2026-03-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118566:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:984def84fc1c918e",
+      "name": "キンモクセイ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:984def84fc1c918e:hundred:map_action:e27b6476c3",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "キンモクセイ：2026-03-13との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118566:proposal:02"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b135380035da0ede",
+      "name": "お菓子の森",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b135380035da0ede:hundred:map_action:85ec44ae52",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "お菓子の森：2026-03-14との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118566:proposal:03"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4f589f8329d0962c",
+      "name": "コストスマーケットやまぐち",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4f589f8329d0962c:hundred:map_action:fe2f7b70d5",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "コストスマーケットやまぐち：2026-03-19との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118566:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:ec499e8c45431879",
+      "name": "セブン-イレブンハートイン JR徳山駅新幹線改札内店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:ec499e8c45431879:hundred:map_action:294089efe8",
+          "impact": "map_action",
+          "priority": "P3",
+          "reason": "セブン-イレブンハートイン JR徳山駅新幹線改札内店：2026-03-25との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-118566:proposal:05"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:215fd153a46b25b9",
+      "name": "noom",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:215fd153a46b25b9:hundred:map_action:bad4b540c8",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "noom：2026-07-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4cacf2c937687127",
+      "name": "麺屋あさぎ",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4cacf2c937687127:hundred:map_action:fa6539b86e",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "麺屋あさぎ：2026-07-16との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:04"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:72f40ab044d50c0d",
+      "name": "ピザウォーク",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:72f40ab044d50c0d:hundred:map_action:e361feb5fb",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ピザウォーク：2026-07-18との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:06"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:182eaa57a08491d2",
+      "name": "マキノ食堂 周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:182eaa57a08491d2:hundred:map_action:fcaddfd7ae",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "マキノ食堂 周南店：2026-07-18との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:07"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:7b18fb8f55a09aad",
+      "name": "煮干しらーめんまるにぼAEON TOWN周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:7b18fb8f55a09aad:hundred:map_action:f95743c6d1",
+          "impact": "map_action",
+          "priority": "P1",
+          "reason": "煮干しらーめんまるにぼAEON TOWN周南店：2026-07-19との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "shunan-119931:proposal:08"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:e8ccb96f4c5a8bd8",
+      "name": "家族葬邸宅ホシエ 周南会館",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:e8ccb96f4c5a8bd8:hundred:map_action:e5746c2d8f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "家族葬邸宅ホシエ 周南会館：2024-06-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-503496:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:116fdf5f4b9f0ea0",
+      "name": "コーナンPRO下関綾羅木店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:116fdf5f4b9f0ea0:hundred:map_action:4ad63713e2",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "コーナンPRO下関綾羅木店：2024-03-06との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-469919:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:8ce2aef31881dbf1",
+      "name": "TRIAL GO 下関生野店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:8ce2aef31881dbf1:hundred:map_action:18a92bbe27",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "TRIAL GO 下関生野店：2024-03-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-484410:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:03af87d2357fe984",
+      "name": "ガリバー山口店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:03af87d2357fe984:hundred:map_action:c51220d933",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ガリバー山口店：2026-01-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-582880:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:c3f37c2e2e0faf92",
+      "name": "ほっともっと 山口本町店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:c3f37c2e2e0faf92:hundred:map_action:6a7a956d63",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ほっともっと 山口本町店：2026-02-27との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-590349:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:7a9548c09e03d81f",
+      "name": "業務スーパー 徳山デッキ店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:7a9548c09e03d81f:hundred:map_action:8dd445c93c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "業務スーパー 徳山デッキ店：2024-04-18との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-497041:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:1808b97c4451a3e3",
+      "name": "ダイレックス桑山店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:1808b97c4451a3e3:hundred:map_action:5161f8add2",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ダイレックス桑山店：2024-11-21との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-527218:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:29a65937ca48c788",
+      "name": "ケーズデンキ岩国店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:29a65937ca48c788:hundred:map_action:a51c0d1e85",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ケーズデンキ岩国店：2025-08-28との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-566680:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:796f4224f80f906c",
+      "name": "Can★Do（キャンドゥ）イオン光店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:796f4224f80f906c:hundred:map_action:32f839466c",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "Can★Do（キャンドゥ）イオン光店：2024-12-13との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-533827:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:b8928bdae04c6d88",
+      "name": "Can★Do（キャンドゥ）イオンタウン周南店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:b8928bdae04c6d88:hundred:map_action:89888a64cb",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "Can★Do（キャンドゥ）イオンタウン周南店：2024-07-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-511607:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2885031c374f3ff6",
+      "name": "アミパラ下関駅南店",
+      "facility_ids": [
+        "official-amipara-shimonoseki-ekiminami"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2885031c374f3ff6:hundred:supplemental:4c32635860",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "アミパラ下関駅南店：2026-03-20との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-amipara-shimonoseki-ekiminami と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-593185:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:d47cd901b23fe7fc",
+      "name": "柳井市立 みどりが丘図書館",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:d47cd901b23fe7fc:hundred:map_action:65e273aa5a",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "柳井市立 みどりが丘図書館：2024-07-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-508715:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2616e43bb5a29b24",
+      "name": "おたからや ウェスタまるき山口湯田店",
+      "facility_ids": [
+        "official-otakaraya-wm-yamaguchiyuda"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2616e43bb5a29b24:hundred:supplemental:9b989da751",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "おたからや ウェスタまるき山口湯田店：2026-06-15との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-otakaraya-wm-yamaguchiyuda と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-604470:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:404b76d85f36d75d",
+      "name": "ニトリ下関安岡店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:404b76d85f36d75d:hundred:map_action:d8ac244e6a",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ニトリ下関安岡店：2024-04-19との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-494461:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:344d734354c5bd63",
+      "name": "おたからや ゆめマート川棚店",
+      "facility_ids": [
+        "official-otakaraya-ym-kawatana"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:344d734354c5bd63:hundred:supplemental:1634ae2988",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "おたからや ゆめマート川棚店：2026-07-27との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-otakaraya-ym-kawatana と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-609732:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a386609b70c3a300",
+      "name": "湯田温泉こんこんパーク",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a386609b70c3a300:hundred:map_action:30fbdc0326",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "湯田温泉こんこんパーク：2025-06-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-554655:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:65d921035e8f4674",
+      "name": "サムギョプサル専門店 MOCCHA",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:65d921035e8f4674:hundred:map_action:0ef5d3aa31",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "サムギョプサル専門店 MOCCHA：2024-07-29との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-510498:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:974a655508c12510",
+      "name": "ひとくち餃子の頂 岩国駅前店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:974a655508c12510:hundred:map_action:35269463eb",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ひとくち餃子の頂 岩国駅前店：2026-03-25との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-593925:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:4e42914c17e4f956",
+      "name": "ゼッテリア 山口バイパス店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:4e42914c17e4f956:hundred:map_action:6ab4149be9",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "ゼッテリア 山口バイパス店：2026-02-12との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-588352:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:441fa1c03fecf44c",
+      "name": "占いの館 千里眼下関駅前店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:441fa1c03fecf44c:hundred:map_action:83c9f0636f",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "占いの館 千里眼下関駅前店：2024-11-16との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-526352:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:5bad8714823a4160",
+      "name": "下関ロフト",
+      "facility_ids": [
+        "official-loft-665"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:5bad8714823a4160:hundred:supplemental:ed78284631",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "下関ロフト：2026-06-19との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-loft-665 と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-604959:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:c6dfb919d4a18ccb",
+      "name": "湯や 晴ル音",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:c6dfb919d4a18ccb:hundred:map_action:bfd59e88b7",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "湯や 晴ル音：2024-04-01との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-486555:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:aac12bf4c028fffb",
+      "name": "ビーライン美祢インター店",
+      "facility_ids": [
+        "official-beeline-mine-inter"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:aac12bf4c028fffb:hundred:supplemental:bb60d2e9a7",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "ビーライン美祢インター店：2026-07-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-beeline-mine-inter と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-606840:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a0f22773c2e0a73e",
+      "name": "ビーライン小野田店",
+      "facility_ids": [
+        "official-beeline-onoda"
+      ],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a0f22773c2e0a73e:hundred:supplemental:626add7bac",
+          "impact": "supplemental",
+          "priority": "P2",
+          "reason": "ビーライン小野田店：2026-04-24との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。 今回の現行掲載案 official-beeline-onoda と接続するが、その掲載の effective_at は null であり過去開店日を証明しない。",
+          "next": "現行掲載は維持。運営元の事後開業・改装履歴で記事日付のみ再照合。",
+          "event_ids": [
+            "kaiten-598181:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:2087c4ff1a2c6c65",
+      "name": "タリーズコーヒー 山口大学医学部附属病院店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:2087c4ff1a2c6c65:hundred:map_action:4bb01c3638",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "タリーズコーヒー 山口大学医学部附属病院店：2026-04-03との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-594854:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
+    },
+    {
+      "case_id": "case:hundred:a0131b3e0593f02c",
+      "name": "カラオケCLUB DAMヴィーナス下関山の田店",
+      "facility_ids": [],
+      "related_facility_ids": [],
+      "issues": [
+        {
+          "issue_id": "case:hundred:a0131b3e0593f02c:hundred:map_action:8b720fdbba",
+          "impact": "map_action",
+          "priority": "P2",
+          "reason": "カラオケCLUB DAMヴィーナス下関山の田店：2026-02-17との記事記載。記事の予定・記載日を現在掲載だけで実施日へ確定しない。",
+          "next": "公式の事後実施、同一施設と固有地点・旧地図IDを照合し、必要な地図差分を判断。",
+          "event_ids": [
+            "kaiten-588903:proposal:01"
+          ]
+        }
+      ],
+      "evidence_refs": []
     }
   ],
   "event_bindings": [
@@ -6260,6 +9712,1362 @@
       "event_hash": "0e048988941a9b3ec94995cfa26aed2421c0a22e0c9437fe2d772ece4891c3cf",
       "case_id": "case:megadori-ube",
       "issue_id": "case:megadori-ube:opening-date"
+    },
+    {
+      "event_id": "kaiten-499534:buneido-closure",
+      "event_hash": "43f6b5ef7c58c03bbd80ec9c085ecb856f51c9c54d155668995ed55245239e80",
+      "case_id": "case:hundred:f157d22455fdeaed",
+      "issue_id": "case:hundred:f157d22455fdeaed:hundred:map_action:6317febc6a"
+    },
+    {
+      "event_id": "kaiten-570209:alook-closure",
+      "event_hash": "671c0200b6acf2f1bf916f1acb065b171395b41885995ad731ac6e988ae2e3e2",
+      "case_id": "case:hundred:d96ab1f5f4b5ec73",
+      "issue_id": "case:hundred:d96ab1f5f4b5ec73:hundred:map_action:2f22f4ff9a"
+    },
+    {
+      "event_id": "kaiten-600114:nissan-opening",
+      "event_hash": "646f7ba4b861ffd547542e7b777dc3d522b5c262231d9a676065d6d1ec2eb447",
+      "case_id": "case:hundred:0923267db8825bc0",
+      "issue_id": "case:hundred:0923267db8825bc0:hundred:map_action:04ce1df5c4"
+    },
+    {
+      "event_id": "kaiten-615972:cocoland-future-close",
+      "event_hash": "016e0279e4e83ab3c717b8a70ec2d7d690330a5f4b9c09b81e0f8df6a0868d07",
+      "case_id": "case:hundred:b6e2c214f9105bf5",
+      "issue_id": "case:hundred:b6e2c214f9105bf5:hundred:watch:0713d49f85"
+    },
+    {
+      "event_id": "kaiten-606783:daimaru-future-close",
+      "event_hash": "f1c1fd49a961578d5a5f04df430625a56110f1d653f2b327210ca4c27633c8d4",
+      "case_id": "case:hundred:8487f5e0f5aa6b9c",
+      "issue_id": "case:hundred:8487f5e0f5aa6b9c:hundred:watch:ed94c828ef"
+    },
+    {
+      "event_id": "kaiten-458401:us-bowl-closure",
+      "event_hash": "0a9204b1b7855687d38100a1e94aff81e562ae13f09b34d4911c99516bc7c8fe",
+      "case_id": "case:hundred:6ce45bb254ed48ae",
+      "issue_id": "case:hundred:6ce45bb254ed48ae:hundred:map_action:744a1ee8c7"
+    },
+    {
+      "event_id": "ube-59781:us-bowl-closure",
+      "event_hash": "b2c7c90b75343046caf9f57ba7ab06233f95a234d99745733b09ed02c9e53981",
+      "case_id": "case:hundred:6ce45bb254ed48ae",
+      "issue_id": "case:hundred:6ce45bb254ed48ae:hundred:map_action:744a1ee8c7"
+    },
+    {
+      "event_id": "ube-59781:opening-history",
+      "event_hash": "9dfae01336d0611b63553ed2a73debf6f1f4b2da59bfb7842cd4a26fe38dda37",
+      "case_id": "case:hundred:6ce45bb254ed48ae",
+      "issue_id": "case:hundred:6ce45bb254ed48ae:hundred:map_action:744a1ee8c7"
+    },
+    {
+      "event_id": "kaiten-606870:zoff-opening",
+      "event_hash": "f719fbb99bb0197868d4a82ae26f931aaf1f1ec9e5b60ee13a282d4ec8dee110",
+      "case_id": "case:hundred:8ce58d4719fefe39",
+      "issue_id": "case:hundred:8ce58d4719fefe39:hundred:map_action:0b518e6a6c"
+    },
+    {
+      "event_id": "kaiten-616734:hinoyama-opening",
+      "event_hash": "6a7bfdb39acc5247c0b9d88250294bfbbef41e8d0fe7343fe89a687565fc5dc9",
+      "case_id": "case:hundred:d2c69c68a68a3eb1",
+      "issue_id": "case:hundred:d2c69c68a68a3eb1:hundred:map_action:83c0d8b896"
+    },
+    {
+      "event_id": "shimonoseki-61661:yasura-complex",
+      "event_hash": "282abe687bf661ec6af7b657b57cc9f66f1aa42a7a0f6dbe77c1b1c89efc9a86",
+      "case_id": "case:hundred:ba98c09ed0fe2f8d",
+      "issue_id": "case:hundred:ba98c09ed0fe2f8d:hundred:map_action:85d607dbbe"
+    },
+    {
+      "event_id": "shimonoseki-61661:yasuoka-relocation",
+      "event_hash": "ab00b25a782e7abcd96bd0656a9c6b79d8828b3cd8bc910b28e49a86d04a85fb",
+      "case_id": "case:hundred:72e0dba177935459",
+      "issue_id": "case:hundred:72e0dba177935459:hundred:map_action:04e914c4d5"
+    },
+    {
+      "event_id": "shimonoseki-61661:hamayu-library",
+      "event_hash": "f6eea6a1d8609026126b5fe8e8afc9b8652fc59eb153abfcc973ad592e1ee505",
+      "case_id": "case:hundred:7be68ebd8a1442d7",
+      "issue_id": "case:hundred:7be68ebd8a1442d7:hundred:map_action:55c494c56a"
+    },
+    {
+      "event_id": "shimonoseki-61661:garden-park",
+      "event_hash": "f9e2fed11fbb16b2b78e35024068a3f41937a9082723efd8a29b549070419d97",
+      "case_id": "case:hundred:cbb1f794175f985e",
+      "issue_id": "case:hundred:cbb1f794175f985e:hundred:map_action:1e93ec2569"
+    },
+    {
+      "event_id": "shunan-119725:foel-future-close",
+      "event_hash": "950d5012417ed4f01dcb8dcb225130248db2b44af6013de90451469b9828817d",
+      "case_id": "case:hundred:851df1c4675b8ba5",
+      "issue_id": "case:hundred:851df1c4675b8ba5:hundred:watch:01278e6ea7"
+    },
+    {
+      "event_id": "shunan-120074:foel-oldclose",
+      "event_hash": "3b4c6832b59034afc0b541e10e860eb6d4e229a4ed3ff38ff71a6dbd10f960e7",
+      "case_id": "case:hundred:851df1c4675b8ba5",
+      "issue_id": "case:hundred:851df1c4675b8ba5:hundred:watch:01278e6ea7"
+    },
+    {
+      "event_id": "shunan-120074:foel-relocation",
+      "event_hash": "5ed698c62881d8527ef12f10ab9c188322dcbe93dc6c85a564807979b43fbab1",
+      "case_id": "case:hundred:851df1c4675b8ba5",
+      "issue_id": "case:hundred:851df1c4675b8ba5:hundred:watch:01278e6ea7"
+    },
+    {
+      "event_id": "ube-81156:anichan-opening",
+      "event_hash": "226e92f5ba31835d0c2e2b15b531eeb4ee5d8f5b08fdc0dd765d2a60e2d9735e",
+      "case_id": "case:hundred:5502b77da149a9e9",
+      "issue_id": "case:hundred:5502b77da149a9e9:hundred:map_action:2c11d234b8"
+    },
+    {
+      "event_id": "ube-82282:gurungurun-opening",
+      "event_hash": "f204dc7bc463cfe465e35b6d983617c9b12efa2a49a83d9ef3c15df53c0fa06c",
+      "case_id": "case:hundred:1cb26d54a390c5a8",
+      "issue_id": "case:hundred:1cb26d54a390c5a8:hundred:map_action:67dc44ec91"
+    },
+    {
+      "event_id": "ube-82282:thirdplanet-background",
+      "event_hash": "857b7754b85a231ef4633915fd85c0547e615d9922f9309f7bea502370706d96",
+      "case_id": "case:hundred:ccfcd88eb35839c3",
+      "issue_id": "case:hundred:ccfcd88eb35839c3:hundred:map_action:14addd1b02"
+    },
+    {
+      "event_id": "ube-82981:iwasaki-ube-opening",
+      "event_hash": "96db07e5846e7356ae47779a54f14a60d3a1bf3f876432faf71a9b826a812a46",
+      "case_id": "case:hundred:8c4d6d69c0f9b3b5",
+      "issue_id": "case:hundred:8c4d6d69c0f9b3b5:hundred:map_action:86285510dd"
+    },
+    {
+      "event_id": "shunan-97525:harenohi-opening",
+      "event_hash": "cc9559ce1d9c555d1c7cb3f51b6b91a7c8fac6792a3759d629ad30b60feff42a",
+      "case_id": "case:hundred:492b85e0c22fade0",
+      "issue_id": "case:hundred:492b85e0c22fade0:hundred:map_action:f5e4d11818"
+    },
+    {
+      "event_id": "shunan-100236:proposal:04",
+      "event_hash": "1966baef4d3d76d945d2bf89a59a496ceeac28f82538dd97e85db0b9f08255ae",
+      "case_id": "case:hundred:492b85e0c22fade0",
+      "issue_id": "case:hundred:492b85e0c22fade0:hundred:map_action:f5e4d11818"
+    },
+    {
+      "event_id": "yamaguchi-48288:flowergarden",
+      "event_hash": "619855225fc2b73931ab9d238474157eabd9979f7b4306b0327631c8583af5a2",
+      "case_id": "case:hundred:0e244658513d7272",
+      "issue_id": "case:hundred:0e244658513d7272:hundred:map_action:88f231cbdd"
+    },
+    {
+      "event_id": "yamaguchi-48288:remote-work",
+      "event_hash": "3cbdbbec8d91e0a39ec707b6409fabf6c9a76850501215bad5c51bab1e00475a",
+      "case_id": "case:hundred:988501d2850dcc33",
+      "issue_id": "case:hundred:988501d2850dcc33:hundred:map_action:9e899f68f4"
+    },
+    {
+      "event_id": "shunan-119140:iwasaki-shin-nanyo",
+      "event_hash": "af76645f38146bc2147aa9dca8030dcf98794e85ff246d22b0f089ad9c5de1a4",
+      "case_id": "case:hundred:0f52ab009fa921f0",
+      "issue_id": "case:hundred:0f52ab009fa921f0:hundred:map_action:5bd43269f0"
+    },
+    {
+      "event_id": "shunan-108360:kinjiro-opening",
+      "event_hash": "4d12dc3108ef5ae5c3eae7de6720a144b20b02d27426ee6ce85c213e885491b5",
+      "case_id": "case:hundred:133bba2c3dd1c7d4",
+      "issue_id": "case:hundred:133bba2c3dd1c7d4:hundred:map_action:363ddeef9c"
+    },
+    {
+      "event_id": "shunan-118019:stadium-renewal",
+      "event_hash": "362aecf3f199586f4d08409e31bf86298b6b2bf4dd16bf498c0b355919e84539",
+      "case_id": "case:hundred:f670a85c04974755",
+      "issue_id": "case:hundred:f670a85c04974755:hundred:map_action:05e17eadc3"
+    },
+    {
+      "event_id": "shunan-118019:stadium-rename",
+      "event_hash": "a8d523a293b1b9493ef3c63316c013a50c6ac12b4347c1dbef8ef84ace28b81b",
+      "case_id": "case:hundred:f670a85c04974755",
+      "issue_id": "case:hundred:f670a85c04974755:hundred:map_action:05e17eadc3"
+    },
+    {
+      "event_id": "shunan-117130:stadium-construction",
+      "event_hash": "750ddb89cfe782af27d677f91b615f1ce9f80cc9780103943a9fc7270d8546fd",
+      "case_id": "case:hundred:f670a85c04974755",
+      "issue_id": "case:hundred:f670a85c04974755:hundred:map_action:05e17eadc3"
+    },
+    {
+      "event_id": "shunan-117130:stadium-amenities",
+      "event_hash": "0c188f389c0f765350fb12586a367667d35ae427adf9f38ec866e3d8beb35681",
+      "case_id": "case:hundred:f670a85c04974755",
+      "issue_id": "case:hundred:f670a85c04974755:hundred:map_action:05e17eadc3"
+    },
+    {
+      "event_id": "shunan-118019:stadium-cafe",
+      "event_hash": "0b691f049985cbded9bb5571ce58d1bbfd41b79a58771091b268c70afda33fa8",
+      "case_id": "case:hundred:7a25d5e2d08b5cef",
+      "issue_id": "case:hundred:7a25d5e2d08b5cef:hundred:map_action:630cf54780"
+    },
+    {
+      "event_id": "shunan-117130:stadium-cafe",
+      "event_hash": "c295f8f393fadb1e57dc6032969999e0ff0acbb8e930d547afb3682cfa062ebd",
+      "case_id": "case:hundred:7a25d5e2d08b5cef",
+      "issue_id": "case:hundred:7a25d5e2d08b5cef:hundred:map_action:630cf54780"
+    },
+    {
+      "event_id": "ube-81573:r9-ajisu",
+      "event_hash": "640aa1e10bfadc654df2e751ec7f9e8b70239ccd6daf1c671cd1ec602eb3389b",
+      "case_id": "case:hundred:e85e97dd61b1ac9f",
+      "issue_id": "case:hundred:e85e97dd61b1ac9f:hundred:map_action:caae2f0794"
+    },
+    {
+      "event_id": "shunan-91705:menchi-mighty",
+      "event_hash": "39369ac7ac1a6f85e3afa9f42ce25dbf2d18f9db1c078072c289154edab3e736",
+      "case_id": "case:hundred:fa661feb07a5aeee",
+      "issue_id": "case:hundred:fa661feb07a5aeee:hundred:map_action:4f88dfc124"
+    },
+    {
+      "event_id": "shunan-114793:proposal:01",
+      "event_hash": "8c306eb7db5fcbbe9e90b7ebb589ac30b2a49c552ff62b1227c42fae4e7c77d8",
+      "case_id": "case:hundred:fa661feb07a5aeee",
+      "issue_id": "case:hundred:fa661feb07a5aeee:hundred:map_action:4f88dfc124"
+    },
+    {
+      "event_id": "shunan-111909:ramen-today",
+      "event_hash": "cb40841ea854e2212956343c01fb7a08aa9adfce245df812b6a217f0f20c2980",
+      "case_id": "case:hundred:106f3ffe457cd1ed",
+      "issue_id": "case:hundred:106f3ffe457cd1ed:hundred:map_action:a8f6104504"
+    },
+    {
+      "event_id": "shunan-110210:ramen-today",
+      "event_hash": "aabaddbe433c1c43042e32b073d0a8d680a5b7017ee1e275bd97512c3b612b82",
+      "case_id": "case:hundred:106f3ffe457cd1ed",
+      "issue_id": "case:hundred:106f3ffe457cd1ed:hundred:map_action:a8f6104504"
+    },
+    {
+      "event_id": "shunan-119413:aeon-renewal",
+      "event_hash": "12f50fbb6606a1d030bbdf931fcfe3c18ce15936c18b7baa03bdc493901cb4b1",
+      "case_id": "case:hundred:5fb2a15343c8d0a2",
+      "issue_id": "case:hundred:5fb2a15343c8d0a2:hundred:map_action:bc27c64c98"
+    },
+    {
+      "event_id": "shunan-119413:aeon-hours",
+      "event_hash": "98a58ca514b716f1367325f3fa2ab00c3b2b5cf23d72177124b82456bf022444",
+      "case_id": "case:hundred:5fb2a15343c8d0a2",
+      "issue_id": "case:hundred:5fb2a15343c8d0a2:hundred:map_action:bc27c64c98"
+    },
+    {
+      "event_id": "shunan-119931:proposal:02",
+      "event_hash": "0e53d42f919a0f1c401cfb6f7920354e51f3a2c9ab2f7a438023992f1717a0a3",
+      "case_id": "case:hundred:5fb2a15343c8d0a2",
+      "issue_id": "case:hundred:5fb2a15343c8d0a2:hundred:map_action:bc27c64c98"
+    },
+    {
+      "event_id": "yamaguchi-43324:gooday-hiatus",
+      "event_hash": "01cb96d20f45bf8be6c67348c83d85dd15638d5bac6d21445afb3942d518ad8b",
+      "case_id": "case:hundred:69962a98b480ab88",
+      "issue_id": "case:hundred:69962a98b480ab88:hundred:map_action:7c4a58deab"
+    },
+    {
+      "event_id": "yamaguchi-43324:gooday-reopening",
+      "event_hash": "1b869ed6f49890dcd2cb8cd1338f6c5f74d428e6f7e127df64f643220e86fb5d",
+      "case_id": "case:hundred:69962a98b480ab88",
+      "issue_id": "case:hundred:69962a98b480ab88:hundred:map_action:7c4a58deab"
+    },
+    {
+      "event_id": "kaiten-529424:proposal:01",
+      "event_hash": "9d98d01ed9984d16c62810941a53df272bd3ad45e2ae6fba551090b2fae2e075",
+      "case_id": "case:hundred:69962a98b480ab88",
+      "issue_id": "case:hundred:69962a98b480ab88:hundred:map_action:7c4a58deab"
+    },
+    {
+      "event_id": "shunan-101978:deck-opening",
+      "event_hash": "a694f2daa008a147581a1e81dae723d4cebb648916b6e084b20cf4cd51f250e4",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-101978:natural-zone",
+      "event_hash": "c7d53f5332c5b12b7f43ccf59c658e9b82149458869ff647fde979ea5f26b81a",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-116386:deck-history-opening",
+      "event_hash": "35ed6576510e605aa27f4f111c103a66d7437d0e773e0e9380493effe9d4201f",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-116386:deck-hiatus",
+      "event_hash": "2bf428e458455a5c1a2a1b5861be231d102820bc3c0f699b75c3ab7f2ba2835d",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-116386:deck-renewal",
+      "event_hash": "3f27d0e56801e9e15def66e33bcb3e14e77809d640124013e2a9dab9d91d4758",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-116594:proposal:05",
+      "event_hash": "9ed1fa7359d4ef29be1cca1053dd5267a60b0f64b9d5b5a176f5029326238830",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-116018:proposal:05",
+      "event_hash": "dc393f1d5450da5ca4027fc118a708e6e575a18a7d3446b35cfa603e7eccb446",
+      "case_id": "case:hundred:a75abea72a83883c",
+      "issue_id": "case:hundred:a75abea72a83883c:hundred:map_action:d195ee79cd"
+    },
+    {
+      "event_id": "shunan-110210:wonder-steak-predecessor",
+      "event_hash": "6818cc298c3697aec611def60f135a4a0a9e1ee627b1c666dd82b405374a883f",
+      "case_id": "case:hundred:129ff01d77f89dd7",
+      "issue_id": "case:hundred:129ff01d77f89dd7:hundred:map_action:72552d7e08"
+    },
+    {
+      "event_id": "shunan-100384:kotetsu",
+      "event_hash": "6c22ad749258a9fad4d5cf8eab39c97113486065db6ec3185b3c08d845d0e740",
+      "case_id": "case:hundred:a3507616c91d96ec",
+      "issue_id": "case:hundred:a3507616c91d96ec:hundred:map_action:9b8c577ef5"
+    },
+    {
+      "event_id": "shunan-100384:daikichi",
+      "event_hash": "46fcd5b909eef31c2ad485821fad2228cffb94a4f3078d1de91915c2a28742e5",
+      "case_id": "case:hundred:459be7570589b7c6",
+      "issue_id": "case:hundred:459be7570589b7c6:hundred:map_action:263694765b"
+    },
+    {
+      "event_id": "shunan-100384:meal3",
+      "event_hash": "28c096ad4a1d246b40edc1f199474fbdcc95bfd76588fe39b343ca9d175015eb",
+      "case_id": "case:hundred:75e42b30c82d8efa",
+      "issue_id": "case:hundred:75e42b30c82d8efa:hundred:map_action:a5fa0ead1f"
+    },
+    {
+      "event_id": "shunan-100384:suzuki",
+      "event_hash": "840fa5a6f2388a8ade6632c3880f58d9b051467a4035953376b7d9f6f971006b",
+      "case_id": "case:hundred:ff41ce9585a788b0",
+      "issue_id": "case:hundred:ff41ce9585a788b0:hundred:map_action:1296f2bcde"
+    },
+    {
+      "event_id": "shunan-99731:proposal:05",
+      "event_hash": "a6308878e7378d254417446cea46b82f4b5ddecc581e0f1b26d515ff8845a89d",
+      "case_id": "case:hundred:ff41ce9585a788b0",
+      "issue_id": "case:hundred:ff41ce9585a788b0:hundred:map_action:1296f2bcde"
+    },
+    {
+      "event_id": "shunan-100384:marugen",
+      "event_hash": "4201e3664f4af8555dbe2f21ebcfc2ba85cd4a7ba83148738996092ffa20aae2",
+      "case_id": "case:hundred:d49ffde722ade6d0",
+      "issue_id": "case:hundred:d49ffde722ade6d0:hundred:map_action:b351a018fc"
+    },
+    {
+      "event_id": "shunan-99731:proposal:06",
+      "event_hash": "e590851d1e7efbdfc1dfcf0da15eba6c8d398f42356eafa6ee6d02d62ca008fb",
+      "case_id": "case:hundred:d49ffde722ade6d0",
+      "issue_id": "case:hundred:d49ffde722ade6d0:hundred:map_action:b351a018fc"
+    },
+    {
+      "event_id": "shunan-100384:24sweets",
+      "event_hash": "632cc3fefce7ea4f2029f24d94ce6427021627701cbf7ab511a5b2c8f84082e8",
+      "case_id": "case:hundred:eb469116bbf36f62",
+      "issue_id": "case:hundred:eb469116bbf36f62:hundred:map_action:d39f5088a7"
+    },
+    {
+      "event_id": "shunan-107077:proposal:04",
+      "event_hash": "7beda757a7744bad689175bb7f1692f993624d2b398c91bc14f970dbca02b240",
+      "case_id": "case:hundred:eb469116bbf36f62",
+      "issue_id": "case:hundred:eb469116bbf36f62:hundred:map_action:d39f5088a7"
+    },
+    {
+      "event_id": "shunan-100384:deck",
+      "event_hash": "0898e68d96157c3f915ab81558c32b8a83517ab1e17c354769639df2eb833360",
+      "case_id": "case:hundred:120d6b9838fde65c",
+      "issue_id": "case:hundred:120d6b9838fde65c:hundred:map_action:2354f43c68"
+    },
+    {
+      "event_id": "shunan-100384:omurice",
+      "event_hash": "75c23ff440fa787c75e8e61e042c17ef8ef6a0610bd497cd3f81fbcfe1152253",
+      "case_id": "case:hundred:6b6f5a8d4c2e0555",
+      "issue_id": "case:hundred:6b6f5a8d4c2e0555:hundred:map_action:7089a65a89"
+    },
+    {
+      "event_id": "shunan-100384:lamu",
+      "event_hash": "751bcfb88913fdbaff171564d1a0967ba2aa39d48c0eb1ddd1541bad6cbe8e7b",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:hundred:map_action:b06b6a7c13"
+    },
+    {
+      "event_id": "shunan-89605:proposal:04",
+      "event_hash": "6eac53a0219c57da52ec6a6262da37fef86d53e2fafcbc076f96ce09f6a6d472",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:hundred:map_action:b06b6a7c13"
+    },
+    {
+      "event_id": "shunan-107077:proposal:08",
+      "event_hash": "4891685afe892cc89175f7d8158704bb823af6260becd92880799ad998502b31",
+      "case_id": "case:kaiten-527083:opening-date",
+      "issue_id": "case:kaiten-527083:opening-date:hundred:map_action:b06b6a7c13"
+    },
+    {
+      "event_id": "shunan-100384:kijin",
+      "event_hash": "d0057ab9a4cd81b0b1e6414d49c2b089175d3dc0e3e5b8032c181ecc3cb21d24",
+      "case_id": "case:hundred:03d72b40a146b3ff",
+      "issue_id": "case:hundred:03d72b40a146b3ff:hundred:map_action:6b847e5bdc"
+    },
+    {
+      "event_id": "shunan-100384:ekashimuro",
+      "event_hash": "4cb07cb65de06e190ccd289bbe2320c0fa0f937e9dc4d8c6f2063a4b84590796",
+      "case_id": "case:hundred:d381653ccf6198b1",
+      "issue_id": "case:hundred:d381653ccf6198b1:hundred:map_action:908d91ca96"
+    },
+    {
+      "event_id": "shunan-100384:konnichiwa-predecessor",
+      "event_hash": "81e338b3c83a49ab3f68c0b6b157ecd8bfcb3f2d71835290c0c270fe25e60ff1",
+      "case_id": "case:hundred:a5166f95393ee89f",
+      "issue_id": "case:hundred:a5166f95393ee89f:hundred:map_action:441b431866"
+    },
+    {
+      "event_id": "shunan-105491:jimoty-opening",
+      "event_hash": "93e9b71d3995b5957a1932edeab705302e61ea46895bab59309c8d45835b29e0",
+      "case_id": "case:hundred:9595ca02710c6621",
+      "issue_id": "case:hundred:9595ca02710c6621:hundred:map_action:b22fbeb674"
+    },
+    {
+      "event_id": "shunan-107077:proposal:12",
+      "event_hash": "8b948c369c665fbc1f23665269ed25de951a6a80a6392f6875e823126a0a8926",
+      "case_id": "case:hundred:9595ca02710c6621",
+      "issue_id": "case:hundred:9595ca02710c6621:hundred:map_action:b22fbeb674"
+    },
+    {
+      "event_id": "shunan-98698:kiki-opening",
+      "event_hash": "f34afa2ef1209a119d7fb757c41341f4d46477b6fb8eb469102c73a45ec4447a",
+      "case_id": "legacy:7",
+      "issue_id": "legacy:7:hundred:map_action:2929a27b01"
+    },
+    {
+      "event_id": "shunan-100236:proposal:03",
+      "event_hash": "8a6ff6bfb7a56c60d288f81d76589efae303dd60085e5d4e168e3efbca148cbb",
+      "case_id": "legacy:7",
+      "issue_id": "legacy:7:hundred:map_action:2929a27b01"
+    },
+    {
+      "event_id": "shunan-90677:prink",
+      "event_hash": "ee54bb8eeb069058cdc7d4e0559359be69bcd0bef7fb8d4ed55ee8cea448229a",
+      "case_id": "case:hundred:9ff20ad56559fa14",
+      "issue_id": "case:hundred:9ff20ad56559fa14:hundred:map_action:e47125ad60"
+    },
+    {
+      "event_id": "shunan-90327:proposal:01",
+      "event_hash": "db8c0dcad76f3b64fc9ed50a7ec7faf367118d1b285d34260d801ab0feb39ea6",
+      "case_id": "case:hundred:9ff20ad56559fa14",
+      "issue_id": "case:hundred:9ff20ad56559fa14:hundred:map_action:e47125ad60"
+    },
+    {
+      "event_id": "shunan-90677:bakers",
+      "event_hash": "0c5f8e844a803837f52508c9f3d6ef5a1e3ce934a618b0751cec21af52d010c0",
+      "case_id": "case:hundred:ccb9e75e036b41af",
+      "issue_id": "case:hundred:ccb9e75e036b41af:hundred:map_action:df048a592f"
+    },
+    {
+      "event_id": "shunan-90327:proposal:02",
+      "event_hash": "f5dfff803d546aa6012d89464befbce82134e81c0fcaad6eeb5a65bc97424585",
+      "case_id": "case:hundred:ccb9e75e036b41af",
+      "issue_id": "case:hundred:ccb9e75e036b41af:hundred:map_action:df048a592f"
+    },
+    {
+      "event_id": "shunan-90677:yamafuku",
+      "event_hash": "c21051df89074bd9ee3534563b332a200d4a8dfb1211a27c5ef450cda9fe408e",
+      "case_id": "case:hundred:2ff4b49d217a03b6",
+      "issue_id": "case:hundred:2ff4b49d217a03b6:hundred:map_action:38249dd76f"
+    },
+    {
+      "event_id": "shunan-90677:tomikawa",
+      "event_hash": "4807af5fd703d4bf754db7a9fb3739f692204759cead8cfe63e0d51f1af0d549",
+      "case_id": "case:hundred:ae19b5475f6576bc",
+      "issue_id": "case:hundred:ae19b5475f6576bc:hundred:map_action:57a756b515"
+    },
+    {
+      "event_id": "shunan-90677:shoes",
+      "event_hash": "22e8f80ead28b08ef72c7ce3ced66c819b95a133e741253872487c0a67e978fc",
+      "case_id": "case:hundred:229c27bfe4020bd7",
+      "issue_id": "case:hundred:229c27bfe4020bd7:hundred:map_action:0394149edc"
+    },
+    {
+      "event_id": "shunan-90327:proposal:03",
+      "event_hash": "bb445a4c54d9e6ac45a6c582db44944f240fbd81e1dcb9485fc3ac7e8747b53e",
+      "case_id": "case:hundred:229c27bfe4020bd7",
+      "issue_id": "case:hundred:229c27bfe4020bd7:hundred:map_action:0394149edc"
+    },
+    {
+      "event_id": "shunan-90677:baegol",
+      "event_hash": "7876ec08c2ece83e981fbee886c65e05082eec8defd5d7389510d241a90556fd",
+      "case_id": "case:hundred:a360a12b574ffb6b",
+      "issue_id": "case:hundred:a360a12b574ffb6b:hundred:map_action:15addb69d1"
+    },
+    {
+      "event_id": "shunan-90327:proposal:04",
+      "event_hash": "037eb5409c3223995c44f76e5fbabf1151d9e5bc7622d01ce94f7af29756e9e2",
+      "case_id": "case:hundred:a360a12b574ffb6b",
+      "issue_id": "case:hundred:a360a12b574ffb6b:hundred:map_action:15addb69d1"
+    },
+    {
+      "event_id": "shunan-90677:ichimatsu",
+      "event_hash": "6732576bf0755afeea92c543c2d5de3968c557a7b7f67a1c6a1605f90eecfbe3",
+      "case_id": "case:hundred:47d6f6a77a72770f",
+      "issue_id": "case:hundred:47d6f6a77a72770f:hundred:map_action:235d332903"
+    },
+    {
+      "event_id": "shunan-90677:dodo",
+      "event_hash": "265aab466a1e761ae5198bd720f19880ed6ed5f353d00121e7c469059c7690c7",
+      "case_id": "case:hundred:a0e0756c6e25bf03",
+      "issue_id": "case:hundred:a0e0756c6e25bf03:hundred:map_action:7d4e98f564"
+    },
+    {
+      "event_id": "shunan-90327:proposal:05",
+      "event_hash": "820ff7d7be9146d9a18ecd2b806af0394c5c3bed9602ab1727392de0d1b5f7a9",
+      "case_id": "case:hundred:a0e0756c6e25bf03",
+      "issue_id": "case:hundred:a0e0756c6e25bf03:hundred:map_action:7d4e98f564"
+    },
+    {
+      "event_id": "shunan-90677:uniqlo",
+      "event_hash": "2ffaad2414141cbf3c7a5482ae4a30d5ecb053fcc018161e76bc3e9ea485ad40",
+      "case_id": "case:hundred:4f40235837ba6894",
+      "issue_id": "case:hundred:4f40235837ba6894:hundred:map_action:9dd3f8e212"
+    },
+    {
+      "event_id": "shunan-90677:uniqlo-hiatus",
+      "event_hash": "9ef37b6fde25ac21803134f8dd8f514e40fa052db386a9d0d4c8e725786dff82",
+      "case_id": "case:hundred:4f40235837ba6894",
+      "issue_id": "case:hundred:4f40235837ba6894:hundred:map_action:9dd3f8e212"
+    },
+    {
+      "event_id": "shunan-89605:proposal:02",
+      "event_hash": "867c5e124b7abca712097df2a2a99cbc063b5938ba002a97631be185e8413a62",
+      "case_id": "case:hundred:4f40235837ba6894",
+      "issue_id": "case:hundred:4f40235837ba6894:hundred:map_action:9dd3f8e212"
+    },
+    {
+      "event_id": "shunan-90677:stolen",
+      "event_hash": "41e60dbfb85b80349fd320bf754b3d47ee975d220b77161e5bdba2fea560bf21",
+      "case_id": "case:hundred:f19dbcecab22c975",
+      "issue_id": "case:hundred:f19dbcecab22c975:hundred:map_action:e12abd4019"
+    },
+    {
+      "event_id": "shunan-90327:proposal:06",
+      "event_hash": "37eb4390988157f70c76ed2ebc5dc73c4867f3634065cfef78fc55d1eb35d998",
+      "case_id": "case:hundred:f19dbcecab22c975",
+      "issue_id": "case:hundred:f19dbcecab22c975:hundred:map_action:e12abd4019"
+    },
+    {
+      "event_id": "shunan-90677:tsutaya-predecessor",
+      "event_hash": "3a819ac7e60059eca7a392e76acf8ff1c1c2b49241b7f6ef2d48666aa6dd65d7",
+      "case_id": "case:hundred:c7a6f21237511357",
+      "issue_id": "case:hundred:c7a6f21237511357:hundred:map_action:53f96fcef7"
+    },
+    {
+      "event_id": "shunan-115367:meresankh-opening",
+      "event_hash": "212bd214199b990f97911c0b6c6fe68cd8c2e4a56000ca24b0c862ce93cc631e",
+      "case_id": "case:hundred:20bc71fd41443f47",
+      "issue_id": "case:hundred:20bc71fd41443f47:hundred:supplemental:c41e11f7fb"
+    },
+    {
+      "event_id": "kaiten-454981:towel-shimonoseki",
+      "event_hash": "3f07ba842f7a14e8bd4cb2552fae6abfcbec0dac21d35994fc75c6cd9beb9f6d",
+      "case_id": "case:hundred:e5335490cab0cdd2",
+      "issue_id": "case:hundred:e5335490cab0cdd2:hundred:map_action:ddd560fb8f"
+    },
+    {
+      "event_id": "yamaguchi-49005:kyoichi-hofu",
+      "event_hash": "9d5142b8ee6bf79540690c5dc5d914608c5ffda3c8d3ef566ac713bb2f8e8ace",
+      "case_id": "case:hundred:e19afe66ad2dbe23",
+      "issue_id": "case:hundred:e19afe66ad2dbe23:hundred:map_action:dbaa78eb10"
+    },
+    {
+      "event_id": "yamaguchi-49005:sukiya-relocation",
+      "event_hash": "fad8e63dfdaa7196e9a8451c0d9db7742fa2af5dc14e1139f0fe55176d1d7c6e",
+      "case_id": "case:hundred:c92c8471a50d6bec",
+      "issue_id": "case:hundred:c92c8471a50d6bec:hundred:map_action:dcf563c7ff"
+    },
+    {
+      "event_id": "yamaguchi-49005:kyoichi-shunan-history",
+      "event_hash": "99d4c594c8683e328689f621ba17ff8324fcfaed33a5dcc780fdc298a0b5a07a",
+      "case_id": "case:hundred:5e55c5a2218a894f",
+      "issue_id": "case:hundred:5e55c5a2218a894f:hundred:map_action:14fe406775"
+    },
+    {
+      "event_id": "shunan-118903:paris",
+      "event_hash": "16d19154920103ad8d83c8092b745f0749f4678958266f05f5f9bd4bb5ce48fc",
+      "case_id": "case:hundred:19303274651cf7f6",
+      "issue_id": "case:hundred:19303274651cf7f6:hundred:map_action:162fc54f66"
+    },
+    {
+      "event_id": "shunan-118903:thedon",
+      "event_hash": "5c303cff38184fa873edff425111cbea30eb5aeae2368a9ce165e10845195917",
+      "case_id": "case:hundred:b65decfaf10e8473",
+      "issue_id": "case:hundred:b65decfaf10e8473:hundred:map_action:8b32607577"
+    },
+    {
+      "event_id": "shunan-118903:hearth",
+      "event_hash": "5b5e56ed171f917489722bb9b7bddcf744eaff14030612109f9fd264933e22bb",
+      "case_id": "case:hundred:6e9786363e982370",
+      "issue_id": "case:hundred:6e9786363e982370:hundred:map_action:2e0598cfe3"
+    },
+    {
+      "event_id": "shunan-118903:jewel-renovation",
+      "event_hash": "7ffcd3ffdd1489442a1e18dff23a3e31e0383950492c6467f0a09a17c4451d15",
+      "case_id": "case:hundred:a2584a56ee78ad61",
+      "issue_id": "case:hundred:a2584a56ee78ad61:hundred:map_action:1a676adb25"
+    },
+    {
+      "event_id": "shunan-113785:proposal:02",
+      "event_hash": "e74171d5d17471db08a91a07e8fa89efa20c47abaeee70a827bcdbc9e2bd9d5c",
+      "case_id": "case:hundred:a2584a56ee78ad61",
+      "issue_id": "case:hundred:a2584a56ee78ad61:hundred:map_action:1a676adb25"
+    },
+    {
+      "event_id": "shunan-118903:prunelle",
+      "event_hash": "4cfb243081162a1d9f0b742e610b62e501c0e2facb0db1d84ac82d92625c8b8f",
+      "case_id": "case:hundred:8b008d01e484b640",
+      "issue_id": "case:hundred:8b008d01e484b640:hundred:map_action:e236e7e5f4"
+    },
+    {
+      "event_id": "yamaguchi-44713:hofu-cityhall",
+      "event_hash": "a8f41204160810138e0cd2fc31ba3a3f96824b659237281c9d6c9f7fc83ad55e",
+      "case_id": "case:hundred:564da41f1d24bdcf",
+      "issue_id": "case:hundred:564da41f1d24bdcf:hundred:map_action:d9ea60c5f8"
+    },
+    {
+      "event_id": "yamaguchi-44713:cityhall-hours",
+      "event_hash": "8b39f635eec03fcaad4421f5ff92da70d2ad5b1a35f2ece336edf3862b97332a",
+      "case_id": "case:hundred:564da41f1d24bdcf",
+      "issue_id": "case:hundred:564da41f1d24bdcf:hundred:map_action:d9ea60c5f8"
+    },
+    {
+      "event_id": "yamaguchi-44713:aruk-ex",
+      "event_hash": "8f7f9958933ff8e8d0aee96939cc3a7e8686ba325f754f4c1550380378393072",
+      "case_id": "case:hundred:9c764a57b3d98d9e",
+      "issue_id": "case:hundred:9c764a57b3d98d9e:hundred:map_action:e0329de92e"
+    },
+    {
+      "event_id": "shunan-113897:nasai-relocation-preopen",
+      "event_hash": "8f7310ce093fee09609bffdbfc2018795889bd323244b16f78d075000f50538a",
+      "case_id": "case:hundred:571e88f21234b1ae",
+      "issue_id": "case:hundred:571e88f21234b1ae:hundred:map_action:eb8569a855"
+    },
+    {
+      "event_id": "shunan-113897:nasai-grandopen",
+      "event_hash": "fd1aa969eda9fe55134bc344ec29e585705c3818d334ba8d5d0e32ad8c3681c9",
+      "case_id": "case:hundred:571e88f21234b1ae",
+      "issue_id": "case:hundred:571e88f21234b1ae:hundred:map_action:eb8569a855"
+    },
+    {
+      "event_id": "yamaguchi-27658:bmw-relocation",
+      "event_hash": "79760f66953c4b882f15a96d53c3fc0eafc1153c0fab5004da728ef337b16bde",
+      "case_id": "case:hundred:b9e157dba32fc70c",
+      "issue_id": "case:hundred:b9e157dba32fc70c:hundred:map_action:6bea5833aa"
+    },
+    {
+      "event_id": "yamaguchi-27658:motorrad-opening",
+      "event_hash": "bb34ebded88f2cff3b727ec5c768a253c1bd1e9106276212bbd3b56a60a03d70",
+      "case_id": "case:hundred:25f1584dc8f58b98",
+      "issue_id": "case:hundred:25f1584dc8f58b98:hundred:map_action:6a779ec79d"
+    },
+    {
+      "event_id": "yamaguchi-31432:proposal:01",
+      "event_hash": "297001017641866298f3927ceccd03ad8f698973c8e7fb011f14591760dc2b39",
+      "case_id": "case:hundred:620f8352530038ba",
+      "issue_id": "case:hundred:620f8352530038ba:hundred:map_action:37fe43cd70"
+    },
+    {
+      "event_id": "yamaguchi-31432:proposal:02",
+      "event_hash": "9a997c8abe03e0544c0dd822d23ead7c4ed72c69e11ad21fe0a0ea641200bb25",
+      "case_id": "case:hundred:f22bc8fcd4fb5aa4",
+      "issue_id": "case:hundred:f22bc8fcd4fb5aa4:hundred:map_action:6d55f975e7"
+    },
+    {
+      "event_id": "yamaguchi-31432:proposal:03",
+      "event_hash": "f03dd47bac505c08ddb2bde3f08216aceb77100fc9e24a3ad73f7c072423b59a",
+      "case_id": "case:hundred:1d7ad1a1e9a9d2d6",
+      "issue_id": "case:hundred:1d7ad1a1e9a9d2d6:hundred:map_action:9bfe86f9b0"
+    },
+    {
+      "event_id": "shunan-114793:proposal:02",
+      "event_hash": "fcdaa8d5f80c0b2df1c9ffafee8e854273830c91278afffd8d36ed00bbcfc4e2",
+      "case_id": "case:hundred:d234841f440e845f",
+      "issue_id": "case:hundred:d234841f440e845f:hundred:map_action:55fd9c1f87"
+    },
+    {
+      "event_id": "shunan-114793:proposal:03",
+      "event_hash": "064a776aea7bc05a652b146b8b21ab784989ab21b59359e620495599cb500d72",
+      "case_id": "case:hundred:e890abf3c48cdd45",
+      "issue_id": "case:hundred:e890abf3c48cdd45:hundred:map_action:99da98ad9a"
+    },
+    {
+      "event_id": "shunan-119159:proposal:01",
+      "event_hash": "c0a5d6b5c1b6c7bd9f3f2579ac3ba3a14713faede13005a763bbecf75f7799dd",
+      "case_id": "case:hundred:ea801ef9f2021fff",
+      "issue_id": "case:hundred:ea801ef9f2021fff:hundred:map_action:5557857a3d"
+    },
+    {
+      "event_id": "shunan-119931:proposal:03",
+      "event_hash": "8958b5e901f887940246c3457fa19313e4964f423a201c0c2c4d98433528db02",
+      "case_id": "case:hundred:ea801ef9f2021fff",
+      "issue_id": "case:hundred:ea801ef9f2021fff:hundred:map_action:5557857a3d"
+    },
+    {
+      "event_id": "shunan-89605:proposal:01",
+      "event_hash": "f822e8d0febf57449bb17201b84766875d209f9b125eed8172fc6b78992aa4ee",
+      "case_id": "case:hundred:e8d3bdb2ba359fac",
+      "issue_id": "case:hundred:e8d3bdb2ba359fac:hundred:map_action:bdd04bce6d"
+    },
+    {
+      "event_id": "shunan-89605:proposal:03",
+      "event_hash": "158aeb5c7c872a98ea986c97aaa6859c3cb2cee956ad155c4c9ac8f628e99266",
+      "case_id": "case:hundred:cb570608e4883d57",
+      "issue_id": "case:hundred:cb570608e4883d57:hundred:map_action:0d2d2c4f1f"
+    },
+    {
+      "event_id": "shunan-113785:proposal:01",
+      "event_hash": "df8f605849b28ecffd381682c60b44f1609ed251d54f7508bdf5d9b3ff9c2bf4",
+      "case_id": "case:hundred:a5891a6a105d0ffd",
+      "issue_id": "case:hundred:a5891a6a105d0ffd:hundred:map_action:8d7f7e1859"
+    },
+    {
+      "event_id": "shunan-113785:proposal:03",
+      "event_hash": "d550d13525b3fe69b9e871065bbf5af4b2283be75467b216f8fa00337213873b",
+      "case_id": "case:hundred:766812ba48a8348e",
+      "issue_id": "case:hundred:766812ba48a8348e:hundred:map_action:47ae124aef"
+    },
+    {
+      "event_id": "shunan-116597:proposal:01",
+      "event_hash": "89c7b78762481e6d4534d68e68014f839b4341f743622dceca6bbfe25ad31619",
+      "case_id": "case:hundred:be7c0d9297a88a44",
+      "issue_id": "case:hundred:be7c0d9297a88a44:hundred:map_action:a8e557109d"
+    },
+    {
+      "event_id": "shunan-116550:proposal:04",
+      "event_hash": "e3cbeca3f1bd1be1581f3706d7944b5d5ed39d8cbc2e7f7e45a780e0a96f2203",
+      "case_id": "case:hundred:be7c0d9297a88a44",
+      "issue_id": "case:hundred:be7c0d9297a88a44:hundred:map_action:a8e557109d"
+    },
+    {
+      "event_id": "shunan-116597:proposal:02",
+      "event_hash": "7435e965bfcbe4c622243d8db20d276ab0435fd6820c87ec9b12ed58a7a73b80",
+      "case_id": "case:hundred:18ec02d8b44950ce",
+      "issue_id": "case:hundred:18ec02d8b44950ce:hundred:map_action:e2923ee450"
+    },
+    {
+      "event_id": "shunan-116550:proposal:03",
+      "event_hash": "346404447c6af3778b30dcbd2cf916b5dc8cfa5ba980dc3b289164adb16ca0d4",
+      "case_id": "case:hundred:18ec02d8b44950ce",
+      "issue_id": "case:hundred:18ec02d8b44950ce:hundred:map_action:e2923ee450"
+    },
+    {
+      "event_id": "shunan-116597:proposal:03",
+      "event_hash": "9561eb8304f046533a49d3c35b23a99e18259d6e7d2361fe7558d2d84681a739",
+      "case_id": "case:hundred:a060b724ea88e6b8",
+      "issue_id": "case:hundred:a060b724ea88e6b8:hundred:map_action:80b61158de"
+    },
+    {
+      "event_id": "shunan-116550:proposal:01",
+      "event_hash": "6a25e585ed84b712e66a0764cf3f40907c86c377b8588a6f35a3f9637187cf64",
+      "case_id": "case:hundred:a060b724ea88e6b8",
+      "issue_id": "case:hundred:a060b724ea88e6b8:hundred:map_action:80b61158de"
+    },
+    {
+      "event_id": "shunan-96574:proposal:01",
+      "event_hash": "fb71c77aafb7217d2563a55bcb4c9bb5721b2ba1899841130e5e0bece7d5305c",
+      "case_id": "case:hundred:86b0a98184d2af63",
+      "issue_id": "case:hundred:86b0a98184d2af63:hundred:map_action:74a1715d99"
+    },
+    {
+      "event_id": "shunan-96574:proposal:02",
+      "event_hash": "0d3fdef578a07004d79b096ffddcc9b8e3590ad7955c3804284218ade55d49af",
+      "case_id": "case:hundred:66e1aa9f0f898699",
+      "issue_id": "case:hundred:66e1aa9f0f898699:hundred:map_action:4143ed399e"
+    },
+    {
+      "event_id": "shunan-96574:proposal:04",
+      "event_hash": "dd69c1510e6fcd8db1de1e727ada394cfb8024c143ca23424cd316f78762566f",
+      "case_id": "case:hundred:f21c334c75289ba4",
+      "issue_id": "case:hundred:f21c334c75289ba4:hundred:map_action:d5104416c7"
+    },
+    {
+      "event_id": "shunan-99731:proposal:01",
+      "event_hash": "96428163ff367f96e730c9b39cac0651d5cd095b2888884bdb8a64b3570968d7",
+      "case_id": "case:hundred:ec8a750bc4f634ce",
+      "issue_id": "case:hundred:ec8a750bc4f634ce:hundred:map_action:43ab09141e"
+    },
+    {
+      "event_id": "shunan-99731:proposal:02",
+      "event_hash": "5ff30693ab83733d630519084786ca3a3b3cbb5b115ec521dd583511befa6fc4",
+      "case_id": "case:hundred:910f0218d056cd35",
+      "issue_id": "case:hundred:910f0218d056cd35:hundred:map_action:8983438d5c"
+    },
+    {
+      "event_id": "shunan-99731:proposal:03",
+      "event_hash": "4105279835f37658e79379b4bb6dbeb8a5cb5dca00f45ba04ce366722a8e0a7e",
+      "case_id": "case:hundred:fcb9cf35258041db",
+      "issue_id": "case:hundred:fcb9cf35258041db:hundred:map_action:5cdec90db0"
+    },
+    {
+      "event_id": "shunan-99731:proposal:04",
+      "event_hash": "6c8f6c0cd4891d9303bac63e31b55ea51c4692ed09b1efa69de6bfd31e19f02e",
+      "case_id": "case:hundred:022b547559fcf5bf",
+      "issue_id": "case:hundred:022b547559fcf5bf:hundred:map_action:23742f83d8"
+    },
+    {
+      "event_id": "shunan-116018:proposal:01",
+      "event_hash": "25a32a021bb5bc1ecf7d6fe9de93d4757b14e5833afe87395c072d2f431bc289",
+      "case_id": "case:hundred:022b547559fcf5bf",
+      "issue_id": "case:hundred:022b547559fcf5bf:hundred:map_action:23742f83d8"
+    },
+    {
+      "event_id": "shunan-96066:proposal:01",
+      "event_hash": "0a109a6fdfcd73e4f6a38d908a7f6eba36056f95677e8eb14ec56d9553e19ed7",
+      "case_id": "case:hundred:aade46d5a8afb40a",
+      "issue_id": "case:hundred:aade46d5a8afb40a:hundred:map_action:a2c30ec080"
+    },
+    {
+      "event_id": "shunan-96066:proposal:02",
+      "event_hash": "3cf9fbc1825045e2ed2622858ce7ba80f6aa9554bdcc63cbf70177855e2f0dcc",
+      "case_id": "case:hundred:ba12ce971328f78a",
+      "issue_id": "case:hundred:ba12ce971328f78a:hundred:map_action:94de0f031a"
+    },
+    {
+      "event_id": "shunan-96066:proposal:03",
+      "event_hash": "d62aaadb8a25bc2f745b1f3c66d854f802b81f7ebada5f7a8e14a1a648a731c0",
+      "case_id": "legacy:3",
+      "issue_id": "legacy:3:hundred:map_action:5d0966c1e6"
+    },
+    {
+      "event_id": "shunan-96066:proposal:05",
+      "event_hash": "81593161fcf42fa651cf62dbf873babb19418938cec715d01fd725a19134668d",
+      "case_id": "case:hundred:959a092b679648c3",
+      "issue_id": "case:hundred:959a092b679648c3:hundred:map_action:76cbd26b5b"
+    },
+    {
+      "event_id": "shunan-96066:proposal:07",
+      "event_hash": "5dc66b5edb3b8400d97fe208d98b4a709f0e22cc7846a1b21dc0ffeeaceed035",
+      "case_id": "case:hundred:fb597504f0e279d3",
+      "issue_id": "case:hundred:fb597504f0e279d3:hundred:map_action:815b60281a"
+    },
+    {
+      "event_id": "shunan-96066:proposal:08",
+      "event_hash": "654bd05b140fc546f5fe552b9c1226de00dd565531fa48652a9e51e9e6b271ad",
+      "case_id": "case:hundred:9e4b555eba2d2d27",
+      "issue_id": "case:hundred:9e4b555eba2d2d27:hundred:map_action:f4668e5195"
+    },
+    {
+      "event_id": "shunan-107077:proposal:01",
+      "event_hash": "5ab7a108517a665e331006d43a0a919e243603f3e172a6ec62e3ceb1e6cbcbc5",
+      "case_id": "case:hundred:1395ca87532414db",
+      "issue_id": "case:hundred:1395ca87532414db:hundred:map_action:85aacffcb7"
+    },
+    {
+      "event_id": "shunan-107077:proposal:02",
+      "event_hash": "ef5be2036e414f52a28c3a0b52e31849d7265235945b22c095d4b90bd2b51e9a",
+      "case_id": "case:hundred:74e88a82b5237fe5",
+      "issue_id": "case:hundred:74e88a82b5237fe5:hundred:map_action:4e0431d270"
+    },
+    {
+      "event_id": "shunan-107077:proposal:03",
+      "event_hash": "096fc008e3e91b3cb5b6863f4c5a4e3c7033bf58f1938e076ea3fb336153f6ee",
+      "case_id": "case:hundred:e86e4587825cc631",
+      "issue_id": "case:hundred:e86e4587825cc631:hundred:map_action:c1c301789e"
+    },
+    {
+      "event_id": "shunan-107077:proposal:05",
+      "event_hash": "f05a66830979fbe8691875d7152d11422ffe4ba1ecbfa3f0e7f1677e67affacc",
+      "case_id": "case:hundred:f3ccc286ffb83edc",
+      "issue_id": "case:hundred:f3ccc286ffb83edc:hundred:map_action:1977345dee"
+    },
+    {
+      "event_id": "shunan-107077:proposal:06",
+      "event_hash": "a4f17a612976ac5cd5ea438f95ea58be6dba682d0569fa3146314937e3e58d8f",
+      "case_id": "case:hundred:4fa9c3d4e9685db2",
+      "issue_id": "case:hundred:4fa9c3d4e9685db2:hundred:map_action:59f9c750e2"
+    },
+    {
+      "event_id": "shunan-107077:proposal:07",
+      "event_hash": "387bd4f2a4349b6f85dbfd0e800d7394ed9f6492cb63b4cf8828a247deb321e6",
+      "case_id": "case:hundred:07be62ffaa6bf130",
+      "issue_id": "case:hundred:07be62ffaa6bf130:hundred:map_action:45a38ba5d2"
+    },
+    {
+      "event_id": "shunan-107077:proposal:09",
+      "event_hash": "0f2ed8e88e89dd4334e3c92b246c38ee9a4739df89edb3eb12eb1c3ec8c1af1b",
+      "case_id": "facility:official-daiso-005307:temporary_change",
+      "issue_id": "facility:official-daiso-005307:temporary_change:hundred:map_action:c9d9463cb7"
+    },
+    {
+      "event_id": "shunan-107077:proposal:10",
+      "event_hash": "788ac37eff8de18684c5cad24b600c983fa5cb43fced50a51ebeb7e4954ca664",
+      "case_id": "case:hundred:f3438c3c4217eb49",
+      "issue_id": "case:hundred:f3438c3c4217eb49:hundred:map_action:5a8b62adea"
+    },
+    {
+      "event_id": "shunan-107077:proposal:11",
+      "event_hash": "457f40df38c4a0fb6cd8a500e2eb0255dcd7fe9bb21bd9e1d1758b1151fb77da",
+      "case_id": "case:hundred:876c09a07e518946",
+      "issue_id": "case:hundred:876c09a07e518946:hundred:map_action:2f64fb3ea5"
+    },
+    {
+      "event_id": "shunan-100236:proposal:01",
+      "event_hash": "ed933659daa2d341a6e16bf81e0046a2cc09a26cb0fec1d03cebfc099d9aaa62",
+      "case_id": "case:hundred:40a43d2b12edae28",
+      "issue_id": "case:hundred:40a43d2b12edae28:hundred:map_action:f7254c42a4"
+    },
+    {
+      "event_id": "shunan-100236:proposal:02",
+      "event_hash": "a31d49808a26977d5745191ee6c59a152e503376992171371eb1282bf4fbbb48",
+      "case_id": "case:hundred:54b32d36047eddba",
+      "issue_id": "case:hundred:54b32d36047eddba:hundred:map_action:ffde0e3c35"
+    },
+    {
+      "event_id": "shunan-100236:proposal:05",
+      "event_hash": "039ca4b74da236c8e050ed25aec83758705d1923bfdf04782569985c107bd7db",
+      "case_id": "case:hundred:80b597cf80d7dadc",
+      "issue_id": "case:hundred:80b597cf80d7dadc:hundred:map_action:4fb70e6d12"
+    },
+    {
+      "event_id": "shunan-100236:proposal:06",
+      "event_hash": "986667eaa9e1e73cba7de9b7538689830037bcd7f66e0ccdce669ebce31d0b19",
+      "case_id": "case:hundred:a758c6b9a161e5f1",
+      "issue_id": "case:hundred:a758c6b9a161e5f1:hundred:map_action:97d4457e39"
+    },
+    {
+      "event_id": "shunan-116550:proposal:02",
+      "event_hash": "03a2069a21e605146bedf86e6fd1d322d9645041e901aad26a723427143e922d",
+      "case_id": "reconcile:tadokoro-kudamatsu",
+      "issue_id": "reconcile:tadokoro-kudamatsu:hundred:map_action:45550575e7"
+    },
+    {
+      "event_id": "shunan-116594:proposal:01",
+      "event_hash": "14ea07e3cf258a05f8e060bf7875aee8baa55ab5523ec5ca5d9a85674e524410",
+      "case_id": "case:hundred:a0597f9920cc06dc",
+      "issue_id": "case:hundred:a0597f9920cc06dc:hundred:map_action:1f8a496104"
+    },
+    {
+      "event_id": "shunan-116594:proposal:02",
+      "event_hash": "204f7543782bc453a0cf5a4441efa6aec97ff8cb08c570b0901c9e97d8618a81",
+      "case_id": "case:hundred:c4995b92604ce2fd",
+      "issue_id": "case:hundred:c4995b92604ce2fd:hundred:map_action:d944bd519f"
+    },
+    {
+      "event_id": "shunan-116594:proposal:03",
+      "event_hash": "00105f4fc4ce4a6158695964e3948f7f864d65fa4ecda8acf2e383d5843e1da5",
+      "case_id": "case:hundred:8f0facf26fd4488f",
+      "issue_id": "case:hundred:8f0facf26fd4488f:hundred:map_action:4735d6488a"
+    },
+    {
+      "event_id": "shunan-116594:proposal:04",
+      "event_hash": "521c29e425727a591f0911483c068557e0cdc020d814673d3e226edfdf2cb3ba",
+      "case_id": "case:hundred:ae278a7343d142cf",
+      "issue_id": "case:hundred:ae278a7343d142cf:hundred:map_action:3122222d45"
+    },
+    {
+      "event_id": "shunan-116594:proposal:06",
+      "event_hash": "fc603b694e4d4201a3b9e783d4751a32efa89ce52684e9f7e1d5b0a753d346a5",
+      "case_id": "case:hundred:2843d4a81c1d3aaf",
+      "issue_id": "case:hundred:2843d4a81c1d3aaf:hundred:map_action:0db1af5872"
+    },
+    {
+      "event_id": "shunan-116594:proposal:07",
+      "event_hash": "510fcea7c536ae5b1270cd41a9c9d445dfe76eb2041cf251c3e8d66b71f96633",
+      "case_id": "case:hundred:3bdf6bd82fdff0e6",
+      "issue_id": "case:hundred:3bdf6bd82fdff0e6:hundred:map_action:3bc2132361"
+    },
+    {
+      "event_id": "shunan-120010:proposal:01",
+      "event_hash": "092ca50a26742846437bdc0ca0394474c131d2c418418d0081514b9536b404a9",
+      "case_id": "case:hundred:74374e9d9769addc",
+      "issue_id": "case:hundred:74374e9d9769addc:hundred:map_action:471da09509"
+    },
+    {
+      "event_id": "shunan-120010:proposal:02",
+      "event_hash": "089c0f5a1d80510dc582007d11a69d6f3147bdfb3ae83a0fae1b6661651ebad0",
+      "case_id": "case:hundred:e46bbbe499d3f9cc",
+      "issue_id": "case:hundred:e46bbbe499d3f9cc:hundred:map_action:2f11258f3e"
+    },
+    {
+      "event_id": "shunan-120010:proposal:03",
+      "event_hash": "8a744c389430227a2bc0bfc1beb36b7071612b0a8e3ded2d47b5a8b2518157ff",
+      "case_id": "case:hundred:d886176852749acf",
+      "issue_id": "case:hundred:d886176852749acf:hundred:map_action:d7f21de2b1"
+    },
+    {
+      "event_id": "shunan-120010:proposal:04",
+      "event_hash": "cd4f1e93904b6739ae4c1f45e54a926b28552e00e80b85ae03c79159f311e04b",
+      "case_id": "case:hundred:2007e6004a2a2794",
+      "issue_id": "case:hundred:2007e6004a2a2794:hundred:map_action:fac1d9992e"
+    },
+    {
+      "event_id": "shunan-120010:proposal:05",
+      "event_hash": "6cb8a7b4b40de7dd20298048a7009b570366cc1c5b7605cbe068e3dbe7da8e1b",
+      "case_id": "case:hundred:eb6cd5e87461154a",
+      "issue_id": "case:hundred:eb6cd5e87461154a:hundred:map_action:a84c6c9be5"
+    },
+    {
+      "event_id": "shunan-120010:proposal:06",
+      "event_hash": "d303e2a9e754cce036a25249a4b17001a0c675f52a7b60fb5b68032607140875",
+      "case_id": "case:hundred:e9ca26fc1f198dde",
+      "issue_id": "case:hundred:e9ca26fc1f198dde:hundred:map_action:9a6e45a4ac"
+    },
+    {
+      "event_id": "shunan-120010:proposal:08",
+      "event_hash": "de4cedf4d07e4d6256c02ae8bf1019ba0035fb419d33831a8ae5956398202113",
+      "case_id": "case:hundred:398f506cb8c8dfae",
+      "issue_id": "case:hundred:398f506cb8c8dfae:hundred:map_action:4dcd4f0181"
+    },
+    {
+      "event_id": "yamaguchi-38108:proposal:01",
+      "event_hash": "a056776860b10ca802ec2163f0e7350d772343d23df0ac1e282bc9ac45af7377",
+      "case_id": "case:hundred:b758f481694fa16a",
+      "issue_id": "case:hundred:b758f481694fa16a:hundred:map_action:a208a08c5c"
+    },
+    {
+      "event_id": "yamaguchi-38108:proposal:02",
+      "event_hash": "e0e1f091ba8d921642162d719b3ad8bad3a7879cd40992c27328b281bba9f80e",
+      "case_id": "case:hundred:5218be01a92d40dc",
+      "issue_id": "case:hundred:5218be01a92d40dc:hundred:map_action:7caff4931f"
+    },
+    {
+      "event_id": "shunan-118006:proposal:01",
+      "event_hash": "840d10d07a56eba79f265006f288a6ddf862eb3cb4af57a7d101bbdc3d8fcdc1",
+      "case_id": "case:hundred:72cd1823e896e12a",
+      "issue_id": "case:hundred:72cd1823e896e12a:hundred:map_action:30ef7df01b"
+    },
+    {
+      "event_id": "shunan-118006:proposal:02",
+      "event_hash": "f0fb21b658369675321b31b5c44646302654b22aee072f1698380fdae80e2a53",
+      "case_id": "case:hundred:4a5da50a874baa67",
+      "issue_id": "case:hundred:4a5da50a874baa67:hundred:map_action:e5867d0d56"
+    },
+    {
+      "event_id": "shunan-118006:proposal:03",
+      "event_hash": "d1b3f46a6cebae4a7d0039ef4930582b7876ce6b66c70459fe727923d2e4f195",
+      "case_id": "case:hundred:02eaa0d0c72ca291",
+      "issue_id": "case:hundred:02eaa0d0c72ca291:hundred:map_action:6806ff00c4"
+    },
+    {
+      "event_id": "shunan-118006:proposal:04",
+      "event_hash": "fd2b2c4d3ca028c462a0d462ea17a8ca2da0385daf2b991a28214ca310229dd1",
+      "case_id": "case:hundred:7e53aa4c25adcd3c",
+      "issue_id": "case:hundred:7e53aa4c25adcd3c:hundred:map_action:4f9c653727"
+    },
+    {
+      "event_id": "shunan-118006:proposal:05",
+      "event_hash": "4e59b87432c1b28736512d41ab7fd7aefddbcf1980b9e13721ae56736342bae1",
+      "case_id": "case:hundred:00c4b8018458d68c",
+      "issue_id": "case:hundred:00c4b8018458d68c:hundred:map_action:cb8f1db07e"
+    },
+    {
+      "event_id": "shunan-118006:proposal:06",
+      "event_hash": "3cbb6cfa053a85a09ba3701fa5d344a36d74c0a565b99b7fd7607c0ec914b6c7",
+      "case_id": "case:hundred:ff225c958673cefe",
+      "issue_id": "case:hundred:ff225c958673cefe:hundred:map_action:77924a3809"
+    },
+    {
+      "event_id": "shunan-118214:proposal:01",
+      "event_hash": "b15e6f4869d2597e8fe1f602ea0b7236535ac9654edaf745c3277d0896837515",
+      "case_id": "case:hundred:9e26c599dff9bff4",
+      "issue_id": "case:hundred:9e26c599dff9bff4:hundred:map_action:60b3a0cd96"
+    },
+    {
+      "event_id": "shunan-118214:proposal:02",
+      "event_hash": "d41aa97839ccdf0b31778d2ea9957ec4e72883d0cc54607f3a1d50b18320577d",
+      "case_id": "case:hundred:244a49f2e2aed4df",
+      "issue_id": "case:hundred:244a49f2e2aed4df:hundred:map_action:3485e60c56"
+    },
+    {
+      "event_id": "shunan-118214:proposal:03",
+      "event_hash": "4fbc12609c1a759edfdcecd11d7a8140df3fe89875db9ba9c026bbb520f02147",
+      "case_id": "case:hundred:f5b7c41475c43e38",
+      "issue_id": "case:hundred:f5b7c41475c43e38:hundred:map_action:8296546f4e"
+    },
+    {
+      "event_id": "shunan-118214:proposal:04",
+      "event_hash": "57646e389303084ffa3c24278f6565471f722715b7084f752a7ab13282030d7d",
+      "case_id": "case:hundred:afd495ce7212ee70",
+      "issue_id": "case:hundred:afd495ce7212ee70:hundred:map_action:124a250444"
+    },
+    {
+      "event_id": "shunan-118214:proposal:05",
+      "event_hash": "56ce26daf427d857fdd4a8a55b5d687df5b300b3dce0995f59d38d85fa7195b7",
+      "case_id": "case:hundred:2c7c6ddc3d0c750b",
+      "issue_id": "case:hundred:2c7c6ddc3d0c750b:hundred:map_action:5ac879a637"
+    },
+    {
+      "event_id": "shunan-118214:proposal:06",
+      "event_hash": "f02d4fcd1032e481c77a07d19d15b8247bbad6c1b2f626dd5fb39dc9e8e88f50",
+      "case_id": "case:hundred:f871922297b24335",
+      "issue_id": "case:hundred:f871922297b24335:hundred:map_action:6fa33d2ec0"
+    },
+    {
+      "event_id": "shunan-116018:proposal:02",
+      "event_hash": "ed2678768dcdf26fb9c6134153b67d6fc6a0ab3859be3c7f1fe4ac9bd2b9b862",
+      "case_id": "case:hundred:38deaaa9f8cb4014",
+      "issue_id": "case:hundred:38deaaa9f8cb4014:hundred:map_action:7f9b709b6d"
+    },
+    {
+      "event_id": "shunan-116018:proposal:03",
+      "event_hash": "1308a8fd7f18e58fa8c58b9a5a2ed54d536b75ca156050f4343ebc1d1611f21e",
+      "case_id": "case:hundred:36a33c0012b13749",
+      "issue_id": "case:hundred:36a33c0012b13749:hundred:map_action:b60ccad45b"
+    },
+    {
+      "event_id": "shunan-116018:proposal:04",
+      "event_hash": "c2b9fe55e03b037c44281613738f82052a3a57d55d0150c13ed4e8e250f86c14",
+      "case_id": "facility:official-seven-misato3:opening",
+      "issue_id": "facility:official-seven-misato3:opening:hundred:map_action:ff26e887e5"
+    },
+    {
+      "event_id": "shunan-116018:proposal:06",
+      "event_hash": "2249d1a7f808d83532f90b8753d53848f7e694669122c508e6dc63015119745f",
+      "case_id": "case:hundred:8a90df9f1c96897d",
+      "issue_id": "case:hundred:8a90df9f1c96897d:hundred:map_action:809359e919"
+    },
+    {
+      "event_id": "shunan-116018:proposal:07",
+      "event_hash": "216ca9b495812679fd6af2f191fa3fb2551a157b142f151c50905ea73d83a684",
+      "case_id": "case:hundred:fd7d88a1d2956831",
+      "issue_id": "case:hundred:fd7d88a1d2956831:hundred:map_action:b5c7fad6ec"
+    },
+    {
+      "event_id": "shunan-116018:proposal:08",
+      "event_hash": "d8cb7ce3e18ef50c2d90e45a97f91a8da426811944db9d32af4cf92657c12cfb",
+      "case_id": "case:hundred:ad5821a1739b1fb0",
+      "issue_id": "case:hundred:ad5821a1739b1fb0:hundred:map_action:27866109ca"
+    },
+    {
+      "event_id": "shunan-118566:proposal:01",
+      "event_hash": "01af3abf181dc05badca690ce8090ea1ebbb0c6335403d5b37b0bc82d725017c",
+      "case_id": "case:hundred:528e254bc432424d",
+      "issue_id": "case:hundred:528e254bc432424d:hundred:map_action:cc6bca3a24"
+    },
+    {
+      "event_id": "shunan-118566:proposal:02",
+      "event_hash": "66c221809c079fe37b3ae6a6fba5474ad820088a0ba9373805e1fe9129bdd808",
+      "case_id": "case:hundred:984def84fc1c918e",
+      "issue_id": "case:hundred:984def84fc1c918e:hundred:map_action:e27b6476c3"
+    },
+    {
+      "event_id": "shunan-118566:proposal:03",
+      "event_hash": "585027b75e173fe27048c5a3901443962f15fcbfe253513d557286dd782ac71c",
+      "case_id": "case:hundred:b135380035da0ede",
+      "issue_id": "case:hundred:b135380035da0ede:hundred:map_action:85ec44ae52"
+    },
+    {
+      "event_id": "shunan-118566:proposal:04",
+      "event_hash": "cbe95726869db52a04ba9824d52c9cb471ff5403438df3743e331660363fef34",
+      "case_id": "case:hundred:4f589f8329d0962c",
+      "issue_id": "case:hundred:4f589f8329d0962c:hundred:map_action:fe2f7b70d5"
+    },
+    {
+      "event_id": "shunan-118566:proposal:05",
+      "event_hash": "c681a913d8602aa84593d1ff390961d1f4dcc01829e497c5cc4b37a584ae69b1",
+      "case_id": "case:hundred:ec499e8c45431879",
+      "issue_id": "case:hundred:ec499e8c45431879:hundred:map_action:294089efe8"
+    },
+    {
+      "event_id": "shunan-119931:proposal:01",
+      "event_hash": "6f36d13fae60793ec5790720a08275385e1e9f02d4a6ad429b1e6be4c2874adb",
+      "case_id": "case:hundred:215fd153a46b25b9",
+      "issue_id": "case:hundred:215fd153a46b25b9:hundred:map_action:bad4b540c8"
+    },
+    {
+      "event_id": "shunan-119931:proposal:04",
+      "event_hash": "ed716b7fbbe8c706c23b6dd534847b1cdc5aafc86c105cddcf1263fa70579f36",
+      "case_id": "case:hundred:4cacf2c937687127",
+      "issue_id": "case:hundred:4cacf2c937687127:hundred:map_action:fa6539b86e"
+    },
+    {
+      "event_id": "shunan-119931:proposal:05",
+      "event_hash": "5f1155a65b81e50b8c2034cc77511e362bef75b3e27b0b9a245115b0a3649488",
+      "case_id": "facility:official-secondstreet-32214",
+      "issue_id": "facility:official-secondstreet-32214:hundred:map_action:3b29ebc596"
+    },
+    {
+      "event_id": "shunan-119931:proposal:06",
+      "event_hash": "2dd50e5f0d2b8a49e4efb5676f73ce6ce7d127730ed290b4dbd193bd700c7d16",
+      "case_id": "case:hundred:72f40ab044d50c0d",
+      "issue_id": "case:hundred:72f40ab044d50c0d:hundred:map_action:e361feb5fb"
+    },
+    {
+      "event_id": "shunan-119931:proposal:07",
+      "event_hash": "91a09fd128a40b4547827ffc5a0855f54c500879176798abf327fb1948e9a33d",
+      "case_id": "case:hundred:182eaa57a08491d2",
+      "issue_id": "case:hundred:182eaa57a08491d2:hundred:map_action:fcaddfd7ae"
+    },
+    {
+      "event_id": "shunan-119931:proposal:08",
+      "event_hash": "5f1a4f4ba7632ab0e9daf60c103b735285c3f64a706cf6b6797b1ec34d9ca162",
+      "case_id": "case:hundred:7b18fb8f55a09aad",
+      "issue_id": "case:hundred:7b18fb8f55a09aad:hundred:map_action:f95743c6d1"
+    },
+    {
+      "event_id": "kaiten-503496:proposal:01",
+      "event_hash": "2949a2def97f7381f3f35d8aba23b79e1b06122bdf114a5dac0f7708306f8c00",
+      "case_id": "case:hundred:e8ccb96f4c5a8bd8",
+      "issue_id": "case:hundred:e8ccb96f4c5a8bd8:hundred:map_action:e5746c2d8f"
+    },
+    {
+      "event_id": "kaiten-469919:proposal:01",
+      "event_hash": "324426517ac9e0c608d6ee15a1cf7ec17a188615af04dacb93ed7ba18d41b41e",
+      "case_id": "case:hundred:116fdf5f4b9f0ea0",
+      "issue_id": "case:hundred:116fdf5f4b9f0ea0:hundred:map_action:4ad63713e2"
+    },
+    {
+      "event_id": "kaiten-484410:proposal:01",
+      "event_hash": "e1a5bb12256fb07aa30711d4b8edb067e7c80bbbc2485f920712f1dee4f49870",
+      "case_id": "case:hundred:8ce2aef31881dbf1",
+      "issue_id": "case:hundred:8ce2aef31881dbf1:hundred:map_action:18a92bbe27"
+    },
+    {
+      "event_id": "kaiten-582880:proposal:01",
+      "event_hash": "73e13a8c4b62f701622441a23c95100885fbde334105274037b0ff1116d07b31",
+      "case_id": "case:hundred:03af87d2357fe984",
+      "issue_id": "case:hundred:03af87d2357fe984:hundred:map_action:c51220d933"
+    },
+    {
+      "event_id": "kaiten-590349:proposal:01",
+      "event_hash": "c8e0e1931f5008e8bd7d7c6cdddaf3e15576ace597c475cd52d1eb0d7b1f6df9",
+      "case_id": "case:hundred:c3f37c2e2e0faf92",
+      "issue_id": "case:hundred:c3f37c2e2e0faf92:hundred:map_action:6a7a956d63"
+    },
+    {
+      "event_id": "kaiten-462854:proposal:01",
+      "event_hash": "7b163c604a3af0c4b34431caa6f71f888fa56c34c3266c163fa3eaa6eb3643d8",
+      "case_id": "case:shunan-90075:mori",
+      "issue_id": "case:shunan-90075:mori:hundred:map_action:7bb23d3e11"
+    },
+    {
+      "event_id": "kaiten-497041:proposal:01",
+      "event_hash": "d60386f43be0622b877232f2d30dad32d1a8d92066aa57cfcdd98d6b287928c3",
+      "case_id": "case:hundred:7a9548c09e03d81f",
+      "issue_id": "case:hundred:7a9548c09e03d81f:hundred:map_action:8dd445c93c"
+    },
+    {
+      "event_id": "kaiten-527218:proposal:01",
+      "event_hash": "3d7ddedb6f1d3d7b5cc123aa840269df15bc9858d76f1e923bff4eec9cd1d665",
+      "case_id": "case:hundred:1808b97c4451a3e3",
+      "issue_id": "case:hundred:1808b97c4451a3e3:hundred:map_action:5161f8add2"
+    },
+    {
+      "event_id": "kaiten-566680:proposal:01",
+      "event_hash": "7416e505a2e5ff73adab4046828fd38a50040d077ce56c461838af43d2a4d8d2",
+      "case_id": "case:hundred:29a65937ca48c788",
+      "issue_id": "case:hundred:29a65937ca48c788:hundred:map_action:a51c0d1e85"
+    },
+    {
+      "event_id": "kaiten-533827:proposal:01",
+      "event_hash": "5bf87c393cb5a8a76d7f780d2db7e57c1f5b381e97b27a8988b336df46338f39",
+      "case_id": "case:hundred:796f4224f80f906c",
+      "issue_id": "case:hundred:796f4224f80f906c:hundred:map_action:32f839466c"
+    },
+    {
+      "event_id": "kaiten-511607:proposal:01",
+      "event_hash": "7c77a1524733d7af139cdb1258d0078fe5603f5624f10acbae5838e21754409f",
+      "case_id": "case:hundred:b8928bdae04c6d88",
+      "issue_id": "case:hundred:b8928bdae04c6d88:hundred:map_action:89888a64cb"
+    },
+    {
+      "event_id": "kaiten-593185:proposal:01",
+      "event_hash": "22459b92a8a8d7054a5e6783c9d1d97383081430b157703fa129fe8825abc8c8",
+      "case_id": "case:hundred:2885031c374f3ff6",
+      "issue_id": "case:hundred:2885031c374f3ff6:hundred:supplemental:4c32635860"
+    },
+    {
+      "event_id": "kaiten-508715:proposal:01",
+      "event_hash": "cdece4708c17d6044771c749230ad214b1950fa8e2a0841a55a48bcd4d2ae102",
+      "case_id": "case:hundred:d47cd901b23fe7fc",
+      "issue_id": "case:hundred:d47cd901b23fe7fc:hundred:map_action:65e273aa5a"
+    },
+    {
+      "event_id": "kaiten-604470:proposal:01",
+      "event_hash": "eda2963355f4b6ec4b8afe8cd575cdd6a4e1acdbd3002d16d269c1504c2acc75",
+      "case_id": "case:hundred:2616e43bb5a29b24",
+      "issue_id": "case:hundred:2616e43bb5a29b24:hundred:supplemental:9b989da751"
+    },
+    {
+      "event_id": "kaiten-494461:proposal:01",
+      "event_hash": "4d661b34a6916d9611658ea60ed037fce169ee5ffa106ce37e7cefdea261579f",
+      "case_id": "case:hundred:404b76d85f36d75d",
+      "issue_id": "case:hundred:404b76d85f36d75d:hundred:map_action:d8ac244e6a"
+    },
+    {
+      "event_id": "kaiten-609732:proposal:01",
+      "event_hash": "17fb34998aa3d5567aef0388f9ea160608b1ca55e0260a567d9d4d53a0b667e1",
+      "case_id": "case:hundred:344d734354c5bd63",
+      "issue_id": "case:hundred:344d734354c5bd63:hundred:supplemental:1634ae2988"
+    },
+    {
+      "event_id": "kaiten-554655:proposal:01",
+      "event_hash": "a5e978fceb0bc09e3785df4c71f3f68e89abde3d7649296504215742aec0f4ef",
+      "case_id": "case:hundred:a386609b70c3a300",
+      "issue_id": "case:hundred:a386609b70c3a300:hundred:map_action:30fbdc0326"
+    },
+    {
+      "event_id": "kaiten-510498:proposal:01",
+      "event_hash": "fefb686a412bd3575a94c0895eb882956d75e3a6cc4e3bffe3672d6620a4a88c",
+      "case_id": "case:hundred:65d921035e8f4674",
+      "issue_id": "case:hundred:65d921035e8f4674:hundred:map_action:0ef5d3aa31"
+    },
+    {
+      "event_id": "kaiten-593925:proposal:01",
+      "event_hash": "427e95cd09d3902b6b6168b523851c202657d4f5259b0cf6ced8f93abec8666c",
+      "case_id": "case:hundred:974a655508c12510",
+      "issue_id": "case:hundred:974a655508c12510:hundred:map_action:35269463eb"
+    },
+    {
+      "event_id": "kaiten-588352:proposal:01",
+      "event_hash": "467850a4262012768a8c429548f52ccf9f0e15ac78742c7db9e7fb254266c102",
+      "case_id": "case:hundred:4e42914c17e4f956",
+      "issue_id": "case:hundred:4e42914c17e4f956:hundred:map_action:6ab4149be9"
+    },
+    {
+      "event_id": "kaiten-526352:proposal:01",
+      "event_hash": "f03f273f4652093249d9042504ee3a8cab4cd4b13d6c013a2d2d8a611ab360ff",
+      "case_id": "case:hundred:441fa1c03fecf44c",
+      "issue_id": "case:hundred:441fa1c03fecf44c:hundred:map_action:83c9f0636f"
+    },
+    {
+      "event_id": "kaiten-604959:proposal:01",
+      "event_hash": "0c3260e37dda261055980e16150c27053bee6634e19b4fed2a57f480dfb4b0fc",
+      "case_id": "case:hundred:5bad8714823a4160",
+      "issue_id": "case:hundred:5bad8714823a4160:hundred:supplemental:ed78284631"
+    },
+    {
+      "event_id": "kaiten-486555:proposal:01",
+      "event_hash": "64c7bdf9d983bf4e2685d24d27a7e7b1e48f7eb762089844ce600cff6d19352b",
+      "case_id": "case:hundred:c6dfb919d4a18ccb",
+      "issue_id": "case:hundred:c6dfb919d4a18ccb:hundred:map_action:bfd59e88b7"
+    },
+    {
+      "event_id": "kaiten-606840:proposal:01",
+      "event_hash": "4593bdb9f95a325f48bcee69102177c8becef3da869195cc4e283b97b1ca1800",
+      "case_id": "case:hundred:aac12bf4c028fffb",
+      "issue_id": "case:hundred:aac12bf4c028fffb:hundred:supplemental:bb60d2e9a7"
+    },
+    {
+      "event_id": "kaiten-598181:proposal:01",
+      "event_hash": "cbe452e952df39f9e9b4f12ae48e1ad1f6a99c434024ad52af617d2614f8b537",
+      "case_id": "case:hundred:a0f22773c2e0a73e",
+      "issue_id": "case:hundred:a0f22773c2e0a73e:hundred:supplemental:626add7bac"
+    },
+    {
+      "event_id": "kaiten-594854:proposal:01",
+      "event_hash": "1e37b9db30a4dd04f79bcb44c10e05c40b8da1b9fbbdd4969e55c84062e5ecb4",
+      "case_id": "case:hundred:2087c4ff1a2c6c65",
+      "issue_id": "case:hundred:2087c4ff1a2c6c65:hundred:map_action:4bb01c3638"
+    },
+    {
+      "event_id": "kaiten-588903:proposal:01",
+      "event_hash": "08768b555a757ffd093284516333843cb7140e149d4e0794b226110818f6f73e",
+      "case_id": "case:hundred:a0131b3e0593f02c",
+      "issue_id": "case:hundred:a0131b3e0593f02c:hundred:map_action:8b720fdbba"
     }
   ],
   "legacy_audit": [

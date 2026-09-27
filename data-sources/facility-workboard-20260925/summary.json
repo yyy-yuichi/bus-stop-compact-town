@@ -1,64 +1,64 @@
 {
   "checked_at": "2026-09-27",
-  "scope": "Reviewed article events including the Halows regional batch, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of unreviewed articles or baseline facilities.",
+  "scope": "Reviewed article events including the Halows regional batch, selected evidence holds, current focus review, chain reconciliation holds and local directory exclusions. Not an exhaustive survey of unreviewed articles or baseline facilities. 2026-09-27の100記事で追加した226件のheldイベントを分類。",
   "known_cases": {
-    "total": 180,
+    "total": 354,
     "by_status": {
-      "map_action": 56,
-      "supplemental": 74,
+      "map_action": 224,
+      "supplemental": 77,
       "historical_only": 28,
-      "watch": 9,
+      "watch": 12,
       "excluded_fixed_map": 9,
       "resolved": 4
     },
-    "held_article_events": 212,
+    "held_article_events": 438,
     "event_impact_counts": {
-      "map_action": 42,
-      "supplemental": 123,
+      "map_action": 256,
+      "supplemental": 130,
       "historical_only": 35,
-      "watch": 12,
+      "watch": 17,
       "excluded_fixed_map": 0,
       "resolved": 0
     },
     "legacy_hold_rows_resolved": 5
   },
   "unreviewed": {
-    "articles": 969,
-    "candidate_groups": 894,
-    "groups_with_multiple_articles": 60,
-    "repeat_articles_grouped": 75,
+    "articles": 869,
+    "candidate_groups": 805,
+    "groups_with_multiple_articles": 52,
+    "repeat_articles_grouped": 64,
     "conflicting_address_groups": 2,
-    "groups_with_official_link_hints": 18,
+    "groups_with_official_link_hints": 13,
     "groups_with_reviewed_facility_hints": 0,
     "operator_routed_groups": 15,
     "reuse_batches": 0,
     "operator_batches": 8,
-    "area_batches": 14,
+    "area_batches": 13,
     "unique_stores": null
   },
   "map_records": {
-    "reflected_updates": 101,
-    "reflected_additions": 563,
-    "reflected_ids": 664
+    "reflected_updates": 103,
+    "reflected_additions": 571,
+    "reflected_ids": 674
   },
   "article_history": {
     "total": 1186,
     "classified_by_jev": 1186,
-    "articles_completed": 90,
-    "articles_partially_reviewed": 127,
-    "articles_pending": 969,
-    "recorded_events": 479,
-    "final_event_decisions": 267,
-    "held_events": 212,
+    "articles_completed": 101,
+    "articles_partially_reviewed": 216,
+    "articles_pending": 869,
+    "recorded_events": 756,
+    "final_event_decisions": 318,
+    "held_events": 438,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
   },
   "note": "Known cases and unreviewed candidate groups may overlap and must not be summed as unique stores. Supplemental status never resolves a held article event. Official links and names remain hints until store identity and all article events are checked. No time estimate follows from article counts.",
   "input_hashes": {
     "index": "0363a2c9722f354805a8e3a4491e06b9ca60ea2561918bd4404493f08d9a2cd7",
-    "reviews": "f026473d0aa954285d77393c88451f478bcd62e75d3a1f40b8819f2fd3646df2",
-    "overlay": "4359bab16eb960b164ae16950b033cc5fe652fa6887ec0dc46ffdeeb76b2f369",
-    "article_inputs": "c46368120e55bbcb69632a6a4c24a21a38bda8ee29b37a3e0be52f0dbf72f992",
-    "case_reviews": "5db90c7cf0c9d8c322b730f3889dc8f4017579af28a144a47081c0de18f0e271"
+    "reviews": "3de9e5b90bdba408ca1406a05b679876f05c2471f47c83855b65c5b6ee875970",
+    "overlay": "13948cb694c99c18feb0a710da6dd04da0dd542f655e5a67ff0ac1fdf460f245",
+    "article_inputs": "9ace92ce0b2aef2197f68770c698b54b978d71196476429a0a721897a709e5f0",
+    "case_reviews": "52aeeeaa6831488b11c58e4459e2c37cac3f88ce9d2bb624101ad3e24789a7e9"
   }
 }

@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-09-27",
+  "article_reviews": 100,
+  "additions": 8,
+  "corrections": 2,
+  "corrected_physical_facilities": 1,
+  "completed_article_delta": 11,
+  "article_history": {
+    "total": 1186,
+    "classified_by_jev": 1186,
+    "articles_completed": 101,
+    "articles_partially_reviewed": 216,
+    "articles_pending": 869,
+    "recorded_events": 756,
+    "final_event_decisions": 318,
+    "held_events": 438,
+    "with_related_source_only": 35,
+    "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
+  },
+  "jev": {
+    "manifest_hash": "def324e7f075fcd77f48777e3f1fb7e07dc3fe0989679760c32b4fea70833a22",
+    "model": "jev-1.13.0",
+    "record_count": 100,
+    "completed_records": 100,
+    "completed_jobs": 45,
+    "expected_jobs": 45,
+    "completed_questions": 300,
+    "missing_jobs": [],
+    "attempts": 45,
+    "conservative_cost_bound_usd": 0.12386304000000002,
+    "successful_input_tokens": 344499,
+    "successful_output_tokens": 17876,
+    "successful_usage_cost_usd": 0.014468958000000002,
+    "sum_successful_request_wall_ms": 10663.565500000002,
+    "control_correct": 0,
+    "control_count": 0,
+    "control_mismatches": [],
+    "limitation": "100 new claim/evidence/identity reviews over existing material, distinct from already completed article classification. Responses are advisory and cannot themselves mark articles complete.",
+    "cumulative_records": 2125,
+    "cumulative_reservation_usd": 0.7294156800000001,
+    "remaining_records": 875,
+    "remaining_budget_usd": 0.2705843199999999
+  },
+  "notes": [
+    "100 articles reviewed is not 100 articles completed.",
+    "Model support is advisory; final reviews use full saved sources and distinct facility identities.",
+    "Only one physically distinct park was corrected in two source records.",
+    "Existing article reviews and case issues remain unchanged."
+  ]
+}

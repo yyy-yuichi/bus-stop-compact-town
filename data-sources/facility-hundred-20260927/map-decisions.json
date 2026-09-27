@@ -1,0 +1,291 @@
+[
+  {
+    "article_key": "kaiten-593185",
+    "proposal": "add_current_facility",
+    "id": "official-amipara-shimonoseki-ekiminami",
+    "name": "アミパラ下関駅南店",
+    "address": "山口県下関市東大和町1丁目3-15",
+    "city": "下関市",
+    "category": "amusement_arcade",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        130.9205385,
+        33.9452334
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://amipara.co.jp/store/amipara-shimonosekiekiminami/",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/8bdcbac8bdf0d37960f5bf28.json",
+    "primary_receipt_sha256": "9a7a00537e22836d5b91f17db006cce27ce6a608e90372100dec3f5bb83b970e",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/14f6f08ecac7effcf5a0d87f.json",
+    "point_receipt_sha256": "125c231ada843ff9873971c1caaf3465f40b662870af3998a18875fa826316d8",
+    "position_catalog_hash": "e1ee7a835cc3bb2b4779c0f2260a62e737a5587ba017c53511eab814496da6c0",
+    "point_method": "named_embed_place_record",
+    "point_map_name": "〒750-0066 山口県下関市東大和町１丁目３−１５ アミパラ下関駅南店",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [
+      {
+        "id": "official-cosmos-11372",
+        "name": "ディスカウントドラッグ コスモス 東大和町店",
+        "distance_m": 94
+      }
+    ],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "a39f53fbfcee5029e7b76fceac9a71e18fa108abde7fa71d756daa5501bf7546",
+    "review_note": "記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。"
+  },
+  {
+    "article_key": "kaiten-604470",
+    "proposal": "add_current_facility",
+    "id": "official-otakaraya-wm-yamaguchiyuda",
+    "name": "おたからや ウェスタまるき山口湯田店",
+    "address": "山口県山口市幸町584番地 ウェスタまるき山口湯田店敷地内",
+    "city": "山口市",
+    "category": "second_hand",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        131.4493348,
+        34.1584527
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://www.otakaraya.jp/shop/wm-yamaguchiyuda/",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/5f62392c2d91800978a01963.json",
+    "primary_receipt_sha256": "ee37945a391d4285fc4c0f9439f12905f82011a1e36862838ac0d817aab05220",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/d026b4d012f53d0991e3a23b.json",
+    "point_receipt_sha256": "cc437383af5bab6d3819aec0ab0b76798f7b68b0ff547ee52b8dde9abd7652fe",
+    "position_catalog_hash": "a2072943ad6e5868bdf547eb6612e783b65e3eb69e53f2a6b3e63fe5e79246ec",
+    "point_method": "place_url_data_not_viewport",
+    "point_map_name": "高価買取 おたからや ウェスタまるき山口湯田店",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [
+      {
+        "id": "osm-way-465975433",
+        "name": "ウエスタまるき山口湯田店",
+        "distance_m": 2
+      }
+    ],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "7ce0286098da3243ad7c360c5b59778bb17265e2bab8f31f31317ce686e520cb",
+    "review_note": "記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。"
+  },
+  {
+    "article_key": "kaiten-609732",
+    "proposal": "add_current_facility",
+    "id": "official-otakaraya-ym-kawatana",
+    "name": "おたからや ゆめマート川棚店",
+    "address": "山口県下関市豊浦町大字川棚藤ヶ溝6827 ゆめマート川棚店1階",
+    "city": "下関市",
+    "category": "second_hand",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        130.9272305,
+        34.1470282
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://www.otakaraya.jp/shop/ym-kawatana/",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/e694bf07b2b587acc92d5835.json",
+    "primary_receipt_sha256": "472dd299a0f42405761f4404ce9dc6d1c262e8b0c3f02df124e54647fe995e77",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/98f306945d2de125bfdebedc.json",
+    "point_receipt_sha256": "21ee8b06ad2fdee219d2703130ba1cdc3d0713c46ddfd04fcc837f006d1bed84",
+    "position_catalog_hash": "ab94d5d115c0a4bf630ef98bf5c50003daccce24932d24242f3c18905f50ca96",
+    "point_method": "place_url_data_not_viewport",
+    "point_map_name": "高価買取 おたからや ゆめマート川棚店",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [
+      {
+        "id": "osm-way-713427957",
+        "name": "ゆめマート",
+        "distance_m": 35
+      },
+      {
+        "id": "official-daiso-003096",
+        "name": "DAISO ゆめマート川棚店",
+        "distance_m": 43
+      }
+    ],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "fedb0c5fc4f7198261039ae3fef488b68d4aca993c1c32297dc42c1e5c8af661",
+    "review_note": "記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。"
+  },
+  {
+    "article_key": "kaiten-604959",
+    "proposal": "add_current_facility",
+    "id": "official-loft-665",
+    "name": "下関ロフト",
+    "address": "山口県下関市伊倉新町三丁目1番1号 ゆめシティ1階",
+    "city": "下関市",
+    "category": "variety_store",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        130.9336425,
+        34.0064527
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://www.loft.co.jp/shop_list/detail.php?shop_id=665",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/ba49692b127bf7f1c6d5bb3f.json",
+    "primary_receipt_sha256": "7ebf7bd3697a0c6ba9df96a98e8609bb5bcc532068f7bb0d5f5bb8f96eee747a",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/34274fa2e09f6ba5dfea1866.json",
+    "point_receipt_sha256": "ef7169c1e22cf3ca5f92fa43c1fd84603935a9d674b6c9241f7bdf63ce876f60",
+    "position_catalog_hash": "2d74912cf973b7c5a3fcb9a44946ed76787c6f36ec2e6d2cfeb69c9a7247a496",
+    "point_method": "named_embed_place_record",
+    "point_map_name": "〒751-0869 山口県下関市伊倉新町３丁目１−１ 下関ロフト",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [
+      {
+        "id": "official-daiso-008499",
+        "name": "DAISO ゆめシティ新下関店",
+        "distance_m": 117
+      }
+    ],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "ef9c4f850c447d5fb3c2808c9613c0073ed1ed242bf71adcc8620e98aa2143ff",
+    "review_note": "記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。"
+  },
+  {
+    "article_key": "kaiten-606840",
+    "proposal": "add_current_facility",
+    "id": "official-beeline-mine-inter",
+    "name": "ビーライン美祢インター店",
+    "address": "山口県美祢市伊佐町伊佐3426-1",
+    "city": "美祢市",
+    "category": "car_service",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        131.24002,
+        34.1735273
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://beeline-tire.co.jp/shop/",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/82a4ca665ab908b991171158.json",
+    "primary_receipt_sha256": "cdbbff5abed1d02435eb496421480ee3e555c3f33222508c65674e64e323385e",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/4529616cefa0a9746070cabc.json",
+    "point_receipt_sha256": "a897a98232c2184a8d9317342ca43dbe12757e067a09ca9d2725e73ceaf1a8bc",
+    "position_catalog_hash": "dfb28c7424376c4a5b9760b326995197c8851a0fa4250fb9a9f86bf59631c458",
+    "point_method": "place_url_data_not_viewport",
+    "point_map_name": "ビーライン 美祢インター店",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "49edeb44350b59c49f8a85cdf9e535496da8f32460465fe5caa92ea2a2da5653",
+    "review_note": "公式一覧の埋込位置は他県・他支店を多数含む。美祢インター店の固有名レコードだけを選択。"
+  },
+  {
+    "article_key": "kaiten-598181",
+    "proposal": "add_current_facility",
+    "id": "official-beeline-onoda",
+    "name": "ビーライン小野田店",
+    "address": "山口県山陽小野田市平成町9-28",
+    "city": "山陽小野田市",
+    "category": "car_service",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        131.1737498,
+        33.9802416
+      ]
+    },
+    "geometry_kind": "representative_point",
+    "primary_url": "https://beeline-tire.co.jp/shop/19947",
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/953ee4b5a6ef4de7adc8d693.json",
+    "primary_receipt_sha256": "aa45d2ef9730b362208abc6426e647d4a4ca46b2e9c3da0fce491eae9a9aff0c",
+    "point_receipt": "outputs/facility-evidence-20260925/followups/bd4124e781ed16dfd162adad.json",
+    "point_receipt_sha256": "9dd1513d6aa348c8ce0a0e2226f39d66bec179e4abaced0bfad08c0fd6a00906",
+    "position_catalog_hash": "073ec70c2275bf0a2bd34211404a333fae93abd2a9f5cbf48069fbdafb0366d9",
+    "point_method": "named_embed_place_record",
+    "point_map_name": "〒756-0837 山口県山陽小野田市平成町９−２８ ビーライン 小野田店",
+    "effective_at": null,
+    "freshness_review": "current_listing_only; historical opening day held",
+    "existing_same_name": [],
+    "existing_same_address": [],
+    "nearby_existing": [],
+    "existing_id_decision": "none; exact same-name record absent in shopping+civic+overlay additions; listed nearby objects are different facility/parent",
+    "source_body_hash": "1dfdc6cf286e238b406ab4e90bf6c600dac7e1806ef1eb3becf441871135fbd9",
+    "review_note": "記事の郵便番号756-0837と公式ページ759-0206が不一致。住所「山陽小野田市平成町9-28」と電話が一致するため郵便番号は採用しない。"
+  },
+  {
+    "action": "add",
+    "id": "official-toyoko-inn-00379",
+    "name": "東横INN宇部新川駅",
+    "address": "山口県宇部市中央町1-4-10",
+    "category": "hotel",
+    "primary_url": "https://www.toyoko-inn.com/search/detail/00379",
+    "coordinates": [
+      131.243343,
+      33.9559419
+    ],
+    "point_receipt": "outputs/facility-evidence-20260925/followups/1fdfffc8feb6dc77dd4c1e05.json",
+    "effective_at": "2026-08-06",
+    "reason": "公式固有ホテル案内と保存済み同名地点を照合。日付も固有ページに明記。",
+    "requirements": [],
+    "city": "宇部市",
+    "article_key": "ube-82787",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        131.243343,
+        33.9559419
+      ]
+    },
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/1f79bbafa16862fd1de7ae55.json",
+    "primary_receipt_sha256": "2f70ba0fc8733dcf9bf682f54575acbd58794e6b642bfd28b6ab246afe8094e0",
+    "point_receipt_sha256": "988a07905fafea0d109c4895ac4100c1d25fefdc8181239f69d543edda3362d6",
+    "point_method": "named_embed_place_record",
+    "point_map_name": "東横INN宇部新川駅",
+    "review_note": "公式固有ホテル案内と保存済み同名地点を照合。日付も固有ページに明記。"
+  },
+  {
+    "action": "add",
+    "id": "official-meresankh",
+    "name": "メレスアンク",
+    "address": "山口県周南市徳山二番町4114-2",
+    "category": "food_shop",
+    "primary_url": "https://meresankh.com/",
+    "coordinates": [
+      131.813039,
+      34.0551566
+    ],
+    "point_receipt": "outputs/facility-evidence-20260925/followups/556b33ed5fde57196d4bba16.json",
+    "effective_at": null,
+    "reason": "自然食品/生活雑貨を販売する現行店舗。保存同名固有点と一致。日付nullで追加候補。",
+    "requirements": [],
+    "city": "周南市",
+    "article_key": "shunan-115367",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        131.813039,
+        34.0551566
+      ]
+    },
+    "primary_receipt": "outputs/facility-evidence-20260925/pages/e12ff7af13698450ee9cf0ed.json",
+    "primary_receipt_sha256": "dd5f856252960207601cb58aa0650332de849178c063317e10418993e464b0b0",
+    "point_receipt_sha256": "4dea4ed95c8cfe3e249e1a46b4a84976f78c6fb7473531daa5a8423b725be193",
+    "point_method": "named_embed_place_record",
+    "point_map_name": "メレスアンク",
+    "review_note": "自然食品/生活雑貨を販売する現行店舗。保存同名固有点と一致。日付nullで追加候補。"
+  }
+]

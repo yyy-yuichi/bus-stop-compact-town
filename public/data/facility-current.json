@@ -4585,6 +4585,188 @@
           "既存ID・座標・出典IDを保持。商業施設本体・別のテナントと分離。店舗入口・徒歩動線は未確認。"
         ]
       }
+    },
+    {
+      "id": "osm-way-353643187",
+      "expected": {
+        "name": "恋ヶ浜緑地",
+        "category": "park",
+        "source_ids": [
+          "way/353643187"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.877805,
+                  33.992986
+                ],
+                [
+                  131.877829,
+                  33.992641
+                ],
+                [
+                  131.8780407,
+                  33.9919614
+                ],
+                [
+                  131.8794084,
+                  33.9921039
+                ],
+                [
+                  131.879603,
+                  33.9923101
+                ],
+                [
+                  131.8797357,
+                  33.9923986
+                ],
+                [
+                  131.8798513,
+                  33.9924507
+                ],
+                [
+                  131.8801188,
+                  33.9924984
+                ],
+                [
+                  131.8802313,
+                  33.9925843
+                ],
+                [
+                  131.8803629,
+                  33.9928225
+                ],
+                [
+                  131.8802818,
+                  33.9928926
+                ],
+                [
+                  131.8802543,
+                  33.9929693
+                ],
+                [
+                  131.8802503,
+                  33.9930816
+                ],
+                [
+                  131.880202,
+                  33.9931961
+                ],
+                [
+                  131.8800632,
+                  33.9933802
+                ],
+                [
+                  131.8799438,
+                  33.9935241
+                ],
+                [
+                  131.8798681,
+                  33.993592
+                ],
+                [
+                  131.8797065,
+                  33.9936882
+                ],
+                [
+                  131.8791003,
+                  33.9940317
+                ],
+                [
+                  131.8779751,
+                  33.9946827
+                ],
+                [
+                  131.8778551,
+                  33.994755
+                ],
+                [
+                  131.8778229,
+                  33.994571
+                ],
+                [
+                  131.877805,
+                  33.992986
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {
+        "name": "恋ヶ浜クナイパーク（恋ヶ浜緑地公園）",
+        "city": "下松市",
+        "search_names": "恋ヶ浜クナイパーク（恋ヶ浜緑地公園） 恋ヶ浜緑地      "
+      },
+      "review": {
+        "status": "changed",
+        "event": "service_change",
+        "effective_at": "2025-03-23",
+        "checked_at": "2026-09-27",
+        "summary": "市のオープニング開催済み報告と既存の同じ公園を照合し、現行愛称と改装履歴を反映。",
+        "sources": [
+          {
+            "title": "市の整備事業・開催済み報告",
+            "url": "https://www.city.kudamatsu.lg.jp/toshiseibi/kensetu/toshi/kouen/koigahamaryokuchikouenseibijigyou.html"
+          },
+          {
+            "title": "開園後の現地紹介",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/16/koigahamakunaipark/"
+          }
+        ],
+        "limits": [
+          "同じ公園のOSM区域と自治体代表点の2記録。新しい2公園を追加したものではありません。",
+          "元のID・位置・出典IDを保持。区域と代表点を機械的に統合しません。",
+          "公園全体の改装実施日を記載。愛称単独の変更日を確定したものではありません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-kdpark000109",
+      "expected": {
+        "name": "下松市海岸通り緑地（恋ヶ浜緑地）",
+        "category": "park",
+        "source_ids": [
+          "civic:9845e721-9dc4-4ff7-9590-dcf8e79bd203:row:108"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8791008,
+            33.9928774
+          ]
+        }
+      },
+      "changes": {
+        "name": "恋ヶ浜クナイパーク（恋ヶ浜緑地公園）",
+        "city": "下松市",
+        "search_names": "恋ヶ浜クナイパーク（恋ヶ浜緑地公園） 下松市海岸通り緑地（恋ヶ浜緑地） クダマツシカイガンドオリリョクチ（コイガハマリョクチ）"
+      },
+      "review": {
+        "status": "changed",
+        "event": "service_change",
+        "effective_at": "2025-03-23",
+        "checked_at": "2026-09-27",
+        "summary": "市のオープニング開催済み報告と既存の同じ公園を照合し、現行愛称と改装履歴を反映。",
+        "sources": [
+          {
+            "title": "市の整備事業・開催済み報告",
+            "url": "https://www.city.kudamatsu.lg.jp/toshiseibi/kensetu/toshi/kouen/koigahamaryokuchikouenseibijigyou.html"
+          },
+          {
+            "title": "開園後の現地紹介",
+            "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/04/16/koigahamakunaipark/"
+          }
+        ],
+        "limits": [
+          "同じ公園のOSM区域と自治体代表点の2記録。新しい2公園を追加したものではありません。",
+          "元のID・位置・出典IDを保持。区域と代表点を機械的に統合しません。",
+          "公園全体の改装実施日を記載。愛称単独の変更日を確定したものではありません。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -34613,6 +34795,421 @@
         "coordinates": [
           131.172134,
           33.986042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-amipara-shimonoseki-ekiminami",
+      "properties": {
+        "name": "アミパラ下関駅南店",
+        "address": "山口県下関市東大和町1丁目3-15",
+        "official_address": "山口県下関市東大和町1丁目3-15",
+        "city": "下関市",
+        "category": "amusement_arcade",
+        "official_url": "https://amipara.co.jp/store/amipara-shimonosekiekiminami/",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:amipara:shimonoseki:ekiminami"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "アミパラ下関駅南店",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://amipara.co.jp/store/amipara-shimonosekiekiminami/"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/amipara-shimonosekiekiminami/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9205385,
+          33.9452334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-otakaraya-wm-yamaguchiyuda",
+      "properties": {
+        "name": "おたからや ウェスタまるき山口湯田店",
+        "address": "山口県山口市幸町584番地 ウェスタまるき山口湯田店敷地内",
+        "official_address": "山口県山口市幸町584番地 ウェスタまるき山口湯田店敷地内",
+        "city": "山口市",
+        "category": "second_hand",
+        "official_url": "https://www.otakaraya.jp/shop/wm-yamaguchiyuda/",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:otakaraya:wm:yamaguchiyuda"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "おたからや ウェスタまるき山口湯田店",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://www.otakaraya.jp/shop/wm-yamaguchiyuda/"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/otakaraya-westamaruki-yamaguchiyuda/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4493348,
+          34.1584527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-otakaraya-ym-kawatana",
+      "properties": {
+        "name": "おたからや ゆめマート川棚店",
+        "address": "山口県下関市豊浦町大字川棚藤ヶ溝6827 ゆめマート川棚店1階",
+        "official_address": "山口県下関市豊浦町大字川棚藤ヶ溝6827 ゆめマート川棚店1階",
+        "city": "下関市",
+        "category": "second_hand",
+        "official_url": "https://www.otakaraya.jp/shop/ym-kawatana/",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:otakaraya:ym:kawatana"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "おたからや ゆめマート川棚店",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://www.otakaraya.jp/shop/ym-kawatana/"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/otakaraya-ym-kawadana/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9272305,
+          34.1470282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-loft-665",
+      "properties": {
+        "name": "下関ロフト",
+        "address": "山口県下関市伊倉新町三丁目1番1号 ゆめシティ1階",
+        "official_address": "山口県下関市伊倉新町三丁目1番1号 ゆめシティ1階",
+        "city": "下関市",
+        "category": "variety_store",
+        "official_url": "https://www.loft.co.jp/shop_list/detail.php?shop_id=665",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:loft:665"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "下関ロフト",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。記事・運営元公式の名称、所在地、連絡先を照合。地図点は店舗ページに紐づく固有place。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://www.loft.co.jp/shop_list/detail.php?shop_id=665"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/shimonoseki-loft/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9336425,
+          34.0064527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-beeline-mine-inter",
+      "properties": {
+        "name": "ビーライン美祢インター店",
+        "address": "山口県美祢市伊佐町伊佐3426-1",
+        "official_address": "山口県美祢市伊佐町伊佐3426-1",
+        "city": "美祢市",
+        "category": "car_service",
+        "official_url": "https://beeline-tire.co.jp/shop/",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:beeline:mine:inter"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ビーライン美祢インター店",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。公式一覧の埋込位置は他県・他支店を多数含む。美祢インター店の固有名レコードだけを選択。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://beeline-tire.co.jp/shop/"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/beeline-tire-mine-ic/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.24002,
+          34.1735273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-beeline-onoda",
+      "properties": {
+        "name": "ビーライン小野田店",
+        "address": "山口県山陽小野田市平成町9-28",
+        "official_address": "山口県山陽小野田市平成町9-28",
+        "city": "山陽小野田市",
+        "category": "car_service",
+        "official_url": "https://beeline-tire.co.jp/shop/19947",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:beeline:onoda"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "ビーライン小野田店",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。記事の郵便番号756-0837と公式ページ759-0206が不一致。住所「山陽小野田市平成町9-28」と電話が一致するため郵便番号は採用しない。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://beeline-tire.co.jp/shop/19947"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://kaiten-heiten-24.com/beeline-noda/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1737498,
+          33.9802416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-toyoko-inn-00379",
+      "properties": {
+        "name": "東横INN宇部新川駅",
+        "address": "山口県宇部市中央町1-4-10",
+        "official_address": "山口県宇部市中央町1-4-10",
+        "city": "宇部市",
+        "category": "hotel",
+        "official_url": "https://www.toyoko-inn.com/search/detail/00379",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:toyoko:inn:00379"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "東横INN宇部新川駅",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。公式固有ホテル案内と保存済み同名地点を照合。日付も固有ページに明記。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-08-06",
+          "checked_at": "2026-09-27",
+          "summary": "運営元の当該施設ページに記載された開業日と現在の営業案内、同名・同住所の店舗固有位置を照合。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://www.toyoko-inn.com/search/detail/00379"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://ube-sanyoonoda.goguynet.jp/2026/06/14/toyokoube_0806/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.243343,
+          33.9559419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-meresankh",
+      "properties": {
+        "name": "メレスアンク",
+        "address": "山口県周南市徳山二番町4114-2",
+        "official_address": "山口県周南市徳山二番町4114-2",
+        "city": "周南市",
+        "category": "food_shop",
+        "official_url": "https://meresankh.com/",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:meresankh"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "メレスアンク",
+        "location_verification": "運営元案内の名称・所在地と、リンク先の同名店舗固有placeを照合。自治体境界および全既存施設を確認。自然食品/生活雑貨を販売する現行店舗。保存同名固有点と一致。日付nullで追加候補。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "listed",
+          "effective_at": null,
+          "checked_at": "2026-09-27",
+          "summary": "運営元の現在の店舗案内と同名・同住所の店舗固有位置を照合し、現行施設として掲載。",
+          "sources": [
+            {
+              "title": "運営元の店舗・施設案内",
+              "url": "https://meresankh.com/"
+            },
+            {
+              "title": "照合対象の記事",
+              "url": "https://shunan-kudamatsu-hikari.goguynet.jp/2025/08/27/meresankh/"
+            }
+          ],
+          "limits": [
+            "店舗固有地点を使用。地図の表示中心や近傍の親商業施設の点を転用していません。",
+            "入口・館内動線・バス停からの徒歩到達性は未確認。",
+            "開業日は未確認。この記事の過去の開業日判断は保留しています。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.813039,
+          34.0551566
         ]
       }
     }
