@@ -489,6 +489,17 @@
               "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
             }
           }
+        },
+        {
+          "issue_id": "case:megadori-ube:opening-date",
+          "impact": "supplemental",
+          "priority": "P3",
+          "reason": "現況掲載は解決済み。今回2記事が報じる実開店日の不足根拠を別の補完項目として追加し、既存の掲載解決を維持。",
+          "next": "8月7日当日・事後の自店開店記録を取得できた時だけ再開。現在掲載や同じ事前告知の再取得では解決しない。",
+          "event_ids": [
+            "kaiten-611331:opening-date",
+            "ube-83043:opening-date"
+          ]
         }
       ],
       "evidence_refs": [
@@ -497,6 +508,12 @@
           "section": "case_findings",
           "index": 0,
           "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
+        },
+        {
+          "path": "data-sources/facility-reuse-pilot-20260927/adoption-evidence.json",
+          "section": "case_findings",
+          "index": 0,
+          "hash": "1a32d9882f021affd932dcff2678cc111a02bc9b56397f8d0896f0c3e7c79188"
         }
       ]
     },
@@ -6231,6 +6248,18 @@
       "event_hash": "a22a8618f29bff41775dce0b26fc4aea64a9e5d317fb4d19b7f66aaba7c12e99",
       "case_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date",
       "issue_id": "maxvalu-sukiya:yamaguchi-47840:predecessor-date:history"
+    },
+    {
+      "event_id": "kaiten-611331:opening-date",
+      "event_hash": "3dad9409232514d80b2ba13811a5fb7fccc3270b346e36b5a514535fae493f06",
+      "case_id": "case:megadori-ube",
+      "issue_id": "case:megadori-ube:opening-date"
+    },
+    {
+      "event_id": "ube-83043:opening-date",
+      "event_hash": "0e048988941a9b3ec94995cfa26aed2421c0a22e0c9437fe2d772ece4891c3cf",
+      "case_id": "case:megadori-ube",
+      "issue_id": "case:megadori-ube:opening-date"
     }
   ],
   "legacy_audit": [

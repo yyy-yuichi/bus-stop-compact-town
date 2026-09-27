@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-26",
+  "checked_at": "2026-09-27",
   "updates": [
     {
       "id": "osm-way-475283671",
@@ -32252,18 +32252,18 @@
         "source_ids": [
           "official:edion:0000001143"
         ],
-        "source_timestamp": "2026-09-26",
-        "verified_at": "2026-09-26",
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
         "verification_status": "official_current_listing",
         "license": "official-published-facts",
         "search_names": "エディオン 山口小郡店",
         "location_verification": "公式県内一覧の同じ支店ID・名称・住所・電話・店舗座標と、支店ページspotDetailおよびElectronicsStoreのGeoCoordinatesが一致。住所検索点・地図表示中心は不採用。",
         "freshness_review": {
           "status": "operating",
-          "event": "listed",
-          "effective_at": null,
-          "checked_at": "2026-09-26",
-          "summary": "公式の現行店舗一覧と支店名・住所・店舗固有地点を照合して掲載。",
+          "event": "opened",
+          "effective_at": "2024-11-22",
+          "checked_at": "2026-09-27",
+          "summary": "開店後の運営会社の通期株主通信により、同支店の開店日を確認。現行店舗案内の固有ID・住所と照合。",
           "sources": [
             {
               "title": "公式の当該支店案内・店舗固有座標",
@@ -32272,12 +32272,15 @@
             {
               "title": "運営会社の公式店舗一覧",
               "url": "https://search.edion.com/e_store/spot/list?address=35&search=address"
+            },
+            {
+              "title": "運営会社の第24期通期株主通信：出店実績・山口小郡店の開店日と住所",
+              "url": "https://www.edion.co.jp/kt_24tsuki"
             }
           ],
           "limits": [
-            "現行掲載の確認であり、新規開店した日を確定した記録ではありません。",
             "店舗代表点であり、店舗入口・館内売場・バス停からの徒歩到達性は未確認。",
-            "サイト更新日・掲載開始日・会員サービス開始日を開店日へ転用していません。"
+            "開店日を通期の事後報告で確認。掲載確認日・記事公開日・事前の開店予定日を実施日へ転用していません。"
           ]
         }
       },

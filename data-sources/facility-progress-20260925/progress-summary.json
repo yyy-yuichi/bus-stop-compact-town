@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26",
+  "checked_at": "2026-09-27",
   "baseline": {
     "total": 7764,
     "reflected_updates": 98,
@@ -14,12 +14,12 @@
   "article_events": {
     "total": 1186,
     "classified_by_jev": 1186,
-    "articles_completed": 66,
-    "articles_partially_reviewed": 125,
-    "articles_pending": 995,
-    "recorded_events": 443,
-    "final_event_decisions": 233,
-    "held_events": 210,
+    "articles_completed": 68,
+    "articles_partially_reviewed": 127,
+    "articles_pending": 991,
+    "recorded_events": 447,
+    "final_event_decisions": 235,
+    "held_events": 212,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
   },
@@ -62,9 +62,9 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "80023e2dd7ed4dcc69f1200df7fbc46de98090467d5252c3cccc7a017c5f31fa",
+    "public/data/facility-current.json": "7d0a32e25cc882616094119da9203aacc6dd8f28c38a6510eb9a1d5538dadc60",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
-    "data-sources/facility-progress-20260925/article-event-reviews.json": "1207cd4a209c154ae6565c7fc54eb234c0146d0de3ad4e84ba6028546da281e8",
+    "data-sources/facility-progress-20260925/article-event-reviews.json": "d68cf322ac67a7ca4aff2552e790d2336a1c161d218870fc242e8fefcff89500",
     "data-sources/facility-progress-20260925/article-index.json": "0319ed1d7630403c8d2f9c2c1ce81e536021c7edd932cd3609621d91e5d729b2",
     "data-sources/facility-local-stores-20260925/decisions.json": "c63414f0ecb0172985d7369dc7d77c261fe6e4590b601bb94337c19dc1da8ad9",
     "outputs/facility-local-stores-20260925/records.json": "967e2531f9984d9dc91437eeb553d8a6b9be529772d5c770867f41837dc32114",

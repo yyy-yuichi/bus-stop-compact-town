@@ -1,0 +1,101 @@
+[
+  {
+    "article_key": "kaiten-611331",
+    "source_body_hash": "5936c5a8b14e2672e1cbfa22b99be5f951da54eb95c84a653f8e5a014cf9efcb",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "厚南中央1丁目7番48号のメガドリ宇部店の開店1件。営業時間・アクセスの記載は別の施設変更ではない。",
+    "events": [
+      {
+        "event_id": "kaiten-611331:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-megadori-ube"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reported_date": "2026-08-07",
+        "reason": "記事本文と既存の同住所・自店案内・メーカー店舗固有情報を照合。現在の掲載は確認済みだが、8月7日の開店実施を示す事後の一次記録は未確認。現況掲載の最終判断へ開店イベントを統合しない。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/megadori-ube/",
+          "https://x.com/megadori1",
+          "https://location.am-all.net/alm/shop?sid=18357"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83043",
+    "source_body_hash": "f1567e739d47608135be75b99953d6d73b289873af846ea02d205970f4d81cf6",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "メガドリ宇部店の開店予定1件。工事の進行・第二駐車場の利用案内・遊戯機紹介は別施設の開閉店ではない。8月1日の事前記事を実施記録と扱わない。",
+    "events": [
+      {
+        "event_id": "ube-83043:opening-date",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-megadori-ube"
+        ],
+        "disposition": "hold",
+        "effective_at": null,
+        "reported_date": "2026-08-07",
+        "reason": "記事本文と既存の同住所・自店案内・メーカー店舗固有情報を照合。現在の掲載は確認済みだが、8月7日の開店実施を示す事後の一次記録は未確認。現況掲載の最終判断へ開店イベントを統合しない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/08/01/megadori_0807/",
+          "https://x.com/megadori1",
+          "https://location.am-all.net/alm/shop?sid=18357"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-42146",
+    "source_body_hash": "485609ae5c4d404700c0d5b682573c7b45c1b7e7d412cd983527fa610c3eaada",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "山口小郡店の開店1件。駐車場完成・販促・チラシ公開予定は別の施設変更ではない。2025年3月期通期の事後報告で実施日・同住所・公式支店リンクを照合。",
+    "events": [
+      {
+        "event_id": "yamaguchi-42146:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-edion-0000001143"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2024-11-22",
+        "reason": "運営会社の開店後の通期株主通信が山口小郡店の2024年11月22日開店・住所・同じ公式支店IDを明記。既存掲載施設の履歴を補完し、施設を重複追加しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/11/12/edion_ogoriopen2411/",
+          "https://www.edion.co.jp/kt_24tsuki",
+          "https://search.edion.com/e_store/spot/detail?code=0000001143"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-82494",
+    "source_body_hash": "0c2c58e967b35bf46a9046d7728b8cd8dfbd0031a7afe4c540052cb678488c6c",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "まちライブラリー1施設の開設。ゆめタウン宇部本体、式典・読み聞かせは別施設の変更ではない。市の6月の写真付き事後報告と同施設の既存最終判断を再利用。",
+    "events": [
+      {
+        "event_id": "ube-82494:library-opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-machilibrary-1268"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2026-05-01",
+        "duplicate_of": "ube-82309:library-opening",
+        "reason": "同じ館内施設・運営元固有ページと市の事後開設報告を照合済み。今回の記事の開設は既存の最終判断と同じイベントであり、新規追加・訂正には数えない。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/04/26/library_yumetownube/",
+          "https://machi-library.org/where/detail/12122/",
+          "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/006/690/hurusato202606.pdf"
+        ]
+      }
+    ]
+  }
+]

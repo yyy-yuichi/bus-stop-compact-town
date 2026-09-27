@@ -1,25 +1,5 @@
 [
   {
-    "batch_id": "reuse:reviewed-current",
-    "label": "照合済み施設との再照合",
-    "mode": "existing_evidence_comparison",
-    "group_ids": [
-      "candidate:59a8d1b7e9a57380",
-      "candidate:a6e4423b43895628",
-      "candidate:ec903fd091b85fbe"
-    ],
-    "article_keys": [
-      "kaiten-611331",
-      "ube-83043",
-      "yamaguchi-42146",
-      "ube-82494"
-    ],
-    "existing_official_hint_groups": 0,
-    "high_priority_groups": 0,
-    "candidate_groups": 3,
-    "article_count": 4
-  },
-  {
     "batch_id": "operator:chocoZAP",
     "label": "chocoZAP",
     "mode": "official_directory_comparison",

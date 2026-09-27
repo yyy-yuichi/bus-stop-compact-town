@@ -3063,6 +3063,17 @@
             "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
           }
         }
+      },
+      {
+        "issue_id": "case:megadori-ube:opening-date",
+        "impact": "supplemental",
+        "priority": "P3",
+        "reason": "現況掲載は解決済み。今回2記事が報じる実開店日の不足根拠を別の補完項目として追加し、既存の掲載解決を維持。",
+        "next": "8月7日当日・事後の自店開店記録を取得できた時だけ再開。現在掲載や同じ事前告知の再取得では解決しない。",
+        "event_ids": [
+          "kaiten-611331:opening-date",
+          "ube-83043:opening-date"
+        ]
       }
     ],
     "evidence_refs": [
@@ -3071,12 +3082,24 @@
         "section": "case_findings",
         "index": 0,
         "hash": "164dfe8699def97bfb8efeabd9c50f700e35a0e5680997d4399fffa62e020787"
+      },
+      {
+        "path": "data-sources/facility-reuse-pilot-20260927/adoption-evidence.json",
+        "section": "case_findings",
+        "index": 0,
+        "hash": "1a32d9882f021affd932dcff2678cc111a02bc9b56397f8d0896f0c3e7c79188"
       }
     ],
-    "status": "resolved",
+    "status": "supplemental",
     "priority": "P3",
-    "article_keys": [],
-    "held_event_ids": [],
+    "article_keys": [
+      "kaiten-611331",
+      "ube-83043"
+    ],
+    "held_event_ids": [
+      "kaiten-611331:opening-date",
+      "ube-83043:opening-date"
+    ],
     "supplemental_also_pending": false
   },
   {
