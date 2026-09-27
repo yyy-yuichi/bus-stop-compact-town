@@ -1,0 +1,680 @@
+[
+  {
+    "article_key": "yamaguchi-29699",
+    "source_body_hash": "9cc60364eec907dea3253e065cf1f765f29ad8d65f5061448f59977f621e24cd",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "保存本文全文を確認。ザ・ビッグ イオンタウン防府東店の旧ブランド終了と、同じ運営元・所在地のマックスバリュへの業態転換の2イベント。別のザ・ビッグ防府店や商業施設本体を変更しない。",
+    "events": [
+      {
+        "event_id": "yamaguchi-29699:old-brand-end",
+        "event_type": "closure",
+        "facility_ids": [
+          "osm-node-4041110344"
+        ],
+        "disposition": "duplicate",
+        "reason": "同一旧店舗の2024年4月7日営業終了を既存の最終判断へ統合。 元判断の制約: フジの事後閉店一覧で4月7日の旧ブランド終了を確認。現在は同運営元の名称変更として継続し、永久閉店へ重複反映しない。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/15/aeontown_new2024/",
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/24/maxvalu_hofuaeon2024/",
+          "https://www.the-fuji.com/company/ir/monthly/year2024.php"
+        ],
+        "duplicate_of": "yamaguchi-30414:old-brand-end",
+        "effective_at": "2024-04-07"
+      },
+      {
+        "event_id": "yamaguchi-29699:conversion",
+        "event_type": "rename",
+        "facility_ids": [
+          "osm-node-4041110344"
+        ],
+        "disposition": "duplicate",
+        "reason": "同一店舗の2024年4月27日業態転換を既存反映へ統合。新規施設追加や閉店更新は不要。 元判断の制約: 公式の事前・事後資料、現行支店と固有点を照合。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2024/04/15/aeontown_new2024/",
+          "https://kaiten-heiten-24.com/max-valu-at-houfu/",
+          "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownhofu.php",
+          "https://www.the-fuji.com/company/ir/doc/library/2024/20241007_data.pdf",
+          "https://www.the-fuji.com/company/docs/20240419_release.pdf"
+        ],
+        "duplicate_of": "kaiten-498291:conversion",
+        "effective_at": "2024-04-27"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-102037",
+    "source_body_hash": "a093e7770a6f7f64bad44a68e56b0648bac18c9bc091713183d0b4579fbd62f4",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "保存本文全文を確認。Italian Kitchen VANSAN周南平和通店の2024年10月11日開店予定1件。商品・価格・飲み放題の紹介は施設増減イベントではない。同一旧店舗の既存歴史判断へ統合し、過去実開店日を確定しない。",
+    "events": [
+      {
+        "event_id": "shunan-102037:vansan-opening",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "reason": "同名・同所在地のVANSAN周南平和通店の同じ過去開店予定。effective_atはnullのまま、閉店済み旧店舗を現営業施設へ追加しない。 元判断の制約: 基準7764件と既存追加154件を旧名・別表記で照合したが該当IDなし。閉店店を営業施設として追加せず、別店のIDも変更しない。2024年10月11日開店の過去報道。現在は同住所のITTOKUが自店案内を掲載しており、VANSANを現在営業中として追加しない。過去実開店日は一次告知未取得で日付確定扱いにしない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/10/08/italian-kitchen-vansan-2/",
+          "https://kaiten-heiten-24.com/italian-kitchen-vansan-shunanheiwadori/",
+          "https://ya55808.gorp.jp/"
+        ],
+        "duplicate_of": "kaiten-521041:vansan-opening",
+        "effective_at": null
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-118506",
+    "source_body_hash": "fcf6418b09984fc43482d06b647e059752052bbfa6421537385f7368213196a9",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "保存本文全文を確認。とりいちず山口徳山店の開店予定と、同じ場所の旧店食楽金龍の閉店背景を2イベントとして列挙。旧5月下旬予定は採用せず後続の運営元発表8月25日に対応。よか鶏は同建物の別階を示す位置説明で変更対象ではない。メニュー・一般的な他県出店説明は施設変更ではない。",
+    "events": [
+      {
+        "event_id": "shunan-118506:tori",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-toriichizu-yamaguchi-tokuyama"
+        ],
+        "disposition": "duplicate",
+        "reason": "同一の山口徳山店開店。記事当時の2026年5月下旬予定を実施日に転用せず、既存の運営元発表に基づく2026年8月25日の最終判断へ統合。 元判断の制約: 本文は山口徳山店の開店1件。運営元発表の平和通1-19・2026-08-25と照合。 既存反映との対応記録であり今回の新規地図追加ではない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/04/20/toriichizu/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html"
+        ],
+        "duplicate_of": "kaiten-613415:tori",
+        "effective_at": "2026-08-25"
+      },
+      {
+        "event_id": "shunan-118506:kinryu-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "reason": "同じ平和通の食楽金龍跡。既存の旧店舗判断へ統合し、閉店実施日を新たに確定しない。 元判断の制約: 店舗自身のInstagramで1月31日閉店の告知を確認。元7764件と追加154件に食楽金龍・ベジモンの対象IDはなく、後継とりいちずは既に反映済み。別市のラーメン金龍は除外し、地図変更は不要。閉店告知だけで現地実施日を断定するものではない。",
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/04/20/toriichizu/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/09/toriichizu-2/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja"
+        ],
+        "duplicate_of": "shunan-119970:kinryu-closure",
+        "effective_at": null
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。FASHION Xの古着POP UPをレッツ光で週末3期間開催する告知。常設店舗の新設・閉店ではない。",
+    "source_body_hash": "36baa15923b72ceac3c5a13b3d63a3e70e9a59a728f8af579bff91a1b83d428e",
+    "article_key": "shunan-109122",
+    "events": [
+      {
+        "event_id": "shunan-109122:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-02-07～11、02-14～17、02-21～24",
+        "reason": "FASHION Xの古着POP UPをレッツ光で週末3期間開催する告知。常設店舗の新設・閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/02/03/furugipopup/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。既存居酒屋MakeDining燦が同一店舗で日曜昼にラーメンを提供。将来の別ラーメン店は構想のみで、開店済み施設ではない。",
+    "source_body_hash": "0a05ea5c2536139c6e49b26e31fef131d6488f6de5d58d65af163a572bc570be",
+    "article_key": "shunan-87984",
+    "events": [
+      {
+        "event_id": "shunan-87984:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2024-02-25から日曜昼限定",
+        "reason": "既存居酒屋MakeDining燦が同一店舗で日曜昼にラーメンを提供。将来の別ラーメン店は構想のみで、開店済み施設ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/03/17/post-87984/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。サンリブ下松での出張カキ小屋の期間限定催事。商業施設や常設飲食店の開閉店ではない。",
+    "source_body_hash": "d41e69be39dd6fbd0f3f5ec32b4d3b4a203fa10c83ea7641fc46be851d72283e",
+    "article_key": "shunan-115981",
+    "events": [
+      {
+        "event_id": "shunan-115981:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-10-17～11-16",
+        "reason": "サンリブ下松での出張カキ小屋の期間限定催事。商業施設や常設飲食店の開閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/10/10/kakibugyou-2/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。星プラザ1階催事会場の期間限定COSTCCO出店と商品紹介。延長可能性は未確定で、後日の常設化を判断しない。",
+    "source_body_hash": "4ee0820331f6a8e7d4f0eacd3ecc92b8dcbe5ae88fae2e1f03d5a8629cf73377",
+    "article_key": "shunan-111800",
+    "events": [
+      {
+        "event_id": "shunan-111800:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-03-19～06末予定",
+        "reason": "星プラザ1階催事会場の期間限定COSTCCO出店と商品紹介。延長可能性は未確定で、後日の常設化を判断しない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/03/28/costcco-resale-shop-2/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。かき氷COTOが既存ドッグランへ不定期に出店。独立した固定店舗の開設ではない。",
+    "source_body_hash": "6854ce08d5d44032587e4b192949e0abb53b01debddd8f96edca17d6cfc64da3",
+    "article_key": "shimonoseki-71688",
+    "events": [
+      {
+        "event_id": "shimonoseki-71688:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2026-05-03～06は連日予定、その後は不定期",
+        "reason": "かき氷COTOが既存ドッグランへ不定期に出店。独立した固定店舗の開設ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shimonoseki.goguynet.jp/2026/04/29/coto/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。キッチンカーの風せん韓が既存ルーエプラッツで夜間限定営業し、学生企画も同期間内に開催。固定店舗の開閉店ではない。",
+    "source_body_hash": "c36ece2934fb9ac51397db5520baa6803debaa1189f17d84f4d987b2ec2f22b3",
+    "article_key": "shimonoseki-61026",
+    "events": [
+      {
+        "event_id": "shimonoseki-61026:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2024-11-29～12-22の金土日",
+        "reason": "キッチンカーの風せん韓が既存ルーエプラッツで夜間限定営業し、学生企画も同期間内に開催。固定店舗の開閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shimonoseki.goguynet.jp/2024/11/29/fuusennkann-3/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。ゆめシティ1階のクロネコノゴロー0506ポップアップ。終了日付きの催事で、商業施設本体や常設店の変更ではない。",
+    "source_body_hash": "9d4649fdb7fc3dba9daec77788a9ef3b8d3f520c9a7b206ab325851931ff9b79",
+    "article_key": "shimonoseki-57931",
+    "events": [
+      {
+        "event_id": "shimonoseki-57931:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2024-10-14まで",
+        "reason": "ゆめシティ1階のクロネコノゴロー0506ポップアップ。終了日付きの催事で、商業施設本体や常設店の変更ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shimonoseki.goguynet.jp/2024/09/23/nogoro/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。TOKUYAMA DECK D2のちいかわPOP UP STORE。専用区画の短期催事で、常設店の開閉店ではない。",
+    "source_body_hash": "1ed677f569ee76dfd1d374a45d0ea861fde12085252c805b9437c05c1e87430d",
+    "article_key": "shunan-116235",
+    "events": [
+      {
+        "event_id": "shunan-116235:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-10-24～11-10",
+        "reason": "TOKUYAMA DECK D2のちいかわPOP UP STORE。専用区画の短期催事で、常設店の開閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/10/25/tokuyamadeck_chiicawa/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。既存HARADASA KABAでの七夕企画2日と後日の交流イベント予告。メニューや催事であり施設の開閉店ではない。",
+    "source_body_hash": "05fe142c3e912d4e50ce81f90771f3fc64b4d1d1fa51c92958c20da2b4196d6b",
+    "article_key": "shunan-96117",
+    "events": [
+      {
+        "event_id": "shunan-96117:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2024-07-04こども祭り、07-05キャンドルナイト、07-27交流イベント予定",
+        "reason": "既存HARADASA KABAでの七夕企画2日と後日の交流イベント予告。メニューや催事であり施設の開閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/02/post-96117/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。ゆめタウン徳山のMY CHEESECAKE一週間限定販売。商品紹介と短期出店であり常設店の開閉店ではない。",
+    "source_body_hash": "dfa102d06e22fd9b6c6e3dfb4477f3747ecc696bb9d57fa4b1a6cde2eb74478d",
+    "article_key": "shunan-115144",
+    "events": [
+      {
+        "event_id": "shunan-115144:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-08-20～27",
+        "reason": "ゆめタウン徳山のMY CHEESECAKE一週間限定販売。商品紹介と短期出店であり常設店の開閉店ではない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/08/22/my-cheesecake/"
+        ]
+      }
+    ]
+  },
+  {
+    "reviewed_at": "2026-09-27",
+    "inventory_complete": true,
+    "inventory_reason": "本文全体を確認。COSTCCOが星プラザ1階催事会場に期間限定で出店する事前告知。延長は未確定で、その後の常設化を判断しない。",
+    "source_body_hash": "b4e6a38e65e5f8f6c232a2fba4f3e16f4fa61b99cea91c6b1bfb60d568c7f170",
+    "article_key": "shunan-110379",
+    "events": [
+      {
+        "event_id": "shunan-110379:temporary-activity",
+        "effective_at": null,
+        "event_type": "other",
+        "reported_period": "2025-03-19～06末予定",
+        "reason": "COSTCCOが星プラザ1階催事会場に期間限定で出店する事前告知。延長は未確定で、その後の常設化を判断しない。",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2025/03/01/costcco-resale-shop/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "yamaguchi-46475",
+    "source_body_hash": "8d5de9403d5c5e9f8629fc60eaba600f50b5bfae3ba53ef8f178314289d665c4",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。三田尻店の2025年3月4日閉店と2019年4月23日開店という過去の背景2件。近隣ゆめタウン防府は案内先であり変更対象ではない。閉店は既存最終判断へ対応し、過去開店は日付未確定のまま現在地図への変更要否を判断。",
+    "events": [
+      {
+        "event_id": "yamaguchi-46475:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": "2025-03-04",
+        "reason": "同じ三田尻の旧店舗の閉店であり、既存の公式閉店告知・事後現況の最終判断へ対応。地図に同店のIDがないため重複反映不要。",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/02/16/yumemart_hofu2025/",
+          "https://kaiten-heiten-24.com/youmemart-mitajiri/",
+          "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+          "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/"
+        ],
+        "duplicate_of": "kaiten-538012:closed"
+      },
+      {
+        "event_id": "yamaguchi-46475:opening-history",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": "2019-04-23",
+        "source_urls": [
+          "https://yamaguchi-hofu.goguynet.jp/2025/02/16/yumemart_hofu2025/",
+          "https://kaiten-heiten-24.com/youmemart-mitajiri/",
+          "https://www.izumi.co.jp/corp/outline/news_release/pdf/2025/0203news.pdf",
+          "https://yamaguchi-hofu.goguynet.jp/2025/04/03/mitajiri_yumemart2025/"
+        ],
+        "reason": "公式閉店告知と事後現況で閉店済みと確認した同じ旧店舗の開店背景。全base7764件と今回前overlayを旧名・別表記で照合し対象IDなし。過去店を現在営業施設として追加せず、他施設も変更しない。2019年4月23日は報道値として保持し、一次根拠未取得の実開店日を確定していない。既存の閉店済み店舗の開店背景に対する変更不要判断と同じ扱い。"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-117669",
+    "source_body_hash": "2f7bfedcd645d3a1cb65c3a7b9615a54d161e9949a6d7f35b010e8500718e86b",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。ビッグウッド下松店の閉店1件と閉店セール・家具紹介。既存の同じ閉店最終判断へ対応し、セールを独立施設へ数えない。",
+    "events": [
+      {
+        "event_id": "shunan-117669:closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reason": "同名・同所在地の下松店の同じ閉店を既存最終判断へ対応。元判断の曜日不整合による日付未確定を継承し、3月末を確定日へ変換しない。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/01/15/bigwood/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/07/15/secondstreet/",
+          "https://www.big-wood.co.jp/info/10968/"
+        ],
+        "duplicate_of": "shunan-119477:bigwood-closure",
+        "reported_date": "2026-03"
+      },
+      {
+        "event_id": "shunan-117669:sale",
+        "event_type": "other",
+        "facility_ids": [],
+        "disposition": "out_of_scope",
+        "effective_at": null,
+        "reason": "在庫一掃の値引き期間と家具商品の紹介は、固定施設の新設・閉店とは別の販促。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/01/15/bigwood/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-508800",
+    "source_body_hash": "37407b871cce84a7694029b7b959124e405b389c0849a2d992eac26cf45539d6",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。食楽金龍の2024年7月17日開店1件。住所が平和通り1-19フロンティアビル1Fで既存閉店・後継の場所と一致。過去実開店日は未一次確認のまま、現在地図の変更不要を判断。",
+    "events": [
+      {
+        "event_id": "kaiten-508800:kinryu-opening-history",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": "2024-07-17",
+        "reason": "閉店済み食楽金龍の過去開店背景。住所付き本文と現在後継の同住所、既存の旧店閉店最終判断を照合。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-95266",
+    "source_body_hash": "4e2961aa3e20281df5208a6c5306f3651689fb5d5db65bdf7bbba0ec41dcd9dd",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。ベジモン2019年4月8日開店背景、2024年6月9日の改装に伴う休業、7月中旬のリニューアル再開予定の3件。永久閉店として扱わず、後続記事の食楽金龍への改装・改称関係を参照。メニュー一新は改装内容で独立施設ではない。",
+    "events": [
+      {
+        "event_id": "shunan-95266:bejimon-opening-history",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": "2019-04-08",
+        "reason": "同じ旧区画のベジモン開店背景。後続の食楽金龍記事が旧ベジモンの場所と改装関係を明記。現在は同住所のとりいちずを掲載済みで旧名施設の追加は不要。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json"
+      },
+      {
+        "event_id": "shunan-95266:bejimon-renewal-hiatus-history",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": "2024-06-09",
+        "reason": "本文の一旦閉店は改装休業と再開予定が対になっている。同じ旧区画の過去改装休業を現在の永久閉店パッチへ変換しない。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json"
+      },
+      {
+        "event_id": "shunan-95266:bejimon-renewal-plan-history",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": "2024-07",
+        "reason": "本文の7月中旬リニューアル予定。後続記事では同所を食楽金龍へ改装・改称と説明。予定を実施日へ変換せず、旧店の再開履歴について現在地図への変更不要と判断。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-96257",
+    "source_body_hash": "58ea41b7e5e934b4b12db5074a780872f868d8bce548eddd41a94e4f61978b56",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。ベジモン6月9日の改装休業、ベジモンから食楽金龍へのブランド改称、食楽金龍7月17日開店予定の3件。6月末の工事は同じ改装休業の進行説明。ブランド変更の履歴と同一法人継続の確定を区別し、日時は報道欄だけに保存。",
+    "events": [
+      {
+        "event_id": "shunan-96257:bejimon-renewal-hiatus-history",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reported_date": "2024-06-09",
+        "reason": "同じベジモン区画の同じ改装休業。閉店・新規店の増減へ重複計上しない。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "duplicate_of": "shunan-95266:bejimon-renewal-hiatus-history"
+      },
+      {
+        "event_id": "shunan-96257:bejimon-kinryu-brand-history",
+        "event_type": "rename",
+        "facility_ids": [],
+        "disposition": "verified_no_change",
+        "effective_at": null,
+        "reported_date": null,
+        "reason": "本文は旧ベジモンが食楽金龍へ改装・店名変更する関係を説明。旧名称IDはなく、現在後継の店舗名・IDも変更しない。同一法人継続やブランド変更の実施日は確定しない。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json"
+      },
+      {
+        "event_id": "shunan-96257:kinryu-opening-history",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reported_date": "2024-07-17",
+        "reason": "同じ食楽金龍の過去開店予定。住所付き開店記事と閉店判断へ対応する。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "duplicate_of": "kaiten-508800:kinryu-opening-history"
+      }
+    ]
+  },
+  {
+    "article_key": "shunan-117729",
+    "source_body_hash": "a157c726a04e4ba578647519ad76c264c03f38e6082e3f2931b7f8af2459e539",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "全文確認。食楽金龍2024年7月17日開店背景、2026年1月31日閉店告知、前身ベジモンの営業終了・改装背景の3件。前身について後続関係を既存記事と照合し改装休業temporary_changeとして残す。別店舗の焼肉ホルモン金龍はプロデュース元説明のみ。",
+    "events": [
+      {
+        "event_id": "shunan-117729:kinryu-opening-history",
+        "event_type": "opening",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reported_date": "2024-07-17",
+        "reason": "同じ閉店済み食楽金龍の過去開店背景。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/01/25/shokurakukinryu-2/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://kaiten-heiten-24.com/shokuraku-kinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "duplicate_of": "kaiten-508800:kinryu-opening-history"
+      },
+      {
+        "event_id": "shunan-117729:kinryu-closure",
+        "event_type": "closure",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "reason": "同じ平和通の食楽金龍閉店を既存最終判断へ統合。記事の2026年1月31日は報道日付として保存し、実施一次確認済みの日付へ昇格させない。 店舗自身のInstagramで1月31日閉店の告知を確認。元7764件と追加154件に食楽金龍・ベジモンの対象IDはなく、後継とりいちずは既に反映済み。別市のラーメン金龍は除外し、地図変更は不要。閉店告知だけで現地実施日を断定するものではない。",
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/01/25/shokurakukinryu-2/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/09/09/toriichizu-2/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/"
+        ],
+        "duplicate_of": "shunan-119970:kinryu-closure",
+        "effective_at": null,
+        "reported_date": "2026-01-31"
+      },
+      {
+        "event_id": "shunan-117729:bejimon-renewal-hiatus-history",
+        "event_type": "temporary_change",
+        "facility_ids": [],
+        "disposition": "duplicate",
+        "effective_at": null,
+        "reported_date": null,
+        "reason": "本文の前身ベジモン閉店という背景を、同じ場所の元記事で改装休業・後の食楽金龍改称という関係へ対応させる。永久閉店イベントを新たに生成しない。 旧名の食楽金龍・ベジモンは既存absence-checkで対象IDなし。同チェックの後継とりいちず住所は周南市平和通り1丁目19番地フロンティアビル1階で、食楽金龍の住所付き記事と一致。食楽金龍の閉店は既存shunan-119970:kinryu-closureで最終判断済み。2026-09-27にbase7764件・overlay追加562件/訂正98件も旧名照合し対象IDなし。現在の後継を旧店名に変更したり旧営業施設を再追加しない。 現在地図への変更不要という判断に限る。旧開店・改装・改称の実施日時や営業履歴を一次確認済みとはせず、effective_atはnullのまま保持する。",
+        "source_urls": [
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2026/01/25/shokurakukinryu-2/",
+          "https://www.instagram.com/p/DTpG2VTEStH/?hl=ja",
+          "https://toriichizu.net/shoplist/3906/",
+          "https://prtimes.jp/main/html/rd/p/000000226.000035671.html",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/06/19/bejimon/",
+          "https://shunan-kudamatsu-hikari.goguynet.jp/2024/07/08/shokurakukinryu/"
+        ],
+        "absence_check": "data-sources/facility-successors-20260925/closure-absence-check.json",
+        "duplicate_of": "shunan-95266:bejimon-renewal-hiatus-history"
+      }
+    ]
+  },
+  {
+    "article_key": "kaiten-617206",
+    "source_body_hash": "5b006c0af37eb924445d08409e084859ad28ef8c5829ab53cdfb040fb0d36e1d",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "本文全文を確認。サイゼリヤおのだサンパーク店の開店1件。メニュー・全国店舗数・親商業施設の場所説明は別施設の変更ではない。事前の予定は、当日の運営元掲載と現在の支店情報で照合。",
+    "events": [
+      {
+        "event_id": "kaiten-617206:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-saizeriya-1656"
+        ],
+        "disposition": "reflected_addition",
+        "effective_at": "2026-09-24",
+        "reason": "同じ入居施設・住所・公式支店ID1656を照合。開店当日の公式記録と現行営業案内が一致し、2026年9月24日の開店として1施設のみ掲載。",
+        "source_urls": [
+          "https://kaiten-heiten-24.com/saizeriya-onodasunpark/",
+          "https://www.saizeriya.co.jp/",
+          "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address",
+          "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1656",
+          "https://sunpark.co.jp/"
+        ]
+      }
+    ]
+  },
+  {
+    "article_key": "ube-83300",
+    "source_body_hash": "c3634fa56550fb9f1f48f3f65f87b83a6d350dbe53a7f690596a96daea7ee876",
+    "inventory_complete": true,
+    "reviewed_at": "2026-09-27",
+    "inventory_reason": "本文全文を確認。サイゼリヤおのだサンパーク店の開店1件。メニュー・全国店舗数・親商業施設の場所説明は別施設の変更ではない。事前の予定は、当日の運営元掲載と現在の支店情報で照合。",
+    "events": [
+      {
+        "event_id": "ube-83300:opening",
+        "event_type": "opening",
+        "facility_ids": [
+          "official-saizeriya-1656"
+        ],
+        "disposition": "duplicate",
+        "effective_at": "2026-09-24",
+        "duplicate_of": "kaiten-617206:opening",
+        "reason": "同じ入居施設・住所・公式支店ID1656を照合。開店当日の公式記録と現行営業案内が一致し、2026年9月24日の開店として1施設のみ掲載。",
+        "source_urls": [
+          "https://ube-sanyoonoda.goguynet.jp/2026/09/23/saizeriya_sunparkopen/",
+          "https://www.saizeriya.co.jp/",
+          "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address",
+          "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1656",
+          "https://sunpark.co.jp/"
+        ]
+      }
+    ]
+  }
+]

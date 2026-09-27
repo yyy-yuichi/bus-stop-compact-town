@@ -23,10 +23,10 @@
     "legacy_hold_rows_resolved": 5
   },
   "unreviewed": {
-    "articles": 991,
-    "candidate_groups": 914,
-    "groups_with_multiple_articles": 61,
-    "repeat_articles_grouped": 77,
+    "articles": 969,
+    "candidate_groups": 894,
+    "groups_with_multiple_articles": 60,
+    "repeat_articles_grouped": 75,
     "conflicting_address_groups": 2,
     "groups_with_official_link_hints": 18,
     "groups_with_reviewed_facility_hints": 0,
@@ -37,18 +37,18 @@
     "unique_stores": null
   },
   "map_records": {
-    "reflected_updates": 98,
-    "reflected_additions": 562,
-    "reflected_ids": 660
+    "reflected_updates": 101,
+    "reflected_additions": 563,
+    "reflected_ids": 664
   },
   "article_history": {
     "total": 1186,
     "classified_by_jev": 1186,
-    "articles_completed": 68,
+    "articles_completed": 90,
     "articles_partially_reviewed": 127,
-    "articles_pending": 991,
-    "recorded_events": 447,
-    "final_event_decisions": 235,
+    "articles_pending": 969,
+    "recorded_events": 479,
+    "final_event_decisions": 267,
     "held_events": 212,
     "with_related_source_only": 35,
     "note": "Article inventory and event decisions are separate. Total events are unknown until all articles are enumerated."
@@ -56,8 +56,8 @@
   "note": "Known cases and unreviewed candidate groups may overlap and must not be summed as unique stores. Supplemental status never resolves a held article event. Official links and names remain hints until store identity and all article events are checked. No time estimate follows from article counts.",
   "input_hashes": {
     "index": "0363a2c9722f354805a8e3a4491e06b9ca60ea2561918bd4404493f08d9a2cd7",
-    "reviews": "3c535ef2cdcde49acbe88dc8807796cf4d503f60121f3fe56d235b11591761fb",
-    "overlay": "5985d00486f4e05c9a52f372e0d95e3f010b5d69ea62a8396154fcbfadf213cb",
+    "reviews": "f026473d0aa954285d77393c88451f478bcd62e75d3a1f40b8819f2fd3646df2",
+    "overlay": "4359bab16eb960b164ae16950b033cc5fe652fa6887ec0dc46ffdeeb76b2f369",
     "article_inputs": "c46368120e55bbcb69632a6a4c24a21a38bda8ee29b37a3e0be52f0dbf72f992",
     "case_reviews": "5db90c7cf0c9d8c322b730f3889dc8f4017579af28a144a47081c0de18f0e271"
   }

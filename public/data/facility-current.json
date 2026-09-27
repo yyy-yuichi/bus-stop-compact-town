@@ -4453,6 +4453,138 @@
           "元ID・元座標・元source_idsを保持。シーモールの同系列店舗として支店名を補完し、別館リピエのココカラファインと統合しません。"
         ]
       }
+    },
+    {
+      "id": "osm-node-6154596937",
+      "expected": {
+        "name": "サイゼリヤ",
+        "category": "restaurant",
+        "source_ids": [
+          "node/6154596937"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0121931,
+            34.0302589
+          ]
+        }
+      },
+      "changes": {
+        "name": "サイゼリヤ ゆめタウン長府店",
+        "address": "山口県下関市ゆめタウン1-1ゆめﾀｳﾝ長府1F",
+        "city": "下関市",
+        "search_names": "サイゼリヤ ゆめタウン長府店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式支店情報と同じ所在地の既存店舗を照合し、一般名だった施設名へ支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "公式の県内店舗一覧",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address"
+          },
+          {
+            "title": "支店ID・名称・住所・店舗固有点の公式案内",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1419"
+          }
+        ],
+        "limits": [
+          "支店名補完であり店名変更日の確定ではありません。",
+          "既存ID・座標・出典IDを保持。商業施設本体・別のテナントと分離。店舗入口・徒歩動線は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-657113152",
+      "expected": {
+        "name": "サイゼリヤ",
+        "category": "restaurant",
+        "source_ids": [
+          "way/657113152"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.94627135000002,
+            33.983676450000004
+          ]
+        }
+      },
+      "changes": {
+        "name": "サイゼリヤ ゆめモール下関店",
+        "address": "山口県下関市新椋野1-2-22ゆめﾓｰﾙ下関1F",
+        "city": "下関市",
+        "search_names": "サイゼリヤ ゆめモール下関店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式支店情報と同じ所在地の既存店舗を照合し、一般名だった施設名へ支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "公式の県内店舗一覧",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address"
+          },
+          {
+            "title": "支店ID・名称・住所・店舗固有点の公式案内",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1199"
+          }
+        ],
+        "limits": [
+          "支店名補完であり店名変更日の確定ではありません。",
+          "既存ID・座標・出典IDを保持。商業施設本体・別のテナントと分離。店舗入口・徒歩動線は未確認。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-6154596938",
+      "expected": {
+        "name": "サイゼリヤ",
+        "category": "restaurant",
+        "source_ids": [
+          "node/6154596938"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.923725,
+            33.9490289
+          ]
+        }
+      },
+      "changes": {
+        "name": "サイゼリヤ シーモール下関店",
+        "address": "山口県下関市竹崎町4-4-8ｼｰﾓｰﾙ下関4F",
+        "city": "下関市",
+        "search_names": "サイゼリヤ シーモール下関店"
+      },
+      "review": {
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式支店情報と同じ所在地の既存店舗を照合し、一般名だった施設名へ支店名・住所を補完。",
+        "sources": [
+          {
+            "title": "公式の県内店舗一覧",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address"
+          },
+          {
+            "title": "支店ID・名称・住所・店舗固有点の公式案内",
+            "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1391"
+          }
+        ],
+        "limits": [
+          "支店名補完であり店名変更日の確定ではありません。",
+          "既存ID・座標・出典IDを保持。商業施設本体・別のテナントと分離。店舗入口・徒歩動線は未確認。"
+        ]
+      }
     }
   ],
   "additions": [
@@ -34421,6 +34553,66 @@
         "coordinates": [
           131.4395022,
           34.1681397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "official-saizeriya-1656",
+      "properties": {
+        "name": "サイゼリヤ おのだサンパーク",
+        "city": "山陽小野田市",
+        "address": "山口県山陽小野田市中川6-4-1　おのだｻﾝﾊﾟｰｸ1F",
+        "official_address": "山口県山陽小野田市中川6-4-1　おのだｻﾝﾊﾟｰｸ1F",
+        "official_url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1656",
+        "category": "restaurant",
+        "geometry_kind": "representative_point",
+        "source": "店舗公式情報",
+        "source_ids": [
+          "official:saizeriya:1656"
+        ],
+        "source_timestamp": "2026-09-27",
+        "verified_at": "2026-09-27",
+        "verification_status": "official_current_listing",
+        "license": "official-published-facts",
+        "search_names": "サイゼリヤ おのだサンパーク サイゼリヤ おのだサンパーク店",
+        "location_verification": "公式県内一覧と支店1656の名称・住所を照合し、spotDetailBean直下の店舗lat/lonを採用。別のdetailAddress.coord（住所検索点）と区別。自治体境界と全既存施設を照合。",
+        "freshness_review": {
+          "status": "operating",
+          "event": "opened",
+          "effective_at": "2026-09-24",
+          "checked_at": "2026-09-27",
+          "summary": "開店日当日の運営会社掲載記録、開店後の支店固有案内と商業施設の営業案内を照合し、9月24日の開店を確認。",
+          "sources": [
+            {
+              "title": "公式の県内店舗一覧",
+              "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/list?address=35&search=address"
+            },
+            {
+              "title": "支店ID・名称・住所・店舗固有点の公式案内",
+              "url": "https://shop.saizeriya.co.jp/sz_restaurant/spot/detail?code=1656"
+            },
+            {
+              "title": "運営会社の9月24日開店記録",
+              "url": "https://www.saizeriya.co.jp/"
+            },
+            {
+              "title": "入居商業施設の9月24日開店・現行営業時間案内",
+              "url": "https://sunpark.co.jp/"
+            }
+          ],
+          "limits": [
+            "支店ID1656に紐付く店舗座標を採用。住所検索の代表点を使用していません。",
+            "本館1階の独立した飲食店舗。親施設おのだサンパーク本体、他のテナントと分離。",
+            "店舗入口・館内動線・バス停からの徒歩到達性は未確認。"
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.172134,
+          33.986042
         ]
       }
     }
