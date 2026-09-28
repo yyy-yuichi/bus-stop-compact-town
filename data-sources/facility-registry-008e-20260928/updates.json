@@ -2624,6 +2624,572 @@
     }
   },
   {
+    "id": "osm-node-1423659783",
+    "expected": {
+      "name": "湯田幼稚園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423659783"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.461043,
+          34.165332
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "運営法人の沿革が湯田幼稚園の令和6年3月31日閉園を明記。原完全住所と旧学校コードが一致する園の終了を確認。",
+      "sources": [
+        {
+          "title": "公式の閉園・統合完了記録",
+          "url": "https://sugeuchi-y.com/facility/",
+          "sha256": "a0060d75e1cf2bd09e902b6d61d47009bd94e712166b737c2235e9819eada9c0"
+        },
+        {
+          "title": "施設固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        },
+        {
+          "title": "学校コード原行（属性変更日は閉校日ではありません）",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        }
+      ],
+      "limits": [
+        "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+        "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "湯田幼稚園",
+      "baseline_category": "childcare",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.461043,
+          34.165332
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659783"
+      ],
+      "source_ids": [
+        "node/1423659783"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 687,
+          "tags": {
+            "KSJ2:ADS": "湯田温泉1-3-2",
+            "KSJ2:AdminArea": "山口県山口市",
+            "amenity": "kindergarten",
+            "name": "湯田幼稚園",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "operator:type": "private",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県山口市湯田温泉1-3-2",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 687,
+          "complete_numbered": true
+        }
+      ],
+      "independent_audit_status": "pass",
+      "method": "official_completed_event_original_specific_site_and_full_address",
+      "location": {
+        "name": "湯田幼稚園",
+        "address": "山口県山口市湯田温泉1-3-2",
+        "number": "A135310000385",
+        "point": [
+          131.461035064222,
+          34.16533264891126
+        ],
+        "feature_array_index": 61,
+        "source_path": "outputs\\facility-registry-008b-20260928\\schools\\P29-23_35.geojson",
+        "source_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "archive_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_as_of": "2023",
+        "source_role": "specific_historical_school_identity"
+      },
+      "distance_m": 0.734,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/yuda-kindergarten-operator-history.html",
+          "source_url": "https://sugeuchi-y.com/facility/",
+          "source_sha256": "a0060d75e1cf2bd09e902b6d61d47009bd94e712166b737c2235e9819eada9c0",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/yuda-kindergarten-operator-history.html.txt",
+          "safe_sha256": "b7c42f469e66b56f8ef3bbf1a60c2096d737d3798a82ef7c5ac528a06ccc6c93",
+          "raw_local_only": true
+        }
+      ],
+      "current": {
+        "number": "A135310000385",
+        "school_type": "A1(幼稚園)",
+        "name": "湯田幼稚園",
+        "address": "山口県山口市湯田温泉１丁目３－２",
+        "status": "9(廃)",
+        "attribute_change_date": "2024-05-01",
+        "successor": "",
+        "row": 13086,
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01"
+      },
+      "location_verified": true
+    }
+  },
+  {
+    "id": "osm-way-315851750",
+    "expected": {
+      "name": "市立美和東小学校",
+      "category": "school",
+      "source_ids": [
+        "way/315851750"
+      ],
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                132.1111896,
+                34.2299028
+              ],
+              [
+                132.1110088,
+                34.2299331
+              ],
+              [
+                132.1106333,
+                34.2303001
+              ],
+              [
+                132.110813,
+                34.2304354
+              ],
+              [
+                132.1111093,
+                34.2302369
+              ],
+              [
+                132.1112888,
+                34.2301447
+              ],
+              [
+                132.1114594,
+                34.2301382
+              ],
+              [
+                132.1117207,
+                34.2301948
+              ],
+              [
+                132.1120241,
+                34.2301877
+              ],
+              [
+                132.1122842,
+                34.2301294
+              ],
+              [
+                132.1124447,
+                34.2300484
+              ],
+              [
+                132.1125402,
+                34.2298837
+              ],
+              [
+                132.1126255,
+                34.2297128
+              ],
+              [
+                132.1129534,
+                34.2293643
+              ],
+              [
+                132.1127378,
+                34.2293347
+              ],
+              [
+                132.1114922,
+                34.2292218
+              ],
+              [
+                132.1114741,
+                34.2294863
+              ],
+              [
+                132.1115251,
+                34.229718
+              ],
+              [
+                132.111454,
+                34.2297291
+              ],
+              [
+                132.1114084,
+                34.2297767
+              ],
+              [
+                132.1111896,
+                34.2299028
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "市教育委員会会議録が美和東・西小学校の統合事業完了を明記。旧美和東小学校の教育サービス終了を確認し、閉校式の日は実施日に代用しません。",
+      "sources": [
+        {
+          "title": "公式の閉園・統合完了記録",
+          "url": "https://www.city.iwakuni.lg.jp/uploaded/attachment/53810.pdf",
+          "sha256": "41808c3d1ce450d2698b7aba1b313bb52a5f5c65205b938801b8afb2acf3d19c"
+        },
+        {
+          "title": "施設固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        },
+        {
+          "title": "学校コード原行（属性変更日は閉校日ではありません）",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "旧美和東小学校公式ページ・佐坂241",
+          "url": "https://www.edu.city.iwakuni.yamaguchi.jp/site/miwahigashi-e/",
+          "sha256": "41f0af16e65393d92aa24c31bc4df604ac20dcf64ec7c5bdea000a72e500e441"
+        }
+      ],
+      "limits": [
+        "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+        "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "市立美和東小学校",
+      "baseline_category": "school",
+      "baseline_geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                132.1111896,
+                34.2299028
+              ],
+              [
+                132.1110088,
+                34.2299331
+              ],
+              [
+                132.1106333,
+                34.2303001
+              ],
+              [
+                132.110813,
+                34.2304354
+              ],
+              [
+                132.1111093,
+                34.2302369
+              ],
+              [
+                132.1112888,
+                34.2301447
+              ],
+              [
+                132.1114594,
+                34.2301382
+              ],
+              [
+                132.1117207,
+                34.2301948
+              ],
+              [
+                132.1120241,
+                34.2301877
+              ],
+              [
+                132.1122842,
+                34.2301294
+              ],
+              [
+                132.1124447,
+                34.2300484
+              ],
+              [
+                132.1125402,
+                34.2298837
+              ],
+              [
+                132.1126255,
+                34.2297128
+              ],
+              [
+                132.1129534,
+                34.2293643
+              ],
+              [
+                132.1127378,
+                34.2293347
+              ],
+              [
+                132.1114922,
+                34.2292218
+              ],
+              [
+                132.1114741,
+                34.2294863
+              ],
+              [
+                132.1115251,
+                34.229718
+              ],
+              [
+                132.111454,
+                34.2297291
+              ],
+              [
+                132.1114084,
+                34.2297767
+              ],
+              [
+                132.1111896,
+                34.2299028
+              ]
+            ]
+          ]
+        ]
+      },
+      "baseline_source_ids": [
+        "way/315851750"
+      ],
+      "source_ids": [
+        "way/315851750"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 2359,
+          "tags": {
+            "amenity": "school",
+            "name": "市立美和東小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q97674648"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "independent_audit_status": "pass",
+      "method": "official_completed_event_original_specific_site_and_full_address",
+      "location": {
+        "name": "岩国市立美和東小学校",
+        "address": "山口県岩国市美和町佐坂241",
+        "number": "B135210002187",
+        "point": [
+          132.11174391907548,
+          34.23001957754346
+        ],
+        "feature_array_index": 402,
+        "source_path": "outputs\\facility-registry-008b-20260928\\schools\\P29-23_35.geojson",
+        "source_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "archive_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_as_of": "2023",
+        "source_role": "specific_historical_school_identity"
+      },
+      "distance_m": 0,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/iwakuni-miwa-completed-53810.pdf",
+          "source_url": "https://www.city.iwakuni.lg.jp/uploaded/attachment/53810.pdf",
+          "source_sha256": "41808c3d1ce450d2698b7aba1b313bb52a5f5c65205b938801b8afb2acf3d19c",
+          "source_as_of": "2024-04-18",
+          "retrieved_at": "2026-09-28",
+          "page": 2
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/miwahigashi-school-closure.html",
+          "source_url": "https://www.edu.city.iwakuni.yamaguchi.jp/site/miwahigashi-e/",
+          "source_sha256": "41f0af16e65393d92aa24c31bc4df604ac20dcf64ec7c5bdea000a72e500e441",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/miwahigashi-school-closure.html.txt",
+          "safe_sha256": "6f9321223e62882c49794bde26387c63797d963dc362a1d134478b8e2153ec35",
+          "raw_local_only": true
+        }
+      ],
+      "current": {
+        "number": "B135210002187",
+        "school_type": "B1(小学校)",
+        "name": "岩国市立美和東小学校",
+        "address": "山口県岩国市美和町佐坂２４１",
+        "status": "9(廃)",
+        "attribute_change_date": "2024-05-01",
+        "successor": "B135210003033",
+        "row": 13444,
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01"
+      },
+      "location_verified": true
+    }
+  },
+  {
+    "id": "osm-node-1423661245",
+    "expected": {
+      "name": "長門市立通保育園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423661245"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2548849,
+          34.4201292
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "市の公共施設計画の実績欄が通保育園を令和7年度末で閉園済みと明記。市の施設固有点・完全住所が元地点に一致します。",
+      "sources": [
+        {
+          "title": "公式の閉園・統合完了記録",
+          "url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+          "sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090"
+        },
+        {
+          "title": "施設固有位置と完全住所",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+          "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+        }
+      ],
+      "limits": [
+        "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+        "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "長門市立通保育園",
+      "baseline_category": "childcare",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2548849,
+          34.4201292
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423661245"
+      ],
+      "source_ids": [
+        "node/1423661245"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 938,
+          "tags": {
+            "amenity": "kindergarten",
+            "name": "長門市立通保育園",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "independent_audit_status": "pass",
+      "method": "official_completed_event_original_specific_site_and_full_address",
+      "location": {
+        "name": "通保育園",
+        "address": "山口県長門市通１１８７番地１",
+        "city": "山口県長門市",
+        "number": "AA0000000196",
+        "phone": "",
+        "point": [
+          131.254884,
+          34.420129
+        ],
+        "row": 197,
+        "url": "",
+        "description": "",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/352110_public_facility-a1d3cd25.csv",
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+        "source_sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015",
+        "resource_id": "a1d3cd25-5823-4224-9ad7-7241ac53b621",
+        "source_title": "【長門市】公共施設一覧.csv",
+        "source_metadata_modified": "2025-03-25T12:00:16.906632",
+        "source_notes": "長門市の公共施設一覧です。",
+        "source_version": ""
+      },
+      "distance_m": 0.085,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/nagato-public-plan-37944.pdf",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+          "source_sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090",
+          "source_as_of": "2026-03",
+          "retrieved_at": "2026-09-28",
+          "page": 98,
+          "source_date_kind": "document_edition_month"
+        }
+      ],
+      "current": null,
+      "location_verified": true,
+      "old_2006_point_discrepancy": {
+        "note": "2006点は74.955m離れ通字川道1187。2025市施設CSVは通1187番地1の施設固有点が元点と0.1m以内で一致する。元番号付き住所なし。旧点は採用根拠にしない。"
+      }
+    }
+  },
+  {
     "id": "osm-node-1423656442",
     "expected": {
       "name": "市立乙瀬小学校(休校中)",
@@ -3935,6 +4501,134 @@
     }
   },
   {
+    "id": "osm-node-1423656779",
+    "expected": {
+      "name": "市立大潮小学校(休校中)",
+      "category": "reference",
+      "source_ids": [
+        "node/1423656779"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.78854,
+          34.283688
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "市公共施設再配置計画案の現状欄が、既に廃校となった学校として旧大潮小学校を明記。閉校日は資料から特定できないため不明で記録。",
+      "sources": [
+        {
+          "title": "市計画案の現状欄・廃校済み学校の記載",
+          "url": "https://www.city.shunan.lg.jp/uploaded/attachment/12776.pdf",
+          "sha256": "c6c58ed64bf6931f9fbc342140389021d3cba5c70eca30bcd4ea623c1952b945"
+        },
+        {
+          "title": "旧学校固有位置・完全地番",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "計画案の将来提案ではなく現状の廃校済み記載を用います。",
+        "元category reference・geometry・source_ids・住所・詳細を保持。建物や跡地利用の閉鎖ではありません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "市立大潮小学校(休校中)",
+      "baseline_category": "reference",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.78854,
+          34.283688
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423656779"
+      ],
+      "source_ids": [
+        "node/1423656779"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 360,
+          "tags": {
+            "KSJ2:ADS": "大潮1489",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "市立大潮小学校(休校中)",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市大潮1489",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 360,
+          "complete_numbered": true
+        }
+      ],
+      "independent_audit_status": "pass",
+      "method": "original_complete_address_specific_point_and_explicit_completed_closure",
+      "location": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "市立大潮小学校(休校中)",
+        "address": "大潮1489",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          131.78854,
+          34.283688
+        ],
+        "gml_id": "fb01_1022",
+        "feature_index_0based": 1021,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "source_as_of": "2006",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3"
+      },
+      "distance_m": 0,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/shunan-oldschool-reallocation-12776.pdf",
+          "source_url": "https://www.city.shunan.lg.jp/uploaded/attachment/12776.pdf",
+          "source_sha256": "c6c58ed64bf6931f9fbc342140389021d3cba5c70eca30bcd4ea623c1952b945",
+          "source_as_of": "2012-10",
+          "retrieved_at": "2026-09-28",
+          "page": 34,
+          "source_date_kind": "document_edition_month",
+          "document_status": "draft_plan_existing_conditions_section"
+        }
+      ],
+      "location_verified": true,
+      "current": {
+        "name": "大潮小学校",
+        "address": "山口県周南市大潮1489"
+      }
+    }
+  },
+  {
     "id": "osm-node-1631268124",
     "expected": {
       "name": "光市三島憩の家",
@@ -4037,6 +4731,771 @@
         "other_same_facility": []
       },
       "successor_address_not_baseline": true
+    }
+  },
+  {
+    "id": "osm-node-1423655236",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2024-06-01",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：小野田叶松簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=8918",
+          "sha256": "65641647b011086fca65470bc6adedddec97dc536785cba704418e6d3eef2521"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "original_complete_address",
+      "position_verified": false,
+      "baseline_name": "小野田叶松簡易郵便局",
+      "baseline_address": "山口県山陽小野田市小野田8",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1845237,
+          33.9691589
+        ]
+      },
+      "source_ids": [
+        "node/1423655236"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 185,
+          "source_id": "node/1423655236",
+          "tags": {
+            "addr:block_number": "10396",
+            "addr:city": "山陽小野田市",
+            "addr:housenumber": "8",
+            "addr:neighbourhood": "小野田",
+            "addr:postcode": "756-0817",
+            "addr:province": "山口県",
+            "name": "小野田叶松簡易郵便局",
+            "name:en": "Onoda Kanomatsu Summary Post Office",
+            "name:es": "Oficina Simple de Correos de Onoda Kanomatsu",
+            "name:ja": "小野田叶松簡易郵便局",
+            "name:ja-Hira": "おのだ かのうまつ かんいゆうびんきょく",
+            "operator": "日本郵便",
+            "phone": "+81-836-88-0217"
+          }
+        }
+      ],
+      "original_complete_address": "山口県山陽小野田市小野田10396-8",
+      "official_notice": {
+        "id": "osm-node-1423655236",
+        "official_name": "小野田叶松簡易郵便局",
+        "official_address": "山口県山陽小野田市小野田１０３９６－８",
+        "official_notice_fields": {
+          "名称": "小野田叶松簡易郵便局 (おのだかのうまつかんいゆうびんきょく)",
+          "住所": "〒756-0817 山口県山陽小野田市小野田１０３９６－８",
+          "取扱業務": "郵便・貯金・為替・振替・生命保険"
+        },
+        "effective_at": "2024-06-01",
+        "explicit_date_text": "2024年6月1日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/8918.html",
+        "raw_sha256": "65641647b011086fca65470bc6adedddec97dc536785cba704418e6d3eef2521",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=8918",
+        "current_owner_pdf_page": 9,
+        "current_owner_pdf_name": "小野田叶松簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の小野田叶松簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": true,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point."
+    }
+  },
+  {
+    "id": "osm-node-1423656316",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2021-09-08",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：川渕簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=5265",
+          "sha256": "62b65b0ae8c945e6229f38c8c962befc7ac6ea5c1a9aa91dc3ef53bdef02f2d4"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "original_complete_address",
+      "position_verified": false,
+      "baseline_name": "川渕簡易郵便局",
+      "baseline_address": "下関市豊北町粟野宮迫1580-1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.976386,
+          34.3293928
+        ]
+      },
+      "source_ids": [
+        "node/1423656316"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 239,
+          "source_id": "node/1423656316",
+          "tags": {
+            "addr:city": "下関市豊北町粟野宮迫1580-1",
+            "addr:postcode": "759-5101",
+            "name": "川渕簡易郵便局",
+            "phone": "+81-83-785-0015",
+            "website": "http://map.japanpost.jp/pc/syousai.php?id=300155727000"
+          }
+        }
+      ],
+      "original_complete_address": "山口県下関市豊北町粟野宮迫1580-1",
+      "official_notice": {
+        "id": "osm-node-1423656316",
+        "official_name": "川渕簡易郵便局",
+        "official_address": "山口県下関市豊北町粟野宮迫１５８０－１",
+        "official_notice_fields": {
+          "名称": "川渕簡易郵便局(かわぶちかんいゆうびんきょく)",
+          "住所": "〒759-5101 山口県下関市豊北町粟野宮迫１５８０－１",
+          "取扱業務": "郵便・貯金・為替・振替"
+        },
+        "effective_at": "2021-09-08",
+        "explicit_date_text": "2021年9月8日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/5265.html",
+        "raw_sha256": "62b65b0ae8c945e6229f38c8c962befc7ac6ea5c1a9aa91dc3ef53bdef02f2d4",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=5265",
+        "current_owner_pdf_page": 7,
+        "current_owner_pdf_name": "川渕簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の川渕簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": true,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point."
+    }
+  },
+  {
+    "id": "osm-node-1423659828",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2019-12-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：玉江浦簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=4083",
+          "sha256": "6bb2d812805a819e9cf44369ad7f6e4fc708982fe04dbeb063a18725d7cc2658"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "original_complete_address",
+      "position_verified": false,
+      "baseline_name": "玉江浦簡易郵便局",
+      "baseline_address": "山口県萩市山田",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.379115,
+          34.408678
+        ]
+      },
+      "source_ids": [
+        "node/1423659828"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 325,
+          "source_id": "node/1423659828",
+          "tags": {
+            "addr:block_number": "5153",
+            "addr:city": "萩市",
+            "addr:neighbourhood": "山田",
+            "addr:province": "山口県",
+            "name": "玉江浦簡易郵便局",
+            "operator": "日本郵便"
+          }
+        }
+      ],
+      "original_complete_address": "山口県萩市山田5153",
+      "official_notice": {
+        "id": "osm-node-1423659828",
+        "official_name": "玉江浦簡易郵便局",
+        "official_address": "山口県萩市山田５１５３",
+        "official_notice_fields": {
+          "名称": "玉江浦簡易郵便局 (たまえうらかんいゆうびんきょく)",
+          "住所": "〒758-0063 山口県萩市山田５１５３",
+          "取扱業務": "郵便・為替・振替"
+        },
+        "effective_at": "2019-12-31",
+        "explicit_date_text": "2019年12月31日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/4083.html",
+        "raw_sha256": "6bb2d812805a819e9cf44369ad7f6e4fc708982fe04dbeb063a18725d7cc2658",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=4083",
+        "current_owner_pdf_page": 2,
+        "current_owner_pdf_name": "玉江浦簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の玉江浦簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": true,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point."
+    }
+  },
+  {
+    "id": "osm-node-1423660072",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2025-11-25",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：白岩簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9805",
+          "sha256": "28dc0962b65293ab106546b0215380596eb0e8306f6705c21fc116222a96d1d6"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "original_complete_address",
+      "position_verified": false,
+      "baseline_name": "白岩簡易郵便局",
+      "baseline_address": "山口県美祢市大嶺町奥分1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.172094,
+          34.194295
+        ]
+      },
+      "source_ids": [
+        "node/1423660072"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 336,
+          "source_id": "node/1423660072",
+          "tags": {
+            "addr:block_number": "882",
+            "addr:city": "美祢市",
+            "addr:housenumber": "1",
+            "addr:neighbourhood": "大嶺町奥分",
+            "addr:postcode": "759-2214",
+            "addr:province": "山口県",
+            "name": "白岩簡易郵便局",
+            "name:en": "Shiraiwa Summary Post Office",
+            "name:es": "Oficina Simple de Correos de Shiraiwa",
+            "name:ja": "白岩簡易郵便局",
+            "name:ja-Hira": "しらいわ かんいゆうびんきょく",
+            "operator": "日本郵便",
+            "phone": "+81-837-52-5663"
+          }
+        }
+      ],
+      "original_complete_address": "山口県美祢市大嶺町奥分882-1",
+      "official_notice": {
+        "id": "osm-node-1423660072",
+        "official_name": "白岩簡易郵便局",
+        "official_address": "山口県美祢市大嶺町奥分８８２－１",
+        "official_notice_fields": {
+          "名称": "白岩簡易郵便局（しらいわかんいゆうびんきょく）",
+          "住所": "〒759-2214 山口県美祢市大嶺町奥分８８２－１",
+          "取扱業務": "郵便・貯金・為替・振替・生命保険"
+        },
+        "effective_at": "2025-11-25",
+        "explicit_date_text": "2025年11月25日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/9805.html",
+        "raw_sha256": "28dc0962b65293ab106546b0215380596eb0e8306f6705c21fc116222a96d1d6",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9805",
+        "current_owner_pdf_page": 11,
+        "current_owner_pdf_name": "白岩簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の白岩簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": true,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point."
+    }
+  },
+  {
+    "id": "osm-node-1423660638",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2025-12-16",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：美川小川簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9852",
+          "sha256": "044f9636fe66ae8f2b6d5769131b6bbfc7f0608d45f08b1675da5aef845a5cb6"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "original_complete_address",
+      "position_verified": false,
+      "baseline_name": "美川小川簡易郵便局",
+      "baseline_address": "山口県岩国市美川町小川28",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.001059,
+          34.2424243
+        ]
+      },
+      "source_ids": [
+        "node/1423660638"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 358,
+          "source_id": "node/1423660638",
+          "tags": {
+            "addr:block_number": "437",
+            "addr:city": "岩国市",
+            "addr:housenumber": "28",
+            "addr:neighbourhood": "美川町小川",
+            "addr:postcode": "740-0501",
+            "addr:province": "山口県",
+            "name": "美川小川簡易郵便局",
+            "name:en": "Miyakogawa Summary Post Office",
+            "name:es": "Oficina Simple de Correos de Miyakogawa",
+            "name:ja": "美川小川簡易郵便局",
+            "name:ja-Hira": "みかわこがわ かんいゆうびんきょく",
+            "operator": "日本郵便",
+            "phone": "+81-827-76-0990"
+          }
+        }
+      ],
+      "original_complete_address": "山口県岩国市美川町小川437-28",
+      "official_notice": {
+        "id": "osm-node-1423660638",
+        "official_name": "美川小川簡易郵便局",
+        "official_address": "山口県岩国市美川町小川４３７－２８",
+        "official_notice_fields": {
+          "名称": "美川小川簡易郵便局（みかわこがわかんいゆうびんきょく）",
+          "住所": "〒740ｰ0501 山口県岩国市美川町小川４３７－２８",
+          "取扱業務": "郵便・貯金・為替・振替・生命保険"
+        },
+        "effective_at": "2025-12-16",
+        "explicit_date_text": "2025年12月16日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/9852.html",
+        "raw_sha256": "044f9636fe66ae8f2b6d5769131b6bbfc7f0608d45f08b1675da5aef845a5cb6",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9852",
+        "current_owner_pdf_page": 10,
+        "current_owner_pdf_name": "美川小川簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の美川小川簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": true,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point."
+    }
+  },
+  {
+    "id": "osm-node-1423659779",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2017-04-24",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：渋木簡易郵便局（山口県）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3097",
+          "sha256": "4a5c2262e4eed21ba81fa9585f1cb1e4442c20ddd9873025667c47f4608ba441"
+        },
+        {
+          "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+          "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+          "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+        },
+        {
+          "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+          "url": "https://www.post.japanpost.jp/about/owner/area/",
+          "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+        },
+        {
+          "title": "国土数値情報 公共施設2006 山口県（旧同名局・旧住所・元位置の同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+        "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_exact_complete_address_named_office_explicit_temporary_closure_and_current_named_recruitment",
+      "identity_basis": "historical_named_address_and_point",
+      "position_verified": false,
+      "baseline_name": "渋木簡易郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.199115,
+          34.310201
+        ]
+      },
+      "source_ids": [
+        "node/1423659779"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+          "source_sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+          "element_index": 319,
+          "source_id": "node/1423659779",
+          "tags": {
+            "name": "渋木簡易郵便局",
+            "operator": "日本郵便"
+          }
+        }
+      ],
+      "original_complete_address": "山口県長門市渋木3454-4",
+      "official_notice": {
+        "id": "osm-node-1423659779",
+        "official_name": "渋木簡易郵便局",
+        "official_address": "山口県長門市渋木３４５４－４",
+        "official_notice_fields": {
+          "名称": "渋木簡易郵便局 (しぶきかんいゆうびんきょく)",
+          "住所": "〒759-4104 山口県長門市渋木３４５４－４",
+          "取扱業務": "郵便・為替・振替"
+        },
+        "effective_at": "2017-04-24",
+        "explicit_date_text": "2017年4月24日",
+        "raw_path": "outputs/facility-registry-008b-20260928/postoffice/events/3097.html",
+        "raw_sha256": "4a5c2262e4eed21ba81fa9585f1cb1e4442c20ddd9873025667c47f4608ba441",
+        "source_url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3097",
+        "current_owner_pdf_page": 4,
+        "current_owner_pdf_name": "渋木簡易郵便局",
+        "current_owner_pdf_phrase": "一時閉鎖中の渋木簡易郵便局",
+        "visual_review": "Entire page rendered and visually read on 2026-09-28; map label is old office; recruitment area is not a precise point",
+        "current_owner_pdf_sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "current_owner_pdf_as_of": "2026-07-23",
+        "owner_index_as_of": "2026-09-28"
+      },
+      "current_recruitment_pdf": {
+        "key": "postal-owner-yamaguchi-20260723",
+        "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+        "path": "outputs/facility-registry-008e-20260928/commercial/postal-owner-yamaguchi-20260723.pdf",
+        "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-07-23",
+        "source_date_kind": "as_of",
+        "status": "fetched"
+      },
+      "current_recruitment_index": {
+        "key": "postal-owner-area-current",
+        "url": "https://www.post.japanpost.jp/about/owner/area/",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.post.japanpost.jp/about/owner/area/",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/postal-owner-area-current.html",
+        "raw_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/postal-owner-area-current.html",
+        "safe_sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee",
+        "bytes": 50629,
+        "status": "fetched",
+        "sanitizer": "sanitize-sources.py: quoted apiKey/accessToken/authToken/sitekey and URL tokens; raw preserved separately"
+      },
+      "no_later_same_name_event_in_saved_full_2007_2026_official_indexes": true,
+      "p02_not_used_as_identity": false,
+      "limits": "This confirms the named postal office business temporary suspension, not closure or accuracy of a particular building/point.",
+      "historical_location": {
+        "administrativeAreaCode": "35211",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "渋木簡易郵便局",
+        "address": "渋木3454-4",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.199115,
+          34.310201
+        ],
+        "gml_id": "fb01_2161",
+        "feature_index_0based": 2160
+      },
+      "historical_row_path": "outputs/facility-registry-008c-20260928/shared-locations/P02-2006-rows.json",
+      "historical_row_sha256": "272476d65f1a84cf1f668e6c14fa7b0fc2556b25a5e218003659f82f23123140",
+      "historical_distance_m": 0.0
     }
   },
   {

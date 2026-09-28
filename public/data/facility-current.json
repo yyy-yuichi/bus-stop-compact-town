@@ -14978,6 +14978,233 @@
       }
     },
     {
+      "id": "osm-node-1423659783",
+      "expected": {
+        "name": "湯田幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423659783"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.461043,
+            34.165332
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2024-03-31",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "運営法人の沿革が湯田幼稚園の令和6年3月31日閉園を明記。原完全住所と旧学校コードが一致する園の終了を確認。",
+        "sources": [
+          {
+            "title": "公式の閉園・統合完了記録",
+            "url": "https://sugeuchi-y.com/facility/",
+            "sha256": "a0060d75e1cf2bd09e902b6d61d47009bd94e712166b737c2235e9819eada9c0"
+          },
+          {
+            "title": "施設固有位置と完全住所",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "学校コード原行（属性変更日は閉校日ではありません）",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          }
+        ],
+        "limits": [
+          "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+          "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-315851750",
+      "expected": {
+        "name": "市立美和東小学校",
+        "category": "school",
+        "source_ids": [
+          "way/315851750"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  132.1111896,
+                  34.2299028
+                ],
+                [
+                  132.1110088,
+                  34.2299331
+                ],
+                [
+                  132.1106333,
+                  34.2303001
+                ],
+                [
+                  132.110813,
+                  34.2304354
+                ],
+                [
+                  132.1111093,
+                  34.2302369
+                ],
+                [
+                  132.1112888,
+                  34.2301447
+                ],
+                [
+                  132.1114594,
+                  34.2301382
+                ],
+                [
+                  132.1117207,
+                  34.2301948
+                ],
+                [
+                  132.1120241,
+                  34.2301877
+                ],
+                [
+                  132.1122842,
+                  34.2301294
+                ],
+                [
+                  132.1124447,
+                  34.2300484
+                ],
+                [
+                  132.1125402,
+                  34.2298837
+                ],
+                [
+                  132.1126255,
+                  34.2297128
+                ],
+                [
+                  132.1129534,
+                  34.2293643
+                ],
+                [
+                  132.1127378,
+                  34.2293347
+                ],
+                [
+                  132.1114922,
+                  34.2292218
+                ],
+                [
+                  132.1114741,
+                  34.2294863
+                ],
+                [
+                  132.1115251,
+                  34.229718
+                ],
+                [
+                  132.111454,
+                  34.2297291
+                ],
+                [
+                  132.1114084,
+                  34.2297767
+                ],
+                [
+                  132.1111896,
+                  34.2299028
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-28",
+        "summary": "市教育委員会会議録が美和東・西小学校の統合事業完了を明記。旧美和東小学校の教育サービス終了を確認し、閉校式の日は実施日に代用しません。",
+        "sources": [
+          {
+            "title": "公式の閉園・統合完了記録",
+            "url": "https://www.city.iwakuni.lg.jp/uploaded/attachment/53810.pdf",
+            "sha256": "41808c3d1ce450d2698b7aba1b313bb52a5f5c65205b938801b8afb2acf3d19c"
+          },
+          {
+            "title": "施設固有位置と完全住所",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "学校コード原行（属性変更日は閉校日ではありません）",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "旧美和東小学校公式ページ・佐坂241",
+            "url": "https://www.edu.city.iwakuni.yamaguchi.jp/site/miwahigashi-e/",
+            "sha256": "41f0af16e65393d92aa24c31bc4df604ac20dcf64ec7c5bdea000a72e500e441"
+          }
+        ],
+        "limits": [
+          "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+          "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661245",
+      "expected": {
+        "name": "長門市立通保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423661245"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2548849,
+            34.4201292
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2026-03-31",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "市の公共施設計画の実績欄が通保育園を令和7年度末で閉園済みと明記。市の施設固有点・完全住所が元地点に一致します。",
+        "sources": [
+          {
+            "title": "公式の閉園・統合完了記録",
+            "url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+            "sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090"
+          },
+          {
+            "title": "施設固有位置と完全住所",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+            "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+          }
+        ],
+        "limits": [
+          "対象は元園・学校の教育サービスです。建物や転用先の閉鎖を示しません。",
+          "元geometry・source_ids・住所・詳細を保持。新校開校日・閉校式・学校属性変更日から日付を推定しません。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1423656442",
       "expected": {
         "name": "市立乙瀬小学校(休校中)",
@@ -15413,6 +15640,48 @@
       }
     },
     {
+      "id": "osm-node-1423656779",
+      "expected": {
+        "name": "市立大潮小学校(休校中)",
+        "category": "reference",
+        "source_ids": [
+          "node/1423656779"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.78854,
+            34.283688
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": null,
+        "date_precision": "unknown",
+        "checked_at": "2026-09-28",
+        "summary": "市公共施設再配置計画案の現状欄が、既に廃校となった学校として旧大潮小学校を明記。閉校日は資料から特定できないため不明で記録。",
+        "sources": [
+          {
+            "title": "市計画案の現状欄・廃校済み学校の記載",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/12776.pdf",
+            "sha256": "c6c58ed64bf6931f9fbc342140389021d3cba5c70eca30bcd4ea623c1952b945"
+          },
+          {
+            "title": "旧学校固有位置・完全地番",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          }
+        ],
+        "limits": [
+          "計画案の将来提案ではなく現状の廃校済み記載を用います。",
+          "元category reference・geometry・source_ids・住所・詳細を保持。建物や跡地利用の閉鎖ではありません。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1631268124",
       "expected": {
         "name": "光市三島憩の家",
@@ -15452,6 +15721,293 @@
           "旧施設の閉館のみを記録します。2012年開業の三島温泉健康交流施設（三井6-6-1）に旧座標を流用しません。",
           "市の沿革は閉館日を明記していますが建物解体日や跡地の現用途は未確認です。",
           "元ID・geometry・source_ids・元サービス分類を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423655236",
+      "expected": {
+        "name": "小野田叶松簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423655236"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1845237,
+            33.9691589
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2024-06-01",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：小野田叶松簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=8918",
+            "sha256": "65641647b011086fca65470bc6adedddec97dc536785cba704418e6d3eef2521"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656316",
+      "expected": {
+        "name": "川渕簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423656316"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.976386,
+            34.3293928
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2021-09-08",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：川渕簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=5265",
+            "sha256": "62b65b0ae8c945e6229f38c8c962befc7ac6ea5c1a9aa91dc3ef53bdef02f2d4"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423659828",
+      "expected": {
+        "name": "玉江浦簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423659828"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.379115,
+            34.408678
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2019-12-31",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：玉江浦簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=4083",
+            "sha256": "6bb2d812805a819e9cf44369ad7f6e4fc708982fe04dbeb063a18725d7cc2658"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660072",
+      "expected": {
+        "name": "白岩簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423660072"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.172094,
+            34.194295
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2025-11-25",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：白岩簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9805",
+            "sha256": "28dc0962b65293ab106546b0215380596eb0e8306f6705c21fc116222a96d1d6"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660638",
+      "expected": {
+        "name": "美川小川簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423660638"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.001059,
+            34.2424243
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2025-12-16",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：美川小川簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9852",
+            "sha256": "044f9636fe66ae8f2b6d5769131b6bbfc7f0608d45f08b1675da5aef845a5cb6"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423659779",
+      "expected": {
+        "name": "渋木簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423659779"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.199115,
+            34.310201
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "temporarily_closed",
+        "event": "temporary_closure",
+        "effective_at": "2017-04-24",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "元の固有局名と完全住所を公式一時閉鎖告知に照合し、現在掲載の局長募集資料でも当該局の一時閉鎖中の明記を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 一時閉鎖：渋木簡易郵便局（山口県）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3097",
+            "sha256": "4a5c2262e4eed21ba81fa9585f1cb1e4442c20ddd9873025667c47f4608ba441"
+          },
+          {
+            "title": "日本郵便 山口県の簡易郵便局受託者募集（2026年7月23日更新）局名と一時閉鎖中の明記",
+            "url": "https://www.post.japanpost.jp/about/owner/area/pdf.php?id=29&no=5",
+            "sha256": "142e11a930c86cc4d4d7c00dfafeda64ae33f35e1a303a159b841cab49196bcd"
+          },
+          {
+            "title": "日本郵便 2026年9月28日現在の受託者募集地域と山口県募集PDFへの公式リンク",
+            "url": "https://www.post.japanpost.jp/about/owner/area/",
+            "sha256": "68e55853cfd4d91a4c86e515dca95b2ff700241d08b5e59cd7de04784cae80ee"
+          },
+          {
+            "title": "国土数値情報 公共施設2006 山口県（旧同名局・旧住所・元位置の同定のみ）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          }
+        ],
+        "limits": [
+          "当該郵便局業務の一時閉鎖を確認した記録です。建物自体の閉鎖・元座標の正確性・入口・通行可否は確認していません。",
+          "実施日は公式告知の一時閉鎖日です。募集資料の更新日・取得日とは分離し、募集地図の範囲を施設固有座標として使用していません。"
         ]
       }
     },
@@ -251177,6 +251733,358 @@
       }
     },
     {
+      "id": "osm-way-315716295",
+      "expected": {
+        "name": "市立美和西小学校",
+        "category": "school",
+        "source_ids": [
+          "way/315716295"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  132.0773745,
+                  34.2273615
+                ],
+                [
+                  132.0775754,
+                  34.2271671
+                ],
+                [
+                  132.0778211,
+                  34.2270635
+                ],
+                [
+                  132.0778828,
+                  34.2271222
+                ],
+                [
+                  132.0780129,
+                  34.2270685
+                ],
+                [
+                  132.0780834,
+                  34.2271457
+                ],
+                [
+                  132.0785881,
+                  34.2268019
+                ],
+                [
+                  132.0780565,
+                  34.2264583
+                ],
+                [
+                  132.0778838,
+                  34.2262164
+                ],
+                [
+                  132.0774905,
+                  34.22605
+                ],
+                [
+                  132.0772502,
+                  34.2261119
+                ],
+                [
+                  132.0767416,
+                  34.2260523
+                ],
+                [
+                  132.0766936,
+                  34.2260187
+                ],
+                [
+                  132.0760025,
+                  34.2265543
+                ],
+                [
+                  132.0764393,
+                  34.2270046
+                ],
+                [
+                  132.0765894,
+                  34.2271044
+                ],
+                [
+                  132.0768033,
+                  34.2272058
+                ],
+                [
+                  132.0771097,
+                  34.2272985
+                ],
+                [
+                  132.0773745,
+                  34.2273615
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {
+        "name": "岩国市立美和小学校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "B135210003033",
+        "official_name": "岩国市立美和小学校",
+        "official_address": "山口県岩国市美和町生見７３９番地１",
+        "services": [
+          "B1(小学校)"
+        ],
+        "summary": "旧美和西小学校を同住所の美和小学校へ学校コードの後継指定と市の統合完了記録で接続。旧校・現校の固有点が元敷地内にあり、現行学校台帳への掲載を確認。",
+        "sources": [
+          {
+            "title": "文部科学省現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "旧学校コードと後継指定",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "旧学校の固有位置",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "現名称・完全住所の指定避難場所固有点",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_2.csv",
+            "sha256": "9f65fd559666934caec02996f57974af6690309d61837899de6d6b53fa09a620"
+          },
+          {
+            "title": "市・学校公式の統合完了と校舎継続",
+            "url": "https://www.city.iwakuni.lg.jp/uploaded/attachment/53810.pdf",
+            "sha256": "41808c3d1ce450d2698b7aba1b313bb52a5f5c65205b938801b8afb2acf3d19c"
+          },
+          {
+            "title": "市・学校公式の統合完了と校舎継続",
+            "url": "https://www.edu.city.iwakuni.yamaguchi.jp/uploaded/life/50608_110682_misc.pdf",
+            "sha256": "70dade5dcf4ff9005b3387f590c68af0abf7aff68759061228714f79d15a844b"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の学校掲載確認です。授業実施や利用可能性を保証しません。",
+          "避難場所の指定は教育活動の現況証明には用いず、固有敷地・完全住所の独立補助とします。",
+          "元geometry・source_ids・住所・詳細を保持。建物閉鎖と旧学校の法的終了を混同しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-375077352",
+      "expected": {
+        "name": "愛歯科",
+        "category": "dentist",
+        "source_ids": [
+          "way/375077352"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.76899909999997,
+            34.0738432
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "dental:14,3019,1",
+        "official_name": "愛歯科診療所",
+        "official_address": "周南市政所１丁目１３番１１号",
+        "services": [
+          "診療所"
+        ],
+        "summary": "保険医療機関台帳の掲載を確認。元の愛歯科は診療所の施設種別語を省いた表記。固有名・歯科区分と一意な施設点が一致。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月1日保険台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500019.zip",
+            "sha256": "a89c72f41e0342c7f40dad576541c27b4e93c348db4197035b1047e15ca99a1d"
+          },
+          {
+            "title": "医療情報ネット2026年6月1日・固有施設IDと位置",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "sha256": "1585ea00b981df8c32d93850b2321a27053b8a9af3d46afc18df11af1f022727"
+          }
+        ],
+        "limits": [
+          "台帳の掲載確認です。当日の診療・受診可否や移転の不存在は保証しません。",
+          "元geometry・source_ids・住所・詳細を保持。指定日を開業日としません。",
+          "原点と固有施設点の距離1.137m。入口・建物内部は未検証。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-522788377",
+      "expected": {
+        "name": "光山医院",
+        "category": "hospital",
+        "source_ids": [
+          "way/522788377"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4525832,
+            34.1564405
+          ]
+        }
+      },
+      "changes": {
+        "category": "clinic"
+      },
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:03,1302,0",
+        "official_name": "光山医院山口",
+        "official_address": "山口市矢原町７番１８号",
+        "services": [
+          "診療所"
+        ],
+        "summary": "保険医療機関台帳の掲載を確認。元の光山医院は地域語尾の省略表記。法人公式サイトが光山医院の山口所在地・電話を記し、現台帳・Naviiの山口施設固有点に一致。他市の同法人施設とは住所・電話・施設IDで区別。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月1日保険台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "医療情報ネット2026年6月1日・固有施設IDと位置",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "sha256": "602be1310990fc557cfca8cda0e84494304e4df8581c1aca218b68327ebea2cf"
+          },
+          {
+            "title": "施設運営法人・自治体公式の個別施設情報",
+            "url": "https://mitsuyama-c.com/index.php",
+            "sha256": "753cbafc8e80f080e54cb613af8086bfee5d3a39f40599c8b00915222c19a85d"
+          }
+        ],
+        "limits": [
+          "台帳の掲載確認です。当日の診療・受診可否や移転の不存在は保証しません。",
+          "元geometry・source_ids・住所・詳細を保持。指定日を開業日としません。",
+          "原点と固有施設点の距離16.656m。入口・建物内部は未検証。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-4331927690",
+      "expected": {
+        "name": "あきよし心療内科",
+        "category": "clinic",
+        "source_ids": [
+          "node/4331927690"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9127704,
+            33.9721226
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:10,1083,1",
+        "official_name": "あきよし心療内科クリニック",
+        "official_address": "光市虹ケ浜３丁目１６番３０号ランドマーク虹ヶ浜１階",
+        "services": [
+          "診療所"
+        ],
+        "summary": "保険医療機関台帳の掲載を確認。元のあきよし心療内科はクリニックの施設種別語を省いた表記。Naviiの完全地番と同建物名、市公式の施設名・建物1階・電話が現台帳に一致。Naviiの階数未記載を別施設差とはしない。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月1日保険台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "医療情報ネット2026年6月1日・固有施設IDと位置",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "sha256": "602be1310990fc557cfca8cda0e84494304e4df8581c1aca218b68327ebea2cf"
+          },
+          {
+            "title": "施設運営法人・自治体公式の個別施設情報",
+            "url": "https://www.city.hikari.lg.jp/life_scene/sick_injury/8410.html",
+            "sha256": "f782062b55d365723d4ff76e936c3ce29f10a815e967c2f793cf36bb09f8e811"
+          }
+        ],
+        "limits": [
+          "台帳の掲載確認です。当日の診療・受診可否や移転の不存在は保証しません。",
+          "元geometry・source_ids・住所・詳細を保持。指定日を開業日としません。",
+          "原点と固有施設点の距離2.62m。入口・建物内部は未検証。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654578",
+      "expected": {
+        "name": "和同会片倉病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423654578"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.301646,
+            33.966655
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:02,1144,8",
+        "official_name": "医療法人和同会　片倉病院",
+        "official_address": "宇部市大字西岐波２２９の３",
+        "services": [
+          "病院"
+        ],
+        "summary": "保険医療機関台帳の掲載を確認。元完全住所229-3と現台帳229の3は同じ地番の区切り表記。医療法人冠称を除いた法人名＋施設名が一致。公的点との差155.625mは記録するが、今回の確認は一意な施設名・完全住所の台帳掲載に限定。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月1日保険台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "医療情報ネット2026年6月1日・固有施設IDと位置",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳の掲載確認です。当日の診療・受診可否や移転の不存在は保証しません。",
+          "元geometry・source_ids・住所・詳細を保持。指定日を開業日としません。",
+          "元原点と公的施設点は155.625m離れます。施設台帳の同一性を確認し、元座標の正確性は未保証です。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1423656402",
       "expected": {
         "name": "市立下松中学校",
@@ -254435,6 +255343,1045 @@
           "元指定番号3570800445、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570802565です。",
           "法人合併による番号変更と事業継続を明示し、施設の閉鎖や新規建物開業というイベントは推定しません。",
           "国公表の同名施設点と元位置に50mを超える既知差があります。位置差は未解消のまま明示し、台帳同一性確認と分けています。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3571600679-48a757489e",
+      "expected": {
+        "name": "ヘルパーステーションそらり",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:273"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.171005,
+            34.00108
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3571601248",
+        "official_name": "ヘルパーステーションそらり",
+        "official_address": "山陽小野田市西高泊1334－1",
+        "services": [
+          "訪問介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2026年4月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+            "sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3571600679、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3571601248です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3561690045-29fbe25445",
+      "expected": {
+        "name": "訪問看護ステーション そらり",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:435"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.171005,
+            34.00108
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3561690169",
+        "official_name": "訪問看護ステーション そらり",
+        "official_address": "山陽小野田市西高泊1334－1",
+        "services": [
+          "訪問看護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2026年4月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+            "sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+            "sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3561690045、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3561690169です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600089-e3ab649e87",
+      "expected": {
+        "name": "グループホームなみおと",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:393"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.172302,
+            33.957695
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600378",
+        "official_name": "グループホームなみおと",
+        "official_address": "山陽小野田市小野田1147－13",
+        "services": [
+          "認知症対応型共同生活介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_320_all_20260709180609.csv",
+            "sha256": "1fb8cb14f8eee8dacce3b26521abdd09b5175f31cb929efb8573a11487222cce"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600089、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600378です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600139-c0620d9b4f",
+      "expected": {
+        "name": "グループホームいつは",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:394"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.180389,
+            33.979637
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600352",
+        "official_name": "グループホームいつは",
+        "official_address": "山陽小野田市住吉本町2－7－20",
+        "services": [
+          "認知症対応型共同生活介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_320_all_20260709180609.csv",
+            "sha256": "1fb8cb14f8eee8dacce3b26521abdd09b5175f31cb929efb8573a11487222cce"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600139、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600352です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600212-2a79c08b90",
+      "expected": {
+        "name": "グループホームそらり",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:396"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.171005,
+            34.00108
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600360",
+        "official_name": "グループホームそらり",
+        "official_address": "山陽小野田市西高泊1334－1",
+        "services": [
+          "認知症対応型共同生活介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_320_all_20260709180609.csv",
+            "sha256": "1fb8cb14f8eee8dacce3b26521abdd09b5175f31cb929efb8573a11487222cce"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600212、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600360です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3571600554-8e644f43b5",
+      "expected": {
+        "name": "なみおと居宅介護支援事業所",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:805"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.172302,
+            33.957695
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3571601230",
+        "official_name": "なみおと居宅介護支援事業所",
+        "official_address": "山陽小野田市小野田1147－13",
+        "services": [
+          "居宅介護支援"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+            "sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3571600554、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3571601230です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600071-ac3df83920",
+      "expected": {
+        "name": "小規模多機能型居宅介護なみおと",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1216"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.172302,
+            33.957695
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600410",
+        "official_name": "小規模多機能型居宅介護なみおと",
+        "official_address": "山陽小野田市小野田1147－13",
+        "services": [
+          "小規模多機能型居宅介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_730_all_20260709180837.csv",
+            "sha256": "584bf963fd615e08a787202cf531a794898ccc2f4ba883f75758da0022c58ac4"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600071、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600410です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600154-27dd61a61f",
+      "expected": {
+        "name": "小規模多機能型居宅介護いつは",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1217"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.180389,
+            33.979637
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600402",
+        "official_name": "小規模多機能型居宅介護いつは",
+        "official_address": "山陽小野田市住吉本町2－7－20",
+        "services": [
+          "小規模多機能型居宅介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_730_all_20260709180837.csv",
+            "sha256": "584bf963fd615e08a787202cf531a794898ccc2f4ba883f75758da0022c58ac4"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600154、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600402です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591600204-51c72bef7a",
+      "expected": {
+        "name": "看護小規模多機能型居宅介護そらり",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1263"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.171005,
+            34.00108
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600394",
+        "official_name": "看護小規模多機能型居宅介護そらり",
+        "official_address": "山陽小野田市西高泊1334－1",
+        "services": [
+          "複合型サービス(看護小規模多機能型居宅介護)"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_770_all_20260709180847.csv",
+            "sha256": "8a774f25ea895bb51404cbf2a51cacd4b1c92d250cfd7556235dfc57e4a21f90"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3591600204、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600394です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3571600687-4049a8bee0",
+      "expected": {
+        "name": "デイサービスそらり",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1463"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.171005,
+            34.00108
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591600386",
+        "official_name": "デイサービスそらり",
+        "official_address": "山陽小野田市西高泊1334－1",
+        "services": [
+          "地域密着型通所介護"
+        ],
+        "summary": "市議会の公式事業承継説明と現指定台帳により、元の早川内科医院から現在の健仁会への同一施設・同サービスの継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山陽小野田市議会 令和8年3月委員長報告・介護事業承継",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/74245.pdf",
+            "sha256": "db0a3cec3c7ee9d156dd4d7ca5f1a2616153a4981bcf0a55a699a574a75e5d28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_780_all_20260709180927.csv",
+            "sha256": "19ed2778131c86f8e824e1ade115cec53c42a9a2a21eb0c5e0dcc68474c5581b"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3571600687、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3591600386です。",
+          "公式に明示された事業承継と番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570601314-38cbb2c6c1",
+      "expected": {
+        "name": "訪問介護ステーション オールケアー",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:135"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.599991,
+            34.048538
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570602619",
+        "official_name": "グリーンライフ防府沖今宿 訪問介護",
+        "official_address": "防府市沖今宿1－18－20",
+        "services": [
+          "訪問介護"
+        ],
+        "summary": "運営者公式の吸収合併・施設名称変更と現指定台帳により、元のオールケアーからグリーンライフへの施設・掲載サービスの継続を照合しました。元の完全住所・電話・全掲載サービスは現台帳と一致し、継続法人内の該当行が一意であることを確認。現在の名称と指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+            "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "グリーンライフ 吸収合併のお知らせ（2024年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2024/10/de8ce5bba569a6df37c835bd7d4868b8.pdf",
+            "sha256": "7ac2ef438f969221b7697ac28c484db9d5b7cb5e3a560f34fa5bd2ba3dada909"
+          },
+          {
+            "title": "グリーンライフ オールケアー参画のお知らせ（2022年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2022/10/732d3c99e0be684478f86fec935c59f1.pdf",
+            "sha256": "4a97b0005ec14cc86e3bf1bc8478279a73d483edaca6a7cedeae7d3f64e7e21f"
+          },
+          {
+            "title": "グリーンライフ公式採用ページ 施設名称変更案内",
+            "url": "https://hrmos.co/pages/greenlife/jobs/1792069661648605353",
+            "sha256": "9bfe365d4cf9cb4d4c719f6cf9e9391b4322d216d557fdbc123bf7fcfe383832"
+          },
+          {
+            "title": "グリーンライフ防府江泊デイサービスセンター 公式施設概要",
+            "url": "https://www.greenlife-inc.co.jp/dayservice/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E9%98%B2%E5%BA%9C%E6%B1%9F%E6%B3%8A%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/summary/",
+            "sha256": "9660ba3fa975782d4c69984cab1530c194b7eeccae930ec05004b416bc7a3657"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2025年1月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+            "sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570601314、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570602619です。",
+          "公式に明示された吸収合併と施設名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3560690137-313da83447",
+      "expected": {
+        "name": "訪問看護ステーション オールケアー",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:360"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.599991,
+            34.048538
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3560690277",
+        "official_name": "グリーンライフ防府沖今宿訪問看護",
+        "official_address": "防府市沖今宿1－18－20",
+        "services": [
+          "訪問看護"
+        ],
+        "summary": "運営者公式の吸収合併・施設名称変更と現指定台帳により、元のオールケアーからグリーンライフへの施設・掲載サービスの継続を照合しました。元の完全住所・電話・全掲載サービスは現台帳と一致し、継続法人内の該当行が一意であることを確認。現在の名称と指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+            "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "グリーンライフ 吸収合併のお知らせ（2024年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2024/10/de8ce5bba569a6df37c835bd7d4868b8.pdf",
+            "sha256": "7ac2ef438f969221b7697ac28c484db9d5b7cb5e3a560f34fa5bd2ba3dada909"
+          },
+          {
+            "title": "グリーンライフ オールケアー参画のお知らせ（2022年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2022/10/732d3c99e0be684478f86fec935c59f1.pdf",
+            "sha256": "4a97b0005ec14cc86e3bf1bc8478279a73d483edaca6a7cedeae7d3f64e7e21f"
+          },
+          {
+            "title": "グリーンライフ公式採用ページ 施設名称変更案内",
+            "url": "https://hrmos.co/pages/greenlife/jobs/1792069661648605353",
+            "sha256": "9bfe365d4cf9cb4d4c719f6cf9e9391b4322d216d557fdbc123bf7fcfe383832"
+          },
+          {
+            "title": "グリーンライフ防府江泊デイサービスセンター 公式施設概要",
+            "url": "https://www.greenlife-inc.co.jp/dayservice/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E9%98%B2%E5%BA%9C%E6%B1%9F%E6%B3%8A%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/summary/",
+            "sha256": "9660ba3fa975782d4c69984cab1530c194b7eeccae930ec05004b416bc7a3657"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2025年1月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+            "sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3560690137、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3560690277です。",
+          "公式に明示された吸収合併と施設名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570601322-28d9250fa7",
+      "expected": {
+        "name": "デイサービスセンター オールケアー",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:589"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.599991,
+            34.048538
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570602627",
+        "official_name": "グリーンライフ防府沖今宿デイサービス",
+        "official_address": "防府市沖今宿1－18－20",
+        "services": [
+          "通所介護"
+        ],
+        "summary": "運営者公式の吸収合併・施設名称変更と現指定台帳により、元のオールケアーからグリーンライフへの施設・掲載サービスの継続を照合しました。元の完全住所・電話・全掲載サービスは現台帳と一致し、継続法人内の該当行が一意であることを確認。現在の名称と指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+            "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "グリーンライフ 吸収合併のお知らせ（2024年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2024/10/de8ce5bba569a6df37c835bd7d4868b8.pdf",
+            "sha256": "7ac2ef438f969221b7697ac28c484db9d5b7cb5e3a560f34fa5bd2ba3dada909"
+          },
+          {
+            "title": "グリーンライフ オールケアー参画のお知らせ（2022年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2022/10/732d3c99e0be684478f86fec935c59f1.pdf",
+            "sha256": "4a97b0005ec14cc86e3bf1bc8478279a73d483edaca6a7cedeae7d3f64e7e21f"
+          },
+          {
+            "title": "グリーンライフ公式採用ページ 施設名称変更案内",
+            "url": "https://hrmos.co/pages/greenlife/jobs/1792069661648605353",
+            "sha256": "9bfe365d4cf9cb4d4c719f6cf9e9391b4322d216d557fdbc123bf7fcfe383832"
+          },
+          {
+            "title": "グリーンライフ防府江泊デイサービスセンター 公式施設概要",
+            "url": "https://www.greenlife-inc.co.jp/dayservice/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E9%98%B2%E5%BA%9C%E6%B1%9F%E6%B3%8A%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/summary/",
+            "sha256": "9660ba3fa975782d4c69984cab1530c194b7eeccae930ec05004b416bc7a3657"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2025年1月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+            "sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570601322、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570602627です。",
+          "公式に明示された吸収合併と施設名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570602353-094911700a",
+      "expected": {
+        "name": "デイサービスおいでませ",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:607"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.604782,
+            34.047749
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570602635",
+        "official_name": "グリーンライフ防府江泊デイサービスセンター",
+        "official_address": "防府市江泊1987－143",
+        "services": [
+          "通所介護"
+        ],
+        "summary": "運営者公式の吸収合併・施設名称変更と現指定台帳により、元のオールケアーからグリーンライフへの施設・掲載サービスの継続を照合しました。元の完全住所・電話・全掲載サービスは現台帳と一致し、継続法人内の該当行が一意であることを確認。現在の名称と指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+            "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "グリーンライフ 吸収合併のお知らせ（2024年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2024/10/de8ce5bba569a6df37c835bd7d4868b8.pdf",
+            "sha256": "7ac2ef438f969221b7697ac28c484db9d5b7cb5e3a560f34fa5bd2ba3dada909"
+          },
+          {
+            "title": "グリーンライフ オールケアー参画のお知らせ（2022年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2022/10/732d3c99e0be684478f86fec935c59f1.pdf",
+            "sha256": "4a97b0005ec14cc86e3bf1bc8478279a73d483edaca6a7cedeae7d3f64e7e21f"
+          },
+          {
+            "title": "グリーンライフ公式採用ページ 施設名称変更案内",
+            "url": "https://hrmos.co/pages/greenlife/jobs/1792069661648605353",
+            "sha256": "9bfe365d4cf9cb4d4c719f6cf9e9391b4322d216d557fdbc123bf7fcfe383832"
+          },
+          {
+            "title": "グリーンライフ防府江泊デイサービスセンター 公式施設概要",
+            "url": "https://www.greenlife-inc.co.jp/dayservice/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E9%98%B2%E5%BA%9C%E6%B1%9F%E6%B3%8A%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/summary/",
+            "sha256": "9660ba3fa975782d4c69984cab1530c194b7eeccae930ec05004b416bc7a3657"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2025年1月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+            "sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570602353、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570602635です。",
+          "公式に明示された吸収合併と施設名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570601306-1f595b70ca",
+      "expected": {
+        "name": "ル・モンド防府居宅介護支援事業所",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:651"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.599991,
+            34.048538
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570602601",
+        "official_name": "グリーンライフ防府沖今宿ケアプランセンター",
+        "official_address": "防府市沖今宿1－18－20",
+        "services": [
+          "居宅介護支援"
+        ],
+        "summary": "運営者公式の吸収合併・施設名称変更と現指定台帳により、元のオールケアーからグリーンライフへの施設・掲載サービスの継続を照合しました。元の完全住所・電話・全掲載サービスは現台帳と一致し、継続法人内の該当行が一意であることを確認。現在の名称と指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+            "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "グリーンライフ 吸収合併のお知らせ（2024年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2024/10/de8ce5bba569a6df37c835bd7d4868b8.pdf",
+            "sha256": "7ac2ef438f969221b7697ac28c484db9d5b7cb5e3a560f34fa5bd2ba3dada909"
+          },
+          {
+            "title": "グリーンライフ オールケアー参画のお知らせ（2022年10月）",
+            "url": "https://www.greenlife-inc.co.jp/wp-content/uploads/2022/10/732d3c99e0be684478f86fec935c59f1.pdf",
+            "sha256": "4a97b0005ec14cc86e3bf1bc8478279a73d483edaca6a7cedeae7d3f64e7e21f"
+          },
+          {
+            "title": "グリーンライフ公式採用ページ 施設名称変更案内",
+            "url": "https://hrmos.co/pages/greenlife/jobs/1792069661648605353",
+            "sha256": "9bfe365d4cf9cb4d4c719f6cf9e9391b4322d216d557fdbc123bf7fcfe383832"
+          },
+          {
+            "title": "グリーンライフ防府江泊デイサービスセンター 公式施設概要",
+            "url": "https://www.greenlife-inc.co.jp/dayservice/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E9%98%B2%E5%BA%9C%E6%B1%9F%E6%B3%8A%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/summary/",
+            "sha256": "9660ba3fa975782d4c69984cab1530c194b7eeccae930ec05004b416bc7a3657"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570601306、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570602601です。",
+          "公式に明示された吸収合併と施設名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3551080017-d2ce4569e5",
+      "expected": {
+        "name": "ナイスケア まほろば",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:803",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1053",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1321"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.998886,
+            33.981529
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3551080025",
+        "official_name": "介護老人保健施設ナイスケアまほろば",
+        "official_address": "光市岩田2477",
+        "services": [
+          "介護老人保健施設",
+          "短期入所療養介護",
+          "通所リハビリテーション"
+        ],
+        "summary": "光市公式統計書の事業譲渡記録と現指定台帳により、ナイスケアまほろばが光市から医療法人睦会へ移行した継続性を照合しました。名称の固有部・完全住所・電話・元の全3サービスが一致し、現指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+            "sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "光市 令和7年版統計書・介護老人保健施設の事業譲渡注記",
+            "url": "https://www.city.hikari.lg.jp/material/files/group/8/R7_hikarishitoukeisho.pdf",
+            "sha256": "04121fdf9f50e4036010b5e6ef8a794516de7e0418945af81f0c24b0fa18dfd2"
+          },
+          {
+            "title": "ナイスケアまほろば 公式施設案内・2024年4月の運営変更",
+            "url": "https://naisukeamahoroba.jimdofree.com/",
+            "sha256": "ef4b08b76d7721a061783cdda8c7069c4229aa05fe88bc2b7841efa7d371336d"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3551080017、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3551080025です。",
+          "公式に明示された市施設の事業譲渡と名称・番号変更を記録し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "位置精度の確認とは分けた台帳掲載確認です。国公表に存在する同名施設点との既知差はevidenceに記録し、元の位置を保持します。",
           "閲覧日を台帳基準日・移転日・開業日としません。"
         ]
       }
@@ -257830,6 +259777,48 @@
       }
     },
     {
+      "id": "osm-way-297142744",
+      "expected": {
+        "name": "イオン防府店",
+        "category": "mall",
+        "source_ids": [
+          "way/297142744"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5695829,
+            34.0523805
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "aeon:hofu",
+        "official_name": "イオン防府店",
+        "official_address": "山口県防府市中央町1-3",
+        "services": [
+          "商業施設"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "イオン防府店 公式所在地・店舗固有マーカー",
+            "url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%98%B2%E5%BA%9C%E5%BA%97/shop_info/map/",
+            "sha256": "df71617d4c83152e1ca87af425654bc45ac22514a86737b31d1678f520f5cc97"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
       "id": "osm-way-272544849",
       "expected": {
         "name": "大内郵便局",
@@ -258273,6 +260262,57 @@
         ],
         "source_url": "https://seven-eleven-ss-api.areamarker.com/v1/search-by-condition",
         "source_sha256": "2d47ca53f0896179883cdba02cd039346f1194b0b4d600126b240024f0e21606"
+      }
+    },
+    {
+      "id": "osm-node-6168362552",
+      "expected": {
+        "name": "イオン",
+        "category": "mall",
+        "source_ids": [
+          "node/6168362552"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.569401,
+            34.0521216
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "aeon:hofu",
+        "official_name": "イオン防府店",
+        "official_address": "山口県防府市中央町1-3",
+        "services": [
+          "商業施設"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "イオン防府店 公式所在地・店舗固有マーカー",
+            "url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%98%B2%E5%BA%9C%E5%BA%97/shop_info/map/",
+            "sha256": "df71617d4c83152e1ca87af425654bc45ac22514a86737b31d1678f520f5cc97"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      },
+      "duplicate_of": "osm-way-297142744",
+      "duplicate_point": {
+        "coordinates": [
+          131.569678,
+          34.052202
+        ],
+        "source_url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%98%B2%E5%BA%9C%E5%BA%97/shop_info/map/",
+        "source_sha256": "df71617d4c83152e1ca87af425654bc45ac22514a86737b31d1678f520f5cc97"
       }
     },
     {
@@ -267615,6 +269655,141 @@
       }
     },
     {
+      "id": "osm-way-1489391559",
+      "expected": {
+        "name": "周防大島町立橘図書館",
+        "category": "library",
+        "source_ids": [
+          "way/1489391559"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.2758956,
+            33.8984229
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "pref-library:52",
+        "official_name": "周防大島町立橘図書館",
+        "official_address": "大島郡周防大島町大字西安下庄445-2",
+        "services": [
+          "図書館"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "yamaguchi-public-libraries-current",
+            "url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+            "sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910"
+          },
+          {
+            "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+            "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。",
+          "文化施設位置2013年度の旧資料は元記録の同一性接続のみ。現名称と同じ完全住所を県立図書館の現行掲載ページで確認し、移転不存在や現在の位置精度を保証しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-305639557",
+      "expected": {
+        "name": "下松市役所",
+        "category": "townhall",
+        "source_ids": [
+          "way/305639557"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8703488,
+            34.0149761
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "KD0000100001",
+        "official_name": "下松市役所",
+        "official_address": "下松市大手町3丁目3-3",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "【下松市】公共施設一覧",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/bf5f69df-3d74-431f-9b47-7be54c9d2282/resource/7c9b0686-d1d6-4be2-a273-c89e504ad17a/download/352071_public_facility.csv",
+            "sha256": "fb27f910f18ba087aa16aeda955c09636e43d925a23b6883aa749599cfe067ea"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-601512228",
+      "expected": {
+        "name": "長門市役所",
+        "category": "townhall",
+        "source_ids": [
+          "way/601512228"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1824918,
+            34.3709133
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "AA0000000219",
+        "official_name": "長門市役所",
+        "official_address": "山口県長門市東深川１３３９番地２",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "【長門市】公共施設一覧.csv",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+            "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-3372813693",
       "expected": {
         "name": "金輪公園",
@@ -268294,6 +270469,168 @@
         ],
         "source_url": "https://www.city.iwakuni.lg.jp/map/list/list167.html",
         "source_sha256": "b427e0dfafae824370a8b2ccc30267216556222aab40bbb036eef3afb9ae8ae7"
+      }
+    },
+    {
+      "id": "osm-node-1423654563",
+      "expected": {
+        "name": "周防大島町立橘図書館",
+        "category": "library",
+        "source_ids": [
+          "node/1423654563"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.275926,
+            33.898402
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "pref-library:52",
+        "official_name": "周防大島町立橘図書館",
+        "official_address": "大島郡周防大島町大字西安下庄445-2",
+        "services": [
+          "図書館"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "yamaguchi-public-libraries-current",
+            "url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+            "sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910"
+          },
+          {
+            "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+            "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。",
+          "文化施設位置2013年度の旧資料は元記録の同一性接続のみ。現名称と同じ完全住所を県立図書館の現行掲載ページで確認し、移転不存在や現在の位置精度を保証しません。"
+        ]
+      },
+      "duplicate_of": "osm-way-1489391559",
+      "duplicate_point": {
+        "coordinates": [
+          132.275926,
+          33.898402
+        ],
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+        "source_sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+      }
+    },
+    {
+      "id": "osm-node-1423653882",
+      "expected": {
+        "name": "下松市役所",
+        "category": "townhall",
+        "source_ids": [
+          "node/1423653882"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8702342,
+            34.0148982
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "KD0000100001",
+        "official_name": "下松市役所",
+        "official_address": "下松市大手町3丁目3-3",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "【下松市】公共施設一覧",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/bf5f69df-3d74-431f-9b47-7be54c9d2282/resource/7c9b0686-d1d6-4be2-a273-c89e504ad17a/download/352071_public_facility.csv",
+            "sha256": "fb27f910f18ba087aa16aeda955c09636e43d925a23b6883aa749599cfe067ea"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。"
+        ]
+      },
+      "duplicate_of": "osm-way-305639557",
+      "duplicate_point": {
+        "coordinates": [
+          131.8699962,
+          34.0147755
+        ],
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/bf5f69df-3d74-431f-9b47-7be54c9d2282/resource/7c9b0686-d1d6-4be2-a273-c89e504ad17a/download/352071_public_facility.csv",
+        "source_sha256": "fb27f910f18ba087aa16aeda955c09636e43d925a23b6883aa749599cfe067ea"
+      }
+    },
+    {
+      "id": "osm-node-1423661235",
+      "expected": {
+        "name": "長門市役所",
+        "category": "townhall",
+        "source_ids": [
+          "node/1423661235"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1823605,
+            34.3709132
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "AA0000000219",
+        "official_name": "長門市役所",
+        "official_address": "山口県長門市東深川１３３９番地２",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "自治体の施設名簿に記載された名称・所在地と施設固有の位置を照合し、同一施設の2つの元記録を確認しました。元記録を保持して通常表示を1件に集約します。",
+        "sources": [
+          {
+            "title": "【長門市】公共施設一覧.csv",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+            "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+          }
+        ],
+        "limits": [
+          "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
+          "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
+          "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。"
+        ]
+      },
+      "duplicate_of": "osm-way-601512228",
+      "duplicate_point": {
+        "coordinates": [
+          131.1822286,
+          34.37096392
+        ],
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+        "source_sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
       }
     }
   ]
