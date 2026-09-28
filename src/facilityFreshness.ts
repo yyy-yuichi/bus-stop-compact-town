@@ -7,6 +7,8 @@ export interface FreshnessReview {
   event: 'closed' | 'temporary_closure' | 'opened' | 'listed' | 'renamed' | 'service_change' | 'scheduled_closure';
   effective_at: string | null; checked_at: string; summary: string;
   date_precision?: 'day' | 'month' | 'unknown';
+  scope?: 'registered_care_services';
+  affected_services?: string[];
   sources: { title: string; url: string }[]; limits: string[];
 }
 interface CurrentData {
@@ -24,6 +26,12 @@ const allowedChanges = new Set(['name', 'category', 'city', 'address', 'search_n
 export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): void {
   const statusForEvent = { closed: 'closed', temporary_closure: 'temporarily_closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
   if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || !validDate(checkedAt) || !validDate(r.checked_at) || r.checked_at > checkedAt || !r.summary?.trim()) throw Error('Invalid freshness event');
+  if (r.scope !== undefined || r.affected_services !== undefined) {
+    if (r.scope !== 'registered_care_services' || !['closed', 'temporary_closure'].includes(r.event) ||
+        !Array.isArray(r.affected_services) || !r.affected_services.length ||
+        r.affected_services.some(s => typeof s !== 'string' || !s.trim()) ||
+        new Set(r.affected_services).size !== r.affected_services.length) throw Error('Invalid care service event scope');
+  }
   // A current listing is not evidence of an opening date. Never invent one from a check/publication date.
   const precision = r.date_precision ?? (r.event === 'listed' ? 'unknown' : 'day');
   if (!['day', 'month', 'unknown'].includes(precision)) throw Error('Invalid date precision');
@@ -51,6 +59,14 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     if (!item.changes || Object.entries(item.changes).some(([k, v]) => !allowedChanges.has(k) || typeof v !== 'string' || !v.trim())) throw Error('Forbidden facility change');
     if (item.changes.category && !categories.has(item.changes.category)) throw Error('Invalid changed category');
     validateFreshnessReview(item.review, data.checked_at);
+    if (item.review.scope === 'registered_care_services') {
+      const originalServices = before.properties.registered_details?.service ?? [];
+      if (before.properties.category !== 'social_facility' || !originalServices.length ||
+          Object.keys(item.changes).length ||
+          !same([...new Set(originalServices)].sort(), [...item.review.affected_services!].sort())) {
+        throw Error('Care event must cover every original listed service');
+      }
+    }
     updates.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, freshness_review: structuredClone(item.review) } });
   }
   const verifications = new Map<string, ShoppingFeature>();
@@ -108,6 +124,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 /** Scheduled closures stay available; reviewed duplicate records retain direct links only. */
 export const facilityAvailable = (f: ShoppingFeature) => !['closed', 'temporarily_closed'].includes(f.properties.freshness_review?.status ?? '') && !f.properties.duplicate_of;
 export function freshnessDateText(r: FreshnessReview, category?: string): string {
+  if (r.scope === 'registered_care_services' && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（掲載介護サービスの休止を確認）' : '未確認（掲載介護サービスの指定廃止を確認）';
   if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
   if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（一時休止状態を確認）' : category === 'childcare' ? '未確認（閉園状態を確認）' : category === 'library' ? '未確認（閉館状態を確認）' : category === 'school' || category === 'college' ? '未確認（閉校状態を確認）' : '未確認（閉店状態を確認）';
   if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
@@ -116,6 +133,7 @@ export function freshnessDateText(r: FreshnessReview, category?: string): string
 export function freshnessLabel(f: ShoppingFeature): string {
   const r = f.properties.freshness_review;
   if (!r) return '';
+  if (r.scope === 'registered_care_services') return r.status === 'temporarily_closed' ? '掲載介護サービスの休止' : '掲載介護サービスの指定廃止';
   if (r.event === 'listed') return '公式掲載確認';
   if (['school', 'college'].includes(f.properties.category ?? '')) {
     if (r.status === 'closed') return '閉校確認';

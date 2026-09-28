@@ -27,7 +27,7 @@ try {
   for (const verified of facilities.filter(f => f.properties.registry_review)) {
     const review = verified.properties.registry_review;
     const html = render(verified.id);
-    assert(html.includes('行政台帳の掲載確認') && html.includes(review.source_as_of) && html.includes(review.checked_at));
+    assert(html.includes(review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認') && html.includes(review.source_as_of) && html.includes(review.checked_at));
     assert(html.includes(escaped(review.official_name)) && html.includes(escaped(review.official_address)));
     assert(html.includes('建物全体の営業・開業') && html.includes('現況・入口は未確認'));
     assert(!html.includes('開店・掲載確認'), 'Registry listing alone must not create a freshness event');
@@ -52,6 +52,13 @@ try {
   assert(render('official-sukiya-6146').includes('AM3～AM4は休業'));
   assert(render('osm-node-4826868298').includes('閉店日：未確認（閉店状態を確認）'));
   assert(render('osm-node-4041110344').includes('2024-04-27'));
+  for (const f of facilities.filter(f => f.properties.freshness_review?.scope === 'registered_care_services')) {
+    const html = render(f.id);
+    assert(html.includes('掲載介護サービス') && html.includes('建物全体や併設する別事業の閉鎖を意味しません'));
+    assert(html.includes('通常の検索・周辺施設・徒歩圏の候補には表示しません'));
+    assert(!html.includes('閉店確認') && !html.includes('閉店日'));
+    for (const service of f.properties.freshness_review.affected_services) assert(html.includes(escaped(service)));
+  }
   const reviewed = facilities.filter(f => f.properties.freshness_review);
   for (const f of reviewed) {
     const html = render(f.id);

@@ -2,6 +2,7 @@ import type { RegistryReview } from './facilityRegistry';
 
 const registryLabels: Record<RegistryReview['scope'], string> = {
   care_service_registry: '介護サービス事業者台帳',
+  care_publication_list: '介護サービス情報の公表対象一覧',
   school_register: '学校名簿',
   childcare_register: '保育・幼稚園等の施設名簿',
   medical_register: '保険医療機関名簿',
@@ -15,7 +16,7 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
 
 export default function FacilityRegistryDetails({ review }: { review?: RegistryReview }) {
   if (!review) return null;
-  const heading = review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認';
+  const heading = review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認';
   return <section className="registered-details verified-facility" aria-label={heading}>
     <h3>{heading}</h3>
     <p className="helper-text">{registryLabels[review.scope]}の掲載内容を照合しました。建物全体の営業・開業、現地での稼働、入口や現在の利用可否を確認したものではありません。</p>

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-28",
+  "baseline_head": "faa1528c4a70a0836ed1e34ac3a77c64275881fa",
+  "previous_checked_at": "2026-09-28",
+  "previous_overlay_sha256": "679785874ebe110d27c47ea541bea0b15d7156d35506c6c0ea3a2a85015ed726",
+  "previous_overlay_hash_format": "utf8_lf",
+  "baseline_hash_format": "utf8_lf",
+  "baseline_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "45a25717ea616b5d559eda323681c65d63a13eb0e4efdf4a60de474d76e2074e"
+  },
+  "candidates": 3665,
+  "registry_reviews": 81,
+  "freshness_events": 80,
+  "additions": 0,
+  "corrections": 80,
+  "verified_no_change": 81,
+  "held": 3504,
+  "previously_completed_excluded": 4099,
+  "groups": [
+    {
+      "group": "education-medical",
+      "reviews": 1,
+      "events": 15,
+      "corrections": 15,
+      "verified_no_change": 1
+    },
+    {
+      "group": "welfare",
+      "reviews": 4,
+      "events": 64,
+      "corrections": 64,
+      "verified_no_change": 4
+    },
+    {
+      "group": "commercial",
+      "reviews": 9,
+      "events": 1,
+      "corrections": 1,
+      "verified_no_change": 9
+    },
+    {
+      "group": "public",
+      "reviews": 67,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 67
+    }
+  ],
+  "private_input_sha256": {
+    "outputs\\facility-registry-008d-20260928\\root-hold-overrides.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/facility-registry-008d-20260928/education-medical/accepted.json": "f62edf19334e6b04fd31e865d2a81de67e37696f2fc9ebde32a463ecc47c4d4f",
+    "outputs/facility-registry-008d-20260928/education-medical/updates.json": "ed32fbdda3f623135fbf4f57bd44283e0e969389f5dcd0b0b606e3d1d6952a38",
+    "outputs/facility-registry-008d-20260928/welfare/accepted.json": "64d89144bb2ac321ab045864d41f9fd522bb50a9d4a7d0bd9f09281788400ad7",
+    "outputs/facility-registry-008d-20260928/welfare/updates.json": "150402280fa55a6dd53560aec5e9bffa061c8c13f7daaecae00cf455cf7fe0f9",
+    "outputs/facility-registry-008d-20260928/commercial/accepted.json": "0dbe69eaa1c87d1a0cc9a3d134bc3adabf41ce36dd2fb885422d9f1002655d99",
+    "outputs/facility-registry-008d-20260928/commercial/updates.json": "76fb3a2e34d5ffb3676c1e8ee2bdffe3263eeb5ec190c3ccd0eeb02e22ef3f90",
+    "outputs/facility-registry-008d-20260928/public/accepted.json": "51977644308d31c7899ae1ed1b276c7cbc5cdb0aaa9f176889f0db897f3b0464",
+    "outputs/facility-registry-008d-20260928/public/updates.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  "pending_inputs": [],
+  "root_hold_overrides": 0,
+  "limits": [
+    "掲載照合は当日の営業・開館・受入・入口の現況保証ではありません。",
+    "旧施設資料は同一性確認に限定。新しい精密な公式施設点との矛盾、完全住所差、同一施設の別IDは保留します。",
+    "元の施設ID・座標・出典と以前の判断を保持。不掲載だけで閉鎖を推定しません。",
+    "今回新たな証拠を得ていない残件も保留として引き継ぎ、個別確認完了と数えません。",
+    "旧店舗の終了日・廃止実施日・最終営業日を証拠で区別し、未知の日付を推定しません。"
+  ]
+}
