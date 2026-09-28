@@ -4901,6 +4901,2596 @@
     }
   },
   {
+    "id": "civic-care-3571100209-45ffef0c73",
+    "expected": {
+      "name": "長門市社協ゆや訪問介護事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:285"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3571100209の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は長門市油谷新別名964へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        },
+        {
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21"
+        },
+        {
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720"
+        },
+        {
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2025-03-17）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "長門市社協ゆや訪問介護事業所",
+      "baseline_address": "長門市油谷新別名10803",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:285"
+      ],
+      "original_number": "3571100209",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:285",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 285,
+          "csv_logical_row": 286,
+          "number": "3571100209",
+          "municipal_id": "",
+          "name": "長門市社協ゆや訪問介護事業所",
+          "address": "長門市油谷新別名10803",
+          "service": "訪問介護",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "phone": "0837-32-0931",
+          "point": [
+            131.060364,
+            34.373348
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3571100209",
+          "name": "長門市社協訪問介護事業所",
+          "address": "長門市油谷新別名964",
+          "service": "訪問介護",
+          "phone": "0837-32-0932",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "designation_dates": [
+            "2005/03/22",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/28",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35211.csv",
+          "line": 20,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "source_sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        }
+      ],
+      "original_services": [
+        "訪問介護"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-shakyo-relocation.html",
+          "source_url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "source_sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21",
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "names": [
+            "長門市社協ゆや訪問介護事業所",
+            "長門市社協ゆや居宅介護支援事業所",
+            "長門市西地域包括支援センター"
+          ],
+          "new_address": "長門市油谷新別名964番地（YYふれあいセンター内）",
+          "new_business_start": "2025-03-17",
+          "phones": {
+            "長門市社協ゆや訪問介護事業所": "0837-32-0932",
+            "長門市社協ゆや居宅介護支援事業所": "0837-32-0933",
+            "長門市西地域包括支援センター": "0837-33-2020"
+          },
+          "fact": "3事業所の移転と新業務開始日を明記。訪問介護の電話は新番号と明記。旧最終業務日は示さない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-yy-opening.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "source_sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720",
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "new_address": "長門市油谷新別名964番地",
+          "opening_date": "2025-03-17",
+          "fact": "移転先の複合施設供用開始を市が報告。旧事業所の最終日とはしない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-old-health-center.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "source_sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0",
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "old_building_address": "長門市油谷新別名10803番地",
+          "new_building_use": "油谷中央交流プラザ",
+          "effective_date": "2025-04-01",
+          "fact": "元介護事業所の住所は旧油谷保健福祉センターに該当。同建物へ別用途が入るため建物全体の閉鎖とはしない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2025-03-17",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [
+        {
+          "number": "3571100209",
+          "name": "長門市社協ゆや訪問介護事業所",
+          "address": "山口県長門市油谷新別名964番地YYふれあいセンター内",
+          "address2": "YYふれあいセンター内",
+          "service": "訪問介護",
+          "phone": "0837-32-0932",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "operator_number": "4250005004736",
+          "point": [
+            131.05896065225724,
+            34.373425421730076
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29321,
+          "source_as_of": "2026-06-30",
+          "distance_m": 129.0835
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3571100209",
+          "name": "長門市社協ゆや訪問介護事業所",
+          "address": "山口県長門市油谷新別名964番地YYふれあいセンター内",
+          "address2": "YYふれあいセンター内",
+          "service": "訪問介護",
+          "phone": "0837-32-0932",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "operator_number": "4250005004736",
+          "point": [
+            131.05896065225724,
+            34.373425421730076
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29321,
+          "source_as_of": "2026-06-30",
+          "distance_m": 129.0835
+        }
+      ]
+    }
+  },
+  {
+    "id": "civic-care-3571100233-9b7649b5da",
+    "expected": {
+      "name": "長門市社協ゆや居宅介護支援事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:922"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3571100233の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は長門市油谷新別名964へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        },
+        {
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21"
+        },
+        {
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720"
+        },
+        {
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2025-03-17）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "長門市社協ゆや居宅介護支援事業所",
+      "baseline_address": "長門市油谷新別名10803",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:922"
+      ],
+      "original_number": "3571100233",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:922",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 922,
+          "csv_logical_row": 923,
+          "number": "3571100233",
+          "municipal_id": "",
+          "name": "長門市社協ゆや居宅介護支援事業所",
+          "address": "長門市油谷新別名10803",
+          "service": "居宅介護支援",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "phone": "0837-32-0933",
+          "point": [
+            131.060364,
+            34.373348
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3571100233",
+          "name": "長門市社協ゆや居宅介護支援事業所",
+          "address": "長門市油谷新別名964",
+          "service": "居宅介護支援",
+          "phone": "0837-32-0933",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "designation_dates": [
+            "2005/03/22",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/28",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35211.csv",
+          "line": 9,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "source_sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        }
+      ],
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-shakyo-relocation.html",
+          "source_url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "source_sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21",
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "names": [
+            "長門市社協ゆや訪問介護事業所",
+            "長門市社協ゆや居宅介護支援事業所",
+            "長門市西地域包括支援センター"
+          ],
+          "new_address": "長門市油谷新別名964番地（YYふれあいセンター内）",
+          "new_business_start": "2025-03-17",
+          "phones": {
+            "長門市社協ゆや訪問介護事業所": "0837-32-0932",
+            "長門市社協ゆや居宅介護支援事業所": "0837-32-0933",
+            "長門市西地域包括支援センター": "0837-33-2020"
+          },
+          "fact": "3事業所の移転と新業務開始日を明記。訪問介護の電話は新番号と明記。旧最終業務日は示さない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-yy-opening.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "source_sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720",
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "new_address": "長門市油谷新別名964番地",
+          "opening_date": "2025-03-17",
+          "fact": "移転先の複合施設供用開始を市が報告。旧事業所の最終日とはしない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-old-health-center.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "source_sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0",
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "old_building_address": "長門市油谷新別名10803番地",
+          "new_building_use": "油谷中央交流プラザ",
+          "effective_date": "2025-04-01",
+          "fact": "元介護事業所の住所は旧油谷保健福祉センターに該当。同建物へ別用途が入るため建物全体の閉鎖とはしない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2025-03-17",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [
+        {
+          "number": "3571100233",
+          "name": "長門市社協ゆや居宅介護支援事業所",
+          "address": "山口県長門市油谷新別名964番地",
+          "address2": "",
+          "service": "居宅介護支援",
+          "phone": "0837-32-0933",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "operator_number": "4250005004736",
+          "point": [
+            131.05897666843467,
+            34.37339386508137
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29763,
+          "source_as_of": "2026-06-30",
+          "distance_m": 127.4283
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3571100233",
+          "name": "長門市社協ゆや居宅介護支援事業所",
+          "address": "山口県長門市油谷新別名964番地",
+          "address2": "",
+          "service": "居宅介護支援",
+          "phone": "0837-32-0933",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "operator_number": "4250005004736",
+          "point": [
+            131.05897666843467,
+            34.37339386508137
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29763,
+          "source_as_of": "2026-06-30",
+          "distance_m": 127.4283
+        }
+      ]
+    }
+  },
+  {
+    "id": "civic-care-3501100030-44e521d01b",
+    "expected": {
+      "name": "長門市西地域包括支援センター",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1000"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3501100030の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は長門市油谷新別名964へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        },
+        {
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21"
+        },
+        {
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720"
+        },
+        {
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2025-03-17）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "長門市西地域包括支援センター",
+      "baseline_address": "長門市油谷新別名10803",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.060364,
+          34.373348
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1000"
+      ],
+      "original_number": "3501100030",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1000",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 1000,
+          "csv_logical_row": 1001,
+          "number": "3501100030",
+          "municipal_id": "",
+          "name": "長門市西地域包括支援センター",
+          "address": "長門市油谷新別名10803",
+          "service": "介護予防支援",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "phone": "0837-33-2020",
+          "point": [
+            131.060364,
+            34.373348
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3501100030",
+          "name": "長門市西地域包括支援センター",
+          "address": "長門市油谷新別名964",
+          "service": "介護予防支援",
+          "phone": "0837-33-2020",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "designation_dates": [
+            "2019/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2031/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35211.csv",
+          "line": 16,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35211&od=1",
+          "source_sha256": "5429e8028b4d766ecb9f6ea0c56a4a9b0ced9fde845b5b6563d68fee98d1ac6c"
+        }
+      ],
+      "original_services": [
+        "介護予防支援"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-shakyo-relocation.html",
+          "source_url": "https://nagatoshakyo.jp/information/%E4%BA%8B%E6%A5%AD%E6%89%80%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "source_sha256": "9da198231e06257c58308085c95ddf1d58c8a26794649ce2f167a3884befaa21",
+          "title": "長門市社会福祉協議会 3事業所の移転お知らせ",
+          "operator": "社会福祉法人長門市社会福祉協議会",
+          "names": [
+            "長門市社協ゆや訪問介護事業所",
+            "長門市社協ゆや居宅介護支援事業所",
+            "長門市西地域包括支援センター"
+          ],
+          "new_address": "長門市油谷新別名964番地（YYふれあいセンター内）",
+          "new_business_start": "2025-03-17",
+          "phones": {
+            "長門市社協ゆや訪問介護事業所": "0837-32-0932",
+            "長門市社協ゆや居宅介護支援事業所": "0837-32-0933",
+            "長門市西地域包括支援センター": "0837-33-2020"
+          },
+          "fact": "3事業所の移転と新業務開始日を明記。訪問介護の電話は新番号と明記。旧最終業務日は示さない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-yy-opening.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/250317yuya.html",
+          "source_sha256": "afac510af04b837a84066d4cf4dcc3d8065ce79e465d151eedefdcda7f15f720",
+          "title": "長門市 油谷支所新庁舎・YYふれあいセンター供用開始",
+          "new_address": "長門市油谷新別名964番地",
+          "opening_date": "2025-03-17",
+          "fact": "移転先の複合施設供用開始を市が報告。旧事業所の最終日とはしない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/nagato-old-health-center.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/soshiki/45/58912.html",
+          "source_sha256": "9f736509a304b7a69f2a5a68e272505a11c4f6f3e9b50c8c0a456dd5cc8e0fa0",
+          "title": "長門市 油谷中央公民館の名称変更と旧保健福祉センターへの移転",
+          "old_building_address": "長門市油谷新別名10803番地",
+          "new_building_use": "油谷中央交流プラザ",
+          "effective_date": "2025-04-01",
+          "fact": "元介護事業所の住所は旧油谷保健福祉センターに該当。同建物へ別用途が入るため建物全体の閉鎖とはしない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2025-03-17",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3570601231-b698eee891",
+    "expected": {
+      "name": "さんコープ・防府",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:133"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.568466,
+          34.055336
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3570601231の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は防府市西仁井令1－21－65へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        },
+        {
+          "title": "さんコープ デイサービスここえみ・天神口からの移転と改称",
+          "url": "https://san-coop.jp/tenjin",
+          "sha256": "8be18fed6ad5fa53700c440c8f8e49e577948268e021d15441b276f4c2515c08"
+        },
+        {
+          "title": "さんコープ 防府地区のサービス案内",
+          "url": "https://san-coop.jp/houfu",
+          "sha256": "763765788f06a103be4be3e6d50b77555e7a7cd29f396202f56a3df93bf952a6"
+        },
+        {
+          "title": "さんコープ 防府施設案内（八王子から西仁井令へ移転）",
+          "url": "https://san-coop.jp/facility",
+          "sha256": "c5b576cc87a5a5bc50783ed1bd53a670a46d2243c6a3a52852dcfab43bffef20"
+        },
+        {
+          "title": "山口県生活協同組合連合会 やまぐちの生協2025・さんコープ施設移転報告",
+          "url": "https://yamaguchi-kenren-coop.jp/wp/wp-content/uploads/2014/08/%EF%BC%98%EF%BC%8Dp25-26_%E3%82%84%E3%81%BE%E3%81%90%E3%81%A1%E3%81%AE%E3%81%AE%E7%94%9F%E5%8D%942025%E7%89%88%E5%8E%9F%E7%A8%BF%EF%BC%88%E7%A6%8F%E7%A5%89%E7%94%9F%E5%8D%94%E3%81%95%E3%82%93%E3%82%B3%E3%83%BC%E3%83%97%EF%BC%89.pdf",
+          "sha256": "6f383ab37db11b55b7dff63f683c20dc898cb8fbd81e69ad730f8004fba50204"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2024-11）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "さんコープ・防府",
+      "baseline_address": "防府市八王子1－16－2",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.568466,
+          34.055336
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:133"
+      ],
+      "original_number": "3570601231",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:133",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 133,
+          "csv_logical_row": 134,
+          "number": "3570601231",
+          "municipal_id": "",
+          "name": "さんコープ・防府",
+          "address": "防府市八王子1－16－2",
+          "service": "訪問介護",
+          "operator": "福祉生活協同組合さんコープ",
+          "phone": "0835-26-0255",
+          "point": [
+            131.568466,
+            34.055336
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570601231",
+          "name": "さんコープ訪問介護 防府",
+          "address": "防府市西仁井令1－21－65",
+          "service": "訪問介護",
+          "phone": "0835-26-0255",
+          "operator": "福祉生活協同組合さんコープ",
+          "designation_dates": [
+            "2007/12/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2031/11/30",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35206.csv",
+          "line": 71,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "source_sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        }
+      ],
+      "original_services": [
+        "訪問介護"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-day-relocation.html",
+          "source_url": "https://san-coop.jp/tenjin",
+          "source_sha256": "8be18fed6ad5fa53700c440c8f8e49e577948268e021d15441b276f4c2515c08",
+          "title": "さんコープ デイサービスここえみ・天神口からの移転と改称",
+          "old_name": "天神口デイサービス",
+          "new_name": "デイサービスここえみ",
+          "new_address": "防府市西仁井令1丁目21-65",
+          "phone": "0835-28-7293",
+          "relocation_date": "2024-11-18",
+          "fact": "2024年11月18日に防府市西仁井令へ移転し改称と明記。旧最終利用日は示さない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-hofu-relocation.html",
+          "source_url": "https://san-coop.jp/houfu",
+          "source_sha256": "763765788f06a103be4be3e6d50b77555e7a7cd29f396202f56a3df93bf952a6",
+          "title": "さんコープ 防府地区のサービス案内",
+          "old_name": "天神口デイサービス",
+          "new_name": "デイサービスここえみ",
+          "relocation_date": "2024-11-18",
+          "fact": "移転・改称後に訪問介護とともに運営すると明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-facility.html",
+          "source_url": "https://san-coop.jp/facility",
+          "source_sha256": "c5b576cc87a5a5bc50783ed1bd53a670a46d2243c6a3a52852dcfab43bffef20",
+          "title": "さんコープ 防府施設案内（八王子から西仁井令へ移転）",
+          "old_area": "八王子",
+          "new_area": "西仁井令",
+          "fact": "防府事業所の旧地区と新地区を明示して移転済みと記載。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-federation-2025.pdf",
+          "source_url": "https://yamaguchi-kenren-coop.jp/wp/wp-content/uploads/2014/08/%EF%BC%98%EF%BC%8Dp25-26_%E3%82%84%E3%81%BE%E3%81%90%E3%81%A1%E3%81%AE%E3%81%AE%E7%94%9F%E5%8D%942025%E7%89%88%E5%8E%9F%E7%A8%BF%EF%BC%88%E7%A6%8F%E7%A5%89%E7%94%9F%E5%8D%94%E3%81%95%E3%82%93%E3%82%B3%E3%83%BC%E3%83%97%EF%BC%89.pdf",
+          "source_sha256": "6f383ab37db11b55b7dff63f683c20dc898cb8fbd81e69ad730f8004fba50204",
+          "title": "山口県生活協同組合連合会 やまぐちの生協2025・さんコープ施設移転報告",
+          "pdf_page": 2,
+          "operator": "福祉生活協同組合さんコープ",
+          "relocation_month": "2024-11",
+          "names": [
+            {
+              "old": "天神口デイサービス",
+              "new": "デイサービスここえみ"
+            },
+            {
+              "old": "さんコープ防府",
+              "new": "訪問介護防府"
+            }
+          ],
+          "fact": "防府事業所を2024年11月に移転・新築し、2事業所を旧新名付きで報告。新築・移転月を旧最終営業月へ転用しない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2024-11",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [
+        {
+          "number": "3570601231",
+          "name": "さんコープ訪問介護防府",
+          "address": "防府市西仁井令1丁目２１－６５",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "０８３５－２６－０２５５",
+          "operator": "福祉生活協同組合さんコープ",
+          "operator_number": "1250005000663",
+          "point": [
+            131.54243246215677,
+            34.050013695951385
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29247,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2470.3469
+        }
+      ],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3590600312-c1e3d0936f",
+    "expected": {
+      "name": "さんコープ・天神口デイサービス",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1359"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.568466,
+          34.055336
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3590600312の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は防府市西仁井令1－21－65へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        },
+        {
+          "title": "さんコープ デイサービスここえみ・天神口からの移転と改称",
+          "url": "https://san-coop.jp/tenjin",
+          "sha256": "8be18fed6ad5fa53700c440c8f8e49e577948268e021d15441b276f4c2515c08"
+        },
+        {
+          "title": "さんコープ 防府地区のサービス案内",
+          "url": "https://san-coop.jp/houfu",
+          "sha256": "763765788f06a103be4be3e6d50b77555e7a7cd29f396202f56a3df93bf952a6"
+        },
+        {
+          "title": "さんコープ 防府施設案内（八王子から西仁井令へ移転）",
+          "url": "https://san-coop.jp/facility",
+          "sha256": "c5b576cc87a5a5bc50783ed1bd53a670a46d2243c6a3a52852dcfab43bffef20"
+        },
+        {
+          "title": "山口県生活協同組合連合会 やまぐちの生協2025・さんコープ施設移転報告",
+          "url": "https://yamaguchi-kenren-coop.jp/wp/wp-content/uploads/2014/08/%EF%BC%98%EF%BC%8Dp25-26_%E3%82%84%E3%81%BE%E3%81%90%E3%81%A1%E3%81%AE%E3%81%AE%E7%94%9F%E5%8D%942025%E7%89%88%E5%8E%9F%E7%A8%BF%EF%BC%88%E7%A6%8F%E7%A5%89%E7%94%9F%E5%8D%94%E3%81%95%E3%82%93%E3%82%B3%E3%83%BC%E3%83%97%EF%BC%89.pdf",
+          "sha256": "6f383ab37db11b55b7dff63f683c20dc898cb8fbd81e69ad730f8004fba50204"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2024-11-18）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "さんコープ・天神口デイサービス",
+      "baseline_address": "防府市八王子1－16－2",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.568466,
+          34.055336
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1359"
+      ],
+      "original_number": "3590600312",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1359",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 1359,
+          "csv_logical_row": 1360,
+          "number": "3590600312",
+          "municipal_id": "",
+          "name": "さんコープ・天神口デイサービス",
+          "address": "防府市八王子1－16－2",
+          "service": "地域密着型通所介護",
+          "operator": "福祉生活協同組合",
+          "phone": "0835-28-7293",
+          "point": [
+            131.568466,
+            34.055336
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3590600312",
+          "name": "さんコープ デイサービスここえみ",
+          "address": "防府市西仁井令1－21－65",
+          "service": "地域密着型通所介護",
+          "phone": "0835287293  ",
+          "operator": "福祉生活協同組合",
+          "designation_dates": [
+            "2016/12/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2028/11/30",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35206.csv",
+          "line": 423,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "source_sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        }
+      ],
+      "original_services": [
+        "地域密着型通所介護"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-day-relocation.html",
+          "source_url": "https://san-coop.jp/tenjin",
+          "source_sha256": "8be18fed6ad5fa53700c440c8f8e49e577948268e021d15441b276f4c2515c08",
+          "title": "さんコープ デイサービスここえみ・天神口からの移転と改称",
+          "old_name": "天神口デイサービス",
+          "new_name": "デイサービスここえみ",
+          "new_address": "防府市西仁井令1丁目21-65",
+          "phone": "0835-28-7293",
+          "relocation_date": "2024-11-18",
+          "fact": "2024年11月18日に防府市西仁井令へ移転し改称と明記。旧最終利用日は示さない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-hofu-relocation.html",
+          "source_url": "https://san-coop.jp/houfu",
+          "source_sha256": "763765788f06a103be4be3e6d50b77555e7a7cd29f396202f56a3df93bf952a6",
+          "title": "さんコープ 防府地区のサービス案内",
+          "old_name": "天神口デイサービス",
+          "new_name": "デイサービスここえみ",
+          "relocation_date": "2024-11-18",
+          "fact": "移転・改称後に訪問介護とともに運営すると明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-facility.html",
+          "source_url": "https://san-coop.jp/facility",
+          "source_sha256": "c5b576cc87a5a5bc50783ed1bd53a670a46d2243c6a3a52852dcfab43bffef20",
+          "title": "さんコープ 防府施設案内（八王子から西仁井令へ移転）",
+          "old_area": "八王子",
+          "new_area": "西仁井令",
+          "fact": "防府事業所の旧地区と新地区を明示して移転済みと記載。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sancoop-federation-2025.pdf",
+          "source_url": "https://yamaguchi-kenren-coop.jp/wp/wp-content/uploads/2014/08/%EF%BC%98%EF%BC%8Dp25-26_%E3%82%84%E3%81%BE%E3%81%90%E3%81%A1%E3%81%AE%E3%81%AE%E7%94%9F%E5%8D%942025%E7%89%88%E5%8E%9F%E7%A8%BF%EF%BC%88%E7%A6%8F%E7%A5%89%E7%94%9F%E5%8D%94%E3%81%95%E3%82%93%E3%82%B3%E3%83%BC%E3%83%97%EF%BC%89.pdf",
+          "source_sha256": "6f383ab37db11b55b7dff63f683c20dc898cb8fbd81e69ad730f8004fba50204",
+          "title": "山口県生活協同組合連合会 やまぐちの生協2025・さんコープ施設移転報告",
+          "pdf_page": 2,
+          "operator": "福祉生活協同組合さんコープ",
+          "relocation_month": "2024-11",
+          "names": [
+            {
+              "old": "天神口デイサービス",
+              "new": "デイサービスここえみ"
+            },
+            {
+              "old": "さんコープ防府",
+              "new": "訪問介護防府"
+            }
+          ],
+          "fact": "防府事業所を2024年11月に移転・新築し、2事業所を旧新名付きで報告。新築・移転月を旧最終営業月へ転用しない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2024-11-18",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [
+        {
+          "number": "3590600312",
+          "name": "さんこーぷ・でいさーびすここえみ",
+          "address": "山口県防府市西仁井令１－２１－６５",
+          "address2": "",
+          "service": "地域密着型通所介護",
+          "phone": "０８３５－２８－７２９３",
+          "operator": "福祉生活協同組合さんコープ",
+          "operator_number": "1250005000663",
+          "point": [
+            131.5685062,
+            34.0554705
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_780_all_20260709180927.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_780_all_20260709180927.csv",
+          "source_sha256": "19ed2778131c86f8e824e1ade115cec53c42a9a2a21eb0c5e0dcc68474c5581b",
+          "csv_logical_row": 14652,
+          "source_as_of": "2026-06-30",
+          "distance_m": 15.4074
+        }
+      ],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3577300217-b0ae20f7cc",
+    "expected": {
+      "name": "特別養護老人ホーム天王園",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:957",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1255"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.940994,
+          34.025928
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の明示移転告知・報告を、元公的番号3577300217の名称・旧完全住所・法人・電話・全掲載サービスと現指定台帳へ接続しました。対象事業所は周南市大河内10518－10へ移転しており、元記録の旧所在地での業務終了として扱います。旧最終営業日は公表資料から確定できません。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（旧住所・番号）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 介護サービス事業所指定台帳（現移転先・同番号・元全サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+          "sha256": "bf8af3864354628856fe4c0797557c89ca1560d5140bbd9fff106d1b8fc41c92"
+        },
+        {
+          "title": "一仁会 法人沿革・特別養護老人ホーム天王園の新築移転",
+          "url": "https://www.tennoen.com/company/",
+          "sha256": "6ffb656bfe18fcbdf1e5965cc0c5cb5f89063db3fd43a5b22d7fcbb683dd193a"
+        }
+      ],
+      "limits": [
+        "旧所在地の当該事業所の終了に限ります。建物全体の閉鎖、法人解散、介護サービス指定の廃止を意味しません。",
+        "新拠点は現指定台帳に同番号で掲載されています。新所在地・新設日へ元の座標を流用しません。",
+        "資料中の移転・新業務開始日（2024-01-17）は旧最終営業日とは別のため、終了日は不明のまま保持します。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。同住所の別名・別サービスの終了は推定しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_old_and_current_same_care_number_operator_phone_all_original_services",
+      "baseline_name": "特別養護老人ホーム天王園",
+      "baseline_address": "周南市大河内1109－2",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.940994,
+          34.025928
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:957",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1255"
+      ],
+      "original_number": "3577300217",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:957",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 957,
+          "csv_logical_row": 958,
+          "number": "3577300217",
+          "municipal_id": "",
+          "name": "特別養護老人ホーム天王園",
+          "address": "周南市大河内1109－2",
+          "service": "短期入所生活介護",
+          "operator": "社会福祉法人 一仁会",
+          "phone": "0833-91-5550",
+          "point": [
+            131.940994,
+            34.025928
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1255",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1255,
+          "csv_logical_row": 1256,
+          "number": "3577300217",
+          "municipal_id": "",
+          "name": "特別養護老人ホーム天王園",
+          "address": "周南市大河内1109－2",
+          "service": "介護老人福祉施設",
+          "operator": "社会福祉法人 一仁会",
+          "phone": "0833-91-5550",
+          "point": [
+            131.940994,
+            34.025928
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3577300217",
+          "name": "特別養護老人ホーム天王園",
+          "address": "周南市大河内10518－10",
+          "service": "短期入所生活介護",
+          "phone": "0833-91-5550",
+          "operator": "社会福祉法人 一仁会",
+          "designation_dates": [
+            "2000/04/01",
+            "2006/04/01"
+          ],
+          "expiry_dates": [
+            "2032/03/31",
+            "2032/03/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35215.csv",
+          "line": 523,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+          "source_sha256": "bf8af3864354628856fe4c0797557c89ca1560d5140bbd9fff106d1b8fc41c92"
+        },
+        {
+          "number": "3577300217",
+          "name": "特別養護老人ホーム天王園",
+          "address": "周南市大河内10518－10",
+          "service": "介護老人福祉施設",
+          "phone": "0833-91-5550",
+          "operator": "社会福祉法人 一仁会",
+          "designation_dates": [
+            "2000/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2032/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35215.csv",
+          "line": 581,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+          "source_sha256": "bf8af3864354628856fe4c0797557c89ca1560d5140bbd9fff106d1b8fc41c92"
+        }
+      ],
+      "original_services": [
+        "介護老人福祉施設",
+        "短期入所生活介護"
+      ],
+      "official_relocation": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/tennoen-company.html",
+          "source_url": "https://www.tennoen.com/company/",
+          "source_sha256": "6ffb656bfe18fcbdf1e5965cc0c5cb5f89063db3fd43a5b22d7fcbb683dd193a",
+          "title": "一仁会 法人沿革・特別養護老人ホーム天王園の新築移転",
+          "operator": "社会福祉法人一仁会",
+          "name": "特別養護老人ホーム天王園",
+          "relocation_date": "2024-01-17",
+          "fact": "令和6年1月17日の特別養護老人ホーム天王園新築移転を明記。別名デイサービス・居宅支援・グループホームの移転は推定しない。"
+        }
+      ],
+      "new_business_or_relocation_date": "2024-01-17",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "identity_checks": {
+        "same_official_number": true,
+        "all_original_services": true,
+        "same_operator": true,
+        "phone_same_or_explicit_new": true,
+        "full_old_and_new_address_preserved": true,
+        "current_intervals_active": true
+      },
+      "national_rows": [
+        {
+          "number": "3577300217",
+          "name": "特別養護老人ホーム天王園",
+          "address": "山口県周南市大字大河内10518番10",
+          "address2": "",
+          "service": "短期入所生活介護",
+          "phone": "0833-91-5550",
+          "operator": "社会福祉法人一仁会",
+          "operator_number": "1250005005811",
+          "point": [
+            131.94085748385314,
+            34.02598777295988
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_210_all_20260709180538.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "source_sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2",
+          "csv_logical_row": 9424,
+          "source_as_of": "2026-06-30",
+          "distance_m": 14.2286
+        },
+        {
+          "number": "3577300217",
+          "name": "特別養護老人ホーム天王園",
+          "address": "山口県周南市大字大河内10518番10",
+          "address2": "",
+          "service": "介護老人福祉施設",
+          "phone": "0833-91-5550",
+          "operator": "社会福祉法人一仁会",
+          "operator_number": "1250005005811",
+          "point": [
+            131.94088967036132,
+            34.02599221890282
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_510_all_20260709180754.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+          "source_sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1",
+          "csv_logical_row": 7118,
+          "source_as_of": "2026-06-30",
+          "distance_m": 11.9764
+        }
+      ],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3570102040-15c587fd9d",
+    "expected": {
+      "name": "下関市社協下関ホームヘルパーステーション",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:30"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941864,
+          33.968594
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570102040の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。現台帳と公式移転告知により、当該事業所は下関市上田中町1－16－3へ移転しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "旧最終営業日・統合日または移転日は原資料に明記されず、不明のまま保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_original_number_operator_phone_all_original_services",
+      "baseline_name": "下関市社協下関ホームヘルパーステーション",
+      "baseline_address": "下関市貴船町3－4－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941864,
+          33.968594
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:30"
+      ],
+      "original_number": "3570102040",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:30",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 30,
+          "csv_logical_row": 31,
+          "number": "3570102040",
+          "municipal_id": "",
+          "name": "下関市社協下関ホームヘルパーステーション",
+          "address": "下関市貴船町3－4－1",
+          "service": "訪問介護",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "phone": "083-232-2005",
+          "point": [
+            130.941864,
+            33.968594
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570102040",
+          "name": "下関市社協下関ホームヘルパーステーション",
+          "address": "下関市上田中町1－16－3",
+          "service": "訪問介護",
+          "phone": "083-232-2005",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "designation_dates": [
+            "2005/02/14",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/13",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 131,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "訪問介護"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/shimoshakyo-facilities.html",
+          "source_url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "source_sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c",
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "entries": [
+            {
+              "number": "3570102040",
+              "name": "下関市社協下関ホームヘルパーステーション",
+              "address": "下関市上田中町一丁目16番3号",
+              "phone": "083-232-2005",
+              "fact": "福祉プラザしものせきへ移転と当該番号の表に明記。日付不明。"
+            },
+            {
+              "number": "3570102008",
+              "name": "下関市社協居宅介護支援事業所",
+              "address": "下関市貴船町三丁目1番25号",
+              "phone": "083-232-3400",
+              "fact": "令和6年4月から名称変更・令和7年2月25日事務所移転を当該番号の表に明記。"
+            },
+            {
+              "number": "3560190153",
+              "name": "下関市社協ほうほく訪問看護ステーション",
+              "address": "下関市豊北町滝部3140番地1",
+              "phone": "083-782-1594",
+              "fact": "当該番号の受付窓口に「下関市社協ほうほく訪問看護ステーションは廃止となりました」と明記。日付不明。"
+            },
+            {
+              "number": "3570102024",
+              "name": "下関市社協居宅介護支援事業所（事業統合）",
+              "address": "下関市貴船町三丁目4番1号",
+              "phone": "083-775-4139",
+              "fact": "元豊浦居宅の公的番号と電話を保持した表で「下関市社協居宅介護支援事業所に統合しました」と明記。住所は統合先側の旧記載で、現台帳の現所在地とは区別する。"
+            },
+            {
+              "number": "3570102016",
+              "name": "下関市社協北部居宅介護支援事業所（統合）",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-784-1481",
+              "fact": "元豊北居宅の公的番号と電話を保持した表で「下関市社協 北部居宅介護支援事業所に統合しました」と明記。"
+            },
+            {
+              "number": "3570101992",
+              "name": "下関市社協北部居宅介護支援事業所",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-766-3956",
+              "fact": "名称変更後の現事業所の別番号として掲載。統合前番号と混同しない。"
+            }
+          ]
+        }
+      ],
+      "event_kind": "relocation",
+      "new_business_or_relocation_date": null,
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [
+        {
+          "number": "3570102040",
+          "name": "下関市社協　下関ホームヘルパーステーション",
+          "address": "山口県下関市上田中町一丁目１６番３号福祉プラザしものせき",
+          "address2": "福祉プラザしものせき",
+          "service": "訪問介護",
+          "phone": "083-232-2005",
+          "operator": "社会福祉法人　下関市社会福祉協議会",
+          "operator_number": "3250005004150",
+          "point": [
+            130.93985098238682,
+            33.96792541566943
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29120,
+          "source_as_of": "2026-06-30",
+          "distance_m": 199.972
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3570102040",
+          "name": "下関市社協　下関ホームヘルパーステーション",
+          "address": "山口県下関市上田中町一丁目１６番３号福祉プラザしものせき",
+          "address2": "福祉プラザしものせき",
+          "service": "訪問介護",
+          "phone": "083-232-2005",
+          "operator": "社会福祉法人　下関市社会福祉協議会",
+          "operator_number": "3250005004150",
+          "point": [
+            130.93985098238682,
+            33.96792541566943
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29120,
+          "source_as_of": "2026-06-30",
+          "distance_m": 199.972
+        }
+      ]
+    }
+  },
+  {
+    "id": "civic-care-3570102008-bba0566b9f",
+    "expected": {
+      "name": "下関市社協下関居宅介護支援事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:844"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941864,
+          33.968594
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570102008の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。現台帳と公式移転告知により、当該事業所は下関市貴船町3－1－25へ移転しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "公式の移転日（2025-02-25）は旧最終営業日と同一とはしないため、終了日を不明とします。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_original_number_operator_phone_all_original_services",
+      "baseline_name": "下関市社協下関居宅介護支援事業所",
+      "baseline_address": "下関市貴船町3－4－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941864,
+          33.968594
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:844"
+      ],
+      "original_number": "3570102008",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:844",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 844,
+          "csv_logical_row": 845,
+          "number": "3570102008",
+          "municipal_id": "",
+          "name": "下関市社協下関居宅介護支援事業所",
+          "address": "下関市貴船町3－4－1",
+          "service": "居宅介護支援",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "phone": "083-232-3400",
+          "point": [
+            130.941864,
+            33.968594
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570102008",
+          "name": "下関市社協居宅介護支援事業所",
+          "address": "下関市貴船町3－1－25",
+          "service": "居宅介護支援",
+          "phone": "083-232-3400",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "designation_dates": [
+            "2005/02/14",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/13",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 27,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/shimoshakyo-facilities.html",
+          "source_url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "source_sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c",
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "entries": [
+            {
+              "number": "3570102040",
+              "name": "下関市社協下関ホームヘルパーステーション",
+              "address": "下関市上田中町一丁目16番3号",
+              "phone": "083-232-2005",
+              "fact": "福祉プラザしものせきへ移転と当該番号の表に明記。日付不明。"
+            },
+            {
+              "number": "3570102008",
+              "name": "下関市社協居宅介護支援事業所",
+              "address": "下関市貴船町三丁目1番25号",
+              "phone": "083-232-3400",
+              "fact": "令和6年4月から名称変更・令和7年2月25日事務所移転を当該番号の表に明記。"
+            },
+            {
+              "number": "3560190153",
+              "name": "下関市社協ほうほく訪問看護ステーション",
+              "address": "下関市豊北町滝部3140番地1",
+              "phone": "083-782-1594",
+              "fact": "当該番号の受付窓口に「下関市社協ほうほく訪問看護ステーションは廃止となりました」と明記。日付不明。"
+            },
+            {
+              "number": "3570102024",
+              "name": "下関市社協居宅介護支援事業所（事業統合）",
+              "address": "下関市貴船町三丁目4番1号",
+              "phone": "083-775-4139",
+              "fact": "元豊浦居宅の公的番号と電話を保持した表で「下関市社協居宅介護支援事業所に統合しました」と明記。住所は統合先側の旧記載で、現台帳の現所在地とは区別する。"
+            },
+            {
+              "number": "3570102016",
+              "name": "下関市社協北部居宅介護支援事業所（統合）",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-784-1481",
+              "fact": "元豊北居宅の公的番号と電話を保持した表で「下関市社協 北部居宅介護支援事業所に統合しました」と明記。"
+            },
+            {
+              "number": "3570101992",
+              "name": "下関市社協北部居宅介護支援事業所",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-766-3956",
+              "fact": "名称変更後の現事業所の別番号として掲載。統合前番号と混同しない。"
+            }
+          ]
+        }
+      ],
+      "event_kind": "relocation",
+      "new_business_or_relocation_date": "2025-02-25",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [
+        {
+          "number": "3570102008",
+          "name": "下関市社協居宅介護支援事業所",
+          "address": "下関市貴船町三丁目１番２５号",
+          "address2": "",
+          "service": "居宅介護支援",
+          "phone": "083-232-3400",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "operator_number": "3250005004150",
+          "point": [
+            130.9410094542145,
+            33.96768453358227
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29435,
+          "source_as_of": "2026-06-30",
+          "distance_m": 128.2079
+        }
+      ],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3560190153-d8c33fb1a0",
+    "expected": {
+      "name": "下関市社協 ほうほく訪問看護ステーション",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:83"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.946243,
+          34.295853
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3560190153の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。運営者が当該事業所の廃止を明記しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "旧最終営業日・統合日または移転日は原資料に明記されず、不明のまま保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_abolition_original_number_operator_phone_all_original_services",
+      "baseline_name": "下関市社協 ほうほく訪問看護ステーション",
+      "baseline_address": "下関市豊北町滝部3140－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.946243,
+          34.295853
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:83"
+      ],
+      "original_number": "3560190153",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:83",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 83,
+          "csv_logical_row": 84,
+          "number": "3560190153",
+          "municipal_id": "",
+          "name": "下関市社協 ほうほく訪問看護ステーション",
+          "address": "下関市豊北町滝部3140－1",
+          "service": "訪問看護",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "phone": "083-782-1594",
+          "point": [
+            130.946243,
+            34.295853
+          ]
+        }
+      ],
+      "current_rows": [],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "訪問看護"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/shimoshakyo-facilities.html",
+          "source_url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "source_sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c",
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "entries": [
+            {
+              "number": "3570102040",
+              "name": "下関市社協下関ホームヘルパーステーション",
+              "address": "下関市上田中町一丁目16番3号",
+              "phone": "083-232-2005",
+              "fact": "福祉プラザしものせきへ移転と当該番号の表に明記。日付不明。"
+            },
+            {
+              "number": "3570102008",
+              "name": "下関市社協居宅介護支援事業所",
+              "address": "下関市貴船町三丁目1番25号",
+              "phone": "083-232-3400",
+              "fact": "令和6年4月から名称変更・令和7年2月25日事務所移転を当該番号の表に明記。"
+            },
+            {
+              "number": "3560190153",
+              "name": "下関市社協ほうほく訪問看護ステーション",
+              "address": "下関市豊北町滝部3140番地1",
+              "phone": "083-782-1594",
+              "fact": "当該番号の受付窓口に「下関市社協ほうほく訪問看護ステーションは廃止となりました」と明記。日付不明。"
+            },
+            {
+              "number": "3570102024",
+              "name": "下関市社協居宅介護支援事業所（事業統合）",
+              "address": "下関市貴船町三丁目4番1号",
+              "phone": "083-775-4139",
+              "fact": "元豊浦居宅の公的番号と電話を保持した表で「下関市社協居宅介護支援事業所に統合しました」と明記。住所は統合先側の旧記載で、現台帳の現所在地とは区別する。"
+            },
+            {
+              "number": "3570102016",
+              "name": "下関市社協北部居宅介護支援事業所（統合）",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-784-1481",
+              "fact": "元豊北居宅の公的番号と電話を保持した表で「下関市社協 北部居宅介護支援事業所に統合しました」と明記。"
+            },
+            {
+              "number": "3570101992",
+              "name": "下関市社協北部居宅介護支援事業所",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-766-3956",
+              "fact": "名称変更後の現事業所の別番号として掲載。統合前番号と混同しない。"
+            }
+          ]
+        }
+      ],
+      "event_kind": "abolition",
+      "new_business_or_relocation_date": null,
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3570102024-42fb93d716",
+    "expected": {
+      "name": "下関市社協豊浦居宅介護支援事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:846"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.924118,
+          34.14529
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570102024の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。運営者が元番号3570102024の事業を番号3570102008の事業所へ統合したと明記しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "旧最終営業日・統合日または移転日は原資料に明記されず、不明のまま保持します。",
+        "運営者表の統合先住所は貴船町3-4-1ですが、統合先現台帳と同ページの現番号3570102008の表は3-1-25です。統合前事業所の廃止確認に限り、古い統合先住所を現所在地として採用しません。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_integration_original_number_operator_phone_all_original_services",
+      "baseline_name": "下関市社協豊浦居宅介護支援事業所",
+      "baseline_address": "下関市豊浦町川棚6895－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.924118,
+          34.14529
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:846"
+      ],
+      "original_number": "3570102024",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:846",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 846,
+          "csv_logical_row": 847,
+          "number": "3570102024",
+          "municipal_id": "",
+          "name": "下関市社協豊浦居宅介護支援事業所",
+          "address": "下関市豊浦町川棚6895－1",
+          "service": "居宅介護支援",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "phone": "083-775-4139",
+          "point": [
+            130.924118,
+            34.14529
+          ]
+        }
+      ],
+      "current_rows": [],
+      "successor_rows": [
+        {
+          "number": "3570102008",
+          "name": "下関市社協居宅介護支援事業所",
+          "address": "下関市貴船町3－1－25",
+          "service": "居宅介護支援",
+          "phone": "083-232-3400",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "designation_dates": [
+            "2005/02/14",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/13",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 27,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "successor_number": "3570102008",
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/shimoshakyo-facilities.html",
+          "source_url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "source_sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c",
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "entries": [
+            {
+              "number": "3570102040",
+              "name": "下関市社協下関ホームヘルパーステーション",
+              "address": "下関市上田中町一丁目16番3号",
+              "phone": "083-232-2005",
+              "fact": "福祉プラザしものせきへ移転と当該番号の表に明記。日付不明。"
+            },
+            {
+              "number": "3570102008",
+              "name": "下関市社協居宅介護支援事業所",
+              "address": "下関市貴船町三丁目1番25号",
+              "phone": "083-232-3400",
+              "fact": "令和6年4月から名称変更・令和7年2月25日事務所移転を当該番号の表に明記。"
+            },
+            {
+              "number": "3560190153",
+              "name": "下関市社協ほうほく訪問看護ステーション",
+              "address": "下関市豊北町滝部3140番地1",
+              "phone": "083-782-1594",
+              "fact": "当該番号の受付窓口に「下関市社協ほうほく訪問看護ステーションは廃止となりました」と明記。日付不明。"
+            },
+            {
+              "number": "3570102024",
+              "name": "下関市社協居宅介護支援事業所（事業統合）",
+              "address": "下関市貴船町三丁目4番1号",
+              "phone": "083-775-4139",
+              "fact": "元豊浦居宅の公的番号と電話を保持した表で「下関市社協居宅介護支援事業所に統合しました」と明記。住所は統合先側の旧記載で、現台帳の現所在地とは区別する。"
+            },
+            {
+              "number": "3570102016",
+              "name": "下関市社協北部居宅介護支援事業所（統合）",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-784-1481",
+              "fact": "元豊北居宅の公的番号と電話を保持した表で「下関市社協 北部居宅介護支援事業所に統合しました」と明記。"
+            },
+            {
+              "number": "3570101992",
+              "name": "下関市社協北部居宅介護支援事業所",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-766-3956",
+              "fact": "名称変更後の現事業所の別番号として掲載。統合前番号と混同しない。"
+            }
+          ]
+        }
+      ],
+      "event_kind": "integration",
+      "new_business_or_relocation_date": null,
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3570102016-dbbbb0a396",
+    "expected": {
+      "name": "下関市社協豊北居宅介護支援事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:845"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.946243,
+          34.295853
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570102016の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。運営者が元番号3570102016の事業を番号3570101992の事業所へ統合したと明記しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "旧最終営業日・統合日または移転日は原資料に明記されず、不明のまま保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_integration_original_number_operator_phone_all_original_services",
+      "baseline_name": "下関市社協豊北居宅介護支援事業所",
+      "baseline_address": "下関市豊北町滝部3140－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.946243,
+          34.295853
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:845"
+      ],
+      "original_number": "3570102016",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:845",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 845,
+          "csv_logical_row": 846,
+          "number": "3570102016",
+          "municipal_id": "",
+          "name": "下関市社協豊北居宅介護支援事業所",
+          "address": "下関市豊北町滝部3140－1",
+          "service": "居宅介護支援",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "phone": "083-784-1481",
+          "point": [
+            130.946243,
+            34.295853
+          ]
+        }
+      ],
+      "current_rows": [],
+      "successor_rows": [
+        {
+          "number": "3570101992",
+          "name": "下関市社協北部居宅介護支援事業所",
+          "address": "下関市豊田町矢田194",
+          "service": "居宅介護支援",
+          "phone": "083-766-3956",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "designation_dates": [
+            "2005/02/14",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/02/13",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 26,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "successor_number": "3570101992",
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/shimoshakyo-facilities.html",
+          "source_url": "https://www.shimoshakyo.or.jp/shisetsu/",
+          "source_sha256": "be2773cf67ac071ff82504948e67713c36a8b735b6500644cf79889fd2f3572c",
+          "title": "下関市社会福祉協議会 施設・事業所一覧（移転・廃止・統合明記）",
+          "operator": "社会福祉法人下関市社会福祉協議会",
+          "entries": [
+            {
+              "number": "3570102040",
+              "name": "下関市社協下関ホームヘルパーステーション",
+              "address": "下関市上田中町一丁目16番3号",
+              "phone": "083-232-2005",
+              "fact": "福祉プラザしものせきへ移転と当該番号の表に明記。日付不明。"
+            },
+            {
+              "number": "3570102008",
+              "name": "下関市社協居宅介護支援事業所",
+              "address": "下関市貴船町三丁目1番25号",
+              "phone": "083-232-3400",
+              "fact": "令和6年4月から名称変更・令和7年2月25日事務所移転を当該番号の表に明記。"
+            },
+            {
+              "number": "3560190153",
+              "name": "下関市社協ほうほく訪問看護ステーション",
+              "address": "下関市豊北町滝部3140番地1",
+              "phone": "083-782-1594",
+              "fact": "当該番号の受付窓口に「下関市社協ほうほく訪問看護ステーションは廃止となりました」と明記。日付不明。"
+            },
+            {
+              "number": "3570102024",
+              "name": "下関市社協居宅介護支援事業所（事業統合）",
+              "address": "下関市貴船町三丁目4番1号",
+              "phone": "083-775-4139",
+              "fact": "元豊浦居宅の公的番号と電話を保持した表で「下関市社協居宅介護支援事業所に統合しました」と明記。住所は統合先側の旧記載で、現台帳の現所在地とは区別する。"
+            },
+            {
+              "number": "3570102016",
+              "name": "下関市社協北部居宅介護支援事業所（統合）",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-784-1481",
+              "fact": "元豊北居宅の公的番号と電話を保持した表で「下関市社協 北部居宅介護支援事業所に統合しました」と明記。"
+            },
+            {
+              "number": "3570101992",
+              "name": "下関市社協北部居宅介護支援事業所",
+              "address": "下関市豊田町矢田194番地",
+              "phone": "083-766-3956",
+              "fact": "名称変更後の現事業所の別番号として掲載。統合前番号と混同しない。"
+            }
+          ]
+        }
+      ],
+      "event_kind": "integration",
+      "new_business_or_relocation_date": null,
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3500600063-f02482bca0",
+    "expected": {
+      "name": "防府東地域包括支援センター",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:964"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.593491,
+          34.049118
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3500600063の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。現台帳と公式移転告知により、当該事業所は防府市緑町2－5－23へ移転しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        },
+        {
+          "title": "防府市 地域包括支援センター一覧・防府東の移転",
+          "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/0805kekka.html",
+          "sha256": "35828831dc7d630847dc36572a0e9d3e16341a6fd3af2fdf56acf6e1f31c10c4"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "公式の移転日（2025-12-01）は旧最終営業日と同一とはしないため、終了日を不明とします。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_original_number_operator_phone_all_original_services",
+      "baseline_name": "防府東地域包括支援センター",
+      "baseline_address": "防府市岸津2－24－20",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.593491,
+          34.049118
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:964"
+      ],
+      "original_number": "3500600063",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:964",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 964,
+          "csv_logical_row": 965,
+          "number": "3500600063",
+          "municipal_id": "",
+          "name": "防府東地域包括支援センター",
+          "address": "防府市岸津2－24－20",
+          "service": "介護予防支援",
+          "operator": "社会福祉法人 周陽福祉会",
+          "phone": "0835-27-0150",
+          "point": [
+            131.593491,
+            34.049118
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3500600063",
+          "name": "防府東地域包括支援センター",
+          "address": "防府市緑町2－5－23",
+          "service": "介護予防支援",
+          "phone": "0835-27-0150",
+          "operator": "社会福祉法人 周陽福祉会",
+          "designation_dates": [
+            "2015/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2027/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35206.csv",
+          "line": 50,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35206&od=1",
+          "source_sha256": "7fcfb49dbdef73b9e5a101a0986564fe5f7fcc5b845d800ffcc6af95f762d1f1"
+        }
+      ],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "介護予防支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/hofu-includes-relocation.html",
+          "source_url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/0805kekka.html",
+          "source_sha256": "35828831dc7d630847dc36572a0e9d3e16341a6fd3af2fdf56acf6e1f31c10c4",
+          "title": "防府市 地域包括支援センター一覧・防府東の移転",
+          "name": "防府東地域包括支援センター",
+          "new_address": "防府市緑町二丁目5番23号 レジデンス緑町1階",
+          "phone": "0835-27-0150",
+          "relocation_date": "2025-12-01",
+          "fact": "令和7年12月1日月曜日から下記住所へ移転しましたと明記。"
+        }
+      ],
+      "event_kind": "relocation",
+      "new_business_or_relocation_date": "2025-12-01",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3500200089-1caf3a64a4",
+    "expected": {
+      "name": "宇部市中部第１地域包括支援センター",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:977"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.262436,
+          33.963543
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3500200089の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。現台帳と公式移転告知により、当該事業所は宇部市川添1－2－5へ移転しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        },
+        {
+          "title": "宇部市 高齢者総合相談センター・地域包括支援センター一覧",
+          "url": "https://www.city.ube.yamaguchi.jp/kenkou/koureifukushi/kourei_soudan/1005415/index.html",
+          "sha256": "68439e80f1f8d0a53dc38f1287ba6f86da924b1d1e5cb3fa849ac0bf98e47a00"
+        },
+        {
+          "title": "広報うべ 2024年10月号・中部第1地域包括支援センター移転",
+          "url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/023/478/202410.pdf",
+          "sha256": "50449685403ea4ff3f708b76b690c13d4936762a7db14049e7be97d6b3cc5693"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "公式の移転日（2024-10-01）は旧最終営業日と同一とはしないため、終了日を不明とします。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_original_number_operator_phone_all_original_services",
+      "baseline_name": "宇部市中部第１地域包括支援センター",
+      "baseline_address": "宇部市中村2－7－15",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.262436,
+          33.963543
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:977"
+      ],
+      "original_number": "3500200089",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:977",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 977,
+          "csv_logical_row": 978,
+          "number": "3500200089",
+          "municipal_id": "",
+          "name": "宇部市中部第１地域包括支援センター",
+          "address": "宇部市中村2－7－15",
+          "service": "介護予防支援",
+          "operator": "社会福祉法人 むべの里光栄",
+          "phone": "0836-43-9551",
+          "point": [
+            131.262436,
+            33.963543
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3500200089",
+          "name": "宇部市中部第１地域包括支援センター",
+          "address": "宇部市川添1－2－5",
+          "service": "介護予防支援",
+          "phone": "0836-43-9551",
+          "operator": "社会福祉法人 むべの里光栄",
+          "designation_dates": [
+            "2013/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2028/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35202.csv",
+          "line": 63,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "source_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        }
+      ],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "介護予防支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/ube-includes-current.html",
+          "source_url": "https://www.city.ube.yamaguchi.jp/kenkou/koureifukushi/kourei_soudan/1005415/index.html",
+          "source_sha256": "68439e80f1f8d0a53dc38f1287ba6f86da924b1d1e5cb3fa849ac0bf98e47a00",
+          "title": "宇部市 高齢者総合相談センター・地域包括支援センター一覧",
+          "entries": [
+            {
+              "name": "中部第1",
+              "address": "川添一丁目2番5号",
+              "phone": "0836-43-9551"
+            },
+            {
+              "name": "南部第1",
+              "address": "末広町1番13号",
+              "phone": "0836-38-8551"
+            }
+          ],
+          "fact": "移転後の2センターを現完全住所と従来電話で掲載。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/ube-202410.pdf",
+          "source_url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/023/478/202410.pdf",
+          "source_sha256": "50449685403ea4ff3f708b76b690c13d4936762a7db14049e7be97d6b3cc5693",
+          "title": "広報うべ 2024年10月号・中部第1地域包括支援センター移転",
+          "pdf_page": 4,
+          "printed_page": 6,
+          "name": "中部第1高齢者総合相談センター（地域包括支援センター）",
+          "new_address": "宇部市川添一丁目2番5号 かわぞえクリニック隣",
+          "relocation_date": "2024-10-01",
+          "fact": "移転日10月1日・新住所を同一記事で明記。旧最終業務日は記載なし。"
+        }
+      ],
+      "event_kind": "relocation",
+      "new_business_or_relocation_date": "2024-10-01",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
+    "id": "civic-care-3500200112-58ee5e3ff6",
+    "expected": {
+      "name": "宇部市南部第１地域包括支援センター",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:980"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.257675,
+          33.942123
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3500200112の施設名・完全住所・法人・電話・全掲載サービスを公式原本へ接続しました。現台帳と公式移転告知により、当該事業所は宇部市末広町1－13へ移転しています。元所在地の当該事業所の終了として扱い、旧最終営業日は不明のまま保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（番号・元完全住所・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（移転先・統合先の現掲載）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        },
+        {
+          "title": "広報うべ 2025年2月号・南部第1地域包括支援センター移転",
+          "url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/024/204/202502.pdf",
+          "sha256": "3c968178f3a42c43b6de61794c6404833059f6f88371a31a2cfc2ec9702c5fe5"
+        },
+        {
+          "title": "宇部市 高齢者総合相談センター・地域包括支援センター一覧",
+          "url": "https://www.city.ube.yamaguchi.jp/kenkou/koureifukushi/kourei_soudan/1005415/index.html",
+          "sha256": "68439e80f1f8d0a53dc38f1287ba6f86da924b1d1e5cb3fa849ac0bf98e47a00"
+        }
+      ],
+      "limits": [
+        "元記録の事業所・全掲載サービスに限った旧拠点の終了です。建物全体の閉鎖や法人解散、同住所の他サービス終了を意味しません。",
+        "元ID・名称・住所・geometry・source_ids・registered_detailsを保持します。移転先や統合先へ元座標を転用せず、新施設を作成しません。",
+        "公式の移転日（2025-02-01）は旧最終営業日と同一とはしないため、終了日を不明とします。"
+      ]
+    },
+    "evidence": {
+      "method": "official_explicit_relocation_original_number_operator_phone_all_original_services",
+      "baseline_name": "宇部市南部第１地域包括支援センター",
+      "baseline_address": "宇部市東芝中町4－45　柏ビル",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.257675,
+          33.942123
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:980"
+      ],
+      "original_number": "3500200112",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:980",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 980,
+          "csv_logical_row": 981,
+          "number": "3500200112",
+          "municipal_id": "",
+          "name": "宇部市南部第１地域包括支援センター",
+          "address": "宇部市東芝中町4－45　柏ビル",
+          "service": "介護予防支援",
+          "operator": "医療生活協同組合 健文会",
+          "phone": "0836-38-8551",
+          "point": [
+            131.257675,
+            33.942123
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3500200112",
+          "name": "宇部市南部第１地域包括支援センター",
+          "address": "宇部市末広町1－13",
+          "service": "介護予防支援",
+          "phone": "0836-38-8551",
+          "operator": "医療生活協同組合 健文会",
+          "designation_dates": [
+            "2017/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2028/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35202.csv",
+          "line": 66,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "source_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        }
+      ],
+      "successor_rows": [],
+      "successor_number": null,
+      "original_services": [
+        "介護予防支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/ube-202502.pdf",
+          "source_url": "https://www.city.ube.yamaguchi.jp/_res/projects/default_project/_page_/001/024/204/202502.pdf",
+          "source_sha256": "3c968178f3a42c43b6de61794c6404833059f6f88371a31a2cfc2ec9702c5fe5",
+          "title": "広報うべ 2025年2月号・南部第1地域包括支援センター移転",
+          "pdf_page": 3,
+          "printed_page": 3,
+          "name": "南部第1高齢者総合相談センター（地域包括支援センター）",
+          "new_address": "宇部市末広町1番13号 リハビリステップげんき内",
+          "relocation_date": "2025-02-01",
+          "fact": "移転日2月1日・新住所を同一記事で明記。旧最終業務日は記載なし。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/ube-includes-current.html",
+          "source_url": "https://www.city.ube.yamaguchi.jp/kenkou/koureifukushi/kourei_soudan/1005415/index.html",
+          "source_sha256": "68439e80f1f8d0a53dc38f1287ba6f86da924b1d1e5cb3fa849ac0bf98e47a00",
+          "title": "宇部市 高齢者総合相談センター・地域包括支援センター一覧",
+          "entries": [
+            {
+              "name": "中部第1",
+              "address": "川添一丁目2番5号",
+              "phone": "0836-43-9551"
+            },
+            {
+              "name": "南部第1",
+              "address": "末広町1番13号",
+              "phone": "0836-38-8551"
+            }
+          ],
+          "fact": "移転後の2センターを現完全住所と従来電話で掲載。"
+        }
+      ],
+      "event_kind": "relocation",
+      "new_business_or_relocation_date": "2025-02-01",
+      "old_last_business_date": null,
+      "new_location_geometry_not_created": true,
+      "national_rows": [],
+      "known_position_discrepancies": []
+    }
+  },
+  {
     "id": "osm-node-1423655236",
     "changes": {},
     "review": {

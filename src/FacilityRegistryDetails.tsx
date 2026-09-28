@@ -6,7 +6,7 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
   school_register: '学校名簿',
   childcare_register: '保育・幼稚園等の施設名簿',
   medical_register: '保険医療機関名簿',
-  pharmacy_register: '保険薬局名簿',
+  pharmacy_register: '薬局名簿',
   welfare_register: '社会福祉施設名簿',
   food_business_register: '食品営業許可施設一覧',
   post_office_directory: '日本郵便の郵便局一覧',

@@ -1200,18 +1200,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-way-203056400",
-    "name": "田村内科医院",
-    "category": "clinic",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-way-328496342",
     "name": "千治松内科",
     "category": "clinic",
@@ -1524,18 +1512,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-way-551528863",
-    "name": "ニコニコ耳鼻科",
-    "category": "clinic",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-way-553055015",
     "name": "田中小児科医院",
     "category": "clinic",
@@ -1596,18 +1572,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-way-562104063",
-    "name": "長谷川眼科クリニック",
-    "category": "clinic",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-way-571604485",
     "name": "サンキュードラッグ 上田中町薬局",
     "category": "pharmacy",
@@ -1664,18 +1628,6 @@
       "insurance_registry_suspended_not_facility_closure_proof"
     ],
     "next": "休診・廃止・移転の施設公式告知が未確認。保険登録の休止だけで閉鎖にしない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-12894256034",
-    "name": "伊藤歯科",
-    "category": "dentist",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
     "previous_batch": "facility-registry-008d-20260928",
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
@@ -1984,18 +1936,6 @@
     "name": "下関短期大学",
     "category": "college",
     "group": "schools",
-    "reasons": [
-      "newer_official_facility_point_conflicts_with_original_geometry"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423654030",
-    "name": "中保育園",
-    "category": "childcare",
-    "group": "childcare",
     "reasons": [
       "newer_official_facility_point_conflicts_with_original_geometry"
     ],
@@ -2460,18 +2400,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423654928",
-    "name": "安正保育園",
-    "category": "childcare",
-    "group": "childcare",
-    "reasons": [
-      "newer_official_facility_point_conflicts_with_original_geometry"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423654959",
     "name": "室積保育園",
     "category": "childcare",
@@ -2606,18 +2534,6 @@
   {
     "id": "osm-node-1423656028",
     "name": "山陽町立出合保育所",
-    "category": "childcare",
-    "group": "childcare",
-    "reasons": [
-      "no_unique_precise_p14_site_and_full_address_current_childcare_record"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423656031",
-    "name": "山陽町立厚陽保育所",
     "category": "childcare",
     "group": "childcare",
     "reasons": [
@@ -2802,18 +2718,6 @@
     "group": "schools",
     "reasons": [
       "no_unique_official_point_within_50m"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423656604",
-    "name": "市立厚東中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_exact_name_official_location"
     ],
     "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -3072,18 +2976,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423657130",
-    "name": "市立東岐波中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "same_facility_other_id_or_original_numbered_address_conflict"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423657140",
     "name": "市立東岐波小学校",
     "category": "school",
@@ -3288,18 +3180,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423657391",
-    "name": "市立菊川中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_unique_official_point_within_50m"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423657395",
     "name": "市立華西中学校",
     "category": "school",
@@ -3350,18 +3230,6 @@
   {
     "id": "osm-node-1423657425",
     "name": "市立誠意小学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_unique_official_point_within_50m"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423657436",
-    "name": "市立豊北中学校",
     "category": "school",
     "group": "schools",
     "reasons": [
@@ -4524,18 +4392,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423660196",
-    "name": "県立高森みどり中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_unique_official_point_within_50m"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423660201",
     "name": "県立徳山高鹿野分校",
     "category": "school",
@@ -5323,7 +5179,7 @@
     "reasons": [
       "no_unique_official_point_within_50m"
     ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
+    "next": "既公開canonical osm-node-8686501560と同じC135210001499。共通公式点が本IDから123.207mでstrict alias要件不充足。原住所台帳掲載は立証できるが新規確認へ再計上しない。",
     "previous_batch": "facility-registry-008d-20260928",
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
@@ -5426,30 +5282,6 @@
   {
     "id": "osm-node-3844409771",
     "name": "宮崎歯科",
-    "category": "dentist",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-3846496364",
-    "name": "福谷歯科",
-    "category": "dentist",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-3889054364",
-    "name": "くらきよ歯科",
     "category": "dentist",
     "group": "medical",
     "reasons": [
@@ -5630,18 +5462,6 @@
   {
     "id": "osm-node-4518495297",
     "name": "内田歯科",
-    "category": "dentist",
-    "group": "medical",
-    "reasons": [
-      "no_proven_current_name_and_complete_address_bridge"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-4539815023",
-    "name": "とくなが歯科",
     "category": "dentist",
     "group": "medical",
     "reasons": [
@@ -7442,18 +7262,6 @@
   {
     "id": "osm-node-1631267730",
     "name": "下松老人福祉センター「小城」",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "no_exact_named_accuracy1_location_within_point50m_or_polygon"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "osm-node-1631267735",
-    "name": "下松老人福祉会館「玉鶴」",
     "category": "social_facility",
     "group": "welfare",
     "reasons": [
@@ -10216,18 +10024,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "osm-node-1631278153",
-    "name": "秋楽園",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "no_exact_named_accuracy1_location_within_point50m_or_polygon"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "osm-node-1631278165",
     "name": "秋穂町コミュニティセンター",
     "category": "social_facility",
@@ -12509,20 +12305,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3570601231-b698eee891",
-    "name": "さんコープ・防府",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "name_change_without_sufficient_history",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570300073-5a332bd972",
     "name": "佐々木在宅ケアセンター",
     "category": "social_facility",
@@ -12803,21 +12585,6 @@
       "original_services_not_all_confirmed",
       "no_current_all_original_services_event",
       "september_active_original_number_same_service",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3571100209-45ffef0c73",
-    "name": "長門市社協ゆや訪問介護事業所",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "name_change_without_sufficient_history",
-      "original_services_not_all_confirmed",
       "newer_address_conflict"
     ],
     "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
@@ -13644,20 +13411,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3577300217-b0ae20f7cc",
-    "name": "特別養護老人ホーム天王園",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3577600194-760d7b1381",
     "name": "特別養護老人ホーム 秋穂あかり園",
     "category": "social_facility",
@@ -13840,20 +13593,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3570102040-15c587fd9d",
-    "name": "下関市社協下関ホームヘルパーステーション",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570102537-01d1cc0d02",
     "name": "神田福祉介護サービス",
     "category": "social_facility",
@@ -13958,18 +13697,6 @@
   {
     "id": "civic-care-3560190112-b6defc9f85",
     "name": "アイユウの苑訪問看護サービス",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3560190153-d8c33fb1a0",
-    "name": "下関市社協 ほうほく訪問看護ステーション",
     "category": "social_facility",
     "group": "welfare",
     "reasons": [
@@ -14248,32 +13975,6 @@
     "group": "welfare",
     "reasons": [
       "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-35B0100037-12e65fe9e0",
-    "name": "介護医療院 あかね",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "expired_or_incomplete_current_designation",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-35B0100078-137536670d",
-    "name": "まつなが医院 介護医療院",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "expired_or_incomplete_current_designation",
-      "original_services_not_all_confirmed"
     ],
     "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -15405,44 +15106,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3570102008-bba0566b9f",
-    "name": "下関市社協下関居宅介護支援事業所",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "name_change_without_sufficient_history",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3570102016-dbbbb0a396",
-    "name": "下関市社協豊北居宅介護支援事業所",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3570102024-42fb93d716",
-    "name": "下関市社協豊浦居宅介護支援事業所",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570103261-126d93d682",
     "name": "有歩道居宅介護支援事業所",
     "category": "social_facility",
@@ -15629,20 +15292,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3571100233-9b7649b5da",
-    "name": "長門市社協ゆや居宅介護支援事業所",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570400030-3d94c447d4",
     "name": "指定居宅介護支援事業所 さんみ苑",
     "category": "social_facility",
@@ -15694,45 +15343,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3500600063-f02482bca0",
-    "name": "防府東地域包括支援センター",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3500200089-1caf3a64a4",
-    "name": "宇部市中部第１地域包括支援センター",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3500200112-58ee5e3ff6",
-    "name": "宇部市南部第１地域包括支援センター",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3500100015-9db31b18c6",
     "name": "下関市本庁東部地域包括支援センター",
     "category": "social_facility",
@@ -15751,19 +15361,6 @@
     "group": "welfare",
     "reasons": [
       "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3501100030-44e521d01b",
-    "name": "長門市西地域包括支援センター",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed"
     ],
     "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -16186,20 +15783,6 @@
     "group": "welfare",
     "reasons": [
       "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3590600312-c1e3d0936f",
-    "name": "さんコープ・天神口デイサービス",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "name_change_without_sufficient_history",
-      "original_services_not_all_confirmed"
     ],
     "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -21655,18 +21238,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-465967739",
-    "name": "Aプライス山口店",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-465975433",
     "name": "ウエスタまるき山口湯田店",
     "category": "supermarket",
@@ -21955,18 +21526,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-561533122",
-    "name": "キヌヤ",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-561681883",
     "name": "エムラ",
     "category": "mall",
@@ -21982,18 +21541,6 @@
     "id": "osm-way-561705134",
     "name": "山口井筒屋",
     "category": "mall",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-562664549",
-    "name": "A-プライス",
-    "category": "supermarket",
     "group": "retail",
     "reasons": [
       "current_operator_identity_and_point_not_yet_proven"
@@ -23875,18 +23422,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-12487748793",
-    "name": "CoCo壱番屋宇部東岐波店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "no_same_operator_coordinate_within_50m"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-12525932334",
     "name": "NICK HOUSE",
     "category": "restaurant",
@@ -24961,18 +24496,6 @@
     "group": "small_services",
     "reasons": [
       "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-node-3506568531",
-    "name": "博多一番どり 居食家あらい",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -27343,18 +26866,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-9472329370",
-    "name": "しゃぶ葉 宇部店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-9472329371",
     "name": "ステーキ宮 宇部厚南店",
     "category": "restaurant",
@@ -27861,18 +27372,6 @@
   {
     "id": "osm-way-1539786018",
     "name": "湯田製麺",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-1540200283",
-    "name": "焼肉みほり峠 山口店",
     "category": "restaurant",
     "group": "dining",
     "reasons": [
@@ -29551,18 +29050,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-549154584",
-    "name": "シュクルヴァン",
-    "category": "bakery",
-    "group": "small_services",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-549154592",
     "name": "オゾンクリーニングきょくとう",
     "category": "laundry",
@@ -29698,18 +29185,6 @@
     "id": "osm-way-565389409",
     "name": "ソル・ポニエンテ",
     "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-574713885",
-    "name": "あけぼの珈琲",
-    "category": "cafe",
     "group": "dining",
     "reasons": [
       "operator_source_not_yet_verified"
@@ -29875,18 +29350,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-691642583",
-    "name": "モッチモ・パスタ宇部店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-691954481",
     "name": "いきなり！ステーキ",
     "category": "restaurant",
@@ -29935,33 +29398,9 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-713427952",
-    "name": "たかせ本館",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-751061428",
     "name": "スターバックス",
     "category": "cafe",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-755592069",
-    "name": "焼肉 蔵元",
-    "category": "restaurant",
     "group": "dining",
     "reasons": [
       "operator_source_not_yet_verified"
@@ -30307,18 +29746,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-node-1423654582",
-    "name": "和木町役場",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "multiple_original_ids_one_official_facility"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-node-1423654652",
     "name": "国立山口徳地青少年自然の家",
     "category": "community_centre",
@@ -30421,30 +29848,6 @@
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-node-1423657129",
-    "name": "東厚コミュニティセンター",
-    "category": "community_centre",
-    "group": "public",
-    "reasons": [
-      "current_full_address_not_obtained"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-node-1423657558",
-    "name": "平生町役場",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "multiple_original_ids_one_official_facility"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -30883,18 +30286,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-node-9263879677",
-    "name": "吉母公民館",
-    "category": "community_centre",
-    "group": "public",
-    "reasons": [
-      "multiple_baseline_ids_for_same_official_facility"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-node-9472329338",
     "name": "第一原公会堂",
     "category": "community_centre",
@@ -30949,18 +30340,6 @@
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-1069145223",
-    "name": "上野コミュニティセンター",
-    "category": "community_centre",
-    "group": "public",
-    "reasons": [
-      "current_full_address_not_obtained"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -31057,18 +30436,6 @@
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-1353314715",
-    "name": "美祢市役所",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "current_full_address_not_obtained"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -31201,18 +30568,6 @@
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-324701142",
-    "name": "和木町役場",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "multiple_original_ids_one_official_facility"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -31435,18 +30790,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-way-601687674",
-    "name": "平生町役場",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "multiple_original_ids_one_official_facility"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-way-601705748",
     "name": "柳井市役所",
     "category": "townhall",
@@ -31639,18 +30982,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-way-713427958",
-    "name": "吉母公民館",
-    "category": "community_centre",
-    "group": "public",
-    "reasons": [
-      "multiple_baseline_ids_for_same_official_facility"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-way-724499285",
     "name": "周防大島町役場三蒲出張所",
     "category": "townhall",
@@ -31663,36 +30994,12 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-way-724499287",
-    "name": "周防大島町役場日良居庁舎",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "sanitized_address"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-way-724499291",
     "name": "周防大島町役場東和庁舎",
     "category": "townhall",
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-759556653",
-    "name": "河原コミュニティセンター",
-    "category": "community_centre",
-    "group": "public",
-    "reasons": [
-      "current_full_address_not_obtained"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -37381,18 +36688,6 @@
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "civic-kdpark000107",
-    "name": "平田川公園",
-    "category": "park",
-    "group": "public",
-    "reasons": [
-      "current_full_address_or_facility_scope_unresolved"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
