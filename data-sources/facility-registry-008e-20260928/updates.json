@@ -3190,6 +3190,173 @@
     }
   },
   {
+    "id": "osm-node-1423656508",
+    "expected": {
+      "name": "市立俵山中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423656508"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.112261,
+          34.283841
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2016-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "市公式の2016年3月記事が当年度末で俵山中学校を統合すると明記し、2026年計画が同校を廃校舎と確認。原完全住所・旧公的固有点が一致する学校サービスの終了。",
+      "sources": [
+        {
+          "title": "市公式の年度末統合記載と廃校済み確認",
+          "url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/20160327tawarayama.html",
+          "sha256": "29bc8d210bfae57b490ea98c8ba30b245a5d703f413dba7051fd94e01fba6e39"
+        },
+        {
+          "title": "市公式の年度末統合記載と廃校済み確認",
+          "url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+          "sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090"
+        },
+        {
+          "title": "原学校の固有点・完全地番",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "市の旧校舎一覧・同じ完全住所",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+          "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+        }
+      ],
+      "limits": [
+        "閉校式3月27日は終了日に代用せず、本文の当年度末から2016年3月31日と記録。",
+        "学校教育サービスの終了のみ。建物は転用・維持管理対象であり建物閉鎖・解体とはしません。",
+        "元geometry・source_ids・住所・詳細を保持。2025年旧校舎一覧点との差は証拠に明記し、現地点の座標精度を保証しません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "市立俵山中学校",
+      "baseline_category": "school",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.112261,
+          34.283841
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423656508"
+      ],
+      "source_ids": [
+        "node/1423656508"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 297,
+          "tags": {
+            "KSJ2:ADS": "俵山2305",
+            "KSJ2:AdminArea": "山口県長門市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "市立俵山中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県長門市俵山2305",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 297,
+          "complete_numbered": true
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35211",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "市立俵山中学校",
+        "address": "俵山2305",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          131.112261,
+          34.283841
+        ],
+        "gml_id": "fb01_1218",
+        "feature_index_0based": 1217,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "current": {
+        "name": "旧俵山中学校",
+        "address": "山口県長門市俵山２３０５番地",
+        "city": "山口県長門市",
+        "number": "AA0000000006",
+        "phone": "",
+        "point": [
+          131.11317,
+          34.28371
+        ],
+        "row": 7,
+        "url": "",
+        "description": "",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/352110_public_facility-a1d3cd25.csv",
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+        "source_sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015",
+        "resource_id": "a1d3cd25-5823-4224-9ad7-7241ac53b621",
+        "source_title": "【長門市】公共施設一覧.csv",
+        "source_metadata_modified": "2025-03-25T12:00:16.906632",
+        "source_notes": "長門市の公共施設一覧です。",
+        "source_version": ""
+      },
+      "current_point_distance_m": 84.77592697595489,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/tawarayama-closure-20160327.html",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/20160327tawarayama.html",
+          "source_sha256": "29bc8d210bfae57b490ea98c8ba30b245a5d703f413dba7051fd94e01fba6e39",
+          "source_as_of": "2016-03-27",
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/tawarayama-closure-20160327.html.txt",
+          "safe_sha256": "0cc8ac75d33aa9e53f2e07a003a8507aed0b367999092c3d91669c286ddfea22",
+          "raw_local_only": true
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/nagato-public-plan-37944.pdf",
+          "source_url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+          "source_sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090",
+          "source_as_of": "2026-03",
+          "retrieved_at": "2026-09-28",
+          "page": 146,
+          "source_date_kind": "document_edition_month"
+        }
+      ],
+      "method": "original_complete_address_and_historical_point_exact_explicit_school_closure_fiscal_year_end",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
     "id": "osm-node-1423656442",
     "expected": {
       "name": "市立乙瀬小学校(休校中)",
@@ -7021,6 +7188,83 @@
       "closure_source_path": "outputs/facility-registry-008e-20260928/public/safe-pages/4217358d6c37b11f.html",
       "closure_safe_sha256": "b6a5f5a95a42f65450f7a5d043a5e3bfd876dd28c3a78eb90b2d5a6faaadacc5",
       "event_scope": "児童館事業・施設の廃止。建物解体や児童クラブ等の別機能の終了は推定しない。"
+    }
+  },
+  {
+    "id": "osm-way-323473573",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-01-14",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "安岡支所は2025年1月14日から富任町五丁目10番1号のやすらガーデン内へ移転。旧安岡公民館内の窓口所在地に対応する元記録を利用候補から除外します。",
+      "sources": [
+        {
+          "title": "下関市 安岡支所移転のお知らせ",
+          "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/123877.html",
+          "sha256": "0911a0daa576d5e07a2e49171e8c65ff33e59002d9e4232bf902b353d1ee7f2d"
+        },
+        {
+          "title": "下関市 現行の安岡支所・電話案内",
+          "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/",
+          "sha256": "17eb9b19400a9ec07e60722fae74ef51a554535713892a52d93a1630d64c1d56"
+        }
+      ],
+      "limits": [
+        "安岡支所という行政組織の廃止ではありません。旧所在地の窓口終了を移転日から記録しています。",
+        "旧窓口の最終営業日・建物の解体日は推定せず、元座標を新所在地へ移動していません。",
+        "元の完全住所と固有の支所名、移転前後で不変と明記された電話番号で接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_municipal_branch_relocation_same_original_phone_and_branch",
+      "baseline_name": "安岡支所",
+      "baseline_address": "下関市安岡駅前二丁目7番1号国道191号",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9155322,
+          34.0232956
+        ]
+      },
+      "source_ids": [
+        "way/323473573"
+      ],
+      "baseline_raw_identity": {
+        "path": "data-sources/life-facilities-20260913/osm-life-facilities.json",
+        "sha256": "c748043590e12d726b2fbf8b221dd6c2da7508c7edb97183d96fb89bf0c03509",
+        "element_array_index": 648,
+        "tags": {
+          "addr:city": "下関市安岡駅前二丁目7番1号",
+          "addr:postcode": "759-6612",
+          "addr:street": "国道191号",
+          "amenity": "townhall",
+          "building": "yes",
+          "name": "安岡支所",
+          "phone": "+81 83 258 0317",
+          "website": "https://www.city.shimonoseki.lg.jp/www/genre/0000000000000/1000000000153/index.html",
+          "wheelchair": "yes"
+        }
+      },
+      "original_address": "下関市安岡駅前二丁目7番1号",
+      "new_official_address": "下関市富任町五丁目10番1号",
+      "original_phone": "0832580317",
+      "event_source": {
+        "key": "yasuoka-relocation",
+        "path": "outputs/facility-registry-008e-20260928/public/yasuoka-relocation.html",
+        "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/123877.html",
+        "sha256": "0911a0daa576d5e07a2e49171e8c65ff33e59002d9e4232bf902b353d1ee7f2d"
+      },
+      "current_source": {
+        "key": "yasuoka-current",
+        "path": "outputs/facility-registry-008e-20260928/public/yasuoka-current.html",
+        "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/",
+        "sha256": "17eb9b19400a9ec07e60722fae74ef51a554535713892a52d93a1630d64c1d56",
+        "bytes": 25349
+      },
+      "location_scope": "旧安岡支所の元地点に対応する行政窓口の終了のみ。新所在地へ座標を動かさない。"
     }
   }
 ]

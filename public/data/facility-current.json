@@ -15205,6 +15205,59 @@
       }
     },
     {
+      "id": "osm-node-1423656508",
+      "expected": {
+        "name": "市立俵山中学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423656508"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.112261,
+            34.283841
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2016-03-31",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "市公式の2016年3月記事が当年度末で俵山中学校を統合すると明記し、2026年計画が同校を廃校舎と確認。原完全住所・旧公的固有点が一致する学校サービスの終了。",
+        "sources": [
+          {
+            "title": "市公式の年度末統合記載と廃校済み確認",
+            "url": "https://www.city.nagato.yamaguchi.jp/wadairoot/wadai/20160327tawarayama.html",
+            "sha256": "29bc8d210bfae57b490ea98c8ba30b245a5d703f413dba7051fd94e01fba6e39"
+          },
+          {
+            "title": "市公式の年度末統合記載と廃校済み確認",
+            "url": "https://www.city.nagato.yamaguchi.jp/uploaded/attachment/37944.pdf",
+            "sha256": "d409e6d1a8e24af8bbb54e39a858e0f609acafd84b1765d5840c39f68beeb090"
+          },
+          {
+            "title": "原学校の固有点・完全地番",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          },
+          {
+            "title": "市の旧校舎一覧・同じ完全住所",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+            "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+          }
+        ],
+        "limits": [
+          "閉校式3月27日は終了日に代用せず、本文の当年度末から2016年3月31日と記録。",
+          "学校教育サービスの終了のみ。建物は転用・維持管理対象であり建物閉鎖・解体とはしません。",
+          "元geometry・source_ids・住所・詳細を保持。2025年旧校舎一覧点との差は証拠に明記し、現地点の座標精度を保証しません。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1423656442",
       "expected": {
         "name": "市立乙瀬小学校(休校中)",
@@ -16551,6 +16604,49 @@
         "limits": [
           "児童館事業・施設の廃止を記録したものです。建物の解体、併設児童クラブの終了や後継機能の廃止は推定していません。",
           "旧施設一覧・旧位置資料は当該児童館の同一性確認だけに使用し、廃止告知より優先して現存と判断していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-323473573",
+      "expected": {
+        "name": "安岡支所",
+        "category": "townhall",
+        "source_ids": [
+          "way/323473573"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9155322,
+            34.0232956
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2025-01-14",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "安岡支所は2025年1月14日から富任町五丁目10番1号のやすらガーデン内へ移転。旧安岡公民館内の窓口所在地に対応する元記録を利用候補から除外します。",
+        "sources": [
+          {
+            "title": "下関市 安岡支所移転のお知らせ",
+            "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/123877.html",
+            "sha256": "0911a0daa576d5e07a2e49171e8c65ff33e59002d9e4232bf902b353d1ee7f2d"
+          },
+          {
+            "title": "下関市 現行の安岡支所・電話案内",
+            "url": "https://www.city.shimonoseki.lg.jp/soshiki/35/",
+            "sha256": "17eb9b19400a9ec07e60722fae74ef51a554535713892a52d93a1630d64c1d56"
+          }
+        ],
+        "limits": [
+          "安岡支所という行政組織の廃止ではありません。旧所在地の窓口終了を移転日から記録しています。",
+          "旧窓口の最終営業日・建物の解体日は推定せず、元座標を新所在地へ移動していません。",
+          "元の完全住所と固有の支所名、移転前後で不変と明記された電話番号で接続しています。"
         ]
       }
     }
@@ -252085,6 +252181,620 @@
       }
     },
     {
+      "id": "osm-way-769375780",
+      "expected": {
+        "name": "県立岩国総合高等学校",
+        "category": "school",
+        "source_ids": [
+          "way/769375780"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  132.191473,
+                  34.1130117
+                ],
+                [
+                  132.191467,
+                  34.1133291
+                ],
+                [
+                  132.1914671,
+                  34.1135914
+                ],
+                [
+                  132.1914475,
+                  34.1137033
+                ],
+                [
+                  132.1915226,
+                  34.1140147
+                ],
+                [
+                  132.1918009,
+                  34.1142601
+                ],
+                [
+                  132.1919183,
+                  34.1143439
+                ],
+                [
+                  132.1921436,
+                  34.1144287
+                ],
+                [
+                  132.1926036,
+                  34.1145615
+                ],
+                [
+                  132.1926913,
+                  34.1145655
+                ],
+                [
+                  132.1927671,
+                  34.1145517
+                ],
+                [
+                  132.1929132,
+                  34.1144712
+                ],
+                [
+                  132.1929913,
+                  34.1143887
+                ],
+                [
+                  132.1930877,
+                  34.1141285
+                ],
+                [
+                  132.1931517,
+                  34.1141238
+                ],
+                [
+                  132.1935013,
+                  34.1137373
+                ],
+                [
+                  132.1934812,
+                  34.1136318
+                ],
+                [
+                  132.1934698,
+                  34.1135715
+                ],
+                [
+                  132.193452,
+                  34.1134449
+                ],
+                [
+                  132.1934678,
+                  34.1133256
+                ],
+                [
+                  132.1935438,
+                  34.1132043
+                ],
+                [
+                  132.1936242,
+                  34.1131586
+                ],
+                [
+                  132.1942781,
+                  34.1128545
+                ],
+                [
+                  132.1942336,
+                  34.1127913
+                ],
+                [
+                  132.1942337,
+                  34.1127332
+                ],
+                [
+                  132.1942249,
+                  34.1126784
+                ],
+                [
+                  132.193623,
+                  34.1121178
+                ],
+                [
+                  132.1935571,
+                  34.11197
+                ],
+                [
+                  132.1935101,
+                  34.1117622
+                ],
+                [
+                  132.1934438,
+                  34.1116163
+                ],
+                [
+                  132.1933155,
+                  34.1114476
+                ],
+                [
+                  132.1930642,
+                  34.1112374
+                ],
+                [
+                  132.1928765,
+                  34.1111217
+                ],
+                [
+                  132.1927302,
+                  34.1110573
+                ],
+                [
+                  132.1925734,
+                  34.1110118
+                ],
+                [
+                  132.19244,
+                  34.1109951
+                ],
+                [
+                  132.192328,
+                  34.1110001
+                ],
+                [
+                  132.1921958,
+                  34.1110342
+                ],
+                [
+                  132.1920811,
+                  34.1110939
+                ],
+                [
+                  132.1920205,
+                  34.1111449
+                ],
+                [
+                  132.1918238,
+                  34.1113105
+                ],
+                [
+                  132.1914653,
+                  34.1115593
+                ],
+                [
+                  132.1914013,
+                  34.1116613
+                ],
+                [
+                  132.1913825,
+                  34.111789
+                ],
+                [
+                  132.1913934,
+                  34.1121767
+                ],
+                [
+                  132.1914099,
+                  34.1124196
+                ],
+                [
+                  132.1914348,
+                  34.1127068
+                ],
+                [
+                  132.191473,
+                  34.1130117
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "D135210000345",
+        "official_name": "山口県立岩国総合高等学校",
+        "official_address": "山口県岩国市藤生町４丁目４１－１",
+        "services": [
+          "D1(高校)"
+        ],
+        "summary": "元OSM原タグの街区番号を復元すると現行学校台帳の完全住所に一致。同学校コードの公的施設点が元Polygon内部にあることを確認。",
+        "sources": [
+          {
+            "title": "文部科学省2026年5月1日現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "同学校コード・完全住所の施設固有点",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の施設掲載確認です。開校・開園時間、受入、入口位置は保証しません。",
+          "元geometry・source_ids・住所表示・詳細を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-769375790",
+      "expected": {
+        "name": "市立灘中学校",
+        "category": "school",
+        "source_ids": [
+          "way/769375790"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  132.19879,
+                  34.1090575
+                ],
+                [
+                  132.1987178,
+                  34.1089025
+                ],
+                [
+                  132.1985367,
+                  34.1087439
+                ],
+                [
+                  132.1982672,
+                  34.1085482
+                ],
+                [
+                  132.1978972,
+                  34.1082918
+                ],
+                [
+                  132.197472,
+                  34.1080658
+                ],
+                [
+                  132.197472,
+                  34.1080419
+                ],
+                [
+                  132.1973801,
+                  34.1079962
+                ],
+                [
+                  132.1972436,
+                  34.1080006
+                ],
+                [
+                  132.1970284,
+                  34.1080788
+                ],
+                [
+                  132.1968473,
+                  34.1082114
+                ],
+                [
+                  132.1967607,
+                  34.1083157
+                ],
+                [
+                  132.1967712,
+                  34.10842
+                ],
+                [
+                  132.1968149,
+                  34.1087265
+                ],
+                [
+                  132.1967467,
+                  34.1089047
+                ],
+                [
+                  132.1970826,
+                  34.1092632
+                ],
+                [
+                  132.1975052,
+                  34.1096392
+                ],
+                [
+                  132.1975288,
+                  34.1097131
+                ],
+                [
+                  132.197853,
+                  34.1098795
+                ],
+                [
+                  132.198112,
+                  34.1096753
+                ],
+                [
+                  132.198034,
+                  34.1095694
+                ],
+                [
+                  132.1982182,
+                  34.1094066
+                ],
+                [
+                  132.19879,
+                  34.1090575
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "C135210000800",
+        "official_name": "岩国市立灘中学校",
+        "official_address": "山口県岩国市藤生町２丁目２５－１",
+        "services": [
+          "C1(中学校)"
+        ],
+        "summary": "元OSM原タグの街区番号を復元すると現行学校台帳の完全住所に一致。同学校コードの公的施設点が元Polygon内部にあることを確認。",
+        "sources": [
+          {
+            "title": "文部科学省2026年5月1日現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "同学校コード・完全住所の施設固有点",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の施設掲載確認です。開校・開園時間、受入、入口位置は保証しません。",
+          "元geometry・source_ids・住所表示・詳細を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "civic-A135310000713",
+      "expected": {
+        "name": "江口幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "civic:60b8e78e-1a09-4775-a814-28a77978451f:row:3"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8778503,
+            33.99878471
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "A135310000713",
+        "official_name": "江口幼稚園",
+        "official_address": "山口県下松市大字東豊井字江口１０５９－１７",
+        "services": [
+          "私立幼稚園"
+        ],
+        "summary": "元の自治体学校コード・施設名・完全住所が現行文部科学省一覧に一致し、県2026年私立幼稚園一覧の同名・地番・電話でも補強。",
+        "sources": [
+          {
+            "title": "文部科学省2026年5月1日現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "県2026年5月1日私立幼稚園一覧（名称・同地番・電話補強）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/239523.pdf",
+            "sha256": "9d7d8aabc404a3d8c3df4dfda35ab1f67d62fb818bd328a5271e563f0cdc4b59"
+          },
+          {
+            "title": "元の自治体学校番号・完全住所・電話",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/065b5868-91c7-42ce-aa52-9b4c2afb99fd/resource/60b8e78e-1a09-4775-a814-28a77978451f/download/352071_educational_institution.csv",
+            "sha256": "e0a16bfd7f6c6ea0b2ae502fcd0d88fc5f7b324f7935a2409dd2123eadae13f4"
+          },
+          {
+            "title": "同一学校コードの双方原点50m以内の共通固有点",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の施設掲載確認です。開校・開園時間、受入、入口位置は保証しません。",
+          "元geometry・source_ids・住所表示・詳細を保持します。",
+          "座標は原資料を保持し、今回の確認範囲は学校・幼稚園台帳の掲載です。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656726",
+      "expected": {
+        "name": "市立夢が丘中学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423656726"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.934526,
+            34.171682
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "C135210001382",
+        "official_name": "下関市立夢が丘中学校",
+        "official_address": "山口県下関市豊浦町大字小串字夢が丘１０１４５",
+        "services": [
+          "C1(中学校)"
+        ],
+        "summary": "原本の完全住所に残る旧地番を、法務局の対象地区・実施日・地番変更方法と学校固有名称・公的学校コードで現行台帳へ接続。",
+        "sources": [
+          {
+            "title": "文部科学省現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "同一学校番号の公的施設点・完全住所",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "法務局の地番変更実施地区・変更方法",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001274071.pdf",
+            "sha256": "5eec44441c9386ed6af708d5975c5d187c078160019ccfdb806e75f53b44d9de"
+          },
+          {
+            "title": "個別学校名称・所在地の補強資料",
+            "url": "https://www.city.shimonoseki.lg.jp/map/kyoiku46.html",
+            "sha256": "cfe725a12363d4281f43a7230eed4b3238a3fdce25e6d9bdf8bf292da4b3ca14"
+          }
+        ],
+        "limits": [
+          "確認範囲は学校台帳基準日時点の掲載です。授業や施設利用可能性は保証しません。",
+          "地番変更日は行政上の住所変更であり開校日・移転日として扱いません。",
+          "元geometry・source_ids・住所表示・詳細を保持。同一学校コードの点差91.989mがあり、元地点の正確性は未保証。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660123",
+      "expected": {
+        "name": "県立宇部商業高等学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660123"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.220427,
+            34.008122
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "D135210000210",
+        "official_name": "山口県立宇部商業高等学校",
+        "official_address": "山口県宇部市大字際波字岡の原２０２２０",
+        "services": [
+          "D1(高校)"
+        ],
+        "summary": "原本の完全住所に残る旧地番を、法務局の対象地区・実施日・地番変更方法と学校固有名称・公的学校コードで現行台帳へ接続。",
+        "sources": [
+          {
+            "title": "文部科学省現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "同一学校番号の公的施設点・完全住所",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "法務局の地番変更実施地区・変更方法",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001309225.pdf",
+            "sha256": "9e3af5ec913972945791082e80ee8a4465048ef4a5da6048a507c390611441d9"
+          },
+          {
+            "title": "個別学校名称・所在地の補強資料",
+            "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+            "sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02"
+          }
+        ],
+        "limits": [
+          "確認範囲は学校台帳基準日時点の掲載です。授業や施設利用可能性は保証しません。",
+          "地番変更日は行政上の住所変更であり開校日・移転日として扱いません。",
+          "元geometry・source_ids・住所表示・詳細を保持。公的施設点は元点50m以内です。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660134",
+      "expected": {
+        "name": "県立山口農業高等学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660134"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.409295,
+            34.131463
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "D135210000176",
+        "official_name": "山口県立山口農業高等学校",
+        "official_address": "山口県山口市小郡上郷１０９８０－１",
+        "services": [
+          "D1(高校)"
+        ],
+        "summary": "原本の完全住所に残る旧地番を、法務局の対象地区・実施日・地番変更方法と学校固有名称・公的学校コードで現行台帳へ接続。",
+        "sources": [
+          {
+            "title": "文部科学省現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "同一学校番号の公的施設点・完全住所",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "法務局の地番変更実施地区・変更方法",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001315058.pdf",
+            "sha256": "dcbb035870814ca89c83e194492a03e756276c383c1bc8138dec48f1fcc5d897"
+          },
+          {
+            "title": "個別学校名称・所在地の補強資料",
+            "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+            "sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02"
+          }
+        ],
+        "limits": [
+          "確認範囲は学校台帳基準日時点の掲載です。授業や施設利用可能性は保証しません。",
+          "地番変更日は行政上の住所変更であり開校日・移転日として扱いません。",
+          "元geometry・source_ids・住所表示・詳細を保持。公的施設点は元点50m以内です。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1423656402",
       "expected": {
         "name": "市立下松中学校",
@@ -252512,6 +253222,144 @@
         ],
         "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
         "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+      }
+    },
+    {
+      "id": "osm-node-1423659661",
+      "expected": {
+        "name": "江口幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423659661"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8779701,
+            33.9984516
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "A135310000713",
+        "official_name": "江口幼稚園",
+        "official_address": "山口県下松市大字東豊井字江口１０５９－１７",
+        "services": [
+          "私立幼稚園"
+        ],
+        "summary": "同じ幼稚園学校コード・正式名称・完全住所・施設区分と、双方の元点から50m以内の同じ施設固有点を確認。同一施設の別IDとして今回確認する自治体原記録へ関連付けます。",
+        "sources": [
+          {
+            "title": "文部科学省2026年5月1日現行学校コード",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "県2026年5月1日私立幼稚園一覧（名称・同地番・電話補強）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/239523.pdf",
+            "sha256": "9d7d8aabc404a3d8c3df4dfda35ab1f67d62fb818bd328a5271e563f0cdc4b59"
+          },
+          {
+            "title": "元の自治体学校番号・完全住所・電話",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/065b5868-91c7-42ce-aa52-9b4c2afb99fd/resource/60b8e78e-1a09-4775-a814-28a77978451f/download/352071_educational_institution.csv",
+            "sha256": "e0a16bfd7f6c6ea0b2ae502fcd0d88fc5f7b324f7935a2409dd2123eadae13f4"
+          },
+          {
+            "title": "同一学校コードの双方原点50m以内の共通固有点",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "双方の元点に一致する同一学校コードの公的施設点",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の施設掲載確認です。開校・開園時間、受入、入口位置は保証しません。",
+          "元geometry・source_ids・住所表示・詳細を保持します。",
+          "座標は原資料を保持し、今回の確認範囲は学校・幼稚園台帳の掲載です。"
+        ]
+      },
+      "duplicate_of": "civic-A135310000713",
+      "duplicate_point": {
+        "coordinates": [
+          131.87783432885956,
+          33.99852255722242
+        ],
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+      }
+    },
+    {
+      "id": "osm-way-722384492",
+      "expected": {
+        "name": "光輝会 光輝病院",
+        "category": "hospital",
+        "source_ids": [
+          "way/722384492"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.1054264,
+            33.8931532
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "registry_id": "medical:73,1052,4",
+        "official_name": "光輝病院",
+        "official_address": "熊毛郡平生町大字佐賀１０００２番地７７",
+        "services": [
+          "病院"
+        ],
+        "summary": "同じ保険医療機関番号・正式名称・完全住所・病院サービスと、双方の元点50m以内の同一施設固有点を確認。元raw街区2-77と法務局の+10000地番変更も接続し、確認済み光輝病院の別IDへ関連付けます。",
+        "sources": [
+          {
+            "title": "中国四国厚生局 コード内容別医療機関一覧表（2026年9月1日）",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "厚生労働省 医療情報ネット施設票（2026年6月1日）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          },
+          {
+            "title": "法務局平生町全域の地番変更",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001258189.pdf",
+            "sha256": "ecf135d81fcb159a56feadf27ef255a6b75af06668c016c323b5941984617f7e"
+          },
+          {
+            "title": "運営法人と病院の対応・現所在地",
+            "url": "https://koukikai-group.or.jp/",
+            "sha256": "102006a51e03e79f202acffde6debbbb23ac0f536c0be876405b8b845bff7e98"
+          }
+        ],
+        "limits": [
+          "行政台帳への掲載を確認しています。現在の受診可否、診療時間、施設入口は未確認です。",
+          "施設票の位置情報は2026年6月1日時点の施設報告座標です。元の座標・施設ID・出典を保持しています。",
+          "指定日を開業日や改称日として扱いません。保険指定の現存をすべての診療機能の稼働とみなしません。"
+        ]
+      },
+      "duplicate_of": "osm-node-1423654264",
+      "duplicate_point": {
+        "coordinates": [
+          132.105722,
+          33.893389
+        ],
+        "source_url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+        "source_sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
       }
     },
     {
@@ -256387,6 +257235,400 @@
       }
     },
     {
+      "id": "civic-care-3578100152-e3b9814db2",
+      "expected": {
+        "name": "阿東園デイサービスセンター",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:626"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.653961,
+            34.337532
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3578100152",
+        "official_name": "阿東園デイサービスセンター",
+        "official_address": "山口市阿東地福下10288－1",
+        "services": [
+          "通所介護"
+        ],
+        "summary": "法務局の地区別地番変更資料と施設固有の公式住所表記により旧番地と現番地を接続し、同じ指定番号・正式名・法人・電話・元の全サービスの現台帳掲載を照合しました。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス指定台帳（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+            "sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "山口県 2026年度介護サービス情報公表対象一覧（旧番地表記）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/cms/file/2608/004176_f4.xlsx",
+            "sha256": "b192bb58c2cbb3292c2eb058b236a77ed486c33c4fc7c84386b8476fd8311fb8"
+          },
+          {
+            "title": "山口地方法務局 阿東・徳地地域の地番変更通知",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001256317.pdf",
+            "sha256": "ba10d3aed301c6530c8c7b715152835647a456e79390015a7d319153968ab79c"
+          },
+          {
+            "title": "阿東園 公式トップページの現所在地",
+            "url": "https://c-able.ne.jp/~atouen",
+            "sha256": "bf4bccd977ffb6acba146c07df49b76b2394ce1892adbe9d2568919a5e5a697e"
+          },
+          {
+            "title": "阿東園 公式施設概要・沿革の旧番地表記",
+            "url": "https://c-able.ne.jp/~atouen/shisetsu.html",
+            "sha256": "32dcaf4e78d9caccc437d174632b8580f87ba9004d79bfcbad7dccd759006a77"
+          },
+          {
+            "title": "阿東園デイサービスセンター 公式サービス案内の旧番地表記",
+            "url": "https://c-able.ne.jp/~atouen/day.html",
+            "sha256": "7bd8abe01c65e4c6d7594827775f2cf9053d0215adfc5e2c1a78e8d9e5d898f1"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+            "sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a"
+          }
+        ],
+        "limits": [
+          "確認対象は同一指定番号に属する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度を保証しません。",
+          "元の完全住所・ID・geometry・source_ids・registered_detailsを保持します。現指定台帳の完全住所は山口市阿東地福下10288-1です。",
+          "地番の加算一致だけでは採用せず、地区別の法務局通知に加え、元・現台帳の同番号・正式名・法人・電話・全サービスと施設固有の公式住所表記を照合しました。",
+          "国公表点と元座標の既知差はevidenceに記録しています。この台帳同一性確認は位置差を解消したことを意味せず、元位置を保持します。",
+          "住所表記の接続を移転・閉鎖・建替え完了のイベントへ変換しません。地番変更実施日は施設の移転日ではありません。",
+          "閲覧日を台帳基準日・開業日として扱いません。公表対象一覧の掲載は現指定の有効性の代わりに使わず、現指定台帳の有効期間を別途確認しました。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3578100285-89c87f56f0",
+      "expected": {
+        "name": "特別養護老人ホーム阿東園",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:981",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1272"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.653961,
+            34.337532
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3578100285",
+        "official_name": "特別養護老人ホーム阿東園",
+        "official_address": "山口市阿東地福下10288－1",
+        "services": [
+          "介護老人福祉施設",
+          "短期入所生活介護"
+        ],
+        "summary": "法務局の地区別地番変更資料と施設固有の公式住所表記により旧番地と現番地を接続し、同じ指定番号・正式名・法人・電話・元の全サービスの現台帳掲載を照合しました。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス指定台帳（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+            "sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "山口県 2026年度介護サービス情報公表対象一覧（旧番地表記）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/cms/file/2608/004176_f4.xlsx",
+            "sha256": "b192bb58c2cbb3292c2eb058b236a77ed486c33c4fc7c84386b8476fd8311fb8"
+          },
+          {
+            "title": "山口地方法務局 阿東・徳地地域の地番変更通知",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001256317.pdf",
+            "sha256": "ba10d3aed301c6530c8c7b715152835647a456e79390015a7d319153968ab79c"
+          },
+          {
+            "title": "阿東園 公式トップページの現所在地",
+            "url": "https://c-able.ne.jp/~atouen",
+            "sha256": "bf4bccd977ffb6acba146c07df49b76b2394ce1892adbe9d2568919a5e5a697e"
+          },
+          {
+            "title": "阿東園 公式施設概要・沿革の旧番地表記",
+            "url": "https://c-able.ne.jp/~atouen/shisetsu.html",
+            "sha256": "32dcaf4e78d9caccc437d174632b8580f87ba9004d79bfcbad7dccd759006a77"
+          },
+          {
+            "title": "阿東園 公式ショートステイ案内の旧番地表記",
+            "url": "https://c-able.ne.jp/~atouen/short.html",
+            "sha256": "6139cb760b133280b13368813e75a62e7fe068415441427b68893437dd714e36"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+            "sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+            "sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1"
+          }
+        ],
+        "limits": [
+          "確認対象は同一指定番号に属する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度を保証しません。",
+          "元の完全住所・ID・geometry・source_ids・registered_detailsを保持します。現指定台帳の完全住所は山口市阿東地福下10288-1です。",
+          "地番の加算一致だけでは採用せず、地区別の法務局通知に加え、元・現台帳の同番号・正式名・法人・電話・全サービスと施設固有の公式住所表記を照合しました。",
+          "国公表点と元座標の既知差はevidenceに記録しています。この台帳同一性確認は位置差を解消したことを意味せず、元位置を保持します。",
+          "住所表記の接続を移転・閉鎖・建替え完了のイベントへ変換しません。地番変更実施日は施設の移転日ではありません。",
+          "閲覧日を台帳基準日・開業日として扱いません。公表対象一覧の掲載は現指定の有効性の代わりに使わず、現指定台帳の有効期間を別途確認しました。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3591300094-38140c8e0e",
+      "expected": {
+        "name": "通所介護 みとうの杜",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1451"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.350876,
+            34.158138
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3591300094",
+        "official_name": "通所介護 みとうの杜",
+        "official_address": "美祢市美東町真名11521－4",
+        "services": [
+          "地域密着型通所介護"
+        ],
+        "summary": "法務局の地区別地番変更資料と施設固有の公式住所表記により旧番地と現番地を接続し、同じ指定番号・正式名・法人・電話・元の全サービスの現台帳掲載を照合しました。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス指定台帳（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35213&od=1",
+            "sha256": "65c23e1b6d8ffe16956a1e20180ac5c692467d22b41e6f06aa1fd4980590a830"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "山口県 2026年度介護サービス情報公表対象一覧（旧番地表記）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/cms/file/2608/004176_f3.xlsx",
+            "sha256": "03dca462562128e696ff7b49e1df581895bcdb07639485fb74a9b480d052ad5e"
+          },
+          {
+            "title": "山口地方法務局 旧美東町・秋芳町の地番変更通知",
+            "url": "https://houmukyoku.moj.go.jp/yamaguchi/content/001262482.pdf",
+            "sha256": "ce1863b6e53286763fa4d8c0f358c4c428bf7f67a3c679581de90310b0ff49f3"
+          },
+          {
+            "title": "みとうの杜 公式施設案内と併設事業所",
+            "url": "https://mitounomori.jp/",
+            "sha256": "0705015f8f6aa911158f34ffc6353f29933c0d4b00a14247e2838ee0294a68fd"
+          },
+          {
+            "title": "山口県 有料老人ホーム重要事項説明書・宇部小野田圏域",
+            "url": "https://www.pref.yamaguchi.lg.jp/soshiki/49/243216.html",
+            "sha256": "bcca8d0cf08a31287b2cd657391e9a24c6171440eafd115398335b1bc5f6360b"
+          },
+          {
+            "title": "山口県公開 みとうの杜重要事項説明書（2025年7月1日）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/226355.pdf",
+            "sha256": "c85f74c91b2f468be0b07db8363205b55dd93cfea23ebcebc1cebfc19badd863"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_780_all_20260709180927.csv",
+            "sha256": "19ed2778131c86f8e824e1ade115cec53c42a9a2a21eb0c5e0dcc68474c5581b"
+          }
+        ],
+        "limits": [
+          "確認対象は同一指定番号に属する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度を保証しません。",
+          "元の完全住所・ID・geometry・source_ids・registered_detailsを保持します。現指定台帳の完全住所は美祢市美東町真名11521-4です。",
+          "地番の加算一致だけでは採用せず、地区別の法務局通知に加え、元・現台帳の同番号・正式名・法人・電話・全サービスと施設固有の公式住所表記を照合しました。",
+          "国公表点と元座標の既知差はevidenceに記録しています。この台帳同一性確認は位置差を解消したことを意味せず、元位置を保持します。",
+          "住所表記の接続を移転・閉鎖・建替え完了のイベントへ変換しません。地番変更実施日は施設の移転日ではありません。",
+          "閲覧日を台帳基準日・開業日として扱いません。公表対象一覧の掲載は現指定の有効性の代わりに使わず、現指定台帳の有効期間を別途確認しました。",
+          "国公表CSVの事業所名欄は法人名になっています。この行単独で名称を確定せず、現県指定台帳と重要事項説明書の地域密着型通所介護欄で通所介護みとうの杜を確認しました。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3550180107-8b12340338",
+      "expected": {
+        "name": "下関市豊浦地域ケアセンター　介護老人保健施設ひびき苑",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:181",
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:246"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.937637,
+            34.176769
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3550180156",
+        "official_name": "済生会豊浦ケアセンター 介護老人保健施設ひびき苑",
+        "official_address": "下関市豊浦町小串10007－3",
+        "services": [
+          "短期入所療養介護",
+          "通所リハビリテーション"
+        ],
+        "summary": "公的譲渡・合併関係資料と現運営者の施設案内で名称・運営主体の継続性を照合し、完全住所・電話・元の全掲載サービスが一致する現指定番号へ接続しました。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所指定台帳（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+            "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "済生会豊浦ケアセンター 公式・所長挨拶と現施設案内",
+            "url": "https://www.toyoura-saiseikai.jp/hibikien/hibikien-greeting/",
+            "sha256": "cca2f4b53a757d90ff87e9249c9c1ca821d36569c6243abc8caa20180c6ef73a"
+          },
+          {
+            "title": "下関市議会 豊浦地域ケアセンター譲渡に伴う条例審査記録",
+            "url": "https://shimonoseki.media-streaming.jp/recording/meeting/detail/1247",
+            "sha256": "308eb3ea72eb0d593be32cf907de4cd6679b11af6537a028aae40cf7eab15c28"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_220_all_20260709180546.csv",
+            "sha256": "cd968b1c55938083bb2cb93862521995071c3f6a877f4d19efb7ac3cf658bd0b"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_160_all_20260709180500.csv",
+            "sha256": "f36cf235d918a18ba8d5819909c7719dd9ab3e93948a739b86ebffff0070f659"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する元の全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度を保証しません。",
+          "元指定番号3550180107、名称・法人・ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3550180156です。",
+          "公的移管・合併記録と現運営者の継続説明に基づく台帳同一性の確認であり、新旧番号の切替を建物閉鎖や新規建物開業とは扱いません。",
+          "国公表の同施設点と元座標の差はevidenceへ保持し、位置が一致したとは扱いません。元位置を変更しません。",
+          "資料閲覧日を指定変更日・移転日・開業日へ転用しません。併設する別サービスは元記録へ追加しません。",
+          "現指定CSVの法人名は末尾「会」が欠落しています。元の完全法人名と市議会の譲渡先正式名、現運営者の済生会単独運営・同施設改称説明で橋渡しし、原本表記は変更せず保存します。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3571600984-c857f56869",
+      "expected": {
+        "name": "地域密着型特別養護老人ホームなごみの里ななせ",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1021"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.141968,
+            34.022358
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3571601305",
+        "official_name": "短期入所生活介護事業所 ななせ",
+        "official_address": "山陽小野田市郡1773―2",
+        "services": [
+          "短期入所生活介護"
+        ],
+        "summary": "公的譲渡・合併関係資料と現運営者の施設案内で名称・運営主体の継続性を照合し、完全住所・電話・元の全掲載サービスが一致する現指定番号へ接続しました。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所指定台帳（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35216&od=1",
+            "sha256": "1b4e90c08ece6e1acb9c6505cd1ec52a3fb27aad46051aa9ea8afc96dfbe524a"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "香南会 総合福祉ゾーンつつじの丘・合併後の施設案内",
+            "url": "https://www.kounankai.jp/search/detail/82/",
+            "sha256": "e34d5af2f028cdca8b88fb1cf7b8813a0cd8b5f0fa56e6a3a6c252f473d1eaeb"
+          },
+          {
+            "title": "香南会 短期入所生活介護事業所ななせ・公式施設詳細",
+            "url": "https://www.kounankai.jp/search/detail/86/",
+            "sha256": "618ca98d0592dade2411bb92fee4a736e27d80a2eecf78336bbeb2c57e73216e"
+          },
+          {
+            "title": "山口県 2026年8月の指定・廃止事業所一覧",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/248047.pdf",
+            "sha256": "f97547f6c07a40eb74be9a6e63762b8a4204ee9c028d02ea0b5f773021b92c4a"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（既知位置差を記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+            "sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する元の全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度を保証しません。",
+          "元指定番号3571600984、名称・法人・ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3571601305です。",
+          "公的移管・合併記録と現運営者の継続説明に基づく台帳同一性の確認であり、新旧番号の切替を建物閉鎖や新規建物開業とは扱いません。",
+          "国公表の同施設点と元座標の差はevidenceへ保持し、位置が一致したとは扱いません。元位置を変更しません。",
+          "資料閲覧日を指定変更日・移転日・開業日へ転用しません。併設する別サービスは元記録へ追加しません。"
+        ]
+      }
+    },
+    {
       "id": "civic-KD0000900002",
       "expected": {
         "name": "指定居宅介護支援事業所げんき",
@@ -259819,6 +261061,763 @@
       }
     },
     {
+      "id": "osm-way-614008140",
+      "expected": {
+        "name": "大阪王将 下関椋野店",
+        "category": "restaurant",
+        "source_ids": [
+          "way/614008140"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.94350480000003,
+            33.97776325
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "food_business_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "shimonoseki-food:050586",
+        "official_name": "大阪王将　下関椋野店",
+        "official_address": "下関市椋野町三丁目11－14",
+        "services": [
+          "飲食店営業許可"
+        ],
+        "summary": "下関市の食品営業許可施設一覧に記載された当該施設の固有名称・完全住所・許可番号・座標を元施設と照合しました。",
+        "sources": [
+          {
+            "title": "下関市 食品営業許可施設一覧（2026年8月末）当該許可IDの固有点・名称・住所",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/ad801502-20b0-4609-b272-1b9f2dab0f9f/resource/8cc7f3b5-1e2b-40b8-93ae-bd89ad5f7680/download/352012_food_business_all_202608.csv",
+            "sha256": "e1d5297cbbeeef0392fe19012d7a30df4b3fcf684d2712591d0ff4f2f6855c6c"
+          },
+          {
+            "title": "大阪王将 公式下関椋野店 店舗名と完全住所の一致",
+            "url": "https://www.osaka-ohsho.com/store/store_detail.php?shop_id=305",
+            "sha256": "800f51fa68b0c67819979c76693cf14796d5f99bd74ce9de8f70658b4eddb36c"
+          }
+        ],
+        "limits": [
+          "2026年8月末の食品営業許可名簿への掲載確認であり、当日の営業・臨時休業・許可内容の変更・入口は未確認です。",
+          "施設IDと元の位置を保持し、同じ許可番号の2原IDを重複関係として記録しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-483627539",
+      "expected": {
+        "name": "ドミノピザ 下関宝町店",
+        "category": "restaurant",
+        "source_ids": [
+          "way/483627539"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9387405,
+            33.9795029
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "dominos:87199",
+        "official_name": "Domino's Pizza 下関宝町",
+        "official_address": "下関市宝町1-39",
+        "services": [
+          "飲食店"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "ドミノ・ピザ 公式下関宝町店 店名・所在地・施設マーカー",
+            "url": "https://www.dominos.jp/store/87199",
+            "sha256": "10ab501671e18f4c64fb558c9d0aa35671c2236d85bc630416e107094f9db85b"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-547913494",
+      "expected": {
+        "name": "(株）フレスタ室の木店",
+        "category": "supermarket",
+        "source_ids": [
+          "way/547913494"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.2125466,
+            34.1702566
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "fresta:3200",
+        "official_name": "フレスタ室の木店",
+        "official_address": "山口県岩国市室の木町1-4-72",
+        "services": [
+          "スーパーマーケット"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.fresta.co.jp/shop/3200",
+            "sha256": "0cf31f943420f7e1509b229caacd187fa107a2176583fcdc984ba4a7a4a561cd"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.067620013428!2d132.21036851519958!3d34.17018878057415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354535a3e6bc0ebd%3A0xd9f0ee713bcc90f6!2z44OV44Os44K544K_IOWupOOBruacqOW6lw!5e0!3m2!1sja!2sjp!4v1622615645076!5m2!1sja!2sjp",
+            "sha256": "8aed000130fa9220104bdf09134f8bf54cfd33b20e8af901232c12238b8f0767"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-549154583",
+      "expected": {
+        "name": "ドラッグストアモリ",
+        "category": "drugstore",
+        "source_ids": [
+          "way/549154583"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2659655,
+            33.9491137
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "doramori:higashikajigaeshi",
+        "official_name": "ドラッグストアモリ 東梶返店",
+        "official_address": "山口県宇部市東梶返3丁目15番16号",
+        "services": [
+          "ドラッグストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.doramori.co.jp/%e6%9d%b1%e6%a2%b6%e8%bf%94%e5%ba%97/",
+            "sha256": "48a0df418ac419b97005b9f050c6612d3026a66e21a6c4826a5d1d863e28ceea"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%83%88%E3%82%A2%E3%83%A2%E3%83%AA+%E6%9D%B1%E6%A2%B6%E8%BF%94%E5%BA%97+755-0039+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%AE%87%E9%83%A8%E5%B8%82%E6%9D%B1%E6%A2%B6%E8%BF%943%E4%B8%81%E7%9B%AE15%E7%95%AA16%E5%8F%B7&output=embed",
+            "sha256": "d4e8e31741234221d8b32560bc27f6467b721f0d8853c3c7004cc84143afb5de"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1120637425",
+      "expected": {
+        "name": "ドラッグストアモリ 宇部沖ノ旦店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/1120637425"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2277601,
+            33.9951484
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "doramori:ubeokinodan",
+        "official_name": "ドラッグストアモリ 宇部沖ノ旦店",
+        "official_address": "山口県宇部市沖ノ旦837番2",
+        "services": [
+          "ドラッグストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.doramori.co.jp/%e5%ae%87%e9%83%a8%e6%b2%96%e3%83%8e%e6%97%a6%e5%ba%97/",
+            "sha256": "04071c04504c74c9424b0e4e423fc965c99f0e64a9c824f517ddd30847376250"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%83%88%E3%82%A2%E3%83%A2%E3%83%AA+%E5%AE%87%E9%83%A8%E6%B2%96%E3%83%8E%E6%97%A6%E5%BA%97+759-0202+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%AE%87%E9%83%A8%E5%B8%82%E6%B2%96%E3%83%8E%E6%97%A6837%E7%95%AA2&output=embed",
+            "sha256": "9433aad102433fade71926eda7b4a92e7e1fd0ead04a8fee2d66062ed4760c0b"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1228233757",
+      "expected": {
+        "name": "ドラッグストアモリ 防府新田店",
+        "category": "drugstore",
+        "source_ids": [
+          "way/1228233757"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.56621,
+            34.0270386
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "doramori:hofushinden",
+        "official_name": "ドラッグストアモリ 防府新田店",
+        "official_address": "山口県防府市大字新田1050番地の1",
+        "services": [
+          "ドラッグストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.doramori.co.jp/%e9%98%b2%e5%ba%9c%e6%96%b0%e7%94%b0%e5%ba%97/",
+            "sha256": "8824ae67111209b6eb1f5a92203f0691764aecd76e75e13735d5c9e56ea025b5"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%83%88%E3%82%A2%E3%83%A2%E3%83%AA+%E9%98%B2%E5%BA%9C%E6%96%B0%E7%94%B0%E5%BA%97+747-0825+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E9%98%B2%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E6%96%B0%E7%94%B01050%E7%95%AA%E5%9C%B0%E3%81%AE1&output=embed",
+            "sha256": "b60fc1de16b7fe7ad86f8563708e789d97c1e1cc41e88d87cd2ca33c6fa32983"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1121040361",
+      "expected": {
+        "name": "トライアル",
+        "category": "supermarket",
+        "source_ids": [
+          "way/1121040361"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2186295,
+            33.9947954
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "trial:74",
+        "official_name": "スーパーセンタートライアル 際波店",
+        "official_address": "山口県宇部市厚南中央2丁目1-27",
+        "services": [
+          "スーパーマーケット"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.trial-net.co.jp/shops/74",
+            "sha256": "45e2a22f4934d4f7e297fc45a8752b9db246b7b827bfb69516138476b6802044"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=TRIAL+%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB+%E9%9A%9B%E6%B3%A2%E5%BA%97+%E3%80%92759-0212+%E5%B1%B1%E5%8F%A3%E7%9C%8C+%E5%AE%87%E9%83%A8%E5%B8%82+%E5%8E%9A%E5%8D%97%E4%B8%AD%E5%A4%AE2%E4%B8%81%E7%9B%AE1-27&output=embed",
+            "sha256": "1e0e0cd29145866836040327d4f86eb1df8ea14f81ecec4aa11ba05862b1604f"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-314652987",
+      "expected": {
+        "name": "トライアル",
+        "category": "supermarket",
+        "source_ids": [
+          "way/314652987"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7784147,
+            34.0644007
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "trial:306",
+        "official_name": "スーパーセンタートライアル 周南店",
+        "official_address": "山口県周南市野村3丁目17-1",
+        "services": [
+          "スーパーマーケット"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.trial-net.co.jp/shops/306",
+            "sha256": "decf452ab6707844f2e250f0cf61604476da50210bae099c66280ac59060b200"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=TRIAL+%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB+%E5%91%A8%E5%8D%97%E5%BA%97+%E3%80%92746-0022+%E5%B1%B1%E5%8F%A3%E7%9C%8C+%E5%91%A8%E5%8D%97%E5%B8%82+%E9%87%8E%E6%9D%913%E4%B8%81%E7%9B%AE17-1&output=embed",
+            "sha256": "bf7b04b997348ec49656f17b76355944c0df6fa2817daa73c6fd9a611fdfe6d6"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-349703476",
+      "expected": {
+        "name": "トライアル",
+        "category": "supermarket",
+        "source_ids": [
+          "way/349703476"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2584441,
+            33.9599995
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "trial:34",
+        "official_name": "スーパーセンタートライアル 宇部店",
+        "official_address": "山口県宇部市北琴芝2丁目2-45",
+        "services": [
+          "スーパーマーケット"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.trial-net.co.jp/shops/34",
+            "sha256": "f3b1f5623c4c42152f2913bb173614758963c4806df4d7cc4b728e0d51e05563"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=TRIAL+%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB+%E5%AE%87%E9%83%A8%E5%BA%97+%E3%80%92755-0036+%E5%B1%B1%E5%8F%A3%E7%9C%8C+%E5%AE%87%E9%83%A8%E5%B8%82+%E5%8C%97%E7%90%B4%E8%8A%9D2%E4%B8%81%E7%9B%AE2-45&output=embed",
+            "sha256": "f19597aa92250eeff2dde2a3ef3ad3d57b37431aaa13417203477de5186c531e"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-353411443",
+      "expected": {
+        "name": "トライアル",
+        "category": "supermarket",
+        "source_ids": [
+          "way/353411443"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.239569,
+            33.9543785
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "trial:357",
+        "official_name": "スーパーセンタートライアル 宇部中央店",
+        "official_address": "山口県宇部市中央町3丁目16-20",
+        "services": [
+          "スーパーマーケット"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.trial-net.co.jp/shops/357",
+            "sha256": "e5d91ff35fd77de2e320682c74de63df287f1710c6af6b951dcdba09d11b2c2d"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=TRIAL+%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB+%E5%AE%87%E9%83%A8%E4%B8%AD%E5%A4%AE%E5%BA%97+%E3%80%92755-0045+%E5%B1%B1%E5%8F%A3%E7%9C%8C+%E5%AE%87%E9%83%A8%E5%B8%82+%E4%B8%AD%E5%A4%AE%E7%94%BA3%E4%B8%81%E7%9B%AE16-20&output=embed",
+            "sha256": "7056602c04ef740056e0b6640739e1b20364ba8392bcbe025cd79c636d29b363"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1121040367",
+      "expected": {
+        "name": "ドミノ・ピザ宇部厚南店",
+        "category": "fast_food",
+        "source_ids": [
+          "way/1121040367"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.21710935,
+            33.9884628
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "dominos:87702",
+        "official_name": "Domino's Pizza 宇部厚南",
+        "official_address": "宇部市中野開作381-1",
+        "services": [
+          "飲食店"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "ドミノ・ピザ公式 宇部厚南店 店名・住所・施設Marker",
+            "url": "https://www.dominos.jp/store/87702",
+            "sha256": "b8c6f96c617e78cd3c1521135a2870a133eb8c07fb155a8c26c14bc77180ab2e"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-10915439394",
+      "expected": {
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "source_ids": [
+          "node/10915439394"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9225177,
+            33.950125
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "seven:377696",
+        "official_name": "セブン-イレブン ハートインＪＲ下関駅東口店",
+        "official_address": "山口県下関市竹崎町４－３－１",
+        "services": [
+          "コンビニエンスストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "セブン-イレブン公式店舗一覧 店舗ID・支店名・完全住所・施設座標",
+            "url": "https://seven-eleven-ss-api.areamarker.com/v1/search-by-condition",
+            "sha256": "2d47ca53f0896179883cdba02cd039346f1194b0b4d600126b240024f0e21606"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13154614554",
+      "expected": {
+        "name": "セブン-イレブン",
+        "category": "convenience",
+        "source_ids": [
+          "node/13154614554"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.39717,
+            34.0930876
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "seven:406854",
+        "official_name": "セブン-イレブン ハートインＪＲ新山口駅新幹線口店",
+        "official_address": "山口県山口市小郡令和１丁目２番１号",
+        "services": [
+          "コンビニエンスストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "セブン-イレブン公式店舗一覧 店舗ID・支店名・完全住所・施設座標",
+            "url": "https://seven-eleven-ss-api.areamarker.com/v1/search-by-condition",
+            "sha256": "a9e51c409eb5cbc0fb98454e815edcca7239eec5f94119e83bedd6a2f2140974"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-444114317",
+      "expected": {
+        "name": "東山口信用金庫 田布施支店",
+        "category": "bank",
+        "source_ids": [
+          "way/444114317"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.0436365,
+            33.9564063
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "higashiyamaguchi:003",
+        "official_name": "東山口信用金庫 田布施支店",
+        "official_address": "山口県熊毛郡田布施町大字下田布施899-15",
+        "services": [
+          "銀行"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "金融機関公式 当該支所/支店名称・完全住所・電話",
+            "url": "https://www.higashiyamaguchi-shinkin.co.jp/store/list/yanai/",
+            "sha256": "887a4f4f017d9de81f6b28c1a17c56bf3b09c0ba7905073577f0ca36cbdb06e3"
+          },
+          {
+            "title": "公式指定地図の同名・同住所・同電話に対応する施設固有点",
+            "url": "https://maps.google.com/maps?cid=481724697834211911&output=embed",
+            "sha256": "95086fc9a3efa726131a34185164a9cfa42b7ae94bbe6f0a80e931c809702fa8"
+          },
+          {
+            "title": "公式地図短縮リンクから当該施設CIDへのリダイレクト記録",
+            "url": "https://goo.gl/maps/GxIJ4",
+            "sha256": "11714e383fd06575ab78a0cd22a6dc5d4411ddd6af10d30e1e8dffdf54b9a269"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3306294924",
+      "expected": {
+        "name": "JA下関",
+        "category": "bank",
+        "source_ids": [
+          "node/3306294924"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9122884,
+            34.030803
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "ja-yamaguchi:8134:621",
+        "official_name": "JA山口県 安岡支所",
+        "official_address": "山口県下関市横野町1-16-12",
+        "services": [
+          "銀行"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "金融機関公式 当該支所/支店名称・完全住所・電話",
+            "url": "https://www.ja-ymg.or.jp/atm/branch_yasuoka/",
+            "sha256": "a37978a3e2cdebd119630ea500bcb5935688a50305a1526ce81644e5c759678f"
+          },
+          {
+            "title": "公式指定地図の同名・同住所・同電話に対応する施設固有点",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5083506859387!2d130.90961841314754!3d34.030828873053395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543a319219fbc7b%3A0x3073a4c8a28e130c!2zSkHlsbHlj6PnnIwg5a6J5bKh5pSv5omA!5e0!3m2!1sja!2sus!4v1697441242867",
+            "sha256": "38df94ad4be61207e83cf8459089f78ea843b9ade972cd92b04f9dda1a958f65"
+          },
+          {
+            "title": "JAバンク山口 2019年4月1日合併告知",
+            "url": "https://jabank-yamaguchi.or.jp/info/important/769.html",
+            "sha256": "4ad132071e2664ec55d96a6f3377c4c1d798f9ff9e702c922ff1853921822a28"
+          },
+          {
+            "title": "合併に伴う農協店舗新旧対比表 当該旧機関・旧支店と新支所コード",
+            "url": "https://jabank-yamaguchi.or.jp/assets/files/pdf/2019gappei/01.pdf",
+            "sha256": "56b7a02092e21248c75d49fab7da3c238392ddd25ab97d7cb5671b8344e39ebe"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-6184177787",
+      "expected": {
+        "name": "JA山口宇部宇部支店",
+        "category": "bank",
+        "source_ids": [
+          "node/6184177787"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2610925,
+            33.9593709
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "ja-yamaguchi:8134:545",
+        "official_name": "JA山口県 宇部支所",
+        "official_address": "山口県宇部市海南町2-1",
+        "services": [
+          "銀行"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "金融機関公式 当該支所/支店名称・完全住所・電話",
+            "url": "https://www.ja-ymg.or.jp/atm/branch_ube/",
+            "sha256": "51fd0d4f0cb731a3ea7579ed45e17c0203947f81d4938babb21b5d5e46ce181e"
+          },
+          {
+            "title": "公式指定地図の同名・同住所・同電話に対応する施設固有点",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.2977401560793!2d131.25847407787634!3d33.95918597319232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354380bf8180db07%3A0x88f0f14ccc0d31a6!2z77yq77yh5bGx5Y-j55yMIOWuh-mDqOaUr-aJgA!5e0!3m2!1sja!2sus!4v1697438864667",
+            "sha256": "299f972859db9d844f4c0e59d5f5f919e4cd4da768dbe60d1c78d63682ad7147"
+          },
+          {
+            "title": "JAバンク山口 2019年4月1日合併告知",
+            "url": "https://jabank-yamaguchi.or.jp/info/important/769.html",
+            "sha256": "4ad132071e2664ec55d96a6f3377c4c1d798f9ff9e702c922ff1853921822a28"
+          },
+          {
+            "title": "合併に伴う農協店舗新旧対比表 当該旧機関・旧支店と新支所コード",
+            "url": "https://jabank-yamaguchi.or.jp/assets/files/pdf/2019gappei/01.pdf",
+            "sha256": "56b7a02092e21248c75d49fab7da3c238392ddd25ab97d7cb5671b8344e39ebe"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
       "id": "osm-way-272544849",
       "expected": {
         "name": "大内郵便局",
@@ -260313,6 +262312,118 @@
         ],
         "source_url": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%98%B2%E5%BA%9C%E5%BA%97/shop_info/map/",
         "source_sha256": "df71617d4c83152e1ca87af425654bc45ac22514a86737b31d1678f520f5cc97"
+      }
+    },
+    {
+      "id": "osm-node-4763712789",
+      "expected": {
+        "name": "大阪王将 下関椋野店",
+        "category": "restaurant",
+        "source_ids": [
+          "node/4763712789"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9434914,
+            33.9777556
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "food_business_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "shimonoseki-food:050586",
+        "official_name": "大阪王将　下関椋野店",
+        "official_address": "下関市椋野町三丁目11－14",
+        "services": [
+          "飲食店営業許可"
+        ],
+        "summary": "下関市の食品営業許可施設一覧に記載された当該施設の固有名称・完全住所・許可番号・座標を元施設と照合しました。",
+        "sources": [
+          {
+            "title": "下関市 食品営業許可施設一覧（2026年8月末）当該許可IDの固有点・名称・住所",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/ad801502-20b0-4609-b272-1b9f2dab0f9f/resource/8cc7f3b5-1e2b-40b8-93ae-bd89ad5f7680/download/352012_food_business_all_202608.csv",
+            "sha256": "e1d5297cbbeeef0392fe19012d7a30df4b3fcf684d2712591d0ff4f2f6855c6c"
+          },
+          {
+            "title": "大阪王将 公式下関椋野店 店舗名と完全住所の一致",
+            "url": "https://www.osaka-ohsho.com/store/store_detail.php?shop_id=305",
+            "sha256": "800f51fa68b0c67819979c76693cf14796d5f99bd74ce9de8f70658b4eddb36c"
+          }
+        ],
+        "limits": [
+          "2026年8月末の食品営業許可名簿への掲載確認であり、当日の営業・臨時休業・許可内容の変更・入口は未確認です。",
+          "施設IDと元の位置を保持し、同じ許可番号の2原IDを重複関係として記録しています。"
+        ]
+      },
+      "duplicate_of": "osm-way-614008140",
+      "duplicate_point": {
+        "coordinates": [
+          130.9433981,
+          33.97777788
+        ],
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/ad801502-20b0-4609-b272-1b9f2dab0f9f/resource/8cc7f3b5-1e2b-40b8-93ae-bd89ad5f7680/download/352012_food_business_all_202608.csv",
+        "source_sha256": "e1d5297cbbeeef0392fe19012d7a30df4b3fcf684d2712591d0ff4f2f6855c6c"
+      }
+    },
+    {
+      "id": "osm-node-11389798235",
+      "expected": {
+        "name": "ドラッグストアモリ 防府新田店",
+        "category": "drugstore",
+        "source_ids": [
+          "node/11389798235"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5662125,
+            34.0270611
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "doramori:hofushinden",
+        "official_name": "ドラッグストアモリ 防府新田店",
+        "official_address": "山口県防府市大字新田1050番地の1",
+        "services": [
+          "ドラッグストア"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該店名・完全住所・電話",
+            "url": "https://www.doramori.co.jp/%e9%98%b2%e5%ba%9c%e6%96%b0%e7%94%b0%e5%ba%97/",
+            "sha256": "8824ae67111209b6eb1f5a92203f0691764aecd76e75e13735d5c9e56ea025b5"
+          },
+          {
+            "title": "公式指定の施設名・住所に対応する同電話の名前付き地図施設点",
+            "url": "https://maps.google.com/maps?q=%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%83%88%E3%82%A2%E3%83%A2%E3%83%AA+%E9%98%B2%E5%BA%9C%E6%96%B0%E7%94%B0%E5%BA%97+747-0825+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E9%98%B2%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E6%96%B0%E7%94%B01050%E7%95%AA%E5%9C%B0%E3%81%AE1&output=embed",
+            "sha256": "b60fc1de16b7fe7ad86f8563708e789d97c1e1cc41e88d87cd2ca33c6fa32983"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      },
+      "duplicate_of": "osm-way-1228233757",
+      "duplicate_point": {
+        "coordinates": [
+          131.5662256,
+          34.0271325
+        ],
+        "source_url": "https://maps.google.com/maps?q=%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%83%88%E3%82%A2%E3%83%A2%E3%83%AA+%E9%98%B2%E5%BA%9C%E6%96%B0%E7%94%B0%E5%BA%97+747-0825+%E5%B1%B1%E5%8F%A3%E7%9C%8C%E9%98%B2%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E6%96%B0%E7%94%B01050%E7%95%AA%E5%9C%B0%E3%81%AE1&output=embed",
+        "source_sha256": "b60fc1de16b7fe7ad86f8563708e789d97c1e1cc41e88d87cd2ca33c6fa32983"
       }
     },
     {
@@ -269786,6 +271897,94 @@
           "公式名簿への掲載確認であり、当日の開館・窓口・入口・施設内部を保証しません。",
           "元ID・geometry・source_idsを保持し、地図中心や近さだけで同一と判定しません。",
           "資料基準日の明記がない一覧は閲覧日を記録し、更新日を施設の現況確認日に置き換えません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1182756337",
+      "expected": {
+        "name": "萩市役所 見島支所",
+        "category": "townhall",
+        "source_ids": [
+          "way/1182756337"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1520018,
+            34.7636345
+          ]
+        }
+      },
+      "changes": {
+        "address": "山口県萩市見島326番地12"
+      },
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "municipal-page:mishima-current",
+        "official_name": "見島支所",
+        "official_address": "山口県萩市見島326番地12",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "原データに残る完全住所・電話と自治体の現行部署案内を照合。表示住所で抜けていた番地を訂正しました。",
+        "sources": [
+          {
+            "title": "自治体の部署名・完全住所・電話",
+            "url": "https://www.city.hagi.lg.jp/soshiki/8/",
+            "sha256": "2eb0a38f3a878ba39d7e7239e7a4cf33ad4f8ae2e15f43420bd0b4f14817bbed"
+          }
+        ],
+        "limits": [
+          "現行の自治体掲載確認であり、当日の開庁・入口や元代表点の位置精度は保証しません。",
+          "元ID・geometry・source_idsと原本は保持。元情報から番地を復元し、名称一致だけで同定していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-relation-11172373",
+      "expected": {
+        "name": "山口市役所 秋穂総合支所",
+        "category": "townhall",
+        "source_ids": [
+          "relation/11172373"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4373726,
+            34.0145526
+          ]
+        }
+      },
+      "changes": {
+        "address": "山口県山口市秋穂東6570番地"
+      },
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "municipal-page:aio-current",
+        "official_name": "秋穂総合支所",
+        "official_address": "山口県山口市秋穂東6570番地",
+        "services": [
+          "行政庁舎"
+        ],
+        "summary": "原データに残る完全住所・電話と自治体の現行部署案内を照合。表示住所で抜けていた番地を訂正しました。",
+        "sources": [
+          {
+            "title": "自治体の部署名・完全住所・電話",
+            "url": "https://www.city.yamaguchi.lg.jp/map/7008.html",
+            "sha256": "5ce0d8029a8b00ac5ce76b4607d3e5de6e7389166259bf1760b6919742d559e1"
+          }
+        ],
+        "limits": [
+          "現行の自治体掲載確認であり、当日の開庁・入口や元代表点の位置精度は保証しません。",
+          "元ID・geometry・source_idsと原本は保持。元情報から番地を復元し、名称一致だけで同定していません。"
         ]
       }
     },

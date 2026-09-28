@@ -1656,18 +1656,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-way-722384492",
-    "name": "光輝会 光輝病院",
-    "category": "hospital",
-    "group": "medical",
-    "reasons": [
-      "no_facility_specific_location_within_50m"
-    ],
-    "next": "現行の名称・完全住所・元電話または施設番号と、原地点50m以内の施設固有位置を結ぶ一次資料が必要。共用座標・名称と市だけの一致は不採用。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-way-922754902",
     "name": "のむら大腸肛門クリニック",
     "category": "clinic",
@@ -2796,18 +2784,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423656508",
-    "name": "市立俵山中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_exact_name_official_location"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423656543",
     "name": "市立内日中学校",
     "category": "school",
@@ -2918,18 +2894,6 @@
   {
     "id": "osm-node-1423656724",
     "name": "市立夜市小学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "no_unique_official_point_within_50m"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423656726",
-    "name": "市立夢が丘中学校",
     "category": "school",
     "group": "schools",
     "reasons": [
@@ -3972,18 +3936,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423659661",
-    "name": "江口幼稚園",
-    "category": "childcare",
-    "group": "childcare",
-    "reasons": [
-      "no_unique_precise_p14_site_and_full_address_current_childcare_record"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423659668",
     "name": "江浦幼稚園",
     "category": "childcare",
@@ -4440,18 +4392,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-node-1423660123",
-    "name": "県立宇部商業高等学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "current_name_or_full_address_not_confirmed"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-node-1423660125",
     "name": "県立宇部西高等学校",
     "category": "school",
@@ -4466,18 +4406,6 @@
   {
     "id": "osm-node-1423660127",
     "name": "県立周防大島高等学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "current_name_or_full_address_not_confirmed"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-node-1423660134",
-    "name": "県立山口農業高等学校",
     "category": "school",
     "group": "schools",
     "reasons": [
@@ -6432,30 +6360,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
   },
   {
-    "id": "osm-way-769375780",
-    "name": "県立岩国総合高等学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "same_facility_other_id_or_original_numbered_address_conflict"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "osm-way-769375790",
-    "name": "市立灘中学校",
-    "category": "school",
-    "group": "schools",
-    "reasons": [
-      "same_facility_other_id_or_original_numbered_address_conflict"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
     "id": "osm-way-893847740",
     "name": "宇部市立東岐波中学校",
     "category": "school",
@@ -6506,18 +6410,6 @@
   {
     "id": "civic-KD0000500048",
     "name": "タツノ子ハウス",
-    "category": "childcare",
-    "group": "childcare",
-    "reasons": [
-      "no_unique_precise_p14_site_and_full_address_current_childcare_record"
-    ],
-    "next": "元の施設番号・完全住所・同地改称沿革・施設固有位置を追加で確認。位置矛盾、番地差、同一施設別IDは保留維持。古い不掲載から閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/education-medical/holds.json"
-  },
-  {
-    "id": "civic-A135310000713",
-    "name": "江口幼稚園",
     "category": "childcare",
     "group": "childcare",
     "reasons": [
@@ -13400,20 +13292,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3578100152-e3b9814db2",
-    "name": "阿東園デイサービスセンター",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570301071-4c5edfb463",
     "name": "デイサービス 花咲美",
     "category": "social_facility",
@@ -13793,20 +13671,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3578100285-89c87f56f0",
-    "name": "特別養護老人ホーム阿東園",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570301998-67df5409c2",
     "name": "あいあい山口短期入所生活介護",
     "category": "social_facility",
@@ -13859,20 +13723,6 @@
   {
     "id": "civic-care-3577700093-ca068a076c",
     "name": "特別養護老人ホームサンライフ山陽",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_care_number_not_currently_listed_not_closure_proof",
-      "later_same_address_service_designation_or_reopening",
-      "september_active_same_address_same_service"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3571600984-c857f56869",
-    "name": "地域密着型特別養護老人ホームなごみの里ななせ",
     "category": "social_facility",
     "group": "welfare",
     "reasons": [
@@ -14270,18 +14120,6 @@
   {
     "id": "civic-care-3550180040-cd9722e7f4",
     "name": "介護老人保健施設さくら寮",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_care_number_not_currently_listed_not_closure_proof"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
-    "id": "civic-care-3550180107-8b12340338",
-    "name": "下関市豊浦地域ケアセンター　介護老人保健施設ひびき苑",
     "category": "social_facility",
     "group": "welfare",
     "reasons": [
@@ -16653,20 +16491,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
   },
   {
-    "id": "civic-care-3591300094-38140c8e0e",
-    "name": "通所介護 みとうの杜",
-    "category": "social_facility",
-    "group": "welfare",
-    "reasons": [
-      "original_full_numbered_address_mismatch",
-      "original_services_not_all_confirmed",
-      "newer_address_conflict"
-    ],
-    "next": "元の全掲載サービスと番号・名称・完全住所・法人の継続/終了を一次資料で確認。新しい固有地点・住所矛盾、後続指定、同名別法人を解消するまで保留。公表対象掲載・台帳不掲載だけで稼働や閉鎖を推定しない。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/welfare/holds.json"
-  },
-  {
     "id": "civic-care-3570203244-4fc025cd08",
     "name": "デイサービス楽笑",
     "category": "social_facility",
@@ -17079,18 +16903,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-10915439394",
-    "name": "セブン-イレブン",
-    "category": "convenience",
-    "group": "convenience",
-    "reasons": [
-      "multiple_same_chain_official_facilities_within_50m"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-10932637345",
     "name": "ローソン",
     "category": "convenience",
@@ -17109,18 +16921,6 @@
     "group": "retail",
     "reasons": [
       "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-node-11389798235",
-    "name": "ドラッグストアモリ 防府新田店",
-    "category": "drugstore",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
     ],
     "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -17255,18 +17055,6 @@
       "baseline_branch_identity_missing"
     ],
     "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-node-13154614554",
-    "name": "セブン-イレブン",
-    "category": "convenience",
-    "group": "convenience",
-    "reasons": [
-      "multiple_same_chain_official_facilities_within_50m"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
@@ -20379,18 +20167,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-1120637425",
-    "name": "ドラッグストアモリ 宇部沖ノ旦店",
-    "category": "drugstore",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-1121030699",
     "name": "JA山口県JA​長門​大津​俵山 Yショップ俵山店",
     "category": "convenience",
@@ -20399,18 +20175,6 @@
       "operator_not_in_three_chain_directory"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-1121040361",
-    "name": "トライアル",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
     "previous_batch": "facility-registry-008d-20260928",
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
@@ -20447,18 +20211,6 @@
       "generic_brand_or_different_branch_identity_needs_more_than_nearby_coordinate"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-1228233757",
-    "name": "ドラッグストアモリ 防府新田店",
-    "category": "drugstore",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
     "previous_batch": "facility-registry-008d-20260928",
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
@@ -20943,18 +20695,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-314652987",
-    "name": "トライアル",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-314669388",
     "name": "ローソン",
     "category": "convenience",
@@ -21207,18 +20947,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-349703476",
-    "name": "トライアル",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-351442237",
     "name": "マックスバリュ",
     "category": "supermarket",
@@ -21261,18 +20989,6 @@
     "group": "retail",
     "reasons": [
       "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-353411443",
-    "name": "トライアル",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
     ],
     "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -22143,30 +21859,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-547913494",
-    "name": "(株）フレスタ室の木店",
-    "category": "supermarket",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-549154583",
-    "name": "ドラッグストアモリ",
-    "category": "drugstore",
-    "group": "retail",
-    "reasons": [
-      "no_verified_facility_specific_coordinate"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-549534088",
     "name": "ローソン",
     "category": "convenience",
@@ -22923,18 +22615,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-3306294924",
-    "name": "JA下関",
-    "category": "bank",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-3844415781",
     "name": "伊予銀行",
     "category": "bank",
@@ -23451,18 +23131,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-6184177787",
-    "name": "JA山口宇部宇部支店",
-    "category": "bank",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-7217444212",
     "name": "JA山口県阿東支所",
     "category": "bank",
@@ -23801,18 +23469,6 @@
   {
     "id": "osm-way-441933885",
     "name": "ＪＡ南すおう田布施",
-    "category": "bank",
-    "group": "retail",
-    "reasons": [
-      "current_operator_identity_and_point_not_yet_proven"
-    ],
-    "next": "元の固有支店名・完全住所・電話と、施設固有点または旧住所告知の独立した根拠を補う。ブランド近接・台帳不掲載・新店舗開業日からの旧終了推測は不可。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-444114317",
-    "name": "東山口信用金庫 田布施支店",
     "category": "bank",
     "group": "retail",
     "reasons": [
@@ -26859,18 +26515,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-node-4763712789",
-    "name": "大阪王将 下関椋野店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "same_permit_matches_multiple_baseline_features"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-node-4770687026",
     "name": "良's",
     "category": "restaurant",
@@ -27873,18 +27517,6 @@
     "group": "dining",
     "reasons": [
       "multiple_original_ids_match_same_official_store"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-1121040367",
-    "name": "ドミノ・ピザ宇部厚南店",
-    "category": "fast_food",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -29847,18 +29479,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
   },
   {
-    "id": "osm-way-483627539",
-    "name": "ドミノピザ 下関宝町店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "operator_source_not_yet_verified"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
     "id": "osm-way-486918962",
     "name": "ガスト 下関武久店",
     "category": "restaurant",
@@ -30129,19 +29749,6 @@
     "group": "dining",
     "reasons": [
       "no_same_operator_coordinate_within_50m"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/commercial/holds.json"
-  },
-  {
-    "id": "osm-way-614008140",
-    "name": "大阪王将 下関椋野店",
-    "category": "restaurant",
-    "group": "dining",
-    "reasons": [
-      "same_permit_matches_multiple_baseline_features",
-      "official_name_address_match_but_named_facility_coordinate_unresolved"
     ],
     "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
     "previous_batch": "facility-registry-008d-20260928",
@@ -31324,18 +30931,6 @@
     "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
   },
   {
-    "id": "osm-relation-11172373",
-    "name": "山口市役所 秋穂総合支所",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
     "id": "osm-relation-4457133",
     "name": "萩市役所",
     "category": "townhall",
@@ -31410,18 +31005,6 @@
   {
     "id": "osm-way-1165942455",
     "name": "岩国市美川斎場",
-    "category": "townhall",
-    "group": "public",
-    "reasons": [
-      "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-1182756337",
-    "name": "萩市役所 見島支所",
     "category": "townhall",
     "group": "public",
     "reasons": [
@@ -31591,18 +31174,6 @@
     "id": "osm-way-320364433",
     "name": "萩市立萩図書館",
     "category": "library",
-    "group": "public",
-    "reasons": [
-      "current_listing_and_full_address_not_unique_or_status_note"
-    ],
-    "next": "元の施設IDを保持し、施設固有の公式識別子・完全住所・現行資料・変更履歴の不足を追加確認する。",
-    "previous_batch": "facility-registry-008d-20260928",
-    "evidence_record": "outputs/facility-registry-008e-20260928/public/holds.json"
-  },
-  {
-    "id": "osm-way-323473573",
-    "name": "安岡支所",
-    "category": "townhall",
     "group": "public",
     "reasons": [
       "current_listing_and_full_address_not_unique_or_status_note"
