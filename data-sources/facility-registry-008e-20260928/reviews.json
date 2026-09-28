@@ -56300,6 +56300,1120 @@
     }
   },
   {
+    "id": "osm-node-4770687026",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "pasta-ryos:access",
+      "official_name": "イタリアン食堂 良’s",
+      "official_address": "山口県防府市八王子1丁目24-29",
+      "services": [
+        "イタリア料理店"
+      ],
+      "summary": "元の店名・電話・番地とイタリア料理の種別を公式案内に照合しました。運営者指定地図の同名・同電話の施設目的地点が元Pointから約5mで、全原IDの同名・同電話に別候補はありません。",
+      "sources": [
+        {
+          "title": "イタリアン食堂 良’s 公式アクセス・施設住所・電話",
+          "url": "https://pasta-ryos.com/access/",
+          "sha256": "a10d5e13dc2e78161f72a5d3a70051c89512c5cba40c0eaaafd0908f9bf6ebd3"
+        },
+        {
+          "title": "運営者が指定する同名店舗の地図目的地点・電話",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6611.0194581524065!2d131.56609957459992!3d34.056445317510274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544928cdf3e2d43%3A0x6c83636cfaddcb0!2z44Kk44K_44Oq44Ki44Oz6aOf5aCCIOiJr-KAmXM!5e0!3m2!1sja!2sjp!4v1753076133302!5m2!1sja!2sjp",
+          "sha256": "dbde38df99b10d5d981cf51a528089167ab2861651be24b4de7dd48beb0660da"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元の短い名称・住所表記・電話・イタリア料理の元詳細と原geometryを保持します。",
+        "ページ更新表示2026年9月25日と調査日9月28日を区別し、更新を移転・改称日とは扱いません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "良's",
+      "baseline_address": "防府八王子1-24-29",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5686846,
+          34.056488
+        ]
+      },
+      "source_ids": [
+        "node/4770687026"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_index": 1874,
+          "source_id": "node/4770687026",
+          "tags": {
+            "addr:city": "防府",
+            "addr:housenumber": "1-24-29",
+            "addr:street": "八王子",
+            "name": "良's",
+            "phone": "+81 835 22 1270"
+          }
+        }
+      ],
+      "official_point": [
+        131.5686745,
+        34.0564409
+      ],
+      "distance_m": 5.319,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "method": "original_name_phone_block_number_italian_cuisine_and_operator_linked_named_place",
+      "operator_source": {
+        "url": "https://pasta-ryos.com/access/",
+        "final_url": "https://pasta-ryos.com/access/",
+        "raw_path": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/retail-source-audit/raw-local-only/ryos-access.html",
+        "raw_sha256": "a10d5e13dc2e78161f72a5d3a70051c89512c5cba40c0eaaafd0908f9bf6ebd3",
+        "safe_path": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/retail-source-audit/ryos-safe-facts.json",
+        "safe_sha256": "0e34abbad25bf132911eb58b4a150c3e83a84ef47e12b7c6361ae2a4e70630b0"
+      },
+      "map_source": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6611.0194581524065!2d131.56609957459992!3d34.056445317510274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544928cdf3e2d43%3A0x6c83636cfaddcb0!2z44Kk44K_44Oq44Ki44Oz6aOf5aCCIOiJr-KAmXM!5e0!3m2!1sja!2sjp!4v1753076133302!5m2!1sja!2sjp",
+        "final_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6611.0194581524065!2d131.56609957459992!3d34.056445317510274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544928cdf3e2d43%3A0x6c83636cfaddcb0!2z44Kk44K_44Oq44Ki44Oz6aOf5aCCIOiJr-KAmXM!5e0!3m2!1sja!2sjp!4v1753076133302!5m2!1sja!2sjp",
+        "raw_path": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/retail-source-audit/raw-local-only/ryos-embed-0.html",
+        "raw_sha256": "dbde38df99b10d5d981cf51a528089167ab2861651be24b4de7dd48beb0660da",
+        "safe_path": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/retail-source-audit/ryos-safe-facts.json",
+        "safe_sha256": "0e34abbad25bf132911eb58b4a150c3e83a84ef47e12b7c6361ae2a4e70630b0"
+      },
+      "named_place_record": [
+        "0x3544928cdf3e2d43:0x6c83636cfaddcb0",
+        "〒747-0037 山口県防府市八王子１丁目２４−２９ イタリアン食堂 良’s",
+        [
+          34.0564409,
+          131.5686745
+        ],
+        "488700168610110640"
+      ],
+      "named_place_path": [
+        21,
+        3,
+        0
+      ],
+      "official_marker_name": "イタリアン食堂 良’s",
+      "official_phone": "0835-22-1270",
+      "root_distance_m": 5.3198,
+      "all_7764_name_or_phone_identity_ids": [
+        "osm-node-4770687026"
+      ],
+      "original_address_equivalence": "原表記「防府八王子1-24-29」の市名省略を原文保持。元の固有電話と番地・名称を公式完全住所に接続し、同名店舗固有点が原Pointから約5m。",
+      "current_source_update_display": "2026.09.25",
+      "chat_source_difference": "GPT返却は郵便番号747-0000、ページ日付2026.07.09を採録。rootが取得した原本本文は747-0037・2026.09.25であり、古い返却値を採用しない。"
+    }
+  },
+  {
+    "id": "osm-node-5336218226",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "yours-value:store:migita",
+      "official_name": "ユアーズ・バリュー右田店",
+      "official_address": "防府市右田高井615-2",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "ユアーズ・バリュー右田店 公式店舗案内",
+          "url": "https://yours-value.jp/store/",
+          "sha256": "b52607c98f236885e26466f40957436cee9512930fc412c309a8324aad3c5179"
+        },
+        {
+          "title": "ユアーズ・バリュー右田店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.009004702443!2d131.55169831469107!3d34.06928342428041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544925ba1b76c33%3A0x1f0d03c89ef82285!2z44Om44Ki44O844K644OQ44Oq44Ol44O85Y-z55Sw5bqX!5e0!3m2!1sja!2sjp!4v1591060759948!5m2!1sja!2sjp",
+          "sha256": "086b1bf4bb38475f6d4b55a0cfc7a04bb8efd59a3dfec5c21a13d46c42070791"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "ユアーズ・バリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5539567,
+          34.0692506
+        ]
+      },
+      "source_ids": [
+        "node/5336218226"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 559,
+          "source_id": "node/5336218226",
+          "tags": {
+            "name": "ユアーズ・バリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.553887,
+        34.069279
+      ],
+      "distance_m": 7.155,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "ユアーズバリュー右田店",
+      "operator_heading": "ユアーズ・バリュー　右田店",
+      "official_phone": "0835-24-1001",
+      "operator_branch_bound_text": "ユアーズ・バリュー　右田店 \n \n 防府市から山口市へと向かう262号線と国道2号線が交差する沖高井交差点すぐに位置する右田店は防府市だけでなく山口市、周南市からのアクセスもよく市外県外のお客様も訪れます。地産地消に取り組む「結（ゆい）の心」コーナーは調味料から野菜まで、ファンを多く持つ地元こだわりの産品がまとまっており、ご好評をいただいています。380台駐車できる広い駐車スペース、バラエティに富んだ売り場で「日常使いの食品からハレの日のメニューまで」こだわりの食材と共に皆様のお越しをお待ちしております。  所在地 〒747-0064 防府市右田高井615-2　 電話番号 tel:0835-24-1001　fax:0835-23-6948 営業時間 9：30～21：00 店休日 1月1日から1月3日 駐車台数 380台",
+      "operator_raw_sha256": "b52607c98f236885e26466f40957436cee9512930fc412c309a8324aad3c5179",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-6a342f664ced7db029.json",
+      "map_raw_sha256": "086b1bf4bb38475f6d4b55a0cfc7a04bb8efd59a3dfec5c21a13d46c42070791",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-ae1760e31aa9ad79c1.json",
+      "map_named_record": {
+        "place_id": "0x3544925ba1b76c33:0x1f0d03c89ef82285",
+        "label": "〒747-0064 山口県防府市高井６１５−２ ユアーズバリュー右田店",
+        "point": [
+          131.553887,
+          34.069279
+        ],
+        "cid": "2237448750068408965",
+        "name": "ユアーズバリュー右田店",
+        "address_lines": [
+          "〒747-0064 山口県防府市高井６１５−２"
+        ],
+        "phone": "0835-24-1001",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 7.154686978621296,
+      "linked_alternate_place_points": [],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 559,
+          "source_id": "node/5336218226",
+          "raw_name": "ユアーズ・バリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-node-4820362141",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "yours-value:store:niire",
+      "official_name": "ユアーズ・バリュー仁井令店",
+      "official_address": "防府市西仁井令1丁目11-1",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "ユアーズ・バリュー仁井令店 公式店舗案内",
+          "url": "https://yours-value.jp/store/",
+          "sha256": "b52607c98f236885e26466f40957436cee9512930fc412c309a8324aad3c5179"
+        },
+        {
+          "title": "ユアーズ・バリュー仁井令店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7359267051133!2d131.54593331469064!3d34.050644425262824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449276e89e06cb%3A0xf5422e86b7f1403c!2z44Om44Ki44O844K644OQ44Oq44Ol44O85LuB5LqV5Luk5bqX!5e0!3m2!1sja!2sjp!4v1591061073799!5m2!1sja!2sjp",
+          "sha256": "ae574ae93151c71a5a216145ddd758f02ddd9704ebd46e6d399b31d8ba941705"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "ユアーズバリュー",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5481014,
+          34.0506911
+        ]
+      },
+      "source_ids": [
+        "node/4820362141"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 491,
+          "source_id": "node/4820362141",
+          "tags": {
+            "name": "ユアーズバリュー"
+          }
+        }
+      ],
+      "official_point": [
+        131.548122,
+        34.05064
+      ],
+      "distance_m": 5.991,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "ユアーズ・バリュー 仁井令店",
+      "operator_heading": "ユアーズ・バリュー　仁井令店",
+      "official_phone": "0835-27-3100",
+      "operator_branch_bound_text": "ユアーズ・バリュー　仁井令店  \n \n たくさんの店舗が並ぶ187号線沿いに位置するに仁井令店は430台が駐車できるスペースや明るい日差しの入るテーブルスペース（ミニキッチン完備）もあり、対面式の広い売り場で皆様のお越しをお待ちしております。    \n \n 所在地 〒747-0849 防府市西仁井令1丁目11-1 電話番号 tel:0835-27-3100　fax:0835-27-3101 営業時間 9：30～21：00 店休日 1月1日から1月3日 駐車台数 430台 \n \n",
+      "operator_raw_sha256": "b52607c98f236885e26466f40957436cee9512930fc412c309a8324aad3c5179",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-6a342f664ced7db029.json",
+      "map_raw_sha256": "ae574ae93151c71a5a216145ddd758f02ddd9704ebd46e6d399b31d8ba941705",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-1117d770f9d5755897.json",
+      "map_named_record": {
+        "place_id": "0x35449276e89e06cb:0xf5422e86b7f1403c",
+        "label": "〒747-0849 山口県防府市西仁井令１丁目１１−１ ユアーズ・バリュー 仁井令店",
+        "point": [
+          131.548122,
+          34.05064
+        ],
+        "cid": "17672739043901784124",
+        "name": "ユアーズ・バリュー 仁井令店",
+        "address_lines": [
+          "〒747-0849 山口県防府市西仁井令１丁目１１−１"
+        ],
+        "phone": "0835-27-3100",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 5.990645628176627,
+      "linked_alternate_place_points": [],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 491,
+          "source_id": "node/4820362141",
+          "raw_name": "ユアーズバリュー",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-node-4818155054",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_aeontownshunankume",
+      "official_name": "マックスバリュイオンタウン周南久米店",
+      "official_address": "山口県周南市久米中央五丁目8番1",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュイオンタウン周南久米店 公式店舗案内",
+          "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_aeontownshunankume.php",
+          "sha256": "1e7c5fee5be2451263ab1ae1163025640e32e3fc53300ea3d0af6935286e326d"
+        },
+        {
+          "title": "マックスバリュイオンタウン周南久米店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.2952108005265!2d131.84018247613432!3d34.03629771857129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e12a81af7bcd%3A0xe559a13483ae0101!2z44Oe44OD44Kv44K544OQ44Oq44OlIOOCpOOCquODs-OCv-OCpuODs-WRqOWNl-S5heexs-W6lw!5e0!3m2!1sja!2sjp!4v1706871952888!5m2!1sja!2sjp",
+          "sha256": "49304ca0528a3aed406f15a2095793869eb9c943a236134c46b6e1f45993f30e"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。",
+        "同じPlace IDの公式リンクと埋込表示に点位置の差があります。双方とも元の代表点から50m以内であることを確認し、入口座標とは扱っていません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8426094,
+          34.0363204
+        ]
+      },
+      "source_ids": [
+        "node/4818155054"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 487,
+          "source_id": "node/4818155054",
+          "tags": {
+            "name": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.8427574,
+        34.0362933
+      ],
+      "distance_m": 13.966,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュイオンタウン周南久米店",
+      "operator_heading": "マックスバリュイオンタウン周南久米店",
+      "official_phone": "0834-36-1200",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒745-0809　山口県周南市久米中央五丁目8番1\n電話番号\n0834-36-1200\n営業時間\n7:00～23:00\n駐車場\n501台",
+      "operator_raw_sha256": "1e7c5fee5be2451263ab1ae1163025640e32e3fc53300ea3d0af6935286e326d",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-db7a8234e26627ad4b.json",
+      "map_raw_sha256": "49304ca0528a3aed406f15a2095793869eb9c943a236134c46b6e1f45993f30e",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-040980ff1a09a7b461.json",
+      "map_named_record": {
+        "place_id": "0x3544e12a81af7bcd:0xe559a13483ae0101",
+        "label": "〒745-0809 山口県周南市久米中央５丁目８−１ マックスバリュイオンタウン周南久米店",
+        "point": [
+          131.8427574,
+          34.0362933
+        ],
+        "cid": "16526417554532335873",
+        "name": "マックスバリュイオンタウン周南久米店",
+        "address_lines": [
+          "〒745-0809 山口県周南市久米中央５丁目８−１"
+        ],
+        "phone": "0834-36-1200",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 13.966486658285076,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/W1NHEEi6Ftsxg4cZA",
+          "raw_sha256": "fcd7079af51cda79514abc2075943633992827dbe85b5eaaa6f0b62b8cb2f04a",
+          "point": [
+            131.8425924,
+            34.0364275
+          ],
+          "distance_m": 12.01157569739589,
+          "same_place_id": "0x3544e12a81af7bcd:0xe559a13483ae0101",
+          "between_named_points_m": 21.303494234545177
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 487,
+          "source_id": "node/4818155054",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-node-4021833491",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_yamada",
+      "official_name": "マックスバリュ山田店",
+      "official_address": "山口県下松市大字山田157-1",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュ山田店 公式店舗案内",
+          "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_yamada.php",
+          "sha256": "1430340356cd86c44201acb9e90acd7940f87980d52896c3e97cd1181e111082"
+        },
+        {
+          "title": "マックスバリュ山田店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.437588115786!2d131.90034277613427!3d34.03264461876423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e014449ddfaf%3A0x57f4ce6cf7846e35!2z44Oe44OD44Kv44K544OQ44Oq44OlIOWxseeUsOW6lw!5e0!3m2!1sja!2sjp!4v1706871666098!5m2!1sja!2sjp",
+          "sha256": "c3afc064c769d6b17c5d1dfc8151c0e9600415d593079f9fc894b95325e51449"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9028719,
+          34.0326237
+        ]
+      },
+      "source_ids": [
+        "node/4021833491"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 285,
+          "source_id": "node/4021833491",
+          "tags": {
+            "brand": "マックスバリュ",
+            "name": "マックスバリュ",
+            "name:en": "MaxValu",
+            "name:ja": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.9029177,
+        34.0326402
+      ],
+      "distance_m": 4.602,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュ山田店",
+      "operator_heading": "マックスバリュ山田店",
+      "official_phone": "0833-47-2020",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒744-0041　山口県下松市大字山田157-1\n電話番号\n0833-47-2020\n営業時間\n8:00～23:00\n駐車場\n570台",
+      "operator_raw_sha256": "1430340356cd86c44201acb9e90acd7940f87980d52896c3e97cd1181e111082",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-f382a7b634d7356474.json",
+      "map_raw_sha256": "c3afc064c769d6b17c5d1dfc8151c0e9600415d593079f9fc894b95325e51449",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-55e509fd0ad7a8b91c.json",
+      "map_named_record": {
+        "place_id": "0x3544e014449ddfaf:0x57f4ce6cf7846e35",
+        "label": "〒744-0041 山口県下松市山田１５７−１ マックスバリュ山田店",
+        "point": [
+          131.9029177,
+          34.0326402
+        ],
+        "cid": "6337917543021571637",
+        "name": "マックスバリュ山田店",
+        "address_lines": [
+          "〒744-0041 山口県下松市山田１５７−１"
+        ],
+        "phone": "0833-47-2020",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 4.6019947502288785,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/J3fQ8WooeRDb3GaW8",
+          "raw_sha256": "5ab735fcf6959b0c501076baa4f39ad03e8e6c76f24d33196dd5e4dae6f7cd17",
+          "point": [
+            131.9029177,
+            34.0326402
+          ],
+          "distance_m": 4.6019947502288785,
+          "same_place_id": "0x3544e014449ddfaf:0x57f4ce6cf7846e35",
+          "between_named_points_m": 0.0
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 285,
+          "source_id": "node/4021833491",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-way-351442237",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_tokuyamahigashi",
+      "official_name": "マックスバリュ徳山東店",
+      "official_address": "山口県周南市大字久米字町合3095-4",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュ徳山東店 公式店舗案内",
+          "url": "https://www.the-fuji.com/maxvalu/store/shop/yamaguchi/mv_tokuyamahigashi.html",
+          "sha256": "e6d84eb72e21bf972d122a041c6c9037e95becdc4e9a2eccac96e21117f9f88b"
+        },
+        {
+          "title": "マックスバリュ徳山東店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4448019161355!2d131.83375817613432!3d34.03245951877401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e6d3c909aab9%3A0x5b0c6f5f2a87b085!2z44Oe44OD44Kv44K544OQ44Oq44OlIOW-s-WxseadseW6lw!5e0!3m2!1sja!2sjp!4v1706871969884!5m2!1sja!2sjp",
+          "sha256": "172946bd21c2cbfefd54c8c804db8c9c3972b19e46d71a0feae2060599c0b4d9"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8363305,
+          34.0323437
+        ]
+      },
+      "source_ids": [
+        "way/351442237"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 812,
+          "source_id": "way/351442237",
+          "tags": {
+            "name": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.8363331,
+        34.0324551
+      ],
+      "distance_m": 12.389,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュ徳山東店",
+      "operator_heading": "マックスバリュ徳山東店",
+      "official_phone": "0834-26-1800",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒745-0801　山口県周南市大字久米字町合3095-4\n電話番号\n0834-26-1800\n営業時間\n6:00～24:00\n駐車場\n67台",
+      "operator_raw_sha256": "e6d84eb72e21bf972d122a041c6c9037e95becdc4e9a2eccac96e21117f9f88b",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-bb1a623df8303d3bce.json",
+      "map_raw_sha256": "172946bd21c2cbfefd54c8c804db8c9c3972b19e46d71a0feae2060599c0b4d9",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-51885968f5a0e67afb.json",
+      "map_named_record": {
+        "place_id": "0x3544e6d3c909aab9:0x5b0c6f5f2a87b085",
+        "label": "〒745-0801 山口県周南市久米字町合３０９５−４ マックスバリュ徳山東店",
+        "point": [
+          131.8363331,
+          34.0324551
+        ],
+        "cid": "6560741211698081925",
+        "name": "マックスバリュ徳山東店",
+        "address_lines": [
+          "〒745-0801 山口県周南市久米字町合３０９５−４"
+        ],
+        "phone": "0834-26-1800",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 12.389448763651673,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/v3JMTpQSszCAeWqz6",
+          "raw_sha256": "62b25d1be04a7f2b6b26d8c41a990dcb77e0d6e0d8b26b1c4ad3e1f2f3aa446f",
+          "point": [
+            131.8363331,
+            34.0324551
+          ],
+          "distance_m": 12.389448763651673,
+          "same_place_id": "0x3544e6d3c909aab9:0x5b0c6f5f2a87b085",
+          "between_named_points_m": 0.0
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 812,
+          "source_id": "way/351442237",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-way-369072036",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_suetake",
+      "official_name": "マックスバリュ末武店",
+      "official_address": "山口県下松市美里町2丁目7番2号",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュ末武店 公式店舗案内",
+          "url": "https://www.the-fuji.com/maxvalu/store/shop/yamaguchi/mv_suetake.html",
+          "sha256": "a56ba7b9a540b578e14a2730cb4507ea4ad4fe3a09c5f430501b7348e656da89"
+        },
+        {
+          "title": "マックスバリュ末武店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.6701271386805!2d131.86041507613405!3d34.02667741907896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e11e49545409%3A0x463ec9d1f20f8997!2z44Oe44OD44Kv44K544OQ44Oq44OlIOacq-atpuW6lw!5e0!3m2!1sja!2sjp!4v1706871685320!5m2!1sja!2sjp",
+          "sha256": "65abe55d657247bdf1818fe46486ffb019c70940e0f26610ba369cf538fc0cba"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.862869,
+          34.0264173
+        ]
+      },
+      "source_ids": [
+        "way/369072036"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 841,
+          "source_id": "way/369072036",
+          "tags": {
+            "name": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.86299,
+        34.026673
+      ],
+      "distance_m": 30.541,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュ末武店",
+      "operator_heading": "マックスバリュ末武店",
+      "official_phone": "0833-43-0330",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒744-0073　山口県下松市美里町2丁目7番2号\n電話番号\n0833-43-0330\n営業時間\n8:00～23:00\n【お薬販売 9:00～21:00\n】※資格者在中状況により変動\n駐車場\n221台",
+      "operator_raw_sha256": "a56ba7b9a540b578e14a2730cb4507ea4ad4fe3a09c5f430501b7348e656da89",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-b2818b4f5472a58f26.json",
+      "map_raw_sha256": "65abe55d657247bdf1818fe46486ffb019c70940e0f26610ba369cf538fc0cba",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-7c903fbabd3f6889b3.json",
+      "map_named_record": {
+        "place_id": "0x3544e11e49545409:0x463ec9d1f20f8997",
+        "label": "〒744-0073 山口県下松市美里町２丁目７−２ マックスバリュ末武店",
+        "point": [
+          131.86299,
+          34.026673
+        ],
+        "cid": "5061704934757468567",
+        "name": "マックスバリュ末武店",
+        "address_lines": [
+          "〒744-0073 山口県下松市美里町２丁目７−２"
+        ],
+        "phone": "0833-43-0330",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 30.541021204797428,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/csg7R9LLh8SWdCzLA",
+          "raw_sha256": "da5bc180516458386ab2538eb4435cc4d4d69bfe41484d49778f5a6af5ca1c3a",
+          "point": [
+            131.86299,
+            34.026673
+          ],
+          "distance_m": 30.541021204797428,
+          "same_place_id": "0x3544e11e49545409:0x463ec9d1f20f8997",
+          "between_named_points_m": 0.0
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 841,
+          "source_id": "way/369072036",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-node-3951221857",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_yanaishinjo",
+      "official_name": "マックスバリュ柳井新庄店",
+      "official_address": "山口県柳井市柳井4923-2",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュ柳井新庄店 公式店舗案内",
+          "url": "https://www.the-fuji.com/mv/store/shop/yamaguchi/mv_yanaishinjo.php",
+          "sha256": "3d28661a519a7c05c47fe110ea7dc42eb59ee1906a0fa574d4856560dc76c4d3"
+        },
+        {
+          "title": "マックスバリュ柳井新庄店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7297201450433!2d132.0941730761324!3d33.97378582186839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35453d5da58d8a61%3A0xb8094a24a9b7f9d7!2z44Oe44OD44Kv44K544OQ44Oq44OlIOafs-S6leaWsOW6hOW6lw!5e0!3m2!1sja!2sjp!4v1706872027291!5m2!1sja!2sjp",
+          "sha256": "38fec34ff99a29ef42e4a1fbe53bcd892edf61c61d5e2c0bbd9ad2aedfef1da0"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.0967292,
+          33.9737976
+        ]
+      },
+      "source_ids": [
+        "node/3951221857"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 249,
+          "source_id": "node/3951221857",
+          "tags": {
+            "name": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        132.096748,
+        33.9737814
+      ],
+      "distance_m": 2.5,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュ柳井新庄店",
+      "operator_heading": "マックスバリュ柳井新庄店",
+      "official_phone": "0820-24-1115",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒742-0021　山口県柳井市柳井4923-2\n電話番号\n0820-24-1115\n営業時間\n8:00～23:00\n駐車場\n246台",
+      "operator_raw_sha256": "3d28661a519a7c05c47fe110ea7dc42eb59ee1906a0fa574d4856560dc76c4d3",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-564401215c240b1e8e.json",
+      "map_raw_sha256": "38fec34ff99a29ef42e4a1fbe53bcd892edf61c61d5e2c0bbd9ad2aedfef1da0",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-f702e90b4f36c54bf6.json",
+      "map_named_record": {
+        "place_id": "0x35453d5da58d8a61:0xb8094a24a9b7f9d7",
+        "label": "〒742-0021 山口県柳井市柳井４９２３−２ マックスバリュ柳井新庄店",
+        "point": [
+          132.096748,
+          33.9737814
+        ],
+        "cid": "13261212099095820759",
+        "name": "マックスバリュ柳井新庄店",
+        "address_lines": [
+          "〒742-0021 山口県柳井市柳井４９２３−２"
+        ],
+        "phone": "0820-24-1115",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 2.500060987546898,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/eA3Gf9zskcXoWqTj8",
+          "raw_sha256": "6e761db55371b0b7a5ac42cc03f7f3be0e81cd2ba3331ca8af20892cf980fe62",
+          "point": [
+            132.096748,
+            33.9737814
+          ],
+          "distance_m": 2.500060987546898,
+          "same_place_id": "0x35453d5da58d8a61:0xb8094a24a9b7f9d7",
+          "between_named_points_m": 0.0
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 249,
+          "source_id": "node/3951221857",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
+    "id": "osm-node-3596474500",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "fuji:mv_asae",
+      "official_name": "マックスバリュ浅江店",
+      "official_address": "山口県光市浅江4-1-7-1",
+      "services": [
+        "スーパーマーケット"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "マックスバリュ浅江店 公式店舗案内",
+          "url": "https://www.the-fuji.com/maxvalu/store/shop/yamaguchi/mv_asae.html",
+          "sha256": "c50008fdb0efa57c19ed220fc042b328c427c66af6fa1f75ff575e8251d528d5"
+        },
+        {
+          "title": "マックスバリュ浅江店 公式案内埋込地図の店舗固有点",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.909371828629!2d131.92435877613204!3d33.96916882211153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35451e042ae3ff09%3A0x2c351fd69d783f98!2z44Oe44OD44Kv44K544OQ44Oq44OlIOa1heaxn-W6lw!5e0!3m2!1sja!2sjp!4v1706871863441!5m2!1sja!2sjp",
+          "sha256": "fca53a2493547251ab22b1c5462734d9fc1374314df7c45dea0bd8c470d2b1ae"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。",
+        "元データに住所がないため、店舗名・業種と施設固有点の距離で支店を同定しました。",
+        "同じPlace IDの公式リンクと埋込表示に点位置の差があります。双方とも元の代表点から50m以内であることを確認し、入口座標とは扱っていません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "マックスバリュ",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9268984,
+          33.9691696
+        ]
+      },
+      "source_ids": [
+        "node/3596474500"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 168,
+          "source_id": "node/3596474500",
+          "tags": {
+            "brand": "マックスバリュ",
+            "name": "マックスバリュ",
+            "name:en": "Maxvalu Tokai",
+            "name:ja": "マックスバリュ"
+          }
+        }
+      ],
+      "official_point": [
+        131.9268909,
+        33.9693355
+      ],
+      "distance_m": 18.46,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "official_marker_name": "マックスバリュ浅江店",
+      "operator_heading": "マックスバリュ浅江店",
+      "official_phone": "0833-72-5000",
+      "operator_branch_bound_text": "店舗情報\n住所\n〒743-0021　山口県光市浅江4-1-7-1\n電話番号\n0833-72-5000\n営業時間\n8:00～23:00\n【お薬販売 8:30～20:00\n】※資格者在中状況により変動\n駐車場\n466台",
+      "operator_raw_sha256": "c50008fdb0efa57c19ed220fc042b328c427c66af6fa1f75ff575e8251d528d5",
+      "operator_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-d60fef23704432cd27.json",
+      "map_raw_sha256": "fca53a2493547251ab22b1c5462734d9fc1374314df7c45dea0bd8c470d2b1ae",
+      "map_safe_file": "outputs\\facility-registry-008e-20260928\\chatgpt-parallel-010\\retail-source-audit\\harvest-0d83a50cd2ff911334.json",
+      "map_named_record": {
+        "place_id": "0x35451e042ae3ff09:0x2c351fd69d783f98",
+        "label": "〒743-0021 山口県光市浅江４丁目１−７ 1 マックスバリュ浅江店",
+        "point": [
+          131.9268909,
+          33.9693355
+        ],
+        "cid": "3185487318059859864",
+        "name": "マックスバリュ浅江店",
+        "address_lines": [
+          "〒743-0021 山口県光市浅江４丁目１−７ 1"
+        ],
+        "phone": "0833-72-5000",
+        "source_json_path": [
+          21,
+          3,
+          0
+        ],
+        "kind": "named_place_record_not_viewport"
+      },
+      "independent_haversine_distance_m": 18.460224909389733,
+      "linked_alternate_place_points": [
+        {
+          "source_url": "https://maps.app.goo.gl/DcqrQMeAqbaD7inh7",
+          "raw_sha256": "e3f3fbfcc1b19052cf0e3223554a18cc940b9a00e5fb09644feaed33d55a3e9c",
+          "point": [
+            131.9269337,
+            33.9691644
+          ],
+          "distance_m": 3.306260703942912,
+          "same_place_id": "0x35451e042ae3ff09:0x2c351fd69d783f98",
+          "between_named_points_m": 19.430573030668246
+        }
+      ],
+      "original_7764_records_duplicate_check": {
+        "count": 7764,
+        "matches": []
+      },
+      "current_overlay_duplicate_matches": [],
+      "raw_original_element_check": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 168,
+          "source_id": "node/3596474500",
+          "raw_name": "マックスバリュ",
+          "raw_shop": "supermarket"
+        }
+      ],
+      "point_not_viewport": true
+    }
+  },
+  {
     "id": "osm-way-272544849",
     "changes": {},
     "review": {

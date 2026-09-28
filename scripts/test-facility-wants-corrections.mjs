@@ -34,8 +34,10 @@ test('historical Lady closure date is not the later Wants notice date; Ouchi not
  assert.equal(get(ouchi).properties.category,'reference');assert(!searchPlaces('山口大内御堀店',[],current).facilities.some(f=>f.id===ouchi));
  assert(!searchPlaces('くすりのレデイ 宇部店',[],current).facilities.some(f=>f.id===lady));assert(!prepareFacilities(current).some(p=>[lady,ouchi].includes(p.facility.id)));
 });
-test('uncertain predecessors, current Numa 1-chome, and containing shopping centres are unchanged',()=>{
- for(const id of ['osm-way-562664551','osm-node-4021837791','osm-node-3951221858','osm-node-3951221857']){assert.deepEqual(get(id),base.find(f=>f.id===id));assert(!batch.updates.some(u=>u.id===id));}
+test('the Wants batch leaves uncertain predecessors, current Numa 1-chome, and containing shopping centres unchanged',()=>{
+ // Check the hash-bound Wants snapshot; later independent registry reviews may attest these facilities.
+ const wantsSnapshot=applyFacilityCurrent(base,{schema_version:overlay.schema_version,checked_at:'2026-09-25',updates:overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)});
+ for(const id of ['osm-way-562664551','osm-node-4021837791','osm-node-3951221858','osm-node-3951221857']){assert.deepEqual(wantsSnapshot.find(f=>f.id===id),base.find(f=>f.id===id));assert(!batch.updates.some(u=>u.id===id));}
  assert(facilityAvailable(get('official-tsuruha-3888')));assert.equal(get('official-tsuruha-10049').geometry.coordinates[0],131.33282355062036);
  assert.equal(evidence.cases.filter(c=>c.status==='resolved').length,4);assert.equal(evidence.cases.filter(c=>c.status==='map_action').length,3);
  const numa=evidence.cases.find(c=>c.case_id==='reconcile:wants-closed-ube-numa');assert.equal(numa.nearest[0].id,'osm-way-562664551');assert(numa.nearest.find(c=>c.id==='official-tsuruha-3888').distance_m>400);
