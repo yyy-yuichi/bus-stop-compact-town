@@ -1,0 +1,1817 @@
+[
+  {
+    "id": "osm-node-1423654296",
+    "expected": {
+      "name": "内日幼稚園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423654296"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.970278,
+          34.101329
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "県教育委員会の2026年4月1日一覧が下関市立内日幼稚園の廃園(令和6年3月31日)を明記。旧施設名・完全住所・固有位置で対象を特定しました。",
+      "sources": [
+        {
+          "title": "現行の公的学校・保育施設一覧",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+          "sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64"
+        },
+        {
+          "title": "公的な施設固有位置・施設番号・完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "旧施設の廃園・休園を反映し、同敷地の後継施設や建物全体の閉鎖とはみなしません。",
+        "資料基準日を休園開始日に置き換えません。元の座標・ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "named_point_full_address",
+      "baseline_name": "内日幼稚園",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.970278,
+          34.101329
+        ]
+      },
+      "source_ids": [
+        "node/1423654296"
+      ],
+      "baseline_source_ids": [
+        "node/1423654296"
+      ],
+      "location": {
+        "name": "下関市立内日幼稚園",
+        "address": "山口県下関市大字内日下字坂本1031",
+        "point": [
+          130.97056399815204,
+          34.10106000305215
+        ],
+        "source_kind": "p29",
+        "feature_array_index": 24,
+        "number": "A135210000323",
+        "suspension_code": "0",
+        "distance_m": 39.851,
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_as_of": "2023",
+        "feature_index_base": 0
+      },
+      "current": {
+        "name": "下関市立内日幼稚園",
+        "address": "下関市大字内日下字坂本1031",
+        "phone": "",
+        "status_note": "廃園(令和6年3月31日)",
+        "row": 8,
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+        "source_sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64",
+        "source_as_of": "2026-04-01",
+        "service": "公立幼稚園",
+        "source_path": "outputs/facility-registry-008-20260928/public-kindergarten-20260401.html"
+      },
+      "distance_m": 39.851,
+      "history": null,
+      "history_decision": "名称固有部分一致。略記・字体差のみは表示名を維持。",
+      "current_point_crosscheck": {
+        "id": "osm-node-1423654296",
+        "name": "内日幼稚園",
+        "conflict": false,
+        "points": [
+          {
+            "name": "下関市立内日幼稚園",
+            "address": "山口県下関市大字内日下字坂本1031",
+            "point": [
+              130.97056399815204,
+              34.10106000305215
+            ],
+            "source_kind": "p29",
+            "feature_array_index": 24,
+            "source_as_of": "2023",
+            "distance_to_baseline_m": 39.851,
+            "inside_or_within_50m": true
+          },
+          {
+            "number": "3500155589",
+            "name": "下関市立内日幼稚園",
+            "address": "下関市大字内日下字坂本1031",
+            "phone": "(休園)",
+            "coordinates": [
+              130.967499,
+              34.102749
+            ],
+            "service": "公立幼稚園",
+            "line": 590,
+            "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "source_sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26",
+            "source_as_of": "2021-05-31",
+            "point": [
+              130.967499,
+              34.102749
+            ],
+            "distance_to_baseline_m": 300.671,
+            "inside_or_within_50m": false
+          }
+        ]
+      },
+      "original_id_exact": false,
+      "phone_exact": null,
+      "address_extension": null
+    }
+  },
+  {
+    "id": "osm-node-1423661185",
+    "expected": {
+      "name": "鋳銭司幼稚園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423661185"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.454157,
+          34.083201
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2022-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "県教育委員会の2026年4月1日一覧が山口市立鋳銭司幼稚園の廃園(令和4年3月31日)を明記。旧施設名・完全住所・固有位置で対象を特定しました。",
+      "sources": [
+        {
+          "title": "現行の公的学校・保育施設一覧",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+          "sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64"
+        },
+        {
+          "title": "公的な施設固有位置・施設番号・完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "旧施設の廃園・休園を反映し、同敷地の後継施設や建物全体の閉鎖とはみなしません。",
+        "資料基準日を休園開始日に置き換えません。元の座標・ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "named_point_full_address",
+      "baseline_name": "鋳銭司幼稚園",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.454157,
+          34.083201
+        ]
+      },
+      "source_ids": [
+        "node/1423661185"
+      ],
+      "baseline_source_ids": [
+        "node/1423661185"
+      ],
+      "location": {
+        "name": "山口市立山口みなみこども園",
+        "address": "山口県山口市鋳銭司3922-1",
+        "point": [
+          131.45386445708877,
+          34.083195064523316
+        ],
+        "source_kind": "p29",
+        "feature_array_index": 168,
+        "number": "A235210000144",
+        "suspension_code": "0",
+        "distance_m": 26.95,
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_as_of": "2023",
+        "feature_index_base": 0
+      },
+      "current": {
+        "name": "山口市立鋳銭司幼稚園",
+        "address": "山口市鋳銭司3922-1",
+        "phone": "",
+        "status_note": "廃園(令和4年3月31日)",
+        "row": 9,
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+        "source_sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64",
+        "source_as_of": "2026-04-01",
+        "service": "公立幼稚園",
+        "source_path": "outputs/facility-registry-008-20260928/public-kindergarten-20260401.html"
+      },
+      "distance_m": 26.95,
+      "history": null,
+      "history_decision": "名称固有部分一致。略記・字体差のみは表示名を維持。",
+      "current_point_crosscheck": {
+        "id": "osm-node-1423661185",
+        "name": "鋳銭司幼稚園",
+        "conflict": false,
+        "points": [
+          {
+            "number": "3500155590",
+            "name": "山口市立鋳銭司幼稚園",
+            "address": "山口市鋳銭司3922-1",
+            "phone": "083-986-2009",
+            "coordinates": [
+              131.453705,
+              34.082233
+            ],
+            "service": "公立幼稚園",
+            "line": 591,
+            "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "source_sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26",
+            "source_as_of": "2021-05-31",
+            "point": [
+              131.453705,
+              34.082233
+            ],
+            "distance_to_baseline_m": 115.406,
+            "inside_or_within_50m": false
+          }
+        ]
+      },
+      "original_id_exact": false,
+      "phone_exact": null,
+      "address_extension": null
+    }
+  },
+  {
+    "id": "osm-node-1423661484",
+    "expected": {
+      "name": "須々万幼稚園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423661484"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.870231,
+          34.120292
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "県教育委員会の2026年4月1日一覧が周南市立須々万幼稚園の廃園(令和8年3月31日)を明記。旧施設名・完全住所・固有位置で対象を特定しました。",
+      "sources": [
+        {
+          "title": "現行の公的学校・保育施設一覧",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+          "sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64"
+        },
+        {
+          "title": "公的な施設固有位置・施設番号・完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "旧施設の廃園・休園を反映し、同敷地の後継施設や建物全体の閉鎖とはみなしません。",
+        "資料基準日を休園開始日に置き換えません。元の座標・ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "named_point_full_address",
+      "baseline_name": "須々万幼稚園",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.870231,
+          34.120292
+        ]
+      },
+      "source_ids": [
+        "node/1423661484"
+      ],
+      "baseline_source_ids": [
+        "node/1423661484"
+      ],
+      "location": {
+        "name": "周南市立須々万幼稚園",
+        "address": "山口県周南市大字須々万本郷710",
+        "point": [
+          131.87011875040437,
+          34.120308748953384
+        ],
+        "source_kind": "p29",
+        "feature_array_index": 13,
+        "number": "A135210000190",
+        "suspension_code": "0",
+        "distance_m": 10.5,
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_as_of": "2023",
+        "feature_index_base": 0
+      },
+      "current": {
+        "name": "周南市立須々万幼稚園",
+        "address": "周南市大字須々万本郷710",
+        "phone": "",
+        "status_note": "廃園(令和8年3月31日)",
+        "row": 24,
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+        "source_sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64",
+        "source_as_of": "2026-04-01",
+        "service": "公立幼稚園",
+        "source_path": "outputs/facility-registry-008-20260928/public-kindergarten-20260401.html"
+      },
+      "distance_m": 10.5,
+      "history": null,
+      "history_decision": "名称固有部分一致。略記・字体差のみは表示名を維持。",
+      "current_point_crosscheck": {
+        "id": "osm-node-1423661484",
+        "name": "須々万幼稚園",
+        "conflict": false,
+        "points": [
+          {
+            "name": "周南市立須々万幼稚園",
+            "address": "山口県周南市大字須々万本郷710",
+            "point": [
+              131.87011875040437,
+              34.120308748953384
+            ],
+            "source_kind": "p29",
+            "feature_array_index": 13,
+            "source_as_of": "2023",
+            "distance_to_baseline_m": 10.5,
+            "inside_or_within_50m": true
+          },
+          {
+            "number": "3500155605",
+            "name": "周南市立須々万幼稚園",
+            "address": "周南市大字須々万本郷710",
+            "phone": "0834-88-0243",
+            "coordinates": [
+              131.864151,
+              34.112503
+            ],
+            "service": "公立幼稚園",
+            "line": 606,
+            "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "source_sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26",
+            "source_as_of": "2021-05-31",
+            "point": [
+              131.864151,
+              34.112503
+            ],
+            "distance_to_baseline_m": 1031.217,
+            "inside_or_within_50m": false
+          }
+        ]
+      },
+      "original_id_exact": false,
+      "phone_exact": null,
+      "address_extension": null
+    }
+  },
+  {
+    "id": "osm-node-4623459002",
+    "expected": {
+      "name": "新下関耳鼻クリニック",
+      "category": "clinic",
+      "source_ids": [
+        "node/4623459002"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9549381,
+          34.007729
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "下関市医師会の施設別会員一覧は新下関耳鼻クリニックに「※休診中」を明示。名称・秋根南町2-2-18・電話256-8933は保険台帳と一致。保険休止だけでなく独立した現況の明示根拠。再開日と休診開始日は不明。",
+      "sources": [
+        {
+          "title": "中国四国厚生局 コード内容別医療機関一覧表（2026年9月1日）",
+          "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+          "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+        },
+        {
+          "title": "国土交通省 国土数値情報 医療機関（2020年度・施設地点）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P04/P04-20/P04-20_35_GML.zip",
+          "sha256": "1d7ceab68f3919a4a76e46ca17a72c7fcf2c081cea0b8f07dfe521a5beedbf8d"
+        },
+        {
+          "title": "下関市医師会 新下関地区施設別会員一覧",
+          "url": "https://smisikai.or.jp/kaiin-list/kaiin_list_shinshimonoseki",
+          "sha256": "2632f3c27614ef1002d17daad8a613674869384c2e4f58439214479708dcce08"
+        }
+      ],
+      "limits": [
+        "休診の開始日・再開日は未確認。永久閉鎖や移転とは扱わない。",
+        "元の施設ID、geometry、source_idsを保持。"
+      ]
+    },
+    "evidence": {
+      "method": "individual_official_identity_bridge_current_register_strict_original_geometry",
+      "baseline_name": "新下関耳鼻クリニック",
+      "baseline_address": "",
+      "baseline_category": "clinic",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9549381,
+          34.007729
+        ]
+      },
+      "source_ids": [
+        "node/4623459002"
+      ],
+      "location": {
+        "feature_index": 1644,
+        "feature_index_base": 1,
+        "feature_array_index": 1643,
+        "name": "新下関耳鼻クリニック",
+        "address": "下関市秋根南町二丁目２番１８号",
+        "kind": 2,
+        "point": [
+          130.95495607553434,
+          34.00771209507108
+        ],
+        "properties": {
+          "P04_001": 2,
+          "P04_002": "新下関耳鼻クリニック",
+          "P04_003": "下関市秋根南町二丁目２番１８号",
+          "P04_004": "耳い",
+          "P04_005": null,
+          "P04_006": null,
+          "P04_007": 9,
+          "P04_008": 0,
+          "P04_009": 9,
+          "P04_010": 9
+        },
+        "shared_coordinate_count": 1,
+        "distance_m": 2.506,
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P04/P04-20/P04-20_35_GML.zip",
+        "source_sha256": "1d7ceab68f3919a4a76e46ca17a72c7fcf2c081cea0b8f07dfe521a5beedbf8d",
+        "source_path": "outputs/facility-registry-008b-20260928/medical-followup/P04-20_35_GML.zip",
+        "member": "P04-20_35_GML/P04-20_35.geojson",
+        "source_as_of": "2020"
+      },
+      "distance_m": 2.506,
+      "insurance_registry": {
+        "number": "01,1463,4",
+        "name": "新下関耳鼻クリニック",
+        "address": "下関市秋根南町２丁目２番１８号",
+        "address_raw": "〒751－0872下関市秋根南町２丁目２番１８号",
+        "phone": "083-256-8933",
+        "kind": "medical",
+        "facility_type": "診療所",
+        "status": "休止",
+        "source_url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+        "source_file": "医科_35_山口_コード内容別医療機関一覧表.xlsx",
+        "source_sha256": "22f073d9b27abc2f1a87485f8bbb89a86eb7f3e922176f4bfc1297bbb00f4246",
+        "sheet": "Sheet1",
+        "row": 159,
+        "source_as_of": "2026-09-01"
+      },
+      "decision_note": "下関市医師会の施設別会員一覧は新下関耳鼻クリニックに「※休診中」を明示。名称・秋根南町2-2-18・電話256-8933は保険台帳と一致。保険休止だけでなく独立した現況の明示根拠。再開日と休診開始日は不明。",
+      "newer_coordinate_crosschecks": [
+        {
+          "number": "3522353133510",
+          "name": "新下関耳鼻クリニック",
+          "point": [
+            130.954944,
+            34.007722
+          ],
+          "shared_coordinate_count": 1,
+          "distance_m": 0.95,
+          "use": "facility_specific_location_crosscheck"
+        }
+      ],
+      "proof_files": [
+        "shinshimonoseki-members.html"
+      ]
+    }
+  },
+  {
+    "id": "osm-node-1423653838",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2016-12-09",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "三谷郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2928",
+          "sha256": "fb0d4c9449e459a64501c06079542be0ea3cc91d11067d75064053050121c403"
+        },
+        {
+          "title": "三谷郵便局 公式告知・同一性補強",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/31/14954.html",
+          "sha256": "31c2c35f79067024c643395acfcb54b3a0f8813e2ee5f3580132f3d2d4a1d0c9"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "三谷郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.626939,
+          34.342982
+        ]
+      },
+      "source_ids": [
+        "node/1423653838"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35504",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "三谷郵便局",
+        "address": "大字生雲東分1371-10",
+        "administrativeCode": "0",
+        "administrator": "数値地図画像",
+        "point": [
+          131.626939,
+          34.342982
+        ],
+        "gml_id": "fb01_2126",
+        "feature_index_0based": 2125,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県山口市阿東生雲東分１３７１－１０",
+      "address_connection": {
+        "kind": "municipal_address_table",
+        "historical_address_verbatim": "大字生雲東分1371-10",
+        "notice_address_verbatim": "山口県山口市阿東生雲東分１３７１－１０",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転・業務変更・局種変更：三谷郵便局（山口県）",
+        "date": "2016-12-12",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2928",
+        "file": "events/2928.html",
+        "sha256": "fb0d4c9449e459a64501c06079542be0ea3cc91d11067d75064053050121c403",
+        "bytes": 73097,
+        "excerpt": "移転・業務変更・局種変更：三谷郵便局（山口県）\n三谷郵便局は、２０１６年１２月１２日から、移転及び業務変更の上、三谷簡易郵便局として営業を開始いたします。\nお客さまのお越しを心よりお待ち申し上げます。\n名称\n【変更前】\n三谷郵便局 (みたにゆうびんきょく)\n【変更後】\n三谷簡易郵便局 (みたにかんいゆうびんきょく)\n住所\n【変更前】\n〒759-1231\n山口県山口市阿東生雲東分１３７１－１０\n【変更後】\n〒759-1231\n山口県山口市阿東生雲東分７５３\n取扱業務\n【変更前】\n郵便・貯金・為替・振替・生命保険・ATM\n【変更後】\n郵便・貯金・為替・振替・生命保険\n備考\n三谷郵便局としての営業は２０１６年１２月９日(金)をもって終了し、取扱事務については地福郵便局に引き継ぎます。\n実施年月日\n2016年12月12日",
+        "future": false
+      },
+      "notice_effective_at": "2016-12-12",
+      "old_last_business_day": "2016-12-09",
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2016-12-12",
+      "source_keys": [
+        "post-event-2928",
+        "pref-municipal-address-changes"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423653914",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2015-03-28",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "下関上田中二郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2284",
+          "sha256": "00a5edbd78eb4853dcacb336f499627b1e56b6a9875383c2c098589e5bb4c225"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "下関上田中二郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.94184,
+          33.96351
+        ]
+      },
+      "source_ids": [
+        "node/1423653914"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "下関上田中二郵便局",
+        "address": "上田中町2-7-4",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          130.94184,
+          33.96351
+        ],
+        "gml_id": "fb01_1863",
+        "feature_index_0based": 1862,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県下関市上田中町２－７－４",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "上田中町2-7-4",
+        "notice_address_verbatim": "山口県下関市上田中町２－７－４",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：下関上田中二郵便局（山口県）",
+        "date": "2015-03-28",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2284",
+        "file": "events/2284.html",
+        "sha256": "00a5edbd78eb4853dcacb336f499627b1e56b6a9875383c2c098589e5bb4c225",
+        "bytes": 72641,
+        "excerpt": "廃止：下関上田中二郵便局（山口県）\n下関上田中二郵便局を廃止いたします。\n多くのお客さまにご愛顧いただきましたことを心より御礼申し上げます。\n取扱事務については、下関上田中四郵便局に引き継ぎます。\nお客さまにはご不便をおかけいたしますが、周辺の郵便局や社員の訪問等による\nサービスをご利用いただきますようお願い申し上げます。\n名称\n下関上田中二郵便局 (しものせきかみたなかにゆうびんきょく)\n住所\n〒750-0009\n山口県下関市上田中町２－７－４\n備考\n最終営業日：平成２７年３月２７日(金)\n実施年月日\n2015年3月28日",
+        "future": false
+      },
+      "notice_effective_at": "2015-03-28",
+      "old_last_business_day": "2015-03-27",
+      "abolition_at": "2015-03-28",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-2284"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423653928",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2016-03-12",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "下関大和町郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2627",
+          "sha256": "74f3ee2069809028ba8fa89117ed9069c00d3ef49e86d0539ccb301405bfdf27"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "下関大和町郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.9182532,
+          33.9458131
+        ]
+      },
+      "source_ids": [
+        "node/1423653928"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "下関大和町郵便局",
+        "address": "大和町1-13-8",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          130.918092,
+          33.945678
+        ],
+        "gml_id": "fb01_1870",
+        "feature_index_0based": 1869,
+        "distance_m": 21.137
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県下関市大和町１－１３－８",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "大和町1-13-8",
+        "notice_address_verbatim": "山口県下関市大和町１－１３－８",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：下関大和町郵便局（山口県）",
+        "date": "2016-03-12",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2627",
+        "file": "events/2627.html",
+        "sha256": "74f3ee2069809028ba8fa89117ed9069c00d3ef49e86d0539ccb301405bfdf27",
+        "bytes": 72404,
+        "excerpt": "廃止：下関大和町郵便局（山口県）\n下関大和町郵便局を廃止いたします。\n取扱事務については、下関本村三郵便局に引き継ぎます。\n多くのお客さまにご愛顧いただきましたことを心より御礼申し上げます。\n名称\n下関大和町郵便局 (しものせきやまとまちゆうびんきょく)\n住所\n〒750-0067\n山口県下関市大和町１－１３－８\n備考\n最終営業日：２０１６年３月１１日(金)\n実施年月日\n2016年3月12日",
+        "future": false
+      },
+      "notice_effective_at": "2016-03-12",
+      "old_last_business_day": "2016-03-11",
+      "abolition_at": "2016-03-12",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-2627"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423654180",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "余田簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3206",
+          "sha256": "07544eb2d2f9e52570201eedf66ac63449f9fe1337ae99517205b7fb6f999948"
+        },
+        {
+          "title": "余田簡易郵便局 公式告知・同一性補強",
+          "url": "https://map.japanpost.jp/p/search/dtl/300155702000/",
+          "sha256": "a2ca583a2f94f346ef67cdf942a067d309bf895d733908109325bfe2377252e8"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "余田簡易郵便局",
+      "baseline_address": "山口県柳井市余田",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.069212,
+          33.969967
+        ]
+      },
+      "source_ids": [
+        "node/1423654180"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35212",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "余田簡易郵便局",
+        "address": "余田小平尾第1417",
+        "administrativeCode": "0",
+        "administrator": "数値地図画像",
+        "point": [
+          132.069212,
+          33.969967
+        ],
+        "gml_id": "fb01_2165",
+        "feature_index_0based": 2164,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県柳井市余田１４１７",
+      "address_connection": {
+        "kind": "variant_plus_original_phone",
+        "historical_address_verbatim": "余田小平尾第1417",
+        "notice_address_verbatim": "山口県柳井市余田１４１７",
+        "independent_original_phone_matches": [
+          "+81-820-23-2827"
+        ],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転：余田簡易郵便局（山口県）",
+        "date": "2017-09-04",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3206",
+        "file": "events/3206.html",
+        "sha256": "07544eb2d2f9e52570201eedf66ac63449f9fe1337ae99517205b7fb6f999948",
+        "bytes": 72430,
+        "excerpt": "移転：余田簡易郵便局（山口県）\n余田簡易郵便局が移転いたします。\nお客さまのお越しを心よりお待ち申し上げます。\n名称\n余田簡易郵便局 (よたかんいゆうびんきょく)\n移転前の住所\n〒742-0034\n山口県柳井市余田１４１７\n移転後の住所\n〒742-0034\n山口県柳井市余田１４１９\n取扱業務\n郵便・貯金・為替・振替・生命保険\n実施年月日\n2017年9月4日",
+        "future": false
+      },
+      "notice_effective_at": "2017-09-04",
+      "old_last_business_day": null,
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2017-09-04",
+      "source_keys": [
+        "post-event-3206",
+        "post-current-557020"
+      ],
+      "current_detail_for_identity_only": {
+        "number": "557020",
+        "facility_id": "300155702000",
+        "name": "余田簡易郵便局",
+        "address": "山口県柳井市余田１４１９",
+        "longitude": 132.0688914,
+        "latitude": 33.9716567,
+        "phones": [
+          {
+            "context": "郵便サービスについて:0820-23-2827",
+            "phone": "0820-23-2827"
+          },
+          {
+            "context": "貯金サービスについて:0820-23-2827",
+            "phone": "0820-23-2827"
+          },
+          {
+            "context": "保険サービスについて:0820-23-2827",
+            "phone": "0820-23-2827"
+          },
+          {
+            "context": "郵便サービスについて:0820-23-2827",
+            "phone": "0820-23-2827"
+          },
+          {
+            "context": ":0820-23-2827",
+            "phone": "0820-23-2827"
+          },
+          {
+            "context": ":0820-23-2827",
+            "phone": "0820-23-2827"
+          }
+        ],
+        "source_url": "https://map.japanpost.jp/p/search/dtl/300155702000/",
+        "source_file": "official-details-redacted/557020.html",
+        "source_sha256": "8cb6cddaecdf5c4376a17b21b97991c4252938acf86f8e5686ca706df735bd5c",
+        "raw_sha256": "a2ca583a2f94f346ef67cdf942a067d309bf895d733908109325bfe2377252e8",
+        "temporary_closure": false,
+        "raw_title": "余田簡易郵便局&nbsp;",
+        "distance_m": 190.198,
+        "baseline_phone_matches": [
+          "+81-820-23-2827"
+        ],
+        "baseline_address_matches": false
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423654675",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2014-10-06",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "地家室郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2153",
+          "sha256": "fc69e24906d14620e9386ed4b5ed890c56c619bed0d6f89d35460227fab598da"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "地家室郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.346029,
+          33.86994
+        ]
+      },
+      "source_ids": [
+        "node/1423654675"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "地家室郵便局",
+        "address": "地家室830",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          132.346029,
+          33.86994
+        ],
+        "gml_id": "fb01_2106",
+        "feature_index_0based": 2105,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県大島郡周防大島町地家室８３０",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "地家室830",
+        "notice_address_verbatim": "山口県大島郡周防大島町地家室８３０",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "統合・移転：沖家室郵便局・地家室郵便局（山口県）",
+        "date": "2014-10-06",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2153",
+        "file": "events/2153.html",
+        "sha256": "fc69e24906d14620e9386ed4b5ed890c56c619bed0d6f89d35460227fab598da",
+        "bytes": 73227,
+        "excerpt": "統合・移転：沖家室郵便局・地家室郵便局（山口県）\n沖家室郵便局が移転いたします。\nまた、地家室郵便局は、沖家室郵便局に統合することとして、廃止いたします。\n多くのお客さまにご愛顧頂きましたことを心より御礼申し上げます。\n取扱事務については、沖家室郵便局に引き継ぎます。\nお客さまのお越しを心よりお待ちしております。\n統合前の郵便局\n沖家室郵便局 (おきかむろゆうびんきょく)\n〒742-2922\n山口県大島郡周防大島町沖家室島６４２\n地家室郵便局 (じかむろゆうびんきょく)\n〒742-2923\n山口県大島郡周防大島町地家室８３０\n統合後の郵便局\n沖家室郵便局 (おきかむろゆうびんきょく)\n〒742-2922\n山口県大島郡周防大島町沖家室島５３５－３\n取扱業務\n郵便･貯金･為替･振替･生命保険･ＡＴＭ\n備考\n地家室郵便局の最終営業日は、平成２６年１０月３日（金）です。\n実施年月日\n2014年10月6日",
+        "future": false
+      },
+      "notice_effective_at": "2014-10-06",
+      "old_last_business_day": "2014-10-03",
+      "abolition_at": "2014-10-06",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-2153"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423654738",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "大島本浦簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=820",
+          "sha256": "ffdc3dfa9555c00463b37f4a87d2101586e450f18b15ecf1c0dfcab32564853f"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "大島本浦簡易郵便局",
+      "baseline_address": "山口県周南市大島",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.796952,
+          33.988209
+        ]
+      },
+      "source_ids": [
+        "node/1423654738"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "大島本浦簡易郵便局",
+        "address": "大島本浦909",
+        "administrativeCode": "0",
+        "administrator": "数値地図画像",
+        "point": [
+          131.796952,
+          33.988209
+        ],
+        "gml_id": "fb01_2175",
+        "feature_index_0based": 2174,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県周南市大島本浦９０９",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "大島本浦909",
+        "notice_address_verbatim": "山口県周南市大島本浦９０９",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転・再開：大島本浦簡易郵便局（山口県）",
+        "date": "2010-03-01",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=820",
+        "file": "events/820.html",
+        "sha256": "ffdc3dfa9555c00463b37f4a87d2101586e450f18b15ecf1c0dfcab32564853f",
+        "bytes": 72617,
+        "excerpt": "移転・再開：大島本浦簡易郵便局（山口県）\n大島本浦簡易郵便局を移転のうえ窓口を再開いたします。\n詳細は以下のとおりです。\nお客さまのお越しを心よりお待ちしております。\n名称\n大島本浦簡易郵便局（おおしまほんうらかんいゆうびんきょく）\n移転前の住所\n〒745-0057\n山口県周南市大島本浦９０９\n移転後の住所\n〒745-0803\n山口県周南市大島１０７２\n取扱業務\n郵便・貯金・為替・振替・生命保険\n実施年月日\n2010年3月1日",
+        "future": false
+      },
+      "notice_effective_at": "2010-03-01",
+      "old_last_business_day": null,
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2010-03-01",
+      "source_keys": [
+        "post-event-820"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423654829",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-29",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "宇部山大病院内郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9274",
+          "sha256": "0bbe34d5e089ef273a2aeaeb42232e8d30160e598a7d7d68a71d2fa9eab2b8c8"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "宇部山大病院内郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2485606,
+          33.960238
+        ]
+      },
+      "source_ids": [
+        "node/1423654829"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35202",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "宇部山大病院内郵便局",
+        "address": "南小串1-1-1",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.24851,
+          33.960182
+        ],
+        "gml_id": "fb01_1904",
+        "feature_index_0based": 1903,
+        "distance_m": 7.782
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県宇部市南小串１－１－１",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "南小串1-1-1",
+        "notice_address_verbatim": "山口県宇部市南小串１－１－１",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：宇部山大病院内郵便局（山口県）",
+        "date": "2025-03-29",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=9274",
+        "file": "events/9274.html",
+        "sha256": "0bbe34d5e089ef273a2aeaeb42232e8d30160e598a7d7d68a71d2fa9eab2b8c8",
+        "bytes": 72629,
+        "excerpt": "廃止：宇部山大病院内郵便局（山口県）\n宇部山大病院内郵便局を廃止いたします。\n取扱事務については、宇部琴芝郵便局に引き継ぎます。\n多くのお客さまにご愛顧いただきましたことを心から御礼申し上げます。\n名称\n宇部山大病院内郵便局（ うべやまだいびょういんないゆうびんきょく ）\n住所\n〒755-0046\n山口県宇部市南小串１－１－１\n取扱業務\n郵便・貯金・為替・振替・生命保険・ATM\n備考\n最終営業日：２０２５年３月２８日（金）\n実施年月日\n2025年3月29日",
+        "future": false
+      },
+      "notice_effective_at": "2025-03-29",
+      "old_last_business_day": "2025-03-28",
+      "abolition_at": "2025-03-29",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-9274"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423657632",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "徳山久米東簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=106",
+          "sha256": "c6e54409c8945d481c80896c758eaca4495f1c6004ae444501454fdfa7a5b6aa"
+        },
+        {
+          "title": "徳山久米東簡易郵便局 公式告知・同一性補強",
+          "url": "https://map.japanpost.jp/p/search/dtl/300155755000/",
+          "sha256": "a0ffe01f14ae7c55228f259332eda8fd2087d07aeaa1eb1430892b942d988d94"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "徳山久米東簡易郵便局",
+      "baseline_address": "山口県周南市久米",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.842125,
+          34.032105
+        ]
+      },
+      "source_ids": [
+        "node/1423657632"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "徳山久米東簡易郵便局",
+        "address": "久米寺下1309",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.842125,
+          34.032105
+        ],
+        "gml_id": "fb01_2178",
+        "feature_index_0based": 2177,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県周南市久米１３０９",
+      "address_connection": {
+        "kind": "variant_plus_original_phone",
+        "historical_address_verbatim": "久米寺下1309",
+        "notice_address_verbatim": "山口県周南市久米１３０９",
+        "independent_original_phone_matches": [
+          "+81-834-25-1983"
+        ],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転・再開：徳山久米東簡易郵便局（山口県）",
+        "date": "2008-04-01",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=106",
+        "file": "events/106.html",
+        "sha256": "c6e54409c8945d481c80896c758eaca4495f1c6004ae444501454fdfa7a5b6aa",
+        "bytes": 72633,
+        "excerpt": "移転・再開：徳山久米東簡易郵便局（山口県）\n徳山久米東簡易郵便局の窓口を移転のうえ再開いたします。\n詳細は以下のとおりです。\nお客さまのお越しを心よりお待ちしております。\n名称\n徳山久米東簡易郵便局（とくやまくめひがしかんいゆうびんきょく）\n移転前の住所\n〒745-0801\n山口県周南市久米１３０９\n新しい住所\n〒745-0801\n山口県周南市久米１３２３\n取扱業務\n郵便、貯金、為替、振替、生命保険\n実施年月日\n2008年4月1日",
+        "future": false
+      },
+      "notice_effective_at": "2008-04-01",
+      "old_last_business_day": null,
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2008-04-01",
+      "source_keys": [
+        "post-event-106",
+        "post-current-557550"
+      ],
+      "current_detail_for_identity_only": {
+        "number": "557550",
+        "facility_id": "300155755000",
+        "name": "徳山久米東簡易郵便局",
+        "address": "山口県周南市久米１３２３",
+        "longitude": 131.8424978,
+        "latitude": 34.0328772,
+        "phones": [
+          {
+            "context": "郵便サービスについて:0834-25-1983",
+            "phone": "0834-25-1983"
+          },
+          {
+            "context": "貯金サービスについて:0834-25-1983",
+            "phone": "0834-25-1983"
+          },
+          {
+            "context": "保険サービスについて:0834-25-1983",
+            "phone": "0834-25-1983"
+          },
+          {
+            "context": "郵便サービスについて:0834-25-1983",
+            "phone": "0834-25-1983"
+          },
+          {
+            "context": ":0834-25-1983",
+            "phone": "0834-25-1983"
+          },
+          {
+            "context": ":0834-25-1983",
+            "phone": "0834-25-1983"
+          }
+        ],
+        "source_url": "https://map.japanpost.jp/p/search/dtl/300155755000/",
+        "source_file": "official-details-redacted/557550.html",
+        "source_sha256": "f966d6262988bd580c79e0ccb798dad51a31b8bffcb599d25d2d31d21d44c9e2",
+        "raw_sha256": "a0ffe01f14ae7c55228f259332eda8fd2087d07aeaa1eb1430892b942d988d94",
+        "temporary_closure": false,
+        "raw_title": "徳山久米東簡易郵便局&nbsp;",
+        "distance_m": 92.482,
+        "baseline_phone_matches": [
+          "+81-834-25-1983"
+        ],
+        "baseline_address_matches": false
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660612",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "絵堂郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=5465",
+          "sha256": "5b173ab8e5b82807df78907aa7b7fef3ae87c0166931c20ae64ecfac25181f76"
+        },
+        {
+          "title": "絵堂郵便局 公式告知・同一性補強",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/31/14954.html",
+          "sha256": "31c2c35f79067024c643395acfcb54b3a0f8813e2ee5f3580132f3d2d4a1d0c9"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "絵堂郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.355104,
+          34.264166
+        ]
+      },
+      "source_ids": [
+        "node/1423660612"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35461",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18002",
+        "name": "絵堂郵便局",
+        "address": "絵堂182-3",
+        "administrativeCode": "0",
+        "administrator": "数値地図画像",
+        "point": [
+          131.355104,
+          34.264166
+        ],
+        "gml_id": "fb01_1838",
+        "feature_index_0based": 1837,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県美祢市美東町絵堂１８２－３",
+      "address_connection": {
+        "kind": "municipal_address_table",
+        "historical_address_verbatim": "絵堂182-3",
+        "notice_address_verbatim": "山口県美祢市美東町絵堂１８２－３",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転・改称：絵堂郵便局（山口県）",
+        "date": "2022-03-22",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=5465",
+        "file": "events/5465.html",
+        "sha256": "5b173ab8e5b82807df78907aa7b7fef3ae87c0166931c20ae64ecfac25181f76",
+        "bytes": 72653,
+        "excerpt": "移転・改称：絵堂郵便局（山口県）\n絵堂郵便局が移転及び改称いたします。\nお客さまのお越しを心からお待ち申し上げます。\n変更前の名称\n絵堂郵便局（えどうゆうびんきょく）\n変更後の名称\n赤郷郵便局（あかごうゆうびんきょく）\n移転前の住所\n〒754-0301\n山口県美祢市美東町絵堂１８２－３\n移転後の住所\n〒754-0302\n山口県美祢市美東町赤４２５\n取扱業務\n郵便・貯金・為替・振替・生命保険・ATM\n実施年月日\n2022年3月22日",
+        "future": false
+      },
+      "notice_effective_at": "2022-03-22",
+      "old_last_business_day": null,
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2022-03-22",
+      "source_keys": [
+        "post-event-5465",
+        "pref-municipal-address-changes"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423661177",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知で旧住所からの移転を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "野島簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2703",
+          "sha256": "91be30c7af80399a8e9012d7549c73cbc52a3cc30fb0451b5a5eae0bc9a2114b"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "野島簡易郵便局",
+      "baseline_address": "山口県防府市野島",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.693529,
+          33.94236
+        ]
+      },
+      "source_ids": [
+        "node/1423661177"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35206",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "野島簡易郵便局",
+        "address": "野島547",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.693529,
+          33.94236
+        ],
+        "gml_id": "fb01_2147",
+        "feature_index_0based": 2146,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県防府市野島５４７",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "野島547",
+        "notice_address_verbatim": "山口県防府市野島５４７",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "移転・再開：野島簡易郵便局（山口県）",
+        "date": "2016-03-01",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2703",
+        "file": "events/2703.html",
+        "sha256": "91be30c7af80399a8e9012d7549c73cbc52a3cc30fb0451b5a5eae0bc9a2114b",
+        "bytes": 72499,
+        "excerpt": "移転・再開：野島簡易郵便局（山口県）\n野島簡易郵便局が移転のうえ、窓口を再開いたします。\nお客さまのお越しを心よりお待ち申し上げます。\n名称\n野島簡易郵便局 (のしまかんいゆうびんきょく)\n移転前の住所\n〒747-0832\n山口県防府市野島５４７\n移転後の住所\n〒747-0832\n山口県防府市野島５７９\n取扱業務\n郵便・貯金・為替・振替・生命保険\n実施年月日\n2016年3月1日",
+        "future": false
+      },
+      "notice_effective_at": "2016-03-01",
+      "old_last_business_day": null,
+      "abolition_at": null,
+      "new_location_opening_or_move_at": "2016-03-01",
+      "source_keys": [
+        "post-event-2703"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-node-1423661522",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2015-04-01",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "馬島簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2372",
+          "sha256": "839e7ba323de8e7e5ad5f7f0d0914f950228799216115572825a0aaae934d799"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "馬島簡易郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.722609,
+          33.989439
+        ]
+      },
+      "source_ids": [
+        "node/1423661522"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "馬島簡易郵便局",
+        "address": "大津島馬島2153",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.722609,
+          33.989439
+        ],
+        "gml_id": "fb01_2179",
+        "feature_index_0based": 2178,
+        "distance_m": 0.0
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県周南市大津島馬島２１５３",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "大津島馬島2153",
+        "notice_address_verbatim": "山口県周南市大津島馬島２１５３",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：馬島簡易郵便局（山口県）",
+        "date": "2015-04-01",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=2372",
+        "file": "events/2372.html",
+        "sha256": "839e7ba323de8e7e5ad5f7f0d0914f950228799216115572825a0aaae934d799",
+        "bytes": 72251,
+        "excerpt": "廃止：馬島簡易郵便局（山口県）\n一時閉鎖しておりました馬島簡易郵便局は廃止いたします。\nお客さまにはご不便をおかけいたしますが、周辺の郵便局や社員の訪問等による\nサービスをご利用いただきますようお願い申し上げます。\n名称\n馬島簡易郵便局 (うましまかんいゆうびんきょく)\n住所\n〒745-0057\n山口県周南市大津島馬島２１５３\n実施年月日\n2015年4月1日",
+        "future": false
+      },
+      "notice_effective_at": "2015-04-01",
+      "old_last_business_day": null,
+      "abolition_at": "2015-04-01",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-2372"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-way-1311151466",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2018-10-01",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "萩木間簡易郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3598",
+          "sha256": "df550b52a63952a2c78711fa3a6808e5324dfa5fdad54b324a305168df2f2d73"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "萩木間簡易郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.361355,
+          34.3262295
+        ]
+      },
+      "source_ids": [
+        "way/1311151466"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18004",
+        "name": "萩木間簡易郵便局",
+        "address": "山田殿河内640-4",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.36124,
+          34.326315
+        ],
+        "gml_id": "fb01_2146",
+        "feature_index_0based": 2145,
+        "distance_m": 14.209
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県萩市山田殿河内６４０－４",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "山田殿河内640-4",
+        "notice_address_verbatim": "山口県萩市山田殿河内６４０－４",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：萩木間簡易郵便局（山口県）",
+        "date": "2018-10-01",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3598",
+        "file": "events/3598.html",
+        "sha256": "df550b52a63952a2c78711fa3a6808e5324dfa5fdad54b324a305168df2f2d73",
+        "bytes": 72199,
+        "excerpt": "廃止：萩木間簡易郵便局（山口県）\n一時閉鎖しておりました萩木間簡易郵便局は廃止いたします。\n多くのお客さまにご愛顧いただきましたことを心より御礼申し上げます。\n名称\n萩木間簡易郵便局（はぎこまかんいゆうびんきょく）\n一時閉鎖時の住所\n〒758-0063\n山口県萩市山田殿河内６４０－４\n実施年月日\n2018年10月1日",
+        "future": false
+      },
+      "notice_effective_at": "2018-10-01",
+      "old_last_business_day": null,
+      "abolition_at": "2018-10-01",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-3598"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  },
+  {
+    "id": "osm-way-365924500",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2019-12-28",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の公式告知でこの旧施設の廃止を確認しました。国土数値情報の旧同名局点が元位置から50m以内にあり、告知の旧住所へ接続しています。",
+      "sources": [
+        {
+          "title": "宇部西本町郵便局 公式告知・同一性補強",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=4124",
+          "sha256": "62442a250e85a46d3eed6b3ef10d39735f8a6da5eaf5b7946549bc7cb3f9e00a"
+        },
+        {
+          "title": "国土数値情報 公共施設 2006年 山口県（旧施設同定のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "2006年資料は旧施設の名称・住所・位置の同定だけに使用し、現在営業の証拠にしません。",
+        "元施設IDと元位置を保持し、移転先へ位置を付け替えていません。",
+        "廃止実施日、最終営業日、移転先営業開始日を分離しています。旧施設終了日が明記されない移転では effective_at は null。",
+        "当日の営業状況・入口・通行経路は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "historical_named_facility_point_full_old_address_and_explicit_japanpost_notice",
+      "baseline_name": "宇部西本町郵便局",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.238618,
+          33.9566137
+        ]
+      },
+      "source_ids": [
+        "way/365924500"
+      ],
+      "historical_location": {
+        "administrativeAreaCode": "35202",
+        "publicFacilityLargeClassification": "18",
+        "publicFacilitySmallClassification": "18003",
+        "name": "宇部西本町郵便局",
+        "address": "西本町1-5-31",
+        "administrativeCode": "0",
+        "administrator": "数値地図",
+        "point": [
+          131.238733,
+          33.956516
+        ],
+        "gml_id": "fb01_1910",
+        "feature_index_0based": 1909,
+        "distance_m": 15.183
+      },
+      "historical_data_year": 2006,
+      "historical_source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+      "historical_gml_member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+      "official_old_address": "山口県宇部市西本町１－５－３１",
+      "address_connection": {
+        "kind": "exact",
+        "historical_address_verbatim": "西本町1-5-31",
+        "notice_address_verbatim": "山口県宇部市西本町１－５－３１",
+        "independent_original_phone_matches": [],
+        "note": "地名文字を単に削除した一致ではありません。variantは元電話が現行の同名局と独立一致するものに限定。municipalは県の公式合併・住所表記対照表を追加。"
+      },
+      "notice": {
+        "title": "廃止：宇部西本町郵便局（山口県）",
+        "date": "2019-12-28",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=4124",
+        "file": "events/4124.html",
+        "sha256": "62442a250e85a46d3eed6b3ef10d39735f8a6da5eaf5b7946549bc7cb3f9e00a",
+        "bytes": 72781,
+        "excerpt": "廃止：宇部西本町郵便局（山口県）\n宇部西本町郵便局を廃止いたします。\n取扱事務については、宇部新川駅前郵便局に引き継ぎます。\n多くのお客さまにご愛顧いただきましたことを心から御礼\n申し上げます。\n名称\n宇部西本町郵便局（うべにしほんまちゆうびんきょく）\n住所\n〒755-0052\n山口県宇部市西本町１－５－３１\n取扱業務\n郵便・貯金・為替・振替・生命保険・ATM\n備考\n最終営業日：２０１９年１２月２７日（金）\n但し、宇部市交通局バスカード及び宇部市プレミアム付商品券の販売は、\n２０１９年１２月２０日（金）までとなります。\n実施年月日\n2019年12月28日",
+        "future": false
+      },
+      "notice_effective_at": "2019-12-28",
+      "old_last_business_day": "2019-12-27",
+      "abolition_at": "2019-12-28",
+      "new_location_opening_or_move_at": null,
+      "source_keys": [
+        "post-event-4124"
+      ],
+      "current_detail_for_identity_only": null
+    }
+  }
+]

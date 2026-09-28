@@ -109,7 +109,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 export const facilityAvailable = (f: ShoppingFeature) => !['closed', 'temporarily_closed'].includes(f.properties.freshness_review?.status ?? '') && !f.properties.duplicate_of;
 export function freshnessDateText(r: FreshnessReview, category?: string): string {
   if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
-  if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（一時休止状態を確認）' : category === 'library' ? '未確認（閉館状態を確認）' : category === 'school' || category === 'college' ? '未確認（閉校状態を確認）' : '未確認（閉店状態を確認）';
+  if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（一時休止状態を確認）' : category === 'childcare' ? '未確認（閉園状態を確認）' : category === 'library' ? '未確認（閉館状態を確認）' : category === 'school' || category === 'college' ? '未確認（閉校状態を確認）' : '未確認（閉店状態を確認）';
   if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
   return r.effective_at ?? '';
 }
@@ -120,6 +120,10 @@ export function freshnessLabel(f: ShoppingFeature): string {
   if (['school', 'college'].includes(f.properties.category ?? '')) {
     if (r.status === 'closed') return '閉校確認';
     if (r.status === 'temporarily_closed') return '休校確認';
+  }
+  if (f.properties.category === 'childcare') {
+    if (r.status === 'closed') return '閉園確認';
+    if (r.status === 'temporarily_closed') return '休園確認';
   }
   if (r.status === 'closed' && f.properties.category === 'library') return '閉館確認';
   return { closed: '閉店確認', temporarily_closed: '一時休止確認', operating: '開店・掲載確認', changed: '名称・種別変更を確認', scheduled_change: '営業終了予定' }[r.status];

@@ -5,7 +5,8 @@ export default function FacilityFreshnessDetails({ facility }: { facility: Shopp
   const r = facility.properties.freshness_review;
   if (!r) return null;
   const school = ['school', 'college'].includes(facility.properties.category ?? '');
-  const dateLabel = { closed: school ? '閉校日' : facility.properties.category === 'library' ? '閉館日' : '閉店日', temporary_closure: school ? '休校開始日' : '一時休止開始日', opened: '開店日', listed: '開店日', renamed: '名称変更日', service_change: '変更日', scheduled_closure: '営業終了予定日' }[r.event];
+  const childcare = facility.properties.category === 'childcare';
+  const dateLabel = { closed: childcare ? '閉園日' : school ? '閉校日' : facility.properties.category === 'library' ? '閉館日' : '閉店日', temporary_closure: childcare ? '休園開始日' : school ? '休校開始日' : '一時休止開始日', opened: '開店日', listed: '開店日', renamed: '名称変更日', service_change: '変更日', scheduled_closure: '営業終了予定日' }[r.event];
   return <section className="mb-5 rounded-xl border border-stone-300 bg-stone-50 p-4 text-sm leading-relaxed text-stone-800" aria-label="施設の変更確認">
     <h3 className="text-base font-bold">{freshnessLabel(facility)}</h3>
     <p className="my-2 font-semibold">{dateLabel}：{freshnessDateText(r, facility.properties.category)}</p>

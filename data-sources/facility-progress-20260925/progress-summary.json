@@ -2,12 +2,12 @@
   "checked_at": "2026-09-28",
   "baseline": {
     "total": 7764,
-    "reflected_updates": 207,
+    "reflected_updates": 224,
     "explicitly_held": 2,
-    "not_attested_complete": 3777,
-    "registry_verified": 3778,
-    "registry_corrected": 60,
-    "verified_no_change_attested_in_this_ledger": 3718,
+    "not_attested_complete": 3663,
+    "registry_verified": 3875,
+    "registry_corrected": 77,
+    "verified_no_change_attested_in_this_ledger": 3798,
     "registry_scope": "Name, address and listed services/school identity at the official registry snapshot; not physical opening status or an entrance survey.",
     "note": "Not attested complete includes records that may have been examined earlier without a facility-level final disposition; it is not proof that each shop is stale."
   },
@@ -65,7 +65,7 @@
   "inputs_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
     "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
-    "public/data/facility-current.json": "e0280ebec0b18c041c957a2f8078d6b51373d75f88f4652a86f091460c523cf5",
+    "public/data/facility-current.json": "679785874ebe110d27c47ea541bea0b15d7156d35506c6c0ea3a2a85015ed726",
     "outputs/facility-local-stores-20260925/continued-review-queue.json": "3303d118f1d7f5e31bdfaccf1721e5d4089abc119c0f373fd3648d292d8ff5e5",
     "data-sources/facility-progress-20260925/article-event-reviews.json": "bede220415b0ff0e01e25f01c69d002bca67f2bc8a35b63f03d06475cf1380e0",
     "data-sources/facility-progress-20260925/article-index.json": "0319ed1d7630403c8d2f9c2c1ce81e536021c7edd932cd3609621d91e5d729b2",

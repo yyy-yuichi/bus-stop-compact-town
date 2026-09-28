@@ -11,7 +11,8 @@ const sha=b=>createHash('sha256').update(b).digest('hex');
 
 test('008b preserves the prior overlay byte representation and partitions every remaining base ID once',()=>{
  const all=[...rows,...events,...holds];assert.equal(all.length,5033);assert.equal(new Set(all.map(r=>r.id)).size,5033);assert(all.every(r=>byId.has(r.id)));
- const previous={...overlay,checked_at:batch.previous_checked_at,updates:overlay.updates.filter(r=>!eventIds.has(r.id)),verifications:overlay.verifications.filter(r=>!ids.has(r.id))};
+ const candidateIds=new Set(all.map(r=>r.id));
+ const previous={...overlay,checked_at:batch.previous_checked_at,updates:overlay.updates.filter(r=>!candidateIds.has(r.id)),verifications:overlay.verifications.filter(r=>!candidateIds.has(r.id))};
  assert.equal(sha(JSON.stringify(previous,null,2)+'\n'),batch.previous_overlay_sha256);assert.equal(previous.updates.length+previous.verifications.length,2731);
  const priorIds=new Set([...previous.updates,...previous.verifications].map(r=>r.id));assert(all.every(r=>!priorIds.has(r.id)));assert.equal(priorIds.size+all.length,base.length);
  assert.equal(batch.baseline_hash_format,'utf8_lf');

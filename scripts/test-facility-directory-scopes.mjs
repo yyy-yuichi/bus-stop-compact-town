@@ -42,6 +42,13 @@ test('directory and temporary closure render without inventing publication, open
   const old=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,source_date_kind:'as_of',source_as_of:'2026-02-20'}}));assert(old.includes('資料基準日')&&!old.includes('資料閲覧日'));
   const temp=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,freshness_review:suspended}}}));assert(temp.includes('一時休止確認')&&temp.includes('一時休止開始日：2018-07-09')&&temp.includes('通常の検索'));assert(!temp.includes('閉店確認'));
   const school=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,category:'school',freshness_review:{...suspended,effective_at:null,date_precision:'unknown'}}}}));assert(school.includes('休校確認')&&school.includes('休校開始日'));assert(!school.includes('：null')&&!school.includes('閉校日'));
+  for(const [status,event,label,dateLabel] of [['closed','closed','閉園確認','閉園日'],['temporarily_closed','temporary_closure','休園確認','休園開始日']]) {
+   const review={...suspended,status,event,effective_at:null,date_precision:'unknown'};
+   const childcare={...feature,properties:{...feature.properties,category:'childcare',freshness_review:review}};
+   const html=renderToStaticMarkup(React.createElement(Freshness,{facility:childcare}));
+   assert(!facilityAvailable(childcare));assert(html.includes(label)&&html.includes(dateLabel+'：未確認')&&html.includes('通常の検索'));
+   assert(!html.includes('閉店')&&!html.includes('閉校')&&!html.includes('：null'));
+  }
  }finally{await server.close();}
 });
 

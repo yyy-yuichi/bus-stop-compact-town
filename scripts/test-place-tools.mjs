@@ -32,6 +32,36 @@ assert(searchPlaces('前', stops, facilities).stops.length > 12, 'Search must re
 assert.deepEqual(searchPlaces('　 ', stops, facilities), { facilities: [], stops: [] });
 assert.deepEqual(searchPlaces('存在しない試験地点12345', stops, facilities), { facilities: [], stops: [] });
 
+// Reviewed services replace imported service labels only; original history and aliases stay intact.
+const serviceFixtures = [
+  ['reviewed-playground', '誠和児童遊園', 'playground', 'assisted_living', ['児童遊園']],
+  ['reviewed-relief', '梅花園', 'social_facility', 'group_home', ['救護施設']],
+  ['reviewed-support', '王司山田園', 'social_facility', 'assisted_living', ['障害者支援施設(施設入所支援)']],
+  ['reviewed-empty', '照合済み施設', 'social_facility', 'group_home', []],
+].map(([id, name, category, oldService, services]) => ({
+  type: 'Feature', id, geometry: { type: 'Point', coordinates: [131, 34] },
+  properties: {
+    name, category, source_ids: [`fixture:${id}`], search_names: `${id} 別称保存`,
+    registered_details: { service: [oldService], sources: [] },
+    registry_review: { scope: 'welfare_register', services },
+  },
+}));
+const unreviewedServiceFixture = {
+  ...structuredClone(serviceFixtures[1]), id: 'unreviewed-relief',
+  properties: { ...structuredClone(serviceFixtures[1].properties), name: '未確認施設' },
+};
+delete unreviewedServiceFixture.properties.registry_review;
+const serviceHistoryBefore = structuredClone([...serviceFixtures, unreviewedServiceFixture]);
+const matchingServiceIds = (query, fixtures = serviceFixtures) => searchPlaces(query, [], fixtures).facilities.map(f => f.id);
+assert.deepEqual(matchingServiceIds('児童遊園'), ['reviewed-playground']);
+assert.deepEqual(matchingServiceIds('救護施設'), ['reviewed-relief']);
+assert.deepEqual(matchingServiceIds('施設入所支援'), ['reviewed-support']);
+assert.deepEqual(matchingServiceIds('生活支援付き住居'), [], 'Imported residence labels must not match reviewed playground/support services');
+assert.deepEqual(matchingServiceIds('グループホーム'), [], 'An empty or different reviewed service list must not fall back to imported services');
+assert.deepEqual(matchingServiceIds('グループホーム', [...serviceFixtures, unreviewedServiceFixture]), ['unreviewed-relief'], 'Unreviewed facilities retain imported service search');
+assert.deepEqual(matchingServiceIds('別称保存'), serviceFixtures.map(f => f.id), 'Existing aliases remain searchable');
+assert.deepEqual([...serviceFixtures, unreviewedServiceFixture], serviceHistoryBefore, 'Search must not alter registered history, aliases or reviews');
+
 const allPlaces = [
   ...facilities.map(f => ({ kind: 'facility', id: String(f.id) })),
   ...stops.map(f => ({ kind: 'national', id: String(f.id) })),
