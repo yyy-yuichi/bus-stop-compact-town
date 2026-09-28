@@ -2463,6 +2463,167 @@
     }
   },
   {
+    "id": "osm-node-1423654118",
+    "expected": {
+      "name": "二島幼稚園",
+      "category": "childcare",
+      "source_ids": [
+        "node/1423654118"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.421328,
+          34.037706
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2022-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "県の公立幼稚園一覧に二島幼稚園の廃園日を明記。元の完全住所と固有園名が一致する旧園を対象に記録します。",
+      "sources": [
+        {
+          "title": "現行公的施設台帳",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+          "sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64"
+        },
+        {
+          "title": "公式点との差を記録（位置は未保証）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+          "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+        },
+        {
+          "title": "公式点との差を記録（位置は未保証）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/e5f38096-34a1-4093-bf49-b3e199cbec8a/resource/8df261c9-cfbc-4ae3-a1d8-d8ba7abe8e98/download/350001_evacuation_space.csv",
+          "sha256": "8508143ca10ff7fc1fe9d82a816d893c8d4a020404aaa27aea92076c8b252ff6"
+        }
+      ],
+      "limits": [
+        "対象は二島幼稚園の教育サービスです。跡地建物や転用先の閉鎖ではありません。",
+        "参照した公的点との距離差は17.304〜181.608m。元座標を保持し、その正確性は未検証です。",
+        "元geometry・source_ids・住所・詳細を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_complete_address_unique_current_register_identity_position_not_verified",
+      "baseline_name": "二島幼稚園",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.421328,
+          34.037706
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423654118"
+      ],
+      "source_ids": [
+        "node/1423654118"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 91,
+          "tags": {
+            "KSJ2:ADS": "秋穂二島6174",
+            "KSJ2:AdminArea": "山口県山口市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "kindergarten",
+            "name": "二島幼稚園",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県山口市秋穂二島6174",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 91,
+          "complete_numbered": true
+        }
+      ],
+      "current": {
+        "name": "山口市立二島幼稚園",
+        "address": "山口市秋穂二島6174",
+        "phone": "",
+        "status_note": "廃園(令和4年3月31日)",
+        "row": 14,
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+        "source_sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64",
+        "source_as_of": "2026-04-01",
+        "service": "公立幼稚園",
+        "source_path": "outputs\\facility-registry-008-20260928\\public-kindergarten-20260401.html"
+      },
+      "history_sources": [],
+      "location_comparison_only": [
+        {
+          "number": "3500155595",
+          "name": "山口市立二島幼稚園",
+          "address": "山口市秋穂二島6174",
+          "phone": "083-987-2062",
+          "coordinates": [
+            131.420303,
+            34.039101
+          ],
+          "service": "公立幼稚園",
+          "line": 596,
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+          "source_sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26",
+          "source_as_of": "2021-05-31",
+          "point": [
+            131.420303,
+            34.039101
+          ],
+          "reuse_file": "outputs\\facility-registry-008-20260928\\childcare-location-rows.json",
+          "source_kind": "childcare",
+          "distance_m": 181.608,
+          "within_rule": false
+        },
+        {
+          "name": "二島幼稚園",
+          "address": "山口県山口市秋穂二島6174",
+          "point": [
+            131.4214429,
+            34.03782909
+          ],
+          "phone": "083-934-2860\n(教育施設管理課)",
+          "number": "434",
+          "url": "http://www.city.yamaguchi.lg.jp/soshiki/4/2836.html",
+          "description": "",
+          "notes": "",
+          "source_path": "outputs/facility-registry-008e-20260928/public/350001-evacuation-8df261c9.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/e5f38096-34a1-4093-bf49-b3e199cbec8a/resource/8df261c9-cfbc-4ae3-a1d8-d8ba7abe8e98/download/350001_evacuation_space.csv",
+          "source_sha256": "8508143ca10ff7fc1fe9d82a816d893c8d4a020404aaa27aea92076c8b252ff6",
+          "source_title": "【山口県】指定緊急避難場所一覧",
+          "resource_id": "8df261c9-cfbc-4ae3-a1d8-d8ba7abe8e98",
+          "dataset": "350001-evacuation",
+          "resource_modified": "2020-02-17T00:42:58.460933",
+          "catalog_modified": "2022-05-31T07:31:40.505154",
+          "source_context": "【山口県】指定緊急避難場所一覧  ・本データは、災害対策基本法第49条の4に基づき市町長が指定した指定緊急避難場所の情報を、各市町に提供いただき、一覧にしたものです。最新の状況などは、当該市町にご確認ください。\r\n\r\n・指定緊急避難場所は、災害種別ごとに指定されています。本データを利用される場合、指定された災害種別等を利用者が正確に理解できるよう、取扱いには十分にご留意ください。 指定緊急避難場所一覧（csv）（平成29年12月1日時点） 災害が差し迫った状況や発災時において、緊急的に避難し身の安全を確保することができる場所です。\r\n\r\nファイル名を訂正しました（令和2年2月17日）。 \r\n（訂正前）350001_evacuation_20171201\r\n（訂正後）350001_evacuation_space",
+          "row": 435,
+          "reuse_file": "outputs/facility-registry-008e-20260928/public/bulk-normalized-rows.json",
+          "source_kind": "new_bulk",
+          "distance_m": 17.304,
+          "within_rule": true
+        }
+      ],
+      "location_verified": false,
+      "independent_audit_status": "pass"
+    }
+  },
+  {
     "id": "osm-node-1423656442",
     "expected": {
       "name": "市立乙瀬小学校(休校中)",
@@ -3771,6 +3932,111 @@
         "table": 7,
         "row": 15
       }
+    }
+  },
+  {
+    "id": "osm-node-1631268124",
+    "expected": {
+      "name": "光市三島憩の家",
+      "category": "social_facility",
+      "source_ids": [
+        "node/1631268124"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9580046,
+          33.9887637
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2006-01-20",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "光市公式沿革は旧三島憩いの家が2006年1月20日に閉館し、島田川河川改修で立ち退いたことを明記しています。元記録の同名旧施設は国土数値情報の旧住所・三井6-4-15と元地点から24.69mの位置で同定しました。",
+      "sources": [
+        {
+          "title": "光市 三島温泉健康交流施設の沿革",
+          "url": "https://www.city.hikari.lg.jp/soshiki/6/fukushi/mishimaonsen/2160.html",
+          "sha256": "87c391779ef1ff72ce6f0d01840eab49e21b0b55ecbfe535f097d50583ea7f2a"
+        },
+        {
+          "title": "国土交通省 公共施設2006（旧三島憩の家の名称・完全住所・地点）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "旧施設の閉館のみを記録します。2012年開業の三島温泉健康交流施設（三井6-6-1）に旧座標を流用しません。",
+        "市の沿革は閉館日を明記していますが建物解体日や跡地の現用途は未確認です。",
+        "元ID・geometry・source_ids・元サービス分類を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "specific_old_public_facility_name_address_point_official_explicit_closure_date",
+      "baseline_name": "光市三島憩の家",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9580046,
+          33.9887637
+        ]
+      },
+      "source_ids": [
+        "node/1631268124"
+      ],
+      "historical_named_points": [
+        {
+          "administrativeAreaCode": "35210",
+          "publicFacilityLargeClassification": "19",
+          "publicFacilitySmallClassification": "19002",
+          "name": "光市三島憩の家",
+          "address": "三井6-4-15",
+          "administrativeCode": "3",
+          "administrator": "数値地図画像",
+          "point": [
+            131.958227,
+            33.98864
+          ],
+          "gml_id": "fb01_2506",
+          "feature_index_0based": 2505,
+          "full_address": "光市三井6-4-15",
+          "distance_m": 24.691
+        }
+      ],
+      "official_event": {
+        "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/hikari-mishima-history.html",
+        "source_url": "https://www.city.hikari.lg.jp/soshiki/6/fukushi/mishimaonsen/2160.html",
+        "source_sha256": "87c391779ef1ff72ce6f0d01840eab49e21b0b55ecbfe535f097d50583ea7f2a",
+        "title": "光市 三島温泉健康交流施設の沿革",
+        "old_facility": "三島憩いの家",
+        "closed_date": "2006-01-20",
+        "successor": "光市三島温泉健康交流施設",
+        "successor_address": "光市三井六丁目6番1号",
+        "successor_open_date": "2012-10-13",
+        "fact": "島田川河川改修で立ち退いた三島憩いの家の代替施設として新施設を整備したことと旧施設閉館日を明記。"
+      },
+      "identity_name_equivalence": "市名の有無と憩の家/憩いの家の送り仮名差のみ。同市旧施設名称を全元IDで検索し一意。",
+      "duplicate_search": {
+        "input_files": [
+          {
+            "path": "public/data/shopping.geojson",
+            "sha256": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+            "feature_count": 5065
+          },
+          {
+            "path": "public/data/civic-facilities.geojson",
+            "sha256": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137",
+            "feature_count": 2699
+          }
+        ],
+        "other_same_facility": []
+      },
+      "successor_address_not_baseline": true
     }
   },
   {

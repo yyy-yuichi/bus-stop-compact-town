@@ -14930,6 +14930,54 @@
       }
     },
     {
+      "id": "osm-node-1423654118",
+      "expected": {
+        "name": "二島幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423654118"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.421328,
+            34.037706
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2022-03-31",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "県の公立幼稚園一覧に二島幼稚園の廃園日を明記。元の完全住所と固有園名が一致する旧園を対象に記録します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26144.html",
+            "sha256": "894a0cc090bd51be8c05de3b52ed3d13ed2e85eb8304ef7c1bec11b6be7dbc64"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/e5f38096-34a1-4093-bf49-b3e199cbec8a/resource/8df261c9-cfbc-4ae3-a1d8-d8ba7abe8e98/download/350001_evacuation_space.csv",
+            "sha256": "8508143ca10ff7fc1fe9d82a816d893c8d4a020404aaa27aea92076c8b252ff6"
+          }
+        ],
+        "limits": [
+          "対象は二島幼稚園の教育サービスです。跡地建物や転用先の閉鎖ではありません。",
+          "参照した公的点との距離差は17.304〜181.608m。元座標を保持し、その正確性は未検証です。",
+          "元geometry・source_ids・住所・詳細を保持します。"
+        ]
+      }
+    },
+    {
       "id": "osm-node-1423656442",
       "expected": {
         "name": "市立乙瀬小学校(休校中)",
@@ -15361,6 +15409,49 @@
           "元の学校・幼稚園の教育サービスの状態です。現建物や転用先の閉鎖ではありません。",
           "元category reference、geometry・出典ID・詳細を保持します。",
           "閉校式の日・後継校開校日・学校属性変更日から実施日を推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1631268124",
+      "expected": {
+        "name": "光市三島憩の家",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631268124"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9580046,
+            33.9887637
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "status": "closed",
+        "event": "closed",
+        "effective_at": "2006-01-20",
+        "date_precision": "day",
+        "checked_at": "2026-09-28",
+        "summary": "光市公式沿革は旧三島憩いの家が2006年1月20日に閉館し、島田川河川改修で立ち退いたことを明記しています。元記録の同名旧施設は国土数値情報の旧住所・三井6-4-15と元地点から24.69mの位置で同定しました。",
+        "sources": [
+          {
+            "title": "光市 三島温泉健康交流施設の沿革",
+            "url": "https://www.city.hikari.lg.jp/soshiki/6/fukushi/mishimaonsen/2160.html",
+            "sha256": "87c391779ef1ff72ce6f0d01840eab49e21b0b55ecbfe535f097d50583ea7f2a"
+          },
+          {
+            "title": "国土交通省 公共施設2006（旧三島憩の家の名称・完全住所・地点）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          }
+        ],
+        "limits": [
+          "旧施設の閉館のみを記録します。2012年開業の三島温泉健康交流施設（三井6-6-1）に旧座標を流用しません。",
+          "市の沿革は閉館日を明記していますが建物解体日や跡地の現用途は未確認です。",
+          "元ID・geometry・source_ids・元サービス分類を保持します。"
         ]
       }
     },
@@ -249829,7 +249920,7 @@
         "source_date_kind": "as_of",
         "registry_id": "D135310000209",
         "official_name": "山口県鴻城高等学校",
-        "official_address": "山口県山口市小郡下郷２５８番地２",
+        "official_address": "山口市小郡柳井田二丁目2-1",
         "services": [
           "D1(高校)"
         ],
@@ -249844,12 +249935,18 @@
             "title": "座標差の記録（元座標の正確性は未検証）",
             "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
             "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "市住居表示の旧新対照表・学校名付き接続",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/119713.xlsx",
+            "sha256": "b74521ff9d421359c358d2331e4190060bf07bd63654594d12a19a4e7f1bd4b5"
           }
         ],
         "limits": [
           "掲載基準日時点の台帳照合です。当日の運営、空き状況、受付は保証しません。",
           "公式施設点との距離差は最小71.492m。元の座標の正確性・敷地内・入口は未検証です。",
-          "住所表示・geometry・出典ID・詳細を保持します。"
+          "住所表示・geometry・出典ID・詳細を保持します。",
+          "台帳の旧住所は、市の学校名付き住居表示旧新対照表で新住所へ接続。移転を意味しません。"
         ]
       }
     },
@@ -249946,6 +250043,1136 @@
           "掲載基準日時点の台帳照合です。当日の運営、空き状況、受付は保証しません。",
           "公式施設点との距離差は最小64.013m。元の座標の正確性・敷地内・入口は未検証です。",
           "住所表示・geometry・出典ID・詳細を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656116",
+      "expected": {
+        "name": "岩国市医療センター医師会病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423656116"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.205312,
+            34.170763
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:08,1201,3",
+        "official_name": "岩国市医療センター医師会病院",
+        "official_address": "岩国市室の木町３丁目６番１２号",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は60.988〜60.988m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-8324024714",
+      "expected": {
+        "name": "徳山病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/8324024714"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7881068,
+            34.0696628
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:15,1085,5",
+        "official_name": "医療法人周友会　徳山病院",
+        "official_address": "周南市南浦山町５番１４号",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は300.9〜300.9m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423658251",
+      "expected": {
+        "name": "愛命会泉原病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423658251"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.821514,
+            34.053297
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:05,1061,7",
+        "official_name": "泉原病院",
+        "official_address": "周南市泉原町１０番１号",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は80.001〜80.001m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423658265",
+      "expected": {
+        "name": "成蹊会岡田病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423658265"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.185641,
+            34.376556
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:11,1037,5",
+        "official_name": "医療法人社団成蹊会　岡田病院",
+        "official_address": "長門市東深川８８８",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は50.653〜50.653m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654650",
+      "expected": {
+        "name": "国立病院機構柳井病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423654650"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.127798,
+            33.911875
+          ]
+        }
+      },
+      "changes": {
+        "name": "独立行政法人国立病院機構柳井医療センター"
+      },
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:88,1044,9",
+        "official_name": "独立行政法人国立病院機構柳井医療センター",
+        "official_address": "柳井市伊保庄９５",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://yanai.hosp.go.jp/outline/enkaku.html",
+            "sha256": "1fe4c480f9819430d95323255c5cd5ab534c87ba9dae63219e7e393e3c6b93c5"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は54.232〜54.232m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661681",
+      "expected": {
+        "name": "鼓ケ浦整肢学園",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423661681"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.849513,
+            34.037882
+          ]
+        }
+      },
+      "changes": {
+        "name": "鼓ヶ浦こども医療福祉センター"
+      },
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:05,1058,3",
+        "official_name": "鼓ヶ浦こども医療福祉センター",
+        "official_address": "周南市大字久米７５２番地４",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://tsudumi.jp/2019/wp-content/uploads/2022/04/%E5%AD%A6%E5%9C%92%E3%83%AA%E3%83%BC%E3%83%95%E3%83%AC%E3%83%83%E3%83%882022.4.pdf",
+            "sha256": "740d49cf18b1caf556083225aac7479fdb05945f656babadac7bad3685f93f75"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "位置の独立検証は未完了。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654432",
+      "expected": {
+        "name": "博愛会村田博愛病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423654432"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.572703,
+            34.048207
+          ]
+        }
+      },
+      "changes": {
+        "name": "医療法人博愛会　山口博愛病院"
+      },
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:06,1034,2",
+        "official_name": "医療法人博愛会　山口博愛病院",
+        "official_address": "防府市お茶屋町２番１２号",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "保険医療機関台帳2026年9月1日",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://hakuai.net/",
+            "sha256": "2c15376ceca0fece5d2304f2096ce6b74f1bdc173bdbfba5a63b380b589d20e3"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は57.347〜57.347m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654549",
+      "expected": {
+        "name": "周南養護学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423654549"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.849347,
+            34.038167
+          ]
+        }
+      },
+      "changes": {
+        "name": "山口県立周南総合支援学校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "E135210000084",
+        "official_name": "山口県立周南総合支援学校",
+        "official_address": "山口県周南市大字久米７６１番地",
+        "services": [
+          "E1(養護)"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/material/019/002.htm",
+            "sha256": "9da2168bbdc8f93dd4b7c2be366b116a9bfc2e1059187770f7b70849600a422f"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は62.276〜62.276m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661099",
+      "expected": {
+        "name": "豊浦養護学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423661099"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.924517,
+            34.167169
+          ]
+        }
+      },
+      "changes": {
+        "name": "山口県立豊浦総合支援学校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "E135210000057",
+        "official_name": "山口県立豊浦総合支援学校",
+        "official_address": "山口県下関市豊浦町大字小串７－１３６",
+        "services": [
+          "E1(養護)"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/material/019/002.htm",
+            "sha256": "9da2168bbdc8f93dd4b7c2be366b116a9bfc2e1059187770f7b70849600a422f"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.city.shimonoseki.lg.jp/map/list/list211.html",
+            "sha256": "1b707571ccfb55c82238104d0c4aa16f62525bb570539b0b753da74844561c0c"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は30.619〜50.209m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661350",
+      "expected": {
+        "name": "防府養護学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423661350"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.565204,
+            34.023543
+          ]
+        }
+      },
+      "changes": {
+        "name": "山口県立防府総合支援学校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "E135210000039",
+        "official_name": "山口県立防府総合支援学校",
+        "official_address": "山口県防府市大字浜方２０５－３",
+        "services": [
+          "E1(養護)"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/material/019/002.htm",
+            "sha256": "9da2168bbdc8f93dd4b7c2be366b116a9bfc2e1059187770f7b70849600a422f"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.city.hofu.yamaguchi.jp/map/list/list202.html",
+            "sha256": "0cd2ca2b375b8c8ab7a948b65c132acd39fce91ffce9e330e809459224fc1fac"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は162.093〜163.777m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660182",
+      "expected": {
+        "name": "県立西市高等学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660182"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.082268,
+            34.197596
+          ]
+        }
+      },
+      "changes": {
+        "name": "山口県立山口農業高等学校西市分校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "D135210000586",
+        "official_name": "山口県立山口農業高等学校西市分校",
+        "official_address": "山口県下関市豊田町殿敷８３４－５",
+        "services": [
+          "D1(高校)"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.yamaguchi-na.ysn21.jp/%E5%AD%A6%E6%A0%A1%E6%A6%82%E8%A6%81",
+            "sha256": "af4cb06dbb3d17283c2b839236a150540474ae8d2a7703baed1b73585ff831e8"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://www.city.shimonoseki.lg.jp/map/list/list226.html",
+            "sha256": "24375af2debfa5df877a2f340598fc6a356e65cb3fadf9da2269658dd24bb917"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/ca4b0912-cf29-4f80-8f2a-fecdc50dd19b/resource/29f0e12f-8bb1-4fc9-8d50-b489c87efa6d/download/352012_evacuation_space.csv",
+            "sha256": "a87dcd02271768848f3f329c288e7876ed77b4d94e9b544f1ce62550ec310359"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は92.963〜184.645m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660420",
+      "expected": {
+        "name": "私立山口県桜ヶ丘中学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660420"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.817464,
+            34.060994
+          ]
+        }
+      },
+      "changes": {
+        "name": "晃英館中学校"
+      },
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "C135310000078",
+        "official_name": "晃英館中学校",
+        "official_address": "山口県周南市大字徳山５６２６番地の１",
+        "services": [
+          "C1(中学校)"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.koeikan.ed.jp/outline.html",
+            "sha256": "021024d678c2718fa0046a7357a172a17166719df01b0f110e2e861fc9cb448f"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は97.044〜97.044m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423658364",
+      "expected": {
+        "name": "旭ケ丘幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423658364"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.845013,
+            34.032744
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: 2 / 10",
+        "official_name": "旭ヶ丘幼稚園",
+        "official_address": "周南市大字久米1008",
+        "services": [
+          "私立幼稚園"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/239523.pdf",
+            "sha256": "9d7d8aabc404a3d8c3df4dfda35ab1f67d62fb818bd328a5271e563f0cdc4b59"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は51.061〜51.061m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660832",
+      "expected": {
+        "name": "萩市越ケ浜保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423660832"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.419233,
+            34.409724
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-04-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: (13)保育所  / 107",
+        "official_name": "萩市越ケ浜保育園",
+        "official_address": "萩市大字椿東1189番地361",
+        "services": [
+          "保育所"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/247857.xls",
+            "sha256": "bd32ca51345942debefa6772ad19fd29fe3765601cbdda43c77ddaeef8153320"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は4350.176〜4519.292m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423660246",
+      "expected": {
+        "name": "社会福祉法人うちうみ会つばさ保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423660246"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.071885,
+            33.9244
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-04-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: (13)保育所  / 264",
+        "official_name": "つばさ保育園",
+        "official_address": "熊毛郡平生町曽根757-1",
+        "services": [
+          "保育所"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。法人冠称等の表記差は同じ施設への対応を確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/247857.xls",
+            "sha256": "bd32ca51345942debefa6772ad19fd29fe3765601cbdda43c77ddaeef8153320"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は154.178〜195.286m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661194",
+      "expected": {
+        "name": "錦江第二保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423661194"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.534846,
+            34.013738
+          ]
+        }
+      },
+      "changes": {
+        "name": "幼保連携型認定こども園きんこう第2保育園"
+      },
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-04-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: (11)認定こども園  / 70",
+        "official_name": "幼保連携型認定こども園きんこう第2保育園",
+        "official_address": "防府市大字田島2585-1",
+        "services": [
+          "認定こども園"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/247003.xlsx",
+            "sha256": "1647e14e29c5847fc3ac91208cbbb0e001c9f44e12b9db0d4f57f37b6360f39d"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/44766.pdf",
+            "sha256": "abcab75c34b9f46593c08d776c79246270cbaf792091330a4712dfc6d1b2a41a"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.city.hofu.yamaguchi.jp/site/kosodate-portal/hoikusyoitiran.html",
+            "sha256": "5f6bc964a23f09cf4e42c6222fad68301cdeab6a0add97598260e43836f31304"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は18.677〜141.845m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661313",
+      "expected": {
+        "name": "防府市立三田尻保育所",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423661313"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.569536,
+            34.045346
+          ]
+        }
+      },
+      "changes": {
+        "name": "幼保連携型認定こども園三田尻保育園"
+      },
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-04-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: (11)認定こども園  / 74",
+        "official_name": "幼保連携型認定こども園三田尻保育園",
+        "official_address": "防府市岡村町9-9",
+        "services": [
+          "認定こども園"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/247003.xlsx",
+            "sha256": "1647e14e29c5847fc3ac91208cbbb0e001c9f44e12b9db0d4f57f37b6360f39d"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/53706.pdf",
+            "sha256": "df4a4288adde725ad88fc498329f02ad215075495c4c50b65af9450f4f809849"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.city.hofu.yamaguchi.jp/map/mitajirihoikusyo.html",
+            "sha256": "4746df97e3c33f41de17f8de55dd59a3ea6690751b49358033b220ca694b47f7"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.city.hofu.yamaguchi.jp/site/kosodate-portal/hoikusyoitiran.html",
+            "sha256": "5f6bc964a23f09cf4e42c6222fad68301cdeab6a0add97598260e43836f31304"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は0.0〜2.048m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661315",
+      "expected": {
+        "name": "防府市立富海保育所",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423661315"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.648056,
+            34.05096
+          ]
+        }
+      },
+      "changes": {
+        "name": "防府市立認定こども園とのみ保育所"
+      },
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-04-01",
+        "source_date_kind": "as_of",
+        "registry_id": "資料行（施設番号ではありません）: (11)認定こども園  / 66",
+        "official_name": "防府市立認定こども園とのみ保育所",
+        "official_address": "防府市大字富海2703",
+        "services": [
+          "認定こども園"
+        ],
+        "summary": "元原本の完全住所と施設名・施設区分を現行公的台帳に一意に接続。旧新名称の継承は公式沿革で確認。台帳掲載の確認として記録し、元の座標を保持します。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/247003.xlsx",
+            "sha256": "1647e14e29c5847fc3ac91208cbbb0e001c9f44e12b9db0d4f57f37b6360f39d"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.city.hofu.yamaguchi.jp/site/kosodate-portal/hoikusyoitiran.html",
+            "sha256": "5f6bc964a23f09cf4e42c6222fad68301cdeab6a0add97598260e43836f31304"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/acc48000-55c0-4b70-8112-8ccd426e04fe/resource/e225b76b-5e28-4818-9049-c65049b5d740/download/350001_preschool.csv",
+            "sha256": "e354f433a971bfdd780c32ba546273af6e35be2dddc1106a968bae5941a19e26"
+          }
+        ],
+        "limits": [
+          "台帳基準日時点の掲載確認です。当日の診療・運営・空き状況や移転の不存在を保証しません。",
+          "参照した公的点との距離差は3.657〜78.679m。元座標の正確性、敷地内、入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。指定日や学校コード属性変更日を開業・改称日に代用しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-323853757",
+      "expected": {
+        "name": "済生会下関総合病院",
+        "category": "hospital",
+        "source_ids": [
+          "way/323853757"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.931974,
+            34.031592
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "medical:01,1635,7",
+        "official_name": "山口県済生会下関総合病院",
+        "official_address": "下関市安岡町８丁目５番１号",
+        "services": [
+          "病院"
+        ],
+        "summary": "元原本の固有識別情報と現行保険台帳の番号・完全住所・電話を接続して掲載確認。機械的な住所連結または外字による照合不能を原資料で解消しました。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月保険医療機関台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "sha256": "d28cf2ab0c8b1fb23f6b468d0b1a5f43008e8e83cc82123ef0cb139326b0b938"
+          },
+          {
+            "title": "厚生労働省2026年6月施設固有点・正式名称・完全住所",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "sha256": "b416472ec52a151455e1c91438e0dec5b471e19eafe70e3e2ee1bb22544efe87"
+          }
+        ],
+        "limits": [
+          "原OSMの日本式住所の町・丁目・街区・住居番号と元電話を台帳へ照合。道路名を町住所へ誤連結した既存表示は証拠と区別し、元propertiesは保持します。",
+          "台帳基準日時点の掲載確認です。当日の診療、元座標の正確性・敷地内・入口は未検証です。",
+          "公式点との差90.375m。元geometry・source_ids・住所表示・詳細を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1222868134",
+      "expected": {
+        "name": "廣田歯科医院",
+        "category": "dentist",
+        "source_ids": [
+          "way/1222868134"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.91262715,
+            34.0286045
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "medical_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "dental:01,3073,5",
+        "official_name": "廣田歯科医院",
+        "official_address": "下関市安岡町１丁目１０番１４号",
+        "services": [
+          "診療所"
+        ],
+        "summary": "元原本の固有識別情報と現行保険台帳の番号・完全住所・電話を接続して掲載確認。機械的な住所連結または外字による照合不能を原資料で解消しました。",
+        "sources": [
+          {
+            "title": "中国四国厚生局2026年9月保険医療機関台帳",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500019.zip",
+            "sha256": "a89c72f41e0342c7f40dad576541c27b4e93c348db4197035b1047e15ca99a1d"
+          },
+          {
+            "title": "元OSMに記録された歯科医院公式サイト・院名と電話",
+            "url": "https://www.hirota-dent.com/",
+            "sha256": "16ba1112ea31a65221f8a4a25908171e606b3775b482711d2cfe076b85cb6107"
+          },
+          {
+            "title": "厚生労働省2026年6月施設固有点・正式名称・完全住所",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "sha256": "1585ea00b981df8c32d93850b2321a27053b8a9af3d46afc18df11af1f022727"
+          }
+        ],
+        "limits": [
+          "保険台帳の名称の外字を元公式サイトとNaviiの院名・完全住所・電話で個別接続。台帳原文字は証拠に保持。",
+          "台帳基準日時点の掲載確認です。当日の受診可否や入口位置は保証しません。",
+          "公式点との差6.596m。元geometry・source_ids・住所表示・詳細を保持します。"
+        ]
+      }
+    },
+    {
+      "id": "civic-KD0000500019",
+      "expected": {
+        "name": "ひだまり保育園えきみなみ",
+        "category": "childcare",
+        "source_ids": [
+          "civic:94d6eb5b-b75b-4ef9-b882-03517fb335ce:row:19"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8667886,
+            34.0084791
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "childcare_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-01",
+        "source_date_kind": "as_of",
+        "registry_id": "KD0000500019",
+        "official_name": "ひだまり保育園えきみなみ",
+        "official_address": "下松市大字西豊井1247番地ツインスタ－下松駅南グランツ104",
+        "services": [
+          "企業主導型（認可外保育施設）"
+        ],
+        "summary": "元の自治体施設ID・園名・完全地番と県の認可外施設一覧を照合。電話の差は運営会社代表番号と園個別番号として公式ページで接続。同住所の小規模園は別施設として区別しました。",
+        "sources": [
+          {
+            "title": "元の自治体施設ID付き保育施設CSV",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/087991fb-507e-4eb2-8ef7-3b562f3a028d/resource/94d6eb5b-b75b-4ef9-b882-03517fb335ce/download/352071_preschool.csv",
+            "sha256": "6bf2fd8e1822689568702a931ad1a2c7236b2b8b85582979db21ea4888a2ce9d"
+          },
+          {
+            "title": "県2026年9月1日認可外保育施設一覧",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/250626.pdf",
+            "sha256": "783c78f84d3b9e852878c6566006cc6046e8663a8d76d532acce5d43af313c8d"
+          },
+          {
+            "title": "事業者公式・園別所在地と個別電話・運営会社代表番号",
+            "url": "https://hoikuen-hidamari.jp/access.html",
+            "sha256": "edce46711fc10dea3ddfc9e296a887a831f6a9406933512a6a3d891f71def2b3"
+          }
+        ],
+        "limits": [
+          "確認対象は企業主導型えきみなみ園104室の掲載です。103室の小規模保育園とは別です。",
+          "当日の保育・空き状況、元座標の正確性・入口は未検証です。",
+          "元geometry・source_ids・住所表示・詳細を保持します。"
         ]
       }
     },
@@ -250308,6 +251535,75 @@
         ],
         "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P14/P14-23/P14-23_35_GML.zip",
         "source_sha256": "4a79cfeede893285fb3cc6b9d59edb7d197dd8c25cec1f35e89d346bddae25b0"
+      }
+    },
+    {
+      "id": "osm-node-1423660149",
+      "expected": {
+        "name": "県立徳山工業高等学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660149"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.827236,
+            34.046325
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "school_register",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-05-01",
+        "registry_id": "D135210000416",
+        "official_name": "山口県立徳山商工高等学校",
+        "official_address": "山口県周南市周陽３丁目１－１",
+        "services": [],
+        "summary": "徳山工業と商工への公式統合沿革、同じ完全住所・現行学校コード、完全同一の元Pointと両方から50m以内の学校コード付き固有点で、確認済み商工高校の別ID記録へ関連付けます。",
+        "sources": [
+          {
+            "title": "現行公的施設台帳",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+            "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+          },
+          {
+            "title": "公式旧新名称・移行履歴",
+            "url": "https://www.tokuyama-ct.ysn21.jp/overview",
+            "sha256": "5421a4cd5f98afc5be693bc9ca1d835b1e9882b1037e8791f27e725d8edfa011"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/f871695a-bdbb-451e-80d6-538ef7d7b333/resource/7c6c6eab-346f-401e-9a79-8b40211c344f/download/2_.csv",
+            "sha256": "9df1326528350c0fe7a591b4fbb06a34b8f676e3b851e20d6dcfdf261e9daac8"
+          },
+          {
+            "title": "公式点との差を記録（位置は未保証）",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/e5f38096-34a1-4093-bf49-b3e199cbec8a/resource/8df261c9-cfbc-4ae3-a1d8-d8ba7abe8e98/download/350001_evacuation_space.csv",
+            "sha256": "8508143ca10ff7fc1fe9d82a816d893c8d4a020404aaa27aea92076c8b252ff6"
+          }
+        ],
+        "limits": [
+          "2026年5月1日時点の学校コードへの掲載を照合。9月以降の稼働・休校・入口は未確認です。",
+          "国交省・自治体の旧位置資料は施設同一性の確認にのみ使用。地図表示中心や敷地の一般代表点を使用しません。",
+          "元の座標・施設ID・出典を保持。属性設定日を開校日・改称日とみなしません。"
+        ]
+      },
+      "duplicate_of": "osm-node-1423660147",
+      "duplicate_point": {
+        "coordinates": [
+          131.82744090810934,
+          34.04601509004227
+        ],
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
       }
     },
     {
@@ -252696,6 +253992,454 @@
       }
     },
     {
+      "id": "civic-care-3560390159-0bbbd181f7",
+      "expected": {
+        "name": "小郡第一総合病院訪問看護ステーション",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:380"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3974,
+            34.103893
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3560390159",
+        "official_name": "小郡第一総合病院訪問看護ステーション",
+        "official_address": "山口市小郡中央通8－11",
+        "services": [
+          "訪問看護"
+        ],
+        "summary": "元の公的番号・施設正式名・電話・全掲載サービスを現台帳に照合しました。元法人表記に欠ける「組合」の2字は、同番号の国公表データの正式法人名・法人番号と病院公式院史で照合しています。完全住所は市の住居表示旧新対照表で対応を確認しています。台帳掲載と地点の精度を分け、元の位置を保持しています。",
+        "limits": [
+          "確認対象は同一公的番号の台帳掲載と記録サービスの有効期間です。営業・受入可否・入口・地図の座標精度を保証しません。",
+          "元ID・geometry・source_ids・元住所・registered_detailsを保持しています。",
+          "同番号の公表座標と元地点に50mを超える差があります。位置差は未解消で、距離の閾値を広げて同地点と認定したものではありません。",
+          "閲覧日を名簿基準日・指定開始日・移転日として扱いません。",
+          "住居表示の変更は市の旧新対照表で確認しました。元座標が同地点で正確であることとは区別しています。",
+          "元資料の法人名「山口県厚生農業協同連合会」は保持します。正式名「山口県厚生農業協同組合連合会」との2字差を明示し、法人変更というイベントは推定しません。"
+        ],
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+            "sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（2026年6月末・位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+            "sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197"
+          },
+          {
+            "title": "山口市 住居表示旧新対照表（2026年2月14日実施）",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/119713.xlsx",
+            "sha256": "b74521ff9d421359c358d2331e4190060bf07bd63654594d12a19a4e7f1bd4b5"
+          },
+          {
+            "title": "小郡第一総合病院 公式沿革・年譜",
+            "url": "https://ogoridaiichi.jp/pages/164/",
+            "sha256": "c324ef3bd38da367a83947e2eb94f65b9a643786350afc83d1a73192230cecd3"
+          },
+          {
+            "title": "小郡第一総合病院訪問看護ステーション 運営規程（2024年8月改正）",
+            "url": "https://ogoridaiichi.jp/files/libs/3292/202408091725042557.pdf",
+            "sha256": "7d1fb1a6655b10cebcd90371a642856ece0833bf4cb435e9004d4a4f99c7a8f3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1631268148",
+      "expected": {
+        "name": "光市東部憩いの家",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631268148"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.967449,
+            33.940231
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "E3521000039111 / E3521000039202",
+        "official_name": "光市東部憩いの家",
+        "official_address": "光市室積新開一丁目1番1号",
+        "services": [
+          "高齢者の休養・レクリエーション活動"
+        ],
+        "summary": "元施設名と公的資料の施設固有点を50m以内で照合し、市公式の施設案内に完全住所と用途が一致することを確認しました。",
+        "sources": [
+          {
+            "title": "光市 その他の高齢者福祉サービス（2026年4月更新）",
+            "url": "https://www.city.hikari.lg.jp/soshiki/6/koreisha/kenko/2/2584.html",
+            "sha256": "b8a6168bdcbc050a808ec1f6aa110365e9542d9fe6686d94f83d6ed9c549d01d"
+          },
+          {
+            "title": "国土地理院 指定避難所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_1.csv",
+            "sha256": "5e9316895713b2bdc226552262794da5f941d77ebcc23830830621ee1dc5216a"
+          },
+          {
+            "title": "国土地理院 指定緊急避難場所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_2.csv",
+            "sha256": "9f65fd559666934caec02996f57974af6690309d61837899de6d6b53fa09a620"
+          },
+          {
+            "title": "国土交通省 公共施設2006（旧施設の名称・地点）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          }
+        ],
+        "limits": [
+          "市の現行公開案内への掲載を確認しました。閲覧日は資料の基準日や施設の開館日ではありません。実稼働・受入可否・入口精度は未確認です。",
+          "国土地理院の防災資料は施設名・完全住所・固有点の同一性補助に限り、通常サービスの現況は市の施設案内で確認しています。",
+          "元ID・geometry・source_ids・registered_detailsを保持し、同住所の別用途施設やサービスに一般化しません。",
+          "元OSMの分類group_homeは現在の市施設案内の用途と一致しません。元分類を保存し、現行レビューに市案内の用途のみを記録します。タグ差から閉鎖・用途変更イベントを推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1631268150",
+      "expected": {
+        "name": "光市西部憩いの家",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631268150"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.920647,
+            33.975196
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "E3521000063111 / E3521000063201",
+        "official_name": "光市西部憩いの家",
+        "official_address": "光市中村町31番1号",
+        "services": [
+          "高齢者の休養・レクリエーション活動"
+        ],
+        "summary": "元施設名と公的資料の施設固有点を50m以内で照合し、市公式の施設案内に完全住所と用途が一致することを確認しました。",
+        "sources": [
+          {
+            "title": "光市 その他の高齢者福祉サービス（2026年4月更新）",
+            "url": "https://www.city.hikari.lg.jp/soshiki/6/koreisha/kenko/2/2584.html",
+            "sha256": "b8a6168bdcbc050a808ec1f6aa110365e9542d9fe6686d94f83d6ed9c549d01d"
+          },
+          {
+            "title": "国土地理院 指定避難所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_1.csv",
+            "sha256": "5e9316895713b2bdc226552262794da5f941d77ebcc23830830621ee1dc5216a"
+          },
+          {
+            "title": "国土地理院 指定緊急避難場所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_2.csv",
+            "sha256": "9f65fd559666934caec02996f57974af6690309d61837899de6d6b53fa09a620"
+          },
+          {
+            "title": "国土交通省 公共施設2006（旧施設の名称・地点）",
+            "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+            "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+          }
+        ],
+        "limits": [
+          "市の現行公開案内への掲載を確認しました。閲覧日は資料の基準日や施設の開館日ではありません。実稼働・受入可否・入口精度は未確認です。",
+          "国土地理院の防災資料は施設名・完全住所・固有点の同一性補助に限り、通常サービスの現況は市の施設案内で確認しています。",
+          "元ID・geometry・source_ids・registered_detailsを保持し、同住所の別用途施設やサービスに一般化しません。",
+          "元OSMの分類group_homeは現在の市施設案内の用途と一致しません。元分類を保存し、現行レビューに市案内の用途のみを記録します。タグ差から閉鎖・用途変更イベントを推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1631273352",
+      "expected": {
+        "name": "尚白園",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631273352"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7983408,
+            34.0651853
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "E3521500038111 / E3521500038201",
+        "official_name": "尚白園",
+        "official_address": "周南市新宿通六丁目1番25号",
+        "services": [
+          "隣保館"
+        ],
+        "summary": "元施設名と公的資料の施設固有点を50m以内で照合し、市公式の施設案内に完全住所と用途が一致することを確認しました。",
+        "sources": [
+          {
+            "title": "周南市 尚白園の紹介",
+            "url": "https://www.city.shunan.lg.jp/soshiki/22/3009.html",
+            "sha256": "0ae8fccf9d758bfc0d60e25f19c2d7f4bc2953d1b433852251d44f30e3a62bdf"
+          },
+          {
+            "title": "周南市 尚白園の施設管理・運営支援員募集（2026年1月）",
+            "url": "https://www.city.shunan.lg.jp/site/kaikeinendo/140396.html",
+            "sha256": "4f3db6e4b055ef05dd50e55632b7d806f298b5de2fffa36f5b6ec199be462973"
+          },
+          {
+            "title": "国土地理院 指定避難所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_1.csv",
+            "sha256": "5e9316895713b2bdc226552262794da5f941d77ebcc23830830621ee1dc5216a"
+          },
+          {
+            "title": "国土地理院 指定緊急避難場所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_2.csv",
+            "sha256": "9f65fd559666934caec02996f57974af6690309d61837899de6d6b53fa09a620"
+          }
+        ],
+        "limits": [
+          "市の現行公開案内への掲載を確認しました。閲覧日は資料の基準日や施設の開館日ではありません。実稼働・受入可否・入口精度は未確認です。",
+          "国土地理院の防災資料は施設名・完全住所・固有点の同一性補助に限り、通常サービスの現況は市の施設案内で確認しています。",
+          "元ID・geometry・source_ids・registered_detailsを保持し、同住所の別用途施設やサービスに一般化しません。",
+          "元OSMの分類assisted_livingは現在の市施設案内の用途と一致しません。元分類を保存し、現行レビューに市案内の用途のみを記録します。タグ差から閉鎖・用途変更イベントを推定しません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3728512334",
+      "expected": {
+        "name": "地域交流センター",
+        "category": "social_facility",
+        "source_ids": [
+          "node/3728512334"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8768229,
+            34.0315465
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "E3520700007121 / E3520700007201",
+        "official_name": "下松市地域交流センター",
+        "official_address": "下松市生野屋南1丁目11番1号",
+        "services": [
+          "地域交流センター"
+        ],
+        "summary": "元施設名と公的資料の施設固有点を50m以内で照合し、市公式の施設案内に完全住所と用途が一致することを確認しました。",
+        "sources": [
+          {
+            "title": "下松市 地域交流センター（ふれあいの館）施設案内",
+            "url": "https://www.city.kudamatsu.lg.jp/shisetsu/shi-shisetsu/fureainoyakata.html",
+            "sha256": "fec5451333b1bbcd4e307b33ba1b674d7ce47820adfc9110411e3329f2d31ad3"
+          },
+          {
+            "title": "下松市地域交流センター条例",
+            "url": "https://www.city.kudamatsu.lg.jp/kudahp/reiki/reiki_int/reiki_honbun/m408RG00000695.html",
+            "sha256": "c33faed65fd5dd35078fd60675fe4952bae42075fbefc5f2d97a8f1dfc79a0da"
+          },
+          {
+            "title": "国土地理院 指定避難所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_1.csv",
+            "sha256": "5e9316895713b2bdc226552262794da5f941d77ebcc23830830621ee1dc5216a"
+          },
+          {
+            "title": "国土地理院 指定緊急避難場所（施設名・住所・固有点の照合のみ）",
+            "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/35000_2.csv",
+            "sha256": "9f65fd559666934caec02996f57974af6690309d61837899de6d6b53fa09a620"
+          }
+        ],
+        "limits": [
+          "市の現行公開案内への掲載を確認しました。閲覧日は資料の基準日や施設の開館日ではありません。実稼働・受入可否・入口精度は未確認です。",
+          "国土地理院の防災資料は施設名・完全住所・固有点の同一性補助に限り、通常サービスの現況は市の施設案内で確認しています。",
+          "元ID・geometry・source_ids・registered_detailsを保持し、同住所の別用途施設やサービスに一般化しません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570800239-af7da73571",
+      "expected": {
+        "name": "特別養護老人ホーム光葉苑",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:916",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1223"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.095917,
+            34.169106
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570802573",
+        "official_name": "特別養護老人ホーム光葉苑",
+        "official_address": "岩国市下317－2",
+        "services": [
+          "介護老人福祉施設",
+          "短期入所生活介護"
+        ],
+        "summary": "公式の法人合併・事業継続案内により、元の光葉会から現在の錦福祉会への同一施設の継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35208&od=1",
+            "sha256": "fb123b00fe93263ce93c22e84a901898d22a9076e94b6c11438dbd67d53055df"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+            "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+          },
+          {
+            "title": "旧光葉会 法人合併と事業運営継続のお知らせ",
+            "url": "https://kouyoukai-honbu.jimdofree.com/",
+            "sha256": "645afdd03a04e0cb55947d0a71ea870fb8d9a28cf4f2c9beb3d346608f6ca552"
+          },
+          {
+            "title": "社会福祉法人錦福祉会 合併完了の公式案内",
+            "url": "https://nishiki-f.com/",
+            "sha256": "cbb95053528ff6c58af05ebba67ad368e043b9f5a8c73759a436f265465a10ba"
+          },
+          {
+            "title": "山口県 介護事業所の新規・廃止一覧（2026年4月）",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+            "sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+            "sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+            "sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570800239、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570802573です。",
+          "法人合併による番号変更と事業継続を明示し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "国公表の同名施設点と元位置に50mを超える既知差があります。位置差は未解消のまま明示し、台帳同一性確認と分けています。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570800445-b2946a74f8",
+      "expected": {
+        "name": "光葉苑介護保険相談室",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:500"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.095917,
+            34.169106
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "care_service_registry",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "3570802565",
+        "official_name": "光葉苑介護保険相談室",
+        "official_address": "岩国市下317－2",
+        "services": [
+          "居宅介護支援"
+        ],
+        "summary": "公式の法人合併・事業継続案内により、元の光葉会から現在の錦福祉会への同一施設の継続を確認しました。元の正式名・完全住所・電話・全掲載サービスは現台帳と一致し、現在の指定番号を記録しています。",
+        "sources": [
+          {
+            "title": "山口県 介護サービス事業所一覧（2026年9月閲覧）",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35208&od=1",
+            "sha256": "fb123b00fe93263ce93c22e84a901898d22a9076e94b6c11438dbd67d53055df"
+          },
+          {
+            "title": "元施設の自治体介護サービス公表行",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+            "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+          },
+          {
+            "title": "旧光葉会 法人合併と事業運営継続のお知らせ",
+            "url": "https://kouyoukai-honbu.jimdofree.com/",
+            "sha256": "645afdd03a04e0cb55947d0a71ea870fb8d9a28cf4f2c9beb3d346608f6ca552"
+          },
+          {
+            "title": "社会福祉法人錦福祉会 合併完了の公式案内",
+            "url": "https://nishiki-f.com/",
+            "sha256": "cbb95053528ff6c58af05ebba67ad368e043b9f5a8c73759a436f265465a10ba"
+          },
+          {
+            "title": "厚生労働省 介護サービス公表データ（位置差の記録）",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+            "sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59"
+          }
+        ],
+        "limits": [
+          "確認対象は同一施設で継続する全掲載サービスの現台帳掲載です。実稼働・受入可否・入口・座標精度は保証しません。",
+          "元指定番号3570800445、元法人名、元ID・geometry・source_ids・registered_detailsを保持します。現在の指定番号は3570802565です。",
+          "法人合併による番号変更と事業継続を明示し、施設の閉鎖や新規建物開業というイベントは推定しません。",
+          "国公表の同名施設点と元位置に50mを超える既知差があります。位置差は未解消のまま明示し、台帳同一性確認と分けています。",
+          "閲覧日を台帳基準日・移転日・開業日としません。"
+        ]
+      }
+    },
+    {
       "id": "civic-KD0000900002",
       "expected": {
         "name": "指定居宅介護支援事業所げんき",
@@ -254649,6 +256393,1439 @@
         "limits": [
           "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
           "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423653989",
+      "expected": {
+        "name": "下関幡生郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423653989"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.930204,
+            33.9797566
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:552640",
+        "official_name": "下関幡生郵便局",
+        "official_address": "山口県下関市幡生町２−３−３４",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155264000/",
+            "sha256": "51833362acbf425d52ceb1c2f257bc63a92c40a2bde2cabed1490ef2b2764a8c"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654614",
+      "expected": {
+        "name": "嘉年郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423654614"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.672606,
+            34.46636
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551280",
+        "official_name": "嘉年郵便局",
+        "official_address": "山口県山口市阿東嘉年上３４３５−８",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155128000/",
+            "sha256": "f4583344cc84cb72381edc4a1e9f05564f49e540d3870c83b69ffd7554bdbda4"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654737",
+      "expected": {
+        "name": "大島打上簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423654737"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.774462,
+            33.983388
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557620",
+        "official_name": "大島打上簡易郵便局",
+        "official_address": "山口県周南市大島打上１４２４",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155762000/",
+            "sha256": "174627f8083d7f876ec014de56bd2165dd34b0f5152e0f5fc400c1f6b7d00106"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654777",
+      "expected": {
+        "name": "大畠遠崎郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423654777"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.145879,
+            33.957288
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551350",
+        "official_name": "大畠遠崎郵便局",
+        "official_address": "山口県柳井市遠崎１２２０",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155135000/",
+            "sha256": "a747acc16e6575dc0b2255b55668420c572d2619061f5ebc5df543bb012b0ea1"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654778",
+      "expected": {
+        "name": "大畠郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423654778"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.168322,
+            33.960483
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551060",
+        "official_name": "大畠郵便局",
+        "official_address": "山口県柳井市大畠１５０１",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155106000/",
+            "sha256": "a94cecf5aed8ed4a9fc3d38dd135a709cd33b54caf0f0ee8335203924a7afa32"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654781",
+      "expected": {
+        "name": "大道理簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423654781"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.810611,
+            34.13935
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557170",
+        "official_name": "大道理簡易郵便局",
+        "official_address": "山口県周南市大道理１３２８−２",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155717000/",
+            "sha256": "8beb05deec9d93a0714c5f21f607feb16d2e5c24928a94ff9207a184ab3b343b"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423655386",
+      "expected": {
+        "name": "尾国簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423655386"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.120966,
+            33.874434
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557060",
+        "official_name": "尾国簡易郵便局",
+        "official_address": "山口県熊毛郡平生町尾国４６３−２",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155706000/",
+            "sha256": "5c259215b7095929c3aad17b10c7efdc63d959803a238d86a6f494523c03aa37"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423655417",
+      "expected": {
+        "name": "山口県庁内郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423655417"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.470898,
+            34.185702
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:553870",
+        "official_name": "山口県庁内郵便局",
+        "official_address": "山口県山口市滝町１-１",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155387000/",
+            "sha256": "7889fd3fdf97aeffbd20ac62c35460a332cc2f1dade9039546c24e981e3fc0ba"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656107",
+      "expected": {
+        "name": "岩国尾津簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423656107"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.206812,
+            34.136989
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557530",
+        "official_name": "岩国尾津簡易郵便局",
+        "official_address": "山口県岩国市尾津町２−２３−１８",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155753000/",
+            "sha256": "55ebb8cdf77148cec3ef356a2c48c1824471c7fda43e8788f0a17111077b1c0c"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656113",
+      "expected": {
+        "name": "岩国川西郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423656113"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.177759,
+            34.160514
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551410",
+        "official_name": "岩国川西郵便局",
+        "official_address": "山口県岩国市川西１−１３−２０",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155141000/",
+            "sha256": "44b6f91948194759041f35e92d02db9e0362d3bb6271080a40fbeba5c45ce7ac"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423656141",
+      "expected": {
+        "name": "岩国平田六郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423656141"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.188508,
+            34.140294
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:553640",
+        "official_name": "岩国平田六郵便局",
+        "official_address": "山口県岩国市平田６−２４−７",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155364000/",
+            "sha256": "0986d6b50cd785e7f7c0eacfc23d3c006bdba2ca872ef39988138069271cced1"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423657578",
+      "expected": {
+        "name": "平野郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423657578"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.357195,
+            33.907714
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:550570",
+        "official_name": "平野郵便局",
+        "official_address": "山口県大島郡周防大島町平野１４８４−２",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155057000/",
+            "sha256": "7c48dc29ee68bf1547bb2724c8849ed4287af1d38104e24a1648db1b8470e6d0"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423658361",
+      "expected": {
+        "name": "日良居郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423658361"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.301615,
+            33.91885
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551240",
+        "official_name": "日良居郵便局",
+        "official_address": "山口県大島郡周防大島町日前１９７６−３",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155124000/",
+            "sha256": "12e0dcb0291734f25f690edd002c3893df3ab231e699b7d3783a7aec12200f97"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661198",
+      "expected": {
+        "name": "錦町簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423661198"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9588251,
+            34.2643748
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557470",
+        "official_name": "錦町簡易郵便局",
+        "official_address": "山口県岩国市錦町広瀬６７０７−５",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155747000/",
+            "sha256": "58c76a2e71eb73b7cd39dfd84b0967affc1888b751df0c480af01d720711df97"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661228",
+      "expected": {
+        "name": "長穂郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423661228"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.836524,
+            34.132692
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:552270",
+        "official_name": "長穂郵便局",
+        "official_address": "山口県周南市長穂１６７０−３",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155227000/",
+            "sha256": "f3869d1035a8acdce72c19ad97032917df524ed5397f8208660f0d641fa5eda1"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661323",
+      "expected": {
+        "name": "防府新前町郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423661323"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.55901,
+            34.026321
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551560",
+        "official_name": "防府新前町郵便局",
+        "official_address": "山口県防府市田島６７８−４",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155156000/",
+            "sha256": "e13dadc28c636c36074101ad046ada6893f3271e406cc03b9ad2286a016bbd42"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661549",
+      "expected": {
+        "name": "高根郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423661549"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.02285,
+            34.375403
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551040",
+        "official_name": "高根郵便局",
+        "official_address": "山口県岩国市錦町宇佐郷１０５９−１",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155104000/",
+            "sha256": "388b4756e49dabe9c92d50201b557851e0c2fd9e96212962a9cb59fb05af03be"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423661670",
+      "expected": {
+        "name": "麻里府郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/1423661670"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.043609,
+            33.9139
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:551740",
+        "official_name": "麻里府郵便局",
+        "official_address": "山口県熊毛郡田布施町別府１６８９−５",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155174000/",
+            "sha256": "bcc1b0ef6abd958d66b3bb0cc1db16cd0cf5e798010fd996cb470e9119b7ab9b"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13062598788",
+      "expected": {
+        "name": "油谷郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/13062598788"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.0589693,
+            34.3741056
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:550200",
+        "official_name": "油谷郵便局",
+        "official_address": "山口県長門市油谷新別名１００９−４",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155020000/",
+            "sha256": "c396235349abb9703f49e0d1218ea58d68ad3fa8bbf001e40593b2ce9750ea50"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13067967893",
+      "expected": {
+        "name": "三谷簡易郵便局",
+        "category": "post_office",
+        "source_ids": [
+          "node/13067967893"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.6246892,
+            34.3567544
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "post_office_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-08-31",
+        "source_date_kind": "as_of",
+        "registry_id": "japanpost:557750",
+        "official_name": "三谷簡易郵便局",
+        "official_address": "山口県山口市阿東生雲東分７５３",
+        "services": [
+          "郵便局"
+        ],
+        "summary": "元資料の局名・完全住所が日本郵便の2026年8月31日時点一覧と公式詳細に一意一致し、当該局の台帳掲載を確認しました。",
+        "sources": [
+          {
+            "title": "日本郵便 局一覧（2026年8月31日時点）",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+            "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+          },
+          {
+            "title": "日本郵便 一覧の時点明記ページ",
+            "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/",
+            "sha256": "fd10da48d7417aa952dc0d89c135e47ddde94f778feb6ee4aca7bc4f2647c885"
+          },
+          {
+            "title": "日本郵便 当該局の公式詳細・完全住所",
+            "url": "https://map.japanpost.jp/p/search/dtl/300155775000/",
+            "sha256": "2612cb80c9490624b536f08ebc46bb53c027b735cdf014434cfa449d6cf905fe"
+          }
+        ],
+        "limits": [
+          "この照合は固有局名と元完全住所による台帳掲載確認であり、位置精度の確認ではありません。",
+          "元座標を維持しています。公式局点との距離差があり、当日の稼働・入口・経路・受入可否は未確認です。",
+          "既知の旧所在地・新所在地の住所混在がある施設はこの経路から除外しています。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-5418283528",
+      "expected": {
+        "name": "海鮮長州",
+        "category": "bar",
+        "source_ids": [
+          "node/5418283528"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3940221,
+            34.0960367
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2022-07-29",
+        "source_date_kind": "as_of",
+        "registry_id": "yamaguchi-city-mice:kaisen-choshu-ogori",
+        "official_name": "海鮮長州 小郡店",
+        "official_address": "山口県山口市小郡下郷1231-4",
+        "services": [
+          "飲食店"
+        ],
+        "summary": "山口観光コンベンション協会の2022年7月29日更新の飲食店一覧について、元の固有支店名・電話・完全旧番地と市の施設名付き旧新住所表を照合しました。",
+        "sources": [
+          {
+            "title": "山口観光コンベンション協会MICE 小郡飲食店一覧（2022年7月29日更新）",
+            "url": "https://yamaguchi-city.jp/convention/food/food01.html",
+            "sha256": "7bdac0ecf51498dd5c35f85eeb4866974284050334bf9c6d7943ff8119b916de"
+          },
+          {
+            "title": "山口市 旧新住所対照表（令和4年2月19日）施設名付き137行",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/70775.xlsx",
+            "sha256": "ba1e19712b6ad3fa225a0689318122dce6aeab706d44f6d98c0926e348f9ba65"
+          }
+        ],
+        "limits": [
+          "2022年掲載時点の公的観光施設一覧への照合であり、営業中・当日の稼働・入口・現在位置・移転不存在は保証しません。",
+          "元座標は維持し、施設固有点が確認できていないため位置精度の確認対象外です。",
+          "元の明治西という旧地区補助表記は、同じ小郡下郷1231-4、固有支店名・電話と施設名付き旧新対照行の併用で同定しました。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-13185421536",
+      "expected": {
+        "name": "観光会館 安富屋 レストラン",
+        "category": "restaurant",
+        "source_ids": [
+          "node/13185421536"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.3063257,
+            34.2252952
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "yasutomiya:akiyoshi",
+        "official_name": "観光会館 安富屋",
+        "official_address": "山口県美祢市秋芳町秋吉3442",
+        "services": [
+          "飲食店"
+        ],
+        "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+        "sources": [
+          {
+            "title": "観光会館安富屋公式・住所とレストラン案内",
+            "url": "https://www.yasutomiya.co.jp/",
+            "sha256": "ec986310384f5389209a210ae9c8247e8d50e67256abd2fa53e3718dca2b948b"
+          },
+          {
+            "title": "公式埋込地図が示す安富屋3442番地の施設固有点",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2981.743523343442!2d131.30497267551576!3d34.22531093785689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa835bc01e28a3af7!2z5a6J5a-M5bGL6Kaz5YWJ5Lya6aSo!5e0!3m2!1sja!2sjp!4v1535530642482",
+            "sha256": "d4acee0e4be17a4f3ee4a188d0ab533a18cab588d478130cabfa3b12535de4a8"
+          }
+        ],
+        "limits": [
+          "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+          "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "hohu",
+      "expected": {
+        "name": "ゆめタウン防府",
+        "category": "mall",
+        "source_ids": [
+          "node/3951251460"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.5685447,
+            34.0583605
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "izumi:hohu",
+        "official_name": "ゆめタウン防府",
+        "official_address": "山口県防府市八王子2丁目8-8",
+        "services": [
+          "商業施設"
+        ],
+        "summary": "元施設の固有名称・完全住所と運営者公式の当該施設掲載情報を照合しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該商業施設の名称・所在地",
+            "url": "https://www.izumi.jp/tenpo/hohu/access",
+            "sha256": "8474e03b8ffca469242b906920f76060f74f3118e3315a589456f322fa65b6c2"
+          }
+        ],
+        "limits": [
+          "名称と元完全住所による公式掲載の確認です。元座標は維持し、位置精度・入口・当日の営業や利用可否は未確認です。"
+        ]
+      }
+    },
+    {
+      "id": "aeon-shunan",
+      "expected": {
+        "name": "イオンタウン周南",
+        "category": "mall",
+        "source_ids": [
+          "node/3205773363"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.7591365,
+            34.0677953
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "aeontown:shunan",
+        "official_name": "イオンタウン周南",
+        "official_address": "山口県周南市古市1-4-1",
+        "services": [
+          "商業施設"
+        ],
+        "summary": "元施設の固有名称・完全住所と運営者公式の当該施設掲載情報を照合しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該商業施設の名称・所在地",
+            "url": "https://www.aeontown.co.jp/shunan/access/",
+            "sha256": "f11cdcab6be368d0ae33ea3b201a039a8b900eeab9195f2a3f360c5020ff852f"
+          }
+        ],
+        "limits": [
+          "名称と元完全住所による公式掲載の確認です。元座標は維持し、位置精度・入口・当日の営業や利用可否は未確認です。"
+        ]
+      }
+    },
+    {
+      "id": "seamall",
+      "expected": {
+        "name": "シーモール",
+        "category": "mall",
+        "source_ids": [
+          "way/257074927"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  130.9222303,
+                  33.9482985
+                ],
+                [
+                  130.9222964,
+                  33.9483373
+                ],
+                [
+                  130.9220989,
+                  33.9485777
+                ],
+                [
+                  130.92273,
+                  33.948921
+                ],
+                [
+                  130.9228989,
+                  33.9487322
+                ],
+                [
+                  130.9229494,
+                  33.9497197
+                ],
+                [
+                  130.9232083,
+                  33.9499246
+                ],
+                [
+                  130.9233526,
+                  33.9499202
+                ],
+                [
+                  130.9233554,
+                  33.9498743
+                ],
+                [
+                  130.9238568,
+                  33.949865
+                ],
+                [
+                  130.9251088,
+                  33.9498418
+                ],
+                [
+                  130.9251123,
+                  33.9497666
+                ],
+                [
+                  130.9250228,
+                  33.9496543
+                ],
+                [
+                  130.9246027,
+                  33.9496532
+                ],
+                [
+                  130.924592,
+                  33.9492593
+                ],
+                [
+                  130.9246534,
+                  33.949258
+                ],
+                [
+                  130.9246542,
+                  33.9492086
+                ],
+                [
+                  130.9238356,
+                  33.9485364
+                ],
+                [
+                  130.9236458,
+                  33.9485208
+                ],
+                [
+                  130.9236471,
+                  33.9484364
+                ],
+                [
+                  130.9236941,
+                  33.9484387
+                ],
+                [
+                  130.9236981,
+                  33.9483575
+                ],
+                [
+                  130.923568,
+                  33.9482911
+                ],
+                [
+                  130.9225511,
+                  33.948214
+                ],
+                [
+                  130.9225432,
+                  33.9482818
+                ],
+                [
+                  130.9224009,
+                  33.9482071
+                ],
+                [
+                  130.9223128,
+                  33.9482008
+                ],
+                [
+                  130.9222303,
+                  33.9482985
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "seamall:shimonoseki",
+        "official_name": "シーモール",
+        "official_address": "山口県下関市竹崎町4-4-8",
+        "services": [
+          "商業施設"
+        ],
+        "summary": "元施設の固有名称・完全住所と運営者公式の当該施設掲載情報を照合しました。",
+        "sources": [
+          {
+            "title": "運営者公式 当該商業施設の名称・所在地",
+            "url": "https://www.seamall.jp/access/",
+            "sha256": "1b1b936ce5a43b12b73062aaff88e650d748fd0fc0496ae926777c112c195a65"
+          }
+        ],
+        "limits": [
+          "名称と元完全住所による公式掲載の確認です。元座標は維持し、位置精度・入口・当日の営業や利用可否は未確認です。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-1120496713",
+      "expected": {
+        "name": "セブンイレブン山陽小野田厚陽店",
+        "category": "convenience",
+        "source_ids": [
+          "way/1120496713"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.1440091,
+            34.0236616
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "operator_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "seven:278089",
+        "official_name": "セブン-イレブン 山陽小野田厚陽店",
+        "official_address": "山口県山陽小野田市大字郡字東原３１６７－１",
+        "services": [
+          "コンビニエンスストア"
+        ],
+        "summary": "元施設の固有名称・完全住所と運営者公式の当該施設掲載情報を照合しました。",
+        "sources": [
+          {
+            "title": "セブン-イレブン公式 当該店舗ID・名称・完全住所一覧",
+            "url": "https://seven-eleven-ss-api.areamarker.com/v1/search-by-condition",
+            "sha256": "2d47ca53f0896179883cdba02cd039346f1194b0b4d600126b240024f0e21606"
+          }
+        ],
+        "limits": [
+          "名称と元完全住所による公式掲載の確認です。元座標は維持し、位置精度・入口・当日の営業や利用可否は未確認です。"
         ]
       }
     },
@@ -264055,6 +267232,385 @@
         "limits": [
           "県名簿への掲載確認です。当日の開館・受入・利用可否を保証しません。",
           "名称・完全住所の台帳同一性と、地図座標の精度は別に扱っています。元座標を変更せず、現地の入口・敷地形状を確認したとは扱いません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385242942",
+      "expected": {
+        "name": "児玉公園",
+        "category": "park",
+        "source_ids": [
+          "way/385242942"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.8078293,
+                  34.0545447
+                ],
+                [
+                  131.8075219,
+                  34.0539732
+                ],
+                [
+                  131.8075269,
+                  34.0539299
+                ],
+                [
+                  131.808002,
+                  34.0537311
+                ],
+                [
+                  131.8080686,
+                  34.0537458
+                ],
+                [
+                  131.8083897,
+                  34.0543348
+                ],
+                [
+                  131.8078293,
+                  34.0545447
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "shunan-public-park:22315",
+        "official_name": "児玉公園",
+        "official_address": "山口県周南市桜馬場通一丁目3番",
+        "services": [
+          "公園"
+        ],
+        "summary": "市が公開する公園名・所在地・公園境界を照合し、元施設の点がその境界内、または元の公園面と同じ敷地であることを確認しました。元ID・座標は保持します。",
+        "sources": [
+          {
+            "title": "周南市公開公園地図・施設別公園境界/所在地",
+            "url": "https://webgis.alandis.jp/shunan35/webgis/index.php/autologin_jswebgis?u=guest_park&ap=jsWebGIS&x=-33261.9940&y=-215650.3229&s=4000&li=1",
+            "sha256": "ddbb9e341f522787991568005fde37ec82d6f74772abd360e215d016707f4bf9"
+          },
+          {
+            "title": "周南市都市公園一覧（2025年4月1日現在）",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/109091.pdf",
+            "sha256": "066e7d1da9c686f756397406beb7ddb5b7d333abd50809e73cdaf77137b690b1"
+          }
+        ],
+        "limits": [
+          "市の公開公園地図への掲載確認です。閲覧日を記録し、資料の更新日・供用開始日や現地調査日と扱いません。",
+          "元の公園面と公式境界には数mの差がある場合があります。座標・境界・入口・当日の利用可否の保証や再測量はしていません。",
+          "公園の公式境界を施設ごとの属性に結び付け、地図の表示中心は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385408131",
+      "expected": {
+        "name": "青山公園",
+        "category": "park",
+        "source_ids": [
+          "way/385408131"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.817705,
+                  34.0432314
+                ],
+                [
+                  131.817586,
+                  34.0434743
+                ],
+                [
+                  131.8182462,
+                  34.0437143
+                ],
+                [
+                  131.8183038,
+                  34.043502
+                ],
+                [
+                  131.8179521,
+                  34.043382
+                ],
+                [
+                  131.817971,
+                  34.043338
+                ],
+                [
+                  131.817705,
+                  34.0432314
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "shunan-public-park:22321",
+        "official_name": "青山公園",
+        "official_address": "山口県周南市青山町1579番14",
+        "services": [
+          "公園"
+        ],
+        "summary": "市が公開する公園名・所在地・公園境界を照合し、元施設の点がその境界内、または元の公園面と同じ敷地であることを確認しました。元ID・座標は保持します。",
+        "sources": [
+          {
+            "title": "周南市公開公園地図・施設別公園境界/所在地",
+            "url": "https://webgis.alandis.jp/shunan35/webgis/index.php/autologin_jswebgis?u=guest_park&ap=jsWebGIS&x=-33261.9940&y=-215650.3229&s=4000&li=1",
+            "sha256": "ddbb9e341f522787991568005fde37ec82d6f74772abd360e215d016707f4bf9"
+          },
+          {
+            "title": "周南市都市公園一覧（2025年4月1日現在）",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/109091.pdf",
+            "sha256": "066e7d1da9c686f756397406beb7ddb5b7d333abd50809e73cdaf77137b690b1"
+          }
+        ],
+        "limits": [
+          "市の公開公園地図への掲載確認です。閲覧日を記録し、資料の更新日・供用開始日や現地調査日と扱いません。",
+          "元の公園面と公式境界には数mの差がある場合があります。座標・境界・入口・当日の利用可否の保証や再測量はしていません。",
+          "公園の公式境界を施設ごとの属性に結び付け、地図の表示中心は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-3675740525",
+      "expected": {
+        "name": "天神山公園",
+        "category": "park",
+        "source_ids": [
+          "node/3675740525"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8490515,
+            34.0387806
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "shunan-public-park:22351",
+        "official_name": "天神山公園",
+        "official_address": "山口県周南市大字久米字貞宗793番46",
+        "services": [
+          "公園"
+        ],
+        "summary": "市が公開する公園名・所在地・公園境界を照合し、元施設の点がその境界内、または元の公園面と同じ敷地であることを確認しました。元ID・座標は保持します。",
+        "sources": [
+          {
+            "title": "周南市公開公園地図・施設別公園境界/所在地",
+            "url": "https://webgis.alandis.jp/shunan35/webgis/index.php/autologin_jswebgis?u=guest_park&ap=jsWebGIS&x=-33261.9940&y=-215650.3229&s=4000&li=1",
+            "sha256": "a5c9a8fc6abba92930caf6d48671fe9c82d6c1bea80bcf5fd3d670ab5eaa7c20"
+          }
+        ],
+        "limits": [
+          "市の公開公園地図への掲載確認です。閲覧日を記録し、資料の更新日・供用開始日や現地調査日と扱いません。",
+          "元の公園面と公式境界には数mの差がある場合があります。座標・境界・入口・当日の利用可否の保証や再測量はしていません。",
+          "公園の公式境界を施設ごとの属性に結び付け、地図の表示中心は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385400668",
+      "expected": {
+        "name": "片山公園",
+        "category": "park",
+        "source_ids": [
+          "way/385400668"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.7496269,
+                  34.0740503
+                ],
+                [
+                  131.7495073,
+                  34.0741133
+                ],
+                [
+                  131.7494652,
+                  34.0741045
+                ],
+                [
+                  131.7492384,
+                  34.0738334
+                ],
+                [
+                  131.7492116,
+                  34.0738433
+                ],
+                [
+                  131.7491485,
+                  34.0739724
+                ],
+                [
+                  131.7492604,
+                  34.0741337
+                ],
+                [
+                  131.7498934,
+                  34.074381
+                ],
+                [
+                  131.7499405,
+                  34.0743805
+                ],
+                [
+                  131.7499788,
+                  34.0743358
+                ],
+                [
+                  131.7499826,
+                  34.0742328
+                ],
+                [
+                  131.7497838,
+                  34.0741971
+                ],
+                [
+                  131.7497414,
+                  34.0741774
+                ],
+                [
+                  131.7496772,
+                  34.0741145
+                ],
+                [
+                  131.7496269,
+                  34.0740503
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "shunan-public-park:22403",
+        "official_name": "片山公園",
+        "official_address": "山口県周南市富田一丁目3922番3",
+        "services": [
+          "公園"
+        ],
+        "summary": "市が公開する公園名・所在地・公園境界を照合し、元施設の点がその境界内、または元の公園面と同じ敷地であることを確認しました。元ID・座標は保持します。",
+        "sources": [
+          {
+            "title": "周南市公開公園地図・施設別公園境界/所在地",
+            "url": "https://webgis.alandis.jp/shunan35/webgis/index.php/autologin_jswebgis?u=guest_park&ap=jsWebGIS&x=-33261.9940&y=-215650.3229&s=4000&li=1",
+            "sha256": "d5e0fdb0eee12883f4c8208dd4a7f8f2948afa918799ce41bb67bc5884ad4133"
+          },
+          {
+            "title": "周南市都市公園一覧（2025年4月1日現在）",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/109091.pdf",
+            "sha256": "066e7d1da9c686f756397406beb7ddb5b7d333abd50809e73cdaf77137b690b1"
+          }
+        ],
+        "limits": [
+          "市の公開公園地図への掲載確認です。閲覧日を記録し、資料の更新日・供用開始日や現地調査日と扱いません。",
+          "元の公園面と公式境界には数mの差がある場合があります。座標・境界・入口・当日の利用可否の保証や再測量はしていません。",
+          "公園の公式境界を施設ごとの属性に結び付け、地図の表示中心は位置根拠に使用していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-way-385243182",
+      "expected": {
+        "name": "糀町児童公園",
+        "category": "park",
+        "source_ids": [
+          "way/385243182"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.8073378,
+                  34.046765
+                ],
+                [
+                  131.807237,
+                  34.0466453
+                ],
+                [
+                  131.8066598,
+                  34.0470936
+                ],
+                [
+                  131.8067137,
+                  34.0471507
+                ],
+                [
+                  131.8073378,
+                  34.046765
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "changes": {},
+      "review": {
+        "scope": "public_facility_directory",
+        "checked_at": "2026-09-28",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "registry_id": "shunan-public-park:22812",
+        "official_name": "糀町公園",
+        "official_address": "山口県周南市糀町二丁目69番2",
+        "services": [
+          "公園"
+        ],
+        "summary": "市が公開する公園名・所在地・公園境界を照合し、元施設の点がその境界内、または元の公園面と同じ敷地であることを確認しました。元ID・座標は保持します。",
+        "sources": [
+          {
+            "title": "周南市公開公園地図・施設別公園境界/所在地",
+            "url": "https://webgis.alandis.jp/shunan35/webgis/index.php/autologin_jswebgis?u=guest_park&ap=jsWebGIS&x=-33261.9940&y=-215650.3229&s=4000&li=1",
+            "sha256": "a98b39f1907b38a651ca3be7257240e566985c5c857cbdd5f181eeedd654ea0d"
+          },
+          {
+            "title": "周南市都市公園一覧（2025年4月1日現在）",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/109091.pdf",
+            "sha256": "066e7d1da9c686f756397406beb7ddb5b7d333abd50809e73cdaf77137b690b1"
+          }
+        ],
+        "limits": [
+          "市の公開公園地図への掲載確認です。閲覧日を記録し、資料の更新日・供用開始日や現地調査日と扱いません。",
+          "元の公園面と公式境界には数mの差がある場合があります。座標・境界・入口・当日の利用可否の保証や再測量はしていません。",
+          "公園の公式境界を施設ごとの属性に結び付け、地図の表示中心は位置根拠に使用していません。"
         ]
       }
     },
