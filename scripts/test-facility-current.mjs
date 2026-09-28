@@ -12,6 +12,13 @@ const raw = [...read('shopping.geojson').features, ...read('civic-facilities.geo
 const patch = read('facility-current.json');
 const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
+const eEvents=JSON.parse(fs.readFileSync('data-sources/facility-registry-008e-20260928/updates.json','utf8'));
+const eBatch=JSON.parse(fs.readFileSync('data-sources/facility-registry-008e-20260928/batch.json','utf8'));
+const expectedClosed=129+eEvents.filter(r=>r.review.status==='closed').length;
+const expectedSuspended=13+eEvents.filter(r=>r.review.status==='temporarily_closed').length;
+const expectedDuplicates=1+eBatch.duplicate_records;
+const expectedUnavailable=expectedClosed+expectedSuspended+expectedDuplicates;
+const unavailableReferenceIds=new Set(eEvents.filter(r=>['closed','temporarily_closed'].includes(r.review.status)&&raw.find(f=>f.id===r.id)?.properties.category==='reference').map(r=>r.id));
 assert.equal(raw.length, 7764);
 // Batch-specific quantities are verified against frozen before/after evidence.
 // Global regression checks must continue to work as reviewed stores are added.
@@ -40,10 +47,10 @@ assert.equal(freshnessLabel(daimar), '営業終了予定');
 const royal = get('osm-way-483625942');
 assert.equal(facilityAvailable(royal), false);
 assert.equal(royal.properties.freshness_review.effective_at, '2026-08-20');
-assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, 129);
-assert.equal(current.filter(f => f.properties.duplicate_of).length, 1);
-assert.equal(current.filter(f => f.properties.freshness_review?.status === 'temporarily_closed').length, 13);
-assert.equal(current.filter(f => !facilityAvailable(f)).length, 143);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'closed').length, expectedClosed);
+assert.equal(current.filter(f => f.properties.duplicate_of).length, expectedDuplicates);
+assert.equal(current.filter(f => f.properties.freshness_review?.status === 'temporarily_closed').length, expectedSuspended);
+assert.equal(current.filter(f => !facilityAvailable(f)).length, expectedUnavailable);
 assert(!searchPlaces('ロイヤルホスト 山の田', [], current).facilities.some(f => f.id === royal.id));
 for (const f of patch.additions) {
   assert(facilityAvailable(f));
@@ -67,7 +74,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, expectedIds.length - 197, 'Exclude the 54 reference records and 143 closed/suspended/duplicate histories');
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, expectedIds.length - 54 - expectedUnavailable + unavailableReferenceIds.size, 'Exclude reference records and every reviewed unavailable or duplicate record');
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));

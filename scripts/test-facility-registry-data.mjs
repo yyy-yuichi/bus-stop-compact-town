@@ -25,8 +25,10 @@ test('care evidence covers every original service at the exact registered number
  }
 });
 test('registry adoption changes no geometry, source identity, availability or event history',()=>{
- const before=new Map(applyFacilityCurrent(base,{...overlay,verifications:overlay.verifications.filter(v=>!rows.some(r=>r.id===v.id))}).map(f=>[f.id,f]));
- const current=applyFacilityCurrent(base,overlay),ids=new Set(rows.map(r=>r.id));
+ // Later duplicate decisions depend on these original canonical reviews; isolate the original adoption.
+ const fixture={...overlay,verifications:overlay.verifications.filter(v=>!v.duplicate_of)};
+ const before=new Map(applyFacilityCurrent(base,{...fixture,verifications:fixture.verifications.filter(v=>!rows.some(r=>r.id===v.id))}).map(f=>[f.id,f]));
+ const current=applyFacilityCurrent(base,fixture),ids=new Set(rows.map(r=>r.id));
  for(const f of current){const old=before.get(f.id);assert.deepEqual(f.geometry,old.geometry);assert.deepEqual(f.properties.source_ids,old.properties.source_ids);assert.equal(facilityAvailable(f),facilityAvailable(old));assert.deepEqual(f.properties.freshness_review,old.properties.freshness_review);if(!ids.has(f.id))assert.deepEqual(f,old);}
  for(const r of rows){const v=overlay.verifications.find(x=>x.id===r.id);assert(v);assert.deepEqual(v.review,r.review);assert.deepEqual(v.changes,r.changes);}
 });
@@ -35,7 +37,7 @@ test('scoped confirmations, corrections and held cases have separate, non-overla
  assert.equal(rows.filter(r=>r.review.scope==='care_service_registry').length,1973);
  assert.equal(batch.care_verified+batch.care_held,batch.care_baseline);assert.equal(batch.source_index.reduce((a,r)=>a+r.rows,0),6969);
  const held=R(d+'/holds.json').care;assert.equal(held.length,480);assert(held.every(r=>!rows.some(a=>a.id===r.id)));
- const summary=R('data-sources/facility-progress-20260925/progress-summary.json');assert.equal(summary.baseline.registry_verified,overlay.verifications.length);assert.equal(summary.baseline.registry_corrected,overlay.verifications.filter(r=>Object.keys(r.changes).length).length);assert.equal(summary.baseline.verified_no_change_attested_in_this_ledger,overlay.verifications.filter(r=>!Object.keys(r.changes).length).length);
+ const summary=R('data-sources/facility-progress-20260925/progress-summary.json');assert.equal(summary.baseline.registry_verified,overlay.verifications.length);assert.equal(summary.baseline.registry_corrected,overlay.verifications.filter(r=>Object.keys(r.changes).length || r.duplicate_of).length);assert.equal(summary.baseline.verified_no_change_attested_in_this_ledger,overlay.verifications.filter(r=>!Object.keys(r.changes).length && !r.duplicate_of).length);
  assert.equal(summary.article_events.articles_completed,101);assert.equal(summary.article_events.articles_partially_reviewed,216);assert.equal(summary.article_events.articles_pending,869);
 });
 test('school corrections retain independently matched school codes and exclude duplicate official IDs',()=>{

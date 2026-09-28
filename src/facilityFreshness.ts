@@ -14,7 +14,7 @@ export interface FreshnessReview {
 interface CurrentData {
   schema_version: number; checked_at: string;
   updates: { id: string; expected: { name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'] }; changes: Record<string, string>; review: FreshnessReview; duplicate_of?: string }[];
-  verifications?: { id: string; expected: { name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'] }; changes: Record<string, string>; review: RegistryReview }[];
+  verifications?: { id: string; expected: { name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'] }; changes: Record<string, string>; review: RegistryReview; duplicate_of?: string; duplicate_point?: { coordinates: number[]; source_url: string; source_sha256: string } }[];
   additions: ShoppingFeature[];
 }
 const validDate = (s: unknown): s is string => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && Number.isFinite(Date.parse(s)) && new Date(s).toISOString().slice(0, 10) === s;
@@ -44,6 +44,27 @@ export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): 
   } else if (precision !== 'day' || !validDate(r.effective_at)) throw Error('Invalid freshness event date');
   if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > r.checked_at) throw Error('Future event cannot be applied as completed');
   if (!Array.isArray(r.sources) || !r.sources.length || r.sources.some(s => !s.title?.trim() || !safeUrl(s.url)) || !Array.isArray(r.limits) || !r.limits.length || r.limits.some(s => typeof s !== 'string' || !s.trim())) throw Error('Missing freshness evidence or limits');
+}
+
+/** The point must come from a named official facility record, never a map viewport. */
+function containsOfficialPoint(g: ShoppingFeature['geometry'] | import('geojson').Polygon, p: number[]): boolean {
+  if (g.type === 'Point') {
+    const radians = (n: number) => n * Math.PI / 180;
+    const [lon, lat] = g.coordinates;
+    const a = Math.sin(radians(lat - p[1]) / 2) ** 2 +
+      Math.cos(radians(lat)) * Math.cos(radians(p[1])) * Math.sin(radians(lon - p[0]) / 2) ** 2;
+    return Number.isFinite(a) && 12742000 * Math.asin(Math.min(1, Math.sqrt(a))) <= 50;
+  }
+  const inRing = (ring: number[][]) => {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const a = ring[i], b = ring[j];
+      if ((a[1] > p[1]) !== (b[1] > p[1]) && p[0] < (b[0] - a[0]) * (p[1] - a[1]) / (b[1] - a[1]) + a[0]) inside = !inside;
+    }
+    return inside;
+  };
+  const polygons = g.type === 'Polygon' ? [g.coordinates] : g.coordinates;
+  return polygons.some(rings => !!rings[0] && inRing(rings[0]) && !rings.slice(1).some(inRing));
 }
 
 /** Apply reviewed changes, preserving the original imports and their identifiers. */
@@ -103,7 +124,8 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
   }
   const result = [...base.map(f => updates.get(String(f.id)) ?? verifications.get(String(f.id)) ?? f), ...additions];
   const finalById = new Map(result.map(f => [String(f.id), f]));
-  const aliasIds = new Set(data.updates.filter(u => u.duplicate_of !== undefined).map(u => u.id));
+  const registryAliases = (data.verifications ?? []).filter(u => u.duplicate_of !== undefined || u.duplicate_point !== undefined);
+  const aliasIds = new Set([...data.updates.filter(u => u.duplicate_of !== undefined), ...registryAliases].map(u => u.id));
   for (const item of data.updates.filter(u => u.duplicate_of !== undefined)) {
     const alias = finalById.get(item.id)!;
     const canonical = typeof item.duplicate_of === 'string' ? finalById.get(item.duplicate_of) : undefined;
@@ -116,6 +138,27 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     const [lon, lat] = alias.geometry.coordinates, [otherLon, otherLat] = canonical.geometry.coordinates;
     const metres = Math.hypot((lon - otherLon) * Math.cos(lat * Math.PI / 180) * 111320, (lat - otherLat) * 111320);
     if (!Number.isFinite(metres) || metres > 30) throw Error('Duplicate pair is not the same reviewed site');
+    alias.properties.duplicate_of = item.duplicate_of;
+  }
+  for (const item of registryAliases) {
+    const alias = finalById.get(item.id)!;
+    const canonical = typeof item.duplicate_of === 'string' ? finalById.get(item.duplicate_of) : undefined;
+    const a = alias.properties.registry_review, b = canonical?.properties.registry_review, point = item.duplicate_point;
+    // Same-site services remain separate unless both complete registry identities agree.
+    if (!canonical || canonical.id === alias.id || aliasIds.has(String(canonical.id)) || canonical.properties.duplicate_of ||
+        alias.properties.category !== canonical.properties.category || !a || !b ||
+        a.scope !== b.scope || a.registry_id !== b.registry_id || a.official_name !== b.official_name || a.official_address !== b.official_address ||
+        !same([...new Set(a.services)].sort(), [...new Set(b.services)].sort()) ||
+        !a.sources.some(s => b.sources.some(t => t.url === s.url && t.sha256 === s.sha256)) ||
+        ['closed', 'temporarily_closed'].includes(canonical.properties.freshness_review?.status ?? '') ||
+        !point || !Array.isArray(point.coordinates) || point.coordinates.length !== 2 || !point.coordinates.every(Number.isFinite) ||
+        point.coordinates[0] < 130 || point.coordinates[0] > 133 || point.coordinates[1] < 33 || point.coordinates[1] > 35 ||
+        !a.sources.some(s => s.url === point.source_url && s.sha256 === point.source_sha256)) {
+      throw Error('Invalid registry duplicate identity or official point evidence');
+    }
+    if (!containsOfficialPoint(alias.geometry, point.coordinates) || !containsOfficialPoint(canonical.geometry, point.coordinates)) {
+      throw Error('Registry duplicate pair is not the same reviewed site');
+    }
     alias.properties.duplicate_of = item.duplicate_of;
   }
   return result;

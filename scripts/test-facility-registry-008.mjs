@@ -1,10 +1,11 @@
+import {throughRegistryBatch} from './facility-history-fixtures.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {applyFacilityCurrent,facilityAvailable} from '../src/facilityFreshness.ts';
 const R=p=>JSON.parse(fs.readFileSync(p,'utf8')),d='data-sources/facility-registry-008-20260928';
 const rows=R(d+'/reviews.json'),events=R(d+'/updates.json'),batch=R(d+'/batch.json'),holds=R(d+'/holds.json');
-const overlay=R('public/data/facility-current.json'),base=['shopping','civic-facilities'].flatMap(n=>R('public/data/'+n+'.geojson').features),byId=new Map(base.map(f=>[f.id,f]));
+const overlay=throughRegistryBatch(R('public/data/facility-current.json'),holds),base=['shopping','civic-facilities'].flatMap(n=>R('public/data/'+n+'.geojson').features),byId=new Map(base.map(f=>[f.id,f]));
 const ids=new Set(rows.map(r=>r.id)), eventIds=new Set(events.map(r=>r.id));
 test('008 keeps accepted, corrected and held facility IDs disjoint and complete',()=>{
  const all=[...rows,...events,...holds];assert.equal(new Set(all.map(r=>r.id)).size,all.length);assert.equal(all.length,batch.candidates);

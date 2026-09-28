@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-28",
+  "status": "in_progress",
+  "all_remaining_objective_complete": false,
+  "baseline_head": "e8275ade37263b330afb41f389d65509f8df2583",
+  "previous_checked_at": "2026-09-28",
+  "previous_overlay_sha256": "721b43e7c15219bae13d29b87ad8538b98cc3729a7f71979a33dbee906cbedb9",
+  "baseline_hash_format": "utf8_lf",
+  "baseline_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "45a25717ea616b5d559eda323681c65d63a13eb0e4efdf4a60de474d76e2074e"
+  },
+  "candidates": 3504,
+  "registry_reviews": 235,
+  "freshness_events": 39,
+  "additions": 0,
+  "corrections": 71,
+  "verified_no_change": 203,
+  "duplicate_records": 30,
+  "held": 3230,
+  "previously_completed_excluded": 4260,
+  "groups": [
+    {
+      "group": "education-medical",
+      "reviews": 35,
+      "events": 27,
+      "duplicates": 6
+    },
+    {
+      "group": "welfare",
+      "reviews": 42,
+      "events": 0,
+      "duplicates": 6
+    },
+    {
+      "group": "commercial",
+      "reviews": 41,
+      "events": 8,
+      "duplicates": 8
+    },
+    {
+      "group": "public",
+      "reviews": 117,
+      "events": 4,
+      "duplicates": 10
+    }
+  ],
+  "input_sha256": {
+    "outputs/facility-registry-008e-20260928/education-medical/accepted.json": "5a171994eb6ab0aa12af2d99b2e59d3806110c9860892c8d9331e0305a5c884a",
+    "outputs/facility-registry-008e-20260928/education-medical/duplicate-verifications.json": "3934d4be1b199cf5d3723f3bcea093fe282a91baaea85d8c42b0d1cb2bda1d66",
+    "outputs/facility-registry-008e-20260928/education-medical/updates.json": "05cb46fcdd482f91a3da405c6fbf1b1c08a8ab283636a8e58d0e907d6376c8b7",
+    "outputs/facility-registry-008e-20260928/education-medical/reference-education/accepted.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/facility-registry-008e-20260928/education-medical/reference-education/updates.json": "4d75a79865a507d0dc2debc9e8227351e8820821b7a1acd099150d507982c28d",
+    "outputs/facility-registry-008e-20260928/welfare/accepted.json": "557a116bca48f8f84c9049ab0ec4cee8f15f0f6a4b3044f1b0df333fe6c95b94",
+    "outputs/facility-registry-008e-20260928/welfare/duplicate-verifications.json": "c7e294695db30dad228b7134b3c7ef1fec58fcc6a733bdcdba13961e1fca8422",
+    "outputs/facility-registry-008e-20260928/welfare/updates.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/facility-registry-008e-20260928/commercial/accepted.json": "866bda5bc71cadce255a9b8a5b88b3f5c033a4875ba464d8c8545a5b0b130915",
+    "outputs/facility-registry-008e-20260928/commercial/duplicate-verifications.json": "90f570b941d0e512c9a5d7eb78671947052c79281d73f9d019bb4bc9bd6ec950",
+    "outputs/facility-registry-008e-20260928/commercial/updates.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/facility-registry-008e-20260928/commercial/reference-postal/accepted.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/facility-registry-008e-20260928/commercial/reference-postal/updates.json": "66b4d2d07803d3b0d415c579a8fd160123670281bfec3873cc602d3e2c82a673",
+    "outputs/facility-registry-008e-20260928/public/accepted.json": "40161bba83a4eeeea707a0e6b6492bc67050d638a6d7c67303de0685b5db8e05",
+    "outputs/facility-registry-008e-20260928/public/duplicate-verifications.json": "ec1e25b2d465f59882c321afcd446d79fc4e4e0bebcd3f16c0ef167d1ff7af09",
+    "outputs/facility-registry-008e-20260928/public/updates.json": "b34a8d4cba6aea8fb07067353a042bb5064a5ef0756f228be9719413302f6426"
+  },
+  "updated_at": "2026-09-28T15:40:04.267612+09:00",
+  "limits": [
+    "全件確認を継続中です。保留は確認済みに数えていません。",
+    "台帳・公式一覧の掲載確認は当日の営業、開館、受入、入口の保証ではありません。",
+    "同じ施設の重複は名称・住所・公式識別子・全サービス・双方の元位置に対応する公的固有点で確認した組のみ。元ID・座標は保持します。"
+  ]
+}

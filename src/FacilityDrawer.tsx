@@ -44,7 +44,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
       <FacilityFreshnessDetails facility={facility} />
-      <FacilityRegistryDetails review={p.registry_review} />
+      <FacilityRegistryDetails review={p.registry_review} duplicateOf={p.duplicate_of} />
       {p.classification_review?.status === 'pending' && <p className="mb-3 text-xs text-amber-800">情報確認中</p>}
       <section className="facility-address"><h3>所在地</h3><p>{p.official_address || p.address || '住所の登録なし'}</p></section>
       {official && p.location_verification && <p className="helper-text">位置の確認範囲：{p.location_verification}</p>}

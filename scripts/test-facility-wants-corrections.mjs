@@ -2,7 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';import fs f
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),base=['shopping.geojson','civic-facilities.geojson'].flatMap(n=>read('public/data/'+n).features),overlay=read('public/data/facility-current.json'),batch=read('data-sources/facility-wants-corrections-20260925/batch.json'),evidence=read('data-sources/facility-wants-corrections-20260925/adoption-evidence.json');
 const current=applyFacilityCurrent(base,overlay),get=id=>current.find(f=>f.id===id),canonical='osm-node-9472242519',alias='osm-way-1027461546',lady='osm-way-370584528',ouchi='osm-way-465881161';
 test('reviewed duplicate is one candidate in search, map and nearby walking while both original records survive',()=>{
- assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);assert.equal(get(alias).properties.duplicate_of,canonical);
+ assert.equal(current.filter(f=>f.properties.duplicate_of===canonical).length,1);assert.equal(get(alias).properties.duplicate_of,canonical);
  assert(facilityAvailable(get(canonical)));assert(!facilityAvailable(get(alias)));assert.equal(get(alias).properties.freshness_review.status,'operating');assert.equal(freshnessLabel(get(alias)),'公式掲載確認');
  const results=searchPlaces('ウォンツ 宇部亀浦店',[],current).facilities;
  assert.deepEqual(results.filter(f=>f.properties.category==='drugstore').map(f=>f.id),[canonical]);assert(results.some(f=>f.id==='official-watts-7607'),'Co-located Watts remains a distinct service');
@@ -44,5 +44,5 @@ test('adopted changes preserve the preceding overlay and bind public evidence wi
  assert.equal(hash(batch),evidence.batch_hash);assert.equal(hash(read('data-sources/facility-wants-corrections-20260925/pdf-row-review.json')),evidence.pdf_review_hash);
  const before={ schema_version: overlay.schema_version, checked_at: '2026-09-25', updates: overlay.updates.slice(0,26),additions:overlay.additions.slice(0,172)},after={ schema_version: overlay.schema_version, checked_at: '2026-09-25', updates: overlay.updates.slice(0,30),additions:overlay.additions.slice(0,172)};
  assert.equal(hash(before),evidence.before_overlay_hash);assert.equal(hash(after),evidence.after_overlay_hash);assert.deepEqual(after.updates.slice(26),batch.updates);assert.equal(evidence.extra_jev_requests,0);
- assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed').length,129);assert.equal(current.filter(f=>f.properties.duplicate_of).length,1);
+ assert.equal(current.filter(f=>f.properties.freshness_review?.status==='closed' && !read('data-sources/facility-registry-008e-20260928/updates.json').some(r=>r.id===f.id)).length,129);assert.equal(current.filter(f=>f.properties.duplicate_of===canonical).length,1);
 });

@@ -1,3 +1,4 @@
+import {throughRegistryBatch} from './facility-history-fixtures.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -5,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {applyFacilityCurrent,facilityAvailable} from '../src/facilityFreshness.ts';
 import {validateRegistryReview} from '../src/facilityRegistry.ts';
 const dir='data-sources/facility-registry-008b-20260928', read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const rows=read(`${dir}/reviews.json`),events=read(`${dir}/updates.json`),holds=read(`${dir}/holds.json`),batch=read(`${dir}/batch.json`),overlay=read('public/data/facility-current.json');
+const rows=read(`${dir}/reviews.json`),events=read(`${dir}/updates.json`),holds=read(`${dir}/holds.json`),batch=read(`${dir}/batch.json`),overlay=throughRegistryBatch(read('public/data/facility-current.json'),holds);
 const base=Object.keys(batch.baseline_sha256).flatMap(p=>read(p).features),byId=new Map(base.map(f=>[f.id,f])),ids=new Set(rows.map(r=>r.id)),eventIds=new Set(events.map(r=>r.id));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 

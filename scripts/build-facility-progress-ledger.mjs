@@ -36,7 +36,7 @@ const overlay = read('public/data/facility-current.json');
 applyFacilityCurrent(baselineFiles.flatMap(path => read(path).features), overlay);
 const registryRows = overlay.verifications ?? [];
 const registryIds = new Set(registryRows.map(row => row.id));
-const registryChanged = new Set(registryRows.filter(row => Object.keys(row.changes).length).map(row => row.id));
+const registryChanged = new Set(registryRows.filter(row => (Object.keys(row.changes).length || row.duplicate_of)).map(row => row.id));
 const updateIds = new Set(overlay.updates.map(row => row.id));
 assert.equal(updateIds.size, overlay.updates.length);
 assert([...updateIds].every(id => baselineIds.has(id)), 'An update did not match a baseline ID');

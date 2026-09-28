@@ -31,6 +31,7 @@ try {
     assert(html.includes(escaped(review.official_name)) && html.includes(escaped(review.official_address)));
     assert(html.includes('建物全体の営業・開業') && html.includes('現況・入口は未確認'));
     assert(!html.includes('開店・掲載確認'), 'Registry listing alone must not create a freshness event');
+    if (verified.properties.duplicate_of) { assert(html.includes('同じ施設の重複した登録')); assert(html.includes('#kind=facility&amp;id='+encodeURIComponent(verified.properties.duplicate_of))); assert(!html.includes('閉店確認')); }
   }
   const scheduled = render('osm-node-2426673962');
   assert(scheduled.includes('営業終了予定日') && scheduled.includes('2027-08-31'));
