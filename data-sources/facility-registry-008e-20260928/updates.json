@@ -3357,6 +3357,2229 @@
     }
   },
   {
+    "id": "osm-node-1423659900",
+    "expected": {
+      "name": "町立三蒲小学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659900"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.214152,
+          33.94504
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "町議会記録は三蒲小学校が旧蒲野中学校へ移転済みで、旧三蒲小学校の校舎等を企業へ貸付済みと記載。原取得源の東三蒲1107-1地点を旧所在地として除外。移転の実施日は資料にないため不明。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14194.pdf",
+          "sha256": "77e9ea510838b9e4eeee3e916f765ea9354940fbe95e32c212a9b5270ecadb95"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。",
+        "旧所在地の使用終了は確認できましたが、その実施年月日は不明です。2016年の議会日付を実施日にしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立三蒲小学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.214152,
+          33.94504
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659900"
+      ],
+      "source_ids": [
+        "node/1423659900"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 710,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "町立三蒲小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q97674844"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県大島郡周防大島町東三蒲1107-1",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "町立三蒲小学校",
+        "address": "東三蒲1107-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.214152,
+          33.94504
+        ],
+        "gml_id": "fb01_1055",
+        "feature_index_0based": 1054,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2016-council-14194.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14194.pdf",
+          "source_sha256": "77e9ea510838b9e4eeee3e916f765ea9354940fbe95e32c212a9b5270ecadb95",
+          "source_as_of": null,
+          "source_period": "2016-12",
+          "retrieved_at": "2026-09-28",
+          "page": 12,
+          "raw_local_only": true,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-1.json",
+          "safe_sha256": "3591738595304b45a32caba0985c2cc4beabf233888f2a4e225f3e330417856e"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-school-longevity-13354.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "source_sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155",
+          "source_as_of": "2019-05-01",
+          "source_period": "2020-03",
+          "retrieved_at": "2026-09-28",
+          "page": 8,
+          "raw_local_only": true,
+          "printed_page": 5,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-2.json",
+          "safe_sha256": "6274a996eab798e8fbcd80d18155714ce64155093ecc6e954590cca424ab9223"
+        }
+      ],
+      "current": {
+        "name": "町立三蒲小学校",
+        "address": "山口県大島郡周防大島町東三蒲1107-1",
+        "status_note": "町議会記録は三蒲小学校が旧蒲野中学校へ移転済みで、旧三蒲小学校の校舎等を企業へ貸付済みと記載。原取得源の東三蒲1107-1地点を旧所在地として除外。移転の実施日は資料にないため不明。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2016-council-14194.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14194.pdf",
+        "source_sha256": "77e9ea510838b9e4eeee3e916f765ea9354940fbe95e32c212a9b5270ecadb95",
+        "source_as_of": null,
+        "source_period": "2016-12",
+        "retrieved_at": "2026-09-28",
+        "page": 12,
+        "raw_local_only": true,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-1.json",
+        "safe_sha256": "3591738595304b45a32caba0985c2cc4beabf233888f2a4e225f3e330417856e"
+      },
+      "individual_decision_note": "町議会記録は三蒲小学校が旧蒲野中学校へ移転済みで、旧三蒲小学校の校舎等を企業へ貸付済みと記載。原取得源の東三蒲1107-1地点を旧所在地として除外。移転の実施日は資料にないため不明。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659909",
+    "expected": {
+      "name": "町立久賀中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659909"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.262813,
+          33.945875
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2021-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "町広報は久賀中学校の2021年3月閉校を明記。閉校式の3月28日を閉校日にしない。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立久賀中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.262813,
+          33.945875
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659909"
+      ],
+      "source_ids": [
+        "node/1423659909"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 714,
+          "tags": {
+            "KSJ2:ADS": "久賀4823",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立久賀中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q96431528"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市久賀4823",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 714,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町久賀4823",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立久賀中学校",
+        "address": "久賀4823",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.262813,
+          33.945875
+        ],
+        "gml_id": "fb01_1257",
+        "feature_index_0based": 1256,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+          "source_as_of": null,
+          "source_period": "2021-04",
+          "retrieved_at": "2026-09-28",
+          "page": 14,
+          "raw_local_only": true,
+          "additional_pages": [
+            15,
+            16,
+            17
+          ],
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+          "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-school-longevity-13354.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "source_sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155",
+          "source_as_of": "2019-05-01",
+          "source_period": "2020-03",
+          "retrieved_at": "2026-09-28",
+          "page": 8,
+          "raw_local_only": true,
+          "printed_page": 5,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-2.json",
+          "safe_sha256": "6274a996eab798e8fbcd80d18155714ce64155093ecc6e954590cca424ab9223"
+        }
+      ],
+      "current": {
+        "name": "町立久賀中学校",
+        "address": "山口県大島郡周防大島町久賀4823",
+        "status_note": "町広報は久賀中学校の2021年3月閉校を明記。閉校式の3月28日を閉校日にしない。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+        "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+        "source_as_of": null,
+        "source_period": "2021-04",
+        "retrieved_at": "2026-09-28",
+        "page": 14,
+        "raw_local_only": true,
+        "additional_pages": [
+          15,
+          16,
+          17
+        ],
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+        "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+      },
+      "individual_decision_note": "町広報は久賀中学校の2021年3月閉校を明記。閉校式の3月28日を閉校日にしない。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659938",
+    "expected": {
+      "name": "町立和田小学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659938"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.402997,
+          33.928129
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2014-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町広報2014年4月号が3月31日をもって和田小学校は閉校となったと明記。閉校式の3月20日とは別の日付。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/8926.pdf",
+          "sha256": "dffc905b643039f8ab520d51412b3f084e49ff1f0ed322f1a6afa672bb8a70be"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立和田小学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.402997,
+          33.928129
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659938"
+      ],
+      "source_ids": [
+        "node/1423659938"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 719,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "町立和田小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県大島郡周防大島町和田1403-1",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "町立和田小学校",
+        "address": "和田1403-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.402997,
+          33.928129
+        ],
+        "gml_id": "fb01_1064",
+        "feature_index_0based": 1063,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-wada-closure-8926.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/8926.pdf",
+          "source_sha256": "dffc905b643039f8ab520d51412b3f084e49ff1f0ed322f1a6afa672bb8a70be",
+          "source_as_of": null,
+          "source_period": "2014-04",
+          "retrieved_at": "2026-09-28",
+          "page": 1,
+          "raw_local_only": true,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-4.json",
+          "safe_sha256": "92dce46eefd92ea91e98b465a3ac28049ebe44d34f6e748c9599bff11841b5b9"
+        }
+      ],
+      "current": {
+        "name": "町立和田小学校",
+        "address": "山口県大島郡周防大島町和田1403-1",
+        "status_note": "町広報2014年4月号が3月31日をもって和田小学校は閉校となったと明記。閉校式の3月20日とは別の日付。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-wada-closure-8926.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/8926.pdf",
+        "source_sha256": "dffc905b643039f8ab520d51412b3f084e49ff1f0ed322f1a6afa672bb8a70be",
+        "source_as_of": null,
+        "source_period": "2014-04",
+        "retrieved_at": "2026-09-28",
+        "page": 1,
+        "raw_local_only": true,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-4.json",
+        "safe_sha256": "92dce46eefd92ea91e98b465a3ac28049ebe44d34f6e748c9599bff11841b5b9"
+      },
+      "individual_decision_note": "町広報2014年4月号が3月31日をもって和田小学校は閉校となったと明記。閉校式の3月20日とは別の日付。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659952",
+    "expected": {
+      "name": "町立安下庄中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659952"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.274174,
+          33.898406
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2021-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町広報2021年4月号17頁は安下庄中学校が3月末をもって閉校したと明記。月末日を3月31日として記録。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立安下庄中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.274174,
+          33.898406
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659952"
+      ],
+      "source_ids": [
+        "node/1423659952"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 728,
+          "tags": {
+            "KSJ2:ADS": "西安下庄562",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立安下庄中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q96431536"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市西安下庄562",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 728,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町西安下庄562",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立安下庄中学校",
+        "address": "西安下庄562",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.274174,
+          33.898406
+        ],
+        "gml_id": "fb01_1254",
+        "feature_index_0based": 1253,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+          "source_as_of": null,
+          "source_period": "2021-04",
+          "retrieved_at": "2026-09-28",
+          "page": 14,
+          "raw_local_only": true,
+          "additional_pages": [
+            15,
+            16,
+            17
+          ],
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+          "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-school-longevity-13354.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "source_sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155",
+          "source_as_of": "2019-05-01",
+          "source_period": "2020-03",
+          "retrieved_at": "2026-09-28",
+          "page": 8,
+          "raw_local_only": true,
+          "printed_page": 5,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-2.json",
+          "safe_sha256": "6274a996eab798e8fbcd80d18155714ce64155093ecc6e954590cca424ab9223"
+        }
+      ],
+      "current": {
+        "name": "町立安下庄中学校",
+        "address": "山口県大島郡周防大島町西安下庄562",
+        "status_note": "町広報2021年4月号17頁は安下庄中学校が3月末をもって閉校したと明記。月末日を3月31日として記録。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+        "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+        "source_as_of": null,
+        "source_period": "2021-04",
+        "retrieved_at": "2026-09-28",
+        "page": 14,
+        "raw_local_only": true,
+        "additional_pages": [
+          15,
+          16,
+          17
+        ],
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+        "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+      },
+      "individual_decision_note": "町広報2021年4月号17頁は安下庄中学校が3月末をもって閉校したと明記。月末日を3月31日として記録。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659957",
+    "expected": {
+      "name": "町立屋代小学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659957"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.205486,
+          33.919376
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2010-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町広報2010年4月号12頁が3月31日をもって屋代小学校は閉校したと明記。閉校式の3月20日を使わない。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/7900.pdf",
+          "sha256": "31a03087b182d804d3f59096e5def82cd4c5d1bd74551b8716f6d5d3fd1139eb"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立屋代小学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.205486,
+          33.919376
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659957"
+      ],
+      "source_ids": [
+        "node/1423659957"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 730,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "町立屋代小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県大島郡周防大島町西屋代1619",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "町立屋代小学校",
+        "address": "西屋代1619",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.205486,
+          33.919376
+        ],
+        "gml_id": "fb01_1053",
+        "feature_index_0based": 1052,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-yashiro-closure-7900.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/7900.pdf",
+          "source_sha256": "31a03087b182d804d3f59096e5def82cd4c5d1bd74551b8716f6d5d3fd1139eb",
+          "source_as_of": null,
+          "source_period": "2010-04",
+          "retrieved_at": "2026-09-28",
+          "page": 1,
+          "raw_local_only": true,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-5.json",
+          "safe_sha256": "f9d54cf13c7e5f96aa3b64542640c79183e8ab37d57e886ff2bd09183bb4fe14"
+        }
+      ],
+      "current": {
+        "name": "町立屋代小学校",
+        "address": "山口県大島郡周防大島町西屋代1619",
+        "status_note": "町広報2010年4月号12頁が3月31日をもって屋代小学校は閉校したと明記。閉校式の3月20日を使わない。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-yashiro-closure-7900.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/7900.pdf",
+        "source_sha256": "31a03087b182d804d3f59096e5def82cd4c5d1bd74551b8716f6d5d3fd1139eb",
+        "source_as_of": null,
+        "source_period": "2010-04",
+        "retrieved_at": "2026-09-28",
+        "page": 1,
+        "raw_local_only": true,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-5.json",
+        "safe_sha256": "f9d54cf13c7e5f96aa3b64542640c79183e8ab37d57e886ff2bd09183bb4fe14"
+      },
+      "individual_decision_note": "町広報2010年4月号12頁が3月31日をもって屋代小学校は閉校したと明記。閉校式の3月20日を使わない。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659969",
+    "expected": {
+      "name": "町立日良居中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659969"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.302631,
+          33.9174
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2009-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。予定記事や閉校式日からの推定ではない。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立日良居中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.302631,
+          33.9174
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659969"
+      ],
+      "source_ids": [
+        "node/1423659969"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 736,
+          "tags": {
+            "KSJ2:ADS": "土居1325",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立日良居中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市土居1325",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 736,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町土居1325",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立日良居中学校",
+        "address": "土居1325",
+        "administrativeCode": "3",
+        "administrator": "数値地図画像",
+        "point": [
+          132.302631,
+          33.9174
+        ],
+        "gml_id": "fb01_1261",
+        "feature_index_0based": 1260,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+          "source_as_of": null,
+          "source_period": "2011-06",
+          "retrieved_at": "2026-09-28",
+          "page": 3,
+          "raw_local_only": true,
+          "printed_page": 55,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+          "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+        }
+      ],
+      "current": {
+        "name": "町立日良居中学校",
+        "address": "山口県大島郡周防大島町土居1325",
+        "status_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。予定記事や閉校式日からの推定ではない。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+        "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+        "source_as_of": null,
+        "source_period": "2011-06",
+        "retrieved_at": "2026-09-28",
+        "page": 3,
+        "raw_local_only": true,
+        "printed_page": 55,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+        "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+      },
+      "individual_decision_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。予定記事や閉校式日からの推定ではない。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659978",
+    "expected": {
+      "name": "町立東和中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659978"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.342529,
+          33.902492
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2021-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "町広報は東和中学校の2021年3月閉校を明記。2010年の校舎完成後も2019年施設表の西方2048-1が原資料と一致し、校舎完成を所在地移転と混同しない。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立東和中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.342529,
+          33.902492
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659978"
+      ],
+      "source_ids": [
+        "node/1423659978"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 737,
+          "tags": {
+            "KSJ2:ADS": "西方2048-1",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立東和中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q96431534"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市西方2048-1",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 737,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町西方2048-1",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立東和中学校",
+        "address": "西方2048-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.342529,
+          33.902492
+        ],
+        "gml_id": "fb01_1260",
+        "feature_index_0based": 1259,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+          "source_as_of": null,
+          "source_period": "2021-04",
+          "retrieved_at": "2026-09-28",
+          "page": 14,
+          "raw_local_only": true,
+          "additional_pages": [
+            15,
+            16,
+            17
+          ],
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+          "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-school-longevity-13354.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "source_sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155",
+          "source_as_of": "2019-05-01",
+          "source_period": "2020-03",
+          "retrieved_at": "2026-09-28",
+          "page": 8,
+          "raw_local_only": true,
+          "printed_page": 5,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-2.json",
+          "safe_sha256": "6274a996eab798e8fbcd80d18155714ce64155093ecc6e954590cca424ab9223"
+        }
+      ],
+      "current": {
+        "name": "町立東和中学校",
+        "address": "山口県大島郡周防大島町西方2048-1",
+        "status_note": "町広報は東和中学校の2021年3月閉校を明記。2010年の校舎完成後も2019年施設表の西方2048-1が原資料と一致し、校舎完成を所在地移転と混同しない。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+        "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+        "source_as_of": null,
+        "source_period": "2021-04",
+        "retrieved_at": "2026-09-28",
+        "page": 14,
+        "raw_local_only": true,
+        "additional_pages": [
+          15,
+          16,
+          17
+        ],
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+        "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+      },
+      "individual_decision_note": "町広報は東和中学校の2021年3月閉校を明記。2010年の校舎完成後も2019年施設表の西方2048-1が原資料と一致し、校舎完成を所在地移転と混同しない。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659991",
+    "expected": {
+      "name": "町立椋野小学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659991"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.231428,
+          33.956067
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2011-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "町の廃校舎利活用募集の対象施設表は椋野小学校の閉校年月を平成23年3月と明記。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11110.pdf",
+          "sha256": "ae93dabe34d265ba8981c35ee653000a8026be875dcab6b548c7c23e5c8267d7"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立椋野小学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.231428,
+          33.956067
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659991"
+      ],
+      "source_ids": [
+        "node/1423659991"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 740,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "町立椋野小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県大島郡周防大島町椋野1328-1",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "町立椋野小学校",
+        "address": "椋野1328-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.231428,
+          33.956067
+        ],
+        "gml_id": "fb01_1061",
+        "feature_index_0based": 1060,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-closed-reuse-11110.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11110.pdf",
+          "source_sha256": "ae93dabe34d265ba8981c35ee653000a8026be875dcab6b548c7c23e5c8267d7",
+          "source_as_of": null,
+          "source_period": "2021-06",
+          "retrieved_at": "2026-09-28",
+          "page": 1,
+          "raw_local_only": true,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-7.json",
+          "safe_sha256": "54f0f7a36d0bfeeb3326ccad28153bb6b270421bd013252cdd8b18105c9ddc66"
+        }
+      ],
+      "current": {
+        "name": "町立椋野小学校",
+        "address": "山口県大島郡周防大島町椋野1328-1",
+        "status_note": "町の廃校舎利活用募集の対象施設表は椋野小学校の閉校年月を平成23年3月と明記。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-closed-reuse-11110.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11110.pdf",
+        "source_sha256": "ae93dabe34d265ba8981c35ee653000a8026be875dcab6b548c7c23e5c8267d7",
+        "source_as_of": null,
+        "source_period": "2021-06",
+        "retrieved_at": "2026-09-28",
+        "page": 1,
+        "raw_local_only": true,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-7.json",
+        "safe_sha256": "54f0f7a36d0bfeeb3326ccad28153bb6b270421bd013252cdd8b18105c9ddc66"
+      },
+      "individual_decision_note": "町の廃校舎利活用募集の対象施設表は椋野小学校の閉校年月を平成23年3月と明記。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659993",
+    "expected": {
+      "name": "町立沖浦中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659993"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.207403,
+          33.875573
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2009-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立沖浦中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.207403,
+          33.875573
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659993"
+      ],
+      "source_ids": [
+        "node/1423659993"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 741,
+          "tags": {
+            "KSJ2:ADS": "戸田453",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立沖浦中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市戸田453",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 741,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町戸田453",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立沖浦中学校",
+        "address": "戸田453",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.207403,
+          33.875573
+        ],
+        "gml_id": "fb01_1255",
+        "feature_index_0based": 1254,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+          "source_as_of": null,
+          "source_period": "2011-06",
+          "retrieved_at": "2026-09-28",
+          "page": 3,
+          "raw_local_only": true,
+          "printed_page": 55,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+          "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+        }
+      ],
+      "current": {
+        "name": "町立沖浦中学校",
+        "address": "山口県大島郡周防大島町戸田453",
+        "status_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+        "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+        "source_as_of": null,
+        "source_period": "2011-06",
+        "retrieved_at": "2026-09-28",
+        "page": 3,
+        "raw_local_only": true,
+        "printed_page": 55,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+        "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+      },
+      "individual_decision_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659996",
+    "expected": {
+      "name": "町立油田中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659996"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.438577,
+          33.938879
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2009-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。隣接同住所の油田小学校とは学校種と原点を区別。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立油田中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.438577,
+          33.938879
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659996"
+      ],
+      "source_ids": [
+        "node/1423659996"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 743,
+          "tags": {
+            "KSJ2:ADS": "伊保田1195",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立油田中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市伊保田1195",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 743,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町伊保田1195",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立油田中学校",
+        "address": "伊保田1195",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.438577,
+          33.938879
+        ],
+        "gml_id": "fb01_1262",
+        "feature_index_0based": 1261,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+          "source_as_of": null,
+          "source_period": "2011-06",
+          "retrieved_at": "2026-09-28",
+          "page": 3,
+          "raw_local_only": true,
+          "printed_page": 55,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+          "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+        }
+      ],
+      "current": {
+        "name": "町立油田中学校",
+        "address": "山口県大島郡周防大島町伊保田1195",
+        "status_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。隣接同住所の油田小学校とは学校種と原点を区別。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+        "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+        "source_as_of": null,
+        "source_period": "2011-06",
+        "retrieved_at": "2026-09-28",
+        "page": 3,
+        "raw_local_only": true,
+        "printed_page": 55,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+        "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+      },
+      "individual_decision_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。隣接同住所の油田小学校とは学校種と原点を区別。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423659997",
+    "expected": {
+      "name": "町立油田小学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423659997"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.438827,
+          33.939407
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2021-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町広報2021年4月号14頁は油田小学校が令和3年3月末をもって閉校となったと明記。2009年閉校の同住所油田中学校とは学校種と原点を区別。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立油田小学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.438827,
+          33.939407
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423659997"
+      ],
+      "source_ids": [
+        "node/1423659997"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 744,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "町立油田小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県大島郡周防大島町伊保田1195",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "町立油田小学校",
+        "address": "伊保田1195",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.438827,
+          33.939407
+        ],
+        "gml_id": "fb01_1063",
+        "feature_index_0based": 1062,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+          "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+          "source_as_of": null,
+          "source_period": "2021-04",
+          "retrieved_at": "2026-09-28",
+          "page": 14,
+          "raw_local_only": true,
+          "additional_pages": [
+            15,
+            16,
+            17
+          ],
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+          "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-school-longevity-13354.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/13354.pdf",
+          "source_sha256": "d42112f4e0f34d7d95137089a14cb307643a0359b9b0ac8cf18c550372878155",
+          "source_as_of": "2019-05-01",
+          "source_period": "2020-03",
+          "retrieved_at": "2026-09-28",
+          "page": 8,
+          "raw_local_only": true,
+          "printed_page": 5,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-2.json",
+          "safe_sha256": "6274a996eab798e8fbcd80d18155714ce64155093ecc6e954590cca424ab9223"
+        }
+      ],
+      "current": {
+        "name": "町立油田小学校",
+        "address": "山口県大島郡周防大島町伊保田1195",
+        "status_note": "町広報2021年4月号14頁は油田小学校が令和3年3月末をもって閉校となったと明記。2009年閉校の同住所油田中学校とは学校種と原点を区別。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2021-april-11146.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/11146.pdf",
+        "source_sha256": "33d3052f18544b93c995a0119b2752584fa32f7b0f24c1bf13aa9915497e6c90",
+        "source_as_of": null,
+        "source_period": "2021-04",
+        "retrieved_at": "2026-09-28",
+        "page": 14,
+        "raw_local_only": true,
+        "additional_pages": [
+          15,
+          16,
+          17
+        ],
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-3.json",
+        "safe_sha256": "d2bef6c6c3f554c650510f7b328de8c923bfcca2d5d3bd6533d69530d97d091f"
+      },
+      "individual_decision_note": "町広報2021年4月号14頁は油田小学校が令和3年3月末をもって閉校となったと明記。2009年閉校の同住所油田中学校とは学校種と原点を区別。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423660036",
+    "expected": {
+      "name": "町立蒲野中学校",
+      "category": "school",
+      "source_ids": [
+        "node/1423660036"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.214791,
+          33.944929
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2009-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。後継の三蒲小学校や建物全体の閉鎖を意味しない。",
+      "sources": [
+        {
+          "title": "元OSM取得源P02・施設名と完全住所と行政コードと原点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "周防大島町公式の事後記録・施設表",
+          "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2"
+        }
+      ],
+      "limits": [
+        "対象は元地点に記録された旧学校の利用候補です。後継学校、現在の組織または転用建物全体の閉鎖を意味しません。",
+        "閉校式・後継学校開校日・閲覧日を閉校実施日に代用しません。",
+        "元geometry・source_ids・詳細を保持。元データの市町ラベル誤りは取得源行政コードから復元し、元タグ自体は上書きしません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_upstream_P02_original_name_point_plot_admincode_and_explicit_completed_municipal_school_closure",
+      "baseline_name": "町立蒲野中学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.214791,
+          33.944929
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660036"
+      ],
+      "source_ids": [
+        "node/1423660036"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 758,
+          "tags": {
+            "KSJ2:ADS": "東三蒲1106-1",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "市区町村",
+            "amenity": "school",
+            "name": "町立蒲野中学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市東三蒲1106-1",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 758,
+          "complete_numbered": true
+        }
+      ],
+      "resolved_original_public_address": "山口県大島郡周防大島町東三蒲1106-1",
+      "location": {
+        "administrativeAreaCode": "35305",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16002",
+        "name": "町立蒲野中学校",
+        "address": "東三蒲1106-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          132.214791,
+          33.944929
+        ],
+        "gml_id": "fb01_1256",
+        "feature_index_0based": 1255,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_identity_only"
+      },
+      "distance_m": 0.0,
+      "location_verified": true,
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+          "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+          "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+          "source_as_of": null,
+          "source_period": "2011-06",
+          "retrieved_at": "2026-09-28",
+          "page": 3,
+          "raw_local_only": true,
+          "printed_page": 55,
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+          "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+        }
+      ],
+      "current": {
+        "name": "町立蒲野中学校",
+        "address": "山口県大島郡周防大島町東三蒲1106-1",
+        "status_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。後継の三蒲小学校や建物全体の閉鎖を意味しない。",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/oshima-2011-council-14074.pdf",
+        "source_url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14074.pdf",
+        "source_sha256": "d89dc5be83525634c3bd31f25aa177945dcc0019a7655817b64363b0f04bebc2",
+        "source_as_of": null,
+        "source_period": "2011-06",
+        "retrieved_at": "2026-09-28",
+        "page": 3,
+        "raw_local_only": true,
+        "printed_page": 55,
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/oshima-school-stage5-safe-6.json",
+        "safe_sha256": "a08df03880a3484feb5dd4eae6598a3fc1a3d15ae789c4f3d90cf615c42d5bb5"
+      },
+      "individual_decision_note": "町長の事後答弁は日良居・沖浦・油田・蒲野の4中学校が平成21年3月31日をもって閉校となったと明記。後継の三蒲小学校や建物全体の閉鎖を意味しない。",
+      "independent_audit_status": "pass"
+    }
+  },
+  {
+    "id": "osm-node-1423657021",
+    "expected": {
+      "name": "市立弥富小学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.63882,
+          34.551212
+        ]
+      },
+      "source_ids": [
+        "node/1423657021"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "県2026年4月・5月学校一覧は、元原本と同じ完全住所の弥富小学校を休校と明記。休校開始日は資料にないため不明として通常候補から除外。",
+      "sources": [
+        {
+          "title": "文部科学省2026年5月1日学校コード原本",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "元OSMの取得源P02・施設名／原点完全一致と原完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "同じ学校コード・完全住所の2023固有点（原座標の精度は未保証）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        },
+        {
+          "title": "山口県2026学校一覧の休校明記",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "山口県2026学校一覧の休校明記",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/251758.pdf",
+          "sha256": "71c12a84137b1f39e2f13e687612e0533a95abafcca39d07ee2ac4a59c310a73"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・詳細を保持します。",
+        "元点と同学校コードのP29点には78.347mの差があります。今回確認するのは元公的記録の学校と現台帳の同一性で、座標の精度や現在の入口位置は未保証です。",
+        "台帳掲載は当日の登校・開校時間や施設利用可否を保証しません。",
+        "学校の廃止や建物全体の閉鎖を意味しません。資料基準日を休校開始日にしません。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_original_P02_upstream_same_name_exact_point_full_address_recovered_and_current_unique_school_register",
+      "baseline_name": "市立弥富小学校",
+      "baseline_category": "school",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.63882,
+          34.551212
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423657021"
+      ],
+      "source_ids": [
+        "node/1423657021"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 411,
+          "tags": {
+            "amenity": "school",
+            "isced:level": "1",
+            "name": "市立弥富小学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "resolved_original_public_address": "山口県萩市大字弥富下4083-1",
+      "original_public_source": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16001",
+        "name": "市立弥富小学校",
+        "address": "大字弥富下4083-1",
+        "administrativeCode": "3",
+        "administrator": "数値地図",
+        "point": [
+          131.63882,
+          34.551212
+        ],
+        "gml_id": "fb01_867",
+        "feature_index_0based": 866,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006",
+        "source_kind": "original_upstream_full_identity_restoration"
+      },
+      "current": {
+        "name": "萩市立弥富小学校",
+        "address": "山口県萩市大字弥富下４０８３ー１",
+        "status_note": "弥富小学校（休校）",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-schools-20260501.pdf",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/251758.pdf",
+        "source_sha256": "71c12a84137b1f39e2f13e687612e0533a95abafcca39d07ee2ac4a59c310a73",
+        "source_as_of": "2026-05-01",
+        "retrieved_at": "2026-09-28",
+        "page": 34
+      },
+      "location": {
+        "feature_array_index": 478,
+        "number": "B135210002962",
+        "name": "萩市立弥富小学校",
+        "address": "山口県萩市大字弥富下4083-1",
+        "administrative_code": "35204",
+        "point": [
+          131.63967495534976,
+          34.55123668848695
+        ],
+        "suspension_code": "1",
+        "source_path": "outputs\\facility-registry-008b-20260928\\schools\\P29-23_35.geojson",
+        "source_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "archive_path": "outputs\\facility-registry-008b-20260928\\schools\\P29-23_35_GML.zip",
+        "archive_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_as_of": "2023"
+      },
+      "distance_m": 78.347,
+      "location_verified": false,
+      "individual_decision_note": "元OSMが取得源P02を明示。同名・完全一致した元点から原本の行政コードと完全番地を復元し、現MEXT同名・学校種・完全住所と一意に一致。新P29同コード点との差は残し、台帳掲載の同一性だけを確認。元の住所欠落を近接だけで補完したものではない。",
+      "independent_audit_status": "pass",
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "page": null
+        },
+        {
+          "source_path": "outputs/facility-registry-008b-20260928/schools/pref-schools-20260501.pdf",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/251758.pdf",
+          "source_sha256": "71c12a84137b1f39e2f13e687612e0533a95abafcca39d07ee2ac4a59c310a73",
+          "source_as_of": "2026-05-01",
+          "retrieved_at": "2026-09-28",
+          "page": 34
+        }
+      ],
+      "current_school_register": {
+        "number": "B135210002962",
+        "name": "萩市立弥富小学校",
+        "address": "山口県萩市大字弥富下４０８３ー１",
+        "school_type": "B1(小学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13522
+      },
+      "current_status_source": {
+        "table": 4,
+        "row": 18,
+        "cells": [
+          "弥富小学校",
+          "759-3302",
+          "萩市大字弥富下4083-1",
+          "（休校）"
+        ],
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "page": null
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660093",
+    "expected": {
+      "name": "県立下関中央工業高等学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.925091,
+          33.973564
+        ]
+      },
+      "source_ids": [
+        "node/1423660093"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "県は下関中央工業高校を閉校済みと明記。元P02の校名・原点・完全住所で対象を特定。跡地の下関双葉高校は別の新設校のため単純改称せず、元学校を通常候補から除外します。",
+      "sources": [
+        {
+          "title": "元学校のP02原名・原点・完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・学校公式の閉校と跡地・継承",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・学校公式の閉校と跡地・継承",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26163.html",
+          "sha256": "689db34d3b9deafe3ff2546dd8563d59c5386c8ad720d083520183eab87f2614"
+        },
+        {
+          "title": "県・学校公式の閉校と跡地・継承",
+          "url": "https://www.shimonosekikoka-h.ysn21.jp/%E5%AD%A6%E6%A0%A1%E7%B4%B9%E4%BB%8B/%E6%B2%BF%E9%9D%A9",
+          "sha256": "93f2f1529a575c6bfcd56ced248cfc0553806d42bb0dbdee151dd995c59a3e5a"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・詳細を保持します。",
+        "建物や後継学校の閉鎖は意味しません。",
+        "公式継承月・記念式日・後継校開校日を閉校日に読み替えず、実施日は不明として保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_original_P02_identity_and_pref_explicit_school_closure_not_successor_rename",
+      "baseline_name": "県立下関中央工業高等学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.925091,
+          33.973564
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660093"
+      ],
+      "source_ids": [
+        "node/1423660093"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 766,
+          "tags": {
+            "amenity": "school",
+            "name": "県立下関中央工業高等学校",
+            "source": "KSJ2"
+          }
+        }
+      ],
+      "restored_original_addresses": [],
+      "original_public_source": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立下関中央工業高等学校",
+        "address": "後田町4-25-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図",
+        "point": [
+          130.925091,
+          33.973564
+        ],
+        "gml_id": "fb01_1279",
+        "feature_index_0based": 1278,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県下関市後田町4-25-1",
+      "independent_audit_status": "pass",
+      "current": {
+        "name": "下関中央工業高等学校",
+        "address": "山口県下関市後田町4-25-1",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": null,
+        "retrieved_at": "2026-09-28",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/pref-closed-high-schools-stage8.html.safe.txt",
+        "safe_sha256": "4ba20476efe7aeae529ad9c08dbecc65858435b6129926287d7d74213f26da0b",
+        "raw_local_only": true,
+        "role": "explicit_closed_school_list",
+        "status_note": "閉校となった高等学校として下関中央工業高等学校を明記。"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/P02-listing-stage8-safe-4.json",
+          "safe_sha256": "c803b0e88c0920ff824ccaddc89abdeb7dcdac58fb1913465ecdcbaa9480766a",
+          "raw_local_only": true,
+          "role": "explicit_closed_school_list",
+          "status_note": "閉校となった高等学校として下関中央工業高等学校を明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-futaba-site-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26163.html",
+          "source_sha256": "689db34d3b9deafe3ff2546dd8563d59c5386c8ad720d083520183eab87f2614",
+          "source_as_of": "2019-04-10",
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/P02-listing-stage8-safe-5.json",
+          "safe_sha256": "bf06bf217fe16bb768fdb82f6410436ab50f43ba2745211450a343a107188078",
+          "raw_local_only": true,
+          "role": "completed_different_school_at_old_site",
+          "status_note": "2019年4月、下関中央工業高校跡地に下関双葉高校が新設されたと明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/shimonosekikoka-history-stage8.html",
+          "source_url": "https://www.shimonosekikoka-h.ysn21.jp/%E5%AD%A6%E6%A0%A1%E7%B4%B9%E4%BB%8B/%E6%B2%BF%E9%9D%A9",
+          "source_sha256": "93f2f1529a575c6bfcd56ced248cfc0553806d42bb0dbdee151dd995c59a3e5a",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/P02-listing-stage8-safe-6.json",
+          "safe_sha256": "2f7654c175a4f4244cc04e17cd46e2dc6dd3d102568a098906dc211b13b0d5d3",
+          "raw_local_only": true,
+          "role": "completed_succession_month_not_exact_closure_date",
+          "status_note": "旧中央工業沿革は2018年3月の下関工科への継承を記載。継承月から閉校日を推定しない。"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立下関中央工業高等学校",
+        "address": "後田町4-25-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図",
+        "point": [
+          130.925091,
+          33.973564
+        ],
+        "gml_id": "fb01_1279",
+        "feature_index_0based": 1278,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "upstream_source_identification": {
+        "declared_source": "KSJ2",
+        "explicit_P02_reference": false,
+        "method": "KSJ2 original facility name and original coordinates exactly equal the unique corresponding P02 GML facility; source_ref absence is preserved, not imputed"
+      }
+    }
+  },
+  {
     "id": "osm-node-1423656442",
     "expected": {
       "name": "市立乙瀬小学校(休校中)",
@@ -10773,6 +12996,540 @@
       "phone_changed": true,
       "national_rows": [],
       "known_position_discrepancies": [],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "civic-care-3570201958-167bbdb74b",
+    "expected": {
+      "name": "株式会社 ホームケアサービス山口 宇部店",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:900",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1208"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.221176,
+          34.001423
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元指定番号3570201958の全掲載サービスを同番号・同法人・同電話の現所在地へ照合。運営法人が当該支店の移転を明記しているため、元記録の旧所在地の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体CSV（番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 現指定台帳（同番号・同法人・全元サービスの現所在地）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        },
+        {
+          "title": "ホームケアサービス山口 宇部店新設・移転のお知らせ",
+          "url": "https://www.homecare-yamaguchi.co.jp/%E6%9C%AA%E5%88%86%E9%A1%9E/%E5%AE%87%E9%83%A8%E5%BA%97%E6%96%B0%E8%A8%AD%E3%83%BB%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "sha256": "63466cd5d41357a955e8a8f7a002c597e9bbbbe1019c087b564595ac21c4b410"
+        },
+        {
+          "title": "ホームケアサービス山口 公式事業所一覧",
+          "url": "https://www.homecare-yamaguchi.co.jp/shops/",
+          "sha256": "cf196b8803f675c413323ecf58742049d0174e100319c7b563ef40576fd295c0"
+        }
+      ],
+      "limits": [
+        "宇部店名・旧新完全住所と、元・現CSV及び公式支店一覧・今回取得の告知原本の電話0836-39-1147を一致確認。告知は電話・FAXの不変を明記しています。",
+        "当該事業所の旧所在地終了を記録し、法人全体・建物全体・福祉用具サービスそのものの廃止を意味しません。",
+        "新店舗営業開始日は旧店舗の最終日と同一視せず、旧最終日は不明で保持します。",
+        "元ID・geometry・source_ids・元住所・registered_detailsを保持。移転先へ元座標を転用せず、新施設は追加しません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_same_operator_phone_and_explicit_branch_relocation",
+      "baseline_name": "株式会社 ホームケアサービス山口 宇部店",
+      "baseline_address": "宇部市西宇部南3－3－2",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.221176,
+          34.001423
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:900",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1208"
+      ],
+      "original_number": "3570201958",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:900",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 900,
+          "csv_logical_row": 901,
+          "number": "3570201958",
+          "municipal_id": "",
+          "name": "株式会社 ホームケアサービス山口 宇部店",
+          "address": "宇部市西宇部南3－3－2",
+          "service": "福祉用具貸与",
+          "operator": "株式会社ホームケアサービス山口",
+          "phone": "0836-39-1147",
+          "point": [
+            131.221176,
+            34.001423
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1208",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1208,
+          "csv_logical_row": 1209,
+          "number": "3570201958",
+          "municipal_id": "",
+          "name": "株式会社 ホームケアサービス山口 宇部店",
+          "address": "宇部市西宇部南3－3－2",
+          "service": "特定福祉用具販売",
+          "operator": "株式会社ホームケアサービス山口",
+          "phone": "0836-39-1147",
+          "point": [
+            131.221176,
+            34.001423
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570201958",
+          "name": "株式会社 ホームケアサービス山口 宇部店",
+          "address": "宇部市厚南中央6－4－20",
+          "service": "福祉用具貸与",
+          "phone": "0836-39-1147",
+          "operator": "株式会社ホームケアサービス山口",
+          "designation_dates": [
+            "2008/09/01",
+            "2008/09/01"
+          ],
+          "expiry_dates": [
+            "2032/08/31",
+            "2032/08/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35202.csv",
+          "line": 863,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "source_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        },
+        {
+          "number": "3570201958",
+          "name": "株式会社 ホームケアサービス山口 宇部店",
+          "address": "宇部市厚南中央6－4－20",
+          "service": "特定福祉用具販売",
+          "phone": "0836-39-1147",
+          "operator": "株式会社ホームケアサービス山口",
+          "designation_dates": [
+            "2008/09/01",
+            "2008/09/01"
+          ],
+          "expiry_dates": [
+            "2032/08/31",
+            "2032/08/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35202.csv",
+          "line": 875,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "source_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        }
+      ],
+      "original_services": [
+        "特定福祉用具販売",
+        "福祉用具貸与"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/homecare-ube-move-stage30.html",
+          "source_url": "https://www.homecare-yamaguchi.co.jp/%E6%9C%AA%E5%88%86%E9%A1%9E/%E5%AE%87%E9%83%A8%E5%BA%97%E6%96%B0%E8%A8%AD%E3%83%BB%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "source_sha256": "63466cd5d41357a955e8a8f7a002c597e9bbbbe1019c087b564595ac21c4b410",
+          "title": "ホームケアサービス山口 宇部店新設・移転のお知らせ",
+          "branch": "宇部店",
+          "old_address": "山口県宇部市西宇部南3丁目3-2",
+          "new_address": "山口県宇部市厚南中央6丁目4-20",
+          "new_business_start": "2025-07-14",
+          "old_last_business_date": null,
+          "notice_phone": "0836-39-1147",
+          "limits": "今回取得した原本の電話は0836-39-1147。元・現CSVと公式支店一覧にも一致し、電話不変の記載を確認。検索キャッシュの異なる電話表記は証拠として使用しない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/homecare-shops-stage30.html",
+          "source_url": "https://www.homecare-yamaguchi.co.jp/shops/",
+          "source_sha256": "cf196b8803f675c413323ecf58742049d0174e100319c7b563ef40576fd295c0",
+          "title": "ホームケアサービス山口 公式事業所一覧",
+          "entries": [
+            {
+              "branch": "宇部店",
+              "address": "山口県宇部市厚南中央6丁目4-20",
+              "phone": "0836-39-1147"
+            },
+            {
+              "branch": "防府店",
+              "address": "山口県防府市華園町11-11",
+              "phone": "0835-27-1122"
+            }
+          ],
+          "use": "宇部店の現完全住所・専用電話を独立に確認。別支店の電話と混同しない。"
+        }
+      ],
+      "event_kind": "relocation",
+      "new_location_business_start": "2025-07-14",
+      "old_last_business_date": null,
+      "national_rows": [
+        {
+          "number": "3570201958",
+          "name": "株式会社ホームケアサービス山口宇部店",
+          "address": "宇部市西宇部南3丁目3-2",
+          "address2": "",
+          "service": "福祉用具貸与",
+          "phone": "0836-39-1147",
+          "operator": "株式会社ホームケアサービス山口",
+          "operator_number": "1250001007381",
+          "point": [
+            131.22107749999998,
+            34.0014779
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_170_all_20260709180509.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_170_all_20260709180509.csv",
+          "source_sha256": "0c7efe1ce8d7f6b41ab5fcb651870a8d8f55dfc8ffb19a6987286b412be1eb00",
+          "csv_logical_row": 5767,
+          "source_as_of": "2026-06-30",
+          "distance_m": 10.9414
+        },
+        {
+          "number": "3570201958",
+          "name": "株式会社ホームケアサービス山口　宇部店",
+          "address": "山口県宇部市厚南中央6丁目4-20",
+          "address2": "",
+          "service": "特定福祉用具販売",
+          "phone": "0836-39-1147",
+          "operator": "株式会社ホームケアサービス山口",
+          "operator_number": "1250001007381",
+          "point": [
+            131.20999275699543,
+            33.992783815328025
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_410_all_20260709180655.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_410_all_20260709180655.csv",
+          "source_sha256": "caad416d9249b278fee64472ea073a8c2b31d7fff3a6d8267915f18803e756c0",
+          "csv_logical_row": 4891,
+          "source_as_of": "2026-06-30",
+          "distance_m": 1409.1488
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3570201958",
+          "name": "株式会社ホームケアサービス山口　宇部店",
+          "address": "山口県宇部市厚南中央6丁目4-20",
+          "address2": "",
+          "service": "特定福祉用具販売",
+          "phone": "0836-39-1147",
+          "operator": "株式会社ホームケアサービス山口",
+          "operator_number": "1250001007381",
+          "point": [
+            131.20999275699543,
+            33.992783815328025
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_410_all_20260709180655.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_410_all_20260709180655.csv",
+          "source_sha256": "caad416d9249b278fee64472ea073a8c2b31d7fff3a6d8267915f18803e756c0",
+          "csv_logical_row": 4891,
+          "source_as_of": "2026-06-30",
+          "distance_m": 1409.1488
+        }
+      ],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "civic-care-3570303234-656962c36e",
+    "expected": {
+      "name": "株式会社フルケア山口営業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:887",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1197"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.391068,
+          34.090538
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元指定番号3570303234の全掲載サービスを同番号・同法人・同電話の現所在地へ照合。運営法人が当該支店の移転を明記しているため、元記録の旧所在地の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体CSV（番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 現指定台帳（同番号・同法人・全元サービスの現所在地）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+          "sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+        },
+        {
+          "title": "株式会社フルケア 会社概要・営業所一覧",
+          "url": "https://www.full-care.jp/p3-company/index.html",
+          "sha256": "78bee7ddacafb9895a375e082d1ccd728626b1c1fb3daf3885b90ece79ee7674"
+        },
+        {
+          "title": "株式会社フルケア 山口営業所移転のお知らせ（2024年11月15日）",
+          "url": "https://www.full-care.jp/date/2024/11",
+          "sha256": "9afaffedc324bab5e64dddc9fe7b94f2d5249ad06982d23059e0d88731b23f33"
+        },
+        {
+          "title": "山口市2026年2月14日住居表示旧新対照表（移転先住所のその後の表示変更）",
+          "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/119713.xlsx",
+          "sha256": "b74521ff9d421359c358d2331e4190060bf07bd63654594d12a19a4e7f1bd4b5"
+        }
+      ],
+      "limits": [
+        "移転告知は新住所小郡下郷788-2と番号・電話の不変を明記。移転先のその後の住居表示は市旧新表で中央通1-5に接続。元3399-1を単なる住居表示変更とみなさず、支店移転として扱います。",
+        "当該事業所の旧所在地終了を記録し、法人全体・建物全体・福祉用具サービスそのものの廃止を意味しません。",
+        "新店舗営業開始日は旧店舗の最終日と同一視せず、旧最終日は不明で保持します。",
+        "元ID・geometry・source_ids・元住所・registered_detailsを保持。移転先へ元座標を転用せず、新施設は追加しません。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_same_operator_phone_and_explicit_branch_relocation",
+      "baseline_name": "株式会社フルケア山口営業所",
+      "baseline_address": "山口市小郡下郷3399－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.391068,
+          34.090538
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:887",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1197"
+      ],
+      "original_number": "3570303234",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:887",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 887,
+          "csv_logical_row": 888,
+          "number": "3570303234",
+          "municipal_id": "",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口市小郡下郷3399－1",
+          "service": "福祉用具貸与",
+          "operator": "株式会社 フルケア",
+          "phone": "083-941-5201",
+          "point": [
+            131.391068,
+            34.090538
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1197",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1197,
+          "csv_logical_row": 1198,
+          "number": "3570303234",
+          "municipal_id": "",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口市小郡下郷3399－1",
+          "service": "特定福祉用具販売",
+          "operator": "株式会社 フルケア",
+          "phone": "083-941-5201",
+          "point": [
+            131.391068,
+            34.090538
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570303234",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口市小郡中央通1－5",
+          "service": "福祉用具貸与",
+          "phone": "083-941-5201",
+          "operator": "株式会社 フルケア",
+          "designation_dates": [
+            "2017/04/01",
+            "2017/04/01"
+          ],
+          "expiry_dates": [
+            "2029/03/31",
+            "2029/03/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35203.csv",
+          "line": 866,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+          "source_sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+        },
+        {
+          "number": "3570303234",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口市小郡中央通1－5",
+          "service": "特定福祉用具販売",
+          "phone": "083-941-5201",
+          "operator": "株式会社 フルケア",
+          "designation_dates": [
+            "2017/04/01",
+            "2017/04/01"
+          ],
+          "expiry_dates": [
+            "2029/03/31",
+            "2029/03/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35203.csv",
+          "line": 880,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35203&od=1",
+          "source_sha256": "e8a9a8da66c5c6700096525f05dfda22b6360a1cffd94606d539171782868a04"
+        }
+      ],
+      "original_services": [
+        "特定福祉用具販売",
+        "福祉用具貸与"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/fullcare-company-stage30.html",
+          "source_url": "https://www.full-care.jp/p3-company/index.html",
+          "source_sha256": "78bee7ddacafb9895a375e082d1ccd728626b1c1fb3daf3885b90ece79ee7674",
+          "title": "株式会社フルケア 会社概要・営業所一覧",
+          "branch": "山口営業所",
+          "number": "3570303234",
+          "address": "山口市小郡中央通1-5",
+          "phone": "083-941-5201",
+          "services": [
+            "福祉用具貸与",
+            "特定福祉用具販売"
+          ],
+          "history": "2024年12月に山口営業所移転",
+          "use": "同番号2サービスの現支店完全住所を確認。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/fullcare-yamaguchi-move-stage30.html",
+          "source_url": "https://www.full-care.jp/date/2024/11",
+          "source_sha256": "9afaffedc324bab5e64dddc9fe7b94f2d5249ad06982d23059e0d88731b23f33",
+          "title": "株式会社フルケア 山口営業所移転のお知らせ（2024年11月15日）",
+          "branch": "山口営業所",
+          "new_address_at_move": "山口市小郡下郷788-2",
+          "new_business_start": "2024-12-01",
+          "phone": "083-941-5201",
+          "number_unchanged_explicit": true,
+          "old_last_business_date": null,
+          "use": "支店移転・電話及び介護保険事業所番号に変更なしの明示。新営業開始日は旧最終日としない。"
+        },
+        {
+          "title": "山口市2026年2月14日住居表示旧新対照表（移転先住所のその後の表示変更）",
+          "source_path": "outputs/facility-registry-008c-20260928/medical/raw-local-only/tamura-address-change.xlsx",
+          "source_url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/119713.xlsx",
+          "source_sha256": "b74521ff9d421359c358d2331e4190060bf07bd63654594d12a19a4e7f1bd4b5",
+          "sheet": "旧新対照表",
+          "row": 467,
+          "old_address": "山口市小郡下郷788-2",
+          "new_address": "山口市小郡中央通1-5",
+          "fields": "A-D旧町番地、E-H新町街区住居番号。備考個人情報は抽出しない。",
+          "use": "2024移転先の788-2と現2026表示1-5を接続。元所在地3399-1を住居表示だけで接続していない。"
+        }
+      ],
+      "event_kind": "relocation",
+      "new_location_business_start": "2024-12-01",
+      "old_last_business_date": null,
+      "national_rows": [
+        {
+          "number": "3570303234",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口県山口市小郡中央通1-5",
+          "address2": "",
+          "service": "福祉用具貸与",
+          "phone": "083-941-5201",
+          "operator": "株式会社フルケア",
+          "operator_number": "1240001014180",
+          "point": [
+            131.39487357717744,
+            34.10347438966099
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_170_all_20260709180509.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_170_all_20260709180509.csv",
+          "source_sha256": "0c7efe1ce8d7f6b41ab5fcb651870a8d8f55dfc8ffb19a6987286b412be1eb00",
+          "csv_logical_row": 5786,
+          "source_as_of": "2026-06-30",
+          "distance_m": 1480.5292
+        },
+        {
+          "number": "3570303234",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口県山口市小郡下郷788-2",
+          "address2": "",
+          "service": "特定福祉用具販売",
+          "phone": "083-941-5201",
+          "operator": "株式会社フルケア",
+          "operator_number": "1240001014180",
+          "point": [
+            131.39106630000003,
+            34.090175
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_410_all_20260709180655.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_410_all_20260709180655.csv",
+          "source_sha256": "caad416d9249b278fee64472ea073a8c2b31d7fff3a6d8267915f18803e756c0",
+          "csv_logical_row": 4898,
+          "source_as_of": "2026-06-30",
+          "distance_m": 40.3641
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3570303234",
+          "name": "株式会社フルケア山口営業所",
+          "address": "山口県山口市小郡中央通1-5",
+          "address2": "",
+          "service": "福祉用具貸与",
+          "phone": "083-941-5201",
+          "operator": "株式会社フルケア",
+          "operator_number": "1240001014180",
+          "point": [
+            131.39487357717744,
+            34.10347438966099
+          ],
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/national-jigyosho_170_all_20260709180509.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_170_all_20260709180509.csv",
+          "source_sha256": "0c7efe1ce8d7f6b41ab5fcb651870a8d8f55dfc8ffb19a6987286b412be1eb00",
+          "csv_logical_row": 5786,
+          "source_as_of": "2026-06-30",
+          "distance_m": 1480.5292
+        }
+      ],
       "new_location_geometry_not_created": true
     }
   },

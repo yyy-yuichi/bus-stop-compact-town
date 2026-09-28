@@ -10,7 +10,7 @@ const suspended = {status:'temporarily_closed',event:'temporary_closure',effecti
 const feature = {type:'Feature',id:'fixture',geometry:{type:'Point',coordinates:[132.00422,34.126681]},properties:{name:'川越郵便局',category:'post_office',source_ids:['node/fixture']}};
 
 test('retrieval dates stay labeled, allow archived source days, reject future dates and require source hashes',()=>{
- for(const scope of ['public_facility_directory','post_office_directory','operator_directory','trade_association_directory','pharmacy_register','welfare_register','food_business_register'])validateRegistryReview({...registry,scope},'2026-09-28');
+ for(const scope of ['public_facility_directory','post_office_directory','operator_directory','trade_association_directory','regional_business_directory','pharmacy_register','welfare_register','food_business_register'])validateRegistryReview({...registry,scope},'2026-09-28');
  for(const patch of [{source_date_kind:'publication'}, {source_as_of:'2026-09-29'}, {source_as_of:'2026-02-30'}, {services:[]}])assert.throws(()=>validateRegistryReview({...registry,...patch},'2026-09-28'));
  assert.throws(()=>validateRegistryReview({...registry,sources:[{title:'link',url:'https://example.org/'}]},'2026-09-28'));
  validateRegistryReview({...registry,source_as_of:'2026-09-27'},'2026-09-28');
@@ -40,6 +40,7 @@ test('directory and temporary closure render without inventing publication, open
   const {default:Freshness}=await server.ssrLoadModule('/src/FacilityFreshnessDetails.tsx');
   const html=renderToStaticMarkup(React.createElement(Registry,{review:registry}));assert(html.includes('公式施設一覧の掲載確認')&&html.includes('資料閲覧日'));assert(!html.includes('資料基準日')&&!html.includes('開店日'));
   const association=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,scope:'trade_association_directory'}}));assert(association.includes('業界団体の公式施設一覧')&&association.includes('資料閲覧日'));assert(!association.includes('行政台帳の掲載確認')&&!association.includes('運営者の公式施設一覧'));
+  const regional=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,scope:'regional_business_directory'}}));assert(regional.includes('地域店舗案内の掲載確認')&&regional.includes('公的事業と連携する地域店舗案内')&&regional.includes('資料閲覧日'));assert(!regional.includes('自治体等の公共施設一覧')&&!regional.includes('行政台帳の掲載確認'));
   const old=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,source_date_kind:'as_of',source_as_of:'2026-02-20'}}));assert(old.includes('資料基準日')&&!old.includes('資料閲覧日'));
   const temp=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,freshness_review:suspended}}}));assert(temp.includes('一時休止確認')&&temp.includes('一時休止開始日：2018-07-09')&&temp.includes('通常の検索'));assert(!temp.includes('閉店確認'));
   const school=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,category:'school',freshness_review:{...suspended,effective_at:null,date_precision:'unknown'}}}}));assert(school.includes('休校確認')&&school.includes('休校開始日'));assert(!school.includes('：null')&&!school.includes('閉校日'));
@@ -64,4 +65,18 @@ test('current medical registration can confirm hospital-to-clinic reclassificati
  assert.equal(clinic.properties.category,'clinic');assert.equal(clinic.properties.name,'現診療所');assert(!clinic.properties.freshness_review);assert(facilityAvailable(clinic));assert.deepEqual(clinic.geometry,hospital.geometry);
  for(const category of ['pharmacy','hospital','invalid'])assert.throws(()=>applyFacilityCurrent([hospital],{...overlay,verifications:[{...item,changes:{category}}]}),/Forbidden registry category transition/);
  assert.throws(()=>applyFacilityCurrent([hospital],{...overlay,verifications:[{...item,review:{...review,scope:'operator_directory'}}]}),/Forbidden registry category transition/);
+});
+
+
+test('directory classification corrections preserve identity and do not invent a dated facility event',()=>{
+ for(const [from,to,scope] of [['park','reference','public_facility_directory'],['park','sports_centre','public_facility_directory'],['convenience','food_shop','public_facility_directory'],['restaurant','reference','public_facility_directory'],['restaurant','food_shop','regional_business_directory']]) {
+  const original={...feature,properties:{...feature.properties,category:from}};
+  const expected={name:original.properties.name,category:from,geometry:original.geometry,source_ids:original.properties.source_ids};
+  const item={id:'fixture',expected,changes:{category:to},review:{...registry,scope}};
+  const overlay={schema_version:1,checked_at:'2026-09-28',updates:[],verifications:[item],additions:[]};
+  const [corrected]=applyFacilityCurrent([original],overlay);
+  assert.equal(corrected.properties.category,to);assert(!corrected.properties.freshness_review);assert.deepEqual(corrected.geometry,original.geometry);assert.deepEqual(corrected.properties.source_ids,original.properties.source_ids);
+  for(const category of ['hospital','school','unknown'])assert.throws(()=>applyFacilityCurrent([original],{...overlay,verifications:[{...item,changes:{category}}]}),/Forbidden registry category transition/);
+  assert.throws(()=>applyFacilityCurrent([original],{...overlay,verifications:[{...item,review:{...registry,scope:'school_register'}}]}),/Forbidden registry category transition/);
+ }
 });

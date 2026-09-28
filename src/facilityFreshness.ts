@@ -104,10 +104,14 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
       throw Error('Forbidden registry verification change');
     }
     validateRegistryReview(item.review, data.checked_at);
-    // A current medical register can confirm a hospital's transition to an outpatient clinic.
-    // Other category changes still require an independently reviewed freshness event.
-    if (item.changes.category !== undefined &&
-        !(item.review.scope === 'medical_register' && before.properties.category === 'hospital' && item.changes.category === 'clinic')) {
+    // Current directories can correct a misclassified facility without inventing an event date.
+    const fromCategory = before.properties.category;
+    const toCategory = item.changes.category;
+    const medicalCorrection = item.review.scope === 'medical_register' && fromCategory === 'hospital' && toCategory === 'clinic';
+    const publicUseCorrection = item.review.scope === 'public_facility_directory' && fromCategory === 'park' && ['reference', 'sports_centre'].includes(toCategory);
+    const commercialCorrection = ['public_facility_directory', 'operator_directory', 'trade_association_directory', 'regional_business_directory'].includes(item.review.scope) &&
+      ((['convenience', 'restaurant'].includes(fromCategory ?? '') && toCategory === 'food_shop') || (fromCategory === 'restaurant' && toCategory === 'reference'));
+    if (toCategory !== undefined && ((!categories.has(toCategory) && toCategory !== 'reference') || !(medicalCorrection || publicUseCorrection || commercialCorrection))) {
       throw Error('Forbidden registry category transition');
     }
     verifications.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, registry_review: structuredClone(item.review) } });

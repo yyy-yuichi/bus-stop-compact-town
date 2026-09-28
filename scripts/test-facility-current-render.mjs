@@ -27,7 +27,7 @@ try {
   for (const verified of facilities.filter(f => f.properties.registry_review)) {
     const review = verified.properties.registry_review;
     const html = render(verified.id);
-    assert(html.includes(review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認') && html.includes(review.source_as_of) && html.includes(review.checked_at));
+    assert(html.includes(review.scope === 'regional_business_directory' ? '地域店舗案内の掲載確認' : review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認') && html.includes(review.source_as_of) && html.includes(review.checked_at));
     assert(html.includes(escaped(review.official_name)) && html.includes(escaped(review.official_address)));
     assert(html.includes('建物全体の営業・開業') && html.includes('現況・入口は未確認'));
     assert(!html.includes('開店・掲載確認'), 'Registry listing alone must not create a freshness event');

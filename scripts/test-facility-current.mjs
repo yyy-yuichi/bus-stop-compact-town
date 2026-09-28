@@ -14,6 +14,8 @@ const original = JSON.stringify(raw), originalPatch = JSON.stringify(patch);
 const current = applyFacilityCurrent(raw, patch);
 const eEvents=JSON.parse(fs.readFileSync('data-sources/facility-registry-008e-20260928/updates.json','utf8'));
 const eBatch=JSON.parse(fs.readFileSync('data-sources/facility-registry-008e-20260928/batch.json','utf8'));
+const eReviews=JSON.parse(fs.readFileSync('data-sources/facility-registry-008e-20260928/reviews.json','utf8'));
+const eReferenceCorrections=eReviews.filter(r=>r.changes.category==='reference').length;
 const expectedClosed=129+eEvents.filter(r=>r.review.status==='closed').length;
 const expectedSuspended=13+eEvents.filter(r=>r.review.status==='temporarily_closed').length;
 const expectedDuplicates=1+eBatch.duplicate_records;
@@ -74,7 +76,7 @@ assert(!get('official-tsuruha-2299'), 'A pharmacy co-located with its drugstore 
 assert(get('official-tsuruha-3945').properties.source_ids.includes('official:tsuruha:2299'));
 assert(searchPlaces('防府松崎薬局', [], current).facilities.some(f => f.id === 'official-tsuruha-3945'));
 assert(!get('official-tsuruha-3889') && !get('official-tsuruha-3905'), 'Prior occupant held; reviewed duplicate uses original IDs instead of a new addition');
-assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, expectedIds.length - 54 - expectedUnavailable + unavailableReferenceIds.size, 'Exclude reference records and every reviewed unavailable or duplicate record');
+assert.equal(current.filter(f => f.properties.category !== 'reference' && facilityAvailable(f)).length, expectedIds.length - 54 - eReferenceCorrections - expectedUnavailable + unavailableReferenceIds.size, 'Exclude reference records and every reviewed unavailable or duplicate record');
 for (const f of current.filter(f => !facilityAvailable(f))) {
   assert(!searchPlaces(f.properties.name, [], current).facilities.some(x => x.id === f.id));
   assert(!prepareFacilities(current).some(p => p.facility.id === f.id));

@@ -13,11 +13,12 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
   public_facility_directory: '自治体等の公共施設一覧',
   operator_directory: '運営者の公式施設一覧',
   trade_association_directory: '業界団体の公式施設一覧',
+  regional_business_directory: '公的事業と連携する地域店舗案内',
 };
 
 export default function FacilityRegistryDetails({ review, duplicateOf }: { review?: RegistryReview; duplicateOf?: string }) {
   if (!review) return null;
-  const heading = review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認';
+  const heading = review.scope === 'regional_business_directory' ? '地域店舗案内の掲載確認' : review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認';
   return <section className="registered-details verified-facility" aria-label={heading}>
     <h3>{heading}</h3>
     {duplicateOf && <p className="font-semibold">同じ施設の重複した登録をまとめています。この記録は保持し、<a className="underline" href={'#kind=facility&id=' + encodeURIComponent(duplicateOf)}>通常表示の施設</a>へ案内します。</p>}
