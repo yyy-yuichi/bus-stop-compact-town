@@ -6,7 +6,7 @@
   "previous_overlay_sha256": "4799db5430c33ba27075ee2e73eb3533401fddd9a512a74b7ac10a02fc1727c4",
   "baseline_sha256": {
     "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
-    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137"
+    "public/data/civic-facilities.geojson": "45a25717ea616b5d559eda323681c65d63a13eb0e4efdf4a60de474d76e2074e"
   },
   "candidates": 5033,
   "registry_reviews": 1229,
@@ -169,5 +169,6 @@
   },
   "pending_inputs": [],
   "duplicate_scope_holds": 38,
-  "root_hold_overrides_sha256": "8e1e57993f733754e5dc33e439308579ab224afafc57d15b18898c4eb180cca8"
+  "root_hold_overrides_sha256": "8e1e57993f733754e5dc33e439308579ab224afafc57d15b18898c4eb180cca8",
+  "baseline_hash_format": "utf8_lf"
 }

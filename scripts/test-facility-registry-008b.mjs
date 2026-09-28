@@ -14,7 +14,8 @@ test('008b preserves the prior overlay byte representation and partitions every 
  const previous={...overlay,checked_at:batch.previous_checked_at,updates:overlay.updates.filter(r=>!eventIds.has(r.id)),verifications:overlay.verifications.filter(r=>!ids.has(r.id))};
  assert.equal(sha(JSON.stringify(previous,null,2)+'\n'),batch.previous_overlay_sha256);assert.equal(previous.updates.length+previous.verifications.length,2731);
  const priorIds=new Set([...previous.updates,...previous.verifications].map(r=>r.id));assert(all.every(r=>!priorIds.has(r.id)));assert.equal(priorIds.size+all.length,base.length);
- for(const [p,h] of Object.entries(batch.baseline_sha256))assert.equal(sha(fs.readFileSync(p)),h);
+ assert.equal(batch.baseline_hash_format,'utf8_lf');
+ for(const [p,h] of Object.entries(batch.baseline_sha256))assert.equal(sha(fs.readFileSync(p,'utf8').replaceAll('\r\n','\n')),h);
  assert.equal(rows.filter(r=>Object.keys(r.changes).length).length+events.length,batch.corrections);assert.equal(rows.filter(r=>!Object.keys(r.changes).length).length,batch.verified_no_change);assert.equal(holds.length,batch.held);assert(holds.every(r=>r.reasons.length&&r.next));assert.deepEqual(batch.pending_inputs,[]);
 });
 
