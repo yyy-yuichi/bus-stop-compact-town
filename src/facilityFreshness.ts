@@ -3,8 +3,8 @@ import { SHOPPING_CATEGORIES } from './facilityCatalog.ts';
 import { validateRegistryReview, type RegistryReview } from './facilityRegistry.ts';
 
 export interface FreshnessReview {
-  status: 'closed' | 'operating' | 'changed' | 'scheduled_change';
-  event: 'closed' | 'opened' | 'listed' | 'renamed' | 'service_change' | 'scheduled_closure';
+  status: 'closed' | 'temporarily_closed' | 'operating' | 'changed' | 'scheduled_change';
+  event: 'closed' | 'temporary_closure' | 'opened' | 'listed' | 'renamed' | 'service_change' | 'scheduled_closure';
   effective_at: string | null; checked_at: string; summary: string;
   date_precision?: 'day' | 'month' | 'unknown';
   sources: { title: string; url: string }[]; limits: string[];
@@ -22,16 +22,16 @@ const categories = new Set<string>(SHOPPING_CATEGORIES.map(c => c.id));
 const allowedChanges = new Set(['name', 'category', 'city', 'address', 'search_names']);
 
 export function validateFreshnessReview(r: FreshnessReview, checkedAt: string): void {
-  const statusForEvent = { closed: 'closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
+  const statusForEvent = { closed: 'closed', temporary_closure: 'temporarily_closed', opened: 'operating', listed: 'operating', renamed: 'changed', service_change: 'changed', scheduled_closure: 'scheduled_change' };
   if (!r || !Object.hasOwn(statusForEvent, r.event) || statusForEvent[r.event] !== r.status || !validDate(checkedAt) || !validDate(r.checked_at) || r.checked_at > checkedAt || !r.summary?.trim()) throw Error('Invalid freshness event');
   // A current listing is not evidence of an opening date. Never invent one from a check/publication date.
   const precision = r.date_precision ?? (r.event === 'listed' ? 'unknown' : 'day');
   if (!['day', 'month', 'unknown'].includes(precision)) throw Error('Invalid date precision');
   if (r.event === 'listed') {
     if (precision !== 'unknown' || r.effective_at !== null) throw Error('Invalid listing date');
-  } else if (r.event === 'closed' && precision === 'unknown') {
+  } else if (['closed', 'temporary_closure'].includes(r.event) && precision === 'unknown') {
     if (r.effective_at !== null) throw Error('Unknown closure date must be null');
-  } else if (r.event === 'closed' && precision === 'month') {
+  } else if (['closed', 'temporary_closure'].includes(r.event) && precision === 'month') {
     if (typeof r.effective_at !== 'string' || !/^\d{4}-(0[1-9]|1[0-2])$/.test(r.effective_at)) throw Error('Invalid closure month');
   } else if (precision !== 'day' || !validDate(r.effective_at)) throw Error('Invalid freshness event date');
   if (r.event !== 'scheduled_closure' && r.effective_at !== null && r.effective_at > r.checked_at) throw Error('Future event cannot be applied as completed');
@@ -54,7 +54,7 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
     updates.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, freshness_review: structuredClone(item.review) } });
   }
   const verifications = new Map<string, ShoppingFeature>();
-  const allowedVerificationChanges = new Set(['name', 'city', 'address']);
+  const allowedVerificationChanges = new Set(['name', 'city', 'address', 'category']);
   for (const item of data.verifications ?? []) {
     const before = byId.get(item?.id), expected = item?.expected;
     if (!before || updates.has(item.id) || verifications.has(item.id) || !expected ||
@@ -67,6 +67,12 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
       throw Error('Forbidden registry verification change');
     }
     validateRegistryReview(item.review, data.checked_at);
+    // A current medical register can confirm a hospital's transition to an outpatient clinic.
+    // Other category changes still require an independently reviewed freshness event.
+    if (item.changes.category !== undefined &&
+        !(item.review.scope === 'medical_register' && before.properties.category === 'hospital' && item.changes.category === 'clinic')) {
+      throw Error('Forbidden registry category transition');
+    }
     verifications.set(item.id, { ...before, properties: { ...before.properties, ...item.changes, registry_review: structuredClone(item.review) } });
   }
   const additions: ShoppingFeature[] = [];
@@ -100,16 +106,21 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 }
 
 /** Scheduled closures stay available; reviewed duplicate records retain direct links only. */
-export const facilityAvailable = (f: ShoppingFeature) => f.properties.freshness_review?.status !== 'closed' && !f.properties.duplicate_of;
-export function freshnessDateText(r: FreshnessReview): string {
+export const facilityAvailable = (f: ShoppingFeature) => !['closed', 'temporarily_closed'].includes(f.properties.freshness_review?.status ?? '') && !f.properties.duplicate_of;
+export function freshnessDateText(r: FreshnessReview, category?: string): string {
   if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
-  if (r.event === 'closed' && r.date_precision === 'unknown') return '未確認（閉店状態を確認）';
-  if (r.event === 'closed' && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
+  if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（一時休止状態を確認）' : category === 'library' ? '未確認（閉館状態を確認）' : category === 'school' || category === 'college' ? '未確認（閉校状態を確認）' : '未確認（閉店状態を確認）';
+  if (['closed', 'temporary_closure'].includes(r.event) && r.date_precision === 'month') return `${r.effective_at}（年月まで確認）`;
   return r.effective_at ?? '';
 }
 export function freshnessLabel(f: ShoppingFeature): string {
   const r = f.properties.freshness_review;
   if (!r) return '';
   if (r.event === 'listed') return '公式掲載確認';
-  return { closed: '閉店確認', operating: '開店・掲載確認', changed: '名称・種別変更を確認', scheduled_change: '営業終了予定' }[r.status];
+  if (['school', 'college'].includes(f.properties.category ?? '')) {
+    if (r.status === 'closed') return '閉校確認';
+    if (r.status === 'temporarily_closed') return '休校確認';
+  }
+  if (r.status === 'closed' && f.properties.category === 'library') return '閉館確認';
+  return { closed: '閉店確認', temporarily_closed: '一時休止確認', operating: '開店・掲載確認', changed: '名称・種別変更を確認', scheduled_change: '営業終了予定' }[r.status];
 }

@@ -1,7 +1,8 @@
 export interface RegistryReview {
-  scope: 'care_service_registry' | 'school_register' | 'childcare_register' | 'medical_register';
+  scope: 'care_service_registry' | 'school_register' | 'childcare_register' | 'medical_register' | 'pharmacy_register' | 'welfare_register' | 'food_business_register' | 'post_office_directory' | 'public_facility_directory' | 'operator_directory';
   checked_at: string;
   source_as_of: string;
+  source_date_kind?: 'as_of' | 'retrieved';
   registry_id: string;
   official_name: string;
   official_address: string;
@@ -25,8 +26,9 @@ const httpsUrl = (value: unknown): boolean => {
 
 export function validateRegistryReview(value: RegistryReview, overlayCheckedAt: string): void {
   const review = value as RegistryReview | undefined;
-  if (!review || !['care_service_registry', 'school_register', 'childcare_register', 'medical_register'].includes(review.scope) ||
+  if (!review || !['care_service_registry', 'school_register', 'childcare_register', 'medical_register', 'pharmacy_register', 'welfare_register', 'food_business_register', 'post_office_directory', 'public_facility_directory', 'operator_directory'].includes(review.scope) ||
       !validDate(review.source_as_of) || !validDate(review.checked_at) || !validDate(overlayCheckedAt) ||
+      (review.source_date_kind !== undefined && !['as_of', 'retrieved'].includes(review.source_date_kind)) ||
       review.source_as_of > review.checked_at || review.checked_at > overlayCheckedAt ||
       !nonempty(review.registry_id) || !nonempty(review.official_name) ||
       !nonempty(review.official_address) || !nonempty(review.summary)) {

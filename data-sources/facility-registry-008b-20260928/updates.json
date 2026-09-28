@@ -1,0 +1,2234 @@
+[
+  {
+    "id": "osm-node-1423657361",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が米川小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立米川小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87962,
+          34.086545
+        ]
+      },
+      "source_ids": [
+        "node/1423657361"
+      ],
+      "municipal": {
+        "number": "B135210001286",
+        "name": "下松市立米川小学校",
+        "address": "山口県下松市大字下谷441-2",
+        "point": [
+          131.87962000155446,
+          34.08654500400748
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 318,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35207",
+        "suspension_code": "9",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 0.0,
+        "feature_index_base": 1,
+        "feature_array_index": 317
+      },
+      "closure_record": {
+        "table": 6,
+        "row": 8,
+        "cells": [
+          "米川小学校",
+          "744-0271",
+          "下松市下谷441-2",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423656720",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が塩田小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立塩田小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.034164,
+          33.998448
+        ]
+      },
+      "source_ids": [
+        "node/1423656720"
+      ],
+      "municipal": {
+        "number": "B135210002221",
+        "name": "光市立塩田小学校",
+        "address": "山口県光市大字塩田1927-6",
+        "point": [
+          132.03418540896413,
+          33.998659454115405
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 407,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35210",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 23.595,
+        "feature_index_base": 1,
+        "feature_array_index": 406
+      },
+      "closure_record": {
+        "table": 8,
+        "row": 9,
+        "cells": [
+          "塩田小学校",
+          "743-0101",
+          "光市塩田1927-6",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423656380",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が三輪小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立三輪小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.997056,
+          33.97731
+        ]
+      },
+      "source_ids": [
+        "node/1423656380"
+      ],
+      "municipal": {
+        "number": "B135210002230",
+        "name": "光市立三輪小学校",
+        "address": "山口県光市大字三輪264-1",
+        "point": [
+          131.9969515044727,
+          33.97737343445471
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 408,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35210",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 11.941,
+        "feature_index_base": 1,
+        "feature_array_index": 407
+      },
+      "closure_record": {
+        "table": 8,
+        "row": 10,
+        "cells": [
+          "三輪小学校",
+          "743-0102",
+          "光市三輪264-1",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423656931",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が岩田小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立岩田小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.990473,
+          33.984198
+        ]
+      },
+      "source_ids": [
+        "node/1423656931"
+      ],
+      "municipal": {
+        "number": "B135210002249",
+        "name": "光市立岩田小学校",
+        "address": "山口県光市大字岩田193-2",
+        "point": [
+          131.9904730038069,
+          33.98419800053576
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 409,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35210",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 0.0,
+        "feature_index_base": 1,
+        "feature_array_index": 408
+      },
+      "closure_record": {
+        "table": 8,
+        "row": 11,
+        "cells": [
+          "岩田小学校",
+          "743-0103",
+          "光市岩田193-2",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657126",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が束荷小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立束荷小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.006361,
+          34.008834
+        ]
+      },
+      "source_ids": [
+        "node/1423657126"
+      ],
+      "municipal": {
+        "number": "B135210002258",
+        "name": "光市立束荷小学校",
+        "address": "山口県光市大字束荷1301",
+        "point": [
+          132.00630900916326,
+          34.00905053072966
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 410,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35210",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 24.549,
+        "feature_index_base": 1,
+        "feature_array_index": 409
+      },
+      "closure_record": {
+        "table": 8,
+        "row": 12,
+        "cells": [
+          "束荷小学校",
+          "743-0105",
+          "光市束荷1301",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657335",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が神田小学校の2026-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+          "sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立神田小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.135839,
+          34.386831
+        ]
+      },
+      "source_ids": [
+        "node/1423657335"
+      ],
+      "municipal": {
+        "number": "",
+        "source_number": "AA0000000123",
+        "name": "神田小学校",
+        "address": "山口県長門市日置上２１２３番地",
+        "point": [
+          131.1355801,
+          34.38699182
+        ],
+        "phone": "",
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/30d04c49-158c-40e3-8d84-289f0756bc53/resource/a1d3cd25-5823-4224-9ad7-7241ac53b621/download/352110_public_facility.csv",
+        "source_sha256": "736037f893ea83e332f427bc74496f171d002ff2b7bcbf83c06f5b70b87dd015",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/352110_public_facility-a1d3cd25.csv",
+        "row": 124,
+        "source_as_of": "長門市の公共施設一覧です。",
+        "location_kind": "public_named_facility_point",
+        "source_notes": "長門市の公共施設一覧です。",
+        "distance_m": 29.735
+      },
+      "closure_record": {
+        "table": 9,
+        "row": 10,
+        "cells": [
+          "神田小学校",
+          "759-4401",
+          "長門市日置上2123",
+          "廃校（令和8年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423659948",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が大田小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "大田小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3438617,
+          34.2261049
+        ]
+      },
+      "source_ids": [
+        "node/1423659948"
+      ],
+      "municipal": {
+        "number": "B135210002757",
+        "name": "美祢市立大田小学校",
+        "address": "山口県美祢市美東町大田6215",
+        "point": [
+          131.3437977379596,
+          34.22615164570194
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 458,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35213",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 7.849,
+        "feature_index_base": 1,
+        "feature_array_index": 457
+      },
+      "closure_record": {
+        "table": 11,
+        "row": 9,
+        "cells": [
+          "大田小学校",
+          "754-0211",
+          "美祢市美東町大田6215",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660033",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が綾木小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "綾木小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.346913,
+          34.189134
+        ]
+      },
+      "source_ids": [
+        "node/1423660033"
+      ],
+      "municipal": {
+        "number": "B135210002766",
+        "name": "美祢市立綾木小学校",
+        "address": "山口県美祢市美東町綾木2125",
+        "point": [
+          131.34674767215378,
+          34.18910639382536
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 459,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35213",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 15.513,
+        "feature_index_base": 1,
+        "feature_array_index": 458
+      },
+      "closure_record": {
+        "table": 11,
+        "row": 10,
+        "cells": [
+          "綾木小学校",
+          "754-0212",
+          "美祢市美東町綾木2125",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660005",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が淳美小学校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/93f11d0c-ce4a-4239-9462-966c2a039742/resource/5f8292d7-6516-43a8-a5b6-f27fbbb43d6e/download/3101.csv",
+          "sha256": "7ca431a4ee93a394adae0c2e5f6a742755b0cd023e8069162c80a11e4bd8a72b"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "淳美小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.354359,
+          34.160053
+        ]
+      },
+      "source_ids": [
+        "node/1423660005"
+      ],
+      "municipal": {
+        "number": "",
+        "source_number": "0000000010",
+        "name": "美祢市立淳美小学校",
+        "address": "山口県美祢市美東町真名472-3",
+        "point": [
+          131.354315,
+          34.159851
+        ],
+        "phone": "08396-5-0004",
+        "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/93f11d0c-ce4a-4239-9462-966c2a039742/resource/5f8292d7-6516-43a8-a5b6-f27fbbb43d6e/download/3101.csv",
+        "source_sha256": "7ca431a4ee93a394adae0c2e5f6a742755b0cd023e8069162c80a11e4bd8a72b",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/352136_public_facility-5f8292d7.csv",
+        "row": 10,
+        "source_as_of": "美祢市の公共施設一覧です。",
+        "location_kind": "public_named_facility_point",
+        "source_notes": "美祢市の公共施設一覧です。",
+        "distance_m": 22.823
+      },
+      "closure_record": {
+        "table": 11,
+        "row": 11,
+        "cells": [
+          "淳美小学校",
+          "754-0122",
+          "美祢市美東町真名472-3",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657465",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が赤崎小学校・松原分校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "市立赤崎小学校松原分校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1755608,
+          33.9581322
+        ]
+      },
+      "source_ids": [
+        "node/1423657465"
+      ],
+      "municipal": {
+        "number": "B135210001589",
+        "name": "山陽小野田市立赤崎小学校松原分校",
+        "address": "山口県山陽小野田市大字小野田4402",
+        "point": [
+          131.1753764092861,
+          33.958401070739285
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 348,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35216",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 34.396,
+        "feature_index_base": 1,
+        "feature_array_index": 347
+      },
+      "closure_record": {
+        "table": 13,
+        "row": 9,
+        "cells": [
+          "赤崎小学校・松原分校",
+          "756-0887",
+          "山陽小野田市小野田4402",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+        "source_sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660143",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が岩国高等学校・広瀬分校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+          "sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "県立岩国高等学校広瀬分校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9582571,
+          34.2627759
+        ]
+      },
+      "source_ids": [
+        "node/1423660143"
+      ],
+      "municipal": {
+        "number": "D135210000452",
+        "name": "山口県立岩国高等学校広瀬分校",
+        "address": "山口県岩国市錦町広瀬87",
+        "point": [
+          131.95814999124158,
+          34.26286231490603
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 688,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35208",
+        "suspension_code": "0",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 13.756,
+        "feature_index_base": 1,
+        "feature_array_index": 687
+      },
+      "closure_record": {
+        "table": 1,
+        "row": 6,
+        "cells": [
+          "岩国高等学校・広瀬分校",
+          "740-0724",
+          "岩国市錦町広瀬87",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+        "source_sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-highschool-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423660144",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03-31",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "山口県教育委員会の公立学校一覧が山口高等学校・徳佐分校の2025-03-31廃校を明記。旧公的施設固有位置と完全住所で対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（廃校日明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+          "sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02"
+        },
+        {
+          "title": "旧公的学校固有位置・住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "当該学校の廃校を反映。敷地・建物の現在用途や統合先の学校を閉鎖とみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_date_and_named_point_full_address",
+      "baseline_name": "県立山口高校徳佐分校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.723931,
+          34.401173
+        ]
+      },
+      "source_ids": [
+        "node/1423660144"
+      ],
+      "municipal": {
+        "number": "D135210000470",
+        "name": "山口県立山口高等学校徳佐分校",
+        "address": "山口県山口市阿東徳佐中1033-1",
+        "point": [
+          131.7238937101253,
+          34.401119659918535
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 689,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35203",
+        "suspension_code": "0",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 6.847,
+        "feature_index_base": 1,
+        "feature_array_index": 688
+      },
+      "closure_record": {
+        "table": 1,
+        "row": 30,
+        "cells": [
+          "山口高等学校・徳佐分校",
+          "759-1512",
+          "山口市阿東徳佐中1033-1",
+          "廃校（令和7年3月31日）"
+        ],
+        "source_url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+        "source_sha256": "f590f2eb71b90323acdd2973511dfb4768a9818bc45db786ac39b09ce8b82f02",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/pref-highschool-20260401.html",
+        "source_as_of": "2026-04-01"
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423656743",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "山口県教育委員会の2026年4月1日現在の公立学校一覧が大向小学校を休校と明記。学校固有位置・完全住所と現行学校コードで対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（休校明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "文部科学省 学校コード一覧2026年5月1日暫定",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "国土交通省・自治体の学校固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "休校開始日は資料に明記されていないため未特定。県一覧の基準日を休校開始日にしません。",
+        "当該学校の休校を反映。閉校・建物撤去・土地用途変更とはみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_suspended_status_and_named_point_full_address",
+      "baseline_name": "市立大向小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.818485,
+          34.18145
+        ]
+      },
+      "source_ids": [
+        "node/1423656743"
+      ],
+      "municipal": {
+        "number": "B135210000946",
+        "name": "周南市立大向小学校",
+        "address": "山口県周南市大字大向1652-1",
+        "point": [
+          131.81844166926783,
+          34.18147100287876
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 284,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35215",
+        "suspension_code": "9",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 4.62,
+        "feature_index_base": 1,
+        "feature_array_index": 283
+      },
+      "mext": {
+        "number": "B135210000946",
+        "name": "周南市立大向小学校",
+        "address": "山口県周南市大字大向１６５２－１",
+        "school_type": "B1(小学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13320
+      },
+      "original_public_code": null,
+      "suspension_record": {
+        "table": 12,
+        "row": 14,
+        "cells": [
+          "大向小学校",
+          "745-0241",
+          "周南市大向1652-1",
+          "（休校）"
+        ],
+        "source": {
+          "path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+          "retrieved_at": "2026-09-28T00:16:52.454699+00:00",
+          "source_as_of": "2026-04-01",
+          "title": "pref-elementary-20260401"
+        }
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657271",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "山口県教育委員会の2026年4月1日現在の公立学校一覧が波野小学校を休校と明記。学校固有位置・完全住所と現行学校コードで対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（休校明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "文部科学省 学校コード一覧2026年5月1日暫定",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "国土交通省・自治体の学校固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "休校開始日は資料に明記されていないため未特定。県一覧の基準日を休校開始日にしません。",
+        "当該学校の休校を反映。閉校・建物撤去・土地用途変更とはみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_suspended_status_and_named_point_full_address",
+      "baseline_name": "市立波野小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.029501,
+          34.25655
+        ]
+      },
+      "source_ids": [
+        "node/1423657271"
+      ],
+      "municipal": {
+        "number": "B135210002061",
+        "name": "岩国市立波野小学校",
+        "address": "山口県岩国市本郷町波野655",
+        "point": [
+          132.02979259716335,
+          34.25653933558629
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 391,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35208",
+        "suspension_code": "9",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 26.826,
+        "feature_index_base": 1,
+        "feature_array_index": 390
+      },
+      "mext": {
+        "number": "B135210002061",
+        "name": "岩国市立波野小学校",
+        "address": "山口県岩国市本郷町波野６５５",
+        "school_type": "B1(小学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13432
+      },
+      "original_public_code": null,
+      "suspension_record": {
+        "table": 7,
+        "row": 28,
+        "cells": [
+          "波野小学校",
+          "740-0603",
+          "岩国市本郷町波野655",
+          "（休校）"
+        ],
+        "source": {
+          "path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+          "retrieved_at": "2026-09-28T00:16:52.454699+00:00",
+          "source_as_of": "2026-04-01",
+          "title": "pref-elementary-20260401"
+        }
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657324",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "山口県教育委員会の2026年4月1日現在の公立学校一覧が相島中学校を休校と明記。学校固有位置・完全住所と現行学校コードで対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（休校明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html",
+          "sha256": "411ab73ab1319575da7522669b5835192556ed457d10b4ef01c058e66b20f111"
+        },
+        {
+          "title": "文部科学省 学校コード一覧2026年5月1日暫定",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "国土交通省・自治体の学校固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "休校開始日は資料に明記されていないため未特定。県一覧の基準日を休校開始日にしません。",
+        "当該学校の休校を反映。閉校・建物撤去・土地用途変更とはみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_suspended_status_and_named_point_full_address",
+      "baseline_name": "市立相島中学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2822575,
+          34.5033208
+        ]
+      },
+      "source_ids": [
+        "node/1423657324"
+      ],
+      "municipal": {
+        "number": "C135210000454",
+        "name": "萩市立相島中学校",
+        "address": "山口県萩市相島9",
+        "point": [
+          131.28193433492214,
+          34.50338000608987
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 533,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35204",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 30.336,
+        "feature_index_base": 1,
+        "feature_array_index": 532
+      },
+      "mext": {
+        "number": "C135210000454",
+        "name": "萩市立相島中学校",
+        "address": "山口県萩市相島９番地",
+        "school_type": "C1(中学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13579
+      },
+      "original_public_code": null,
+      "suspension_record": {
+        "table": 4,
+        "row": 6,
+        "cells": [
+          "相島中学校",
+          "758-0001",
+          "萩市相島9",
+          "（休校）"
+        ],
+        "source": {
+          "path": "outputs/facility-registry-008b-20260928/schools/pref-juniorhigh-20260401.html",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26141.html",
+          "sha256": "411ab73ab1319575da7522669b5835192556ed457d10b4ef01c058e66b20f111",
+          "retrieved_at": "2026-09-28T00:16:52.642693+00:00",
+          "source_as_of": "2026-04-01",
+          "title": "pref-juniorhigh-20260401"
+        }
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657325",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "山口県教育委員会の2026年4月1日現在の公立学校一覧が相島小学校を休校と明記。学校固有位置・完全住所と現行学校コードで対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（休校明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "文部科学省 学校コード一覧2026年5月1日暫定",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "国土交通省・自治体の学校固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "休校開始日は資料に明記されていないため未特定。県一覧の基準日を休校開始日にしません。",
+        "当該学校の休校を反映。閉校・建物撤去・土地用途変更とはみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_suspended_status_and_named_point_full_address",
+      "baseline_name": "市立相島小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.281949,
+          34.5033562
+        ]
+      },
+      "source_ids": [
+        "node/1423657325"
+      ],
+      "municipal": {
+        "number": "B135210000802",
+        "name": "萩市立相島小学校",
+        "address": "山口県萩市相島9",
+        "point": [
+          131.28188058768748,
+          34.50316961348582
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 270,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35204",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 21.674,
+        "feature_index_base": 1,
+        "feature_array_index": 269
+      },
+      "mext": {
+        "number": "B135210000802",
+        "name": "萩市立相島小学校",
+        "address": "山口県萩市相島９",
+        "school_type": "B1(小学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13306
+      },
+      "original_public_code": null,
+      "suspension_record": {
+        "table": 4,
+        "row": 11,
+        "cells": [
+          "相島小学校",
+          "758-0001",
+          "萩市相島9",
+          "（休校）"
+        ],
+        "source": {
+          "path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+          "retrieved_at": "2026-09-28T00:16:52.454699+00:00",
+          "source_as_of": "2026-04-01",
+          "title": "pref-elementary-20260401"
+        }
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423657486",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "山口県教育委員会の2026年4月1日現在の公立学校一覧が鈴野川小学校を休校と明記。学校固有位置・完全住所と現行学校コードで対象を特定しました。",
+      "sources": [
+        {
+          "title": "山口県教育委員会 公立学校一覧（休校明記）",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc"
+        },
+        {
+          "title": "文部科学省 学校コード一覧2026年5月1日暫定",
+          "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+          "sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6"
+        },
+        {
+          "title": "国土交通省・自治体の学校固有位置と完全住所",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+          "sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7"
+        }
+      ],
+      "limits": [
+        "休校開始日は資料に明記されていないため未特定。県一覧の基準日を休校開始日にしません。",
+        "当該学校の休校を反映。閉校・建物撤去・土地用途変更とはみなしません。",
+        "元の座標・施設ID・出典を保持。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_suspended_status_and_named_point_full_address",
+      "baseline_name": "市立鈴野川小学校",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.684095,
+          34.549574
+        ]
+      },
+      "source_ids": [
+        "node/1423657486"
+      ],
+      "municipal": {
+        "number": "B135210002971",
+        "name": "萩市立鈴野川小学校",
+        "address": "山口県萩市大字鈴野川1982",
+        "point": [
+          131.68407382323792,
+          34.5495436120179
+        ],
+        "phone": "",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P29/P29-23/P29-23_35_GML.zip",
+        "source_sha256": "b6f245a4a943cb126dbbcc9489ad1d6a4c704572c8fd8d70eda1525e574668d7",
+        "source_path": "outputs/facility-registry-008b-20260928/schools/P29-23_35.geojson",
+        "source_member": "P29-23_35_GML/P29-23_35.geojson",
+        "member_sha256": "b7eac078eb74a0f2cdcb97415b2aae62f8246709f49dab1284e07ae2f7c12c6c",
+        "feature_index": 480,
+        "source_as_of": "2023",
+        "location_kind": "national_school_code_named_point",
+        "administrative_code": "35204",
+        "suspension_code": "1",
+        "campus_code": "00",
+        "campus_note": null,
+        "distance_m": 3.896,
+        "feature_index_base": 1,
+        "feature_array_index": 479
+      },
+      "mext": {
+        "number": "B135210002971",
+        "name": "萩市立鈴野川小学校",
+        "address": "山口県萩市大字鈴野川１９８２",
+        "school_type": "B1(小学校)",
+        "source_path": "data-sources/facility-bulk-review-20260924/mext-school-code-west-2026-05-01.csv",
+        "source_url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+        "source_sha256": "8edbca9ef1b0958932ea1c6a292f93778a791a4f0f6fbae7a197945158aba7e6",
+        "source_as_of": "2026-05-01",
+        "row": 13523
+      },
+      "original_public_code": null,
+      "suspension_record": {
+        "table": 4,
+        "row": 19,
+        "cells": [
+          "鈴野川小学校",
+          "759-3303",
+          "萩市鈴野川1982",
+          "（休校）"
+        ],
+        "source": {
+          "path": "outputs/facility-registry-008b-20260928/schools/pref-elementary-20260401.html",
+          "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+          "sha256": "3caf256438cd998635fd195286bdd0b79eed8eaf5f9ee5f1d80fe5b60ba13cdc",
+          "retrieved_at": "2026-09-28T00:16:52.454699+00:00",
+          "source_as_of": "2026-04-01",
+          "title": "pref-elementary-20260401"
+        }
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423656332",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": "2018-07-09",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "日本郵便の告知で2018年7月9日からの一時閉鎖を確認し、2026年8月31日現在の届出一覧にも一時閉鎖と記載されています。通常の施設候補から除外します。",
+      "sources": [
+        {
+          "title": "日本郵便 一時閉鎖：川越郵便局",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3512",
+          "sha256": "9cf3a814e3d83873b376c1024f78d5de3bdb36921f9002701ccef493559974ea"
+        },
+        {
+          "title": "日本郵便 郵便局および会社の営業所の一覧（2026年8月31日）",
+          "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/pdf/ichiran.pdf",
+          "sha256": "feeb627aa70f3c2957af189ae150f0e9b560ef5c7282a445bbafcb8fd8305866"
+        },
+        {
+          "title": "日本郵便 川越郵便局 施設固有位置",
+          "url": "https://map.japanpost.jp/p/search/dtl/300155168000/",
+          "sha256": "e1a50e4bd72652328d00754e0faeec47ca9d65072bc0f6daae326814b563aa1b"
+        }
+      ],
+      "limits": [
+        "一時閉鎖を恒久的な廃止とみなさない。",
+        "現在の地図掲載は営業再開の証拠とみなさない。8月31日届出の一時閉鎖と9月28日の公式告知確認を併記する。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_temporary_closure_notice_current_registry_status_and_unique_office_coordinate_within_50m",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.00422,
+          34.126681
+        ]
+      },
+      "source_ids": [
+        "node/1423656332"
+      ],
+      "registry_row": {
+        "number": "551680",
+        "name": "川越郵便局",
+        "address": "山口県岩国市周東町獺越２１２４－１",
+        "status": "一時閉鎖",
+        "page": 252,
+        "raw": "13083 551680 川越郵便局 山口県岩国市周東町獺越２１２４－１ ○ ○ ○ ○ ○ ○ 一時閉鎖",
+        "url": "https://map.japanpost.jp/p/search/dtl/300155168000/"
+      },
+      "official_detail": {
+        "number": "551680",
+        "facility_id": "300155168000",
+        "name": "川越郵便局",
+        "address": "山口県岩国市周東町獺越２１２４−１",
+        "longitude": 132.0043706,
+        "latitude": 34.1263292,
+        "phones": [
+          {
+            "context": "郵便サービスについて:0827-86-0235",
+            "phone": "0827-86-0235"
+          },
+          {
+            "context": "貯金サービスについて:0827-86-0235",
+            "phone": "0827-86-0235"
+          },
+          {
+            "context": "保険サービスについて:0827-86-0235",
+            "phone": "0827-86-0235"
+          },
+          {
+            "context": "郵便サービスについて:0827-86-0235",
+            "phone": "0827-86-0235"
+          },
+          {
+            "context": ":0827-86-0235",
+            "phone": "0827-86-0235"
+          },
+          {
+            "context": ":0827-86-0235",
+            "phone": "0827-86-0235"
+          }
+        ],
+        "source_url": "https://map.japanpost.jp/p/search/dtl/300155168000/",
+        "source_file": "official-details-redacted/551680.html",
+        "source_sha256": "50a04e0440111130ba6374409a14a5e34f6c52c23b5d9156bf3a75b77cf26fa7",
+        "raw_sha256": "e1a50e4bd72652328d00754e0faeec47ca9d65072bc0f6daae326814b563aa1b",
+        "temporary_closure": false,
+        "raw_title": "川越郵便局&nbsp;",
+        "distance_m": 41.502,
+        "baseline_phone_matches": [
+          "+81-827-86-0235"
+        ],
+        "baseline_address_matches": false
+      },
+      "notice": {
+        "title": "一時閉鎖：川越郵便局（山口県）",
+        "date": "2018-07-09",
+        "url": "https://www.post.japanpost.jp/newsrelease/storeinformation/detail/index.php?id=3512",
+        "file": "events/3512.html",
+        "sha256": "9cf3a814e3d83873b376c1024f78d5de3bdb36921f9002701ccef493559974ea",
+        "bytes": 72401,
+        "excerpt": "一時閉鎖：川越郵便局（山口県）\n川越郵便局を一時閉鎖いたします。\nお客さまにはご不便をおかけいたしますが、一時閉鎖中は周辺の郵便局や社員の訪問等によるサービスをご利用いただきますようお願い申し上げます。\n名称\n川越郵便局（かわごえゆうびんきょく）\n住所\n〒742-0422\n山口県岩国市周東町獺越２１２４－１\n取扱業務\n郵便・貯金・為替・振替・生命保険・ATM\n実施年月日\n2018年7月9日",
+        "future": false
+      }
+    }
+  },
+  {
+    "id": "osm-node-1423659247",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-03-24",
+      "checked_at": "2026-09-28",
+      "date_precision": "day",
+      "summary": "柳井市広報が、みどりが丘図書館への移転に伴う旧柳井図書館の2024年3月24日閉館を明記。",
+      "sources": [
+        {
+          "title": "自治体・図書館公式の移転・閉館案内",
+          "url": "https://www.city-yanai.jp/site/koho-yanai/koho240111txt01.html",
+          "sha256": "8b73680230ca7a90a47cd287bc98648a04e1d44060ef64f1080c8dbbcedca338"
+        },
+        {
+          "title": "県内公立図書館一覧（現在地）",
+          "url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+          "sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910"
+        },
+        {
+          "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+          "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+        }
+      ],
+      "limits": [
+        "旧地点の図書館機能の閉館を反映しています。移転先の図書館や旧建物全体を閉鎖とはみなしません。",
+        "元の座標・施設ID・出典を保持。移転先の入口座標は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_relocation_or_closure_old_named_point_current_different_full_address",
+      "baseline_name": "柳井市立柳井図書館",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.110347,
+          33.971249
+        ]
+      },
+      "source_ids": [
+        "node/1423659247"
+      ],
+      "municipal": {
+        "number": "cf97",
+        "name": "柳井市立柳井図書館",
+        "address": "柳井市柳井3670-1",
+        "point": [
+          132.110347,
+          33.971249
+        ],
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/P27-data.xml",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+        "source_sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4",
+        "source_title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+        "source_as_of": "2013",
+        "member_sha256": "bf4f4d8e37e75c0084a7996e5fa5e53e204ef3424425856ee0a4282a90fac1f2",
+        "row": "cf97",
+        "facility_type": "03003",
+        "city": "柳井市",
+        "phone": ""
+      },
+      "current": {
+        "name": "柳井市立柳井図書館",
+        "address": "柳井市柳井3776番地2",
+        "number": "pref-library:34",
+        "row": 67,
+        "raw": [
+          {
+            "type": "dt",
+            "text": "柳井市立柳井図書館"
+          },
+          {
+            "type": "dd",
+            "text": "〒742-0021,所在地:柳井市柳井3776番地2,電話:0820-22-0628,FAX:0820-22-7599"
+          }
+        ],
+        "status": "listed",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/yamaguchi-public-libraries-current.html",
+        "source_sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910",
+        "source_title": "yamaguchi-public-libraries-current"
+      },
+      "notice": {
+        "path": "outputs/facility-registry-008b-20260928/public-facilities/yanai-old-library-closure.html",
+        "url": "https://www.city-yanai.jp/site/koho-yanai/koho240111txt01.html",
+        "sha256": "8b73680230ca7a90a47cd287bc98648a04e1d44060ef64f1080c8dbbcedca338",
+        "bytes": 39020,
+        "retrieved_at": "2026-09-28"
+      },
+      "distance_m": 0.0
+    }
+  },
+  {
+    "id": "osm-node-1423659842",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "checked_at": "2026-09-28",
+      "date_precision": "unknown",
+      "summary": "公式沿革で玖珂図書館が2020年10月5日に総合センター奏へ移ったことを確認。旧所在地の図書館登録を通常候補から除外。旧館の最終開館日は未確認。",
+      "sources": [
+        {
+          "title": "自治体・図書館公式の移転・閉館案内",
+          "url": "https://www.library.iwakuni.yamaguchi.jp/?page_id=23704",
+          "sha256": "ee15d767d246441d5765c3b91f6e5b25ac35ce491018045cb772cfe81682ca7f"
+        },
+        {
+          "title": "県内公立図書館一覧（現在地）",
+          "url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+          "sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910"
+        },
+        {
+          "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+          "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+        }
+      ],
+      "limits": [
+        "旧地点の図書館機能の閉館を反映しています。移転先の図書館や旧建物全体を閉鎖とはみなしません。",
+        "元の座標・施設ID・出典を保持。移転先の入口座標は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_relocation_or_closure_old_named_point_current_different_full_address",
+      "baseline_name": "岩国市立玖珂図書館",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.084267,
+          34.091611
+        ]
+      },
+      "source_ids": [
+        "node/1423659842"
+      ],
+      "municipal": {
+        "number": "cf89",
+        "name": "岩国市玖珂図書館",
+        "address": "岩国市玖珂町4961",
+        "point": [
+          132.084267,
+          34.091611
+        ],
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/P27-data.xml",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+        "source_sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4",
+        "source_title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+        "source_as_of": "2013",
+        "member_sha256": "bf4f4d8e37e75c0084a7996e5fa5e53e204ef3424425856ee0a4282a90fac1f2",
+        "row": "cf89",
+        "facility_type": "03003",
+        "city": "岩国市",
+        "phone": ""
+      },
+      "current": {
+        "name": "岩国市玖珂図書館",
+        "address": "岩国市玖珂町4933-2",
+        "number": "pref-library:26",
+        "row": 51,
+        "raw": [
+          {
+            "type": "dt",
+            "text": "岩国市玖珂図書館"
+          },
+          {
+            "type": "dd",
+            "text": "〒742-0392,所在地:岩国市玖珂町4933-2,電話:0827-82-4444,FAX:0827-82-2011"
+          }
+        ],
+        "status": "listed",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/yamaguchi-public-libraries-current.html",
+        "source_sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910",
+        "source_title": "yamaguchi-public-libraries-current"
+      },
+      "notice": {
+        "path": "outputs/facility-registry-008b-20260928/public-facilities/iwakuni-kuga-relocation.html",
+        "url": "https://www.library.iwakuni.yamaguchi.jp/?page_id=23704",
+        "sha256": "ee15d767d246441d5765c3b91f6e5b25ac35ce491018045cb772cfe81682ca7f",
+        "retrieved_at": "2026-09-28T09:22:52.1149897+09:00",
+        "bytes": 155552
+      },
+      "distance_m": 0.0
+    }
+  },
+  {
+    "id": "osm-node-1423660825",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "checked_at": "2026-09-28",
+      "date_precision": "unknown",
+      "summary": "萩市の2026年4月10日発表が、明木図書館の2016年4月の移転新築を明記。旧所在地の登録を通常候補から除外。旧館の最終開館日は未確認。",
+      "sources": [
+        {
+          "title": "自治体・図書館公式の移転・閉館案内",
+          "url": "https://www.city.hagi.lg.jp/uploaded/attachment/30057.pdf",
+          "sha256": "879353567f3cad73cf86619f786ab7342e6e475b74a804aee2eff5c225b37fed"
+        },
+        {
+          "title": "県内公立図書館一覧（現在地）",
+          "url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+          "sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910"
+        },
+        {
+          "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+          "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+        }
+      ],
+      "limits": [
+        "旧地点の図書館機能の閉館を反映しています。移転先の図書館や旧建物全体を閉鎖とはみなしません。",
+        "元の座標・施設ID・出典を保持。移転先の入口座標は未確認です。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_relocation_or_closure_old_named_point_current_different_full_address",
+      "baseline_name": "萩市立明木図書館",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.412256,
+          34.342374
+        ]
+      },
+      "source_ids": [
+        "node/1423660825"
+      ],
+      "municipal": {
+        "number": "cf83",
+        "name": "萩市立明木図書館",
+        "address": "萩市大字明木2939",
+        "point": [
+          131.412256,
+          34.342374
+        ],
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/P27-data.xml",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+        "source_sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4",
+        "source_title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+        "source_as_of": "2013",
+        "member_sha256": "bf4f4d8e37e75c0084a7996e5fa5e53e204ef3424425856ee0a4282a90fac1f2",
+        "row": "cf83",
+        "facility_type": "03003",
+        "city": "萩市",
+        "phone": ""
+      },
+      "current": {
+        "name": "萩市立明木図書館",
+        "address": "萩市大字明木3039",
+        "number": "pref-library:19",
+        "row": 37,
+        "raw": [
+          {
+            "type": "dt",
+            "text": "萩市立明木図書館"
+          },
+          {
+            "type": "dd",
+            "text": "〒754-0411,所在地:萩市大字明木3039,電話:0838-55-0314,FAX:0838-55-0314"
+          }
+        ],
+        "status": "listed",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_url": "https://library.pref.yamaguchi.lg.jp/link/link-public/",
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/yamaguchi-public-libraries-current.html",
+        "source_sha256": "8ad848096cfa55dfc87eb25a53e29cb37e5c693fee84cd307b77ee38a31a9910",
+        "source_title": "yamaguchi-public-libraries-current"
+      },
+      "notice": {
+        "path": "outputs/facility-registry-008b-20260928/public-facilities/hagi-akiragi-relocation-20260410.pdf",
+        "url": "https://www.city.hagi.lg.jp/uploaded/attachment/30057.pdf",
+        "sha256": "879353567f3cad73cf86619f786ab7342e6e475b74a804aee2eff5c225b37fed",
+        "retrieved_at": "2026-09-28T09:22:52.5000216+09:00",
+        "bytes": 1493425
+      },
+      "distance_m": 0.0
+    }
+  },
+  {
+    "id": "osm-node-1423655665",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2003-10",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "山口市立図書館年報の略年表で平成15年10月の児童図書館閉館を確認。市教育資料が旧図書館の後利用と湯田温泉五丁目2番13号を結び付けています。",
+      "sources": [
+        {
+          "title": "山口市立図書館年報2021年度 PDF26頁（印刷23頁）",
+          "url": "https://www.lib-yama.jp/about/nenpou/nenpou03.pdf",
+          "sha256": "dc6656d192641781189c17a2503f5f9fe3f3d14a3c318ec52dba4e78e1537bff"
+        },
+        {
+          "title": "令和4年度山口市教育要覧 PDF38頁（教育36頁）",
+          "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/79344.pdf",
+          "sha256": "21f4c90721e7b10c648c8bc3195725159d481f0021b83b639338275373839cb3"
+        },
+        {
+          "title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+          "sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4"
+        }
+      ],
+      "limits": [
+        "年月だけを記録し閉館日を推定していません。",
+        "旧児童図書館の閉館であり、建物や後利用施設、中央図書館の閉鎖を意味しません。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_closure_month_and_named_point_full_address_bridge",
+      "baseline_name": "山口市立児童図書館",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.456958,
+          34.167932
+        ]
+      },
+      "source_ids": [
+        "node/1423655665"
+      ],
+      "municipal": {
+        "number": "cf77",
+        "name": "山口市立児童図書館",
+        "address": "山口市湯田温泉5-2-13",
+        "point": [
+          131.456958,
+          34.167932
+        ],
+        "source_path": "outputs/facility-registry-008b-20260928/public-facilities/P27-data.xml",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P27/P27-13/P27-13_35.zip",
+        "source_sha256": "cfb1bfdcc6df9520bf2c6d7481f8fb3f82a61b71001e9ff510228ed6aaf142f4",
+        "source_title": "国土交通省 文化施設位置2013年度（同一施設の位置照合のみ）",
+        "source_as_of": "2013",
+        "member_sha256": "bf4f4d8e37e75c0084a7996e5fa5e53e204ef3424425856ee0a4282a90fac1f2",
+        "row": "cf77",
+        "facility_type": "03003",
+        "city": "山口市",
+        "phone": ""
+      },
+      "distance_m": 0.0,
+      "closure_record": {
+        "source_path": "outputs/facility-registry-008b-20260928/public-supplement/yamaguchi-library-2021.pdf",
+        "source_url": "https://www.lib-yama.jp/about/nenpou/nenpou03.pdf",
+        "source_sha256": "dc6656d192641781189c17a2503f5f9fe3f3d14a3c318ec52dba4e78e1537bff",
+        "source_title": "yamaguchi-library-2021.pdf",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "page": 26,
+        "printed_page": 23,
+        "year_label": "平成15年",
+        "month_label": "10月",
+        "text": "山口市立児童図書館閉館",
+        "visual_checked": true
+      },
+      "address_bridge": {
+        "source_path": "outputs/facility-registry-008b-20260928/public-supplement/yamaguchi-education-2022.pdf",
+        "source_url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/79344.pdf",
+        "source_sha256": "21f4c90721e7b10c648c8bc3195725159d481f0021b83b639338275373839cb3",
+        "source_title": "yamaguchi-education-2022.pdf",
+        "source_as_of": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "page": 38,
+        "printed_page": "教育36",
+        "text": "市立児童図書館閉館による後利用として同センター2階を使用。施設所在地 山口市湯田温泉五丁目2番13号",
+        "visual_checked": true
+      }
+    }
+  },
+  {
+    "id": "osm-node-3714409928",
+    "changes": {},
+    "review": {
+      "status": "temporarily_closed",
+      "event": "temporary_closure",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の施設専用ページで「休業中」の表示を確認。元の電話・固有名称・施設点を照合しました。",
+      "sources": [
+        {
+          "title": "運営者公式店舗資料",
+          "url": "https://www.hotelyokikan.jp/totoro/",
+          "sha256": "a7120f64014f965d5274206ec6cefece811c9e79e401e7dfd82c2e98a637bfc0"
+        },
+        {
+          "title": "公式指定施設地図の同CIDレコード",
+          "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62703.335424610355!2d130.97304223277612!3d34.31386009229812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x640bf6dc4288ab31!2z5qWK6LK06aSo5Yil6I2YIOOBqOOBqOOCjeOBrumHjA!5e0!3m2!1sja!2s!4v1642476377951!5m2!1sja!2s",
+          "sha256": "e90becba3b5a54a94cc36e50ac984d111e77aacbf0c0c6647e3ee7349e6f2593"
+        }
+      ],
+      "limits": [
+        "休業開始日の明記は未確認。永久閉鎖とみなさない。",
+        "元住所末尾119と公式1199に差があるが、元電話と固有名称・位置を照合。住所や座標は変更しない。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_visible_temporary_closure_same_original_phone_and_specific_named_place_within_50m",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.023069,
+          34.3374013
+        ]
+      },
+      "source_ids": [
+        "node/3714409928"
+      ],
+      "baseline_phone": [
+        "+81-837-32-1597"
+      ],
+      "official_phone": "0837-32-1597",
+      "visible_notice": "休業中",
+      "named_map": {
+        "cid": "0x35436bcb6f8fc599:0x640bf6dc4288ab31",
+        "name": "〒759-4505 山口県長門市楊貴館別荘 ととろの里 油谷伊上岡1199",
+        "coordinates": [
+          131.0230433,
+          34.3374262
+        ],
+        "source_file": "osm-node-3714409928-map.html",
+        "source_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62703.335424610355!2d130.97304223277612!3d34.31386009229812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x640bf6dc4288ab31!2z5qWK6LK06aSo5Yil6I2YIOOBqOOBqOOCjeOBrumHjA!5e0!3m2!1sja!2s!4v1642476377951!5m2!1sja!2s",
+        "source_sha256": "e90becba3b5a54a94cc36e50ac984d111e77aacbf0c0c6647e3ee7349e6f2593"
+      },
+      "distance_m": 3.638
+    }
+  },
+  {
+    "id": "osm-node-5049891345",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "運営者の移転報告で旧花畠本店から児玉町への移転を確認。旧支店名と元の電話が一致するため旧所在地を営業終了として扱います。旧店の最終営業日は不明です。",
+      "sources": [
+        {
+          "title": "公式移転記事（2025年5月29日）",
+          "url": "https://miltoncoffee.com/blogs/shop-blog/shop_relocated20250529",
+          "sha256": "9c62e71f4eaff395199bca8f5650c8d8e44db2faa83eac3d92d740573cb1b413"
+        },
+        {
+          "title": "公式店舗案内",
+          "url": "https://miltoncoffee.com/pages/shop_information",
+          "sha256": "9349c09458c1a2ab22e8d41c3a4a11a8a027a5141aca73ec78bc0afb13b12127"
+        }
+      ],
+      "limits": [
+        "2025-04-25 は新店開業日であり旧店最終営業日に流用しない。旧店最終日は不明。",
+        "新店の追加・座標は別管理。旧座標を新店へ移用しない。"
+      ]
+    },
+    "evidence": {
+      "method": "explicit_official_relocation_old_branch_and_original_phone_match",
+      "baseline_name": "ミルトンコーヒーロースタリー",
+      "baseline_branch": [
+        "花畠店"
+      ],
+      "baseline_phone": [
+        "+81 120 56 3610"
+      ],
+      "baseline_address": "周南市花畠町1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8094305,
+          34.058911
+        ]
+      },
+      "source_ids": [
+        "node/5049891345"
+      ],
+      "official_phone": "0120-56-3610",
+      "relocation_excerpt": "新店舗は、旧花畠本店から約700mほど離れた児玉町にあります。",
+      "new_opening_excerpt": "2025年4月25日 移転オープン"
+    }
+  },
+  {
+    "id": "osm-node-13200097026",
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-12-06",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "光浦醸造の2025年12月8日付告知が、ベーカリーebb&flowの店舗型パン屋としての営業を2025年12月6日に終了したと明記しています。",
+      "sources": [
+        {
+          "title": "mitsuura-closure-20251208",
+          "url": "https://mitsuura.jp/wp/20251208-2/",
+          "sha256": "e02bc08de4d9707918bfdd61eed945e0bc4b4bf245fa43ef9caa56120644021f"
+        },
+        {
+          "title": "ebbflow",
+          "url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "sha256": "ff751a63c263bc8ed0eaaa91b26c6bb4c9ebe6141c9fdc27d16e8ca1da6b7670"
+        },
+        {
+          "title": "mitsuura-access",
+          "url": "https://mitsuura.jp/wp/?page_id=13472",
+          "sha256": "892a51b871a90570cd7c40b5ffa0e39a1f5c5b8b26e2866ed3e5c6781071f3ab"
+        },
+        {
+          "title": "mitsuura-home",
+          "url": "https://mitsuura.jp/wp/",
+          "sha256": "06ce1d2aea823e03c4abdc9cab308ac567a1a41a3980dc8f7c6ab49045c7cebc"
+        }
+      ],
+      "limits": [
+        "製造事業、オンライン販売、光浦醸造全社の閉業を意味しない。",
+        "告知内のショップ再開や不定期販売は予定の記述であり、実際の再開を確認したものではない。告知には2025年1月下旬以降という前後関係不明な記載があるため補正・推測していない。",
+        "アクセスページの旧営業時間より、2025年12月8日の明示的な終了告知を優先する。",
+        "地図表示中心は採用しない。元の施設固有URLで同一店舗を識別し、既存ID・位置を保持する。"
+      ]
+    },
+    "evidence": {
+      "method": "original_facility_specific_official_url_and_explicit_operator_closure",
+      "baseline_name": "光浦醸造ベーカリーebb&flow",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4905284,
+          34.0529205
+        ]
+      },
+      "source_ids": [
+        "node/13200097026"
+      ],
+      "original_website": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+      "official_address": "山口県防府市大字台道3531-4",
+      "closure": {
+        "effective_at": "2025-12-06",
+        "published_at": "2025-12-08",
+        "scope": "店舗型パン屋としての営業終了",
+        "explicit_text": "2025年12月6日をもって、光浦醸造ベーカリー ebb&flow は、店舗型パン屋としての営業を終了いたしました。"
+      },
+      "identity_basis": "元のwebsiteは当該パン屋専用 /wp/ebb_flow_bakery/。同じ運営者のホームページが専用紹介と日付付き閉店告知を直接リンクし、閉店記事と店舗住所ページも専用紹介へリンク。単なる企業トップURL一致ではない。",
+      "links": [
+        {
+          "source": "mitsuura-closure-20251208",
+          "target_url": "https://mitsuura.jp/wp/",
+          "anchor_text": ""
+        },
+        {
+          "source": "mitsuura-closure-20251208",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "/ ebb＆flowについて /"
+        },
+        {
+          "source": "mitsuura-closure-20251208",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "パン屋について"
+        },
+        {
+          "source": "ebbflow",
+          "target_url": "https://mitsuura.jp/wp/",
+          "anchor_text": ""
+        },
+        {
+          "source": "ebbflow",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "/ ebb＆flowについて /"
+        },
+        {
+          "source": "ebbflow",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "パン屋について"
+        },
+        {
+          "source": "mitsuura-access",
+          "target_url": "https://mitsuura.jp/wp/",
+          "anchor_text": ""
+        },
+        {
+          "source": "mitsuura-access",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "/ ebb＆flowについて /"
+        },
+        {
+          "source": "mitsuura-access",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "パン屋について"
+        },
+        {
+          "source": "mitsuura-home",
+          "target_url": "https://mitsuura.jp/wp/",
+          "anchor_text": ""
+        },
+        {
+          "source": "mitsuura-home",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "/ ebb＆flowについて /"
+        },
+        {
+          "source": "mitsuura-home",
+          "target_url": "https://mitsuura.jp/wp/ebb_flow_bakery/",
+          "anchor_text": "パン屋について"
+        },
+        {
+          "source": "mitsuura-home",
+          "target_url": "https://mitsuura.jp/wp/20251208-2/",
+          "anchor_text": ""
+        },
+        {
+          "source": "mitsuura-home",
+          "target_url": "https://mitsuura.jp/wp/20251208-2/",
+          "anchor_text": "Read More"
+        }
+      ]
+    }
+  }
+]

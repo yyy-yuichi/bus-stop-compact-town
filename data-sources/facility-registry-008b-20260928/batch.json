@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-28",
+  "baseline_head": "db68c8bbd9059021c0c2d65acdde22d5e3daaa7b",
+  "previous_checked_at": "2026-09-28",
+  "previous_overlay_sha256": "4799db5430c33ba27075ee2e73eb3533401fddd9a512a74b7ac10a02fc1727c4",
+  "baseline_sha256": {
+    "public/data/shopping.geojson": "94c16385003f50398cabea864d11daf176b066809df88a94dce667660dfa0588",
+    "public/data/civic-facilities.geojson": "e3fa1ebe59e0ab63ee4f670f4301ef5e91a1422e15cbfd6c6b63b42936bb8137"
+  },
+  "candidates": 5033,
+  "registry_reviews": 1229,
+  "freshness_events": 25,
+  "additions": 0,
+  "corrections": 37,
+  "verified_no_change": 1217,
+  "held": 3779,
+  "groups": [
+    {
+      "group": "schools",
+      "candidates": 571,
+      "registry_reviews": 301,
+      "events": 17,
+      "corrections": 17,
+      "verified_no_change": 301,
+      "held": 253
+    },
+    {
+      "group": "postoffice",
+      "candidates": 417,
+      "registry_reviews": 353,
+      "events": 1,
+      "corrections": 1,
+      "verified_no_change": 353,
+      "held": 63
+    },
+    {
+      "group": "public",
+      "candidates": 978,
+      "registry_reviews": 192,
+      "events": 4,
+      "corrections": 10,
+      "verified_no_change": 186,
+      "held": 782
+    },
+    {
+      "group": "childcare",
+      "candidates": 326,
+      "registry_reviews": 76,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 76,
+      "held": 250
+    },
+    {
+      "group": "pharmacy",
+      "candidates": 40,
+      "registry_reviews": 13,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 13,
+      "held": 27
+    },
+    {
+      "group": "convenience",
+      "candidates": 374,
+      "registry_reviews": 72,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 72,
+      "held": 302
+    },
+    {
+      "group": "welfare",
+      "candidates": 1121,
+      "registry_reviews": 134,
+      "events": 0,
+      "corrections": 3,
+      "verified_no_change": 131,
+      "held": 987
+    },
+    {
+      "group": "retail",
+      "candidates": 344,
+      "registry_reviews": 21,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 21,
+      "held": 323
+    },
+    {
+      "group": "dining",
+      "candidates": 478,
+      "registry_reviews": 26,
+      "events": 2,
+      "corrections": 2,
+      "verified_no_change": 26,
+      "held": 450
+    },
+    {
+      "group": "medical",
+      "candidates": 204,
+      "registry_reviews": 33,
+      "events": 0,
+      "corrections": 3,
+      "verified_no_change": 30,
+      "held": 171
+    },
+    {
+      "group": "small_services",
+      "candidates": 126,
+      "registry_reviews": 8,
+      "events": 1,
+      "corrections": 1,
+      "verified_no_change": 8,
+      "held": 117
+    },
+    {
+      "group": "reference",
+      "candidates": 54,
+      "registry_reviews": 0,
+      "events": 0,
+      "corrections": 0,
+      "verified_no_change": 0,
+      "held": 54
+    }
+  ],
+  "previously_completed_excluded": 2731,
+  "limits": [
+    "台帳・公式一覧への掲載照合は当日の営業、開館、受入可否、入口の現況保証ではありません。",
+    "掲載なし・古い計画・保険登録休止だけで施設全体の閉鎖を推定しません。",
+    "資料基準日と資料閲覧日を区別し、開始日不明の休校を県一覧の基準日から推定しません。",
+    "元ID・全座標・元出典・以前の判断を保持。確認完了と保留・参考記録を区別します。"
+  ],
+  "private_input_sha256": {
+    "schools/accepted.json": "4e86381fd43d94c40ac385294ea3f7a2e446a88821a2251ff35a81631488ae73",
+    "schools/closure-proposals.json": "4efeeb2b045653a81b80a005893a579a756fea6c5192ed1cc3746706c85925f3",
+    "schools/temporary-closure-proposals.json": "8dbd781ad65c919606fbaf3a14ba098094e88a3771ec481fa26a009276949397",
+    "schools/holds.json": "fd4955e33972662f2cd887c4a932cc4d9d22760849e6c7ced8776ffd604ac781",
+    "postoffice/accepted.json": "73439e48495a534e17a20dbbd90b2aa8107020f59dd83e1a4a597110633ec1b1",
+    "postoffice/root-temporary-updates.json": "886fd781294105b695061fbc881858ab9a2bd47cdea91d709cdb28289f22de8b",
+    "postoffice/holds.json": "0b8403fe5867d8afa94662f3f4620141ab88d2734ff51b734dd7bdc4795a3fcd",
+    "public-facilities/accepted.json": "59f07949523de9a8e98250c8ba817ddb18059325169c01bd0c067961794c9b52",
+    "public-supplement/supplemental-accepted.json": "507ee938e7dc044cef83581f8e18dead37601739feb38273b2d4a61ceae765d9",
+    "public-facilities/updates.json": "ba44fc9e8ff90651d894fd164f26de225285e909a382b1cc3bb954771d13cc38",
+    "public-supplement/supplemental-updates.json": "88646d06e49ea69682c4da89df6a03732b886098d7cb54ef2f7329d90f4179ce",
+    "public-supplement/holds-details.json": "c96141ebbb2d614cb2141b537a2fde94f124a7d0505cffca2dffb608f2b66a5e",
+    "childcare/accepted.json": "0c5b8b97975d57e046ff90b4779557444aad24cf8168cb97c76f01128ba176b4",
+    "childcare/holds.json": "28a1c2a8e0f3f3fd44bcf47eeea5dd578cd1be5dc46a252a7e8ec2f168f58a46",
+    "pharmacy/accepted.json": "244fcf846b15cb3d48e753b93ec88843f140884523d9c1e7093694dd57965cc9",
+    "pharmacy/holds.json": "8c4850654551b90ca5f8304934f22fe27761f1b3f9fb8b19739dede3f34932f9",
+    "convenience/accepted.json": "416b83a963f1d2c720dc9e9d8494df3796ad4ac4d5d856a1532fe8c0365ce8e1",
+    "convenience/holds.json": "ed9cf8e0ad458af9feec43e0275d393361822e049816927ca6285c195cafbf98",
+    "welfare/all-accepted.json": "df2b0023a77e7fa4294177a0de0bd6da24b06c3ad7ba6fa3dcd3ccf762d3aa5c",
+    "welfare/all-holds.json": "8247aecdd63f2ccf86b8f2a1ef70b8d78cdf720f55216d15a095f05608f504e4",
+    "retail/accepted.json": "9e30473dcb7fa374632da47000b2c000cd2a42d478e603365c67d90d04540057",
+    "retail/holds.json": "520c3b19675d6836bbc2b944d1b7656de4d76d6e99b5c9ead5e9ed5a3c2d4c65",
+    "dining/accepted.json": "ba88b0c592e85a1561214232d981dbc70e91a0bd9bd89624b6b647af71ae22c1",
+    "dining/phase2/accepted-additional.json": "0bbfb6ad0713400033cd17d079331af997dc179985ff7d826958d2a00646daa8",
+    "dining/phase3/accepted-additional.json": "cd464e9d44df8a799729a53f096bc2db2075d81497bae59a3a5ca44333a9dfe5",
+    "dining/phase4/accepted-additional.json": "cc5070a8ca2dc197b0fe7e9d1421f008ce903868bdc528c5506e1bd49fdcad8d",
+    "dining/root-supplemental-updates.json": "5f8c7218f3d5f559ad5e70f471b6f30e83e687424fd252e558d8f92679de3c85",
+    "dining/phase4/remaining-after-phase4.json": "bbb50252a64c93c5efee96b86ac03699b9294a335b0b0af09698488db104641b",
+    "medical-followup/accepted.json": "5e474c87c0779043090aaffefb48ddecc1bfd677dbaff536e621111601bafda5",
+    "medical-followup/holds.json": "1ad3ed9f831ad0cc498e586dbe07ebea97f9ef19ddebc65d4f9dddb4ff44b70c",
+    "small-services/accepted.json": "f29ff78f45f9fff908fb8e556349da26e35110515ec271d35995cf18669dfb72",
+    "small-services/updates.json": "df8d78f6dda290e624d7bc0484abb9b227fe04dba80a6c8b222f51d746100b96",
+    "small-services/holds.json": "8c0791ea7b4280ae0407ba56e79fa2aa825434f0da5d35f9b80e00d769dbcdc8"
+  },
+  "pending_inputs": [],
+  "duplicate_scope_holds": 38,
+  "root_hold_overrides_sha256": "8e1e57993f733754e5dc33e439308579ab224afafc57d15b18898c4eb180cca8"
+}
