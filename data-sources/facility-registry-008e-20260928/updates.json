@@ -7491,6 +7491,3292 @@
     }
   },
   {
+    "id": "civic-care-3570800148-9dfdea44e6",
+    "expected": {
+      "name": "有限会社 渡辺薬局 在宅ケアサービス 本通りデイサービス",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:488"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.224487,
+          34.17123
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "通所介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-05-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "同じ公的番号でも別名・別住所・別サービスの公表行を、元サービスの位置矛盾や閉鎖へ転用しません。本通りデイサービスの通所介護と、別の居宅介護支援事業所を区別します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "有限会社 渡辺薬局 在宅ケアサービス 本通りデイサービス",
+      "baseline_address": "岩国市麻里布町2－1－9",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.224487,
+          34.17123
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:488"
+      ],
+      "original_number": "3570800148",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "通所介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:488",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 488,
+          "csv_logical_row": 489,
+          "number": "3570800148",
+          "name": "有限会社 渡辺薬局 在宅ケアサービス 本通りデイサービス",
+          "address": "岩国市麻里布町2－1－9",
+          "service": "通所介護",
+          "operator": "有限会社 渡辺薬局",
+          "phone": "0827-30-5188",
+          "point": [
+            132.224487,
+            34.17123
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "有限会社渡辺薬局在宅ケアサービス本通りデイサービス",
+          "address": "岩国市麻里布町2-1-9",
+          "services": "通所介護",
+          "operator": "有限会社渡辺薬局",
+          "date_text": "令和7年5月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202506-212911.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 6,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "source_sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [
+        {
+          "number": "3570800148",
+          "name": "有限会社渡辺薬局 在宅ケアサービス",
+          "address": "岩国市麻里布町5－3－8－307号",
+          "service": "居宅介護支援",
+          "phone": "0827-23-5188",
+          "operator": "有限会社 渡辺薬局",
+          "designation_dates": [
+            "2000/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2032/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35208.csv",
+          "line": 6,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35208&od=1",
+          "source_sha256": "fb123b00fe93263ce93c22e84a901898d22a9076e94b6c11438dbd67d53055df"
+        }
+      ],
+      "national_original_service_rows": [
+        {
+          "number": "3570800148",
+          "name": "有限会社渡辺薬局在宅ケアサービス本通りデイサービス",
+          "address": "山口県岩国市麻里布町2-1-9",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0827-30-5188",
+          "operator": "有限会社渡辺薬局",
+          "operator_number": "4250002018846",
+          "point": [
+            132.22424190000007,
+            34.17139720000001
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19275,
+          "source_as_of": "2026-06-30",
+          "distance_m": 29.2251
+        }
+      ],
+      "national_other_service_rows": [
+        {
+          "number": "3570800148",
+          "name": "有限会社　渡辺薬局　在宅ケアサービス",
+          "address": "山口県岩国市麻里布町5丁目3番8号307",
+          "address2": "307",
+          "service": "居宅介護支援",
+          "phone": "0827-23-5188",
+          "operator": "有限会社渡辺薬局",
+          "operator_number": "4250002018846",
+          "point": [
+            132.22396295026252,
+            34.173971380915354
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29720,
+          "source_as_of": "2026-06-30",
+          "distance_m": 308.617
+        }
+      ],
+      "known_position_discrepancies": [],
+      "position_verified": true,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3571200777-a2e01db76a",
+    "expected": {
+      "name": "株式会社やないきたヘルパーステーション",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:48"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.112854,
+          33.983452
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-01-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/201862.pdf",
+          "sha256": "70d5e8d819f008cf1b9f228d7a9ba132878eabf858d7a9f32d5645dd046bf35c"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "株式会社やないきたヘルパーステーション",
+      "baseline_address": "柳井市柳井11053－10",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.112854,
+          33.983452
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:48"
+      ],
+      "original_number": "3571200777",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:48",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 48,
+          "csv_logical_row": 49,
+          "number": "3571200777",
+          "name": "株式会社やないきたヘルパーステーション",
+          "address": "柳井市柳井11053－10",
+          "service": "訪問介護",
+          "operator": "株式会社やないきた",
+          "phone": "0820-22-2728",
+          "point": [
+            132.112854,
+            33.983452
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "株式会社やないきたヘルパーステーション",
+          "address": "柳井市柳井11053-10",
+          "services": "訪問介護",
+          "operator": "株式会社やないきた",
+          "date_text": "令和7年1月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202502-201862.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 2,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/201862.pdf",
+          "source_sha256": "70d5e8d819f008cf1b9f228d7a9ba132878eabf858d7a9f32d5645dd046bf35c"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3571200777",
+          "name": "株式会社やないきたヘルパーステーション",
+          "address": "山口県柳井市柳井１１０５３－１０",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "０８２０－２２－２７２８",
+          "operator": "株式会社やないきた",
+          "operator_number": "6250001017252",
+          "point": [
+            132.09218206124058,
+            33.994667491043984
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29322,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2277.6475
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3571200777",
+          "name": "株式会社やないきたヘルパーステーション",
+          "address": "山口県柳井市柳井１１０５３－１０",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "０８２０－２２－２７２８",
+          "operator": "株式会社やないきた",
+          "operator_number": "6250001017252",
+          "point": [
+            132.09218206124058,
+            33.994667491043984
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29322,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2277.6475
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3571501844-fa784b7510",
+    "expected": {
+      "name": "ニチイケアセンター湯野",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:114"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.684372,
+          34.097805
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-06-30",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/215551.pdf",
+          "sha256": "6605e128dc8d1d2cd4181462dc4d347980885c649cddc28c20bcdfda763dce90"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "ニチイケアセンター湯野",
+      "baseline_address": "周南市湯野3848－3",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.684372,
+          34.097805
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:114"
+      ],
+      "original_number": "3571501844",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:114",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 114,
+          "csv_logical_row": 115,
+          "number": "3571501844",
+          "name": "ニチイケアセンター湯野",
+          "address": "周南市湯野3848－3",
+          "service": "訪問介護",
+          "operator": "株式会社ニチイ学館",
+          "phone": "0834-82-0022",
+          "point": [
+            131.684372,
+            34.097805
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "ニチイケアセンター湯野",
+          "address": "周南市湯野3848-3",
+          "services": "訪問介護",
+          "operator": "株式会社ニチイ学館",
+          "date_text": "令和7年6月30日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202507-215551.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 2,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/215551.pdf",
+          "source_sha256": "6605e128dc8d1d2cd4181462dc4d347980885c649cddc28c20bcdfda763dce90"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3571501844",
+          "name": "ニチイケアセンター湯野",
+          "address": "周南市大字湯野字古野3848番地3",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0834-82-0022",
+          "operator": "株式会社ニチイ学館",
+          "operator_number": "3010001025868",
+          "point": [
+            131.67100490000007,
+            34.1165852
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29336,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2423.932
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3571501844",
+          "name": "ニチイケアセンター湯野",
+          "address": "周南市大字湯野字古野3848番地3",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0834-82-0022",
+          "operator": "株式会社ニチイ学館",
+          "operator_number": "3010001025868",
+          "point": [
+            131.67100490000007,
+            34.1165852
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29336,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2423.932
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3570202709-71b0b60a85",
+    "expected": {
+      "name": "ヘルパーステーション アポロ",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:221"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.252457,
+          33.977917
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-05-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "ヘルパーステーション アポロ",
+      "baseline_address": "宇部市中宇部1858－30",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.252457,
+          33.977917
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:221"
+      ],
+      "original_number": "3570202709",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:221",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 221,
+          "csv_logical_row": 222,
+          "number": "3570202709",
+          "name": "ヘルパーステーション アポロ",
+          "address": "宇部市中宇部1858－30",
+          "service": "訪問介護",
+          "operator": "山口アポロ石油株式会社",
+          "phone": "0836-37-0070",
+          "point": [
+            131.252457,
+            33.977917
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "ヘルパーステーションアポロ",
+          "address": "宇部市中宇部1858-30",
+          "services": "訪問介護",
+          "operator": "山口アポロ石油株式会社",
+          "date_text": "令和7年5月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202506-212911.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 2,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "source_sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3570202709",
+          "name": "ヘルパーステーションアポロ",
+          "address": "宇部市大字中宇部１８５８－３０",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0836-37-0070",
+          "operator": "山口アポロ石油株式会社",
+          "operator_number": "1250001003678",
+          "point": [
+            131.25333750000004,
+            33.9720426
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29131,
+          "source_as_of": "2026-06-30",
+          "distance_m": 658.2311
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3570202709",
+          "name": "ヘルパーステーションアポロ",
+          "address": "宇部市大字中宇部１８５８－３０",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0836-37-0070",
+          "operator": "山口アポロ石油株式会社",
+          "operator_number": "1250001003678",
+          "point": [
+            131.25333750000004,
+            33.9720426
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29131,
+          "source_as_of": "2026-06-30",
+          "distance_m": 658.2311
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3571600810-b3057976e8",
+    "expected": {
+      "name": "訪問介護Ｓ．Ｌ．Ｃ「ゆとり」",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:274"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.178833,
+          33.965355
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+          "sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "訪問介護Ｓ．Ｌ．Ｃ「ゆとり」",
+      "baseline_address": "山陽小野田市須恵3－10－3",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.178833,
+          33.965355
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:274"
+      ],
+      "original_number": "3571600810",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:274",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 274,
+          "csv_logical_row": 275,
+          "number": "3571600810",
+          "name": "訪問介護Ｓ．Ｌ．Ｃ「ゆとり」",
+          "address": "山陽小野田市須恵3－10－3",
+          "service": "訪問介護",
+          "operator": "合同会社看",
+          "phone": "0836-55-4403",
+          "point": [
+            131.178833,
+            33.965355
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "訪問介護S.L.C「ゆとり」",
+          "address": "山陽小野田市須恵3-10-3",
+          "services": "訪問介護",
+          "operator": "合同会社看",
+          "date_text": "令和8年3月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202604-237614.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 8,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+          "source_sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3571600810",
+          "name": "訪問介護　S.L.C「ゆとり」",
+          "address": "山口県山陽小野田市須恵3丁目10-3",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "（0836）55-4403",
+          "operator": "合同会社看",
+          "operator_number": "6250003001741",
+          "point": [
+            131.1757375789628,
+            33.962486248913144
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29373,
+          "source_as_of": "2026-06-30",
+          "distance_m": 428.0767
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3571600810",
+          "name": "訪問介護　S.L.C「ゆとり」",
+          "address": "山口県山陽小野田市須恵3丁目10-3",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "（0836）55-4403",
+          "operator": "合同会社看",
+          "operator_number": "6250003001741",
+          "point": [
+            131.1757375789628,
+            33.962486248913144
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29373,
+          "source_as_of": "2026-06-30",
+          "distance_m": 428.0767
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3571100613-81e1095564",
+    "expected": {
+      "name": "ヘルパーステーションつむぎ",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:292"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.133804,
+          34.391991
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-05-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/217614.pdf",
+          "sha256": "04e6d86266c46a5853e9817835d23ee6729b66d1189a7ada50b420c595e5f278"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "ヘルパーステーションつむぎ",
+      "baseline_address": "長門市日置上2087－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.133804,
+          34.391991
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:292"
+      ],
+      "original_number": "3571100613",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:292",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 292,
+          "csv_logical_row": 293,
+          "number": "3571100613",
+          "name": "ヘルパーステーションつむぎ",
+          "address": "長門市日置上2087－1",
+          "service": "訪問介護",
+          "operator": "合同会社愛あい",
+          "phone": "0837-37-2386",
+          "point": [
+            131.133804,
+            34.391991
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "ヘルパーステーションつむぎ",
+          "address": "長門市日置上2087-1",
+          "services": "訪問介護",
+          "operator": "合同会社愛あい",
+          "date_text": "令和7年5月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202508-217614.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 5,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/217614.pdf",
+          "source_sha256": "04e6d86266c46a5853e9817835d23ee6729b66d1189a7ada50b420c595e5f278"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3571100613",
+          "name": "ヘルパーステーションつむぎ",
+          "address": "山口県長門市日置上2087-1",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0837-37-2386",
+          "operator": "合同会社愛あい",
+          "operator_number": "1250003001358",
+          "point": [
+            131.1387747,
+            34.38727009999999
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29314,
+          "source_as_of": "2026-06-30",
+          "distance_m": 695.4137
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3571100613",
+          "name": "ヘルパーステーションつむぎ",
+          "address": "山口県長門市日置上2087-1",
+          "address2": "",
+          "service": "訪問介護",
+          "phone": "0837-37-2386",
+          "operator": "合同会社愛あい",
+          "operator_number": "1250003001358",
+          "point": [
+            131.1387747,
+            34.38727009999999
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_110_all_20260709180319.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_110_all_20260709180319.csv",
+          "source_sha256": "4fa54cb485f6303c6b3f3cf2f38d37736997d3b4a4da9943b97d59fd8c5171bb",
+          "csv_logical_row": 29314,
+          "source_as_of": "2026-06-30",
+          "distance_m": 695.4137
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3560690160-9eaecb6fc5",
+    "expected": {
+      "name": "岸津苑訪問看護ステーション",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:363"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.593491,
+          34.049118
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問看護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-07-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/217614.pdf",
+          "sha256": "04e6d86266c46a5853e9817835d23ee6729b66d1189a7ada50b420c595e5f278"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "岸津苑訪問看護ステーション",
+      "baseline_address": "防府市岸津2－24－20",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.593491,
+          34.049118
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:363"
+      ],
+      "original_number": "3560690160",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問看護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:363",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 363,
+          "csv_logical_row": 364,
+          "number": "3560690160",
+          "name": "岸津苑訪問看護ステーション",
+          "address": "防府市岸津2－24－20",
+          "service": "訪問看護",
+          "operator": "社会福祉法人 周陽福祉会",
+          "phone": "0835-26-6500",
+          "point": [
+            131.593491,
+            34.049118
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "岸津苑訪問看護ステーション",
+          "address": "防府市岸津2-24-20",
+          "services": "訪問看護・介護予防訪問看護",
+          "operator": "社会福祉法人周陽福祉会",
+          "date_text": "令和7年7月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202508-217614.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 7,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/217614.pdf",
+          "source_sha256": "04e6d86266c46a5853e9817835d23ee6729b66d1189a7ada50b420c595e5f278"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3560690160",
+          "name": "岸津苑訪問看護ステーション",
+          "address": "防府市岸津二丁目２４－２０",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "0835-26-6500",
+          "operator": "社会福祉法人周陽福祉会",
+          "operator_number": "6250005001500",
+          "point": [
+            131.59324188650817,
+            34.04964985452497
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 14976,
+          "source_as_of": "2026-06-30",
+          "distance_m": 63.437
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3560690160",
+          "name": "岸津苑訪問看護ステーション",
+          "address": "防府市岸津二丁目２４－２０",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "0835-26-6500",
+          "operator": "社会福祉法人周陽福祉会",
+          "operator_number": "6250005001500",
+          "point": [
+            131.59324188650817,
+            34.04964985452497
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 14976,
+          "source_as_of": "2026-06-30",
+          "distance_m": 63.437
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3561690037-c88cc91be3",
+    "expected": {
+      "name": "訪問看護ステーションかがやき",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:434"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.166428,
+          34.07349
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "訪問看護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-12-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+          "sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "訪問看護ステーションかがやき",
+      "baseline_address": "山陽小野田市鴨庄10－4",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.166428,
+          34.07349
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:434"
+      ],
+      "original_number": "3561690037",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "訪問看護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:434",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 434,
+          "csv_logical_row": 435,
+          "number": "3561690037",
+          "name": "訪問看護ステーションかがやき",
+          "address": "山陽小野田市鴨庄10－4",
+          "service": "訪問看護",
+          "operator": "医療法人社団 民正会",
+          "phone": "0836-72-0339",
+          "point": [
+            131.166428,
+            34.07349
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "訪問看護ステーションかがやき",
+          "address": "山陽小野田市鴨庄10-4",
+          "services": "訪問看護・介護予防訪問看護",
+          "operator": "医療法人社団民正会",
+          "date_text": "令和6年12月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202501-199607.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 6,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/199607.pdf",
+          "source_sha256": "dd89d2c9e80bda51e15f63f91319566834a55340913944804cfbdfedc3f16f8e"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3561690037",
+          "name": "医療法人社団　民正会　訪問看護ステーション　かがやき",
+          "address": "山陽小野田市大字鴨庄10番地4",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "0836-72-0339",
+          "operator": "医療法人社団民正会",
+          "operator_number": "7250005002547",
+          "point": [
+            131.15586859969176,
+            34.056906905868765
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 15044,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2084.7707
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3561690037",
+          "name": "医療法人社団　民正会　訪問看護ステーション　かがやき",
+          "address": "山陽小野田市大字鴨庄10番地4",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "0836-72-0339",
+          "operator": "医療法人社団民正会",
+          "operator_number": "7250005002547",
+          "point": [
+            131.15586859969176,
+            34.056906905868765
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 15044,
+          "source_as_of": "2026-06-30",
+          "distance_m": 2084.7707
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3570602528-aacb3f1193",
+    "expected": {
+      "name": "障害福祉サービスあゆみの里",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:617"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.569733,
+          34.021751
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "通所介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-08-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/220424.pdf",
+          "sha256": "fb5fae793bc0af50bde0778c61b3a08043f951a53c6c56f4f03c7097f87ef296"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "障害福祉サービスあゆみの里",
+      "baseline_address": "防府市浜方169－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.569733,
+          34.021751
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:617"
+      ],
+      "original_number": "3570602528",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "通所介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:617",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 617,
+          "csv_logical_row": 618,
+          "number": "3570602528",
+          "name": "障害福祉サービスあゆみの里",
+          "address": "防府市浜方169－1",
+          "service": "通所介護",
+          "operator": "株式会社あゆみ",
+          "phone": "0835-24-5075",
+          "point": [
+            131.569733,
+            34.021751
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "障害福祉サービスあゆみの里",
+          "address": "防府市大字浜方169-1",
+          "services": "通所介護",
+          "operator": "株式会社あゆみ",
+          "date_text": "令和7年8月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202509-220424.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 5,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/220424.pdf",
+          "source_sha256": "fb5fae793bc0af50bde0778c61b3a08043f951a53c6c56f4f03c7097f87ef296"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3570602528",
+          "name": "障害福祉サービスあゆみの里",
+          "address": "浜方169-1",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0835-24-5075",
+          "operator": "株式会社あゆみ",
+          "operator_number": "9250001013471",
+          "point": [
+            131.56887701826128,
+            34.02098216242277
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19220,
+          "source_as_of": "2026-06-30",
+          "distance_m": 116.3277
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3570602528",
+          "name": "障害福祉サービスあゆみの里",
+          "address": "浜方169-1",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0835-24-5075",
+          "operator": "株式会社あゆみ",
+          "operator_number": "9250001013471",
+          "point": [
+            131.56887701826128,
+            34.02098216242277
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19220,
+          "source_as_of": "2026-06-30",
+          "distance_m": 116.3277
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3570202766-87466e5be9",
+    "expected": {
+      "name": "宅老所喜楽苑山村",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:698"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.307983,
+          33.969315
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "通所介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-02-28",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/204342.pdf",
+          "sha256": "7d56a1176b9b9e99983838643ffaf1e49f6794e09916bc9b29a4b1388d84d014"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "宅老所喜楽苑山村",
+      "baseline_address": "宇部市西岐波2636－7",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.307983,
+          33.969315
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:698"
+      ],
+      "original_number": "3570202766",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "通所介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:698",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 698,
+          "csv_logical_row": 699,
+          "number": "3570202766",
+          "name": "宅老所喜楽苑山村",
+          "address": "宇部市西岐波2636－7",
+          "service": "通所介護",
+          "operator": "有限会社ミセスヘルパー",
+          "phone": "0836-39-6000",
+          "point": [
+            131.307983,
+            33.969315
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "宅老所喜楽苑山村",
+          "address": "宇部市西岐波2636-7",
+          "services": "通所介護",
+          "operator": "有限会社ミセスヘルパー",
+          "date_text": "令和7年2月28日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202503-204342.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 5,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/204342.pdf",
+          "source_sha256": "7d56a1176b9b9e99983838643ffaf1e49f6794e09916bc9b29a4b1388d84d014"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3570202766",
+          "name": "宅老所　喜楽苑　山村",
+          "address": "宇部市大字西岐波2636-7",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0836-39-6000",
+          "operator": "有限会社ミセスヘルパー",
+          "operator_number": "1250002006721",
+          "point": [
+            131.30879819999996,
+            33.9649109
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19093,
+          "source_as_of": "2026-06-30",
+          "distance_m": 495.4511
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3570202766",
+          "name": "宅老所　喜楽苑　山村",
+          "address": "宇部市大字西岐波2636-7",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0836-39-6000",
+          "operator": "有限会社ミセスヘルパー",
+          "operator_number": "1250002006721",
+          "point": [
+            131.30879819999996,
+            33.9649109
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19093,
+          "source_as_of": "2026-06-30",
+          "distance_m": 495.4511
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3577600194-760d7b1381",
+    "expected": {
+      "name": "特別養護老人ホーム 秋穂あかり園",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:980",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1271"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.445801,
+          34.014923
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "介護老人福祉施設",
+        "短期入所生活介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03-31",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+          "sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+          "sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "特別養護老人ホーム 秋穂あかり園",
+      "baseline_address": "山口市秋穂東3980",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.445801,
+          34.014923
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:980",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1271"
+      ],
+      "original_number": "3577600194",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "介護老人福祉施設",
+        "短期入所生活介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:980",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 980,
+          "csv_logical_row": 981,
+          "number": "3577600194",
+          "name": "特別養護老人ホーム 秋穂あかり園",
+          "address": "山口市秋穂東3980",
+          "service": "短期入所生活介護",
+          "operator": "社会福祉法人 博愛会",
+          "phone": "083-984-8300",
+          "point": [
+            131.445801,
+            34.014923
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1271",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1271,
+          "csv_logical_row": 1272,
+          "number": "3577600194",
+          "name": "特別養護老人ホーム 秋穂あかり園",
+          "address": "山口市秋穂東3980",
+          "service": "介護老人福祉施設",
+          "operator": "社会福祉法人 博愛会",
+          "phone": "083-984-8300",
+          "point": [
+            131.445801,
+            34.014923
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "特別養護老人ホーム秋穂あかり園",
+          "address": "山口市秋穂東3980",
+          "services": "短期入所生活介護・介護予防短期入所生活介護",
+          "operator": "社会福祉法人博愛会",
+          "date_text": "令和8年3月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202604-237614.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 15,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+          "source_sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+        },
+        {
+          "name": "特別養護老人ホーム秋穂あかり園",
+          "address": "山口市秋穂東3980",
+          "services": "介護老人福祉施設",
+          "operator": "社会福祉法人博愛会",
+          "date_text": "令和8年3月31日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202604-237614.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 19,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/237614.pdf",
+          "source_sha256": "b09930178338e1ba369ede923f59395608f01366c22eaf91db190dc7c24e39b4"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3577600194",
+          "name": "特別養護老人ホーム　秋穂あかり園",
+          "address": "山口市秋穂東3980番地",
+          "address2": "",
+          "service": "短期入所生活介護",
+          "phone": "083-984-8300",
+          "operator": "社会福祉法人　博愛会",
+          "operator_number": "7250005001549",
+          "point": [
+            131.44499240000005,
+            34.0142506
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_210_all_20260709180538.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "source_sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2",
+          "csv_logical_row": 9358,
+          "source_as_of": "2026-06-30",
+          "distance_m": 105.568
+        },
+        {
+          "number": "3577600194",
+          "name": "特別養護老人ホーム　秋穂あかり園",
+          "address": "山口市秋穂東3980番地",
+          "address2": "",
+          "service": "介護老人福祉施設",
+          "phone": "083-984-8300",
+          "operator": "社会福祉法人　博愛会",
+          "operator_number": "7250005001549",
+          "point": [
+            131.44499240000005,
+            34.0142506
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_510_all_20260709180754.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+          "source_sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1",
+          "csv_logical_row": 7067,
+          "source_as_of": "2026-06-30",
+          "distance_m": 105.568
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3577600194",
+          "name": "特別養護老人ホーム　秋穂あかり園",
+          "address": "山口市秋穂東3980番地",
+          "address2": "",
+          "service": "短期入所生活介護",
+          "phone": "083-984-8300",
+          "operator": "社会福祉法人　博愛会",
+          "operator_number": "7250005001549",
+          "point": [
+            131.44499240000005,
+            34.0142506
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_210_all_20260709180538.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "source_sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2",
+          "csv_logical_row": 9358,
+          "source_as_of": "2026-06-30",
+          "distance_m": 105.568
+        },
+        {
+          "number": "3577600194",
+          "name": "特別養護老人ホーム　秋穂あかり園",
+          "address": "山口市秋穂東3980番地",
+          "address2": "",
+          "service": "介護老人福祉施設",
+          "phone": "083-984-8300",
+          "operator": "社会福祉法人　博愛会",
+          "operator_number": "7250005001549",
+          "point": [
+            131.44499240000005,
+            34.0142506
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_510_all_20260709180754.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_510_all_20260709180754.csv",
+          "source_sha256": "b5ea71189da2276417c9bd2cbaa816ba7f0a305277ebc7d0e34df0166da5c7e1",
+          "csv_logical_row": 7067,
+          "source_as_of": "2026-06-30",
+          "distance_m": 105.568
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3570301998-67df5409c2",
+    "expected": {
+      "name": "あいあい山口短期入所生活介護",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:987"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.443588,
+          34.084579
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "scope": "registered_care_services",
+      "affected_services": [
+        "短期入所生活介護"
+      ],
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-02-28",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元の全掲載介護サービスの指定廃止を、行政月別一覧の正式名・完全住所・法人・全サービスから確認しました。元公的番号は元自治体CSVで接続し、位置精度とは分けて台帳上の指定終了だけを確認しています。建物や他サービスの終了とは判定しません。",
+      "sources": [
+        {
+          "title": "山口県 月別指定廃止一覧（元全掲載介護サービスの指定終了）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/204342.pdf",
+          "sha256": "7d56a1176b9b9e99983838643ffaf1e49f6794e09916bc9b29a4b1388d84d014"
+        },
+        {
+          "title": "元施設の自治体公表CSV（番号・正式名・全住所・法人・元全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "厚生労働省 公表介護情報（位置差と別サービスの区別）",
+          "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2"
+        }
+      ],
+      "limits": [
+        "対象は元記録に掲載された介護サービスの指定終了です。建物全体、法人、併設する他サービスの閉鎖とは判定しません。",
+        "月別PDFに番号列はありません。番号は元CSVから確認し、PDFへ正式名・完全住所・法人・元全サービスで接続しました。",
+        "元geometry・source_ids・登録詳細を保持します。台帳同一性と地点精度を分け、元地点が正しい営業地点や入口であったとは保証しません。",
+        "後続同住所同サービスの指定・再開、9月現台帳の有効な元番号または同住所同サービスがないことを確認しました。不掲載だけを指定終了の根拠にしていません。",
+        "国公表データの同施設同サービス地点に50mを超える差があり、位置矛盾は未解消のまま明示します。指定終了日と全サービスの同一性は原台帳と行政の廃止記録から確認しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_civic_number_full_identity_all_registered_services_official_designation_end_location_precision_separate",
+      "baseline_name": "あいあい山口短期入所生活介護",
+      "baseline_address": "山口市鋳銭司5964－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.443588,
+          34.084579
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:987"
+      ],
+      "original_number": "3570301998",
+      "number_printed_in_event_pdf": false,
+      "original_services": [
+        "短期入所生活介護"
+      ],
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:987",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 987,
+          "csv_logical_row": 988,
+          "number": "3570301998",
+          "name": "あいあい山口短期入所生活介護",
+          "address": "山口市鋳銭司5964－1",
+          "service": "短期入所生活介護",
+          "operator": "医療法人相川医院",
+          "phone": "083-986-2179",
+          "point": [
+            131.443588,
+            34.084579
+          ]
+        }
+      ],
+      "event_rows": [
+        {
+          "name": "あいあい山口短期入所生活介護",
+          "address": "山口市鋳銭司5964-1",
+          "services": "短期入所生活介護・介護予防短期入所生活介護",
+          "operator": "医療法人相川医院",
+          "date_text": "令和7年2月28日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/official-pdfs/designation-202503-204342.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 6,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/204342.pdf",
+          "source_sha256": "7d56a1176b9b9e99983838643ffaf1e49f6794e09916bc9b29a4b1388d84d014"
+        }
+      ],
+      "later_same_address_events": [],
+      "current_active_original_service_rows": [],
+      "current_same_number_all_service_rows": [],
+      "national_original_service_rows": [
+        {
+          "number": "3570301998",
+          "name": "あいあい山口短期入所生活介護",
+          "address": "山口市鋳銭司5964番地1",
+          "address2": "",
+          "service": "短期入所生活介護",
+          "phone": "083-986-2179",
+          "operator": "医療法人相川医院",
+          "operator_number": "9250005000417",
+          "point": [
+            131.44373340000004,
+            34.0839761
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_210_all_20260709180538.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "source_sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2",
+          "csv_logical_row": 9350,
+          "source_as_of": "2026-06-30",
+          "distance_m": 68.3637
+        }
+      ],
+      "national_other_service_rows": [],
+      "known_position_discrepancies": [
+        {
+          "number": "3570301998",
+          "name": "あいあい山口短期入所生活介護",
+          "address": "山口市鋳銭司5964番地1",
+          "address2": "",
+          "service": "短期入所生活介護",
+          "phone": "083-986-2179",
+          "operator": "医療法人相川医院",
+          "operator_number": "9250005000417",
+          "point": [
+            131.44373340000004,
+            34.0839761
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_210_all_20260709180538.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_210_all_20260709180538.csv",
+          "source_sha256": "227d83539c9711ac2e16a5996a4db20c90d2e84589605b5cd2572441e69112a2",
+          "csv_logical_row": 9350,
+          "source_as_of": "2026-06-30",
+          "distance_m": 68.3637
+        }
+      ],
+      "position_verified": false,
+      "facility_wide_closure_claimed": false,
+      "prior_hold_reason": [
+        "newer_national_same_number_point_outside_original_geometry"
+      ],
+      "source_reassessment_note": "別サービスの点を除外し、行政指定終了の確認と地点精度を分離。新規廃止資料の取得は不要。",
+      "current_active_same_name_or_same_operator_phone_original_service_rows": []
+    }
+  },
+  {
+    "id": "civic-care-3550580009-7c44909f79",
+    "expected": {
+      "name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:462",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:804",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1054",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1322"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.83287,
+          34.047676
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-06-30",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3550580009の施設名・完全住所・法人・電話・全掲載サービスを元自治体原本に照合。運営者JCHOは当該附属施設のサービス提供を2024-06-30に終了したと明記しています。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（公的番号・施設名・完全住所・法人・全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "JCHO 徳山中央病院附属介護老人保健施設 施設案内",
+          "url": "https://tokuyama.jcho.go.jp/rouken/",
+          "sha256": "28a54f8b88074a8a8937a57bce8bc1e0b590ca50fa8bafe7e2f4ab4dcabea919"
+        },
+        {
+          "title": "JCHO 徳山中央病院 附属介護老人保健施設のサービス提供終了について",
+          "url": "https://tokuyama.jcho.go.jp/rouken/news-topix/%e9%99%84%e5%b1%9e%e4%bb%8b%e8%ad%b7%e8%80%81%e4%ba%ba%e4%bf%9d%e5%81%a5%e6%96%bd%e8%a8%ad%e3%81%ae%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%81%ae%e6%8f%90%e4%be%9b%e7%b5%82%e4%ba%86/",
+          "sha256": "383eee3717e9a0e505b05451b17d8c7250957c9be97a3ed5ddc377343aec4a20"
+        }
+      ],
+      "limits": [
+        "当該附属介護施設のサービス提供終了に限った確認です。病院本体・建物全体の閉鎖、運営法人の解散や別の事業所の終了を意味しません。",
+        "元ID・geometry・source_ids・登録住所・registered_detailsを保持します。現位置精度や再開・他サービスを推定しません。",
+        "終了告知に事業所番号の記載はありません。番号・元完全住所・法人・電話・全掲載サービスは元自治体CSVにあり、運営者と具体的な附属施設名で告知へ接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_full_identity_and_operator_explicit_named_annex_whole_service_end",
+      "baseline_name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+      "baseline_address": "周南市孝田町1－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.83287,
+          34.047676
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:462",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:804",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1054",
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1322"
+      ],
+      "original_number": "3550580009",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:462",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 462,
+          "csv_logical_row": 463,
+          "number": "3550580009",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+          "address": "周南市孝田町1－1",
+          "service": "訪問リハビリテーション",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "0834-28-8686",
+          "point": [
+            131.83287,
+            34.047676
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:804",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 804,
+          "csv_logical_row": 805,
+          "number": "3550580009",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+          "address": "周南市孝田町1－1",
+          "service": "通所リハビリテーション",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "0834-28-8686",
+          "point": [
+            131.83287,
+            34.047676
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1054",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1054,
+          "csv_logical_row": 1055,
+          "number": "3550580009",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+          "address": "周南市孝田町1－1",
+          "service": "短期入所療養介護",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "0834-28-8686",
+          "point": [
+            131.83287,
+            34.047676
+          ]
+        },
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1322",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1322,
+          "csv_logical_row": 1323,
+          "number": "3550580009",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構徳山中央病院附属介護老人保健施設",
+          "address": "周南市孝田町1－1",
+          "service": "介護老人保健施設",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "0834-28-8686",
+          "point": [
+            131.83287,
+            34.047676
+          ]
+        }
+      ],
+      "original_services": [
+        "介護老人保健施設",
+        "短期入所療養介護",
+        "訪問リハビリテーション",
+        "通所リハビリテーション"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jcho-tokuyama-rouken.html",
+          "source_url": "https://tokuyama.jcho.go.jp/rouken/",
+          "source_sha256": "28a54f8b88074a8a8937a57bce8bc1e0b590ca50fa8bafe7e2f4ab4dcabea919",
+          "title": "JCHO 徳山中央病院附属介護老人保健施設 施設案内",
+          "name": "徳山中央病院附属介護老人保健施設",
+          "address": "周南市孝田町1-1",
+          "phone": "0834-28-8686",
+          "use": "元公的施設の名称・完全住所・電話の同一性確認"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jcho-tokuyama-end.html",
+          "source_url": "https://tokuyama.jcho.go.jp/rouken/news-topix/%e9%99%84%e5%b1%9e%e4%bb%8b%e8%ad%b7%e8%80%81%e4%ba%ba%e4%bf%9d%e5%81%a5%e6%96%bd%e8%a8%ad%e3%81%ae%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%81%ae%e6%8f%90%e4%be%9b%e7%b5%82%e4%ba%86/",
+          "source_sha256": "383eee3717e9a0e505b05451b17d8c7250957c9be97a3ed5ddc377343aec4a20",
+          "title": "JCHO 徳山中央病院 附属介護老人保健施設のサービス提供終了について",
+          "name": "徳山中央病院附属介護老人保健施設",
+          "end_date": "2024-06-30",
+          "fact": "本院附属介護老人保健施設は令和6年6月末日をもってサービス提供終了と明記。"
+        }
+      ],
+      "event_kind": "explicit_service_provision_end",
+      "end_date": "2024-06-30",
+      "number_printed_in_end_notice": false,
+      "current_active_same_id_name_or_operator_phone_original_service_rows": [],
+      "national_rows": [],
+      "known_position_discrepancies": [],
+      "position_verified": false,
+      "parent_hospital_closure_claimed": false
+    }
+  },
+  {
+    "id": "civic-care-3550180073-97e281c5fc",
+    "expected": {
+      "name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:107",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:179",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:244",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1025"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.919113,
+          33.958889
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-09-30",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3550180073の施設名・完全住所・法人・電話・全掲載サービスを元自治体原本に照合。運営者JCHOは当該附属施設のサービス提供を2024-09-30に終了したと明記しています。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（公的番号・施設名・完全住所・法人・全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "JCHO 下関医療センター 2024年年報 第6章・2024年10月広報誌",
+          "url": "https://shimonoseki.jcho.go.jp/wp-content/uploads/2026/01/nenpou2024_06.pdf",
+          "sha256": "dbb9c9b4e6544bb0d1064b94e71d58ce36ce560ab5c01ed63500d6245e4b34f2"
+        },
+        {
+          "title": "JCHO 下関医療センター 沿革",
+          "url": "https://shimonoseki.jcho.go.jp/?p=92",
+          "sha256": "02a13eff3d584b46cf5c8436efea60b4c85f5368565778dff617a65514268707"
+        }
+      ],
+      "limits": [
+        "当該附属介護施設のサービス提供終了に限った確認です。病院本体・建物全体の閉鎖、運営法人の解散や別の事業所の終了を意味しません。",
+        "元ID・geometry・source_ids・登録住所・registered_detailsを保持します。現位置精度や再開・他サービスを推定しません。",
+        "終了告知に事業所番号の記載はありません。番号・元完全住所・法人・電話・全掲載サービスは元自治体CSVにあり、運営者と具体的な附属施設名で告知へ接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_full_identity_and_operator_explicit_named_annex_whole_service_end",
+      "baseline_name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+      "baseline_address": "下関市上新地町3－4－36",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.919113,
+          33.958889
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:107",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:179",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:244",
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1025"
+      ],
+      "original_number": "3550180073",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:107",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 107,
+          "csv_logical_row": 108,
+          "number": "3550180073",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+          "address": "下関市上新地町3－4－36",
+          "service": "訪問リハビリテーション",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "083-233-7850",
+          "point": [
+            130.919113,
+            33.958889
+          ]
+        },
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:179",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 179,
+          "csv_logical_row": 180,
+          "number": "3550180073",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+          "address": "下関市上新地町3－4－36",
+          "service": "通所リハビリテーション",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "083-233-7850",
+          "point": [
+            130.919113,
+            33.958889
+          ]
+        },
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:244",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 244,
+          "csv_logical_row": 245,
+          "number": "3550180073",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+          "address": "下関市上新地町3－4－36",
+          "service": "短期入所療養介護",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "083-233-7850",
+          "point": [
+            130.919113,
+            33.958889
+          ]
+        },
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1025",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 1025,
+          "csv_logical_row": 1026,
+          "number": "3550180073",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構下関医療センター附属介護老人保健施設",
+          "address": "下関市上新地町3－4－36",
+          "service": "介護老人保健施設",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "083-233-7850",
+          "point": [
+            130.919113,
+            33.958889
+          ]
+        }
+      ],
+      "original_services": [
+        "介護老人保健施設",
+        "短期入所療養介護",
+        "訪問リハビリテーション",
+        "通所リハビリテーション"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jcho-shimonoseki-annual-2024-06.pdf",
+          "source_url": "https://shimonoseki.jcho.go.jp/wp-content/uploads/2026/01/nenpou2024_06.pdf",
+          "source_sha256": "dbb9c9b4e6544bb0d1064b94e71d58ce36ce560ab5c01ed63500d6245e4b34f2",
+          "title": "JCHO 下関医療センター 2024年年報 第6章・2024年10月広報誌",
+          "pdf_page": 6,
+          "names": [
+            "下関医療センター附属介護老人保健施設",
+            "下関医療センター附属居宅介護支援センター"
+          ],
+          "end_date": "2024-09-30",
+          "fact": "本院附属施設である介護老人保健施設および居宅介護支援センターは令和6年9月末日をもってサービス提供終了と明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jcho-shimonoseki-history.html",
+          "source_url": "https://shimonoseki.jcho.go.jp/?p=92",
+          "source_sha256": "02a13eff3d584b46cf5c8436efea60b4c85f5368565778dff617a65514268707",
+          "title": "JCHO 下関医療センター 沿革",
+          "name": "下関医療センター附属介護老人保健施設",
+          "fact": "令和6年9月介護老人保健施設サービス終了と明記。",
+          "use": "終了月の独立裏付け。病院本体の住所を老健の所在地に転用しない。"
+        }
+      ],
+      "event_kind": "explicit_service_provision_end",
+      "end_date": "2024-09-30",
+      "number_printed_in_end_notice": false,
+      "current_active_same_id_name_or_operator_phone_original_service_rows": [],
+      "national_rows": [],
+      "known_position_discrepancies": [],
+      "position_verified": false,
+      "parent_hospital_closure_claimed": false
+    }
+  },
+  {
+    "id": "civic-care-3570104442-99fd54825a",
+    "expected": {
+      "name": "独立行政法人地域医療機能推進機構下関医療センター附属居宅介護支援センター",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:870"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.919113,
+          33.958889
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2024-09-30",
+      "date_precision": "day",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570104442の施設名・完全住所・法人・電話・全掲載サービスを元自治体原本に照合。運営者JCHOは当該附属施設のサービス提供を2024-09-30に終了したと明記しています。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービス公表行（公的番号・施設名・完全住所・法人・全サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "JCHO 下関医療センター 2024年年報 第6章・2024年10月広報誌",
+          "url": "https://shimonoseki.jcho.go.jp/wp-content/uploads/2026/01/nenpou2024_06.pdf",
+          "sha256": "dbb9c9b4e6544bb0d1064b94e71d58ce36ce560ab5c01ed63500d6245e4b34f2"
+        }
+      ],
+      "limits": [
+        "当該附属介護施設のサービス提供終了に限った確認です。病院本体・建物全体の閉鎖、運営法人の解散や別の事業所の終了を意味しません。",
+        "元ID・geometry・source_ids・登録住所・registered_detailsを保持します。現位置精度や再開・他サービスを推定しません。",
+        "終了告知に事業所番号の記載はありません。番号・元完全住所・法人・電話・全掲載サービスは元自治体CSVにあり、運営者と具体的な附属施設名で告知へ接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_full_identity_and_operator_explicit_named_annex_whole_service_end",
+      "baseline_name": "独立行政法人地域医療機能推進機構下関医療センター附属居宅介護支援センター",
+      "baseline_address": "下関市上新地町3－4－36",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.919113,
+          33.958889
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:870"
+      ],
+      "original_number": "3570104442",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:870",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 870,
+          "csv_logical_row": 871,
+          "number": "3570104442",
+          "municipal_id": "",
+          "name": "独立行政法人地域医療機能推進機構下関医療センター附属居宅介護支援センター",
+          "address": "下関市上新地町3－4－36",
+          "service": "居宅介護支援",
+          "operator": "独立行政法人地域医療機能推進機構",
+          "phone": "083-232-5066",
+          "point": [
+            130.919113,
+            33.958889
+          ]
+        }
+      ],
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jcho-shimonoseki-annual-2024-06.pdf",
+          "source_url": "https://shimonoseki.jcho.go.jp/wp-content/uploads/2026/01/nenpou2024_06.pdf",
+          "source_sha256": "dbb9c9b4e6544bb0d1064b94e71d58ce36ce560ab5c01ed63500d6245e4b34f2",
+          "title": "JCHO 下関医療センター 2024年年報 第6章・2024年10月広報誌",
+          "pdf_page": 6,
+          "names": [
+            "下関医療センター附属介護老人保健施設",
+            "下関医療センター附属居宅介護支援センター"
+          ],
+          "end_date": "2024-09-30",
+          "fact": "本院附属施設である介護老人保健施設および居宅介護支援センターは令和6年9月末日をもってサービス提供終了と明記。"
+        }
+      ],
+      "event_kind": "explicit_service_provision_end",
+      "end_date": "2024-09-30",
+      "number_printed_in_end_notice": false,
+      "current_active_same_id_name_or_operator_phone_original_service_rows": [],
+      "national_rows": [],
+      "known_position_discrepancies": [],
+      "position_verified": false,
+      "parent_hospital_closure_claimed": false
+    }
+  },
+  {
+    "id": "civic-care-3560190377-5df717063a",
+    "expected": {
+      "name": "訪問看護リハビリステーション ラポル",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:98"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.01236,
+          34.040001
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3560190377の全掲載サービスを現同番号へ照合。運営法人の沿革が当該事業所の2021年6月1日の移転を明記しています。現所在地は下関市王司神田1－8－14で、旧所在地の当該事業所の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（公的番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（同番号の現所在地と全元サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "株式会社リハピス 公式沿革",
+          "url": "https://rehapis.com/about/",
+          "sha256": "264944dbc069748784ed28bd77e39dada0b8d5dbc75f95bb7b3732a692176f4c"
+        },
+        {
+          "title": "株式会社リハピス 現事業案内",
+          "url": "https://rehapis.com/service",
+          "sha256": "5d58a4b81ba4cd08277aaf925de4cbe640ad3bb26a2f03bd5b87bfa4f6fbb3c5"
+        }
+      ],
+      "limits": [
+        "元記録の当該事業所の旧所在地終了のみです。法人・建物全体の閉鎖やサービスそのものの廃止を意味しません。",
+        "元ID・geometry・source_ids・名称・登録住所・registered_detailsを保持し、移転先へ元座標を転用しません。",
+        "移転日・新施設開設日を旧最終営業日と同一とはせず、旧最終日は不明のまま保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_current_same_number_explicit_relocation",
+      "baseline_name": "訪問看護リハビリステーション ラポル",
+      "baseline_address": "下関市王司上町2－5－9",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.01236,
+          34.040001
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:98"
+      ],
+      "original_number": "3560190377",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:98",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 98,
+          "csv_logical_row": 99,
+          "number": "3560190377",
+          "municipal_id": "",
+          "name": "訪問看護リハビリステーション ラポル",
+          "address": "下関市王司上町2－5－9",
+          "service": "訪問看護",
+          "operator": "株式会社リハピス",
+          "phone": "083-242-1122",
+          "point": [
+            131.01236,
+            34.040001
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3560190377",
+          "name": "訪問看護リハビリステーション ラポル",
+          "address": "下関市王司神田1－8－14",
+          "service": "訪問看護",
+          "phone": "083-242-1122",
+          "operator": "株式会社リハピス",
+          "designation_dates": [
+            "2019/04/01",
+            "2019/04/01"
+          ],
+          "expiry_dates": [
+            "2031/03/31",
+            "2031/03/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 403,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "original_services": [
+        "訪問看護"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/rehapis-about-stage25.html",
+          "source_url": "https://rehapis.com/about/",
+          "source_sha256": "264944dbc069748784ed28bd77e39dada0b8d5dbc75f95bb7b3732a692176f4c",
+          "title": "株式会社リハピス 公式沿革",
+          "names": [
+            "ぷらんセンターらしさ",
+            "訪問看護ラポル"
+          ],
+          "relocation_date": "2021-06-01",
+          "fact": "両事業所が新事業所へ移転したことを2021年6月1日の沿革欄に明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/rehapis-service-stage25.html",
+          "source_url": "https://rehapis.com/service",
+          "source_sha256": "5d58a4b81ba4cd08277aaf925de4cbe640ad3bb26a2f03bd5b87bfa4f6fbb3c5",
+          "title": "株式会社リハピス 現事業案内",
+          "entries": [
+            {
+              "number": "3560190377",
+              "name": "訪問看護リハビリステーション ラポル",
+              "address": "下関市王司神田1-8-14",
+              "phone": "083-242-1122"
+            },
+            {
+              "number": "3570105910",
+              "name": "ぷらんセンターらしさ",
+              "address": "下関市王司神田1-8-14",
+              "phone": "083-242-2929"
+            }
+          ]
+        }
+      ],
+      "event_kind": "relocation",
+      "relocation_date": "2021-06-01",
+      "old_last_business_date": null,
+      "phone_changed": false,
+      "national_rows": [
+        {
+          "number": "3560190377",
+          "name": "訪問看護リハビリステーションラポル",
+          "address": "山口県下関市王司神田1-8-14",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "083-242-1122",
+          "operator": "株式会社リハピス",
+          "operator_number": "9250001015559",
+          "point": [
+            131.01545857800463,
+            34.04557055106889
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 14888,
+          "source_as_of": "2026-06-30",
+          "distance_m": 681.9457
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3560190377",
+          "name": "訪問看護リハビリステーションラポル",
+          "address": "山口県下関市王司神田1-8-14",
+          "address2": "",
+          "service": "訪問看護",
+          "phone": "083-242-1122",
+          "operator": "株式会社リハピス",
+          "operator_number": "9250001015559",
+          "point": [
+            131.01545857800463,
+            34.04557055106889
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_130_all_20260709180342.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_130_all_20260709180342.csv",
+          "source_sha256": "ffa6feeb9b7f37608fadb8f55b73a5fd9a67ad70b031d1df2d3fb35739a3d197",
+          "csv_logical_row": 14888,
+          "source_as_of": "2026-06-30",
+          "distance_m": 681.9457
+        }
+      ],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "civic-care-3570105910-be271408d7",
+    "expected": {
+      "name": "ぷらんセンターらしさ",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:886"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.01236,
+          34.040001
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3570105910の全掲載サービスを現同番号へ照合。運営法人の沿革が当該事業所の2021年6月1日の移転を明記しています。現所在地は下関市王司神田1－8－14で、旧所在地の当該事業所の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（公的番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（同番号の現所在地と全元サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        },
+        {
+          "title": "株式会社リハピス 公式沿革",
+          "url": "https://rehapis.com/about/",
+          "sha256": "264944dbc069748784ed28bd77e39dada0b8d5dbc75f95bb7b3732a692176f4c"
+        },
+        {
+          "title": "株式会社リハピス 現事業案内",
+          "url": "https://rehapis.com/service",
+          "sha256": "5d58a4b81ba4cd08277aaf925de4cbe640ad3bb26a2f03bd5b87bfa4f6fbb3c5"
+        }
+      ],
+      "limits": [
+        "元記録の当該事業所の旧所在地終了のみです。法人・建物全体の閉鎖やサービスそのものの廃止を意味しません。",
+        "元ID・geometry・source_ids・名称・登録住所・registered_detailsを保持し、移転先へ元座標を転用しません。",
+        "移転日・新施設開設日を旧最終営業日と同一とはせず、旧最終日は不明のまま保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_current_same_number_explicit_relocation",
+      "baseline_name": "ぷらんセンターらしさ",
+      "baseline_address": "下関市王司上町2－5－9",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.01236,
+          34.040001
+        ]
+      },
+      "source_ids": [
+        "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:886"
+      ],
+      "original_number": "3570105910",
+      "original_rows": [
+        {
+          "source_id": "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:886",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_city_town.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/e3ade00c-ebfc-4848-a9ad-b6b1ab996b83/download/350001_care_service_city_town.csv",
+          "source_sha256": "be42f5ab4ead45fda31939d5c31f8c7916bf2e306541305394188ca6aef8e9d0",
+          "data_row": 886,
+          "csv_logical_row": 887,
+          "number": "3570105910",
+          "municipal_id": "",
+          "name": "ぷらんセンターらしさ",
+          "address": "下関市王司上町2－5－9",
+          "service": "居宅介護支援",
+          "operator": "株式会社リハピス",
+          "phone": "083-242-2929",
+          "point": [
+            131.01236,
+            34.040001
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570105910",
+          "name": "ぷらんセンターらしさ",
+          "address": "下関市王司神田1－8－14",
+          "service": "居宅介護支援",
+          "phone": "083-242-2929",
+          "operator": "株式会社リハピス",
+          "designation_dates": [
+            "2017/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2029/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35201.csv",
+          "line": 60,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35201&od=1",
+          "source_sha256": "9e2774c99fef64a2253a0376e1d6f6dd98edf0344a87a65833f5d66ee11c4f1f"
+        }
+      ],
+      "original_services": [
+        "居宅介護支援"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/rehapis-about-stage25.html",
+          "source_url": "https://rehapis.com/about/",
+          "source_sha256": "264944dbc069748784ed28bd77e39dada0b8d5dbc75f95bb7b3732a692176f4c",
+          "title": "株式会社リハピス 公式沿革",
+          "names": [
+            "ぷらんセンターらしさ",
+            "訪問看護ラポル"
+          ],
+          "relocation_date": "2021-06-01",
+          "fact": "両事業所が新事業所へ移転したことを2021年6月1日の沿革欄に明記。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/rehapis-service-stage25.html",
+          "source_url": "https://rehapis.com/service",
+          "source_sha256": "5d58a4b81ba4cd08277aaf925de4cbe640ad3bb26a2f03bd5b87bfa4f6fbb3c5",
+          "title": "株式会社リハピス 現事業案内",
+          "entries": [
+            {
+              "number": "3560190377",
+              "name": "訪問看護リハビリステーション ラポル",
+              "address": "下関市王司神田1-8-14",
+              "phone": "083-242-1122"
+            },
+            {
+              "number": "3570105910",
+              "name": "ぷらんセンターらしさ",
+              "address": "下関市王司神田1-8-14",
+              "phone": "083-242-2929"
+            }
+          ]
+        }
+      ],
+      "event_kind": "relocation",
+      "relocation_date": "2021-06-01",
+      "old_last_business_date": null,
+      "phone_changed": false,
+      "national_rows": [
+        {
+          "number": "3570105910",
+          "name": "ぷらんセンターらしさ",
+          "address": "王司神田1-8-14",
+          "address2": "",
+          "service": "居宅介護支援",
+          "phone": "083-242-2929",
+          "operator": "株式会社リハピス",
+          "operator_number": "9250001015559",
+          "point": [
+            131.0154750927292,
+            34.04557861131832
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29434,
+          "source_as_of": "2026-06-30",
+          "distance_m": 683.3974
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "number": "3570105910",
+          "name": "ぷらんセンターらしさ",
+          "address": "王司神田1-8-14",
+          "address2": "",
+          "service": "居宅介護支援",
+          "phone": "083-242-2929",
+          "operator": "株式会社リハピス",
+          "operator_number": "9250001015559",
+          "point": [
+            131.0154750927292,
+            34.04557861131832
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_430_all_20260709180740.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+          "source_sha256": "f7c350410b0c1125ce973d25f6eb939107c8dc3920559976796a98f1a9830a59",
+          "csv_logical_row": 29434,
+          "source_as_of": "2026-06-30",
+          "distance_m": 683.3974
+        }
+      ],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "civic-care-3571000466-8f77e75cde",
+    "expected": {
+      "name": "ヘルパーステーション周防長養園",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:83"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.973251,
+          34.008591
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3571000466の全掲載サービスを現同番号へ照合。行政議事録が旧長養園から室積の海光苑への移転と改称を明記しています。現所在地は光市室積7－18－20で、旧所在地の当該事業所の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（公的番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（同番号の現所在地と全元サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+          "sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa"
+        },
+        {
+          "title": "社会福祉法人慈光会 養護老人ホーム海光苑 施設概要",
+          "url": "https://www.jikoukai-yamaguchi.jp/kaikouen/outline.html",
+          "sha256": "0fcc16e7e73e7091d19a453dc27424a22f2dc60ff4f17435191afc1da8fb8b21"
+        },
+        {
+          "title": "光市議会 2025年2月19日福祉環境委員会会議録",
+          "url": "https://www.city.hikari.lg.jp/material/files/group/128/20250219fukusi.pdf",
+          "sha256": "f98892bcd97d4f6af08d333947e860d9da666febebd34ac1dbcdaa958e594976"
+        },
+        {
+          "title": "山口県 介護保険情報 ヘルパーステーション海光苑",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/3571000466_11.html",
+          "sha256": "de012258faaa18563963a71319465d0ce68fe3f5c86ed77c052adac202788305"
+        }
+      ],
+      "limits": [
+        "元記録の当該事業所の旧所在地終了のみです。法人・建物全体の閉鎖やサービスそのものの廃止を意味しません。",
+        "元ID・geometry・source_ids・名称・登録住所・registered_detailsを保持し、移転先へ元座標を転用しません。",
+        "移転日・新施設開設日を旧最終営業日と同一とはせず、旧最終日は不明のまま保持します。",
+        "旧電話0833-77-0096と現電話0833-48-5665の相違を保持。旧施設名を冠した元番号・法人・全サービスと現同番号、行政の旧長養園→室積の海光苑への移転説明で接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_current_same_number_explicit_relocation",
+      "baseline_name": "ヘルパーステーション周防長養園",
+      "baseline_address": "光市立野717",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.973251,
+          34.008591
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:83"
+      ],
+      "original_number": "3571000466",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:83",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 83,
+          "csv_logical_row": 84,
+          "number": "3571000466",
+          "municipal_id": "",
+          "name": "ヘルパーステーション周防長養園",
+          "address": "光市立野717",
+          "service": "訪問介護",
+          "operator": "社会福祉法人慈光会",
+          "phone": "0833-77-0096",
+          "point": [
+            131.973251,
+            34.008591
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3571000466",
+          "name": "ヘルパーステーション海光苑",
+          "address": "光市室積7－18－20",
+          "service": "訪問介護",
+          "phone": "0833-48-5665",
+          "operator": "社会福祉法人慈光会",
+          "designation_dates": [
+            "2006/10/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2030/09/30",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35210.csv",
+          "line": 32,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+          "source_sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa"
+        }
+      ],
+      "original_services": [
+        "訪問介護"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jikoukai-kaikou-outline-stage25.html",
+          "source_url": "https://www.jikoukai-yamaguchi.jp/kaikouen/outline.html",
+          "source_sha256": "0fcc16e7e73e7091d19a453dc27424a22f2dc60ff4f17435191afc1da8fb8b21",
+          "title": "社会福祉法人慈光会 養護老人ホーム海光苑 施設概要",
+          "name": "養護老人ホーム海光苑",
+          "address": "光市室積7丁目18-20",
+          "phone": "0833-48-5665",
+          "opening_date": "2024-04-23",
+          "service": "養護老人ホーム（一部外部サービス利用型特定施設含む）",
+          "use": "新所在地の補強。新施設開設日を旧最終日には使わない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/hikari-council-20250219-stage25.pdf",
+          "source_url": "https://www.city.hikari.lg.jp/material/files/group/128/20250219fukusi.pdf",
+          "source_sha256": "f98892bcd97d4f6af08d333947e860d9da666febebd34ac1dbcdaa958e594976",
+          "title": "光市議会 2025年2月19日福祉環境委員会会議録",
+          "pdf_page": 9,
+          "old_name": "長養園",
+          "new_name": "海光苑",
+          "fact": "市高齢者支援課の説明に、旧長養園が今年度から室積へ移った海光苑と明記。",
+          "use": "移転と改称の行政による明示。旧最終日記載なし。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/kaikou-helper-register-stage25.html",
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/3571000466_11.html",
+          "source_sha256": "de012258faaa18563963a71319465d0ce68fe3f5c86ed77c052adac202788305",
+          "title": "山口県 介護保険情報 ヘルパーステーション海光苑",
+          "number": "3571000466",
+          "name": "ヘルパーステーション海光苑",
+          "address": "光市室積7-18-20",
+          "operator": "社会福祉法人慈光会",
+          "phone": "0833-48-5665"
+        }
+      ],
+      "event_kind": "relocation",
+      "relocation_date": null,
+      "old_last_business_date": null,
+      "phone_changed": true,
+      "national_rows": [],
+      "known_position_discrepancies": [],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "civic-care-3571000474-2792eda9d8",
+    "expected": {
+      "name": "長養園外部サービス利用型特定施設入居者生活介護事業所",
+      "category": "social_facility",
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1120"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.973251,
+          34.008591
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元公的番号3571000474の全掲載サービスを現同番号へ照合。行政議事録が旧長養園から室積の海光苑への移転と改称を明記しています。現所在地は光市室積7－18－20で、旧所在地の当該事業所の終了として記録します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（公的番号・旧完全住所・法人・電話・全掲載サービス）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 介護サービス指定台帳（同番号の現所在地と全元サービス）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+          "sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa"
+        },
+        {
+          "title": "社会福祉法人慈光会 養護老人ホーム海光苑 施設概要",
+          "url": "https://www.jikoukai-yamaguchi.jp/kaikouen/outline.html",
+          "sha256": "0fcc16e7e73e7091d19a453dc27424a22f2dc60ff4f17435191afc1da8fb8b21"
+        },
+        {
+          "title": "光市議会 2025年2月19日福祉環境委員会会議録",
+          "url": "https://www.city.hikari.lg.jp/material/files/group/128/20250219fukusi.pdf",
+          "sha256": "f98892bcd97d4f6af08d333947e860d9da666febebd34ac1dbcdaa958e594976"
+        },
+        {
+          "title": "山口県 介護保険情報 海光苑外部サービス利用型特定施設",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/3571000474_33.html",
+          "sha256": "01c428cb3a593c94973cb5db77f8a9d07371cf32fa24774f7c60b9ff07d09228"
+        }
+      ],
+      "limits": [
+        "元記録の当該事業所の旧所在地終了のみです。法人・建物全体の閉鎖やサービスそのものの廃止を意味しません。",
+        "元ID・geometry・source_ids・名称・登録住所・registered_detailsを保持し、移転先へ元座標を転用しません。",
+        "移転日・新施設開設日を旧最終営業日と同一とはせず、旧最終日は不明のまま保持します。",
+        "旧電話0833-77-0096と現電話0833-48-5665の相違を保持。旧施設名を冠した元番号・法人・全サービスと現同番号、行政の旧長養園→室積の海光苑への移転説明で接続しています。"
+      ]
+    },
+    "evidence": {
+      "method": "original_public_number_all_services_current_same_number_explicit_relocation",
+      "baseline_name": "長養園外部サービス利用型特定施設入居者生活介護事業所",
+      "baseline_address": "光市立野717",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.973251,
+          34.008591
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1120"
+      ],
+      "original_number": "3571000474",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1120",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1120,
+          "csv_logical_row": 1121,
+          "number": "3571000474",
+          "municipal_id": "",
+          "name": "長養園外部サービス利用型特定施設入居者生活介護事業所",
+          "address": "光市立野717",
+          "service": "特定施設入居者生活介護",
+          "operator": "社会福祉法人慈光会",
+          "phone": "0833-77-0096",
+          "point": [
+            131.973251,
+            34.008591
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3571000474",
+          "name": "海光苑外部サービス利用型特定施設入居者生活介護事業所",
+          "address": "光市室積7－18－20",
+          "service": "特定施設入居者生活介護",
+          "phone": "0833-48-5665",
+          "operator": "社会福祉法人慈光会",
+          "designation_dates": [
+            "2006/10/01",
+            "2006/10/01"
+          ],
+          "expiry_dates": [
+            "2030/09/30",
+            "2030/09/30"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35210.csv",
+          "line": 241,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35210&od=1",
+          "source_sha256": "2028cb4d07c261c0ed081f97ce6a93eb27532c1b15ee81acb52a084da4f2f9aa"
+        }
+      ],
+      "original_services": [
+        "特定施設入居者生活介護"
+      ],
+      "official_event": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/jikoukai-kaikou-outline-stage25.html",
+          "source_url": "https://www.jikoukai-yamaguchi.jp/kaikouen/outline.html",
+          "source_sha256": "0fcc16e7e73e7091d19a453dc27424a22f2dc60ff4f17435191afc1da8fb8b21",
+          "title": "社会福祉法人慈光会 養護老人ホーム海光苑 施設概要",
+          "name": "養護老人ホーム海光苑",
+          "address": "光市室積7丁目18-20",
+          "phone": "0833-48-5665",
+          "opening_date": "2024-04-23",
+          "service": "養護老人ホーム（一部外部サービス利用型特定施設含む）",
+          "use": "新所在地の補強。新施設開設日を旧最終日には使わない。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/hikari-council-20250219-stage25.pdf",
+          "source_url": "https://www.city.hikari.lg.jp/material/files/group/128/20250219fukusi.pdf",
+          "source_sha256": "f98892bcd97d4f6af08d333947e860d9da666febebd34ac1dbcdaa958e594976",
+          "title": "光市議会 2025年2月19日福祉環境委員会会議録",
+          "pdf_page": 9,
+          "old_name": "長養園",
+          "new_name": "海光苑",
+          "fact": "市高齢者支援課の説明に、旧長養園が今年度から室積へ移った海光苑と明記。",
+          "use": "移転と改称の行政による明示。旧最終日記載なし。"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/kaikou-facility-register-stage25.html",
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/3571000474_33.html",
+          "source_sha256": "01c428cb3a593c94973cb5db77f8a9d07371cf32fa24774f7c60b9ff07d09228",
+          "title": "山口県 介護保険情報 海光苑外部サービス利用型特定施設",
+          "number": "3571000474",
+          "name": "海光苑外部サービス利用型特定施設入居者",
+          "address": "光市室積7-18-20",
+          "operator": "社会福祉法人慈光会",
+          "phone": "0833-48-5665"
+        }
+      ],
+      "event_kind": "relocation",
+      "relocation_date": null,
+      "old_last_business_date": null,
+      "phone_changed": true,
+      "national_rows": [],
+      "known_position_discrepancies": [],
+      "new_location_geometry_not_created": true
+    }
+  },
+  {
     "id": "osm-node-1423655236",
     "changes": {},
     "review": {

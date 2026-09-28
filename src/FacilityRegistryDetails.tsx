@@ -12,6 +12,7 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
   post_office_directory: '日本郵便の郵便局一覧',
   public_facility_directory: '自治体等の公共施設一覧',
   operator_directory: '運営者の公式施設一覧',
+  trade_association_directory: '業界団体の公式施設一覧',
 };
 
 export default function FacilityRegistryDetails({ review, duplicateOf }: { review?: RegistryReview; duplicateOf?: string }) {

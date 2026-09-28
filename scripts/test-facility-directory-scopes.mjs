@@ -10,7 +10,7 @@ const suspended = {status:'temporarily_closed',event:'temporary_closure',effecti
 const feature = {type:'Feature',id:'fixture',geometry:{type:'Point',coordinates:[132.00422,34.126681]},properties:{name:'川越郵便局',category:'post_office',source_ids:['node/fixture']}};
 
 test('retrieval dates stay labeled, allow archived source days, reject future dates and require source hashes',()=>{
- for(const scope of ['public_facility_directory','post_office_directory','operator_directory','pharmacy_register','welfare_register','food_business_register'])validateRegistryReview({...registry,scope},'2026-09-28');
+ for(const scope of ['public_facility_directory','post_office_directory','operator_directory','trade_association_directory','pharmacy_register','welfare_register','food_business_register'])validateRegistryReview({...registry,scope},'2026-09-28');
  for(const patch of [{source_date_kind:'publication'}, {source_as_of:'2026-09-29'}, {source_as_of:'2026-02-30'}, {services:[]}])assert.throws(()=>validateRegistryReview({...registry,...patch},'2026-09-28'));
  assert.throws(()=>validateRegistryReview({...registry,sources:[{title:'link',url:'https://example.org/'}]},'2026-09-28'));
  validateRegistryReview({...registry,source_as_of:'2026-09-27'},'2026-09-28');
@@ -39,6 +39,7 @@ test('directory and temporary closure render without inventing publication, open
   const {default:Registry}=await server.ssrLoadModule('/src/FacilityRegistryDetails.tsx');
   const {default:Freshness}=await server.ssrLoadModule('/src/FacilityFreshnessDetails.tsx');
   const html=renderToStaticMarkup(React.createElement(Registry,{review:registry}));assert(html.includes('公式施設一覧の掲載確認')&&html.includes('資料閲覧日'));assert(!html.includes('資料基準日')&&!html.includes('開店日'));
+  const association=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,scope:'trade_association_directory'}}));assert(association.includes('業界団体の公式施設一覧')&&association.includes('資料閲覧日'));assert(!association.includes('行政台帳の掲載確認')&&!association.includes('運営者の公式施設一覧'));
   const old=renderToStaticMarkup(React.createElement(Registry,{review:{...registry,source_date_kind:'as_of',source_as_of:'2026-02-20'}}));assert(old.includes('資料基準日')&&!old.includes('資料閲覧日'));
   const temp=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,freshness_review:suspended}}}));assert(temp.includes('一時休止確認')&&temp.includes('一時休止開始日：2018-07-09')&&temp.includes('通常の検索'));assert(!temp.includes('閉店確認'));
   const school=renderToStaticMarkup(React.createElement(Freshness,{facility:{...feature,properties:{...feature.properties,category:'school',freshness_review:{...suspended,effective_at:null,date_precision:'unknown'}}}}));assert(school.includes('休校確認')&&school.includes('休校開始日'));assert(!school.includes('：null')&&!school.includes('閉校日'));
