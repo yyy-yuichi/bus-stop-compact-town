@@ -12,59 +12,59 @@
     "public/data/civic-facilities.geojson": "45a25717ea616b5d559eda323681c65d63a13eb0e4efdf4a60de474d76e2074e"
   },
   "candidates": 3504,
-  "registry_reviews": 530,
-  "freshness_events": 102,
+  "registry_reviews": 535,
+  "freshness_events": 109,
   "additions": 0,
-  "corrections": 192,
-  "verified_no_change": 440,
+  "corrections": 200,
+  "verified_no_change": 444,
   "duplicate_records": 47,
-  "held": 2872,
+  "held": 2860,
   "previously_completed_excluded": 4260,
   "groups": [
     {
       "group": "education-medical",
-      "reviews": 119,
-      "events": 47,
+      "reviews": 120,
+      "events": 53,
       "duplicates": 9
     },
     {
       "group": "welfare",
-      "reviews": 82,
-      "events": 36,
+      "reviews": 84,
+      "events": 37,
       "duplicates": 7
     },
     {
       "group": "commercial",
-      "reviews": 147,
+      "reviews": 148,
       "events": 14,
       "duplicates": 12
     },
     {
       "group": "public",
-      "reviews": 182,
+      "reviews": 183,
       "events": 5,
       "duplicates": 19
     }
   ],
   "input_sha256": {
-    "outputs/facility-registry-008e-20260928/education-medical/accepted.json": "5ec493292167036f37e0fddadcc383db8d55434da8b6d88cb4e1e9c8bc8e4e83",
+    "outputs/facility-registry-008e-20260928/education-medical/accepted.json": "44d5a2769f38d209bdd90a574f38bee5a823974aff0ba2d6e0ec3249680dc1c4",
     "outputs/facility-registry-008e-20260928/education-medical/duplicate-verifications.json": "0fe98852b2a80f9a3c031e04bf7a98d2f32f762639437e16b1aff142e6414122",
-    "outputs/facility-registry-008e-20260928/education-medical/updates.json": "6a38bedf9445cac38c7cf551e7f74e0263798cc0fc7d480b051864a7f0b114ae",
+    "outputs/facility-registry-008e-20260928/education-medical/updates.json": "afad43c23ad6ac6843bd5ae61955e8108573990e8d78ef95459c5d36e455cedc",
     "outputs/facility-registry-008e-20260928/education-medical/reference-education/accepted.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
     "outputs/facility-registry-008e-20260928/education-medical/reference-education/updates.json": "16e7db570ced663079395a007f88b1d29ba884c90143c6691a7da79d2a9b9ded",
-    "outputs/facility-registry-008e-20260928/welfare/accepted.json": "cb74163785079750d52c6ab1543c1fd3eab63af3d0350602e4de5dc2938d39b6",
+    "outputs/facility-registry-008e-20260928/welfare/accepted.json": "2d9ac223c2651d904203aecb970b3e92f42425113502e42cad99f95c09eeebba",
     "outputs/facility-registry-008e-20260928/welfare/duplicate-verifications.json": "03b53924601eb772375d3f153c7c755e3dfe7300ff01ba664832092f2963e01b",
-    "outputs/facility-registry-008e-20260928/welfare/updates.json": "c97973e982315307d4fac966534449b145622c668ae4e19c2bbd516feeec3006",
-    "outputs/facility-registry-008e-20260928/commercial/accepted.json": "9ab515f521fbd8d0a5ee1859697cef93d63d577a14448e1ce2958b7c98947ca5",
+    "outputs/facility-registry-008e-20260928/welfare/updates.json": "dded94f6acaea2250d8b6b5a925eabbf2838b95454710d6542e6b6de4b16d124",
+    "outputs/facility-registry-008e-20260928/commercial/accepted.json": "ee95dd01dd20d6c46ddade2163e9fa2f10b1a20ff4d1395914ed0180bbe26bf0",
     "outputs/facility-registry-008e-20260928/commercial/duplicate-verifications.json": "fe12432a09230f6e84dd0adc5f6b6f65b13927349f8c15bcff99d036424bc6d4",
     "outputs/facility-registry-008e-20260928/commercial/updates.json": "4e6055220e2cd561eb3356926fd13458644a215278a6ff0076ababfd76360eb8",
     "outputs/facility-registry-008e-20260928/commercial/reference-postal/accepted.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
     "outputs/facility-registry-008e-20260928/commercial/reference-postal/updates.json": "66b4d2d07803d3b0d415c579a8fd160123670281bfec3873cc602d3e2c82a673",
-    "outputs/facility-registry-008e-20260928/public/accepted.json": "b5169ac97a098771b44d9af216bb358fdb7533213c8d535ae0f963c2da1afbbf",
+    "outputs/facility-registry-008e-20260928/public/accepted.json": "13b5ea8eefd072ec7e941b860ab3dcb756e9f3c5e302c6e25fe2784a391348ea",
     "outputs/facility-registry-008e-20260928/public/duplicate-verifications.json": "dfd0a5f850fb5e4cd774c994ade5517ca06f4597392eb5e185b14a0085bf3c81",
     "outputs/facility-registry-008e-20260928/public/updates.json": "dd6d29e328c088c2869404445bba4f34655b2cecbfc31aa7045704988f64d73b"
   },
-  "updated_at": "2026-09-28T19:46:22.892583+09:00",
+  "updated_at": "2026-09-28T20:49:55.617557+09:00",
   "limits": [
     "全件確認を継続中です。保留は確認済みに数えていません。",
     "台帳・公式一覧の掲載確認は当日の営業、開館、受入、入口の保証ではありません。",

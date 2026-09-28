@@ -10,7 +10,7 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
   welfare_register: '社会福祉施設名簿',
   food_business_register: '食品営業許可施設一覧',
   post_office_directory: '日本郵便の郵便局一覧',
-  public_facility_directory: '自治体等の公共施設一覧',
+  public_facility_directory: '自治体・観光団体の施設案内',
   operator_directory: '運営者の公式施設一覧',
   trade_association_directory: '業界団体の公式施設一覧',
   regional_business_directory: '公的事業と連携する地域店舗案内',

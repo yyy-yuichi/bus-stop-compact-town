@@ -16819,6 +16819,104 @@
     }
   },
   {
+    "id": "civic-KD0000500047",
+    "changes": {},
+    "review": {
+      "scope": "childcare_register",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "kudamatsu-child-center-wakaba",
+      "official_name": "下松市児童センター「わかば」",
+      "official_address": "下松市楠木町1-11-14",
+      "services": [
+        "一時預かり",
+        "子育て支援センター",
+        "ファミリーサポートセンター"
+      ],
+      "summary": "市の施設個別案内と設置条例の名称・愛称・完全所在地を元台帳の名称・住所・電話・施設URLに照合しました。一時預かりの施設内事業も一致し、元IDと位置を保持します。",
+      "sources": [
+        {
+          "title": "下松市児童センターわかば・施設概要",
+          "url": "https://www.city.kudamatsu.lg.jp/kosodateshien/wakaba.html",
+          "sha256": "e67d88307e5b24464b6d3c62f50195d16da361333007d32c9372893e7d221116"
+        },
+        {
+          "title": "下松市児童センター設置条例・名称と位置",
+          "url": "https://www.city.kudamatsu.lg.jp/kudahp/reiki/reiki_int/reiki_honbun/m408RG00001402.html",
+          "sha256": "160bb4b809cbf34f338ba6f0dc1924eefe9a7d125b9ac0535c72d7ff69848a80"
+        }
+      ],
+      "limits": [
+        "市の個別施設案内と条例への掲載の同一性を確認。施設固有点・建物位置・入口の精度は未確認です。",
+        "元記録のサービス分類「その他」は保持し、公式案内の3事業は今回の資料にある事業として記録します。",
+        "施設案内は2024年4月5日更新。更新日を現在の営業・受入確認日とせず、閲覧日を別に記録します。"
+      ]
+    },
+    "evidence": {
+      "method": "official_full_address_phone_url_and_ordinance_identity",
+      "baseline_name": "下松市児童センター「わかば」",
+      "baseline_address": "山口県下松市楠木町1-11-14",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8634817,
+          34.0204923
+        ]
+      },
+      "source_ids": [
+        "civic:94d6eb5b-b75b-4ef9-b882-03517fb335ce:row:47"
+      ],
+      "baseline_source_ids": [
+        "civic:94d6eb5b-b75b-4ef9-b882-03517fb335ce:row:47"
+      ],
+      "baseline_details": {
+        "sources": [
+          {
+            "source_id": "civic:94d6eb5b-b75b-4ef9-b882-03517fb335ce:row:47",
+            "source_timestamp": "2025-11",
+            "retrieved_at": "2026-09-13T22:09:28.637960+00:00"
+          }
+        ],
+        "phone": [
+          "0833-48-5432"
+        ],
+        "service": [
+          "その他"
+        ]
+      },
+      "source": [
+        {
+          "url": "https://www.city.kudamatsu.lg.jp/kosodateshien/wakaba.html",
+          "raw_file": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/education-wakaba/raw-local-only/wakaba.html",
+          "raw_sha256": "e67d88307e5b24464b6d3c62f50195d16da361333007d32c9372893e7d221116",
+          "safe_file": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/education-wakaba/facts.json",
+          "safe_sha256": "87d39a967b63527e30b0cb6c2e521e625cea40f1b2d65d7cc470ce47f010b8ab"
+        },
+        {
+          "url": "https://www.city.kudamatsu.lg.jp/kudahp/reiki/reiki_int/reiki_honbun/m408RG00001402.html",
+          "raw_file": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/education-wakaba/raw-local-only/ordinance.html",
+          "raw_sha256": "160bb4b809cbf34f338ba6f0dc1924eefe9a7d125b9ac0535c72d7ff69848a80",
+          "safe_file": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/education-wakaba/facts.json",
+          "safe_sha256": "87d39a967b63527e30b0cb6c2e521e625cea40f1b2d65d7cc470ce47f010b8ab"
+        }
+      ],
+      "current": {
+        "name": "下松市児童センター「わかば」",
+        "address": "下松市楠木町1-11-14",
+        "phone": "0833-48-5432",
+        "source_path": "outputs/facility-registry-008e-20260928/chatgpt-parallel-010/education-wakaba/facts.json",
+        "source_sha256": "87d39a967b63527e30b0cb6c2e521e625cea40f1b2d65d7cc470ce47f010b8ab",
+        "source_url": "https://www.city.kudamatsu.lg.jp/kosodateshien/wakaba.html"
+      },
+      "location": {
+        "verified": false,
+        "reason": "No facility-specific point adopted; listing identity only"
+      },
+      "independent_audit_status": "pass"
+    }
+  },
+  {
     "id": "osm-node-1423656402",
     "changes": {},
     "review": {
@@ -36349,6 +36447,407 @@
     }
   },
   {
+    "id": "civic-care-3570204234-2f3cd1b740",
+    "changes": {
+      "name": "むべの里デイサービスセンター向陽"
+    },
+    "review": {
+      "scope": "care_service_registry",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "3570204705",
+      "official_name": "むべの里デイサービスセンター向陽",
+      "official_address": "宇部市東岐波4940－1",
+      "services": [
+        "通所介護"
+      ],
+      "summary": "元の完全住所・法人・電話・全掲載サービスが、現在の別番号の事業所と一致。行政の同一所在地・法人の旧指定終了と後続指定を照合し、現在の台帳掲載を確認しました。元の旧番号・住所・位置は保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（旧番号・全施設字段）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 現行介護サービス指定台帳（後続番号）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        },
+        {
+          "title": "山口県 月別介護事業所指定・廃止一覧（番号の記載なし）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/195688.pdf",
+          "sha256": "2dbb563babd379923c6ba033e53a35e144ecff2b0f5f73682dcee034d5e1cb70"
+        },
+        {
+          "title": "山口県 月別介護事業所指定・廃止一覧（番号の記載なし）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/208050.pdf",
+          "sha256": "3aa2ba67e536418590ec7589c7a0e5c1dc62fbcb8564dbfb536d418f2d46596c"
+        }
+      ],
+      "limits": [
+        "元の番号3570204234と現在の番号3570204705は異なります。原本の旧番号を保持し、名称・元完全住所・法人・電話・全掲載サービスと行政の旧指定終了/後続指定を個別に接続しました。番号変更の法的理由・同一指定の更新・途切れない営業は推定しません。",
+        "月別行政PDFは名称・完全住所・法人・サービス・指定/廃止日を記載しますが、事業所番号は記載しません。旧番号は元CSV、現番号は現県台帳からそれぞれ確認しました。",
+        "過去の指定廃止を施設全体の現在の閉鎖とは扱いません。現在の県台帳に元の全サービスが掲載されることだけを確認しています。",
+        "台帳同一性と元位置の精度は分離します。元ID・geometry・source_ids・元住所・registered_detailsを保持し、当日の営業・受付・入口・座標精度は保証しません。",
+        "資料閲覧日を改称日・指定日・再開日として利用しません。",
+        "同名候補と元位置の既知差: P14 58.3m（位置正確度2）、national_care_publication 8048.1m。位置差は未解消です。現台帳の完全住所による照合に限定し、別点への移動や元位置の精度保証はしません。"
+      ]
+    },
+    "evidence": {
+      "method": "same_named_site_original_full_address_operator_phone_all_services_and_administrative_redesignation_records",
+      "baseline_name": "日の山園 向陽デイサービスセンター",
+      "baseline_address": "宇部市東岐波4940－1",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.331055,
+          33.970448
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:730"
+      ],
+      "original_number": "3570204234",
+      "current_number": "3570204705",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:730",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 730,
+          "csv_logical_row": 731,
+          "number": "3570204234",
+          "municipal_id": "",
+          "name": "日の山園 向陽デイサービスセンター",
+          "address": "宇部市東岐波4940－1",
+          "service": "通所介護",
+          "operator": "社会福祉法人 むべの里光栄",
+          "phone": "0836-39-6752",
+          "point": [
+            131.331055,
+            33.970448
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3570204705",
+          "name": "むべの里デイサービスセンター向陽",
+          "address": "宇部市東岐波4940－1",
+          "service": "通所介護",
+          "phone": "0836-39-6752",
+          "operator": "社会福祉法人むべの里光栄",
+          "designation_dates": [
+            "2025/04/01",
+            ""
+          ],
+          "expiry_dates": [
+            "2031/03/31",
+            ""
+          ],
+          "file": "outputs/facility-registry-20260927/care/35202.csv",
+          "line": 751,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35202&od=1",
+          "source_sha256": "b9beca114196edfbf4996b72132c5b4631880a7062b5bbb2ee92d3e084de788e"
+        }
+      ],
+      "original_services": [
+        "通所介護"
+      ],
+      "administrative_events": [
+        {
+          "name": "日の山園向陽デイサービスセンター",
+          "address": "宇部市東岐波4940-1",
+          "services": "通所介護",
+          "operator": "社会福祉法人むべの里光栄",
+          "date_text": "令和6年9月30日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/designation-202411-195688.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 4,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/195688.pdf",
+          "source_sha256": "2dbb563babd379923c6ba033e53a35e144ecff2b0f5f73682dcee034d5e1cb70"
+        },
+        {
+          "name": "むべの里デイサービスセンター向陽",
+          "address": "宇部市東岐波4940-1",
+          "services": "通所介護",
+          "operator": "社会福祉法人むべの里光栄",
+          "date_text": "令和7年4月1日",
+          "event_type": "指定年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/designation-202504-208050.pdf",
+          "page": 1,
+          "table": 1,
+          "row": 7,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/208050.pdf",
+          "source_sha256": "3aa2ba67e536418590ec7589c7a0e5c1dc62fbcb8564dbfb536d418f2d46596c"
+        }
+      ],
+      "national_current_candidates": [
+        {
+          "number": "3570204705",
+          "name": "むべのさとでいさーびすせんたーしょうよう",
+          "address": "山口県宇部市東岐波4940-1",
+          "address2": "",
+          "service": "通所介護",
+          "phone": "0836-39-6752",
+          "operator": "社会福祉法人むべの里光栄",
+          "operator_number": "9250005002132",
+          "point": [
+            131.2468161,
+            33.9515554
+          ],
+          "source_path": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/national-jigyosho_150_all_20260709180445.csv",
+          "source_url": "https://www.mhlw.go.jp/content/12300000/jigyosho_150_all_20260709180445.csv",
+          "source_sha256": "cbfbf417e98035d650c9aa1eb554e640e536b18c33dc19c79574cec52d76251a",
+          "csv_logical_row": 19096,
+          "source_as_of": "2026-06-30"
+        }
+      ],
+      "p14_alias_candidates": [
+        {
+          "feature_index": 1946,
+          "name": "日の山園向陽　デイサービスセンター",
+          "address": "山口県宇部市東岐波4940-1",
+          "point": [
+            131.33100298500005,
+            33.96992555200006
+          ],
+          "accuracy": 2,
+          "type_large": "02",
+          "type_middle": "0204",
+          "type_small": "020400",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "東岐波4940-1",
+            "P14_005": "02",
+            "P14_006": "0204",
+            "P14_007": "020400",
+            "P14_008": "日の山園向陽　デイサービスセンター",
+            "P14_009": 5,
+            "P14_010": 2
+          }
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "name": "日の山園向陽　デイサービスセンター",
+          "address": "山口県宇部市東岐波4940-1",
+          "point": [
+            131.33100298500005,
+            33.96992555200006
+          ],
+          "source": "P14",
+          "accuracy": 2,
+          "distance_m": 58.291337180560454
+        },
+        {
+          "name": "むべのさとでいさーびすせんたーしょうよう",
+          "point": [
+            131.2468161,
+            33.9515554
+          ],
+          "source": "national_care_publication",
+          "service": "通所介護",
+          "distance_m": 8048.130130793754
+        }
+      ],
+      "position_verified": false,
+      "number_change_reason_unknown": true,
+      "operational_continuity_not_claimed": true
+    }
+  },
+  {
+    "id": "civic-care-3578100475-07d8c07e3a",
+    "changes": {},
+    "review": {
+      "scope": "care_service_registry",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "3578100574",
+      "official_name": "清ヶ浜清光苑　特定施設入居者生活介護事業所",
+      "official_address": "阿武郡阿武町木与10037－3",
+      "services": [
+        "特定施設入居者生活介護"
+      ],
+      "summary": "元の完全住所・法人・電話・全掲載サービスが、現在の別番号の事業所と一致。行政の同一所在地・法人の旧指定終了と後続指定を照合し、現在の台帳掲載を確認しました。元の旧番号・住所・位置は保持します。",
+      "sources": [
+        {
+          "title": "元施設の自治体介護サービスCSV（旧番号・全施設字段）",
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967"
+        },
+        {
+          "title": "山口県 現行介護サービス指定台帳（後続番号）",
+          "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35502&od=1",
+          "sha256": "3f433c64e9f0e4cbd351d6d6c14538cf92f4b01bb8a1d3fa80b8fd343d4b2761"
+        },
+        {
+          "title": "山口県 月別介護事業所指定・廃止一覧（番号の記載なし）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/192941.pdf",
+          "sha256": "a2358e49045bf3fa06ed2bc2e0a7697529fa6d39c33988fb1ffac9730dbf0437"
+        },
+        {
+          "title": "山口県 月別介護事業所指定・廃止一覧（番号の記載なし）",
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        }
+      ],
+      "limits": [
+        "元の番号3578100475と現在の番号3578100574は異なります。原本の旧番号を保持し、名称・元完全住所・法人・電話・全掲載サービスと行政の旧指定終了/後続指定を個別に接続しました。番号変更の法的理由・同一指定の更新・途切れない営業は推定しません。",
+        "月別行政PDFは名称・完全住所・法人・サービス・指定/廃止日を記載しますが、事業所番号は記載しません。旧番号は元CSV、現番号は現県台帳からそれぞれ確認しました。",
+        "過去の指定廃止を施設全体の現在の閉鎖とは扱いません。現在の県台帳に元の全サービスが掲載されることだけを確認しています。",
+        "台帳同一性と元位置の精度は分離します。元ID・geometry・source_ids・元住所・registered_detailsを保持し、当日の営業・受付・入口・座標精度は保証しません。",
+        "資料閲覧日を改称日・指定日・再開日として利用しません。",
+        "同名候補と元位置の既知差: P14 1148.4m（位置正確度1）。位置差は未解消です。現台帳の完全住所による照合に限定し、別点への移動や元位置の精度保証はしません。",
+        "P14の同名候補は所在地が阿武町木与39-5で、元/現在の介護台帳の木与10037-3と番地も異なります。この別所在地候補を同じ施設の精密点と断定せず、単なる中心点の誤差とも扱いません。台帳掲載の確認と位置の未解決を分けて記録します。"
+      ]
+    },
+    "evidence": {
+      "method": "same_named_site_original_full_address_operator_phone_all_services_and_administrative_redesignation_records",
+      "baseline_name": "清ヶ浜清光苑 特定施設入居者生活介護事業所",
+      "baseline_address": "阿武郡阿武町木与10037－3",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.508789,
+          34.530689
+        ]
+      },
+      "source_ids": [
+        "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1144"
+      ],
+      "original_number": "3578100475",
+      "current_number": "3578100574",
+      "original_rows": [
+        {
+          "source_id": "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1144",
+          "source_path": "data-sources/civic-facilities-20260914/350001_care_service_pref.csv",
+          "source_url": "https://yamaguchi-opendata.jp/ckan/dataset/80607611-e00d-457c-a4a1-aaea33a9ae1e/resource/f326f80b-b4a9-48ca-8ce1-62264c57ddfa/download/350001_care_service_pref.csv",
+          "source_sha256": "e580fd797b1f643b1d0dcb98c803b4f1c77eb7c6792bd2e51ed36b9fc1943967",
+          "data_row": 1144,
+          "csv_logical_row": 1145,
+          "number": "3578100475",
+          "municipal_id": "",
+          "name": "清ヶ浜清光苑 特定施設入居者生活介護事業所",
+          "address": "阿武郡阿武町木与10037－3",
+          "service": "特定施設入居者生活介護",
+          "operator": "社会福祉法人阿武福祉会",
+          "phone": "08388-2-3071",
+          "point": [
+            131.508789,
+            34.530689
+          ]
+        }
+      ],
+      "current_rows": [
+        {
+          "number": "3578100574",
+          "name": "清ヶ浜清光苑　特定施設入居者生活介護事業所",
+          "address": "阿武郡阿武町木与10037－3",
+          "service": "特定施設入居者生活介護",
+          "phone": "08388-2-3071",
+          "operator": "社会福祉法人 阿武福祉会",
+          "designation_dates": [
+            "2025/06/01",
+            "2025/06/01"
+          ],
+          "expiry_dates": [
+            "2031/05/31",
+            "2031/05/31"
+          ],
+          "file": "outputs/facility-registry-20260927/care/35502.csv",
+          "line": 19,
+          "source_url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35502&od=1",
+          "source_sha256": "3f433c64e9f0e4cbd351d6d6c14538cf92f4b01bb8a1d3fa80b8fd343d4b2761"
+        }
+      ],
+      "original_services": [
+        "特定施設入居者生活介護"
+      ],
+      "administrative_events": [
+        {
+          "name": "清ヶ浜清光苑特定施設入居者生活介護事業所",
+          "address": "阿武郡阿武町木与10037-3",
+          "services": "特定施設入居者生活介護・介護予防特定施設入居者生活介護",
+          "operator": "社会福祉法人阿武福祉会",
+          "date_text": "令和6年9月30日",
+          "event_type": "廃止年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/designation-202410-192941.pdf",
+          "page": 1,
+          "table": 2,
+          "row": 9,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/192941.pdf",
+          "source_sha256": "a2358e49045bf3fa06ed2bc2e0a7697529fa6d39c33988fb1ffac9730dbf0437"
+        },
+        {
+          "name": "清ヶ浜清光苑特定施設入居者生活介護事業所",
+          "address": "阿武郡阿武町木与10037-3",
+          "services": "特定施設入居者生活介護・介護予防特定施設入居者生活介護",
+          "operator": "社会福祉法人阿武福祉会",
+          "date_text": "令和7年6月1日",
+          "event_type": "指定年月日",
+          "file": "outputs/facility-registry-008d-20260928/welfare/raw-local-only/designation-202506-212911.pdf",
+          "page": 1,
+          "table": 1,
+          "row": 8,
+          "source_url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/212911.pdf",
+          "source_sha256": "9fb2f6fed3d09a6e56da8d3d1ef329548097adee30b10518c4eaea295eed0178"
+        }
+      ],
+      "national_current_candidates": [],
+      "p14_alias_candidates": [
+        {
+          "feature_index": 1184,
+          "name": "清ヶ浜清光苑",
+          "address": "山口県阿武郡阿武町木与39-5",
+          "point": [
+            131.4969939,
+            34.52718994000014
+          ],
+          "accuracy": 1,
+          "type_large": "02",
+          "type_middle": "0201",
+          "type_small": "020101",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "阿武郡阿武町",
+            "P14_003": "35502",
+            "P14_004": "木与39-5",
+            "P14_005": "02",
+            "P14_006": "0201",
+            "P14_007": "020101",
+            "P14_008": "清ヶ浜清光苑",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        }
+      ],
+      "known_position_discrepancies": [
+        {
+          "name": "清ヶ浜清光苑",
+          "address": "山口県阿武郡阿武町木与39-5",
+          "point": [
+            131.4969939,
+            34.52718994000014
+          ],
+          "source": "P14",
+          "accuracy": 1,
+          "distance_m": 1148.4296426737758
+        }
+      ],
+      "position_verified": false,
+      "number_change_reason_unknown": true,
+      "operational_continuity_not_claimed": true
+    }
+  },
+  {
     "id": "civic-KD0000900002",
     "changes": {},
     "duplicate_of": "civic-care-3570701080-17ca4bb56e",
@@ -55614,6 +56113,190 @@
       "directory_operator": "株式会社にぎわい宇部（宇部市都市再生推進法人）",
       "scope_basis": "Municipal plan explicitly identifies Ube Toppin as individual-shop information dissemination with the urban-development company. Operator is the named company, not the city itself; no commissioning contract asserted.",
       "point_binding": "Individual shop heading and basic-information full address bind the sole shop-single_map numeric q point. It is not a street/address query, viewport, parking or headquarters point."
+    }
+  },
+  {
+    "id": "osm-way-561705134",
+    "changes": {},
+    "review": {
+      "scope": "operator_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "izutsuya:yamaguchi",
+      "official_name": "山口井筒屋",
+      "official_address": "山口市中市町3番3号",
+      "services": [
+        "百貨店"
+      ],
+      "summary": "施設固有名と元の位置を公式資料の固有点に照合し、当該施設の公式案内に掲載された名称・所在地を確認しました。",
+      "sources": [
+        {
+          "title": "公式の当該施設案内・名称・所在地・指定地図",
+          "url": "https://www.izutsuya.co.jp/storelist/yamaguchi/access/",
+          "sha256": "cba464831dabef186220ec4af3dc1dd7234bc8abc750717024a40f35c7f5c042"
+        },
+        {
+          "title": "公式の当該施設案内・名称・所在地・指定地図",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.3931558377865!2d131.47685145711486!3d34.17738068502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b13032d%3A0xfbb492fed5c446de!2z5bGx5Y-j5LqV562S5bGLIOWxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1707895181350!5m2!1sja!2sjp",
+          "sha256": "f2800b99a4c40e5666c9b9d8df5f8165071c9a31d211deabb336261adc3ed4e5"
+        },
+        {
+          "title": "公式の当該施設案内・名称・所在地・指定地図",
+          "url": "https://www.izutsuya.co.jp/storelist/yamaguchi/",
+          "sha256": "a7967edcc83f087bea5e27a386ca3aafc2dffa7bf9b002ab3c361c001f545e5d"
+        },
+        {
+          "title": "公式の当該施設案内・名称・所在地・指定地図",
+          "url": "https://yell-yamaguchi.com/%e5%b1%b1%e5%8f%a3%e4%ba%95%e7%ad%92%e5%b1%8b/",
+          "sha256": "39c82626e5021b8a2980770bfd5696e5bb522b2923cebdd8b51ed3c754572eca"
+        }
+      ],
+      "limits": [
+        "公式掲載の確認であり、当日の営業・開館・受入・入口・利用可否の保証ではありません。",
+        "資料閲覧日を記録し、地図中心や住所の代表点は位置根拠に使用していません。"
+      ]
+    },
+    "evidence": {
+      "baseline_name": "山口井筒屋",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.478564,
+          34.1775039
+        ]
+      },
+      "source_ids": [
+        "way/561705134"
+      ],
+      "original_osm_identity": [
+        {
+          "source_file": "data-sources/osm-facilities-20260911/osm-facilities.json",
+          "source_sha256": "33925e727d8ba2fef080caa4a71be912373cf31ed1d1bc3d196d0efecd25d53a",
+          "element_index": 1053,
+          "source_id": "way/561705134",
+          "tags": {
+            "name": "山口井筒屋"
+          }
+        }
+      ],
+      "official_point": [
+        131.4784275,
+        34.177456
+      ],
+      "distance_m": 13.64,
+      "within_original_geometry": true,
+      "previous_4865_records_duplicate_check": {
+        "count": 4865,
+        "matches": []
+      },
+      "method": "original_specific_name_and_official_directory_named_point",
+      "audit_group": "regional-directory-supplement",
+      "receipts": {
+        "izutsuya-yamaguchi-access": {
+          "key": "izutsuya-yamaguchi-access",
+          "url": "https://www.izutsuya.co.jp/storelist/yamaguchi/access/",
+          "request_form": null,
+          "checked_at": "2026-09-28",
+          "source_date_kind": "retrieved",
+          "source_as_of": "2026-09-28",
+          "final_url": "https://www.izutsuya.co.jp/storelist/yamaguchi/access/",
+          "content_type": "text/html; charset=UTF-8",
+          "encoding": "utf-8-sig",
+          "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/izutsuya-yamaguchi-access.html",
+          "raw_sha256": "cba464831dabef186220ec4af3dc1dd7234bc8abc750717024a40f35c7f5c042",
+          "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/izutsuya-yamaguchi-access.html",
+          "safe_sha256": "cba464831dabef186220ec4af3dc1dd7234bc8abc750717024a40f35c7f5c042",
+          "bytes": 59198,
+          "status": "fetched"
+        },
+        "izutsuya-yamaguchi-linked-embed": {
+          "key": "izutsuya-yamaguchi-linked-embed",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.3931558377865!2d131.47685145711486!3d34.17738068502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b13032d%3A0xfbb492fed5c446de!2z5bGx5Y-j5LqV562S5bGLIOWxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1707895181350!5m2!1sja!2sjp",
+          "request_form": null,
+          "checked_at": "2026-09-28",
+          "source_date_kind": "retrieved",
+          "source_as_of": "2026-09-28",
+          "final_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.3931558377865!2d131.47685145711486!3d34.17738068502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b13032d%3A0xfbb492fed5c446de!2z5bGx5Y-j5LqV562S5bGLIOWxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1707895181350!5m2!1sja!2sjp",
+          "content_type": "text/html; charset=UTF-8",
+          "encoding": "utf-8-sig",
+          "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/izutsuya-yamaguchi-linked-embed.html",
+          "raw_sha256": "f2800b99a4c40e5666c9b9d8df5f8165071c9a31d211deabb336261adc3ed4e5",
+          "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/izutsuya-yamaguchi-linked-embed.html",
+          "safe_sha256": "374d5be102935ed6ba5daf8c6e402769a8b9203f10104ef524e2d469f7d54969",
+          "bytes": 3728,
+          "status": "fetched"
+        },
+        "izutsuya-yamaguchi-operator": {
+          "key": "izutsuya-yamaguchi-operator",
+          "url": "https://www.izutsuya.co.jp/storelist/yamaguchi/",
+          "request_form": null,
+          "checked_at": "2026-09-28",
+          "source_date_kind": "retrieved",
+          "source_as_of": "2026-09-28",
+          "final_url": "https://www.izutsuya.co.jp/storelist/yamaguchi/",
+          "content_type": "text/html; charset=UTF-8",
+          "encoding": "utf-8-sig",
+          "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/izutsuya-yamaguchi-operator.html",
+          "raw_sha256": "a7967edcc83f087bea5e27a386ca3aafc2dffa7bf9b002ab3c361c001f545e5d",
+          "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/izutsuya-yamaguchi-operator.html",
+          "safe_sha256": "a7967edcc83f087bea5e27a386ca3aafc2dffa7bf9b002ab3c361c001f545e5d",
+          "bytes": 48644,
+          "status": "fetched"
+        },
+        "yell-detail-osm-way-561705134": {
+          "key": "yell-detail-osm-way-561705134",
+          "url": "https://yell-yamaguchi.com/%e5%b1%b1%e5%8f%a3%e4%ba%95%e7%ad%92%e5%b1%8b/",
+          "request_form": null,
+          "checked_at": "2026-09-28",
+          "source_date_kind": "retrieved",
+          "source_as_of": "2026-09-28",
+          "final_url": "https://yell-yamaguchi.com/%e5%b1%b1%e5%8f%a3%e4%ba%95%e7%ad%92%e5%b1%8b/",
+          "content_type": "text/html; charset=UTF-8",
+          "encoding": "utf-8-sig",
+          "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/yell-detail-osm-way-561705134.html",
+          "raw_sha256": "39c82626e5021b8a2980770bfd5696e5bb522b2923cebdd8b51ed3c754572eca",
+          "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/yell-detail-osm-way-561705134.html",
+          "safe_sha256": "39c82626e5021b8a2980770bfd5696e5bb522b2923cebdd8b51ed3c754572eca",
+          "bytes": 25776,
+          "status": "fetched"
+        }
+      },
+      "kind": "named_embed",
+      "subject_key": "izutsuya-yamaguchi-access",
+      "point_key": "izutsuya-yamaguchi-linked-embed",
+      "map_receipt": {
+        "key": "izutsuya-yamaguchi-linked-embed",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.3931558377865!2d131.47685145711486!3d34.17738068502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b13032d%3A0xfbb492fed5c446de!2z5bGx5Y-j5LqV562S5bGLIOWxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1707895181350!5m2!1sja!2sjp",
+        "request_form": null,
+        "checked_at": "2026-09-28",
+        "source_date_kind": "retrieved",
+        "source_as_of": "2026-09-28",
+        "final_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.3931558377865!2d131.47685145711486!3d34.17738068502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354497032b13032d%3A0xfbb492fed5c446de!2z5bGx5Y-j5LqV562S5bGLIOWxseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1707895181350!5m2!1sja!2sjp",
+        "content_type": "text/html; charset=UTF-8",
+        "encoding": "utf-8-sig",
+        "raw_path": "outputs/facility-registry-008e-20260928/commercial/raw-local-only/izutsuya-yamaguchi-linked-embed.html",
+        "raw_sha256": "f2800b99a4c40e5666c9b9d8df5f8165071c9a31d211deabb336261adc3ed4e5",
+        "safe_path": "outputs/facility-registry-008e-20260928/commercial/safe/izutsuya-yamaguchi-linked-embed.html",
+        "safe_sha256": "374d5be102935ed6ba5daf8c6e402769a8b9203f10104ef524e2d469f7d54969",
+        "bytes": 3728,
+        "status": "fetched"
+      },
+      "named_place_record": [
+        "0x354497032b13032d:0xfbb492fed5c446de",
+        "〒753-0086 山口県山口市中市町３−３ 山口井筒屋 山口店",
+        [
+          34.177456,
+          131.4784275
+        ],
+        "18137283222533588702"
+      ],
+      "named_place_name": "山口井筒屋 山口店",
+      "official_phone": "083-902-1111",
+      "named_place_phone": "083-902-1111",
+      "point_binding": "The official subject page iframe, or its single map link and reached CID, binds the named place entity to the facility. Viewport is not used.",
+      "facility_scope": "Whole 山口井筒屋 store; named entity and operator telephone/address are for the department store, not the clock/jewelry salon, kimono salon, basement supermarket or parking."
     }
   },
   {
@@ -80864,6 +81547,299 @@
       "html_api_distance_m": 0.0,
       "other_original_ids_at_official_point": [],
       "identity_relation": "元の施設名・固有地名または公式に併記された名称と同じ施設。施設ID固有点で元位置を照合。名称表記差は現在の掲載に限り、改称日や移転不存在は推定しない。"
+    }
+  },
+  {
+    "id": "osm-way-1284372340",
+    "changes": {},
+    "review": {
+      "scope": "public_facility_directory",
+      "checked_at": "2026-09-28",
+      "source_as_of": "2026-09-28",
+      "source_date_kind": "retrieved",
+      "registry_id": "nagato-tourism:ogouchi-park",
+      "official_name": "小河内公園",
+      "official_address": "長門市深川湯本今市2713-2",
+      "services": [
+        "公園"
+      ],
+      "summary": "長門市観光サイトが公表する催事会場の公園名・所在地・施設固有地図を元の公園区域に照合しました。元ID・位置を保持します。",
+      "sources": [
+        {
+          "title": "長門市観光サイト・小河内公園を会場とする案内",
+          "url": "https://nanavi.jp/events/nagato-nature/",
+          "sha256": "9b0888ed06671bc6becb28d52f94aee645d4ad11a01a3842486fbd7a810c6dc5"
+        }
+      ],
+      "limits": [
+        "公式観光サイトの会場情報への掲載確認です。当日の利用可否や入口、公園全体の境界を保証しません。",
+        "2026年10月17日開催予定の案内を施設名称・公表所在地・会場の位置にのみ使用しています。将来の催事の実施実績や現在の開園状態を確定したものではありません。",
+        "同一施設の住所欄に続く唯一の地図とリンクの目的地点が一致し、元Polygonの穴を除く内部であることを確認。表示中心は根拠にしません。",
+        "資料基準日の明記がないため閲覧日を記録。元のID・geometry・source_idsを保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "normal_chat_stage5_single_named_venue_map",
+      "baseline_name": "小河内公園",
+      "baseline_geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.1765015,
+                34.3397505
+              ],
+              [
+                131.177294,
+                34.3398548
+              ],
+              [
+                131.177335,
+                34.3399234
+              ],
+              [
+                131.177335,
+                34.3399936
+              ],
+              [
+                131.1773016,
+                34.3400538
+              ],
+              [
+                131.1772636,
+                34.340114
+              ],
+              [
+                131.177174,
+                34.3402118
+              ],
+              [
+                131.1771452,
+                34.3403447
+              ],
+              [
+                131.1771482,
+                34.3405704
+              ],
+              [
+                131.1771801,
+                34.3406369
+              ],
+              [
+                131.1772226,
+                34.3406883
+              ],
+              [
+                131.177297,
+                34.3407309
+              ],
+              [
+                131.1773851,
+                34.3407686
+              ],
+              [
+                131.1774307,
+                34.340825
+              ],
+              [
+                131.1774276,
+                34.3408777
+              ],
+              [
+                131.1774003,
+                34.3409729
+              ],
+              [
+                131.1774079,
+                34.3410118
+              ],
+              [
+                131.1774853,
+                34.341062
+              ],
+              [
+                131.1775643,
+                34.3411635
+              ],
+              [
+                131.1777693,
+                34.3414206
+              ],
+              [
+                131.178135,
+                34.3421091
+              ],
+              [
+                131.1780683,
+                34.3422117
+              ],
+              [
+                131.178043,
+                34.3422954
+              ],
+              [
+                131.1780384,
+                34.3423866
+              ],
+              [
+                131.1780061,
+                34.342856
+              ],
+              [
+                131.1778933,
+                34.3429492
+              ],
+              [
+                131.1777552,
+                34.3430252
+              ],
+              [
+                131.1774974,
+                34.3430366
+              ],
+              [
+                131.1774192,
+                34.3430252
+              ],
+              [
+                131.1772511,
+                34.3429511
+              ],
+              [
+                131.176991,
+                34.3428978
+              ],
+              [
+                131.1768253,
+                34.3428902
+              ],
+              [
+                131.1766411,
+                34.3428864
+              ],
+              [
+                131.1765583,
+                34.3428465
+              ],
+              [
+                131.1764109,
+                34.3425424
+              ],
+              [
+                131.1763465,
+                34.342417
+              ],
+              [
+                131.1763603,
+                34.3423714
+              ],
+              [
+                131.1758516,
+                34.3420065
+              ],
+              [
+                131.1758447,
+                34.341959
+              ],
+              [
+                131.1759137,
+                34.3418126
+              ],
+              [
+                131.1759805,
+                34.3415028
+              ],
+              [
+                131.1759759,
+                34.3412937
+              ],
+              [
+                131.1758562,
+                34.3410942
+              ],
+              [
+                131.1758516,
+                34.3410771
+              ],
+              [
+                131.1759787,
+                34.3410237
+              ],
+              [
+                131.1762814,
+                34.3408741
+              ],
+              [
+                131.1763872,
+                34.3403425
+              ],
+              [
+                131.1765015,
+                34.3397505
+              ]
+            ]
+          ]
+        ]
+      },
+      "source_ids": [
+        "way/1284372340"
+      ],
+      "current": {
+        "name": "小河内公園",
+        "address": "長門市深川湯本今市2713-2",
+        "source_path": "outputs\\facility-registry-008e-20260928\\public\\tourism-scope-followup\\ogouchi-facts.json",
+        "source_sha256": "9b0888ed06671bc6becb28d52f94aee645d4ad11a01a3842486fbd7a810c6dc5",
+        "source_safe_sha256": "034ae4cde7292af69c7f6a4825d706851f822174ab4433f5f406c9ca5d085a2b",
+        "source_url": "https://nanavi.jp/events/nagato-nature/"
+      },
+      "source": {
+        "id": "ogouchi",
+        "url": "https://nanavi.jp/events/nagato-nature/",
+        "resolved_url": "https://nanavi.jp/events/nagato-nature/",
+        "raw_file": "outputs\\facility-registry-008e-20260928\\public\\tourism-scope-followup\\raw-local-only\\ogouchi.html",
+        "raw_sha256": "9b0888ed06671bc6becb28d52f94aee645d4ad11a01a3842486fbd7a810c6dc5",
+        "safe_file": "outputs\\facility-registry-008e-20260928\\public\\tourism-scope-followup\\ogouchi-facts.json",
+        "safe_sha256": "034ae4cde7292af69c7f6a4825d706851f822174ab4433f5f406c9ca5d085a2b",
+        "extracted_fields": {
+          "headings_address_fields": [
+            "山口県ネイチャーゲーム大会 inながと",
+            "基本情報",
+            "お問い合わせ",
+            "マップ",
+            "スケジュール",
+            "イベントチラシ",
+            "エリア",
+            "エリア",
+            "深川・湯本エリア",
+            "エリア",
+            "青海島・通・仙崎エリア"
+          ],
+          "map_links": [
+            {
+              "label": "Google Mapsはこちら",
+              "url": "https://maps.google.com/maps?q=34.3419559%2C131.1770473&z=15&hl=ja"
+            }
+          ],
+          "map_iframes": [
+            "https://maps.google.com/maps?q=34.3419559%2C131.1770473&z=15&output=embed&hl=ja"
+          ],
+          "matching_history_rows": [],
+          "facility_fields": {
+            "会場": "小河内公園",
+            "所在地": "長門市深川湯本今市2713-2"
+          }
+        }
+      },
+      "point": [
+        131.1770473,
+        34.3419559
+      ],
+      "official_map_link": "https://maps.google.com/maps?q=34.3419559%2C131.1770473&z=15&hl=ja",
+      "official_map_iframe": "https://maps.google.com/maps?q=34.3419559%2C131.1770473&z=15&output=embed&hl=ja",
+      "all_original_ids_at_same_official_point": [
+        "osm-way-1284372340"
+      ]
     }
   },
   {

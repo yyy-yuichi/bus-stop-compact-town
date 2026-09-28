@@ -5580,6 +5580,1279 @@
     }
   },
   {
+    "id": "osm-node-1423660099",
+    "expected": {
+      "name": "県立佐波高等学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.660442,
+          34.196696
+        ]
+      },
+      "source_ids": [
+        "node/1423660099"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2025-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "県文書館は、佐波農林・佐波農業・佐波高校から防府高校佐波分校への継承と、2025年3月の閉校完了を明記。元学校・原番地はP02原点完全一致で同定し、この旧学校の候補を除外。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://archives.pref.yamaguchi.lg.jp/cms/wp-content/uploads/2025/06/AW20_kinen_all.pdf",
+          "sha256": "8251bfa6d0ad5eb371222e21f8e92df8cc218f217d809b1b15aadca941eeef3c"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "県立佐波高等学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.660442,
+          34.196696
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660099"
+      ],
+      "source_ids": [
+        "node/1423660099"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 772,
+          "tags": {
+            "KSJ2:ADS": "徳地堀2429",
+            "KSJ2:AdminArea": "山口県山口市",
+            "KSJ2:PubFacAdmin": "都道府県",
+            "amenity": "school",
+            "name": "県立佐波高等学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県山口市徳地堀2429",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 772,
+          "complete_numbered": true
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35203",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立佐波高等学校",
+        "address": "徳地堀2429",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.660442,
+          34.196696
+        ],
+        "gml_id": "fb01_1301",
+        "feature_index_0based": 1300,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県山口市徳地堀2429",
+      "current": {
+        "name": "佐波高等学校",
+        "address": "山口県山口市徳地堀2429",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 14,
+        "official_closed_name": "佐波高等学校",
+        "successor_contact": "防府高等学校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 14,
+          "official_closed_name": "佐波高等学校",
+          "successor_contact": "防府高等学校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-archives-saba-history-stage10.pdf",
+          "source_url": "https://archives.pref.yamaguchi.lg.jp/cms/wp-content/uploads/2025/06/AW20_kinen_all.pdf",
+          "source_sha256": "8251bfa6d0ad5eb371222e21f8e92df8cc218f217d809b1b15aadca941eeef3c",
+          "source_as_of": "2025",
+          "retrieved_at": "2026-09-28",
+          "page": 12,
+          "role": "pref_archives_completed_history_and_month",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-2.json",
+          "safe_sha256": "853c89b9119e1fbaa42a6009a369518564ae1afd1428866b32d5d42c65271f4b"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35203",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立佐波高等学校",
+        "address": "徳地堀2429",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.660442,
+          34.196696
+        ],
+        "gml_id": "fb01_1301",
+        "feature_index_0based": 1300,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "県文書館は、佐波農林・佐波農業・佐波高校から防府高校佐波分校への継承と、2025年3月の閉校完了を明記。元学校・原番地はP02原点完全一致で同定し、この旧学校の候補を除外。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization",
+      "name_transition_note": "県文書館の同一沿革が旧佐波高校→佐波分校→2025年3月閉校までを直接接続。元にない別学校名の閉校を転用しない。"
+    }
+  },
+  {
+    "id": "osm-node-1423660125",
+    "expected": {
+      "name": "県立宇部西高等学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.235972,
+          33.9915
+        ]
+      },
+      "source_ids": [
+        "node/1423660125"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2026-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "県の2026年4月1日閉校済み一覧と学校自身の2026年4月以降証明書移管を確認。県2月告知は当年度末で在籍者がいなくなると明記。閉校式3月1日を実施日にせず2026年3月の月精度とする。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.ubenishi-h.ysn21.jp/",
+          "sha256": "ba5cb1fac48526c0781b1dc5aba16e94e9aacdc2bd2aafb01c59448f600d646e"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/press/336830.html",
+          "sha256": "ee92b7c7c127f12e3b4264267c1d0f41036d391e49563d2764c6696e8a7935fc"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "県立宇部西高等学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.235972,
+          33.9915
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660125"
+      ],
+      "source_ids": [
+        "node/1423660125"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 778,
+          "tags": {
+            "KSJ2:ADS": "厚南区沖ノ旦",
+            "KSJ2:AdminArea": "山口県宇部市",
+            "KSJ2:PubFacAdmin": "都道府県",
+            "amenity": "school",
+            "name": "県立宇部西高等学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q11467053",
+            "wikipedia": "ja:山口県立宇部西高等学校"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県宇部市厚南区沖ノ旦",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 778,
+          "complete_numbered": false
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35202",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立宇部西高等学校",
+        "address": "厚南区沖ノ旦",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.235972,
+          33.9915
+        ],
+        "gml_id": "fb01_1295",
+        "feature_index_0based": 1294,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県宇部市厚南区沖ノ旦",
+      "current": {
+        "name": "宇部西高等学校",
+        "address": "山口県宇部市厚南区沖ノ旦",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 20,
+        "official_closed_name": "宇部西高等学校",
+        "successor_contact": "宇部商業高等学校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 20,
+          "official_closed_name": "宇部西高等学校",
+          "successor_contact": "宇部商業高等学校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/ubenishi-home-stage10.html",
+          "source_url": "https://www.ubenishi-h.ysn21.jp/",
+          "source_sha256": "ba5cb1fac48526c0781b1dc5aba16e94e9aacdc2bd2aafb01c59448f600d646e",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "role": "school_own_postclosure_certificates_notice",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-3.json",
+          "safe_sha256": "e173768fe2db48fcf08f133af0c44053c7f8ebd89a91f7844b8f57ef536305f5"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-ubenishi-closure-notice-stage10.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/press/336830.html",
+          "source_sha256": "ee92b7c7c127f12e3b4264267c1d0f41036d391e49563d2764c6696e8a7935fc",
+          "source_as_of": "2026-02-20",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_fiscal_year_end_notice_not_ceremony_date",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-4.json",
+          "safe_sha256": "c87a84cd5a5e1807c92ea7807706a13259ff70b2844bcb77e6c2dd8f81f273dd"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35202",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立宇部西高等学校",
+        "address": "厚南区沖ノ旦",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.235972,
+          33.9915
+        ],
+        "gml_id": "fb01_1295",
+        "feature_index_0based": 1294,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "県の2026年4月1日閉校済み一覧と学校自身の2026年4月以降証明書移管を確認。県2月告知は当年度末で在籍者がいなくなると明記。閉校式3月1日を実施日にせず2026年3月の月精度とする。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization"
+    }
+  },
+  {
+    "id": "osm-node-1423660145",
+    "expected": {
+      "name": "県立徳佐高等学校高俣分校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.607266,
+          34.455783
+        ]
+      },
+      "source_ids": [
+        "node/1423660145"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2010-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "萩市2010年3月15日号は徳佐高校高俣分校が最後の卒業生を送り閉校を迎えたと完了形で報告。元P02の校名・原点・高佐下2402-1を照合。卒業式日と法的閉校日を区別し、月精度にとどめる。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.city.hagi.lg.jp/uploaded/pr/141_pdf1.pdf",
+          "sha256": "58bb5abd097e28d245250774ab24b029d30137ef94c1a54a4292c46809772946"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "県立徳佐高等学校高俣分校",
+      "baseline_category": "school",
+      "baseline_address": "山口県萩市高佐下",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.607266,
+          34.455783
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660145"
+      ],
+      "source_ids": [
+        "node/1423660145"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 785,
+          "tags": {
+            "addr:block_number": "2402-1",
+            "addr:city": "萩市",
+            "addr:neighbourhood": "高佐下",
+            "addr:province": "山口県",
+            "amenity": "school",
+            "name": "県立徳佐高等学校高俣分校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "operator": "山口県",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県萩市高佐下",
+          "origin": "baseline_property",
+          "complete_numbered": false
+        },
+        {
+          "value": "山口県萩市高佐下2402-1",
+          "origin": "OSM addr components; numeric component boundaries preserved",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 785,
+          "complete_numbered": true
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立徳佐高等学校高俣分校",
+        "address": "高佐下2402-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.607266,
+          34.455783
+        ],
+        "gml_id": "fb01_1310",
+        "feature_index_0based": 1309,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県萩市高佐下2402-1",
+      "current": {
+        "name": "徳佐高等学校高俣分校",
+        "address": "山口県萩市高佐下2402-1",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 9,
+        "official_closed_name": "徳佐高等学校高俣分校",
+        "successor_contact": "山口高等学校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 9,
+          "official_closed_name": "徳佐高等学校高俣分校",
+          "successor_contact": "山口高等学校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/hagi-20100315-141-stage10.pdf",
+          "source_url": "https://www.city.hagi.lg.jp/uploaded/pr/141_pdf1.pdf",
+          "source_sha256": "58bb5abd097e28d245250774ab24b029d30137ef94c1a54a4292c46809772946",
+          "source_as_of": "2010-03-15",
+          "retrieved_at": "2026-09-28",
+          "page": 21,
+          "role": "municipal_completed_closure_report",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-5.json",
+          "safe_sha256": "791e35227a0d54661ba50521429da12195b767113ee7021e918c6ecdc0f930c4"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立徳佐高等学校高俣分校",
+        "address": "高佐下2402-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.607266,
+          34.455783
+        ],
+        "gml_id": "fb01_1310",
+        "feature_index_0based": 1309,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "萩市2010年3月15日号は徳佐高校高俣分校が最後の卒業生を送り閉校を迎えたと完了形で報告。元P02の校名・原点・高佐下2402-1を照合。卒業式日と法的閉校日を区別し、月精度にとどめる。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization"
+    }
+  },
+  {
+    "id": "osm-node-1423660148",
+    "expected": {
+      "name": "県立徳山商業高等学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.825931,
+          34.044548
+        ]
+      },
+      "source_ids": [
+        "node/1423660148"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "県の閉校済み一覧で徳山商業高校を確認。後継校公式も旧徳山商業校舎とのお別れを報告。元校はP02原名・原点・遠石2-11-1で同定し、周陽3-1-1の徳山商工高校と区別。統合開始やお別れ会の日を旧校閉校日にしない。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.tokuyama-ct.ysn21.jp/class-reunion",
+          "sha256": "5e8ff7b7f100ade56be50e5ed109d3e85704b3bb4a10dae4b36da838a0d669ef"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.tokuyama-ct.ysn21.jp/overview",
+          "sha256": "5421a4cd5f98afc5be693bc9ca1d835b1e9882b1037e8791f27e725d8edfa011"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "県立徳山商業高等学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.825931,
+          34.044548
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660148"
+      ],
+      "source_ids": [
+        "node/1423660148"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 788,
+          "tags": {
+            "KSJ2:ADS": "遠石2-11-1",
+            "KSJ2:AdminArea": "山口県周南市",
+            "KSJ2:PubFacAdmin": "都道府県",
+            "amenity": "school",
+            "name": "県立徳山商業高等学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県周南市遠石2-11-1",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 788,
+          "complete_numbered": true
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立徳山商業高等学校",
+        "address": "遠石2-11-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図",
+        "point": [
+          131.825931,
+          34.044548
+        ],
+        "gml_id": "fb01_1354",
+        "feature_index_0based": 1353,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県周南市遠石2-11-1",
+      "current": {
+        "name": "徳山商業高等学校",
+        "address": "山口県周南市遠石2-11-1",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 2,
+        "official_closed_name": "徳山商業高等学校",
+        "successor_contact": "徳山商工高等学校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 2,
+          "official_closed_name": "徳山商業高等学校",
+          "successor_contact": "徳山商工高等学校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/tokuyama-old-school-farewell-stage10.html",
+          "source_url": "https://www.tokuyama-ct.ysn21.jp/class-reunion",
+          "source_sha256": "5e8ff7b7f100ade56be50e5ed109d3e85704b3bb4a10dae4b36da838a0d669ef",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "role": "successor_explicit_old_commercial_school_building",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-6.json",
+          "safe_sha256": "266f7532c15ff03f70796b970bb5ade1381a379c6c34c2799f7776b54cb4a195"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/tokuyama-ct-overview.html",
+          "source_url": "https://www.tokuyama-ct.ysn21.jp/overview",
+          "source_sha256": "5421a4cd5f98afc5be693bc9ca1d835b1e9882b1037e8791f27e725d8edfa011",
+          "source_as_of": null,
+          "retrieved_at": "2026-09-28",
+          "role": "successor_school_separate_name_history",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-7.json",
+          "safe_sha256": "7aa4b9b858d2243ec4fd10cb249a0c0060e0a44cda941d75decfa71301c8a796"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35215",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立徳山商業高等学校",
+        "address": "遠石2-11-1",
+        "administrativeCode": "2",
+        "administrator": "数値地図",
+        "point": [
+          131.825931,
+          34.044548
+        ],
+        "gml_id": "fb01_1354",
+        "feature_index_0based": 1353,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "県の閉校済み一覧で徳山商業高校を確認。後継校公式も旧徳山商業校舎とのお別れを報告。元校はP02原名・原点・遠石2-11-1で同定し、周陽3-1-1の徳山商工高校と区別。統合開始やお別れ会の日を旧校閉校日にしない。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization"
+    }
+  },
+  {
+    "id": "osm-node-1423660195",
+    "expected": {
+      "name": "県立響高等学校",
+      "category": "school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.931548,
+          34.169643
+        ]
+      },
+      "source_ids": [
+        "node/1423660195"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "県は響高校を閉校した高等学校として明記。元P02の原名・原点・豊浦町小串新宮15を復元し旧校の候補を除外。下関北高校や土地・建物自体の閉鎖は主張せず、閉校日は不明のまま保持。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "県立響高等学校",
+      "baseline_category": "school",
+      "baseline_address": "",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.931548,
+          34.169643
+        ]
+      },
+      "baseline_source_ids": [
+        "node/1423660195"
+      ],
+      "source_ids": [
+        "node/1423660195"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 804,
+          "tags": {
+            "KSJ2:ADS": "豊浦町小串新宮15",
+            "KSJ2:AdminArea": "山口県下関市",
+            "KSJ2:PubFacAdmin": "都道府県",
+            "amenity": "school",
+            "name": "県立響高等学校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県下関市豊浦町小串新宮15",
+          "origin": "KSJ2:AdminArea+KSJ2:ADS",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 804,
+          "complete_numbered": true
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立響高等学校",
+        "address": "豊浦町小串新宮15",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          130.931548,
+          34.169643
+        ],
+        "gml_id": "fb01_1281",
+        "feature_index_0based": 1280,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県下関市豊浦町小串新宮15",
+      "current": {
+        "name": "響高等学校",
+        "address": "山口県下関市豊浦町小串新宮15",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 17,
+        "official_closed_name": "響高等学校",
+        "successor_contact": "下関北高等学校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 17,
+          "official_closed_name": "響高等学校",
+          "successor_contact": "下関北高等学校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35201",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立響高等学校",
+        "address": "豊浦町小串新宮15",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          130.931548,
+          34.169643
+        ],
+        "gml_id": "fb01_1281",
+        "feature_index_0based": 1280,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": false,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "県は響高校を閉校した高等学校として明記。元P02の原名・原点・豊浦町小串新宮15を復元し旧校の候補を除外。下関北高校や土地・建物自体の閉鎖は主張せず、閉校日は不明のまま保持。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization"
+    }
+  },
+  {
+    "id": "osm-way-1273958637",
+    "expected": {
+      "name": "山口県立奈古高等学校須佐分校",
+      "category": "school",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.6096479,
+                34.6185255
+              ],
+              [
+                131.6100619,
+                34.6181147
+              ],
+              [
+                131.6103339,
+                34.6176902
+              ],
+              [
+                131.6097437,
+                34.617429
+              ],
+              [
+                131.6096296,
+                34.6174117
+              ],
+              [
+                131.6086165,
+                34.6169883
+              ],
+              [
+                131.6083849,
+                34.6175448
+              ],
+              [
+                131.6084783,
+                34.6177946
+              ],
+              [
+                131.6086386,
+                34.6179617
+              ],
+              [
+                131.6086369,
+                34.6181369
+              ],
+              [
+                131.6087901,
+                34.6183012
+              ],
+              [
+                131.6089114,
+                34.6184873
+              ],
+              [
+                131.6092651,
+                34.6186333
+              ],
+              [
+                131.6093457,
+                34.6186393
+              ],
+              [
+                131.6094523,
+                34.6186235
+              ],
+              [
+                131.6096479,
+                34.6185255
+              ]
+            ]
+          ]
+        ]
+      },
+      "source_ids": [
+        "way/1273958637"
+      ]
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": "2010-03",
+      "date_precision": "month",
+      "checked_at": "2026-09-28",
+      "summary": "萩市2010年3月15日号は奈古高校須佐分校が最後の卒業生を送り閉校したと完了形で報告。元OSM完全住所・P02の同名同住所の施設点が元Polygon内部にあることを照合。卒業式日と法的閉校日を区別し、月精度にとどめる。",
+      "sources": [
+        {
+          "title": "元学校の公的固有名・住所・施設点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a"
+        },
+        {
+          "title": "県・自治体・学校の閉校完了または継承記録",
+          "url": "https://www.city.hagi.lg.jp/uploaded/pr/141_pdf1.pdf",
+          "sha256": "58bb5abd097e28d245250774ab24b029d30137ef94c1a54a4292c46809772946"
+        }
+      ],
+      "limits": [
+        "元geometry・source_ids・元の詳細を保持し、対象の旧学校または旧分校だけを通常候補から除外します。",
+        "土地・建物の閉鎖、後継校や別組織の閉鎖を意味しません。",
+        "閉校式・卒業式・記念式・後継校開校日から実施日を推定しません。",
+        "閉校日の明記がないため月精度または不明を保持します。"
+      ]
+    },
+    "evidence": {
+      "method": "original_P02_or_original_OSM_complete_address_specific_point_identity_and_explicit_pref_closed_school_list",
+      "baseline_name": "山口県立奈古高等学校須佐分校",
+      "baseline_category": "school",
+      "baseline_address": "山口県萩市須佐5200-4",
+      "baseline_geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.6096479,
+                34.6185255
+              ],
+              [
+                131.6100619,
+                34.6181147
+              ],
+              [
+                131.6103339,
+                34.6176902
+              ],
+              [
+                131.6097437,
+                34.617429
+              ],
+              [
+                131.6096296,
+                34.6174117
+              ],
+              [
+                131.6086165,
+                34.6169883
+              ],
+              [
+                131.6083849,
+                34.6175448
+              ],
+              [
+                131.6084783,
+                34.6177946
+              ],
+              [
+                131.6086386,
+                34.6179617
+              ],
+              [
+                131.6086369,
+                34.6181369
+              ],
+              [
+                131.6087901,
+                34.6183012
+              ],
+              [
+                131.6089114,
+                34.6184873
+              ],
+              [
+                131.6092651,
+                34.6186333
+              ],
+              [
+                131.6093457,
+                34.6186393
+              ],
+              [
+                131.6094523,
+                34.6186235
+              ],
+              [
+                131.6096479,
+                34.6185255
+              ]
+            ]
+          ]
+        ]
+      },
+      "baseline_source_ids": [
+        "way/1273958637"
+      ],
+      "source_ids": [
+        "way/1273958637"
+      ],
+      "baseline_raw_identity": [
+        {
+          "path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 3663,
+          "tags": {
+            "addr:city": "萩市",
+            "addr:full": "山口県萩市須佐5200-4",
+            "addr:province": "山口県",
+            "amenity": "school",
+            "area": "yes",
+            "name": "山口県立奈古高等学校須佐分校",
+            "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+            "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+            "source": "KSJ2",
+            "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "wikidata": "Q17230922",
+            "wikipedia": "ja:山口県立奈古高等学校須佐分校"
+          }
+        }
+      ],
+      "restored_original_addresses": [
+        {
+          "value": "山口県萩市須佐5200-4",
+          "origin": "baseline_property",
+          "complete_numbered": true
+        },
+        {
+          "value": "山口県萩市須佐5200-4",
+          "origin": "addr:full",
+          "source_path": "data-sources/neighborhood-facilities-20260914/osm-neighborhood-facilities.json",
+          "source_sha256": "63233897d3314a4c12b3d1b22ae833fec51e75516281dede4c780cd2e035a3f7",
+          "element_array_index": 3663,
+          "complete_numbered": true
+        }
+      ],
+      "original_public_source": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立奈古高等学校須佐分校",
+        "address": "須佐5200-4",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.609409,
+          34.617829
+        ],
+        "gml_id": "fb01_1311",
+        "feature_index_0based": 1310,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "resolved_original_public_address": "山口県萩市須佐5200-4",
+      "current": {
+        "name": "奈古高等学校須佐分校",
+        "address": "山口県萩市須佐5200-4",
+        "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+        "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+        "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+        "source_as_of": "2026-04-01",
+        "retrieved_at": "2026-09-28",
+        "role": "pref_current_explicit_closed_school_list",
+        "html_tr_index": 11,
+        "official_closed_name": "奈古高等学校須佐分校",
+        "successor_contact": "萩高等学校 萩高等学校奈古分校",
+        "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+        "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+      },
+      "history_sources": [
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/pref-closed-high-schools-stage8.html",
+          "source_url": "https://www.pref.yamaguchi.lg.jp/soshiki/262/297308.html",
+          "source_sha256": "dc90915184da3e73431e4012774d236559908507cf94291b4331a4aa35cf506a",
+          "source_as_of": "2026-04-01",
+          "retrieved_at": "2026-09-28",
+          "role": "pref_current_explicit_closed_school_list",
+          "html_tr_index": 11,
+          "official_closed_name": "奈古高等学校須佐分校",
+          "successor_contact": "萩高等学校 萩高等学校奈古分校",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-1.json",
+          "safe_sha256": "52a1c1886d125843e1ec6cc8f9b332227806f500ec014dc12157d8ea40346b5f"
+        },
+        {
+          "source_path": "outputs/facility-registry-008e-20260928/education-medical/raw-local-only/hagi-20100315-141-stage10.pdf",
+          "source_url": "https://www.city.hagi.lg.jp/uploaded/pr/141_pdf1.pdf",
+          "source_sha256": "58bb5abd097e28d245250774ab24b029d30137ef94c1a54a4292c46809772946",
+          "source_as_of": "2010-03-15",
+          "retrieved_at": "2026-09-28",
+          "page": 21,
+          "role": "municipal_completed_closure_report",
+          "safe_path": "outputs/facility-registry-008e-20260928/education-medical/school-closure-stage10-safe-5.json",
+          "safe_sha256": "791e35227a0d54661ba50521429da12195b767113ee7021e918c6ecdc0f930c4"
+        }
+      ],
+      "location": {
+        "administrativeAreaCode": "35204",
+        "publicFacilityLargeClassification": "16",
+        "publicFacilitySmallClassification": "16004",
+        "name": "県立奈古高等学校須佐分校",
+        "address": "須佐5200-4",
+        "administrativeCode": "2",
+        "administrator": "数値地図画像",
+        "point": [
+          131.609409,
+          34.617829
+        ],
+        "gml_id": "fb01_1311",
+        "feature_index_0based": 1310,
+        "source_path": "outputs\\facility-registry-008c-20260928\\shared-locations\\P02-06_35_GML.zip",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+        "source_sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a",
+        "member": "P02-06_35-g.xml",
+        "member_sha256": "a56df3142564203e306094789e5b58f25f9435365314ecc7fc9c19127e55f7e3",
+        "source_as_of": "2006"
+      },
+      "distance_m": 0,
+      "location_verified": true,
+      "independent_audit_status": "pass",
+      "individual_decision_note": "萩市2010年3月15日号は奈古高校須佐分校が最後の卒業生を送り閉校したと完了形で報告。元OSM完全住所・P02の同名同住所の施設点が元Polygon内部にあることを照合。卒業式日と法的閉校日を区別し、月精度にとどめる。",
+      "closure_scope": "original_named_school_or_branch_only_not_land_buildings_or_successor_organization",
+      "polygon_identity_note": "P02の奈古高校須佐分校・萩市須佐5200-4が元OSM addr:fullと完全一致、施設固有点が外周内・穴外。閉校同一性の位置であり現在運営の証明ではない。"
+    }
+  },
+  {
     "id": "osm-node-1423656442",
     "expected": {
       "name": "市立乙瀬小学校(休校中)",
@@ -13531,6 +14804,346 @@
         }
       ],
       "new_location_geometry_not_created": true
+    }
+  },
+  {
+    "id": "osm-node-1631265381",
+    "expected": {
+      "name": "うべつくし園",
+      "category": "social_facility",
+      "source_ids": [
+        "node/1631265381"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.258285,
+          33.963135
+        ]
+      }
+    },
+    "changes": {},
+    "review": {
+      "status": "closed",
+      "event": "closed",
+      "effective_at": null,
+      "date_precision": "unknown",
+      "checked_at": "2026-09-28",
+      "summary": "元のうべつくし園は公的2006年資料の同名・旧住所宇部市中村3-12-51・一致する旧地点で同定しました。運営法人の沿革は2016年3月1日にあすとぴあ6丁目11-21-4へ新築移転したことを明記し、現個別施設案内も移転先を掲載しています。旧所在地の施設記録として終了を確認しました。",
+      "sources": [
+        {
+          "title": "社会福祉法人むべの里光栄 沿革",
+          "url": "https://mubekouei.com/company/history/",
+          "sha256": "e769e79db0d879230ab089f08af6090d5667e2b86b309218b5f6f43746a62a27"
+        },
+        {
+          "title": "むべの里光栄 児童発達支援センターうべつくし園 個別施設案内",
+          "url": "https://mubekouei.com/service/service-2135/",
+          "sha256": "da7a55606f360268fef8b16aa98046f217aea42ca0423a103fd2a1110a411abc"
+        },
+        {
+          "title": "国土交通省 公共施設2006 旧うべつくし園の名称・完全住所・地点",
+          "url": "https://nlftp.mlit.go.jp/ksj/gml/data/P02/P02-06/P02-06_35_GML.zip",
+          "sha256": "ef4bda253e99c076aef5004cb6a277486fc6844a22b301618acf04ac1d84117a"
+        }
+      ],
+      "limits": [
+        "旧所在地の施設記録の終了です。現在のうべつくし園や運営法人全体を閉鎖扱いにせず、新所在地へ旧座標を流用しません。",
+        "沿革の2016年3月1日は新築移転の記録で、旧所在地の最終営業日は明記されていません。旧終了日は未詳とし、移転日を最終営業日に転用しません。",
+        "現行P14・WAMもあすとぴあに掲載。新旧位置が離れる理由は公式移転で説明されますが、原OSM座標の入口・境界精度は保証しません。",
+        "元ID・geometry・source_ids・元のassisted_living分類を保持します。子の放課後サービスや別市のつくし園と混同しません。"
+      ]
+    },
+    "evidence": {
+      "method": "exact_historical_public_name_address_point_and_explicit_operator_relocation",
+      "baseline_name": "うべつくし園",
+      "baseline_geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.258285,
+          33.963135
+        ]
+      },
+      "source_ids": [
+        "node/1631265381"
+      ],
+      "historical_named_point": {
+        "administrativeAreaCode": "35202",
+        "publicFacilityLargeClassification": "19",
+        "publicFacilitySmallClassification": "19008",
+        "name": "うべつくし園",
+        "address": "中村3-12-51",
+        "administrativeCode": "3",
+        "administrator": "数値地図画像",
+        "point": [
+          131.258285,
+          33.963135
+        ],
+        "gml_id": "fb01_2587",
+        "feature_index_0based": 2586,
+        "full_address": "宇部市中村3-12-51",
+        "distance_m": 0
+      },
+      "official_event": {
+        "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/mube-history-stage31.html",
+        "source_url": "https://mubekouei.com/company/history/",
+        "source_sha256": "e769e79db0d879230ab089f08af6090d5667e2b86b309218b5f6f43746a62a27",
+        "title": "社会福祉法人むべの里光栄 沿革",
+        "events": [
+          {
+            "date": "1973-04-01",
+            "facility": "うべつくし園",
+            "fact": "宇部市設置の知的障害児通園施設の経営を受託"
+          },
+          {
+            "date": "2016-03-01",
+            "facility": "うべつくし園・うべつくし園きらきらキッズ・総合相談支援センターぷりずむ",
+            "fact": "あすとぴあ6丁目11-21-4へ新築移転"
+          },
+          {
+            "date": "2019-09",
+            "facility": "グループホーム大小路",
+            "fact": "ひらき・山門を統合して開設"
+          },
+          {
+            "date": "2021-04",
+            "fact": "むべの里と光栄会が合併し社会福祉法人むべの里光栄へ"
+          }
+        ],
+        "old_last_business_date": null
+      },
+      "current_facility": {
+        "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/mube-tsukushi-stage31.html",
+        "source_url": "https://mubekouei.com/service/service-2135/",
+        "source_sha256": "da7a55606f360268fef8b16aa98046f217aea42ca0423a103fd2a1110a411abc",
+        "title": "むべの里光栄 児童発達支援センターうべつくし園 個別施設案内",
+        "facility": "児童発達支援センターうべつくし園（児童発達支援）",
+        "address": "山口県宇部市あすとぴあ6-11-21-4",
+        "phone": "0836-43-7750",
+        "capacity": 40
+      },
+      "current_p14_alias_rows": [
+        {
+          "feature_index": 1974,
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6-11-21-4",
+          "point": [
+            131.29719372600005,
+            33.97600071800002
+          ],
+          "accuracy": 1,
+          "type_large": "99",
+          "type_middle": "9911",
+          "type_small": "991100",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "あすとぴあ6-11-21-4",
+            "P14_005": "99",
+            "P14_006": "9911",
+            "P14_007": "991100",
+            "P14_008": "児童発達支援センターうべつくし園",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        },
+        {
+          "feature_index": 1975,
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6-11-21-4",
+          "point": [
+            131.297101966,
+            33.97593389700012
+          ],
+          "accuracy": 1,
+          "type_large": "99",
+          "type_middle": "9912",
+          "type_small": "991200",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "あすとぴあ6-11-21-4",
+            "P14_005": "99",
+            "P14_006": "9912",
+            "P14_007": "991200",
+            "P14_008": "児童発達支援センターうべつくし園",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        },
+        {
+          "feature_index": 1976,
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6-11-21-3",
+          "point": [
+            131.29717705400003,
+            33.976229501000034
+          ],
+          "accuracy": 1,
+          "type_large": "99",
+          "type_middle": "9912",
+          "type_small": "991200",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "あすとぴあ6-11-21-3",
+            "P14_005": "99",
+            "P14_006": "9912",
+            "P14_007": "991200",
+            "P14_008": "児童発達支援センターうべつくし園",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        },
+        {
+          "feature_index": 1977,
+          "name": "うべつくし園きらきらキッズ",
+          "address": "山口県宇部市あすとぴあ6-11-21-3",
+          "point": [
+            131.29710136300014,
+            33.97615982600007
+          ],
+          "accuracy": 1,
+          "type_large": "99",
+          "type_middle": "9912",
+          "type_small": "991200",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "あすとぴあ6-11-21-3",
+            "P14_005": "99",
+            "P14_006": "9912",
+            "P14_007": "991200",
+            "P14_008": "うべつくし園きらきらキッズ",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        },
+        {
+          "feature_index": 1978,
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6-11-21-3",
+          "point": [
+            131.29716459100018,
+            33.97620197300006
+          ],
+          "accuracy": 1,
+          "type_large": "05",
+          "type_middle": "0509",
+          "type_small": "050901",
+          "raw_properties": {
+            "P14_001": "山口県",
+            "P14_002": "宇部市",
+            "P14_003": "35202",
+            "P14_004": "あすとぴあ6-11-21-3",
+            "P14_005": "05",
+            "P14_006": "0509",
+            "P14_007": "050901",
+            "P14_008": "児童発達支援センターうべつくし園",
+            "P14_009": 5,
+            "P14_010": 1
+          }
+        }
+      ],
+      "current_wam_alias_rows": [
+        {
+          "number": "3510201670",
+          "record_no": "A0000075512",
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ６丁目１１番２１−４号",
+          "operator": "社会福祉法人むべの里光栄",
+          "operator_number": "9250005002132",
+          "service": "生活介護",
+          "phone": "0836-43-7750",
+          "point": [
+            131.29715952,
+            33.97594269
+          ],
+          "designating_authority": "山口県",
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sfkopendata_202603_22.zip",
+          "source_url": "https://www.wam.go.jp/content/files/pcpub/top/sfkopendata/202603/sfkopendata_202603_22.zip",
+          "source_sha256": "25fd259fe0f62408fad20d1adf252c7c55520657bb849e47448347a6af178fe2",
+          "source_member": "csvdownload022.csv",
+          "member_sha256": "e5dd08f1bb8267c02c884056ea7864db196fdfe5a86ec513e45a03b30b052851",
+          "csv_logical_row": 10967,
+          "source_as_of": "2026-03-31"
+        },
+        {
+          "number": "3550200426",
+          "record_no": "A0000060083",
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6丁目11ー21ー4",
+          "operator": "社会福祉法人むべの里光栄",
+          "operator_number": "9250005002132",
+          "service": "児童発達支援",
+          "phone": "0836-43-7750",
+          "point": [
+            131.29715952,
+            33.97594269
+          ],
+          "designating_authority": "山口県",
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sfkopendata_202603_63.zip",
+          "source_url": "https://www.wam.go.jp/content/files/pcpub/top/sfkopendata/202603/sfkopendata_202603_63.zip",
+          "source_sha256": "4f880db8a113ba16b61e9b5b8d47394988b234550e455331e7c34750f3e51021",
+          "source_member": "csvdownload063.csv",
+          "member_sha256": "a24de89619eb2db22b3a4cd9215af702d3eaa17983724cb77f9569f79b9db099",
+          "csv_logical_row": 13809,
+          "source_as_of": "2026-03-31"
+        },
+        {
+          "number": "3550200426",
+          "record_no": "A0000076789",
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ６丁目１１番２１−３号",
+          "operator": "社会福祉法人むべの里光栄",
+          "operator_number": "9250005002132",
+          "service": "放課後等デイサービス",
+          "phone": "0836-43-7752",
+          "point": [
+            131.2971373,
+            33.97614822
+          ],
+          "designating_authority": "山口県",
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sfkopendata_202603_65.zip",
+          "source_url": "https://www.wam.go.jp/content/files/pcpub/top/sfkopendata/202603/sfkopendata_202603_65.zip",
+          "source_sha256": "5c0a0db4a4610b9ffeaeeefa362531a749f4e21b569cfc90e13f80b2637be66d",
+          "source_member": "csvdownload065.csv",
+          "member_sha256": "6730e46d89bcae5d55d701e24551bf64155d12f45936d2b7908df8b1b6dffe68",
+          "csv_logical_row": 19968,
+          "source_as_of": "2026-03-31"
+        },
+        {
+          "number": "3550200426",
+          "record_no": "A0000060084",
+          "name": "児童発達支援センターうべつくし園",
+          "address": "山口県宇部市あすとぴあ6丁目11ー21ー4",
+          "operator": "社会福祉法人むべの里光栄",
+          "operator_number": "9250005002132",
+          "service": "保育所等訪問支援",
+          "phone": "0836-43-7750",
+          "point": [
+            131.29715952,
+            33.97594269
+          ],
+          "designating_authority": "山口県",
+          "source_path": "outputs/facility-registry-008e-20260928/welfare/raw-local-only/sfkopendata_202603_67.zip",
+          "source_url": "https://www.wam.go.jp/content/files/pcpub/top/sfkopendata/202603/sfkopendata_202603_67.zip",
+          "source_sha256": "325c718a34a39695c90f5ad9bca71a9105060f07fbfe43d02df19ef9d6ca8932",
+          "source_member": "csvdownload067.csv",
+          "member_sha256": "99cff262265ef936f2d6afb22073a97dc1eb73cc706b5b17abee0619b689fed5",
+          "csv_logical_row": 2878,
+          "source_as_of": "2026-03-31"
+        }
+      ],
+      "all_original_same_name_ids": [
+        "osm-node-1631265381"
+      ],
+      "old_last_business_date": null,
+      "original_source_classification_preserved": true
     }
   },
   {
