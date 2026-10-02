@@ -261,3 +261,16 @@
 .nearby-facilities { margin:20px 0; }
 .nearby-filter { display:block; margin:12px 0; font-size:12px; color:#536358; }
 .nearby-filter select { display:block; width:100%; min-height:44px; margin-top:5px; padding:8px; border:1px solid #dce2d9; border-radius:10px; background:#fff; color:#263d32; }
+
+/* Scoped audit evidence is visible without replacing names, geometry or operating state. */
+.audit-summary { padding: 8px 14px 10px; border-top: 1px solid #e7e5e4; font-size: 12px; background: #fafaf9; }
+.audit-summary p { margin: 0 0 6px; color: #57534e; }
+.audit-summary p span { font-size: 11px; }
+.audit-summary > div { display: flex; gap: 8px; }
+.audit-summary button { min-height: 36px; padding: 4px 10px; border: 1px solid #d6d3d1; border-radius: 8px; background: white; color: #44403c; font-weight: 600; }
+.audit-summary button[aria-pressed="true"] { border-color: #047857; background: #ecfdf5; color: #065f46; }
+.audit-summary .audit-reset { margin-top: 6px; min-height: 32px; border: none; padding-left: 0; background: transparent; text-decoration: underline; }
+.place-row small.audit-badge { display: inline-block; width: fit-content; margin-top: 3px; padding: 2px 6px; border-radius: 5px; font-size: 10px; }
+.audit-limited_support { background: #e7f0eb; color: #365647; }
+.audit-unresolved { background: #fff3d9; color: #785b20; }
+.facility-audit-details { border-left: 3px solid #78716c; }

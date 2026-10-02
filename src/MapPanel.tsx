@@ -8,6 +8,7 @@ import FacilityIcon from './FacilityIcon';
 import { searchPlaces } from './placeSearch';
 import BasemapSettings from './basemapPreferences';
 import { boardingTitle } from './boardingGuide';
+import { auditLabel } from './facilityAudit';
 
 interface Props {
   stops: BusFeature[];
@@ -30,13 +31,14 @@ interface Props {
 export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch, municipalFailed, retryMunicipal }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState('');
+  const [auditFilter, setAuditFilter] = useState<'limited_support' | 'unresolved' | null>(null);
   const [resultsOpen, setResultsOpen] = useState(true);
   const [listOpen, setListOpen] = useState(false);
   const [listLimit, setListLimit] = useState(24);
   const [limits, setLimits] = useState({ facilities: 12, stops: 12 });
   const resultPanel = useRef<HTMLDivElement>(null);
   const pendingFocus = useRef<{ section: string; index: number } | null>(null);
-  useEffect(() => { if (resultPanel.current) resultPanel.current.scrollTop = 0; }, [query]);
+  useEffect(() => { if (resultPanel.current) resultPanel.current.scrollTop = 0; }, [query, auditFilter]);
   useEffect(() => {
     if (!pendingFocus.current) return;
     const { section, index } = pendingFocus.current;
@@ -47,7 +49,12 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   useEffect(() => { setListLimit(24); }, [categories]);
   useEffect(() => { if (selection) { setExpanded(false); setResultsOpen(false); } else setResultsOpen(true); }, [selection]);
   const term = query.trim();
-  const matches = useMemo(() => searchPlaces(query, stops, facilities), [query, stops, facilities]);
+  const auditCounts = useMemo(() => ({ supported: facilities.filter(f => f.properties.audit_review?.status === 'limited_support').length, unresolved: facilities.filter(f => f.properties.audit_review?.status === 'unresolved').length }), [facilities]);
+  const auditCheckedAt = useMemo(() => facilities.reduce((date, f) => f.properties.audit_review && f.properties.audit_review.checked_at > date ? f.properties.audit_review.checked_at : date, ''), [facilities]);
+  const matches = useMemo(() => {
+    const scoped = auditFilter ? facilities.filter(f => f.properties.audit_review?.status === auditFilter) : facilities;
+    return auditFilter && !query.trim() ? { facilities: scoped, stops: [] } : searchPlaces(query, auditFilter ? [] : stops, scoped);
+  }, [query, stops, facilities, auditFilter]);
   const changeQuery = (value: string) => { pendingFocus.current = null; setQuery(value); setResultsOpen(true); setLimits({ facilities: 12, stops: 12 }); };
   const clearQuery = () => { changeQuery(''); document.getElementById('place-search')?.focus(); };
   const visible = facilities.filter(f => categories.includes(categoryOf(f).id));
@@ -57,16 +64,21 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
     const category = categoryOf(feature);
     return <button key={String(feature.id)} className="place-row" onClick={() => chooseFacility(feature)}>
       <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-      <span><strong>{feature.properties.name}</strong><small>{feature.properties.city ? `${feature.properties.city} · ` : ''}{category.name}</small></span><span className="row-arrow" aria-hidden="true">›</span>
+      <span><strong>{feature.properties.name}</strong><small>{feature.properties.city ? `${feature.properties.city} · ` : ''}{category.name}</small>{feature.properties.audit_review && <small className={`audit-badge audit-${feature.properties.audit_review.status}`}>{auditLabel(feature.properties.audit_review)}</small>}</span><span className="row-arrow" aria-hidden="true">›</span>
     </button>;
   };
-  return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${term && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">
+  return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${(term || auditFilter) && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">
     <div className="search-field"><MapIcon name="search" /><label className="sr-only" htmlFor="place-search">バス停・暮らしの施設を検索</label><input id="place-search" type="search" placeholder="バス停・暮らしの施設を検索" value={query} onChange={e => changeQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.stopPropagation(); clearQuery(); } }} autoComplete="off" />{query && <button className="search-clear" aria-label="検索をクリア" onClick={clearQuery}><MapIcon name="close" /></button>}<button className="panel-toggle icon-button" aria-label={expanded ? '表示設定を閉じる' : '表示設定を開く'} aria-expanded={expanded} aria-controls="map-options" onClick={() => { setExpanded(p => !p); if (!expanded) setResultsOpen(false); }}><MapIcon name={expanded ? 'close' : 'layers'} /></button></div>
+    {!shoppingLoading && !shoppingError && (auditCounts.supported + auditCounts.unresolved > 0) && <section className="audit-summary" aria-label="最新施設監査">
+      <p>{auditCheckedAt} 施設監査 <span>（原ID単位）</span></p>
+      <div><button aria-pressed={auditFilter === 'limited_support'} onClick={() => { pendingFocus.current = null; setAuditFilter('limited_support'); setResultsOpen(true); setExpanded(false); setLimits({ facilities: 12, stops: 12 }); onReturnSearch(); }}>限定根拠 {auditCounts.supported.toLocaleString('ja-JP')}件</button><button aria-pressed={auditFilter === 'unresolved'} onClick={() => { pendingFocus.current = null; setAuditFilter('unresolved'); setResultsOpen(true); setExpanded(false); setLimits({ facilities: 12, stops: 12 }); onReturnSearch(); }}>未解決 {auditCounts.unresolved.toLocaleString('ja-JP')}件</button></div>
+      {auditFilter && <button className="audit-reset" onClick={() => { pendingFocus.current = null; setAuditFilter(null); setResultsOpen(true); setLimits({ facilities: 12, stops: 12 }); onReturnSearch(); }}>すべての施設・バス停を検索</button>}
+    </section>}
     {municipalFailed && <button className="text-button error-text" onClick={retryMunicipal}>岩国市・光市のデータを再読み込み</button>}
     {shoppingError && <button className="text-button error-text" onClick={retryShopping}>施設を再読み込み</button>}
-    {term && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>←「{term}」の検索結果に戻る</button>}
-    {term && resultsOpen ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">検索結果 {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
-      {matches.facilities.length > 0 && <section aria-labelledby="facility-results-title"><h3 className="result-group-title" id="facility-results-title">施設（参考記録を含む） <span>{matches.facilities.length}件</span></h3>
+    {(term || auditFilter) && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>← {term ? `「${term}」の検索結果` : '監査結果の一覧'}に戻る</button>}
+    {(term || auditFilter) && resultsOpen ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">{auditFilter ? auditFilter === 'limited_support' ? '限定範囲の根拠あり' : '未解決' : '検索結果'} {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
+      {matches.facilities.length > 0 && <section aria-labelledby="facility-results-title"><h3 className="result-group-title" id="facility-results-title">{auditFilter ? '監査結果（施設全体の営業判定ではありません）' : '施設（参考記録を含む）'} <span>{matches.facilities.length}件</span></h3>
         {matches.facilities.slice(0, limits.facilities).map(facilityRow)}
         {matches.facilities.length > limits.facilities && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'facility-results-title', index: limits.facilities }; setLimits(p => ({ ...p, facilities: p.facilities + 12 })); }}>施設をさらに表示（残り{matches.facilities.length - limits.facilities}件）</button>}
       </section>}

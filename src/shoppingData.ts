@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { ShoppingCollection, ShoppingFeature } from './types';
 import { applyFacilityCurrent } from './facilityFreshness';
+import { applyFacilityAudit } from './facilityAudit';
 
 export { SHOPPING_CATEGORIES, categoryOf } from './facilityCatalog';
 export type { ShoppingCategory } from './facilityCatalog';
@@ -22,8 +23,10 @@ export function useShoppingData() {
     ));
     const current = fetch(`${import.meta.env.BASE_URL}data/facility-current.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Current facility reviews unavailable'); return r.json() as Promise<unknown>; });
-    Promise.all([originals, current]).then(([collections, reviews]) => {
-        if (!abort.signal.aborted) { setFeatures(applyFacilityCurrent(collections.flat(), reviews)); setLoading(false); }
+    const audit = fetch(`${import.meta.env.BASE_URL}data/facility-audit.json`, { signal: abort.signal })
+      .then(r => { if (!r.ok) throw Error('Facility audit unavailable'); return r.json() as Promise<unknown>; });
+    Promise.all([originals, current, audit]).then(([collections, reviews, auditData]) => {
+        if (!abort.signal.aborted) { setFeatures(applyFacilityAudit(applyFacilityCurrent(collections.flat(), reviews), auditData)); setLoading(false); }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
     return () => abort.abort();
   }, [attempt]);
