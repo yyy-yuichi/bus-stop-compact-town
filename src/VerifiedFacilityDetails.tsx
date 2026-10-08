@@ -1,10 +1,10 @@
 import type { ShoppingProperties } from './types';
 
-export default function VerifiedFacilityDetails({ review }: { review: ShoppingProperties['purpose_review'] }) {
+export default function VerifiedFacilityDetails({ review, dateLabel }: { review: ShoppingProperties['purpose_review']; dateLabel?: '取得日' }) {
   if (!review) return null;
   return <section className="registered-details verified-facility" aria-label="公式資料で確認した情報">
     <h3>公式資料で確認した情報</h3>
-    <p className="helper-text">{review.checked_at}に資料を確認</p>
+    <p className="helper-text">{dateLabel ? `${dateLabel}：${review.checked_at}` : `${review.checked_at}に資料を確認`}</p>
     <dl>{review.facts.map(f => <div className="registered-field" key={f.label}><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl>
     <a href={review.source_url} target="_blank" rel="noreferrer">{review.source_title} ↗</a>
     {review.additional_sources?.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title} ↗</a></p>)}

@@ -9,6 +9,9 @@ import VerifiedFacilityDetails from './VerifiedFacilityDetails';
 import FacilityFreshnessDetails from './FacilityFreshnessDetails';
 import FacilityRegistryDetails from './FacilityRegistryDetails';
 import FacilityAuditDetails from './FacilityAuditDetails';
+import FacilityMapLocationNotice from './FacilityMapLocationNotice';
+import { hasMapLocationIssue } from './facilityMapLocation';
+import { dispensingContactReview } from './facilityContact';
 
 export default function FacilityDrawer({ facility, onClose, returnStop }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string } }) {
   const close = useRef<HTMLButtonElement>(null);
@@ -19,6 +22,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
   const civic = p.verification_status === 'civic_unverified';
   const official = p.verification_status === 'official_current_listing';
   const medical = category.group === 'medical';
+  const mapLocationIssue = hasMapLocationIssue(facility);
   useEffect(() => {
     const previous = document.activeElement;
     const element = panel.current;
@@ -45,12 +49,14 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
       <FacilityAuditDetails review={p.audit_review} />
+      <FacilityMapLocationNotice location={p.audit_review?.map_location} />
       <FacilityFreshnessDetails facility={facility} />
       <FacilityRegistryDetails review={p.registry_review} duplicateOf={p.duplicate_of} />
       {p.classification_review?.status === 'pending' && <p className="mb-3 text-xs text-amber-800">情報確認中</p>}
-      <section className="facility-address"><h3>所在地</h3><p>{p.official_address || p.address || '住所の登録なし'}</p></section>
+      <section className="facility-address"><h3>{mapLocationIssue ? '元データの所在地' : '所在地'}</h3><p>{p.official_address || p.address || '住所の登録なし'}</p>{mapLocationIssue && <p className="helper-text">元データの住所を表示しています。現施設点の住所を確認・反映した表示ではありません。</p>}</section>
       {official && p.location_verification && <p className="helper-text">位置の確認範囲：{p.location_verification}</p>}
       <VerifiedFacilityDetails review={p.purpose_review} />
+      <VerifiedFacilityDetails review={dispensingContactReview(p.dispensing_contact)} dateLabel="取得日" />
       {(p.freshness_review || p.registry_review) && (p.registered_details || p.civic_details) ? <details className="source-details"><summary>取込時点の登録情報（履歴）</summary><p className="helper-text">以下は元データ取得時点の番号・サービス等です。上記の照合後の現行情報とは限りません。</p><RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} /></details> : <RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} />}
       {(p.official_url || p.website) && <a className="primary-link" href={p.official_url || p.website} target="_blank" rel="noreferrer">{imported || civic ? 'ウェブサイト' : '公式サイト'} <span aria-hidden="true">↗</span></a>}
       <SharePlace place={{ kind: 'facility', id: String(facility.id) }} />
@@ -62,7 +68,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
       {civic && <p className="facility-status">{p.audit_review ? '元の位置と登録履歴は自治体公開資料の情報です。確認範囲と未解決事項は上部の監査結果をご覧ください。' : p.registry_review ? '元の位置と登録履歴は自治体の公開一覧から取り込んでいます。公式資料で照合した名称・所在地・サービスと資料の日付は上部に記載しています。現地の開設状況・入口は未確認です。' : '自治体が公開した施設一覧を加工しています。公開元の時点の情報で、現在の開設状況・サービス・入口は個別に確認していません。'}</p>}
       {p.classification_review && <section className="soft-note"><strong>登録情報の点検{p.classification_review.status === 'pending' ? '・保留' : ''}</strong><p>{p.classification_review.note}</p>{p.classification_review.evidence_url && <a href={p.classification_review.evidence_url} target="_blank" rel="noreferrer">点検に用いた資料 ↗</a>}<p className="helper-text">点検日：{p.classification_review.checked_at}</p></section>}
       <p className="helper-text">{category.id === 'reference' ? '通常の施設分類には含めていない参考記録です。' : medical ? '診療内容・受付時間・処方箋の扱いは、施設へご確認ください。' : '営業時間・窓口やサービスの内容は、施設へご確認ください。'}</p>
-      <div className="soft-note"><strong>地図上の位置について</strong><p>{p.geometry_kind === 'representative_point' ? '施設の代表位置を表示しています。' : p.geometry_kind === 'facility_area' ? '施設の範囲を表示しています。' : '建物の形を表示しています。'}入口や、バス停から歩いて到達できることを確認した表示ではありません。</p></div>
+      <div className="soft-note"><strong>地図上の位置について</strong><p>{mapLocationIssue ? '元データの登録位置・形状を表示しています。' : p.geometry_kind === 'representative_point' ? '施設の代表位置を表示しています。' : p.geometry_kind === 'facility_area' ? '施設の範囲を表示しています。' : '建物の形を表示しています。'}入口や、バス停から歩いて到達できることを確認した表示ではありません。</p></div>
         <dl><dt>名称・所在地の確認</dt><dd>{p.audit_review ? `${p.audit_review.checked_at}に上部記載の限定範囲を監査` : p.freshness_review ? `${p.freshness_review.checked_at}に上記の変更範囲のみ資料確認` : p.registry_review ? `${p.registry_review.checked_at}に公式資料の掲載範囲のみ照合。現況・入口は未確認` : p.purpose_review ? `${p.purpose_review.checked_at}に上記の範囲を公式資料で確認。位置・入口は未確認` : civic ? '自治体の公開一覧から取り込み・現況未確認' : imported ? '未確認（OSM登録情報を取り込み）' : p.verified_at}</dd><dt>{official ? '公式掲載の確認日' : imported || civic ? '取得元データの基準日時' : '位置データの更新日時'}</dt><dd>{official ? '店舗公式情報' : civic ? '自治体オープンデータ' : 'OpenStreetMap'}（{p.source_timestamp}）</dd>{(imported || civic) && <><dt>取り込み日</dt><dd>{p.retrieved_at?.slice(0, 10)}</dd></>}</dl>
         {p.source_ids.map(id => /^(node|way|relation)\/\d+$/.test(id) && <a key={id} href={`https://www.openstreetmap.org/${id}`} target="_blank" rel="noreferrer">OSMの原情報 ↗</a>)}
         {p.registration_origin?.length && <div className="soft-note"><strong>元の登録に記載された出典・注記</strong>{p.registration_origin.map(note => <p key={note}>{note}</p>)}<p className="helper-text">OSMの取得元日時より古い資料が含まれます。</p></div>}

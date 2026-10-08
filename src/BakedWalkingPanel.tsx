@@ -7,6 +7,7 @@ import type { LoadState, ShoppingFeature } from './types';
 import type { BakedWalkingMinutes } from './placeLink';
 import BakedFacilityList from './BakedFacilityList';
 import NearbyFacilitiesPanel from './NearbyFacilitiesPanel';
+import { hasMapLocationIssue } from './facilityMapLocation';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -277,7 +278,7 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
       {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
-        <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} />
+        <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} hasExcludedLocations={facilities.some(hasMapLocationIssue)} />
       </>}
     </>}
     {nearbyFallback && <NearbyFacilitiesPanel key={id} origin={origin} facilities={facilities} state={facilityState} retry={retryFacilities} onFacility={onFacility} scope={scope} onMapFacilities={onMapFacilities} />}

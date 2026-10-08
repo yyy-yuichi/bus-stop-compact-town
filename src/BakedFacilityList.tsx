@@ -5,13 +5,15 @@ import type { BakedWalkingMinutes } from './placeLink';
 import type { LoadState, ShoppingFeature } from './types';
 import { categoryOf } from './shoppingData';
 import FacilityIcon from './FacilityIcon';
+import { mapLocationExclusionNote } from './facilityMapLocation';
 
 const GROUPS = [{ id: 'all', name: 'すべて' }, ...FACILITY_GROUPS] as const;
 
-export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility }: {
+export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility, hasExcludedLocations = false }: {
   candidates: BakedFacilityCandidate[]; minutes: BakedWalkingMinutes;
   state: LoadState; retry: () => void; onFacility: (facility: ShoppingFeature) => void;
   group: FacilityGroup | 'all'; onGroup: (group: FacilityGroup | 'all') => void;
+  hasExcludedLocations?: boolean;
 }) {
   const [limit, setLimit] = useState(12);
   const nextFocus = useRef('');
@@ -29,6 +31,7 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
   const label = GROUPS.find(g => g.id === group)!.name;
   return <section className="mt-6" aria-labelledby="baked-facilities-title">
     <h4 id="baked-facilities-title" className="text-base font-bold">{minutes}分圏の施設候補</h4>
+    {hasExcludedLocations && <p className="helper-text">{mapLocationExclusionNote}</p>}
     <label className="mt-3 block text-xs text-stone-600">施設候補の種類
       <select aria-label="施設候補の種類" className="mt-1 min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 text-sm text-stone-800" value={group} onChange={e => onGroup(e.target.value as FacilityGroup | 'all')}>
         {GROUPS.map(g => <option key={g.id} value={g.id}>{g.name}（{candidates.filter(c => g.id === 'all' || c.group === g.id).length}件）</option>)}

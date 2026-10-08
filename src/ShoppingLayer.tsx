@@ -3,6 +3,7 @@ import L from 'leaflet';
 import type { ShoppingFeature } from './types';
 import { categoryOf } from './shoppingData';
 import { facilityIconMarkup } from './facilityIcons';
+import { mapLocationLabel } from './facilityMapLocation';
 
 export default function ShoppingLayer({ map, features, selected, onSelect }: {
   map: L.Map | null; features: ShoppingFeature[]; selected: string; onSelect: (feature: ShoppingFeature) => void;
@@ -39,9 +40,17 @@ export default function ShoppingLayer({ map, features, selected, onSelect }: {
         const active = String(feature.id) === selected;
         if (!active && !view.intersects(bounds)) continue;
         const category = categoryOf(feature);
+        const locationWarning = mapLocationLabel(feature.properties.audit_review?.map_location);
+        const markerLabel = `${feature.properties.name}（${category.name}）${locationWarning ? `・${locationWarning}` : ''}`;
         if (!detailed && !active) {
-          L.circleMarker(center, { radius: 4, weight: 1.5, color: '#fff', fillColor: category.color, fillOpacity: 0.95 })
+          const marker = L.circleMarker(center, { radius: 4, weight: 1.5, color: '#fff', fillColor: category.color, fillOpacity: 0.95 })
             .on('click', () => onSelect(feature)).addTo(group);
+          if (locationWarning) {
+            const tooltip = document.createElement('span');
+            tooltip.textContent = markerLabel;
+            marker.bindTooltip(tooltip);
+            marker.getElement()?.setAttribute('aria-label', markerLabel);
+          }
           continue;
         }
         if (feature.geometry.type !== 'Point') {
@@ -50,25 +59,42 @@ export default function ShoppingLayer({ map, features, selected, onSelect }: {
         }
         const marker = L.marker(center, {
           icon: L.divIcon({ className: `shop-marker${active ? ' is-selected' : ''}`, html: `<span style="background:${category.color}">${facilityIconMarkup(category.id)}</span>`, iconSize: [30, 36], iconAnchor: [15, 33] }),
-          title: `${feature.properties.name}（${category.name}）`, keyboard: true,
+          title: markerLabel, keyboard: true,
           zIndexOffset: active ? 900 : 100,
         }).on('click', () => onSelect(feature)).addTo(group);
-        marker.getElement()?.setAttribute('aria-label', `${feature.properties.name}（${category.name}）`);
-        if (detailed && (labelsShown < (canvas.width <= 1000 ? 6 : 12) || active)) {
+        marker.getElement()?.setAttribute('aria-label', markerLabel);
+        if (active && locationWarning) {
+          const tooltip = document.createElement('span');
+          tooltip.textContent = locationWarning;
+          marker.bindTooltip(tooltip, { permanent: true, direction: 'top', offset: [0, -32] });
+        }
+        if ((detailed || (active && locationWarning)) && (labelsShown < (canvas.width <= 1000 ? 6 : 12) || active)) {
           const p = map.latLngToContainerPoint(center);
-          const width = Math.min(168, Math.max(72, feature.properties.name.length * 11 + 24));
+          const width = locationWarning ? 256 : Math.min(168, Math.max(72, feature.properties.name.length * 11 + 24));
+          const height = locationWarning ? 42 : 26;
           const offsets = [[20,-18],[-width-20,-18],[-width/2,22],[-width/2,-59],[35,31],[-width-35,31],[35,-64],[-width-35,-64],[16,63],[-width-16,63]];
-          const position = offsets.map(([dx,dy])=>({x:p.x+dx,y:p.y+dy,w:width,h:26})).find(r=>r.x>=14 && r.x+r.w<=maxX && r.y>=74 && r.y+r.h<=maxY && !collides(r));
+          const position = offsets.map(([dx,dy])=>({x:p.x+dx,y:p.y+dy,w:width,h:height})).find(r=>r.x>=14 && r.x+r.w<=maxX && r.y>=74 && r.y+r.h<=maxY && !collides(r));
           if (position) {
             labelsShown++;
             occupied.push(position);
             const label = document.createElement('span');
             label.textContent = feature.properties.name;
             label.style.borderColor = category.color;
+            if (locationWarning) {
+              label.style.height = `${height}px`;
+              const name = document.createElement('span');
+              name.textContent = feature.properties.name;
+              Object.assign(name.style, { display: 'block', overflow: 'hidden', textOverflow: 'ellipsis' });
+              const warning = document.createElement('span');
+              warning.textContent = locationWarning;
+              Object.assign(warning.style, { display: 'block', fontSize: '10px' });
+              label.replaceChildren(name, warning);
+            }
             const end = L.point(Math.max(position.x, Math.min(p.x,position.x+position.w)),Math.max(position.y,Math.min(p.y,position.y+position.h)));
             L.polyline([center,map.containerPointToLatLng(end)],{color:category.color,weight:1,opacity:0.5,interactive:false}).addTo(group);
-            L.marker(center,{icon:L.divIcon({className:'guide-facility-label',html:label,iconSize:[width,26],iconAnchor:[p.x-position.x,p.y-position.y]}),keyboard:false,zIndexOffset:500,title:feature.properties.name})
+            const labelMarker = L.marker(center,{icon:L.divIcon({className:'guide-facility-label',html:label,iconSize:[width,height],iconAnchor:[p.x-position.x,p.y-position.y]}),keyboard:false,zIndexOffset:500,title:locationWarning ? markerLabel : feature.properties.name})
               .on('click',()=>onSelect(feature)).addTo(group);
+            if (locationWarning) labelMarker.getElement()?.setAttribute('aria-label', markerLabel);
           }
         }
       }

@@ -148,7 +148,7 @@ pastSchedule.properties.freshness_review.effective_at = '2020-01-01';
 assert(facilityAvailable(pastSchedule), 'A past planned date is still unconfirmed');
 const loader = fs.readFileSync('src/shoppingData.ts', 'utf8');
 assert(loader.includes('data/facility-current.json') && loader.includes('applyFacilityCurrent(collections.flat(), reviews)'));
-assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(facilityAvailable)'));
+assert(fs.readFileSync('src/WalkingPanel.tsx', 'utf8').includes('.filter(isFacilityWalkingCandidate)'));
 console.log(JSON.stringify({ original_records: raw.length, current_records_including_history: current.length, previous_local_batch_additions: 72, relocation_batch_additions: 4, relocation_followup_additions: 4, cumulative_updates: patch.updates.length, cumulative_additions: patch.additions.length, cumulative_closures: current.filter(f=>f.properties.freshness_review?.status==='closed').length, reviewed_duplicate_records: current.filter(f=>f.properties.duplicate_of).length, invalid_overlays_rejected: rejected, extra_partial_date_rejections: 9, raw_ID_geometry_service_history_preserved: true, search_nearby_walk_map_checks: 'passed' }));
 
 const nextCheckDate = new Date(Date.parse(patch.checked_at + 'T00:00:00Z') + 86400000).toISOString().slice(0, 10);

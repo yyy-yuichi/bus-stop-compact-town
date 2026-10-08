@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-08",
+  "contacts": [
+    {
+      "id": "official-mcc-20001805",
+      "expected": {
+        "name": "ココカラファイン薬局 河東店",
+        "city": "周南市",
+        "address": "山口県周南市河東町9-22",
+        "official_address": "山口県周南市河東町9-22",
+        "category": "pharmacy",
+        "source_ids": [
+          "official:mcc:20001805"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8125764,
+            34.0461528
+          ]
+        }
+      },
+      "contact": {
+        "phone": "0834-22-9206",
+        "source": {
+          "title": "ココカラファイン薬局 河東店 公式支店案内・調剤電話",
+          "url": "https://www.matsukiyococokara-online.com/map/?kid=20001805",
+          "retrieved_at": "2026-10-08",
+          "updated_at": null
+        },
+        "identity": {
+          "registry_id": "mhlw-iryou:5:355827",
+          "source_url": "https://www.mhlw.go.jp/content/11121000/05_pharmacy_20260601.csv.zip",
+          "source_as_of": "2026-06-01"
+        }
+      }
+    },
+    {
+      "id": "official-mcc-20001806",
+      "expected": {
+        "name": "ココカラファイン薬局 政所店",
+        "city": "周南市",
+        "address": "山口県周南市桶川町7-11",
+        "official_address": "山口県周南市桶川町7-11",
+        "category": "pharmacy",
+        "source_ids": [
+          "official:mcc:20001806"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.774017,
+            34.0723947
+          ]
+        }
+      },
+      "contact": {
+        "phone": "0834-62-7000",
+        "source": {
+          "title": "ココカラファイン薬局 政所店 公式支店案内・調剤電話",
+          "url": "https://www.matsukiyococokara-online.com/map/?kid=20001806",
+          "retrieved_at": "2026-10-08",
+          "updated_at": null
+        },
+        "identity": {
+          "registry_id": "mhlw-iryou:5:3551135",
+          "source_url": "https://www.mhlw.go.jp/content/11121000/05_pharmacy_20260601.csv.zip",
+          "source_as_of": "2026-06-01"
+        }
+      }
+    },
+    {
+      "id": "official-mcc-20001807",
+      "expected": {
+        "name": "ココカラファイン薬局 周南久米店",
+        "city": "周南市",
+        "address": "山口県周南市久米中央1-15-13",
+        "official_address": "山口県周南市久米中央1-15-13",
+        "category": "pharmacy",
+        "source_ids": [
+          "official:mcc:20001807"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.839015,
+            34.034512
+          ]
+        }
+      },
+      "contact": {
+        "phone": "0834-36-1115",
+        "source": {
+          "title": "ココカラファイン薬局 周南久米店 公式支店案内・調剤電話",
+          "url": "https://www.matsukiyococokara-online.com/map/?kid=20001807",
+          "retrieved_at": "2026-10-08",
+          "updated_at": null
+        },
+        "identity": {
+          "registry_id": "mhlw-iryou:5:3551094",
+          "source_url": "https://www.mhlw.go.jp/content/11121000/05_pharmacy_20260601.csv.zip",
+          "source_as_of": "2026-06-01"
+        }
+      }
+    },
+    {
+      "id": "official-mcc-20001808",
+      "expected": {
+        "name": "ココカラファイン薬局 光店",
+        "city": "光市",
+        "address": "山口県光市木園1-5-28",
+        "official_address": "山口県光市木園1-5-28",
+        "category": "pharmacy",
+        "source_ids": [
+          "official:mcc:20001808"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9299167,
+            33.9779963
+          ]
+        }
+      },
+      "contact": {
+        "phone": "0833-72-8881",
+        "source": {
+          "title": "ココカラファイン薬局 光店 公式支店案内・調剤電話",
+          "url": "https://www.matsukiyococokara-online.com/map/?kid=20001808",
+          "retrieved_at": "2026-10-08",
+          "updated_at": null
+        },
+        "identity": {
+          "registry_id": "mhlw-iryou:5:355831",
+          "source_url": "https://www.mhlw.go.jp/content/11121000/05_pharmacy_20260601.csv.zip",
+          "source_as_of": "2026-06-01"
+        }
+      }
+    }
+  ]
+}

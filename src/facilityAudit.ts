@@ -1,6 +1,7 @@
 import type { ShoppingFeature } from './types';
 import { applyFacilityCurrent } from './facilityFreshness.ts';
 import type { RegistryReview } from './facilityRegistry.ts';
+import type { FacilityMapLocation } from './facilityMapLocation.ts';
 
 /** Evidence scope is deliberately independent of a facility's operating status. */
 export interface FacilityAuditReview {
@@ -11,6 +12,7 @@ export interface FacilityAuditReview {
   scope: string;
   sources: { title: string; url: string }[];
   limits: string[];
+  map_location?: FacilityMapLocation;
 }
 interface ExpectedFacility {
   name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'];
@@ -45,6 +47,22 @@ export function validateAuditReview(r: FacilityAuditReview, checkedAt: string): 
       !Array.isArray(r.sources) || r.sources.some(s => !s || !text(s.title) || !publicEvidenceUrl(s.url)) ||
       (r.accepted_type !== null && !text(r.accepted_type)) || (r.status === 'unresolved' && r.accepted_type !== null)) {
     throw Error('Invalid scoped facility audit review');
+  }
+  if (r.map_location !== undefined) {
+    const location = r.map_location;
+    if (!location || !['unverified', 'different_from_current'].includes(location.status) || !text(location.note)) {
+      throw Error('Invalid facility map location review');
+    }
+    if (location.current_location !== undefined) {
+      const current = location.current_location;
+      if (!current || !Array.isArray(current.coordinates) || current.coordinates.length !== 2 ||
+          !current.coordinates.every(n => Number.isFinite(n)) || Math.abs(current.coordinates[0]) > 180 || Math.abs(current.coordinates[1]) > 90 ||
+          !current.source || !text(current.source.title) || !publicEvidenceUrl(current.source.url) ||
+          [current.source.as_of, current.source.published_at, current.source.retrieved_at].some(d => d !== undefined && (!validDate(d) || d > r.checked_at)) ||
+          (current.distance_from_original_m !== undefined && (!Number.isFinite(current.distance_from_original_m) || current.distance_from_original_m < 0))) {
+        throw Error('Invalid separate current facility location');
+      }
+    }
   }
 }
 export function applyFacilityAudit(base: ShoppingFeature[], value: unknown): ShoppingFeature[] {

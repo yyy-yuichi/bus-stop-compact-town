@@ -5,7 +5,7 @@ import { calculateWalk, inPilot, reachFacility, reachableLines, validateGraph } 
 import type { Coordinate, WalkingGraph } from './walking';
 import { focusContent } from './mapLayout';
 import type { WalkingConditions } from './placeLink';
-import { facilityAvailable } from './facilityFreshness';
+import { hasMapLocationIssue, isFacilityWalkingCandidate, mapLocationExclusionNote } from './facilityMapLocation';
 
 export function useWalkingData(facilities: ShoppingFeature[], facilityState: LoadState) {
   const [graph, setGraph] = useState<WalkingGraph | null>(null);
@@ -39,7 +39,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   const [showPath, setShowPath] = useState(false);
   const supported = !!data && inPilot(data.graph, id);
   const result = useMemo(() => supported && data ? calculateWalk(data.graph, origin, speed * 1000 / 60 * 10) : null, [data, supported, origin, speed]);
-  const candidates = useMemo(() => result && data ? data.facilities.filter(facilityAvailable).map(f => {
+  const candidates = useMemo(() => result && data ? data.facilities.filter(isFacilityWalkingCandidate).map(f => {
     const rings: Coordinate[][] = f.geometry.type === 'Point' ? [[f.geometry.coordinates as Coordinate]] : f.geometry.coordinates.map(polygon => polygon[0] as Coordinate[]);
     return { facility: f, reach: reachFacility(result, rings) };
   }) : [], [result, data]);
@@ -86,6 +86,7 @@ export default function WalkingPanel({ map, id, origin, data, error, retry, onSe
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <div className="flex items-center justify-between gap-2"><h3 id="walk-title" className="text-lg font-bold">ここから歩いて行ける範囲</h3><span className="rounded-full bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-800">試作</span></div>
     <p className="mt-2 text-xs leading-relaxed text-stone-600">道路に沿った徒歩時間の目安です。</p>
+    {data.facilities.some(hasMapLocationIssue) && <p className="helper-text">{mapLocationExclusionNote}</p>}
     {result && <button className="mt-3 flex min-h-11 w-full items-center justify-between rounded-lg bg-emerald-50 px-3 text-xs font-semibold text-emerald-900" onClick={() => { const target = document.getElementById('walking-candidates'); target?.focus({ preventScroll: true }); target?.scrollIntoView({ block: 'start', behavior: 'smooth' }); }}>{minutes}分圏の買い物候補 {visible.length}件 <span>結果を見る ↓</span></button>}
     <label className="mt-5 block text-xs font-semibold text-stone-600" htmlFor="walking-stop">出発するバス停を変える</label>
     <select id="walking-stop" className="mt-2 min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 text-sm" value={id} onChange={e => onSelect(e.target.value)}>

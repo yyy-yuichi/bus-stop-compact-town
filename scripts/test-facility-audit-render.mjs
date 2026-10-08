@@ -33,7 +33,7 @@ try {
   }
   const noop = () => {};
   const html = renderToStaticMarkup(React.createElement(Panel, { stops: [], facilities, categories: [], onCategories: noop, onStop: noop, onFacility: noop, mode: 'national', onMode: noop, busy: false, shoppingError: false, shoppingLoading: false, retryShopping: noop, selection: '', onReturnSearch: noop, municipalFailed: false, retryMunicipal: noop }));
-  assert(html.includes('限定根拠 1,330件') && html.includes('未解決 1,498件'));
+  assert(html.includes('限定根拠 1,344件') && html.includes('未解決 1,484件'));
   assert(!/drive\.google\.com|docs\.google\.com|sediment:/.test(html));
   console.log('All 2,828 scoped audit drawers, 23 recovered registry drawers and visible summary rendered successfully.');
 } finally {

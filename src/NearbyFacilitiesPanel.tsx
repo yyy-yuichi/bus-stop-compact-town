@@ -4,6 +4,7 @@ import type { Coordinate, FacilityGroup } from './bakedWalking';
 import { FACILITY_GROUPS, categoryOf } from './facilityCatalog';
 import type { LoadState, ShoppingFeature } from './types';
 import FacilityIcon from './FacilityIcon';
+import { hasMapLocationIssue, mapLocationExclusionNote } from './facilityMapLocation';
 
 const GROUPS = [{ id: 'all', name: 'すべて' }, ...FACILITY_GROUPS] as const;
 
@@ -25,6 +26,7 @@ export default function NearbyFacilitiesPanel({ origin, facilities, state, retry
   return <section className="nearby-facilities" aria-label="周辺の施設">
     <h3 className="text-base font-bold">周辺の施設</h3>
     <p className="helper-text">この乗り場から直線1km以内。徒歩経路・所要時間は未計算です。</p>
+    {state === 'ready' && facilities.some(hasMapLocationIssue) && <p className="helper-text">{mapLocationExclusionNote}</p>}
     {state === 'loading' ? <p role="status">施設を読み込んでいます…</p> : state === 'error' ? <div role="status">
       <p>施設データを読み込めませんでした。</p><button className="place-row" onClick={retry}>施設データを再読み込み</button>
     </div> : <>
@@ -41,7 +43,7 @@ export default function NearbyFacilitiesPanel({ origin, facilities, state, retry
           <span><strong>{facility.properties.name}</strong><small>{category.name}</small><small>直線 約{Math.round(meters)}m</small></span>
           <span className="row-arrow" aria-hidden="true">›</span>
         </button>;
-      }) : <p>直線1km以内に、この種類の施設の登録がありません。</p>}
+      }) : <p>直線1km以内に、この種類の施設候補はありません。</p>}
       {filtered.length > limit && <button className="place-row" onClick={() => { nextFocus.current = `nearby-facility-${filtered[limit].facility.id}`; setLimit(n => n + 12); }}>さらに{Math.min(12, filtered.length - limit)}件を表示</button>}
     </>}
   </section>;

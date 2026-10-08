@@ -39,6 +39,16 @@ assert.equal(byId.get('iwakuni:630_02').properties.boarding_guide.role, 'alighti
 assert.deepEqual(byId.get('iwakuni:630_02').properties.boarding_guide.directions, []);
 assert.deepEqual(byId.get('iwakuni:271_02').properties.boarding_guide.directions, []);
 assert.equal(byId.get('iwakuni:271_02').properties.boarding_guide.summary, 'この資料の路線では終点として登録');
+const miwa = byId.get('iwakuni:631_01').properties.boarding_guide;
+assert.deepEqual(miwa.source_coordinates, [132.077216436, 34.2274173653]);
+assert.deepEqual(miwa.directions.slice(0, 3), ['秋中線', '賀見畑線', '小郷線'].map(route => ({ route, text: '美和病院（坂上分校前 経由）（次は上長野）', next_stops: ['上長野'] })));
+assert.equal(miwa.directions.length, 4);
+assert.deepEqual(miwa.directions[3], { route: '大三郎線', text: '次は美和総合支所前（公式GTFSの当該便では乗車可）', next_stops: ['美和総合支所前'] });
+assert.equal(miwa.summary, '次は上長野、または美和総合支所前（路線・便で異なります）');
+assert.equal(miwa.roadside_review.status, 'hold');
+for (const text of ['大三郎線07:43便', '原資料の行先文字列は「美和小学校前（黒沢 経由）」', '停留所行先文字列は「美和小学校前」', '資料期間2026-09-17〜2027-09-16', '収録運行日範囲2026-09-17〜2027-03-31', '運行日は公式案内で確認', '道路側の保留は維持']) assert(miwa.data_notice.includes(text));
+assert.deepEqual(byId.get('iwakuni:502_02').properties.boarding_guide.directions, [], 'An alighting-only new terminal visit must not add a boarding direction');
+assert.equal(byId.get('iwakuni:502_02').properties.boarding_guide.summary, 'この資料の路線では終点として登録');
 assert.equal(boardingChoices(byId.get('iwakuni:366_01'), stops).length, 3);
 assert.equal(byId.get('hikari:1_01').properties.boarding_guide.summary, '光税務署前方面（右回り 光総合病院方面／左回り 光市役所前方面）');
 assert.deepEqual(byId.get('hikari:6_02').properties.boarding_guide.directions.map(r => [r.route, r.next_stops]), [

@@ -54,6 +54,7 @@ export interface ShoppingProperties {
     facts: { label: string; value: string }[];
     gaps: string[];
   };
+  dispensing_contact?: import('./facilityContact').DispensingContact;
   address?: string;
   website?: string;
   search_names?: string;
