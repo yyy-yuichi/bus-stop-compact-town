@@ -46,14 +46,14 @@ test('reviewed 11 retain their nine flags alongside Cellneg and four scoped-supp
   assert.equal(raw.length, 7764);
   assert.equal(facilities.length, 8369);
   assert.equal(new Set(facilities.map(f => String(f.id))).size, 8369);
-  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1344, unresolved: 1484, recovered_registry: 23 });
+  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1365, unresolved: 1463, recovered_registry: 23 });
   for (const f of targets) {
     assert.equal(f.properties.audit_review.status, 'limited_support');
     assert.equal(f.properties.audit_review.checked_at, '2026-10-08');
     validateAuditReview(f.properties.audit_review, audit.checked_at);
   }
   const flagged = facilities.filter(hasMapLocationIssue);
-  assert.deepEqual(flagged.map(f => String(f.id)).sort(), [...unverifiedIds, differentId, 'civic-care-3570106660-61245f957a', 'civic-KD0000900073', 'civic-care-3577100351-2f51378053', 'osm-node-1423657369', 'osm-node-1631278422'].sort());
+  assert.deepEqual(flagged.map(f => String(f.id)).sort(), [...unverifiedIds, differentId, 'civic-care-3570106660-61245f957a', 'civic-KD0000900073', 'civic-care-3577100351-2f51378053', 'osm-node-1423657369', 'osm-node-1631278422', 'civic-care-3570103378-b5b5ff254a', 'civic-care-3570301477-f097c560b9', 'civic-care-3590109181-80602c7d36', 'osm-node-1423659567', 'osm-node-4884556138', 'osm-node-1423657463', 'osm-node-1631273323', 'osm-node-2749691198', 'osm-node-4622018949', 'osm-way-1034652211', 'osm-node-4628681410', 'osm-node-4605758989', 'osm-node-2420817189'].sort());
   for (const id of unverifiedIds) assert.equal(byId.get(id).properties.audit_review.map_location.status, 'unverified');
   assert.equal(byId.get(differentId).properties.audit_review.map_location.status, 'different_from_current');
   for (const id of unflaggedIds) assert.equal(byId.get(id).properties.audit_review.map_location, undefined);

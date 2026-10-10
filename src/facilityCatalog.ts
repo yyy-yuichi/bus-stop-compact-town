@@ -52,4 +52,4 @@ export const SHOPPING_CATEGORIES = [
 ] as const;
 export type ShoppingCategory = typeof SHOPPING_CATEGORIES[number]['id'] | 'reference';
 const REFERENCE_CATEGORY = { id: 'reference', name: '参考施設（対象外・分類保留）', color: '#68716c', group: null } as const;
-export const categoryOf = (feature: ShoppingFeature) => SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.category ?? 'mall')) ?? REFERENCE_CATEGORY;
+export const categoryOf = (feature: ShoppingFeature) => SHOPPING_CATEGORIES.find(c => c.id === (feature.properties.guide_review?.presentation_category ?? feature.properties.category ?? 'mall')) ?? REFERENCE_CATEGORY;

@@ -1,5 +1,5 @@
 import type { ShoppingFeature } from './types';
-import { applyFacilityCurrent } from './facilityFreshness.ts';
+import { applyFacilityCurrent, validateFreshnessReview, type FreshnessReview } from './facilityFreshness.ts';
 import type { RegistryReview } from './facilityRegistry.ts';
 import type { FacilityMapLocation } from './facilityMapLocation.ts';
 
@@ -13,6 +13,10 @@ export interface FacilityAuditReview {
   sources: { title: string; url: string }[];
   limits: string[];
   map_location?: FacilityMapLocation;
+  /** A directly published operator closure, separate from designation dates and identity support. */
+  operator_closure?: FreshnessReview;
+  /** Closure of the original school, retaining its historical identity and geometry. */
+  school_closure?: FreshnessReview;
 }
 interface ExpectedFacility {
   name: string; category: string; source_ids: string[]; geometry: ShoppingFeature['geometry'];
@@ -48,6 +52,25 @@ export function validateAuditReview(r: FacilityAuditReview, checkedAt: string): 
       (r.accepted_type !== null && !text(r.accepted_type)) || (r.status === 'unresolved' && r.accepted_type !== null)) {
     throw Error('Invalid scoped facility audit review');
   }
+  if (r.operator_closure !== undefined) {
+    const closure = r.operator_closure;
+    validateFreshnessReview(closure, r.checked_at);
+    if (r.status !== 'limited_support' || closure.status !== 'closed' || closure.event !== 'closed' ||
+        closure.scope !== 'registered_care_services' || !['day', 'month'].includes(closure.date_precision ?? '') ||
+        closure.sources.some(s => !r.sources.some(source => source.url === s.url && source.title === s.title))) {
+      throw Error('Invalid operator-published closure scope');
+    }
+  }
+  if (r.school_closure !== undefined) {
+    const closure = r.school_closure;
+    validateFreshnessReview(closure, r.checked_at);
+    if (r.status !== 'limited_support' || closure.status !== 'closed' || closure.event !== 'closed' ||
+        closure.scope !== undefined || closure.affected_services !== undefined ||
+        !['day', 'month'].includes(closure.date_precision ?? '') || r.operator_closure !== undefined ||
+        closure.sources.some(s => !r.sources.some(source => source.url === s.url && source.title === s.title))) {
+      throw Error('Invalid historical school closure');
+    }
+  }
   if (r.map_location !== undefined) {
     const location = r.map_location;
     if (!location || !['unverified', 'different_from_current'].includes(location.status) || !text(location.note)) {
@@ -55,7 +78,8 @@ export function validateAuditReview(r: FacilityAuditReview, checkedAt: string): 
     }
     if (location.current_location !== undefined) {
       const current = location.current_location;
-      if (!current || !Array.isArray(current.coordinates) || current.coordinates.length !== 2 ||
+      if (!current || (current.point_role !== undefined && current.point_role !== 'operator_designated_destination') ||
+          !Array.isArray(current.coordinates) || current.coordinates.length !== 2 ||
           !current.coordinates.every(n => Number.isFinite(n)) || Math.abs(current.coordinates[0]) > 180 || Math.abs(current.coordinates[1]) > 90 ||
           !current.source || !text(current.source.title) || !publicEvidenceUrl(current.source.url) ||
           [current.source.as_of, current.source.published_at, current.source.retrieved_at].some(d => d !== undefined && (!validDate(d) || d > r.checked_at)) ||
@@ -87,6 +111,16 @@ export function applyFacilityAudit(base: ShoppingFeature[], value: unknown): Sho
         !expected || before.properties.name !== expected.name || before.properties.category !== expected.category ||
         !same(before.properties.source_ids, expected.source_ids) || !same(before.geometry, expected.geometry)) throw Error(`Source drift or overlapping audit: ${item?.id}`);
     validateAuditReview(item.review, data.checked_at);
+    if (item.review.school_closure && before.properties.category !== 'school') {
+      throw Error(`School closure must identify an original school: ${item.id}`);
+    }
+    if (item.review.operator_closure) {
+      const services = before.properties.registered_details?.service ?? [];
+      if (before.properties.category !== 'social_facility' || !services.length ||
+          !same([...new Set(services)].sort(), [...item.review.operator_closure.affected_services!].sort())) {
+        throw Error(`Operator closure must cover every original service: ${item.id}`);
+      }
+    }
     auditIds.add(item.id); reviews.set(item.id, item.review);
   }
   const supported = data.reviews.filter(r => r.review.status === 'limited_support').length;

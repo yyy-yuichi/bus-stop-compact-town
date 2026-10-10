@@ -3,6 +3,7 @@ import type { ShoppingCollection, ShoppingFeature } from './types';
 import { applyFacilityCurrent } from './facilityFreshness';
 import { applyFacilityAudit } from './facilityAudit';
 import { applyFacilityContacts } from './facilityContact';
+import { applyFacilityGuidance } from './facilityGuidance';
 
 export { SHOPPING_CATEGORIES, categoryOf } from './facilityCatalog';
 export type { ShoppingCategory } from './facilityCatalog';
@@ -28,8 +29,10 @@ export function useShoppingData() {
       .then(r => { if (!r.ok) throw Error('Facility audit unavailable'); return r.json() as Promise<unknown>; });
     const contacts = fetch(`${import.meta.env.BASE_URL}data/facility-contacts.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Facility contacts unavailable'); return r.json() as Promise<unknown>; });
-    Promise.all([originals, current, audit, contacts]).then(([collections, reviews, auditData, contactData]) => {
-        if (!abort.signal.aborted) { setFeatures(applyFacilityContacts(applyFacilityAudit(applyFacilityCurrent(collections.flat(), reviews), auditData), contactData)); setLoading(false); }
+    const guidance = fetch(`${import.meta.env.BASE_URL}data/facility-guidance.json`, { signal: abort.signal })
+      .then(r => { if (!r.ok) throw Error('Facility guidance unavailable'); return r.json() as Promise<unknown>; });
+    Promise.all([originals, current, audit, contacts, guidance]).then(([collections, reviews, auditData, contactData, guideData]) => {
+        if (!abort.signal.aborted) { setFeatures(applyFacilityGuidance(applyFacilityContacts(applyFacilityAudit(applyFacilityCurrent(collections.flat(), reviews), auditData), contactData), guideData)); setLoading(false); }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
     return () => abort.abort();
   }, [attempt]);

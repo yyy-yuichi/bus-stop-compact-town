@@ -49,7 +49,7 @@ test('actual four supplements retain all 8369 original records and all earlier r
     assert.deepEqual(before, originalAddition, 'No raw telephone field or original property is filled in');
   }
   assert.equal(changed, 4);
-  assert.equal(actual.filter(f => f.properties.audit_review?.map_location?.status === 'unverified').length, 13);
+  assert.equal(actual.filter(f => f.properties.audit_review?.map_location?.status === 'unverified').length, 26);
   assert.equal(actual.filter(f => f.properties.audit_review?.map_location?.status === 'different_from_current').length, 1);
   assert.equal(JSON.stringify(base), snapshot);
   assert.equal(JSON.stringify(contacts), overlaySnapshot);

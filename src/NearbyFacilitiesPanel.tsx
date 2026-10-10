@@ -40,7 +40,7 @@ export default function NearbyFacilitiesPanel({ origin, facilities, state, retry
         const category = categoryOf(facility);
         return <button key={String(facility.id)} id={`nearby-facility-${facility.id}`} className="place-row walk-facility-row" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>
           <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-          <span><strong>{facility.properties.name}</strong><small>{category.name}</small><small>直線 約{Math.round(meters)}m</small></span>
+          <span><strong>{facility.properties.name}</strong>{facility.properties.guide_review?.visit_purpose === 'school_contact' && <small>来校・相談先（事前確認）</small>}{facility.properties.guide_review?.shared_destination && <small>{facility.properties.guide_review.shared_destination.kind === 'scoped_park_place' ? '同じ公園の概略案内：' : '現在の来訪先：'}{facility.properties.guide_review.shared_destination.display_name ?? facility.properties.guide_review.shared_destination.expected.name}</small>}{!facility.properties.guide_review?.shared_destination && facility.properties.guide_review?.decision === 'ready' && facility.properties.guide_review.display.type !== facility.properties.name && <small>今回の案内：{facility.properties.guide_review.display.type}</small>}<small>{category.name}</small><small>直線 約{Math.round(meters)}m</small></span>
           <span className="row-arrow" aria-hidden="true">›</span>
         </button>;
       }) : <p>直線1km以内に、この種類の施設候補はありません。</p>}

@@ -19,7 +19,7 @@ const facilities = applyFacilityContacts(applyFacilityAudit(applyFacilityCurrent
 const byId = new Map(facilities.map(f => [f.id, f])), targets = ids.map(id => byId.get(id));
 
 test('only the two original care services receive source-listed identity support, without an operating decision', () => {
-  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1344, unresolved: 1484, recovered_registry: 23 });
+  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1365, unresolved: 1463, recovered_registry: 23 });
   assert.equal(facilities.length, 8369);
   for (const f of targets.slice(0, 2)) {
     assert.equal(f.properties.audit_review.status, 'limited_support');

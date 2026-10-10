@@ -20,7 +20,7 @@ const canonical = v => Array.isArray(v) ? v.map(canonical) : v && typeof v === '
 test('actual Cellneg record supports one review while retaining its exact original feature and global population', () => {
   assert.equal(crypto.createHash('sha256').update(JSON.stringify(canonical(original))).digest('hex'), 'ce139a2cd5633e103030aea046b7f077fd1db303b06d9f0593d038efa0a44731');
   assert.equal(facilities.length, 8369); assert.equal(new Set(facilities.map(f => f.id)).size, 8369);
-  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1344, unresolved: 1484, recovered_registry: 23 });
+  assert.deepEqual(audit.counts, { reviewed: 2828, limited_support: 1365, unresolved: 1463, recovered_registry: 23 });
   const restored = structuredClone(f); delete restored.properties.audit_review;
   assert.deepEqual(restored, original);
   assert.equal(r.status, 'limited_support'); assert.equal(r.checked_at, '2026-10-08');

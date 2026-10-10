@@ -1,5 +1,7 @@
 name: Publish project to GitHub Pages
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -10,6 +12,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    # Only an explicitly approved publication commit starts Pages on push.
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[publish-pages]')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:

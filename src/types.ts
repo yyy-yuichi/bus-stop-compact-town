@@ -62,6 +62,7 @@ export interface ShoppingProperties {
   freshness_review?: import('./facilityFreshness').FreshnessReview;
   registry_review?: import('./facilityRegistry').RegistryReview;
   audit_review?: import('./facilityAudit').FacilityAuditReview;
+  guide_review?: import('./facilityGuidance').FacilityGuidanceReview;
   duplicate_of?: string;
   retrieved_at?: string;
   license?: string;

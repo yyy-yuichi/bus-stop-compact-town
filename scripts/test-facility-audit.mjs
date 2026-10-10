@@ -13,7 +13,7 @@ const priorById = new Map(previous.map(f => [f.id, f]));
 const audits = new Map(data.reviews.map(r => [r.id, r]));
 const recovered = new Set(data.recovered_verifications.map(r => r.id));
 test('formal v13 and 23 recovered registry results are reconciled once', () => {
-  assert.deepEqual(data.counts, { reviewed: 2828, limited_support: 1344, unresolved: 1484, recovered_registry: 23 });
+  assert.deepEqual(data.counts, { reviewed: 2828, limited_support: 1365, unresolved: 1463, recovered_registry: 23 });
   assert.equal(raw.length, 7764);
   assert.equal(data.provenance.canonical_sha256, '27d739ea29231a46ec7a9dbf337d65c089720cca5f4dd4b1e3c40de195c6282e');
   assert.equal(current.length, previous.length);
@@ -30,7 +30,11 @@ test('limited support never silently changes operation, identity, location or se
     const old = priorById.get(f.id);
     assert.deepEqual(f.geometry, old.geometry);
     for (const key of ['name', 'category', 'source_ids', 'registered_details', 'civic_details', 'freshness_review', 'duplicate_of']) assert.deepEqual(f.properties[key], old.properties[key]);
-    assert.equal(facilityAvailable(f), facilityAvailable(old));
+    if (f.properties.audit_review?.operator_closure || f.properties.audit_review?.school_closure) {
+      assert.equal(f.id, f.properties.audit_review.operator_closure ? 'civic-care-3560290169-1139854fed' : 'osm-node-1423657463');
+      assert.equal(facilityAvailable(old), true);
+      assert.equal(facilityAvailable(f), false);
+    } else assert.equal(facilityAvailable(f), facilityAvailable(old));
     if (audits.has(f.id)) {
       assert.deepEqual(f.properties.audit_review, audits.get(f.id).review);
       assert.equal(f.properties.registry_review, undefined);
@@ -56,7 +60,7 @@ test('only safe public evidence URLs and complete scope records are rendered', (
   for (const entry of data.reviews) {
     validateAuditReview(entry.review, data.checked_at);
     assert.deepEqual(Object.keys(entry).sort(), ['expected', 'id', 'review']);
-    assert.deepEqual(Object.keys(entry.review).filter(key => key !== 'map_location').sort(), ['accepted_type', 'checked_at', 'limits', 'scope', 'sources', 'status', 'summary']);
+    assert.deepEqual(Object.keys(entry.review).filter(key => !['map_location', 'operator_closure', 'school_closure'].includes(key)).sort(), ['accepted_type', 'checked_at', 'limits', 'scope', 'sources', 'status', 'summary']);
     for (const source of entry.review.sources) assert.deepEqual(Object.keys(source).sort(), ['title', 'url']);
   }
   for (const url of ['javascript:alert(1)', 'https://user:secret@example.org/', 'https://drive.google.com/file/d/private/view', 'http://127.0.0.1/a', 'https://example.org/?token=secret', 'http://[::1]/', 'https://a.drive.google.com/file', 'https://chatgpt.com/files/a', 'https://a.blob.core.windows.net/private', 'https://example.org/?X-Amz-Signature=secret']) assert.equal(publicEvidenceUrl(url), false);

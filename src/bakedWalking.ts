@@ -1,4 +1,5 @@
 /** Reads pre-baked walking catchments (Task 3's bake). No client-side routing. */
+import { distinctVisitCandidates } from './facilityGuidance.ts';
 import type { ShoppingFeature } from './types';
 import { categoryOf } from './facilityCatalog.ts';
 import { facilityAvailable } from './facilityFreshness.ts';
@@ -148,7 +149,7 @@ export interface NearbyFacilityCandidate { facility: ShoppingFeature; group: Fac
 /** Straight-line distance to the registered point/area, not a walkable route. */
 export function nearbyFacilityCandidates(origin: Coordinate, facilities: PreparedFacility[], radius = NEARBY_FACILITIES_RADIUS_M): NearbyFacilityCandidate[] {
   const point: Segment = { a: origin, b: origin, d1: 0, d2: 0, grade: 0, steps: false };
-  return facilities.flatMap(prepared => {
+  const candidates = facilities.flatMap(prepared => {
     if (!isFacilityWalkingCandidate(prepared.facility)) return [];
     const [west, south, east, north] = prepared.bounds;
     const nearestBounds: Coordinate = [Math.max(west, Math.min(east, origin[0])), Math.max(south, Math.min(north, origin[1]))];
@@ -156,6 +157,7 @@ export function nearbyFacilityCandidates(origin: Coordinate, facilities: Prepare
     const nearest = nearFacility(point, prepared);
     return nearest && nearest.gap <= radius ? [{ facility: prepared.facility, group: prepared.group, meters: nearest.gap }] : [];
   }).sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id)));
+  return distinctVisitCandidates(candidates, c => c.facility);
 }
 
 function inRing(p: Coordinate, ring: Coordinate[]): boolean {
@@ -232,5 +234,5 @@ export function bakedFacilityCandidates(catchment: Catchment, facilities: Prepar
     }
     if (best) candidates.push(best);
   }
-  return candidates.sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id)));
+  return distinctVisitCandidates(candidates.sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id))), c => c.facility);
 }

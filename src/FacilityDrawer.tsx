@@ -10,6 +10,7 @@ import FacilityFreshnessDetails from './FacilityFreshnessDetails';
 import FacilityRegistryDetails from './FacilityRegistryDetails';
 import FacilityAuditDetails from './FacilityAuditDetails';
 import FacilityMapLocationNotice from './FacilityMapLocationNotice';
+import FacilityGuidanceDetails from './FacilityGuidanceDetails';
 import { hasMapLocationIssue } from './facilityMapLocation';
 import { dispensingContactReview } from './facilityContact';
 
@@ -41,15 +42,15 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
     panel.current?.querySelector('.detail-body')?.scrollTo(0, 0);
     close.current?.focus({ preventScroll: true });
   }, [facility.id]);
-  return <aside className="detail-drawer facility-drawer" ref={panel} role="dialog" aria-labelledby="facility-title">
+  return <aside className="detail-drawer facility-drawer" data-facility-id={String(facility.id)} ref={panel} role="dialog" aria-labelledby="facility-title">
     <header className="detail-header">
       <div><p className="detail-eyebrow"><span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>{category.name}</p><h2 id="facility-title">{p.name}</h2><p className="detail-subtitle">{p.city}</p></div>
       <button ref={close} className="icon-button" onClick={onClose} aria-label="施設の詳細を閉じる"><MapIcon name="close" /></button>
     </header>
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
-      <FacilityAuditDetails review={p.audit_review} />
-      <FacilityMapLocationNotice location={p.audit_review?.map_location} />
+      <FacilityGuidanceDetails review={p.guide_review} />
+      {p.guide_review ? <details className="source-details"><summary>元の監査記録・位置の確認履歴</summary><p className="helper-text">以下は今回の案内判断より前の監査記録です。今回の案内範囲は上部をご覧ください。</p><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} guidance={p.guide_review} /></details> : <><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} /></>}
       <FacilityFreshnessDetails facility={facility} />
       <FacilityRegistryDetails review={p.registry_review} duplicateOf={p.duplicate_of} />
       {p.classification_review?.status === 'pending' && <p className="mb-3 text-xs text-amber-800">情報確認中</p>}
@@ -57,7 +58,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
       {official && p.location_verification && <p className="helper-text">位置の確認範囲：{p.location_verification}</p>}
       <VerifiedFacilityDetails review={p.purpose_review} />
       <VerifiedFacilityDetails review={dispensingContactReview(p.dispensing_contact)} dateLabel="取得日" />
-      {(p.freshness_review || p.registry_review) && (p.registered_details || p.civic_details) ? <details className="source-details"><summary>取込時点の登録情報（履歴）</summary><p className="helper-text">以下は元データ取得時点の番号・サービス等です。上記の照合後の現行情報とは限りません。</p><RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} /></details> : <RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} />}
+      {(p.freshness_review || p.registry_review || p.audit_review?.operator_closure || p.audit_review?.school_closure) && (p.registered_details || p.civic_details) ? <details className="source-details"><summary>取込時点の登録情報（履歴）</summary><p className="helper-text">以下は元データ取得時点の番号・サービス等です。上記の照合後の現行情報とは限りません。</p><RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} /></details> : <RegisteredDetails details={p.registered_details} civicSources={p.civic_sources} civicDetails={p.civic_details} />}
       {(p.official_url || p.website) && <a className="primary-link" href={p.official_url || p.website} target="_blank" rel="noreferrer">{imported || civic ? 'ウェブサイト' : '公式サイト'} <span aria-hidden="true">↗</span></a>}
       <SharePlace place={{ kind: 'facility', id: String(facility.id) }} />
       <details className="source-details"><summary>登録情報・確認状況</summary>

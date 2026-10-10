@@ -169,7 +169,9 @@ export function applyFacilityCurrent(base: ShoppingFeature[], value: unknown): S
 }
 
 /** Scheduled closures stay available; reviewed duplicate records retain direct links only. */
-export const facilityAvailable = (f: ShoppingFeature) => !['closed', 'temporarily_closed'].includes(f.properties.freshness_review?.status ?? '') && !f.properties.duplicate_of;
+export const facilityChangeReview = (f: ShoppingFeature): FreshnessReview | undefined =>
+  f.properties.freshness_review ?? f.properties.audit_review?.operator_closure ?? f.properties.audit_review?.school_closure;
+export const facilityAvailable = (f: ShoppingFeature) => !['closed', 'temporarily_closed'].includes(facilityChangeReview(f)?.status ?? '') && !f.properties.duplicate_of;
 export function freshnessDateText(r: FreshnessReview, category?: string): string {
   if (r.scope === 'registered_care_services' && r.date_precision === 'unknown') return r.event === 'temporary_closure' ? '未確認（掲載介護サービスの休止を確認）' : '未確認（掲載介護サービスの指定廃止を確認）';
   if (r.event === 'listed') return '未確認（公式の店舗・施設案内を確認して掲載）';
@@ -178,8 +180,10 @@ export function freshnessDateText(r: FreshnessReview, category?: string): string
   return r.effective_at ?? '';
 }
 export function freshnessLabel(f: ShoppingFeature): string {
-  const r = f.properties.freshness_review;
+  const r = facilityChangeReview(f);
   if (!r) return '';
+  if (f.properties.audit_review?.operator_closure) return '掲載介護サービスの閉所を運営者資料で確認';
+  if (f.properties.audit_review?.school_closure) return '旧学校の廃校を市資料で確認';
   if (r.scope === 'registered_care_services') return r.status === 'temporarily_closed' ? '掲載介護サービスの休止' : '掲載介護サービスの指定廃止';
   if (r.event === 'listed') return '公式掲載確認';
   if (['school', 'college'].includes(f.properties.category ?? '')) {
