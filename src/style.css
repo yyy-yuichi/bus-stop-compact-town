@@ -239,14 +239,6 @@
 }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition-duration:0.01ms !important; } }
 
-.basemap-settings { padding: 0 0 16px; border-bottom: 1px solid #dfe5dd; margin-bottom: 16px; }
-.basemap-settings h3 { font-size: 13px; font-weight: 700; margin: 0 0 9px; }
-.basemap-settings > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.basemap-settings button { display:flex; align-items:center; gap:7px; min-height:48px; border:1px solid #dce2d9; border-radius:11px; background:#fff; padding:7px; font-size:12px; }
-.basemap-settings button[aria-pressed=true] { border-color:#1f6651; background:#eff6ef; font-weight:700; }
-.basemap-settings .helper-text { margin:0; font-size:10px; }
-.basemap-swatch { width:29px; height:29px; flex-shrink:0; border-radius:7px; border:1px solid #cbd7cc; background:linear-gradient(125deg,#94bec0 0 43%,#fffaf0 43% 46%,#f7f0df 46% 68%,#fffaf0 68% 73%,#cbd9ba 73%); }
-.standard-swatch { background:linear-gradient(125deg,#aad3df 0 43%,#f2efe9 43% 60%,#e9ccbb 60% 64%,#bbd6a6 64%); }
 
 /* Guide map: labels name the real points; leaders never relocate them. */
 .guide-facility-label { border:0; background:transparent; }

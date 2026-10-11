@@ -6,7 +6,6 @@ import type { ShoppingCategory } from './shoppingData';
 import MapIcon from './MapIcon';
 import FacilityIcon from './FacilityIcon';
 import { searchPlaces } from './placeSearch';
-import BasemapSettings from './basemapPreferences';
 import { boardingTitle } from './boardingGuide';
 import { auditLabel } from './facilityAudit';
 import { mapLocationLabel } from './facilityMapLocation';
@@ -79,7 +78,6 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
       {!busy && !shoppingLoading && !shoppingError && !matches.stops.length && !matches.facilities.length && <p className="helper-text">該当する登録データがありません。短い名前でもお試しください。</p>}
     </div> : <>
       <div className="panel-options" id="map-options">
-        <BasemapSettings />
         <section className="category-section"><div className="section-label"><h3 id="facility-list-title">暮らしの施設</h3><span>表示する種類</span></div>
           <p className="helper-text facility-map-note">バス停を選ぶと、周辺の施設が地図に表示されます。</p>
           <div className="category-groups">{FACILITY_GROUPS.map(group => <details key={group.id}><summary>{group.name}<span>{SHOPPING_CATEGORIES.filter(c => c.group === group.id && categories.includes(c.id)).length}/{SHOPPING_CATEGORIES.filter(c => c.group === group.id).length}種類</span></summary><div className="category-filters">{SHOPPING_CATEGORIES.filter(c => c.group === group.id).map(category => <button key={category.id} aria-pressed={categories.includes(category.id)} onClick={() => onCategories(categories.includes(category.id) ? categories.filter(c => c !== category.id) : [...categories, category.id])}>

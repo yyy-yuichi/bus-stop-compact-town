@@ -2,10 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'maplibre-gl/dist/maplibre-gl.css';
 import './route-living.css';
 import useBasemap from './useBasemap';
-import BasemapSettings, { BasemapPreferences, type BasemapMode } from './basemapPreferences';
 import { activeTrips, clockText, shoppingPlans, studyFreshness, timeMinutes, validStudyDate, type RouteStudy } from './routeLiving';
 import type { ShoppingFeature } from './types';
 
@@ -20,9 +18,8 @@ function FactList({facts}:{facts:Facts}) {return <dl className="facts">{facts.ma
 function CorridorMap({study,facilities,selected}:{study:RouteStudy;facilities:Facilities;selected:string}) {
   const node=useRef<HTMLDivElement>(null);
   const [map,setMap]=useState<L.Map|null>(null);
-  const [mode,setMode]=useState<BasemapMode>('soft');
   const [attempt,setAttempt]=useState(0);
-  const {error,fallback}=useBasemap(map,mode,attempt);
+  const {error}=useBasemap(map,attempt);
   const bounds=useMemo(()=>L.latLngBounds(study.groups.flatMap(g=>[g.outboundId,g.returnId]).map(id=>{const s=study.stops.find(s=>s.id===id)!;return L.latLng(s.coordinate[1],s.coordinate[0]);})),[study]);
   useEffect(()=>{
     if(!node.current)return;
@@ -55,12 +52,11 @@ function CorridorMap({study,facilities,selected}:{study:RouteStudy;facilities:Fa
   },[map,study,facilities,selected]);
   function focusStore(){map?.setView([33.9791,131.9279],18);}
   return <section className="map-section" aria-labelledby="map-title"><div className="section-head"><div><p className="eyebrow">同じ場所で比べる</p><h2 id="map-title">10停留所と生活の目的地</h2></div><div className="map-actions"><button onClick={()=>map?.fitBounds(bounds,{padding:[35,35]})}>10停留所の全体</button><button onClick={focusStore}>店舗付近を拡大</button></div></div>
-    <BasemapPreferences value={{mode,onMode:m=>{setMode(m);setAttempt(a=>a+1);},fallback}}><BasemapSettings comparison/></BasemapPreferences>
     <div ref={node} className="study-map" role="region" aria-label="光駅からイオン光店までの地図"/>
     {error&&<p role="alert">背景地図の一部を読み込めませんでした。<button onClick={()=>setAttempt(a=>a+1)}>再読み込み</button></p>}
     <p className="map-key"><span>● 数字＝バスの登録点</span><span>青線＝右回りのバス経路</span><span>店＝店舗の登録点</span></p>
     <div className="stop-index" role="group" aria-label="停留所を地図で確認">{study.groups.map(g=><button key={g.name} onClick={()=>{const s=study.stops.find(s=>s.id===g.outboundId)!;map?.setView([s.coordinate[1],s.coordinate[0]],17);}}>{g.number}. {g.name}</button>)}</div>
-    <p className="muted">地図を切り替えても位置・縮尺・重ねた点は同じです。徒歩経路は未確認のため表示していません。写真は撮影時期が場所ごとに異なり、現在の入口や横断可否を保証しません。学校は旧高校の敷地図形です。</p>
+    <p className="muted">徒歩経路は未確認のため表示していません。学校は旧高校の敷地図形です。</p>
   </section>;
 }
 

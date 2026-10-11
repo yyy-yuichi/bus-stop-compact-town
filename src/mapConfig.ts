@@ -2,6 +2,12 @@ import type { LatLngTuple, MapOptions } from 'leaflet';
 
 export const INITIAL_VIEW = { center: [34.17, 131.58] as LatLngTuple, zoom: 9 };
 
+export const STANDARD_BASEMAP = {
+  url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+};
+
 export const MAP_OPTIONS: MapOptions = {
   zoomControl: false,
   // Leaflet 1.9 ignores a new fitBounds while a CSS zoom is in progress,

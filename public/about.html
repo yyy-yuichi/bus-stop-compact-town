@@ -25,7 +25,7 @@
   <h2>現在できること・これからのこと</h2>
   <p>国のバス停4,418レコードを元のID・位置のまま表示し、徒歩圏計算では同じ座標を小数5桁でまとめた3,946地点に対応付けています。このうち3,657地点で徒歩15分相当の道路範囲と近接する施設候補を表示し、道路への接続を確認できなかった289地点は理由を案内します。従来のおのだ周辺7地点では徒歩5分・10分と買い物候補を引き続き試せます。県内全体の時刻表検索・乗換案内には対応していません。</p>
   <h2>光市の1路線で往復を試す</h2>
-  <p><a href="route-living.html">ひかりぐるりんバスで午前の買い物</a>では、光駅〜イオン光店の10停留所について、利用日・徒歩・買い物・帰宅時間から時刻表上の候補を確認できます。2026年9月14日に公式PDFの60時刻を照合し、1時刻と2便の年末年始条件の差異を明示して補正しました。入口・横断・実際の徒歩時間は未確認で、入力した時間を確保できる計算上の候補です。各社資料の棚卸しと4種類の背景地図比較も同じページで確認できます。</p>
+  <p><a href="route-living.html">ひかりぐるりんバスで午前の買い物</a>では、光駅〜イオン光店の10停留所について、利用日・徒歩・買い物・帰宅時間から時刻表上の候補を確認できます。2026年9月14日に公式PDFの60時刻を照合し、1時刻と2便の年末年始条件の差異を明示して補正しました。入口・横断・実際の徒歩時間は未確認で、入力した時間を確保できる計算上の候補です。各社資料の棚卸しも同じページで確認できます。</p>
   <h2 id="walking">徒歩圏の計算方法</h2>
   <h3>国のバス停からの徒歩圏</h3>
   <p>OpenStreetMapの山口県の道路網と国土地理院の標高タイルを使い、あらかじめ計算した道路上の到達範囲を配信します。標高は5mメッシュを基本とし、欠測箇所は10mメッシュで補います。勾配は約30mの道なりの高低差で平均化し、Toblerの登山関数から上り・下りのうち時間がかかる側を採用した距離へ換算しています。時速4km・最大15分相当の範囲を、濃い緑から黄緑の連続した色で示します。線に囲まれた敷地全体が歩けるという意味ではありません。</p>
@@ -55,9 +55,8 @@
   <p>このアプリは以下の著作物を改変して利用しています。下松市の<a href="https://yamaguchi-opendata.jp/ckan/dataset/352071_park">都市公園一覧</a>、<a href="https://yamaguchi-opendata.jp/ckan/dataset/352071_preschool">子育て施設一覧</a>、<a href="https://yamaguchi-opendata.jp/ckan/dataset/352071_educational_institution">教育機関一覧</a>、<a href="https://yamaguchi-opendata.jp/ckan/dataset/352071_care_service">介護サービス事業所一覧</a>、山口県の<a href="https://yamaguchi-opendata.jp/ckan/dataset/care_service">介護サービス事業所一覧</a>。利用条件：<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>（<a href="https://www.city.kudamatsu.lg.jp/jyouhou/opendata.html">下松市の案内</a>・<a href="https://yamaguchi-opendata.jp/www/terms.html">県の利用規約</a>）。バス停と暮らしマップが分類・行集約・重複除外・GeoJSON変換を行っています。<a href="data/civic-facilities.geojson">自治体由来の施設データ</a>。</p>
   <p>生活施設の追加分は、2026年9月13日に山口県の行政界を指定して取得したOpenStreetMapの登録情報です。取得データが示す基準日時は2026年7月28日02:16:18 UTCです。名称なし・使用停止・非公開の登録を除き、既存の出典IDと重複する要素は追加していません。同名の別要素が含まれる可能性はあります。</p>
   <h2 id="basemap">背景地図</h2>
-  <p>初期表示の「案内図」は、<a href="https://openfreemap.org/">OpenFreeMap</a>配信のベクトル地図を使います。<a href="https://openmaptiles.org/">OpenMapTiles</a>の地図構造と© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>のデータに基づきます。表示設定で、従来のOpenStreetMap画像を使う「標準（軽い表示）」にも切り替えられます。描画に失敗した場合は標準地図へ切り替わります。背景地図の選択はこのブラウザーに保存し、共有リンクには含めません。</p>
-  <p>案内図は道路や施設の実際の位置を保ち、細かな建物・道路名を拡大時に表示します。施設名は記号や他の名称に重ならない場所へ添えています。名前が省略されていても、記号や施設一覧から詳細を確認できます。徒歩圏の施設分類を選ぶと、地図の記号も同じ分類に絞られます。</p>
-  <p>地図デザインは<a href="https://github.com/hyperknot/openfreemap-styles">OpenFreeMap Positron</a>を基に、陸地・水面・道路の配色と日本語優先の文字表示、駅名表示を変更しました。原デザイン：© MapTiler.com &amp; OpenMapTiles contributors、© CartoDB Inc.、Stamen・Paul Norman。Positronのデザインは<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>、元のCartoDB Basemapsは<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>。<a href="maps/positron-LICENSE.md">Positronのライセンス全文</a>、<a href="maps/openfreemap-LICENSE.md">OpenFreeMapのライセンス全文</a>、<a href="maps/soft.json">変更したスタイル</a>を公開しています。</p>
+  <p>背景地図はOpenStreetMapの画像地図を使用しています。© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。施設やバス停の情報は、背景地図とは別に重ねて表示しています。</p>
+  <p>施設名は記号や他の名称に重ならない場所へ添えています。名前が省略されていても、記号や施設一覧から詳細を確認できます。徒歩圏の施設分類を選ぶと、地図の記号も同じ分類に絞られます。</p>
   <p>市の停留所：<a href="https://yamaguchi-opendata.jp/ckan/dataset/352080-gtfsjp">岩国市GTFS-JP</a>・<a href="https://yamaguchi-opendata.jp/ckan/dataset/352101_kotsu001">光市の交通データ</a>を加工。利用条件は<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>（<a href="https://www.city.iwakuni.lg.jp/soshiki/8/36369.html">岩国市の案内</a>・<a href="https://www.city.hikari.lg.jp/soshiki/1/johosuishin/site/2281.html">光市の案内</a>）。元資料の日付は現在の運行・乗り場の確認日ではありません。由宇改正関連の保留65件は追加していません。</p>
   <p>通常マップのバス停：<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html">国土数値情報・バス停留所2022年度版</a>を加工。<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>。上下線の補完は未実施です。新しい徒歩圏はこの国の原資料と同じ座標から計算しています。小数5桁で同じ座標となるレコードは徒歩圏データを共有しますが、表示・共有リンクのレコードIDは統合しません。従来のおのだ周辺試作は別のOSM位置を使用し、国の停留所へ近さだけで対応付けていません。</p>
   <p>地図画像・施設位置・徒歩圏試作の7地点：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。データは<a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License（ODbL）1.0</a>に基づきます。OSM ID・データ日時・個別確認の有無をGeoJSONに記載しています。登録がある施設はウェブサイトも含みます。</p>
@@ -73,9 +72,9 @@
     <li><a href="data/shopping.geojson" download>暮らしの施設データ（GeoJSON）</a></li>
     <li><a href="data/walking-onoda.json" download>徒歩圏計算用の道路データ（JSON・OSMを加工、ODbL 1.0）</a></li>
   </ul>
-  <p>光市の試行ページでは、地理院タイルの淡色地図・全国最新写真（シームレス）を同じ位置・縮尺で比較できます。出典：<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>。写真の撮影時期は場所で異なります。光市GTFSを用いたバスの点・線と、OSM由来の施設図形を重ねています。</p>
+  <p>光市の試行ページでは、光市GTFSを用いたバスの点・線と、OSM由来の施設図形を重ねています。</p>
   <h2>通信について</h2>
-  <p>背景地図をOpenFreeMap（標準表示ではOpenStreetMap）、光市の比較では地理院タイル、徒歩圏データをCloudflare R2から取得するため、インターネット接続が必要です。徒歩圏は選択したバス停のデータだけを取得します。外部サービスには通常の通信情報が送られます。このアプリ独自のアクセス解析、広告、現在地の取得はありません。公式サイトへのリンクを開くと外部サイトに移動します。</p>
+  <p>背景地図をOpenStreetMap、徒歩圏データをCloudflare R2から取得するため、インターネット接続が必要です。徒歩圏は選択したバス停のデータだけを取得します。外部サービスには通常の通信情報が送られます。このアプリ独自のアクセス解析、広告、現在地の取得はありません。公式サイトへのリンクを開くと外部サイトに移動します。</p>
   <h2>使用ライブラリ</h2>
   <p><a href="third-party-notices.txt">使用ライブラリのライセンス表記</a></p>
 </body>
