@@ -48,7 +48,7 @@ const wrong = structuredClone(index);
 wrong.stops['hikari:4_01'].origin = index.stops['hikari:4_02'].origin;
 assert.throws(() => attachBoardingWalks(stops, wrong, urls), /origin mismatch/);
 assert.throws(() => attachBoardingWalks(stops, index, {}), /Missing boarding walk file/);
-// The original origin must retain the original method's facility membership.
+// The original origin keeps its walking catchment and uses the current facility cutoff.
 const baselineRaw = read('data-sources/boarding-walking-20260914/national-nishigawara.json');
 if (fs.existsSync('work/boarding-walking-20260914/baseline-nishigawara.json')) {
   assert.deepEqual(read('work/boarding-walking-20260914/baseline-nishigawara.json'), baselineRaw, 'Recomputed original catchment exactly matches the published data');
@@ -65,5 +65,6 @@ for (const id of ['node/3640500398','node/3640500395','node/3640500394','node/62
 for (const id of ['node/3640500397','node/3640500396','node/3640475990']) assert(!index.stops[id]);
 assert.notEqual(index.stops['node/3640500395'].file, index.stops['node/3640500394'].file);
 const baseCandidates = bakedFacilityCandidates(baseline, facilities);
-assert.equal(baseCandidates.filter(c => c.meters <= 1000).length, 44);
-console.log(JSON.stringify({ baked: count, original_nishigawara_15min: 44, counts_by_minutes: results }));
+const baselineFacilityCount = baseCandidates.filter(c => c.meters <= 1000).length;
+assert.equal(baselineFacilityCount, 50);
+console.log(JSON.stringify({ baked: count, original_nishigawara_15min: baselineFacilityCount, counts_by_minutes: results }));

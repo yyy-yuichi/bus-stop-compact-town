@@ -50,7 +50,7 @@ try {
  const original=features.find(f=>f.id==='osm-node-1423653891'),current=features.find(f=>f.id==='civic-KD0000500001'),origin=original.geometry.coordinates;
  const pair=[original,current],prepared=prepareFacilities(pair),catchment={stopId:'shared-render',budget:1000,origin,snap:origin,snapGap:0,segments:[{a:origin,b:origin,d1:0,d2:0,grade:0,steps:false}]};
  const combinedWalk=bakedFacilityCandidates(catchment,prepared);assert.equal(combinedWalk.length,1);
- const dx=(origin[0]-current.geometry.coordinates[0])*Math.cos(origin[1]*Math.PI/180),dy=origin[1]-current.geometry.coordinates[1],length=Math.hypot(dx,dy),scale=22/6371000*180/Math.PI;
+ const dx=(origin[0]-current.geometry.coordinates[0])*Math.cos(origin[1]*Math.PI/180),dy=origin[1]-current.geometry.coordinates[1],length=Math.hypot(dx,dy),scale=27/6371000*180/Math.PI;
  const road=[origin[0]+dx/length*scale/Math.cos(origin[1]*Math.PI/180),origin[1]+dy/length*scale];
  const reachableOriginal={...catchment,origin:road,snap:road,segments:[{a:road,b:road,d1:0,d2:0,grade:0,steps:false}]};
  const walk=bakedFacilityCandidates(reachableOriginal,prepared);assert.equal(walk.length,1);assert.equal(walk[0].facility.id,original.id);

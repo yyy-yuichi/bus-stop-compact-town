@@ -102,7 +102,7 @@ export function clipCatchment(catchment: Catchment, budget: number): Catchment {
   return { ...catchment, budget: limit, segments };
 }
 
-export const FACILITY_ROAD_GAP_M = 25;
+export const FACILITY_ROAD_GAP_M = 30;
 export const WALKING_METERS_PER_MINUTE = 4000 / 60;
 export interface BakedFacilityCandidate {
   facility: ShoppingFeature;
@@ -211,7 +211,7 @@ function nearFacility(segment: Segment, facility: PreparedFacility) {
 
 /**
  * Join only to the baked reachable roads; never infer a route across a gap.
- * Each segment's nearest pair must be within 25 m of the registered point/area.
+ * Each segment's nearest pair must be within FACILITY_ROAD_GAP_M of the registered point/area.
  * Keep the lowest baked cost of qualifying pairs. Filter this fixed result by
  * minutes, so 5/10/15-minute candidate sets are nested and estimates stay stable.
  */

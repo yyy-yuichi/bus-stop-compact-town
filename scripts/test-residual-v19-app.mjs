@@ -14,7 +14,7 @@ const urls=Object.fromEntries(Object.values(index.stops).filter(e=>e.file).map(e
 const attached=attachBoardingWalks(stops,index,urls),byId=new Map(attached.map(p=>[p.id,p]));
 const facilities=prepareFacilities([...read('public/data/shopping.geojson').features,...read('public/data/civic-facilities.geojson').features]);
 const baseline=parseCatchment(read(`${dir}/baseline-nishigawara.json`));
-const baselineFacilityCount=bakedFacilityCandidates(baseline,facilities).filter(p=>p.meters<=1000).length;assert.equal(baselineFacilityCount,44);
+const baselineFacilityCount=bakedFacilityCandidates(baseline,facilities).filter(p=>p.meters<=1000).length;assert.equal(baselineFacilityCount,50);
 const results=[];
 for(const id of read(`${dir}/confirmed-walking-targets.json`)){
  const p=byId.get(id),entry=index.stops[id];assert(p&&entry,id);assert.deepEqual(entry.origin,p.geometry.coordinates);
