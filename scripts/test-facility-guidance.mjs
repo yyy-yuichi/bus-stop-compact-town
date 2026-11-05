@@ -202,12 +202,12 @@ test('explicit current visitor destinations count once and retain the closest re
   assert.equal(nearbyFacilityCandidates(o,prepareFacilities([current,original,other,unmarked])).length,3,'only explicit shared current destinations are counted once');
   assert.equal(mapFacilities([original,current,other],SHOPPING_CATEGORIES.map(c=>c.id),null,'shared',{scope:'shared',ids:[String(original.id),String(current.id),String(other.id)]}).length,2);
   assert(mapFacilities([original,current],SHOPPING_CATEGORIES.map(c=>c.id),current,'shared',{scope:'shared',ids:[String(original.id),String(current.id)]}).some(f=>f.id===current.id),'directly selected original record stays accessible');
-  const dx=(o[0]-c[0])*Math.cos(o[1]*Math.PI/180),dy=o[1]-c[1],length=Math.hypot(dx,dy),scale=22/6371000*180/Math.PI;
+  const dx=(o[0]-c[0])*Math.cos(o[1]*Math.PI/180),dy=o[1]-c[1],length=Math.hypot(dx,dy),scale=27/6371000*180/Math.PI;
   const road=[o[0]+dx/length*scale/Math.cos(o[1]*Math.PI/180),o[1]+dy/length*scale];
   for(const minutes of [5,10,15])for(const offset of [-.01,0,.01]){
     const cost=minutes*WALKING_METERS_PER_MINUTE+offset,catchment={stopId:'shared-boundary',budget:1100,origin:road,snap:road,snapGap:0,segments:[{a:road,b:road,d1:cost,d2:cost,grade:0,steps:false}]};
     const separateOriginal=bakedFacilityCandidates(catchment,prepareFacilities([original])),separateCurrent=bakedFacilityCandidates(catchment,prepareFacilities([current])),together=bakedFacilityCandidates(catchment,prepareFacilities([current,original]));
-    assert.equal(separateOriginal.length,1);assert.equal(separateCurrent.length,0,'current representative is beyond the 25m road join while original is reachable');assert.equal(together.length,1);assert.equal(together[0].facility.id,original.id);assert.deepEqual(together[0].facilityPoint,o);assert.equal(together[0].meters<=minutes*WALKING_METERS_PER_MINUTE,offset<=0);
+    assert.equal(separateOriginal.length,1);assert.equal(separateCurrent.length,0,'current representative is beyond the 30m road join while original is reachable');assert.equal(together.length,1);assert.equal(together[0].facility.id,original.id);assert.deepEqual(together[0].facilityPoint,o);assert.equal(together[0].meters<=minutes*WALKING_METERS_PER_MINUTE,offset<=0);
   }
   const saved=JSON.stringify(base);assert.deepEqual(applied.find(f=>f.id===current.id),base.find(f=>f.id===current.id));assert.equal(JSON.stringify(base),saved);
 });
