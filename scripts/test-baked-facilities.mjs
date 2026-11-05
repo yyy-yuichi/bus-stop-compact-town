@@ -12,11 +12,11 @@ const line = (d1 = 0, d2 = 200) => catchment([[[0, 0], [200, 0], d1, d2]]);
 const join = (c, ...f) => bakedFacilityCandidates(c, prepareFacilities(f));
 const near = (actual, expected) => assert(Math.abs(actual - expected) < 0.01, `${actual} != ${expected}`);
 
-// A registered point's nearest road projection: strict 25 m cutoff.
+// A registered point's nearest road projection: strict 30 m cutoff.
 let c = line();
-let found = join(c, point('within', 100, 24), point('boundary', 100, 25), point('outside', 100, 26));
+let found = join(c, point('within', 100, 29.032), point('boundary', 100, 30), point('outside', 100, 31));
 assert.deepEqual(found.map(f => f.facility.id), ['boundary', 'within']);
-near(found[0].meters, 100); near(found[0].gap, 25);
+near(found[0].meters, 100); near(found[0].gap, 30);
 assert.equal(join(c, point('far-road', 600, 0)).length, 0);
 
 // Costs come from the baked distance field, including slopes/detours, not a radius.
@@ -74,7 +74,7 @@ const fixtureRoot = 'data-sources/walking-facilities-20260913';
 const cases = [
   ...JSON.parse(fs.readFileSync(`${fixtureRoot}/cases.json`, 'utf8')).map(test => ({ ...test, fixture: `${fixtureRoot}/catchments/${test.catchment}.json` })),
   { name: '北河内駅（国の起点）', catchment: '132.06421_34.17587', expectedCounts: [0, 0, 0], fixture: 'data-sources/regional-map-20260913/132.06421_34.17587.json' },
-  { name: '光駅（国の起点）', catchment: '131.91505_33.97351', expectedCounts: [2, 3, 6], fixture: 'data-sources/regional-map-20260913/131.91505_33.97351.json' },
+  { name: '光駅（国の起点）', catchment: '131.91505_33.97351', expectedCounts: [3, 4, 8], fixture: 'data-sources/regional-map-20260913/131.91505_33.97351.json' },
 ];
 const facilities = ['shopping', 'civic-facilities'].flatMap(name => JSON.parse(fs.readFileSync(`public/data/${name}.geojson`, 'utf8')).features);
 const prepared = prepareFacilities(facilities);
@@ -87,7 +87,7 @@ for (const test of cases) {
   assert([...sets[0]].every(id => sets[1].has(id)) && [...sets[1]].every(id => sets[2].has(id)), `${test.name}: time sets must nest`);
   assert.equal(new Set(found.map(f => f.facility.id)).size, found.length, 'One row per source record');
   for (const f of found) {
-    assert(f.gap <= 25.000001 && f.meters >= 0 && f.meters <= c.budget);
+    assert(f.gap <= 30.000001 && f.meters >= 0 && f.meters <= c.budget);
     near(distance(f.roadPoint, f.facilityPoint), f.gap);
     assert(c.segments.some(s => {
       const q = project(f.roadPoint, s.a, s.b);
@@ -99,4 +99,4 @@ for (const test of cases) {
   const old = found.filter(f=>originalIds.has(f.facility.id));
   assert.deepEqual([5,10,15].map(minutes=>old.filter(f=>f.meters<=minutes*WALKING_METERS_PER_MINUTE).length),test.expectedCounts,`${test.name}: original facility results changed`);
 }
-console.log(`Baked facility checks passed: points, 25 m cutoff, slope/detour costs, polygons/holes/crossings, groups, clipping, and ${cases.length} real locations.`);
+console.log(`Baked facility checks passed: points, 30 m cutoff, slope/detour costs, polygons/holes/crossings, groups, clipping, and ${cases.length} real locations.`);
