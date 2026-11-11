@@ -6,6 +6,13 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const study=read('src/data/boarding-guide-study.json'), walk=read('src/data/boarding-walk-study/index.json');
 const points=study.hub_points.map(s=>({...s,properties:{...s.properties,boarding_guide:study.guides[s.id]}}));
 const byId=new Map(points.map(s=>[s.id,s]));
+// Reviewed alighting-side origins remain separate from the operator's original poles.
+// Membership is grounded in the saved audit's exact original pole ID, not proximity.
+const adopted = {
+ '00450662': { id:'walk-adopted:132.2092_33.94747:1', origin:[132.209184,33.947567] },
+ '00450671': { id:'walk-adopted:132.26029_33.94945:1', origin:[132.26037,33.949369] },
+ '00451512': { id:'walk-adopted:131.18491_34.3708:1', origin:[131.184782,34.370868] },
+};
 const files=fs.readdirSync('data-sources/bocho-districts-20260915').filter(f=>/^\d{8}\.json$/.test(f));
 assert.equal(files.length,16);
 let count=0;const cities=new Set();
@@ -22,13 +29,27 @@ for(const file of files){
   assert.deepEqual(walk.stops[id].origin,point.geometry.coordinates,'Each original pole keeps its own walking origin');
   assert.equal(guide.number,null,'Do not invent numbers or an up/down label');
   const choices=boardingChoices(point,points);
-  // A single-source stop needs no choice list; multi-source groups use only the explicit source stop.
-  if(expected.length>1)assert.deepEqual(choices.map(s=>s.id).sort(),expected);
+  assert.deepEqual(choices.filter(s=>s.properties.boarding_guide.evidence==='official-platform-coordinate').map(s=>s.id).sort(),expected,'Preserve every original official pole and exclude unrelated official IDs');
+  const extra=adopted[source.busstopId];
+  assert.deepEqual(choices.map(s=>s.id).sort(),[...expected,...(extra?[extra.id]:[])].sort(),'Only the three audited independent origins may extend their exact source group');
   const place={kind:'boarding',id,minutes:10};assert.deepEqual(readPlaceLink(new URL(placeLink('https://example.com/',place)).hash),place);
   count++;
  }
 }
 assert.equal(count,35);assert.equal(cities.size,7);
+for(const [sourceId,extra] of Object.entries(adopted)){
+ const point=byId.get(extra.id),guide=study.guides[extra.id],entry=walk.stops[extra.id];
+ assert(point);assert.equal(guide.evidence,'reviewed-walk-origin');
+ assert.equal(guide.group_id,`hub:bocho-${sourceId}`);assert.equal(guide.number,null);
+ assert.deepEqual(point.geometry.coordinates,extra.origin);
+ assert.deepEqual(guide.source_coordinates,extra.origin);assert.deepEqual(entry.origin,extra.origin);
+ assert.match(guide.data_notice,/事業者の登録座標とは位置が異なります/);
+ const raw=read(`src/data/boarding-walk-study/${entry.file}`);
+ assert.equal(raw.id,extra.id);assert.deepEqual(raw.origin,extra.origin);
+ for(const original of points.filter(p=>p.properties.source_busstop_id===sourceId)){
+  assert.notEqual(walk.stops[original.id].file,entry.file,'Never replace an official pole file with the reviewed independent origin');
+ }
+}
 for(const pole of ['000000003251','000000003255','000000003259']){
  const point=points.find(p=>p.properties.source_id===pole);
  assert.equal(point.properties.boarding_guide.summary,'東萩駅方面');
