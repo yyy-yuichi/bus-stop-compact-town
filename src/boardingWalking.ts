@@ -18,7 +18,7 @@ export function attachBoardingWalks(stops: BusFeature[], index: BoardingWalkInde
     if (!entry) return stop;
     if (!stop.properties.boarding_guide || stop.properties.boarding_guide.review || stop.properties.boarding_guide.assignment_hold || entry.origin.length !== 2 ||
         !entry.origin.every((n, i) => Number.isFinite(n) && n === stop.geometry.coordinates[i])) throw Error('Boarding walk origin mismatch');
-    if (entry.file && (!/^((?:hikari|iwakuni|sentetsu)-[\w.-]+|node-\d+|bocho-\d{8}-\d{12}|jr-chugoku-\d+ \d+|ube-official-map-[A-Za-z0-9_-]+-\d+)\.json$/.test(entry.file) ||
+    if (entry.file && (!/^((?:hikari|iwakuni|sentetsu)-[\w.-]+|node-\d+|walk-adopted-\d+\.\d+_\d+\.\d+-\d+|taka-\d+|busit-\d+|bocho-\d{8}-\d{12}|jr-chugoku-\d+ \d+|ube-official-map-[A-Za-z0-9_-]+-\d+)\.json$/.test(entry.file) ||
       entry.file !== `${id.replaceAll(':', '-').replaceAll('/', '-')}.json` || !urls[entry.file])) throw Error('Missing boarding walk file');
     if (!entry.file && (entry.gap !== null && !(typeof entry.gap === 'number' && Number.isFinite(entry.gap) && entry.gap >= 0))) throw Error('Invalid boarding walk gap');
     found.add(id);

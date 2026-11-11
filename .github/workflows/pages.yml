@@ -24,6 +24,9 @@ jobs:
       # 未設定のまま公開すると徒歩圏が全停留所で404になるため、下で先に落とす。
       VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL }}
       VITE_BOARDING_STUDY: '1'
+      VITE_ENTRANCE_STUDY: '1'
+      VITE_ENTRANCE_COMPARISON: '0'
+      VITE_LOCAL_ONLY: '0'
     steps:
       - name: Require WALK_DATA_URL
         run: |
@@ -43,6 +46,7 @@ jobs:
       - run: npm run test:walking
       - run: npm run test:baked-walking
       - run: npm run test:baked-facilities
+      - run: npm run test:entrance-routes
       - run: npm run test:stops
       - run: npm run test:places
       - run: npm run test:map-display

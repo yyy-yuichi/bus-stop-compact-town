@@ -13,8 +13,10 @@ import FacilityMapLocationNotice from './FacilityMapLocationNotice';
 import FacilityGuidanceDetails from './FacilityGuidanceDetails';
 import { hasMapLocationIssue } from './facilityMapLocation';
 import { dispensingContactReview } from './facilityContact';
+import EntranceRouteNotice from './EntranceRouteNotice';
+import type { EntranceRoute } from './entranceRouteStudy';
 
-export default function FacilityDrawer({ facility, onClose, returnStop }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string } }) {
+export default function FacilityDrawer({ facility, onClose, returnStop, entranceRoute }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string }; entranceRoute?: EntranceRoute }) {
   const close = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLElement>(null);
   const p = facility.properties;
@@ -49,6 +51,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop }: { faci
     </header>
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
+      {entranceRoute && returnStop && <section className="soft-note" aria-label="バス停からの経路"><strong>バス停からの経路</strong><EntranceRouteNotice route={entranceRoute} stopName={returnStop.name} /></section>}
       <FacilityGuidanceDetails review={p.guide_review} />
       {p.guide_review ? <details className="source-details"><summary>元の監査記録・位置の確認履歴</summary><p className="helper-text">以下は今回の案内判断より前の監査記録です。今回の案内範囲は上部をご覧ください。</p><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} guidance={p.guide_review} /></details> : <><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} /></>}
       <FacilityFreshnessDetails facility={facility} />

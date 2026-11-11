@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 const root=process.argv[2] || 'dist';
 const walkDataUrl=process.env.VITE_WALK_DATA_URL;
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>fs.statSync(path.join(root,f)).isFile());
@@ -9,7 +10,21 @@ for(const f of files){
   JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
   continue;
  }
- if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review|facility-current|facility-audit|facility-contacts|facility-guidance)\.json|data\/walk\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review|facility-current|facility-audit|facility-contacts|facility-guidance)\.json|data\/(walk|entrance-walk)\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+}
+if(process.env.VITE_ENTRANCE_STUDY === '1') {
+ const study = JSON.parse(fs.readFileSync('src/data/entrance-route-study.json', 'utf8'));
+ const expected = Object.keys(study.origins).map(id => `${id}.json`).sort();
+ const folder = path.join(root, 'data/entrance-walk');
+ const actual = fs.readdirSync(folder).sort();
+ if(expected.length !== 23 || JSON.stringify(actual) !== JSON.stringify(expected)) throw Error('Pinned entrance input coverage differs');
+ const pins = JSON.parse(fs.readFileSync('src/data/entrance-road-hashes.json', 'utf8'));
+ if(JSON.stringify(Object.keys(pins).sort()) !== JSON.stringify(expected)) throw Error('Pinned entrance hash coverage differs');
+ for(const name of expected) {
+  const bytes = fs.readFileSync(path.join(folder, name));
+  if(!bytes.equals(fs.readFileSync(path.join('public/data/entrance-walk', name))) || bytes.length !== pins[name].bytes || createHash('sha256').update(bytes).digest('hex') !== pins[name].sha256) throw Error(`Stale pinned entrance input: ${name}`);
+ }
+ console.log('Entrance inputs verified: 23 reviewed national origins, source bytes and SHA-256 match.');
 }
 for(const file of ['index.html','about.html','third-party-notices.txt','data/bus_stop.geojson','data/shopping.geojson','data/civic-facilities.geojson','data/walking-onoda.json','data/baked-bus-stops.geojson','data/walk-unreachable.json',...(walkDataUrl?[]:['data/walk/index.json'])]) if(!files.includes(file)&&!files.includes(file.replaceAll('/','\\')))throw Error(`Missing release file ${file}`);
 const guidancePath='data/facility-guidance.json';

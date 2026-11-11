@@ -1,6 +1,7 @@
 import { FACILITY_GROUPS } from './facilityCatalog';
 import { useEffect, useRef, useState } from 'react';
-import type { BakedFacilityCandidate, FacilityGroup } from './bakedWalking';
+import type { FacilityGroup } from './bakedWalking';
+import type { EntranceCandidate } from './entranceRouteStudy';
 import type { BakedWalkingMinutes } from './placeLink';
 import type { LoadState, ShoppingFeature } from './types';
 import { categoryOf } from './shoppingData';
@@ -10,7 +11,7 @@ import { mapLocationExclusionNote } from './facilityMapLocation';
 const GROUPS = [{ id: 'all', name: 'すべて' }, ...FACILITY_GROUPS] as const;
 
 export default function BakedFacilityList({ candidates, group, onGroup, minutes, state, retry, onFacility, hasExcludedLocations = false }: {
-  candidates: BakedFacilityCandidate[]; minutes: BakedWalkingMinutes;
+  candidates: EntranceCandidate[]; minutes: BakedWalkingMinutes;
   state: LoadState; retry: () => void; onFacility: (facility: ShoppingFeature) => void;
   group: FacilityGroup | 'all'; onGroup: (group: FacilityGroup | 'all') => void;
   hasExcludedLocations?: boolean;
@@ -37,12 +38,12 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
         {GROUPS.map(g => <option key={g.id} value={g.id}>{g.name}（{candidates.filter(c => g.id === 'all' || c.group === g.id).length}件）</option>)}
       </select>
     </label>
-    <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label} {filtered.length}件 · 道路までの時間順</p>
-    {filtered.length ? filtered.slice(0, limit).map(({ facility, meters }) => {
+    <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label} {filtered.length}件 · {candidates.some(candidate => candidate.entranceRoute) ? '入口経路の試算を含む時間順' : '道路までの時間順'}</p>
+    {filtered.length ? filtered.slice(0, limit).map(({ facility, meters, entranceRoute }) => {
       const category = categoryOf(facility);
       return <button key={String(facility.id)} id={`baked-facility-${facility.id}`} className="place-row walk-facility-row" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>
         <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-        <span><strong>{facility.properties.name}</strong>{facility.properties.guide_review?.visit_purpose === 'school_contact' && <small>来校・相談先（事前確認）</small>}{facility.properties.guide_review?.shared_destination && <small>{facility.properties.guide_review.shared_destination.kind === 'scoped_park_place' ? '同じ公園の概略案内：' : '現在の来訪先：'}{facility.properties.guide_review.shared_destination.display_name ?? facility.properties.guide_review.shared_destination.expected.name}</small>}{!facility.properties.guide_review?.shared_destination && facility.properties.guide_review?.decision === 'ready' && facility.properties.guide_review.display.type !== facility.properties.name && <small>今回の案内：{facility.properties.guide_review.display.type}</small>}<small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 情報確認中' : ''}</small><small>近くの道路まで 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
+        <span><strong>{facility.properties.name}</strong>{facility.properties.guide_review?.visit_purpose === 'school_contact' && <small>来校・相談先（事前確認）</small>}{facility.properties.guide_review?.shared_destination && <small>{facility.properties.guide_review.shared_destination.kind === 'scoped_park_place' ? '同じ公園の概略案内：' : '現在の来訪先：'}{facility.properties.guide_review.shared_destination.display_name ?? facility.properties.guide_review.shared_destination.expected.name}</small>}{!facility.properties.guide_review?.shared_destination && facility.properties.guide_review?.decision === 'ready' && facility.properties.guide_review.display.type !== facility.properties.name && <small>今回の案内：{facility.properties.guide_review.display.type}</small>}<small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 情報確認中' : ''}</small><small>{entranceRoute ? entranceRoute.scope === 'outdoor' ? '屋外通路まで（館内未計時）' : entranceRoute.provisional ? '入口経路（暫定）' : '入口までの試算' : '近くの道路まで'} 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
         <span className="row-arrow" aria-hidden="true">›</span>
       </button>;
     }) : <p className="mt-4 text-sm leading-relaxed">この条件の候補はありません。{minutes < 15 ? '時間を広げて探せます。' : ''}</p>}

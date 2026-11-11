@@ -29,6 +29,7 @@ export function project(p: Coordinate, a: PointLike, b: PointLike): { t: number;
 export interface Segment { a: Coordinate; b: Coordinate; d1: number; d2: number; grade: number; steps: boolean }
 export interface Catchment {
   stopId: string; budget: number; origin: Coordinate; snap: Coordinate; snapGap: number; segments: Segment[];
+  approach?: { points: Coordinate[]; cost: number };
 }
 
 const ID = /^-?\d+(\.\d+)?_-?\d+(\.\d+)?$/;
@@ -66,14 +67,27 @@ const segmentRow = (row: unknown): Segment => {
 };
 
 export function parseCatchment(value: unknown): Catchment {
-  const fc = value as { v?: number; id?: string; budget?: number; origin?: unknown; snap?: unknown; gap?: number; seg?: unknown[] };
+  const fc = value as { v?: number; id?: string; budget?: number; origin?: unknown; snap?: unknown; gap?: number; seg?: unknown[];
+    approach?: { points?: unknown; cost?: number } | null };
   if (!fc || fc.v !== 1 || typeof fc.id !== 'string' || !fc.id || !Number.isFinite(fc.budget) ||
     (fc.budget as number) <= 0 || !Number.isFinite(fc.gap) || (fc.gap as number) < 0 || !Array.isArray(fc.seg)) throw Error('Invalid catchment');
   const origin = coordinate(fc.origin);
   const snap = coordinate(fc.snap);
   const segments = fc.seg.map(segmentRow);
   if (!segments.length || segments.some(s => Math.max(s.d1, s.d2) > (fc.budget as number) + 1e-6)) throw Error('Invalid catchment');
-  return { stopId: fc.id, budget: fc.budget as number, origin, snap, snapGap: fc.gap as number, segments };
+  const catchment: Catchment = { stopId: fc.id, budget: fc.budget as number, origin, snap, snapGap: fc.gap as number, segments };
+  if (fc.approach !== undefined) {
+    const input = fc.approach;
+    if (!input || !Array.isArray(input.points) || input.points.length < 2 || typeof input.cost !== 'number' ||
+      !Number.isFinite(input.cost) || input.cost <= 0 || input.cost >= catchment.budget) throw Error('Invalid boarding approach');
+    const points = input.points.map(coordinate);
+    const cost = input.cost;
+    if (distance(points[0], origin) > 2 || distance(points[points.length - 1], snap) > 5 ||
+      !points.some(point => distance(points[0], point) > 0) ||
+      segments.some(segment => Math.min(segment.d1, segment.d2) < cost)) throw Error('Boarding approach does not match the baked catchment');
+    catchment.approach = { points, cost };
+  }
+  return catchment;
 }
 
 /** 各セグメントの内部は距離が線形なので、補間するだけで正確に切れる。 */

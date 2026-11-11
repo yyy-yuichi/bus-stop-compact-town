@@ -28,7 +28,7 @@ for (const [id, entry] of Object.entries(index.stops)) {
   const catchment = parseCatchment(read(`src/data/boarding-walk-study/${entry.file}`));
   assert.equal(catchment.stopId, id);
   assert.deepEqual(catchment.origin, entry.origin);
-  assert(catchment.snapGap <= 30);
+  assert(catchment.snapGap <= 30 || catchment.approach, `${id}: A long connection needs a saved walking approach`);
   for (const minutes of [5, 10, 15]) {
     const clipped = clipCatchment(catchment, minutes * WALKING_METERS_PER_MINUTE);
     assert(clipped.segments.every(s => Math.max(s.d1, s.d2) <= clipped.budget));

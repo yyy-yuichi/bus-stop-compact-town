@@ -13,7 +13,7 @@ export interface BoardingGuide {
   data_notice?: string;
   source_origin_label?: string;
   cross_source_reference?: string;
-  evidence: 'stop-sequence' | 'official-diagram-and-osm' | 'official-platform-coordinate' | 'official-diagram-derived';
+  evidence: 'stop-sequence' | 'official-diagram-and-osm' | 'official-platform-coordinate' | 'official-diagram-derived' | 'reviewed-walk-origin';
   review?: { method: string; search_radius_m: number; questions: string[]; precision_notice: string };
   source_coordinates: number[];
   location_description?: string;

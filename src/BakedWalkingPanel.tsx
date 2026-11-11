@@ -8,6 +8,9 @@ import type { BakedWalkingMinutes } from './placeLink';
 import BakedFacilityList from './BakedFacilityList';
 import NearbyFacilitiesPanel from './NearbyFacilitiesPanel';
 import { hasMapLocationIssue } from './facilityMapLocation';
+import { applyEntranceStudy, entranceInputFor, entranceRouteWithin, entranceStudyFor } from './entranceRouteStudy';
+import type { EntranceStudyMode, EntranceRoute } from './entranceRouteStudy';
+import EntranceStudyPanel from './EntranceStudyPanel';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -112,7 +115,7 @@ function groupSteepPieces(pieces: SteepPiece[]): { color: string; lines: Coordin
     .filter(tier => tier.lines.length > 0);
 }
 
-function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Control {
+function createLegendControl(budget: number, minutes: BakedWalkingMinutes, hasApproach: boolean): L.Control {
   const control = new L.Control({ position: 'bottomleft' });
   control.onAdd = () => {
     const div = L.DomUtil.create('div', 'walking-legend');
@@ -159,6 +162,7 @@ function createLegendControl(budget: number, minutes: BakedWalkingMinutes): L.Co
         </i>
         <span>8%以上</span></span>
       </div>
+      ${hasApproach ? '<p class="mt-1 text-[10px]">青い実線は降車位置からの接続経路、破線は計算上の道路中心線への接続です。</p>' : ''}
       </details>
     `;
     L.DomEvent.disableClickPropagation(div);
@@ -219,7 +223,7 @@ function useCatchment(id: string, origin: Coordinate, knownUnreachable: boolean,
   return { ...current, retry: () => setAttempt(n => n + 1) };
 }
 
-export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachable, focused, facilities, facilityState, retryFacilities, onFacility, minutes, scope, onMapFacilities }: {
+export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachable, focused, facilities, facilityState, retryFacilities, onFacility, minutes, scope, onMapFacilities, onEntranceRoutes }: {
   map: L.Map | null; id: string; origin: Coordinate;
   dataUrl?: string;
   unreachable: Record<string, number | null> | null;
@@ -228,13 +232,25 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
   onFacility: (facility: ShoppingFeature) => void;
   minutes: BakedWalkingMinutes;
   scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
+  onEntranceRoutes?: (scope: string, routes: Record<string, EntranceRoute>) => void;
 }) {
-  const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, origin, Object.hasOwn(unreachable ?? {}, id), dataUrl);
+  // Pin the reviewed national inputs separately from the ordinary external road store.
+  const pinnedSource = import.meta.env.VITE_ENTRANCE_STUDY === '1' ? entranceInputFor(id, origin) : null;
+  const pinnedUrl = pinnedSource ? `${import.meta.env.BASE_URL}data/entrance-walk/${catchmentFile(id)}` : undefined;
+  const { catchment, loading, error: catchmentError, retry: retryCatchment } = useCatchment(id, origin, Object.hasOwn(unreachable ?? {}, id), dataUrl ?? pinnedUrl);
   const displayed = useMemo(() => catchment ? clipCatchment(catchment, minutes * WALKING_METERS_PER_MINUTE) : null, [catchment, minutes]);
+  const approach = displayed?.approach && displayed.approach.cost <= displayed.budget ? displayed.approach : undefined;
   const steepSummary = useMemo(() => displayed ? steepRuns(displayed.segments, displayed.budget) : null, [displayed]);
   const preparedFacilities = useMemo(() => prepareFacilities(facilities), [facilities]);
   const candidates = useMemo(() => catchment && facilityState === 'ready' ? bakedFacilityCandidates(catchment, preparedFacilities) : [], [catchment, preparedFacilities, facilityState]);
-  const visibleCandidates = useMemo(() => candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [candidates, minutes]);
+  const study = useMemo(() => import.meta.env.VITE_ENTRANCE_STUDY === '1' && catchment ? entranceStudyFor(catchment) : null, [catchment]);
+  const [studyMode, setStudyMode] = useState<EntranceStudyMode>('confirmed');
+  useEffect(() => { setStudyMode('confirmed'); }, [id]);
+  const studyResult = useMemo(() => applyEntranceStudy(candidates, study, studyMode), [candidates, study, studyMode]);
+  useEffect(() => {
+    onEntranceRoutes?.(scope, Object.fromEntries(studyResult.candidates.filter(candidate => candidate.entranceRoute).map(candidate => [String(candidate.facility.id), candidate.entranceRoute!])));
+  }, [scope, studyResult, onEntranceRoutes]);
+  const visibleCandidates = useMemo(() => studyResult.candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [studyResult, minutes]);
   const [facilityGroup, setFacilityGroup] = useState<FacilityGroup | 'all'>('all');
   useEffect(() => { setFacilityGroup('all'); }, [id]);
   const nearbyFallback = !loading && !catchment;
@@ -255,25 +271,46 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
         L.polyline(lines.map(toLatLng), { color, weight: STEEP_WEIGHT, lineCap: 'round', opacity: 1, interactive: false }).addTo(group);
       }
     }
-    L.polyline(toLatLng([origin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
+    if (approach) {
+      L.polyline(toLatLng(approach.points), { color: '#075985', weight: 4, interactive: false }).addTo(group);
+    }
+    for (const candidate of studyResult.candidates) {
+      if (!candidate.entranceRoute) continue;
+      const route = candidate.entranceRoute;
+      const line = entranceRouteWithin(route, minutes * WALKING_METERS_PER_MINUTE);
+      if (line.length < 2) continue;
+      L.polyline(toLatLng(line), { color: '#5b21b6', weight: 5, opacity: 0.9, interactive: false }).addTo(group);
+      if (route.startLabel) {
+        const start = route.points[0];
+        L.circleMarker([start[1], start[0]], { radius: 5, color: '#5b21b6', fillOpacity: 1 })
+          .bindTooltip(route.startLabel).addTo(group);
+      }
+    }
+    const roadJoin = approach?.points[approach.points.length - 1] ?? origin;
+    if (approach || !catchment.approach) {
+      L.polyline(toLatLng([roadJoin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
+    }
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
-    const legend = createLegendControl(catchment.budget, minutes);
+    const legend = createLegendControl(catchment.budget, minutes, !!approach);
     legend.addTo(map);
     return () => { group.remove(); legend.remove(); };
-  }, [map, catchment, displayed, origin, steepSummary, minutes]);
+  }, [map, catchment, displayed, approach, origin, steepSummary, minutes, studyResult]);
 
   useEffect(() => {
     if (!map || !focused || loading) return;
-    const points = displayed?.segments.flatMap(s => [s.a, s.b]).map(([lon, lat]) => L.latLng(lat, lon)) ?? [];
+    const entrancePoints = studyResult.candidates.flatMap(candidate => candidate.entranceRoute ? entranceRouteWithin(candidate.entranceRoute, minutes * WALKING_METERS_PER_MINUTE) : []);
+    const points = [...(displayed?.segments.flatMap(s => [s.a, s.b]) ?? []), ...(approach?.points ?? []), ...entrancePoints]
+      .map(([lon, lat]) => L.latLng(lat, lon));
     const bounds = L.latLngBounds([...points, L.latLng(origin[1], origin[0])]);
     const focus = () => focusContent(map, bounds, 17);
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, id, displayed, origin, focused, loading]);
+  }, [map, id, displayed, approach, origin, focused, loading, studyResult, minutes]);
 
   return <section className="walking-panel mb-7" aria-labelledby="walk-title">
     <h3 id="walk-title" className="text-sm font-semibold">徒歩圏</h3>
+    {study && facilityState === 'ready' && <EntranceStudyPanel source={study} candidates={candidates} mode={studyMode} onMode={setStudyMode} minutes={minutes} mismatches={studyResult.mismatches} comparison={import.meta.env.VITE_ENTRANCE_COMPARISON === '1'} />}
     {catchmentError ? <section className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>

@@ -18,7 +18,7 @@ export function readPlaceLink(hash: string): SharedPlace | null {
   if (kind === 'boarding' && /^review:(ube-chuo|ube-shinkawa|tokuyama)-\d+$/.test(id)) {
     return params.has('minutes') || params.has('speed') ? null : { kind, id };
   }
-  if ((kind === 'boarding' && /^(node\/\d+|sentetsu:[A-Za-z0-9_-]{1,100}|bocho:\d{8}-\d{12}|jr-chugoku:\d+ \d+|ube-official-map:[A-Za-z0-9_-]+:\d+)$/.test(id)) ||
+  if ((kind === 'boarding' && /^(node\/\d+|walk-adopted:\d+\.\d+_\d+\.\d+:\d+|taka-\d+|busit:\d+|sentetsu:[A-Za-z0-9_-]{1,100}|bocho:\d{8}-\d{12}|jr-chugoku:\d+ \d+|ube-official-map:[A-Za-z0-9_-]+:\d+)$/.test(id)) ||
       (kind === 'municipal' && /^(hikari|iwakuni):[a-zA-Z0-9_.-]{1,100}$/.test(id)) ||
       (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id))) {
     if (!params.has('minutes') && !params.has('speed')) return { kind, id };

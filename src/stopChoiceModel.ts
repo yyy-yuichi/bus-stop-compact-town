@@ -47,7 +47,8 @@ export function groupStopsByExactCoordinate(stops: BusFeature[]): BusFeature[][]
 
 export function choiceText(stop: BusFeature) {
   const guide = stop.properties.boarding_guide;
-  const source = stop.properties.source_kind === 'national' ? '国の代表点'
+  const source = guide?.evidence === 'reviewed-walk-origin' ? '台帳の歩行起点'
+    : stop.properties.source_kind === 'national' ? '国の代表点'
     : stop.properties.source_kind === 'municipal' ? `${stop.properties.city || '自治体'}の登録点`
     : /^(node|way|relation)\//.test(stopId(stop)) ? 'OSMの原点' : '出典の登録点';
   const notes: string[] = [];
