@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-10",
+  "checked_at": "2026-11-11",
   "reviews": [
     {
       "id": "civic-care-3570102206-c757512ce1",
@@ -106365,6 +106365,3357 @@
         "remaining": [],
         "next_source": null
       }
+    },
+    {
+      "id": "osm-node-1423654651",
+      "expected": {
+        "name": "国立病院機構関門医療センター",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423654651"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.934063,
+            33.968343
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "国立病院機構関門医療センター",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "後田町の旧関門医療センターを現行の受診先候補から外す。関門医療センターは長府外浦町で継続。後田町のよしみず病院、長府外浦町の別サービスを保持。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "後田町の旧関門医療センターを現行の受診先候補から外す。関門医療センターは長府外浦町で継続。後田町のよしみず病院、長府外浦町の別サービスを保持。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "国立病院機構関門医療センター",
+        "sources": [
+          {
+            "title": "公開資料 · nho.hosp.go.jp",
+            "url": "https://nho.hosp.go.jp/files/000015339.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kanmon.hosp.go.jp",
+            "url": "https://kanmon.hosp.go.jp/aboutus/torikumi01.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500046.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000422462.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000419922.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000416266.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000496943.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000491523.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000487394.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000483085.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000432202.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000428792.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000425563.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.iryou.teikyouseido.mhlw.go.jp",
+            "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1353100720&kikanKbn=1&prefCd=35",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423654651/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-2253691125",
+      "expected": {
+        "name": "コープやまぐち",
+        "category": "supermarket",
+        "source_ids": [
+          "node/2253691125"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4494935,
+            34.1672201
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "コープやまぐち",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧いずみ店を現行の買い物先候補から外す。旧ノードと旧Wayは同じ店舗の別原ID。移転先「コープ ここと いずみ店」と近接するマツモトキヨシは別施設として扱う。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧いずみ店を現行の買い物先候補から外す。旧ノードと旧Wayは同じ店舗の別原ID。移転先「コープ ここと いずみ店」と近接するマツモトキヨシは別施設として扱う。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "コープやまぐち",
+        "sources": [
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/cocoto/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/cocoto/izumi/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/wp/wp-content/uploads/2023/06/coopletter_202307_p01.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/2253691125/history.json",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E3%82%B3%E3%83%BC%E3%83%97+%E3%81%93%E3%81%93%E3%81%A8+%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97/@34.1666851,131.4473546,17z/data=!3m1!4b1!4m6!3m5!1s0x35449751974b64ff:0x91189717e0de2c04!8m2!3d34.1666807!4d131.4499295!16s%2Fg%2F1w9xzxgd?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3301.1849444765157%212d131.44757821521802%213d34.167188880574784%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x35449751974b64ff%3A0x91189717e0de2c04%212z44Kz44O844OX44GT44GT44GoIOOBhOOBmuOBv-W6lw%215e0%213m2%211sja%212sjp%214v1629369826486%215m2%211sja%212sjp",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-4326408489",
+      "expected": {
+        "name": "マックスバリュ",
+        "category": "supermarket",
+        "source_ids": [
+          "node/4326408489"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.9229776,
+            33.9724413
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "マックスバリュ",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "営業終了したマックスバリュ光店の旧登録だけを買い物先候補から外す。浅江店・室積店や後継店の案内は対象外。",
+        "summary": "営業終了したマックスバリュ光店の旧登録だけを買い物先候補から外す。浅江店・室積店や後継店の案内は対象外。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "マックスバリュ",
+        "sources": [
+          {
+            "title": "公開資料 · map.yahoo.co.jp",
+            "url": "https://map.yahoo.co.jp/v3/place/Dp_DCFxOxoU",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.the-fuji.com",
+            "url": "https://www.the-fuji.com/company/ir/doc/report/maxvalu/39/39_02.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.shinshunan.co.jp",
+            "url": "https://www.shinshunan.co.jp/news/economy/hikari/202003/002865.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/4326408489/history.json",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9%E3%83%90%E3%83%AA%E3%83%A5+%E5%85%89%E5%BA%97/@33.9707647,131.9250571,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423656492",
+      "expected": {
+        "name": "市立佐々並小学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423656492"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.459789,
+            34.28446
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "市立佐々並小学校",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧佐々並小の主校地を現行の通学先候補から外す。学校は旧佐々並中施設に移転して継続。現番地は県一覧と文科省で表記差があり、旧中学校IDへの置き換えは保留。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧佐々並小の主校地を現行の通学先候補から外す。学校は旧佐々並中施設に移転して継続。現番地は県一覧と文科省で表記差があり、旧中学校IDへの置き換えは保留。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "市立佐々並小学校",
+        "sources": [
+          {
+            "title": "公開資料 · www.pref.yamaguchi.lg.jp",
+            "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26143.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.hagi.lg.jp",
+            "url": "https://www.city.hagi.lg.jp/uploaded/life/7870_9839_misc.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "https://nlftp.mlit.go.jp/ksj/jpgis/data/P02/P02-06/P02-06_35.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.hagi.lg.jp",
+            "url": "https://www.city.hagi.lg.jp/reiki/reiki_honbun/r146RG00000658.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E8%90%A9%E5%B8%82%E7%AB%8B%E4%BD%90%E3%80%85%E4%B8%A6%E5%B0%8F%E5%AD%A6%E6%A0%A1/@34.2853082,131.4594305,17z/data=!3m1!4b1!4m6!3m5!1s0x3544bcc04a3b9e55:0xc333644b5a0f28f6!8m2!3d34.2853082!4d131.4594305!16s%2Fg%2F1tg6hbfx?authuser=0&hl=ja&entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-12376670726",
+      "expected": {
+        "name": "おかもと内閣",
+        "category": "clinic",
+        "source_ids": [
+          "node/12376670726"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8022029,
+            34.0543782
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "おかもと内閣",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "本町の旧おかもと内科を受診先候補から外す。現おかもと腎クリニックは移転先で案内される。原記載「おかもと内閣」と旧看板「おかもと内科」を履歴で区別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "本町の旧おかもと内科を受診先候補から外す。現おかもと腎クリニックは移転先で案内される。原記載「おかもと内閣」と旧看板「おかもと内科」を履歴で区別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "おかもと内閣",
+        "sources": [
+          {
+            "title": "公開資料 · okamoto-kidney.com",
+            "url": "https://okamoto-kidney.com/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/7236.PDF",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/40914.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/news/2012/tazaitoyo/000196665.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/d/embed?mid=1ZTYgvK67u4x87ju5oVletrAgx9v2_So&ehbc=2E312F&ll=34.12430487037356%2C131.82153200000002&z=11",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "civic-care-3570300446-a7e78f9725",
+      "expected": {
+        "name": "ハートホーム宮野グループホーム",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:344",
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1120"
+        ],
+        "services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.504715,
+            34.199802
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "ハートホーム宮野グループホーム",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "事業所3570300446の旧認知症対応型共同生活介護と旧認知症対応型通所介護だけを現行候補から外す。同住所の別番号デイと近隣の特養・短期入所を保持。",
+        "summary": "事業所3570300446の旧認知症対応型共同生活介護と旧認知症対応型通所介護だけを現行候補から外す。同住所の別番号デイと近隣の特養・短期入所を保持。",
+        "location": "old_point",
+        "exclusion_scope": "registered_services",
+        "sources": [
+          {
+            "title": "公開資料 · www.koureisha-jutaku.com",
+            "url": "https://www.koureisha-jutaku.com/socosmo/facility/54137",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/98493.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/111768.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%83%BC%E3%83%88%E3%83%9B%E3%83%BC%E3%83%A0%E5%AE%AE%E9%87%8E%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%83%9B%E3%83%BC%E3%83%A0%20%E5%B1%B1%E5%8F%A3%E5%B8%82",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null,
+        "affected_services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654988",
+      "expected": {
+        "name": "富田東児童館",
+        "category": "community_centre",
+        "source_ids": [
+          "node/1423654988"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.775144,
+            34.072109
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "富田東児童館",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "令和3年度末に閉館した富田東児童館を一般来訪先候補から外す。桶川町2-1の富田東児童クラブは別機能として扱う。",
+        "summary": "令和3年度末に閉館した富田東児童館を一般来訪先候補から外す。桶川町2-1の富田東児童クラブは別機能として扱う。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "富田東児童館",
+        "sources": [
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/86790.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423654988/history.json",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%AF%8C%E7%94%B0%E6%9D%B1%E5%85%90%E7%AB%A5%E9%A4%A8/@34.0724018,131.7752444,17z/data=!3m1!4b1!4m6!3m5!1s0x3544e7c8ccb9dbd1:0xfa4a6261a60eb9c5!8m2!3d34.0724018!4d131.7752444!16s%2Fg%2F1tgpqdqk?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-way-465984178",
+      "expected": {
+        "name": "浜なす",
+        "category": "restaurant",
+        "source_ids": [
+          "way/465984178"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4428053,
+            34.156952450000006
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "浜なす",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "2017年に営業を終了した旧維新公園店の飲食案内を候補から外す。湯田と小郡の店は旧店舗と別に扱う。",
+        "summary": "2017年に営業を終了した旧維新公園店の飲食案内を候補から外す。湯田と小郡の店は旧店舗と別に扱う。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "浜なす",
+        "sources": [
+          {
+            "title": "公開資料 · www.ekiten.jp",
+            "url": "https://www.ekiten.jp/shop_2382126/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · yamaguchi.keizai.biz",
+            "url": "https://yamaguchi.keizai.biz/headline/3926/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · yamaguchi.keizai.biz",
+            "url": "https://yamaguchi.keizai.biz/headline/2739/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423661526",
+      "expected": {
+        "name": "高千帆児童館",
+        "category": "community_centre",
+        "source_ids": [
+          "node/1423661526"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.187224,
+            34.012511
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "高千帆児童館",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧児童館事業のみ。児童クラブを保持し、番地差を統合しない。",
+        "summary": "旧児童館事業のみ。児童クラブを保持し、番地差を統合しない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "高千帆児童館",
+        "sources": [
+          {
+            "title": "公開資料 · www.pref.yamaguchi.lg.jp",
+            "url": "https://www.pref.yamaguchi.lg.jp/soshiki/51/135947.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/72407.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/soshiki/20/jidoukannhaisi.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/soshiki/6/shiteikanri-top4.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/soshiki/20/jidoclub-nyuusyo08.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/site/smile-ageing/aedsettijyouhou.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E9%AB%98%E5%8D%83%E5%B8%86%E5%85%90%E7%AB%A5%E9%A4%A8/@34.012526,131.18723,17z/data=!3m1!4b1!4m6!3m5!1s0x35438233a5eef4b9:0x966ff76e2bb33f1e!8m2!3d34.012526!4d131.18723!16s%2Fg%2F1td5cxk2?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423653934",
+      "expected": {
+        "name": "下関市医師会病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423653934"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9324627,
+            33.9874754
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "下関市医師会病院",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "大学町2-1-2の旧病院だけ。閉院時期は資料差がある。医師会と健診を別扱い。",
+        "summary": "大学町2-1-2の旧病院だけ。閉院時期は資料差がある。医師会と健診を別扱い。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "下関市医師会病院",
+        "sources": [
+          {
+            "title": "公開資料 · www.smisikai.or.jp",
+            "url": "https://www.smisikai.or.jp/about/enkaku",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · shimonosekicity-hosp.jp",
+            "url": "https://shimonosekicity-hosp.jp/content/100796591.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.ajha.or.jp",
+            "url": "https://www.ajha.or.jp/about_us/pdf/H2602_average.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500046.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000422462.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000419922.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000416266.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000496943.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000491523.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000487394.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000483085.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000432202.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000428792.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000425563.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423653934/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-3826422758",
+      "expected": {
+        "name": "休日夜間急病診療所",
+        "category": "clinic",
+        "source_ids": [
+          "node/3826422758"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8154025,
+            34.0493001
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "休日夜間急病診療所",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧慶万町の診療所だけ。瀬戸見町の現診療所を旧座標に置かない。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧慶万町の診療所だけ。瀬戸見町の現診療所を旧座標に置かない。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "休日夜間急病診療所",
+        "sources": [
+          {
+            "title": "公開資料 · kudamatsu-pa.org",
+            "url": "https://kudamatsu-pa.org/useful/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/map/kyujituyakan.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/site/kaiken/74637.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shunan.lg.jp",
+            "url": "https://www.city.shunan.lg.jp/uploaded/attachment/19866.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/news/2012/tazaitoyo/000196665.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/3826422758/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/d/embed?mid=1ZTYgvK67u4x87ju5oVletrAgx9v2_So&ehbc=2E312F&ll=34.12430487037356%2C131.82153200000002&z=11",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.785892421764!2d131.81326301529828!3d34.049362925329106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544e71e7840a179%3A0x6cf0f3a861d5c262!2z44CSNzQ1LTA4MzYg5bGx5Y-j55yM5ZGo5Y2X5biC5oW25LiH55S677yR77yQ4oiS77yZ!5e0!3m2!1sja!2sjp!4v1487303115594",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "civic-care-3577700192-c652b14fc3",
+      "expected": {
+        "name": "医療法人社団民正会 デイサービスかがやき",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:746"
+        ],
+        "services": [
+          "通所介護"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.157822,
+            34.055737
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "医療法人社団民正会 デイサービスかがやき",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "3577700192の旧通所介護だけ。鴨庄の別番号居宅介護支援と他法人の同名デイを保持。",
+        "summary": "3577700192の旧通所介護だけ。鴨庄の別番号居宅介護支援と他法人の同名デイを保持。",
+        "location": "old_point",
+        "exclusion_scope": "registered_services",
+        "sources": [
+          {
+            "title": "公開資料 · minseikai.jp",
+            "url": "https://minseikai.jp/デイサービスかがやきは閉所いたしました。/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null,
+        "affected_services": [
+          "通所介護"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1631267783",
+      "expected": {
+        "name": "下関市身体障害者福祉センター",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631267783"
+        ],
+        "services": [
+          "assisted_living"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.941673,
+            33.968926
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "下関市身体障害者福祉センター",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧市身体障害者福祉センターの来訪目的だけ。集約先プラザと敷地の別用途を区別。",
+        "summary": "旧市身体障害者福祉センターの来訪目的だけ。集約先プラザと敷地の別用途を区別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "下関市身体障害者福祉センター",
+        "sources": [
+          {
+            "title": "公開資料 · www.shimoshakyo.or.jp",
+            "url": "https://www.shimoshakyo.or.jp/riyo/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.shimoshakyo.or.jp",
+            "url": "https://www.shimoshakyo.or.jp/shisetsu/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.fukushi-map.pref.yamaguchi.lg.jp",
+            "url": "https://www.fukushi-map.pref.yamaguchi.lg.jp/spot/7424",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shimonoseki.lg.jp",
+            "url": "https://www.city.shimonoseki.lg.jp/soshiki/3/141253.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.shimoshakyo.or.jp",
+            "url": "https://www.shimoshakyo.or.jp/wp/wp-content/uploads/2025/03/shakyodayori_101_h.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E4%B8%8B%E9%96%A2%E5%B8%82+%E8%BA%AB%E4%BD%93%E9%9A%9C%E5%AE%B3%E8%80%85%E7%A6%8F%E7%A5%89%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/@33.968427,130.9418766,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bd724394b885:0x5f553c46d619dfe2!8m2!3d33.968427!4d130.9418766!16s%2Fg%2F1xgz8l0_?authuser=0&hl=ja&entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-3733794057",
+      "expected": {
+        "name": "餃子の王将",
+        "category": "restaurant",
+        "source_ids": [
+          "node/3733794057"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.8524539,
+            34.0264013
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "餃子の王将",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "閉店済み旧下松店だけ。チェーンの別店・旧敷地のテナントを区別。",
+        "summary": "閉店済み旧下松店だけ。チェーンの別店・旧敷地のテナントを区別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "餃子の王将",
+        "sources": [
+          {
+            "title": "公開資料 · tabelog.com",
+            "url": "https://tabelog.com/yamaguchi/A3505/A350502/35006960/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www2.jpx.co.jp",
+            "url": "https://www2.jpx.co.jp/disc/99360/140120190104456602.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · map.ohsho.co.jp",
+            "url": "https://map.ohsho.co.jp/b/ohsho/attr/?q=%E5%B1%B1%E5%8F%A3%E7%9C%8C",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/3733794057/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E9%A4%83%E5%AD%90%E3%81%AE%E7%8E%8B%E5%B0%86+%E4%B8%8B%E6%9D%BE%E5%BA%97+%E4%B8%8B%E6%9D%BE%E5%B8%82/@34.2112714,130.9713897,7z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423655804",
+      "expected": {
+        "name": "山口県済生会豊浦町立病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423655804"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.925863,
+            34.167625
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "山口県済生会豊浦町立病院",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧小串7-3の病院だけ。既存同名の旧参考IDは処置済み。現病院を旧点に置かない。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧小串7-3の病院だけ。既存同名の旧参考IDは処置済み。現病院を旧点に置かない。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "山口県済生会豊浦町立病院",
+        "sources": [
+          {
+            "title": "公開資料 · www.toyoura-saiseikai.jp",
+            "url": "https://www.toyoura-saiseikai.jp/hospital/access/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.toyoura-saiseikai.jp",
+            "url": "https://www.toyoura-saiseikai.jp/hospital/overview/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500046.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000422462.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000419922.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000416266.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000496943.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000491523.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000487394.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000483085.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000432202.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000428792.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000425563.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.saiseikai.or.jp",
+            "url": "https://www.saiseikai.or.jp/about/110years_magazine/37871-book/pageindices/index351.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.iryou.teikyouseido.mhlw.go.jp",
+            "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1356100590&kikanKbn=1&prefCd=35",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.toyoura-saiseikai.jp",
+            "url": "https://www.toyoura-saiseikai.jp/info/%E6%96%B0%E7%97%85%E9%99%A2%E7%A7%BB%E8%BB%A2%E3%81%AB%E4%BC%B4%E3%81%86%E5%90%84%E7%A8%AE%E5%88%B6%E9%99%90%E7%AD%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423655804/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1387.9355870528693!2d130.92673709408095!3d34.16972521053686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35430a8db2edacfb%3A0x287c995bcb6d4769!2z5bGx5Y-j55yM5riI55Sf5Lya6LGK5rWm55eF6Zmi!5e0!3m2!1sja!2sus!4v1522031837136",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1631273350",
+      "expected": {
+        "name": "徳山地方救護所周南荘",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631273350"
+        ],
+        "services": [
+          "group_home"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.831931,
+            34.036521
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "徳山地方救護所周南荘",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧周南荘とgroup_home属性だけ。12-2の救護施設さつきの里と12-1の別事業を保持。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧周南荘とgroup_home属性だけ。12-2の救護施設さつきの里と12-1の別事業を保持。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "徳山地方救護所周南荘",
+        "sources": [
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/satsuki/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/html/access/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/html/history/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/satsuki/html/access/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/images/satsuki/guide2022.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.kaigo.pref.yamaguchi.lg.jp",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E5%91%A8%E5%8D%97%E5%B8%82%20%E6%95%91%E8%AD%B7%E6%89%80%20%E5%91%A8%E5%8D%97%E8%8D%98",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423659266",
+      "expected": {
+        "name": "柳井幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423659266"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.11302,
+            33.970786
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "柳井幼稚園",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧姫田4-1の園事業だけ。属性廃止日を最終保育日に使わない。",
+        "summary": "旧姫田4-1の園事業だけ。属性廃止日を最終保育日に使わない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "柳井幼稚園",
+        "sources": [
+          {
+            "title": "公開資料 · www.kindergarten.or.jp",
+            "url": "https://www.kindergarten.or.jp/ensyo23yanai.htm",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mext.go.jp",
+            "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_4.csv",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5895.886408817863!2d132.10897914974228!3d33.968016457811274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x695bae9b1ba4ca32!2z5p-z5LqV5bm856ia5ZyS!5e0!3m2!1sja!2sjp!4v1612491698130!5m2!1sja!2sjp",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1631266168",
+      "expected": {
+        "name": "ふたば園成人部",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631266168"
+        ],
+        "services": [
+          "assisted_living"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.391986,
+            34.400724
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "ふたば園成人部",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧河添の成人部と原assisted_living属性だけ。現椿東のなないろ、別市町の同名訪問介護等を区別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧河添の成人部と原assisted_living属性だけ。現椿東のなないろ、別市町の同名訪問介護等を区別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "ふたば園成人部",
+        "sources": [
+          {
+            "title": "公開資料 · futaba-hagi.jp",
+            "url": "https://futaba-hagi.jp/image/data/enkaku.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.hagi.lg.jp",
+            "url": "https://www.city.hagi.lg.jp/site/nittyuukatudousa-bisu/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E8%90%A9%E5%B8%82%20%E3%81%B5%E3%81%9F%E3%81%B0%E5%9C%92%20%E6%88%90%E4%BA%BA%E9%83%A8",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423656028",
+      "expected": {
+        "name": "山陽町立出合保育所",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423656028"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.137627,
+            34.058115
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "山陽町立出合保育所",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧出合保育所・改称後の同所の旧保育だけ。建物や最終日は別。",
+        "summary": "旧出合保育所・改称後の同所の旧保育だけ。建物や最終日は別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "山陽町立出合保育所",
+        "sources": [
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/3428.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/53234.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%87%BA%E5%90%88%E4%BF%9D%E8%82%B2%E5%9C%92/@34.0582743,131.1376861,17z/data=!3m1!4b1!4m6!3m5!1s0x354382a2d7eb2a7f:0xf766beed4c9e2bd3!8m2!3d34.0582743!4d131.1376861!16s%2Fg%2F1thqdk5q?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423660098",
+      "expected": {
+        "name": "県立周防大島高等学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660098"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.26398,
+            33.944819
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "県立周防大島高等学校",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "久賀4851-2の旧久賀校舎だけ。安下庄側の別ID、継続する学校を保持。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "久賀4851-2の旧久賀校舎だけ。安下庄側の別ID、継続する学校を保持。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "県立周防大島高等学校",
+        "sources": [
+          {
+            "title": "公開資料 · www.gsi.go.jp",
+            "url": "http://www.gsi.go.jp/GIS/jpgis/standardSchemas",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.pref.yamaguchi.lg.jp",
+            "url": "https://www.pref.yamaguchi.lg.jp/site/kyouiku/26142.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "https://nlftp.mlit.go.jp/ksj/jpgis/data/P02/P02-06/P02-06_35.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · suo-oshima-hsypu.jp",
+            "url": "https://suo-oshima-hsypu.jp/wp-content/uploads/2026/03/enkaku2604.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%B1%B1%E5%8F%A3%E7%9C%8C%E7%AB%8B%E5%91%A8%E9%98%B2%E5%A4%A7%E5%B3%B6%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1+%E4%B9%85%E8%B3%80%E6%A0%A1%E8%88%8E/@33.9456781,132.2643,17z/data=!3m1!4b1!4m6!3m5!1s0x354541006efbd8f7:0x263a233d52f22f24!8m2!3d33.9456781!4d132.2643!16s%2Fg%2F11y64y2gl2?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-way-376384448",
+      "expected": {
+        "name": "よしづく皮ふ科",
+        "category": "clinic",
+        "source_ids": [
+          "way/376384448"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.784891,
+            34.0696346
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "よしづく皮ふ科",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧診療機能を除外し、歴史名「旧よしつぐ皮ふ科クリニック」を注記に使う。徳山病院や現テナントへ置換しない。",
+        "summary": "旧診療機能を除外し、歴史名「旧よしつぐ皮ふ科クリニック」を注記に使う。徳山病院や現テナントへ置換しない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "よしづく皮ふ科",
+        "sources": [
+          {
+            "title": "公開資料 · www.yoshitsugu-clinic.com",
+            "url": "https://www.yoshitsugu-clinic.com/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yoshitsugu-clinic.com",
+            "url": "https://www.yoshitsugu-clinic.com/img/top/txt-info202306.png?0605",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · map.cellnewplus.jp",
+            "url": "https://map.cellnewplus.jp/cellnewplus_search/spot/detail?code=0000006377",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/news/2012/tazaitoyo/000196665.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/way/376384448/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/way/376384448/full.json",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/d/embed?mid=1ZTYgvK67u4x87ju5oVletrAgx9v2_So&ehbc=2E312F&ll=34.12430487037356%2C131.82153200000002&z=11",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "civic-care-3570300743-074aa1df0d",
+      "expected": {
+        "name": "ハートホーム平川グループホーム",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:352",
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1121"
+        ],
+        "services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.450119,
+            34.143696
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "ハートホーム平川グループホーム",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "3570300743の元2サービスだけ。同座標の別番号デイ・定期巡回と住宅型は別。全敷地閉業表示をしない。",
+        "summary": "3570300743の元2サービスだけ。同座標の別番号デイ・定期巡回と住宅型は別。全敷地閉業表示をしない。",
+        "location": "old_point",
+        "exclusion_scope": "registered_services",
+        "sources": [
+          {
+            "title": "公開資料 · i.ansinkaigo.jp",
+            "url": "https://i.ansinkaigo.jp/shokai/home-care/dayservice/8590",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/98493.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/111768.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%83%BC%E3%83%88%E3%83%9B%E3%83%BC%E3%83%A0%E5%B9%B3%E5%B7%9D%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%83%9B%E3%83%BC%E3%83%A0%20%E5%B1%B1%E5%8F%A3%E5%B8%82",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null,
+        "affected_services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ]
+      }
+    },
+    {
+      "id": "civic-care-3570400576-79d0cdef3e",
+      "expected": {
+        "name": "萩市無田ヶ原口デイサービスセンターおとずれ",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:780"
+        ],
+        "services": [
+          "通所介護"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.413895,
+            34.422577
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "萩市無田ヶ原口デイサービスセンターおとずれ",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "3570400576の旧通所介護だけ。同住所の高齢者生活支援ハウスは別。",
+        "summary": "3570400576の旧通所介護だけ。同住所の高齢者生活支援ハウスは別。",
+        "location": "old_point",
+        "exclusion_scope": "registered_services",
+        "sources": [
+          {
+            "title": "公開資料 · www.city.hagi.lg.jp",
+            "url": "https://www.city.hagi.lg.jp/uploaded/attachment/30878.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hagi-kagayaki.or.jp",
+            "url": "https://www.hagi-kagayaki.or.jp/a2-houjingaiyou/b2-soshiki/index.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null,
+        "affected_services": [
+          "通所介護"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654228",
+      "expected": {
+        "name": "光市立みたらい保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423654228"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.981781,
+            33.932259
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "光市立みたらい保育園",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "室積東ノ庄30-26の旧市立園の保育だけ。建物・別用途に広げない。",
+        "summary": "室積東ノ庄30-26の旧市立園の保育だけ。建物・別用途に広げない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "光市立みたらい保育園",
+        "sources": [
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E3%81%BF%E3%81%9F%E3%82%89%E3%81%84%E4%BF%9D%E8%82%B2%E5%9C%92/@33.93229,131.981762,17z/data=!3m1!4b1!4m6!3m5!1s0x35451c177fbaaaad:0xe67c5d138b62f2bd!8m2!3d33.93229!4d131.981762!16s%2Fg%2F1tnpht3z?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423654757",
+      "expected": {
+        "name": "大島郡国民健康保険診療施設組合大島病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423654757"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.188348,
+            33.943762
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "大島郡国民健康保険診療施設組合大島病院",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧小松1388-1の旧病院点だけ。現小松1415-1の病院と入口を区別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧小松1388-1の旧病院点だけ。現小松1415-1の病院と入口を区別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "大島郡国民健康保険診療施設組合大島病院",
+        "sources": [
+          {
+            "title": "公開資料 · suo-oshima-hosp.jp",
+            "url": "https://suo-oshima-hosp.jp/oshima/about/overview/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500046.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000496943.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000491523.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000487394.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000483085.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000432202.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000428792.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000425563.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000422462.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000419922.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000416266.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguchi.med.or.jp",
+            "url": "https://www.yamaguchi.med.or.jp/g-med/gankaikai/map/map2.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.town.suo-oshima.lg.jp",
+            "url": "https://www.town.suo-oshima.lg.jp/uploaded/attachment/14055.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · yamaguchi-kouiki.jp",
+            "url": "https://yamaguchi-kouiki.jp/kouji/2008/koukoku/080701kenshinjisshikikanichiran.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423654757/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6619.813299505578!2d132.187646!3d33.943529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35453e3744c2ff47%3A0x12935e95582fb38a!2z5ZGo6Ziy5aSn5bO255S656uL5aSn5bO255eF6Zmi!5e0!3m2!1sja!2sjp!4v1763106865998!5m2!1sja!2sjp",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423656714",
+      "expected": {
+        "name": "埴生小学校",
+        "category": "school",
+        "source_ids": [
+          "node/1423656714"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.085798,
+            34.041255
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "埴生小学校",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧埴生1996の来校案内だけ。埴生280の現小学校・中学校は別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧埴生1996の来校案内だけ。埴生280の現小学校・中学校は別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "埴生小学校",
+        "sources": [
+          {
+            "title": "公開資料 · www.gsi.go.jp",
+            "url": "http://www.gsi.go.jp/GIS/jpgis/standardSchemas",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/59179.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "https://nlftp.mlit.go.jp/ksj/jpgis/data/P02/P02-06/P02-06_35.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.sanyo-onoda.lg.jp",
+            "url": "https://www.city.sanyo-onoda.lg.jp/uploaded/attachment/68742.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · yamaguchi-opendata.jp",
+            "url": "https://yamaguchi-opendata.jp/ckan/dataset/34654862-1481-453c-a60c-d566333966bc/resource/975e1b34-24a7-430d-8635-e4d4794dc3ba/download/352161_public_facility.csv",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/d/embed?mid=18P-CWs6_joabJJU-HURZYX8aTL4&ehbc=2E312F",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E5%9F%B4%E7%94%9F%E5%B0%8F%E5%AD%A6%E6%A0%A1+%E5%B1%B1%E9%99%BD%E5%B0%8F%E9%87%8E%E7%94%B0%E5%B8%82/@34.0404069,131.0900268,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423660774",
+      "expected": {
+        "name": "茜会昭和病院",
+        "category": "hospital",
+        "source_ids": [
+          "node/1423660774"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.916194,
+            33.9721893
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "茜会昭和病院",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧昭和病院点だけ。現よしみず病院と介護支援、旧関門医療センター別IDは区別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧昭和病院点だけ。現よしみず病院と介護支援、旧関門医療センター別IDは区別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "茜会昭和病院",
+        "sources": [
+          {
+            "title": "公開資料 · akn-yoshimizu.com",
+            "url": "https://akn-yoshimizu.com/about/chairman/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500018.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000500046.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000422462.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000419922.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000416266.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000496943.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000491523.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000487394.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000483085.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000477298.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000432202.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000428792.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/000425563.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mlit.go.jp",
+            "url": "https://www.mlit.go.jp/jidosha/202606_tankibyouinshisetsu/150/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.pref.yamaguchi.lg.jp",
+            "url": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/26520.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/02-1_clinic_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/03-1_dental_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.iryou.teikyouseido.mhlw.go.jp",
+            "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2430/initialize?kikanCd=1353102450&kikanKbn=1&prefCd=35",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/1423660774/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "civic-care-3577600392-9142052c5e",
+      "expected": {
+        "name": "ハートハウス新山口グループホーム",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:359",
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:1119"
+        ],
+        "services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.403168,
+            34.091434
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "ハートハウス新山口グループホーム",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "3577600392の元2サービスだけを候補から外し、理由は歴史的な原サービス終了に限定。現住宅型あんしんホームと全敷地閉業を区別。",
+        "summary": "3577600392の元2サービスだけを候補から外し、理由は歴史的な原サービス終了に限定。現住宅型あんしんホームと全敷地閉業を区別。",
+        "location": "old_point",
+        "exclusion_scope": "registered_services",
+        "sources": [
+          {
+            "title": "公開資料 · r-guide.jp",
+            "url": "https://r-guide.jp/care_office/117161/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/98493.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.yamaguchi.lg.jp",
+            "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/111768.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E5%B1%B1%E5%8F%A3%E5%B8%82%20%E3%83%8F%E3%83%BC%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%E6%96%B0%E5%B1%B1%E5%8F%A3%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%83%9B%E3%83%BC%E3%83%A0",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null,
+        "affected_services": [
+          "認知症対応型共同生活介護",
+          "認知症対応型通所介護"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-1423654580",
+      "expected": {
+        "name": "和木保育所",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423654580"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.223032,
+            34.20476
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "和木保育所",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "和木2-9-1の旧保育所だけ。別旧園と現こども園は区別。",
+        "summary": "和木2-9-1の旧保育所だけ。別旧園と現こども園は区別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "和木保育所",
+        "sources": [
+          {
+            "title": "公開資料 · www.town.waki.lg.jp",
+            "url": "https://www.town.waki.lg.jp/soshiki/9/443.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%92%8C%E6%9C%A8%E3%81%93%E3%81%A9%E3%82%82%E5%9C%92/@34.2040895,132.222061,17z/data=!3m1!4b1!4m6!3m5!1s0x3545354c9b8de8d5:0xf989e0585cb0a809!8m2!3d34.2040895!4d132.222061!16s%2Fg%2F1v8kyd8x?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423654581",
+      "expected": {
+        "name": "和木幼稚園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423654581"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.22181,
+            34.206093
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "和木幼稚園",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "和木2-11-1の旧幼稚園だけ。別旧保育所と現こども園は区別。",
+        "summary": "和木2-11-1の旧幼稚園だけ。別旧保育所と現こども園は区別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "和木幼稚園",
+        "sources": [
+          {
+            "title": "公開資料 · www.gsi.go.jp",
+            "url": "http://www.gsi.go.jp/GIS/jpgis/standardSchemas",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.town.waki.lg.jp",
+            "url": "https://www.town.waki.lg.jp/soshiki/9/443.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.town.waki.lg.jp",
+            "url": "https://www.town.waki.lg.jp/uploaded/attachment/1369.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "https://nlftp.mlit.go.jp/ksj/jpgis/data/P02/P02-06/P02-06_35.zip",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · nlftp.mlit.go.jp",
+            "url": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%92%8C%E6%9C%A8%E3%81%93%E3%81%A9%E3%82%82%E5%9C%92/@34.2040895,132.222061,17z/data=!3m1!4b1!4m6!3m5!1s0x3545354c9b8de8d5:0xf989e0585cb0a809!8m2!3d34.2040895!4d132.222061!16s%2Fg%2F1v8kyd8x?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423660201",
+      "expected": {
+        "name": "県立徳山高鹿野分校",
+        "category": "school",
+        "source_ids": [
+          "node/1423660201"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.80893,
+            34.195782
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "県立徳山高鹿野分校",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧徳山高校鹿野分校の学校案内だけ。別機能や日付は範囲外。",
+        "summary": "旧徳山高校鹿野分校の学校案内だけ。別機能や日付は範囲外。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "県立徳山高鹿野分校",
+        "sources": [
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E5%B1%B1%E5%8F%A3%E7%9C%8C%E7%AB%8B%E5%BE%B3%E5%B1%B1%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1+%E9%B9%BF%E9%87%8E%E5%88%86%E6%A0%A1/@34.1958949,131.8089385,17z/data=!3m1!4b1!4m6!3m5!1s0x3544dbad115e0f7b:0x618dae74e13c8b6c!8m2!3d34.1958949!4d131.8089385!16s%2Fg%2F122h6_7z?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1631278948",
+      "expected": {
+        "name": "豊浦町老人福祉センター",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631278948"
+        ],
+        "services": [
+          "group_home"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.038216,
+            34.13066
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "豊浦町老人福祉センター",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧豊浦老人福祉センターだけ。同座標でも菊川華陽は別。点の付け替えは行わない。",
+        "summary": "旧豊浦老人福祉センターだけ。同座標でも菊川華陽は別。点の付け替えは行わない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "豊浦町老人福祉センター",
+        "sources": [
+          {
+            "title": "公開資料 · www.city.shimonoseki.lg.jp",
+            "url": "https://www.city.shimonoseki.lg.jp/uploaded/attachment/81247.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shimonoseki.lg.jp",
+            "url": "https://www.city.shimonoseki.lg.jp/uploaded/attachment/71457.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shimonoseki.lg.jp",
+            "url": "https://www.city.shimonoseki.lg.jp/uploaded/attachment/90402.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E4%B8%8B%E9%96%A2%E5%B8%82%E8%B1%8A%E6%B5%A6%E8%80%81%E4%BA%BA%E7%A6%8F%E7%A5%89%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/@34.1405048,130.9385155,17z/data=!4m10!1m2!2m1!1z6LGK5rWm55S66ICB5Lq656aP56WJ44K744Oz44K_44O8IOS4i-mWouW4gg!3m6!1s0x3543a00cd56a913d:0x317969038cb411ab!8m2!3d34.140526!4d130.938579!15sCivosYrmtabnlLrogIHkurrnpo_npYnjgrvjg7Pjgr_jg7wg5LiL6Zai5biCkgEObnVyc2luZ19hZ2VuY3ngAQA!16s%2Fg%2F1tctpg6k?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1631280102",
+      "expected": {
+        "name": "青海荘在宅介護支援センター",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631280102"
+        ],
+        "services": [
+          "outreach"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.9178618,
+            33.981244
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "青海荘在宅介護支援センター",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧市委託相談だけ。青海荘本体・弐番館・別の武久ケアプランを保持。 同じ敷地の別サービスは個別の登録と資料で確認します。",
+        "summary": "旧市委託相談だけ。青海荘本体・弐番館・別の武久ケアプランを保持。",
+        "location": "old_point",
+        "exclusion_scope": "original_service",
+        "excluded_unit": "旧在宅介護支援センターの市委託相談",
+        "sources": [
+          {
+            "title": "公開資料 · shoujuen.jp",
+            "url": "https://shoujuen.jp/pages/2/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.city.shimonoseki.lg.jp",
+            "url": "https://www.city.shimonoseki.lg.jp/uploaded/attachment/7445.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E9%9D%92%E6%B5%B7%E8%8D%98%E5%9C%A8%E5%AE%85%E4%BB%8B%E8%AD%B7%E6%94%AF%E6%8F%B4%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E4%B8%8B%E9%96%A2%E5%B8%82/@34.1237802,130.9629968,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-3958953264",
+      "expected": {
+        "name": "柳澤小児科",
+        "category": "clinic",
+        "source_ids": [
+          "node/3958953264"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.4025818,
+            34.0950767
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "柳澤小児科",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "小郡御幸町の旧小児科の受診案内だけ。仮事務所使用を現在の恒久用途にしない。",
+        "summary": "小郡御幸町の旧小児科の受診案内だけ。仮事務所使用を現在の恒久用途にしない。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "柳澤小児科",
+        "sources": [
+          {
+            "title": "公開資料 · www.yamaguchi-vet.or.jp",
+            "url": "https://www.yamaguchi-vet.or.jp/assets/files/kaihou/757hp.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguchi-vet.or.jp",
+            "url": "https://www.yamaguchi-vet.or.jp/assets/files/kaihou/758hp.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · kouseikyoku.mhlw.go.jp",
+            "url": "https://kouseikyoku.mhlw.go.jp/chugokushikoku/news/2012/tazaitoyo/000196665.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/3958953264/history",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "civic-care-3577800455-c4d741baf2",
+      "expected": {
+        "name": "白滝荘居宅介護支援事業所",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:e3ade00c-ebfc-4848-a9ad-b6b1ab996b83:row:838"
+        ],
+        "services": [
+          "居宅介護支援"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.988174,
+            34.269527
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "白滝荘居宅介護支援事業所",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "田耕の旧居宅介護支援案内だけ。同番号が滝部へ移転。旧・新両方の別番号・別機能を保持。",
+        "summary": "田耕の旧居宅介護支援案内だけ。同番号が滝部へ移転。旧・新両方の別番号・別機能を保持。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "白滝荘居宅介護支援事業所",
+        "sources": [
+          {
+            "title": "公開資料 · houhokufukushikai.jp",
+            "url": "https://houhokufukushikai.jp/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · houhokufukushikai.jp",
+            "url": "https://houhokufukushikai.jp/pages/2/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · houhokufukushikai.jp",
+            "url": "https://houhokufukushikai.jp/pages/17/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · houhokufukushikai.jp",
+            "url": "https://houhokufukushikai.jp/pages/128/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · houhokufukushikai.jp",
+            "url": "https://houhokufukushikai.jp/files/libs/1548/202605080844451495.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.smisikai.or.jp",
+            "url": "https://www.smisikai.or.jp/files/kaigo_list_2023/kaigokikan2023_2.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.kaigo.pref.yamaguchi.lg.jp",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/list/?no=3577800455&od=1",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.mhlw.go.jp",
+            "url": "https://www.mhlw.go.jp/content/12300000/jigyosho_430_all_20260709180740.csv",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1423654810",
+      "expected": {
+        "name": "宇佐木保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423654810"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.090384,
+            33.95362
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "宇佐木保育園",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "宇佐木489-4の旧町立園の単独運営だけ。私立統合先や同敷地の別機能は区別。",
+        "summary": "宇佐木489-4の旧町立園の単独運営だけ。私立統合先や同敷地の別機能は区別。",
+        "location": "old_point",
+        "exclusion_scope": "named_facility_unit",
+        "excluded_unit": "宇佐木保育園",
+        "sources": [
+          {
+            "title": "公開資料 · www.town.hirao.lg.jp",
+            "url": "https://www.town.hirao.lg.jp/material/files/group/12/1404.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-node-1631273278",
+      "expected": {
+        "name": "岐山寮",
+        "category": "social_facility",
+        "source_ids": [
+          "node/1631273278"
+        ],
+        "services": [
+          "group_home"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.81021,
+            34.064545
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "岐山寮",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "西金剛山の旧岐山寮だけ。五月町の現きさんの里と別番号訪問介護は区別。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "西金剛山の旧岐山寮だけ。五月町の現きさんの里と別番号訪問介護は区別。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "岐山寮",
+        "sources": [
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/kisan/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/html/access/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/html/history/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/kisan/html/access/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.hukusikumiai.com",
+            "url": "https://www.hukusikumiai.com/images/kisan/guide2020.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.kaigo.pref.yamaguchi.lg.jp",
+            "url": "https://www.kaigo.pref.yamaguchi.lg.jp/jigyosho/export/?minasi=1&city=35215&od=1",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/search/%E5%91%A8%E5%8D%97%E5%B8%82%20%E5%B2%90%E5%B1%B1%E5%AF%AE",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    },
+    {
+      "id": "osm-way-202793094",
+      "expected": {
+        "name": "コープやまぐち",
+        "category": "supermarket",
+        "source_ids": [
+          "way/202793094"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.449434,
+            34.1671833
+          ]
+        }
+      },
+      "review": {
+        "decision": "exclude",
+        "checked_at": "2026-11-11",
+        "display": {
+          "type": "コープやまぐち",
+          "place": "旧登録地点",
+          "use": "徒歩圏・周辺施設の候補から除外"
+        },
+        "scope": "旧コープいずみ店。同じ旧所在地を示す別の登録ID。移転先と近隣店舗は別施設。 施設・事業全体の運営は個別資料で確認します。",
+        "summary": "旧コープいずみ店。同じ旧所在地を示す別の登録ID。移転先と近隣店舗は別施設。",
+        "location": "old_point",
+        "exclusion_scope": "original_location",
+        "excluded_unit": "コープやまぐち",
+        "sources": [
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/cocoto/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/cocoto/izumi/",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "公開資料 · www.yamaguti-coop.or.jp",
+            "url": "https://www.yamaguti-coop.or.jp/wp/wp-content/uploads/2023/06/coopletter_202307_p01.pdf",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/way/202793094/history.json",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E3%82%B3%E3%83%BC%E3%83%97+%E3%81%93%E3%81%93%E3%81%A8+%E3%81%84%E3%81%9A%E3%81%BF%E5%BA%97/@34.1666807,131.4499295,17z/data=!3m1!4b1!4m6!3m5!1s0x35449751974b64ff:0x91189717e0de2c04!8m2!3d34.1666807!4d131.4499295!16s%2Fg%2F1w9xzxgd?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/place/%E3%82%B3%E3%83%BC%E3%83%97+%E3%81%93%E3%81%93%E3%81%A8+%E3%81%A9%E3%81%86%E3%82%82%E3%82%93%E5%BA%97/@34.174516,131.474874,17z/data=!3m1!4b1!4m6!3m5!1s0x3544971bde489335:0x7a4a7d1de73ded59!8m2!3d34.174516!4d131.474874!16s%2Fg%2F1xcbmf0j?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          },
+          {
+            "title": "地図・位置資料 · www.google.com",
+            "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3301.1849444765157%212d131.44757821521802%213d34.167188880574784%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x35449751974b64ff%3A0x91189717e0de2c04%212z44Kz44O844OX44GT44GT44GoIOOBhOOBmuOBv-W6lw%215e0%213m2%211sja%212sjp%214v1629369826486%215m2%211sja%212sjp",
+            "scope": "保存済み資料で確認した範囲",
+            "date_note": "過去の保存照合記録"
+          }
+        ],
+        "limits": [
+          "旧施設・旧機能・旧地点に限る。別IDの現施設や入口はこの判定に含まない。"
+        ],
+        "remaining": [],
+        "next_source": null
+      }
+    }
+  ],
+  "presentation_updates": [
+    {
+      "id": "civic-care-3510311420-4a02597536",
+      "expected": {
+        "name": "医療法人 丘病院",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1090",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1358"
+        ],
+        "services": [
+          "短期入所療養介護",
+          "介護療養型医療施設"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.475296,
+            34.178394
+          ]
+        }
+      },
+      "label": "旧介護登録のサービス履歴",
+      "note": "短期入所療養介護と介護療養型医療施設は旧登録の情報です。保存した県の一覧では、同じ事業所番号に訪問看護、訪問リハビリテーション、居宅療養管理指導、通所リハビリテーションが掲載されています。",
+      "name": "おか整形外科病院"
+    },
+    {
+      "id": "osm-way-177782234",
+      "expected": {
+        "name": "県立防府商業高等学校",
+        "category": "school",
+        "source_ids": [
+          "way/177782234"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.5704335,
+                  34.0514397
+                ],
+                [
+                  131.5701339,
+                  34.0508537
+                ],
+                [
+                  131.5700337,
+                  34.0504919
+                ],
+                [
+                  131.5700474,
+                  34.0502212
+                ],
+                [
+                  131.56998,
+                  34.0498624
+                ],
+                [
+                  131.5698826,
+                  34.0497282
+                ],
+                [
+                  131.5697873,
+                  34.0496696
+                ],
+                [
+                  131.5697111,
+                  34.049603
+                ],
+                [
+                  131.5696893,
+                  34.0494778
+                ],
+                [
+                  131.5697233,
+                  34.0493977
+                ],
+                [
+                  131.5697554,
+                  34.0491239
+                ],
+                [
+                  131.5696955,
+                  34.0487243
+                ],
+                [
+                  131.5691149,
+                  34.0488269
+                ],
+                [
+                  131.5687602,
+                  34.0488053
+                ],
+                [
+                  131.5687798,
+                  34.0483586
+                ],
+                [
+                  131.5684313,
+                  34.0483353
+                ],
+                [
+                  131.5687908,
+                  34.0481281
+                ],
+                [
+                  131.568945,
+                  34.0480025
+                ],
+                [
+                  131.5690745,
+                  34.0479696
+                ],
+                [
+                  131.5709137,
+                  34.0480862
+                ],
+                [
+                  131.5709457,
+                  34.048345
+                ],
+                [
+                  131.5710213,
+                  34.0483383
+                ],
+                [
+                  131.5711069,
+                  34.0486979
+                ],
+                [
+                  131.5711148,
+                  34.0490384
+                ],
+                [
+                  131.5713953,
+                  34.0490339
+                ],
+                [
+                  131.571507,
+                  34.0494784
+                ],
+                [
+                  131.5714933,
+                  34.0496002
+                ],
+                [
+                  131.5710849,
+                  34.0496724
+                ],
+                [
+                  131.5711557,
+                  34.0499951
+                ],
+                [
+                  131.5712864,
+                  34.0505523
+                ],
+                [
+                  131.5715614,
+                  34.0505049
+                ],
+                [
+                  131.5719563,
+                  34.0504756
+                ],
+                [
+                  131.5721443,
+                  34.0512696
+                ],
+                [
+                  131.5704335,
+                  34.0514397
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "label": "現在の学校名を表示",
+      "note": "旧校名の登録に、現在の山口県立防府商工高等学校の名称を表示しています。利用者入口は未確認です。",
+      "name": "山口県立防府商工高等学校"
+    },
+    {
+      "id": "osm-node-1423657554",
+      "expected": {
+        "name": "平生保育園",
+        "category": "childcare",
+        "source_ids": [
+          "node/1423657554"
+        ],
+        "services": [],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            132.074329,
+            33.936955
+          ]
+        }
+      },
+      "label": "旧町立園の記録・現園の入口未確認",
+      "note": "旧町立平生保育園の運営は統合民営化で終了し、当時は旧園舎を私立園が利用しました。県の一覧に掲載されている現ひらお保育園と、この登録地点・利用者入口の対応は未確認です。"
+    },
+    {
+      "id": "civic-care-3510710597-4885aeb52e",
+      "expected": {
+        "name": "医療法人 創世会 篠山医院",
+        "category": "social_facility",
+        "source_ids": [
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1089",
+          "civic:f326f80b-b4a9-48ca-8ce1-62264c57ddfa:row:1357"
+        ],
+        "services": [
+          "短期入所療養介護",
+          "介護療養型医療施設"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.883987,
+            34.036324
+          ]
+        }
+      },
+      "label": "旧指定の履歴・現行サービスは別記",
+      "note": "保存資料に旧サービスの指定廃止が記録されています。新しい県の一覧では同じ事業所番号と住所に居宅療養管理指導が掲載されています。"
     }
   ]
 }

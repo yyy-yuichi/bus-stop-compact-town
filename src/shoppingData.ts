@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { ShoppingCollection, ShoppingFeature } from './types';
-import { applyFacilityCurrent } from './facilityFreshness';
+import { applyReleaseFacilityAdditions } from './facilityReleaseAdditions';
 import { applyFacilityAudit } from './facilityAudit';
 import { applyFacilityContacts } from './facilityContact';
 import { applyFacilityGuidance } from './facilityGuidance';
@@ -25,14 +25,16 @@ export function useShoppingData() {
     ));
     const current = fetch(`${import.meta.env.BASE_URL}data/facility-current.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Current facility reviews unavailable'); return r.json() as Promise<unknown>; });
+    const additions = fetch(`${import.meta.env.BASE_URL}data/facility-release-additions.json`, { signal: abort.signal })
+      .then(r => { if (!r.ok) throw Error('Release facility additions unavailable'); return r.json() as Promise<unknown>; });
     const audit = fetch(`${import.meta.env.BASE_URL}data/facility-audit.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Facility audit unavailable'); return r.json() as Promise<unknown>; });
     const contacts = fetch(`${import.meta.env.BASE_URL}data/facility-contacts.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Facility contacts unavailable'); return r.json() as Promise<unknown>; });
     const guidance = fetch(`${import.meta.env.BASE_URL}data/facility-guidance.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Facility guidance unavailable'); return r.json() as Promise<unknown>; });
-    Promise.all([originals, current, audit, contacts, guidance]).then(([collections, reviews, auditData, contactData, guideData]) => {
-        if (!abort.signal.aborted) { setFeatures(applyFacilityGuidance(applyFacilityContacts(applyFacilityAudit(applyFacilityCurrent(collections.flat(), reviews), auditData), contactData), guideData)); setLoading(false); }
+    Promise.all([originals, current, additions, audit, contacts, guidance]).then(([collections, reviews, releaseData, auditData, contactData, guideData]) => {
+        if (!abort.signal.aborted) { setFeatures(applyFacilityGuidance(applyFacilityContacts(applyFacilityAudit(applyReleaseFacilityAdditions(collections.flat(), reviews, releaseData), auditData), contactData), guideData)); setLoading(false); }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
     return () => abort.abort();
   }, [attempt]);

@@ -61,9 +61,24 @@ test('approved policy retains eleven references and labels school contact withou
 
 test('guide overlay preserves every original field, geometry, ID, and audit status across all 8369 records', () => {
   const saved = JSON.stringify([base, data]);
+  const presentations = new Map((data.presentation_updates ?? []).map(row => [row.id, row]));
   assert.equal(applied.length, 8369); assert.equal(new Set(applied.map(f => f.id)).size, 8369);
   for (let i = 0; i < applied.length; i++) {
     const f = structuredClone(applied[i]); delete f.properties.guide_review;
+    const update = presentations.get(f.id);
+    if (update) {
+      assert.equal(f.properties.visitor_note.label, update.label);
+      assert.equal(f.properties.visitor_note.note, update.note);
+      assert.equal(isFacilityWalkingCandidate(f), isFacilityWalkingCandidate(base[i]));
+      delete f.properties.visitor_note;
+      if (update.name) {
+        assert.equal(f.properties.name, update.name);
+        assert(f.properties.search_names.includes(base[i].properties.name));
+        f.properties.name = base[i].properties.name;
+        if (base[i].properties.search_names === undefined) delete f.properties.search_names;
+        else f.properties.search_names = base[i].properties.search_names;
+      }
+    }
     assert.deepEqual(f, base[i]);
   }
   assert.equal(JSON.stringify([base, data]), saved);
@@ -76,6 +91,13 @@ test('guide overlay preserves every original field, geometry, ID, and audit stat
     assert.equal(r.exclusion_scope,row.exclusion_scope??undefined,row.id);
     assert.equal(r.excluded_unit,row.excluded_unit??undefined,row.id);
   }
+});
+
+test('presentation updates reject repeated IDs and original record drift', () => {
+  const [item] = data.presentation_updates ?? [];
+  assert(item);
+  assert.throws(() => applyFacilityGuidance(base, {...data,presentation_updates:[item,item]}), /Invalid facility presentation update/);
+  assert.throws(() => applyFacilityGuidance(base, {...data,presentation_updates:[{...item,expected:{...item.expected,name:'異なる登録名'}}]}), /Invalid facility presentation update/);
 });
 
 test('ready/hold/excluded/reference decisions reach the actual map, nearby, and baked candidate calculations', () => {

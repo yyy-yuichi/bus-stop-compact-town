@@ -3,7 +3,7 @@ import L from 'leaflet';
 import type { ShoppingFeature } from './types';
 import { categoryOf } from './shoppingData';
 import { facilityIconMarkup } from './facilityIcons';
-import { mapLocationLabel } from './facilityMapLocation';
+import { facilityVisitExclusionLabel, mapLocationLabel } from './facilityMapLocation';
 
 export default function ShoppingLayer({ map, features, selected, onSelect }: {
   map: L.Map | null; features: ShoppingFeature[]; selected: string; onSelect: (feature: ShoppingFeature) => void;
@@ -40,7 +40,7 @@ export default function ShoppingLayer({ map, features, selected, onSelect }: {
         const active = String(feature.id) === selected;
         if (!active && !view.intersects(bounds)) continue;
         const category = categoryOf(feature);
-        const locationWarning = mapLocationLabel(feature.properties.audit_review?.map_location);
+        const locationWarning = facilityVisitExclusionLabel(feature) || mapLocationLabel(feature.properties.audit_review?.map_location);
         const markerLabel = `${feature.properties.name}（${category.name}）${locationWarning ? `・${locationWarning}` : ''}`;
         if (!detailed && !active) {
           const marker = L.circleMarker(center, { radius: 4, weight: 1.5, color: '#fff', fillColor: category.color, fillOpacity: 0.95 })

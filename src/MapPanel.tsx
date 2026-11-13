@@ -8,7 +8,7 @@ import FacilityIcon from './FacilityIcon';
 import { searchPlaces } from './placeSearch';
 import { boardingTitle } from './boardingGuide';
 import { auditLabel } from './facilityAudit';
-import { mapLocationLabel } from './facilityMapLocation';
+import { facilityVisitExclusionLabel, mapLocationLabel } from './facilityMapLocation';
 
 interface Props {
   stops: BusFeature[];
@@ -56,9 +56,10 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   const chooseFacility = (feature: ShoppingFeature) => { setExpanded(false); setResultsOpen(false); setListOpen(false); onFacility(feature); };
   const facilityRow = (feature: ShoppingFeature) => {
     const category = categoryOf(feature);
+    const exclusion = facilityVisitExclusionLabel(feature);
     return <button key={String(feature.id)} className="place-row" onClick={() => chooseFacility(feature)}>
       <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-      <span><strong>{feature.properties.name}</strong><small>{feature.properties.city ? `${feature.properties.city} · ` : ''}{category.name}</small>{feature.properties.audit_review && <small className={`audit-badge audit-${feature.properties.audit_review.status}`}>{auditLabel(feature.properties.audit_review)}</small>}{feature.properties.audit_review?.map_location && <small className="facility-map-location-warning">{mapLocationLabel(feature.properties.audit_review.map_location)}</small>}</span><span className="row-arrow" aria-hidden="true">›</span>
+      <span><strong>{feature.properties.name}</strong>{feature.properties.visitor_note && <small>{feature.properties.visitor_note.label}</small>}{exclusion && <small className="facility-map-location-warning">{exclusion}</small>}<small>{feature.properties.city ? `${feature.properties.city} · ` : ''}{category.name}</small>{feature.properties.audit_review && <small className={`audit-badge audit-${feature.properties.audit_review.status}`}>{auditLabel(feature.properties.audit_review)}</small>}{feature.properties.audit_review?.map_location && <small className="facility-map-location-warning">{mapLocationLabel(feature.properties.audit_review.map_location)}</small>}</span><span className="row-arrow" aria-hidden="true">›</span>
     </button>;
   };
   return <aside className={`map-panel${expanded ? ' is-expanded' : ''}${term && resultsOpen ? ' is-searching' : ''}`} aria-label="地図の検索と表示設定">

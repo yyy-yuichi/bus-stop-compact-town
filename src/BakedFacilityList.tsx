@@ -30,6 +30,7 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
   </div>;
   const filtered = candidates.filter(c => group === 'all' || c.group === group);
   const label = GROUPS.find(g => g.id === group)!.name;
+  const supermarketCount = group === 'shopping' ? filtered.filter(c => categoryOf(c.facility).id === 'supermarket').length : null;
   return <section className="mt-6" aria-labelledby="baked-facilities-title">
     <h4 id="baked-facilities-title" className="text-base font-bold">{minutes}分圏の施設候補</h4>
     {hasExcludedLocations && <p className="helper-text">{mapLocationExclusionNote}</p>}
@@ -39,14 +40,19 @@ export default function BakedFacilityList({ candidates, group, onGroup, minutes,
       </select>
     </label>
     <p className="mt-3 text-xs text-stone-600" role="status" aria-live="polite">{label} {filtered.length}件 · {candidates.some(candidate => candidate.entranceRoute) ? '入口経路の試算を含む時間順' : '道路までの時間順'}</p>
+    {supermarketCount !== null && <p className="helper-text">買い物候補のうちスーパー {supermarketCount}件</p>}
     {filtered.length ? filtered.slice(0, limit).map(({ facility, meters, entranceRoute }) => {
       const category = categoryOf(facility);
       return <button key={String(facility.id)} id={`baked-facility-${facility.id}`} className="place-row walk-facility-row" aria-label={`${facility.properties.name}の詳細を見る`} onClick={() => onFacility(facility)}>
         <span className="category-symbol" style={{ background: category.color }}><FacilityIcon category={category.id} /></span>
-        <span><strong>{facility.properties.name}</strong>{facility.properties.guide_review?.visit_purpose === 'school_contact' && <small>来校・相談先（事前確認）</small>}{facility.properties.guide_review?.shared_destination && <small>{facility.properties.guide_review.shared_destination.kind === 'scoped_park_place' ? '同じ公園の概略案内：' : '現在の来訪先：'}{facility.properties.guide_review.shared_destination.display_name ?? facility.properties.guide_review.shared_destination.expected.name}</small>}{!facility.properties.guide_review?.shared_destination && facility.properties.guide_review?.decision === 'ready' && facility.properties.guide_review.display.type !== facility.properties.name && <small>今回の案内：{facility.properties.guide_review.display.type}</small>}<small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 情報確認中' : ''}</small><small>{entranceRoute ? entranceRoute.scope === 'outdoor' ? '屋外通路まで（館内未計時）' : entranceRoute.provisional ? '入口経路（暫定）' : '入口までの試算' : '近くの道路まで'} 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
+        <span><strong>{facility.properties.name}</strong>{facility.properties.visitor_note && <small>{facility.properties.visitor_note.label}</small>}{facility.properties.guide_review?.visit_purpose === 'school_contact' && <small>来校・相談先（事前確認）</small>}{facility.properties.guide_review?.shared_destination && <small>{facility.properties.guide_review.shared_destination.kind === 'scoped_park_place' ? '同じ公園の概略案内：' : '現在の来訪先：'}{facility.properties.guide_review.shared_destination.display_name ?? facility.properties.guide_review.shared_destination.expected.name}</small>}{!facility.properties.guide_review?.shared_destination && facility.properties.guide_review?.decision === 'ready' && facility.properties.guide_review.display.type !== facility.properties.name && <small>今回の案内：{facility.properties.guide_review.display.type}</small>}<small>{category.name}{facility.properties.classification_review?.status === 'pending' ? ' · 情報確認中' : ''}</small><small>{entranceRoute ? entranceRoute.scope === 'outdoor' ? '屋外通路まで（館内未計時）' : entranceRoute.provisional ? '入口経路（暫定）' : '入口までの試算' : '近くの道路まで'} 約{Math.max(1, Math.ceil(meters / (4000 / 60)))}分</small></span>
         <span className="row-arrow" aria-hidden="true">›</span>
       </button>;
-    }) : <p className="mt-4 text-sm leading-relaxed">この条件の候補はありません。{minutes < 15 ? '時間を広げて探せます。' : ''}</p>}
+    }) : <div className="mt-4 space-y-2 text-sm leading-relaxed">
+      <p>{group === 'all' ? `地図に登録された施設のうち、徒歩${minutes}分圏の候補は0件です。` : `地図に登録された施設のうち、徒歩${minutes}分圏の「${label}」候補は0件です。`}</p>
+      <p className="text-stone-600">未登録の施設や、道路データで経路を計算できない施設は一覧に出ません。</p>
+      {minutes < 15 && <p>時間を広げて探せます。</p>}
+    </div>}
     {filtered.length > limit && <button className="mt-3 min-h-11 w-full rounded-xl border border-stone-300 bg-white text-sm font-semibold" onClick={() => { nextFocus.current = `baked-facility-${filtered[limit].facility.id}`; setLimit(n => n + 12); }}>さらに{Math.min(12, filtered.length - limit)}件を表示</button>}
   </section>;
 }

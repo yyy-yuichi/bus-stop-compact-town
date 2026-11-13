@@ -18,6 +18,9 @@ export function readPlaceLink(hash: string): SharedPlace | null {
   if (kind === 'boarding' && /^review:(ube-chuo|ube-shinkawa|tokuyama)-\d+$/.test(id)) {
     return params.has('minutes') || params.has('speed') ? null : { kind, id };
   }
+  const privateHallStop = import.meta.env?.VITE_PREFECTURE_HALLS === '1' && /^(?:hall-iwakuni:677_0[12]|hall-ube:468[89]|hall-yamaguchi:B-bocho|hall-nagato:325[45]|hall-onoda:S2_0[12]|hall-hikari:14_04|hall-shunan:[2-5]|hall-yamaguchi:A-jr|hall-nagato:(?:sanden|blue)-(?:north|south)|hall-mine:(?:station-(?:sanden|blue)|blue-(?:east|west))|hall-onoda:sanden-(?:east|west))$/.test(id);
+  if (kind === 'boarding' && privateHallStop && params.getAll('minutes').length === 1
+      && params.get('minutes') === '15' && !params.has('speed')) return { kind, id, minutes: 15 };
   if ((kind === 'boarding' && /^(node\/\d+|walk-adopted:\d+\.\d+_\d+\.\d+:\d+|taka-\d+|busit:\d+|sentetsu:[A-Za-z0-9_-]{1,100}|bocho:\d{8}-\d{12}|jr-chugoku:\d+ \d+|ube-official-map:[A-Za-z0-9_-]+:\d+)$/.test(id)) ||
       (kind === 'municipal' && /^(hikari|iwakuni):[a-zA-Z0-9_.-]{1,100}$/.test(id)) ||
       (kind === 'national' && /^mlit-p11-22-35:\d+$/.test(id))) {

@@ -27,6 +27,9 @@ export const mapLocationLabel = (location?: FacilityMapLocation): string => !loc
 export const hasMapLocationIssue = (facility: ShoppingFeature): boolean =>
   ['unverified', 'different_from_current'].includes(facility.properties.audit_review?.map_location?.status ?? '');
 
+export const facilityVisitExclusionLabel = (facility: ShoppingFeature): string =>
+  guideExcludesOriginal(facility) ? '徒歩・周辺施設の候補外' : '';
+
 /** Legacy records keep their existing eligibility; no inference from status or distance. */
 export const isFacilityWalkingCandidate = (facility: ShoppingFeature): boolean => {
   if (!facilityAvailable(facility) || guideExcludesOriginal(facility) || ['hold', 'reference'].includes(facility.properties.guide_review?.decision ?? '')) return false;

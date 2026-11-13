@@ -12,6 +12,7 @@ export interface EntranceRoute {
   note: string;
   provisional: boolean;
   startLabel?: string;
+  endLabel?: string;
 }
 export interface EntrancePair {
   facilityId: string;

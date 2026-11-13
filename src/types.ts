@@ -63,6 +63,7 @@ export interface ShoppingProperties {
   registry_review?: import('./facilityRegistry').RegistryReview;
   audit_review?: import('./facilityAudit').FacilityAuditReview;
   guide_review?: import('./facilityGuidance').FacilityGuidanceReview;
+  visitor_note?: { label: string; note: string; original_name?: string };
   duplicate_of?: string;
   retrieved_at?: string;
   license?: string;

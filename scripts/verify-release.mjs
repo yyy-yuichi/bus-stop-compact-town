@@ -10,7 +10,7 @@ for(const f of files){
   JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
   continue;
  }
- if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review|facility-current|facility-audit|facility-contacts|facility-guidance)\.json|data\/(walk|entrance-walk)\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
+ if(!/^(index\.html|review\.html|route-living\.html|about\.html|third-party-notices\.txt|data\/(bus_stop|baked-bus-stops|shopping|civic-facilities|review-stops|review-national)\.geojson|data\/(walking-onoda|review-routes|walk-unreachable|route-living-pilot|route-living-facilities|transport-source-review|facility-current|facility-audit|facility-contacts|facility-guidance|facility-release-additions)\.json|data\/(walk|entrance-walk)\/[\w.-]+\.json|assets\/[\w.-]+\.(js|css|png))$/.test(f.replaceAll('\\','/'))) throw Error(`Unexpected release file: ${f}`);
 }
 if(process.env.VITE_ENTRANCE_STUDY === '1') {
  const study = JSON.parse(fs.readFileSync('src/data/entrance-route-study.json', 'utf8'));
@@ -44,7 +44,7 @@ if(basemapScripts.some(s=>s.includes('tiles.openfreemap.org')||s.includes('maps/
 console.log('Original OpenStreetMap background preserved; alternative backgrounds and workers absent.');
 for(const m of html.matchAll(/(?:src|href)="(\.\/assets\/[^"#]+)"/g)) if(!fs.existsSync(path.join(root,m[1])))throw Error(`Missing asset ${m[1]}`);
 if(/(?:src|href)="\/assets\//.test(html))throw Error('Absolute asset path prevents subdirectory deployment');
-for(const file of ['bus_stop.geojson','shopping.geojson','civic-facilities.geojson','baked-bus-stops.geojson','walk-unreachable.json','facility-current.json','facility-audit.json']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(path.join(root,'data',file))))throw Error(`Stale data: ${file}`);
+for(const file of ['bus_stop.geojson','shopping.geojson','civic-facilities.geojson','baked-bus-stops.geojson','walk-unreachable.json','facility-current.json','facility-audit.json','facility-release-additions.json']) if(!fs.readFileSync(`public/data/${file}`).equals(fs.readFileSync(path.join(root,'data',file))))throw Error(`Stale data: ${file}`);
 if(!fs.readFileSync('public/data/walking-onoda.json').equals(fs.readFileSync(path.join(root,'data/walking-onoda.json'))))throw Error('Stale walking graph');
 const bus=JSON.parse(fs.readFileSync(path.join(root,'data/bus_stop.geojson'),'utf8'));
 if(bus.features.length!==1085)throw Error('Unexpected bus stop count');
