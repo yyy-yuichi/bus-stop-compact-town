@@ -24,6 +24,14 @@ jobs:
       # 未設定のまま公開すると徒歩圏が全停留所で404になるため、下で先に落とす。
       VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL }}
       VITE_BOARDING_STUDY: '1'
+      VITE_PREFECTURE_HALLS: '1'
+      VITE_SHUNAN_PLATFORM1: '1'
+      VITE_SHUNAN_PLATFORM6: '1'
+      VITE_SHIMONOSEKI_HALL: '1'
+      VITE_KUDAMATSU_HALL: '1'
+      VITE_YANAI_HALL: '1'
+      VITE_HIKARI_HALL: '1'
+      VITE_HAGI_HALL: '1'
       VITE_ENTRANCE_STUDY: '1'
       VITE_ENTRANCE_COMPARISON: '0'
       VITE_LOCAL_ONLY: '0'
