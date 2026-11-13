@@ -27,6 +27,12 @@ import NearbyFacilitiesPanel from './NearbyFacilitiesPanel';
 import LocationReviewPanel from './LocationReviewPanel';
 import { StopSelectionProvider } from './StopSelection';
 import type { EntranceRoute } from './entranceRouteStudy';
+import { addShunanPlatforms } from './shunanPlatform6';
+import { addKudamatsuPlatform } from './kudamatsuHallEntrance';
+import { addYanaiPlatforms } from './yanaiHallEntrance';
+import { addHikariPlatforms } from './hikariHallEntrance';
+import { addHagiPlatforms } from './hagiHallEntrance';
+import { addPrefectureHallPlatforms } from './prefectureHallEntrance';
 
 const boardingStudy = import.meta.env.VITE_BOARDING_STUDY === '1';
 const entranceComparison = import.meta.env.VITE_ENTRANCE_COMPARISON === '1';
@@ -103,7 +109,10 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
         const features = attachBoardingGuides(data.features, (await import('./data/boarding-guide-study.json')).default as BoardingStudy);
         const { attachStudyWalks } = await import('./boardingWalkingStudy');
         const reviews = (await import('./data/boarding-location-review.json')).default;
-        return { ...data, features: attachLocationReviews(attachStudyWalks(features), reviews as { version: number; points: BusFeature[] }) };
+        const reviewed = attachLocationReviews(attachStudyWalks(features), reviews as { version: number; points: BusFeature[] });
+        const withPriorPlatforms = addKudamatsuPlatform(addShunanPlatforms(reviewed));
+        const withRecentPlatforms = addHikariPlatforms(addYanaiPlatforms(withPriorPlatforms));
+        return { ...data, features: addPrefectureHallPlatforms(addHagiPlatforms(withRecentPlatforms)) };
       }
       catch (error) { if (!abort.signal.aborted) setBoardingFailed(true); return data; }
     }) : request;
@@ -188,14 +197,18 @@ export default function BusStopLayer({ map, onSelectionChange }: { map: L.Map | 
 
   useEffect(() => { onSelectionChange(Boolean(selectedStop || selectedFacility)); }, [selectedStop, selectedFacility, onSelectionChange]);
   useEffect(() => {
-    if (!map) return;
+    if (!map || !selectedFacility) return;
+    const route = entranceRoutes?.scope === walkScope ? entranceRoutes.routes[String(selectedFacility.id)] : undefined;
     const focus = () => {
-      if (selectedFacility) focusContent(map, L.geoJSON(selectedFacility).getBounds(), 17);
+      const bounds = route?.endLabel
+        ? L.latLngBounds(route.points.map(([lon, lat]) => L.latLng(lat, lon)))
+        : L.geoJSON(selectedFacility).getBounds();
+      focusContent(map, bounds, route?.endLabel ? 19 : 17);
     };
     focus();
     map.on('resize', focus);
     return () => { map.off('resize', focus); };
-  }, [map, selectedFacility, selectedStop, mode]);
+  }, [map, selectedFacility, selectedStop, mode, entranceRoutes, walkScope]);
 
   const locateStop = useCallback((id: string) => {
     setSharedPlace(null); setShareWarning(false);

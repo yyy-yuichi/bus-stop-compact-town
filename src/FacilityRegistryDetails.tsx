@@ -16,13 +16,13 @@ const registryLabels: Record<RegistryReview['scope'], string> = {
   regional_business_directory: '公的事業と連携する地域店舗案内',
 };
 
-export default function FacilityRegistryDetails({ review, duplicateOf }: { review?: RegistryReview; duplicateOf?: string }) {
+export default function FacilityRegistryDetails({ review, duplicateOf, sourceLabel }: { review?: RegistryReview; duplicateOf?: string; sourceLabel?: string }) {
   if (!review) return null;
   const heading = review.scope === 'regional_business_directory' ? '地域店舗案内の掲載確認' : review.scope === 'care_publication_list' ? '介護情報公表資料の掲載確認' : review.scope.endsWith('_directory') ? '公式施設一覧の掲載確認' : '行政台帳の掲載確認';
   return <section className="registered-details verified-facility" aria-label={heading}>
     <h3>{heading}</h3>
     {duplicateOf && <p className="font-semibold">同じ施設の重複した登録をまとめています。この記録は保持し、<a className="underline" href={'#kind=facility&id=' + encodeURIComponent(duplicateOf)}>通常表示の施設</a>へ案内します。</p>}
-    <p className="helper-text">{registryLabels[review.scope]}の掲載内容を照合しました。建物全体の営業・開業、現地での稼働、入口や現在の利用可否を確認したものではありません。</p>
+    <p className="helper-text">{sourceLabel ?? registryLabels[review.scope]}の掲載内容を照合しました。建物全体の営業・開業、現地での稼働、入口や現在の利用可否を確認したものではありません。</p>
     <dl>
       <div className="registered-field"><dt>{review.source_date_kind === 'retrieved' ? '資料閲覧日' : '資料基準日'}</dt><dd>{review.source_as_of}</dd></div>
       <div className="registered-field"><dt>照合日</dt><dd>{review.checked_at}</dd></div>

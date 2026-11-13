@@ -11,6 +11,13 @@ import { hasMapLocationIssue } from './facilityMapLocation';
 import { applyEntranceStudy, entranceInputFor, entranceRouteWithin, entranceStudyFor } from './entranceRouteStudy';
 import type { EntranceStudyMode, EntranceRoute } from './entranceRouteStudy';
 import EntranceStudyPanel from './EntranceStudyPanel';
+import { shunanEntranceCandidate } from './shunanPlatform6';
+import { shimonosekiHallCandidate } from './shimonosekiHallEntrance';
+import { kudamatsuHallCandidate } from './kudamatsuHallEntrance';
+import { yanaiHallCandidate } from './yanaiHallEntrance';
+import { hikariHallCandidate } from './hikariHallEntrance';
+import { hagiHallCandidate } from './hagiHallEntrance';
+import { prefectureHallCandidate } from './prefectureHallEntrance';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -246,23 +253,41 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
   const study = useMemo(() => import.meta.env.VITE_ENTRANCE_STUDY === '1' && catchment ? entranceStudyFor(catchment) : null, [catchment]);
   const [studyMode, setStudyMode] = useState<EntranceStudyMode>('confirmed');
   useEffect(() => { setStudyMode('confirmed'); }, [id]);
-  const studyResult = useMemo(() => applyEntranceStudy(candidates, study, studyMode), [candidates, study, studyMode]);
+  const cityHallCandidate = useMemo(() => facilityState === 'ready'
+    ? hikariHallCandidate(id, origin, facilities) ?? hagiHallCandidate(id, origin, facilities)
+      ?? prefectureHallCandidate(id, origin, facilities)
+    : null, [facilityState, id, origin, facilities]);
+  const entranceOnly = !catchment && !!cityHallCandidate;
+  const studyResult = useMemo(() => {
+    const result = applyEntranceStudy(candidates, study, studyMode);
+    const confirmed = cityHallCandidate ?? (catchment && facilityState === 'ready'
+      ? shunanEntranceCandidate(id, origin, facilities) ?? shimonosekiHallCandidate(id, origin, facilities)
+        ?? kudamatsuHallCandidate(id, origin, facilities) ?? yanaiHallCandidate(id, origin, facilities)
+      : null);
+    if (!confirmed) return result;
+    const list = result.candidates.filter(candidate => candidate.facility.id !== confirmed.facility.id);
+    list.push(confirmed);
+    list.sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id)));
+    return { ...result, candidates: list };
+  }, [candidates, study, studyMode, catchment, facilityState, id, origin, facilities, cityHallCandidate]);
   useEffect(() => {
     onEntranceRoutes?.(scope, Object.fromEntries(studyResult.candidates.filter(candidate => candidate.entranceRoute).map(candidate => [String(candidate.facility.id), candidate.entranceRoute!])));
   }, [scope, studyResult, onEntranceRoutes]);
   const visibleCandidates = useMemo(() => studyResult.candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [studyResult, minutes]);
   const [facilityGroup, setFacilityGroup] = useState<FacilityGroup | 'all'>('all');
   useEffect(() => { setFacilityGroup('all'); }, [id]);
-  const nearbyFallback = !loading && !catchment;
+  const nearbyFallback = !loading && !catchment && !entranceOnly;
   useEffect(() => { if (!nearbyFallback) onMapFacilities(scope, visibleCandidates.filter(c => facilityGroup === 'all' || c.group === facilityGroup).map(c => String(c.facility.id))); }, [scope, visibleCandidates, facilityGroup, onMapFacilities, nearbyFallback]);
 
   useEffect(() => {
-    if (!map || !catchment || !displayed) return;
+    if (!map || (!displayed && !entranceOnly)) return;
     const group = L.layerGroup().addTo(map);
     const toLatLng = (line: Coordinate[]) => line.map(([lon, lat]) => L.latLng(lat, lon));
 
-    for (const { color, lines } of bucketSegments(displayed, catchment.budget)) {
-      L.polyline(lines.map(toLatLng), { color, weight: BASE_WEIGHT, opacity: 0.9, interactive: false }).addTo(group);
+    if (displayed && catchment) {
+      for (const { color, lines } of bucketSegments(displayed, catchment.budget)) {
+        L.polyline(lines.map(toLatLng), { color, weight: BASE_WEIGHT, opacity: 0.9, interactive: false }).addTo(group);
+      }
     }
     if (steepSummary) {
       // 5%はバリアフリー道路の縦断勾配の上限、8%は手動車いすの自走限界の目安。
@@ -274,12 +299,20 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
     if (approach) {
       L.polyline(toLatLng(approach.points), { color: '#075985', weight: 4, interactive: false }).addTo(group);
     }
+    let entranceRenderer: L.SVG | undefined;
     for (const candidate of studyResult.candidates) {
       if (!candidate.entranceRoute) continue;
       const route = candidate.entranceRoute;
       const line = entranceRouteWithin(route, minutes * WALKING_METERS_PER_MINUTE);
       if (line.length < 2) continue;
-      L.polyline(toLatLng(line), { color: '#5b21b6', weight: 5, opacity: 0.9, interactive: false }).addTo(group);
+      if (route.endLabel) entranceRenderer ??= L.svg();
+      L.polyline(toLatLng(line), { color: '#5b21b6', weight: 5, opacity: 0.9, interactive: false,
+        ...(route.endLabel ? { renderer: entranceRenderer, className: 'verified-entrance-line' } : {}) }).addTo(group);
+      if (route.endLabel && route.meters <= minutes * WALKING_METERS_PER_MINUTE) {
+        const end = route.points.at(-1)!;
+        L.circleMarker([end[1], end[0]], { radius: 5, color: '#5b21b6', fillOpacity: 1 })
+          .bindTooltip(route.endLabel, { permanent: true, direction: 'top' }).addTo(group);
+      }
       if (route.startLabel) {
         const start = route.points[0];
         L.circleMarker([start[1], start[0]], { radius: 5, color: '#5b21b6', fillOpacity: 1 })
@@ -287,14 +320,14 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
       }
     }
     const roadJoin = approach?.points[approach.points.length - 1] ?? origin;
-    if (approach || !catchment.approach) {
+    if (catchment && (approach || !catchment.approach)) {
       L.polyline(toLatLng([roadJoin, catchment.snap]), { color: '#334155', weight: 3, dashArray: '3 5', interactive: false }).addTo(group);
     }
     L.circleMarker([origin[1], origin[0]], { radius: 10, fillColor: '#174f9d', fillOpacity: 1, color: 'white', weight: 3, interactive: false }).addTo(group);
-    const legend = createLegendControl(catchment.budget, minutes, !!approach);
-    legend.addTo(map);
-    return () => { group.remove(); legend.remove(); };
-  }, [map, catchment, displayed, approach, origin, steepSummary, minutes, studyResult]);
+    const legend = catchment ? createLegendControl(catchment.budget, minutes, !!approach) : null;
+    legend?.addTo(map);
+    return () => { group.remove(); entranceRenderer?.remove(); legend?.remove(); };
+  }, [map, catchment, displayed, approach, origin, steepSummary, minutes, studyResult, entranceOnly]);
 
   useEffect(() => {
     if (!map || !focused || loading) return;
@@ -314,7 +347,8 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
     {catchmentError ? <section className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4" role="status">
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
-      {!catchment ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
+      {!catchment && !entranceOnly ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
+        {entranceOnly && <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{cityHallCandidate.facility.properties.name}の正面玄関までの経路を掲載しています。周辺施設の徒歩圏は未計算です。</p>}
         <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} hasExcludedLocations={facilities.some(hasMapLocationIssue)} />
       </>}
     </>}

@@ -1,4 +1,5 @@
 import { SHOPPING_CATEGORIES } from '../src/facilityCatalog.ts';
+import { validateRegistryReview } from '../src/facilityRegistry.ts';
 import fs from 'node:fs';
 const data={features: ['shopping','civic-facilities'].flatMap(name=>JSON.parse(fs.readFileSync(`public/data/${name}.geojson`,'utf8')).features)};
 const ids=new Set(), sources=new Set();
@@ -18,8 +19,30 @@ for(const f of data.features) {
   if(r.evidence_url) { const url=new URL(r.evidence_url); if(url.protocol!=='https:'||url.username||url.password) throw Error(`Unsafe evidence URL: ${f.id}`); }
  }
  const civic=p.verification_status==='civic_unverified';
- if(!p.name||!p.source_timestamp||!p.source_ids?.length||p.license!==(civic?'CC-BY-4.0':'ODbL-1.0')) throw Error(`Missing provenance: ${f.id}`);
- if(civic) {
+ const medical=p.verification_status==='medical_register_listing';
+ const publicRecord=p.verification_status==='public_register_listing';
+ if(!p.name||!p.source_timestamp||!p.source_ids?.length||(!medical&&!publicRecord&&p.license!==(civic?'CC-BY-4.0':'ODbL-1.0'))) throw Error(`Missing provenance: ${f.id}`);
+ if(medical) {
+  const registry=p.registry_review;
+  validateRegistryReview(registry,p.verified_at);
+  if(registry.scope!=='medical_register'||!['hospital','clinic'].includes(p.category)||p.geometry_kind!=='representative_point'||
+     !/^\d{13}$/.test(registry.registry_id)||f.id!=='official-mhlw-'+registry.registry_id||
+     p.source_ids.length!==1||p.source_ids[0]!=='official:mhlw:'+registry.registry_id||
+     p.name!==registry.official_name||p.official_address!==registry.official_address||!p.city||
+     p.source_timestamp!==registry.source_as_of||!registry.sources.some(source=>source.url===p.official_url&&new URL(source.url).hostname==='www.mhlw.go.jp')) {
+    throw Error(`Invalid medical registry provenance: ${f.id}`);
+  }
+ } else if(publicRecord) {
+  const registry=p.registry_review;
+  validateRegistryReview(registry,p.verified_at);
+  if(registry.scope!=='public_facility_directory'||!['townhall','post_office','library','community_centre'].includes(p.category)||
+     p.geometry_kind!=='representative_point'||!/^official-[a-z0-9-]+$/.test(f.id)||
+     p.source_ids.length!==1||!p.source_ids[0].startsWith('official:public:')||
+     p.name!==registry.official_name||p.official_address!==registry.official_address||!p.city||
+     p.source_timestamp!==registry.source_as_of||!registry.sources.some(source=>source.url===p.official_url)) {
+    throw Error(`Invalid public facility provenance: ${f.id}`);
+  }
+ } else if(civic) {
   if(!/^civic-[\w-]+$/.test(f.id)||p.geometry_kind!=='representative_point'||p.verified_at||p.official_address||p.official_url||!p.retrieved_at||!p.civic_sources?.length||!p.address||!p.city) throw Error(`Invalid civic provenance: ${f.id}`);
   for(const source of p.civic_sources) {
    if(!source.title||!source.publisher||!/^\d{4}-\d{2}(?:-\d{2})?$/.test(source.date)||!source.url.startsWith('https://yamaguchi-opendata.jp/ckan/dataset/')) throw Error(`Invalid civic source: ${f.id}`);

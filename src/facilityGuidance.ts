@@ -82,6 +82,13 @@ export interface FacilityGuidanceData {
     expected: { name: string; category: string; source_ids: string[]; services: string[]; geometry: ShoppingFeature['geometry'] };
     review: FacilityGuidanceReview;
   }[];
+  presentation_updates?: {
+    id: string;
+    expected: { name: string; category: string; source_ids: string[]; services: string[]; geometry: ShoppingFeature['geometry'] };
+    name?: string;
+    label: string;
+    note: string;
+  }[];
 }
 const text = (v: unknown): v is string => typeof v === 'string' && !!v.trim();
 const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
@@ -97,7 +104,8 @@ const ringContains = (p: number[], ring: number[][]): boolean => {
 
 export function applyFacilityGuidance(base: ShoppingFeature[], value: unknown): ShoppingFeature[] {
   const data = value as FacilityGuidanceData;
-  if (!data || data.schema_version !== 1 || !date(data.checked_at) || !Array.isArray(data.reviews)) throw Error('Invalid facility guidance data');
+  if (!data || data.schema_version !== 1 || !date(data.checked_at) || !Array.isArray(data.reviews) ||
+      (data.presentation_updates !== undefined && !Array.isArray(data.presentation_updates))) throw Error('Invalid facility guidance data');
   const byId = new Map(base.map(f => [String(f.id), f]));
   if (byId.size !== base.length) throw Error('Duplicate base facility ID');
   const reviews = new Map<string, FacilityGuidanceReview>();
@@ -233,7 +241,32 @@ export function applyFacilityGuidance(base: ShoppingFeature[], value: unknown): 
     }
     reviews.set(item.id, r);
   }
-  return base.map(f => reviews.has(String(f.id)) ? { ...f, properties: { ...f.properties, guide_review: reviews.get(String(f.id)) } } : f);
+  const presentations = new Map<string, NonNullable<FacilityGuidanceData['presentation_updates']>[number]>();
+  for (const item of data.presentation_updates ?? []) {
+    const f = byId.get(item?.id), e = item?.expected;
+    if (!f || !e || presentations.has(item.id) || f.properties.visitor_note || f.properties.name !== e.name ||
+        f.properties.category !== e.category || !same(f.properties.source_ids, e.source_ids) ||
+        !same(f.properties.registered_details?.service ?? [], e.services) || !same(f.geometry, e.geometry) ||
+        !text(item.label) || !text(item.note) || (item.name !== undefined && (!text(item.name) || item.name === e.name))) {
+      throw Error(`Invalid facility presentation update: ${item?.id}`);
+    }
+    presentations.set(item.id, item);
+  }
+  return base.map(f => {
+    const id = String(f.id), guide = reviews.get(id), presentation = presentations.get(id);
+    if (!guide && !presentation) return f;
+    const properties = { ...f.properties };
+    if (guide) properties.guide_review = guide;
+    if (presentation) {
+      properties.visitor_note = { label: presentation.label, note: presentation.note };
+      if (presentation.name) {
+        properties.visitor_note.original_name = properties.name;
+        properties.search_names = [properties.search_names, properties.name].filter(Boolean).join(' ');
+        properties.name = presentation.name;
+      }
+    }
+    return { ...f, properties };
+  });
 }
 
 /** Count explicit groups of reference information independently of current visit candidates. */
