@@ -16,6 +16,7 @@ jobs:
       # 到達不能な .invalid ドメインをフォールバックにする（実データは取得しない）。
       VITE_WALK_DATA_URL: ${{ vars.WALK_DATA_URL || 'https://ci-placeholder.invalid/data/walk' }}
       VITE_BOARDING_STUDY: '1'
+      VITE_DAILY_ENTRANCE_ROUTES: '1'
       VITE_PREFECTURE_HALLS: '1'
       VITE_SHUNAN_PLATFORM1: '1'
       VITE_SHUNAN_PLATFORM6: '1'
@@ -24,6 +25,9 @@ jobs:
       VITE_YANAI_HALL: '1'
       VITE_HIKARI_HALL: '1'
       VITE_HAGI_HALL: '1'
+      VITE_ENTRANCE_STUDY: '1'
+      VITE_ENTRANCE_COMPARISON: '0'
+      VITE_LOCAL_ONLY: '0'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
@@ -36,7 +40,9 @@ jobs:
       - run: npm run test:walking
       - run: npm run test:baked-walking
       - run: npm run test:baked-facilities
+      - run: npm run test:entrance-routes
       - run: npm run test:stops
+      - run: npm run test:stop-selection
       - run: npm run test:places
       - run: npm run test:map-display
       - run: npm run test:boarding

@@ -64,7 +64,7 @@ export default function StopMarkers({ map, stops, selected }: {
       const accessibleLabel = choiceAccessibleLabel(stop);
       const hoverLabel = choiceHoverLabel(stop);
       if (card) {
-        const direction = document.createElement('strong'); direction.textContent = text.headline;
+        const direction = document.createElement('strong'); direction.textContent = stop.properties.source_kind === 'national' ? text.originLabel : text.headline;
         const name = document.createElement('span'); name.textContent = `${text.name}${text.number ? ` ${text.number}のりば` : ''}`;
         const detail = document.createElement('small'); detail.textContent = `${text.notes.join(' / ') || text.source} · ${text.id}`;
         icon.append(direction, name, detail);

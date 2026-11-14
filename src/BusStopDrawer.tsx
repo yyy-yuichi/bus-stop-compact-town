@@ -6,6 +6,7 @@ import SharePlace from './SharePlace';
 import type { BakedWalkingMinutes, WalkingConditions } from './placeLink';
 import { boardingTitle } from './boardingGuide';
 import { StopChoiceButton } from './StopSelection';
+import { choiceText } from './stopChoiceModel';
 
 interface BusStopDrawerProps {
   stop: BusFeature;
@@ -57,6 +58,7 @@ export default function BusStopDrawer({ stop, onClose, hidden, onNational, walki
       <div className="min-w-0">
         <p className="detail-eyebrow"><span className={`stop-symbol${municipal ? ' municipal-symbol' : ''}`}><MapIcon name="bus" /></span>{municipal ? `${stop.properties.city}の停留所` : boarding ? 'バス停の乗り場' : national ? 'バス停' : 'バス停 · 徒歩圏試作'}</p>
         <h2 id="bus-drawer-title">{name}</h2>
+        {national && <p className="detail-stop-origin">{choiceText(stop).originLabel}</p>}
       </div>
       <button ref={closeRef} onClick={onClose} aria-label="バス停の詳細を閉じる"
         className="icon-button">

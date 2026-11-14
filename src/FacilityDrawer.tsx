@@ -16,7 +16,7 @@ import { dispensingContactReview } from './facilityContact';
 import EntranceRouteNotice from './EntranceRouteNotice';
 import type { EntranceRoute } from './entranceRouteStudy';
 
-export default function FacilityDrawer({ facility, onClose, returnStop, entranceRoute }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string }; entranceRoute?: EntranceRoute }) {
+export default function FacilityDrawer({ facility, onClose, returnStop, entranceRoute, roadMinutes }: { facility: ShoppingFeature; onClose: () => void; returnStop?: { name: string }; entranceRoute?: EntranceRoute; roadMinutes?: number }) {
   const close = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLElement>(null);
   const p = facility.properties;
@@ -54,8 +54,14 @@ export default function FacilityDrawer({ facility, onClose, returnStop, entrance
     </header>
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
-      {p.visitor_note && <section className="soft-note" aria-label="施設の表示注記"><strong>{p.visitor_note.label}</strong><p>{p.visitor_note.note}</p>{p.visitor_note.original_name && <p>元の登録名：{p.visitor_note.original_name}</p>}</section>}
+      {p.visitor_note && <section className="soft-note" aria-label="施設の表示注記">
+        {entranceRoute?.scope === 'entrance' && !entranceRoute.provisional && p.visitor_note.label === '施設の代表点・入口未確認'
+          ? <><strong>地図のピンは施設の代表点</strong><p>確認した入口は、バス停からの経路の終点です。</p></>
+          : <><strong>{p.visitor_note.label}</strong><p>{p.visitor_note.note}</p></>}
+        {p.visitor_note.original_name && <p>元の登録名：{p.visitor_note.original_name}</p>}
+      </section>}
       {entranceRoute && returnStop && <section className="soft-note" aria-label="バス停からの経路"><strong>バス停からの経路</strong><EntranceRouteNotice route={entranceRoute} stopName={returnStop.name} /></section>}
+      {!entranceRoute && returnStop && roadMinutes !== undefined && <section className="soft-note" aria-label="バス停からの徒歩時間"><strong>バス停からの徒歩時間</strong><p>{returnStop.name}から施設の近くの道路まで 約{roadMinutes}分</p><p>施設の入口までの区間は含みません。</p></section>}
       <FacilityGuidanceDetails review={p.guide_review} />
       {p.guide_review ? <details className="source-details"><summary>元の監査記録・位置の確認履歴</summary><p className="helper-text">以下は今回の案内判断より前の監査記録です。今回の案内範囲は上部をご覧ください。</p><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} guidance={p.guide_review} /></details> : <><FacilityAuditDetails review={p.audit_review} /><FacilityMapLocationNotice location={p.audit_review?.map_location} /></>}
       <FacilityFreshnessDetails facility={facility} />
