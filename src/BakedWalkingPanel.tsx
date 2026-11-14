@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import L from 'leaflet';
 import { bakedFacilityCandidates, catchmentFile, clipCatchment, distance, interpolate, parseCatchment, prepareFacilities, walkDataBaseUrl, WALKING_METERS_PER_MINUTE } from './bakedWalking';
-import type { Catchment, Coordinate, Segment, FacilityGroup } from './bakedWalking';
+import type { Catchment, Coordinate, Segment } from './bakedWalking';
 import { focusContent } from './mapLayout';
 import type { LoadState, ShoppingFeature } from './types';
 import type { BakedWalkingMinutes } from './placeLink';
-import BakedFacilityList from './BakedFacilityList';
+import BakedFacilityList, { matchesFacilityFilter } from './BakedFacilityList';
+import type { FacilityListFilter } from './BakedFacilityList';
 import NearbyFacilitiesPanel from './NearbyFacilitiesPanel';
 import { hasMapLocationIssue } from './facilityMapLocation';
-import { applyEntranceStudy, entranceInputFor, entranceRouteWithin, entranceStudyFor } from './entranceRouteStudy';
+import { applyEntranceStudy, displayStudyMinutes, entranceInputFor, entranceRouteWithin, entranceStudyFor } from './entranceRouteStudy';
 import type { EntranceStudyMode, EntranceRoute } from './entranceRouteStudy';
 import EntranceStudyPanel from './EntranceStudyPanel';
 import { shunanEntranceCandidate } from './shunanPlatform6';
@@ -18,6 +19,8 @@ import { yanaiHallCandidate } from './yanaiHallEntrance';
 import { hikariHallCandidate } from './hikariHallEntrance';
 import { hagiHallCandidate } from './hagiHallEntrance';
 import { prefectureHallCandidate } from './prefectureHallEntrance';
+import { dailyEntranceCandidate } from './dailyEntranceRoutes';
+import { walkingEndpoint } from './EntranceRouteNotice';
 
 interface SteepPiece { a: Coordinate; b: Coordinate; grade: number }
 
@@ -236,7 +239,7 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
   unreachable: Record<string, number | null> | null;
   focused: boolean;
   facilities: ShoppingFeature[]; facilityState: LoadState; retryFacilities: () => void;
-  onFacility: (facility: ShoppingFeature) => void;
+  onFacility: (facility: ShoppingFeature, roadMinutes?: number) => void;
   minutes: BakedWalkingMinutes;
   scope: string; onMapFacilities: (scope: string, ids: string[]) => void;
   onEntranceRoutes?: (scope: string, routes: Record<string, EntranceRoute>) => void;
@@ -253,14 +256,15 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
   const study = useMemo(() => import.meta.env.VITE_ENTRANCE_STUDY === '1' && catchment ? entranceStudyFor(catchment) : null, [catchment]);
   const [studyMode, setStudyMode] = useState<EntranceStudyMode>('confirmed');
   useEffect(() => { setStudyMode('confirmed'); }, [id]);
-  const cityHallCandidate = useMemo(() => facilityState === 'ready'
+  const reviewedEntrance = useMemo(() => facilityState === 'ready'
     ? hikariHallCandidate(id, origin, facilities) ?? hagiHallCandidate(id, origin, facilities)
-      ?? prefectureHallCandidate(id, origin, facilities)
+      ?? prefectureHallCandidate(id, origin, facilities) ?? dailyEntranceCandidate(id, origin, facilities)
     : null, [facilityState, id, origin, facilities]);
-  const entranceOnly = !catchment && !!cityHallCandidate;
+  const entranceOnly = !catchment && !!reviewedEntrance;
+  const entranceOutside = entranceOnly && reviewedEntrance.meters > minutes * WALKING_METERS_PER_MINUTE;
   const studyResult = useMemo(() => {
     const result = applyEntranceStudy(candidates, study, studyMode);
-    const confirmed = cityHallCandidate ?? (catchment && facilityState === 'ready'
+    const confirmed = reviewedEntrance ?? (catchment && facilityState === 'ready'
       ? shunanEntranceCandidate(id, origin, facilities) ?? shimonosekiHallCandidate(id, origin, facilities)
         ?? kudamatsuHallCandidate(id, origin, facilities) ?? yanaiHallCandidate(id, origin, facilities)
       : null);
@@ -269,15 +273,15 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
     list.push(confirmed);
     list.sort((a, b) => a.meters - b.meters || String(a.facility.id).localeCompare(String(b.facility.id)));
     return { ...result, candidates: list };
-  }, [candidates, study, studyMode, catchment, facilityState, id, origin, facilities, cityHallCandidate]);
+  }, [candidates, study, studyMode, catchment, facilityState, id, origin, facilities, reviewedEntrance]);
   useEffect(() => {
     onEntranceRoutes?.(scope, Object.fromEntries(studyResult.candidates.filter(candidate => candidate.entranceRoute).map(candidate => [String(candidate.facility.id), candidate.entranceRoute!])));
   }, [scope, studyResult, onEntranceRoutes]);
   const visibleCandidates = useMemo(() => studyResult.candidates.filter(c => c.meters <= minutes * WALKING_METERS_PER_MINUTE), [studyResult, minutes]);
-  const [facilityGroup, setFacilityGroup] = useState<FacilityGroup | 'all'>('all');
+  const [facilityGroup, setFacilityGroup] = useState<FacilityListFilter>('all');
   useEffect(() => { setFacilityGroup('all'); }, [id]);
   const nearbyFallback = !loading && !catchment && !entranceOnly;
-  useEffect(() => { if (!nearbyFallback) onMapFacilities(scope, visibleCandidates.filter(c => facilityGroup === 'all' || c.group === facilityGroup).map(c => String(c.facility.id))); }, [scope, visibleCandidates, facilityGroup, onMapFacilities, nearbyFallback]);
+  useEffect(() => { if (!nearbyFallback) onMapFacilities(scope, visibleCandidates.filter(c => entranceOnly || matchesFacilityFilter(c, facilityGroup)).map(c => String(c.facility.id))); }, [scope, visibleCandidates, facilityGroup, onMapFacilities, nearbyFallback, entranceOnly]);
 
   useEffect(() => {
     if (!map || (!displayed && !entranceOnly)) return;
@@ -348,8 +352,16 @@ export default function BakedWalkingPanel({ map, id, origin, dataUrl, unreachabl
       <p className="text-sm">徒歩圏のデータを読み込めませんでした。</p><button className="mt-3 min-h-11 rounded-lg border bg-white px-4 text-sm" onClick={retryCatchment}>再読み込み</button>
     </section> : loading ? <p className="mt-4 text-sm" role="status">徒歩圏を準備しています…</p> : <>
       {!catchment && !entranceOnly ? <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{noCatchmentMessage(unreachable?.[id])}</p> : <>
-        {entranceOnly && <p className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">{cityHallCandidate.facility.properties.name}の正面玄関までの経路を掲載しています。周辺施設の徒歩圏は未計算です。</p>}
-        <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} hasExcludedLocations={facilities.some(hasMapLocationIssue)} />
+        {entranceOnly && <div className="mt-5 rounded-xl bg-amber-50 p-4 text-sm" role="status">
+          {entranceOutside
+            ? <>
+              <p>{reviewedEntrance.facility.properties.name}の{walkingEndpoint(reviewedEntrance.entranceRoute)}までの目安 約{displayStudyMinutes(reviewedEntrance.meters)}分。この経路は徒歩{minutes}分圏外です。</p>
+              <p className="mt-1 text-xs">{reviewedEntrance.entranceRoute?.note}</p>
+            </>
+            : <p>{reviewedEntrance.facility.properties.name}の{walkingEndpoint(reviewedEntrance.entranceRoute)}までの経路を掲載しています。</p>}
+          <p>周辺施設の徒歩圏は未計算です。</p>
+        </div>}
+        {!entranceOutside && <BakedFacilityList key={id} candidates={visibleCandidates} group={facilityGroup} onGroup={setFacilityGroup} minutes={minutes} state={facilityState} retry={retryFacilities} onFacility={onFacility} hasExcludedLocations={facilities.some(hasMapLocationIssue)} entranceOnly={entranceOnly} />}
       </>}
     </>}
     {nearbyFallback && <NearbyFacilitiesPanel key={id} origin={origin} facilities={facilities} state={facilityState} retry={retryFacilities} onFacility={onFacility} scope={scope} onMapFacilities={onMapFacilities} />}

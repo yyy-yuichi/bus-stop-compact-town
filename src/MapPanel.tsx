@@ -9,6 +9,7 @@ import { searchPlaces } from './placeSearch';
 import { boardingTitle } from './boardingGuide';
 import { auditLabel } from './facilityAudit';
 import { facilityVisitExclusionLabel, mapLocationLabel } from './facilityMapLocation';
+import { choiceText, stopId } from './stopChoiceModel';
 
 interface Props {
   stops: BusFeature[];
@@ -16,6 +17,8 @@ interface Props {
   categories: ShoppingCategory[];
   onCategories: (categories: ShoppingCategory[]) => void;
   onStop: (id: string) => void;
+  locatedStop?: BusFeature;
+  onOpenStop: (id: string) => void;
   onFacility: (feature: ShoppingFeature) => void;
   mode: 'national' | 'pilot';
   onMode: () => void;
@@ -28,7 +31,7 @@ interface Props {
   municipalFailed: boolean;
   retryMunicipal: () => void;
 }
-export default function MapPanel({ stops, facilities, categories, onCategories, onStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch, municipalFailed, retryMunicipal }: Props) {
+export default function MapPanel({ stops, facilities, categories, onCategories, onStop, locatedStop, onOpenStop, onFacility, mode, onMode, busy, shoppingError, shoppingLoading, retryShopping, selection, onReturnSearch, municipalFailed, retryMunicipal }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState('');
   const [resultsOpen, setResultsOpen] = useState(true);
@@ -37,6 +40,8 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   const [limits, setLimits] = useState({ facilities: 12, stops: 12 });
   const resultPanel = useRef<HTMLDivElement>(null);
   const pendingFocus = useRef<{ section: string; index: number } | null>(null);
+  const openStopButton = useRef<HTMLButtonElement>(null);
+  const focusOpenStop = useRef(false);
   useEffect(() => { if (resultPanel.current) resultPanel.current.scrollTop = 0; }, [query]);
   useEffect(() => {
     if (!pendingFocus.current) return;
@@ -48,11 +53,18 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
   useEffect(() => { setListLimit(24); }, [categories]);
   useEffect(() => { if (selection) { setExpanded(false); setResultsOpen(false); } else setResultsOpen(true); }, [selection]);
   const term = query.trim();
+  const locatedChoice = locatedStop ? choiceText(locatedStop) : null;
+  useEffect(() => {
+    if (!resultsOpen && locatedStop && focusOpenStop.current) {
+      openStopButton.current?.focus({ preventScroll: true });
+      focusOpenStop.current = false;
+    }
+  }, [locatedStop, resultsOpen]);
   const matches = useMemo(() => searchPlaces(query, stops, facilities), [query, stops, facilities]);
-  const changeQuery = (value: string) => { pendingFocus.current = null; setQuery(value); setResultsOpen(true); setLimits({ facilities: 12, stops: 12 }); };
+  const changeQuery = (value: string) => { pendingFocus.current = null; focusOpenStop.current = false; setQuery(value); setResultsOpen(true); setLimits({ facilities: 12, stops: 12 }); };
   const clearQuery = () => { changeQuery(''); document.getElementById('place-search')?.focus(); };
   const visible = facilities.filter(f => categories.includes(categoryOf(f).id));
-  const chooseStop = (id: string) => { setExpanded(false); setResultsOpen(false); onStop(id); };
+  const chooseStop = (id: string) => { focusOpenStop.current = true; setExpanded(false); setResultsOpen(false); onStop(id); };
   const chooseFacility = (feature: ShoppingFeature) => { setExpanded(false); setResultsOpen(false); setListOpen(false); onFacility(feature); };
   const facilityRow = (feature: ShoppingFeature) => {
     const category = categoryOf(feature);
@@ -66,6 +78,10 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
     <div className="search-field"><MapIcon name="search" /><label className="sr-only" htmlFor="place-search">バス停・暮らしの施設を検索</label><input id="place-search" type="search" placeholder="バス停・暮らしの施設を検索" value={query} onChange={e => changeQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.stopPropagation(); clearQuery(); } }} autoComplete="off" />{query && <button className="search-clear" aria-label="検索をクリア" onClick={clearQuery}><MapIcon name="close" /></button>}<button className="panel-toggle icon-button" aria-label={expanded ? '表示設定を閉じる' : '表示設定を開く'} aria-expanded={expanded} aria-controls="map-options" onClick={() => { setExpanded(p => !p); if (!expanded) setResultsOpen(false); }}><MapIcon name={expanded ? 'close' : 'layers'} /></button></div>
     {municipalFailed && <button className="text-button error-text" onClick={retryMunicipal}>岩国市・光市のデータを再読み込み</button>}
     {shoppingError && <button className="text-button error-text" onClick={retryShopping}>施設を再読み込み</button>}
+    {term && !resultsOpen && locatedChoice && <button ref={openStopButton} type="button" className="located-stop-action" onClick={() => onOpenStop(locatedChoice.id)}>
+      <span>{locatedChoice.name}の詳細を開く</span>
+      <small>{locatedChoice.originLabel}</small>
+    </button>}
     {term && !resultsOpen && <button className="search-return" onClick={() => { onReturnSearch(); setResultsOpen(true); document.getElementById('place-search')?.focus(); }}>← 「{term}」の検索結果に戻る</button>}
     {term && resultsOpen ? <div className="search-results" ref={resultPanel} aria-label="検索結果"><p className="list-label" role="status">検索結果 {matches.stops.length + matches.facilities.length}件{busy || shoppingLoading ? '（読み込み中）' : ''}</p>
       {matches.facilities.length > 0 && <section aria-labelledby="facility-results-title"><h3 className="result-group-title" id="facility-results-title">施設（参考記録を含む） <span>{matches.facilities.length}件</span></h3>
@@ -73,7 +89,7 @@ export default function MapPanel({ stops, facilities, categories, onCategories, 
         {matches.facilities.length > limits.facilities && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'facility-results-title', index: limits.facilities }; setLimits(p => ({ ...p, facilities: p.facilities + 12 })); }}>施設をさらに表示（残り{matches.facilities.length - limits.facilities}件）</button>}
       </section>}
       {matches.stops.length > 0 && <section aria-labelledby="stop-results-title"><h3 className="result-group-title" id="stop-results-title">バス停 <span>{matches.stops.length}件</span></h3>
-        {matches.stops.slice(0, limits.stops).map(stop => <button className="place-row" key={String(stop.id)} onClick={() => chooseStop(String(stop.id || stop.properties['@id']))}><span className={`stop-symbol${stop.properties.source_kind === 'municipal' ? ' municipal-symbol' : ''}`}><MapIcon name="bus" /></span><span><strong>{boardingTitle(stop)}</strong><small>{stop.properties.boarding_guide?.summary || (stop.properties.source_kind === 'municipal' ? `${stop.properties.city}の停留所データ` : stop.properties.operator || 'バス停')}</small></span><span className="row-arrow" aria-hidden="true">›</span></button>)}
+        {matches.stops.slice(0, limits.stops).map(stop => <button className="place-row" key={stopId(stop)} onClick={() => chooseStop(stopId(stop))}><span className={`stop-symbol${stop.properties.source_kind === 'municipal' ? ' municipal-symbol' : ''}`}><MapIcon name="bus" /></span><span><strong>{boardingTitle(stop)}</strong><small>{choiceText(stop).originLabel}</small></span><span className="row-arrow" aria-hidden="true">›</span></button>)}
         {matches.stops.length > limits.stops && <button className="more-results" onClick={() => { pendingFocus.current = { section: 'stop-results-title', index: limits.stops }; setLimits(p => ({ ...p, stops: p.stops + 12 })); }}>バス停をさらに表示（残り{matches.stops.length - limits.stops}件）</button>}
       </section>}
       {!busy && !shoppingLoading && !shoppingError && !matches.stops.length && !matches.facilities.length && <p className="helper-text">該当する登録データがありません。短い名前でもお試しください。</p>}

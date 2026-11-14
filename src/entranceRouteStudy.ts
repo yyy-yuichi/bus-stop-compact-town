@@ -13,6 +13,7 @@ export interface EntranceRoute {
   provisional: boolean;
   startLabel?: string;
   endLabel?: string;
+  segmentCosts?: number[];
 }
 export interface EntrancePair {
   facilityId: string;
@@ -77,13 +78,13 @@ export function entranceRouteWithin(route: EntranceRoute, budget: number): Coord
   let cost = route.startMeters;
   for (let i = 1; i < route.points.length; i++) {
     const a = route.points[i - 1], b = route.points[i];
-    const length = distance(a, b);
-    if (cost + length > budget) {
-      if (length > 0) points.push(interpolate(a, b, (budget - cost) / length));
+    const segmentCost = route.segmentCosts?.[i - 1] ?? distance(a, b);
+    if (cost + segmentCost > budget) {
+      if (segmentCost > 0) points.push(interpolate(a, b, (budget - cost) / segmentCost));
       break;
     }
     points.push(b);
-    cost += length;
+    cost += segmentCost;
   }
   return points;
 }

@@ -113,18 +113,18 @@ export function StopSelectionProvider({ map, stops, selected, onSelect, active =
       onCancel={event => { event.preventDefault(); dispatch({ type: 'list', open: false }); }}
       onClick={event => { if (event.target === event.currentTarget) dispatch({ type: 'list', open: false }); }}>
       <div className="stop-choice-dialog-inner">
-        <header><h2 id="stop-choice-title">{session?.kind === 'related' ? '別の乗り場を選ぶ' : '重なる登録を選ぶ'}（{choices.length}件）</h2>
+        <header><h2 id="stop-choice-title">{session?.kind === 'related' ? '別の乗り場を選ぶ' : '徒歩の起点を選ぶ'}（{choices.length}件）</h2>
           <button type="button" aria-label="選択一覧を閉じる" onClick={() => dispatch({ type: 'list', open: false })}>×</button></header>
         <p id="stop-choice-description">{session?.kind === 'overlap'
-          ? '画面上で重なる登録情報です。件数は実際の乗り場数とは限りません。'
+          ? '地図上で重なって見える登録です。普段使う方面や、徒歩圏を見る代表点を選べます。'
           : '既存資料で関連付けた地点です。選ぶと、その1地点の詳細へ切り替わります。'}</p>
         <div className="stop-choice-list">{choices.map(stop => {
           const text = choiceText(stop);
           return <button type="button" key={text.id} data-choice-id={text.id} aria-pressed={text.id === selected} onClick={() => select(text.id)}>
-            <span className="choice-direction">{text.headline}</span>
+            <span className="choice-direction">{stop.properties.source_kind === 'national' ? text.originLabel : text.headline}</span>
             <span>{text.name}{text.number ? ` ${text.number}のりば` : ''}</span>
             {text.notes.length > 0 && <span className={text.notes.some(note => /未確認|保留|候補/.test(note)) ? 'choice-notice' : 'choice-confirmed'}>{text.notes.join(' / ')}</span>}
-            <small>{text.source} · {text.id === selected ? '選択中' : 'この地点を見る'}</small>
+            <small>{stop.properties.source_kind !== 'national' && `${text.source} · `}{text.id === selected ? '選択中' : 'この地点を見る'}</small>
             <small className="choice-id">{text.id}</small>
           </button>;
         })}</div>
@@ -139,6 +139,6 @@ export function StopChoiceButton({ stop }: { stop: BusFeature }) {
   if (choices.stops.length < 2) return null;
   return <button type="button" className="other-stop-button" aria-haspopup="dialog" aria-controls="stop-choice-dialog"
     onClick={() => open(choices.stops, choices.kind, true)}>
-    {choices.kind === 'related' ? '別の乗り場を選ぶ' : '重なる登録を選ぶ'} <span>{choices.stops.length}件</span>
+    {choices.kind === 'related' ? '別の乗り場を選ぶ' : '同じ位置の別の起点を選ぶ'} <span>{choices.stops.length}件</span>
   </button>;
 }

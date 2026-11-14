@@ -27,6 +27,13 @@ const national = stops.find(stop => stop.properties.source_kind === 'national' &
 assert(national);
 assert(!choiceHoverLabel(national).includes(String(national.id)), 'Hover never exposes a source record ID');
 assert.deepEqual(relatedStops(national, stops), [], 'Nearby unreviewed records are never treated as one stop');
+const hikariNational = byId.get('mlit-p11-22-35:3791');
+const hikariOtherNational = byId.get('mlit-p11-22-35:3792');
+assert(hikariNational && hikariOtherNational);
+assert(coincidentStops(hikariNational, stops).includes(hikariOtherNational));
+assert.equal(choiceText(hikariNational).originLabel, '国の代表点 · 防長交通（株）');
+assert.equal(choiceText(hikariOtherNational).originLabel, '国の代表点 · 中国ジェイアールバス（株）');
+assert(choiceText(hikari).originLabel.includes('光市の登録点'));
 const exactA = { ...national, id: 'exact-a', geometry: { ...national.geometry, coordinates: [131, 34] } };
 const exactB = { ...national, id: 'exact-b', geometry: { ...national.geometry, coordinates: [131, 34] } };
 const nearButSeparate = { ...national, id: 'near', geometry: { ...national.geometry, coordinates: [131.000001, 34] } };

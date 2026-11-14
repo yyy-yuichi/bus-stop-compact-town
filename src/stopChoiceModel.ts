@@ -62,8 +62,11 @@ export function choiceText(stop: BusFeature) {
   const bracket = direction.indexOf('（');
   const headline = bracket > 0 && direction.slice(0, bracket).includes('方面')
     ? direction.slice(0, bracket) : direction;
+  const originLabel = stop.properties.source_kind === 'national'
+    ? [source, stop.properties.operator].filter(Boolean).join(' · ')
+    : [guide?.summary, source, !guide ? stop.properties.operator : undefined].filter(Boolean).join(' · ');
   return {
-    id: stopId(stop), name: stopName(stop), direction, headline,
+    id: stopId(stop), name: stopName(stop), direction, headline, originLabel,
     number: guide?.assignment_hold ? null : guide?.number || null,
     source, notes,
   };
@@ -78,7 +81,7 @@ export function choiceHoverLabel(stop: BusFeature): string {
 /** Screen readers retain the full context that is intentionally omitted from the visual tooltip. */
 export function choiceAccessibleLabel(stop: BusFeature): string {
   const text = choiceText(stop);
-  return `${choiceHoverLabel(stop)} ${text.direction} ${text.notes.join(' ')} ${text.source} ${text.id}`;
+  return [choiceHoverLabel(stop), text.originLabel, ...text.notes, text.id].join(' ');
 }
 
 /** A completed choice closes the temporary map chooser; the drawer can reopen it. */

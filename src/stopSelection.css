@@ -20,6 +20,9 @@
 .stop-choice-tooltip { max-width:min(20rem,calc(100vw - 2rem)); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .other-stop-button { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:48px; margin:0 0 16px; padding:10px 12px; border:1px solid #c5d7cc; border-radius:9px; background:#f3f8f4; color:#17694e; font:650 13px/1.5 var(--font-sans); }
 .other-stop-button span { white-space:nowrap; font-size:11px; }
+.located-stop-action { display:grid; gap:2px; width:100%; min-height:44px; padding:8px 12px; margin-top:6px; border:1px solid #c5d7cc; border-radius:12px; background:#fff; color:#17694e; text-align:left; font-size:13px; font-weight:700; }
+.located-stop-action small, .detail-stop-origin { color:#526f60; font-size:12px; line-height:1.5; }
+.detail-stop-origin { margin:3px 0 0; }
 .stop-choice-toolbar { position:absolute; left:20px; bottom:56px; z-index:1250; display:flex; align-items:center; flex-wrap:wrap; gap:6px; max-width:min(480px,calc(100% - 80px)); padding:8px 10px; border:1px solid #bdd0c5; border-radius:12px; background:#fffffff5; box-shadow:0 2px 12px #173b3426; color:#173b34; }
 .stop-choice-toolbar > span { width:100%; font-size:11px; line-height:1.5; }
 .stop-choice-toolbar button { min-height:44px; padding:7px 12px; border:1px solid #c5d7cc; border-radius:7px; background:#fff; font-size:12px; }
@@ -39,7 +42,7 @@
 .choice-confirmed { color:#526f60; }
 .stop-choice-list small { font-size:11px; }
 .choice-id { color:#617266; }
-.stop-choice-dialog button:focus-visible, .stop-choice-toolbar button:focus-visible, .other-stop-button:focus-visible { outline:3px solid #ac690d; outline-offset:-3px; }
+.stop-choice-dialog button:focus-visible, .stop-choice-toolbar button:focus-visible, .other-stop-button:focus-visible, .located-stop-action:focus-visible { outline:3px solid #ac690d; outline-offset:-3px; }
 @media (min-width:1001px) { .app-with-selection .stop-choice-toolbar { max-width:min(480px,calc(100% - 470px)); } }
 @media (max-width:1000px) {
   .stop-choice-toolbar { left:10px; bottom:55px; max-width:calc(100% - 80px); }
