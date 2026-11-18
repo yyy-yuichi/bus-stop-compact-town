@@ -21,7 +21,7 @@
 
 ## 公開準備
 
-[静的サイト公開手順](docs/PUBLISHING.md)を参照。npm run buildはデータ検証を含み、GitHub Actionsもビルドまで実行する。公開用ファイルはdist内の7ファイルのみ。地図から出典説明・GeoJSON配布・ライブラリライセンスを参照できる。ルートとサブフォルダ配置に対応。公開先への配置は未実施。
+[静的サイト公開手順](docs/PUBLISHING.md)を参照。npm run buildはデータ検証を含み、GitHub Actionsもビルドまで実行する。公開用ファイルは `dist/` に生成される。ビルド後は `node scripts/verify-release.mjs` で配信内容を確認する。地図から出典説明・GeoJSON配布・ライブラリライセンスを参照できる。ルートとサブフォルダ配置に対応。公開先への配置は未実施。
 
 ## 起動
 
