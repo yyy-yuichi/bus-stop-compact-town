@@ -15,9 +15,8 @@ export function walkingTimeSummary(meters: number, route?: EntranceRoute) {
   return `${endpoint}までの目安 ${time}`;
 }
 
-export default function EntranceRouteNotice({ route, stopName }: { route: EntranceRoute; stopName?: string }) {
-  return <div className="entrance-route-notice text-xs leading-relaxed">
-    <p>{stopName ? `${stopName}から ` : ''}{walkingTimeSummary(route.meters, route)}</p>
+export default function EntranceRouteNotice({ route, stopName, leadWithStairs }: { route: EntranceRoute; stopName?: string; leadWithStairs?: boolean }) {
+  const routeDetails = <>
     {route.endLabel && <p>{route.note}</p>}
     {route.startLabel && <p>一の宮県住前の東側標柱からの経路です。反対側の乗り場からは確認していません。</p>}
     {route.scope === 'outdoor' && <p>1階の屋外通路までです。館内の上下移動や、目的の場所までの移動時間は含みません。</p>}
@@ -25,5 +24,18 @@ export default function EntranceRouteNotice({ route, stopName }: { route: Entran
     {route.segmentCosts
       ? <p>時速4kmを基準に勾配を反映した目安です。横断の待ち時間と館内の移動時間は含みません。</p>
       : <p>入口側の区間は時速4kmで換算しています。この区間の坂・階段・信号待ちの時間は含みません。</p>}
+  </>;
+  return <div className="entrance-route-notice text-xs leading-relaxed">
+    {leadWithStairs ? <>
+      <p>東駅①から外来入口まで 約{displayStudyMinutes(route.meters)}分</p>
+      <p>途中に屋外階段があります。階段で歩みが遅くなる分は、この時間に含みません。</p>
+      <details className="source-details">
+        <summary>経路と計算条件</summary>
+        {routeDetails}
+      </details>
+    </> : <>
+      <p>{stopName ? `${stopName}から ` : ''}{walkingTimeSummary(route.meters, route)}</p>
+      {routeDetails}
+    </>}
   </div>;
 }
