@@ -7,7 +7,30 @@ type ReleaseAdditions = {
   checked_at: string;
   civic: ShoppingFeature[];
   stores: ShoppingFeature[];
+  temporary_closures?: {
+    id: string;
+    expected: {
+      name: string;
+      category: string;
+      source_ids: string[];
+      geometry: ShoppingFeature['geometry'];
+    };
+    review: import('./facilityFreshness.ts').FreshnessReview;
+  }[];
 };
+
+/** Keep the original identity and its audit evidence when applying a later operating notice. */
+export function applyReleaseTemporaryClosures(facilities: ShoppingFeature[], release: unknown): ShoppingFeature[] {
+  const { checked_at, temporary_closures: closures } = release as ReleaseAdditions;
+  if (closures === undefined) return facilities;
+  if (!Array.isArray(closures) || closures.some(row => row?.review?.event !== 'temporary_closure')) {
+    throw Error('Invalid release temporary closures');
+  }
+  return applyFacilityCurrent(facilities, {
+    schema_version: 1, checked_at, additions: [],
+    updates: closures.map(row => ({ ...row, changes: {} })),
+  });
+}
 
 export function applyReleaseFacilityAdditions(
   raw: ShoppingFeature[], current: unknown, value: unknown,

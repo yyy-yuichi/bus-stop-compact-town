@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { ShoppingCollection, ShoppingFeature } from './types';
-import { applyReleaseFacilityAdditions } from './facilityReleaseAdditions';
+import { applyReleaseFacilityAdditions, applyReleaseTemporaryClosures } from './facilityReleaseAdditions';
 import { applyFacilityAudit } from './facilityAudit';
 import { applyFacilityContacts } from './facilityContact';
 import { applyFacilityGuidance } from './facilityGuidance';
@@ -34,7 +34,11 @@ export function useShoppingData() {
     const guidance = fetch(`${import.meta.env.BASE_URL}data/facility-guidance.json`, { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error('Facility guidance unavailable'); return r.json() as Promise<unknown>; });
     Promise.all([originals, current, additions, audit, contacts, guidance]).then(([collections, reviews, releaseData, auditData, contactData, guideData]) => {
-        if (!abort.signal.aborted) { setFeatures(applyFacilityGuidance(applyFacilityContacts(applyFacilityAudit(applyReleaseFacilityAdditions(collections.flat(), reviews, releaseData), auditData), contactData), guideData)); setLoading(false); }
+        if (!abort.signal.aborted) {
+          const facilities = applyFacilityAudit(applyReleaseFacilityAdditions(collections.flat(), reviews, releaseData), auditData);
+          setFeatures(applyFacilityGuidance(applyFacilityContacts(applyReleaseTemporaryClosures(facilities, releaseData), contactData), guideData));
+          setLoading(false);
+        }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
     return () => abort.abort();
   }, [attempt]);
