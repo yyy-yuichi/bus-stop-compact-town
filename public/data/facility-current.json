@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-23",
+  "checked_at": "2026-09-28",
   "updates": [
     {
       "id": "osm-way-475283671",
@@ -8103,20 +8103,27 @@
         "search_names": "すき家 すき家 190号宇部西割店"
       },
       "review": {
-        "status": "temporarily_closed",
-        "event": "temporary_closure",
-        "effective_at": "2026-11-09",
-        "checked_at": "2026-11-23",
-        "summary": "改装工事のため11月9日9時から12月15日9時まで一時休業の案内。",
+        "status": "operating",
+        "event": "listed",
+        "effective_at": null,
+        "checked_at": "2026-09-27",
+        "summary": "公式の現行支店名・住所・店舗固有位置を既存の同系列施設と照合し、支店名・住所を補完。",
         "sources": [
           {
-            "title": "すき家・190号宇部西割店",
+            "title": "運営元の現行店舗一覧",
+            "url": "https://maps.sukiya.jp/jp/here.html"
+          },
+          {
+            "title": "公式の当該支店案内",
             "url": "https://maps.sukiya.jp/jp/detail/601.html"
           }
         ],
         "limits": [
-          "終了時刻は店舗公式が告知した予定です。営業再開の実績は未確認です。",
-          "元の施設ID・形状・出典と、同じ店舗の別の既存記録を保持しています。"
+          "現行掲載の確認であり、実際の開店日や改称日を確定した記録ではありません。",
+          "店舗固有の位置を使用。地図表示中心・住所検索点・親施設の点を転用していません。",
+          "店舗入口・館内動線・バス停からの徒歩到達性は未確認。",
+          "元の施設ID・形状・出典IDを保持。公式位置との小差を理由に既存座標を移動しません。",
+          "同じ店舗の既存の別記録との関係を保持し、今回新たな重複施設は追加していません。"
         ]
       }
     },
@@ -19597,48 +19604,6 @@
           "安岡支所という行政組織の廃止ではありません。旧所在地の窓口終了を移転日から記録しています。",
           "旧窓口の最終営業日・建物の解体日は推定せず、元座標を新所在地へ移動していません。",
           "元の完全住所と固有の支所名、移転前後で不変と明記された電話番号で接続しています。"
-        ]
-      }
-    },
-    {
-      "id": "osm-node-9472329369",
-      "expected": {
-        "name": "すき家 190号宇部西割店",
-        "category": "fast_food",
-        "source_ids": [
-          "node/9472329369"
-        ],
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            131.2080572,
-            33.9768313
-          ]
-        }
-      },
-      "changes": {
-        "address": "山口県宇部市大字妻崎開作871-2",
-        "city": "宇部市"
-      },
-      "review": {
-        "status": "temporarily_closed",
-        "event": "temporary_closure",
-        "effective_at": "2026-11-09",
-        "checked_at": "2026-11-23",
-        "summary": "改装工事のため11月9日9時から12月15日9時まで一時休業の案内。",
-        "sources": [
-          {
-            "title": "すき家・190号宇部西割店",
-            "url": "https://maps.sukiya.jp/jp/detail/601.html"
-          },
-          {
-            "title": "地図・位置資料 · api.openstreetmap.org",
-            "url": "https://api.openstreetmap.org/api/0.6/node/9472329369/history"
-          }
-        ],
-        "limits": [
-          "終了時刻は店舗公式が告知した予定です。営業再開の実績は未確認です。",
-          "元の施設ID・形状・出典と、同じ店舗の別の既存記録を保持しています。"
         ]
       }
     }

@@ -7,8 +7,8 @@
     "original_count": 7764
   },
   "counts": {
-    "reviewed": 2827,
-    "limited_support": 1364,
+    "reviewed": 2828,
+    "limited_support": 1365,
     "unresolved": 1463,
     "recovered_registry": 23
   },
@@ -82439,6 +82439,45 @@
           }
         ],
         "limits": [
+          "監査記録日は資料照合の記録日です。新しい現地観測日や当日の営業・利用の保証ではありません。",
+          "元の名称・分類・位置は保持しています。候補情報から入口の精度や徒歩での到達性は確認していません。"
+        ]
+      }
+    },
+    {
+      "id": "osm-node-9472329369",
+      "expected": {
+        "name": "すき家 190号宇部西割店",
+        "category": "fast_food",
+        "source_ids": [
+          "node/9472329369"
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            131.2080572,
+            33.9768313
+          ]
+        }
+      },
+      "review": {
+        "status": "limited_support",
+        "checked_at": "2026-10-01",
+        "accepted_type": null,
+        "summary": "近接のみの同定なし。現在公式掲載と当該元の登録情報に具体的に見つかった変更/矛盾を確認。現在公式掲載された候補。",
+        "scope": "近接のみの同定なし。",
+        "sources": [
+          {
+            "title": "地図・位置資料 · maps.sukiya.jp",
+            "url": "https://maps.sukiya.jp/jp/detail/601.html"
+          },
+          {
+            "title": "地図・位置資料 · api.openstreetmap.org",
+            "url": "https://api.openstreetmap.org/api/0.6/node/9472329369/history"
+          }
+        ],
+        "limits": [
+          "現在公式掲載と当該元の登録情報に具体的に見つかった変更/矛盾を確認。",
           "監査記録日は資料照合の記録日です。新しい現地観測日や当日の営業・利用の保証ではありません。",
           "元の名称・分類・位置は保持しています。候補情報から入口の精度や徒歩での到達性は確認していません。"
         ]

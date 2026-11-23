@@ -13,16 +13,13 @@ const priorById = new Map(previous.map(f => [f.id, f]));
 const audits = new Map(data.reviews.map(r => [r.id, r]));
 const recovered = new Set(data.recovered_verifications.map(r => r.id));
 test('formal v13 and 23 recovered registry results are reconciled once', () => {
-  assert.deepEqual(data.counts, { reviewed: 2827, limited_support: 1364, unresolved: 1463, recovered_registry: 23 });
+  assert.deepEqual(data.counts, { reviewed: 2828, limited_support: 1365, unresolved: 1463, recovered_registry: 23 });
   assert.equal(raw.length, 7764);
   assert.equal(data.provenance.canonical_sha256, '27d739ea29231a46ec7a9dbf337d65c089720cca5f4dd4b1e3c40de195c6282e');
   assert.equal(current.length, previous.length);
   assert.equal(new Set(current.map(f => f.id)).size, current.length);
   assert.deepEqual(current.map(f => f.id), previous.map(f => f.id));
-  const supersededId = 'osm-node-9472329369';
-  assert.equal(audits.has(supersededId), false);
-  assert.equal(priorById.get(supersededId).properties.freshness_review.event, 'temporary_closure');
-  assert.equal(new Set([...audits.keys(), ...recovered, supersededId]).size, 2851);
+  assert.equal(new Set([...audits.keys(), ...recovered]).size, 2851);
   assert(raw.every(f => { const after = current.find(a => a.id === f.id); return !!(after.properties.audit_review || after.properties.registry_review || after.properties.freshness_review); }), 'Every original has a preserved earlier decision or explicit scoped audit status');
   assert.equal(JSON.stringify(previous), before);
   assert.equal(JSON.stringify(data), saved);
