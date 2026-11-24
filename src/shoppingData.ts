@@ -4,6 +4,7 @@ import { applyReleaseFacilityAdditions, applyReleaseTemporaryClosures } from './
 import { applyFacilityAudit } from './facilityAudit';
 import { applyFacilityContacts } from './facilityContact';
 import { applyFacilityGuidance } from './facilityGuidance';
+import { applyFacilityPresentation } from './facilityPresentation';
 
 export { SHOPPING_CATEGORIES, categoryOf } from './facilityCatalog';
 export type { ShoppingCategory } from './facilityCatalog';
@@ -36,7 +37,8 @@ export function useShoppingData() {
     Promise.all([originals, current, additions, audit, contacts, guidance]).then(([collections, reviews, releaseData, auditData, contactData, guideData]) => {
         if (!abort.signal.aborted) {
           const facilities = applyFacilityAudit(applyReleaseFacilityAdditions(collections.flat(), reviews, releaseData), auditData);
-          setFeatures(applyFacilityGuidance(applyFacilityContacts(applyReleaseTemporaryClosures(facilities, releaseData), contactData), guideData));
+          const guided = applyFacilityGuidance(applyFacilityContacts(applyReleaseTemporaryClosures(facilities, releaseData), contactData), guideData);
+          setFeatures(applyFacilityPresentation(guided, releaseData));
           setLoading(false);
         }
       }).catch(() => { if (!abort.signal.aborted) { setError(true); setLoading(false); } });
