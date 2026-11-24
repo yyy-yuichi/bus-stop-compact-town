@@ -32,7 +32,7 @@ export const facilityVisitExclusionLabel = (facility: ShoppingFeature): string =
 
 /** Legacy records keep their existing eligibility; no inference from status or distance. */
 export const isFacilityWalkingCandidate = (facility: ShoppingFeature): boolean => {
-  if (!facilityAvailable(facility) || guideExcludesOriginal(facility) || ['hold', 'reference'].includes(facility.properties.guide_review?.decision ?? '')) return false;
+  if (!facilityAvailable(facility) || facility.properties.release_presentation?.excludeWalking || guideExcludesOriginal(facility) || ['hold', 'reference'].includes(facility.properties.guide_review?.decision ?? '')) return false;
   if (facility.properties.guide_review?.decision === 'ready') return facility.properties.guide_review.location === 'original_supported';
   return !hasMapLocationIssue(facility);
 };

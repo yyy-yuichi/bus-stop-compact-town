@@ -299,7 +299,9 @@ export function distinctVisitCandidates<T>(items: T[], facility: (item: T) => Sh
   return items.filter(item => {
     const f = facility(item), group = f.properties.guide_review?.saved_visit_group;
     if (group && savedRepresentatives.has(group.id) && String(f.id) !== group.id) return false;
-    const key = group?.id ?? f.properties.guide_review?.shared_destination?.id ?? String(f.id);
+    const presentation = f.properties.release_presentation?.group;
+    const key = group?.id ?? f.properties.guide_review?.shared_destination?.id ??
+      (presentation?.kind === 'duplicate' ? presentation.representative : String(f.id));
     if (seen.has(key)) return false;
     seen.add(key);
     return true;

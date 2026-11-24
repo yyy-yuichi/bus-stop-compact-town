@@ -20,6 +20,7 @@ export default function FacilityDrawer({ facility, onClose, returnStop, entrance
   const close = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLElement>(null);
   const p = facility.properties;
+  const presentation = p.release_presentation;
   const category = categoryOf(facility);
   const imported = p.verification_status === 'osm_unverified';
   const civic = p.verification_status === 'civic_unverified';
@@ -57,6 +58,16 @@ export default function FacilityDrawer({ facility, onClose, returnStop, entrance
     {returnStop && <button className="drawer-return" onClick={onClose}>← {returnStop.name}のバス停に戻る</button>}
     <div className="detail-body">
       {isHaraFromHigashi1 && routeNotice}
+      {presentation && <section className="soft-note" aria-label="施設の表示・位置の案内">
+        <p>{presentation.note}</p>
+        {presentation.related && <p><a className="underline" href={'#kind=facility&id=' + encodeURIComponent(presentation.related.id)}>
+          {presentation.group?.kind === 'site' ? presentation.related.name : '同じ施設のもう一つの登録位置を開く'}
+        </a></p>}
+        <details className="source-details"><summary>名称・表示の確認資料</summary>
+          {presentation.originalName !== p.name && <p>元の表示名：{presentation.originalName}</p>}
+          <ul>{presentation.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></li>)}</ul>
+        </details>
+      </section>}
       {p.visitor_note && <section className="soft-note" aria-label="施設の表示注記">
         {entranceRoute?.scope === 'entrance' && !entranceRoute.provisional && p.visitor_note.label === '施設の代表点・入口未確認'
           ? <><strong>地図のピンは施設の代表点</strong><p>確認した入口は、バス停からの経路の終点です。</p></>
